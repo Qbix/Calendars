@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Febụwarị",
+        "Mar": "Mar",
+        "Apr": "Eprel",
+        "May": "Mee",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Ọgọst",
+        "Sep": "Sep",
+        "Oct": "Ọkt",
+        "Nov": "Nov",
+        "Dec": "Dec"
+    },
+    "monthsLong": {
+        "Jan": "Jenụwarị",
+        "Feb": "Febụwarị",
+        "Mar": "Maachị",
+        "Apr": "Eprel",
+        "May": "Mee",
+        "Jun": "June",
+        "Jul": "Julaị",
+        "Aug": "Ọgọst",
+        "Sep": "Septemba",
+        "Oct": "October",
+        "Nov": "Nọvemba",
+        "Dec": "Disemba"
+    },
+    "weekdays": {
+        "Sun": "Anyanwụ",
+        "Mon": "Mon",
+        "Tue": "Tue",
+        "Wed": "Wed",
+        "Thu": "Thu",
+        "Fri": "Fri",
+        "Sat": "Sat"
+    },
+    "weekdaysLong": {
+        "Sun": "Sọnde",
+        "Mon": "Monday",
+        "Tue": "Tuzdee",
+        "Wed": "Wenezde",
+        "Thu": "Tọzdee",
+        "Fri": "Fraịde",
+        "Sat": "Satọde"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Hazie Mmemme Ọhụrụ"
+        },
+        "tool": {
+            "HostedBy": "{{name}} kwadoro ya",
+            "Name": "Aha",
+            "AreYouIn": "Ị nọ?",
+            "Yes": "Ee",
+            "No": "Mba",
+            "Ok": "Ọ dị mma",
+            "Cancel": "Kagbuo",
+            "Maybe": "Enwere ike",
+            "Conversation": "Mkparịta ụka",
+            "Promote": "Kwalite mmemme a",
+            "Reminders": "Ihe ncheta",
+            "RemindersLabel": "Achọrọ m ka amara m ihe omume na:",
+            "MoreInfo": "Ozi ndị ọzọ",
+            "Registration": "Ndebanye aha",
+            "SetReminders": "Biko tọọ ihe ncheta",
+            "ReservationFee": "Ụgwọ ndoputa",
+            "AddParticipants": "Tinye ndị so na ya",
+            "ManageReservation": "Jikwaa ndoputa",
+            "UpdateFutureReservations": "Ị na-achọkwa imelite ndoputa niile n&#39;ọdịnihu n&#39;otu ụzọ ahụ?",
+            "RecurringAdmin": "Ntọala ugboro ugboro",
+            "MakeReservation": "Mee ndoputa",
+            "StartLiveStream": "Pịa na Live Stream",
+            "LiveStreamEnded": "Live iyi akwụsịla",
+            "ClickToViewRecording": "pịa ka ịlele ndekọ",
+            "Checkin": "Nyochaa koodu ndị bịaranụ",
+            "Myqr": "Ndebanye mbata",
+            "CloseEvent": {
+                "button": "Kagbuo Omume",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Ị ji n&#39;aka na ịchọrọ ịkagbu mmemme a?",
+                        "Participant": "Enwere onye so na mmemme a",
+                        "Participants": "Enwere {999} ndị sonyere na mmemme a",
+                        "Recurring": "Ihe omume a na-eme ugboro ugboro. Ị chọrọ ka ịkagbukwa ihe omume ya niile n&#39;ọdịnihu?"
+                    },
+                    "trip": {
+                        "Cancel": "Ị chọkwara ịkagbu njem gị {{tripDirection}} mmemme a?",
+                        "Passengers": "Enwere ndị njem {999}} na-adabere na gị.",
+                        "Title": "Njem nso"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "SITE",
+                        "to": "ka",
+                        "from": "si"
+                    }
+                }
+            },
+            "Calendar": "Kalenda",
+            "Interests": "Mmasị",
+            "Directions": "Ntuziaka",
+            "TitleOfEvent": "Aha mmemme:",
+            "OpenTo": "Mepee ya",
+            "GoingTo": "ga-abụ na",
+            "NotGoingTo": "agaghị adị na",
+            "MaybeGoingTo": "ga-abụ na",
+            "AdminDontPay": "Admin achọghị ịkwụ ụgwọ",
+            "PublisherDontPay": "Onye mbipụta enweghị mkpa ịkwụ ụgwọ",
+            "EmptyList": "Ndepụta efu",
+            "NeedToPayCredits": "Achọrọ ịkwụ ụgwọ: <span>kredit {{amount}}<\/span>",
+            "PleaseJoinParticipants": "Biko sonye {{participant}}",
+            "YouReservingPlace": "Ị ga-edobe ebe gị.",
+            "SelectIncludesToAdd": "Họrọ otu ma ọ bụ karịa {{TypeDisplayPlural}} ka ịtinye:",
+            "YouHaveNotRegisteredAnyIncluded": "Idebanyebeghị aha {{TypeDisplayPlural}} ọ bụla",
+            "Proceed": "Gaba",
+            "MakeChanges": "Chekwaa mgbanwe m",
+            "CancelReservation": "Kagbuo ndoputa niile",
+            "Total": "Mkpokọta",
+            "RequiredRelatedParticipants": "Ihe omume a chọrọ ndị sonyere: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Biko dezie nnweta &quot;{{title}}&quot; iji melite ntọala ugboro ugboro"
+        },
+        "composer": {
+            "SetLocation": "Tọọ ebe m",
+            "SetInfoLink": "Tọọ njikọ maka ozi ndị ọzọ",
+            "ChooseAvailability": "Họrọ Ọrụ Dị",
+            "ChooseActivity": "Họrọ mmemme",
+            "ChoosePublisher": "Họrọ Onye mbipụta",
+            "Day": "Ụbọchị",
+            "Starting": "Malite",
+            "Duration": "Ogologo oge",
+            "Hour": "Oge awa",
+            "Hours": "Oge awa",
+            "Minutes": "Nkeji",
+            "Ending": "agwụ",
+            "People": "Ndị mmadụ",
+            "Share": "Kekọrịta",
+            "Continue": "Gaa n&#39;ihu",
+            "Recurring": "Na-emegharị ugboro ugboro",
+            "RecurringTitle": "Ụbọchị ndị na-emegharị emegharị",
+            "Daily": "Kwa ụbọchị",
+            "Weekly": "Kwa izu",
+            "Monthly": "Kwa ọnwa",
+            "SelectLocation": "Biko buru ụzọ họrọ ebe.",
+            "eventType": "Ụdị mmemme",
+            "EditTitle": "Chee echiche banyere aha na-atọ ụtọ...",
+            "SetTitle": "Biko tọọ aha mmemme",
+            "ScheduleOnlineConference": "Ọgbakọ n&#39;ịntanetị n&#39;usoro ihe omume",
+            "SOCDescription": "Biko kọwaa oge mmalite na njedebe ogbako. Onye ọ bụla ga-eleta mmemme n&#39;oge a ga-ejikọ aka na ogbako ịntanetị.",
+            "EndDate": "Ọgwụgwụ",
+            "location": {
+                "Title": "Tọọ ebe gị"
+            },
+            "interest": {
+                "Title": "Họrọ mmemme",
+                "Filter": "Chọọ mmasị..."
+            },
+            "SetLivestream": "Tapawa njikọ na ntanetị \/ vidiyo vidiyo"
+        },
+        "EventAlreadyClosed": "Emechiela mmemme a",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Tinye na kalenda?",
+                "prompt": "Ọ ga-amasị gị itinye mmemme a na kalenda gị?",
+                "yes": "Ee",
+                "no": "Mba"
+            },
+            "dialog": {
+                "Title": "Tinye mmemme na kalenda gị"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Nnweta",
+        "NewAvailability": {
+            "Title": "Nnweta ọhụrụ",
+            "SaveAvailability": "Chekwaa nnweta",
+            "SelectTemplate": "Biko họrọ Ọrụ",
+            "SelectLocation": "Biko họrọ ebe",
+            "SelectArea": "Biko họrọ Mpaghara",
+            "Type": "Ụdị",
+            "Weekly": "Kwa izu",
+            "RecurringStartDate": "Ụbọchị mmalite na-emekarị",
+            "EndDate": "Ụbọchị ngwụcha",
+            "SelectTime": "Jikwaa Oge oghere",
+            "SelectTimeSlot": "Họrọ oghere oge",
+            "SelectTimeSlots": "Họrọ oghere oge achọrọ",
+            "PeopleMin": "Ndị ọbịa kacha nta",
+            "PeopleMax": "Kachasị ọbịa",
+            "PeopleLabels": "Ekwenyere akara",
+            "Next": "Osote",
+            "Back": "Azu"
+        },
+        "EditAvailability": "Dezie Nnweta",
+        "SetVisitors": "Tọọ ndị ọbịa",
+        "Price": "Ọnụ ahịa",
+        "SelectAction": "Biko họrọ ihe omume",
+        "OpenProfile": "Mepee profaịlụ",
+        "RemoveStaff": "Wepụ ndị ọrụ",
+        "PleaseSelectTimeSlots": "Biko họrọ oghere oge",
+        "ExceptionOccurred": "Ewezuga mere",
+        "NotEnoughCreditsToParticipateEvents": "Ezughị kredit iji sonye mmemme {{eventsAmount}}. Ị chọrọ kredit {{needCredits}}. Chọrọ ịzụrụ?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Ụbọchị mmalite",
+            "endDate": "Ụbọchị ngwụcha",
+            "justOnce": "Naanị otu ugboro",
+            "justOnceWeekly": "Naanị izu a",
+            "justOnceMonthly": "Naanị ọnwa a",
+            "recurring": "Na-emegharị ugboro ugboro"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Mmemme efu",
+            "optional": "Onyinye nhọrọ",
+            "required": "Ịkwụ ụgwọ achọrọ"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Onyinye nhọrọ",
+            "required": "Ịkwụ ụgwọ achọrọ",
+            "paid": "akwụ ụgwọ"
+        },
+        "confirmationDialog": {
+            "title": "Nkwenye ịkwụ ụgwọ",
+            "content": "Ihe omume a nwere nkwado nhọrọ nke {{amount}}.",
+            "button": "Nye aka"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} abụbeghị akụkụ nke mmemme ahụ. Ị chọrọ ịgbakwunye ha ka onye so na ya?",
+        "userNotFound": "Ahụghị onye ọrụ",
+        "confirmYes": "Ee",
+        "confirmNo": "Mba"
+    },
+    "notifications": {
+        "EventActivityIn": "Ihe omume na {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Agbanwere iwu ugboro ugboro maka mmemme {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "jikwaa ndebanye aha email gị",
+        "IfUnsubscribe": "Ọ bụrụ na ịchọrọ ịwepu aha",
+        "ClickHereToVisitEvent": "Biko pịa ebe a ka ileta mmemme",
+        "Calendars\/reminder": "Mmemme &quot;{999}}&quot; ga-amalite na {{{call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Dejupụta akwụkwọ mpịakọta a",
+        "fileLabel": "Bulite akwụkwọ akụkọ",
+        "importOptions": "Nhọrọ",
+        "importProgress": "Ọganihu",
+        "sampleCSV": "Budata ihe atụ CSV",
+        "joinEventLabel": "Jikọọ ndị ọrụ na mmemme enweghị usoro",
+        "smsText": "Hey, ezitere m gị njikọ na {{communityName}}. Biko lelee ya.",
+        "emailSubject": "Naanị zitere gị njikọ",
+        "emailBody": "Hey, ezitere m gị akwụkwọ ịkpọ òkù {{communityName}}. Biko lelee ya.",
+        "fileNotFound": "Ndo, ahụghị faịlụ CSV.",
+        "fileEmpty": "Ndo, faịlụ CSV efu.",
+        "fieldNotFound": "Achọtaghị mpaghara &quot;{999}}&quot; achọrọ",
+        "userIdNotFound": "onye ọrụ dị mana id efu",
+        "activateUsers": "zigara ndị ọrụ ozi mmalite?",
+        "taskStreamInvalid": "iyi ọrụ ezighi ezi",
+        "instructionsEmpty": "ọrụ iyi ntụziaka efu",
+        "interestsEmpty": "enweghị ike inweta mmasị",
+        "interestAbsent": "mmasị {{1}} ahụghị",
+        "complete": "Zuru oke",
+        "errorLine": "ahịrị {{1}}",
+        "errorsTitle": "Njehie mere",
+        "communityUsers": "Nke a bụ ndepụta obodo"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Na-anọchi anya mmemme ndị mmadụ nwere ike isonye na ya",
+            "displayType": "Ihe omume"
+        },
+        "Calendars\/recurring": {
+            "description": "A na-eji maka ịkọkọ iyi ndị echere ka ọ na-emegharị kwa oge",
+            "displayType": "Ihe omume na-eme ugboro ugboro"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Tinye oghere",
+        "StartTime": "Oge mmalite",
+        "EndTime": "Oge ngwụcha",
+        "Save": "Chekwa",
+        "AddTimeSlot": "Tinye Oghere Oge",
+        "CopyFromDay": "Detuo site na ụbọchị",
+        "Nearest": "Kacha nso",
+        "Today": "Taa",
+        "Tomorrow": "Echi",
+        "AfterTomorrow": "Mgbe echi"
+    }
+}

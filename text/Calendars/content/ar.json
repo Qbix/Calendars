@@ -1,0 +1,359 @@
+{
+    "months": {
+        "Jan": "يناير",
+        "Feb": "فبراير",
+        "Mar": "مارس",
+        "Apr": "أبريل",
+        "May": "قد",
+        "Jun": "يونيو",
+        "Jul": "يوليو",
+        "Aug": "أغسطس",
+        "Sep": "سبتمبر",
+        "Oct": "أكتوبر",
+        "Nov": "نوفمبر",
+        "Dec": "ديسمبر"
+    },
+    "monthsLong": {
+        "Jan": "كانون الثاني",
+        "Feb": "شهر فبراير",
+        "Mar": "مارس",
+        "Apr": "أبريل",
+        "May": "قد",
+        "Jun": "يونيو",
+        "Jul": "تموز",
+        "Aug": "أغسطس",
+        "Sep": "شهر تسعة",
+        "Oct": "اكتوبر",
+        "Nov": "شهر نوفمبر",
+        "Dec": "ديسمبر"
+    },
+    "weekdays": {
+        "Sun": "الشمس",
+        "Mon": "الإثنين",
+        "Tue": "الثلاثاء",
+        "Wed": "تزوج",
+        "Thu": "خميس",
+        "Fri": "الجمعة",
+        "Sat": "جلس"
+    },
+    "weekdaysLong": {
+        "Sun": "الأحد",
+        "Mon": "الاثنين",
+        "Tue": "يوم الثلاثاء",
+        "Wed": "الأربعاء",
+        "Thu": "يوم الخميس",
+        "Fri": "جمعة",
+        "Sat": "السبت"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "خطة حدث جديد"
+        },
+        "tool": {
+            "AreYouIn": "هل انت معنا؟",
+            "Yes": "نعم",
+            "No": "رقم",
+            "Maybe": "يمكن",
+            "Conversation": "محادثة",
+            "Promote": "روّج لهذا الحدث",
+            "Checkin": "مسح رموز الحضور",
+            "CloseEvent": {
+                "button": "إلغاء الحدث",
+                "confirm": {
+                    "text": {
+                        "Cancel": "هل أنت متأكد أنك تريد إلغاء هذا الحدث؟",
+                        "Participant": "هناك 1 مشارك في هذا الحدث",
+                        "Participants": "هناك {{count}} مشارك في هذا الحدث",
+                        "Recurring": "هذا الحدث متكرر. هل تريد أيضًا إلغاء جميع حالاته المستقبلية أيضًا؟"
+                    },
+                    "trip": {
+                        "Cancel": "هل تريد أيضًا إلغاء رحلتك {{tripDirection}} هذا الحدث؟",
+                        "Passengers": "هناك {{passengerCount}} راكب يعتمدون عليك.",
+                        "Title": "إغلاق الرحلة"
+                    },
+                    "directions": {
+                        "TO": "ل",
+                        "FROM": "من",
+                        "to": "ل",
+                        "from": "من"
+                    }
+                }
+            },
+            "Calendar": "تقويم",
+            "Interests": "الإهتمامات",
+            "Directions": "الاتجاهات",
+            "TitleOfEvent": "عنوان الحدث:",
+            "OpenTo": "مفتوح ل",
+            "MoreInfo": "مزيد من المعلومات",
+            "Registration": "تسجيل",
+            "GoingTo": "سيكون في",
+            "NotGoingTo": "لن يكون في",
+            "MaybeGoingTo": "ربما في",
+            "HostedBy": "باستضافة {{name}}",
+            "LiveStream": "انقر لبث مباشر",
+            "Myqr": "تحقق في",
+            "AdminDontPay": "المسؤول لا يحتاج إلى الدفع",
+            "Name": "اسم",
+            "ReservationFee": "رسوم الحجز",
+            "AddParticipants": "أضف مشاركين",
+            "ManageReservation": "إدارة الحجز",
+            "MakeReservation": "قم بالحجز",
+            "StartLiveStream": "انقر للبث المباشر",
+            "LiveStreamEnded": "انتهى البث المباشر",
+            "ClickToViewRecording": "انقر لعرض التسجيل",
+            "EmptyList": "قائمة فارغة",
+            "NeedToPayCredits": "يلزم الدفع: <span>رصيد بقيمة {{amount}}<\/span>",
+            "PleaseJoinParticipants": "الرجاء الانضمام إلى {{participant}}",
+            "YouReservingPlace": "سوف تحجز مكانك.",
+            "SelectIncludesToAdd": "حدد واحدًا أو أكثر {{TypeDisplayPlural}} لإضافته:",
+            "YouHaveNotRegisteredAnyIncluded": "لم تسجل أي {{TypeDisplayPlural}} حتى الآن",
+            "Proceed": "تقدم",
+            "MakeChanges": "حفظ التغييرات الخاصة بي",
+            "CancelReservation": "إلغاء الحجز بالكامل",
+            "Total": "مجموع",
+            "Ok": "موافق",
+            "Cancel": "يلغي",
+            "Reminders": "تذكير",
+            "RemindersLabel": "أريد أن يتم إخطاري بحدث في:",
+            "SetReminders": "يرجى ضبط التذكيرات",
+            "UpdateFutureReservations": "هل تريد أيضًا تحديث جميع الحجوزات المستقبلية بنفس الطريقة؟",
+            "RecurringAdmin": "الإعدادات المتكررة",
+            "PublisherDontPay": "الناشر لا يحتاج إلى الدفع",
+            "RequiredRelatedParticipants": "يتطلب هذا الحدث المشاركين: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "الرجاء تعديل التوفر &quot;{{title}}&quot; لتحديث الإعدادات المتكررة",
+            "Presentation": "عرض تقديمي",
+            "YouAreNotParticipated": "أنت لست مشاركا في الحدث",
+            "LiveStreamStarted": "بدأ البث المباشر",
+            "WebRTCStarted": "بدأ المؤتمر الهاتفي",
+            "WebRTCEnded": "انتهى المؤتمر الهاتفي"
+        },
+        "composer": {
+            "SetLocation": "تعيين موقعي",
+            "ChooseActivity": "اختر نشاطًا",
+            "ChoosePublisher": "اختر الناشر",
+            "Day": "يوم",
+            "Starting": "تبدأ",
+            "People": "اشخاص",
+            "Share": "شارك",
+            "Recurring": "يتكرر",
+            "RecurringTitle": "الأيام المتكررة",
+            "Daily": "اليومي",
+            "Weekly": "أسبوعي",
+            "Monthly": "شهريا",
+            "SelectLocation": "الرجاء تحديد موقع أولا.",
+            "eventType": "نوع الحدث",
+            "EditTitle": "فكر في عنوان مثير للاهتمام ...",
+            "SetTitle": "يرجى تحديد عنوان الحدث",
+            "location": {
+                "Title": "حدد موقعك"
+            },
+            "interest": {
+                "Title": "اختر نشاطًا",
+                "Filter": "اهتمامات البحث ..."
+            },
+            "Ending": "تنتهي",
+            "ScheduleOnlineConference": "جدولة مؤتمر عبر الإنترنت",
+            "SOCDescription": "يرجى تحديد وقت بدء المؤتمر وانتهائه. سيتصل كل شخص يزور الحدث خلال هذه الفترة الزمنية تلقائيًا بالمؤتمر عبر الإنترنت.",
+            "EndDate": "نهاية",
+            "SetLivestream": "الصق رابط البث المباشر \/ مؤتمر الفيديو",
+            "SetInfoLink": "تعيين ارتباط إلى معلومات إضافية",
+            "ChooseService": "اختر الخدمة المتاحة",
+            "Continue": "يكمل",
+            "ChooseAvailability": "اختر الخدمة المتاحة",
+            "Duration": "مدة",
+            "Hour": "ساعة",
+            "Hours": "ساعات",
+            "Minutes": "الدقائق",
+            "Locally": "محليا",
+            "EventInfoLink": "رابط معلومات الحدث",
+            "TicketPurchaseLink": "رابط شراء التذاكر"
+        },
+        "EventAlreadyClosed": "هذا الحدث مغلق بالفعل",
+        "addToCalendar": {
+            "permissions": {
+                "title": "إضافة إلى التقويم؟",
+                "prompt": "هل ترغب في إضافة هذا الحدث إلى التقويم الخاص بك؟",
+                "yes": "نعم",
+                "no": "رقم"
+            },
+            "dialog": {
+                "Title": "أضف حدثًا إلى التقويم الخاص بك"
+            }
+        },
+        "ErrorLeaveEndedEvent": "آسف ، لكن لا يمكنك مغادرة الحدث المنتهي"
+    },
+    "recurring": {
+        "dialog": {
+            "justonce": "فقط هذه المرة",
+            "recurring": "يتكرر",
+            "startDate": "تاريخ البدء",
+            "endDate": "تاريخ الانتهاء",
+            "justOnce": "مرة واحدة فقط",
+            "justOnceWeekly": "هذا الاسبوع فقط",
+            "justOnceMonthly": "هذا الشهر فقط"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "حدث مجاني",
+            "optional": "مساهمة اختيارية",
+            "required": "الدفع المطلوب"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "مساهمة اختيارية",
+            "required": "الدفع المطلوب",
+            "paid": "دفع"
+        },
+        "confirmationDialog": {
+            "title": "تأكيد الدفعة",
+            "content": "هذا الحدث له مساهمة اختيارية تبلغ {{amount}}.",
+            "button": "تساهم"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "لم يكن {{1}} جزءًا من الحدث بعد. هل تريد إضافتهم كمشارك؟",
+        "userNotFound": "المستخدم ليس موجود",
+        "confirmYes": "نعم",
+        "confirmNo": "رقم"
+    },
+    "notifications": {
+        "EventActivityIn": "نشاط الحدث في {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "تم تغيير القواعد المتكررة للحدث {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "إدارة اشتراكات البريد الإلكتروني الخاص بك",
+        "IfUnsubscribe": "إذا كنت تريد إلغاء الاشتراك",
+        "ClickHereToVisitEvent": "الرجاء الضغط هنا لزيارة الحدث",
+        "Calendars\/reminder": "سيبدأ الحدث &quot;{{{call 'message.getInstruction' 'name'}}&quot; في {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "بدأ المؤتمر الهاتفي",
+            "Ended": "انتهى المؤتمر الهاتفي"
+        },
+        "livestream": {
+            "Started": "بدأ البث المباشر",
+            "Ended": "انتهى البث المباشر",
+            "ClickToView": "شاهده هنا."
+        }
+    },
+    "import": {
+        "linkTitle": "املأ جدول البيانات هذا",
+        "fileLabel": "تحميل جدول البيانات:",
+        "joinEventLabel": "انضمام المستخدمين إلى حدث عشوائي",
+        "smsText": "مرحبًا ، لقد أرسلت لك رابطًا إلى {{communityName}}. يرجى التحقق من ذلك.",
+        "emailSubject": "فقط ارسلت لك رابط",
+        "emailBody": "مرحبًا ، لقد أرسلت إليك دعوة للتو إلى {{communityName}}. يرجى التحقق من ذلك.",
+        "fileNotFound": "عذرا ، ملف CSV غير موجود.",
+        "fileEmpty": "عذرا ، ملف CSV فارغ.",
+        "fieldNotFound": "الحقل المطلوب &quot;{{1}}&quot; غير موجود",
+        "userIdNotFound": "المستخدم موجود ولكن معرف فارغ",
+        "activateUsers": "إرسال رسالة التفعيل للمستخدمين؟",
+        "taskStreamInvalid": "دفق المهام غير صالح",
+        "instructionsEmpty": "تعليمات تدفق المهام فارغة",
+        "interestsEmpty": "لا يمكن الحصول على المصالح",
+        "interestAbsent": "الاهتمام {{1}} غير موجود",
+        "complete": "إكمال",
+        "errorLine": "السطر {{1}}",
+        "errorsTitle": "حدثت أخطاء",
+        "importOptions": "خيارات",
+        "importProgress": "تقدم",
+        "sampleCSV": "تنزيل نموذج CSV",
+        "communityUsers": "هذه قائمة المجتمعات",
+        "toMainCommunityToo": "تتعلق بالمجتمع الرئيسي أيضًا",
+        "ChooseFile": "اختر ملف"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "يمثل حدثًا يمكن للناس المشاركة فيه",
+            "displayType": "حدث"
+        },
+        "Calendars\/recurring": {
+            "description": "تستخدم لربط التدفقات التي من المفترض أن تتكرر بشكل دوري",
+            "displayType": "حدث متكرر"
+        }
+    },
+    "services": {
+        "Title": "خدمات",
+        "NewService": {
+            "Title": "توفر جديد",
+            "SaveService": "حفظ التوفر",
+            "SelectTemplate": "يرجى تحديد الخدمة",
+            "SelectLocation": "يرجى تحديد الموقع",
+            "SelectArea": "يرجى تحديد المنطقة",
+            "SelectTime": "إدارة فتحات الوقت",
+            "SelectTimeSlot": "حدد خانة زمنية",
+            "PeopleMin": "الحد الأدنى من الزوار",
+            "PeopleMax": "أقصى عدد للزوار",
+            "PeopleLabels": "مسموح التسميات",
+            "Next": "التالى",
+            "Back": "عودة"
+        },
+        "EditService": "تحرير التوفر",
+        "SetVisitors": "تعيين الزوار",
+        "Price": "السعر",
+        "SelectAction": "يرجى تحديد الإجراء",
+        "OpenProfile": "افتح الملف الشخصي",
+        "RemoveStaff": "إزالة الموظفين"
+    },
+    "timeslots": {
+        "AddSlot": "أضف فتحة",
+        "StartTime": "وقت البدء",
+        "EndTime": "وقت النهاية",
+        "Save": "يحفظ",
+        "AddTimeSlot": "أضف فترة زمنية",
+        "CopyFromDay": "نسخ من اليوم",
+        "Nearest": "الأقرب",
+        "Today": "اليوم",
+        "Tomorrow": "غدا",
+        "AfterTomorrow": "بعد غد"
+    },
+    "availabilities": {
+        "Title": "التوفر",
+        "NewAvailability": {
+            "Title": "توفر جديد",
+            "SaveAvailability": "حفظ التوافر",
+            "SelectTemplate": "الرجاء تحديد الخدمة",
+            "SelectLocation": "الرجاء تحديد الموقع",
+            "SelectArea": "الرجاء تحديد المنطقة",
+            "SelectTime": "إدارة فتحات الوقت",
+            "SelectTimeSlot": "حدد فترة زمنية",
+            "PeopleMin": "الحد الأدنى من الزوار",
+            "PeopleMax": "أقصى عدد من الزوار",
+            "PeopleLabels": "الأدوار المسموح بها",
+            "Next": "التالي",
+            "Back": "عودة",
+            "Type": "نوع",
+            "Weekly": "أسبوعي",
+            "RecurringStartDate": "تاريخ البدء المتكرر",
+            "EndDate": "تاريخ الانتهاء",
+            "SelectTimeSlots": "حدد الفترات الزمنية المطلوبة",
+            "RecurringEndDate": "تاريخ الانتهاء المتكرر",
+            "ScheduleOnlineConference": "جدولة مؤتمر عبر الهاتف",
+            "SetLivestream": "الصق رابط البث المباشر \/ مؤتمر الفيديو",
+            "SelectTimeZone": "اختر المجال الزمني"
+        },
+        "EditAvailability": "تحرير التوفر",
+        "SetVisitors": "تعيين الزوار",
+        "Price": "السعر",
+        "SelectAction": "الرجاء تحديد الإجراء",
+        "OpenProfile": "افتح الملف الشخصي",
+        "RemoveStaff": "إزالة الموظفين",
+        "PleaseSelectTimeSlots": "الرجاء تحديد فترات زمنية",
+        "ExceptionOccurred": "حدث استثناء",
+        "NotEnoughCreditsToParticipateEvents": "لا توجد أرصدة كافية للمشاركة في أحداث {{eventsAmount}}. تحتاج إلى {{needCredits}} رصيد. أريد شراء؟",
+        "LiveStream": "البث المباشر",
+        "InviteStaff": "دعوة الموظفين"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "اشترك في التقويم",
+        "copyLinkBelow": "انسخ الرابط أدناه",
+        "goTo": "اذهب إلى:",
+        "pasteCopiedTo": "الصق الرابط المنسوخ إلى حقل &quot;عنوان URL للتقويم&quot;",
+        "clickAddCalendar": "انقر فوق الزر &quot;إضافة تقويم&quot;",
+        "copyLink": "انسخ الرابط",
+        "tapToCopy": "اضغط على الزر أدناه لنسخ الرابط إلى الحافظة الخاصة بك",
+        "linkCopied": "تم نسخ الرابط",
+        "step2": "تم نسخ الرابط. نحن على وشك فتح تقويم Google. ستحتاج إلى لصق الرابط في مربع النص، والنقر فوق &quot;إضافة تقويم&quot;، وإغلاق علامة التبويب (انظر لقطة الشاشة أدناه)",
+        "calendarAppPreferences": "افتح التفضيلات في تطبيق التقويم على جهاز Mac الخاص بك، وقم بتعيين تطبيق التقويم الافتراضي ليكون كما هو موضح أدناه.",
+        "thenCloseDialog": "ثم أغلق مربع الحوار هذا للاشتراك في التقويم الخاص بك!",
+        "success": "تمت مزامنة التقويم بنجاح"
+    }
+}

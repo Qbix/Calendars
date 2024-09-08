@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Feb",
+        "Mar": "Mar",
+        "Apr": "Afrilu",
+        "May": "Mayu",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Agusta",
+        "Sep": "Satumba",
+        "Oct": "Oct",
+        "Nov": "Nov",
+        "Dec": "Dec"
+    },
+    "monthsLong": {
+        "Jan": "Janairu",
+        "Feb": "Fabrairu",
+        "Mar": "Maris",
+        "Apr": "Afrilu",
+        "May": "Mayu",
+        "Jun": "Yuni",
+        "Jul": "Yuli",
+        "Aug": "Agusta",
+        "Sep": "Satumba",
+        "Oct": "Oktoba",
+        "Nov": "Nuwamba",
+        "Dec": "Disamba"
+    },
+    "weekdays": {
+        "Sun": "Rana",
+        "Mon": "Litinin",
+        "Tue": "Talata",
+        "Wed": "Laraba",
+        "Thu": "Ta",
+        "Fri": "Juma&#39;a",
+        "Sat": "Sat"
+    },
+    "weekdaysLong": {
+        "Sun": "Lahadi",
+        "Mon": "Litinin",
+        "Tue": "Talata",
+        "Wed": "Laraba",
+        "Thu": "Alhamis",
+        "Fri": "Juma&#39;a",
+        "Sat": "Asabar"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Tsara Sabon Lamari"
+        },
+        "tool": {
+            "HostedBy": "{{name}} ne ya shirya",
+            "Name": "Suna",
+            "AreYouIn": "Kuna ciki?",
+            "Yes": "Ee",
+            "No": "A&#39;a",
+            "Ok": "Ko",
+            "Cancel": "Soke",
+            "Maybe": "Wataƙila",
+            "Conversation": "Tattaunawa",
+            "Promote": "Inganta wannan taron",
+            "Reminders": "Tunatarwa",
+            "RemindersLabel": "Ina so a sanar da ni game da wani lamari a:",
+            "MoreInfo": "Karin bayani",
+            "Registration": "Rijista",
+            "SetReminders": "Da fatan za a saita masu tuni",
+            "ReservationFee": "Kudin ajiyar kuɗi",
+            "AddParticipants": "Ƙara Mahalarta",
+            "ManageReservation": "Sarrafa Ajiye",
+            "UpdateFutureReservations": "Shin kuna son sabunta duk wuraren ajiyar gaba kamar haka?",
+            "RecurringAdmin": "Saituna masu maimaitawa",
+            "MakeReservation": "Yi ajiyar wuri",
+            "StartLiveStream": "Danna don Yawo Kai tsaye",
+            "LiveStreamEnded": "An ƙare rafi kai tsaye",
+            "ClickToViewRecording": "danna don duba rikodi",
+            "Checkin": "Duba lambobin mahalarta",
+            "Myqr": "Rajistan shiga",
+            "CloseEvent": {
+                "button": "Soke Taron",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Shin kun tabbata kuna son soke wannan taron?",
+                        "Participant": "Akwai ɗan takara 1 a wannan taron",
+                        "Participants": "Akwai mahalarta {{count}} a wannan taron",
+                        "Recurring": "Wannan taron yana maimaituwa. Shin kuna son soke duk abubuwan da zasu faru nan gaba kuma?"
+                    },
+                    "trip": {
+                        "Cancel": "Shin kuna son soke tafiyarku {{tripDirection}} wannan taron?",
+                        "Passengers": "Akwai fasinjoji {999}} da ke dogaro da kai.",
+                        "Title": "Kusa Tafiya"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "DAGA",
+                        "to": "ku",
+                        "from": "daga"
+                    }
+                }
+            },
+            "Calendar": "Kalanda",
+            "Interests": "Abubuwan sha&#39;awa",
+            "Directions": "Hanyoyi",
+            "TitleOfEvent": "Taken taron:",
+            "OpenTo": "Bude zuwa",
+            "GoingTo": "za a",
+            "NotGoingTo": "ba zai kasance a",
+            "MaybeGoingTo": "zai iya zama a",
+            "AdminDontPay": "Admin baya bukatar biya",
+            "PublisherDontPay": "Mai bugawa baya buƙatar biya",
+            "EmptyList": "Jerin mara komai",
+            "NeedToPayCredits": "Bukatar biya: <span>{{amount}} ƙididdiga<\/span>",
+            "PleaseJoinParticipants": "Da fatan za a shiga {{participant}}",
+            "YouReservingPlace": "Za ku ajiye wurinku.",
+            "SelectIncludesToAdd": "Zaɓi ɗaya ko fiye {{TypeDisplayPlural}} don ƙarawa:",
+            "YouHaveNotRegisteredAnyIncluded": "Ba ku yi rajista ba tukuna",
+            "Proceed": "Ci gaba",
+            "MakeChanges": "Ajiye Canje-canje Na",
+            "CancelReservation": "Soke duk ajiyar wuri",
+            "Total": "Jimlar",
+            "RequiredRelatedParticipants": "Wannan taron yana buƙatar mahalarta: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Da fatan za a shirya samuwa &quot;{999}}&quot; don sabunta saitunan mai maimaitawa"
+        },
+        "composer": {
+            "SetLocation": "Saita Wurina",
+            "SetInfoLink": "Saita hanyar haɗi zuwa ƙarin bayani",
+            "ChooseAvailability": "Zaɓi Sabis Akwai",
+            "ChooseActivity": "Zaɓi Ayyuka",
+            "ChoosePublisher": "Zaɓi Mawallafi",
+            "Day": "Rana",
+            "Starting": "farawa",
+            "Duration": "Tsawon lokaci",
+            "Hour": "Sa&#39;a",
+            "Hours": "Awanni",
+            "Minutes": "Mintuna",
+            "Ending": "Ƙarshe",
+            "People": "Mutane",
+            "Share": "Raba",
+            "Continue": "Ci gaba",
+            "Recurring": "Maimaituwa",
+            "RecurringTitle": "Kwanaki masu maimaitawa",
+            "Daily": "Kullum",
+            "Weekly": "mako-mako",
+            "Monthly": "kowane wata",
+            "SelectLocation": "Da fatan za a fara zaɓi wuri.",
+            "eventType": "Nau&#39;in Taron",
+            "EditTitle": "Ka yi tunanin take mai ban sha&#39;awa...",
+            "SetTitle": "Da fatan za a saita taken taron",
+            "ScheduleOnlineConference": "Jadawalin Taron Kan layi",
+            "SOCDescription": "Da fatan za a ayyana lokacin farawa da ƙarshen taro. Duk mutumin da ya ziyarci taron a wannan lokacin zai haɗa kai tsaye zuwa taron kan layi.",
+            "EndDate": "Ƙarshe",
+            "location": {
+                "Title": "Saita Wurin ku"
+            },
+            "interest": {
+                "Title": "Zaɓi Ayyuka",
+                "Filter": "Bincika abubuwan sha&#39;awa..."
+            },
+            "SetLivestream": "Manna hanyar haɗi zuwa livestream\/conference na bidiyo"
+        },
+        "EventAlreadyClosed": "An riga an rufe wannan taron",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Ƙara zuwa Kalanda?",
+                "prompt": "Kuna so ku ƙara wannan taron zuwa kalandarku?",
+                "yes": "Ee",
+                "no": "A&#39;a"
+            },
+            "dialog": {
+                "Title": "Ƙara Event zuwa Kalandarku"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Samfura",
+        "NewAvailability": {
+            "Title": "Sabon Samuwar",
+            "SaveAvailability": "Ajiye Samuwar",
+            "SelectTemplate": "Da fatan za a zaɓi Sabis",
+            "SelectLocation": "Da fatan za a zaɓi Wuri",
+            "SelectArea": "Da fatan za a zaɓi Wuri",
+            "Type": "Nau&#39;in",
+            "Weekly": "mako-mako",
+            "RecurringStartDate": "Ranar farawa mai maimaitawa",
+            "EndDate": "Kwanan Ƙarshen",
+            "SelectTime": "Sarrafa Ramin Lokaci",
+            "SelectTimeSlot": "Zaɓi wurin lokaci",
+            "SelectTimeSlots": "Zaɓi ramukan lokacin da ake so",
+            "PeopleMin": "Ƙananan baƙi",
+            "PeopleMax": "Maziyartan baƙi",
+            "PeopleLabels": "An yarda da lakabi",
+            "Next": "Na gaba",
+            "Back": "Baya"
+        },
+        "EditAvailability": "Gyara Samuwar",
+        "SetVisitors": "Saita Baƙi",
+        "Price": "Farashin",
+        "SelectAction": "Da fatan za a zaɓi aiki",
+        "OpenProfile": "Bude bayanin martaba",
+        "RemoveStaff": "Cire ma&#39;aikata",
+        "PleaseSelectTimeSlots": "Da fatan za a zaɓi ramukan lokaci",
+        "ExceptionOccurred": "Banda ya faru",
+        "NotEnoughCreditsToParticipateEvents": "Babu isassun ƙididdigewa don shiga abubuwan {{eventsAmount}}. Kuna buƙatar ƙididdiga {{needCredits}} Kuna so ku saya?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Ranar farawa",
+            "endDate": "Ƙarshen kwanan wata",
+            "justOnce": "Sau ɗaya kawai",
+            "justOnceWeekly": "A wannan makon kawai",
+            "justOnceMonthly": "Wannan watan kawai",
+            "recurring": "Maimaituwa"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Taron kyauta",
+            "optional": "Gudunmawar zaɓi",
+            "required": "Biyan da ake buƙata"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Gudunmawar zaɓi",
+            "required": "Biyan da ake buƙata",
+            "paid": "biya"
+        },
+        "confirmationDialog": {
+            "title": "Tabbatar da biyan kuɗi",
+            "content": "Wannan taron yana da gudunmawar zaɓi na {{amount}}.",
+            "button": "Taimakawa"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} har yanzu bai shiga cikin taron ba. Kuna so ku ƙara su azaman ɗan takara?",
+        "userNotFound": "Ba a samo mai amfani ba",
+        "confirmYes": "Ee",
+        "confirmNo": "A&#39;a"
+    },
+    "notifications": {
+        "EventActivityIn": "Ayyukan abubuwan da suka faru a {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "An canza dokoki masu maimaitawa don taron {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "sarrafa biyan kuɗin imel ɗin ku",
+        "IfUnsubscribe": "Idan kuna son cirewa",
+        "ClickHereToVisitEvent": "Da fatan za a danna nan don ziyartar taron",
+        "Calendars\/reminder": "Lamarin &quot;{999}}&quot; zai fara a cikin {{{call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Cika Wannan Rubutun",
+        "fileLabel": "Loda Marubutan Labarai:",
+        "importOptions": "Zabuka",
+        "importProgress": "Ci gaba",
+        "sampleCSV": "Zazzage Misalin CSV",
+        "joinEventLabel": "Haɗa masu amfani zuwa taron bazuwar",
+        "smsText": "Hey, yanzu na aiko muku hanyar haɗi zuwa {{communityName}}. Da fatan za a duba.",
+        "emailSubject": "Kawai aika maka hanyar haɗi",
+        "emailBody": "Hey, na aika maka gayyata zuwa {{communityName}}. Da fatan za a duba.",
+        "fileNotFound": "Yi haƙuri, ba a sami fayil ɗin CSV ba.",
+        "fileEmpty": "Yi haƙuri, fayil ɗin CSV fanko ne.",
+        "fieldNotFound": "Ba a samo filin da ake buƙata &quot;{999}}&quot; ba",
+        "userIdNotFound": "akwai mai amfani amma id fanko",
+        "activateUsers": "aika saƙon kunnawa ga masu amfani?",
+        "taskStreamInvalid": "rafin aiki mara inganci",
+        "instructionsEmpty": "umarnin rafin aiki fanko",
+        "interestsEmpty": "ba zai iya samun sha&#39;awa ba",
+        "interestAbsent": "sha&#39;awa {{1}} ba a samu ba",
+        "complete": "Cikakkun",
+        "errorLine": "layi {{1}}",
+        "errorsTitle": "Kurakurai sun faru",
+        "communityUsers": "Wannan jerin al&#39;umma ne"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Yana wakiltar taron da mutane za su iya shiga ciki",
+            "displayType": "Lamarin"
+        },
+        "Calendars\/recurring": {
+            "description": "An yi amfani da shi don alaƙar rafukan da ake nufi da maimaita lokaci-lokaci",
+            "displayType": "Lamarin Maimaitawa"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Ƙara Ramin",
+        "StartTime": "Lokacin Farawa",
+        "EndTime": "Karshen Lokaci",
+        "Save": "Ajiye",
+        "AddTimeSlot": "Ƙara Lokaci Ramin",
+        "CopyFromDay": "Kwafi daga rana",
+        "Nearest": "Mafi kusa",
+        "Today": "Yau",
+        "Tomorrow": "Gobe",
+        "AfterTomorrow": "Bayan gobe"
+    }
+}

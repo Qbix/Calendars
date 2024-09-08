@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "Ion",
+        "Feb": "Chwef",
+        "Mar": "Mar",
+        "Apr": "Ebr",
+        "May": "Mai",
+        "Jun": "Meh",
+        "Jul": "Gorff",
+        "Aug": "Awst",
+        "Sep": "Medi",
+        "Oct": "Hyd",
+        "Nov": "Tach",
+        "Dec": "Rhag"
+    },
+    "monthsLong": {
+        "Jan": "Ionawr",
+        "Feb": "Chwefror",
+        "Mar": "Mawrth",
+        "Apr": "Ebrill",
+        "May": "Mai",
+        "Jun": "Mehefin",
+        "Jul": "Gorffennaf",
+        "Aug": "Awst",
+        "Sep": "Medi",
+        "Oct": "Hydref",
+        "Nov": "Tachwedd",
+        "Dec": "Rhagfyr"
+    },
+    "weekdays": {
+        "Sun": "Haul",
+        "Mon": "Mon",
+        "Tue": "Maw",
+        "Wed": "Merch",
+        "Thu": "Iau",
+        "Fri": "Gwe",
+        "Sat": "Sad"
+    },
+    "weekdaysLong": {
+        "Sun": "Sul",
+        "Mon": "Dydd Llun",
+        "Tue": "Dydd Mawrth",
+        "Wed": "Mercher",
+        "Thu": "Dydd Iau",
+        "Fri": "Gwener",
+        "Sat": "dydd Sadwrn"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Cynllunio Digwyddiad Newydd"
+        },
+        "tool": {
+            "HostedBy": "Wedi&#39;i westeio gan {{name}}",
+            "Name": "Enw",
+            "AreYouIn": "Ydych chi i mewn?",
+            "Yes": "Oes",
+            "No": "Nac ydw",
+            "Ok": "Iawn",
+            "Cancel": "Canslo",
+            "Maybe": "Efallai",
+            "Conversation": "Sgwrs",
+            "Promote": "Hyrwyddwch y digwyddiad hwn",
+            "Reminders": "Atgofion",
+            "RemindersLabel": "Rwyf am gael gwybod am ddigwyddiad yn:",
+            "MoreInfo": "Mwy o wybodaeth",
+            "Registration": "Cofrestru",
+            "SetReminders": "Gosodwch nodiadau atgoffa",
+            "ReservationFee": "Ffi Archebu",
+            "AddParticipants": "Ychwanegu Cyfranogwyr",
+            "ManageReservation": "Rheoli Archebu",
+            "UpdateFutureReservations": "Ydych chi hefyd am ddiweddaru pob archeb yn y dyfodol yn yr un ffordd?",
+            "RecurringAdmin": "Gosodiadau Cylchol",
+            "MakeReservation": "Archebwch",
+            "StartLiveStream": "Cliciwch i Live Stream",
+            "LiveStreamEnded": "Mae llif byw wedi dod i ben",
+            "ClickToViewRecording": "cliciwch i weld y recordiad",
+            "Checkin": "Sganiwch godau mynychwyr",
+            "Myqr": "Gwirio Mewn",
+            "CloseEvent": {
+                "button": "Canslo Digwyddiad",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Ydych chi&#39;n siŵr eich bod am ganslo&#39;r digwyddiad hwn?",
+                        "Participant": "Mae 1 cyfranogwr yn y digwyddiad hwn",
+                        "Participants": "Mae {{count}} yn cymryd rhan yn y digwyddiad hwn",
+                        "Recurring": "Mae&#39;r digwyddiad hwn yn gylchol. Ydych chi hefyd am ganslo ei holl achosion yn y dyfodol hefyd?"
+                    },
+                    "trip": {
+                        "Cancel": "Ydych chi am ganslo eich taith {{tripDirection}} y digwyddiad hwn hefyd?",
+                        "Passengers": "Mae {{passengerCount}} o deithwyr yn dibynnu arnoch chi.",
+                        "Title": "Trip Cau"
+                    },
+                    "directions": {
+                        "TO": "I",
+                        "FROM": "RHAG",
+                        "to": "i",
+                        "from": "rhag"
+                    }
+                }
+            },
+            "Calendar": "Calendr",
+            "Interests": "Diddordebau",
+            "Directions": "Cyfarwyddiadau",
+            "TitleOfEvent": "Teitl y digwyddiad:",
+            "OpenTo": "Agored i",
+            "GoingTo": "bydd yn",
+            "NotGoingTo": "na fydd yn",
+            "MaybeGoingTo": "efallai y bydd yn",
+            "AdminDontPay": "Nid oes angen i weinyddol dalu",
+            "PublisherDontPay": "Nid oes angen i gyhoeddwr dalu",
+            "EmptyList": "Rhestr wag",
+            "NeedToPayCredits": "Angen talu: <span>{{amount}} credyd<\/span>",
+            "PleaseJoinParticipants": "Ymunwch â {{participant}}",
+            "YouReservingPlace": "Byddwch yn cadw eich lle.",
+            "SelectIncludesToAdd": "Dewiswch un neu fwy {{TypeDisplayPlural}} i&#39;w hychwanegu:",
+            "YouHaveNotRegisteredAnyIncluded": "Nid ydych wedi cofrestru unrhyw {{TypeDisplayPlural}} eto",
+            "Proceed": "Ymlaen",
+            "MakeChanges": "Arbed Fy Newidiadau",
+            "CancelReservation": "Canslo&#39;r archeb gyfan",
+            "Total": "Cyfanswm",
+            "RequiredRelatedParticipants": "Mae&#39;r digwyddiad hwn angen cyfranogwyr: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Golygwch argaeledd &quot;{{title}}&quot; i ddiweddaru gosodiadau cylchol",
+            "Presentation": "Cyflwyniad",
+            "YouAreNotParticipated": "Nid ydych yn cymryd rhan yn y digwyddiad",
+            "LiveStreamStarted": "Mae llif byw wedi dechrau",
+            "WebRTCStarted": "Dechreuodd telegynhadledd",
+            "WebRTCEnded": "Daeth telegynhadledd i ben"
+        },
+        "composer": {
+            "SetLocation": "Gosod Fy Lleoliad",
+            "SetInfoLink": "Gosod Dolen i wybodaeth ychwanegol",
+            "ChooseAvailability": "Dewiswch y Gwasanaeth sydd ar Gael",
+            "ChooseActivity": "Dewiswch Weithgaredd",
+            "ChoosePublisher": "Dewiswch Cyhoeddwr",
+            "Day": "Dydd",
+            "Starting": "Yn dechrau",
+            "Duration": "Hyd",
+            "Hour": "Awr",
+            "Hours": "Oriau",
+            "Minutes": "Munudau",
+            "Ending": "Yn dod i ben",
+            "People": "Pobl",
+            "Share": "Rhannu",
+            "Continue": "Parhau",
+            "Recurring": "Cylchol",
+            "RecurringTitle": "Dyddiau Cylchol",
+            "Daily": "Dyddiol",
+            "Weekly": "Wythnosol",
+            "Monthly": "Yn fisol",
+            "SelectLocation": "Dewiswch leoliad yn gyntaf.",
+            "eventType": "Math o Ddigwyddiad",
+            "EditTitle": "Meddyliwch am deitl diddorol...",
+            "SetTitle": "Gosodwch deitl y digwyddiad",
+            "ScheduleOnlineConference": "Trefnu Cynhadledd Ar-lein",
+            "SOCDescription": "Diffiniwch amser dechrau a gorffen y gynhadledd. Bydd pawb sy&#39;n ymweld â&#39;r digwyddiad yn ystod y cyfnod hwn yn cysylltu&#39;n awtomatig â chynhadledd ar-lein.",
+            "EndDate": "Diwedd",
+            "location": {
+                "Title": "Gosod Eich Lleoliad"
+            },
+            "interest": {
+                "Title": "Dewiswch Weithgaredd",
+                "Filter": "Chwilio diddordebau..."
+            },
+            "SetLivestream": "Gludo dolen i lif byw \/ cynhadledd fideo",
+            "Locally": "yn lleol",
+            "EventInfoLink": "Dolen Gwybodaeth Digwyddiad",
+            "TicketPurchaseLink": "Dolen Prynu Tocyn"
+        },
+        "EventAlreadyClosed": "Mae&#39;r digwyddiad hwn eisoes wedi cau",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Ychwanegu at y Calendr?",
+                "prompt": "Hoffech chi ychwanegu&#39;r digwyddiad hwn at eich calendr?",
+                "yes": "Oes",
+                "no": "Nac ydw"
+            },
+            "dialog": {
+                "Title": "Ychwanegu Digwyddiad i&#39;ch Calendr"
+            }
+        },
+        "ErrorLeaveEndedEvent": "Mae&#39;n ddrwg gennym, ond ni allwch adael digwyddiad a ddaeth i ben"
+    },
+    "availabilities": {
+        "Title": "Argaeledd",
+        "NewAvailability": {
+            "Title": "Argaeledd Newydd",
+            "SaveAvailability": "Arbed Argaeledd",
+            "SelectTemplate": "Dewiswch Gwasanaeth",
+            "SelectLocation": "Dewiswch Lleoliad",
+            "SelectArea": "Dewiswch Ardal",
+            "Type": "Math",
+            "Weekly": "Wythnosol",
+            "RecurringStartDate": "Dyddiad Cychwyn Cylchol",
+            "EndDate": "Dyddiad Gorffen",
+            "SelectTime": "Rheoli Slotiau Amser",
+            "SelectTimeSlot": "Dewiswch slot amser",
+            "SelectTimeSlots": "Dewiswch slotiau amser dymunol",
+            "PeopleMin": "Lleiafswm ymwelwyr",
+            "PeopleMax": "Uchafswm ymwelwyr",
+            "PeopleLabels": "Rolau a ganiateir",
+            "Next": "Nesaf",
+            "Back": "Yn ol",
+            "RecurringEndDate": "Dyddiad Gorffen Cylchol",
+            "ScheduleOnlineConference": "Trefnu Telegynhadledd",
+            "SetLivestream": "Gludo dolen i lif byw \/ cynhadledd fideo",
+            "SelectTimeZone": "Dewiswch Parth Amser"
+        },
+        "EditAvailability": "Golygu Argaeledd",
+        "SetVisitors": "Ymwelwyr Gosod",
+        "Price": "Pris",
+        "SelectAction": "Dewiswch weithred",
+        "OpenProfile": "Agor proffil",
+        "RemoveStaff": "Cael gwared ar staff",
+        "PleaseSelectTimeSlots": "Dewiswch slotiau amser",
+        "ExceptionOccurred": "Digwyddodd eithriad",
+        "NotEnoughCreditsToParticipateEvents": "Dim digon o gredydau i gymryd rhan mewn {{eventsAmount}} o ddigwyddiadau. Mae angen {{needCredits}} o gredydau arnoch. Eisiau prynu?",
+        "LiveStream": "Llif byw",
+        "InviteStaff": "Gwahodd staff"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Dyddiad cychwyn",
+            "endDate": "Dyddiad Gorffen",
+            "justOnce": "Dim ond unwaith",
+            "justOnceWeekly": "Yr wythnos hon yn unig",
+            "justOnceMonthly": "Y mis hwn yn unig",
+            "recurring": "Cylchol"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Digwyddiad am ddim",
+            "optional": "Cyfraniad dewisol",
+            "required": "Taliad gofynnol"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Cyfraniad dewisol",
+            "required": "Taliad gofynnol",
+            "paid": "taledig"
+        },
+        "confirmationDialog": {
+            "title": "Cadarnhad taliad",
+            "content": "Mae gan y digwyddiad hwn gyfraniad dewisol o {{amount}}.",
+            "button": "Cyfrannu"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "Nid yw {{1}} yn rhan o&#39;r digwyddiad eto. Ydych chi am eu hychwanegu fel cyfranogwr?",
+        "userNotFound": "Defnyddiwr heb ei ganfod",
+        "confirmYes": "Oes",
+        "confirmNo": "Nac ydw"
+    },
+    "notifications": {
+        "EventActivityIn": "Gweithgarwch digwyddiad yn {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Newidiwyd rheolau cylchol ar gyfer digwyddiad {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "rheoli eich tanysgrifiadau e-bost",
+        "IfUnsubscribe": "Os ydych am ddad-danysgrifio",
+        "ClickHereToVisitEvent": "Cliciwch yma i ymweld â digwyddiad",
+        "Calendars\/reminder": "Bydd digwyddiad &quot;{{{call 'message.getInstruction' 'name'}}&quot; yn cychwyn yn {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Dechreuodd telegynhadledd",
+            "Ended": "Daeth telegynhadledd i ben"
+        },
+        "livestream": {
+            "Started": "Dechreuodd llif byw",
+            "Ended": "Daeth llif byw i ben",
+            "ClickToView": "Edrychwch arno yma."
+        }
+    },
+    "import": {
+        "linkTitle": "Llenwch y Daenlen hon",
+        "fileLabel": "Uwchlwytho Taenlen:",
+        "importOptions": "Opsiynau",
+        "importProgress": "Cynnydd",
+        "sampleCSV": "Lawrlwythwch Sampl CSV",
+        "joinEventLabel": "Ymunwch â defnyddwyr i ddigwyddiad ar hap",
+        "smsText": "Hei, dwi newydd anfon dolen i {{communityName}} atoch. Gwiriwch ef allan.",
+        "emailSubject": "Newydd anfon dolen atoch",
+        "emailBody": "Hei, dwi newydd anfon gwahoddiad i {{communityName}} atoch. Gwiriwch ef allan.",
+        "fileNotFound": "Mae&#39;n ddrwg gennym, ni chanfuwyd y ffeil CSV.",
+        "fileEmpty": "Mae&#39;n ddrwg gennym, mae&#39;r ffeil CSV yn wag.",
+        "fieldNotFound": "Ni chanfuwyd maes gofynnol &quot;{{1}}&quot;.",
+        "userIdNotFound": "defnyddiwr yn bodoli ond id yn wag",
+        "activateUsers": "anfon neges actifadu at ddefnyddwyr?",
+        "taskStreamInvalid": "ffrwd tasg yn annilys",
+        "instructionsEmpty": "cyfarwyddiadau ffrwd tasg yn wag",
+        "interestsEmpty": "methu cael diddordebau",
+        "interestAbsent": "llog {{1}} heb ei ganfod",
+        "complete": "Cyflawn",
+        "errorLine": "llinell {{1}}",
+        "errorsTitle": "Digwyddodd gwallau",
+        "communityUsers": "Dyma restr cymunedau",
+        "toMainCommunityToo": "yn ymwneud â phrif gymuned hefyd",
+        "ChooseFile": "dewis ffeil"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Yn cynrychioli digwyddiad y gall pobl gymryd rhan ynddo",
+            "displayType": "Digwyddiad"
+        },
+        "Calendars\/recurring": {
+            "description": "Fe&#39;i defnyddir ar gyfer ffrydiau cysylltiedig sydd i fod i ddigwydd eto o bryd i&#39;w gilydd",
+            "displayType": "Digwyddiad Cylchol"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Ychwanegu Slot",
+        "StartTime": "Amser Dechrau",
+        "EndTime": "Amser Gorffen",
+        "Save": "Arbed",
+        "AddTimeSlot": "Ychwanegu Slot Amser",
+        "CopyFromDay": "Copi o&#39;r dydd",
+        "Nearest": "Agosaf",
+        "Today": "Heddiw",
+        "Tomorrow": "Yfory",
+        "AfterTomorrow": "Ar ôl yfory"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Tanysgrifio i Calendar",
+        "copyLinkBelow": "Copïwch y ddolen Isod",
+        "goTo": "Mynd i:",
+        "pasteCopiedTo": "Gludo dolen wedi&#39;i chopïo i&#39;r maes &quot;URL y calendr&quot;.",
+        "clickAddCalendar": "Cliciwch y botwm &quot;Ychwanegu calendr&quot;.",
+        "copyLink": "Copïo Dolen",
+        "tapToCopy": "Tapiwch y botwm isod i gopïo&#39;r ddolen i&#39;ch clipfwrdd",
+        "linkCopied": "Dolen wedi&#39;i Copïo",
+        "step2": "Dolen wedi&#39;i Copïo. Rydyn ni&#39;n ymwneud ag agor Google Calendar. Bydd angen i chi gludo&#39;r ddolen i&#39;r blwch testun, cliciwch &quot;Ychwanegu calendr&quot;, a chau&#39;r tab (gweler y llun isod)",
+        "calendarAppPreferences": "Agorwch y Dewisiadau yn yr App Calendr ar eich Mac, a gosodwch Ap Calendr Diofyn i fod fel y dangosir isod.",
+        "thenCloseDialog": "Yna caewch y dialog hwn i danysgrifio i&#39;ch calendr!",
+        "success": "Llwyddwyd i gysoni&#39;r calendr"
+    }
+}

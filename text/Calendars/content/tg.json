@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "январ",
+        "Feb": "феврал",
+        "Mar": "март",
+        "Apr": "Апр",
+        "May": "май",
+        "Jun": "июн",
+        "Jul": "июл",
+        "Aug": "август",
+        "Sep": "сентябр",
+        "Oct": "октябр",
+        "Nov": "ноябр",
+        "Dec": "декабр"
+    },
+    "monthsLong": {
+        "Jan": "январ",
+        "Feb": "феврал",
+        "Mar": "март",
+        "Apr": "апрел",
+        "May": "май",
+        "Jun": "июн",
+        "Jul": "июл",
+        "Aug": "август",
+        "Sep": "сентябр",
+        "Oct": "октябр",
+        "Nov": "ноябр",
+        "Dec": "декабр"
+    },
+    "weekdays": {
+        "Sun": "Офтоб",
+        "Mon": "Дш",
+        "Tue": "сешанбе",
+        "Wed": "Чор",
+        "Thu": "Пш",
+        "Fri": "Ҷм",
+        "Sat": "Шб"
+    },
+    "weekdaysLong": {
+        "Sun": "якшанбе",
+        "Mon": "Душанбе",
+        "Tue": "сешанбе",
+        "Wed": "Чоршанбе",
+        "Thu": "Панҷшанбе",
+        "Fri": "Ҷумъа",
+        "Sat": "шанбе"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Нақшаи чорабинии нав"
+        },
+        "tool": {
+            "HostedBy": "Мизбонӣ аз ҷониби {{name}}",
+            "Name": "Ном",
+            "AreYouIn": "Шумо дар?",
+            "Yes": "Бале",
+            "No": "Не",
+            "Ok": "Хуб",
+            "Cancel": "Бекор кардан",
+            "Maybe": "Мумкин ки",
+            "Conversation": "Сухбат",
+            "Promote": "Тарғиби ин чорабинӣ",
+            "Reminders": "Ёдраскуниҳо",
+            "RemindersLabel": "Ман мехоҳам, ки аз рӯйдод дар:",
+            "MoreInfo": "Маълумоти бештар",
+            "Registration": "Бақайдгирӣ",
+            "SetReminders": "Лутфан ёдраскуниҳо насб кунед",
+            "ReservationFee": "Пардохти фармоиш",
+            "AddParticipants": "Иштирокчиёнро илова кунед",
+            "ManageReservation": "Идоракунии фармоиш",
+            "UpdateFutureReservations": "Оё шумо низ мехоҳед, ки ҳамаи фармоишҳои ояндаро ҳамин тавр навсозӣ кунед?",
+            "RecurringAdmin": "Танзимоти такрорӣ",
+            "MakeReservation": "Захира кунед",
+            "StartLiveStream": "Барои пахши мустақим пахш кунед",
+            "LiveStreamEnded": "Ҷараёни мустақим ба охир расид",
+            "ClickToViewRecording": "барои дидани сабт клик кунед",
+            "Checkin": "Рамзҳои иштирокчиёнро скан кунед",
+            "Myqr": "Тафтиш кадан",
+            "CloseEvent": {
+                "button": "Ҳодисаро бекор кунед",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Шумо мутмаин ҳастед, ки мехоҳед ин чорабиниро бекор кунед?",
+                        "Participant": "Дар ин чорабинӣ 1 нафар иштирок мекунанд",
+                        "Participants": "Дар ин чорабинӣ {{count}} нафар иштирок доранд",
+                        "Recurring": "Ин ҳодиса такрор мешавад. Оё шумо мехоҳед, ки ҳамаи мисолҳои ояндаи онро низ бекор кунед?"
+                    },
+                    "trip": {
+                        "Cancel": "Оё шумо мехоҳед, ки ин чорабинӣ {{tripDirection}} сафари худро низ бекор кунед?",
+                        "Passengers": "{{passengerCount}} мусофир ба шумо такя мекунанд.",
+                        "Title": "Бастани Сафар"
+                    },
+                    "directions": {
+                        "TO": "БА",
+                        "FROM": "АЗ",
+                        "to": "ба",
+                        "from": "аз"
+                    }
+                }
+            },
+            "Calendar": "Тақвим",
+            "Interests": "Манфиатҳо",
+            "Directions": "Роҳнамо",
+            "TitleOfEvent": "Сарлавҳаи чорабинӣ:",
+            "OpenTo": "Кушода ба",
+            "GoingTo": "дар хоҳад буд",
+            "NotGoingTo": "нахоҳад буд",
+            "MaybeGoingTo": "шояд дар",
+            "AdminDontPay": "Админ лозим нест, ки пардохт кунад",
+            "PublisherDontPay": "Ношир набояд пардохт кунад",
+            "EmptyList": "Рӯйхати холӣ",
+            "NeedToPayCredits": "Пардохт кардан лозим аст: <span>{{amount}} кредит<\/span>",
+            "PleaseJoinParticipants": "Лутфан ҳамроҳ шавед {{participant}}",
+            "YouReservingPlace": "Шумо ҷои худро банд мекунед.",
+            "SelectIncludesToAdd": "Барои илова кардан як ё якчанд {{TypeDisplayPlural}}-ро интихоб кунед:",
+            "YouHaveNotRegisteredAnyIncluded": "Шумо то ҳол ягон {{TypeDisplayPlural}}-ро сабт накардаед",
+            "Proceed": "Давом диҳед",
+            "MakeChanges": "Тағйироти маро захира кунед",
+            "CancelReservation": "Тамоми фармоишро бекор кунед",
+            "Total": "Ҳамагӣ",
+            "RequiredRelatedParticipants": "Ин чорабинӣ аз иштирокчиён талаб мекунад: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Лутфан дастрасии &quot;{{title}}&quot; -ро таҳрир кунед, то танзимоти такроршавандаро навсозӣ кунед"
+        },
+        "composer": {
+            "SetLocation": "Ҷойгиршавии манро таъин кунед",
+            "SetInfoLink": "Истинодро ба маълумоти иловагӣ насб кунед",
+            "ChooseAvailability": "Хидмати дастрасро интихоб кунед",
+            "ChooseActivity": "Фаъолиятро интихоб кунед",
+            "ChoosePublisher": "Нашриётро интихоб кунед",
+            "Day": "рӯз",
+            "Starting": "Оғоз",
+            "Duration": "Давомнокӣ",
+            "Hour": "Соат",
+            "Hours": "Соатхо",
+            "Minutes": "Дакикахо",
+            "Ending": "Анҷом",
+            "People": "Одамон",
+            "Share": "Мубодила",
+            "Continue": "Давом додан",
+            "Recurring": "Такроршаванда",
+            "RecurringTitle": "Рӯзҳои такроршаванда",
+            "Daily": "Ҳар рӯз",
+            "Weekly": "Ҳар ҳафта",
+            "Monthly": "Ҳармоҳа",
+            "SelectLocation": "Лутфан аввал маконеро интихоб кунед.",
+            "eventType": "Навъи ҳодиса",
+            "EditTitle": "Як унвони ҷолибро фикр кунед ...",
+            "SetTitle": "Лутфан унвони ҳодисаро таъин кунед",
+            "ScheduleOnlineConference": "Конфронси онлайнро ба нақша гиред",
+            "SOCDescription": "Лутфан вақти оғоз ва анҷоми конфронсро муайян кунед. Ҳар як шахсе, ки дар ин муддат ба чорабинӣ ташриф меорад, ба таври худкор ба конфронси онлайн пайваст мешавад.",
+            "EndDate": "Поён",
+            "location": {
+                "Title": "Ҷойгиршавии худро таъин кунед"
+            },
+            "interest": {
+                "Title": "Фаъолиятро интихоб кунед",
+                "Filter": "Ҷустуҷӯи манфиатҳои ..."
+            },
+            "SetLivestream": "Истинодро ба пахши мустақим \/ видеоконфронс гузоред"
+        },
+        "EventAlreadyClosed": "Ин чорабинӣ аллакай баста шуд",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Ба тақвим илова кунед?",
+                "prompt": "Оё шумо мехоҳед ин чорабинӣ ба тақвими худ илова кунед?",
+                "yes": "Бале",
+                "no": "Не"
+            },
+            "dialog": {
+                "Title": "Ба тақвими худ чорабинӣ илова кунед"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Мавҷудиятҳо",
+        "NewAvailability": {
+            "Title": "Дастрасии нав",
+            "SaveAvailability": "Мавҷудиятро захира кунед",
+            "SelectTemplate": "Лутфан Хидматро интихоб кунед",
+            "SelectLocation": "Лутфан Ҷойгирро интихоб кунед",
+            "SelectArea": "Лутфан Минтақаро интихоб кунед",
+            "Type": "Навъи",
+            "Weekly": "Ҳар ҳафта",
+            "RecurringStartDate": "Санаи оғози такроршаванда",
+            "EndDate": "Санаи анҷом",
+            "SelectTime": "Ҷойҳои вақтро идора кунед",
+            "SelectTimeSlot": "Фосилаи вақтро интихоб кунед",
+            "SelectTimeSlots": "Фосилаҳои вақти дилхоҳро интихоб кунед",
+            "PeopleMin": "Ҳадди ақали меҳмонон",
+            "PeopleMax": "Шумораи максималии меҳмонон",
+            "PeopleLabels": "Тамғакоғазҳо иҷозат дода шудаанд",
+            "Next": "Баъдӣ",
+            "Back": "Бозгашт"
+        },
+        "EditAvailability": "Таҳрири мавҷудият",
+        "SetVisitors": "Муайян кардани меҳмонон",
+        "Price": "Нарх",
+        "SelectAction": "Лутфан амалро интихоб кунед",
+        "OpenProfile": "Профилро кушоед",
+        "RemoveStaff": "Кормандонро хориҷ кунед",
+        "PleaseSelectTimeSlots": "Лутфан фосилаҳои вақтро интихоб кунед",
+        "ExceptionOccurred": "Истисно ба амал омад",
+        "NotEnoughCreditsToParticipateEvents": "Барои иштирок дар чорабиниҳои {{eventsAmount}} кредити кофӣ нест. Ба шумо {{needCredits}} кредит лозим аст. Мехоҳед харед?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Саршавии Сана",
+            "endDate": "Санаи анҷом",
+            "justOnce": "Танҳо як маротиба",
+            "justOnceWeekly": "Танҳо ин ҳафта",
+            "justOnceMonthly": "Фақат ҳамин моҳ",
+            "recurring": "Такроршаванда"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Чорабинии ройгон",
+            "optional": "Саҳми ихтиёрӣ",
+            "required": "Пардохти зарурӣ"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Саҳми ихтиёрӣ",
+            "required": "Пардохти зарурӣ",
+            "paid": "пардохт"
+        },
+        "confirmationDialog": {
+            "title": "Тасдиқи пардохт",
+            "content": "Ин чорабинӣ саҳми ихтиёрии {{amount}} дорад.",
+            "button": "Саҳм гузоред"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ҳанӯз қисми ин чорабинӣ нест. Оё шумо мехоҳед онҳоро ҳамчун иштирокчӣ илова кунед?",
+        "userNotFound": "Корбар ёфт нашуд",
+        "confirmYes": "Бале",
+        "confirmNo": "Не"
+    },
+    "notifications": {
+        "EventActivityIn": "Фаъолияти чорабинӣ дар {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Қоидаҳои такроршаванда барои чорабинии {{{call 'message.getInstruction' 'eventTitle'}}} тағир ёфт",
+        "ManageEmailSubscriptions": "обунаҳои почтаи электронии худро идора кунед",
+        "IfUnsubscribe": "Агар шумо хоҳед, ки обунаро қатъ кунед",
+        "ClickHereToVisitEvent": "Лутфан ин ҷо клик кунед барои дидани чорабинӣ",
+        "Calendars\/reminder": "Чорабинии &quot;{{{call 'message.getInstruction' 'name'}}&quot; дар {{&call 'message.getInstruction' 'time'}}} оғоз мешавад"
+    },
+    "import": {
+        "linkTitle": "Ин ҷадвали электрониро пур кунед",
+        "fileLabel": "Ҷадвали электрониро бор кунед:",
+        "importOptions": "Имконот",
+        "importProgress": "Пешрафт",
+        "sampleCSV": "Намунаи CSV-ро зеркашӣ кунед",
+        "joinEventLabel": "Ба корбарон ба чорабинии тасодуфӣ ҳамроҳ шавед",
+        "smsText": "Ҳей, ман нав ба шумо истиноди {{communityName}} фиристодам. Лутфан онро санҷед.",
+        "emailSubject": "Танҳо ба шумо истинод фиристод",
+        "emailBody": "Ҳей, ман навакак ба шумо ба {{communityName}} даъватнома фиристодам. Лутфан онро санҷед.",
+        "fileNotFound": "Бубахшед, файли CSV ёфт нашуд.",
+        "fileEmpty": "Бубахшед, файли CSV холӣ аст.",
+        "fieldNotFound": "Майдони ҳатмӣ &quot;{{1}}&quot; ёфт нашуд",
+        "userIdNotFound": "корбар вуҷуд дорад, аммо ID холӣ аст",
+        "activateUsers": "паёми фаъолсозӣ ба корбарон ирсол кунед?",
+        "taskStreamInvalid": "ҷараёни вазифа беэътибор аст",
+        "instructionsEmpty": "дастурҳои ҷараёни вазифа холӣ",
+        "interestsEmpty": "манфиат гирифта наметавонад",
+        "interestAbsent": "фоиз {{1}} ёфт нашуд",
+        "complete": "Анҷом",
+        "errorLine": "сатр {{1}}",
+        "errorsTitle": "Хатогиҳо рӯй доданд",
+        "communityUsers": "Ин рӯйхати ҷамоатҳо аст"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Як чорабинӣ, ки одамон метавонанд дар он иштирок кунанд, намояндагӣ мекунад",
+            "displayType": "Ҳодиса"
+        },
+        "Calendars\/recurring": {
+            "description": "Барои алоқаманд кардани ҷараёнҳое истифода мешавад, ки бояд давра ба давра такрор шаванд",
+            "displayType": "Ҳодисаи такроршаванда"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Иловаи слот",
+        "StartTime": "Вақти оғоз",
+        "EndTime": "Вақти анҷом",
+        "Save": "Захира кунед",
+        "AddTimeSlot": "Иловаи вақт",
+        "CopyFromDay": "Аз рӯз нусхабардорӣ кунед",
+        "Nearest": "Наздиктарин",
+        "Today": "Имруз",
+        "Tomorrow": "Пагох",
+        "AfterTomorrow": "Пас аз пагох"
+    }
+}

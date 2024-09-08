@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "feb",
+        "Mar": "Mar",
+        "Apr": "Apr",
+        "May": "Meie",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Aug",
+        "Sep": "Sep",
+        "Oct": "okt",
+        "Nov": "Nov",
+        "Dec": "Dec"
+    },
+    "monthsLong": {
+        "Jan": "jannewaris",
+        "Feb": "febrewaris",
+        "Mar": "maart",
+        "Apr": "april",
+        "May": "Meie",
+        "Jun": "juny",
+        "Jul": "july",
+        "Aug": "augustus",
+        "Sep": "spetimber",
+        "Oct": "oktober",
+        "Nov": "novimber",
+        "Dec": "desimber"
+    },
+    "weekdays": {
+        "Sun": "Sinne",
+        "Mon": "Mon",
+        "Tue": "di",
+        "Wed": "Wo",
+        "Thu": "do",
+        "Fri": "Fri",
+        "Sat": "za"
+    },
+    "weekdaysLong": {
+        "Sun": "snein",
+        "Mon": "moandei",
+        "Tue": "tiisdei",
+        "Wed": "woansdei",
+        "Thu": "tongersdei",
+        "Fri": "freed",
+        "Sat": "sneon"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Plan nij evenemint"
+        },
+        "tool": {
+            "HostedBy": "Hosted by {{name}}",
+            "Name": "Namme",
+            "AreYouIn": "Dochst mei?",
+            "Yes": "ja",
+            "No": "Nee",
+            "Ok": "Ok",
+            "Cancel": "Ofbrekke",
+            "Maybe": "Miskien",
+            "Conversation": "Petear",
+            "Promote": "Promovearje dit evenemint",
+            "Reminders": "Herinneringen",
+            "RemindersLabel": "Ik wol op &#39;e hichte wurde fan in evenemint yn:",
+            "MoreInfo": "Mear ynformaasje",
+            "Registration": "Ynskriuwing",
+            "SetReminders": "Stel herinneringen yn",
+            "ReservationFee": "Reservearring Fee",
+            "AddParticipants": "Dielnimmers tafoegje",
+            "ManageReservation": "Beheare Reservearring",
+            "UpdateFutureReservations": "Wolle jo ek alle takomstige reservearrings op deselde wize bywurkje?",
+            "RecurringAdmin": "Weromkommende ynstellings",
+            "MakeReservation": "Meitsje Reservearje",
+            "StartLiveStream": "Klik om Live Stream",
+            "LiveStreamEnded": "Live stream is einige",
+            "ClickToViewRecording": "klik om opname te besjen",
+            "Checkin": "Scan dielnimmerskoades",
+            "Myqr": "Yntsjekke",
+            "CloseEvent": {
+                "button": "Ofbrekke Event",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Binne jo wis dat jo dit barren ôfbrekke wolle?",
+                        "Participant": "Der is 1 dielnimmer oan dit evenemint",
+                        "Participants": "D&#39;r binne {{count}} dielnimmers oan dit barren",
+                        "Recurring": "Dit evenemint is weromkommend. Wolle jo ek al syn takomstige eksimplaren annulearje?"
+                    },
+                    "trip": {
+                        "Cancel": "Wolle jo jo reis {{tripDirection}} dit barren ek annulearje?",
+                        "Passengers": "D&#39;r binne {{passengerCount}} passazjiers dy&#39;t op jo fertrouwe.",
+                        "Title": "Slút Trip"
+                    },
+                    "directions": {
+                        "TO": "NEI",
+                        "FROM": "FAN",
+                        "to": "nei",
+                        "from": "fan"
+                    }
+                }
+            },
+            "Calendar": "Kalinder",
+            "Interests": "Belangen",
+            "Directions": "Rjochtings",
+            "TitleOfEvent": "Titel fan evenemint:",
+            "OpenTo": "Iepen foar",
+            "GoingTo": "sil by",
+            "NotGoingTo": "sil net by",
+            "MaybeGoingTo": "sil miskien wêze by",
+            "AdminDontPay": "Admin hoecht net te beteljen",
+            "PublisherDontPay": "De útjouwer hoecht net te beteljen",
+            "EmptyList": "Lege list",
+            "NeedToPayCredits": "Moatte betelje: <span>{{amount}} credits<\/span>",
+            "PleaseJoinParticipants": "Doch mei oan {{participant}}",
+            "YouReservingPlace": "Jo sille jo plak reservearje.",
+            "SelectIncludesToAdd": "Selektearje ien of mear {{TypeDisplayPlural}} om ta te foegjen:",
+            "YouHaveNotRegisteredAnyIncluded": "Jo hawwe noch gjin {{TypeDisplayPlural}} registrearre",
+            "Proceed": "Trochgean",
+            "MakeChanges": "Myn wizigingen bewarje",
+            "CancelReservation": "Ofbrekke hiele reservearring",
+            "Total": "Totaal",
+            "RequiredRelatedParticipants": "Dit evenemint fereasket dielnimmers: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Bewurkje asjebleaft beskikberens &quot;{{title}}&quot; om weromkommende ynstellings te aktualisearjen"
+        },
+        "composer": {
+            "SetLocation": "Myn lokaasje ynstelle",
+            "SetInfoLink": "Set Link nei oanfoljende ynformaasje",
+            "ChooseAvailability": "Kies Beskikbere tsjinst",
+            "ChooseActivity": "Kies in aktiviteit",
+            "ChoosePublisher": "Kies Publisher",
+            "Day": "Dei",
+            "Starting": "Starting",
+            "Duration": "Doer",
+            "Hour": "Oere",
+            "Hours": "Oeren",
+            "Minutes": "Minuten",
+            "Ending": "Einde",
+            "People": "Folk",
+            "Share": "Diele",
+            "Continue": "Trochgean",
+            "Recurring": "Weromkommend",
+            "RecurringTitle": "Weromkommende dagen",
+            "Daily": "Deistich",
+            "Weekly": "Wykliks",
+            "Monthly": "Moanne",
+            "SelectLocation": "Selektearje asjebleaft earst in lokaasje.",
+            "eventType": "Event Type",
+            "EditTitle": "Tink oan in nijsgjirrige titel ...",
+            "SetTitle": "Stel de titel fan it evenemint yn",
+            "ScheduleOnlineConference": "Skema online konferinsje",
+            "SOCDescription": "Definiearje asjebleaft konferinsjebegjin- en eintiid. Elke persoan dy&#39;t it evenemint yn dizze perioade besykje sil automatysk ferbine mei online konferinsje.",
+            "EndDate": "Ein",
+            "location": {
+                "Title": "Stel jo lokaasje yn"
+            },
+            "interest": {
+                "Title": "Kies in aktiviteit",
+                "Filter": "Sykje ynteresses ..."
+            },
+            "SetLivestream": "Plak keppeling nei livestream \/ fideokonferinsje"
+        },
+        "EventAlreadyClosed": "Dit evenemint is al ôfsletten",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Tafoegje oan kalinder?",
+                "prompt": "Wolle jo dit barren tafoegje oan jo aginda?",
+                "yes": "ja",
+                "no": "Nee"
+            },
+            "dialog": {
+                "Title": "Foegje evenemint ta oan jo kalinder"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Beskikberens",
+        "NewAvailability": {
+            "Title": "Nije Beskikberens",
+            "SaveAvailability": "Bewarje Beskikberens",
+            "SelectTemplate": "Selektearje asjebleaft Service",
+            "SelectLocation": "Selektearje asjebleaft Lokaasje",
+            "SelectArea": "Selektearje asjebleaft Gebiet",
+            "Type": "Type",
+            "Weekly": "Wykliks",
+            "RecurringStartDate": "Weromkommende startdatum",
+            "EndDate": "Eindatum",
+            "SelectTime": "Tiid Slots beheare",
+            "SelectTimeSlot": "Selektearje in tiid slot",
+            "SelectTimeSlots": "Selektearje winske tiid slots",
+            "PeopleMin": "Minimum besikers",
+            "PeopleMax": "Maksimum besikers",
+            "PeopleLabels": "Labels tastien",
+            "Next": "Folgjende",
+            "Back": "Efter"
+        },
+        "EditAvailability": "Beskikberens bewurkje",
+        "SetVisitors": "Besikers ynstelle",
+        "Price": "Priis",
+        "SelectAction": "Selektearje asjebleaft aksje",
+        "OpenProfile": "Iepenje profyl",
+        "RemoveStaff": "Fuortsmite personiel",
+        "PleaseSelectTimeSlots": "Graach selektearje tiid slots",
+        "ExceptionOccurred": "Utsûndering barde",
+        "NotEnoughCreditsToParticipateEvents": "Net genôch credits om mei te dwaan oan {{eventsAmount}} eveneminten. Jo hawwe {{needCredits}} credits nedich. Wol keapje?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Begjin Datum",
+            "endDate": "Eindatum",
+            "justOnce": "Mar ien kear",
+            "justOnceWeekly": "Allinnich dizze wike",
+            "justOnceMonthly": "Allinnich dizze moanne",
+            "recurring": "Weromkommend"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Fergees evenemint",
+            "optional": "Opsjonele bydrage",
+            "required": "Ferplichte betelling"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Opsjonele bydrage",
+            "required": "Ferplichte betelling",
+            "paid": "betelle"
+        },
+        "confirmationDialog": {
+            "title": "Befêstiging fan betelling",
+            "content": "Dit evenemint hat in opsjonele bydrage fan {{amount}}.",
+            "button": "Bydrage"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} is noch gjin diel fan it evenemint. Wolle jo se tafoegje as dielnimmer?",
+        "userNotFound": "Brûker net fûn",
+        "confirmYes": "ja",
+        "confirmNo": "Nee"
+    },
+    "notifications": {
+        "EventActivityIn": "Evenemintenaktiviteit yn {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Weromkommende regels feroare foar evenemint {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "beheare jo e-postabonneminten",
+        "IfUnsubscribe": "As jo wolle ôfmelde",
+        "ClickHereToVisitEvent": "Klikje hjir asjebleaft om it evenemint te besykjen",
+        "Calendars\/reminder": "Event &quot;{{{call 'message.getInstruction' 'name'}}&quot; sil begjinne yn {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Folje dit Spreadsheet yn",
+        "fileLabel": "Spreadsheet uploade:",
+        "importOptions": "Opsjes",
+        "importProgress": "Foarútgong",
+        "sampleCSV": "Download Sample CSV",
+        "joinEventLabel": "Doch mei oan brûkers oan willekeurige evenemint",
+        "smsText": "Hee, ik haw dy krekt in keppeling stjoerd nei {{communityName}}. Kontrolearje it asjebleaft.",
+        "emailSubject": "Krekt stjoerde dy in keppeling",
+        "emailBody": "Hee, ik haw dy krekt in útnoeging stjoerd nei {{communityName}}. Kontrolearje it asjebleaft.",
+        "fileNotFound": "Sorry, CSV-bestân net fûn.",
+        "fileEmpty": "Sorry, CSV-bestân is leech.",
+        "fieldNotFound": "Fereaske fjild &quot;{{1}}&quot; net fûn",
+        "userIdNotFound": "brûker bestiet mar id leech",
+        "activateUsers": "aktivearring berjocht stjoere nei brûkers?",
+        "taskStreamInvalid": "taakstream ûnjildich",
+        "instructionsEmpty": "taakstream ynstruksjes leech",
+        "interestsEmpty": "kin gjin ynteresses krije",
+        "interestAbsent": "ynteresse {{1}} net fûn",
+        "complete": "Kompleet",
+        "errorLine": "line {{1}}",
+        "errorsTitle": "Der barde flaters",
+        "communityUsers": "Dit is mienskipslist"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Fertsjintwurdet in evenemint dêr&#39;t minsken oan meidwaan kinne",
+            "displayType": "Barren"
+        },
+        "Calendars\/recurring": {
+            "description": "Wurdt brûkt foar it relatearjen fan streamen dy&#39;t bedoeld binne om periodyk werom te kommen",
+            "displayType": "Weromkommend evenemint"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Add Slot",
+        "StartTime": "Begjintiid",
+        "EndTime": "Eintiid",
+        "Save": "Rêde",
+        "AddTimeSlot": "Add Tiid Slot",
+        "CopyFromDay": "Kopiearje fan dei",
+        "Nearest": "Nearest",
+        "Today": "Hjoed",
+        "Tomorrow": "Moarn",
+        "AfterTomorrow": "Nei moarn"
+    }
+}

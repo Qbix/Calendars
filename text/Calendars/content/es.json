@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "ene",
+        "Feb": "feb",
+        "Mar": "mar",
+        "Apr": "abr",
+        "May": "Mayo",
+        "Jun": "jun",
+        "Jul": "jul",
+        "Aug": "ago",
+        "Sep": "sep",
+        "Oct": "oct",
+        "Nov": "nov",
+        "Dec": "dic"
+    },
+    "monthsLong": {
+        "Jan": "enero",
+        "Feb": "febrero",
+        "Mar": "marcha",
+        "Apr": "abril",
+        "May": "Mayo",
+        "Jun": "junio",
+        "Jul": "mes de julio",
+        "Aug": "agosto",
+        "Sep": "septiembre",
+        "Oct": "octubre",
+        "Nov": "noviembre",
+        "Dec": "diciembre"
+    },
+    "weekdays": {
+        "Sun": "sol",
+        "Mon": "Lun",
+        "Tue": "mar",
+        "Wed": "casarse",
+        "Thu": "Jue",
+        "Fri": "Vie",
+        "Sat": "Se sentó"
+    },
+    "weekdaysLong": {
+        "Sun": "domingo",
+        "Mon": "lunes",
+        "Tue": "martes",
+        "Wed": "miércoles",
+        "Thu": "jueves",
+        "Fri": "viernes",
+        "Sat": "sábado"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Planificar nuevo evento"
+        },
+        "tool": {
+            "HostedBy": "Organizado por {{name}}",
+            "Name": "Nombre",
+            "AreYouIn": "¿Está usted en?",
+            "Yes": "sí",
+            "No": "No",
+            "Ok": "OK",
+            "Cancel": "Cancelar",
+            "Maybe": "Quizás",
+            "Conversation": "Conversacion",
+            "Promote": "Promocionar este evento",
+            "Reminders": "Recordatorios",
+            "RemindersLabel": "Quiero ser notificado de un evento en:",
+            "MoreInfo": "Más información",
+            "Registration": "Registro",
+            "SetReminders": "Establezca recordatorios",
+            "ReservationFee": "Tarifa de reserva",
+            "AddParticipants": "Añadir participantes",
+            "ManageReservation": "Administrar reserva",
+            "UpdateFutureReservations": "¿También desea actualizar todas las reservas futuras de la misma manera?",
+            "RecurringAdmin": "Configuración recurrente",
+            "MakeReservation": "Hacer reservacion",
+            "StartLiveStream": "Haga clic para transmitir en vivo",
+            "LiveStreamEnded": "La transmisión en vivo ha terminado",
+            "ClickToViewRecording": "haga clic para ver la grabación",
+            "Checkin": "Escanear códigos de asistente",
+            "Myqr": "Registrarse",
+            "CloseEvent": {
+                "button": "Cancelar evento",
+                "confirm": {
+                    "text": {
+                        "Cancel": "¿Estas seguro que quieres cancelar este evento?",
+                        "Participant": "Hay 1 participante en este evento.",
+                        "Participants": "Hay {{count}} participantes en este evento",
+                        "Recurring": "Este evento es recurrente. ¿Desea cancelar también todas sus instancias futuras?"
+                    },
+                    "trip": {
+                        "Cancel": "¿Quieres cancelar también tu viaje {{tripDirection}} este evento?",
+                        "Passengers": "Hay {{passengerCount}} pasajeros que confían en ti.",
+                        "Title": "Cerrar viaje"
+                    },
+                    "directions": {
+                        "TO": "A",
+                        "FROM": "DESDE",
+                        "to": "a",
+                        "from": "desde"
+                    }
+                }
+            },
+            "Calendar": "Calendario",
+            "Interests": "Intereses",
+            "Directions": "Direcciones",
+            "TitleOfEvent": "Título del evento:",
+            "OpenTo": "Abierto a",
+            "GoingTo": "será a las",
+            "NotGoingTo": "no estará en",
+            "MaybeGoingTo": "tal vez estará en",
+            "AdminDontPay": "El administrador no necesita pagar",
+            "PublisherDontPay": "El editor no necesita pagar",
+            "EmptyList": "Lista vacía",
+            "NeedToPayCredits": "Necesidad de pagar: <span>{{amount}} créditos<\/span>",
+            "PleaseJoinParticipants": "Únase a {{participant}}",
+            "YouReservingPlace": "Estarás reservando tu lugar.",
+            "SelectIncludesToAdd": "Seleccione uno o más {{TypeDisplayPlural}} para agregar:",
+            "YouHaveNotRegisteredAnyIncluded": "Aún no has registrado ningún {{TypeDisplayPlural}}",
+            "Proceed": "Continuar",
+            "MakeChanges": "Guardar mis cambios",
+            "CancelReservation": "Cancelar toda la reserva",
+            "Total": "Total",
+            "RequiredRelatedParticipants": "Este evento requiere participantes: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Edite la disponibilidad &quot;{{title}}&quot; para actualizar la configuración recurrente",
+            "Presentation": "Presentación",
+            "YouAreNotParticipated": "No eres participante del evento",
+            "LiveStreamStarted": "La transmisión en vivo ha comenzado",
+            "WebRTCStarted": "Teleconferencia iniciada",
+            "WebRTCEnded": "Teleconferencia finalizada"
+        },
+        "composer": {
+            "SetLocation": "Establecer mi ubicación",
+            "SetInfoLink": "Establecer enlace a información adicional",
+            "ChooseAvailability": "Elija el servicio disponible",
+            "ChooseActivity": "Elige una actividad",
+            "ChoosePublisher": "Elegir editor",
+            "Day": "Día",
+            "Starting": "A partir de",
+            "Duration": "Duración",
+            "Hour": "Hora",
+            "Hours": "Horas",
+            "Minutes": "Minutos",
+            "Ending": "Finalizando",
+            "People": "Personas",
+            "Share": "Cuota",
+            "Continue": "Continuar",
+            "Recurring": "Periódico",
+            "RecurringTitle": "Días recurrentes",
+            "Daily": "A diario",
+            "Weekly": "Semanalmente",
+            "Monthly": "Mensual",
+            "SelectLocation": "Seleccione primero una ubicación.",
+            "eventType": "Tipo de evento",
+            "EditTitle": "Piensa en un título interesante...",
+            "SetTitle": "Por favor, establezca el título del evento",
+            "ScheduleOnlineConference": "Programar conferencia en línea",
+            "SOCDescription": "Defina la hora de inicio y finalización de la conferencia. Cada persona que visite el evento durante este período de tiempo se conectará automáticamente a la conferencia en línea.",
+            "EndDate": "Fin",
+            "location": {
+                "Title": "Establece tu ubicación"
+            },
+            "interest": {
+                "Title": "Elige una actividad",
+                "Filter": "Buscar intereses..."
+            },
+            "SetLivestream": "Pegar enlace a transmisión en vivo \/ videoconferencia",
+            "Locally": "en la zona",
+            "EventInfoLink": "Enlace de información del evento",
+            "TicketPurchaseLink": "Enlace de compra de boletos"
+        },
+        "EventAlreadyClosed": "Este evento ya cerró",
+        "addToCalendar": {
+            "permissions": {
+                "title": "¿Añadir al calendario?",
+                "prompt": "¿Te gustaría añadir este evento a tu calendario?",
+                "yes": "sí",
+                "no": "No"
+            },
+            "dialog": {
+                "Title": "Agregar evento a su calendario"
+            }
+        },
+        "ErrorLeaveEndedEvent": "Lo siento, pero no puedes dejar el evento finalizado."
+    },
+    "availabilities": {
+        "Title": "Disponibilidades",
+        "NewAvailability": {
+            "Title": "Nueva disponibilidad",
+            "SaveAvailability": "Guardar disponibilidad",
+            "SelectTemplate": "Por favor seleccione Servicio",
+            "SelectLocation": "Por favor seleccione Ubicación",
+            "SelectArea": "Por favor seleccione Área",
+            "Type": "Escribe",
+            "Weekly": "Semanalmente",
+            "RecurringStartDate": "Fecha de inicio recurrente",
+            "EndDate": "Fecha final",
+            "SelectTime": "Administrar franjas horarias",
+            "SelectTimeSlot": "Selecciona una franja horaria",
+            "SelectTimeSlots": "Selecciona las franjas horarias deseadas",
+            "PeopleMin": "Mínimo de visitantes",
+            "PeopleMax": "Máximo de visitantes",
+            "PeopleLabels": "Roles permitidos",
+            "Next": "próximo",
+            "Back": "atrás",
+            "RecurringEndDate": "Fecha de finalización recurrente",
+            "ScheduleOnlineConference": "Programar teleconferencia",
+            "SetLivestream": "Pegar enlace a transmisión en vivo \/ videoconferencia",
+            "SelectTimeZone": "Selecciona la zona horaria"
+        },
+        "EditAvailability": "Editar disponibilidad",
+        "SetVisitors": "Establecer visitantes",
+        "Price": "Precio",
+        "SelectAction": "Por favor seleccione acción",
+        "OpenProfile": "abrir perfil",
+        "RemoveStaff": "Eliminar personal",
+        "PleaseSelectTimeSlots": "Por favor seleccione franjas horarias",
+        "ExceptionOccurred": "Ocurrió una excepción",
+        "NotEnoughCreditsToParticipateEvents": "No hay suficientes créditos para participar en {{eventsAmount}} eventos. Necesitas {{needCredits}} créditos. ¿Quiero comprar?",
+        "LiveStream": "transmisión en vivo",
+        "InviteStaff": "invitar al personal"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Fecha de inicio",
+            "endDate": "Fecha final",
+            "justOnce": "Sólo una vez",
+            "justOnceWeekly": "Solo esta semana",
+            "justOnceMonthly": "solo este mes",
+            "recurring": "Periódico"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Evento gratuito",
+            "optional": "Contribución opcional",
+            "required": "pago requerido"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Contribución opcional",
+            "required": "pago requerido",
+            "paid": "pagado"
+        },
+        "confirmationDialog": {
+            "title": "Confirmación de pago",
+            "content": "Este evento tiene una contribución opcional de {{amount}}.",
+            "button": "Contribuir"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} aún no forma parte del evento. ¿Quieres agregarlo como participante?",
+        "userNotFound": "Usuario no encontrado",
+        "confirmYes": "sí",
+        "confirmNo": "No"
+    },
+    "notifications": {
+        "EventActivityIn": "Actividad de eventos en {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Se cambiaron las reglas recurrentes para el evento {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "administrar sus suscripciones de correo electrónico",
+        "IfUnsubscribe": "Si quieres darte de baja",
+        "ClickHereToVisitEvent": "Haga clic aquí para visitar el evento",
+        "Calendars\/reminder": "El evento &quot;{{{call 'message.getInstruction' 'name'}}&quot; comenzará en {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Teleconferencia iniciada",
+            "Ended": "Teleconferencia finalizada"
+        },
+        "livestream": {
+            "Started": "Se inició la transmisión en vivo",
+            "Ended": "La transmisión en vivo finalizó",
+            "ClickToView": "Véalo aquí."
+        }
+    },
+    "import": {
+        "linkTitle": "Complete esta hoja de cálculo",
+        "fileLabel": "Subir hoja de cálculo:",
+        "importOptions": "Opciones",
+        "importProgress": "Progreso",
+        "sampleCSV": "Descargar muestra CSV",
+        "joinEventLabel": "Unir usuarios a eventos aleatorios",
+        "smsText": "Oye, te acabo de enviar un enlace a {{communityName}}. Por favor, míralo.",
+        "emailSubject": "Te acabo de enviar un enlace",
+        "emailBody": "Oye, te acabo de enviar una invitación a {{communityName}}. Por favor, míralo.",
+        "fileNotFound": "Lo sentimos, archivo CSV no encontrado.",
+        "fileEmpty": "Lo sentimos, el archivo CSV está vacío.",
+        "fieldNotFound": "Campo obligatorio &quot;{{1}}&quot; no encontrado",
+        "userIdNotFound": "el usuario existe pero la identificación está vacía",
+        "activateUsers": "enviar mensaje de activación a los usuarios?",
+        "taskStreamInvalid": "secuencia de tareas no válida",
+        "instructionsEmpty": "instrucciones de secuencia de tareas vacías",
+        "interestsEmpty": "no puedo obtener intereses",
+        "interestAbsent": "interés {{1}} no encontrado",
+        "complete": "Completo",
+        "errorLine": "línea {{1}}",
+        "errorsTitle": "Ocurrieron errores",
+        "communityUsers": "Esta es la lista de comunidades",
+        "toMainCommunityToo": "relacionarse con la comunidad principal también",
+        "ChooseFile": "Elija el archivo"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Representa un evento en el que las personas pueden participar.",
+            "displayType": "Evento"
+        },
+        "Calendars\/recurring": {
+            "description": "Se utiliza para relacionar secuencias que están destinadas a repetirse periódicamente.",
+            "displayType": "Evento recurrente"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Agregar ranura",
+        "StartTime": "Hora de inicio",
+        "EndTime": "Hora de finalización",
+        "Save": "Ahorrar",
+        "AddTimeSlot": "Agregar franja horaria",
+        "CopyFromDay": "copia del día",
+        "Nearest": "Más cercano",
+        "Today": "Hoy dia",
+        "Tomorrow": "Mañana",
+        "AfterTomorrow": "Pasado mañana"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Suscríbete al Calendario",
+        "copyLinkBelow": "Copiar enlace a continuación",
+        "goTo": "Ir:",
+        "pasteCopiedTo": "Pegue el enlace copiado en el campo &quot;URL del calendario&quot;",
+        "clickAddCalendar": "Haga clic en el botón &quot;Agregar calendario&quot;",
+        "copyLink": "Copiar link",
+        "tapToCopy": "Toque el botón a continuación para copiar el enlace a su portapapeles",
+        "linkCopied": "Enlace copiado",
+        "step2": "Enlace copiado. Estamos a punto de abrir Google Calendar. Deberá pegar el enlace en el cuadro de texto, hacer clic en &quot;Agregar calendario&quot; y cerrar la pestaña (vea la captura de pantalla a continuación).",
+        "calendarAppPreferences": "Abra las Preferencias en la aplicación Calendario de su Mac y configure la aplicación Calendario predeterminada como se muestra a continuación.",
+        "thenCloseDialog": "¡Entonces cierra este cuadro de diálogo para suscribirte a tu calendario!",
+        "success": "El calendario se sincronizó correctamente"
+    }
+}

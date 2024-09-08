@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Feb",
+        "Mar": "Mar",
+        "Apr": "Epreli",
+        "May": "UCanzibe",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Aug",
+        "Sep": "Sep",
+        "Oct": "Oct",
+        "Nov": "NgoNovemba",
+        "Dec": "Disemba"
+    },
+    "monthsLong": {
+        "Jan": "EyoMqungu",
+        "Feb": "EyoMdumba",
+        "Mar": "EyoKwindla",
+        "Apr": "UTshazimpuzi",
+        "May": "UCanzibe",
+        "Jun": "Isilimela",
+        "Jul": "EyeKhala",
+        "Aug": "EyeThupha",
+        "Sep": "EyoMsintsi",
+        "Oct": "EyeDwarha",
+        "Nov": "EyeNkanga",
+        "Dec": "EtiMnga"
+    },
+    "weekdays": {
+        "Sun": "Ilanga",
+        "Mon": "Mon",
+        "Tue": "NgoLwesibini",
+        "Wed": "NgoLwesithathu",
+        "Thu": "NgoLwesine",
+        "Fri": "NgoLwesihlanu",
+        "Sat": "NgoMgqibelo"
+    },
+    "weekdaysLong": {
+        "Sun": "iCawe",
+        "Mon": "uMvulo",
+        "Tue": "uLwesibini",
+        "Wed": "uLwesithathu",
+        "Thu": "uLwesine",
+        "Fri": "uLwesihlanu",
+        "Sat": "uMgqibelo"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Cwangcisa uMnyhadala oMtsha"
+        },
+        "tool": {
+            "HostedBy": "Ibanjwe ngu {{name}}",
+            "Name": "Igama",
+            "AreYouIn": "Uyangena?",
+            "Yes": "Ewe",
+            "No": "Hayi",
+            "Ok": "Kulungile",
+            "Cancel": "Rhoxisa",
+            "Maybe": "Ingayiyo",
+            "Conversation": "Incoko",
+            "Promote": "Yazisa lo msitho",
+            "Reminders": "Izikhumbuzo",
+            "RemindersLabel": "Ndifuna ukwaziswa ngomsitho o:",
+            "MoreInfo": "Iinkcukacha ezithe vetshe",
+            "Registration": "Ubhaliso",
+            "SetReminders": "Nceda usete izikhumbuzo",
+            "ReservationFee": "Umrhumo wogcino",
+            "AddParticipants": "Yongeza abathathi-nxaxheba",
+            "ManageReservation": "Lawula Ugcino",
+            "UpdateFutureReservations": "Ngaba uyafuna ukuhlaziya lonke ugcino-ndawo kwixesha elizayo ngendlela efanayo?",
+            "RecurringAdmin": "Izicwangciso eziphindaphindiweyo",
+            "MakeReservation": "Yenza Ugcino",
+            "StartLiveStream": "Cofa ukuze Live Stream",
+            "LiveStreamEnded": "Umlambo ophilayo uphelile",
+            "ClickToViewRecording": "cofa ukujonga ushicilelo",
+            "Checkin": "Skena iikhowudi zabazimasi",
+            "Myqr": "Ngena",
+            "CloseEvent": {
+                "button": "Rhoxisa uMnyhadala",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Uqinisekile ufuna ukuwurhoxisa lo msitho?",
+                        "Participant": "Kukho umthathi-nxaxheba omnye kulo msitho",
+                        "Participants": "Kukho {{count}} abathathi-nxaxheba kulo msitho",
+                        "Recurring": "Esi siganeko siyaphindaphindeka. Ngaba uyafuna ukurhoxisa zonke iimeko zayo zexesha elizayo ngokunjalo?"
+                    },
+                    "trip": {
+                        "Cancel": "Ngaba uyafuna ukurhoxisa uhambo lwakho {{tripDirection}} kulo msitho?",
+                        "Passengers": "Kukho {{passengerCount}} abakhweli abaxhomekeke kuwe.",
+                        "Title": "Vala Uhambo"
+                    },
+                    "directions": {
+                        "TO": "KUYA",
+                        "FROM": "UKUSUKA",
+                        "to": "ukuya",
+                        "from": "ukusuka"
+                    }
+                }
+            },
+            "Calendar": "Ikhalenda",
+            "Interests": "Imidla",
+            "Directions": "Izalathiso",
+            "TitleOfEvent": "Isihloko somsitho:",
+            "OpenTo": "Vula ku",
+            "GoingTo": "izakuba nge",
+            "NotGoingTo": "ayizubakho",
+            "MaybeGoingTo": "iya kuba se",
+            "AdminDontPay": "Admin ayifuni kubhatala",
+            "PublisherDontPay": "Umpapashi akafuni kuhlawula",
+            "EmptyList": "Uluhlu olungenanto",
+            "NeedToPayCredits": "Kufuneka uhlawule: <span>{{amount}} iikhredithi<\/span>",
+            "PleaseJoinParticipants": "Nceda ujoyine {{participant}}",
+            "YouReservingPlace": "Uzakube uyigcine indawo yakho.",
+            "SelectIncludesToAdd": "Khetha enye okanye ngaphezulu {{TypeDisplayPlural}} ukongeza:",
+            "YouHaveNotRegisteredAnyIncluded": "Awubhalisanga nayiphi na {{TypeDisplayPlural}} okwangoku",
+            "Proceed": "Qhubeka",
+            "MakeChanges": "Gcina Iinguqu Zam",
+            "CancelReservation": "Rhoxisa lonke ugcino",
+            "Total": "Iyonke",
+            "RequiredRelatedParticipants": "Lo msitho ufuna abathathi-nxaxheba: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Nceda uhlele ukufumaneka &quot;{{title}}&quot; ukuhlaziya useto oluqhubekayo"
+        },
+        "composer": {
+            "SetLocation": "Seta Indawo yam",
+            "SetInfoLink": "Cwangcisa unxulumaniso kulwazi olongezelelweyo",
+            "ChooseAvailability": "Khetha iNkonzo ekhoyo",
+            "ChooseActivity": "Khetha uMsebenzi",
+            "ChoosePublisher": "Khetha uMpapashi",
+            "Day": "Usuku",
+            "Starting": "Ukuqala",
+            "Duration": "Ubude bexesha",
+            "Hour": "Yure",
+            "Hours": "Iiyure",
+            "Minutes": "Imizuzu",
+            "Ending": "Ukuphela",
+            "People": "Abantu",
+            "Share": "Yabelana",
+            "Continue": "Qhubeka",
+            "Recurring": "Iyaphinda-phinda",
+            "RecurringTitle": "Iintsuku eziphindaphindiweyo",
+            "Daily": "Yonke imihla",
+            "Weekly": "Rhoqo ngeveki",
+            "Monthly": "Ngenyanga",
+            "SelectLocation": "Nceda ukhethe indawo kuqala.",
+            "eventType": "Uhlobo loMnyhadala",
+            "EditTitle": "Cinga ngesihloko esinomdla...",
+            "SetTitle": "Nceda usete isihloko somsitho",
+            "ScheduleOnlineConference": "Cwangcisa iNkomfa ye-Intanethi",
+            "SOCDescription": "Nceda uchaze ixesha lokuqalisa kunye nexesha lokuphela kwenkomfa. Wonke umntu ondwendwela umsitho ngeli xesha uya kuqhagamshela ngokuzenzekelayo kwinkomfa ye-intanethi.",
+            "EndDate": "Isiphelo",
+            "location": {
+                "Title": "Seta Indawo yakho"
+            },
+            "interest": {
+                "Title": "Khetha uMsebenzi",
+                "Filter": "Khangela izinto onomdla kuzo ..."
+            },
+            "SetLivestream": "Coca ikhonkco kwi-livestream \/ videoconference"
+        },
+        "EventAlreadyClosed": "Lo msitho sele uvaliwe",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Yongeza kwiKhalenda?",
+                "prompt": "Ngaba ungathanda ukongeza esi siganeko kwikhalenda yakho?",
+                "yes": "Ewe",
+                "no": "Hayi"
+            },
+            "dialog": {
+                "Title": "Yongeza uMnyhadala kwiKhalenda yakho"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Ukufumaneka",
+        "NewAvailability": {
+            "Title": "Ukufumaneka okutsha",
+            "SaveAvailability": "Gcina Ubukho",
+            "SelectTemplate": "Nceda khetha Inkonzo",
+            "SelectLocation": "Nceda khetha Indawo",
+            "SelectArea": "Nceda ukhethe iNdawo",
+            "Type": "Uhlobo",
+            "Weekly": "Rhoqo ngeveki",
+            "RecurringStartDate": "Umhla wokuQala oPhindayo",
+            "EndDate": "Umhla wokuphela",
+            "SelectTime": "Lawula Time Slots",
+            "SelectTimeSlot": "Khetha isithuba sexesha",
+            "SelectTimeSlots": "Khetha ixesha lokubeka ixesha elifunekayo",
+            "PeopleMin": "Ubuncinane beendwendwe",
+            "PeopleMax": "Ubuninzi beendwendwe",
+            "PeopleLabels": "Iileyibhile zivumelekile",
+            "Next": "Okulandelayo",
+            "Back": "Emva"
+        },
+        "EditAvailability": "Hlela Ubukho",
+        "SetVisitors": "Misela iindwendwe",
+        "Price": "Ixabiso",
+        "SelectAction": "Nceda khetha isenzo",
+        "OpenProfile": "Vula iprofayile",
+        "RemoveStaff": "Susa abasebenzi",
+        "PleaseSelectTimeSlots": "Nceda ukhethe iindawo zokubeka ixesha",
+        "ExceptionOccurred": "Ukhetho lwenzekile",
+        "NotEnoughCreditsToParticipateEvents": "Akukho khredithi zaneleyo zokuthatha inxaxheba {{eventsAmount}} kwimisitho. Udinga {{needCredits}} iikhredithi. Ufuna ukuthenga?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Umhla wokuqala",
+            "endDate": "Umhla wokuphela",
+            "justOnce": "Kanye nje",
+            "justOnceWeekly": "Kule veki kuphela",
+            "justOnceMonthly": "Kule nyanga kuphela",
+            "recurring": "Iyaphinda-phinda"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Isiganeko sasimahla",
+            "optional": "Igalelo lokuzikhethela",
+            "required": "Intlawulo efunekayo"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Igalelo lokuzikhethela",
+            "required": "Intlawulo efunekayo",
+            "paid": "ihlawulwe"
+        },
+        "confirmationDialog": {
+            "title": "Ukuqinisekiswa kwentlawulo",
+            "content": "Lo msitho unomnikelo onganyanzelekanga we {{amount}}.",
+            "button": "Yiba negalelo"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ayikabi yinxalenye yomsitho. Ngaba uyafuna ukubongeza njengomthathi-nxaxheba?",
+        "userNotFound": "Umsebenzisi akafunyanwanga",
+        "confirmYes": "Ewe",
+        "confirmNo": "Hayi"
+    },
+    "notifications": {
+        "EventActivityIn": "Umsebenzi wesiganeko kwi {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Imigaqo eqhubekayo itshintshiwe yomsitho {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "lawula imirhumo yakho ye-imeyile",
+        "IfUnsubscribe": "Ukuba ufuna ukuyeka ukubhalisa",
+        "ClickHereToVisitEvent": "Nceda ucofe apha ukutyelela umcimbi",
+        "Calendars\/reminder": "Umsitho &quot;{{{call 'message.getInstruction' 'name'}}&quot; uyakuqala ngo {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Gcwalisa Le Spreadsheet",
+        "fileLabel": "Layisha Ispreadsheet:",
+        "importOptions": "Iinketho",
+        "importProgress": "Inkqubela phambili",
+        "sampleCSV": "Khuphela isampuli ye-CSV",
+        "joinEventLabel": "Joyina abasebenzisi kwisiganeko esingaqhelekanga",
+        "smsText": "Heyi, ndikuthumelele ilinki ku- {{communityName}}. Nceda uyijonge.",
+        "emailSubject": "Ndikuthumelele ikhonkco",
+        "emailBody": "Heyi, ndikuthumelele isimemo ku- {{communityName}}. Nceda uyijonge.",
+        "fileNotFound": "Uxolo, ifayile ye-CSV ayifunyenwanga.",
+        "fileEmpty": "Uxolo, ifayile ye-CSV ayinanto.",
+        "fieldNotFound": "Indawo efunekayo &quot;{999}}&quot; ayifunyenwanga",
+        "userIdNotFound": "umsebenzisi ukhona kodwa id ayinanto",
+        "activateUsers": "thumela umyalezo wokuvula kubasebenzisi?",
+        "taskStreamInvalid": "umsebenzi awusebenzi",
+        "instructionsEmpty": "imiyalelo yomjelo womsebenzi ayinanto",
+        "interestsEmpty": "awukwazi ukufumana umdla",
+        "interestAbsent": "umdla {{1}} awufunyenwanga",
+        "complete": "Gqibezela",
+        "errorLine": "umgca {{1}}",
+        "errorsTitle": "Iimpazamo zenzekile",
+        "communityUsers": "Olu luluhlu loluntu"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Imele isiganeko abantu abanokuthatha inxaxheba kuso",
+            "displayType": "Isiganeko"
+        },
+        "Calendars\/recurring": {
+            "description": "Isetyenziselwa ukuzalanisa okuzalanayo okwenzelwe ukuvela ngamaxesha athile",
+            "displayType": "Isiganeko esiqhubekayo"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Yongeza i-Slot",
+        "StartTime": "Ixesha Lokuqalisa",
+        "EndTime": "Ixesha lokuphela",
+        "Save": "Gcina",
+        "AddTimeSlot": "Yongeza Ixesha le-Slot",
+        "CopyFromDay": "Khuphela ngosuku",
+        "Nearest": "Ikufutshane",
+        "Today": "Namhlanje",
+        "Tomorrow": "Ngomso",
+        "AfterTomorrow": "Emva kwengomso"
+    }
+}

@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Feb",
+        "Mar": "Mar",
+        "Apr": "Apr",
+        "May": "Mei",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Agustus",
+        "Sep": "Sep",
+        "Oct": "Okt",
+        "Nov": "Nov",
+        "Dec": "Dec"
+    },
+    "monthsLong": {
+        "Jan": "Januari",
+        "Feb": "Februari",
+        "Mar": "Maret",
+        "Apr": "April",
+        "May": "Mei",
+        "Jun": "Juni",
+        "Jul": "Juli",
+        "Aug": "Agustus",
+        "Sep": "September",
+        "Oct": "Oktober",
+        "Nov": "November",
+        "Dec": "Desember"
+    },
+    "weekdays": {
+        "Sun": "Srengenge",
+        "Mon": "Mon",
+        "Tue": "Tue",
+        "Wed": "Rebo",
+        "Thu": "Kam",
+        "Fri": "Jum",
+        "Sat": "Sat"
+    },
+    "weekdaysLong": {
+        "Sun": "Minggu",
+        "Mon": "Senen",
+        "Tue": "Selasa",
+        "Wed": "Rebo",
+        "Thu": "Kemis",
+        "Fri": "Jumuwah",
+        "Sat": "sabtu"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Rencana Acara Anyar"
+        },
+        "tool": {
+            "HostedBy": "Tuan rumah dening {{name}}",
+            "Name": "jeneng",
+            "AreYouIn": "Apa sampeyan mlebu?",
+            "Yes": "ya wis",
+            "No": "Ora",
+            "Ok": "oke",
+            "Cancel": "Batal",
+            "Maybe": "Mbok",
+            "Conversation": "pacelathon",
+            "Promote": "Promote acara iki",
+            "Reminders": "Pangeling-eling",
+            "RemindersLabel": "Aku pengin diwenehi kabar babagan acara ing:",
+            "MoreInfo": "info liyane",
+            "Registration": "Registrasi",
+            "SetReminders": "Mangga atur pangeling",
+            "ReservationFee": "Ragad Reservasi",
+            "AddParticipants": "Tambah Peserta",
+            "ManageReservation": "Ngatur Reservasi",
+            "UpdateFutureReservations": "Apa sampeyan uga pengin nganyari kabeh reservasi ing mangsa ngarep kanthi cara sing padha?",
+            "RecurringAdmin": "Setelan ambalan",
+            "MakeReservation": "Nggawe Reservasi",
+            "StartLiveStream": "Klik kanggo Live Stream",
+            "LiveStreamEnded": "Live stream wis rampung",
+            "ClickToViewRecording": "klik kanggo ndeleng rekaman",
+            "Checkin": "Pindai kode peserta",
+            "Myqr": "Priksa",
+            "CloseEvent": {
+                "button": "Batal Acara",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Apa sampeyan yakin arep mbatalake acara iki?",
+                        "Participant": "Ana 1 peserta ing acara iki",
+                        "Participants": "Ana {{count}} peserta ing acara iki",
+                        "Recurring": "Acara iki bola-bali. Apa sampeyan uga pengin mbatalake kabeh kedadeyan ing mangsa ngarep?"
+                    },
+                    "trip": {
+                        "Cancel": "Apa sampeyan uga pengin mbatalake perjalanan sampeyan {{tripDirection}} acara iki?",
+                        "Passengers": "Ana {{passengerCount}} penumpang sing ngandelake sampeyan.",
+                        "Title": "Tutup Trip"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "Saka",
+                        "to": "kanggo",
+                        "from": "saka"
+                    }
+                }
+            },
+            "Calendar": "Tanggalan",
+            "Interests": "kapentingan",
+            "Directions": "arah",
+            "TitleOfEvent": "Judul Acara :",
+            "OpenTo": "Bukak kanggo",
+            "GoingTo": "bakal ing",
+            "NotGoingTo": "ora bakal ing",
+            "MaybeGoingTo": "Mungkin bakal ing",
+            "AdminDontPay": "Admin ora kudu mbayar",
+            "PublisherDontPay": "Penerbit ora perlu mbayar",
+            "EmptyList": "Daftar kosong",
+            "NeedToPayCredits": "Kudu mbayar: <span>{{amount}} kridit<\/span>",
+            "PleaseJoinParticipants": "Mangga gabung {{participant}}",
+            "YouReservingPlace": "Sampeyan bakal reservasi panggonan sampeyan.",
+            "SelectIncludesToAdd": "Pilih siji utawa luwih {{TypeDisplayPlural}} kanggo nambah:",
+            "YouHaveNotRegisteredAnyIncluded": "Sampeyan durung ndhaptar {{TypeDisplayPlural}} apa wae",
+            "Proceed": "Terusake",
+            "MakeChanges": "Simpen Owah-owahan Kula",
+            "CancelReservation": "Batal kabeh leladen",
+            "Total": "Total",
+            "RequiredRelatedParticipants": "Acara iki mbutuhake peserta: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Mangga owahi kasedhiyan &quot;{{title}}&quot; kanggo nganyari setelan ambalan"
+        },
+        "composer": {
+            "SetLocation": "Setel Lokasiku",
+            "SetInfoLink": "Setel Link kanggo informasi tambahan",
+            "ChooseAvailability": "Pilih Layanan sing kasedhiya",
+            "ChooseActivity": "Pilih Aktivitas",
+            "ChoosePublisher": "Pilih Penerbit",
+            "Day": "dina",
+            "Starting": "miwiti",
+            "Duration": "Duration",
+            "Hour": "jam",
+            "Hours": "jam",
+            "Minutes": "menit",
+            "Ending": "Ending",
+            "People": "wong",
+            "Share": "Nuduhake",
+            "Continue": "Terusake",
+            "Recurring": "Ambalan",
+            "RecurringTitle": "Dina Ambalan",
+            "Daily": "Saben dina",
+            "Weekly": "Mingguan",
+            "Monthly": "Saben wulan",
+            "SelectLocation": "Mangga pilih lokasi dhisik.",
+            "eventType": "Jinis Acara",
+            "EditTitle": "Pikir judul sing menarik...",
+            "SetTitle": "Mangga nyetel judhul acara",
+            "ScheduleOnlineConference": "Jadwal Konferensi Online",
+            "SOCDescription": "Mangga nemtokake wektu wiwitan lan pungkasan konferensi. Saben wong sing ngunjungi acara kasebut sajrone wektu kasebut bakal otomatis nyambung menyang konferensi online.",
+            "EndDate": "Pungkasan",
+            "location": {
+                "Title": "Setel Lokasi Sampeyan"
+            },
+            "interest": {
+                "Title": "Pilih Aktivitas",
+                "Filter": "Golek minat..."
+            },
+            "SetLivestream": "Tempel link menyang livestream \/ konferensi video"
+        },
+        "EventAlreadyClosed": "Acara iki wis ditutup",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Tambah menyang Tanggalan?",
+                "prompt": "Apa sampeyan pengin nambah acara iki menyang tanggalan sampeyan?",
+                "yes": "ya wis",
+                "no": "Ora"
+            },
+            "dialog": {
+                "Title": "Tambah Acara menyang Tanggalan"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Kasedhiyan",
+        "NewAvailability": {
+            "Title": "Kasedhiyan Anyar",
+            "SaveAvailability": "Simpen Kasedhiyan",
+            "SelectTemplate": "Mangga pilih Service",
+            "SelectLocation": "Mangga pilih Lokasi",
+            "SelectArea": "Mangga pilih Area",
+            "Type": "Jinis",
+            "Weekly": "Mingguan",
+            "RecurringStartDate": "Tanggal Wiwitan Ambalan",
+            "EndDate": "Tanggal Pungkasan",
+            "SelectTime": "Ngatur Wektu Slot",
+            "SelectTimeSlot": "Pilih slot wektu",
+            "SelectTimeSlots": "Pilih slot wektu sing dikarepake",
+            "PeopleMin": "Pengunjung minimal",
+            "PeopleMax": "Pengunjung maksimal",
+            "PeopleLabels": "Label diijini",
+            "Next": "Sabanjure",
+            "Back": "Mbalik"
+        },
+        "EditAvailability": "Sunting Kasedhiyan",
+        "SetVisitors": "Setel Pengunjung",
+        "Price": "Rega",
+        "SelectAction": "Mangga pilih tumindak",
+        "OpenProfile": "Mbukak profil",
+        "RemoveStaff": "Mbusak staf",
+        "PleaseSelectTimeSlots": "Mangga pilih slot wektu",
+        "ExceptionOccurred": "Pangecualian dumadi",
+        "NotEnoughCreditsToParticipateEvents": "Ora cukup kridit kanggo melu {{eventsAmount}} acara. Sampeyan butuh kridit {{needCredits}}. Arep tuku?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Tanggal wiwitan",
+            "endDate": "Tanggal pungkasan",
+            "justOnce": "Sepisan wae",
+            "justOnceWeekly": "Minggu iki mung",
+            "justOnceMonthly": "Sasi iki mung",
+            "recurring": "Ambalan"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Acara gratis",
+            "optional": "Kontribusi opsional",
+            "required": "Pembayaran sing dibutuhake"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Kontribusi opsional",
+            "required": "Pembayaran sing dibutuhake",
+            "paid": "mbayar"
+        },
+        "confirmationDialog": {
+            "title": "Konfirmasi pembayaran",
+            "content": "Acara iki nduweni kontribusi opsional {{amount}}.",
+            "button": "nyumbang"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} durung dadi bagian saka acara kasebut. Apa sampeyan pengin nambah minangka peserta?",
+        "userNotFound": "Pangguna ora ditemokake",
+        "confirmYes": "ya wis",
+        "confirmNo": "Ora"
+    },
+    "notifications": {
+        "EventActivityIn": "Kegiatan acara ing {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Aturan ambalan diganti kanggo acara {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "ngatur langganan email",
+        "IfUnsubscribe": "Yen sampeyan pengin unsubscribe",
+        "ClickHereToVisitEvent": "Mangga klik kene kanggo ngunjungi acara",
+        "Calendars\/reminder": "Acara &quot;{{{call 'message.getInstruction' 'name'}}&quot; bakal diwiwiti ing {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Isi Spreadsheet Iki",
+        "fileLabel": "Unggah Spreadsheet:",
+        "importOptions": "Pilihan",
+        "importProgress": "kemajuan",
+        "sampleCSV": "Unduh Contoh CSV",
+        "joinEventLabel": "Gabung pangguna menyang acara acak",
+        "smsText": "Eh, aku mung ngirim link menyang {{communityName}}. Mangga dipriksa metu.",
+        "emailSubject": "Mung dikirim sampeyan link",
+        "emailBody": "Eh, aku mung ngirim undhangan menyang {{communityName}}. Mangga dipriksa metu.",
+        "fileNotFound": "Nuwun sewu, file CSV ora ditemokake.",
+        "fileEmpty": "Nuwun sewu, file CSV kosong.",
+        "fieldNotFound": "Kolom sing dibutuhake &quot;{{1}}&quot; ora ditemokake",
+        "userIdNotFound": "pangguna ana nanging id kosong",
+        "activateUsers": "ngirim pesen aktivasi kanggo pangguna?",
+        "taskStreamInvalid": "aliran tugas ora sah",
+        "instructionsEmpty": "instruksi stream tugas kosong",
+        "interestsEmpty": "ora bisa entuk kapentingan",
+        "interestAbsent": "kapentingan {{1}} ora ditemokake",
+        "complete": "jangkep",
+        "errorLine": "baris {{1}}",
+        "errorsTitle": "Kesalahan dumadi",
+        "communityUsers": "Iki dhaptar komunitas"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Nggambarake acara sing bisa ditindakake wong",
+            "displayType": "Acara"
+        },
+        "Calendars\/recurring": {
+            "description": "Digunakake kanggo ngubungake lepen sing arep diulang sacara periodik",
+            "displayType": "Acara Ambalan"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Tambah Slot",
+        "StartTime": "Wektu Mulai",
+        "EndTime": "Wektu pungkasan",
+        "Save": "Simpen",
+        "AddTimeSlot": "Tambah Wektu Slot",
+        "CopyFromDay": "Salinan saka dina",
+        "Nearest": "Paling cedhak",
+        "Today": "Dina iki",
+        "Tomorrow": "sesuk",
+        "AfterTomorrow": "Sawise sesuk"
+    }
+}

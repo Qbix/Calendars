@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS {{prefix}}event (
+  publisherId varbinary(31) NOT NULL,
+  streamName varbinary(255) NOT NULL,
+  interests VARCHAR(2046) NULL COMMENT 'json encoded event interests',
+  location VARCHAR(1023) NULL COMMENT 'json encoded event location',
+  PRIMARY KEY (publisherId, streamName)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='stored additional info for Calendars/event';

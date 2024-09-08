@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Feb",
+        "Mar": "Mac",
+        "Apr": "Apr",
+        "May": "Mungkin",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Ogos",
+        "Sep": "Sep",
+        "Oct": "Okt",
+        "Nov": "Nov",
+        "Dec": "Dis"
+    },
+    "monthsLong": {
+        "Jan": "Januari",
+        "Feb": "Februari",
+        "Mar": "Mac",
+        "Apr": "April",
+        "May": "Mungkin",
+        "Jun": "Jun",
+        "Jul": "Julai",
+        "Aug": "Ogos",
+        "Sep": "September",
+        "Oct": "Oktober",
+        "Nov": "November",
+        "Dec": "Disember"
+    },
+    "weekdays": {
+        "Sun": "matahari",
+        "Mon": "isn",
+        "Tue": "tue",
+        "Wed": "Rabu",
+        "Thu": "Kha",
+        "Fri": "Jum",
+        "Sat": "Sab"
+    },
+    "weekdaysLong": {
+        "Sun": "Ahad",
+        "Mon": "Isnin",
+        "Tue": "Selasa",
+        "Wed": "Rabu",
+        "Thu": "Khamis",
+        "Fri": "Jumaat",
+        "Sat": "Sabtu"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Rancang Acara Baharu"
+        },
+        "tool": {
+            "HostedBy": "Dihoskan oleh {{name}}",
+            "Name": "nama",
+            "AreYouIn": "Adakah anda masuk?",
+            "Yes": "ya",
+            "No": "Tidak",
+            "Ok": "Okey",
+            "Cancel": "Batal",
+            "Maybe": "Mungkin",
+            "Conversation": "Perbualan",
+            "Promote": "Promosikan acara ini",
+            "Reminders": "Peringatan",
+            "RemindersLabel": "Saya ingin dimaklumkan tentang acara dalam:",
+            "MoreInfo": "Maklumat lanjut",
+            "Registration": "Pendaftaran",
+            "SetReminders": "Sila tetapkan peringatan",
+            "ReservationFee": "Yuran Tempahan",
+            "AddParticipants": "Tambah Peserta",
+            "ManageReservation": "Urus Tempahan",
+            "UpdateFutureReservations": "Adakah anda juga ingin mengemas kini semua tempahan masa hadapan dengan cara yang sama?",
+            "RecurringAdmin": "Tetapan Berulang",
+            "MakeReservation": "Buat Tempahan",
+            "StartLiveStream": "Klik untuk Strim Langsung",
+            "LiveStreamEnded": "Strim langsung telah tamat",
+            "ClickToViewRecording": "klik untuk melihat rakaman",
+            "Checkin": "Imbas kod peserta",
+            "Myqr": "Daftar masuk",
+            "CloseEvent": {
+                "button": "Batalkan Acara",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Adakah anda pasti mahu membatalkan acara ini?",
+                        "Participant": "Terdapat 1 peserta dalam acara ini",
+                        "Participants": "Terdapat {{count}} peserta dalam acara ini",
+                        "Recurring": "Peristiwa ini berulang. Adakah anda mahu juga membatalkan semua kejadian masa hadapannya juga?"
+                    },
+                    "trip": {
+                        "Cancel": "Adakah anda mahu juga membatalkan perjalanan anda {{tripDirection}} acara ini?",
+                        "Passengers": "Terdapat {{passengerCount}} penumpang yang bergantung pada anda.",
+                        "Title": "Tutup Perjalanan"
+                    },
+                    "directions": {
+                        "TO": "KEPADA",
+                        "FROM": "DARI",
+                        "to": "kepada",
+                        "from": "daripada"
+                    }
+                }
+            },
+            "Calendar": "Kalendar",
+            "Interests": "minat",
+            "Directions": "Arah",
+            "TitleOfEvent": "Tajuk acara:",
+            "OpenTo": "Terbuka kepada",
+            "GoingTo": "akan berada di",
+            "NotGoingTo": "tidak akan berada di",
+            "MaybeGoingTo": "mungkin akan berada di",
+            "AdminDontPay": "Admin tak perlu bayar",
+            "PublisherDontPay": "Penerbit tidak perlu membayar",
+            "EmptyList": "Senarai kosong",
+            "NeedToPayCredits": "Perlu membayar: <span>{{amount}} kredit<\/span>",
+            "PleaseJoinParticipants": "Sila sertai {{participant}}",
+            "YouReservingPlace": "Anda akan menempah tempat anda.",
+            "SelectIncludesToAdd": "Pilih satu atau lebih {{TypeDisplayPlural}} untuk menambah:",
+            "YouHaveNotRegisteredAnyIncluded": "Anda belum mendaftar sebarang {{TypeDisplayPlural}} lagi",
+            "Proceed": "Teruskan",
+            "MakeChanges": "Simpan Perubahan Saya",
+            "CancelReservation": "Batalkan keseluruhan tempahan",
+            "Total": "Jumlah",
+            "RequiredRelatedParticipants": "Acara ini memerlukan peserta: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Sila edit ketersediaan &quot;{{title}}&quot; untuk mengemas kini tetapan berulang",
+            "Presentation": "Persembahan",
+            "YouAreNotParticipated": "Anda bukan peserta acara itu",
+            "LiveStreamStarted": "Strim langsung telah bermula",
+            "WebRTCStarted": "Telesidang bermula",
+            "WebRTCEnded": "Telesidang tamat"
+        },
+        "composer": {
+            "SetLocation": "Tetapkan Lokasi Saya",
+            "SetInfoLink": "Tetapkan Pautan kepada maklumat tambahan",
+            "ChooseAvailability": "Pilih Perkhidmatan Tersedia",
+            "ChooseActivity": "Pilih Aktiviti",
+            "ChoosePublisher": "Pilih Penerbit",
+            "Day": "Hari",
+            "Starting": "Bermula",
+            "Duration": "Tempoh",
+            "Hour": "Jam",
+            "Hours": "Jam",
+            "Minutes": "minit",
+            "Ending": "Berakhir",
+            "People": "Orang ramai",
+            "Share": "Kongsi",
+            "Continue": "teruskan",
+            "Recurring": "Berulang",
+            "RecurringTitle": "Hari Berulang",
+            "Daily": "Setiap hari",
+            "Weekly": "Setiap minggu",
+            "Monthly": "Bulanan",
+            "SelectLocation": "Sila pilih lokasi dahulu.",
+            "eventType": "Jenis acara",
+            "EditTitle": "Fikirkan tajuk yang menarik...",
+            "SetTitle": "Sila tetapkan tajuk acara",
+            "ScheduleOnlineConference": "Jadualkan Persidangan Dalam Talian",
+            "SOCDescription": "Sila tentukan masa mula dan tamat persidangan. Setiap orang yang melawat acara dalam tempoh masa ini akan menyambung secara automatik ke persidangan dalam talian.",
+            "EndDate": "tamat",
+            "location": {
+                "Title": "Tetapkan Lokasi Anda"
+            },
+            "interest": {
+                "Title": "Pilih Aktiviti",
+                "Filter": "Minat carian..."
+            },
+            "SetLivestream": "Tampal pautan ke strim langsung \/ persidangan video",
+            "Locally": "tempatan",
+            "EventInfoLink": "Pautan Maklumat Acara",
+            "TicketPurchaseLink": "Pautan Pembelian Tiket"
+        },
+        "EventAlreadyClosed": "Acara ini telah pun ditutup",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Tambahkan pada Kalendar?",
+                "prompt": "Adakah anda ingin menambahkan acara ini pada kalendar anda?",
+                "yes": "ya",
+                "no": "Tidak"
+            },
+            "dialog": {
+                "Title": "Tambahkan Acara pada Kalendar anda"
+            }
+        },
+        "ErrorLeaveEndedEvent": "Maaf, tetapi anda tidak boleh meninggalkan acara yang telah tamat"
+    },
+    "availabilities": {
+        "Title": "Ketersediaan",
+        "NewAvailability": {
+            "Title": "Ketersediaan Baharu",
+            "SaveAvailability": "Simpan Ketersediaan",
+            "SelectTemplate": "Sila pilih Perkhidmatan",
+            "SelectLocation": "Sila pilih Lokasi",
+            "SelectArea": "Sila pilih Kawasan",
+            "Type": "taip",
+            "Weekly": "Setiap minggu",
+            "RecurringStartDate": "Tarikh Mula Berulang",
+            "EndDate": "Tarikh tamat",
+            "SelectTime": "Urus Slot Masa",
+            "SelectTimeSlot": "Pilih slot masa",
+            "SelectTimeSlots": "Pilih slot masa yang dikehendaki",
+            "PeopleMin": "Pelawat minimum",
+            "PeopleMax": "Pelawat maksimum",
+            "PeopleLabels": "Peranan dibenarkan",
+            "Next": "Seterusnya",
+            "Back": "belakang",
+            "RecurringEndDate": "Tarikh Tamat Berulang",
+            "ScheduleOnlineConference": "Jadual Telesidang",
+            "SetLivestream": "Tampal pautan ke strim langsung \/ persidangan video",
+            "SelectTimeZone": "Pilih Zon masa"
+        },
+        "EditAvailability": "Edit Ketersediaan",
+        "SetVisitors": "Tetapkan Pelawat",
+        "Price": "harga",
+        "SelectAction": "Sila pilih tindakan",
+        "OpenProfile": "Buka profil",
+        "RemoveStaff": "Keluarkan kakitangan",
+        "PleaseSelectTimeSlots": "Sila pilih slot masa",
+        "ExceptionOccurred": "Pengecualian berlaku",
+        "NotEnoughCreditsToParticipateEvents": "Kredit tidak mencukupi untuk menyertai acara {{eventsAmount}}. Anda memerlukan {{needCredits}} kredit. nak beli?",
+        "LiveStream": "Siaran langsung",
+        "InviteStaff": "Jemput kakitangan"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Tarikh mula",
+            "endDate": "Tarikh tamat",
+            "justOnce": "Hanya sekali",
+            "justOnceWeekly": "Minggu ini sahaja",
+            "justOnceMonthly": "Bulan ini sahaja",
+            "recurring": "Berulang"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Acara percuma",
+            "optional": "Sumbangan pilihan",
+            "required": "Bayaran yang diperlukan"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Sumbangan pilihan",
+            "required": "Bayaran yang diperlukan",
+            "paid": "dibayar"
+        },
+        "confirmationDialog": {
+            "title": "Pengesahan pembayaran",
+            "content": "Acara ini mempunyai sumbangan pilihan sebanyak {{amount}}.",
+            "button": "Sumbangkan"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} belum lagi menjadi sebahagian daripada acara itu. Adakah anda mahu menambah mereka sebagai peserta?",
+        "userNotFound": "Pengguna tidak dijumpai",
+        "confirmYes": "ya",
+        "confirmNo": "Tidak"
+    },
+    "notifications": {
+        "EventActivityIn": "Aktiviti acara dalam {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Peraturan berulang ditukar untuk acara {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "menguruskan langganan e-mel anda",
+        "IfUnsubscribe": "Jika anda ingin berhenti melanggan",
+        "ClickHereToVisitEvent": "Sila klik di sini untuk melawat acara",
+        "Calendars\/reminder": "Acara &quot;{{{call 'message.getInstruction' 'name'}}&quot; akan bermula dalam {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Telesidang bermula",
+            "Ended": "Telesidang tamat"
+        },
+        "livestream": {
+            "Started": "Strim langsung bermula",
+            "Ended": "Strim langsung tamat",
+            "ClickToView": "Lihat di sini."
+        }
+    },
+    "import": {
+        "linkTitle": "Isi Hamparan Ini",
+        "fileLabel": "Muat Naik Hamparan:",
+        "importOptions": "Pilihan",
+        "importProgress": "Kemajuan",
+        "sampleCSV": "Muat turun Contoh CSV",
+        "joinEventLabel": "Sertai pengguna ke acara rawak",
+        "smsText": "Hei, saya baru sahaja menghantar pautan kepada {{communityName}} kepada anda. Sila semak.",
+        "emailSubject": "Baru sahaja menghantar pautan kepada anda",
+        "emailBody": "Hei, saya baru sahaja menghantar jemputan kepada {{communityName}}. Sila semak.",
+        "fileNotFound": "Maaf, fail CSV tidak ditemui.",
+        "fileEmpty": "Maaf, fail CSV kosong.",
+        "fieldNotFound": "Medan yang diperlukan &quot;{{1}}&quot; tidak ditemui",
+        "userIdNotFound": "pengguna wujud tetapi id kosong",
+        "activateUsers": "hantar mesej pengaktifan kepada pengguna?",
+        "taskStreamInvalid": "aliran tugas tidak sah",
+        "instructionsEmpty": "arahan aliran tugas kosong",
+        "interestsEmpty": "tidak dapat minat",
+        "interestAbsent": "minat {{1}} tidak ditemui",
+        "complete": "lengkap",
+        "errorLine": "baris {{1}}",
+        "errorsTitle": "Ralat berlaku",
+        "communityUsers": "Ini senarai komuniti",
+        "toMainCommunityToo": "berkaitan dengan komuniti utama juga",
+        "ChooseFile": "pilih fail"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Mewakili acara yang boleh disertai oleh orang ramai",
+            "displayType": "Peristiwa"
+        },
+        "Calendars\/recurring": {
+            "description": "Digunakan untuk mengaitkan aliran yang dimaksudkan untuk berulang secara berkala",
+            "displayType": "Peristiwa Berulang"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Tambah Slot",
+        "StartTime": "Masa mula",
+        "EndTime": "Masa tamat",
+        "Save": "Jimat",
+        "AddTimeSlot": "Tambah Slot Masa",
+        "CopyFromDay": "Salin dari hari",
+        "Nearest": "Terhampir",
+        "Today": "Hari ini",
+        "Tomorrow": "Esok",
+        "AfterTomorrow": "Selepas esok"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Langgan Kalendar",
+        "copyLinkBelow": "Salin pautan di bawah",
+        "goTo": "Pergi ke:",
+        "pasteCopiedTo": "Tampal pautan yang disalin ke medan &quot;URL kalendar&quot;.",
+        "clickAddCalendar": "Klik butang &quot;Tambah kalendar&quot;.",
+        "copyLink": "Salin pautan",
+        "tapToCopy": "Ketik butang di bawah untuk menyalin pautan ke papan keratan anda",
+        "linkCopied": "Pautan Disalin",
+        "step2": "Pautan Disalin. Kami akan membuka Kalendar Google. Anda perlu menampal pautan ke dalam kotak teks, klik &quot;Tambah kalendar&quot;, dan tutup tab (lihat tangkapan skrin di bawah)",
+        "calendarAppPreferences": "Buka Keutamaan dalam Apl Kalendar pada Mac anda dan tetapkan Apl Kalendar Lalai menjadi seperti yang ditunjukkan di bawah.",
+        "thenCloseDialog": "Kemudian tutup dialog ini untuk melanggan kalendar anda!",
+        "success": "Kalendar berjaya disegerakkan"
+    }
+}

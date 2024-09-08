@@ -1,0 +1,31 @@
+UPDATE {{prefix}}related_to
+SET toStreamName = 'Calendars/calendar/main',
+type = 'Calendars/events'
+WHERE toStreamName = 'Calendars/events/main'
+AND type = 'Calendars/event';
+
+UPDATE {{prefix}}related_from
+SET toStreamName = 'Calendars/calendar/main',
+type = 'Calendars/events'
+WHERE toStreamName = 'Calendars/events/main'
+AND type = 'Calendars/event';
+
+UPDATE {{prefix}}stream
+SET name = 'Calendars/calendar/main'
+WHERE name = 'Calendars/events/main';
+
+UPDATE {{prefix}}message
+SET streamName = 'Calendars/calendar/main'
+WHERE streamName = 'Calendars/events/main';
+
+UPDATE {{prefix}}participant
+SET streamName = 'Calendars/calendar/main'
+WHERE streamName = 'Calendars/events/main';
+
+UPDATE {{prefix}}participant
+SET streamType = 'Calendars/calendar'
+WHERE streamType = 'Calendars/events';
+
+UPDATE {{prefix}}subscription
+SET streamName = 'Calendars/calendar/main'
+WHERE streamName = 'Calendars/events/main';

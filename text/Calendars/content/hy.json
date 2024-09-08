@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "հուն",
+        "Feb": "փետր",
+        "Mar": "Մարտ",
+        "Apr": "ապր",
+        "May": "մայիս",
+        "Jun": "հուն",
+        "Jul": "հուլ",
+        "Aug": "օգ",
+        "Sep": "սեպտ",
+        "Oct": "հոկտ",
+        "Nov": "նոյ",
+        "Dec": "դեկտ"
+    },
+    "monthsLong": {
+        "Jan": "հունվար",
+        "Feb": "փետրվար",
+        "Mar": "մարտ",
+        "Apr": "ապրիլ",
+        "May": "մայիս",
+        "Jun": "հունիս",
+        "Jul": "հուլիս",
+        "Aug": "օգոստոս",
+        "Sep": "սեպտեմբեր",
+        "Oct": "հոկտեմբեր",
+        "Nov": "նոյեմբեր",
+        "Dec": "դեկտեմբեր"
+    },
+    "weekdays": {
+        "Sun": "արև",
+        "Mon": "Երկ",
+        "Tue": "Երք",
+        "Wed": "ամուսնացնել",
+        "Thu": "Հինգշ",
+        "Fri": "Ուրբ",
+        "Sat": "Շաբաթ"
+    },
+    "weekdaysLong": {
+        "Sun": "Կիրակի",
+        "Mon": "Երկուշաբթի",
+        "Tue": "երեքշաբթի",
+        "Wed": "չորեքշաբթի",
+        "Thu": "հինգշաբթի",
+        "Fri": "Ուրբաթ",
+        "Sat": "շաբաթ օրը"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Պլանավորեք նոր իրադարձություն"
+        },
+        "tool": {
+            "HostedBy": "Հյուրընկալվում է {{name}}-ի կողմից",
+            "Name": "Անուն",
+            "AreYouIn": "Մե՞ս եք",
+            "Yes": "Այո՛",
+            "No": "Ոչ",
+            "Ok": "Լավ",
+            "Cancel": "Չեղարկել",
+            "Maybe": "Միգուցե",
+            "Conversation": "Զրույց",
+            "Promote": "Խթանել այս իրադարձությունը",
+            "Reminders": "Հիշեցումներ",
+            "RemindersLabel": "Ես ուզում եմ տեղեկանալ իրադարձության մասին հետևյալում.",
+            "MoreInfo": "Լրացուցիչ տեղեկություններ",
+            "Registration": "Գրանցում",
+            "SetReminders": "Խնդրում ենք սահմանել հիշեցումներ",
+            "ReservationFee": "Ամրագրման վճար",
+            "AddParticipants": "Ավելացնել Մասնակիցներ",
+            "ManageReservation": "Կառավարեք ամրագրումը",
+            "UpdateFutureReservations": "Ցանկանու՞մ եք նաև նույն կերպ թարմացնել բոլոր ապագա ամրագրումները:",
+            "RecurringAdmin": "Կրկնվող կարգավորումներ",
+            "MakeReservation": "Կատարել ամրագրում",
+            "StartLiveStream": "Սեղմեք՝ ուղիղ հեռարձակման համար",
+            "LiveStreamEnded": "Ուղիղ հեռարձակումն ավարտվել է",
+            "ClickToViewRecording": "սեղմեք ձայնագրությունը դիտելու համար",
+            "Checkin": "Սկանավորեք մասնակիցների կոդերը",
+            "Myqr": "Գրանցվել",
+            "CloseEvent": {
+                "button": "Չեղարկել միջոցառումը",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Իսկապե՞ս ուզում եք չեղարկել այս միջոցառումը:",
+                        "Participant": "Այս միջոցառմանը կա 1 մասնակից",
+                        "Participants": "Այս միջոցառմանը կա {{count}} մասնակից",
+                        "Recurring": "Այս իրադարձությունը կրկնվում է: Ցանկանու՞մ եք նաև չեղարկել դրա բոլոր ապագա օրինակները:"
+                    },
+                    "trip": {
+                        "Cancel": "Ցանկանու՞մ եք նաև չեղարկել ձեր ուղևորությունը {{tripDirection}} այս իրադարձությունը:",
+                        "Passengers": "Կան {{passengerCount}} ուղևորներ, որոնք ապավինում են ձեզ:",
+                        "Title": "Փակել Ուղևորությունը"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "ԻՑ",
+                        "to": "դեպի",
+                        "from": "-ից"
+                    }
+                }
+            },
+            "Calendar": "Օրացույց",
+            "Interests": "Հետաքրքրություններ",
+            "Directions": "Ուղղություններ",
+            "TitleOfEvent": "Միջոցառման անվանումը.",
+            "OpenTo": "Բաց դեպի",
+            "GoingTo": "կլինի ժամը",
+            "NotGoingTo": "չի լինի",
+            "MaybeGoingTo": "միգուցե կլինի ժամը",
+            "AdminDontPay": "Ադմինը վճարելու կարիք չունի",
+            "PublisherDontPay": "Հրատարակիչը վճարելու կարիք չունի",
+            "EmptyList": "Դատարկ ցուցակ",
+            "NeedToPayCredits": "Պետք է վճարել՝ <span>{{amount}} վարկ<\/span>",
+            "PleaseJoinParticipants": "Խնդրում ենք միանալ {{participant}}",
+            "YouReservingPlace": "Դուք կպահեք ձեր տեղը:",
+            "SelectIncludesToAdd": "Ընտրեք մեկ կամ մի քանի {{TypeDisplayPlural}} ավելացնելու համար՝",
+            "YouHaveNotRegisteredAnyIncluded": "Դուք դեռ չեք գրանցել որևէ {{TypeDisplayPlural}}",
+            "Proceed": "Շարունակել",
+            "MakeChanges": "Պահպանել իմ փոփոխությունները",
+            "CancelReservation": "Չեղարկել ամբողջ ամրագրումը",
+            "Total": "Ընդամենը",
+            "RequiredRelatedParticipants": "Այս միջոցառման համար անհրաժեշտ են մասնակիցներ՝ {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Խնդրում ենք խմբագրել «{{title}}» հասանելիությունը՝ պարբերական կարգավորումները թարմացնելու համար"
+        },
+        "composer": {
+            "SetLocation": "Սահմանել իմ գտնվելու վայրը",
+            "SetInfoLink": "Սահմանեք հղումը լրացուցիչ տեղեկատվության համար",
+            "ChooseAvailability": "Ընտրեք մատչելի ծառայություն",
+            "ChooseActivity": "Ընտրեք Գործունեություն",
+            "ChoosePublisher": "Ընտրեք Հրատարակիչ",
+            "Day": "Օր",
+            "Starting": "Սկսելով",
+            "Duration": "Տեւողությունը",
+            "Hour": "Ժամ",
+            "Hours": "Ժամեր",
+            "Minutes": "Րոպեներ",
+            "Ending": "Ավարտ",
+            "People": "Ժողովուրդ",
+            "Share": "Կիսվել",
+            "Continue": "Շարունակել",
+            "Recurring": "Կրկնվող",
+            "RecurringTitle": "Կրկնվող օրեր",
+            "Daily": "Ամենօրյա",
+            "Weekly": "Շաբաթական",
+            "Monthly": "Ամսական",
+            "SelectLocation": "Խնդրում ենք նախ ընտրել տեղ:",
+            "eventType": "Միջոցառման տեսակը",
+            "EditTitle": "Մի հետաքրքիր վերնագիր մտածեք...",
+            "SetTitle": "Խնդրում ենք սահմանել միջոցառման անվանումը",
+            "ScheduleOnlineConference": "Ժամանակացույց առցանց կոնֆերանս",
+            "SOCDescription": "Խնդրում ենք սահմանել կոնֆերանսի մեկնարկի և ավարտի ժամը: Յուրաքանչյուր մարդ, ով այցելում է միջոցառում այս ժամանակահատվածում, ավտոմատ կմիանա առցանց կոնֆերանսին:",
+            "EndDate": "Վերջ",
+            "location": {
+                "Title": "Սահմանեք ձեր գտնվելու վայրը"
+            },
+            "interest": {
+                "Title": "Ընտրեք Գործունեություն",
+                "Filter": "Որոնման հետաքրքրություններ..."
+            },
+            "SetLivestream": "Տեղադրեք հղումը ուղիղ հեռարձակման\/տեսակոնֆերանսի համար"
+        },
+        "EventAlreadyClosed": "Այս միջոցառումն արդեն փակվել է",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Ավելացնե՞լ Օրացույցին:",
+                "prompt": "Ցանկանու՞մ եք այս իրադարձությունն ավելացնել ձեր օրացույցում:",
+                "yes": "Այո՛",
+                "no": "Ոչ"
+            },
+            "dialog": {
+                "Title": "Ավելացրեք իրադարձություն ձեր օրացույցում"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Հասանելիություններ",
+        "NewAvailability": {
+            "Title": "Նոր Հասանելիություն",
+            "SaveAvailability": "Պահպանել հասանելիությունը",
+            "SelectTemplate": "Խնդրում ենք ընտրել Ծառայություն",
+            "SelectLocation": "Խնդրում ենք ընտրել Գտնվելու վայրը",
+            "SelectArea": "Խնդրում ենք ընտրել Տարածք",
+            "Type": "Տիպ",
+            "Weekly": "Շաբաթական",
+            "RecurringStartDate": "Կրկնվող մեկնարկի ամսաթիվ",
+            "EndDate": "Ավարտի ամսաթիվ",
+            "SelectTime": "Կառավարեք ժամանակի սլոթերը",
+            "SelectTimeSlot": "Ընտրեք ժամանակային հատված",
+            "SelectTimeSlots": "Ընտրեք ցանկալի ժամանակային հատվածները",
+            "PeopleMin": "Նվազագույն այցելուներ",
+            "PeopleMax": "Առավելագույն այցելուներ",
+            "PeopleLabels": "Պիտակներ թույլատրվում են",
+            "Next": "Հաջորդը",
+            "Back": "Ետ"
+        },
+        "EditAvailability": "Խմբագրել հասանելիությունը",
+        "SetVisitors": "Սահմանել այցելուներ",
+        "Price": "Գին",
+        "SelectAction": "Խնդրում ենք ընտրել գործողություն",
+        "OpenProfile": "Բացեք պրոֆիլը",
+        "RemoveStaff": "Հեռացրեք անձնակազմը",
+        "PleaseSelectTimeSlots": "Խնդրում ենք ընտրել ժամային հատվածները",
+        "ExceptionOccurred": "Բացառություն է տեղի ունեցել",
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} միջոցառումներին մասնակցելու համար բավարար միավորներ չկան: Ձեզ անհրաժեշտ է {{needCredits}} վարկ: Ցանկանու՞մ եք գնել:"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Մեկնարկի ամսաթիվ",
+            "endDate": "Ավարտի ամսաթիվը",
+            "justOnce": "Միայն մեկ անգամ",
+            "justOnceWeekly": "Միայն այս շաբաթ",
+            "justOnceMonthly": "Միայն այս ամիս",
+            "recurring": "Կրկնվող"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Անվճար միջոցառում",
+            "optional": "Ընտրովի ներդրում",
+            "required": "Պահանջվող վճարում"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Ընտրովի ներդրում",
+            "required": "Պահանջվող վճարում",
+            "paid": "վճարված"
+        },
+        "confirmationDialog": {
+            "title": "Վճարման հաստատում",
+            "content": "Այս իրադարձությունը կամընտիր ներդրում ունի՝ {{amount}}:",
+            "button": "Աջակցել"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}}-ը դեռ միջոցառման մաս չէ: Ցանկանու՞մ եք դրանք ավելացնել որպես մասնակից:",
+        "userNotFound": "Օգտատերը չի գտնվել",
+        "confirmYes": "Այո՛",
+        "confirmNo": "Ոչ"
+    },
+    "notifications": {
+        "EventActivityIn": "Իրադարձությունների գործունեությունը {{{stream.fields.title}}}-ում",
+        "RecurringRulesChanged": "Իրադարձության կանոնները փոխվել են {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "կառավարել ձեր էլփոստի բաժանորդագրությունները",
+        "IfUnsubscribe": "Եթե ցանկանում եք չեղարկել բաժանորդագրությունը",
+        "ClickHereToVisitEvent": "Միջոցառումն այցելելու համար խնդրում ենք սեղմել այստեղ",
+        "Calendars\/reminder": "Իրադարձությունը «{{{call 'message.getInstruction' 'name'}}» կսկսվի {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Լրացրեք այս աղյուսակը",
+        "fileLabel": "Վերբեռնել աղյուսակը՝",
+        "importOptions": "Ընտրանքներ",
+        "importProgress": "Առաջընթաց",
+        "sampleCSV": "Ներբեռնեք CSV-ի նմուշը",
+        "joinEventLabel": "Միացեք օգտատերերին պատահական իրադարձությանը",
+        "smsText": "Հեյ, ես հենց նոր ուղարկեցի ձեզ հղում դեպի {{communityName}}: Խնդրում ենք ստուգել այն:",
+        "emailSubject": "Ձեզ ուղղակի հղում է ուղարկել",
+        "emailBody": "Հեյ, ես հենց նոր ձեզ հրավեր ուղարկեցի {{communityName}}-ին: Խնդրում ենք ստուգել այն:",
+        "fileNotFound": "Ներողություն, CSV ֆայլը չի գտնվել:",
+        "fileEmpty": "Ներողություն, CSV ֆայլը դատարկ է:",
+        "fieldNotFound": "Պահանջվող «{{1}}» դաշտը չի գտնվել",
+        "userIdNotFound": "օգտատերը գոյություն ունի, բայց ID-ն դատարկ է",
+        "activateUsers": "ուղարկե՞լ ակտիվացման հաղորդագրություն օգտվողներին:",
+        "taskStreamInvalid": "առաջադրանքի հոսքն անվավեր է",
+        "instructionsEmpty": "առաջադրանքների հոսքի հրահանգները դատարկ են",
+        "interestsEmpty": "չի կարող շահեր ստանալ",
+        "interestAbsent": "հետաքրքրությունը {{1}} չի գտնվել",
+        "complete": "Ամբողջական",
+        "errorLine": "տող {{1}}",
+        "errorsTitle": "Սխալներ են տեղի ունեցել",
+        "communityUsers": "Սա համայնքների ցուցակն է"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Ներկայացնում է իրադարձություն, որին մարդիկ կարող են մասնակցել",
+            "displayType": "Իրադարձություն"
+        },
+        "Calendars\/recurring": {
+            "description": "Օգտագործվում է հոսքերի հետ կապված, որոնք նախատեսված են պարբերաբար կրկնվելու համար",
+            "displayType": "Կրկնվող իրադարձություն"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Ավելացնել բնիկ",
+        "StartTime": "Մեկնարկի ժամանակը",
+        "EndTime": "Ավարտի ժամանակը",
+        "Save": "Պահպանել",
+        "AddTimeSlot": "Ավելացրեք ժամանակի սլոտ",
+        "CopyFromDay": "Պատճենել օրվանից",
+        "Nearest": "Մոտակա",
+        "Today": "Այսօր",
+        "Tomorrow": "Վաղը",
+        "AfterTomorrow": "Վաղվանից հետո"
+    }
+}

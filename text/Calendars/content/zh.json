@@ -1,0 +1,359 @@
+{
+    "months": {
+        "Jan": "简",
+        "Feb": "二月",
+        "Mar": "三月",
+        "Apr": "四月",
+        "May": "可能",
+        "Jun": "君",
+        "Jul": "七月",
+        "Aug": "八月",
+        "Sep": "九月",
+        "Oct": "十月",
+        "Nov": "十一月",
+        "Dec": "十二月"
+    },
+    "monthsLong": {
+        "Jan": "一月",
+        "Feb": "二月",
+        "Mar": "行进",
+        "Apr": "四月",
+        "May": "可能",
+        "Jun": "六月",
+        "Jul": "七月",
+        "Aug": "八月",
+        "Sep": "九月",
+        "Oct": "十月",
+        "Nov": "十一月",
+        "Dec": "十二月"
+    },
+    "weekdays": {
+        "Sun": "太阳",
+        "Mon": "星期一",
+        "Tue": "周二",
+        "Wed": "星期三",
+        "Thu": "星期四",
+        "Fri": "周五",
+        "Sat": "星期六"
+    },
+    "weekdaysLong": {
+        "Sun": "星期日",
+        "Mon": "周一",
+        "Tue": "周二",
+        "Wed": "周三",
+        "Thu": "周四",
+        "Fri": "星期五",
+        "Sat": "周六"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "计划新活动"
+        },
+        "tool": {
+            "AreYouIn": "你在吗？",
+            "Yes": "是的",
+            "No": "不",
+            "Maybe": "或许",
+            "Conversation": "对话",
+            "Promote": "宣传本次活动",
+            "Checkin": "扫描与会者代码",
+            "CloseEvent": {
+                "button": "取消活动",
+                "confirm": {
+                    "text": {
+                        "Cancel": "您确定要取消此活动吗？",
+                        "Participant": "本次活动有1人参加",
+                        "Participants": "此活动有 {{count}} 名参与者",
+                        "Recurring": "此事件正在重复发生。您是否也想取消所有未来的实例？"
+                    },
+                    "trip": {
+                        "Cancel": "您是否也想取消您的行程{{tripDirection}}此活动？",
+                        "Passengers": "有 {{passengerCount}} 名乘客依赖您。",
+                        "Title": "关闭行程"
+                    },
+                    "directions": {
+                        "TO": "到",
+                        "FROM": "从",
+                        "to": "到",
+                        "from": "从"
+                    }
+                }
+            },
+            "Calendar": "日历",
+            "Interests": "兴趣",
+            "Directions": "方向",
+            "TitleOfEvent": "活动名称：",
+            "OpenTo": "开放",
+            "MoreInfo": "更多信息",
+            "Registration": "登记",
+            "GoingTo": "会在",
+            "NotGoingTo": "不会在",
+            "MaybeGoingTo": "也许会在",
+            "HostedBy": "由 {{name}} 主持",
+            "LiveStream": "点击直播",
+            "Myqr": "报到",
+            "AdminDontPay": "管理员无需付费",
+            "Name": "名称",
+            "ReservationFee": "预订费",
+            "AddParticipants": "添加参与者",
+            "ManageReservation": "管理预订",
+            "MakeReservation": "进行预订",
+            "StartLiveStream": "点击直播",
+            "LiveStreamEnded": "直播已结束",
+            "ClickToViewRecording": "点击查看录音",
+            "EmptyList": "空列表",
+            "NeedToPayCredits": "需要支付： <span>{{amount}} 个积分<\/span>",
+            "PleaseJoinParticipants": "请加入 {{participant}}",
+            "YouReservingPlace": "你会保留你的位置。",
+            "SelectIncludesToAdd": "选择一个或多个 {{TypeDisplayPlural}} 以添加：",
+            "YouHaveNotRegisteredAnyIncluded": "您还没有注册任何 {{TypeDisplayPlural}}",
+            "Proceed": "继续",
+            "MakeChanges": "保存我的更改",
+            "CancelReservation": "取消整个预订",
+            "Total": "全部的",
+            "Ok": "行",
+            "Cancel": "取消",
+            "Reminders": "提醒",
+            "RemindersLabel": "我想收到以下事件的通知：",
+            "SetReminders": "请设置提醒",
+            "UpdateFutureReservations": "您是否也想以同样的方式更新所有未来的预订？",
+            "RecurringAdmin": "重复设置",
+            "PublisherDontPay": "发布者无需付费",
+            "RequiredRelatedParticipants": "此活动需要参与者：{{requiredParticipantsList}}",
+            "AvailabilityWarning": "请编辑可用性“{{title}}”以更新定期设置",
+            "Presentation": "推介会",
+            "YouAreNotParticipated": "您不是活动参与者",
+            "LiveStreamStarted": "直播已开始",
+            "WebRTCStarted": "电话会议开始",
+            "WebRTCEnded": "电话会议结束"
+        },
+        "composer": {
+            "SetLocation": "设置我的位置",
+            "ChooseActivity": "选择一个活动",
+            "ChoosePublisher": "选择出版商",
+            "Day": "日",
+            "Starting": "开始",
+            "People": "人们",
+            "Share": "分享",
+            "Recurring": "再次发生的",
+            "RecurringTitle": "重复日",
+            "Daily": "日常",
+            "Weekly": "每周",
+            "Monthly": "月刊",
+            "SelectLocation": "请先选择一个位置。",
+            "eventType": "事件类型",
+            "EditTitle": "想一个有趣的标题...",
+            "SetTitle": "请设置活动标题",
+            "location": {
+                "Title": "设置您的位置"
+            },
+            "interest": {
+                "Title": "选择一个活动",
+                "Filter": "搜索兴趣..."
+            },
+            "Ending": "结尾",
+            "ScheduleOnlineConference": "安排在线会议",
+            "SOCDescription": "请定义会议开始和结束时间。在此期间访问活动的每个人都将自动连接到在线会议。",
+            "EndDate": "结尾",
+            "SetLivestream": "将链接粘贴到直播\/视频会议",
+            "SetInfoLink": "将链接设置为附加信息",
+            "ChooseService": "选择可用服务",
+            "Continue": "继续",
+            "ChooseAvailability": "选择可用服务",
+            "Duration": "期间",
+            "Hour": "小时",
+            "Hours": "小时",
+            "Minutes": "分钟",
+            "Locally": "本地",
+            "EventInfoLink": "事件信息链接",
+            "TicketPurchaseLink": "购票链接"
+        },
+        "EventAlreadyClosed": "此活动已经结束",
+        "addToCalendar": {
+            "permissions": {
+                "title": "添加到日历？",
+                "prompt": "您想将此活动添加到您的日历吗？",
+                "yes": "是的",
+                "no": "不"
+            },
+            "dialog": {
+                "Title": "将事件添加到您的日历"
+            }
+        },
+        "ErrorLeaveEndedEvent": "抱歉，您不能离开已结束的活动"
+    },
+    "recurring": {
+        "dialog": {
+            "justonce": "就这一次",
+            "recurring": "再次发生的",
+            "startDate": "开始日期",
+            "endDate": "结束日期",
+            "justOnce": "就一次",
+            "justOnceWeekly": "仅限本周",
+            "justOnceMonthly": "仅限本月"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "免费活动",
+            "optional": "可选贡献",
+            "required": "所需付款"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "可选贡献",
+            "required": "所需付款",
+            "paid": "有薪酬的"
+        },
+        "confirmationDialog": {
+            "title": "付款确认",
+            "content": "此事件具有 {{amount}} 的可选贡献。",
+            "button": "贡献"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} 还不是事件的一部分。要将他们添加为参与者吗？",
+        "userNotFound": "未找到用户",
+        "confirmYes": "是的",
+        "confirmNo": "不"
+    },
+    "notifications": {
+        "EventActivityIn": "{{{stream.fields.title}}} 中的事件活动",
+        "RecurringRulesChanged": "事件 {{{call 'message.getInstruction' 'eventTitle'}}} 的重复规则已更改",
+        "ManageEmailSubscriptions": "管理您的电子邮件订阅",
+        "IfUnsubscribe": "如果您想退订",
+        "ClickHereToVisitEvent": "请点击这里参观活动",
+        "Calendars\/reminder": "事件“{{{call 'message.getInstruction' 'name'}}”将在 {{&call 'message.getInstruction' 'time'}}} 开始",
+        "webrtc": {
+            "Started": "电话会议开始",
+            "Ended": "电话会议结束"
+        },
+        "livestream": {
+            "Started": "直播已开始",
+            "Ended": "直播已结束",
+            "ClickToView": "在此查看。"
+        }
+    },
+    "import": {
+        "linkTitle": "填写此电子表格",
+        "fileLabel": "上传电子表格：",
+        "joinEventLabel": "将用户加入随机事件",
+        "smsText": "嘿，我刚刚向您发送了一个指向 {{communityName}} 的链接。请检查一下。",
+        "emailSubject": "刚刚给你发了链接",
+        "emailBody": "嘿，我刚刚向您发送了 {{communityName}} 的邀请。请检查一下。",
+        "fileNotFound": "抱歉，未找到 CSV 文件。",
+        "fileEmpty": "抱歉，CSV 文件为空。",
+        "fieldNotFound": "未找到必填字段“{{1}}”",
+        "userIdNotFound": "用户存在但 id 为空",
+        "activateUsers": "向用户发送激活消息？",
+        "taskStreamInvalid": "任务流无效",
+        "instructionsEmpty": "任务流指令为空",
+        "interestsEmpty": "得不到利益",
+        "interestAbsent": "未找到兴趣 {{1}}",
+        "complete": "完全的",
+        "errorLine": "行 {{1}}",
+        "errorsTitle": "发生错误",
+        "importOptions": "选项",
+        "importProgress": "进步",
+        "sampleCSV": "下载示例 CSV",
+        "communityUsers": "这是社区列表",
+        "toMainCommunityToo": "也与主要社区有关",
+        "ChooseFile": "选择文件"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "表示人们可以参与的事件",
+            "displayType": "事件"
+        },
+        "Calendars\/recurring": {
+            "description": "用于定期重复的关联流",
+            "displayType": "重复事件"
+        }
+    },
+    "services": {
+        "Title": "服务",
+        "NewService": {
+            "Title": "新的可用性",
+            "SaveService": "保存可用性",
+            "SelectTemplate": "请选择服务",
+            "SelectLocation": "请选择位置",
+            "SelectArea": "请选择地区",
+            "SelectTime": "管理时隙",
+            "SelectTimeSlot": "选择一个时隙",
+            "PeopleMin": "最低访客",
+            "PeopleMax": "最多访客",
+            "PeopleLabels": "允许标签",
+            "Next": "下一个",
+            "Back": "背部"
+        },
+        "EditService": "编辑可用性",
+        "SetVisitors": "设置访客",
+        "Price": "价钱",
+        "SelectAction": "请选择动作",
+        "OpenProfile": "开启个人资料",
+        "RemoveStaff": "撤职"
+    },
+    "timeslots": {
+        "AddSlot": "添加插槽",
+        "StartTime": "开始时间",
+        "EndTime": "时间结束",
+        "Save": "保存",
+        "AddTimeSlot": "添加时间段",
+        "CopyFromDay": "从那天开始复制",
+        "Nearest": "最近的",
+        "Today": "今天",
+        "Tomorrow": "明天",
+        "AfterTomorrow": "明天之后"
+    },
+    "availabilities": {
+        "Title": "可用性",
+        "NewAvailability": {
+            "Title": "新的可用性",
+            "SaveAvailability": "保存可用性",
+            "SelectTemplate": "请选择服务",
+            "SelectLocation": "请选择位置",
+            "SelectArea": "请选择区域",
+            "SelectTime": "管理时间段",
+            "SelectTimeSlot": "选择一个时间段",
+            "PeopleMin": "最少访客",
+            "PeopleMax": "最大访客",
+            "PeopleLabels": "允许的角色",
+            "Next": "下一个",
+            "Back": "后退",
+            "Type": "类型",
+            "Weekly": "每周",
+            "RecurringStartDate": "重复开始日期",
+            "EndDate": "结束日期",
+            "SelectTimeSlots": "选择所需的时间段",
+            "RecurringEndDate": "循环结束日期",
+            "ScheduleOnlineConference": "安排电话会议",
+            "SetLivestream": "将链接粘贴到直播\/视频会议",
+            "SelectTimeZone": "选择时区"
+        },
+        "EditAvailability": "编辑可用性",
+        "SetVisitors": "设置访客",
+        "Price": "价格",
+        "SelectAction": "请选择动作",
+        "OpenProfile": "打开个人资料",
+        "RemoveStaff": "移除员工",
+        "PleaseSelectTimeSlots": "请选择时段",
+        "ExceptionOccurred": "发生异常",
+        "NotEnoughCreditsToParticipateEvents": "没有足够的积分来参加 {{eventsAmount}} 活动。您需要 {{needCredits}} 个积分。想购买？",
+        "LiveStream": "现场直播",
+        "InviteStaff": "邀请员工"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "订阅日历",
+        "copyLinkBelow": "复制下方链接",
+        "goTo": "去：",
+        "pasteCopiedTo": "将复制的链接粘贴到“日历的 URL”字段",
+        "clickAddCalendar": "点击“添加日历”按钮",
+        "copyLink": "复制链接",
+        "tapToCopy": "点击下面的按钮将链接复制到剪贴板",
+        "linkCopied": "链接已复制",
+        "step2": "链接已复制。我们即将打开 Google 日历。您需要将链接粘贴到文本框中，点击“添加日历”，然后关闭选项卡（见下面的屏幕截图）",
+        "calendarAppPreferences": "打开 Mac 上日历应用程序中的“偏好设置”，然后将“默认日历应用程序”设置为如下所示。",
+        "thenCloseDialog": "然后关闭此对话框以订阅您的日历！",
+        "success": "日历已成功同步"
+    }
+}

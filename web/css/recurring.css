@@ -1,0 +1,26 @@
+.Calendars_recurring_tool .Calendars_composer_recurring_settings {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+.Calendars_recurring_tool .Calendars_composer_recurring_settings::before {
+	font-family: 'qplatform-calendars' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+	font-size: 30px; content: "\e90a"; color: #029305;
+}
+
+.Calendars_composer_recurring_view,
+.Calendars_composer_recurring_admin {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+}
+.Calendars_composer_recurring_view::before,
+.Calendars_composer_recurring_admin::before {
+	font-family: 'qplatform-calendars' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+	font-size: 30px; content: "\e90a"; color: #029305;
+}

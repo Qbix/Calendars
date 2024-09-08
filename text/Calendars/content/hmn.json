@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Feb",
+        "Mar": "Mar",
+        "Apr": "Plaub Hlis",
+        "May": "Tsib",
+        "Jun": "Jun",
+        "Jul": "Lub Xya Hli",
+        "Aug": "Aug",
+        "Sep": "Sep",
+        "Oct": "Kaum Hli",
+        "Nov": "Nov",
+        "Dec": "Kaum Ob Hlis"
+    },
+    "monthsLong": {
+        "Jan": "Lub Ib Hlis",
+        "Feb": "Lub Ob Hlis",
+        "Mar": "Lub Peb Hlis",
+        "Apr": "Plaub Hlis Ntuj",
+        "May": "Tsib",
+        "Jun": "Lub Rau Hli",
+        "Jul": "Lub Xya Hli",
+        "Aug": "Lub yim hli ntuj",
+        "Sep": "Cuaj hlis",
+        "Oct": "Kaum Hli",
+        "Nov": "Kaum ib hlis",
+        "Dec": "Kaum Ob Hlis"
+    },
+    "weekdays": {
+        "Sun": "Hnub",
+        "Mon": "Mon",
+        "Tue": "Tue",
+        "Wed": "Wed",
+        "Thu": "Thu",
+        "Fri": "Hnub Friday",
+        "Sat": "Sat"
+    },
+    "weekdaysLong": {
+        "Sun": "Hnub Sunday",
+        "Mon": "Hnub Monday",
+        "Tue": "Tuesday",
+        "Wed": "Hnub Wednesday",
+        "Thu": "Hnub Thursday",
+        "Fri": "Hnub Friday",
+        "Sat": "Hnub Saturday"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Npaj Cov Txheej Txheem Tshiab"
+        },
+        "tool": {
+            "HostedBy": "hosted los ntawm {{name}}",
+            "Name": "Lub npe",
+            "AreYouIn": "Koj puas nyob hauv?",
+            "Yes": "Yog lawm",
+            "No": "Tsis muaj",
+            "Ok": "Ok",
+            "Cancel": "Tso tseg",
+            "Maybe": "Tej zaum",
+            "Conversation": "Kev sib tham",
+            "Promote": "Txhawb nqa qhov kev tshwm sim no",
+            "Reminders": "Nco ntsoov",
+            "RemindersLabel": "Kuv xav tau kev ceeb toom ntawm ib qho xwm txheej hauv:",
+            "MoreInfo": "Xav paub ntxiv",
+            "Registration": "Kev sau npe",
+            "SetReminders": "Thov teem caij ceeb toom",
+            "ReservationFee": "Nqi Reservation",
+            "AddParticipants": "Ntxiv cov neeg koom nrog",
+            "ManageReservation": "Tswj Reservation",
+            "UpdateFutureReservations": "Koj puas tseem xav hloov kho txhua qhov kev tshwj tseg yav tom ntej tib yam nkaus?",
+            "RecurringAdmin": "Cov chaw rov muaj dua",
+            "MakeReservation": "Ua Reservation",
+            "StartLiveStream": "Nyem rau Live Stream",
+            "LiveStreamEnded": "Live stream tau tas lawm",
+            "ClickToViewRecording": "nias mus saib cov ntaubntawv povthawj siv",
+            "Checkin": "Luam theej duab cov neeg tuaj koom",
+            "Myqr": "Tshawb xyuas",
+            "CloseEvent": {
+                "button": "Tso tseg qhov xwm txheej",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Koj puas paub tseeb tias koj xav rho tawm qhov kev tshwm sim no?",
+                        "Participant": "Muaj 1 tus neeg koom nrog qhov kev tshwm sim no",
+                        "Participants": "Muaj {{count}} cov neeg koom hauv qhov kev tshwm sim no",
+                        "Recurring": "Qhov xwm txheej no rov tshwm sim dua. Koj puas xav rho tawm tag nrho nws cov xwm txheej yav tom ntej thiab?"
+                    },
+                    "trip": {
+                        "Cancel": "Koj puas xav rho tawm koj qhov kev mus ncig {{tripDirection}} qhov kev tshwm sim no?",
+                        "Passengers": "Muaj {{passengerCount}} cov neeg caij tsheb tso siab rau koj.",
+                        "Title": "Kaw Kev Ncig"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "Los ntawm",
+                        "to": "rau",
+                        "from": "los ntawm"
+                    }
+                }
+            },
+            "Calendar": "Daim ntawv qhia hnub",
+            "Interests": "Kev txaus siab",
+            "Directions": "Cov lus qhia",
+            "TitleOfEvent": "Lub npe ntawm qhov xwm txheej:",
+            "OpenTo": "Qhib rau",
+            "GoingTo": "yuav nyob ntawm",
+            "NotGoingTo": "yuav tsis nyob",
+            "MaybeGoingTo": "tej zaum yuav nyob ntawm",
+            "AdminDontPay": "Admin tsis tas yuav them",
+            "PublisherDontPay": "Publisher tsis tas yuav them",
+            "EmptyList": "Daim ntawv tsis muaj",
+            "NeedToPayCredits": "Yuav tsum tau them: <span>{{amount}} credits<\/span>",
+            "PleaseJoinParticipants": "Thov koom nrog {{participant}}",
+            "YouReservingPlace": "Koj yuav tau khaws koj qhov chaw.",
+            "SelectIncludesToAdd": "Xaiv ib lossis ntau dua {{TypeDisplayPlural}} ntxiv:",
+            "YouHaveNotRegisteredAnyIncluded": "Koj tseem tsis tau sau npe rau ib qho twg {{TypeDisplayPlural}} tseem",
+            "Proceed": "Ua mus",
+            "MakeChanges": "Txuag Kuv Cov Kev Hloov",
+            "CancelReservation": "Ncua tseg tag nrho",
+            "Total": "Tag nrho",
+            "RequiredRelatedParticipants": "Qhov kev tshwm sim no xav tau cov neeg koom nrog: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Thov kho qhov muaj nyob hauv &quot;{{title}}&quot; los hloov kho cov teeb tsa rov tshwm sim"
+        },
+        "composer": {
+            "SetLocation": "Teem Kuv Qhov Chaw",
+            "SetInfoLink": "Teem Txuas rau cov ntaub ntawv ntxiv",
+            "ChooseAvailability": "Xaiv Muaj Kev Pabcuam",
+            "ChooseActivity": "Xaiv ib qho Kev Ua Si",
+            "ChoosePublisher": "Xaiv Publisher",
+            "Day": "Hnub",
+            "Starting": "Pib",
+            "Duration": "Duration",
+            "Hour": "Teev",
+            "Hours": "Teev",
+            "Minutes": "feeb",
+            "Ending": "Xaus",
+            "People": "Cov neeg",
+            "Share": "Qhia",
+            "Continue": "Txuas ntxiv",
+            "Recurring": "Rov ua dua",
+            "RecurringTitle": "Hnub rov tshwm sim",
+            "Daily": "Txhua hnub",
+            "Weekly": "Txhua lub lim tiam",
+            "Monthly": "Txhua hli",
+            "SelectLocation": "Thov xaiv qhov chaw ua ntej.",
+            "eventType": "Hom xwm txheej",
+            "EditTitle": "Xav txog lub npe ntxim nyiam...",
+            "SetTitle": "Thov teem caij lub npe",
+            "ScheduleOnlineConference": "Teem caij rooj sab laj Online",
+            "SOCDescription": "Thov txhais lub sijhawm pib thiab xaus lub rooj sib tham. Txhua tus neeg uas tuaj xyuas qhov kev tshwm sim nyob rau lub sijhawm no yuav pib txuas rau lub rooj sib tham hauv online.",
+            "EndDate": "Xaus",
+            "location": {
+                "Title": "Teem Koj Qhov Chaw"
+            },
+            "interest": {
+                "Title": "Xaiv ib qho Kev Ua Si",
+                "Filter": "Nrhiav kev txaus siab..."
+            },
+            "SetLivestream": "Paste txuas rau livestream \/ videoconference"
+        },
+        "EventAlreadyClosed": "Qhov xwm txheej no twb kaw lawm",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Ntxiv rau Calendar?",
+                "prompt": "Koj puas xav ntxiv qhov kev tshwm sim rau koj daim ntawv qhia hnub?",
+                "yes": "Yog lawm",
+                "no": "Tsis muaj"
+            },
+            "dialog": {
+                "Title": "Ntxiv qhov xwm txheej rau koj daim ntawv qhia hnub"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Muaj peev xwm",
+        "NewAvailability": {
+            "Title": "Tshiab Muaj",
+            "SaveAvailability": "Txuag Muaj",
+            "SelectTemplate": "Thov xaiv Service",
+            "SelectLocation": "Thov xaiv qhov chaw",
+            "SelectArea": "Thov xaiv Thaj Chaw",
+            "Type": "Hom",
+            "Weekly": "Txhua lub lim tiam",
+            "RecurringStartDate": "Rov pib hnub pib dua",
+            "EndDate": "Hnub Kawg",
+            "SelectTime": "Tswj Sijhawm Slots",
+            "SelectTimeSlot": "Xaiv ib lub sijhawm",
+            "SelectTimeSlots": "Xaiv cov sijhawm xav tau",
+            "PeopleMin": "Cov qhua tsawg kawg nkaus",
+            "PeopleMax": "Cov neeg tuaj xyuas siab tshaj plaws",
+            "PeopleLabels": "Daim ntawv tso cai",
+            "Next": "Tom ntej no",
+            "Back": "Rov qab"
+        },
+        "EditAvailability": "Kho kom raug Muaj",
+        "SetVisitors": "Teeb Cov Neeg Qhua",
+        "Price": "Nqe",
+        "SelectAction": "Thov xaiv qhov ua",
+        "OpenProfile": "Qhib profile",
+        "RemoveStaff": "Tshem tawm cov neeg ua haujlwm",
+        "PleaseSelectTimeSlots": "Thov xaiv lub sijhawm",
+        "ExceptionOccurred": "Kev zam tshwm sim",
+        "NotEnoughCreditsToParticipateEvents": "Tsis muaj credit txaus los koom {{eventsAmount}} cov xwm txheej. Koj xav tau {{needCredits}} khab nias. Xav yuav?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Pib hnub",
+            "endDate": "Hnub kawg",
+            "justOnce": "Ib zaug xwb",
+            "justOnceWeekly": "Lub lim tiam no nkaus xwb",
+            "justOnceMonthly": "Lub hli no nkaus xwb",
+            "recurring": "Rov ua dua"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Kev tshwm sim dawb",
+            "optional": "Optional pab txhawb",
+            "required": "Yuav tsum tau them nyiaj"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Optional pab txhawb",
+            "required": "Yuav tsum tau them nyiaj",
+            "paid": "them"
+        },
+        "confirmationDialog": {
+            "title": "Kev lees paub them nqi",
+            "content": "Qhov kev tshwm sim no muaj kev xaiv los pab ntawm {{amount}}.",
+            "button": "Pab txhawb"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} tseem tsis tau yog ib feem ntawm qhov kev tshwm sim. Koj puas xav ntxiv lawv ua tus koom nrog?",
+        "userNotFound": "Tus neeg siv tsis pom",
+        "confirmYes": "Yog lawm",
+        "confirmNo": "Tsis muaj"
+    },
+    "notifications": {
+        "EventActivityIn": "Kev ua ub no hauv {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Cov cai rov ua dua tau hloov pauv rau qhov xwm txheej {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "tswj koj tus email subscriptions",
+        "IfUnsubscribe": "Yog koj xav unsubscribe",
+        "ClickHereToVisitEvent": "Thov nias ntawm no mus saib kev tshwm sim",
+        "Calendars\/reminder": "Kev tshwm sim &quot;{{{call 'message.getInstruction' 'name'}}&quot; yuav pib hauv {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Sau Daim Ntawv Tshaj Qhia no",
+        "fileLabel": "Upload daim ntawv qhia:",
+        "importOptions": "Kev xaiv",
+        "importProgress": "Kev vam meej",
+        "sampleCSV": "Download Sample CSV",
+        "joinEventLabel": "Koom nrog cov neeg siv rau qhov xwm txheej random",
+        "smsText": "Hav, kuv nyuam qhuav xa koj mus rau {{communityName}}. Thov xyuas nws.",
+        "emailSubject": "Tsuas yog xa koj qhov txuas",
+        "emailBody": "Hav, kuv nyuam qhuav xa koj daim ntawv caw tuaj rau {{communityName}}. Thov xyuas nws.",
+        "fileNotFound": "Thov txim, tsis pom cov ntaub ntawv CSV.",
+        "fileEmpty": "Thov txim, CSV cov ntaub ntawv tsis muaj dab tsi.",
+        "fieldNotFound": "Yuav tsum tau teb &quot;{{1}}&quot; tsis pom",
+        "userIdNotFound": "tus neeg siv muaj tab sis id khoob",
+        "activateUsers": "xa cov lus qhib rau cov neeg siv?",
+        "taskStreamInvalid": "ua hauj lwm stream invalid",
+        "instructionsEmpty": "ua hauj lwm stream cov lus qhia khoob",
+        "interestsEmpty": "tsis tuaj yeem tau txais kev txaus siab",
+        "interestAbsent": "tsis pom kev txaus siab {{1}}",
+        "complete": "Ua kom tiav",
+        "errorLine": "kab {{1}}",
+        "errorsTitle": "Qhov yuam kev tshwm sim",
+        "communityUsers": "Nov yog cov npe hauv zej zog"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Sawv cev rau ib qho kev tshwm sim uas tib neeg tuaj yeem koom nrog",
+            "displayType": "Kev tshwm sim"
+        },
+        "Calendars\/recurring": {
+            "description": "Siv rau kev cuam tshuam cov kwj deg uas txhais tau tias yuav rov ua dua ib ntus",
+            "displayType": "Rov tshwm sim dua"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Ntxiv qhov Slot",
+        "StartTime": "Pib Sijhawm",
+        "EndTime": "Thaum kawg",
+        "Save": "Txuag",
+        "AddTimeSlot": "Ntxiv Sijhawm Slot",
+        "CopyFromDay": "Luam los ntawm hnub",
+        "Nearest": "Nyob ze",
+        "Today": "Hnub no",
+        "Tomorrow": "Tag kis",
+        "AfterTomorrow": "Tom qab tag kis"
+    }
+}

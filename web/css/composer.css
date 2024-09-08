@@ -1,0 +1,301 @@
+.Calendars_event_composer_tool .Calendars_step {
+	width: 100%;
+	padding: 5px 5px 10px 45px;
+	box-sizing: border-box;
+	vertical-align: middle; min-height: 40px;
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	background-position: left 5px;
+	position: relative;
+}
+.Calendars_event_composer_tool .Calendars_step:not(:last-of-type) {
+	border-bottom: 5px solid silver;
+	margin-bottom: 10px;
+}
+.Calendars_event_composer_tool .Calendars_event_composer_link input:not(:last-of-type) {
+	margin-bottom: 10px;
+}
+.Calendars_event_composer_tool .Calendars_event_composer_title,
+.Calendars_event_composer_livestream input {
+	width: 100%;
+	color: black;
+}
+.Calendars_event_composer_livestream .or {
+	margin: 10px auto;
+	width: 100px;
+}
+.Calendars_event_composer_tool .Calendars_event_composer_service_button {
+	margin-top: 10px;
+	width: 100%;
+}
+.Calendars_composer_services .Q_dialog_content {
+	padding: 10px;
+}
+.Calendars_event_composer_title {
+	margin-top: 10px;
+}
+.Calendars_event_composer_interest_button {
+	overflow: hidden;
+}
+.Calendars_event_composer_tool .Calendars_step::before {
+	font-family: 'qplatform-calendars' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #444;
+    font-size: 32px;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+}
+.Calendars_event_composer_tool .Calendars_step.Calendars_event_composer_publisher::before {
+	font-family: 'qplatform-communities' !important;
+	content: "\e91b"; color: #3b31d2;
+}
+.Calendars_event_composer_tool .Calendars_step.Calendars_event_composer_interest::before {
+	content: "\e903"; color: #bf0a07;
+}
+.Calendars_event_composer_tool .Calendars_step.Calendars_event_composer_type {
+	display: none;
+}
+.Calendars_event_composer_tool .Calendars_step.Calendars_event_composer_type::before {
+	content: "\e902"; color: #029305;
+}
+.Calendars_event_composer_tool .Calendars_step.Calendars_event_composer_location::before {
+	content: "\e904";
+}
+.Calendars_event_composer_tool .Calendars_step.Calendars_event_composer_livestream::before {
+	content: "\e90b";
+}
+.Calendars_event_composer_tool .Calendars_step.Calendars_event_composer_times {
+	padding-left: 0;
+}
+.Calendars_event_composer_tool .Calendars_step.Calendars_event_composer_times label {
+	width: 80px;
+	display: inline-block;
+	text-align: right;
+}
+.Calendars_event_composer_tool .Calendars_step.Calendars_event_composer_times > div {
+	white-space: nowrap;
+}
+.Calendars_event_composer_tool .Calendars_step.Calendars_event_composer_times > div:not(:last-child) {
+	margin-bottom: 5px;
+}
+.Calendars_event_composer_tool .Calendars_step.Calendars_event_composer_times::before {
+	content: "\e908";
+}
+.Calendars_event_composer_tool .Calendars_step.Calendars_event_composer_link::before {
+	content: "\e900";
+}
+.Calendars_event_composer_tool .Calendars_step.Calendars_event_composer_privacy::before {
+	content: "\e905"; color: #394ad5;
+}
+.Calendars_event_composer_tool .Calendars_step.Calendars_event_composer_payment::before {
+	content: "\e909"; color: #e5891e;
+}
+.Calendars_composer_payment_amount {
+	margin: 5px 0 0 0;
+}
+.Calendars_composer_payment_amount_input, .Calendars_composer_payment_decimal_input {
+	width: 90px;
+	border: none !important;
+	background-color: #fff0 !important;
+}
+
+.Calendars_composer_payment_amount_input {
+	text-align: right;
+	margin-right: 0;
+	padding-right: 1px !important;
+}
+
+.Calendars_composer_payment_decimal_input {
+	padding-left: 1px !important;
+	margin-left: 0;
+	width: 28px;
+}
+
+.Calendars_composer_payment_amount_input_wrapper input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: black;
+}
+.Calendars_composer_payment_amount_input_wrapper input::-moz-placeholder { /* Firefox 19+ */
+	color: black;
+}
+.Calendars_composer_payment_amount_input_wrapper input:-ms-input-placeholder { /* IE 10+ */
+	color: black;
+}
+.Calendars_composer_payment_amount_input_wrapper input:-moz-placeholder { /* Firefox 18- */
+	color: black;
+}
+
+.Calendars_composer_payment_amount_input_wrapper {
+	vertical-align: -10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	overflow: hidden;
+	border-bottom: 1px solid #aaa;
+	background-color: #ffffff;
+	display: inline-block;
+}
+.Calendars_composer_payment_amount_input_wrapper.warn {
+	background-color: #ffb1ac;
+}
+
+.Calendars_event_composer_tool .Q_button {
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.Calendars_event_composer_tool .Calendars_event_composer_interest_button,
+.Calendars_event_composer_tool .Calendars_event_composer_location_button,
+.Calendars_event_composer_tool .Calendars_event_composer_publisher_button {
+	width: 100%;
+	cursor: pointer;
+}
+
+.Calendars_event_composer_location[data-locationDefined=false] .Places_location_tool {
+	display: none !important;
+}
+
+.Calendars_event_composer_location[data-locationDefined=true] .Calendars_event_composer_location_button {
+	display: none !important;
+}
+
+.Q_button.Streams_aspect_publisher {
+	height: 40px;
+	padding: 0;
+	background-color: #3b31d2;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b31d2', endColorstr='#29248E');
+	background: -webkit-gradient(linear, left top, left bottom, from(#3b31d2), to(#29248E));
+	background: -moz-linear-gradient(top, #3b31d2, #29248E);
+	color: white;
+}
+.Q_button.Streams_aspect_publisher .Users_avatar_icon {
+	height: 33px;
+	width: auto;
+}
+.Calendars_event_composer_tool .Calendars_event_composer_date {
+	padding: 5px;
+	width: 150px;
+	text-align: center;
+	background: white;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+
+.Calendars_event_composer_tool input,
+.Calendars_event_composer_tool select {
+	font-size: 16px;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 4px;
+}
+.Calendars_event_composer_tool .Calendars_minmax {
+	height: 33px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.Calendars_event_composer_tool .Calendars_minmax[name=peopleMin] {
+	width: 40px;
+}
+.Calendars_event_composer_tool .Calendars_minmax[name=peopleMax] {
+	width: 50px;
+}
+.Calendars_event_composer_tool .Calendars_event_composer_share {
+	width: 100%;
+    padding: 10px 50px 10px 50px;
+    font-weight: bold;
+    font-size: 20px;
+	margin: 0 auto;
+}
+.Calendars_event_composer .Calendars_step.Q_buttons {
+	padding: 5px;
+}
+
+.Calendars_event_composer_tool .Calendars_recurring_tool {
+	display: inline-block;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+.Calendars_composer_publisher {
+	min-width: 300px;
+}
+.Calendars_composer_publisher .Q_dialog_content {
+	padding: 5px;
+}
+.Calendars_composer_publisher .Q_dialog_content .Users_avatar_tool {
+	text-align: center;
+}
+.Calendars_event_composer_location .Places_location_tool .Places_location_preview_contents {
+	max-width: 190px;
+}
+.Calendars_event_composer_tool button[name=scheduleOnlineConference] {
+	padding: 10px;
+	width: 100%;
+	max-width: 290px;
+	position: relative;
+	text-align: left;
+}
+.Calendars_event_composer_livestream .Q_placeholders_container:after,
+.Calendars_event_composer_tool button[name=scheduleOnlineConference]:after {
+	font-family: qplatform-calendars;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	line-height: 27px;
+	color: #029305;
+	position: absolute;
+	content: '';
+	width: 30px;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background: #fff;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.Calendars_event_composer_livestream .Q_placeholders_container.Q_selected:after,
+.Calendars_event_composer_tool button[name=scheduleOnlineConference].Q_selected:after {
+	content: "\ea10";
+}
+.Q_mobile .Calendars_event_composer_livestream input {
+	width: 290px;
+}
+
+.Calendars_event_composer_tool .Q_tool.Places_location_tool div[data-location=address] {
+	padding-left: 5px;
+}
+.Calendars_event_composer_tool .Calendars_event_composer_time_container select[name=timezoneName],
+.Calendars_event_composer_tool .Places_location_tool div[data-location=address] label {
+	display: none;
+}
+.Calendars_event_composer_tool[data-locationDefined=''][data-online=online] .Calendars_event_composer_time_container select[name=timezoneName] {
+	display: inline-block;
+}
+.Calendars_event_composer_tool .Places_location_tool .Places_location_address,
+.Calendars_event_composer_tool .Places_location_tool .Places_location_address .Q_filter_tool,
+.Calendars_event_composer_tool .Places_location_tool .Places_areas_filter.Q_filter_tool,
+.Calendars_event_composer_tool .Places_location_tool .Places_areas_filter.Q_filter_tool .Q_filter_input,
+.Calendars_event_composer_tool .Places_location_tool .Places_location_address .Q_filter_tool .Q_filter_input {
+	display: inline-block;
+	width: 100%;
+}
+
+.Calendars_event_composer_SOC .Q_dialog_content {
+	padding: 10px;
+}
+.Calendars_event_composer_SOC .Calendars_event_composer_date_container,
+.Calendars_event_composer_SOC .Calendars_event_composer_time_container {
+	margin-top: 10px;
+}
+.Calendars_event_composer_SOC button[name=SOC_save] {
+	display: block;
+	margin: 10px auto;
+}

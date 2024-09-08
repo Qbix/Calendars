@@ -1,0 +1,74 @@
+.Calendars_import_tool {
+	text-align: left;
+}
+.Calendars_import_tool .Calendars_import_process {
+	display: none;
+}
+.Calendars_import_tool .Calendars_import_process .Calendars_import_complete {
+	display: none;
+	height: 40px;
+	line-height: 40px;
+	color: green;
+	font-weight: bold;
+}
+.Calendars_import_tool .Calendars_task_progress { border: 1px solid #555; }
+.Calendars_import_tool .Calendars_task_progress_bar { background: #555; width: 0; height: 40px; }
+.Calendars_import_errors tr:not(:last-child) {
+	border-bottom: 1px solid black;
+}
+.Calendars_import_errors tr td:first-child {
+	white-space: nowrap;
+	vertical-align: top;
+	font-weight: bold;
+}
+.Calendars_import_tool input[type=checkbox] {
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	margin: 0;
+	vertical-align: bottom;
+}
+.Calendars_import_tool input[type=file] {
+	display: none;
+}
+.Calendars_import_tool label[for=Calendars_import_file] {
+	text-transform: capitalize;
+	font-weight: normal;
+	font-size: 15px;
+	padding: 0 10px;
+	border: 1px solid #767676;
+	border-radius: 3px;
+	background-color: #efefef;
+	height: 40px;
+	line-height: 40px;
+}
+.Calendars_import_tool label[for=Calendars_import_file].Q_disabled {
+	filter: none;
+}
+.Calendars_import_tool label[for=Calendars_import_file]:hover {
+	border-color: #4f4f4f;
+	background-color: #e5e5e5;
+}
+.Calendars_import_tool label[for=Calendars_import_file]:active {
+	border-color: #8d8d8d;
+	background-color: #f5f5f5;
+}
+.Calendars_import_tool button[name=sampleCSV] {
+	display: block;
+	height: 40px;
+}
+.Calendars_import_tool fieldset {
+	padding: revert;
+	margin: revert;
+	border: revert;
+	border-radius: 5px;
+}
+.Calendars_import_tool fieldset legend {
+	width: revert;
+	padding: revert;
+	margin-bottom: revert;
+	line-height: revert;
+	color: revert;
+	border: revert;
+	border-bottom: revert;
+}

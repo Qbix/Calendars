@@ -1,0 +1,475 @@
+.Calendars_event_curtain .Streams_image_preview_tool {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.Calendars_event_curtain img {
+	width: 100% !important;
+	height: auto !important;
+}
+
+.Calendars_event_curtain .Streams_preview_loading {
+	height: 100% !important;
+	width: 50% !important;
+	margin: auto;
+}
+
+.Calendars_event_curtain .Q_actions_container {
+	pointer-events: none;
+}
+
+.Calendars_event_curtain .Streams_image_preview_title {
+	display: none;
+}
+.Calendars_participants_info {
+	text-align: center;
+	font-size: 12px;
+	color: #777;
+}
+.Calendars_participants_info.Calendars_payment {
+	font-size: 1em;
+	color: red;
+	font-weight: bold;
+}
+.Calendars_event_curtain {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.Calendars_event_background {
+	width: 100%;
+}
+.Calendars_event_foreground {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: 100% 140px;
+	color: white;
+	text-shadow: black 1px 1px;
+	background: url(../img/bg/event.png);
+	top: 75%;
+	background-size: 100% 100%;
+	padding: 10px;
+	text-align: right;
+	font-weight: normal;
+	font-size: 16px;
+
+}
+.Calendars_going_prompt {
+	text-align: center;
+	white-space: normal;
+}
+#page .Calendars_event_tool .Calendars_info {
+	padding: 0 5px;
+}
+.Q_mobile #page .Calendars_event_tool .Calendars_info {
+	padding: 10px;
+}
+#page .Calendars_event_tool .Calendars_info > .Q_button {
+	display: flex;
+	position: relative;
+	align-items : center;
+	line-height: unset;
+	height: unset;
+	min-height: 55px;
+}
+#page .Calendars_event_tool .Calendars_info .Calendars_info_buttons .Q_button {
+	display: inline-block;
+	min-height: unset;
+}
+
+.Calendars_event_tool .Calendars_event_hosts .Calendars_event_publisher {
+	overflow: visible;
+}
+.Calendars_event_publisher {
+	display: block;
+	text-align: center;
+}
+.Calendars_event_tool .Users_avatar_tool.Calendars_event_publisher .Users_avatar_name {
+	white-space: normal;
+	text-align: center;
+}
+.Calendars_event_tool .Calendars_event_hosts img.Users_avatar_icon {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+	background: var(--html-bg-color);
+}
+
+.Calendars_event_tool .Calendars_event_participants {
+	margin-bottom: 10px;
+}
+.Calendars_event_tool .Calendars_event_participants .Streams_participants_container {
+	margin: 0;
+}
+.Calendars_event_tool[data-payment=required] *[data-hideUnpaid=true],
+.Calendars_event_tool[data-payment=required] .Q_clickable_container[data-origin-attributes*='data-hideunpaid:true'] {
+	display: none !important;
+}
+.Calendars_event_tool[data-payment=required][data-going=yes] *[data-hideUnpaid=true],
+.Calendars_event_tool[data-payment=required][data-admin=true] *[data-hideUnpaid=true],
+.Calendars_event_tool[data-payment=required][data-staff=true] *[data-hideUnpaid=true],
+.Calendars_event_tool[data-payment=required][data-admin=true] .Q_clickable_container[data-origin-attributes*='data-hideunpaid:true'],
+.Calendars_event_tool[data-payment=required][data-staff=true] .Q_clickable_container[data-origin-attributes*='data-hideunpaid:true'],
+.Calendars_event_tool[data-payment=required][data-going=yes] .Q_clickable_container[data-origin-attributes*='data-hideunpaid:true'] {
+	display: flex !important;
+}
+
+.Calendars_event_tool .Q_aspect_conference .Calendars_info_content .Q_timestamp_tool,
+.Calendars_event_tool .Q_aspect_conference .Calendars_info_content .Calendars_event_startLiveStream,
+.Calendars_event_tool .Q_aspect_conference .Calendars_info_content .Calendars_event_LiveStreamEnded,
+.Calendars_event_tool .Q_aspect_conference .Calendars_info_content .Calendars_event_LiveStreamRecording {
+	display: none;
+}
+.Calendars_event_tool .Q_aspect_conference .Calendars_info_content[data-livestreamState=waiting] .Q_timestamp_tool {
+	display: block;
+}
+.Calendars_event_tool .Q_aspect_conference .Calendars_info_content[data-livestreamState=happening] .Calendars_event_startLiveStream {
+	display: block;
+}
+.Calendars_event_tool .Q_aspect_conference .Calendars_info_content[data-livestreamState=ended] .Calendars_event_LiveStreamEnded {
+	display: block;
+}
+.Calendars_event_tool .Q_aspect_conference .Calendars_info_content[data-livestreamState=ended][data-livestreamRemote=true] .Calendars_event_LiveStreamRecording {
+	display: block;
+}
+
+.Calendars_event_tool[data-webrtc=loading] div[data-invoke=livestream] {
+	padding-left: 48px;
+}
+/* big round preloader */
+.Calendars_event_tool[data-webrtc=loading] div[data-invoke=livestream] .Calendars_info_icon {
+	background-image: url("data:image/gif;base64,R0lGODlhQgBCAPMAAP///0RERHt7e52dneXl5bm5ufn5+VhYWNLS0gAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAQgBCAAAE/xDISau9VBzMu/8VcRTWsVXFYYBsS4knZZYH4d6gYdpyLMErnBAwGFg0pF5lcBBYCMEhR3dAoJqVWWZUMRB4Uk5KEAUAlRMqGOCFhjsGjbFnnWgliLukXX5b8jUUTEkSWBNMc3tffVIEA4xyFAgCdRiTlWxfFl6MH0xkITthfF1fayxxTaeDo5oUbW44qaBpCJ0tBrmvprc5GgKnfqWLb7O9xQQIscUamMJpxC4pBYxezxi6w8ESKU3O1y5eyts/Gqrg4cnKx3jmj+gebevsaQXN8HDJyy3J9OCc+AKycCVQWLZfAwqQK5hPXR17v5oMWMhQEYKLFwmaQTDgl5OKHP8cQjlGQCHIKftOqlzJsqVLPwJiNokZ86UkjDg5emxyIJHNnDhtCh1KtGjFkt9WAgxZoGNMny0RFMC4DyJNASZtips6VZkEp1P9qZQ3VZFROGLPfiiZ1mDKHBApwisZFtWkmNSUIlXITifWtv+kTl0IcUBSlgYEk2tqa9PhZ2/Fyd3UcfIQAwXy+jHQ8R0+zHVHdQZ8A7RmIZwFeN7TWMpS1plJsxmNwnAYqc4Sx8Zhb/WPyqMynwL9eMrpQwlfTOxQco1gx7IvOPLNmEJmSbbrZf3c0VmRNUVeJZe0Gx9H35x9h6+HXjj35dgJfYXK8RTd6B7K1vZO/3qFi2MV0cccemkkhJ8w01lA4ARNHegHUgpCBYBUDgbkHzwRAAAh+QQJCgAAACwAAAAAQgBCAAAE/xDISau9VAjMu/8VIRTWcVjFYYBsSxFmeVYm4d6gYa5U/O64oGQwsAwOpN5skipWiEKPQXBAVJq0pYTqnCB8UU5KwJPAVEqK7mCbrLvhyxRZobYlYMD5CYxzvmwUR0lbGxNHcGtWfnoDZYd0EyKLGAgClABHhi8DmCxjj3o1YYB3Em84UxqmACmEQYghJmipVGRqCKE3BgWPa7RBqreMGGfAQnPDxGomymGqnsuAuh4FI7oG0csAuRYGBgTUrQca2ts5BAQIrC8aBwPs5xzg6eEf1lzi8qf06foVvMrtm7fO3g11/+R9SziwoZ54DoPx0CBgQAGIEefRWyehwACKGv/gZeywcV3BFwg+hhzJIV3Bbx0IXGSJARxDmjhz6tzJs4NKkBV7SkJAtOi6nyDh8FRnlChGoVCjSp0aRqY5ljZjplSpNKdRfxQ8Jp3ZE1xTjpkqFuhGteQicFQ1xmWEEGfWXWKfymPK9kO2jxZvLstW1GBLwI54EiaqzxoRvSPVrYWYsq8byFWxqcOs5vFApoKlEEm8L9va0DVHo06F4HQUA6pxrQZoGIBpyy1gEwlVuepagK1xg/BIWpLn1wV6ASfrgpcuj5hkPpVOIbi32lV3V+8U9pVVNck5ByPiyeMjiy+Sh3C9L6VyN9qZJEruq7X45seNe0Jfnfkp+u1F4xEjKx6tF006NPFS3BCv2AZgTwTwF1ZX4QnFSzQSSvLeXOrtEwEAIfkECQoAAAAsAAAAAEIAQgAABP8QyEmrvVQIzLv/FSEU1nFYhWCAbEsRx1aZ5UG4OGgI9ny+plVuCBiQKoORr1I4DCyDJ7GzEyCYziVlcDhOELRpJ6WiGGJCSVhy7k3aXvGlGgfwbpM1ACabNMtyHGCAEk1xSRRNUmwmV4F7BXhbAot7ApIXCJdbMRYGA44uZGkSIptTMG5vJpUsVQOYAIZiihVtpzhVhAAGCKQ5vaQiQVOfGr+PZiYHyLlJu8mMaI/GodESg7EfKQXIBtrXvp61F2Sg10RgrBwEz7DoLcONH5oa3fBUXKzNc2TW+Fic8OtAQBzAfv8OKgwBbmEOBHiSRIHo0AWBFMuwPdNgpGFFAJr/li3D1KuAu48YRBIgMHAPRZSeDLSESbOmzZs4oVDaKTFnqZVAgUbhSamVzYJIIb70ybSp06eBkOb81rJklCg5k7IkheBq0UhTgSpdKeFqAYNOZa58+Q0qBpluAwWDSRWYyXcoe0Gc+abrRL7XviGAyNLDxSj3bArey+EuWJ+LG3ZF+8YjNW9Ac5m0LEYv4A8GTCaGp5fykNBGPhNZrHpcajOFi8VmM9i0K9G/EJwVI9VM7dYaR7Pp2Fn3L8GcLxREZtJaaMvLXwz2NFvOReG6Mel+sbvvUtKbmQgvECf0v4K2k+kWHnp8eeO+v0f79PhLdz91sts6C5yFfJD3FVIHHnoWkPVRe7+Qt196eSkongXw4fQcCnW41F9F0+ETAQAh+QQJCgAAACwAAAAAQgBCAAAE/xDISau9dAjMu/8VISCWcFiFYIBsS4lbJcSUSbg4aMxrfb68nFBSKFg0xhpNgjgMUM9hZye4URCC6MRUGRxI18NSesEOehIqGjCjUK1pU5KMMSBlVd9LXCmI13QWMGspcwADWgApiTtfgRIEBYCHAoYEA2AYWHCHThZ2nCyLgG9kIgehp4ksdlmAKZlCfoYAjSpCrWduCJMuBrxAf1K5vY9xwmTExp8mt4GtoctNzi0FmJMG0csAwBUGs5pZmNtDWAeeGJdZBdrk6SZisZoaA5LuU17n9jpm7feK53Th+FXs3zd//xJOyKbQGAIriOp1a9giErwYCCJGZEexQ8ZzIP8PGPplDRGtjj7OVUJI4CHKeQhfypxJs6bNDyU11rs5IaTPnBpP0oTncwzPo0iTKjXWMmbDjPK8IShikmfIlVeslSwwseZHn1G0sitY0yLINGSVEnC6lFVXigbi5iDJ8WW2tWkXTpWYd9tdvGkjFXlrdy1eDlOLsG34t9hUwgwTyvV2d6Big4efDe6LqylnDt+KfO6cGddmNwRGf5qcxrNp0SHqDmnqzbBqblxJwR7WklTvuYQf7yJL8IXL2rfT5c7KCUEs2gt/G5waauoa57vk/Ur9L1LXb12x6/0OnVxoQC3lcQ1xXC93d2stOK8ur3x0u9YriB+ffBl4+Sc5158LMdvJF1Vpbe1HTgQAIfkECQoAAAAsAAAAAEIAQgAABP8QyEmrvXQMzLv/lTEUliBYxWCAbEsRwlaZpUC4OCgKK0W/pl5uWCBVCgLE7ERBxFDGYUc0UDYFUclvMkhWnExpB6ERAgwx8/Zsuk3Qh6z4srNybb4wAKYHIHlzHjAqFEh2ABqFWBRoXoESBAVmEkhZBANuGJeHXTKMmDkphC8amUN8pmxPOAaik4ZzSJ4ScIA5VKO0BJOsCGaNtkOtZY9TAgfBUri8xarJYsOpzQAIyMxjVbwG0tN72gVxGGSl3VJOB+GaogXc5ZoD6I7YGpLuU/DI9Trj7fbUyLlaGPDlD0OrfgUTnkGosAUCNymKEGzYIhI+JghE0dNH8QKZY+j/8jEikJFeRwwgD4xAOJChwowuT8qcSbOmzQ5FRugscnNCypD5IkYc0VML0JB9iipdyrQptIc9yRyysC1jETkzU2IxZfVqgYk2yRxNdxUB2KWRUtK65nSX02Lb2NoTETOE1brNwFljse2q25MiQnLUZPWsTBghp76QiLegXpXi2GlrnANqCHCz9g3uVu0AZYMZDU8zEFKuZtHdSKP7/Cb0r7/KDPwCaRr010kkWb8hkEq15xyRDA/czIr3JNWZdcCeYNbUQLlxX/CmCgquWTO5XxzKvnt5ueGprjc5tC0Vb+/TSJ4deNbsyPXG54rXHn4qyeMPa5+Sxp351JZU6SbMGXz+2YWeTOxZ4F4F9/UE4BeKRffWHgJ6EAEAIfkECQoAAAAsAAAAAEIAQgAABP8QyEmrvXQMzLv/lTEglmYhgwGuLEWYlbBVg0C0OCim9DwZMlVuCECQKoVRzCdBCAqWApTY2d0oqOkENkkeJ04m9fIqCCW7M0BGEQnUbu34YvD2rhIugMDGBucdLzxgSltMWW0CAl9zBAhqEnYTBAV4ZAOWBU8WdZYrWZBWY3w2IYpyK3VSkCiMOU6uboM4dQNmbQSQtI+Jf0Sqt4Acsp45tcHCpr5zqsXJfLOfBbwhzsl7unWbFwhSlddUTqcclN664IE1iq5k3tTow5qn53Td3/AcCAdP9FXv+JwQWANIEFfBZAIjSRHY7yAGSuoESHDkbWFDhy8U7dsnxwBFbw7/O2iUgYxOrpDk7qFcybKly5cIK7qDSUHjgY37uumcNo3mBAE3gQaV6LOo0aNI4XkcGFJnFUc62bEUesCWJYpR/7nMeDPoFCNGTiatBZSogYtHCTBN2sIjWnAi1po08vaavqpy0UBlyFJE15L1wNaF9yKo1ImCjTq5KWYS3xCDh2gFUOcAqg8G6AK8G3lY2M4sgOzL+/QxQANBSQf+dxZ0m5KiD7jObBqx6gsDqlbgMzqHI7E/avu+6Yp3Y8zAHVty20ETo7IWXtz2l1zt1Uz72ty8fM2jVrVq1GK5ieSmaxC/4TgKv/zmcqDHAXmHZH23J6CoOONLPpG/eAoFZIdEHHz4LEWfJwSY55N30RVD3IL87VFMDdOh9B88EQAAIfkECQoAAAAsAAAAAEIAQgAABP8QyEmrvbQUzLv/lVEg1jBYyGCAbEsRw1aZ5UC4OCiq80kZplVuCECQKprjhEZJyZpPIkZUuL1iPeRAKSEIfFIOQiOUAAtlANMc/Jm4YQsVXuAtwQAYvtiOcwhkTVsZUU5uAlZ+BghpEkkvaB2AiQB1UWZVOWORP3WNOAZflABAApc6m41jcDiGh3agqT8Eny4GtK+1LHO6fmxfvbsanL4hJrBhi5nFFV7IIJOfBsF+uCEIphiAI6PMLikC2VObjN62A+E2H9sj1OYi6cQetxrd5hXYpu5y1vfj9v4CXpgmkBkBK6sQ9CvYYke6LqtGGNknEEa4i+LMHBwxgqEHdOn/ynG4RTHgJI8oU6pcyXKlkZcwW5Y4gPGiEY4JZc6gyVPAgT06gwodStQjSaFjAGokEDOoz3iUmMJUWNKfxZ7iXh6sarTOUzNcZS4sqmgsQxFKRzI1WxDBgZ8Ub0llK7DUW3kD54YtBuOtAFYT9BLFdlfbVjl7W4jslHEX08Qf3AqAPItqwFA00+o4SLcYZkRSblmeMI2yiDSf98ode1hKgZ8hnmq+wLmRXMoE3o7CDPTD0WYHmxwAPAEblwE05ajzdZsCcjzJJ7zGY+AtceaPK+im8Fb4ASQ0KXdoHvhtmu6kt5P22VvR6CXRJ6Cf4POS2wPip3yqr/17hvjSnVKXGnry+VcefkjNV6AF1gmV2ykKOgIaWRT4FFAEACH5BAkKAAAALAAAAABCAEIAAAT/EMhJq720FMy7/5VREJZmIYUBriwlbpUZD2prf289FUM4pLeghIA4jWKwCWFQrCCaQo4BpRsWoBLZBDEgUZa9aIdwreYoPxfPzMOKLdNjBrhLAgxpCpf+xpy3cll2S1giXX0SU1UST4UIXhhkVXtwgSxECIt/Qng0IW03cZkVZJBBXG6dnqGNZgaLNgYEbD+wLKK2iIkDvLm3rbqVtYhxvm9gxhdEs3DJx7BTTJHAwUJgeRdT1NUrZLyHHpiPztWGvKMgsk/kwVzDsczcHVOm8vY47PfdXo0E8fo2iBQQwGuIuCf/AHLwRpAgtjvqGin0wItgmXkJJ1oopbGjx48g/0MCPNhPZIUBAlKqJLjskct6IlE2VBnGpM2bOHN6lJXPHgqYLmQtA+pRJsFHX1r6ywgSzEoBMJbO6jmRiMwwr3SGo6p1Xtadlla88sdVDIKUq/BJLRsFj0o+ftaaXKLSTVKyOc+mtONiaiWA6NRAjXXggF1detmSKnxAsQcDAg4IcHyHMeXHKhUTsKzGsQgzKok+5ozmQM0gA0/fyXxjQOFFmw2LiV0P8gG+ILjAKnz67OEtArDIrCTaBoLCplyfTpnBtIvIv4kV5oucQuEvkmNIvoyhwGvsja0fcFF9AuTB8gwUduNd9fXSfI9PtvdQQmTq45urBqBlovoD9bxn3hd3NsVmgYATRFZcVeiJV4IAC5rEnD0RAAAh+QQJCgAAACwAAAAAQgBCAAAE/xDISau9FCHMu/+VgRBWUVhEYYBsS4lbhZyy6t6gaFNFPBmmFW4IIJAqhFEN2bNoiB6YcJL0SUy1IxUL7VSnAGmGJgHuyiZt9wJTA2bg5k++Pa/ZGnBS/dxazW5QBgRgEnsvCIUhShMzVmWMLnuFYoJBISaPOV9IkUOOmJc4gyNgBqddg6YFA3Y3pIl3HWauo5OybCa1Q6SKuCm7s4mKqLgXhBY6moa3xkQpAwPLZVXIzi1A0QWByXvW1xwi2rGbSb7gVNHkLqfn6GHf7/Lh7vM31kZGxfbYM9ED1EaM0MfPi4l/rf6cGsit4JV/PeqpcojhEMWLGDNq3Agln0cjHP8nIBz50WPIhwIGpFRJ5qTLlzBjrkEgLaSGhoYKCDjA80DIaCl7qBnQs+cAnAWhpVwZo6eAbTJ1qARYBCnMeDI7DqgHDohVNkQPtOSHICjXH2EPbL0IRIDbdRjK8hTw9V3blNMApM1LkYDKpxiI1hIxDy6kVq948u1CIOVZEI0PCHjM6y/lcHMvV3bccSfdF8FYiDBlmVfmCoK76Bzrl/MNop8pEOBZl0Pj2GgB31tbYSdVCWX5lh2aEgVUWQh4gkk9wS2P4j/eyjOwc+xONTszOH8++V0ByXrAU+D5Yidp3dcMKK7w/beE7BRYynCruQWX+GIrSGYPncfYedQd4AYZeS+Ix9FsAliwX2+4adTYfwQ+VxtG/V0TAQAh+QQJCgAAACwAAAAAQgBCAAAE/xDISau9FCHMu/+VgRCWZhGIAa4sJW6VGRdqa39vPSFFWKS3oIRAqqCKO9gEpdwhhRgDSjccxZoAzRNAKPSgHRGBmqP8XDwybwsOHa9UmcRwpnSBbU55aU3aC090gHlzYyd9c3hRillyEyJUK0SGLlNggpGCWCBSI5GWUF1bmpErUkRkBqUtUmpeq6ZHsIQAgjRtp5S0Ll6MUJ2zuD/BF6ilqrvFxzybhZ7JQl29epO60DheXmwWudbX3Dy9xI+T48kEA8M3qua7rd/wks3x0TUH9wKD9DYiXukSBe4JPCBg3j4+BdINSNekiwCBAg52SJgOUDAEAwxKBCWxo8ePIP9DwhtIUmQFigtTFnhIkqBJMyljfnlJs6bNm/Qwajz4hoNDiDRlMgpIMiPNLjEXwoCoD2e/lEO24VzSbuqHLlUJiVk34N5MiRjztaMjcEDWPHRS+irBUoBUnisXvu1KcOfGhQUxdL0Vwi6YtSL+tSDw0G8QwmYJESZ4loWBAQISg1ksoDEryJIPP6zMy/IjRo8jW6YcaS+YlV9rYW7clbMdgm9BEHYbAnJq2QPYPBxgJy8HjE/icmvaBgFjCrYpCIg4Qfij5bFxPUz98Mny3sx3iIYX0PWQ4xMeulhOJvk1A9VPRq7gEnk+I+S/ebFgWnl2CQjWz/CI/kCk9kvE9xIUAQCGd4AF0NGE3m3XnZSZVfpdEwEAIfkECQoAAAAsAAAAAEIAQgAABP8QyEmrvZQQzLv/laFZCGIRiAGuLCVuFXqmbQ2KNFWGpWr/ANGJ4JvIMghYRgnEvIoSQ7KyQzKD1Sbn6dJAj9Geq3TVhryxnCSLNSHV5gt3Iv0yUUwpXIsYlDV5RB0iX2xRgjUDBwJXc0B6UFgFZR8GB5eRL1p4PAV7K5aXeQaRNaRQep8soQelcWOeri2ssnGptbMCB26vIbGJBwOlYL0hpSKTGIqXBcVNKAXJGAiXi5TOWwjRqhUF1QK42EEE24gfBMu84hfkk+EX2u/OhOv1K8T2Zojf0vmz0NEkFNBVLZg6f3K0RVt4Z+A3hB0WejLHbsBBiF3kYdzIsaPHjyz/CBZcBJKCxJMiCwooOSHagAIvXzZjSbOmzZvitF3kyIkDuWUkS8JkCGVASgF+WEKL+dINwZcaMeoZegjnlqhWO5DDamuKqXQ8B1jUaMDhgQJczUgRO9YDgqfXEJYV28+Ct0U7O/60iMHbJyn5KIbhm0tA3jjohL0yoAtcPQN008YQQFnyKraWgzRGxQ0UnLmKbRCg7JiC0ZlA+qCOgtmG0dJGKMcFgQ52FKo10JWiPCADYQzomMDs7SszlcomBawWm3w15KSPKa8GIJsCZRdIj4cWN9D2aNvX6RhFJfawFsaMtFcI39Lw5O3OAlYwepD9GuUkzGNDf8W+ZvgefWeBEn8AGDUbQuhcRGAfxtnD3DoRAAAh+QQJCgAAACwAAAAAQgBCAAAE/xDISau9lBDMu/8VcRSWZhmEAa4shRxHuVVI2t6gAc+TSaE2nBAwGFgEoxBPApQNPbokpXAQKEMI1a/29FAPWokInFkCwwDgsnuCkSgwREY+QdF7NTTb8joskUY9SxpmBFl7EggDawCAGQd3FyhohoyTOANVen2MLXZ6BghcNwZIZBSZgUOGoJV6KwSmaAYFr54Gs6KHQ6VVnYhMrmxRAraIoaLGpEiRwEx5N5m1J83OTK92v1+Q1ry6vwAIpgLg3dS6yhPbA+nmdqJBHwaZ3OYchtA3BNP2GJf9AD0YCggMlwRTAwqUIygJXwE6BUzBEDCgGsMtoh4+NFOAXpWLHP8y1oh3YZ9FkGlIolzJsqXLlzgkwpgIcwKCAjhzPhSApCcMVTBvCtV4sqbRo0iTshFak1WHfQN6WgmaM5+EiFWqUFxIMJROnDN4UuSX1E5OMVyPGlSKaF+7bqHenogqoKi9fQ/lponIk+zFUAkVthPHc9FLwGA58K17FO9DDBH9PguoMuXjFgSi2u2SWTKvwnpx0MIZ2h/ogLQSlq5QauuW1axJpvac4/QUAW+GKGo2G3ZEwxl4ws5QZE3qzSU9R80NIHO5fUsUMX82/II4drcjFXGR8EdxgPMYoyKHCmhmoM1V9/s9iyIait6x1+mIXEjrNeKmw59SMUSR6l5UE1EjM9txN1049RUUlR771fFfUw1OEJUF38E0TzURJkLbUR31EwEAOwAAAAAAAAAAAA==");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 10px;
+}
+
+.Calendars_event_tool .Calendars_recurring_tool {
+	display: none;
+}
+.Calendars_event_tool[data-going=yes] .Q_aspect_when .Calendars_recurring_tool {
+	display: inline-block;
+}
+.Calendars_event_tool[data-going=yes] .Calendars_aspect_admin.Calendars_recurring_tool {
+	display: flex;
+}
+.Calendars_event_tool .Q_button.Q_aspect_when {
+	position: relative;
+}
+.Calendars_event_tool .Q_button.Q_aspect_when .Q_timestamp_tool {
+	display: inline-block;
+}
+.Calendars_event_tool .Q_aspect_when .Calendars_recurring_admin {
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.Calendars_event_relatedParticipants .Q_dialog_content h3 {
+	margin: 0;
+	text-align: center;
+}
+.Calendars_event_relatedParticipants .Q_dialog_content .Streams_related_participant_warning {
+	color: red;
+}
+.Calendars_event_relatedParticipants .Q_dialog_content .Calendars_recurring_dialog_controls {
+	display: none;
+	margin: 10px 0;
+}
+.Calendars_event_relatedParticipants .Q_dialog_content[data-recurring=true] .Calendars_recurring_dialog_controls {
+	display: block;
+}
+.Calendars_event_relatedParticipants .Q_dialog_content button[name=AddParticipants] {
+	display: none;
+}
+.Calendars_event_relatedParticipants .Q_dialog_content .Streams_related_participant {
+	margin-top: 10px;
+}
+.Calendars_event_relatedParticipants .Q_dialog_content[data-empty=true] button[name=AddParticipants] {
+	display: block;
+}
+.Calendars_event_relatedParticipants .Q_dialog_content button[name=proceed] {
+	display: none;
+}
+.Calendars_event_relatedParticipants .Q_dialog_content[data-recurringModified=true] button[name=proceed],
+.Calendars_event_relatedParticipants .Q_dialog_content[data-relatedParticipantsModified=true] button[name=proceed] {
+	display: block;
+}
+.Calendars_event_relatedParticipants .Q_dialog_content button {
+	display: block;
+	margin: 10px auto;
+	width: 100%;
+}
+.Calendars_event_relatedParticipants .Q_dialog_content button[name=cancel] {
+	display: none;
+}
+.Calendars_event_relatedParticipants .Q_dialog_content[data-going=yes] button[name=cancel] {
+	display: block;
+}
+.Calendars_event_tool .Streams_related_participant .Streams_preview_tool .Streams_preview_title {
+	font-size: 10px;
+	line-height: 16px;
+	white-space: normal;
+}
+.Calendars_event_tool .Calendars_info_content.Streams_related_participant img {
+	width: 40px;
+	height: 40px;
+	user-select: none;
+}
+.Calendars_event_tool .Calendars_info_content.Streams_related_participant .Calendars_event_relatedParticipants_empty {
+	font-style: italic;
+	font-size: 14px;
+	color: #777;
+	font-weight: normal;
+	white-space: normal;
+}
+.Q_notMobile .Q_columns_stretchFirstColumn .Q_columns_column .Calendars_event_tool .Media_aspect_webrtc .Streams_preview_tool {
+	width: 100%;
+}
+.Calendars_event_tool .Media_aspect_webrtc .Streams_preview_icon,
+.Calendars_event_tool .Media_aspect_webrtc .Streams_preview_container .Streams_preview_title {
+	display: none;
+}
+.Calendars_event_tool .Media_aspect_webrtc .Streams_preview_contents,
+.Calendars_event_tool .Media_aspect_webrtc .Streams_participants_tool {
+	padding: 0;
+}
+#page .Calendars_event_tool .Calendars_info .Q_button.Media_aspect_webrtc {
+	display: none;
+}
+#page .Calendars_event_tool[data-webrtc=true] .Calendars_info .Media_aspect_webrtc {
+	display: flex;
+}
+#page .Calendars_event_tool .Calendars_info .Q_button.Q_blink {
+	border: 2px solid transparent;
+}
+.Calendars_event_relatedParticipants .Streams_related_participant_summary {
+	display: none;
+	width: 100%;
+	margin-top: 10px;
+}
+.Calendars_event_relatedParticipants .Streams_related_participant_summary tbody,
+.Calendars_event_relatedParticipants .Streams_related_participant_summary[data-showMath=false] tfoot {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+.Calendars_event_relatedParticipants .Streams_related_participant_summary thead th {
+	text-transform: capitalize;
+	text-align: left;
+}
+.Calendars_event_relatedParticipants .Streams_related_participant_summary tfoot td {
+	font-weight: bold;
+}
+.Calendars_event_relatedParticipants .Streams_related_participant_summary[data-showMath=false] thead,
+.Calendars_event_relatedParticipants .Streams_related_participant_summary[data-showMath=false] tbody {
+	display: none;
+}
+.Calendars_going {
+	margin-top: 10px;
+}
+.Calendars_going span {
+	display: inline-block;
+	padding: 0 7px;
+	cursor: pointer;
+	border-left: dotted 1px #aaa;
+	background: #999; color: white;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bbb', endColorstr='#999'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#bbb), to(#999)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #bbb,  #999); /* for firefox 3.6+ */
+	height: 40px;
+	line-height: 40px;
+}
+.Calendars_going span:first-child {
+	border-left: none;
+	border-radius: 5px 0 0 5px;
+}
+.Calendars_going span:last-child {
+	border-left: none;
+	border-radius: 0 5px 5px 0;
+}
+.Calendars_no.Q_selected {
+	background: #aaa;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#777', endColorstr='#999'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#777), to(#999)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #777,  #999); /* for firefox 3.6+ */
+}
+.Calendars_maybe.Q_selected {
+	background: #3241ba;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='##2e3ba9', endColorstr='#394ad5'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3541a9), to(#505fd8)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #2e3ba9, #394ad5); /* for firefox 3.6+ */
+}
+.Calendars_yes.Q_selected {
+	background: #2ca821;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#449944', endColorstr='#227722'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#227722), to(#449944)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #449944,  #227722); /* for firefox 3.6+ */
+}
+.Calendars_info img {
+	width: 35px;
+	height: 35px;
+	margin-right: 5px;
+}
+
+.Calendars_info_icon {
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	margin-right: 10px;
+}
+
+.Calendars_info_content {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	overflow: auto;
+	box-sizing: border-box;
+	white-space: normal;
+}
+.Calendars_info_unseen {
+	display: none;
+	position: absolute;
+	background: #cc5555;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	height: 30px;
+	min-width: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	right: 5px;
+	top: 50%;
+	margin-top: -15px;
+	border-radius: 50%;
+}
+.Calendars_event_tool .Calendars_info_unseen[data-state=waiting] {
+	top: -1000px;
+}
+.Calendars_event_tool .Calendars_info_buttons {
+	width: 100%;
+	overflow: hidden;
+}
+.Calendars_event_tool .Calendars_info_content.Calendars_info_buttons .Travel_trips_notGoing .Travel_aspect_trips {
+	color: #fff;
+}
+
+.Calendars_event_tool .Calendars_info > div {
+	margin-bottom: 20px;
+}
+
+.Calendars_event_tool .Calendars_info > .Calendars_event_description {
+	margin-bottom: 30px;
+}
+
+.Calendars_event_tool .Calendars_info_button button {
+	width: 100%;
+}
+
+.Calendars_event_tool .Calendars_info_button {
+	text-align: left;
+	display: none;
+}
+
+.Calendars_event_tool .Calendars_event_background {
+	width: 100%;
+	filter: blur(1px);
+}
+.Calendars_event_tool .Travel_aspect_trips {
+	font-weight: bold;
+}
+.Calendars_event_tool .Calendars_event_title,
+.Calendars_variable_height .Streams_inplace_tool,
+.Calendars_variable_height .Streams_inplace_tool .Q_inplace_tool,
+.Calendars_variable_height .Streams_inplace_tool .Q_inplace_tool_container,
+.Calendars_variable_height .Streams_inplace_tool .Q_inplace_tool_blockstatic,
+.Calendars_variable_height .Streams_inplace_tool textarea {
+	width: 100%; box-sizing: border-box; text-align: center;
+}
+
+.Calendars_variable_height .Streams_inplace_tool .Q_inplace_tool_blockstatic,
+.Calendars_variable_height .Streams_inplace_tool textarea {
+	text-align: left;
+}
+
+.Calendars_event_title_label {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 14px;
+}
+.Calendars_event_tool .Streams_participants_tool .Users_avatar_tool .Users_avatar_icon {
+	width: 40px;
+	height: 40px;
+}
+.Calendars_event_tool .Users_avatar_tool {
+	position: relative;
+	text-overflow: clip;
+}
+.Calendars_event_tool .Streams_participants_avatars .Q_badge.Calendars_event_staff,
+.Calendars_event_tool .Streams_participants_avatars .Q_badge.Calendars_event_speaker,
+.Calendars_event_tool .Streams_participants_avatars .Q_badge.Calendars_event_leader,
+.Calendars_event_tool .Streams_participants_avatars .Q_badge.Calendars_event_host {
+	border: 1px solid green;
+	border-radius: 50%;
+	background: #fff;
+}
+.Calendars_event_tool .Streams_participants_avatars .Q_badge i {
+	font-size: 10px;
+	color: green;
+	font-weight: bold;
+	vertical-align: middle;
+	line-height: 14px;
+	display: block;
+}
+.Calendars_event_tool .Streams_participants_avatars .Q_badge_tool[data-leader=true] .Q_badge i,
+.Calendars_event_tool .Streams_participants_avatars .Q_badge_tool[data-host=true] .Q_badge i {
+	color: red;
+}
+#content .Calendars_event_tool > .Users_avatar_tool {
+	display: block;
+	text-align: left;
+}
+.Calendars_event_tool[data-admin=true] .Streams_participants_tool .Users_avatar_tool,
+.Calendars_event_tool[data-staff=true] .Streams_participants_tool .Users_avatar_tool {
+	display: inline-block;
+}
+.Calendars_event_relatedParticipants .Q_dialog_content {
+	padding: 10px;
+}
+.Streams_related_participant_summary th.currency select {
+	font-size: 1em;
+	font-weight: bold;
+	border: none;
+}
+#page .Calendars_event_tool .Calendars_info .Calendars_aspect_admin {
+	border: 1px solid red;
+}
+.Calendars_event_tool .Q_button.Calendars_aspect_eventType {
+	color: #fff;
+	background: #8a1a7b;
+}
+.Calendars_event_tool .Q_button.Calendars_aspect_checkin {
+	color: #555;
+	background: #fff;
+}
+.Calendars_event_tool .Q_button.Calendars_aspect_close {
+	color: black;
+	background: transparent;
+	border: solid 1px #bf1118;
+}
+.Calendars_event_reminders .Q_dialog_content {
+	padding: 10px;
+}
+.Calendars_event_reminders .Q_dialog_content label {
+	display: block;
+	font-size: 1.5em;
+	margin: 10px 0 0 20px;
+}
+.Calendars_event_reminders .Q_dialog_content label input[type=checkbox] {
+	transform: scale(2);
+	margin-right: 20px;
+}

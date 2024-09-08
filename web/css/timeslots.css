@@ -1,0 +1,95 @@
+.Calendars_timeslots_tool ul.Calendars_timeslot {
+	padding-left: 10px;
+}
+.Calendars_timeslots_tool ul.Calendars_timeslot li {
+	list-style: none;
+	margin-bottom: 5px;
+}
+.Calendars_timeslots_tool ul.Calendars_timeslot li[data-start][data-end] {
+	display: inline-block;
+}
+.Calendars_timeslots_tool ul.Calendars_timeslot_period > li {
+	font-size: 14px;
+}
+.Calendars_timeslots_tool ul.Calendars_timeslot_period > li .Calendars_timeslot_slot {
+	padding: 5px 10px;
+	border: 1px solid #ffb700;
+	border-radius: 5px;
+	display: inline-block;
+	background-color: #fff7e5;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.Calendars_timeslots_tool ul.Calendars_timeslot_period > li.Q_selected {
+	background: none;
+	border: none;
+}
+.Calendars_timeslots_tool ul.Calendars_timeslot_period > li.Q_selected .Calendars_timeslot_slot {
+	border-color: green;
+	background-color: #88c9064f;
+}
+.Calendars_timeslots_tool ul.Calendars_timeslot_period .qp-communities-close {
+	font-size: 16px;
+	color: red;
+	border: 1px solid red;
+	border-radius: 50%;
+	padding: 2px;
+	text-align: center;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+.Calendars_timeslots_tool ul.Calendars_timeslot_period .qp-communities-plus {
+	font-size: 18px;
+	color: green;
+	border: 1px solid green;
+	border-radius: 50%;
+	padding: 2px 1px 2px 2px;
+}
+.Calendars_timeslot_addslot .Q_dialog_content {
+	text-align: center;
+}
+.Calendars_timeslot_addslot .Q_dialog_content button[name=save] {
+	display: block;
+	margin: 0 auto 10px;
+}
+.Calendars_timeslot_addslot .Q_dialog_content select {
+	margin: 20px 0;
+	height: 40px;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 100px;
+}
+.Calendars_timeslot_addslot .Q_dialog_content select option[disabled] {
+	color: silver;
+	display: none;
+}
+.Calendars_timeslots_tool .Calendars_timeslot_add {
+	margin-top: 10px;
+	display: block;
+}
+.Calendars_timeslots_tool .Calendars_timeslot_cfd {
+	display: none;
+}
+.Calendars_timeslots_tool li[data-weekday][data-copyFromDays=true] .Calendars_timeslot_cfd {
+	display: block;
+}
+.Calendars_timeslots_tool .Calendars_timeslot_cfd i.qp-communities-copy {
+	font-size: 23px;
+	color: blue;
+}
+.Calendars_timeslots_tool .Calendars_timeslot_cfd select {
+	min-width: 100px;
+	height: 30px;
+}
+.Calendars_timeslots_tool ul.Calendars_timeslot > li {
+	border: 1px solid silver;
+	border-radius: 5px;
+	padding: 5px;
+	background: #f4fffd;
+}
+.Calendars_timeslots_tool .Calendars_timeslot_weekDay {
+	font-weight: bold;
+}
+.Calendars_timeslots_tool .Calendars_timeslot_nearest {
+	text-transform: lowercase;
+}

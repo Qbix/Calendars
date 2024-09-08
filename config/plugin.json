@@ -1,0 +1,299 @@
+{
+	"Q": {
+		"pluginInfo": {
+			"Calendars": {
+				"version": "0.5.2",
+				"compatible": "0.1",
+				"requires": {
+					"Users": "1.0",
+					"Streams": "1.0",
+					"Places": "1.0",
+					"Assets": "1.0"
+				},
+				"permissions": [],
+				"connections": ["Users", "Streams", "Calendars"]
+			}
+		},
+		"handlersBeforeEvent": {
+			"Q/responseExtras": ["Calendars/before/Q_responseExtras"],
+			"Q/sessionExtras": ["Calendars/before/Q_sessionExtras"],
+			"Streams/close/Assets/service": ["Calendars/before/Streams_close_Assets_service"],
+			"Streams/close/Calendars/event": ["Calendars/before/Streams_close_Calendars_event"],
+			"Streams/relateTo/Calendars/event": ["Assets/before/Streams_relateTo_Calendars_event"],
+			"Streams/unrelateTo/Calendars/event": ["Assets/before/Streams_unrelateTo_Calendars_event"],
+			"Db/Row/Streams_Participant/save": ["Calendars/before/Streams_Participant"]
+		},
+		"handlersAfterEvent": {
+			"Streams/create/Calendars/event": ["Calendars/after/Streams_create_Calendars_event"],
+			"Streams/create/Calendars/recurring": ["Calendars/after/Streams_create_Calendars_recurring"],
+			"Users/setLoggedInUser": ["Calendars/after/Users_setLoggedInUser"],
+			"Streams/Stream/save/Assets/service": ["Calendars/after/Streams_Stream_save_Assets_service"],
+			"Streams/invite/accept": ["Calendars/after/Streams_invite_accept"],
+			"Streams/invite": ["Calendars/after/Streams_invite"],
+			"Users/Label/can": ["Calendars/after/Users_Label_can"],
+			"Streams/message/Streams/join": ["Calendars/after/Streams_message_Streams_join"],
+			"Streams/message/Streams/leave": ["Calendars/after/Streams_message_Streams_leave"],
+			"Streams/relateTo/Media/webrtc": ["Calendars/after/Streams/relateTo/Media/webrtc"],
+			"Streams/unrelateTo/Media/webrtc": ["Calendars/after/Streams/unrelateTo/Media/webrtc"]
+		},
+		"web": {
+			"requireValidNonce": ["Calendars"]
+		},
+		"environments": {
+			"live": {
+				"prepare": {
+					"{{Calendars}}": ["js", "css"]
+				}
+			}
+		},
+		"text": {
+			"Calendars": {
+				"*": ["Calendars/content"]
+			}
+		},
+		"routes@start": {
+			"calendarsIcons": { "module": "Calendars", "action": "icons" },
+			":publisherId/:eventId/:method.gcal": {"module": "Calendars", "action": "gcal"},
+			":publisherId/:eventId/:method.ics": {"module": "Calendars", "action": "ics"},
+			"Calendars/personal/:userId.ics": {"module": "Calendars", "action": "calendarIcs"}
+		},
+		"images": {
+			"Calendars/event": {
+				"sizes": {
+					"40": "40.png",
+					"50": "50.png",
+					"80": "80.png",
+					"200": "200.png",
+					"400": "400.png",
+					"500x333": "500x.png"
+				},
+				"maxStretch": 2,
+				"defaultSize": "400",
+				"defaultCacheBust": 1000
+			}
+		},
+		"capability": {
+			"permissions": {
+				"c": "Calendars/personal"
+			}
+		}
+	},
+	"Db": {
+		"connections": {
+			"Calendars": {
+				"prefix": "calendars_",
+				"shards": {}
+			}
+		}
+	},
+	"Users": {
+		"roles": {
+			"Users/owners": {
+				"canGrant": ["Calendars/admins", "Calendars/staff"],
+				"canRevoke": ["Calendars/admins", "Calendars/staff"],
+				"canSee": ["Calendars/admins", "Calendars/staff"]
+			},
+			"Users/admins": {
+				"canGrant": ["Calendars/admins", "Calendars/staff"],
+				"canRevoke": ["Calendars/admins", "Calendars/staff"],
+				"canSee": ["Calendars/admins", "Calendars/staff"]
+			},
+			"Calendars/admins": {
+				"title": "Calendars Admins",
+				"icon": "{{baseUrl}}/Q/plugins/Calendars/img/icons/labels/Calendars/admins",
+				"canGrant": ["Calendars/admins", "Calendars/staff"],
+				"canRevoke": ["Calendars/admins", "Calendars/staff"],
+				"canSee": ["Users/owners", "Users/admins", "Users/members", "Users/guests", "Calendars/admins", "Calendars/staff"]
+			},
+			"Calendars/staff": {
+				"title": "Calendars Staff",
+				"icon": "{{baseUrl}}/Q/plugins/Calendars/img/icons/labels/Calendars/staff",
+				"canGrant": ["Users/guests"],
+				"canRevoke": [],
+				"canSee": ["Users/members", "Users/guests"]
+			}
+		}
+	},
+	"Streams": {
+		"userStreams": {
+			"Calendars": "streams.json"
+		},
+		"types": {
+			"Calendars/calendar": {
+				"emoji": "📅"
+			},
+			"Calendars/event": {
+				"emoji": "🕒",
+				"defaults": {
+					"icon": "{{Calendars}}/img/icons/Calendars/event",
+					"title": "Untitled Event",
+					"readLevel": 30,
+					"writeLevel": 10,
+					"adminLevel": 20
+				},
+				"create": false,
+				"close": false,
+				"edit": ["title", "content"],
+				"messages": {
+					"Streams/chat/message": {
+						"post": true
+					},
+					"Calendars/going": {
+						"subject": ["Calendars/content", ["notifications", "EventActivityIn"]]
+					},
+					"Calendars/checkin": {
+						"post": false
+					},
+					"Calendars/event/webrtc/started": {
+						"post": false
+					},
+					"Calendars/event/webrtc/ended": {
+						"post": false
+					},
+					"Calendars/event/livestream/started": {
+						"post": false
+					},
+					"Calendars/event/livestream/ended": {
+						"post": false
+					}
+				},
+				"participating": ["Calendars/participating/events"],
+				"relatedFrom": {
+					"Calendars/calendar": {
+						"url": "{{fromUrl}}"
+					}
+				},
+				"invite": {
+					"extra": {
+						"going": "maybe"
+					}
+				},
+				"onInviteAccepted": {
+					"join": true
+				},
+				"onInvited": "justObserve",
+				"extend": ["Calendars_Event"]
+			},
+			"Calendars/availability": {
+				"emoji": "🆓",
+				"defaults": {
+					"icon": "{{Calendars}}/img/icons/Calendars/availability",
+					"title": "Untitled Calendars availability",
+					"readLevel": 40,
+					"writeLevel": 0,
+					"adminLevel": 0
+				},
+				"create": true,
+				"close": true,
+				"edit": ["title", "content", "attributes"],
+				"uri": "Assets/services",
+				"url": "{{baseUrl}}/Assets/services"
+			},
+			"Calendars/recurring": {
+				"emoji": "🔄",
+				"defaults": {
+					"icon": "{{Calendars}}/img/icons/Calendars/recurring",
+					"title": "Recurring Info",
+					"readLevel": 40,
+					"writeLevel": 10,
+					"adminLevel": 20
+				},
+				"create": false,
+				"close": false,
+				"edit": false,
+				"messages": {
+					"Calendars/recurring/changed": {
+						"subject": ["Calendars/content", ["notifications", "RecurringRulesChanged"]],
+						"body": "Calendars/email/recurringChanged.php",
+						"mobile": "Calendars/mobile/recurringChanged.php"
+					}
+				}
+			},
+			"Calendars/reminders": {
+				"emoji": "⏰",
+				"create": false,
+				"edit": false,
+				"defaults": {
+					"title": "Category to send reminders",
+					"icon": "",
+					"readLevel": 0,
+					"writeLevel": 0,
+					"adminLevel": 0
+				},
+				"subscribe": {
+					"filter": {
+						"types": ["Calendars/reminder"],
+						"notifications": 0
+					}
+				},
+				"messages": {
+					"Calendars/reminder": {
+						"subject": ["Calendars/content", ["notifications", "Calendars/reminder"]]
+					}
+				}
+			}
+		},
+		"onInsert": { /* streams to insert when a row is inserted */
+			"person": [
+				"Calendars/user/calendar"
+			]
+		},
+		"notifications": {
+			"notices": { /* track message type to show notification as Q.Notice */
+				"Calendars/reminder": {
+					"timeout": 10
+				}
+			}
+		}
+	},
+	"Calendars": {
+		"events": {
+			"defaults": {
+				"peopleMin": 0,
+				"peopleMax": 100,
+				"duration": 7200,
+				"payment": {
+					"amountMin": 1,
+					"amountMax": 1000
+				},
+				"participants": {
+					"maxShow": 10,
+					"showBlanks": true
+				}
+			},
+			"listing": {
+				"duration": 267840000 /* 100 monthes in seconds */
+			},
+			"admins": ["Calendars/admins", "Users/owners", "Users/admins"]
+		},
+		"newEvent": {
+			"location": true,
+			"livestream": true
+		},
+		"event": {
+			"hideIfNoParticipants": false,
+			"templateStyle": "classic", /* can be "classic", "tall", "square" */
+			"reminders": {
+				"86400": { /* 24 hours */
+					"selected": true
+				},
+				"18000": {}, /* 5 hours */
+				"7200": {}, /* 2 hours */
+				"3600": { /* 1 hour */
+					"selected": true
+				},
+				"600": {} /* 5 minutes */
+			},
+			"icon": {
+				"search": ["google"]
+			}
+		},
+		"user": {
+			"calendars": {
+				"alerts": { /* if user subscribed to personal calendar, each event will be preceded by alert */
+					"minutes": 5
+				}
+			}
+		}
+	}
+}

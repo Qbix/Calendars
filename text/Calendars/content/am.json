@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "ጥር",
+        "Feb": "የካቲት",
+        "Mar": "ማር",
+        "Apr": "ኤፕሪል",
+        "May": "ግንቦት",
+        "Jun": "ሰኔ",
+        "Jul": "ጁል",
+        "Aug": "ኦገስት",
+        "Sep": "ሴፕቴምበር",
+        "Oct": "ኦክቶበር",
+        "Nov": "ህዳር",
+        "Dec": "ዲሴምበር"
+    },
+    "monthsLong": {
+        "Jan": "ጥር",
+        "Feb": "የካቲት",
+        "Mar": "መጋቢት",
+        "Apr": "ሚያዚያ",
+        "May": "ግንቦት",
+        "Jun": "ሰኔ",
+        "Jul": "ሀምሌ",
+        "Aug": "ነሐሴ",
+        "Sep": "መስከረም",
+        "Oct": "ጥቅምት",
+        "Nov": "ህዳር",
+        "Dec": "ታህሳስ"
+    },
+    "weekdays": {
+        "Sun": "ፀሐይ",
+        "Mon": "ሰኞ",
+        "Tue": "ማክሰኞ",
+        "Wed": "ረቡዕ",
+        "Thu": "ቱ",
+        "Fri": "ዓርብ",
+        "Sat": "ሳት"
+    },
+    "weekdaysLong": {
+        "Sun": "እሁድ",
+        "Mon": "ሰኞ",
+        "Tue": "ማክሰኞ",
+        "Wed": "እሮብ",
+        "Thu": "ሐሙስ",
+        "Fri": "አርብ",
+        "Sat": "ቅዳሜ"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "አዲስ ክስተት ያቅዱ"
+        },
+        "tool": {
+            "HostedBy": "በ {{name}} የተዘጋጀ",
+            "Name": "ስም",
+            "AreYouIn": "ገብተሃል?",
+            "Yes": "አዎ",
+            "No": "አይ",
+            "Ok": "እሺ",
+            "Cancel": "ሰርዝ",
+            "Maybe": "ምን አልባት",
+            "Conversation": "ውይይት",
+            "Promote": "ይህን ክስተት ያስተዋውቁ",
+            "Reminders": "አስታዋሾች",
+            "RemindersLabel": "በሚከተለው ውስጥ ስላለ ክስተት ማሳወቂያ እፈልጋለሁ",
+            "MoreInfo": "ተጨማሪ መረጃ",
+            "Registration": "ምዝገባ",
+            "SetReminders": "እባክዎ አስታዋሾችን ያዘጋጁ",
+            "ReservationFee": "የቦታ ማስያዣ ክፍያ",
+            "AddParticipants": "ተሳታፊዎችን ይጨምሩ",
+            "ManageReservation": "ቦታ ማስያዝን አስተዳድር",
+            "UpdateFutureReservations": "እንዲሁም ሁሉንም የወደፊት የተያዙ ቦታዎች በተመሳሳይ መንገድ ማዘመን ይፈልጋሉ?",
+            "RecurringAdmin": "ተደጋጋሚ ቅንብሮች",
+            "MakeReservation": "ቦታ ማስያዝ",
+            "StartLiveStream": "የቀጥታ ዥረት ለማድረግ ጠቅ ያድርጉ",
+            "LiveStreamEnded": "የቀጥታ ስርጭቱ አልቋል",
+            "ClickToViewRecording": "ቀረጻ ለማየት ጠቅ ያድርጉ",
+            "Checkin": "የተመልካቾችን ኮዶች ይቃኙ",
+            "Myqr": "ያረጋግጡ",
+            "CloseEvent": {
+                "button": "ክስተት ሰርዝ",
+                "confirm": {
+                    "text": {
+                        "Cancel": "እርግጠኛ ነዎት ይህን ክስተት መሰረዝ ይፈልጋሉ?",
+                        "Participant": "በዚህ ክስተት 1 ተሳታፊ አለ።",
+                        "Participants": "በዚህ ክስተት {999} ተሳታፊዎች አሉ።",
+                        "Recurring": "ይህ ክስተት ተደጋጋሚ ነው። እንዲሁም ሁሉንም የወደፊት ሁኔታዎችን መሰረዝ ይፈልጋሉ?"
+                    },
+                    "trip": {
+                        "Cancel": "ይህን ክስተት {{tripDirection}} ጉዞዎን መሰረዝ ይፈልጋሉ?",
+                        "Passengers": "በእርስዎ ላይ የሚተማመኑ {{passengerCount}} መንገደኞች አሉ።",
+                        "Title": "ጉዞ ዝጋ"
+                    },
+                    "directions": {
+                        "TO": "ለ",
+                        "FROM": "ከ",
+                        "to": "ወደ",
+                        "from": "ከ"
+                    }
+                }
+            },
+            "Calendar": "የቀን መቁጠሪያ",
+            "Interests": "ፍላጎቶች",
+            "Directions": "አቅጣጫዎች",
+            "TitleOfEvent": "የክስተቱ ርዕስ፡-",
+            "OpenTo": "ክፍት ለ",
+            "GoingTo": "ላይ ይሆናል።",
+            "NotGoingTo": "ላይ አይሆንም",
+            "MaybeGoingTo": "ላይ ሊሆን ይችላል።",
+            "AdminDontPay": "አስተዳዳሪ መክፈል አያስፈልገውም",
+            "PublisherDontPay": "አታሚ መክፈል አያስፈልገውም",
+            "EmptyList": "ባዶ ዝርዝር",
+            "NeedToPayCredits": "መክፈል <span>ያለብዎት፡ {{amount}} ክሬዲቶች<\/span>",
+            "PleaseJoinParticipants": "እባክህ ተቀላቀል {{participant}}",
+            "YouReservingPlace": "ቦታዎን ያስይዙታል።",
+            "SelectIncludesToAdd": "ለማከል አንድ ወይም ብዙ {{TypeDisplayPlural}}ን ይምረጡ፡-",
+            "YouHaveNotRegisteredAnyIncluded": "እስካሁን ምንም {{TypeDisplayPlural}} አልተመዘገቡም።",
+            "Proceed": "ቀጥል።",
+            "MakeChanges": "ለውጦቼን አስቀምጥ",
+            "CancelReservation": "ቦታ ማስያዝን በሙሉ ሰርዝ",
+            "Total": "ጠቅላላ",
+            "RequiredRelatedParticipants": "ይህ ክስተት ተሳታፊዎችን ይፈልጋል፡ {{requiredParticipantsList}}",
+            "AvailabilityWarning": "ተደጋጋሚ ቅንብሮችን ለማዘመን እባክዎ ተገኝነትን &quot;{999}}&quot; ያርትዑ",
+            "Presentation": "የዝግጅት አቀራረብ",
+            "YouAreNotParticipated": "እርስዎ የዝግጅቱ ተሳታፊ አይደሉም",
+            "LiveStreamStarted": "የቀጥታ ስርጭት ተጀምሯል።",
+            "WebRTCStarted": "ቴሌ ኮንፈረንስ ተጀመረ",
+            "WebRTCEnded": "ቴሌ ኮንፈረንስ ተጠናቀቀ"
+        },
+        "composer": {
+            "SetLocation": "አካባቢዬን አቀናብር",
+            "SetInfoLink": "ለተጨማሪ መረጃ ማገናኛን ያቀናብሩ",
+            "ChooseAvailability": "የሚገኝ አገልግሎት ይምረጡ",
+            "ChooseActivity": "አንድ እንቅስቃሴ ይምረጡ",
+            "ChoosePublisher": "አታሚ ይምረጡ",
+            "Day": "ቀን",
+            "Starting": "በመጀመር ላይ",
+            "Duration": "ቆይታ",
+            "Hour": "ሰአት",
+            "Hours": "ሰዓታት",
+            "Minutes": "ደቂቃዎች",
+            "Ending": "የሚያልቅ",
+            "People": "ሰዎች",
+            "Share": "አጋራ",
+            "Continue": "ቀጥል።",
+            "Recurring": "ተደጋጋሚ",
+            "RecurringTitle": "ተደጋጋሚ ቀናት",
+            "Daily": "በየቀኑ",
+            "Weekly": "በየሳምንቱ",
+            "Monthly": "ወርሃዊ",
+            "SelectLocation": "እባክዎ መጀመሪያ አካባቢ ይምረጡ።",
+            "eventType": "የክስተት አይነት",
+            "EditTitle": "አንድ አስደሳች ርዕስ አስብ...",
+            "SetTitle": "እባክዎ የክስተት ርዕስ ያዘጋጁ",
+            "ScheduleOnlineConference": "የመስመር ላይ ኮንፈረንስ መርሐግብር",
+            "SOCDescription": "እባክዎ የኮንፈረንስ መጀመሪያ እና ማብቂያ ጊዜ ይግለጹ። በዚህ ጊዜ ውስጥ ክስተቱን የሚጎበኝ እያንዳንዱ ሰው በመስመር ላይ ኮንፈረንስ በራስ-ሰር ይገናኛል።",
+            "EndDate": "መጨረሻ",
+            "location": {
+                "Title": "አካባቢዎን ያዘጋጁ"
+            },
+            "interest": {
+                "Title": "አንድ እንቅስቃሴ ይምረጡ",
+                "Filter": "ፍላጎቶችን ይፈልጉ…"
+            },
+            "SetLivestream": "የቀጥታ ዥረት\/የቪዲዮ ኮንፈረንስ አገናኝ ለጥፍ",
+            "Locally": "በአካባቢው",
+            "EventInfoLink": "የክስተት መረጃ አገናኝ",
+            "TicketPurchaseLink": "የቲኬት ግዢ አገናኝ"
+        },
+        "EventAlreadyClosed": "ይህ ክስተት አስቀድሞ ተዘግቷል።",
+        "addToCalendar": {
+            "permissions": {
+                "title": "ወደ ቀን መቁጠሪያ ይታከል?",
+                "prompt": "ይህን ክስተት ወደ ቀን መቁጠሪያዎ ማከል ይፈልጋሉ?",
+                "yes": "አዎ",
+                "no": "አይ"
+            },
+            "dialog": {
+                "Title": "ክስተት ወደ የቀን መቁጠሪያዎ ያክሉ"
+            }
+        },
+        "ErrorLeaveEndedEvent": "ይቅርታ፣ ግን ያለቀውን ክስተት መተው አይችሉም"
+    },
+    "availabilities": {
+        "Title": "መገኘት",
+        "NewAvailability": {
+            "Title": "አዲስ ተገኝነት",
+            "SaveAvailability": "ተገኝነትን ያስቀምጡ",
+            "SelectTemplate": "እባክዎ አገልግሎት ይምረጡ",
+            "SelectLocation": "እባክዎ ቦታ ይምረጡ",
+            "SelectArea": "እባክዎን አካባቢ ይምረጡ",
+            "Type": "ዓይነት",
+            "Weekly": "በየሳምንቱ",
+            "RecurringStartDate": "ተደጋጋሚ የመጀመሪያ ቀን",
+            "EndDate": "የመጨረሻ ቀን",
+            "SelectTime": "የጊዜ ቦታዎችን ያቀናብሩ",
+            "SelectTimeSlot": "የጊዜ ክፍተት ይምረጡ",
+            "SelectTimeSlots": "የሚፈለጉትን የጊዜ ክፍተቶችን ይምረጡ",
+            "PeopleMin": "አነስተኛ ጎብኝዎች",
+            "PeopleMax": "ከፍተኛው ጎብኝዎች",
+            "PeopleLabels": "ሚናዎች ተፈቅደዋል",
+            "Next": "ቀጥሎ",
+            "Back": "ተመለስ",
+            "RecurringEndDate": "ተደጋጋሚ የማብቂያ ቀን",
+            "ScheduleOnlineConference": "የቴሌኮንፈረንስ ፕሮግራም ያውጡ",
+            "SetLivestream": "የቀጥታ ዥረት\/የቪዲዮ ኮንፈረንስ አገናኝ ለጥፍ",
+            "SelectTimeZone": "የሰዓት ሰቅን ይምረጡ"
+        },
+        "EditAvailability": "ተገኝነትን ያርትዑ",
+        "SetVisitors": "ጎብኝዎችን አዘጋጅ",
+        "Price": "ዋጋ",
+        "SelectAction": "እባክዎ እርምጃ ይምረጡ",
+        "OpenProfile": "መገለጫ ክፈት",
+        "RemoveStaff": "ሰራተኞችን ያስወግዱ",
+        "PleaseSelectTimeSlots": "እባክዎ የጊዜ ክፍተቶችን ይምረጡ",
+        "ExceptionOccurred": "ለየት ያለ ሁኔታ ተከስቷል",
+        "NotEnoughCreditsToParticipateEvents": "{999} ክስተቶችን ለመሳተፍ በቂ ክሬዲቶች የሉም። {1000} ክሬዲቶች ያስፈልጉዎታል። መግዛት ይፈልጋሉ?",
+        "LiveStream": "የቀጥታ ስርጭት",
+        "InviteStaff": "ሰራተኞችን ይጋብዙ"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "የመጀመሪያ ቀን",
+            "endDate": "የመጨረሻ ቀን",
+            "justOnce": "አንዴ ብቻ",
+            "justOnceWeekly": "በዚህ ሳምንት ብቻ",
+            "justOnceMonthly": "በዚህ ወር ብቻ",
+            "recurring": "ተደጋጋሚ"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "ነጻ ክስተት",
+            "optional": "አማራጭ አስተዋፅዖ",
+            "required": "የሚፈለግ ክፍያ"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "አማራጭ አስተዋፅዖ",
+            "required": "የሚፈለግ ክፍያ",
+            "paid": "ተከፍሏል"
+        },
+        "confirmationDialog": {
+            "title": "የክፍያ ማረጋገጫ",
+            "content": "ይህ ክስተት የ{999} አማራጭ አስተዋጽዖ አለው።",
+            "button": "አዋጡ"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ገና የዝግጅቱ አካል አይደለም። እንደ ተሳታፊ ልታክላቸው ትፈልጋለህ?",
+        "userNotFound": "ተጠቃሚ አልተገኘም።",
+        "confirmYes": "አዎ",
+        "confirmNo": "አይ"
+    },
+    "notifications": {
+        "EventActivityIn": "የክስተት እንቅስቃሴ በ{999}",
+        "RecurringRulesChanged": "ተደጋጋሚ ደንቦች ለክስተት ተቀይረዋል {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "የኢሜል ምዝገባዎችዎን ያስተዳድሩ",
+        "IfUnsubscribe": "ከደንበኝነት ምዝገባ መውጣት ከፈለጉ",
+        "ClickHereToVisitEvent": "እባክዎን ክስተት ለመጎብኘት እዚህ ጠቅ ያድርጉ",
+        "Calendars\/reminder": "&quot;{999}}&quot; ክስተት በ{1000} ውስጥ ይጀምራል",
+        "webrtc": {
+            "Started": "ቴሌ ኮንፈረንስ ተጀመረ",
+            "Ended": "ቴሌ ኮንፈረንስ ተጠናቀቀ"
+        },
+        "livestream": {
+            "Started": "የቀጥታ ስርጭት ተጀመረ",
+            "Ended": "የቀጥታ ስርጭት አልቋል",
+            "ClickToView": "እዚ እዩ።"
+        }
+    },
+    "import": {
+        "linkTitle": "ይህን የተመን ሉህ ይሙሉ",
+        "fileLabel": "የተመን ሉህ ስቀል፡",
+        "importOptions": "አማራጮች",
+        "importProgress": "እድገት",
+        "sampleCSV": "ናሙና CSV አውርድ",
+        "joinEventLabel": "ወደ የዘፈቀደ ክስተት ተጠቃሚዎችን ይቀላቀሉ",
+        "smsText": "ሄይ፣ አሁን ወደ {{communityName}} አገናኝ ልኬልዎታል። እባኮትን ይመልከቱት።",
+        "emailSubject": "ልክ ሊንክ ልኮልዎታል።",
+        "emailBody": "ሄይ፣ አሁን ግብዣ ልኬልዎታለሁ {{communityName}} እባኮትን ይመልከቱት።",
+        "fileNotFound": "ይቅርታ፣ የCSV ፋይል አልተገኘም።",
+        "fileEmpty": "ይቅርታ፣ የCSV ፋይል ባዶ ነው።",
+        "fieldNotFound": "የሚፈለገው መስክ &quot;{999}}&quot; አልተገኘም።",
+        "userIdNotFound": "ተጠቃሚ አለ ግን መታወቂያ ባዶ ነው።",
+        "activateUsers": "የማግበር መልእክት ለተጠቃሚዎች ይላኩ?",
+        "taskStreamInvalid": "የተግባር ዥረት ልክ ያልሆነ",
+        "instructionsEmpty": "የተግባር ዥረት መመሪያዎች ባዶ",
+        "interestsEmpty": "ፍላጎቶችን ማግኘት አይችሉም",
+        "interestAbsent": "ፍላጎት {{1}} አልተገኘም።",
+        "complete": "ተጠናቀቀ",
+        "errorLine": "መስመር {999}",
+        "errorsTitle": "ስህተቶች ተከስተዋል።",
+        "communityUsers": "ይህ የማህበረሰብ ዝርዝር ነው።",
+        "toMainCommunityToo": "ከዋናው ማህበረሰብ ጋርም ይዛመዳል",
+        "ChooseFile": "ፋይል ይምረጡ"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "ሰዎች ሊሳተፉበት የሚችሉትን ክስተት ይወክላል",
+            "displayType": "ክስተት"
+        },
+        "Calendars\/recurring": {
+            "description": "በየጊዜው እንዲደጋገሙ የታቀዱ ዥረቶችን ለማገናኘት ይጠቅማል",
+            "displayType": "ተደጋጋሚ ክስተት"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "ማስገቢያ አክል",
+        "StartTime": "የመጀመሪያ ጊዜ",
+        "EndTime": "የመጨረሻ ጊዜ",
+        "Save": "አስቀምጥ",
+        "AddTimeSlot": "የጊዜ ማስገቢያ አክል",
+        "CopyFromDay": "ከቀን ቅዳ",
+        "Nearest": "በጣም ቅርብ",
+        "Today": "ዛሬ",
+        "Tomorrow": "ነገ",
+        "AfterTomorrow": "ከነገ በኋላ"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "ለቀን መቁጠሪያ ይመዝገቡ",
+        "copyLinkBelow": "ከታች ያለውን ሊንክ ቅዳ",
+        "goTo": "መሄድ:",
+        "pasteCopiedTo": "የተቀዳ አገናኝ ወደ &quot;የቀን መቁጠሪያ URL&quot; መስክ ለጥፍ",
+        "clickAddCalendar": "&quot;የቀን መቁጠሪያ አክል&quot; ቁልፍን ጠቅ ያድርጉ",
+        "copyLink": "አገናኝ ቅዳ",
+        "tapToCopy": "ወደ ቅንጥብ ሰሌዳዎ ያለውን ሊንክ ለመቅዳት ከታች ያለውን ቁልፍ ይንኩ።",
+        "linkCopied": "ማገናኛ ተቀድቷል።",
+        "step2": "ማገናኛ ተቀድቷል። ጎግል ካሌንደርን ሊከፍት ነው። አገናኙን ወደ የጽሑፍ ሳጥኑ ውስጥ መለጠፍ፣ “ካላንደር አክል” የሚለውን ጠቅ ማድረግ እና ትሩን መዝጋት ያስፈልግዎታል (ከዚህ በታች ያለውን ቅጽበታዊ ገጽ እይታ ይመልከቱ)",
+        "calendarAppPreferences": "ምርጫዎቹን በእርስዎ Mac ላይ ባለው የቀን መቁጠሪያ መተግበሪያ ውስጥ ይክፈቱ እና ነባሪ የቀን መቁጠሪያ መተግበሪያን ከታች እንደሚታየው ያዘጋጁት።",
+        "thenCloseDialog": "ከዚያ ለቀን መቁጠሪያዎ ለመመዝገብ ይህንን ንግግር ዝጋ!",
+        "success": "የቀን መቁጠሪያ በተሳካ ሁኔታ ተመሳስሏል።"
+    }
+}

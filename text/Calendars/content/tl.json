@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Feb",
+        "Mar": "Mar",
+        "Apr": "Apr",
+        "May": "May",
+        "Jun": "Si Jun",
+        "Jul": "Hul",
+        "Aug": "Aug",
+        "Sep": "Sep",
+        "Oct": "Oct",
+        "Nov": "Nob",
+        "Dec": "Dis"
+    },
+    "monthsLong": {
+        "Jan": "Enero",
+        "Feb": "Pebrero",
+        "Mar": "Marso",
+        "Apr": "Abril",
+        "May": "May",
+        "Jun": "Hunyo",
+        "Jul": "Hulyo",
+        "Aug": "Agosto",
+        "Sep": "Setyembre",
+        "Oct": "Oktubre",
+        "Nov": "Nobyembre",
+        "Dec": "Disyembre"
+    },
+    "weekdays": {
+        "Sun": "Araw",
+        "Mon": "Mon",
+        "Tue": "Tue",
+        "Wed": "ikasal",
+        "Thu": "Huwebes",
+        "Fri": "Biyernes",
+        "Sat": "Sab"
+    },
+    "weekdaysLong": {
+        "Sun": "Linggo",
+        "Mon": "Lunes",
+        "Tue": "Martes",
+        "Wed": "Miyerkules",
+        "Thu": "Huwebes",
+        "Fri": "Biyernes",
+        "Sat": "Sabado"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Magplano ng Bagong Kaganapan"
+        },
+        "tool": {
+            "HostedBy": "Hino-host ni {{name}}",
+            "Name": "Pangalan",
+            "AreYouIn": "pasok ka ba?",
+            "Yes": "Oo",
+            "No": "Hindi",
+            "Ok": "Ok",
+            "Cancel": "Kanselahin",
+            "Maybe": "Siguro",
+            "Conversation": "Pag-uusap",
+            "Promote": "I-promote ang kaganapang ito",
+            "Reminders": "Mga paalala",
+            "RemindersLabel": "Gusto kong maabisuhan tungkol sa isang kaganapan sa:",
+            "MoreInfo": "Karagdagang impormasyon",
+            "Registration": "Pagpaparehistro",
+            "SetReminders": "Mangyaring magtakda ng mga paalala",
+            "ReservationFee": "Bayad sa Pagpapareserba",
+            "AddParticipants": "Magdagdag ng mga Kalahok",
+            "ManageReservation": "Pamahalaan ang Pagpapareserba",
+            "UpdateFutureReservations": "Gusto mo rin bang i-update ang lahat ng mga pagpapareserba sa hinaharap sa parehong paraan?",
+            "RecurringAdmin": "Mga Umuulit na Setting",
+            "MakeReservation": "Magpareserba",
+            "StartLiveStream": "I-click upang Live Stream",
+            "LiveStreamEnded": "Natapos na ang live stream",
+            "ClickToViewRecording": "i-click upang tingnan ang pag-record",
+            "Checkin": "I-scan ang mga code ng dadalo",
+            "Myqr": "Mag-check In",
+            "CloseEvent": {
+                "button": "Kanselahin ang Kaganapan",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Sigurado ka bang gusto mong kanselahin ang kaganapang ito?",
+                        "Participant": "May 1 kalahok sa kaganapang ito",
+                        "Participants": "Mayroong {{count}} kalahok sa kaganapang ito",
+                        "Recurring": "Paulit-ulit ang kaganapang ito. Gusto mo bang kanselahin din ang lahat ng mga instance nito sa hinaharap?"
+                    },
+                    "trip": {
+                        "Cancel": "Gusto mo bang kanselahin ang iyong biyahe {{tripDirection}} sa kaganapang ito?",
+                        "Passengers": "May {{passengerCount}} mga pasaherong umaasa sa iyo.",
+                        "Title": "Close Trip"
+                    },
+                    "directions": {
+                        "TO": "SA",
+                        "FROM": "MULA SA",
+                        "to": "sa",
+                        "from": "mula sa"
+                    }
+                }
+            },
+            "Calendar": "Kalendaryo",
+            "Interests": "Mga interes",
+            "Directions": "Mga direksyon",
+            "TitleOfEvent": "Pamagat ng kaganapan:",
+            "OpenTo": "Bukas sa",
+            "GoingTo": "ay sa",
+            "NotGoingTo": "ay hindi sa",
+            "MaybeGoingTo": "ay maaaring nasa",
+            "AdminDontPay": "Hindi kailangang magbayad ng admin",
+            "PublisherDontPay": "Hindi kailangang magbayad ng publisher",
+            "EmptyList": "Walang laman na listahan",
+            "NeedToPayCredits": "Kailangang magbayad ng: <span>{{amount}} na mga kredito<\/span>",
+            "PleaseJoinParticipants": "Mangyaring sumali sa {{participant}}",
+            "YouReservingPlace": "Magpapareserba ka ng iyong lugar.",
+            "SelectIncludesToAdd": "Pumili ng isa o higit pang {{TypeDisplayPlural}} upang idagdag:",
+            "YouHaveNotRegisteredAnyIncluded": "Wala ka pang nairehistrong {{TypeDisplayPlural}}.",
+            "Proceed": "Magpatuloy",
+            "MakeChanges": "I-save ang Aking Mga Pagbabago",
+            "CancelReservation": "Kanselahin ang buong reserbasyon",
+            "Total": "Kabuuan",
+            "RequiredRelatedParticipants": "Ang kaganapang ito ay nangangailangan ng mga kalahok: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Paki-edit ang availability &quot;{{title}}&quot; upang i-update ang mga umuulit na setting"
+        },
+        "composer": {
+            "SetLocation": "Itakda ang Aking Lokasyon",
+            "SetInfoLink": "Itakda ang Link sa karagdagang impormasyon",
+            "ChooseAvailability": "Piliin ang Magagamit na Serbisyo",
+            "ChooseActivity": "Pumili ng isang Aktibidad",
+            "ChoosePublisher": "Piliin ang Publisher",
+            "Day": "Araw",
+            "Starting": "Nagsisimula",
+            "Duration": "Tagal",
+            "Hour": "Oras",
+            "Hours": "Oras",
+            "Minutes": "Mga minuto",
+            "Ending": "Pagtatapos",
+            "People": "Mga tao",
+            "Share": "Ibahagi",
+            "Continue": "Magpatuloy",
+            "Recurring": "Paulit-ulit",
+            "RecurringTitle": "Mga Paulit-ulit na Araw",
+            "Daily": "Araw-araw",
+            "Weekly": "Linggu-linggo",
+            "Monthly": "Buwan-buwan",
+            "SelectLocation": "Mangyaring pumili muna ng lokasyon.",
+            "eventType": "Uri ng kaganapan",
+            "EditTitle": "Mag-isip ng isang kawili-wiling pamagat...",
+            "SetTitle": "Mangyaring itakda ang pamagat ng kaganapan",
+            "ScheduleOnlineConference": "Mag-iskedyul ng Online na Kumperensya",
+            "SOCDescription": "Mangyaring tukuyin ang oras ng pagsisimula at pagtatapos ng kumperensya. Bawat tao na bibisita sa kaganapan sa panahong ito ay awtomatikong kumonekta sa online na kumperensya.",
+            "EndDate": "Tapusin",
+            "location": {
+                "Title": "Itakda ang Iyong Lokasyon"
+            },
+            "interest": {
+                "Title": "Pumili ng isang Aktibidad",
+                "Filter": "Mga interes sa paghahanap..."
+            },
+            "SetLivestream": "I-paste ang link sa livestream \/ videoconference"
+        },
+        "EventAlreadyClosed": "Sarado na ang kaganapang ito",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Idagdag sa Calendar?",
+                "prompt": "Gusto mo bang idagdag ang kaganapang ito sa iyong kalendaryo?",
+                "yes": "Oo",
+                "no": "Hindi"
+            },
+            "dialog": {
+                "Title": "Magdagdag ng Kaganapan sa iyong Kalendaryo"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Mga Availability",
+        "NewAvailability": {
+            "Title": "Bagong Availability",
+            "SaveAvailability": "I-save ang Availability",
+            "SelectTemplate": "Mangyaring piliin ang Serbisyo",
+            "SelectLocation": "Mangyaring piliin ang Lokasyon",
+            "SelectArea": "Mangyaring piliin ang Lugar",
+            "Type": "Uri",
+            "Weekly": "Linggu-linggo",
+            "RecurringStartDate": "Umuulit na Petsa ng Pagsisimula",
+            "EndDate": "Petsa ng Pagtatapos",
+            "SelectTime": "Pamahalaan ang mga Time Slot",
+            "SelectTimeSlot": "Pumili ng time slot",
+            "SelectTimeSlots": "Piliin ang nais na mga puwang ng oras",
+            "PeopleMin": "Minimum na bisita",
+            "PeopleMax": "Pinakamaraming bisita",
+            "PeopleLabels": "Pinapayagan ang mga label",
+            "Next": "Susunod",
+            "Back": "Bumalik"
+        },
+        "EditAvailability": "I-edit ang Availability",
+        "SetVisitors": "Itakda ang mga Bisita",
+        "Price": "Presyo",
+        "SelectAction": "Mangyaring pumili ng aksyon",
+        "OpenProfile": "Buksan ang profile",
+        "RemoveStaff": "Alisin ang mga tauhan",
+        "PleaseSelectTimeSlots": "Mangyaring pumili ng mga puwang ng oras",
+        "ExceptionOccurred": "Naganap ang pagbubukod",
+        "NotEnoughCreditsToParticipateEvents": "Hindi sapat na mga kredito para makasali {{eventsAmount}} ng mga kaganapan. Kailangan mo ng {{needCredits}} na mga kredito. Gustong bumili?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Petsa ng pagsisimula",
+            "endDate": "Petsa ng pagtatapos",
+            "justOnce": "Isang beses lang",
+            "justOnceWeekly": "Ngayong linggo lang",
+            "justOnceMonthly": "Ngayong buwan lang",
+            "recurring": "Paulit-ulit"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Libreng kaganapan",
+            "optional": "Opsyonal na kontribusyon",
+            "required": "Kinakailangang bayad"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Opsyonal na kontribusyon",
+            "required": "Kinakailangang bayad",
+            "paid": "binayaran"
+        },
+        "confirmationDialog": {
+            "title": "Pagkumpirma sa pagbabayad",
+            "content": "Ang kaganapang ito ay may opsyonal na kontribusyon na {{amount}}.",
+            "button": "Mag-ambag"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ay hindi pa bahagi ng kaganapan. Gusto mo ba silang idagdag bilang kalahok?",
+        "userNotFound": "Hindi nahanap ang user",
+        "confirmYes": "Oo",
+        "confirmNo": "Hindi"
+    },
+    "notifications": {
+        "EventActivityIn": "Aktibidad ng kaganapan sa {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Binago ang mga umuulit na panuntunan para sa kaganapan {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "pamahalaan ang iyong mga subscription sa email",
+        "IfUnsubscribe": "Kung gusto mong mag-unsubscribe",
+        "ClickHereToVisitEvent": "Mangyaring mag-click dito upang bisitahin ang kaganapan",
+        "Calendars\/reminder": "Magsisimula ang kaganapang &quot;{{{call 'message.getInstruction' 'name'}}&quot; sa {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Punan ang Spreadsheet na Ito",
+        "fileLabel": "Mag-upload ng Spreadsheet:",
+        "importOptions": "Mga pagpipilian",
+        "importProgress": "Pag-unlad",
+        "sampleCSV": "I-download ang Sample CSV",
+        "joinEventLabel": "Sumali sa mga user sa random na kaganapan",
+        "smsText": "Uy, nagpadala lang ako sa iyo ng link sa {{communityName}}. Tignan mo.",
+        "emailSubject": "Nagpadala lang sa iyo ng link",
+        "emailBody": "Uy, nagpadala lang ako sa iyo ng imbitasyon kay {{communityName}}. Tignan mo.",
+        "fileNotFound": "Paumanhin, hindi nahanap ang CSV file.",
+        "fileEmpty": "Paumanhin, walang laman ang CSV file.",
+        "fieldNotFound": "Hindi nahanap ang kinakailangang field na &quot;{{1}}&quot;.",
+        "userIdNotFound": "umiiral ang user ngunit walang laman ang id",
+        "activateUsers": "magpadala ng activation message sa mga user?",
+        "taskStreamInvalid": "di-wasto ang stream ng gawain",
+        "instructionsEmpty": "walang laman ang mga tagubilin sa stream ng gawain",
+        "interestsEmpty": "hindi makakuha ng mga interes",
+        "interestAbsent": "hindi nahanap ang interes {{1}}.",
+        "complete": "Kumpleto",
+        "errorLine": "linya {{1}}",
+        "errorsTitle": "Nagkaroon ng mga error",
+        "communityUsers": "Ito ang listahan ng mga komunidad"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Kumakatawan sa isang kaganapan kung saan maaaring lumahok ang mga tao",
+            "displayType": "Kaganapan"
+        },
+        "Calendars\/recurring": {
+            "description": "Ginagamit para sa pag-uugnay ng mga stream na nilalayong umulit sa pana-panahon",
+            "displayType": "Paulit-ulit na Kaganapan"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Magdagdag ng Slot",
+        "StartTime": "Oras ng umpisa",
+        "EndTime": "Oras ng Pagtatapos",
+        "Save": "I-save",
+        "AddTimeSlot": "Magdagdag ng Time Slot",
+        "CopyFromDay": "Kopyahin mula sa araw",
+        "Nearest": "Pinakamalapit",
+        "Today": "Ngayong araw",
+        "Tomorrow": "Bukas",
+        "AfterTomorrow": "Makalawa"
+    }
+}

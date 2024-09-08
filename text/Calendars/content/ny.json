@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Feb",
+        "Mar": "Mar",
+        "Apr": "Apr",
+        "May": "Mayi",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Aug",
+        "Sep": "Sep",
+        "Oct": "Oct",
+        "Nov": "Nov",
+        "Dec": "Dec"
+    },
+    "monthsLong": {
+        "Jan": "Januwale",
+        "Feb": "February",
+        "Mar": "March",
+        "Apr": "Epulo",
+        "May": "Mayi",
+        "Jun": "June",
+        "Jul": "July",
+        "Aug": "Ogasiti",
+        "Sep": "September",
+        "Oct": "October",
+        "Nov": "Novembala",
+        "Dec": "December"
+    },
+    "weekdays": {
+        "Sun": "Dzuwa",
+        "Mon": "Mon",
+        "Tue": "Lachiwiri",
+        "Wed": "Lachitatu",
+        "Thu": "Thu",
+        "Fri": "Lachisanu",
+        "Sat": "Loweruka"
+    },
+    "weekdaysLong": {
+        "Sun": "Lamlungu",
+        "Mon": "Lolemba",
+        "Tue": "Lachiwiri",
+        "Wed": "Lachitatu",
+        "Thu": "Lachinayi",
+        "Fri": "Lachisanu",
+        "Sat": "Loweruka"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Konzani Chochitika Chatsopano"
+        },
+        "tool": {
+            "HostedBy": "Yolembedwa ndi {{name}}",
+            "Name": "Dzina",
+            "AreYouIn": "Kodi muli mkati?",
+            "Yes": "Inde",
+            "No": "Ayi",
+            "Ok": "Chabwino",
+            "Cancel": "Letsani",
+            "Maybe": "Mwina",
+            "Conversation": "Kukambirana",
+            "Promote": "Limbikitsani chochitika ichi",
+            "Reminders": "Zikumbutso",
+            "RemindersLabel": "Ndikufuna kudziwitsidwa za chochitika mu:",
+            "MoreInfo": "Zambiri",
+            "Registration": "Kulembetsa",
+            "SetReminders": "Chonde ikani zikumbutso",
+            "ReservationFee": "Ndalama Zosungitsa",
+            "AddParticipants": "Onjezani Ophunzira",
+            "ManageReservation": "Sinthani Kusungitsa",
+            "UpdateFutureReservations": "Kodi mukufunanso kukonza zosungitsa m&#39;tsogolo mofanana?",
+            "RecurringAdmin": "Zokonda Zobwereza",
+            "MakeReservation": "Pangani Kusungitsa",
+            "StartLiveStream": "Dinani kuti Live Stream",
+            "LiveStreamEnded": "Live stream yatha",
+            "ClickToViewRecording": "dinani kuti muwone kujambula",
+            "Checkin": "Jambulani ma code opezekapo",
+            "Myqr": "Lembetsani",
+            "CloseEvent": {
+                "button": "Letsani Chochitika",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Kodi mukutsimikiza kuti mukufuna kuletsa chochitikachi?",
+                        "Participant": "Pali m&#39;modzi wotenga nawo mbali pamwambowu",
+                        "Participants": "Pali {{count}} otenga nawo mbali pamwambowu",
+                        "Recurring": "Chochitika ichi chikubwerezedwa. Kodi mukufuna kuletsanso zochitika zake zonse zamtsogolo?"
+                    },
+                    "trip": {
+                        "Cancel": "Kodi mukufunanso kuletsa ulendo wanu {{tripDirection}} chochitika ichi?",
+                        "Passengers": "Pali {{passengerCount}} apaulendo amadalira inu.",
+                        "Title": "Tsekani Ulendo"
+                    },
+                    "directions": {
+                        "TO": "KWA",
+                        "FROM": "KUCHOKERA",
+                        "to": "ku",
+                        "from": "kuchokera"
+                    }
+                }
+            },
+            "Calendar": "Kalendala",
+            "Interests": "Zokonda",
+            "Directions": "Mayendedwe",
+            "TitleOfEvent": "Mutu wa chochitika:",
+            "OpenTo": "Tsegulani ku",
+            "GoingTo": "adzakhala pa",
+            "NotGoingTo": "sizidzakhalapo",
+            "MaybeGoingTo": "mwina adzakhala pa",
+            "AdminDontPay": "Admin sakufunika kulipira",
+            "PublisherDontPay": "Wosindikiza safunikira kulipira",
+            "EmptyList": "Mndandanda wopanda kanthu",
+            "NeedToPayCredits": "Mukuyenera kulipira: <span>{{amount}} ngongole<\/span>",
+            "PleaseJoinParticipants": "Chonde lowani {{participant}}",
+            "YouReservingPlace": "Mukusungitsa malo anu.",
+            "SelectIncludesToAdd": "Sankhani chimodzi kapena zingapo {{TypeDisplayPlural}} kuti muwonjezere:",
+            "YouHaveNotRegisteredAnyIncluded": "Simunalembetsebe {{TypeDisplayPlural}}",
+            "Proceed": "Pitirizani",
+            "MakeChanges": "Sungani Zosintha Zanga",
+            "CancelReservation": "Letsani kusungitsa konse",
+            "Total": "Zonse",
+            "RequiredRelatedParticipants": "Chochitikachi chikufunika otenga nawo mbali: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Chonde sinthani kupezeka &quot;{{title}}&quot; kuti musinthe zochunira"
+        },
+        "composer": {
+            "SetLocation": "Khazikitsani Malo Anga",
+            "SetInfoLink": "Khazikitsani Link kuti mudziwe zambiri",
+            "ChooseAvailability": "Sankhani Ntchito Yopezeka",
+            "ChooseActivity": "Sankhani Ntchito",
+            "ChoosePublisher": "Sankhani Wofalitsa",
+            "Day": "Tsiku",
+            "Starting": "Kuyambira",
+            "Duration": "Kutalika",
+            "Hour": "Ola",
+            "Hours": "Maola",
+            "Minutes": "Mphindi",
+            "Ending": "Kutha",
+            "People": "Anthu",
+            "Share": "Gawani",
+            "Continue": "Pitirizani",
+            "Recurring": "Zobwerezabwereza",
+            "RecurringTitle": "Masiku Obwerezabwereza",
+            "Daily": "Tsiku ndi tsiku",
+            "Weekly": "Mlungu uliwonse",
+            "Monthly": "Mwezi uliwonse",
+            "SelectLocation": "Chonde sankhani malo kaye.",
+            "eventType": "Mtundu wa Chochitika",
+            "EditTitle": "Ganizilani mutu wosangalatsa...",
+            "SetTitle": "Chonde khazikitsani mutu wa chochitika",
+            "ScheduleOnlineConference": "Konzani Msonkhano Wapaintaneti",
+            "SOCDescription": "Chonde tanthauzirani nthawi yoyambira ndi yomaliza ya msonkhano. Aliyense amene abwera kudzacheza pamwambowu panthawiyi adzalumikizana ndi msonkhano wapaintaneti.",
+            "EndDate": "TSIRIZA",
+            "location": {
+                "Title": "Khazikitsani Malo Anu"
+            },
+            "interest": {
+                "Title": "Sankhani Ntchito",
+                "Filter": "Sakani zokonda ..."
+            },
+            "SetLivestream": "Ikani ulalo wa livestream \/ videoconference"
+        },
+        "EventAlreadyClosed": "Chochitikachi chatsekedwa kale",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Onjezani ku Kalendala?",
+                "prompt": "Kodi mungafune kuwonjezera chochitikachi pa kalendala yanu?",
+                "yes": "Inde",
+                "no": "Ayi"
+            },
+            "dialog": {
+                "Title": "Onjezani Chochitika ku Kalendala yanu"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Zopezeka",
+        "NewAvailability": {
+            "Title": "Kupezeka Kwatsopano",
+            "SaveAvailability": "Sungani Kupezeka",
+            "SelectTemplate": "Chonde sankhani Service",
+            "SelectLocation": "Chonde sankhani Malo",
+            "SelectArea": "Chonde sankhani Dera",
+            "Type": "Mtundu",
+            "Weekly": "Mlungu uliwonse",
+            "RecurringStartDate": "Tsiku Loyambira Lobwerezabwereza",
+            "EndDate": "Tsiku Lomaliza",
+            "SelectTime": "Sinthani Mipata Yanthawi",
+            "SelectTimeSlot": "Sankhani nthawi",
+            "SelectTimeSlots": "Sankhani nthawi yomwe mukufuna",
+            "PeopleMin": "Ochepera alendo",
+            "PeopleMax": "Kuchuluka kwa alendo",
+            "PeopleLabels": "Zolemba zololedwa",
+            "Next": "Ena",
+            "Back": "Kubwerera"
+        },
+        "EditAvailability": "Sinthani Kupezeka",
+        "SetVisitors": "Khazikitsani Alendo",
+        "Price": "Mtengo",
+        "SelectAction": "Chonde sankhani zochita",
+        "OpenProfile": "Tsegulani mbiri",
+        "RemoveStaff": "Chotsani antchito",
+        "PleaseSelectTimeSlots": "Chonde sankhani nthawi",
+        "ExceptionOccurred": "Kupatulapo kunachitika",
+        "NotEnoughCreditsToParticipateEvents": "Palibe ndalama zokwanira zochitira nawo {{eventsAmount}} zochitika. Mufunika {{needCredits}} makirediti. Mukufuna kugula?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Tsiku loyambira",
+            "endDate": "Tsiku lomaliza",
+            "justOnce": "Kamodzi kokha",
+            "justOnceWeekly": "Sabata ino yokha",
+            "justOnceMonthly": "Mwezi uno basi",
+            "recurring": "Zobwerezabwereza"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Chochitika chaulere",
+            "optional": "Zopereka mwakufuna kwanu",
+            "required": "Malipiro ofunikira"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Zopereka mwakufuna kwanu",
+            "required": "Malipiro ofunikira",
+            "paid": "kulipira"
+        },
+        "confirmationDialog": {
+            "title": "Kutsimikizira kulipira",
+            "content": "Chochitikachi chili ndi chothandizira cha {{amount}}.",
+            "button": "Thandizani"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} sinali mbali ya chochitikacho. Kodi mukufuna kuwawonjezera ngati otenga nawo mbali?",
+        "userNotFound": "Wogwiritsa sanapezeke",
+        "confirmYes": "Inde",
+        "confirmNo": "Ayi"
+    },
+    "notifications": {
+        "EventActivityIn": "Zochitika mu {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Malamulo obwerezabwereza asinthidwa pazochitika {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "konzani zolembetsa zanu za imelo",
+        "IfUnsubscribe": "Ngati mukufuna kusiya kulemba",
+        "ClickHereToVisitEvent": "Chonde dinani apa kuti muwone chochitika",
+        "Calendars\/reminder": "Chochitika &quot;{{{call 'message.getInstruction' 'name'}}&quot; chidzayamba pakadutsa {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Lembani Tsambali",
+        "fileLabel": "Kwezani Spreadsheet:",
+        "importOptions": "Zosankha",
+        "importProgress": "Kupita patsogolo",
+        "sampleCSV": "Tsitsani Chitsanzo cha CSV",
+        "joinEventLabel": "Lowani nawo ogwiritsa ntchito zochitika mwachisawawa",
+        "smsText": "Moni, ndakutumizirani ulalo waku {{communityName}}. Chonde fufuzani.",
+        "emailSubject": "Ndangokutumizirani ulalo",
+        "emailBody": "Eya, ndakutumizirani kuyitanidwa ku {{communityName}}. Chonde fufuzani.",
+        "fileNotFound": "Pepani, fayilo ya CSV sinapezeke.",
+        "fileEmpty": "Pepani, fayilo ya CSV ilibe.",
+        "fieldNotFound": "Malo ofunikira &quot;{{1}}&quot; sanapezeke",
+        "userIdNotFound": "wosuta alipo koma id ilibe",
+        "activateUsers": "kutumiza uthenga kutsegula kwa ogwiritsa?",
+        "taskStreamInvalid": "ntchito stream ndi yolakwika",
+        "instructionsEmpty": "ntchito mtsinje malangizo alibe",
+        "interestsEmpty": "sindingathe kupeza zokonda",
+        "interestAbsent": "chidwi {{1}} sichinapezeke",
+        "complete": "Malizitsani",
+        "errorLine": "mzere {{1}}",
+        "errorsTitle": "Zolakwika zidachitika",
+        "communityUsers": "Uwu ndi mndandanda wamagulu"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Ikuyimira chochitika chomwe anthu angachite nawo",
+            "displayType": "Chochitika"
+        },
+        "Calendars\/recurring": {
+            "description": "Amagwiritsidwa ntchito pokhudzana ndi mitsinje yomwe imayenera kubwereza nthawi ndi nthawi",
+            "displayType": "Chochitika Chobwereza"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Onjezani Slot",
+        "StartTime": "Nthawi Yoyambira",
+        "EndTime": "Nthawi Yotsiriza",
+        "Save": "Sungani",
+        "AddTimeSlot": "Add Time Slot",
+        "CopyFromDay": "Koperani kuyambira tsiku",
+        "Nearest": "Chapafupi",
+        "Today": "Lero",
+        "Tomorrow": "Mawa",
+        "AfterTomorrow": "Pambuyo mawa"
+    }
+}

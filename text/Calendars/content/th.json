@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "ม.ค",
+        "Feb": "ก.พ.",
+        "Mar": "มี.ค",
+        "Apr": "เม.ย",
+        "May": "พฤษภาคม",
+        "Jun": "จุน",
+        "Jul": "ก.ค.",
+        "Aug": "ส.ค",
+        "Sep": "ก.ย",
+        "Oct": "ต.ค.",
+        "Nov": "พ.ย",
+        "Dec": "ธ.ค"
+    },
+    "monthsLong": {
+        "Jan": "มกราคม",
+        "Feb": "กุมภาพันธ์",
+        "Mar": "มีนาคม",
+        "Apr": "เมษายน",
+        "May": "พฤษภาคม",
+        "Jun": "มิถุนายน",
+        "Jul": "กรกฎาคม",
+        "Aug": "สิงหาคม",
+        "Sep": "กันยายน",
+        "Oct": "ตุลาคม",
+        "Nov": "พฤศจิกายน",
+        "Dec": "ธันวาคม"
+    },
+    "weekdays": {
+        "Sun": "ดวงอาทิตย์",
+        "Mon": "จันทร์",
+        "Tue": "อ.",
+        "Wed": "พุธ",
+        "Thu": "พฤ",
+        "Fri": "ศ",
+        "Sat": "นั่ง"
+    },
+    "weekdaysLong": {
+        "Sun": "วันอาทิตย์",
+        "Mon": "วันจันทร์",
+        "Tue": "วันอังคาร",
+        "Wed": "วันพุธ",
+        "Thu": "วันพฤหัสบดี",
+        "Fri": "วันศุกร์",
+        "Sat": "วันเสาร์"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "วางแผนกิจกรรมใหม่"
+        },
+        "tool": {
+            "HostedBy": "เป็นเจ้าภาพโดย {{name}}",
+            "Name": "ชื่อ",
+            "AreYouIn": "คุณอยู่ใน?",
+            "Yes": "ใช่",
+            "No": "ไม่",
+            "Ok": "ตกลง",
+            "Cancel": "ยกเลิก",
+            "Maybe": "อาจจะ",
+            "Conversation": "การสนทนา",
+            "Promote": "โปรโมทงานนี้",
+            "Reminders": "เตือนความจำ",
+            "RemindersLabel": "ฉันต้องการรับการแจ้งเตือนเหตุการณ์ใน:",
+            "MoreInfo": "ข้อมูลเพิ่มเติม",
+            "Registration": "การลงทะเบียน",
+            "SetReminders": "โปรดตั้งการเตือนความจำ",
+            "ReservationFee": "ค่าธรรมเนียมการจอง",
+            "AddParticipants": "เพิ่มผู้เข้าร่วม",
+            "ManageReservation": "จัดการการจอง",
+            "UpdateFutureReservations": "คุณต้องการอัปเดตการจองทั้งหมดในอนาคตด้วยวิธีเดียวกันหรือไม่",
+            "RecurringAdmin": "การตั้งค่าที่เกิดซ้ำ",
+            "MakeReservation": "ทำการจอง",
+            "StartLiveStream": "คลิกเพื่อถ่ายทอดสด",
+            "LiveStreamEnded": "สิ้นสุดการถ่ายทอดสด",
+            "ClickToViewRecording": "คลิกเพื่อดูบันทึก",
+            "Checkin": "สแกนรหัสผู้เข้าร่วม",
+            "Myqr": "เช็คอิน",
+            "CloseEvent": {
+                "button": "ยกเลิกกิจกรรม",
+                "confirm": {
+                    "text": {
+                        "Cancel": "คุณแน่ใจหรือไม่ว่าต้องการยกเลิกกิจกรรมนี้",
+                        "Participant": "มีผู้เข้าร่วม 1 คนในกิจกรรมนี้",
+                        "Participants": "มีผู้เข้าร่วม {{count}} คนในกิจกรรมนี้",
+                        "Recurring": "เหตุการณ์นี้เกิดซ้ำ คุณต้องการยกเลิกอินสแตนซ์ในอนาคตทั้งหมดด้วยหรือไม่"
+                    },
+                    "trip": {
+                        "Cancel": "คุณต้องการยกเลิกการเดินทางของคุณ {{tripDirection}} กิจกรรมนี้ด้วยหรือไม่",
+                        "Passengers": "มีผู้โดยสาร {{passengerCount}} คนพึ่งพาคุณ",
+                        "Title": "ปิดทริป"
+                    },
+                    "directions": {
+                        "TO": "ถึง",
+                        "FROM": "จาก",
+                        "to": "ถึง",
+                        "from": "จาก"
+                    }
+                }
+            },
+            "Calendar": "ปฏิทิน",
+            "Interests": "ความสนใจ",
+            "Directions": "ทิศทาง",
+            "TitleOfEvent": "ชื่องาน:",
+            "OpenTo": "เปิดให้",
+            "GoingTo": "จะอยู่ที่",
+            "NotGoingTo": "จะไม่อยู่ที่",
+            "MaybeGoingTo": "อาจจะอยู่ที่",
+            "AdminDontPay": "แอดมินไม่ต้องจ่าย",
+            "PublisherDontPay": "สำนักพิมพ์ไม่ต้องจ่ายเงิน",
+            "EmptyList": "รายการว่าง",
+            "NeedToPayCredits": "ต้องจ่าย: <span>{{amount}} เครดิต<\/span>",
+            "PleaseJoinParticipants": "กรุณาเข้าร่วม {{participant}}",
+            "YouReservingPlace": "คุณจะจองที่ของคุณ",
+            "SelectIncludesToAdd": "เลือกอย่างน้อยหนึ่งรายการ {{TypeDisplayPlural}} เพื่อเพิ่ม:",
+            "YouHaveNotRegisteredAnyIncluded": "คุณยังไม่ได้ลงทะเบียนใดๆ {{TypeDisplayPlural}} เลย",
+            "Proceed": "ดำเนินการ",
+            "MakeChanges": "บันทึกการเปลี่ยนแปลงของฉัน",
+            "CancelReservation": "ยกเลิกการจองทั้งหมด",
+            "Total": "ทั้งหมด",
+            "RequiredRelatedParticipants": "งานนี้ต้องมีผู้เข้าร่วม: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "โปรดแก้ไขความพร้อมใช้งาน &quot;{{title}}&quot; เพื่ออัปเดตการตั้งค่าที่เกิดซ้ำ",
+            "Presentation": "การนำเสนอ",
+            "YouAreNotParticipated": "คุณไม่ใช่ผู้เข้าร่วมกิจกรรม",
+            "LiveStreamStarted": "เริ่มถ่ายทอดสดแล้ว",
+            "WebRTCStarted": "การประชุมทางไกลเริ่มต้นขึ้น",
+            "WebRTCEnded": "การประชุมทางไกลสิ้นสุดลง"
+        },
+        "composer": {
+            "SetLocation": "ตั้งค่าตำแหน่งของฉัน",
+            "SetInfoLink": "ตั้งค่าลิงก์ไปยังข้อมูลเพิ่มเติม",
+            "ChooseAvailability": "เลือกบริการที่มีอยู่",
+            "ChooseActivity": "เลือกกิจกรรม",
+            "ChoosePublisher": "เลือกสำนักพิมพ์",
+            "Day": "วัน",
+            "Starting": "เริ่มต้น",
+            "Duration": "ระยะเวลา",
+            "Hour": "ชั่วโมง",
+            "Hours": "ชั่วโมง",
+            "Minutes": "นาที",
+            "Ending": "ตอนจบ",
+            "People": "ประชากร",
+            "Share": "แบ่งปัน",
+            "Continue": "ดำเนินการต่อ",
+            "Recurring": "เกิดซ้ำ",
+            "RecurringTitle": "กิจวัตรประจำวัน",
+            "Daily": "รายวัน",
+            "Weekly": "รายสัปดาห์",
+            "Monthly": "รายเดือน",
+            "SelectLocation": "กรุณาเลือกสถานที่ก่อน",
+            "eventType": "ประเภทงาน",
+            "EditTitle": "คิดชื่อเรื่องที่น่าสนใจ...",
+            "SetTitle": "กรุณาตั้งชื่อกิจกรรม",
+            "ScheduleOnlineConference": "กำหนดการประชุมออนไลน์",
+            "SOCDescription": "โปรดกำหนดเวลาเริ่มต้นและสิ้นสุดการประชุม ทุกคนที่เข้าชมงานในช่วงเวลานี้จะเชื่อมต่อกับการประชุมออนไลน์โดยอัตโนมัติ",
+            "EndDate": "จบ",
+            "location": {
+                "Title": "ตั้งค่าตำแหน่งของคุณ"
+            },
+            "interest": {
+                "Title": "เลือกกิจกรรม",
+                "Filter": "ความสนใจในการค้นหา ..."
+            },
+            "SetLivestream": "วางลิงก์ไปยังสตรีมสด \/ การประชุมทางวิดีโอ",
+            "Locally": "ในท้องถิ่น",
+            "EventInfoLink": "ลิงค์ข้อมูลกิจกรรม",
+            "TicketPurchaseLink": "ลิงค์ซื้อตั๋ว"
+        },
+        "EventAlreadyClosed": "กิจกรรมนี้ปิดไปแล้ว",
+        "addToCalendar": {
+            "permissions": {
+                "title": "เพิ่มในปฏิทิน?",
+                "prompt": "คุณต้องการเพิ่มกิจกรรมนี้ในปฏิทินของคุณหรือไม่?",
+                "yes": "ใช่",
+                "no": "ไม่"
+            },
+            "dialog": {
+                "Title": "เพิ่มกิจกรรมในปฏิทินของคุณ"
+            }
+        },
+        "ErrorLeaveEndedEvent": "ขออภัย คุณไม่สามารถออกจากกิจกรรมที่สิ้นสุดได้"
+    },
+    "availabilities": {
+        "Title": "มีจำหน่าย",
+        "NewAvailability": {
+            "Title": "ความพร้อมใช้งานใหม่",
+            "SaveAvailability": "บันทึกห้องว่าง",
+            "SelectTemplate": "กรุณาเลือกบริการ",
+            "SelectLocation": "กรุณาเลือกสถานที่",
+            "SelectArea": "กรุณาเลือกพื้นที่",
+            "Type": "พิมพ์",
+            "Weekly": "รายสัปดาห์",
+            "RecurringStartDate": "วันที่เริ่มต้นที่เกิดซ้ำ",
+            "EndDate": "วันที่สิ้นสุด",
+            "SelectTime": "จัดการช่วงเวลา",
+            "SelectTimeSlot": "เลือกช่วงเวลา",
+            "SelectTimeSlots": "เลือกช่วงเวลาที่ต้องการ",
+            "PeopleMin": "ผู้เข้าชมขั้นต่ำ",
+            "PeopleMax": "จำนวนผู้เข้าชมสูงสุด",
+            "PeopleLabels": "บทบาทที่อนุญาต",
+            "Next": "ถัดไป",
+            "Back": "กลับ",
+            "RecurringEndDate": "วันที่สิ้นสุดที่เกิดซ้ำ",
+            "ScheduleOnlineConference": "กำหนดการประชุมทางไกล",
+            "SetLivestream": "วางลิงก์ไปยังสตรีมสด \/ การประชุมทางวิดีโอ",
+            "SelectTimeZone": "เลือกเขตเวลา"
+        },
+        "EditAvailability": "แก้ไขห้องว่าง",
+        "SetVisitors": "ตั้งค่าผู้เข้าชม",
+        "Price": "ราคา",
+        "SelectAction": "โปรดเลือกการดำเนินการ",
+        "OpenProfile": "เปิดโปรไฟล์",
+        "RemoveStaff": "ถอดพนักงาน",
+        "PleaseSelectTimeSlots": "กรุณาเลือกช่วงเวลา",
+        "ExceptionOccurred": "เกิดข้อยกเว้น",
+        "NotEnoughCreditsToParticipateEvents": "เครดิตไม่เพียงพอที่จะเข้าร่วมกิจกรรม {{eventsAmount}} รายการ คุณต้องมี {{needCredits}} เครดิต อยากจะซื้อ?",
+        "LiveStream": "สตรีมสด",
+        "InviteStaff": "เชิญพนักงาน"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "วันที่เริ่มต้น",
+            "endDate": "วันที่สิ้นสุด",
+            "justOnce": "เพียงครั้งเดียว",
+            "justOnceWeekly": "สัปดาห์นี้เท่านั้น",
+            "justOnceMonthly": "เดือนนี้เท่านั้น",
+            "recurring": "เกิดซ้ำ"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "กิจกรรมฟรี",
+            "optional": "ผลงานเสริม",
+            "required": "การชำระเงินที่จำเป็น"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "ผลงานเสริม",
+            "required": "การชำระเงินที่จำเป็น",
+            "paid": "จ่าย"
+        },
+        "confirmationDialog": {
+            "title": "การยืนยันการชำระเงิน",
+            "content": "กิจกรรมนี้มีส่วนร่วมทางเลือกของ {{amount}}",
+            "button": "มีส่วนช่วย"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ยังไม่ได้เป็นส่วนหนึ่งของกิจกรรม คุณต้องการเพิ่มพวกเขาเป็นผู้เข้าร่วมหรือไม่?",
+        "userNotFound": "ไม่พบชื่อผู้ใช้",
+        "confirmYes": "ใช่",
+        "confirmNo": "ไม่"
+    },
+    "notifications": {
+        "EventActivityIn": "กิจกรรมกิจกรรมใน {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "กฎที่เกิดซ้ำมีการเปลี่ยนแปลงสำหรับกิจกรรม {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "จัดการการสมัครรับอีเมลของคุณ",
+        "IfUnsubscribe": "หากคุณต้องการยกเลิกการสมัคร",
+        "ClickHereToVisitEvent": "กรุณาคลิกที่นี่เพื่อเข้าชมงาน",
+        "Calendars\/reminder": "กิจกรรม &quot;{{{call 'message.getInstruction' 'name'}}&quot; จะเริ่มใน {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "การประชุมทางไกลเริ่มต้นขึ้น",
+            "Ended": "การประชุมทางไกลสิ้นสุดลง"
+        },
+        "livestream": {
+            "Started": "เริ่มถ่ายทอดสดแล้ว",
+            "Ended": "การถ่ายทอดสดสิ้นสุดลงแล้ว",
+            "ClickToView": "ดูได้ที่นี่"
+        }
+    },
+    "import": {
+        "linkTitle": "กรอกสเปรดชีตนี้",
+        "fileLabel": "อัปโหลดสเปรดชีต:",
+        "importOptions": "ตัวเลือก",
+        "importProgress": "ความคืบหน้า",
+        "sampleCSV": "ดาวน์โหลดตัวอย่าง CSV",
+        "joinEventLabel": "เข้าร่วมผู้ใช้เพื่อสุ่มกิจกรรม",
+        "smsText": "สวัสดี ฉันเพิ่งส่งลิงก์ไปยัง {{communityName}} ให้คุณ กรุณาตรวจสอบออก",
+        "emailSubject": "ส่งลิงค์ให้แล้วนะคะ",
+        "emailBody": "สวัสดี ฉันเพิ่งส่งคำเชิญไปที่ {{communityName}} ให้คุณ กรุณาตรวจสอบออก",
+        "fileNotFound": "ขออภัย ไม่พบไฟล์ CSV",
+        "fileEmpty": "ขออภัย ไฟล์ CSV ว่างเปล่า",
+        "fieldNotFound": "ไม่พบช่องที่ต้องกรอก &quot;{{1}}&quot;",
+        "userIdNotFound": "มีผู้ใช้แต่ ID ว่างเปล่า",
+        "activateUsers": "ส่งข้อความเปิดใช้งานไปยังผู้ใช้?",
+        "taskStreamInvalid": "สตรีมงานไม่ถูกต้อง",
+        "instructionsEmpty": "คำแนะนำสตรีมงานว่างเปล่า",
+        "interestsEmpty": "รับความสนใจไม่ได้",
+        "interestAbsent": "ไม่พบดอกเบี้ย {{1}}",
+        "complete": "สมบูรณ์",
+        "errorLine": "บรรทัด {{1}}",
+        "errorsTitle": "เกิดข้อผิดพลาด",
+        "communityUsers": "นี่คือรายชื่อชุมชน",
+        "toMainCommunityToo": "เกี่ยวข้องกับชุมชนหลักด้วย",
+        "ChooseFile": "เลือกไฟล์"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "แสดงถึงเหตุการณ์ที่ผู้คนสามารถเข้าร่วมได้",
+            "displayType": "เหตุการณ์"
+        },
+        "Calendars\/recurring": {
+            "description": "ใช้สำหรับกระแสที่เกี่ยวข้องซึ่งหมายถึงการเกิดซ้ำเป็นระยะ",
+            "displayType": "เหตุการณ์ที่เกิดซ้ำ"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "เพิ่มสล็อต",
+        "StartTime": "เวลาเริ่มต้น",
+        "EndTime": "เวลาสิ้นสุด",
+        "Save": "บันทึก",
+        "AddTimeSlot": "เพิ่มช่วงเวลา",
+        "CopyFromDay": "คัดลอกจากวัน",
+        "Nearest": "ที่ใกล้ที่สุด",
+        "Today": "วันนี้",
+        "Tomorrow": "พรุ่งนี้",
+        "AfterTomorrow": "หลังจากพรุ่งนี้"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "สมัครสมาชิกปฏิทิน",
+        "copyLinkBelow": "คัดลอกลิงค์ด้านล่าง",
+        "goTo": "ไปที่:",
+        "pasteCopiedTo": "วางลิงก์ที่คัดลอกไปที่ช่อง &quot;URL ของปฏิทิน&quot;",
+        "clickAddCalendar": "คลิกปุ่ม &quot;เพิ่มปฏิทิน&quot;",
+        "copyLink": "คัดลอกลิงค์",
+        "tapToCopy": "แตะปุ่มด้านล่างเพื่อคัดลอกลิงก์ไปยังคลิปบอร์ดของคุณ",
+        "linkCopied": "คัดลอกลิงก์แล้ว",
+        "step2": "คัดลอกลิงก์แล้ว เรากำลังจะเปิด Google Calendar คุณจะต้องวางลิงก์ลงในกล่องข้อความ คลิก &quot;เพิ่มปฏิทิน&quot; และปิดแท็บ (ดูภาพหน้าจอด้านล่าง)",
+        "calendarAppPreferences": "เปิดการตั้งค่าในแอปปฏิทินบน Mac ของคุณ และตั้งค่าแอปปฏิทินเริ่มต้นให้เป็นดังที่แสดงด้านล่าง",
+        "thenCloseDialog": "จากนั้นปิดกล่องโต้ตอบนี้เพื่อสมัครรับปฏิทินของคุณ!",
+        "success": "ซิงค์ปฏิทินสำเร็จแล้ว"
+    }
+}

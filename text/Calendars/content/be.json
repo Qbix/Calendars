@@ -1,0 +1,359 @@
+{
+    "months": {
+        "Jan": "Ян",
+        "Feb": "лют",
+        "Mar": "сак",
+        "Apr": "крас",
+        "May": "мая",
+        "Jun": "Чэрвень",
+        "Jul": "ліп",
+        "Aug": "жн",
+        "Sep": "Вер",
+        "Oct": "кастрычніка",
+        "Nov": "Лістапад",
+        "Dec": "снеж"
+    },
+    "monthsLong": {
+        "Jan": "студзень",
+        "Feb": "люты",
+        "Mar": "Сакавік",
+        "Apr": "красавік",
+        "May": "мая",
+        "Jun": "Чэрвень",
+        "Jul": "ліпень",
+        "Aug": "жніўня",
+        "Sep": "верасень",
+        "Oct": "кастрычніка",
+        "Nov": "лістапада",
+        "Dec": "Снежань"
+    },
+    "weekdays": {
+        "Sun": "Сонца",
+        "Mon": "Пн",
+        "Tue": "аўт",
+        "Wed": "сярэд",
+        "Thu": "чц",
+        "Fri": "пт",
+        "Sat": "сб"
+    },
+    "weekdaysLong": {
+        "Sun": "нядзеля",
+        "Mon": "панядзелак",
+        "Tue": "аўторак",
+        "Wed": "серада",
+        "Thu": "чацвер",
+        "Fri": "пятніца",
+        "Sat": "Субота"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "План новай падзеі"
+        },
+        "tool": {
+            "AreYouIn": "Вы ў?",
+            "Yes": "Так",
+            "No": "не",
+            "Maybe": "Можа быць",
+            "Conversation": "Гутарка",
+            "Promote": "Рэкламаваць гэтую падзею",
+            "Checkin": "Сканіраванне кодаў удзельнікаў",
+            "CloseEvent": {
+                "button": "Адмяніць падзею",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Вы ўпэўнены, што хочаце адмяніць гэта мерапрыемства?",
+                        "Participant": "У гэтай падзеі 1 удзельнік",
+                        "Participants": "У гэтай падзеі ёсць {{count}} удзельнікаў",
+                        "Recurring": "Гэта падзея паўтараецца. Вы таксама хочаце адмяніць усе яго будучыя асобнікі?"
+                    },
+                    "trip": {
+                        "Cancel": "Вы жадаеце таксама адмяніць паездку {{tripDirection}} на гэту падзею?",
+                        "Passengers": "На вас спадзяюцца {{passengerCount}} пасажыры.",
+                        "Title": "Закрыць падарожжа"
+                    },
+                    "directions": {
+                        "TO": "ДА",
+                        "FROM": "АД",
+                        "to": "каб",
+                        "from": "ад"
+                    }
+                }
+            },
+            "Calendar": "Каляндар",
+            "Interests": "Інтарэсы",
+            "Directions": "Напрамкі",
+            "TitleOfEvent": "Назва мерапрыемства:",
+            "OpenTo": "Адкрыць для",
+            "MoreInfo": "Больш інфармацыі",
+            "Registration": "Рэгістрацыя",
+            "GoingTo": "будзе ў",
+            "NotGoingTo": "не будзе ў",
+            "MaybeGoingTo": "можа быць у",
+            "HostedBy": "Арганізоўвае {{name}}",
+            "LiveStream": "Націсніце, каб жыць",
+            "Myqr": "Прыбыцце",
+            "AdminDontPay": "Адміністратару не трэба плаціць",
+            "Name": "Імя",
+            "ReservationFee": "Плата за браніраванне",
+            "AddParticipants": "Дадаць удзельнікаў",
+            "ManageReservation": "Кіраванне браніраваннем",
+            "MakeReservation": "Зрабіць браніраванне",
+            "StartLiveStream": "Націсніце, каб прамая трансляцыя",
+            "LiveStreamEnded": "Жывая трансляцыя скончылася",
+            "ClickToViewRecording": "націсніце, каб праглядзець запіс",
+            "EmptyList": "Пусты спіс",
+            "NeedToPayCredits": "Трэба заплаціць: <span>{{amount}} крэдытаў<\/span>",
+            "PleaseJoinParticipants": "Калі ласка, далучайцеся {{participant}}",
+            "YouReservingPlace": "Вы забраніруеце сваё месца.",
+            "SelectIncludesToAdd": "Выберыце адзін або некалькі {{TypeDisplayPlural}}, каб дадаць:",
+            "YouHaveNotRegisteredAnyIncluded": "Вы яшчэ не зарэгістравалі ніводнага {{TypeDisplayPlural}}",
+            "Proceed": "Працягвайце",
+            "MakeChanges": "Захаваць мае змены",
+            "CancelReservation": "Адмяніць усё браніраванне",
+            "Total": "Усяго",
+            "Ok": "Добра",
+            "Cancel": "Адмяніць",
+            "Reminders": "Напаміны",
+            "RemindersLabel": "Я хачу атрымліваць апавяшчэнні аб падзеі ў:",
+            "SetReminders": "Усталюйце напаміны",
+            "UpdateFutureReservations": "Вы таксама хочаце абнаўляць усе будучыя браніраванні такім жа чынам?",
+            "RecurringAdmin": "Паўтараюцца налады",
+            "PublisherDontPay": "Выдаўцу не трэба плаціць",
+            "RequiredRelatedParticipants": "Для гэтага мерапрыемства неабходныя ўдзельнікі: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Змяніце наяўнасць &quot;{{title}}&quot;, каб абнавіць перыядычныя налады",
+            "Presentation": "Прэзентацыя",
+            "YouAreNotParticipated": "Вы не з&#39;яўляецеся ўдзельнікам мерапрыемства",
+            "LiveStreamStarted": "Жывая трансляцыя пачалася",
+            "WebRTCStarted": "Тэлеканферэнцыя пачалася",
+            "WebRTCEnded": "Тэлеканферэнцыя скончылася"
+        },
+        "composer": {
+            "SetLocation": "Усталюйце маё месцазнаходжанне",
+            "ChooseActivity": "Выберыце дзейнасць",
+            "ChoosePublisher": "Выберыце Выдавец",
+            "Day": "Дзень",
+            "Starting": "Пачынаючы",
+            "People": "Людзі",
+            "Share": "Падзяліцеся",
+            "Recurring": "Паўтараецца",
+            "RecurringTitle": "Паўтаральныя дні",
+            "Daily": "Штодня",
+            "Weekly": "Штотыдзень",
+            "Monthly": "Штомесяц",
+            "SelectLocation": "Спачатку абярыце месца.",
+            "eventType": "Тып падзеі",
+            "EditTitle": "Прыдумайце цікавую назву...",
+            "SetTitle": "Усталюйце назву падзеі",
+            "location": {
+                "Title": "Усталюйце сваё месцазнаходжанне"
+            },
+            "interest": {
+                "Title": "Выберыце дзейнасць",
+                "Filter": "Пошук па інтарэсах..."
+            },
+            "Ending": "Заканчэнне",
+            "ScheduleOnlineConference": "Расклад анлайн-канферэнцыі",
+            "SOCDescription": "Калі ласка, вызначце час пачатку і заканчэння канферэнцыі. Кожны чалавек, які наведае мерапрыемства ў гэты перыяд часу, будзе аўтаматычна падключацца да онлайн-канферэнцыі.",
+            "EndDate": "Канец",
+            "SetLivestream": "Устаўце спасылку на прамую трансляцыю \/ відэаканферэнцыю",
+            "SetInfoLink": "Усталюйце спасылку на дадатковую інфармацыю",
+            "ChooseService": "Абярыце даступны сэрвіс",
+            "Continue": "Працягвайце",
+            "ChooseAvailability": "Выберыце Даступны сэрвіс",
+            "Duration": "Працягласць",
+            "Hour": "Гадзіна",
+            "Hours": "Гадзін",
+            "Minutes": "Хвіліны",
+            "Locally": "лакальна",
+            "EventInfoLink": "Спасылка на інфармацыю пра падзею",
+            "TicketPurchaseLink": "Спасылка на куплю білетаў"
+        },
+        "EventAlreadyClosed": "Гэта мерапрыемства ўжо закрыта",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Дадаць у каляндар?",
+                "prompt": "Вы жадаеце дадаць гэтую падзею ў свой каляндар?",
+                "yes": "Так",
+                "no": "не"
+            },
+            "dialog": {
+                "Title": "Дадайце падзею ў свой каляндар"
+            }
+        },
+        "ErrorLeaveEndedEvent": "Выбачайце, але вы не можаце пакінуць завершаную падзею"
+    },
+    "recurring": {
+        "dialog": {
+            "justonce": "Толькі ў гэты раз",
+            "recurring": "Паўтараецца",
+            "startDate": "Дата пачатку",
+            "endDate": "Дата заканчэння",
+            "justOnce": "Толькі адзін раз",
+            "justOnceWeekly": "Толькі на гэтым тыдні",
+            "justOnceMonthly": "Толькі ў гэтым месяцы"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Бясплатнае мерапрыемства",
+            "optional": "Дадатковы ўклад",
+            "required": "Абавязковая аплата"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Дадатковы ўклад",
+            "required": "Абавязковая аплата",
+            "paid": "аплачваецца"
+        },
+        "confirmationDialog": {
+            "title": "Пацвярджэнне аплаты",
+            "content": "Гэта падзея мае дадатковы ўклад {{amount}}.",
+            "button": "Ўнесці свой уклад"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} яшчэ не з&#39;яўляецца часткай падзеі. Вы хочаце дадаць іх у якасці ўдзельніка?",
+        "userNotFound": "Карыстальнік не знойдзены",
+        "confirmYes": "Так",
+        "confirmNo": "не"
+    },
+    "notifications": {
+        "EventActivityIn": "Дзейнасць падзей у {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Рэгулярныя правілы зменены для падзеі {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "кіраваць падпіскамі па электроннай пошце",
+        "IfUnsubscribe": "Калі вы хочаце адмовіцца ад падпіскі",
+        "ClickHereToVisitEvent": "Калі ласка, націсніце тут, каб наведаць мерапрыемства",
+        "Calendars\/reminder": "Падзея &quot;{{{call 'message.getInstruction' 'name'}}&quot; пачнецца праз {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Тэлеканферэнцыя пачалася",
+            "Ended": "Тэлеканферэнцыя скончылася"
+        },
+        "livestream": {
+            "Started": "Жывая трансляцыя пачалася",
+            "Ended": "Жывая трансляцыя скончылася",
+            "ClickToView": "Глядзець тут."
+        }
+    },
+    "import": {
+        "linkTitle": "Запоўніце гэтую табліцу",
+        "fileLabel": "Запампаваць табліцу:",
+        "joinEventLabel": "Далучайце карыстальнікаў да выпадковай падзеі",
+        "smsText": "Гэй, я толькі што адправіў вам спасылку на {{communityName}}. Калі ласка, праверце гэта.",
+        "emailSubject": "Толькі што адправіў вам спасылку",
+        "emailBody": "Гэй, я толькі што адправіў вам запрашэнне на {{communityName}}. Калі ласка, праверце гэта.",
+        "fileNotFound": "На жаль, файл CSV не знойдзены.",
+        "fileEmpty": "На жаль, файл CSV пусты.",
+        "fieldNotFound": "Абавязковае поле &quot;{{1}}&quot; не знойдзена",
+        "userIdNotFound": "карыстальнік існуе, але ідэнтыфікатар пусты",
+        "activateUsers": "адправіць паведамленне аб актывацыі карыстальнікам?",
+        "taskStreamInvalid": "паток задач несапраўдны",
+        "instructionsEmpty": "Інструкцыі патоку задач пустыя",
+        "interestsEmpty": "не можа атрымаць інтарэсы",
+        "interestAbsent": "цікавасць {{1}} не знойдзена",
+        "complete": "Завяршыць",
+        "errorLine": "радок {{1}}",
+        "errorsTitle": "Адбыліся памылкі",
+        "importOptions": "Параметры",
+        "importProgress": "Прагрэс",
+        "sampleCSV": "Спампаваць узор CSV",
+        "communityUsers": "Гэта спіс суполак",
+        "toMainCommunityToo": "таксама датычацца асноўнай супольнасці",
+        "ChooseFile": "Выберыце файл"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Уяўляе сабой падзею, у якой людзі могуць удзельнічаць",
+            "displayType": "Падзея"
+        },
+        "Calendars\/recurring": {
+            "description": "Выкарыстоўваецца для звязвання патокаў, якія павінны перыядычна паўтарацца",
+            "displayType": "Падзея, якая паўтараецца"
+        }
+    },
+    "services": {
+        "Title": "Паслугі",
+        "NewService": {
+            "Title": "Новая даступнасць",
+            "SaveService": "Захаваць даступнасць",
+            "SelectTemplate": "Абярыце паслугу",
+            "SelectLocation": "Абярыце месцазнаходжанне",
+            "SelectArea": "Калі ласка, абярыце Плошча",
+            "SelectTime": "Кіраванне часовымі слотамі",
+            "SelectTimeSlot": "Выберыце часовы прамежак",
+            "PeopleMin": "Мінімум наведвальнікаў",
+            "PeopleMax": "Максімум наведвальнікаў",
+            "PeopleLabels": "Этыкеткі дазволены",
+            "Next": "Далей",
+            "Back": "Вярнуцца"
+        },
+        "EditService": "Рэдагаванне даступнасці",
+        "SetVisitors": "Усталяваць наведвальнікаў",
+        "Price": "Кошт",
+        "SelectAction": "Абярыце дзеянне",
+        "OpenProfile": "Адкрыты профіль",
+        "RemoveStaff": "Выдаліць персанал"
+    },
+    "timeslots": {
+        "AddSlot": "Дадаць слот",
+        "StartTime": "Час пачатку",
+        "EndTime": "Час заканчэння",
+        "Save": "Захаваць",
+        "AddTimeSlot": "Дадаць часавы слот",
+        "CopyFromDay": "Копія з дня",
+        "Nearest": "Бліжэйшы",
+        "Today": "Сёння",
+        "Tomorrow": "Заўтра",
+        "AfterTomorrow": "Паслязаўтра"
+    },
+    "availabilities": {
+        "Title": "Даступнасць",
+        "NewAvailability": {
+            "Title": "Новая даступнасць",
+            "SaveAvailability": "Захаваць даступнасць",
+            "SelectTemplate": "Калі ласка, абярыце Сэрвіс",
+            "SelectLocation": "Калі ласка, абярыце Месцазнаходжанне",
+            "SelectArea": "Калі ласка, абярыце Плошча",
+            "SelectTime": "Кіраванне часовымі прамежкамі",
+            "SelectTimeSlot": "Выберыце час",
+            "PeopleMin": "Мінімум наведвальнікаў",
+            "PeopleMax": "Максімальная колькасць наведвальнікаў",
+            "PeopleLabels": "Дапускаюцца ролі",
+            "Next": "Далей",
+            "Back": "Назад",
+            "Type": "Тып",
+            "Weekly": "Штотыдзень",
+            "RecurringStartDate": "Паўторная дата пачатку",
+            "EndDate": "Дата заканчэння",
+            "SelectTimeSlots": "Выберыце патрэбны час",
+            "RecurringEndDate": "Перыядычная дата заканчэння",
+            "ScheduleOnlineConference": "Запланаваць тэлеканферэнцыю",
+            "SetLivestream": "Уставіць спасылку на прамую трансляцыю \/ відэаканферэнцыю",
+            "SelectTimeZone": "Выберыце гадзінны пояс"
+        },
+        "EditAvailability": "Рэдагаваць даступнасць",
+        "SetVisitors": "Набор наведвальнікаў",
+        "Price": "Кошт",
+        "SelectAction": "Выберыце дзеянне",
+        "OpenProfile": "Адкрыць профіль",
+        "RemoveStaff": "Выдаліць персанал",
+        "PleaseSelectTimeSlots": "Калі ласка, выберыце часовыя прамежкі",
+        "ExceptionOccurred": "Адбылося выключэнне",
+        "NotEnoughCreditsToParticipateEvents": "Недастаткова крэдытаў для ўдзелу ў {{eventsAmount}} мерапрыемствах. Вам трэба {{needCredits}} крэдытаў. Хочаце купіць?",
+        "LiveStream": "Жывая трансляцыя",
+        "InviteStaff": "Запрасіць персанал"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Падпісацца на Каляндар",
+        "copyLinkBelow": "Скапіруйце спасылку ніжэй",
+        "goTo": "Перайсці да:",
+        "pasteCopiedTo": "Устаўце скапіраваную спасылку ў поле «URL-адрас календара».",
+        "clickAddCalendar": "Націсніце кнопку «Дадаць каляндар».",
+        "copyLink": "Скапіраваць спасылку",
+        "tapToCopy": "Націсніце кнопку ніжэй, каб скапіяваць спасылку ў буфер абмену",
+        "linkCopied": "Спасылка скапіравана",
+        "step2": "Спасылка скапіравана. Мы пра адкрыты Google Calendar. Вам трэба будзе ўставіць спасылку ў тэкставае поле, націснуць «Дадаць каляндар» і закрыць укладку (гл. скрыншот ніжэй)",
+        "calendarAppPreferences": "Адкрыйце налады ў праграме &quot;Каляндар&quot; на вашым Mac і ўсталюйце праграму &quot;Каляндар па змаўчанні&quot;, як паказана ніжэй.",
+        "thenCloseDialog": "Затым зачыніце гэтае дыялогавае акно, каб падпісацца на свой каляндар!",
+        "success": "Каляндар быў паспяхова сінхранізаваны"
+    }
+}

@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "פעברואר",
+        "Mar": "מאר",
+        "Apr": "אפר",
+        "May": "מאי",
+        "Jun": "יוני",
+        "Jul": "דזשול",
+        "Aug": "אויגוסט",
+        "Sep": "סעפטעמבער",
+        "Oct": "אקטאבער",
+        "Nov": "נאוועמבער",
+        "Dec": "דעצעמבער"
+    },
+    "monthsLong": {
+        "Jan": "יאנואר",
+        "Feb": "פעברואַר",
+        "Mar": "מאַרץ",
+        "Apr": "אפריל",
+        "May": "מאי",
+        "Jun": "יוני",
+        "Jul": "יולי",
+        "Aug": "אויגוסט",
+        "Sep": "סעפטעמבער",
+        "Oct": "אקטאבער",
+        "Nov": "נאוועמבער",
+        "Dec": "דעצעמבער"
+    },
+    "weekdays": {
+        "Sun": "זון",
+        "Mon": "Mon",
+        "Tue": "דינסטיק",
+        "Wed": "וועד",
+        "Thu": "דאנערשטאג",
+        "Fri": "פרייטאג",
+        "Sat": "שבת"
+    },
+    "weekdaysLong": {
+        "Sun": "זונטיק",
+        "Mon": "מאנטאג",
+        "Tue": "דינסטיק",
+        "Wed": "מיטוואך",
+        "Thu": "דאנערשטאג",
+        "Fri": "פרייטאג",
+        "Sat": "שבת"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "פּלאַן ניו עווענט"
+        },
+        "tool": {
+            "HostedBy": "האָסטעד דורך {{name}}",
+            "Name": "נאָמען",
+            "AreYouIn": "זענט איר אין?",
+            "Yes": "יא",
+            "No": "ניין",
+            "Ok": "אקעי",
+            "Cancel": "באָטל מאַכן",
+            "Maybe": "זאל זיין",
+            "Conversation": "שמועס",
+            "Promote": "העכערן דעם געשעעניש",
+            "Reminders": "דערמאָנונגען",
+            "RemindersLabel": "איך ווילן צו זיין נאָוטאַפייד פון אַ געשעעניש אין:",
+            "MoreInfo": "מער אינפֿאָרמאַציע",
+            "Registration": "רעגיסטראַציע",
+            "SetReminders": "ביטע שטעלן רימיינדערז",
+            "ReservationFee": "רעזערוואַציע אָפּצאָל",
+            "AddParticipants": "לייג פּאַרטיסיפּאַנץ",
+            "ManageReservation": "פירן רעסערוואַטיאָן",
+            "UpdateFutureReservations": "צי איר אויך ווילן צו דערהייַנטיקן אַלע צוקונפֿט רעזערוויישאַנז אויף די זעלבע וועג?",
+            "RecurringAdmin": "ריקערינג סעטטינגס",
+            "MakeReservation": "מאַכן רעזערוואַציע",
+            "StartLiveStream": "גיט צו לעבן סטרים",
+            "LiveStreamEnded": "לייוו סטרים איז געענדיקט",
+            "ClickToViewRecording": "גיט צו זען רעקאָרדינג",
+            "Checkin": "יבערקוקן באַטייליקטער קאָודז",
+            "Myqr": "געב דיך איין",
+            "CloseEvent": {
+                "button": "באָטל מאַכן געשעעניש",
+                "confirm": {
+                    "text": {
+                        "Cancel": "זענט איר זיכער אַז איר ווילן צו באָטל מאַכן דעם געשעעניש?",
+                        "Participant": "עס איז 1 באַטייליקטער אין דעם געשעעניש",
+                        "Participants": "עס זענען {{count}} פּאַרטיסאַפּאַנץ אין דעם געשעעניש",
+                        "Recurring": "די געשעעניש איז ריקערייטינג. צי איר ווילן צו באָטל מאַכן אַלע די צוקונפֿט קאַסעס?"
+                    },
+                    "trip": {
+                        "Cancel": "צי איר ווילן צו באָטל מאַכן דיין יאַזדע {{tripDirection}} דעם געשעעניש?",
+                        "Passengers": "עס זענען {{passengerCount}} פּאַסאַזשירן וואָס פאַרלאָזנ זיך אויף דיר.",
+                        "Title": "נאָענט יאַזדע"
+                    },
+                    "directions": {
+                        "TO": "צו",
+                        "FROM": "פֿון",
+                        "to": "צו",
+                        "from": "פון"
+                    }
+                }
+            },
+            "Calendar": "קאַלענדאַר",
+            "Interests": "אינטערעסן",
+            "Directions": "אינסטרוקציעס",
+            "TitleOfEvent": "טיטל פון געשעעניש:",
+            "OpenTo": "עפענען צו",
+            "GoingTo": "וועט זיין בייַ",
+            "NotGoingTo": "וועט נישט זיין אין",
+            "MaybeGoingTo": "וועט אפֿשר זיין בייַ",
+            "AdminDontPay": "דער אַדמיניסטראַטאָר דאַרף נישט באַצאָלן",
+            "PublisherDontPay": "דער אַרויסגעבער דאַרף נישט באַצאָלן",
+            "EmptyList": "ליידיק רשימה",
+            "NeedToPayCredits": "דאַרפֿן צו באַצאָלן: <span>{{amount}} קרעדיץ<\/span>",
+            "PleaseJoinParticipants": "ביטע פאַרבינדן {{participant}}",
+            "YouReservingPlace": "איר וועט רעזערווירן דיין פּלאַץ.",
+            "SelectIncludesToAdd": "אויסקלייַבן איינער אָדער מער {{TypeDisplayPlural}} צו לייגן:",
+            "YouHaveNotRegisteredAnyIncluded": "איר האָט נאָך נישט רעגיסטרירט קיין {{TypeDisplayPlural}}",
+            "Proceed": "גיינ ווייַטער",
+            "MakeChanges": "היט מיין ענדערונגען",
+            "CancelReservation": "באָטל מאַכן גאַנץ רעזערוואַציע",
+            "Total": "גאַנץ",
+            "RequiredRelatedParticipants": "דעם געשעעניש ריקווייערז פּאַרטיסאַפּאַנץ: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "ביטע רעדאַגירן אַוויילאַביליטי &quot;{{title}}&quot; צו דערהייַנטיקן ריקערייטינג סעטטינגס"
+        },
+        "composer": {
+            "SetLocation": "שטעלן מיין אָרט",
+            "SetInfoLink": "שטעלן לינק צו נאָך אינפֿאָרמאַציע",
+            "ChooseAvailability": "קלייַבן בנימצא סערוויס",
+            "ChooseActivity": "קלייַבן אַן אַקטיוויטעט",
+            "ChoosePublisher": "קלייַבן אַרויסגעבער",
+            "Day": "טאָג",
+            "Starting": "אָנהייב",
+            "Duration": "געדויער",
+            "Hour": "שעה",
+            "Hours": "שעהן",
+            "Minutes": "מינוטן",
+            "Ending": "סאָף",
+            "People": "מענטשן",
+            "Share": "ייַנטיילן",
+            "Continue": "פאָרזעצן",
+            "Recurring": "ריקערינג",
+            "RecurringTitle": "ריקערינג טעג",
+            "Daily": "טעגלעך",
+            "Weekly": "וואכנשריפט",
+            "Monthly": "כוידעשלעך",
+            "SelectLocation": "ביטע אויסקלייַבן אַ אָרט ערשטער.",
+            "eventType": "געשעעניש טיפּ",
+            "EditTitle": "טראַכטן פון אַ טשיקאַווע טיטל ...",
+            "SetTitle": "ביטע שטעלן געשעעניש טיטל",
+            "ScheduleOnlineConference": "פּלאַן אָנליין קאָנפֿערענץ",
+            "SOCDescription": "ביטע דעפינירן קאָנפֿערענץ אָנהייב און סוף צייט. יעדער מענטש וואָס וויזיץ די געשעעניש בעשאַס דעם צייט וועט אויטאָמאַטיש פאַרבינדן צו אָנליין זיצונג.",
+            "EndDate": "סוף",
+            "location": {
+                "Title": "שטעלן דיין אָרט"
+            },
+            "interest": {
+                "Title": "קלייַבן אַן אַקטיוויטעט",
+                "Filter": "זוכן אינטערעסן ..."
+            },
+            "SetLivestream": "פּאַפּ לינק צו לייווסטרים \/ ווידעא קאָנפערענסע"
+        },
+        "EventAlreadyClosed": "די געשעעניש שוין פארמאכט",
+        "addToCalendar": {
+            "permissions": {
+                "title": "לייג צו קאַלענדאַר?",
+                "prompt": "וואָלט איר ווי צו לייגן דעם געשעעניש צו דיין קאַלענדאַר?",
+                "yes": "יא",
+                "no": "ניין"
+            },
+            "dialog": {
+                "Title": "לייג עווענט צו דיין קאַלענדאַר"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "אַוואַילאַביליטיז",
+        "NewAvailability": {
+            "Title": "ניו אַוואַילאַביליטי",
+            "SaveAvailability": "היט אַוואַילאַביליטי",
+            "SelectTemplate": "ביטע אויסקלייַבן סערוויס",
+            "SelectLocation": "ביטע אויסקלייַבן אָרט",
+            "SelectArea": "ביטע אויסקלייַבן שטח",
+            "Type": "טיפּ",
+            "Weekly": "וואכנשריפט",
+            "RecurringStartDate": "ריקערינג אָנהייב טאָג",
+            "EndDate": "סוף טאָג",
+            "SelectTime": "פירן צייט סלאָץ",
+            "SelectTimeSlot": "אויסקלייַבן אַ צייט שפּעלטל",
+            "SelectTimeSlots": "אויסקלייַבן געוואלט צייט סלאָץ",
+            "PeopleMin": "מינימום וויזיטערז",
+            "PeopleMax": "מאַקסימום וויזיטערז",
+            "PeopleLabels": "לאַבעלס ערלויבט",
+            "Next": "ווייַטער",
+            "Back": "צוריק"
+        },
+        "EditAvailability": "רעדאַגירן אַוואַילאַביליטי",
+        "SetVisitors": "שטעלן וויזאַטערז",
+        "Price": "פּרייַז",
+        "SelectAction": "ביטע אויסקלייַבן קאַמף",
+        "OpenProfile": "עפענען פּראָפיל",
+        "RemoveStaff": "אַראָפּנעמען שטעקן",
+        "PleaseSelectTimeSlots": "ביטע אויסקלייַבן צייט סלאָץ",
+        "ExceptionOccurred": "אויסנאם איז פארגעקומען",
+        "NotEnoughCreditsToParticipateEvents": "ניט גענוג קרעדיץ צו אָנטייל נעמען אין {{eventsAmount}} events. איר דאַרפֿן {{needCredits}} קרעדיץ. ווילן צו קויפן?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "אנהייב דאטום",
+            "endDate": "סוף טאָג",
+            "justOnce": "נאָר אַמאָל",
+            "justOnceWeekly": "בלויז די וואָך",
+            "justOnceMonthly": "בלויז דעם חודש",
+            "recurring": "ריקערינג"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "פֿרייַ געשעעניש",
+            "optional": "אָפּטיאָנאַל צושטייַער",
+            "required": "פארלאנגט צאָלונג"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "אָפּטיאָנאַל צושטייַער",
+            "required": "פארלאנגט צאָלונג",
+            "paid": "באַצאָלט"
+        },
+        "confirmationDialog": {
+            "title": "צאָלונג באַשטעטיקונג",
+            "content": "דער געשעעניש האט אַן אַפּשאַנאַל צושטייַער פון {{amount}}.",
+            "button": "ביישטייערן"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} איז נאָך נישט טייל פון דער געשעעניש. צי איר ווילן צו לייגן זיי ווי אַ באַטייליקטער?",
+        "userNotFound": "באַניצער ניט געפֿונען",
+        "confirmYes": "יא",
+        "confirmNo": "ניין"
+    },
+    "notifications": {
+        "EventActivityIn": "געשעעניש טעטיקייט אין {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "ריקערינג כּללים געביטן פֿאַר געשעעניש {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "פירן דיין E- בריוו סאַבסקריפּשאַנז",
+        "IfUnsubscribe": "אויב איר ווילן צו אַבאָנירן",
+        "ClickHereToVisitEvent": "ביטע גיט דאָ צו באַזוכן די געשעעניש",
+        "Calendars\/reminder": "געשעעניש &quot;{{{call 'message.getInstruction' 'name'}}&quot; וועט אָנהייבן אין {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "פּלאָמבירן דעם ספּרעדשיט",
+        "fileLabel": "צופֿעליקער ספּרעדשיט:",
+        "importOptions": "אָפּציעס",
+        "importProgress": "פּראָגרעס",
+        "sampleCSV": "אראפקאפיע מוסטער קסוו",
+        "joinEventLabel": "פאַרבינדן יוזערז צו טראַפ - געשעעניש",
+        "smsText": "היי, איך האב דיר נאר געשיקט א לינק צו {{communityName}}. ביטע טשעק עס אויס.",
+        "emailSubject": "נאָר געשיקט איר אַ לינק",
+        "emailBody": "היי, איך האָב דיר נאָר געשיקט אַ פאַרבעטונג צו {{communityName}}. ביטע טשעק עס אויס.",
+        "fileNotFound": "אנטשולדיגט, CSV טעקע ניט געפֿונען.",
+        "fileEmpty": "אנטשולדיגט, CSV טעקע איז ליידיק.",
+        "fieldNotFound": "פארלאנגט פעלד &quot;{{1}}&quot; ניט געפֿונען",
+        "userIdNotFound": "באַניצער עקסיסטירן אָבער ID ליידיק",
+        "activateUsers": "שיקן אַקטאַוויישאַן אָנזאָג צו וסערס?",
+        "taskStreamInvalid": "אַרבעט סטרים פאַרקריפּלט",
+        "instructionsEmpty": "אַרבעט טייַך ינסטראַקשאַנז ליידיק",
+        "interestsEmpty": "קען נישט באַקומען אינטערעסן",
+        "interestAbsent": "אינטערעס {{1}} ניט געפֿונען",
+        "complete": "גאַנץ",
+        "errorLine": "שורה {{1}}",
+        "errorsTitle": "ערראָרס פארגעקומען",
+        "communityUsers": "דאָס איז דער רשימה פון קהילות"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "רעפּראַזענץ אַ געשעעניש וואָס מענטשן קענען אָנטייל נעמען אין",
+            "displayType": "געשעעניש"
+        },
+        "Calendars\/recurring": {
+            "description": "געניצט פֿאַר רילייטינג סטרימז וואָס זענען מענט צו ריקער פּיריאַדיקלי",
+            "displayType": "ריקערינג געשעעניש"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "לייג שפּעלטל",
+        "StartTime": "אָנהייב צייט",
+        "EndTime": "סוף צייט",
+        "Save": "היט",
+        "AddTimeSlot": "לייג צייט סלאָט",
+        "CopyFromDay": "קאָפּיע פון טאָג",
+        "Nearest": "נאנטסטע",
+        "Today": "היינט",
+        "Tomorrow": "מאָרגן",
+        "AfterTomorrow": "נאך מארגן"
+    }
+}

@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "جان",
+        "Feb": "فبروري",
+        "Mar": "مار",
+        "Apr": "اپريل",
+        "May": "مئي",
+        "Jun": "جون",
+        "Jul": "جولاءِ",
+        "Aug": "آگسٽ",
+        "Sep": "سيپٽمبر",
+        "Oct": "آڪٽوبر",
+        "Nov": "نومبر",
+        "Dec": "ڊسمبر"
+    },
+    "monthsLong": {
+        "Jan": "جنوري",
+        "Feb": "فيبروري",
+        "Mar": "مارچ",
+        "Apr": "اپريل",
+        "May": "مئي",
+        "Jun": "جون",
+        "Jul": "جولاء",
+        "Aug": "آگسٽ",
+        "Sep": "سيپٽمبر",
+        "Oct": "آڪٽوبر",
+        "Nov": "نومبر",
+        "Dec": "ڊسمبر"
+    },
+    "weekdays": {
+        "Sun": "سج",
+        "Mon": "سومر",
+        "Tue": "منگل",
+        "Wed": "اربع",
+        "Thu": "خميس",
+        "Fri": "جمعو",
+        "Sat": "ڇنڇر"
+    },
+    "weekdaysLong": {
+        "Sun": "آچر",
+        "Mon": "سومر",
+        "Tue": "اڱارو",
+        "Wed": "اربع",
+        "Thu": "خميس",
+        "Fri": "جمع",
+        "Sat": "ڇنڇر"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "پلان نئون واقعو"
+        },
+        "tool": {
+            "HostedBy": "ميزباني ڪيل {{name}}",
+            "Name": "نالو",
+            "AreYouIn": "ڇا تون راضي آهين؟",
+            "Yes": "ها",
+            "No": "نه",
+            "Ok": "ٺيڪ",
+            "Cancel": "منسوخ ڪريو",
+            "Maybe": "ٿي سگهي ٿو",
+            "Conversation": "ڳالهه ٻولهه",
+            "Promote": "هن واقعي کي فروغ ڏيو",
+            "Reminders": "ياد ڏياريندڙ",
+            "RemindersLabel": "مان هڪ واقعي جي اطلاع ٿيڻ چاهيان ٿو:",
+            "MoreInfo": "وڌيڪ معلومات",
+            "Registration": "رجسٽريشن",
+            "SetReminders": "مھرباني ڪري ياد ڏياريندڙ مقرر ڪريو",
+            "ReservationFee": "رزرويشن فيس",
+            "AddParticipants": "شرڪت ڪندڙن کي شامل ڪريو",
+            "ManageReservation": "رزرويشن جو انتظام ڪريو",
+            "UpdateFutureReservations": "ڇا توهان پڻ چاهيو ٿا ته ساڳئي طريقي سان سڀني مستقبل جي تحفظات کي تازه ڪاري ڪريو؟",
+            "RecurringAdmin": "بار بار سيٽنگون",
+            "MakeReservation": "رزرويشن ڪريو",
+            "StartLiveStream": "لائيو اسٽريم تي ڪلڪ ڪريو",
+            "LiveStreamEnded": "لائيو وهڪرو ختم ٿي ويو آهي",
+            "ClickToViewRecording": "رڪارڊنگ ڏسڻ لاءِ ڪلڪ ڪريو",
+            "Checkin": "شرڪت ڪندڙ ڪوڊ اسڪين ڪريو",
+            "Myqr": "چيڪ ان ڪريو",
+            "CloseEvent": {
+                "button": "واقعو منسوخ ڪريو",
+                "confirm": {
+                    "text": {
+                        "Cancel": "ڇا توھان واقعي ھن واقعي کي منسوخ ڪرڻ چاھيو ٿا؟",
+                        "Participant": "ھن واقعي ۾ ھڪڙو حصو وٺندڙ آھي",
+                        "Participants": "ھن تقريب ۾ شرڪت ڪندڙ {{count}} آھن",
+                        "Recurring": "هي واقعو بار بار ٿئي ٿو. ڇا توھان ان کي پڻ منسوخ ڪرڻ چاھيو ٿا ان جا سڀ مستقبل جا مثال پڻ؟"
+                    },
+                    "trip": {
+                        "Cancel": "ڇا توھان پڻ چاھيو ٿا ته پنھنجو سفر منسوخ ڪريو {{tripDirection}} ھن واقعي؟",
+                        "Passengers": "هتي آهن {{passengerCount}} مسافر توهان تي ڀروسو ڪري رهيا آهن.",
+                        "Title": "بند ڪريو سفر"
+                    },
+                    "directions": {
+                        "TO": "جي طرف",
+                        "FROM": "کان",
+                        "to": "جي طرف",
+                        "from": "کان"
+                    }
+                }
+            },
+            "Calendar": "ڪئلينڊر",
+            "Interests": "دلچسپيون",
+            "Directions": "ھدايتون",
+            "TitleOfEvent": "واقعي جو عنوان:",
+            "OpenTo": "ڏانهن کليل",
+            "GoingTo": "تي هوندو",
+            "NotGoingTo": "تي نه هوندو",
+            "MaybeGoingTo": "ٿي سگهي ٿو تي",
+            "AdminDontPay": "منتظم کي ادا ڪرڻ جي ضرورت ناهي",
+            "PublisherDontPay": "پبلشر کي ادا ڪرڻ جي ضرورت ناهي",
+            "EmptyList": "خالي لسٽ",
+            "NeedToPayCredits": "ادا ڪرڻ جي ضرورت آهي: <span>{{amount}} ڪريڊٽ<\/span>",
+            "PleaseJoinParticipants": "مهرباني ڪري شامل ٿيو {{participant}}",
+            "YouReservingPlace": "توھان پنھنجي جڳھ کي محفوظ ڪنداسين.",
+            "SelectIncludesToAdd": "هڪ يا وڌيڪ چونڊيو {{TypeDisplayPlural}} شامل ڪرڻ لاءِ:",
+            "YouHaveNotRegisteredAnyIncluded": "توهان اڃان تائين ڪو به رجسٽر نه ڪيو آهي {{TypeDisplayPlural}}",
+            "Proceed": "اڳتي وڌو",
+            "MakeChanges": "منهنجي تبديلين کي محفوظ ڪريو",
+            "CancelReservation": "مڪمل رزرويشن منسوخ ڪريو",
+            "Total": "ڪُل",
+            "RequiredRelatedParticipants": "ھن واقعي ۾ شرڪت جي ضرورت آھي: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "مھرباني ڪري دستيابي کي تبديل ڪريو &quot;{{title}}&quot; بار بار سيٽنگون تازه ڪاري ڪرڻ لاء"
+        },
+        "composer": {
+            "SetLocation": "سيٽ ڪريو منهنجو مقام",
+            "SetInfoLink": "اضافي معلومات لاءِ لنڪ سيٽ ڪريو",
+            "ChooseAvailability": "چونڊيو دستياب خدمت",
+            "ChooseActivity": "هڪ سرگرمي چونڊيو",
+            "ChoosePublisher": "پبلشر چونڊيو",
+            "Day": "ڏينهن",
+            "Starting": "شروع ٿيندڙ",
+            "Duration": "عرصو",
+            "Hour": "ڪلاڪ",
+            "Hours": "ڪلاڪ",
+            "Minutes": "منٽ",
+            "Ending": "ختم ٿيڻ",
+            "People": "ماڻهو",
+            "Share": "شيئر ڪريو",
+            "Continue": "جاري رکو",
+            "Recurring": "ورجائيندڙ",
+            "RecurringTitle": "ورجائيندڙ ڏينهن",
+            "Daily": "روزاني",
+            "Weekly": "هفتيوار",
+            "Monthly": "ماهوار",
+            "SelectLocation": "مھرباني ڪري پھريون جڳھ چونڊيو.",
+            "eventType": "واقعي جو قسم",
+            "EditTitle": "هڪ دلچسپ عنوان جي باري ۾ سوچيو ...",
+            "SetTitle": "مھرباني ڪري واقعي جو عنوان مقرر ڪريو",
+            "ScheduleOnlineConference": "شيڊول آن لائن ڪانفرنس",
+            "SOCDescription": "مھرباني ڪري ڪانفرنس جي شروعات ۽ ختم ٿيڻ جو وقت بيان ڪريو. هر ماڻهو جيڪو هن عرصي دوران واقعي جو دورو ڪندو اهو خودڪار طريقي سان آن لائن ڪانفرنس سان ڳنڍيندو.",
+            "EndDate": "پڄاڻي",
+            "location": {
+                "Title": "پنھنجي جڳھ کي سيٽ ڪريو"
+            },
+            "interest": {
+                "Title": "هڪ سرگرمي چونڊيو",
+                "Filter": "دلچسپين جي ڳولا ڪريو ..."
+            },
+            "SetLivestream": "لائيو اسٽريم \/ ويڊيو ڪانفرنس ۾ لنڪ پيسٽ ڪريو"
+        },
+        "EventAlreadyClosed": "هي واقعو اڳ ئي بند ٿي چڪو آهي",
+        "addToCalendar": {
+            "permissions": {
+                "title": "ڪئلينڊر ۾ شامل ڪريو؟",
+                "prompt": "ڇا توھان ھن واقعي کي پنھنجي ڪئلينڊر ۾ شامل ڪرڻ چاھيو ٿا؟",
+                "yes": "ها",
+                "no": "نه"
+            },
+            "dialog": {
+                "Title": "پنھنجي ڪئلينڊر ۾ واقعو شامل ڪريو"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "دستيابي",
+        "NewAvailability": {
+            "Title": "نئين دستيابي",
+            "SaveAvailability": "محفوظ ڪريو دستيابي",
+            "SelectTemplate": "مھرباني ڪري خدمت چونڊيو",
+            "SelectLocation": "مھرباني ڪري جڳھ چونڊيو",
+            "SelectArea": "مھرباني ڪري ايريا چونڊيو",
+            "Type": "قسم",
+            "Weekly": "هفتيوار",
+            "RecurringStartDate": "بار بار شروع ٿيڻ جي تاريخ",
+            "EndDate": "ختم ٿيڻ جي تاريخ",
+            "SelectTime": "وقت جي سلاٽ کي منظم ڪريو",
+            "SelectTimeSlot": "هڪ وقت جي سلاٽ چونڊيو",
+            "SelectTimeSlots": "مطلوب وقت سلاٽ چونڊيو",
+            "PeopleMin": "گھٽ ۾ گھٽ سياحن",
+            "PeopleMax": "وڌ ۾ وڌ سياحن",
+            "PeopleLabels": "ليبل جي اجازت ڏني وئي",
+            "Next": "اڳيان",
+            "Back": "پوئتي"
+        },
+        "EditAvailability": "تدوين دستيابي",
+        "SetVisitors": "مهمان مقرر ڪريو",
+        "Price": "قيمت",
+        "SelectAction": "مھرباني ڪري عمل چونڊيو",
+        "OpenProfile": "پروفائل کوليو",
+        "RemoveStaff": "اسٽاف کي هٽايو",
+        "PleaseSelectTimeSlots": "مھرباني ڪري ٽائيم سلاٽ چونڊيو",
+        "ExceptionOccurred": "استثنا ٿيو",
+        "NotEnoughCreditsToParticipateEvents": "ڪافي ڪريڊٽ نه آھن حصو وٺڻ لاءِ {{eventsAmount}} واقعن ۾. توھان کي ضرورت آھي {{needCredits}} ڪريڊٽ. خريد ڪرڻ چاهيو ٿا؟"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "شروعاتي تاريخ",
+            "endDate": "ختم ٿيڻ جي تاريخ",
+            "justOnce": "صرف هڪ دفعو",
+            "justOnceWeekly": "صرف هن هفتي",
+            "justOnceMonthly": "صرف هن مهيني",
+            "recurring": "ورجائيندڙ"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "مفت واقعي",
+            "optional": "اختياري تعاون",
+            "required": "گهربل ادائيگي"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "اختياري تعاون",
+            "required": "گهربل ادائيگي",
+            "paid": "ادا ڪيل"
+        },
+        "confirmationDialog": {
+            "title": "ادائگي جي تصديق",
+            "content": "ھن واقعي ۾ {{amount}} جو اختياري حصو آھي.",
+            "button": "حصو ڏيو"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} اڃا تائين واقعي جو حصو ناهي. ڇا توھان انھن کي شرڪت ڪندڙ طور شامل ڪرڻ چاھيو ٿا؟",
+        "userNotFound": "استعمال ڪندڙ نه مليو",
+        "confirmYes": "ها",
+        "confirmNo": "نه"
+    },
+    "notifications": {
+        "EventActivityIn": "واقعي جي سرگرمي ۾ {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "ايونٽ لاءِ بار بار ضابطا تبديل ڪيا ويا {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "پنھنجي اي ميل رڪنيت کي منظم ڪريو",
+        "IfUnsubscribe": "جيڪڏھن توھان چاھيو ٿا رڪنيت ختم ڪريو",
+        "ClickHereToVisitEvent": "مھرباني ڪري ھتي ڪلڪ ڪريو واقعي جو دورو ڪرڻ لاء",
+        "Calendars\/reminder": "ايونٽ &quot;{{{call 'message.getInstruction' 'name'}}&quot; ۾ شروع ٿيندو {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "هن اسپريڊ شيٽ کي ڀريو",
+        "fileLabel": "اسپريڊ شيٽ اپ لوڊ ڪريو:",
+        "importOptions": "اختيارن",
+        "importProgress": "ترقي",
+        "sampleCSV": "ڊائون لوڊ ڪريو نمونو CSV",
+        "joinEventLabel": "شامل ڪريو صارفين کي بي ترتيب واري واقعي ۾",
+        "smsText": "اي، مون توهان کي صرف {{communityName}} ڏانهن لنڪ موڪليو. مهرباني ڪري ان کي چيڪ ڪريو.",
+        "emailSubject": "بس توهان کي هڪ لنڪ موڪليو",
+        "emailBody": "اي، مون توهان کي صرف هڪ دعوت موڪلي آهي {{communityName}} ڏانهن. مهرباني ڪري ان کي چيڪ ڪريو.",
+        "fileNotFound": "معاف ڪجو، CSV فائل نه ملي.",
+        "fileEmpty": "معاف ڪجو، CSV فائل خالي آھي.",
+        "fieldNotFound": "گھربل ميدان &quot;{{1}}&quot; نه مليو",
+        "userIdNotFound": "استعمال ڪندڙ موجود آهي پر id خالي آهي",
+        "activateUsers": "استعمال ڪندڙن کي چالو ڪرڻ جو پيغام موڪليو؟",
+        "taskStreamInvalid": "ڪم جو وهڪرو غلط",
+        "instructionsEmpty": "ڪم اسٽريم جون هدايتون خالي",
+        "interestsEmpty": "مفاد حاصل نٿا ڪري سگهن",
+        "interestAbsent": "دلچسپي {{1}} نه ملي",
+        "complete": "مڪمل",
+        "errorLine": "لائن {{1}}",
+        "errorsTitle": "غلطيون ٿي ويون",
+        "communityUsers": "هي ڪميونٽين جي فهرست آهي"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "هڪ واقعي جي نمائندگي ڪري ٿو جنهن ۾ ماڻهو حصو وٺي سگهن ٿا",
+            "displayType": "واقعو"
+        },
+        "Calendars\/recurring": {
+            "description": "لاڳاپيل اسٽريمز لاءِ استعمال ڪيو ويو جيڪي وقتي طور تي ورجائڻ لاءِ آهن",
+            "displayType": "بار بار ٿيڻ وارو واقعو"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "سلاٽ شامل ڪريو",
+        "StartTime": "شروعاتي وقت",
+        "EndTime": "آخري وقت",
+        "Save": "بچايو",
+        "AddTimeSlot": "وقت جي سلاٽ شامل ڪريو",
+        "CopyFromDay": "ڏينهن کان نقل",
+        "Nearest": "ويجھو",
+        "Today": "اڄ",
+        "Tomorrow": "سڀاڻي",
+        "AfterTomorrow": "سڀاڻي کانپوء"
+    }
+}

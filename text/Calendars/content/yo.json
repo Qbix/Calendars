@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Oṣu kejila",
+        "Mar": "Mar",
+        "Apr": "Oṣu Kẹrin",
+        "May": "May",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Oṣu Kẹjọ",
+        "Sep": "Oṣu Kẹsan",
+        "Oct": "Oṣu Kẹwa",
+        "Nov": "Oṣu kọkanla",
+        "Dec": "Oṣu kejila"
+    },
+    "monthsLong": {
+        "Jan": "Oṣu Kini",
+        "Feb": "Kínní",
+        "Mar": "Oṣu Kẹta",
+        "Apr": "Oṣu Kẹrin",
+        "May": "May",
+        "Jun": "Oṣu Kẹfa",
+        "Jul": "Oṣu Keje",
+        "Aug": "Oṣu Kẹjọ",
+        "Sep": "Oṣu Kẹsan",
+        "Oct": "Oṣu Kẹwa",
+        "Nov": "Oṣu kọkanla",
+        "Dec": "Oṣu kejila"
+    },
+    "weekdays": {
+        "Sun": "Oorun",
+        "Mon": "Mon",
+        "Tue": "Tue",
+        "Wed": "Ọjọbọ",
+        "Thu": "Tú",
+        "Fri": "Jimọ",
+        "Sat": "Sat"
+    },
+    "weekdaysLong": {
+        "Sun": "Sunday",
+        "Mon": "Monday",
+        "Tue": "Ọjọbọ",
+        "Wed": "Wednesday",
+        "Thu": "Ojobo",
+        "Fri": "Friday",
+        "Sat": "Satidee"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Gbero New Iṣẹlẹ"
+        },
+        "tool": {
+            "HostedBy": "Ti gbalejo nipasẹ {{name}}",
+            "Name": "Oruko",
+            "AreYouIn": "Se o wa ninu?",
+            "Yes": "Bẹẹni",
+            "No": "Rara",
+            "Ok": "O dara",
+            "Cancel": "Fagilee",
+            "Maybe": "Boya",
+            "Conversation": "Ifọrọwanilẹnuwo",
+            "Promote": "Ṣe igbega iṣẹlẹ yii",
+            "Reminders": "Awọn olurannileti",
+            "RemindersLabel": "Mo fẹ lati gba iwifunni nipa iṣẹlẹ kan ni:",
+            "MoreInfo": "Alaye diẹ sii",
+            "Registration": "Iforukọsilẹ",
+            "SetReminders": "Jọwọ ṣeto awọn olurannileti",
+            "ReservationFee": "Ifiṣura ọya",
+            "AddParticipants": "Fi awọn olukopa",
+            "ManageReservation": "Ṣakoso awọn ifiṣura",
+            "UpdateFutureReservations": "Ṣe o tun fẹ lati ṣe imudojuiwọn gbogbo awọn ifiṣura iwaju ni ọna kanna?",
+            "RecurringAdmin": "Awọn Eto loorekoore",
+            "MakeReservation": "Ṣe ifiṣura",
+            "StartLiveStream": "Tẹ lati Live san",
+            "LiveStreamEnded": "ṣiṣan ifiwe ti pari",
+            "ClickToViewRecording": "tẹ lati wo gbigbasilẹ",
+            "Checkin": "Ṣayẹwo awọn koodu olukopa",
+            "Myqr": "Wole sinu",
+            "CloseEvent": {
+                "button": "Fagilee Iṣẹlẹ",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Ṣe o da ọ loju pe o fẹ fagilee iṣẹlẹ yii?",
+                        "Participant": "Olukopa 1 wa ninu iṣẹlẹ yii",
+                        "Participants": "Awọn olukopa {999} wa ninu iṣẹlẹ yii",
+                        "Recurring": "Iṣẹlẹ yii loorekoore. Ṣe o tun fẹ lati fagilee gbogbo awọn iṣẹlẹ iwaju rẹ daradara bi?"
+                    },
+                    "trip": {
+                        "Cancel": "Ṣe o tun fẹ lati fagilee irin-ajo rẹ {{tripDirection}} iṣẹlẹ yii bi?",
+                        "Passengers": "Awọn ero {999}} ti o gbẹkẹle ọ.",
+                        "Title": "Irin-ajo sunmọ"
+                    },
+                    "directions": {
+                        "TO": "LATI",
+                        "FROM": "LATI",
+                        "to": "si",
+                        "from": "lati"
+                    }
+                }
+            },
+            "Calendar": "Kalẹnda",
+            "Interests": "Nifesi",
+            "Directions": "Awọn itọnisọna",
+            "TitleOfEvent": "Akọle ti iṣẹlẹ:",
+            "OpenTo": "Ṣii si",
+            "GoingTo": "yoo wa ni",
+            "NotGoingTo": "kii yoo wa ni",
+            "MaybeGoingTo": "yoo boya ni",
+            "AdminDontPay": "Abojuto ko nilo lati sanwo",
+            "PublisherDontPay": "Olutẹwe ko nilo lati sanwo",
+            "EmptyList": "Atokọ ofo",
+            "NeedToPayCredits": "Nilo lati sanwo: <span>awọn kirẹditi {{amount}}<\/span>",
+            "PleaseJoinParticipants": "Jọwọ darapọ mọ {{participant}}",
+            "YouReservingPlace": "Iwọ yoo ṣe ifipamọ aaye rẹ.",
+            "SelectIncludesToAdd": "Yan ọkan tabi diẹ ẹ sii {{TypeDisplayPlural}} lati fikun:",
+            "YouHaveNotRegisteredAnyIncluded": "O ko tii forukọsilẹ eyikeyi {{TypeDisplayPlural}} sibẹsibẹ",
+            "Proceed": "Tesiwaju",
+            "MakeChanges": "Fipamọ Awọn Ayipada Mi",
+            "CancelReservation": "Fagilee gbogbo ifiṣura",
+            "Total": "Lapapọ",
+            "RequiredRelatedParticipants": "Iṣẹlẹ yii nilo awọn olukopa: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Jọwọ ṣatunkọ wiwa &quot;{999}}&quot; lati ṣe imudojuiwọn awọn eto loorekoore"
+        },
+        "composer": {
+            "SetLocation": "Ṣeto Ipo Mi",
+            "SetInfoLink": "Ṣeto Ọna asopọ si alaye afikun",
+            "ChooseAvailability": "Yan Iṣẹ Wa",
+            "ChooseActivity": "Yan aṣayan iṣẹ-ṣiṣe kan",
+            "ChoosePublisher": "Yan Atẹwe",
+            "Day": "Ojo",
+            "Starting": "Bibẹrẹ",
+            "Duration": "Iye akoko",
+            "Hour": "Wakati",
+            "Hours": "Awọn wakati",
+            "Minutes": "Iṣẹju",
+            "Ending": "Ipari",
+            "People": "Eniyan",
+            "Share": "Pin",
+            "Continue": "Tesiwaju",
+            "Recurring": "Loorekoore",
+            "RecurringTitle": "Awọn ọjọ loorekoore",
+            "Daily": "Ojoojumọ",
+            "Weekly": "Osẹ-ọsẹ",
+            "Monthly": "Oṣooṣu",
+            "SelectLocation": "Jọwọ yan ipo kan ni akọkọ.",
+            "eventType": "Iṣẹlẹ Iru",
+            "EditTitle": "Ronu ti akọle ti o nifẹ…",
+            "SetTitle": "Jọwọ ṣeto akọle iṣẹlẹ",
+            "ScheduleOnlineConference": "Iṣeto Online Conference",
+            "SOCDescription": "Jọwọ ṣalaye ibẹrẹ apejọ ati akoko ipari. Gbogbo eniyan ti o ṣabẹwo si iṣẹlẹ lakoko akoko yii yoo sopọ laifọwọyi si apejọ ori ayelujara.",
+            "EndDate": "Ipari",
+            "location": {
+                "Title": "Ṣeto Ipo Rẹ"
+            },
+            "interest": {
+                "Title": "Yan aṣayan iṣẹ-ṣiṣe kan",
+                "Filter": "Ṣewadii awọn ifẹ..."
+            },
+            "SetLivestream": "Lẹẹmọ ọna asopọ si ṣiṣan ifiwe \/ apejọ fidio"
+        },
+        "EventAlreadyClosed": "Iṣẹlẹ yii ti wa ni pipade",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Ṣe afikun si Kalẹnda?",
+                "prompt": "Ṣe o fẹ lati ṣafikun iṣẹlẹ yii si kalẹnda rẹ?",
+                "yes": "Bẹẹni",
+                "no": "Rara"
+            },
+            "dialog": {
+                "Title": "Ṣafikun Iṣẹlẹ si Kalẹnda rẹ"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Awọn wiwa",
+        "NewAvailability": {
+            "Title": "Titun Wiwa",
+            "SaveAvailability": "Fipamọ Wiwa",
+            "SelectTemplate": "Jọwọ yan Iṣẹ",
+            "SelectLocation": "Jọwọ yan Ibi",
+            "SelectArea": "Jọwọ yan Agbegbe",
+            "Type": "Iru",
+            "Weekly": "Osẹ-ọsẹ",
+            "RecurringStartDate": "Loorekoore Bẹrẹ Ọjọ",
+            "EndDate": "Ọjọ Ipari",
+            "SelectTime": "Ṣakoso awọn Time iho",
+            "SelectTimeSlot": "Yan akoko kan Iho",
+            "SelectTimeSlots": "Yan awọn aaye akoko ti o fẹ",
+            "PeopleMin": "Kere alejo",
+            "PeopleMax": "O pọju alejo",
+            "PeopleLabels": "Awọn akole laaye",
+            "Next": "Itele",
+            "Back": "Pada"
+        },
+        "EditAvailability": "Ṣatunkọ Wiwa",
+        "SetVisitors": "Ṣeto Alejo",
+        "Price": "Iye owo",
+        "SelectAction": "Jọwọ yan igbese",
+        "OpenProfile": "Ṣii profaili",
+        "RemoveStaff": "Yọ awọn oṣiṣẹ kuro",
+        "PleaseSelectTimeSlots": "Jọwọ yan awọn aaye akoko",
+        "ExceptionOccurred": "Iyatọ lodo",
+        "NotEnoughCreditsToParticipateEvents": "Ko si awọn kirẹditi to lati kopa ninu awọn iṣẹlẹ {{eventsAmount}}. O nilo awọn kirẹditi {{needCredits}}. Ṣe o fẹ ra?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Ọjọ ibẹrẹ",
+            "endDate": "Ọjọ ipari",
+            "justOnce": "Ni ẹẹkan",
+            "justOnceWeekly": "Ose yi nikan",
+            "justOnceMonthly": "Osu yii nikan",
+            "recurring": "Loorekoore"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Iṣẹlẹ ọfẹ",
+            "optional": "Ilowosi iyan",
+            "required": "Ti beere owo sisan"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Ilowosi iyan",
+            "required": "Ti beere owo sisan",
+            "paid": "san"
+        },
+        "confirmationDialog": {
+            "title": "Ijẹrisi owo sisan",
+            "content": "Iṣẹlẹ yii ni idasi iyan ti {{amount}}.",
+            "button": "Ṣe alabapin"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ko tii jẹ apakan iṣẹlẹ naa. Ṣe o fẹ lati ṣafikun wọn bi alabaṣe kan?",
+        "userNotFound": "A ko ri olumulo",
+        "confirmYes": "Bẹẹni",
+        "confirmNo": "Rara"
+    },
+    "notifications": {
+        "EventActivityIn": "Iṣẹlẹ ni {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Awọn ofin loorekoore yipada fun iṣẹlẹ {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "ṣakoso awọn alabapin imeeli rẹ",
+        "IfUnsubscribe": "Ti o ba fẹ yọọ kuro",
+        "ClickHereToVisitEvent": "Jọwọ tẹ ibi lati ṣabẹwo si iṣẹlẹ",
+        "Calendars\/reminder": "Iṣẹlẹ &quot;{999}}&quot; yoo bẹrẹ ni {{{call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Fọwọsi Iwe-ipeja yii",
+        "fileLabel": "Ṣe agbejade iwe kaakiri:",
+        "importOptions": "Awọn aṣayan",
+        "importProgress": "Ilọsiwaju",
+        "sampleCSV": "Ṣe igbasilẹ Ayẹwo CSV",
+        "joinEventLabel": "Darapọ mọ awọn olumulo si iṣẹlẹ laileto",
+        "smsText": "Hey, Mo ṣẹṣẹ fi ọna asopọ ranṣẹ si ọ si {{communityName}}. Jọwọ ṣayẹwo.",
+        "emailSubject": "O kan fi ọna asopọ ranṣẹ si ọ",
+        "emailBody": "Hey, Mo ṣẹṣẹ fi ifiwepe ranṣẹ si ọ si {{communityName}}. Jọwọ ṣayẹwo.",
+        "fileNotFound": "Ma binu, faili CSV ko ri.",
+        "fileEmpty": "Ma binu, faili CSV sofo.",
+        "fieldNotFound": "Aaye ti a beere &quot;{{1}}&quot; ko ri",
+        "userIdNotFound": "olumulo wa sugbon id sofo",
+        "activateUsers": "fi ibere ise ifiranṣẹ si awọn olumulo?",
+        "taskStreamInvalid": "ṣiṣan iṣẹ ko wulo",
+        "instructionsEmpty": "awọn ilana ṣiṣan iṣẹ ofo",
+        "interestsEmpty": "ko le gba anfani",
+        "interestAbsent": "anfani {{1}} ko ri",
+        "complete": "Pari",
+        "errorLine": "ila {{1}}",
+        "errorsTitle": "Awọn aṣiṣe waye",
+        "communityUsers": "Eyi ni atokọ agbegbe"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Ṣe aṣoju iṣẹlẹ ti eniyan le kopa ninu",
+            "displayType": "Iṣẹlẹ"
+        },
+        "Calendars\/recurring": {
+            "description": "Ti a lo fun awọn ṣiṣan ti o jọmọ ti o tumọ lati tun waye lorekore",
+            "displayType": "Loorekoore Iṣẹlẹ"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Fi Iho",
+        "StartTime": "Akoko Ibẹrẹ",
+        "EndTime": "Akoko Ipari",
+        "Save": "Fipamọ",
+        "AddTimeSlot": "Fi Time Iho",
+        "CopyFromDay": "Daakọ lati ọjọ",
+        "Nearest": "Ti o sunmọ julọ",
+        "Today": "Loni",
+        "Tomorrow": "Ọla",
+        "AfterTomorrow": "Lẹhin ọla"
+    }
+}

@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Hlakola",
+        "Mar": "Mar",
+        "Apr": "Mmesa",
+        "May": "Mots&#39;eanong",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Aug",
+        "Sep": "Sep",
+        "Oct": "Oct",
+        "Nov": "Nov",
+        "Dec": "Tšitoe"
+    },
+    "monthsLong": {
+        "Jan": "Pherekhong",
+        "Feb": "Hlakola",
+        "Mar": "Tlhakubele",
+        "Apr": "Mmesa",
+        "May": "Mots&#39;eanong",
+        "Jun": "Phuptjane",
+        "Jul": "Phupu",
+        "Aug": "Phato",
+        "Sep": "Loetse",
+        "Oct": "Mphalane",
+        "Nov": "Pulungoana",
+        "Dec": "Tshitwe"
+    },
+    "weekdays": {
+        "Sun": "Letsatsi",
+        "Mon": "Mon",
+        "Tue": "Labobeli",
+        "Wed": "Laboraro",
+        "Thu": "Thu",
+        "Fri": "Labohlano",
+        "Sat": "Sat"
+    },
+    "weekdaysLong": {
+        "Sun": "Sontaha",
+        "Mon": "Mantaha",
+        "Tue": "Labobeli",
+        "Wed": "Laboraro",
+        "Thu": "Labone",
+        "Fri": "Labohlano",
+        "Sat": "Moqebelo"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Rera Ketsahalo e Ncha"
+        },
+        "tool": {
+            "HostedBy": "E hlophisitsoeng ke {{name}}",
+            "Name": "Lebitso",
+            "AreYouIn": "O kene?",
+            "Yes": "Ee",
+            "No": "Che",
+            "Ok": "OK",
+            "Cancel": "Hlakola",
+            "Maybe": "Mohlomong",
+            "Conversation": "Moqoqo",
+            "Promote": "Bapatsa ketsahalo ena",
+            "Reminders": "Likhopotso",
+            "RemindersLabel": "Ke batla ho tsebisoa ka ketsahalo ea:",
+            "MoreInfo": "Lintlha tse ling",
+            "Registration": "Ngodiso",
+            "SetReminders": "Ka kopo, seta likhopotso",
+            "ReservationFee": "Tefiso ea Peheletso",
+            "AddParticipants": "Eketsa barupeluoa",
+            "ManageReservation": "Laola Peheletso",
+            "UpdateFutureReservations": "Na hape u batla ho nchafatsa lipeeletso tsa nako e tlang ka tsela e tšoanang?",
+            "RecurringAdmin": "Litlhophiso tse Tsoelang Pele",
+            "MakeReservation": "Etsa Pehelo",
+            "StartLiveStream": "Tobetsa ho Live Stream",
+            "LiveStreamEnded": "Live stream e felile",
+            "ClickToViewRecording": "tobetsa ho sheba rekoto",
+            "Checkin": "Hlakola likhoutu tsa batho ba tlileng kopanong",
+            "Myqr": "Kena",
+            "CloseEvent": {
+                "button": "Hlakola Ketsahalo",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Na ehlile u batla ho hlakola ketsahalo ee?",
+                        "Participant": "Ho na le monkakarolo a le mong ketsahalong ena",
+                        "Participants": "Ho na le {{count}} bankakarolo ketsahalong ena",
+                        "Recurring": "Ketsahalo ena e etsahala khafetsa. A na u batla ho hlakola le maemo a eona a kamoso?"
+                    },
+                    "trip": {
+                        "Cancel": "Na u batla ho hlakola leeto la hau {{tripDirection}} ketsahalo ee?",
+                        "Passengers": "Ho na le {{passengerCount}} bapalami ba itšetlehileng ka uena.",
+                        "Title": "Koala Leeto"
+                    },
+                    "directions": {
+                        "TO": "TSA",
+                        "FROM": "TS&#39;OA",
+                        "to": "ho",
+                        "from": "ho tloha"
+                    }
+                }
+            },
+            "Calendar": "Khalendara",
+            "Interests": "Lithahasello",
+            "Directions": "Litsela",
+            "TitleOfEvent": "Sehlooho sa ketsahalo:",
+            "OpenTo": "Bula ho",
+            "GoingTo": "e tla ba ho",
+            "NotGoingTo": "e ka se be teng",
+            "MaybeGoingTo": "mohlomong ho",
+            "AdminDontPay": "Admin ha e hloke ho lefa",
+            "PublisherDontPay": "Mohoeletsi ha a hloke ho lefa",
+            "EmptyList": "Lenane le se nang letho",
+            "NeedToPayCredits": "U hloka ho lefa: <span>{{amount}} likalimo<\/span>",
+            "PleaseJoinParticipants": "Ka kopo ikopanye le {{participant}}",
+            "YouReservingPlace": "U tla be u boloka sebaka sa hau.",
+            "SelectIncludesToAdd": "Khetha e le &#39;ngoe kapa ho feta {{TypeDisplayPlural}} ho kenya:",
+            "YouHaveNotRegisteredAnyIncluded": "Ha u so ngolise {{TypeDisplayPlural}} leha e le efe",
+            "Proceed": "Tsoela pele",
+            "MakeChanges": "Boloka Liphetoho Tsa Ka",
+            "CancelReservation": "Hlakola kopo kaofela",
+            "Total": "Kakaretso",
+            "RequiredRelatedParticipants": "Ketsahalo ena e hloka banka-karolo: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Ka kopo, fetola &quot;{999}}&quot; ho ntlafatsa litlhophiso tse hlahang khafetsa"
+        },
+        "composer": {
+            "SetLocation": "Beha Sebaka sa Ka",
+            "SetInfoLink": "Beha Sehokelo ho lintlha tse ling",
+            "ChooseAvailability": "Khetha Tšebeletso e fumanehang",
+            "ChooseActivity": "Khetha Ketsahalo",
+            "ChoosePublisher": "Khetha Mohatisi",
+            "Day": "Letsatsi",
+            "Starting": "Ho qala",
+            "Duration": "Nako",
+            "Hour": "Hora",
+            "Hours": "Lihora",
+            "Minutes": "Metsotso",
+            "Ending": "Qetello",
+            "People": "Batho",
+            "Share": "Arolelana",
+            "Continue": "Tswella",
+            "Recurring": "Khafetsa",
+            "RecurringTitle": "Matsatsi a Khafetsa",
+            "Daily": "Letsatsi le letsatsi",
+            "Weekly": "Beke le beke",
+            "Monthly": "Khoeli le khoeli",
+            "SelectLocation": "Ka kopo, khetha sebaka pele.",
+            "eventType": "Mofuta oa Ketsahalo",
+            "EditTitle": "Nahana ka sehlooho se monate...",
+            "SetTitle": "Ka kopo, beha sehlooho sa ketsahalo",
+            "ScheduleOnlineConference": "Kemiso ea Seboka sa Inthaneteng",
+            "SOCDescription": "Ka kopo, hlalosa nako ea kopano ea ho qala le ea ho qetela. Motho e mong le e mong ea etelang ketsahalo ka nako ena o tla hokela ka bohona kopanong ea inthaneteng.",
+            "EndDate": "Qeta",
+            "location": {
+                "Title": "Beha Sebaka sa Hao"
+            },
+            "interest": {
+                "Title": "Khetha Ketsahalo",
+                "Filter": "Batla lintho tseo u li ratang ..."
+            },
+            "SetLivestream": "Beha sehokelo ho livestream \/ videoconference"
+        },
+        "EventAlreadyClosed": "Ketsahalo ena e se e koetsoe",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Kenya ho Khalendara?",
+                "prompt": "O ka thabela ho kenya ketsahalo ee almanakeng ea hau?",
+                "yes": "Ee",
+                "no": "Che"
+            },
+            "dialog": {
+                "Title": "Kenya Ketsahalo ho Khalendara ea hau"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Lintho tse fumanehang",
+        "NewAvailability": {
+            "Title": "Ho fumaneha ha New",
+            "SaveAvailability": "Boloka Boteng",
+            "SelectTemplate": "Ka kopo, khetha Tšebeletso",
+            "SelectLocation": "Ka kopo, khetha Sebaka",
+            "SelectArea": "Ka kopo, khetha Sebaka",
+            "Type": "Mofuta",
+            "Weekly": "Beke le beke",
+            "RecurringStartDate": "Letsatsi la ho Qala khafetsa",
+            "EndDate": "Letsatsi la ho Qetela",
+            "SelectTime": "Laola Nako Slots",
+            "SelectTimeSlot": "Khetha sebaka sa nako",
+            "SelectTimeSlots": "Khetha linako tseo u li batlang",
+            "PeopleMin": "Bonyane ba baeti",
+            "PeopleMax": "Boholo ba baeti",
+            "PeopleLabels": "Li-labels li lumelletsoe",
+            "Next": "E &#39;ngoe",
+            "Back": "Morao"
+        },
+        "EditAvailability": "Fetola Boteng",
+        "SetVisitors": "Beha Baeti",
+        "Price": "Theko",
+        "SelectAction": "Ka kopo, khetha ketso",
+        "OpenProfile": "Bula boemo",
+        "RemoveStaff": "Tlosa basebetsi",
+        "PleaseSelectTimeSlots": "Ka kopo, khetha libaka tsa nako",
+        "ExceptionOccurred": "Mokhelo o etsahetse",
+        "NotEnoughCreditsToParticipateEvents": "Ha ho na mekoloto e lekaneng ho nka karolo {{eventsAmount}} liketsahalong. U hloka {{100}} likalimo. U batla ho reka?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Letsatsi la qalo",
+            "endDate": "Letsatsi la ho qetela",
+            "justOnce": "Hang feela",
+            "justOnceWeekly": "Bekeng ena feela",
+            "justOnceMonthly": "Khoeling ena feela",
+            "recurring": "Khafetsa"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Ketsahalo ea mahala",
+            "optional": "Tlatsetso ea boikhethelo",
+            "required": "Tefo e hlokahalang"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Tlatsetso ea boikhethelo",
+            "required": "Tefo e hlokahalang",
+            "paid": "lefile"
+        },
+        "confirmationDialog": {
+            "title": "Netefatso ya tefo",
+            "content": "Ketsahalo ena e na le boikhethelo ba ho kenya letsoho ho {{amount}}.",
+            "button": "Kenya letsoho"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ha e so be karolo ea ketsahalo. Na u batla ho li kenya u le monka-karolo?",
+        "userNotFound": "Mosebedisi ha a fumanehe",
+        "confirmYes": "Ee",
+        "confirmNo": "Che"
+    },
+    "notifications": {
+        "EventActivityIn": "Ketsahalo e {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Melao e phetoang khafetsa bakeng sa ketsahalo {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "laola lipehelo tsa hau tsa lengolo-tsoibila",
+        "IfUnsubscribe": "Haeba u batla ho itokolla",
+        "ClickHereToVisitEvent": "Ka kopo, tobetsa mona ho etela ketsahalo",
+        "Calendars\/reminder": "Ketsahalo &quot;{999}}&quot; e tla qala ka {{{call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Tlatsa Spreadsheet Ena",
+        "fileLabel": "Kenya Spreadsheet:",
+        "importOptions": "Dikgetho",
+        "importProgress": "Tsoelopele",
+        "sampleCSV": "Khoasolla Mohlala oa CSV",
+        "joinEventLabel": "Eba le basebelisi ketsahalong e sa reroang",
+        "smsText": "Lumela, ke qeta ho u romella sehokelo ho {{communityName}}. Ka kopo, e hlahlobe.",
+        "emailSubject": "Ke qeta ho o romella sehokelo",
+        "emailBody": "Lumela, ke qeta ho u romella memo ea ho {{communityName}}. Ka kopo, e hlahlobe.",
+        "fileNotFound": "Tšoarelo, faele ea CSV ha e fumanehe.",
+        "fileEmpty": "Tšoarelo, faele ea CSV ha e na letho.",
+        "fieldNotFound": "Sebaka se hlokahalang &quot;{999}}&quot; ha se fumanehe",
+        "userIdNotFound": "mosebelisi o teng empa id ha e na letho",
+        "activateUsers": "romela molaetsa oa ho kenya tshebetsong ho basebelisi?",
+        "taskStreamInvalid": "sebaka sa mosebetsi ha se sebetse",
+        "instructionsEmpty": "ditaelo tsa molapo o se nang letho",
+        "interestsEmpty": "ha e khone ho fumana lithahasello",
+        "interestAbsent": "thahasello {{1}} ha e so fumanehe",
+        "complete": "Feletseng",
+        "errorLine": "mola {{1}}",
+        "errorsTitle": "Ho bile le liphoso",
+        "communityUsers": "Lena ke lenane la sechaba"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "E emetse ketsahalo eo batho ba ka nkang karolo ho eona",
+            "displayType": "Ketsahalo"
+        },
+        "Calendars\/recurring": {
+            "description": "E sebelisoa bakeng sa melapo e amanang e reretsoeng ho ipheta nako le nako",
+            "displayType": "Ketsahalo e iphetang"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Kenya Slot",
+        "StartTime": "Nako ea ho Qala",
+        "EndTime": "Nako ea ho Qetela",
+        "Save": "Boloka",
+        "AddTimeSlot": "Eketsa Nako Slot",
+        "CopyFromDay": "Kopitsa ho tloha ka letsatsi",
+        "Nearest": "Haufinyane",
+        "Today": "Kajeno",
+        "Tomorrow": "Hosane",
+        "AfterTomorrow": "Kamora hosane"
+    }
+}

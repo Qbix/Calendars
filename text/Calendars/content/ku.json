@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Feb",
+        "Mar": "Mar",
+        "Apr": "Apr",
+        "May": "Gulan",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Aug",
+        "Sep": "Sep",
+        "Oct": "Oct",
+        "Nov": "Nov",
+        "Dec": "Dec"
+    },
+    "monthsLong": {
+        "Jan": "Rêbendan",
+        "Feb": "Reşemî",
+        "Mar": "Adar",
+        "Apr": "Avrêl",
+        "May": "Gulan",
+        "Jun": "Pûşper",
+        "Jul": "Tîrmeh",
+        "Aug": "Tebax",
+        "Sep": "Îlon",
+        "Oct": "Cotmeh",
+        "Nov": "Mijdar",
+        "Dec": "Berfanbar"
+    },
+    "weekdays": {
+        "Sun": "Tav",
+        "Mon": "Mon",
+        "Tue": "Tue",
+        "Wed": "Wed",
+        "Thu": "Thu",
+        "Fri": "Fri",
+        "Sat": "Sat"
+    },
+    "weekdaysLong": {
+        "Sun": "Yekşem",
+        "Mon": "Duşem",
+        "Tue": "Sêşem",
+        "Wed": "Çarşem",
+        "Thu": "Pêncşem",
+        "Fri": "Roja Înê",
+        "Sat": "Şemî"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Plana Bûyera Nû"
+        },
+        "tool": {
+            "HostedBy": "Ji hêla {{name}} ve hatî pêşkêş kirin",
+            "Name": "Nav",
+            "AreYouIn": "Tu li hundir î?",
+            "Yes": "Erê",
+            "No": "Na",
+            "Ok": "Ok",
+            "Cancel": "Bişûndekirin",
+            "Maybe": "Belkî",
+            "Conversation": "Kêfî",
+            "Promote": "Vê bûyerê bidin nasîn",
+            "Reminders": "Reminders",
+            "RemindersLabel": "Ez dixwazim di derbarê bûyerek de agahdar bibim:",
+            "MoreInfo": "Zêdetir agahdarî",
+            "Registration": "Qeydkirinî",
+            "SetReminders": "Ji kerema xwe bîranînan saz bikin",
+            "ReservationFee": "Heqê Reservation",
+            "AddParticipants": "Beşdarvanan zêde bikin",
+            "ManageReservation": "Manage Reservation",
+            "UpdateFutureReservations": "Ma hûn jî dixwazin hemî rezervasyonên pêşerojê bi heman rengî nûve bikin?",
+            "RecurringAdmin": "Mîhengên Dubarekirin",
+            "MakeReservation": "Reservation bike",
+            "StartLiveStream": "Bikirtînin ji bo Weşana Zindî",
+            "LiveStreamEnded": "Weşana zindî qediya",
+            "ClickToViewRecording": "ji bo dîtina tomarê bikirtînin",
+            "Checkin": "Kodên beşdaran bişopînin",
+            "Myqr": "Çek kirin",
+            "CloseEvent": {
+                "button": "Betal Bûyer",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Ma tu bi rastî dixwazî vê bûyerê betal bikî?",
+                        "Participant": "Di vê çalakiyê de 1 beşdar hene",
+                        "Participants": "Di vê bûyerê de {{count}} beşdar hene",
+                        "Recurring": "Ev bûyer dubare dibe. Ma hûn dixwazin hemî mînakên wê yên pêşerojê jî betal bikin?"
+                    },
+                    "trip": {
+                        "Cancel": "Ma hûn dixwazin gera xwe jî {{tripDirection}} vê bûyerê betal bikin?",
+                        "Passengers": "Rêwiyên {{passengerCount}} hene ku xwe dispêrin we.",
+                        "Title": "Rêwîtiyê bigire"
+                    },
+                    "directions": {
+                        "TO": "BER",
+                        "FROM": "JI",
+                        "to": "ber",
+                        "from": "ji"
+                    }
+                }
+            },
+            "Calendar": "Salname",
+            "Interests": "Interests",
+            "Directions": "Tarîfa bikaranînê",
+            "TitleOfEvent": "Sernavê bûyerê:",
+            "OpenTo": "Vekirî li",
+            "GoingTo": "dê li",
+            "NotGoingTo": "dê nebe",
+            "MaybeGoingTo": "dê dibe ku li",
+            "AdminDontPay": "Admin ne hewce ye ku drav bide",
+            "PublisherDontPay": "Weşanger ne hewce ye ku drav bide",
+            "EmptyList": "Lîsteya vala",
+            "NeedToPayCredits": "Pêdivî ye ku hûn bidin: <span>{{amount}} kredî<\/span>",
+            "PleaseJoinParticipants": "Ji kerema xwe beşdarî {{participant}}",
+            "YouReservingPlace": "Hûn ê cîhê xwe veqetînin.",
+            "SelectIncludesToAdd": "Ji bo lê zêde bike yek an çend {{TypeDisplayPlural}} hilbijêre:",
+            "YouHaveNotRegisteredAnyIncluded": "Te hîn {{TypeDisplayPlural}} qeyd nekiriye",
+            "Proceed": "Pêşçûn",
+            "MakeChanges": "Guhertinên Min Save",
+            "CancelReservation": "Tevahiya veqetandinê betal bike",
+            "Total": "Hemî",
+            "RequiredRelatedParticipants": "Ev bûyer ji beşdaran re hewce dike: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Ji kerema xwe hebûna &quot;{{title}}&quot; biguherîne da ku mîhengên dûbare nûve bike"
+        },
+        "composer": {
+            "SetLocation": "Cihê Min Set",
+            "SetInfoLink": "Girêdanê ji bo agahdariya bêtir saz bikin",
+            "ChooseAvailability": "Karûbarê Berdest hilbijêrin",
+            "ChooseActivity": "Çalakiyek hilbijêrin",
+            "ChoosePublisher": "Weşanger hilbijêrin",
+            "Day": "Roj",
+            "Starting": "Destpêkirin",
+            "Duration": "Demajok",
+            "Hour": "Seet",
+            "Hours": "Hours",
+            "Minutes": "Minutes",
+            "Ending": "Dawîkirin",
+            "People": "Gel",
+            "Share": "Par",
+            "Continue": "Berdewamkirin",
+            "Recurring": "Dubarekirin",
+            "RecurringTitle": "Rojên Recurring",
+            "Daily": "Rojane",
+            "Weekly": "Heftane",
+            "Monthly": "Mehane",
+            "SelectLocation": "Ji kerema xwe pêşî cîhek hilbijêrin.",
+            "eventType": "Cureyê bûyerê",
+            "EditTitle": "Sernavek balkêş bifikirin ...",
+            "SetTitle": "Ji kerema xwe sernavê bûyerê destnîşan bikin",
+            "ScheduleOnlineConference": "Bernameya Konferansa Serhêl",
+            "SOCDescription": "Ji kerema xwe dema destpêk û dawiya konferansê diyar bikin. Her kesê ku di vê heyamê de serdana bûyerê dike dê bixweber bi konferansa serhêl ve girêdayî be.",
+            "EndDate": "Dawî",
+            "location": {
+                "Title": "Cihê xwe bicîh bikin"
+            },
+            "interest": {
+                "Title": "Çalakiyek hilbijêrin",
+                "Filter": "Lêgerîna berjewendiyan..."
+            },
+            "SetLivestream": "Zencîreya zindî \/ vîdyokonferansê bişopînin"
+        },
+        "EventAlreadyClosed": "Ev bûyer jixwe girtiye",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Têxe Salnameyê?",
+                "prompt": "Ma hûn dixwazin vê bûyerê li salnameya xwe zêde bikin?",
+                "yes": "Erê",
+                "no": "Na"
+            },
+            "dialog": {
+                "Title": "Bûyer li Salnameya xwe zêde bikin"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Availabilities",
+        "NewAvailability": {
+            "Title": "Hebûna Nû",
+            "SaveAvailability": "Save Availability",
+            "SelectTemplate": "Ji kerema xwe xizmetê hilbijêrin",
+            "SelectLocation": "Ji kerema xwe Cih hilbijêrin",
+            "SelectArea": "Ji kerema xwe Herêmê hilbijêrin",
+            "Type": "Awa",
+            "Weekly": "Heftane",
+            "RecurringStartDate": "Dîroka Destpêkê ya Dubare",
+            "EndDate": "Dîroka Dawî",
+            "SelectTime": "Manage Slots Time",
+            "SelectTimeSlot": "Demek demkî hilbijêrin",
+            "SelectTimeSlots": "Slotên dema xwestî hilbijêrin",
+            "PeopleMin": "Ziyaretvanên herî kêm",
+            "PeopleMax": "Ziyaretvanên herî zêde",
+            "PeopleLabels": "Labels destûr",
+            "Next": "Piştî",
+            "Back": "Paş"
+        },
+        "EditAvailability": "Edit Availability",
+        "SetVisitors": "Serdanvanên Set",
+        "Price": "Biha",
+        "SelectAction": "Ji kerema xwe çalakiyê hilbijêre",
+        "OpenProfile": "Profîla vekin",
+        "RemoveStaff": "Karmendan derxistin",
+        "PleaseSelectTimeSlots": "Ji kerema xwe hêlînên demê hilbijêrin",
+        "ExceptionOccurred": "Îstîsnayek çêbû",
+        "NotEnoughCreditsToParticipateEvents": "Ji bo beşdarbûna {{eventsAmount}} bûyeran kredî têrê nakin. Ji te re {{needCredits}} kredî lazim in. Dixwazin bikirin?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Dîroka destpêkê",
+            "endDate": "Dîroka dawîyê",
+            "justOnce": "Tenê carekê",
+            "justOnceWeekly": "Tenê vê hefteyê",
+            "justOnceMonthly": "Tenê vê mehê",
+            "recurring": "Dubarekirin"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Bûyerek belaş",
+            "optional": "Beşdariya Bijarî",
+            "required": "Tezmînata pêwîst"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Beşdariya Bijarî",
+            "required": "Tezmînata pêwîst",
+            "paid": "dayîn"
+        },
+        "confirmationDialog": {
+            "title": "Piştrastkirina dravdanê",
+            "content": "Beşek bijarte ya vê bûyerê {{amount}} heye.",
+            "button": "Paraxwe dayin"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} hîn ne beşek ji bûyerê ye. Ma hûn dixwazin wan wekî beşdarek zêde bikin?",
+        "userNotFound": "Bikarhêner nehat dîtin",
+        "confirmYes": "Erê",
+        "confirmNo": "Na"
+    },
+    "notifications": {
+        "EventActivityIn": "Çalakiya bûyerê li {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Ji bo bûyerê qaîdeyên dubarekirî hatin guhertin {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "aboneyên e-nameya xwe birêve bibin",
+        "IfUnsubscribe": "Ger tu dixwazî abonetiyê bikî",
+        "ClickHereToVisitEvent": "Ji kerema xwe li vir bikirtînin ku hûn serdana bûyerê bikin",
+        "Calendars\/reminder": "Bûyera &quot;{{{call 'message.getInstruction' 'name'}}&quot; dê di {{&call 'message.getInstruction' 'time'}}} de dest pê bike"
+    },
+    "import": {
+        "linkTitle": "Vê Spreadsheet dagirin",
+        "fileLabel": "Spreadsheet barkirin:",
+        "importOptions": "Vebijêrk",
+        "importProgress": "Pêşverûtî",
+        "sampleCSV": "Nimûneya CSV dakêşin",
+        "joinEventLabel": "Tevlî bikarhêneran bibin bûyerek rasthatî",
+        "smsText": "Heye, min ji te re lînka {{communityName}} şand. Ji kerema xwe wê kontrol bikin.",
+        "emailSubject": "Tenê girêdanek ji we re şand",
+        "emailBody": "Heye, min ji te re vexwendname şand ji bo {{communityName}}. Ji kerema xwe wê kontrol bikin.",
+        "fileNotFound": "Mixabin, pelê CSV nehat dîtin.",
+        "fileEmpty": "Bibore, pelê CSV vala ye.",
+        "fieldNotFound": "Qada pêwîst &quot;{{1}}&quot; nehat dîtin",
+        "userIdNotFound": "bikarhêner heye lê id vala ye",
+        "activateUsers": "ji bikarhêneran re peyama çalakkirinê bişînin?",
+        "taskStreamInvalid": "herikîna peywirê nederbasdar e",
+        "instructionsEmpty": "talîmatên herikîna peywirê vala ye",
+        "interestsEmpty": "nikare berjewendiyan bigire",
+        "interestAbsent": "berjewendî {{1}} nehat dîtin",
+        "complete": "Tevî",
+        "errorLine": "rêz {{1}}",
+        "errorsTitle": "Çewtî çêbûn",
+        "communityUsers": "Ev lîsteya civakan e"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Bûyerek ku mirov dikare tê de beşdar bibe temsîl dike",
+            "displayType": "Bûyer"
+        },
+        "Calendars\/recurring": {
+            "description": "Ji bo girêdana çemên ku ji bo dubarekirina periyodîk têne bikar anîn",
+            "displayType": "Bûyera Dubare"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Slot zêde bike",
+        "StartTime": "Demjimêra Destpêkê",
+        "EndTime": "Dema Dawî",
+        "Save": "Rizgarkirin",
+        "AddTimeSlot": "Zêde Slot Demjimêrê",
+        "CopyFromDay": "Ji rojê ve kopî bikin",
+        "Nearest": "Nearest",
+        "Today": "Îro",
+        "Tomorrow": "Sibê",
+        "AfterTomorrow": "Piştî sibê"
+    }
+}

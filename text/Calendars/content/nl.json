@@ -1,0 +1,359 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "februari",
+        "Mar": "maart",
+        "Apr": "april",
+        "May": "Kunnen",
+        "Jun": "juni",
+        "Jul": "juli",
+        "Aug": "augustus",
+        "Sep": "september",
+        "Oct": "okt",
+        "Nov": "november",
+        "Dec": "december"
+    },
+    "monthsLong": {
+        "Jan": "januari",
+        "Feb": "februari",
+        "Mar": "maart",
+        "Apr": "april",
+        "May": "Kunnen",
+        "Jun": "juni-",
+        "Jul": "juli-",
+        "Aug": "augustus",
+        "Sep": "september",
+        "Oct": "oktober",
+        "Nov": "november",
+        "Dec": "december"
+    },
+    "weekdays": {
+        "Sun": "zon",
+        "Mon": "maandag",
+        "Tue": "di",
+        "Wed": "wo",
+        "Thu": "do",
+        "Fri": "vrij",
+        "Sat": "Za"
+    },
+    "weekdaysLong": {
+        "Sun": "zondag",
+        "Mon": "maandag",
+        "Tue": "dinsdag",
+        "Wed": "woensdag",
+        "Thu": "Donderdag",
+        "Fri": "vrijdag",
+        "Sat": "zaterdag"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Nieuw evenement plannen"
+        },
+        "tool": {
+            "AreYouIn": "Doe je mee?",
+            "Yes": "Ja",
+            "No": "Nee",
+            "Maybe": "Kan zijn",
+            "Conversation": "Gesprek",
+            "Promote": "Promoot dit evenement",
+            "Checkin": "Bezoekerscodes scannen",
+            "CloseEvent": {
+                "button": "Evenement annuleren",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Weet je zeker dat je dit evenement wilt annuleren?",
+                        "Participant": "Er is 1 deelnemer aan dit evenement",
+                        "Participants": "Er zijn {{count}} deelnemers aan dit evenement",
+                        "Recurring": "Dit evenement is terugkerend. Wilt u ook alle toekomstige instanties annuleren?"
+                    },
+                    "trip": {
+                        "Cancel": "Wil je ook je reis {{tripDirection}} dit evenement annuleren?",
+                        "Passengers": "Er zijn {{passengerCount}} passagiers die op u rekenen.",
+                        "Title": "Reis sluiten"
+                    },
+                    "directions": {
+                        "TO": "NAAR",
+                        "FROM": "VAN",
+                        "to": "naar",
+                        "from": "van"
+                    }
+                }
+            },
+            "Calendar": "Kalender",
+            "Interests": "interesses",
+            "Directions": "Routebeschrijving",
+            "TitleOfEvent": "Titel evenement:",
+            "OpenTo": "Open voor",
+            "MoreInfo": "Meer informatie",
+            "Registration": "Registratie",
+            "GoingTo": "zal zijn op",
+            "NotGoingTo": "zal er niet zijn",
+            "MaybeGoingTo": "zal misschien bij zijn",
+            "HostedBy": "Gehost door {{name}}",
+            "LiveStream": "Klik om live te streamen",
+            "Myqr": "Check in",
+            "AdminDontPay": "Beheerder hoeft niet te betalen",
+            "Name": "Naam",
+            "ReservationFee": "Reservatie kosten",
+            "AddParticipants": "Voeg deelnemers toe",
+            "ManageReservation": "Reservering beheren",
+            "MakeReservation": "Reserveren",
+            "StartLiveStream": "Klik om te livestreamen",
+            "LiveStreamEnded": "Livestream is afgelopen",
+            "ClickToViewRecording": "klik om de opname te bekijken",
+            "EmptyList": "Lege lijst",
+            "NeedToPayCredits": "Moet betalen: <span>{{amount}} tegoeden<\/span>",
+            "PleaseJoinParticipants": "Word lid van {{participant}}",
+            "YouReservingPlace": "Je reserveert je plaats.",
+            "SelectIncludesToAdd": "Selecteer een of meer {{TypeDisplayPlural}} om toe te voegen:",
+            "YouHaveNotRegisteredAnyIncluded": "U heeft nog geen {{TypeDisplayPlural}} geregistreerd",
+            "Proceed": "Doorgaan",
+            "MakeChanges": "Bewaar mijn wijzigingen",
+            "CancelReservation": "Annuleer volledige reservering",
+            "Total": "Totaal",
+            "Ok": "OK",
+            "Cancel": "Annuleren",
+            "Reminders": "Herinneringen",
+            "RemindersLabel": "Ik wil op de hoogte worden gehouden van een evenement in:",
+            "SetReminders": "Stel herinneringen in",
+            "UpdateFutureReservations": "Wil je ook alle toekomstige reserveringen op dezelfde manier bijwerken?",
+            "RecurringAdmin": "Terugkerende instellingen",
+            "PublisherDontPay": "Uitgever hoeft niet te betalen",
+            "RequiredRelatedParticipants": "Dit evenement vereist deelnemers: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Bewerk beschikbaarheid &quot;{{title}}&quot; om terugkerende instellingen bij te werken",
+            "Presentation": "Presentatie",
+            "YouAreNotParticipated": "U bent geen deelnemer aan het evenement",
+            "LiveStreamStarted": "Livestream is gestart",
+            "WebRTCStarted": "Teleconferentie begon",
+            "WebRTCEnded": "Teleconferentie beëindigd"
+        },
+        "composer": {
+            "SetLocation": "Mijn locatie instellen",
+            "ChooseActivity": "Kies een activiteit",
+            "ChoosePublisher": "Kies Uitgever",
+            "Day": "Dag",
+            "Starting": "Beginnend",
+            "People": "Mensen",
+            "Share": "Deel",
+            "Recurring": "Terugkerend",
+            "RecurringTitle": "Terugkerende dagen",
+            "Daily": "Dagelijks",
+            "Weekly": "Wekelijks",
+            "Monthly": "Maandelijks",
+            "SelectLocation": "Selecteer eerst een locatie.",
+            "eventType": "Evenementtype",
+            "EditTitle": "Bedenk een interessante titel...",
+            "SetTitle": "Stel de titel van het evenement in",
+            "location": {
+                "Title": "Bepaal jouw locatie"
+            },
+            "interest": {
+                "Title": "Kies een activiteit",
+                "Filter": "Zoekinteresses..."
+            },
+            "Ending": "Einde",
+            "ScheduleOnlineConference": "Online conferentie plannen",
+            "SOCDescription": "Definieer de begin- en eindtijd van de conferentie. Elke persoon die het evenement tijdens deze periode bezoekt, maakt automatisch verbinding met de online conferentie.",
+            "EndDate": "Einde",
+            "SetLivestream": "Plak link naar livestream \/ videoconferentie",
+            "SetInfoLink": "Koppeling naar aanvullende informatie instellen",
+            "ChooseService": "Kies Beschikbare service",
+            "Continue": "Doorgaan",
+            "ChooseAvailability": "Kies Beschikbare Dienst",
+            "Duration": "Looptijd",
+            "Hour": "Uur",
+            "Hours": "Uren",
+            "Minutes": "Minuten",
+            "Locally": "plaatselijk",
+            "EventInfoLink": "Evenement Info Link",
+            "TicketPurchaseLink": "Ticket Aankoop Link"
+        },
+        "EventAlreadyClosed": "Dit evenement is al gesloten",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Toevoegen aan agenda?",
+                "prompt": "Wil je dit evenement aan je agenda toevoegen?",
+                "yes": "Ja",
+                "no": "Nee"
+            },
+            "dialog": {
+                "Title": "Evenement toevoegen aan je agenda"
+            }
+        },
+        "ErrorLeaveEndedEvent": "Sorry, maar je kunt het beëindigde evenement niet verlaten"
+    },
+    "recurring": {
+        "dialog": {
+            "justonce": "Deze ene keer",
+            "recurring": "Terugkerend",
+            "startDate": "Begin datum",
+            "endDate": "Einddatum",
+            "justOnce": "Maar een keer",
+            "justOnceWeekly": "Alleen deze week",
+            "justOnceMonthly": "Alleen deze maand"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "gratis evenement",
+            "optional": "Optionele bijdrage",
+            "required": "Vereiste betaling"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Optionele bijdrage",
+            "required": "Vereiste betaling",
+            "paid": "betaald"
+        },
+        "confirmationDialog": {
+            "title": "Betalingsbevestiging",
+            "content": "Dit evenement heeft een optionele bijdrage van {{amount}}.",
+            "button": "Bijdrage leveren"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} maakt nog geen deel uit van het evenement. Wil je ze toevoegen als deelnemer?",
+        "userNotFound": "Gebruiker niet gevonden",
+        "confirmYes": "Ja",
+        "confirmNo": "Nee"
+    },
+    "notifications": {
+        "EventActivityIn": "Evenementactiviteit in {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Terugkerende regels gewijzigd voor evenement {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "uw e-mailabonnementen beheren",
+        "IfUnsubscribe": "Als je je wilt afmelden",
+        "ClickHereToVisitEvent": "Klik hier om het evenement te bezoeken",
+        "Calendars\/reminder": "Evenement &quot;{{{call 'message.getInstruction' 'name'}}&quot; begint over {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Teleconferentie begon",
+            "Ended": "Teleconferentie beëindigd"
+        },
+        "livestream": {
+            "Started": "Livestream gestart",
+            "Ended": "Livestream beëindigd",
+            "ClickToView": "Bekijk het hier."
+        }
+    },
+    "import": {
+        "linkTitle": "Vul dit werkblad in",
+        "fileLabel": "Werkblad uploaden:",
+        "joinEventLabel": "Voeg gebruikers toe aan een willekeurig evenement",
+        "smsText": "Hé, ik heb je zojuist een link gestuurd naar {{communityName}}. Bekijk het alsjeblieft.",
+        "emailSubject": "Heb je net een link gestuurd",
+        "emailBody": "Hé, ik heb je zojuist een uitnodiging gestuurd naar {{communityName}}. Bekijk het alsjeblieft.",
+        "fileNotFound": "Sorry, CSV-bestand niet gevonden.",
+        "fileEmpty": "Sorry, CSV-bestand is leeg.",
+        "fieldNotFound": "Verplicht veld &quot;{{1}}&quot; niet gevonden",
+        "userIdNotFound": "gebruiker bestaat maar id is leeg",
+        "activateUsers": "activatiebericht naar gebruikers sturen?",
+        "taskStreamInvalid": "taakstroom ongeldig",
+        "instructionsEmpty": "taakstroom instructies leeg",
+        "interestsEmpty": "kan geen interesse krijgen",
+        "interestAbsent": "interesse {{1}} niet gevonden",
+        "complete": "Compleet",
+        "errorLine": "regel {{1}}",
+        "errorsTitle": "Er zijn fouten opgetreden",
+        "importOptions": "Opties",
+        "importProgress": "Voortgang",
+        "sampleCSV": "Voorbeeld CSV downloaden",
+        "communityUsers": "Dit is de lijst met community&#39;s",
+        "toMainCommunityToo": "hebben ook betrekking op de hoofdgemeenschap",
+        "ChooseFile": "kies bestand"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Vertegenwoordigt een evenement waaraan mensen kunnen deelnemen",
+            "displayType": "Evenement"
+        },
+        "Calendars\/recurring": {
+            "description": "Gebruikt voor het relateren van streams die bedoeld zijn om periodiek terug te komen",
+            "displayType": "Terugkerende gebeurtenis"
+        }
+    },
+    "services": {
+        "Title": "Diensten",
+        "NewService": {
+            "Title": "Nieuwe beschikbaarheid",
+            "SaveService": "Beschikbaarheid opslaan",
+            "SelectTemplate": "Selecteer Service",
+            "SelectLocation": "Selecteer locatie",
+            "SelectArea": "Selecteer Gebied",
+            "SelectTime": "Beheer tijdsloten",
+            "SelectTimeSlot": "Selecteer een tijdslot",
+            "PeopleMin": "Minimale bezoekers",
+            "PeopleMax": "Maximale bezoekers",
+            "PeopleLabels": "Labels toegestaan",
+            "Next": "De volgende",
+            "Back": "Terug"
+        },
+        "EditService": "Beschikbaarheid bewerken",
+        "SetVisitors": "Bezoekers instellen",
+        "Price": "Prijs",
+        "SelectAction": "Selecteer actie",
+        "OpenProfile": "Open profiel",
+        "RemoveStaff": "Verwijder personeel"
+    },
+    "timeslots": {
+        "AddSlot": "Sleuf toevoegen",
+        "StartTime": "Starttijd",
+        "EndTime": "Eindtijd",
+        "Save": "Sparen",
+        "AddTimeSlot": "Tijdslot toevoegen",
+        "CopyFromDay": "Kopie van dag",
+        "Nearest": "Dichtstbijzijnde",
+        "Today": "Vandaag",
+        "Tomorrow": "Morgen",
+        "AfterTomorrow": "Na morgen"
+    },
+    "availabilities": {
+        "Title": "Beschikbaarheden",
+        "NewAvailability": {
+            "Title": "Nieuwe beschikbaarheid",
+            "SaveAvailability": "Beschikbaarheid opslaan",
+            "SelectTemplate": "Selecteer Service",
+            "SelectLocation": "Selecteer Locatie",
+            "SelectArea": "Selecteer gebied",
+            "SelectTime": "Tijdslots beheren",
+            "SelectTimeSlot": "Selecteer een tijdslot",
+            "PeopleMin": "Minimale bezoekers",
+            "PeopleMax": "Maximaal aantal bezoekers",
+            "PeopleLabels": "Rollen toegestaan",
+            "Next": "Volgende",
+            "Back": "Rug",
+            "Type": "Type",
+            "Weekly": "Wekelijks",
+            "RecurringStartDate": "Terugkerende startdatum",
+            "EndDate": "Einddatum",
+            "SelectTimeSlots": "Selecteer gewenste tijdvakken",
+            "RecurringEndDate": "Terugkerende einddatum",
+            "ScheduleOnlineConference": "Teleconferentie plannen",
+            "SetLivestream": "Plak link naar livestream \/ videoconferentie",
+            "SelectTimeZone": "Selecteer tijdZone"
+        },
+        "EditAvailability": "Beschikbaarheid bewerken",
+        "SetVisitors": "Bezoekers instellen",
+        "Price": "Prijs",
+        "SelectAction": "Selecteer a.u.b. actie",
+        "OpenProfile": "Profiel openen",
+        "RemoveStaff": "Personeel verwijderen",
+        "PleaseSelectTimeSlots": "Selecteer tijdslots",
+        "ExceptionOccurred": "Uitzondering opgetreden",
+        "NotEnoughCreditsToParticipateEvents": "Niet genoeg tegoed om deel te nemen aan {{eventsAmount}} evenementen. Je hebt {{needCredits}} tegoeden nodig. Willen kopen?",
+        "LiveStream": "Livestream",
+        "InviteStaff": "Nodig personeel uit"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Abonneren op Agenda",
+        "copyLinkBelow": "Kopieer onderstaande link:",
+        "goTo": "Ga naar:",
+        "pasteCopiedTo": "Plak de gekopieerde link in het veld &quot;URL van agenda&quot;",
+        "clickAddCalendar": "Klik op de knop &quot;Agenda toevoegen&quot;",
+        "copyLink": "Kopieer link",
+        "tapToCopy": "Tik op de onderstaande knop om de link naar uw klembord te kopiëren",
+        "linkCopied": "Link gekopieerd",
+        "step2": "Link gekopieerd. We staan op het punt Google Agenda te openen. U moet de link in het tekstvak plakken, op &quot;Agenda toevoegen&quot; klikken en het tabblad sluiten (zie onderstaande schermafbeelding)",
+        "calendarAppPreferences": "Open de Voorkeuren in de Agenda-app op uw Mac en stel de Standaard Agenda-app in zoals hieronder weergegeven.",
+        "thenCloseDialog": "Sluit vervolgens dit dialoogvenster om u te abonneren op uw agenda!",
+        "success": "Agenda is succesvol gesynchroniseerd"
+    }
+}

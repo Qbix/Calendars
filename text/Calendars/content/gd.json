@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Faoilleach",
+        "Feb": "Feb",
+        "Mar": "Mhàrr",
+        "Apr": "An Giblean",
+        "May": "A &#39;Chèitean",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Lùnastal",
+        "Sep": "Sep",
+        "Oct": "Oct",
+        "Nov": "Nov",
+        "Dec": "Dùbhlachd"
+    },
+    "monthsLong": {
+        "Jan": "Am Faoilleach",
+        "Feb": "An Gearran",
+        "Mar": "Am Màrt",
+        "Apr": "A &#39;Ghiblean",
+        "May": "A &#39;Chèitean",
+        "Jun": "An t-Ògmhios",
+        "Jul": "An t-Iuchar",
+        "Aug": "An Lùnastal",
+        "Sep": "An t-Sultain",
+        "Oct": "An Dàmhair",
+        "Nov": "An t-Samhain",
+        "Dec": "An Dùbhlachd"
+    },
+    "weekdays": {
+        "Sun": "ghrian",
+        "Mon": "Mon",
+        "Tue": "Dimàirt",
+        "Wed": "Dòs",
+        "Thu": "Thu",
+        "Fri": "Fri",
+        "Sat": "Sat"
+    },
+    "weekdaysLong": {
+        "Sun": "Didòmhnaich",
+        "Mon": "Diluain",
+        "Tue": "Dimàirt",
+        "Wed": "Diciadain",
+        "Thu": "Diardaoin",
+        "Fri": "Dihaoine",
+        "Sat": "Disathairne"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Dealbhaich Tachartas Ùr"
+        },
+        "tool": {
+            "HostedBy": "Air aoigheachd le {{name}}",
+            "Name": "Ainm",
+            "AreYouIn": "A bheil thu a-staigh?",
+            "Yes": "tha",
+            "No": "Chan eil",
+            "Ok": "Ceart gu leòr",
+            "Cancel": "Sguir dheth",
+            "Maybe": "&#39;S dòcha",
+            "Conversation": "Còmhradh",
+            "Promote": "Brosnaich an tachartas seo",
+            "Reminders": "Cuimhneachain",
+            "RemindersLabel": "Tha mi airson fios fhaighinn mu thachartas ann an:",
+            "MoreInfo": "Tuilleadh fiosrachaidh",
+            "Registration": "Clàradh",
+            "SetReminders": "Feuch an cuir thu cuimhneachain",
+            "ReservationFee": "Cìs Glèidhidh",
+            "AddParticipants": "Cuir Com-pàirtichean ris",
+            "ManageReservation": "Stiùirich Glèidheadh",
+            "UpdateFutureReservations": "A bheil thu cuideachd airson a h-uile tèarmann san àm ri teachd ùrachadh san aon dòigh?",
+            "RecurringAdmin": "Roghainnean ath-chuairteachaidh",
+            "MakeReservation": "Dèan glèidheadh",
+            "StartLiveStream": "Cliog gu Live Stream",
+            "LiveStreamEnded": "Tha sruth beò air tighinn gu crìch",
+            "ClickToViewRecording": "cliog gus an clàradh fhaicinn",
+            "Checkin": "Sgan còdan luchd-frithealaidh",
+            "Myqr": "Dèan clàradh",
+            "CloseEvent": {
+                "button": "Sguir an Tachartas",
+                "confirm": {
+                    "text": {
+                        "Cancel": "A bheil thu cinnteach gu bheil thu airson an tachartas seo a chuir dheth?",
+                        "Participant": "Tha 1 com-pàirtiche san tachartas seo",
+                        "Participants": "Tha {{count}} com-pàirtichean san tachartas seo",
+                        "Recurring": "Tha an tachartas seo a-rithist. A bheil thu airson a h-uile suidheachadh san àm ri teachd a chuir dheth cuideachd?"
+                    },
+                    "trip": {
+                        "Cancel": "A bheil thu airson an turas agad {{tripDirection}} a chur dheth an tachartas seo cuideachd?",
+                        "Passengers": "Tha {{passengerCount}} luchd-siubhail an urra riut fhèin.",
+                        "Title": "Dùin Turas"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "BHO",
+                        "to": "gu",
+                        "from": "bho"
+                    }
+                }
+            },
+            "Calendar": "Mìosachan",
+            "Interests": "Ùidhean",
+            "Directions": "Stiùiridhean",
+            "TitleOfEvent": "Tiotal an tachartais:",
+            "OpenTo": "Fosgailte do",
+            "GoingTo": "bidh aig",
+            "NotGoingTo": "cha bhi aig",
+            "MaybeGoingTo": "&#39;s dòcha aig",
+            "AdminDontPay": "Chan fheum admin pàigheadh",
+            "PublisherDontPay": "Chan fheum am foillsichear pàigheadh",
+            "EmptyList": "Liosta falamh",
+            "NeedToPayCredits": "Feum air pàigheadh: <span>{{amount}} creideas<\/span>",
+            "PleaseJoinParticipants": "Feuch an tig thu còmhla ri {{participant}}",
+            "YouReservingPlace": "Bidh thu a’ glèidheadh d’ àite.",
+            "SelectIncludesToAdd": "Tagh aon {{TypeDisplayPlural}} no barrachd airson a chur ris:",
+            "YouHaveNotRegisteredAnyIncluded": "Chan eil thu air {{TypeDisplayPlural}} sam bith a chlàradh fhathast",
+            "Proceed": "Lean air adhart",
+            "MakeChanges": "Sàbhail na h-atharraichean agam",
+            "CancelReservation": "Sguir an glèidheadh gu lèir",
+            "Total": "Iomlan",
+            "RequiredRelatedParticipants": "Feumaidh an tachartas seo com-pàirtichean: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Deasaich cothrom air &quot;{{title}}&quot; gus na roghainnean ath-chuairteachaidh ùrachadh"
+        },
+        "composer": {
+            "SetLocation": "Suidhich mo shuidheachadh",
+            "SetInfoLink": "Suidhich Ceangal gu fiosrachadh a bharrachd",
+            "ChooseAvailability": "Tagh Seirbheis a tha ri fhaotainn",
+            "ChooseActivity": "Tagh Gnìomh",
+            "ChoosePublisher": "Tagh Foillsichear",
+            "Day": "Latha",
+            "Starting": "A&#39; tòiseachadh",
+            "Duration": "Fad",
+            "Hour": "Uair",
+            "Hours": "Uairean",
+            "Minutes": "Mionaidean",
+            "Ending": "a&#39; criochnachadh",
+            "People": "Daoine",
+            "Share": "Roinn",
+            "Continue": "Lean air adhart",
+            "Recurring": "Ath-chuairteachadh",
+            "RecurringTitle": "Làithean ath-chuairteachaidh",
+            "Daily": "Gach latha",
+            "Weekly": "Seachdaineach",
+            "Monthly": "Mìosail",
+            "SelectLocation": "Feuch an tagh thu àite an toiseach.",
+            "eventType": "Seòrsa Tachartas",
+            "EditTitle": "Smaoinich air tiotal inntinneach...",
+            "SetTitle": "Feuch an cuir thu tiotal an tachartais",
+            "ScheduleOnlineConference": "Clàraich Co-labhairt Air-loidhne",
+            "SOCDescription": "Feuch an sònraich thu àm tòiseachaidh is crìochnachaidh co-labhairt. Bidh ceangal fèin-ghluasadach aig a h-uile duine a bhios a’ tadhal air an tachartas san ùine seo gu co-labhairt air-loidhne.",
+            "EndDate": "Crìochnaich",
+            "location": {
+                "Title": "Suidhich an t-àite agad"
+            },
+            "interest": {
+                "Title": "Tagh Gnìomh",
+                "Filter": "Lorg ùidhean ..."
+            },
+            "SetLivestream": "Cuir a-steach ceangal gu sruth-beò \/ co-labhairt bhidio"
+        },
+        "EventAlreadyClosed": "Tha an tachartas seo dùinte mu thràth",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Cuir ris a&#39; Mhìosachan?",
+                "prompt": "Am bu toil leat an tachartas seo a chur ris a’ mhìosachan agad?",
+                "yes": "tha",
+                "no": "Chan eil"
+            },
+            "dialog": {
+                "Title": "Cuir Tachartas ris a’ Mhìosachan agad"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Ri fhaotainn",
+        "NewAvailability": {
+            "Title": "Ri fhaighinn ùr",
+            "SaveAvailability": "Sàbhail ri fhaotainn",
+            "SelectTemplate": "Feuch an tagh thu Seirbheis",
+            "SelectLocation": "Feuch an tagh thu Àite",
+            "SelectArea": "Feuch an tagh thu Area",
+            "Type": "Seòrsa",
+            "Weekly": "Seachdaineach",
+            "RecurringStartDate": "Ceann-latha tòiseachaidh ath-chuairteachaidh",
+            "EndDate": "Ceann-latha crìochnachaidh",
+            "SelectTime": "Stiùirich Slots Ùine",
+            "SelectTimeSlot": "Tagh clàr-ama",
+            "SelectTimeSlots": "Tagh sliotan ùine a tha thu ag iarraidh",
+            "PeopleMin": "Luchd-tadhail as ìsle",
+            "PeopleMax": "Luchd-tadhail as àirde",
+            "PeopleLabels": "Bileagan ceadaichte",
+            "Next": "Air adhart",
+            "Back": "Air ais"
+        },
+        "EditAvailability": "Deasaich ri fhaotainn",
+        "SetVisitors": "Suidhich Luchd-tadhail",
+        "Price": "Prìs",
+        "SelectAction": "Feuch an tagh thu gnìomh",
+        "OpenProfile": "Fosgail pròifil",
+        "RemoveStaff": "Thoir air falbh luchd-obrach",
+        "PleaseSelectTimeSlots": "Feuch an tagh thu slotan ùine",
+        "ExceptionOccurred": "Thachair eisgeachd",
+        "NotEnoughCreditsToParticipateEvents": "Chan eil creideasan gu leòr ann airson com-pàirt a ghabhail ann an {{eventsAmount}} tachartasan. Feumaidh tu {{needCredits}} creideas. Ag iarraidh a cheannach?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Ceann-latha tòiseachaidh",
+            "endDate": "Ceann-latha crìochnachaidh",
+            "justOnce": "Dìreach aon turas",
+            "justOnceWeekly": "An t-seachdain seo a-mhàin",
+            "justOnceMonthly": "Am mìos seo a-mhàin",
+            "recurring": "Ath-chuairteachadh"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Tachartas an-asgaidh",
+            "optional": "Tabhartas roghainneil",
+            "required": "Pàigheadh a dhìth"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Tabhartas roghainneil",
+            "required": "Pàigheadh a dhìth",
+            "paid": "pàighte"
+        },
+        "confirmationDialog": {
+            "title": "Dearbhadh pàighidh",
+            "content": "Tha tabhartas roghnach de {{amount}} aig an tachartas seo.",
+            "button": "Cur ris"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "Chan eil {{1}} mar phàirt den tachartas fhathast. A bheil thu airson an cur ris mar chom-pàirtiche?",
+        "userNotFound": "Cha deach cleachdaiche a lorg",
+        "confirmYes": "tha",
+        "confirmNo": "Chan eil"
+    },
+    "notifications": {
+        "EventActivityIn": "Gnìomh tachartais ann an {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Riaghailtean ath-chuairteachaidh air an atharrachadh airson tachartas {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "stiùir na fo-sgrìobhaidhean post-d agad",
+        "IfUnsubscribe": "Ma tha thu airson crìoch a chur air an fho-sgrìobhadh",
+        "ClickHereToVisitEvent": "Feuch an cliog thu an seo gus tadhal air tachartas",
+        "Calendars\/reminder": "Tòisichidh tachartas &quot;{{{call 'message.getInstruction' 'name'}}&quot; ann an {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Lìon a-mach an spreadsheet seo",
+        "fileLabel": "Luchdaich suas spreadsheet:",
+        "importOptions": "Roghainnean",
+        "importProgress": "Adhartas",
+        "sampleCSV": "Luchdaich a-nuas CSV airson samp",
+        "joinEventLabel": "Thig còmhla ri luchd-cleachdaidh gu tachartas air thuaiream",
+        "smsText": "Hey, tha mi dìreach air ceangal gu {{communityName}} a chuir thugad. Feuch an toir thu sùil air.",
+        "emailSubject": "Dìreach air ceangal a chuir thugad",
+        "emailBody": "Hey, tha mi dìreach air cuireadh a chuir thugad gu {{communityName}}. Feuch an toir thu sùil air.",
+        "fileNotFound": "Duilich, cha deach am faidhle CSV a lorg.",
+        "fileEmpty": "Duilich, tha am faidhle CSV falamh.",
+        "fieldNotFound": "Raon a tha a dhìth &quot;{{1}}&quot; cha deach a lorg",
+        "userIdNotFound": "cleachdaiche ann ach id falamh",
+        "activateUsers": "cuir teachdaireachd gnìomhachaidh gu luchd-cleachdaidh?",
+        "taskStreamInvalid": "sruth-obrach neo-dhligheach",
+        "instructionsEmpty": "stiùireadh sruth-obrach falamh",
+        "interestsEmpty": "chan urrainn dha ùidhean fhaighinn",
+        "interestAbsent": "ùidh {{1}} cha deach a lorg",
+        "complete": "Crìochnaich",
+        "errorLine": "loidhne {{1}}",
+        "errorsTitle": "Thachair mearachdan",
+        "communityUsers": "Seo liosta choimhearsnachdan"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "A’ riochdachadh tachartas anns am faod daoine pàirt a ghabhail",
+            "displayType": "Tachartas"
+        },
+        "Calendars\/recurring": {
+            "description": "Air a chleachdadh airson sruthan ceangail a thathar an dùil a thighinn air ais bho àm gu àm",
+            "displayType": "Tachartas Ath-chuairteachaidh"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Cuir Slot",
+        "StartTime": "Ùine tòiseachaidh",
+        "EndTime": "Ùine Crìochnachaidh",
+        "Save": "Sàbhail",
+        "AddTimeSlot": "Cuir Slot Ùine ris",
+        "CopyFromDay": "Dèan lethbhreac bhon latha",
+        "Nearest": "As fhaisge",
+        "Today": "An-diugh",
+        "Tomorrow": "A-màireach",
+        "AfterTomorrow": "Às deidh a-màireach"
+    }
+}

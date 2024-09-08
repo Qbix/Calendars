@@ -1,0 +1,36 @@
+<div class="Calendars_service_browser">
+	<div class="Calendars_step Calendars_service_browser_availability">
+		<button class="Q_button Streams_aspect_service Calendars_service_browser_availability_button">
+			{{event.composer.ChooseAvailability}}
+		</button>
+		<input type="hidden" class="Calendars_composer_step">
+	</div>
+	<div class="Calendars_step Calendars_service_browser_location">
+		<div class="Calendars_service_browser_location_address"></div>
+		<input type="hidden" class="Calendars_composer_step" value="true">
+	</div>
+	<div class="Calendars_step Calendars_service_browser_livestream">
+		{{availabilities.LiveStream}}
+		<input type="hidden" class="Calendars_composer_step" value="true">
+	</div>
+	<div class="Calendars_step Calendars_service_browser_payment">
+		<div class="Calendars_service_browser_payment_info"></div>
+		<input type="hidden" class="Calendars_composer_step" value="true">
+	</div>
+	<div class="Calendars_step Calendars_service_browser_privacy">
+		<div class="Calendars_service_browser_peopleMin"><span>{{availabilities.NewAvailability.PeopleMin}}: </span> <span class="value">{{peopleMin}}</span></div>
+		<div class="Calendars_service_browser_peopleMax"><span>{{availabilities.NewAvailability.PeopleMax}}: </span> <span class="value">{{peopleMax}}</span></div>
+		<div class="Calendars_service_browser_labels"><span>{{availabilities.NewAvailability.PeopleLabels}}: </span> <span class="value">{{peopleLabels}}</span></div>
+		<input type="hidden" class="Calendars_composer_step" value="true">
+	</div>
+
+	<div class="Calendars_step Calendars_service_browser_time">
+		<h3>{{availabilities.NewAvailability.SelectTimeSlots}}:</h3>
+		<div class="Calendars_recurring_dialog_controls"><div data-value="justonce">{{recurring.dialog.justOnce}}</div><div data-value="recurring" class="Q_selected">{{recurring.dialog.recurring}}</div></div>
+		{{{tool "Calendars/timeslots" mode="select" showNearest=true multipleSelect=multipleSelect}}}
+		<input type="hidden" class="Calendars_composer_step" value="">
+	</div>
+	<div class="Q_buttons Calendars_step">
+		<button class="Q_button Q_aspect_when Calendars_service_browser_share">{{event.composer.Continue}}</button>
+	</div>
+</div>

@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Feb",
+        "Mar": "Mar",
+        "Apr": "Jul",
+        "May": "MEY",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Aog",
+        "Sep": "Sep",
+        "Oct": "nov",
+        "Nov": "oct",
+        "Dec": "Dec"
+    },
+    "monthsLong": {
+        "Jan": "Janoary",
+        "Feb": "février",
+        "Mar": "ny diabe",
+        "Apr": "Aprily",
+        "May": "MEY",
+        "Jun": "Jona",
+        "Jul": "Jolay",
+        "Aug": "Aogositra",
+        "Sep": "septembre",
+        "Oct": "Oktobra",
+        "Nov": "Novambra",
+        "Dec": "Desambra"
+    },
+    "weekdays": {
+        "Sun": "Masoandro",
+        "Mon": "Mon",
+        "Tue": "Talata",
+        "Wed": "Wed",
+        "Thu": "Thu",
+        "Fri": "Thu",
+        "Sat": "Sat"
+    },
+    "weekdaysLong": {
+        "Sun": "ALAHADY",
+        "Mon": "alatsinainy",
+        "Tue": "talata",
+        "Wed": "Alarobia",
+        "Thu": "Alakamisy",
+        "Fri": "ZOMA",
+        "Sat": "Asabotsy"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Manomana hetsika vaovao"
+        },
+        "tool": {
+            "HostedBy": "Nampiantranoin&#39;i {{name}}",
+            "Name": "Anarana",
+            "AreYouIn": "Tafiditra ve ianao?",
+            "Yes": "ENY",
+            "No": "tsy misy",
+            "Ok": "Ok",
+            "Cancel": "hanafoana",
+            "Maybe": "Angamba",
+            "Conversation": "RESAKA",
+            "Promote": "Amporisiho ity hetsika ity",
+            "Reminders": "FAMPAHATSIAHIVAN&#39;ANDRIAMANITRA?",
+            "RemindersLabel": "Te-hampandrenesina momba ny hetsika iray ao amin&#39;ny:",
+            "MoreInfo": "Fanazavana fanampiny",
+            "Registration": "fisoratana anarana",
+            "SetReminders": "Mametraha fampahatsiahivana azafady",
+            "ReservationFee": "Saram-pamandrihana",
+            "AddParticipants": "Ampio mpandray anjara",
+            "ManageReservation": "Mitantana famandrihana",
+            "UpdateFutureReservations": "Te hanavao ny famandrihan-toerana rehetra ho avy toy izany koa ve ianao?",
+            "RecurringAdmin": "Fikirana miverimberina",
+            "MakeReservation": "Manaova famandrihana",
+            "StartLiveStream": "Tsindrio ny Live Stream",
+            "LiveStreamEnded": "Nifarana ny fampitana mivantana",
+            "ClickToViewRecording": "tsindrio raha hijery ny firaketana",
+            "Checkin": "Scan ny kaody mpanatrika",
+            "Myqr": "Enregistrement",
+            "CloseEvent": {
+                "button": "Fanafoanana ny hetsika",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Tena te hanafoana an&#39;ity hetsika ity ve ianao?",
+                        "Participant": "Misy mpandray anjara 1 amin&#39;ity hetsika ity",
+                        "Participants": "Misy {{count}} mpandray anjara amin&#39;ity hetsika ity",
+                        "Recurring": "Miverimberina ity hetsika ity. Tianao hofoanana koa ve ny tranga ho avy rehetra?"
+                    },
+                    "trip": {
+                        "Cancel": "Te-hanafoana koa ny dianao {{tripDirection}} ity hetsika ity?",
+                        "Passengers": "Misy {{passengerCount}} mpandeha miantehitra aminao.",
+                        "Title": "Akatona ny dia"
+                    },
+                    "directions": {
+                        "TO": "ny",
+                        "FROM": "From",
+                        "to": "ny",
+                        "from": "From"
+                    }
+                }
+            },
+            "Calendar": "Calendar",
+            "Interests": "mahaliana",
+            "Directions": "Toro-lalana",
+            "TitleOfEvent": "Lohatenin&#39;ny hetsika:",
+            "OpenTo": "Misokatra amin&#39;ny",
+            "GoingTo": "dia ho amin&#39;ny",
+            "NotGoingTo": "tsy ho any",
+            "MaybeGoingTo": "mety ho any",
+            "AdminDontPay": "Tsy mila mandoa vola ny Admin",
+            "PublisherDontPay": "Tsy mila mandoa vola ny mpanonta",
+            "EmptyList": "Lisitra foana",
+            "NeedToPayCredits": "Mila mandoa: <span>{{amount}} crédit<\/span>",
+            "PleaseJoinParticipants": "Midira {{participant}} azafady",
+            "YouReservingPlace": "Hamandrika ny toeranao ianao.",
+            "SelectIncludesToAdd": "Mifidiana iray na maromaro {{TypeDisplayPlural}} hanampy:",
+            "YouHaveNotRegisteredAnyIncluded": "Tsy mbola nisoratra anarana {{TypeDisplayPlural}} ianao",
+            "Proceed": "ivoahan&#39;ny",
+            "MakeChanges": "Vonjeo ny fiovanako",
+            "CancelReservation": "Foana ny famandrihana manontolo",
+            "Total": "sokajy",
+            "RequiredRelatedParticipants": "Mitaky mpandray anjara ity hetsika ity: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Azafady, ovay ny fisian&#39;ny &quot;{{title}}&quot; hanavao ny fanovana miverimberina"
+        },
+        "composer": {
+            "SetLocation": "Apetraho ny toerana misy ahy",
+            "SetInfoLink": "Mametraha Rohy ho fampahalalana fanampiny",
+            "ChooseAvailability": "Mifidiana Service Available",
+            "ChooseActivity": "Misafidiana hetsika iray",
+            "ChoosePublisher": "Mifidiana Mpanonta",
+            "Day": "Andro",
+            "Starting": "manomboka",
+            "Duration": "Faharetana",
+            "Hour": "Ora",
+            "Hours": "ORA",
+            "Minutes": "minitra",
+            "Ending": "ampy",
+            "People": "People",
+            "Share": "anjara",
+            "Continue": "hanohy",
+            "Recurring": "miverimberina",
+            "RecurringTitle": "Andro miverimberina",
+            "Daily": "isan&#39;andro",
+            "Weekly": "isan-kerinandro",
+            "Monthly": "Isam-bolana",
+            "SelectLocation": "Mifidiana toerana iray aloha.",
+            "eventType": "Karazana hetsika",
+            "EditTitle": "Mieritrereta lohateny mahaliana...",
+            "SetTitle": "Mametraha lohatenin&#39;ny hetsika azafady",
+            "ScheduleOnlineConference": "Fandaharana fihaonambe an-tserasera",
+            "SOCDescription": "Farito azafady ny fotoana fanombohana sy fiafaran&#39;ny fihaonambe. Ny olona rehetra mitsidika ny hetsika mandritra io vanim-potoana io dia hifandray amin&#39;ny fihaonambe an-tserasera.",
+            "EndDate": "Tapitra",
+            "location": {
+                "Title": "Ovao ho ny toerana misy anao"
+            },
+            "interest": {
+                "Title": "Misafidiana hetsika iray",
+                "Filter": "Fikarohana mahaliana ..."
+            },
+            "SetLivestream": "Apetaho ny rohy mankany amin&#39;ny streaming mivantana \/ fihaonambe video"
+        },
+        "EventAlreadyClosed": "Efa nikatona ity hetsika ity",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Ampio amin&#39;ny kalandrie?",
+                "prompt": "Te-hanampy ity hetsika ity amin&#39;ny kalandrieo ve ianao?",
+                "yes": "ENY",
+                "no": "tsy misy"
+            },
+            "dialog": {
+                "Title": "Ampio ny hetsika amin&#39;ny kalandrie"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Availability",
+        "NewAvailability": {
+            "Title": "Availability vaovao",
+            "SaveAvailability": "Save Availability",
+            "SelectTemplate": "Safidio azafady Service",
+            "SelectLocation": "Mifidiana toerana azafady",
+            "SelectArea": "Mifidiana faritra azafady",
+            "Type": "Type",
+            "Weekly": "isan-kerinandro",
+            "RecurringStartDate": "Daty fanombohana miverimberina",
+            "EndDate": "Daty famaranana",
+            "SelectTime": "Mitantana Time Slots",
+            "SelectTimeSlot": "Mifidiana toerana iray",
+            "SelectTimeSlots": "Safidio ny fe-potoana tianao",
+            "PeopleMin": "Vahiny kely indrindra",
+            "PeopleMax": "Maximum mpitsidika",
+            "PeopleLabels": "Etikety azo atao",
+            "Next": "Manaraka",
+            "Back": "indray"
+        },
+        "EditAvailability": "Ahitsio Availability",
+        "SetVisitors": "Mametraha mpitsidika",
+        "Price": "Vidiny",
+        "SelectAction": "Mifidiana hetsika azafady",
+        "OpenProfile": "Sokafy ny mombamomba",
+        "RemoveStaff": "Esory ny mpiasa",
+        "PleaseSelectTimeSlots": "Mifidiana toerana misy fotoana azafady",
+        "ExceptionOccurred": "Nisy ny fanavahana",
+        "NotEnoughCreditsToParticipateEvents": "Tsy ampy ny crédit handray anjara amin&#39;ny hetsika {{eventsAmount}}. Mila crédit {{needCredits}} ianao. Te hividy?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Daty nanombohana",
+            "endDate": "Daty famaranana",
+            "justOnce": "Indray mandeha ihany",
+            "justOnceWeekly": "Amin&#39;ity herinandro ity ihany",
+            "justOnceMonthly": "Amin&#39;ity volana ity ihany",
+            "recurring": "miverimberina"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Hetsika maimaim-poana",
+            "optional": "Fandraisan&#39;anjara azo atao",
+            "required": "Fandoavana takina"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Fandraisan&#39;anjara azo atao",
+            "required": "Fandoavana takina",
+            "paid": "karama"
+        },
+        "confirmationDialog": {
+            "title": "Fanamafisana ny fandoavam-bola",
+            "content": "Ity hetsika ity dia manana fandraisan&#39;anjaran&#39;ny {{amount}}.",
+            "button": "Mandray anjara"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} dia tsy mbola anisan&#39;ny hetsika. Te-hanampy azy ireo ho mpandray anjara ve ianao?",
+        "userNotFound": "Tsy hita ny mpampiasa",
+        "confirmYes": "ENY",
+        "confirmNo": "tsy misy"
+    },
+    "notifications": {
+        "EventActivityIn": "Hetsika hetsika tamin&#39;ny {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Niova ny fitsipika miverimberina momba ny hetsika {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "tantano ny famandrihanao mailaka",
+        "IfUnsubscribe": "Raha te hiala misoratra anarana ianao",
+        "ClickHereToVisitEvent": "Tsindrio eto raha hitsidika hetsika",
+        "Calendars\/reminder": "Ny hetsika &quot;{{{call 'message.getInstruction' 'name'}}&quot; dia hanomboka amin&#39;ny {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Fenoy ity Spreadsheet ity",
+        "fileLabel": "Alefaso ny takelaka:",
+        "importOptions": "FANDIKANA",
+        "importProgress": "fandrosoana",
+        "sampleCSV": "Misintona santionany CSV",
+        "joinEventLabel": "Ampidiro amin&#39;ny hetsika kisendrasendra ny mpampiasa",
+        "smsText": "Hey, nandefa rohy mankany amin&#39;ny {{communityName}} ho anao aho. Azafady, jereo izany.",
+        "emailSubject": "Nandefa rohy fotsiny ianao",
+        "emailBody": "Hey, vao avy nandefa fanasana ho anao aho {{communityName}}. Mba jereo kely.",
+        "fileNotFound": "Miala tsiny fa tsy hita ny rakitra CSV.",
+        "fileEmpty": "Miala tsiny, banga ny rakitra CSV.",
+        "fieldNotFound": "Tsy hita ny saha ilaina &quot;{{1}}&quot;.",
+        "userIdNotFound": "misy mpampiasa fa id foana",
+        "activateUsers": "mandefa hafatra fampahavitrihana amin&#39;ny mpampiasa?",
+        "taskStreamInvalid": "tsy manan-kery ny rindranasa asa",
+        "instructionsEmpty": "banga ny torolalana amin&#39;ny fandehanana asa",
+        "interestsEmpty": "tsy mahazo tombontsoa",
+        "interestAbsent": "tsy hita ny fahalianana {{1}}.",
+        "complete": "feno",
+        "errorLine": "tsipika {{1}}",
+        "errorsTitle": "Nisy lesoka",
+        "communityUsers": "Ity ny lisitry ny vondrom-piarahamonina"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Maneho hetsika iray ahafahan&#39;ny olona mandray anjara",
+            "displayType": "Event"
+        },
+        "Calendars\/recurring": {
+            "description": "Ampiasaina amin&#39;ny fifandraisana amin&#39;ny renirano izay natao hiverimberina tsindraindray",
+            "displayType": "Hetsika miverimberina"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Ampio Slot",
+        "StartTime": "Ora fanombohana",
+        "EndTime": "Fotoana farany",
+        "Save": "afa-tsy",
+        "AddTimeSlot": "Ampio ny Time Slot",
+        "CopyFromDay": "Dika mitovy amin&#39;ny andro",
+        "Nearest": "akaiky indrindra",
+        "Today": "ankehitriny",
+        "Tomorrow": "rahampitso",
+        "AfterTomorrow": "Aorian&#39;ny ampitso"
+    }
+}

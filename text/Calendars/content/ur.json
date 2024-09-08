@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "جنوری",
+        "Feb": "فروری",
+        "Mar": "مارچ",
+        "Apr": "اپریل",
+        "May": "مئی",
+        "Jun": "جون",
+        "Jul": "جولائی",
+        "Aug": "اگست",
+        "Sep": "ستمبر",
+        "Oct": "اکتوبر",
+        "Nov": "نومبر",
+        "Dec": "دسمبر"
+    },
+    "monthsLong": {
+        "Jan": "جنوری",
+        "Feb": "فروری",
+        "Mar": "مارچ",
+        "Apr": "اپریل",
+        "May": "مئی",
+        "Jun": "جون",
+        "Jul": "جولائی",
+        "Aug": "اگست",
+        "Sep": "ستمبر",
+        "Oct": "اکتوبر",
+        "Nov": "نومبر",
+        "Dec": "دسمبر"
+    },
+    "weekdays": {
+        "Sun": "سورج",
+        "Mon": "پیر",
+        "Tue": "منگل",
+        "Wed": "بدھ",
+        "Thu": "جمعرات",
+        "Fri": "جمعہ",
+        "Sat": "سات"
+    },
+    "weekdaysLong": {
+        "Sun": "اتوار",
+        "Mon": "پیر",
+        "Tue": "منگل",
+        "Wed": "بدھ",
+        "Thu": "جمعرات",
+        "Fri": "جمعہ",
+        "Sat": "ہفتہ"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "نئے ایونٹ کا منصوبہ بنائیں"
+        },
+        "tool": {
+            "HostedBy": "{{name}} کی میزبانی",
+            "Name": "نام",
+            "AreYouIn": "کیا آپ اندر ہیں؟",
+            "Yes": "جی ہاں",
+            "No": "نہیں",
+            "Ok": "ٹھیک ہے",
+            "Cancel": "منسوخ کریں۔",
+            "Maybe": "شاید",
+            "Conversation": "بات چیت",
+            "Promote": "اس تقریب کو فروغ دیں۔",
+            "Reminders": "یاد دہانیاں",
+            "RemindersLabel": "میں اس واقعہ کے بارے میں مطلع کرنا چاہتا ہوں:",
+            "MoreInfo": "مزید معلومات",
+            "Registration": "اندراج",
+            "SetReminders": "براہ کرم یاد دہانیاں ترتیب دیں۔",
+            "ReservationFee": "ریزرویشن فیس",
+            "AddParticipants": "شرکاء کو شامل کریں۔",
+            "ManageReservation": "ریزرویشن کا انتظام کریں۔",
+            "UpdateFutureReservations": "کیا آپ بھی مستقبل کے تمام تحفظات کو اسی طرح اپ ڈیٹ کرنا چاہتے ہیں؟",
+            "RecurringAdmin": "بار بار چلنے والی ترتیبات",
+            "MakeReservation": "ریزرویشن کریں۔",
+            "StartLiveStream": "لائیو سٹریم کے لیے کلک کریں۔",
+            "LiveStreamEnded": "لائیو سلسلہ ختم ہو گیا ہے۔",
+            "ClickToViewRecording": "ریکارڈنگ دیکھنے کے لیے کلک کریں۔",
+            "Checkin": "شرکاء کوڈز کو اسکین کریں۔",
+            "Myqr": "چیک ان",
+            "CloseEvent": {
+                "button": "تقریب منسوخ کریں۔",
+                "confirm": {
+                    "text": {
+                        "Cancel": "کیا آپ واقعی اس ایونٹ کو منسوخ کرنا چاہتے ہیں؟",
+                        "Participant": "اس ایونٹ میں 1 شریک ہے۔",
+                        "Participants": "اس ایونٹ میں {{count}} شرکاء ہیں۔",
+                        "Recurring": "یہ واقعہ مکرر ہو رہا ہے۔ کیا آپ اس کے مستقبل کے تمام واقعات کو بھی منسوخ کرنا چاہتے ہیں؟"
+                    },
+                    "trip": {
+                        "Cancel": "کیا آپ اپنا ٹرپ {{tripDirection}} اس ایونٹ کو بھی منسوخ کرنا چاہتے ہیں؟",
+                        "Passengers": "آپ پر بھروسہ کرنے والے {{passengerCount}} مسافر ہیں۔",
+                        "Title": "ٹرپ بند کریں۔"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "سے",
+                        "to": "کو",
+                        "from": "سے"
+                    }
+                }
+            },
+            "Calendar": "کیلنڈر",
+            "Interests": "دلچسپیاں",
+            "Directions": "ہدایات",
+            "TitleOfEvent": "تقریب کا عنوان:",
+            "OpenTo": "کے لئے کھلا",
+            "GoingTo": "پر ہو گا",
+            "NotGoingTo": "پر نہیں ہو گا",
+            "MaybeGoingTo": "پر ہو سکتا ہے",
+            "AdminDontPay": "ایڈمن کو ادائیگی کرنے کی ضرورت نہیں ہے۔",
+            "PublisherDontPay": "ناشر کو ادائیگی کرنے کی ضرورت نہیں ہے۔",
+            "EmptyList": "خالی فہرست",
+            "NeedToPayCredits": "ادائیگی کرنے کی ضرورت ہے: <span>{{amount}} کریڈٹس<\/span>",
+            "PleaseJoinParticipants": "براہ کرم {{participant}} میں شامل ہوں",
+            "YouReservingPlace": "آپ اپنی جگہ محفوظ کر لیں گے۔",
+            "SelectIncludesToAdd": "شامل کرنے کے لیے ایک یا زیادہ {{TypeDisplayPlural}} کو منتخب کریں:",
+            "YouHaveNotRegisteredAnyIncluded": "آپ نے ابھی تک کوئی {{TypeDisplayPlural}} رجسٹر نہیں کیا ہے۔",
+            "Proceed": "آگے بڑھو",
+            "MakeChanges": "میری تبدیلیاں محفوظ کریں۔",
+            "CancelReservation": "پوری بکنگ منسوخ کریں۔",
+            "Total": "کل",
+            "RequiredRelatedParticipants": "اس ایونٹ کے لیے شرکاء کی ضرورت ہے: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "بار بار چلنے والی ترتیبات کو اپ ڈیٹ کرنے کے لیے براہ کرم دستیابی &quot;{{title}}&quot; میں ترمیم کریں۔",
+            "Presentation": "پریزنٹیشن",
+            "YouAreNotParticipated": "آپ تقریب کے شریک نہیں ہیں۔",
+            "LiveStreamStarted": "لائیو سلسلہ شروع ہو گیا ہے۔",
+            "WebRTCStarted": "ٹیلی کانفرنس شروع ہوئی۔",
+            "WebRTCEnded": "ٹیلی کانفرنس ختم ہوئی۔"
+        },
+        "composer": {
+            "SetLocation": "میرا مقام سیٹ کریں۔",
+            "SetInfoLink": "اضافی معلومات کے لیے لنک سیٹ کریں۔",
+            "ChooseAvailability": "دستیاب سروس کا انتخاب کریں۔",
+            "ChooseActivity": "ایک سرگرمی کا انتخاب کریں۔",
+            "ChoosePublisher": "پبلیشر کا انتخاب کریں۔",
+            "Day": "دن",
+            "Starting": "شروع ہو رہا ہے۔",
+            "Duration": "دورانیہ",
+            "Hour": "گھنٹہ",
+            "Hours": "گھنٹے",
+            "Minutes": "منٹ",
+            "Ending": "ختم ہونے والا",
+            "People": "لوگ",
+            "Share": "بانٹیں",
+            "Continue": "جاری رہے",
+            "Recurring": "بار بار چلنے والا",
+            "RecurringTitle": "بار بار چلنے والے دن",
+            "Daily": "روزانہ",
+            "Weekly": "ہفتہ وار",
+            "Monthly": "ماہانہ",
+            "SelectLocation": "براہ کرم پہلے ایک مقام منتخب کریں۔",
+            "eventType": "واقعہ کی قسم",
+            "EditTitle": "ایک دلچسپ عنوان کے بارے میں سوچو...",
+            "SetTitle": "براہ کرم ایونٹ کا عنوان سیٹ کریں۔",
+            "ScheduleOnlineConference": "آن لائن کانفرنس کا شیڈول بنائیں",
+            "SOCDescription": "براہ کرم کانفرنس کے آغاز اور اختتامی وقت کی وضاحت کریں۔ ہر وہ شخص جو اس وقت کے دوران ایونٹ کا دورہ کرے گا وہ خود بخود آن لائن کانفرنس سے جڑ جائے گا۔",
+            "EndDate": "ختم",
+            "location": {
+                "Title": "اپنا مقام متعین کریں۔"
+            },
+            "interest": {
+                "Title": "ایک سرگرمی کا انتخاب کریں۔",
+                "Filter": "دلچسپیاں تلاش کریں..."
+            },
+            "SetLivestream": "لائیو اسٹریم \/ ویڈیو کانفرنس کے لیے لنک پیسٹ کریں۔",
+            "Locally": "مقامی طور پر",
+            "EventInfoLink": "واقعہ کی معلومات کا لنک",
+            "TicketPurchaseLink": "ٹکٹ کی خریداری کا لنک"
+        },
+        "EventAlreadyClosed": "یہ ایونٹ پہلے ہی بند ہو چکا ہے۔",
+        "addToCalendar": {
+            "permissions": {
+                "title": "کیلنڈر میں شامل کریں؟",
+                "prompt": "کیا آپ اس ایونٹ کو اپنے کیلنڈر میں شامل کرنا چاہیں گے؟",
+                "yes": "جی ہاں",
+                "no": "نہیں"
+            },
+            "dialog": {
+                "Title": "اپنے کیلنڈر میں ایونٹ شامل کریں۔"
+            }
+        },
+        "ErrorLeaveEndedEvent": "معذرت، لیکن آپ ختم شدہ ایونٹ کو نہیں چھوڑ سکتے"
+    },
+    "availabilities": {
+        "Title": "دستیابی",
+        "NewAvailability": {
+            "Title": "نئی دستیابی",
+            "SaveAvailability": "دستیابی کو محفوظ کریں۔",
+            "SelectTemplate": "براہ کرم سروس کو منتخب کریں۔",
+            "SelectLocation": "براہ کرم مقام منتخب کریں۔",
+            "SelectArea": "براہ کرم علاقہ منتخب کریں۔",
+            "Type": "قسم",
+            "Weekly": "ہفتہ وار",
+            "RecurringStartDate": "بار بار شروع ہونے کی تاریخ",
+            "EndDate": "آخری تاریخ",
+            "SelectTime": "ٹائم سلاٹس کا نظم کریں۔",
+            "SelectTimeSlot": "ٹائم سلاٹ منتخب کریں۔",
+            "SelectTimeSlots": "مطلوبہ ٹائم سلاٹ منتخب کریں۔",
+            "PeopleMin": "کم سے کم زائرین",
+            "PeopleMax": "زیادہ سے زیادہ زائرین",
+            "PeopleLabels": "کرداروں کی اجازت ہے۔",
+            "Next": "اگلے",
+            "Back": "پیچھے",
+            "RecurringEndDate": "اعادی اختتامی تاریخ",
+            "ScheduleOnlineConference": "شیڈول ٹیلی کانفرنس",
+            "SetLivestream": "لائیو اسٹریم \/ ویڈیو کانفرنس کے لیے لنک پیسٹ کریں۔",
+            "SelectTimeZone": "ٹائم زون منتخب کریں۔"
+        },
+        "EditAvailability": "دستیابی میں ترمیم کریں۔",
+        "SetVisitors": "زائرین مقرر کریں۔",
+        "Price": "قیمت",
+        "SelectAction": "براہ کرم کارروائی منتخب کریں۔",
+        "OpenProfile": "پروفائل کھولیں۔",
+        "RemoveStaff": "عملے کو ہٹا دیں۔",
+        "PleaseSelectTimeSlots": "براہ کرم ٹائم سلاٹ منتخب کریں۔",
+        "ExceptionOccurred": "استثناء پیش آیا",
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} ایونٹس میں شرکت کے لیے کافی کریڈٹ نہیں ہیں۔ آپ کو {{needCredits}} کریڈٹ درکار ہیں۔ خریدنا چاہتا ہوں؟",
+        "LiveStream": "لائیو سٹریم",
+        "InviteStaff": "عملے کو مدعو کریں۔"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "شروع کرنے کی تاریخ",
+            "endDate": "آخری تاریخ",
+            "justOnce": "صرف ایک بار",
+            "justOnceWeekly": "صرف اس ہفتے",
+            "justOnceMonthly": "صرف اس مہینے",
+            "recurring": "بار بار چلنے والا"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "مفت تقریب",
+            "optional": "اختیاری شراکت",
+            "required": "مطلوبہ ادائیگی"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "اختیاری شراکت",
+            "required": "مطلوبہ ادائیگی",
+            "paid": "ادا کیا"
+        },
+        "confirmationDialog": {
+            "title": "ادائیگی کی تصدیق",
+            "content": "اس ایونٹ میں {{amount}} کا اختیاری تعاون ہے۔",
+            "button": "تعاون کریں۔"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ابھی تک ایونٹ کا حصہ نہیں ہے۔ کیا آپ انہیں بطور شریک شامل کرنا چاہتے ہیں؟",
+        "userNotFound": "صارف نہیں ملا",
+        "confirmYes": "جی ہاں",
+        "confirmNo": "نہیں"
+    },
+    "notifications": {
+        "EventActivityIn": "{{{stream.fields.title}}} میں ایونٹ کی سرگرمی",
+        "RecurringRulesChanged": "ایونٹ {{{call 'message.getInstruction' 'eventTitle'}}} کے لیے بار بار چلنے والے قوانین کو تبدیل کر دیا گیا",
+        "ManageEmailSubscriptions": "اپنی ای میل سبسکرپشنز کا نظم کریں۔",
+        "IfUnsubscribe": "اگر آپ ان سبسکرائب کرنا چاہتے ہیں۔",
+        "ClickHereToVisitEvent": "براہ کرم ایونٹ کا دورہ کرنے کے لیے یہاں کلک کریں۔",
+        "Calendars\/reminder": "ایونٹ &quot;{{{call 'message.getInstruction' 'name'}}&quot; {{&call 'message.getInstruction' 'time'}}} میں شروع ہوگا",
+        "webrtc": {
+            "Started": "ٹیلی کانفرنس شروع ہوئی۔",
+            "Ended": "ٹیلی کانفرنس ختم ہوئی۔"
+        },
+        "livestream": {
+            "Started": "لائیو سلسلہ شروع ہو گیا۔",
+            "Ended": "لائیو سلسلہ ختم ہو گیا۔",
+            "ClickToView": "اسے یہاں دیکھیں۔"
+        }
+    },
+    "import": {
+        "linkTitle": "اس اسپریڈ شیٹ کو پُر کریں۔",
+        "fileLabel": "سپریڈ شیٹ اپ لوڈ کریں:",
+        "importOptions": "اختیارات",
+        "importProgress": "پیش رفت",
+        "sampleCSV": "نمونہ CSV ڈاؤن لوڈ کریں۔",
+        "joinEventLabel": "بے ترتیب ایونٹ میں صارفین کے ساتھ شامل ہوں۔",
+        "smsText": "ارے، میں نے ابھی آپ کو {{communityName}} کا لنک بھیجا ہے۔ براہ کرم اسے چیک کریں۔",
+        "emailSubject": "ابھی آپ کو ایک لنک بھیجا ہے۔",
+        "emailBody": "ارے، میں نے ابھی آپ کو {{communityName}} کے لیے ایک دعوت نامہ بھیجا ہے۔ براہ کرم اسے چیک کریں۔",
+        "fileNotFound": "معذرت، CSV فائل نہیں ملی۔",
+        "fileEmpty": "معذرت، CSV فائل خالی ہے۔",
+        "fieldNotFound": "مطلوبہ فیلڈ &quot;{{1}}&quot; نہیں ملا",
+        "userIdNotFound": "صارف موجود ہے لیکن آئی ڈی خالی ہے۔",
+        "activateUsers": "صارفین کو ایکٹیویشن پیغام بھیجیں؟",
+        "taskStreamInvalid": "کام کا سلسلہ غلط ہے۔",
+        "instructionsEmpty": "ٹاسک اسٹریم کی ہدایات خالی ہیں۔",
+        "interestsEmpty": "مفادات حاصل نہیں کر سکتے",
+        "interestAbsent": "سود {{1}} نہیں ملا",
+        "complete": "مکمل",
+        "errorLine": "لائن {{1}}",
+        "errorsTitle": "غلطیاں ہوئیں",
+        "communityUsers": "یہ کمیونٹیز کی فہرست ہے۔",
+        "toMainCommunityToo": "مرکزی برادری سے بھی تعلق رکھتے ہیں۔",
+        "ChooseFile": "فائل منتخب کریں"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "ایک ایونٹ کی نمائندگی کرتا ہے جس میں لوگ شرکت کر سکتے ہیں۔",
+            "displayType": "تقریب"
+        },
+        "Calendars\/recurring": {
+            "description": "متعلقہ سلسلے کے لیے استعمال کیا جاتا ہے جن کا مقصد وقتاً فوقتاً تکرار ہوتا ہے۔",
+            "displayType": "بار بار چلنے والا واقعہ"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "سلاٹ شامل کریں۔",
+        "StartTime": "وقت آغاز",
+        "EndTime": "اختتامی وقت",
+        "Save": "محفوظ کریں۔",
+        "AddTimeSlot": "ٹائم سلاٹ شامل کریں۔",
+        "CopyFromDay": "دن سے کاپی کریں۔",
+        "Nearest": "قریب ترین",
+        "Today": "آج",
+        "Tomorrow": "کل",
+        "AfterTomorrow": "کل کے بعد"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "کیلنڈر کو سبسکرائب کریں۔",
+        "copyLinkBelow": "نیچے دیے گئے لنک کو کاپی کریں۔",
+        "goTo": "کے پاس جاؤ:",
+        "pasteCopiedTo": "کاپی شدہ لنک کو &quot;کیلنڈر کا URL&quot; فیلڈ میں چسپاں کریں۔",
+        "clickAddCalendar": "&quot;کیلنڈر شامل کریں&quot; کے بٹن پر کلک کریں۔",
+        "copyLink": "لنک کاپی کریں۔",
+        "tapToCopy": "لنک کو اپنے کلپ بورڈ پر کاپی کرنے کے لیے نیچے دیئے گئے بٹن کو تھپتھپائیں۔",
+        "linkCopied": "لنک کاپی ہو گیا۔",
+        "step2": "لنک کاپی ہو گیا۔ ہم کھلے گوگل کیلنڈر کے بارے میں ہیں۔ آپ کو ٹیکسٹ باکس میں لنک چسپاں کرنے کی ضرورت ہوگی، &quot;کیلنڈر شامل کریں&quot; پر کلک کریں، اور ٹیب کو بند کریں (نیچے اسکرین شاٹ دیکھیں)",
+        "calendarAppPreferences": "اپنے میک پر کیلنڈر ایپ میں ترجیحات کھولیں، اور ڈیفالٹ کیلنڈر ایپ سیٹ کریں جیسا کہ ذیل میں دکھایا گیا ہے۔",
+        "thenCloseDialog": "پھر اپنے کیلنڈر کو سبسکرائب کرنے کے لیے اس ڈائیلاگ کو بند کریں!",
+        "success": "کیلنڈر کامیابی کے ساتھ مطابقت پذیر ہو گیا۔"
+    }
+}

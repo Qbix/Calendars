@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Feb",
+        "Mar": "Mar",
+        "Apr": "Abriil",
+        "May": "Laga yaabaa",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Agoosto",
+        "Sep": "Sep",
+        "Oct": "Oct",
+        "Nov": "Nov",
+        "Dec": "Dec"
+    },
+    "monthsLong": {
+        "Jan": "Janaayo",
+        "Feb": "Febraayo",
+        "Mar": "Maarso",
+        "Apr": "Abriil",
+        "May": "Laga yaabaa",
+        "Jun": "Juun",
+        "Jul": "Julaay",
+        "Aug": "Ogosto",
+        "Sep": "Sebtembar",
+        "Oct": "Oktoobar",
+        "Nov": "Nofeembar",
+        "Dec": "December"
+    },
+    "weekdays": {
+        "Sun": "Cadceed",
+        "Mon": "Isniin",
+        "Tue": "Talaado",
+        "Wed": "Aroos",
+        "Thu": "Thu",
+        "Fri": "Jimce",
+        "Sat": "Sat"
+    },
+    "weekdaysLong": {
+        "Sun": "Axad",
+        "Mon": "Isniin",
+        "Tue": "Talaado",
+        "Wed": "Arbacada",
+        "Thu": "Khamiis",
+        "Fri": "Jimcaha",
+        "Sat": "Sabti"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Qorshee Dhacdo Cusub"
+        },
+        "tool": {
+            "HostedBy": "Waxaa marti galiyay {{name}}",
+            "Name": "Magaca",
+            "AreYouIn": "Ma ku jirtaa?",
+            "Yes": "Haa",
+            "No": "Maya",
+            "Ok": "Waayahay",
+            "Cancel": "Jooji",
+            "Maybe": "Waxaa laga yaabaa in",
+            "Conversation": "Wada sheekeysi",
+            "Promote": "Kor u qaad dhacdadan",
+            "Reminders": "Xusuusin",
+            "RemindersLabel": "Waxaan rabaa in la igu soo ogeysiiyo dhacdo:",
+            "MoreInfo": "Macluumaad dheeraad ah",
+            "Registration": "Diiwaangelinta",
+            "SetReminders": "Fadlan deji xasuusin",
+            "ReservationFee": "Lacagta Boos celinta",
+            "AddParticipants": "Ku dar ka qaybgalayaasha",
+            "ManageReservation": "Maamul Boos sii qabsi",
+            "UpdateFutureReservations": "Sidoo kale ma doonaysaa inaad si isku mid ah u cusboonaysiiso boos celinta mustaqbalka?",
+            "RecurringAdmin": "Dejinta soo noqnoqda",
+            "MakeReservation": "Boos sii qabsi",
+            "StartLiveStream": "Guji si aad toos ugu socoto",
+            "LiveStreamEnded": "Socodkii tooska ahaa wuu dhamaaday",
+            "ClickToViewRecording": "dhagsii si aad u daawato duubista",
+            "Checkin": "Sawir koodka ka-qaybgalayaasha",
+            "Myqr": "Is xaadiri",
+            "CloseEvent": {
+                "button": "Jooji Dhacdada",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Ma hubtaa inaad rabto inaad tirtirto dhacdadan?",
+                        "Participant": "Waxaa jira 1 kaqeybgale dhacdadan",
+                        "Participants": "Waxaa jira {999} ka qaybgalayaasha dhacdadan",
+                        "Recurring": "Dhacdadani waa mid soo noqnoqonaysa. Ma rabtaa inaad sidoo kale tirtirto dhammaan dhacdooyinkeeda mustaqbalka sidoo kale?"
+                    },
+                    "trip": {
+                        "Cancel": "Ma rabtaa inaad sidoo kale baajiso safarkaaga {{tripDirection}} dhacdadan?",
+                        "Passengers": "Waxaa jira {{passengerCount}} rakaab ah oo adiga kugu tiirsan.",
+                        "Title": "Safarka dhow"
+                    },
+                    "directions": {
+                        "TO": "KU",
+                        "FROM": "KA",
+                        "to": "ku",
+                        "from": "ka"
+                    }
+                }
+            },
+            "Calendar": "Kalandarka",
+            "Interests": "Danaha",
+            "Directions": "Tilmaamaha",
+            "TitleOfEvent": "Cinwaanka dhacdada:",
+            "OpenTo": "U fur",
+            "GoingTo": "noqon doonaa at",
+            "NotGoingTo": "ma joogi doono",
+            "MaybeGoingTo": "laga yaabaa in at",
+            "AdminDontPay": "Maamuluhu uma baahna inuu bixiyo",
+            "PublisherDontPay": "Daabacuhu uma baahna inuu bixiyo",
+            "EmptyList": "Liis madhan",
+            "NeedToPayCredits": "Waxa loo baahan yahay in la bixiyo: <span>{{amount}} credits<\/span>",
+            "PleaseJoinParticipants": "Fadlan ku biir {{participant}}",
+            "YouReservingPlace": "Waxaad sii qabsan doontaa meeshaada",
+            "SelectIncludesToAdd": "Dooro hal ama ka badan {{TypeDisplayPlural}} si aad ugu darto:",
+            "YouHaveNotRegisteredAnyIncluded": "Weli maadan diiwaan gashan {{TypeDisplayPlural}}",
+            "Proceed": "Sii wad",
+            "MakeChanges": "Badbaadi isbeddelladayda",
+            "CancelReservation": "Jooji boos qabsiga oo dhan",
+            "Total": "Wadarta",
+            "RequiredRelatedParticipants": "Dhacdadani waxay u baahan tahay ka qaybgalayaasha: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Fadlan wax ka beddel helitaanka &quot;{999}}&quot; si aad u cusboonaysiiso dejimaha soo noqnoqda"
+        },
+        "composer": {
+            "SetLocation": "Deji goobtayda",
+            "SetInfoLink": "Deji isku xidhka macluumaad dheeri ah",
+            "ChooseAvailability": "Dooro adeegga la heli karo",
+            "ChooseActivity": "Dooro Waxqabad",
+            "ChoosePublisher": "Dooro Daabacaha",
+            "Day": "Maalinta",
+            "Starting": "Bilawga",
+            "Duration": "Muddada",
+            "Hour": "Saacada",
+            "Hours": "Saacadaha",
+            "Minutes": "Daqiiqado",
+            "Ending": "Dhammaad",
+            "People": "Dadka",
+            "Share": "La wadaag",
+            "Continue": "Sii wad",
+            "Recurring": "Soo noqnoqda",
+            "RecurringTitle": "Maalmo soo noqnoqda",
+            "Daily": "Maalin walba",
+            "Weekly": "Todobaadle",
+            "Monthly": "Bishii",
+            "SelectLocation": "Fadlan marka hore dooro meel",
+            "eventType": "Nooca Dhacdada",
+            "EditTitle": "Ka fikir cinwaan xiiso leh...",
+            "SetTitle": "Fadlan deji cinwaanka dhacdada",
+            "ScheduleOnlineConference": "Jadwalka Shirka Online",
+            "SOCDescription": "Fadlan qeex shirka bilawga iyo wakhtiga dhamaadka Qof kasta oo soo booqda dhacdada inta lagu jiro wakhtigan wuxuu si toos ah ugu xidhi doonaa shirka khadka.",
+            "EndDate": "Dhammaad",
+            "location": {
+                "Title": "Deji Goobtaada"
+            },
+            "interest": {
+                "Title": "Dooro Waxqabad",
+                "Filter": "Raadi danaha..."
+            },
+            "SetLivestream": "Ku dheji xidhiidhka tooska ah\/conference video"
+        },
+        "EventAlreadyClosed": "Dhacdadan mar hore ayaa la xidhay",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Kudar Jadwalka?",
+                "prompt": "Ma jeclaan lahayd inaad dhacdadan ku darto jadwalkaaga?",
+                "yes": "Haa",
+                "no": "Maya"
+            },
+            "dialog": {
+                "Title": "Kudar Dhacdada jadwalkaaga"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Helitaanka",
+        "NewAvailability": {
+            "Title": "Helitaanka Cusub",
+            "SaveAvailability": "Kaydi Helitaanka",
+            "SelectTemplate": "Fadlan dooro Adeeg",
+            "SelectLocation": "Fadlan dooro Goobta",
+            "SelectArea": "Fadlan dooro Aaga",
+            "Type": "Nooca",
+            "Weekly": "Todobaadle",
+            "RecurringStartDate": "Taariikhda Bilawga Soo Noqnoqda",
+            "EndDate": "Taariikhda dhamaadka",
+            "SelectTime": "Maamul Time Slots",
+            "SelectTimeSlot": "Dooro waqti go&#39;an",
+            "SelectTimeSlots": "Dooro boosaska la rabo",
+            "PeopleMin": "Booqdayaasha ugu yar",
+            "PeopleMax": "Booqdayaasha ugu badan",
+            "PeopleLabels": "Calaamadaha waa la oggol yahay",
+            "Next": "Xiga",
+            "Back": "Dib u noqo"
+        },
+        "EditAvailability": "Wax ka beddel Helitaanka",
+        "SetVisitors": "Deji Booqdayaasha",
+        "Price": "Qiimo",
+        "SelectAction": "Fadlan dooro ficil",
+        "OpenProfile": "Fur profile",
+        "RemoveStaff": "Ka saar shaqaalaha",
+        "PleaseSelectTimeSlots": "Fadlan dooro boosaska wakhtiga",
+        "ExceptionOccurred": "Ka reeban ayaa dhacay",
+        "NotEnoughCreditsToParticipateEvents": "Dhibcaha kuma filna inaad ka qaybgasho dhacdooyinka {{eventsAmount}} Waxaad u baahan tahay {{1000} credits Ma rabtaa inaad iibsato?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Taariikhda billowga",
+            "endDate": "Taariikhda dhamaadka",
+            "justOnce": "Hal mar kaliya",
+            "justOnceWeekly": "Todobaadkan kaliya",
+            "justOnceMonthly": "Bishan kaliya",
+            "recurring": "Soo noqnoqda"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "dhacdo bilaash ah",
+            "optional": "Wax ku biirinta ikhtiyaarka ah",
+            "required": "Lacag bixinta loo baahan yahay"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Wax ku biirinta ikhtiyaarka ah",
+            "required": "Lacag bixinta loo baahan yahay",
+            "paid": "bixisay"
+        },
+        "confirmationDialog": {
+            "title": "Xaqiijinta lacag bixinta",
+            "content": "Dhacdadani waxay leedahay wax ku biirinta ikhtiyaarka ah {{amount}}",
+            "button": "Wax ku darso"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} wali kama mid aha dhacdada. Ma rabtaa in aad ku darto ka qaybgale ahaan?",
+        "userNotFound": "Isticmaalaha lama helin",
+        "confirmYes": "Haa",
+        "confirmNo": "Maya"
+    },
+    "notifications": {
+        "EventActivityIn": "Dhaqdhaqaaqa dhacdada {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Xeerarka soo noqnoqda ayaa isbedelay dhacdada {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "maamul isdiiwaangelintaada iimaylka",
+        "IfUnsubscribe": "Hadii aad rabto in aad iska saarto",
+        "ClickHereToVisitEvent": "Fadlan halkan guji si aad u booqato dhacdada",
+        "Calendars\/reminder": "Dhacdada &quot;{999}}&quot; waxay bilaabmi doontaa {{{call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Buuxi xaashidan",
+        "fileLabel": "Soo rar xaashida faafinta:",
+        "importOptions": "Ikhtiyaarada",
+        "importProgress": "Horumarka",
+        "sampleCSV": "Soo deji Tusaalaha CSV",
+        "joinEventLabel": "Ku biir isticmaalayaasha dhacdada aan tooska ahayn",
+        "smsText": "Hey, hadda waxaan kuu soo diray xiriiriye {{communityName}} Fadlan iska hubi",
+        "emailSubject": "Kaliya waxa uu kuu soo diray xiriiriye",
+        "emailBody": "Hey, hadda waxaan kuu soo diray casuumad {{communityName}} Fadlan iska hubi",
+        "fileNotFound": "Waan ka xunahay, faylka CSV lama helin.",
+        "fileEmpty": "Waan ka xunahay, faylka CSV waa faaruq.",
+        "fieldNotFound": "Goobta loo baahan yahay &quot;{999}}&quot; lama helin",
+        "userIdNotFound": "isticmaaluhu wuu jiraa laakiin id madhan",
+        "activateUsers": "u dir fariin kicin isticmaalayaasha?",
+        "taskStreamInvalid": "socodka hawsha ma ansaxayo",
+        "instructionsEmpty": "durdurka hawsha tilmaamaha maran",
+        "interestsEmpty": "ma heli karo dano",
+        "interestAbsent": "xiisaha {{1}} lama helin",
+        "complete": "Dhameystiran",
+        "errorLine": "line {{1}}",
+        "errorsTitle": "Khaladaad ayaa dhacay",
+        "communityUsers": "Kani waa liiska beelaha"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Waxay matalaysaa dhacdo ay dadku ka qayb qaadan karaan",
+            "displayType": "Dhacdo"
+        },
+        "Calendars\/recurring": {
+            "description": "Loo isticmaalo in lagu xidhiidhiyo durdurrada loogu talagalay in ay mar mar soo noqdaan",
+            "displayType": "Dhacdada Soo noqnoqota"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Ku dar Slot",
+        "StartTime": "Waqtiga Bilawga",
+        "EndTime": "Dhamaadka Waqtiga",
+        "Save": "Badbaadin",
+        "AddTimeSlot": "Ku dar Time Slot",
+        "CopyFromDay": "Nuqul laga bilaabo maalinta",
+        "Nearest": "Ugu dhow",
+        "Today": "Maanta",
+        "Tomorrow": "Berrito",
+        "AfterTomorrow": "Berri ka dib"
+    }
+}

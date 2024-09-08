@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "tammikuu",
+        "Feb": "helmikuuta",
+        "Mar": "maaliskuu",
+        "Apr": "huhtikuu",
+        "May": "saattaa",
+        "Jun": "kesäkuuta",
+        "Jul": "heinäkuuta",
+        "Aug": "elokuu",
+        "Sep": "syyskuu",
+        "Oct": "lokakuu",
+        "Nov": "marraskuu",
+        "Dec": "joulukuuta"
+    },
+    "monthsLong": {
+        "Jan": "tammikuu",
+        "Feb": "helmikuu",
+        "Mar": "maaliskuuta",
+        "Apr": "huhtikuu",
+        "May": "saattaa",
+        "Jun": "kesäkuuta",
+        "Jul": "heinäkuu",
+        "Aug": "elokuu",
+        "Sep": "syyskuu",
+        "Oct": "lokakuu",
+        "Nov": "marraskuu",
+        "Dec": "joulukuu"
+    },
+    "weekdays": {
+        "Sun": "Aurinko",
+        "Mon": "ma",
+        "Tue": "ti",
+        "Wed": "ke",
+        "Thu": "to",
+        "Fri": "pe",
+        "Sat": "la"
+    },
+    "weekdaysLong": {
+        "Sun": "sunnuntai",
+        "Mon": "maanantai",
+        "Tue": "tiistai",
+        "Wed": "keskiviikko",
+        "Thu": "torstai",
+        "Fri": "perjantai",
+        "Sat": "lauantaina"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Suunnittele uusi tapahtuma"
+        },
+        "tool": {
+            "HostedBy": "isännöi {{name}}",
+            "Name": "Nimi",
+            "AreYouIn": "Oletko mukana?",
+            "Yes": "Joo",
+            "No": "Ei",
+            "Ok": "Ok",
+            "Cancel": "Peruuttaa",
+            "Maybe": "Voi olla",
+            "Conversation": "Keskustelu",
+            "Promote": "Mainosta tätä tapahtumaa",
+            "Reminders": "Muistutukset",
+            "RemindersLabel": "Haluan saada ilmoituksen tapahtumasta osoitteessa:",
+            "MoreInfo": "Lisätietoja",
+            "Registration": "Rekisteröinti",
+            "SetReminders": "Aseta muistutuksia",
+            "ReservationFee": "Varausmaksu",
+            "AddParticipants": "Lisää osallistujia",
+            "ManageReservation": "Hallinnoi varausta",
+            "UpdateFutureReservations": "Haluatko myös päivittää kaikki tulevat varaukset samalla tavalla?",
+            "RecurringAdmin": "Toistuvat asetukset",
+            "MakeReservation": "Tee varaus",
+            "StartLiveStream": "Napsauta suoratoistoon",
+            "LiveStreamEnded": "Suora lähetys on päättynyt",
+            "ClickToViewRecording": "napsauta nähdäksesi tallenteen",
+            "Checkin": "Skannaa osallistujakoodit",
+            "Myqr": "Ilmoittautua",
+            "CloseEvent": {
+                "button": "Peruuta tapahtuma",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Haluatko varmasti peruuttaa tämän tapahtuman?",
+                        "Participant": "Tässä tapahtumassa on 1 osallistuja",
+                        "Participants": "Tässä tapahtumassa on {{count}} osallistujaa",
+                        "Recurring": "Tämä tapahtuma toistuu. Haluatko myös peruuttaa kaikki sen tulevat esiintymät?"
+                    },
+                    "trip": {
+                        "Cancel": "Haluatko myös peruuttaa matkasi {{tripDirection}} tämän tapahtuman?",
+                        "Passengers": "{{passengerCount}} matkustajaa luottaa sinuun.",
+                        "Title": "Sulje matka"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "FROM",
+                        "to": "kohtaan",
+                        "from": "alkaen"
+                    }
+                }
+            },
+            "Calendar": "Kalenteri",
+            "Interests": "Kiinnostuksen kohteet",
+            "Directions": "Ohjeet",
+            "TitleOfEvent": "Tapahtuman otsikko:",
+            "OpenTo": "Avoin",
+            "GoingTo": "tulee olemaan klo",
+            "NotGoingTo": "ei tule olemaan",
+            "MaybeGoingTo": "on ehkä klo",
+            "AdminDontPay": "Admin ei tarvitse maksaa",
+            "PublisherDontPay": "Kustantajan ei tarvitse maksaa",
+            "EmptyList": "Tyhjä lista",
+            "NeedToPayCredits": "Sinun on maksettava: <span>{{amount}} luottoa<\/span>",
+            "PleaseJoinParticipants": "Liity {{participant}}",
+            "YouReservingPlace": "Varaat paikkasi.",
+            "SelectIncludesToAdd": "Valitse yksi tai useampi {{TypeDisplayPlural}} lisättäväksi:",
+            "YouHaveNotRegisteredAnyIncluded": "Et ole vielä rekisteröinyt yhtään {{TypeDisplayPlural}}",
+            "Proceed": "Edetä",
+            "MakeChanges": "Tallenna muutokset",
+            "CancelReservation": "Peruuta koko varaus",
+            "Total": "Kaikki yhteensä",
+            "RequiredRelatedParticipants": "Tämä tapahtuma vaatii osallistujia: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Muokkaa saatavuutta &quot;{{title}}&quot; päivittääksesi toistuvat asetukset",
+            "Presentation": "Esittely",
+            "YouAreNotParticipated": "Et ole tapahtuman osallistuja",
+            "LiveStreamStarted": "Suora lähetys on alkanut",
+            "WebRTCStarted": "Puhelinkonferenssi alkoi",
+            "WebRTCEnded": "Puhelinkonferenssi päättyi"
+        },
+        "composer": {
+            "SetLocation": "Aseta Oma sijainti",
+            "SetInfoLink": "Aseta linkki lisätietoihin",
+            "ChooseAvailability": "Valitse saatavilla oleva palvelu",
+            "ChooseActivity": "Valitse toiminto",
+            "ChoosePublisher": "Valitse Julkaisija",
+            "Day": "Päivä",
+            "Starting": "Alkaa",
+            "Duration": "Kesto",
+            "Hour": "Tunnin",
+            "Hours": "Tuntia",
+            "Minutes": "Pöytäkirja",
+            "Ending": "Loppu",
+            "People": "Ihmiset",
+            "Share": "Jaa",
+            "Continue": "Jatkaa",
+            "Recurring": "Toistuva",
+            "RecurringTitle": "Toistuvia päiviä",
+            "Daily": "Päivittäin",
+            "Weekly": "Viikoittain",
+            "Monthly": "Kuukausittain",
+            "SelectLocation": "Valitse ensin sijainti.",
+            "eventType": "Tapahtumatyyppi",
+            "EditTitle": "Mieti mielenkiintoinen otsikko...",
+            "SetTitle": "Aseta tapahtuman otsikko",
+            "ScheduleOnlineConference": "Järjestä verkkokonferenssi",
+            "SOCDescription": "Määritä konferenssin alkamis- ja päättymisaika. Jokainen tapahtumassa tänä aikana vieraileva henkilö muodostaa automaattisesti yhteyden verkkokonferenssiin.",
+            "EndDate": "Loppu",
+            "location": {
+                "Title": "Aseta sijaintisi"
+            },
+            "interest": {
+                "Title": "Valitse toiminto",
+                "Filter": "Hae kiinnostuksen kohteita..."
+            },
+            "SetLivestream": "Liitä linkki suoratoistoon\/videokonferenssiin",
+            "Locally": "paikallisesti",
+            "EventInfoLink": "Tapahtuman info linkki",
+            "TicketPurchaseLink": "Linkki lipun ostoon"
+        },
+        "EventAlreadyClosed": "Tämä tapahtuma on jo suljettu",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Lisätäänkö kalenteriin?",
+                "prompt": "Haluatko lisätä tämän tapahtuman kalenteriisi?",
+                "yes": "Joo",
+                "no": "Ei"
+            },
+            "dialog": {
+                "Title": "Lisää tapahtuma kalenteriisi"
+            }
+        },
+        "ErrorLeaveEndedEvent": "Anteeksi, mutta et voi poistua päättyneestä tapahtumasta"
+    },
+    "availabilities": {
+        "Title": "Saatavuus",
+        "NewAvailability": {
+            "Title": "Uusi saatavuus",
+            "SaveAvailability": "Tallenna saatavuus",
+            "SelectTemplate": "Valitse Palvelu",
+            "SelectLocation": "Valitse Sijainti",
+            "SelectArea": "Valitse Alue",
+            "Type": "Tyyppi",
+            "Weekly": "Viikoittain",
+            "RecurringStartDate": "Toistuva aloituspäivä",
+            "EndDate": "Päättymispäivä",
+            "SelectTime": "Hallitse aikaväliä",
+            "SelectTimeSlot": "Valitse aikaväli",
+            "SelectTimeSlots": "Valitse haluamasi aikavälit",
+            "PeopleMin": "Vähimmäisvierailu",
+            "PeopleMax": "Kävijöiden enimmäismäärä",
+            "PeopleLabels": "Roolit sallittu",
+            "Next": "Seuraava",
+            "Back": "Takaisin",
+            "RecurringEndDate": "Toistuva lopetuspäivämäärä",
+            "ScheduleOnlineConference": "Sovi puhelinkonferenssi",
+            "SetLivestream": "Liitä linkki suoratoistoon\/videokonferenssiin",
+            "SelectTimeZone": "Valitse aikavyöhyke"
+        },
+        "EditAvailability": "Muokkaa Saatavuus",
+        "SetVisitors": "Aseta vierailijat",
+        "Price": "Hinta",
+        "SelectAction": "Valitse toiminto",
+        "OpenProfile": "Avaa profiili",
+        "RemoveStaff": "Poista henkilökunta",
+        "PleaseSelectTimeSlots": "Valitse aikavälit",
+        "ExceptionOccurred": "Poikkeus tapahtui",
+        "NotEnoughCreditsToParticipateEvents": "Ei tarpeeksi krediittejä {{eventsAmount}} tapahtumaan osallistumiseen. Tarvitset {{needCredits}} hyvitystä. Haluaa ostaa?",
+        "LiveStream": "Suora lähetys",
+        "InviteStaff": "Kutsu henkilökuntaa"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Aloituspäivämäärä",
+            "endDate": "Päättymispäivä",
+            "justOnce": "Vain kerran",
+            "justOnceWeekly": "Vain tällä viikolla",
+            "justOnceMonthly": "Vain tässä kuussa",
+            "recurring": "Toistuva"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Ilmainen tapahtuma",
+            "optional": "Valinnainen panos",
+            "required": "Vaadittu maksu"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Valinnainen panos",
+            "required": "Vaadittu maksu",
+            "paid": "maksettu"
+        },
+        "confirmationDialog": {
+            "title": "Maksuvahvistus",
+            "content": "Tämän tapahtuman valinnainen panos on {{amount}}.",
+            "button": "Osallistu"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ei ole vielä osa tapahtumaa. Haluatko lisätä heidät osallistujaksi?",
+        "userNotFound": "Käyttäjää ei löydy",
+        "confirmYes": "Joo",
+        "confirmNo": "Ei"
+    },
+    "notifications": {
+        "EventActivityIn": "Tapahtumatoiminta vuonna {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Tapahtuman {{{call 'message.getInstruction' 'eventTitle'}}} toistuvia sääntöjä muutettu",
+        "ManageEmailSubscriptions": "hallita sähköpostitilauksiasi",
+        "IfUnsubscribe": "Jos haluat peruuttaa tilauksen",
+        "ClickHereToVisitEvent": "Klikkaa tästä päästäksesi tapahtumaan",
+        "Calendars\/reminder": "Tapahtuma &quot;{{{call 'message.getInstruction' 'name'}}&quot; alkaa {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Puhelinkonferenssi alkoi",
+            "Ended": "Puhelinkonferenssi päättyi"
+        },
+        "livestream": {
+            "Started": "Suora lähetys alkanut",
+            "Ended": "Suora lähetys päättyi",
+            "ClickToView": "Katso se täältä."
+        }
+    },
+    "import": {
+        "linkTitle": "Täytä tämä laskentataulukko",
+        "fileLabel": "Lataa laskentataulukko:",
+        "importOptions": "Vaihtoehdot",
+        "importProgress": "Edistyminen",
+        "sampleCSV": "Lataa malli-CSV",
+        "joinEventLabel": "Liitä käyttäjät satunnaiseen tapahtumaan",
+        "smsText": "Hei, lähetin sinulle juuri linkin osoitteeseen {{communityName}}. Ole hyvä ja tarkista se.",
+        "emailSubject": "Lähetin sinulle juuri linkin",
+        "emailBody": "Hei, lähetin sinulle juuri kutsun osoitteeseen {{communityName}}. Ole hyvä ja tarkista se.",
+        "fileNotFound": "Anteeksi, CSV-tiedostoa ei löydy.",
+        "fileEmpty": "Anteeksi, CSV-tiedosto on tyhjä.",
+        "fieldNotFound": "Pakollista kenttää &quot;{{1}}&quot; ei löydy",
+        "userIdNotFound": "käyttäjä on olemassa, mutta id tyhjä",
+        "activateUsers": "lähettää aktivointiviestin käyttäjille?",
+        "taskStreamInvalid": "tehtävävirta on virheellinen",
+        "instructionsEmpty": "tehtävävirran ohjeet tyhjät",
+        "interestsEmpty": "ei saa kiinnostusta",
+        "interestAbsent": "kiinnostusta {{1}} ei löydy",
+        "complete": "Saattaa loppuun",
+        "errorLine": "rivi {{1}}",
+        "errorsTitle": "Virheitä tapahtui",
+        "communityUsers": "Tämä on yhteisöluettelo",
+        "toMainCommunityToo": "liittyvät myös pääyhteisöön",
+        "ChooseFile": "Valitse tiedosto"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Edustaa tapahtumaa, johon ihmiset voivat osallistua",
+            "displayType": "Tapahtuma"
+        },
+        "Calendars\/recurring": {
+            "description": "Käytetään säännöllisin väliajoin toistuvien virtojen suhteuttamiseen",
+            "displayType": "Toistuva tapahtuma"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Lisää paikka",
+        "StartTime": "Aloitusaika",
+        "EndTime": "Loppu aika",
+        "Save": "Tallentaa",
+        "AddTimeSlot": "Lisää aikaväli",
+        "CopyFromDay": "Kopio päivästä",
+        "Nearest": "Lähin",
+        "Today": "Tänään",
+        "Tomorrow": "Huomenna",
+        "AfterTomorrow": "Ylihuomenna"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Tilaa kalenteri",
+        "copyLinkBelow": "Kopioi linkki alla",
+        "goTo": "Mene:",
+        "pasteCopiedTo": "Liitä kopioitu linkki &quot;kalenterin URL-osoite&quot; -kenttään",
+        "clickAddCalendar": "Napsauta &quot;Lisää kalenteri&quot; -painiketta",
+        "copyLink": "Kopioi linkki",
+        "tapToCopy": "Kopioi linkki leikepöydällesi napauttamalla alla olevaa painiketta",
+        "linkCopied": "Linkki kopioitu",
+        "step2": "Linkki kopioitu. Olemme avaamassa Google-kalenteria. Sinun on liitettävä linkki tekstiruutuun, napsauta &quot;Lisää kalenteri&quot; ja sulje välilehti (katso kuvakaappaus alla)",
+        "calendarAppPreferences": "Avaa Asetukset Macin Kalenteri-sovelluksessa ja aseta Kalenteri-oletussovellus alla olevan kuvan mukaisesti.",
+        "thenCloseDialog": "Sulje sitten tämä valintaikkuna tilataksesi kalenterisi!",
+        "success": "Kalenteri synkronoitu onnistuneesti"
+    }
+}

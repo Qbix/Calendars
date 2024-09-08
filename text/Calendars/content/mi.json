@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Hanuere",
+        "Feb": "Feb",
+        "Mar": "Mar",
+        "Apr": "Apr",
+        "May": "Mei",
+        "Jun": "Hune",
+        "Jul": "Hurae",
+        "Aug": "Akuhata",
+        "Sep": "Hepetema",
+        "Oct": "Oketopa",
+        "Nov": "Noema",
+        "Dec": "Tihema"
+    },
+    "monthsLong": {
+        "Jan": "Hanuere",
+        "Feb": "Pepuere",
+        "Mar": "Maehe",
+        "Apr": "Paenga-whāwhā",
+        "May": "Mei",
+        "Jun": "Hune",
+        "Jul": "Hōngongoi",
+        "Aug": "Akuhata",
+        "Sep": "Hepetema",
+        "Oct": "Oketopa",
+        "Nov": "Noema",
+        "Dec": "Hakihea"
+    },
+    "weekdays": {
+        "Sun": "Ra",
+        "Mon": "Mane",
+        "Tue": "Tue",
+        "Wed": "Wenerei",
+        "Thu": "Tai",
+        "Fri": "Paraire",
+        "Sat": "Rāhoroi"
+    },
+    "weekdaysLong": {
+        "Sun": "Rātapu",
+        "Mon": "Mane",
+        "Tue": "Turei",
+        "Wed": "Wenerei",
+        "Thu": "Rāpare",
+        "Fri": "Paraire",
+        "Sat": "Rāhoroi"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Whakamahere Hui Hou"
+        },
+        "tool": {
+            "HostedBy": "I manaakihia e {{name}}",
+            "Name": "Ingoa",
+            "AreYouIn": "Kei roto koe?",
+            "Yes": "Ae",
+            "No": "Kao",
+            "Ok": "pai",
+            "Cancel": "Whakakore",
+            "Maybe": "Pea",
+            "Conversation": "Kōrerorero",
+            "Promote": "Whakanuia tenei kaupapa",
+            "Reminders": "Whakamaumahara",
+            "RemindersLabel": "Kei te pirangi au kia whakamohiotia mo tetahi huihuinga i:",
+            "MoreInfo": "Ētahi atu korero",
+            "Registration": "Rehitatanga",
+            "SetReminders": "Whakaturia koa nga whakamaumahara",
+            "ReservationFee": "Utu Rahui",
+            "AddParticipants": "Tāpiri Kaiuru",
+            "ManageReservation": "Whakahaere Rahui",
+            "UpdateFutureReservations": "Kei te pirangi ano koe ki te whakahou i nga rahui katoa a meake nei kia rite ano?",
+            "RecurringAdmin": "Tautuhinga Whakahoki",
+            "MakeReservation": "Hanga Rahui",
+            "StartLiveStream": "Pāwhiri ki te Rere Ora",
+            "LiveStreamEnded": "Kua mutu te roma ora",
+            "ClickToViewRecording": "pawhiria kia kite i te rekoata",
+            "Checkin": "Matawai i nga waehere kaiuru",
+            "Myqr": "Taki Mai",
+            "CloseEvent": {
+                "button": "Whakakore Takahanga",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Me whakakore tenei takahanga?",
+                        "Participant": "Kotahi te kaiuru ki tenei huihuinga",
+                        "Participants": "He {{count}} nga kaiuru ki tenei huihuinga",
+                        "Recurring": "Kei te hoki mai tenei kaupapa. Kei te pirangi ano koe ki te whakakore i nga wa kei te heke mai?"
+                    },
+                    "trip": {
+                        "Cancel": "Kei te pirangi koe ki te whakakore i to haerenga {{tripDirection}} tenei huihuinga?",
+                        "Passengers": "He {{passengerCount}} nga kaihihi e whakawhirinaki ana ki a koe.",
+                        "Title": "Kati te Haerenga"
+                    },
+                    "directions": {
+                        "TO": "KI",
+                        "FROM": "MAI",
+                        "to": "ki",
+                        "from": "mai"
+                    }
+                }
+            },
+            "Calendar": "Maramataka",
+            "Interests": "Kainga",
+            "Directions": "Nga tohutohu",
+            "TitleOfEvent": "Taitara o te huihuinga:",
+            "OpenTo": "Tuwhera ki",
+            "GoingTo": "ka noho i",
+            "NotGoingTo": "kare i te",
+            "MaybeGoingTo": "ka noho pea i",
+            "AdminDontPay": "Karekau te kaiwhakahaere e utu",
+            "PublisherDontPay": "Karekau te kaiwhakaputa me utu",
+            "EmptyList": "Rarangi kau",
+            "NeedToPayCredits": "Me utu: <span>{{amount}} nama<\/span>",
+            "PleaseJoinParticipants": "Whakauru mai koa {{participant}}",
+            "YouReservingPlace": "Ka rahuitia e koe to waahi.",
+            "SelectIncludesToAdd": "Tīpakohia tētahi, neke atu rānei {{TypeDisplayPlural}} hei tāpiri:",
+            "YouHaveNotRegisteredAnyIncluded": "Kaore ano koe kia rehitatia {{TypeDisplayPlural}} ano",
+            "Proceed": "Haere tonu",
+            "MakeChanges": "Tiakina Aku Huringa",
+            "CancelReservation": "Whakakorehia te rahui katoa",
+            "Total": "Tapeke",
+            "RequiredRelatedParticipants": "Me whai kaiuru tenei huihuinga: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Tena koa whakatikahia te waatea &quot;{{title}}&quot; ki te whakahou i nga tautuhinga auau"
+        },
+        "composer": {
+            "SetLocation": "Tautuhi Taku Tauwāhi",
+            "SetInfoLink": "Tautuhi Hononga ki etahi atu korero",
+            "ChooseAvailability": "Kōwhiri Ratonga Wātea",
+            "ChooseActivity": "Kōwhiria he Mahi",
+            "ChoosePublisher": "Kōwhiri Kaiwhakaputa",
+            "Day": "Ra",
+            "Starting": "Ka timata",
+            "Duration": "Roanga",
+            "Hour": "Haora",
+            "Hours": "Nga haora",
+            "Minutes": "Nga meneti",
+            "Ending": "Mutunga",
+            "People": "Tangata",
+            "Share": "Tiria",
+            "Continue": "Haere tonu",
+            "Recurring": "Hohou ana",
+            "RecurringTitle": "Nga Ra Whakahoki",
+            "Daily": "Ia rā",
+            "Weekly": "Ia wiki",
+            "Monthly": "Ia marama",
+            "SelectLocation": "Tīpakohia he tauwāhi i te tuatahi.",
+            "eventType": "Momo Takahanga",
+            "EditTitle": "Whakaarohia he taitara whakamere...",
+            "SetTitle": "Whakaritea koa te taitara takahanga",
+            "ScheduleOnlineConference": "Whakaritea Hui-ipurangi",
+            "SOCDescription": "Tautuhia koa te wa timata me te wa mutunga o te huihuinga. Ko nga tangata katoa ka toro atu ki te huihuinga i tenei waa ka hono aunoa ki te hui ipurangi.",
+            "EndDate": "Whakamutunga",
+            "location": {
+                "Title": "Tautuhia to Tauwāhi"
+            },
+            "interest": {
+                "Title": "Kōwhiria he Mahi",
+                "Filter": "Rapu hiahia ..."
+            },
+            "SetLivestream": "Whakapiri hono ki te roma ora \/ hui ataata"
+        },
+        "EventAlreadyClosed": "Kua katia tenei kaupapa",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Tāpiri ki te Maramataka?",
+                "prompt": "Kei te pirangi koe ki te taapiri i tenei huihuinga ki to maramataka?",
+                "yes": "Ae",
+                "no": "Kao"
+            },
+            "dialog": {
+                "Title": "Tāpiri Takahanga ki to Maramataka"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Nga waatea",
+        "NewAvailability": {
+            "Title": "Wātea Hou",
+            "SaveAvailability": "Tiakina te waatea",
+            "SelectTemplate": "Tīpakohia te Ratonga",
+            "SelectLocation": "Tīpakohia koa te Tauwāhi",
+            "SelectArea": "Tīpakohia koa te Rohe",
+            "Type": "Momo",
+            "Weekly": "Ia wiki",
+            "RecurringStartDate": "Te Ra Timata Hohou",
+            "EndDate": "Te Ra Whakamutunga",
+            "SelectTime": "Whakahaerehia nga waahi wa",
+            "SelectTimeSlot": "Tīpakohia he waahi wa",
+            "SelectTimeSlots": "Tīpakohia nga waahi e hiahiatia ana",
+            "PeopleMin": "Nga manuhiri iti",
+            "PeopleMax": "Te nuinga o nga manuhiri",
+            "PeopleLabels": "Whakaaetia nga tapanga",
+            "Next": "Whai muri",
+            "Back": "Whakamuri"
+        },
+        "EditAvailability": "Whakatika Wateatanga",
+        "SetVisitors": "Tautuhi Manuhiri",
+        "Price": "Utu",
+        "SelectAction": "Tīpakohia te mahi",
+        "OpenProfile": "Tuwhera kōtaha",
+        "RemoveStaff": "Tango kaimahi",
+        "PleaseSelectTimeSlots": "Tīpakohia koa nga waahi waahi",
+        "ExceptionOccurred": "I puta keehe",
+        "NotEnoughCreditsToParticipateEvents": "He iti rawa nga whiwhinga hei whakauru {{eventsAmount}} ki nga huihuinga. Me whiwhi {{needCredits}} koe. E hiahia ana koe ki te hoko?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Te ra timata",
+            "endDate": "Te ra mutunga",
+            "justOnce": "Kotahi noa iho",
+            "justOnceWeekly": "I tenei wiki anake",
+            "justOnceMonthly": "Ko tenei marama anake",
+            "recurring": "Hohou ana"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Huinga kore utu",
+            "optional": "Te takoha whiriwhiri",
+            "required": "Utu e hiahiatia ana"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Te takoha whiriwhiri",
+            "required": "Utu e hiahiatia ana",
+            "paid": "utua"
+        },
+        "confirmationDialog": {
+            "title": "Whakapumautanga utu",
+            "content": "Ko tenei huihuinga he koha koha {{amount}}.",
+            "button": "Te takoha"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} kaore ano kia uru ki te huihuinga. Kei te pirangi koe ki te taapiri i a raatau hei kaiuru?",
+        "userNotFound": "Kaore i kitea te kaiwhakamahi",
+        "confirmYes": "Ae",
+        "confirmNo": "Kao"
+    },
+    "notifications": {
+        "EventActivityIn": "Mahi takahanga i {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "I hurihia nga ture auau mo te takahanga {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "whakahaere i o ohaurunga imeera",
+        "IfUnsubscribe": "Mena kei te pirangi koe ki te whakakore i te ohauru",
+        "ClickHereToVisitEvent": "Paatohia a konei ki te haere ki te huihuinga",
+        "Calendars\/reminder": "Ka timata te takahanga &quot;{{{call 'message.getInstruction' 'name'}}&quot; i {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Whakakiia Tenei Ripanga",
+        "fileLabel": "Tukuake Ripanga:",
+        "importOptions": "Kōwhiringa",
+        "importProgress": "Te ahunga whakamua",
+        "sampleCSV": "Tikiake Tauira CSV",
+        "joinEventLabel": "Hono atu ki nga kaiwhakamahi ki te takahanga ohorere",
+        "smsText": "Kia ora, ka tukuna atu e ahau he hononga ki a koe {{communityName}}. Tena koa tirohia mai.",
+        "emailSubject": "I tukuna noa he hononga ki a koe",
+        "emailBody": "Kia ora, ka tukuna atu e ahau he powhiri ki a koe ki {{communityName}}. Tena koa tirohia mai.",
+        "fileNotFound": "Aroha mai, kaore i kitea te konae CSV.",
+        "fileEmpty": "Aroha mai, kei te putua te kōnae CSV.",
+        "fieldNotFound": "Ko te mara e hiahiatia ana &quot;{{1}}&quot; kaore i kitea",
+        "userIdNotFound": "kei te noho te kaiwhakamahi engari id kau",
+        "activateUsers": "tuku karere whakahohenga ki nga kaiwhakamahi?",
+        "taskStreamInvalid": "he muhu te rerenga mahi",
+        "instructionsEmpty": "kau ana nga tohutohu rerenga mahi",
+        "interestsEmpty": "e kore e taea te whiwhi paanga",
+        "interestAbsent": "te huanga {{1}} kaore i kitea",
+        "complete": "Kua oti",
+        "errorLine": "raina {{1}}",
+        "errorsTitle": "I puta nga hapa",
+        "communityUsers": "Koinei te rarangi hapori"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "He tohu i tetahi huihuinga ka taea e te tangata te uru atu",
+            "displayType": "Takahanga"
+        },
+        "Calendars\/recurring": {
+            "description": "Ka whakamahia mo te honohono i nga awa e kiia ana kia hoki ano i ia wa",
+            "displayType": "Takahanga Hohou"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Tāpiri Slot",
+        "StartTime": "Wā Tīmata",
+        "EndTime": "Te Wa Whakamutunga",
+        "Save": "Tiaki",
+        "AddTimeSlot": "Tāpiri Wā Mokamoka",
+        "CopyFromDay": "Tārua mai i te rā",
+        "Nearest": "Tata rawa atu",
+        "Today": "I tenei ra",
+        "Tomorrow": "Apopo",
+        "AfterTomorrow": "I muri apopo"
+    }
+}

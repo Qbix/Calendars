@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "जाने",
+        "Feb": "फेब्रु",
+        "Mar": "मार्च",
+        "Apr": "एप्रिल",
+        "May": "मे",
+        "Jun": "जून",
+        "Jul": "जुल",
+        "Aug": "ऑगस्ट",
+        "Sep": "सप्टें",
+        "Oct": "ऑक्टो",
+        "Nov": "नोव्हें",
+        "Dec": "डिसें"
+    },
+    "monthsLong": {
+        "Jan": "जानेवारी",
+        "Feb": "फेब्रुवारी",
+        "Mar": "मार्च",
+        "Apr": "एप्रिल",
+        "May": "मे",
+        "Jun": "जून",
+        "Jul": "जुलै",
+        "Aug": "ऑगस्ट",
+        "Sep": "सप्टेंबर",
+        "Oct": "ऑक्टोबर",
+        "Nov": "नोव्हेंबर",
+        "Dec": "डिसेंबर"
+    },
+    "weekdays": {
+        "Sun": "रवि",
+        "Mon": "सोम",
+        "Tue": "मंगळ",
+        "Wed": "बुध",
+        "Thu": "गुरु",
+        "Fri": "शुक्र",
+        "Sat": "शनि"
+    },
+    "weekdaysLong": {
+        "Sun": "रविवार",
+        "Mon": "सोमवार",
+        "Tue": "मंगळवार",
+        "Wed": "बुधवार",
+        "Thu": "गुरुवार",
+        "Fri": "शुक्रवार",
+        "Sat": "शनिवार"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "नवीन कार्यक्रमाची योजना करा"
+        },
+        "tool": {
+            "HostedBy": "{{name}} द्वारे होस्ट केलेले",
+            "Name": "नाव",
+            "AreYouIn": "येणार ना तू?",
+            "Yes": "होय",
+            "No": "नाही",
+            "Ok": "ठीक आहे",
+            "Cancel": "रद्द करा",
+            "Maybe": "कदाचित",
+            "Conversation": "संभाषण",
+            "Promote": "या कार्यक्रमाचा प्रचार करा",
+            "Reminders": "स्मरणपत्रे",
+            "RemindersLabel": "मला एका इव्हेंटबद्दल सूचित करायचे आहे:",
+            "MoreInfo": "अधिक माहिती",
+            "Registration": "नोंदणी",
+            "SetReminders": "कृपया स्मरणपत्रे सेट करा",
+            "ReservationFee": "आरक्षण शुल्क",
+            "AddParticipants": "सहभागी जोडा",
+            "ManageReservation": "आरक्षण व्यवस्थापित करा",
+            "UpdateFutureReservations": "तुम्हालाही भविष्यातील सर्व आरक्षणे अशीच अपडेट करायची आहेत का?",
+            "RecurringAdmin": "आवर्ती सेटिंग्ज",
+            "MakeReservation": "आरक्षण करा",
+            "StartLiveStream": "थेट प्रवाहासाठी क्लिक करा",
+            "LiveStreamEnded": "थेट प्रवाह समाप्त झाला आहे",
+            "ClickToViewRecording": "रेकॉर्डिंग पाहण्यासाठी क्लिक करा",
+            "Checkin": "सहभागी कोड स्कॅन करा",
+            "Myqr": "चेक इन करा",
+            "CloseEvent": {
+                "button": "कार्यक्रम रद्द करा",
+                "confirm": {
+                    "text": {
+                        "Cancel": "तुमची खात्री आहे की तुम्ही हा कार्यक्रम रद्द करू इच्छिता?",
+                        "Participant": "या कार्यक्रमात 1 सहभागी आहे",
+                        "Participants": "या कार्यक्रमात {{count}} सहभागी आहेत",
+                        "Recurring": "ही घटना पुनरावृत्ती होत आहे. तुम्ही त्याची भविष्यातील सर्व घटना देखील रद्द करू इच्छिता?"
+                    },
+                    "trip": {
+                        "Cancel": "तुम्ही तुमचा हा कार्यक्रम {{tripDirection}} देखील रद्द करू इच्छिता?",
+                        "Passengers": "तुमच्यावर {{passengerCount}} प्रवासी विसंबून आहेत.",
+                        "Title": "ट्रिप बंद करा"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "पासून",
+                        "to": "करण्यासाठी",
+                        "from": "पासून"
+                    }
+                }
+            },
+            "Calendar": "कॅलेंडर",
+            "Interests": "स्वारस्य",
+            "Directions": "दिशानिर्देश",
+            "TitleOfEvent": "कार्यक्रमाचे शीर्षक:",
+            "OpenTo": "साठी उघडा",
+            "GoingTo": "येथे असेल",
+            "NotGoingTo": "येथे होणार नाही",
+            "MaybeGoingTo": "कदाचित येथे असेल",
+            "AdminDontPay": "प्रशासनाला पैसे देण्याची गरज नाही",
+            "PublisherDontPay": "प्रकाशकाला पैसे देण्याची गरज नाही",
+            "EmptyList": "रिकामी यादी",
+            "NeedToPayCredits": "देय देणे आवश्यक आहे: <span>{{amount}} क्रेडिट्स<\/span>",
+            "PleaseJoinParticipants": "कृपया {{participant}} मध्ये सामील व्हा",
+            "YouReservingPlace": "तुम्ही तुमची जागा आरक्षित कराल.",
+            "SelectIncludesToAdd": "जोडण्यासाठी एक किंवा अधिक {{TypeDisplayPlural}} निवडा:",
+            "YouHaveNotRegisteredAnyIncluded": "तुम्ही अद्याप कोणतीही {{TypeDisplayPlural}} नोंदणी केलेली नाही",
+            "Proceed": "पुढे जा",
+            "MakeChanges": "माझे बदल जतन करा",
+            "CancelReservation": "संपूर्ण आरक्षण रद्द करा",
+            "Total": "एकूण",
+            "RequiredRelatedParticipants": "या इव्हेंटसाठी सहभागी आवश्यक आहेत: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "आवर्ती सेटिंग्ज अपडेट करण्यासाठी कृपया उपलब्धता &quot;{{title}}&quot; संपादित करा"
+        },
+        "composer": {
+            "SetLocation": "माझे स्थान सेट करा",
+            "SetInfoLink": "अतिरिक्त माहितीसाठी लिंक सेट करा",
+            "ChooseAvailability": "उपलब्ध सेवा निवडा",
+            "ChooseActivity": "एक क्रियाकलाप निवडा",
+            "ChoosePublisher": "प्रकाशक निवडा",
+            "Day": "दिवस",
+            "Starting": "सुरू होत आहे",
+            "Duration": "कालावधी",
+            "Hour": "तास",
+            "Hours": "तास",
+            "Minutes": "मिनिटे",
+            "Ending": "संपत आहे",
+            "People": "लोक",
+            "Share": "शेअर करा",
+            "Continue": "सुरू",
+            "Recurring": "आवर्ती",
+            "RecurringTitle": "आवर्ती दिवस",
+            "Daily": "दररोज",
+            "Weekly": "साप्ताहिक",
+            "Monthly": "मासिक",
+            "SelectLocation": "कृपया प्रथम स्थान निवडा.",
+            "eventType": "कार्यक्रमाचा प्रकार",
+            "EditTitle": "एका मनोरंजक शीर्षकाचा विचार करा...",
+            "SetTitle": "कृपया कार्यक्रमाचे शीर्षक सेट करा",
+            "ScheduleOnlineConference": "ऑनलाइन कॉन्फरन्स शेड्यूल करा",
+            "SOCDescription": "कृपया कॉन्फरन्सची सुरुवात आणि समाप्ती वेळ परिभाषित करा. या कालावधीत इव्हेंटला भेट देणारी प्रत्येक व्यक्ती ऑनलाइन कॉन्फरन्सशी आपोआप कनेक्ट होईल.",
+            "EndDate": "शेवट",
+            "location": {
+                "Title": "तुमचे स्थान सेट करा"
+            },
+            "interest": {
+                "Title": "एक क्रियाकलाप निवडा",
+                "Filter": "स्वारस्य शोधा ..."
+            },
+            "SetLivestream": "थेट प्रवाह \/ व्हिडिओ कॉन्फरन्ससाठी लिंक पेस्ट करा"
+        },
+        "EventAlreadyClosed": "हा कार्यक्रम आधीच बंद झाला आहे",
+        "addToCalendar": {
+            "permissions": {
+                "title": "कॅलेंडरमध्ये जोडायचे?",
+                "prompt": "तुम्ही हा कार्यक्रम तुमच्या कॅलेंडरमध्ये जोडू इच्छिता?",
+                "yes": "होय",
+                "no": "नाही"
+            },
+            "dialog": {
+                "Title": "तुमच्या कॅलेंडरमध्ये इव्हेंट जोडा"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "उपलब्धता",
+        "NewAvailability": {
+            "Title": "नवीन उपलब्धता",
+            "SaveAvailability": "उपलब्धता जतन करा",
+            "SelectTemplate": "कृपया सेवा निवडा",
+            "SelectLocation": "कृपया स्थान निवडा",
+            "SelectArea": "कृपया क्षेत्र निवडा",
+            "Type": "प्रकार",
+            "Weekly": "साप्ताहिक",
+            "RecurringStartDate": "आवर्ती प्रारंभ तारीख",
+            "EndDate": "शेवटची तारीख",
+            "SelectTime": "वेळ स्लॉट व्यवस्थापित करा",
+            "SelectTimeSlot": "टाइम स्लॉट निवडा",
+            "SelectTimeSlots": "इच्छित वेळ स्लॉट निवडा",
+            "PeopleMin": "किमान अभ्यागत",
+            "PeopleMax": "जास्तीत जास्त अभ्यागत",
+            "PeopleLabels": "लेबलांना परवानगी आहे",
+            "Next": "पुढे",
+            "Back": "मागे"
+        },
+        "EditAvailability": "उपलब्धता संपादित करा",
+        "SetVisitors": "अभ्यागत सेट करा",
+        "Price": "किंमत",
+        "SelectAction": "कृपया क्रिया निवडा",
+        "OpenProfile": "प्रोफाइल उघडा",
+        "RemoveStaff": "कर्मचारी काढून टाका",
+        "PleaseSelectTimeSlots": "कृपया टाइम स्लॉट निवडा",
+        "ExceptionOccurred": "अपवाद आला",
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} इव्हेंटमध्ये भाग घेण्यासाठी पुरेसे क्रेडिट नाहीत. तुम्हाला {{needCredits}} क्रेडिटची आवश्यकता आहे. खरेदी करू इच्छिता?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "प्रारंभ तारीख",
+            "endDate": "शेवटची तारीख",
+            "justOnce": "फक्त एकदाच",
+            "justOnceWeekly": "या आठवड्यात फक्त",
+            "justOnceMonthly": "फक्त या महिन्यात",
+            "recurring": "आवर्ती"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "मोफत कार्यक्रम",
+            "optional": "ऐच्छिक योगदान",
+            "required": "आवश्यक पेमेंट"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "ऐच्छिक योगदान",
+            "required": "आवश्यक पेमेंट",
+            "paid": "दिले"
+        },
+        "confirmationDialog": {
+            "title": "प्रदान खात्री",
+            "content": "या इव्हेंटमध्ये {{amount}} चे पर्यायी योगदान आहे.",
+            "button": "योगदान द्या"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} अद्याप इव्हेंटचा भाग नाही. तुम्ही त्यांना सहभागी म्हणून जोडू इच्छिता?",
+        "userNotFound": "वापरकर्ता सापडला नाही",
+        "confirmYes": "होय",
+        "confirmNo": "नाही"
+    },
+    "notifications": {
+        "EventActivityIn": "{{{stream.fields.title}}} मध्‍ये इव्‍हेंट क्रियाकलाप",
+        "RecurringRulesChanged": "इव्हेंट {{{call 'message.getInstruction' 'eventTitle'}}} साठी आवर्ती नियम बदलले",
+        "ManageEmailSubscriptions": "तुमची ईमेल सदस्यता व्यवस्थापित करा",
+        "IfUnsubscribe": "तुम्हाला सदस्यत्व रद्द करायचे असल्यास",
+        "ClickHereToVisitEvent": "कार्यक्रमाला भेट देण्यासाठी कृपया येथे क्लिक करा",
+        "Calendars\/reminder": "इव्हेंट &quot;{{{call 'message.getInstruction' 'name'}}&quot; {{&call 'message.getInstruction' 'time'}}} मध्ये सुरू होईल"
+    },
+    "import": {
+        "linkTitle": "हे स्प्रेडशीट भरा",
+        "fileLabel": "स्प्रेडशीट अपलोड करा:",
+        "importOptions": "पर्याय",
+        "importProgress": "प्रगती",
+        "sampleCSV": "नमुना CSV डाउनलोड करा",
+        "joinEventLabel": "यादृच्छिक इव्हेंटमध्ये वापरकर्त्यांशी सामील व्हा",
+        "smsText": "अहो, मी तुम्हाला {{communityName}} वर एक लिंक पाठवली आहे. कृपया ते पहा.",
+        "emailSubject": "फक्त तुम्हाला एक लिंक पाठवली",
+        "emailBody": "अहो, मी तुम्हाला आत्ताच {{communityName}} साठी आमंत्रण पाठवले आहे. कृपया ते पहा.",
+        "fileNotFound": "क्षमस्व, CSV फाइल सापडली नाही.",
+        "fileEmpty": "क्षमस्व, CSV फाइल रिकामी आहे.",
+        "fieldNotFound": "आवश्यक फील्ड &quot;{{1}}&quot; आढळले नाही",
+        "userIdNotFound": "वापरकर्ता अस्तित्वात आहे परंतु आयडी रिक्त आहे",
+        "activateUsers": "वापरकर्त्यांना सक्रियकरण संदेश पाठवायचा?",
+        "taskStreamInvalid": "कार्य प्रवाह अवैध",
+        "instructionsEmpty": "कार्य प्रवाह सूचना रिक्त",
+        "interestsEmpty": "स्वारस्य मिळवू शकत नाही",
+        "interestAbsent": "व्याज {{1}} आढळले नाही",
+        "complete": "पूर्ण",
+        "errorLine": "ओळ {{1}}",
+        "errorsTitle": "चुका झाल्या",
+        "communityUsers": "ही समुदायांची यादी आहे"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "लोक सहभागी होऊ शकतील अशा इव्हेंटचे प्रतिनिधित्व करते",
+            "displayType": "कार्यक्रम"
+        },
+        "Calendars\/recurring": {
+            "description": "वेळोवेळी पुनरावृत्ती होणार्‍या प्रवाहांशी संबंधित करण्यासाठी वापरले जाते",
+            "displayType": "आवर्ती कार्यक्रम"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "स्लॉट जोडा",
+        "StartTime": "सुरवातीची वेळ",
+        "EndTime": "समाप्तीचा कालावधी",
+        "Save": "जतन करा",
+        "AddTimeSlot": "वेळ स्लॉट जोडा",
+        "CopyFromDay": "दिवसापासून कॉपी करा",
+        "Nearest": "जवळचे",
+        "Today": "आज",
+        "Tomorrow": "उद्या",
+        "AfterTomorrow": "परवा"
+    }
+}

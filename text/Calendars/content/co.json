@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "ghjennaghju",
+        "Feb": "ferraghju",
+        "Mar": "mar",
+        "Apr": "Apr",
+        "May": "Maghju",
+        "Jun": "ghjugnu",
+        "Jul": "Jul",
+        "Aug": "Aostu",
+        "Sep": "Sep",
+        "Oct": "Ott",
+        "Nov": "nuv",
+        "Dec": "Dic"
+    },
+    "monthsLong": {
+        "Jan": "Ghjinnaghju",
+        "Feb": "Febbraiu",
+        "Mar": "Marzu",
+        "Apr": "Aprile",
+        "May": "Maghju",
+        "Jun": "Ghjugnu",
+        "Jul": "Lugliu",
+        "Aug": "Aostu",
+        "Sep": "Sittembre",
+        "Oct": "Ottobre",
+        "Nov": "Nuvembre",
+        "Dec": "Dicembre"
+    },
+    "weekdays": {
+        "Sun": "Sun",
+        "Mon": "lun",
+        "Tue": "mar",
+        "Wed": "mer",
+        "Thu": "Gio",
+        "Fri": "ven",
+        "Sat": "sat"
+    },
+    "weekdaysLong": {
+        "Sun": "Dumenica",
+        "Mon": "Luni",
+        "Tue": "Marti",
+        "Wed": "Marcuri",
+        "Thu": "Ghjovi",
+        "Fri": "Vennari",
+        "Sat": "Sabatu"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Pianu Novu Eventu"
+        },
+        "tool": {
+            "HostedBy": "Ospitatu da {{name}}",
+            "Name": "Nome",
+            "AreYouIn": "Ne stai?",
+            "Yes": "Iè",
+            "No": "Innò",
+            "Ok": "Ok",
+            "Cancel": "Cancella",
+            "Maybe": "Forse",
+            "Conversation": "Cunversazione",
+            "Promote": "Promuvà stu avvenimentu",
+            "Reminders": "Ricordi",
+            "RemindersLabel": "Vogliu esse avvisatu di un avvenimentu in:",
+            "MoreInfo": "Più infurmazione",
+            "Registration": "Iscrizzione",
+            "SetReminders": "Per piacè stabilisce i ricordi",
+            "ReservationFee": "Tariffa di riservazione",
+            "AddParticipants": "Aghjunghjite i participanti",
+            "ManageReservation": "Gestisce a riservazione",
+            "UpdateFutureReservations": "Vulete ancu aghjurnà tutte e riservazioni future in u listessu modu?",
+            "RecurringAdmin": "Impostazioni recurrenti",
+            "MakeReservation": "Fate Riservazione",
+            "StartLiveStream": "Cliccate per Live Stream",
+            "LiveStreamEnded": "U live stream hè finitu",
+            "ClickToViewRecording": "cliccate per vede a registrazione",
+            "Checkin": "Scansate i codici di i participanti",
+            "Myqr": "Arregistrà si",
+            "CloseEvent": {
+                "button": "Annulla l&#39;avvenimentu",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Sò sicuru chì vulete annullà stu avvenimentu?",
+                        "Participant": "Ci hè 1 participante in questu avvenimentu",
+                        "Participants": "Ci sò {{count}} participanti in questu avvenimentu",
+                        "Recurring": "Stu avvenimentu hè recurrente. Vulete ancu annullà tutte e so future istanze ancu?"
+                    },
+                    "trip": {
+                        "Cancel": "Vulete ancu annullà u vostru viaghju {{tripDirection}} stu avvenimentu ?",
+                        "Passengers": "Ci sò {{passengerCount}} passageri chì si basanu nantu à voi.",
+                        "Title": "Viaghju vicinu"
+                    },
+                    "directions": {
+                        "TO": "À",
+                        "FROM": "DA",
+                        "to": "à",
+                        "from": "da"
+                    }
+                }
+            },
+            "Calendar": "Calendariu",
+            "Interests": "Interessi",
+            "Directions": "Indicazioni",
+            "TitleOfEvent": "Titulu di l&#39;avvenimentu:",
+            "OpenTo": "Apertu à",
+            "GoingTo": "sarà à",
+            "NotGoingTo": "ùn sarà micca",
+            "MaybeGoingTo": "sarà forse à",
+            "AdminDontPay": "L&#39;amministratore ùn hà micca bisognu di pagà",
+            "PublisherDontPay": "L&#39;editore ùn hà micca bisognu di pagà",
+            "EmptyList": "Lista viota",
+            "NeedToPayCredits": "Bisognu di pagà: <span>{{amount}} crediti<\/span>",
+            "PleaseJoinParticipants": "Per piacè unisci à {{participant}}",
+            "YouReservingPlace": "Riserverete u vostru locu.",
+            "SelectIncludesToAdd": "Sceglite unu o più {{TypeDisplayPlural}} per aghjunghje:",
+            "YouHaveNotRegisteredAnyIncluded": "Ùn avete micca arregistratu ancu {{TypeDisplayPlural}}",
+            "Proceed": "Avanzate",
+            "MakeChanges": "Salvà i mo cambiamenti",
+            "CancelReservation": "Cancella tutta a riservazione",
+            "Total": "Totale",
+            "RequiredRelatedParticipants": "Questu avvenimentu richiede i participanti: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Per piacè editate a dispunibilità &quot;{{title}}&quot; per aghjurnà i paràmetri recurrenti"
+        },
+        "composer": {
+            "SetLocation": "Set My Location",
+            "SetInfoLink": "Set Link à l&#39;infurmazioni supplementari",
+            "ChooseAvailability": "Sceglite u serviziu dispunibule",
+            "ChooseActivity": "Sceglite una attività",
+            "ChoosePublisher": "Scegli l&#39;editore",
+            "Day": "Ghjornu",
+            "Starting": "Partendu",
+            "Duration": "Durata",
+            "Hour": "Ora",
+            "Hours": "Ore",
+            "Minutes": "Minuti",
+            "Ending": "Ending",
+            "People": "People",
+            "Share": "sparte",
+            "Continue": "Cuntinuà",
+            "Recurring": "Recurring",
+            "RecurringTitle": "Ghjorni recurrenti",
+            "Daily": "Ogni ghjornu",
+            "Weekly": "Ogni settimana",
+            "Monthly": "Mensili",
+            "SelectLocation": "Per piacè selezziunate prima un locu.",
+            "eventType": "Tipu d&#39;avvenimentu",
+            "EditTitle": "Pensate à un titulu interessante ...",
+            "SetTitle": "Per piacè stabilisce u titulu di l&#39;avvenimentu",
+            "ScheduleOnlineConference": "Pianificate una cunferenza in linea",
+            "SOCDescription": "Per piacè definisce l&#39;ora di iniziu è di fine di a cunferenza. Ogni persona chì visita l&#39;avvenimentu durante stu periodu di tempu si cunnetta automaticamente à a cunferenza in linea.",
+            "EndDate": "fine",
+            "location": {
+                "Title": "Stabbilisce a vostra Locazione"
+            },
+            "interest": {
+                "Title": "Sceglite una attività",
+                "Filter": "interessi di ricerca..."
+            },
+            "SetLivestream": "Incolla u ligame à u livestream \/ videoconferenza"
+        },
+        "EventAlreadyClosed": "Stu avvenimentu hè digià chjusu",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Aghjunghjite à u calendariu?",
+                "prompt": "Vulete aghjunghje stu avvenimentu à u vostru calendariu ?",
+                "yes": "Iè",
+                "no": "Innò"
+            },
+            "dialog": {
+                "Title": "Aggiungi Eventu à u vostru Calendariu"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Disponibilità",
+        "NewAvailability": {
+            "Title": "Nova Disponibilità",
+            "SaveAvailability": "Salvà a dispunibilità",
+            "SelectTemplate": "Per piacè selezziunate u serviziu",
+            "SelectLocation": "Per piacè selezziunate Location",
+            "SelectArea": "Per piacè selezziunate Area",
+            "Type": "Tipu",
+            "Weekly": "Ogni settimana",
+            "RecurringStartDate": "Data di iniziu recurrente",
+            "EndDate": "Data di fine",
+            "SelectTime": "Gestisce i Time Slots",
+            "SelectTimeSlot": "Sceglite un intervallu di tempu",
+            "SelectTimeSlots": "Selezziunà i slot di tempu desiderati",
+            "PeopleMin": "Minimu di visitatori",
+            "PeopleMax": "Massimu di visitatori",
+            "PeopleLabels": "Etichette permesse",
+            "Next": "Dopu",
+            "Back": "Torna"
+        },
+        "EditAvailability": "Edita Disponibilità",
+        "SetVisitors": "Set Visitors",
+        "Price": "prezzu",
+        "SelectAction": "Per piacè selezziunate l&#39;azzione",
+        "OpenProfile": "Apertura prufilu",
+        "RemoveStaff": "Eliminate u persunale",
+        "PleaseSelectTimeSlots": "Per piacè selezziunate intervalli di tempu",
+        "ExceptionOccurred": "Eccezzioni accaduta",
+        "NotEnoughCreditsToParticipateEvents": "Ùn ci hè abbastanza crediti per participà à {{eventsAmount}} avvenimenti. Avete bisognu di {{needCredits}} crediti. Vulete cumprà?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Data di principiu",
+            "endDate": "Data di fine",
+            "justOnce": "Solu una volta",
+            "justOnceWeekly": "Sta settimana solu",
+            "justOnceMonthly": "Stu mese solu",
+            "recurring": "Recurring"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Eventu liberu",
+            "optional": "Cuntribuzione facultativa",
+            "required": "Pagamentu necessariu"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Cuntribuzione facultativa",
+            "required": "Pagamentu necessariu",
+            "paid": "pagatu"
+        },
+        "confirmationDialog": {
+            "title": "Cunferma di pagamentu",
+            "content": "Questu avvenimentu hà una cuntribuzione facultativa di {{amount}}.",
+            "button": "Cuntribuisce"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ùn hè ancu parte di l&#39;avvenimentu. Vulete aghjunghje cum&#39;è participante ?",
+        "userNotFound": "L&#39;utilizatore ùn hè micca truvatu",
+        "confirmYes": "Iè",
+        "confirmNo": "Innò"
+    },
+    "notifications": {
+        "EventActivityIn": "Attività di l&#39;avvenimentu in {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "E regule recurrenti cambiate per l&#39;avvenimentu {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "gestisce i vostri abbonamenti email",
+        "IfUnsubscribe": "Sè vo vulete unsubscribe",
+        "ClickHereToVisitEvent": "Per piacè cliccate quì per visità l&#39;avvenimentu",
+        "Calendars\/reminder": "L&#39;avvenimentu &quot;{{{call 'message.getInstruction' 'name'}}&quot; cumminciarà in {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Riempite stu Spreadsheet",
+        "fileLabel": "Caricate un fogliu di calculu:",
+        "importOptions": "Opzioni",
+        "importProgress": "Prugressu",
+        "sampleCSV": "Scaricate Sample CSV",
+        "joinEventLabel": "Unisci à l&#39;utilizatori à un avvenimentu aleatoriu",
+        "smsText": "Ehi, vi appena mandatu un ligame à {{communityName}}. Per piacè verificate.",
+        "emailSubject": "Solu mandatu un ligame",
+        "emailBody": "Ehi, aghju appena mandatu un invitu à {{communityName}}. Per piacè verificate.",
+        "fileNotFound": "Scusate, u schedariu CSV ùn hè micca truvatu.",
+        "fileEmpty": "Scusate, u schedariu CSV hè viotu.",
+        "fieldNotFound": "U campu obligatoriu &quot;{{1}}&quot; ùn hè micca truvatu",
+        "userIdNotFound": "utilizatore esiste ma id viotu",
+        "activateUsers": "mandà un missaghju di attivazione à l&#39;utilizatori?",
+        "taskStreamInvalid": "flussu di attività invalidu",
+        "instructionsEmpty": "Istruzzioni di u flussu di attività vacanti",
+        "interestsEmpty": "ùn pò piglià interessi",
+        "interestAbsent": "interessu {{1}} micca trovu",
+        "complete": "Cumpleta",
+        "errorLine": "linea {{1}}",
+        "errorsTitle": "Errori accaduti",
+        "communityUsers": "Questa hè a lista di e cumunità"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Rapprisenta un avvenimentu chì a ghjente pò participà",
+            "displayType": "Avvenimentu"
+        },
+        "Calendars\/recurring": {
+            "description": "Adupratu per rilancià i flussi chì sò destinati à ricurdà periodicamente",
+            "displayType": "Eventu recurrente"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Aggiungi Slot",
+        "StartTime": "Start Time",
+        "EndTime": "Tempu di a fine",
+        "Save": "Salvà",
+        "AddTimeSlot": "Aggiungi Time Slot",
+        "CopyFromDay": "Copia da u ghjornu",
+        "Nearest": "U più vicinu",
+        "Today": "Oghje",
+        "Tomorrow": "Dumane",
+        "AfterTomorrow": "Dopu dumane"
+    }
+}

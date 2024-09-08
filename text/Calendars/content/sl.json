@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "februarja",
+        "Mar": "marca",
+        "Apr": "apr",
+        "May": "maja",
+        "Jun": "jun",
+        "Jul": "jul",
+        "Aug": "avg",
+        "Sep": "sep",
+        "Oct": "oktober",
+        "Nov": "nov",
+        "Dec": "dec"
+    },
+    "monthsLong": {
+        "Jan": "januarja",
+        "Feb": "februarja",
+        "Mar": "marca",
+        "Apr": "aprila",
+        "May": "maja",
+        "Jun": "junija",
+        "Jul": "julija",
+        "Aug": "avgusta",
+        "Sep": "septembra",
+        "Oct": "oktober",
+        "Nov": "novembra",
+        "Dec": "december"
+    },
+    "weekdays": {
+        "Sun": "sonce",
+        "Mon": "pon",
+        "Tue": "tor",
+        "Wed": "sre",
+        "Thu": "čet",
+        "Fri": "pet",
+        "Sat": "sob"
+    },
+    "weekdaysLong": {
+        "Sun": "nedelja",
+        "Mon": "ponedeljek",
+        "Tue": "torek",
+        "Wed": "sreda",
+        "Thu": "četrtek",
+        "Fri": "petek",
+        "Sat": "sobota"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Načrtujte nov dogodek"
+        },
+        "tool": {
+            "HostedBy": "Gosti: {{name}}",
+            "Name": "ime",
+            "AreYouIn": "Ste v?",
+            "Yes": "da",
+            "No": "št",
+            "Ok": "V redu",
+            "Cancel": "Prekliči",
+            "Maybe": "mogoče",
+            "Conversation": "Pogovor",
+            "Promote": "Promovirajte ta dogodek",
+            "Reminders": "Opomniki",
+            "RemindersLabel": "Želim biti obveščen o dogodku v:",
+            "MoreInfo": "Več informacij",
+            "Registration": "Registracija",
+            "SetReminders": "Prosimo, nastavite opomnike",
+            "ReservationFee": "Pristojbina za rezervacijo",
+            "AddParticipants": "Dodajte udeležence",
+            "ManageReservation": "Upravljanje rezervacije",
+            "UpdateFutureReservations": "Ali želite na enak način posodobiti tudi vse prihodnje rezervacije?",
+            "RecurringAdmin": "Ponavljajoče se nastavitve",
+            "MakeReservation": "Rezervirajte",
+            "StartLiveStream": "Kliknite za prenos v živo",
+            "LiveStreamEnded": "Prenos v živo se je končal",
+            "ClickToViewRecording": "kliknite za ogled posnetka",
+            "Checkin": "Skenirajte kode udeležencev",
+            "Myqr": "Prijava",
+            "CloseEvent": {
+                "button": "Prekliči dogodek",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Ali ste prepričani, da želite preklicati ta dogodek?",
+                        "Participant": "Na tem dogodku je 1 udeleženec",
+                        "Participants": "V tem dogodku je {{count}} udeležencev",
+                        "Recurring": "Ta dogodek se ponavlja. Ali želite tudi preklicati vse njegove prihodnje primerke?"
+                    },
+                    "trip": {
+                        "Cancel": "Ali želite tudi odpovedati svoje potovanje {{tripDirection}} ta dogodek?",
+                        "Passengers": "Na vas se zanaša {{passengerCount}} potnikov.",
+                        "Title": "Zapri potovanje"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "IZ",
+                        "to": "do",
+                        "from": "od"
+                    }
+                }
+            },
+            "Calendar": "Koledar",
+            "Interests": "Zanimanja",
+            "Directions": "Navodila",
+            "TitleOfEvent": "Naslov dogodka:",
+            "OpenTo": "Odprto za",
+            "GoingTo": "bo pri",
+            "NotGoingTo": "ne bo pri",
+            "MaybeGoingTo": "bo morda pri",
+            "AdminDontPay": "Adminu ni treba plačati",
+            "PublisherDontPay": "Založniku ni treba plačati",
+            "EmptyList": "Prazen seznam",
+            "NeedToPayCredits": "Treba je plačati: <span>{{amount}} kreditov<\/span>",
+            "PleaseJoinParticipants": "Pridružite se {{participant}}",
+            "YouReservingPlace": "Rezervirali boste svoje mesto.",
+            "SelectIncludesToAdd": "Izberite enega ali več {{TypeDisplayPlural}}, ki jih želite dodati:",
+            "YouHaveNotRegisteredAnyIncluded": "Niste še registrirali nobenega {{TypeDisplayPlural}}",
+            "Proceed": "Nadaljuj",
+            "MakeChanges": "Shrani moje spremembe",
+            "CancelReservation": "Prekliči celotno rezervacijo",
+            "Total": "Skupaj",
+            "RequiredRelatedParticipants": "Ta dogodek zahteva udeležence: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Uredite razpoložljivost »{{title}}«, da posodobite ponavljajoče se nastavitve",
+            "Presentation": "Predstavitev",
+            "YouAreNotParticipated": "Niste udeleženec dogodka",
+            "LiveStreamStarted": "Prenos v živo se je začel",
+            "WebRTCStarted": "Telekonferenca se je začela",
+            "WebRTCEnded": "Telekonferenca je končana"
+        },
+        "composer": {
+            "SetLocation": "Nastavite mojo lokacijo",
+            "SetInfoLink": "Nastavite povezavo na dodatne informacije",
+            "ChooseAvailability": "Izberite storitev, ki je na voljo",
+            "ChooseActivity": "Izberite dejavnost",
+            "ChoosePublisher": "Izberite Založnik",
+            "Day": "dan",
+            "Starting": "Začetek",
+            "Duration": "Trajanje",
+            "Hour": "ura",
+            "Hours": "Ure",
+            "Minutes": "Minute",
+            "Ending": "Konec",
+            "People": "Ljudje",
+            "Share": "Deliti",
+            "Continue": "Nadaljuj",
+            "Recurring": "Ponavljajoča se",
+            "RecurringTitle": "Ponavljajoči se dnevi",
+            "Daily": "Dnevno",
+            "Weekly": "tedensko",
+            "Monthly": "Mesečno",
+            "SelectLocation": "Najprej izberite lokacijo.",
+            "eventType": "Vrsta dogodka",
+            "EditTitle": "Pomislite na zanimiv naslov ...",
+            "SetTitle": "Prosimo, nastavite naslov dogodka",
+            "ScheduleOnlineConference": "Načrtujte spletno konferenco",
+            "SOCDescription": "Določite čas začetka in konca konference. Vsaka oseba, ki obišče dogodek v tem časovnem obdobju, se bo samodejno povezala s spletno konferenco.",
+            "EndDate": "Konec",
+            "location": {
+                "Title": "Nastavite svojo lokacijo"
+            },
+            "interest": {
+                "Title": "Izberite dejavnost",
+                "Filter": "Iskanje zanimanja ..."
+            },
+            "SetLivestream": "Prilepite povezavo do pretoka v živo\/videokonference",
+            "Locally": "lokalno",
+            "EventInfoLink": "Povezava z informacijami o dogodku",
+            "TicketPurchaseLink": "Povezava za nakup vstopnic"
+        },
+        "EventAlreadyClosed": "Ta dogodek je že zaprt",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Dodati v koledar?",
+                "prompt": "Ali želite ta dogodek dodati v svoj koledar?",
+                "yes": "da",
+                "no": "št"
+            },
+            "dialog": {
+                "Title": "Dodajte dogodek v svoj koledar"
+            }
+        },
+        "ErrorLeaveEndedEvent": "Oprostite, vendar ne morete zapustiti končanega dogodka"
+    },
+    "availabilities": {
+        "Title": "Razpoložljivost",
+        "NewAvailability": {
+            "Title": "Nova razpoložljivost",
+            "SaveAvailability": "Shrani razpoložljivost",
+            "SelectTemplate": "Izberite Storitev",
+            "SelectLocation": "Izberite Lokacija",
+            "SelectArea": "Izberite Območje",
+            "Type": "Vrsta",
+            "Weekly": "tedensko",
+            "RecurringStartDate": "Ponavljajoči se začetni datum",
+            "EndDate": "Končni datum",
+            "SelectTime": "Upravljanje časovnih slotov",
+            "SelectTimeSlot": "Izberite časovni termin",
+            "SelectTimeSlots": "Izberite želene časovne intervale",
+            "PeopleMin": "Minimalno število obiskovalcev",
+            "PeopleMax": "Največje število obiskovalcev",
+            "PeopleLabels": "Dovoljene vloge",
+            "Next": "Naslednji",
+            "Back": "nazaj",
+            "RecurringEndDate": "Ponavljajoči se končni datum",
+            "ScheduleOnlineConference": "Načrtujte telekonferenco",
+            "SetLivestream": "Prilepite povezavo do prenosa v živo\/videokonference",
+            "SelectTimeZone": "Izberite časovni pas"
+        },
+        "EditAvailability": "Uredi razpoložljivost",
+        "SetVisitors": "Nastavite obiskovalce",
+        "Price": "Cena",
+        "SelectAction": "Prosimo, izberite dejanje",
+        "OpenProfile": "Odpri profil",
+        "RemoveStaff": "Odstranite osebje",
+        "PleaseSelectTimeSlots": "Prosimo, izberite časovne intervale",
+        "ExceptionOccurred": "Prišlo je do izjeme",
+        "NotEnoughCreditsToParticipateEvents": "Ni dovolj kreditov za sodelovanje {{eventsAmount}} dogodkov. Potrebujete {{needCredits}} kreditov. Želite kupiti?",
+        "LiveStream": "Prenos v živo",
+        "InviteStaff": "Povabi osebje"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Začetni datum",
+            "endDate": "Končni datum",
+            "justOnce": "Samo enkrat",
+            "justOnceWeekly": "Samo ta teden",
+            "justOnceMonthly": "Samo ta mesec",
+            "recurring": "Ponavljajoča se"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Brezplačen dogodek",
+            "optional": "Neobvezni prispevek",
+            "required": "Zahtevano plačilo"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Neobvezni prispevek",
+            "required": "Zahtevano plačilo",
+            "paid": "plačano"
+        },
+        "confirmationDialog": {
+            "title": "Potrdilo plačila",
+            "content": "Ta dogodek ima izbirni prispevek {{amount}}.",
+            "button": "Prispevajte"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} še ni del dogodka. Ali jih želite dodati kot udeleženca?",
+        "userNotFound": "Uporabnik ni najden",
+        "confirmYes": "da",
+        "confirmNo": "št"
+    },
+    "notifications": {
+        "EventActivityIn": "Dejavnost dogodka v {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Ponavljajoča se pravila so spremenjena za dogodek {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "upravljajte svoje e-poštne naročnine",
+        "IfUnsubscribe": "Če se želite odjaviti",
+        "ClickHereToVisitEvent": "Kliknite tukaj za obisk dogodka",
+        "Calendars\/reminder": "Dogodek »{{{call 'message.getInstruction' 'name'}}« se bo začel čez {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Telekonferenca se je začela",
+            "Ended": "Telekonferenca je končana"
+        },
+        "livestream": {
+            "Started": "Prenos v živo se je začel",
+            "Ended": "Prenos v živo se je končal",
+            "ClickToView": "Oglejte si ga tukaj."
+        }
+    },
+    "import": {
+        "linkTitle": "Izpolnite to preglednico",
+        "fileLabel": "Naložite preglednico:",
+        "importOptions": "Opcije",
+        "importProgress": "napredek",
+        "sampleCSV": "Prenesite vzorec CSV",
+        "joinEventLabel": "Pridružite se uporabnikom naključnemu dogodku",
+        "smsText": "Hej, pravkar sem ti poslal povezavo na {{communityName}}. Prosimo, preverite.",
+        "emailSubject": "Pravkar sem ti poslal povezavo",
+        "emailBody": "Hej, pravkar sem ti poslal povabilo na {{communityName}}. Prosimo, preverite.",
+        "fileNotFound": "Žal datoteke CSV ni mogoče najti.",
+        "fileEmpty": "Oprostite, datoteka CSV je prazna.",
+        "fieldNotFound": "Zahtevanega polja »{{1}}« ni bilo mogoče najti",
+        "userIdNotFound": "uporabnik obstaja, vendar je ID prazen",
+        "activateUsers": "poslati aktivacijsko sporočilo uporabnikom?",
+        "taskStreamInvalid": "tok opravil ni veljaven",
+        "instructionsEmpty": "navodila za tok opravil prazna",
+        "interestsEmpty": "ne more pridobiti interesov",
+        "interestAbsent": "zanimanja {{1}} ni bilo mogoče najti",
+        "complete": "Dokončano",
+        "errorLine": "vrstica {{1}}",
+        "errorsTitle": "Prišlo je do napak",
+        "communityUsers": "To je seznam skupnosti",
+        "toMainCommunityToo": "nanašajo tudi na glavno skupnost",
+        "ChooseFile": "Izberite datoteko"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Predstavlja dogodek, v katerem se lahko ljudje udeležijo",
+            "displayType": "Dogodek"
+        },
+        "Calendars\/recurring": {
+            "description": "Uporablja se za povezovanje tokov, ki naj bi se občasno ponavljali",
+            "displayType": "Ponavljajoči se dogodek"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Dodaj režo",
+        "StartTime": "Začetni čas",
+        "EndTime": "Končni čas",
+        "Save": "Shrani",
+        "AddTimeSlot": "Dodaj časovno režo",
+        "CopyFromDay": "Kopiraj iz dneva",
+        "Nearest": "Najbližje",
+        "Today": "danes",
+        "Tomorrow": "jutri",
+        "AfterTomorrow": "Pojutrišnjem"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Naročite se na Koledar",
+        "copyLinkBelow": "Kopiraj spodnjo povezavo",
+        "goTo": "Pojdi do:",
+        "pasteCopiedTo": "Prilepite kopirano povezavo v polje »URL koledarja«.",
+        "clickAddCalendar": "Kliknite gumb &quot;Dodaj koledar&quot;.",
+        "copyLink": "Kopiraj povezavo",
+        "tapToCopy": "Tapnite spodnji gumb, da kopirate povezavo v odložišče",
+        "linkCopied": "Povezava je kopirana",
+        "step2": "Povezava je kopirana. Gre za odprt Google Koledar. Povezavo boste morali prilepiti v besedilno polje, klikniti »Dodaj koledar« in zapreti zavihek (glejte spodnji posnetek zaslona)",
+        "calendarAppPreferences": "Odprite Nastavitve v aplikaciji Koledar na vašem Macu in nastavite privzeto aplikacijo Koledar, kot je prikazano spodaj.",
+        "thenCloseDialog": "Nato zaprite to pogovorno okno, da se naročite na svoj koledar!",
+        "success": "Koledar je bil uspešno sinhroniziran"
+    }
+}

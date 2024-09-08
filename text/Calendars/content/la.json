@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Feb",
+        "Mar": "Mar",
+        "Apr": "Apr",
+        "May": "May",
+        "Jun": "Iun",
+        "Jul": "Iul",
+        "Aug": "Aug",
+        "Sep": "Sep",
+        "Oct": "Oct",
+        "Nov": "Nov",
+        "Dec": "Dec"
+    },
+    "monthsLong": {
+        "Jan": "Ianuarii",
+        "Feb": "Februarius",
+        "Mar": "Martii",
+        "Apr": "Aprilis",
+        "May": "May",
+        "Jun": "mensis Iunii",
+        "Jul": "Iulii",
+        "Aug": "Aug",
+        "Sep": "Septembris",
+        "Oct": "Octobris",
+        "Nov": "Novembris",
+        "Dec": "Decembris"
+    },
+    "weekdays": {
+        "Sun": "solis",
+        "Mon": "Mon",
+        "Tue": "Tue",
+        "Wed": "Wed",
+        "Thu": "Thu",
+        "Fri": "Fri",
+        "Sat": "Sat"
+    },
+    "weekdaysLong": {
+        "Sun": "Solis",
+        "Mon": "dies Lunae",
+        "Tue": "Martis",
+        "Wed": "mercurii",
+        "Thu": "Iovis",
+        "Fri": "Veneris",
+        "Sat": "Saturni"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Consilium Novus Eventus"
+        },
+        "tool": {
+            "HostedBy": "Hosted by {{name}}",
+            "Name": "Nomen",
+            "AreYouIn": "Sint in vobis?",
+            "Yes": "Ita",
+            "No": "No",
+            "Ok": "Bene",
+            "Cancel": "Cancel",
+            "Maybe": "Forsitan",
+            "Conversation": "Colloquium",
+            "Promote": "Promovere res",
+            "Reminders": "Recordationes",
+            "RemindersLabel": "Notificari volo eventus in:",
+            "MoreInfo": "Plus info",
+            "Registration": "Registration",
+            "SetReminders": "Quaeso pone commonitiones",
+            "ReservationFee": "Reservatio pretium",
+            "AddParticipants": "Add Participes",
+            "ManageReservation": "Curo Cras",
+            "UpdateFutureReservations": "Visne etiam omnes reservationes futuras eodem modo renovare?",
+            "RecurringAdmin": "Redit Occasus",
+            "MakeReservation": "Fac Cras interdum",
+            "StartLiveStream": "Click to live stream",
+            "LiveStreamEnded": "Vivamus amnis finivit",
+            "ClickToViewRecording": "click to view recording",
+            "Checkin": "Scan attendee codes",
+            "Myqr": "Reprehendo in",
+            "CloseEvent": {
+                "button": "Cancel Event",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Certus esne hunc eventum rescindere vis?",
+                        "Participant": "Est I particeps in hac re",
+                        "Participants": "Praesent{999}} huius rei participes sunt",
+                        "Recurring": "Ea res frequentissima est. Visne etiam omnes eius instantiae futuras etiam rescindere?"
+                    },
+                    "trip": {
+                        "Cancel": "Visne etiam iter tuum tollere {{tripDirection}} eventum hunc?",
+                        "Passengers": "Sunt {999}} in te freti viatores.",
+                        "Title": "Prope Trip"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "EX*",
+                        "to": "to",
+                        "from": "e*"
+                    }
+                }
+            },
+            "Calendar": "Calendarium",
+            "Interests": "Interests",
+            "Directions": "Directiones",
+            "TitleOfEvent": "Titulus eventus:",
+            "OpenTo": "Open to",
+            "GoingTo": "erit in",
+            "NotGoingTo": "non erit",
+            "MaybeGoingTo": "erit maybe ad",
+            "AdminDontPay": "Fusce ut stipendium non opus",
+            "PublisherDontPay": "Publisher non opus est ut stipendium",
+            "EmptyList": "Inanis index",
+            "NeedToPayCredits": "Reddere necesse est: <span>{{amount}} creditorum<\/span>",
+            "PleaseJoinParticipants": "Quaeso iunge {{participant}}",
+            "YouReservingPlace": "Servabis locum tuum.",
+            "SelectIncludesToAdd": "Eligere vel {{TypeDisplayPlural}} adde:",
+            "YouHaveNotRegisteredAnyIncluded": "Non descripserunt aliquem {{TypeDisplayPlural}} adhuc",
+            "Proceed": "Perge",
+            "MakeChanges": "Servo Mutationes meae",
+            "CancelReservation": "Abrigavi totum reservatio",
+            "Total": "Totalis",
+            "RequiredRelatedParticipants": "Eventus hic participes postulat: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Quaeso emendare disponibilitate &quot;{{title}}&quot; ad update occasus frequentes"
+        },
+        "composer": {
+            "SetLocation": "Pone mihi Location",
+            "SetInfoLink": "Set info Link to additional",
+            "ChooseAvailability": "Elige Available Service",
+            "ChooseActivity": "Elige quod operatio",
+            "ChoosePublisher": "Elige Publisher",
+            "Day": "dies",
+            "Starting": "Satus",
+            "Duration": "Duratio",
+            "Hour": "Hora",
+            "Hours": "Horae",
+            "Minutes": "Minuta",
+            "Ending": "Ending",
+            "People": "Homines",
+            "Share": "Share",
+            "Continue": "continue",
+            "Recurring": "Redit",
+            "RecurringTitle": "Redit diebus",
+            "Daily": "Cotidiana",
+            "Weekly": "Weekly",
+            "Monthly": "Menstrua",
+            "SelectLocation": "Primum locum eligere quaeso.",
+            "eventType": "Event Type",
+            "EditTitle": "Cogita an title...",
+            "SetTitle": "Quaeso res titulo posuit",
+            "ScheduleOnlineConference": "Schedule Conference Online",
+            "SOCDescription": "Quaeso definias colloquium initium et tempus finem. Omnis qui eventum temporis huius temporis visitat, interretiali colloquio coniunget auto.",
+            "EndDate": "End",
+            "location": {
+                "Title": "Pone tibi Location"
+            },
+            "interest": {
+                "Title": "Elige quod operatio",
+                "Filter": "Quaerere utilitates..."
+            },
+            "SetLivestream": "Crustulum link ad livestream \/ videoconference"
+        },
+        "EventAlreadyClosed": "Haec res iam clausi",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Adde Kalendarium?",
+                "prompt": "Velisne hunc eventum addere fastis tuis?",
+                "yes": "Ita",
+                "no": "No"
+            },
+            "dialog": {
+                "Title": "Add Event to your Calendar"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Availabilities",
+        "NewAvailability": {
+            "Title": "Nova Availability",
+            "SaveAvailability": "Servare Availability",
+            "SelectTemplate": "Placere eligere Service",
+            "SelectLocation": "Placere eligere Location",
+            "SelectArea": "Placere eligere Area",
+            "Type": "Type",
+            "Weekly": "Weekly",
+            "RecurringStartDate": "Redit Satus Date",
+            "EndDate": "Finis Date",
+            "SelectTime": "Curo Tempus justo",
+            "SelectTimeSlot": "Tempus eligere socors",
+            "SelectTimeSlots": "Lego desideravit tempus foramina",
+            "PeopleMin": "Minimum visitors",
+            "PeopleMax": "Maxime visitatores",
+            "PeopleLabels": "Titulus permissus",
+            "Next": "deinde",
+            "Back": "Retro"
+        },
+        "EditAvailability": "Edit Availability",
+        "SetVisitors": "Set Visitatores",
+        "Price": "Pretium",
+        "SelectAction": "Placere eligere actio",
+        "OpenProfile": "Apertum profile",
+        "RemoveStaff": "Remove virgam",
+        "PleaseSelectTimeSlots": "Quaeso eligere tempus foramina",
+        "ExceptionOccurred": "Exceptio occurrit",
+        "NotEnoughCreditsToParticipateEvents": "Non satis credita {999}} eventa participare. Opus est tibi {1000}} creditis. Vis emere?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Satus date",
+            "endDate": "Finis date",
+            "justOnce": "Adhuc semel",
+            "justOnceWeekly": "Hoc septimana solum",
+            "justOnceMonthly": "Hoc solum mensis",
+            "recurring": "Redit"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Free res",
+            "optional": "Ad libitum conlationem",
+            "required": "Requiritur solucionis"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Ad libitum conlationem",
+            "required": "Requiritur solucionis",
+            "paid": "solvit"
+        },
+        "confirmationDialog": {
+            "title": "Confirmatio solucionis",
+            "content": "Hic eventus contributionem libitum de {{amount}} habet.",
+            "button": "Contribuere"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} pars eventus nondum est. Visne ea participem addere?",
+        "userNotFound": "User non inveni",
+        "confirmYes": "Ita",
+        "confirmNo": "No"
+    },
+    "notifications": {
+        "EventActivityIn": "Actio eventus in {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Regulae frequentissimae mutatae sunt pro eventu {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "administrare vestri email subnotationes",
+        "IfUnsubscribe": "Si vis unsubscribe",
+        "ClickHereToVisitEvent": "Please preme here to visit event",
+        "Calendars\/reminder": "Eventus &quot;{999}}&quot; incipiet in {{{call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Imple Ex hoc Spreadsheet",
+        "fileLabel": "Upload Spreadsheet:",
+        "importOptions": "Optiones",
+        "importProgress": "Progressus",
+        "sampleCSV": "Sample CSV",
+        "joinEventLabel": "Adiungere users temere eventu",
+        "smsText": "Heus, tibi nexum cum {{communityName}} misi. Quaeso reprehendo eam.",
+        "emailSubject": "Sicut misit te nexum",
+        "emailBody": "Heus, modo tibi invitationem ad {{communityName}} misi. Quaeso reprehendo eam.",
+        "fileNotFound": "Dolemus, fasciculus CSV non inventus est.",
+        "fileEmpty": "Nos paenitet, CSV fasciculus inanis est.",
+        "fieldNotFound": "Requisitis campus &quot;{{1}}&quot; non inventus est",
+        "userIdNotFound": "user est sed id inanis",
+        "activateUsers": "mitte activation ad users?",
+        "taskStreamInvalid": "negotium amnis invalidum",
+        "instructionsEmpty": "negotium amnis instructiones inanes",
+        "interestsEmpty": "non potest utilitates",
+        "interestAbsent": "usuram {999}} non inveni",
+        "complete": "Complete",
+        "errorLine": "linea {{1}}",
+        "errorsTitle": "Errores occurrit",
+        "communityUsers": "Communitates haec est index"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Repraesentat id quod potest participare",
+            "displayType": "Eventus"
+        },
+        "Calendars\/recurring": {
+            "description": "Usus ad rivos referens, qui periodice recurrere intelliguntur",
+            "displayType": "Redit Event"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Add Slot",
+        "StartTime": "Satus tempus",
+        "EndTime": "Tempus finis",
+        "Save": "salvare",
+        "AddTimeSlot": "Tempus addere Slote",
+        "CopyFromDay": "Effingo a die",
+        "Nearest": "Proxima",
+        "Today": "hodie",
+        "Tomorrow": "Cras",
+        "AfterTomorrow": "Post crastinum"
+    }
+}

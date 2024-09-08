@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "ਜਨ",
+        "Feb": "ਫਰਵਰੀ",
+        "Mar": "ਮਾਰ",
+        "Apr": "ਅਪ੍ਰੈਲ",
+        "May": "ਮਈ",
+        "Jun": "ਜੂਨ",
+        "Jul": "ਜੁਲਾਈ",
+        "Aug": "ਅਗਸਤ",
+        "Sep": "ਸਤੰਬਰ",
+        "Oct": "ਅਕਤੂਬਰ",
+        "Nov": "ਨਵੰਬਰ",
+        "Dec": "ਦਸੰਬਰ"
+    },
+    "monthsLong": {
+        "Jan": "ਜਨਵਰੀ",
+        "Feb": "ਫਰਵਰੀ",
+        "Mar": "ਮਾਰਚ",
+        "Apr": "ਅਪ੍ਰੈਲ",
+        "May": "ਮਈ",
+        "Jun": "ਜੂਨ",
+        "Jul": "ਜੁਲਾਈ",
+        "Aug": "ਅਗਸਤ",
+        "Sep": "ਸਤੰਬਰ",
+        "Oct": "ਅਕਤੂਬਰ",
+        "Nov": "ਨਵੰਬਰ",
+        "Dec": "ਦਸੰਬਰ"
+    },
+    "weekdays": {
+        "Sun": "ਸੂਰਜ",
+        "Mon": "ਸੋਮ",
+        "Tue": "ਮੰਗਲਵਾਰ",
+        "Wed": "ਬੁੱਧ",
+        "Thu": "ਥੁ",
+        "Fri": "ਸ਼ੁਕਰਵਾਰ",
+        "Sat": "ਸਤਿ"
+    },
+    "weekdaysLong": {
+        "Sun": "ਐਤਵਾਰ",
+        "Mon": "ਸੋਮਵਾਰ",
+        "Tue": "ਮੰਗਲਵਾਰ",
+        "Wed": "ਬੁੱਧਵਾਰ",
+        "Thu": "ਵੀਰਵਾਰ",
+        "Fri": "ਸ਼ੁੱਕਰਵਾਰ",
+        "Sat": "ਸ਼ਨੀਵਾਰ"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "ਨਵੀਂ ਘਟਨਾ ਦੀ ਯੋਜਨਾ ਬਣਾਓ"
+        },
+        "tool": {
+            "HostedBy": "{{name}} ਦੁਆਰਾ ਮੇਜਬਾਨੀ ਕੀਤੀ ਗਈ",
+            "Name": "ਨਾਮ",
+            "AreYouIn": "ਕੀ ਤੁਸੀਂ ਅੰਦਰ ਹੋ?",
+            "Yes": "ਹਾਂ",
+            "No": "ਨੰ",
+            "Ok": "ਠੀਕ ਹੈ",
+            "Cancel": "ਰੱਦ ਕਰੋ",
+            "Maybe": "ਸ਼ਾਇਦ",
+            "Conversation": "ਗੱਲਬਾਤ",
+            "Promote": "ਇਸ ਘਟਨਾ ਦਾ ਪ੍ਰਚਾਰ ਕਰੋ",
+            "Reminders": "ਰੀਮਾਈਂਡਰ",
+            "RemindersLabel": "ਮੈਂ ਇਸ ਵਿੱਚ ਇੱਕ ਘਟਨਾ ਬਾਰੇ ਸੂਚਿਤ ਕਰਨਾ ਚਾਹੁੰਦਾ ਹਾਂ:",
+            "MoreInfo": "ਹੋਰ ਜਾਣਕਾਰੀ",
+            "Registration": "ਰਜਿਸਟ੍ਰੇਸ਼ਨ",
+            "SetReminders": "ਕਿਰਪਾ ਕਰਕੇ ਰੀਮਾਈਂਡਰ ਸੈਟ ਕਰੋ",
+            "ReservationFee": "ਰਿਜ਼ਰਵੇਸ਼ਨ ਫੀਸ",
+            "AddParticipants": "ਭਾਗੀਦਾਰਾਂ ਨੂੰ ਸ਼ਾਮਲ ਕਰੋ",
+            "ManageReservation": "ਰਿਜ਼ਰਵੇਸ਼ਨ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰੋ",
+            "UpdateFutureReservations": "ਕੀ ਤੁਸੀਂ ਭਵਿੱਖ ਦੇ ਸਾਰੇ ਰਿਜ਼ਰਵੇਸ਼ਨਾਂ ਨੂੰ ਵੀ ਇਸੇ ਤਰ੍ਹਾਂ ਅਪਡੇਟ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
+            "RecurringAdmin": "ਆਵਰਤੀ ਸੈਟਿੰਗਾਂ",
+            "MakeReservation": "ਰਿਜ਼ਰਵੇਸ਼ਨ ਕਰੋ",
+            "StartLiveStream": "ਲਾਈਵ ਸਟ੍ਰੀਮ ਲਈ ਕਲਿੱਕ ਕਰੋ",
+            "LiveStreamEnded": "ਲਾਈਵ ਸਟ੍ਰੀਮ ਸਮਾਪਤ ਹੋ ਗਈ ਹੈ",
+            "ClickToViewRecording": "ਰਿਕਾਰਡਿੰਗ ਦੇਖਣ ਲਈ ਕਲਿੱਕ ਕਰੋ",
+            "Checkin": "ਹਾਜ਼ਰੀ ਕੋਡ ਸਕੈਨ ਕਰੋ",
+            "Myqr": "ਚੈੱਕ ਇਨ ਕਰੋ",
+            "CloseEvent": {
+                "button": "ਇਵੈਂਟ ਰੱਦ ਕਰੋ",
+                "confirm": {
+                    "text": {
+                        "Cancel": "ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ &#39;ਤੇ ਇਸ ਇਵੈਂਟ ਨੂੰ ਰੱਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
+                        "Participant": "ਇਸ ਇਵੈਂਟ ਵਿੱਚ 1 ਭਾਗੀਦਾਰ ਹੈ",
+                        "Participants": "ਇਸ ਇਵੈਂਟ ਵਿੱਚ {{count}} ਭਾਗੀਦਾਰ ਹਨ",
+                        "Recurring": "ਇਹ ਘਟਨਾ ਆਵਰਤੀ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸ ਦੇ ਭਵਿੱਖੀ ਮੌਕਿਆਂ ਨੂੰ ਵੀ ਰੱਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+                    },
+                    "trip": {
+                        "Cancel": "ਕੀ ਤੁਸੀਂ ਆਪਣੀ ਯਾਤਰਾ {{tripDirection}} ਇਸ ਇਵੈਂਟ ਨੂੰ ਵੀ ਰੱਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
+                        "Passengers": "ਇੱਥੇ {{passengerCount}} ਯਾਤਰੀ ਤੁਹਾਡੇ &#39;ਤੇ ਭਰੋਸਾ ਕਰ ਰਹੇ ਹਨ।",
+                        "Title": "ਯਾਤਰਾ ਬੰਦ ਕਰੋ"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "ਤੋਂ",
+                        "to": "ਨੂੰ",
+                        "from": "ਤੋਂ"
+                    }
+                }
+            },
+            "Calendar": "ਕੈਲੰਡਰ",
+            "Interests": "ਰੁਚੀਆਂ",
+            "Directions": "ਦਿਸ਼ਾਵਾਂ",
+            "TitleOfEvent": "ਘਟਨਾ ਦਾ ਸਿਰਲੇਖ:",
+            "OpenTo": "ਲਈ ਖੋਲ੍ਹੋ",
+            "GoingTo": "&#39;ਤੇ ਹੋਵੇਗਾ",
+            "NotGoingTo": "&#39;ਤੇ ਨਹੀਂ ਹੋਵੇਗਾ",
+            "MaybeGoingTo": "&#39;ਤੇ ਹੋ ਸਕਦਾ ਹੈ",
+            "AdminDontPay": "ਐਡਮਿਨ ਨੂੰ ਭੁਗਤਾਨ ਕਰਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ",
+            "PublisherDontPay": "ਪ੍ਰਕਾਸ਼ਕ ਨੂੰ ਭੁਗਤਾਨ ਕਰਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ",
+            "EmptyList": "ਖਾਲੀ ਸੂਚੀ",
+            "NeedToPayCredits": "ਭੁਗਤਾਨ ਕਰਨ ਦੀ ਲੋੜ ਹੈ: <span>{{amount}} ਕ੍ਰੈਡਿਟ<\/span>",
+            "PleaseJoinParticipants": "ਕਿਰਪਾ ਕਰਕੇ {{participant}} ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
+            "YouReservingPlace": "ਤੁਸੀਂ ਆਪਣਾ ਸਥਾਨ ਰਾਖਵਾਂ ਕਰ ਰਹੇ ਹੋਵੋਗੇ।",
+            "SelectIncludesToAdd": "ਜੋੜਨ ਲਈ ਇੱਕ ਜਾਂ ਵੱਧ {{TypeDisplayPlural}} ਚੁਣੋ:",
+            "YouHaveNotRegisteredAnyIncluded": "ਤੁਸੀਂ ਅਜੇ ਤੱਕ ਕੋਈ {{TypeDisplayPlural}} ਰਜਿਸਟਰ ਨਹੀਂ ਕੀਤਾ ਹੈ",
+            "Proceed": "ਅੱਗੇ ਵਧੋ",
+            "MakeChanges": "ਮੇਰੀਆਂ ਤਬਦੀਲੀਆਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰੋ",
+            "CancelReservation": "ਪੂਰੀ ਰਿਜ਼ਰਵੇਸ਼ਨ ਰੱਦ ਕਰੋ",
+            "Total": "ਕੁੱਲ",
+            "RequiredRelatedParticipants": "ਇਸ ਇਵੈਂਟ ਲਈ ਭਾਗੀਦਾਰਾਂ ਦੀ ਲੋੜ ਹੈ: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "ਆਵਰਤੀ ਸੈਟਿੰਗਾਂ ਨੂੰ ਅੱਪਡੇਟ ਕਰਨ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਉਪਲਬਧਤਾ &quot;{{title}}&quot; ਨੂੰ ਸੰਪਾਦਿਤ ਕਰੋ"
+        },
+        "composer": {
+            "SetLocation": "ਮੇਰਾ ਟਿਕਾਣਾ ਸੈੱਟ ਕਰੋ",
+            "SetInfoLink": "ਵਧੀਕ ਜਾਣਕਾਰੀ ਲਈ ਲਿੰਕ ਸੈੱਟ ਕਰੋ",
+            "ChooseAvailability": "ਉਪਲਬਧ ਸੇਵਾ ਚੁਣੋ",
+            "ChooseActivity": "ਕੋਈ ਗਤੀਵਿਧੀ ਚੁਣੋ",
+            "ChoosePublisher": "ਪ੍ਰਕਾਸ਼ਕ ਚੁਣੋ",
+            "Day": "ਦਿਨ",
+            "Starting": "ਸ਼ੁਰੂ ਕਰਨ",
+            "Duration": "ਮਿਆਦ",
+            "Hour": "ਘੰਟਾ",
+            "Hours": "ਘੰਟੇ",
+            "Minutes": "ਮਿੰਟ",
+            "Ending": "ਸਮਾਪਤ",
+            "People": "ਲੋਕ",
+            "Share": "ਸ਼ੇਅਰ ਕਰੋ",
+            "Continue": "ਜਾਰੀ ਰੱਖੋ",
+            "Recurring": "ਆਵਰਤੀ",
+            "RecurringTitle": "ਆਵਰਤੀ ਦਿਨ",
+            "Daily": "ਰੋਜ਼ਾਨਾ",
+            "Weekly": "ਹਫਤਾਵਾਰੀ",
+            "Monthly": "ਮਹੀਨਾਵਾਰ",
+            "SelectLocation": "ਕਿਰਪਾ ਕਰਕੇ ਪਹਿਲਾਂ ਇੱਕ ਟਿਕਾਣਾ ਚੁਣੋ।",
+            "eventType": "ਘਟਨਾ ਦੀ ਕਿਸਮ",
+            "EditTitle": "ਇੱਕ ਦਿਲਚਸਪ ਸਿਰਲੇਖ ਬਾਰੇ ਸੋਚੋ...",
+            "SetTitle": "ਕਿਰਪਾ ਕਰਕੇ ਇਵੈਂਟ ਦਾ ਸਿਰਲੇਖ ਸੈੱਟ ਕਰੋ",
+            "ScheduleOnlineConference": "ਔਨਲਾਈਨ ਕਾਨਫਰੰਸ ਤਹਿ ਕਰੋ",
+            "SOCDescription": "ਕਿਰਪਾ ਕਰਕੇ ਕਾਨਫਰੰਸ ਸ਼ੁਰੂ ਅਤੇ ਸਮਾਪਤੀ ਸਮਾਂ ਪਰਿਭਾਸ਼ਿਤ ਕਰੋ। ਹਰ ਵਿਅਕਤੀ ਜੋ ਇਸ ਸਮੇਂ ਦੌਰਾਨ ਇਵੈਂਟ ਦਾ ਦੌਰਾ ਕਰਦਾ ਹੈ, ਉਹ ਆਟੋਮੈਟਿਕ ਔਨਲਾਈਨ ਕਾਨਫਰੰਸ ਨਾਲ ਜੁੜ ਜਾਵੇਗਾ।",
+            "EndDate": "ਅੰਤ",
+            "location": {
+                "Title": "ਆਪਣਾ ਟਿਕਾਣਾ ਸੈੱਟ ਕਰੋ"
+            },
+            "interest": {
+                "Title": "ਕੋਈ ਗਤੀਵਿਧੀ ਚੁਣੋ",
+                "Filter": "ਦਿਲਚਸਪੀਆਂ ਖੋਜੋ..."
+            },
+            "SetLivestream": "ਲਾਈਵਸਟ੍ਰੀਮ \/ ਵੀਡੀਓ ਕਾਨਫਰੰਸ ਲਈ ਲਿੰਕ ਪੇਸਟ ਕਰੋ"
+        },
+        "EventAlreadyClosed": "ਇਹ ਇਵੈਂਟ ਪਹਿਲਾਂ ਹੀ ਬੰਦ ਹੈ",
+        "addToCalendar": {
+            "permissions": {
+                "title": "ਕੈਲੰਡਰ ਵਿੱਚ ਜੋੜਨਾ ਹੈ?",
+                "prompt": "ਕੀ ਤੁਸੀਂ ਇਸ ਇਵੈਂਟ ਨੂੰ ਆਪਣੇ ਕੈਲੰਡਰ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰਨਾ ਚਾਹੋਗੇ?",
+                "yes": "ਹਾਂ",
+                "no": "ਨੰ"
+            },
+            "dialog": {
+                "Title": "ਆਪਣੇ ਕੈਲੰਡਰ ਵਿੱਚ ਇਵੈਂਟ ਸ਼ਾਮਲ ਕਰੋ"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "ਉਪਲਬਧਤਾਵਾਂ",
+        "NewAvailability": {
+            "Title": "ਨਵੀਂ ਉਪਲਬਧਤਾ",
+            "SaveAvailability": "ਉਪਲਬਧਤਾ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰੋ",
+            "SelectTemplate": "ਕਿਰਪਾ ਕਰਕੇ ਸੇਵਾ ਚੁਣੋ",
+            "SelectLocation": "ਕਿਰਪਾ ਕਰਕੇ ਟਿਕਾਣਾ ਚੁਣੋ",
+            "SelectArea": "ਕਿਰਪਾ ਕਰਕੇ ਖੇਤਰ ਚੁਣੋ",
+            "Type": "ਟਾਈਪ ਕਰੋ",
+            "Weekly": "ਹਫਤਾਵਾਰੀ",
+            "RecurringStartDate": "ਆਵਰਤੀ ਸ਼ੁਰੂਆਤੀ ਮਿਤੀ",
+            "EndDate": "ਸਮਾਪਤੀ ਮਿਤੀ",
+            "SelectTime": "ਟਾਈਮ ਸਲਾਟ ਪ੍ਰਬੰਧਿਤ ਕਰੋ",
+            "SelectTimeSlot": "ਇੱਕ ਸਮਾਂ ਸਲਾਟ ਚੁਣੋ",
+            "SelectTimeSlots": "ਲੋੜੀਂਦੇ ਸਮਾਂ ਸਲਾਟ ਚੁਣੋ",
+            "PeopleMin": "ਘੱਟੋ-ਘੱਟ ਸੈਲਾਨੀ",
+            "PeopleMax": "ਵੱਧ ਤੋਂ ਵੱਧ ਸੈਲਾਨੀ",
+            "PeopleLabels": "ਲੇਬਲ ਦੀ ਇਜਾਜ਼ਤ ਹੈ",
+            "Next": "ਅਗਲਾ",
+            "Back": "ਵਾਪਸ"
+        },
+        "EditAvailability": "ਉਪਲਬਧਤਾ ਦਾ ਸੰਪਾਦਨ ਕਰੋ",
+        "SetVisitors": "ਵਿਜ਼ਟਰ ਸੈੱਟ ਕਰੋ",
+        "Price": "ਕੀਮਤ",
+        "SelectAction": "ਕਿਰਪਾ ਕਰਕੇ ਕਾਰਵਾਈ ਚੁਣੋ",
+        "OpenProfile": "ਪ੍ਰੋਫਾਈਲ ਖੋਲ੍ਹੋ",
+        "RemoveStaff": "ਸਟਾਫ ਨੂੰ ਹਟਾਓ",
+        "PleaseSelectTimeSlots": "ਕਿਰਪਾ ਕਰਕੇ ਸਮਾਂ ਸਲਾਟ ਚੁਣੋ",
+        "ExceptionOccurred": "ਅਪਵਾਦ ਆਇਆ",
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} ਸਮਾਗਮਾਂ ਵਿੱਚ ਭਾਗ ਲੈਣ ਲਈ ਲੋੜੀਂਦੇ ਕ੍ਰੈਡਿਟ ਨਹੀਂ ਹਨ। ਤੁਹਾਨੂੰ {{needCredits}} ਕ੍ਰੈਡਿਟ ਦੀ ਲੋੜ ਹੈ। ਖਰੀਦਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "ਤਾਰੀਖ ਸ਼ੁਰੂ",
+            "endDate": "ਸਮਾਪਤੀ ਮਿਤੀ",
+            "justOnce": "ਬਸ ਇੱਕ ਵਾਰ",
+            "justOnceWeekly": "ਸਿਰਫ ਇਸ ਹਫਤੇ",
+            "justOnceMonthly": "ਇਸ ਮਹੀਨੇ ਹੀ",
+            "recurring": "ਆਵਰਤੀ"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "ਮੁਫ਼ਤ ਘਟਨਾ",
+            "optional": "ਵਿਕਲਪਿਕ ਯੋਗਦਾਨ",
+            "required": "ਲੋੜੀਂਦਾ ਭੁਗਤਾਨ"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "ਵਿਕਲਪਿਕ ਯੋਗਦਾਨ",
+            "required": "ਲੋੜੀਂਦਾ ਭੁਗਤਾਨ",
+            "paid": "ਦਾ ਭੁਗਤਾਨ"
+        },
+        "confirmationDialog": {
+            "title": "ਭੁਗਤਾਨ ਦੀ ਪੁਸ਼ਟੀ",
+            "content": "ਇਸ ਇਵੈਂਟ ਵਿੱਚ {{amount}} ਦਾ ਵਿਕਲਪਿਕ ਯੋਗਦਾਨ ਹੈ।",
+            "button": "ਯੋਗਦਾਨ"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ਅਜੇ ਤੱਕ ਘਟਨਾ ਦਾ ਹਿੱਸਾ ਨਹੀਂ ਹੈ। ਕੀ ਤੁਸੀਂ ਉਹਨਾਂ ਨੂੰ ਭਾਗੀਦਾਰ ਵਜੋਂ ਸ਼ਾਮਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
+        "userNotFound": "ਉਪਭੋਗਤਾ ਨਹੀਂ ਮਿਲਿਆ",
+        "confirmYes": "ਹਾਂ",
+        "confirmNo": "ਨੰ"
+    },
+    "notifications": {
+        "EventActivityIn": "{{{stream.fields.title}}} ਵਿੱਚ ਇਵੈਂਟ ਗਤੀਵਿਧੀ",
+        "RecurringRulesChanged": "ਇਵੈਂਟ {{{call 'message.getInstruction' 'eventTitle'}}} ਲਈ ਆਵਰਤੀ ਨਿਯਮ ਬਦਲੇ ਗਏ",
+        "ManageEmailSubscriptions": "ਆਪਣੀਆਂ ਈਮੇਲ ਗਾਹਕੀਆਂ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰੋ",
+        "IfUnsubscribe": "ਜੇਕਰ ਤੁਸੀਂ ਗਾਹਕੀ ਰੱਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ",
+        "ClickHereToVisitEvent": "ਕਿਰਪਾ ਕਰਕੇ ਇਵੈਂਟ &#39;ਤੇ ਜਾਣ ਲਈ ਇੱਥੇ ਕਲਿੱਕ ਕਰੋ",
+        "Calendars\/reminder": "ਇਵੈਂਟ &quot;{{{call 'message.getInstruction' 'name'}}&quot; {{&call 'message.getInstruction' 'time'}}} ਵਿੱਚ ਸ਼ੁਰੂ ਹੋਵੇਗਾ"
+    },
+    "import": {
+        "linkTitle": "ਇਸ ਸਪ੍ਰੈਡਸ਼ੀਟ ਨੂੰ ਭਰੋ",
+        "fileLabel": "ਸਪ੍ਰੈਡਸ਼ੀਟ ਅੱਪਲੋਡ ਕਰੋ:",
+        "importOptions": "ਵਿਕਲਪ",
+        "importProgress": "ਤਰੱਕੀ",
+        "sampleCSV": "ਨਮੂਨਾ CSV ਡਾਊਨਲੋਡ ਕਰੋ",
+        "joinEventLabel": "ਬੇਤਰਤੀਬ ਘਟਨਾ ਲਈ ਉਪਭੋਗਤਾਵਾਂ ਨਾਲ ਜੁੜੋ",
+        "smsText": "ਹੇ, ਮੈਂ ਹੁਣੇ ਤੁਹਾਨੂੰ {{communityName}} ਦਾ ਲਿੰਕ ਭੇਜਿਆ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਦੀ ਜਾਂਚ ਕਰੋ।",
+        "emailSubject": "ਹੁਣੇ ਤੁਹਾਨੂੰ ਇੱਕ ਲਿੰਕ ਭੇਜਿਆ ਹੈ",
+        "emailBody": "ਹੇ, ਮੈਂ ਤੁਹਾਨੂੰ {{communityName}} ਲਈ ਇੱਕ ਸੱਦਾ ਭੇਜਿਆ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਦੀ ਜਾਂਚ ਕਰੋ।",
+        "fileNotFound": "ਮਾਫ਼ ਕਰਨਾ, CSV ਫ਼ਾਈਲ ਨਹੀਂ ਮਿਲੀ।",
+        "fileEmpty": "ਮਾਫ਼ ਕਰਨਾ, CSV ਫ਼ਾਈਲ ਖਾਲੀ ਹੈ।",
+        "fieldNotFound": "ਲੋੜੀਂਦਾ ਖੇਤਰ &quot;{{1}}&quot; ਨਹੀਂ ਮਿਲਿਆ",
+        "userIdNotFound": "ਉਪਭੋਗਤਾ ਮੌਜੂਦ ਹੈ ਪਰ ਆਈਡੀ ਖਾਲੀ ਹੈ",
+        "activateUsers": "ਕੀ ਉਪਭੋਗਤਾਵਾਂ ਨੂੰ ਕਿਰਿਆਸ਼ੀਲਤਾ ਸੁਨੇਹਾ ਭੇਜਣਾ ਹੈ?",
+        "taskStreamInvalid": "ਕਾਰਜ ਸਟ੍ਰੀਮ ਅਵੈਧ ਹੈ",
+        "instructionsEmpty": "ਕਾਰਜ ਸਟ੍ਰੀਮ ਨਿਰਦੇਸ਼ ਖਾਲੀ ਹਨ",
+        "interestsEmpty": "ਰੁਚੀਆਂ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕਰ ਸਕਦੇ",
+        "interestAbsent": "ਵਿਆਜ {{1}} ਨਹੀਂ ਮਿਲਿਆ",
+        "complete": "ਸੰਪੂਰਨ",
+        "errorLine": "ਲਾਈਨ {{1}}",
+        "errorsTitle": "ਗਲਤੀਆਂ ਆਈਆਂ",
+        "communityUsers": "ਇਹ ਭਾਈਚਾਰਿਆਂ ਦੀ ਸੂਚੀ ਹੈ"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "ਇੱਕ ਘਟਨਾ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ ਜਿਸ ਵਿੱਚ ਲੋਕ ਹਿੱਸਾ ਲੈ ਸਕਦੇ ਹਨ",
+            "displayType": "ਘਟਨਾ"
+        },
+        "Calendars\/recurring": {
+            "description": "ਸਮੇਂ-ਸਮੇਂ &#39;ਤੇ ਦੁਹਰਾਉਣ ਵਾਲੀਆਂ ਸਟ੍ਰੀਮਾਂ ਨਾਲ ਸੰਬੰਧਿਤ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ",
+            "displayType": "ਆਵਰਤੀ ਇਵੈਂਟ"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "ਸਲਾਟ ਸ਼ਾਮਲ ਕਰੋ",
+        "StartTime": "ਸ਼ੁਰੂਆਤੀ ਸਮਾਂ",
+        "EndTime": "ਸਮਾਪਤੀ ਸਮਾਂ",
+        "Save": "ਸੇਵ ਕਰੋ",
+        "AddTimeSlot": "ਸਮਾਂ ਸਲਾਟ ਸ਼ਾਮਲ ਕਰੋ",
+        "CopyFromDay": "ਦਿਨ ਤੋਂ ਕਾਪੀ ਕਰੋ",
+        "Nearest": "ਨਜ਼ਦੀਕੀ",
+        "Today": "ਅੱਜ",
+        "Tomorrow": "ਕੱਲ੍ਹ",
+        "AfterTomorrow": "ਕੱਲ ਦੇ ਬਾਅਦ"
+    }
+}

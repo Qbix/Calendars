@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Feb",
+        "Mar": "Mar",
+        "Apr": "Apr",
+        "May": "majo",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Aŭg",
+        "Sep": "Sep",
+        "Oct": "Okt",
+        "Nov": "nov",
+        "Dec": "Dec"
+    },
+    "monthsLong": {
+        "Jan": "januaro",
+        "Feb": "februaro",
+        "Mar": "Marto",
+        "Apr": "Aprilo",
+        "May": "majo",
+        "Jun": "junio",
+        "Jul": "julio",
+        "Aug": "Aŭgusto",
+        "Sep": "septembro",
+        "Oct": "oktobro",
+        "Nov": "novembro",
+        "Dec": "decembro"
+    },
+    "weekdays": {
+        "Sun": "sunon",
+        "Mon": "lun",
+        "Tue": "mar",
+        "Wed": "mer",
+        "Thu": "Thu",
+        "Fri": "ven",
+        "Sat": "Sat"
+    },
+    "weekdaysLong": {
+        "Sun": "dimanĉo",
+        "Mon": "lundo",
+        "Tue": "mardon",
+        "Wed": "merkredon",
+        "Thu": "ĵaŭdon",
+        "Fri": "vendredo",
+        "Sat": "sabato"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Planu Novan Eventon"
+        },
+        "tool": {
+            "HostedBy": "Gastigita de {{name}}",
+            "Name": "Nomo",
+            "AreYouIn": "Ĉu vi estas ene?",
+            "Yes": "Jes",
+            "No": "Ne",
+            "Ok": "Bone",
+            "Cancel": "Nuligi",
+            "Maybe": "Eble",
+            "Conversation": "Konversacio",
+            "Promote": "Antaŭenigu ĉi tiun eventon",
+            "Reminders": "Rememorigiloj",
+            "RemindersLabel": "Mi volas esti sciigita pri evento en:",
+            "MoreInfo": "Pliaj informoj",
+            "Registration": "Registrado",
+            "SetReminders": "Bonvolu agordi memorigilojn",
+            "ReservationFee": "Rezervkotizo",
+            "AddParticipants": "Aldonu Partoprenantojn",
+            "ManageReservation": "Administri Rezervon",
+            "UpdateFutureReservations": "Ĉu vi ankaŭ volas ĝisdatigi ĉiujn estontajn rezervojn same?",
+            "RecurringAdmin": "Ripetantaj Agordoj",
+            "MakeReservation": "Faru Rezervon",
+            "StartLiveStream": "Klaku al Live Stream",
+            "LiveStreamEnded": "Viva fluo finiĝis",
+            "ClickToViewRecording": "klaku por vidi registradon",
+            "Checkin": "Skanu kodojn de ĉeestantoj",
+            "Myqr": "Kontrolu",
+            "CloseEvent": {
+                "button": "Nuligi Eventon",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Ĉu vi certas, ke vi volas nuligi ĉi tiun eventon?",
+                        "Participant": "Estas 1 partoprenanto en ĉi tiu evento",
+                        "Participants": "Estas {{count}} partoprenantoj en ĉi tiu evento",
+                        "Recurring": "Ĉi tiu evento ripetiĝas. Ĉu vi volas ankaŭ nuligi ĉiujn ĝiajn estontajn okazojn ankaŭ?"
+                    },
+                    "trip": {
+                        "Cancel": "Ĉu vi ankaŭ volas nuligi vian vojaĝon {{tripDirection}} ĉi tiun eventon?",
+                        "Passengers": "Estas {{passengerCount}} pasaĝeroj fidantaj je vi.",
+                        "Title": "Fermu Vojaĝon"
+                    },
+                    "directions": {
+                        "TO": "AL",
+                        "FROM": "DE",
+                        "to": "al",
+                        "from": "de"
+                    }
+                }
+            },
+            "Calendar": "Kalendaro",
+            "Interests": "Interesoj",
+            "Directions": "Direktoj",
+            "TitleOfEvent": "Titolo de la evento:",
+            "OpenTo": "Malfermu al",
+            "GoingTo": "estos je",
+            "NotGoingTo": "ne estos ĉe",
+            "MaybeGoingTo": "eble estos ĉe",
+            "AdminDontPay": "Administranto ne bezonas pagi",
+            "PublisherDontPay": "Eldonisto ne bezonas pagi",
+            "EmptyList": "Malplena listo",
+            "NeedToPayCredits": "Necesas pagi: <span>{{amount}} kreditoj<\/span>",
+            "PleaseJoinParticipants": "Bonvolu aliĝi al {{participant}}",
+            "YouReservingPlace": "Vi rezervos vian lokon.",
+            "SelectIncludesToAdd": "Elektu unu aŭ plurajn {{TypeDisplayPlural}} por aldoni:",
+            "YouHaveNotRegisteredAnyIncluded": "Vi ankoraŭ ne registris neniun {{TypeDisplayPlural}}",
+            "Proceed": "Procedi",
+            "MakeChanges": "Konservu Miajn Ŝanĝojn",
+            "CancelReservation": "Nuligi tutan rezervadon",
+            "Total": "Entute",
+            "RequiredRelatedParticipants": "Ĉi tiu evento postulas partoprenantojn: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Bonvolu redakti haveblecon &quot;{{title}}&quot; por ĝisdatigi ripetiĝantajn agordojn"
+        },
+        "composer": {
+            "SetLocation": "Agordu Mian Lokon",
+            "SetInfoLink": "Agordu Ligon al pliaj informoj",
+            "ChooseAvailability": "Elektu Disponebla Servo",
+            "ChooseActivity": "Elektu Agadon",
+            "ChoosePublisher": "Elektu Eldoniston",
+            "Day": "Tago",
+            "Starting": "Komencante",
+            "Duration": "Daŭro",
+            "Hour": "Horo",
+            "Hours": "Horoj",
+            "Minutes": "Minutoj",
+            "Ending": "Finiĝo",
+            "People": "Homoj",
+            "Share": "Kunhavigi",
+            "Continue": "Daŭrigu",
+            "Recurring": "Ripetanta",
+            "RecurringTitle": "Ripetantaj Tagoj",
+            "Daily": "Ĉiutage",
+            "Weekly": "Ĉiusemajne",
+            "Monthly": "Monata",
+            "SelectLocation": "Bonvolu unue elekti lokon.",
+            "eventType": "Eventa Tipo",
+            "EditTitle": "Pensu pri interesa titolo...",
+            "SetTitle": "Bonvolu agordi titolon de evento",
+            "ScheduleOnlineConference": "Programu Retan Konferencon",
+            "SOCDescription": "Bonvolu difini konferencan komencon kaj fintempon. Ĉiu persono, kiu vizitas la eventon dum ĉi tiu tempoperiodo, aŭtomate konektos al interreta konferenco.",
+            "EndDate": "Fino",
+            "location": {
+                "Title": "Fiksu Vian Lokon"
+            },
+            "interest": {
+                "Title": "Elektu Agadon",
+                "Filter": "Serĉaj interesoj..."
+            },
+            "SetLivestream": "Algluu ligilon al livestream \/ videokonferenco"
+        },
+        "EventAlreadyClosed": "Ĉi tiu evento jam fermiĝis",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Ĉu aldoni al Kalendaro?",
+                "prompt": "Ĉu vi ŝatus aldoni ĉi tiun eventon al via kalendaro?",
+                "yes": "Jes",
+                "no": "Ne"
+            },
+            "dialog": {
+                "Title": "Aldonu Eventon al via Kalendaro"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Haveblecoj",
+        "NewAvailability": {
+            "Title": "Nova Havebleco",
+            "SaveAvailability": "Konservu Haveblecon",
+            "SelectTemplate": "Bonvolu elekti Servon",
+            "SelectLocation": "Bonvolu elekti Lokon",
+            "SelectArea": "Bonvolu elekti Areon",
+            "Type": "Tajpu",
+            "Weekly": "Ĉiusemajne",
+            "RecurringStartDate": "Ripetanta Komenca Dato",
+            "EndDate": "Findato",
+            "SelectTime": "Administri Temponojn",
+            "SelectTimeSlot": "Elektu tempon",
+            "SelectTimeSlots": "Elektu deziratajn tempoperiodojn",
+            "PeopleMin": "Minimumaj vizitantoj",
+            "PeopleMax": "Maksimumaj vizitantoj",
+            "PeopleLabels": "Etikedoj permesitaj",
+            "Next": "Poste",
+            "Back": "Reen"
+        },
+        "EditAvailability": "Redakti Haveblecon",
+        "SetVisitors": "Agordu Vizitantojn",
+        "Price": "Prezo",
+        "SelectAction": "Bonvolu elekti agon",
+        "OpenProfile": "Malfermu profilon",
+        "RemoveStaff": "Forigi personaron",
+        "PleaseSelectTimeSlots": "Bonvolu elekti tempoperiodojn",
+        "ExceptionOccurred": "Okazis escepto",
+        "NotEnoughCreditsToParticipateEvents": "Ne sufiĉaj kreditoj por partopreni {{eventsAmount}} eventojn. Vi bezonas {{needCredits}} kreditojn. Ĉu vi volas aĉeti?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Komenca dato",
+            "endDate": "Findato",
+            "justOnce": "Nur unufoje",
+            "justOnceWeekly": "Ĉi-semajne nur",
+            "justOnceMonthly": "Ĉi-monate nur",
+            "recurring": "Ripetanta"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Senpaga evento",
+            "optional": "Laŭvola kontribuo",
+            "required": "Bezonata pago"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Laŭvola kontribuo",
+            "required": "Bezonata pago",
+            "paid": "pagita"
+        },
+        "confirmationDialog": {
+            "title": "Konfirmo de pago",
+            "content": "Ĉi tiu evento havas laŭvolan kontribuon de {{amount}}.",
+            "button": "Kontribuu"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ankoraŭ ne estas parto de la evento. Ĉu vi volas aldoni ilin kiel partoprenanton?",
+        "userNotFound": "Uzanto ne trovita",
+        "confirmYes": "Jes",
+        "confirmNo": "Ne"
+    },
+    "notifications": {
+        "EventActivityIn": "Eventagado en {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Revenantaj reguloj ŝanĝitaj por evento {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "administru viajn retpoŝtajn abonojn",
+        "IfUnsubscribe": "Se vi volas malaboni",
+        "ClickHereToVisitEvent": "Bonvolu klaki ĉi tie por viziti eventon",
+        "Calendars\/reminder": "Okazaĵo &quot;{{{call 'message.getInstruction' 'name'}}&quot; komenciĝos en {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Plenigu Ĉi tiun Tabulfolion",
+        "fileLabel": "Alŝutu Tabelfolion:",
+        "importOptions": "Opcioj",
+        "importProgress": "Progreso",
+        "sampleCSV": "Elŝutu Specimen CSV",
+        "joinEventLabel": "Aliĝu uzantoj al hazarda evento",
+        "smsText": "Hej, mi ĵus sendis al vi ligilon al {{communityName}}. Bonvolu kontroli ĝin.",
+        "emailSubject": "Ĵus sendis al vi ligilon",
+        "emailBody": "Hej, mi ĵus sendis al vi inviton al {{communityName}}. Bonvolu kontroli ĝin.",
+        "fileNotFound": "Pardonu, CSV-dosiero ne trovita.",
+        "fileEmpty": "Pardonu, CSV-dosiero estas malplena.",
+        "fieldNotFound": "Bezonata kampo &quot;{{1}}&quot; ne trovita",
+        "userIdNotFound": "uzanto ekzistas sed id malplena",
+        "activateUsers": "sendi aktivigan mesaĝon al uzantoj?",
+        "taskStreamInvalid": "taskofluo nevalida",
+        "instructionsEmpty": "taskstream instrukcioj malplenaj",
+        "interestsEmpty": "ne povas akiri interesojn",
+        "interestAbsent": "intereso {{1}} ne trovita",
+        "complete": "Kompleta",
+        "errorLine": "linio {{1}}",
+        "errorsTitle": "Eraroj okazis",
+        "communityUsers": "Ĉi tio estas listo de komunumoj"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Reprezentas eventon, kiun homoj povas partopreni",
+            "displayType": "Evento"
+        },
+        "Calendars\/recurring": {
+            "description": "Uzita por rilatigi fluojn kiuj estas intencitaj periode ripetiĝi",
+            "displayType": "Ripetanta Okazaĵo"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Aldoni Slot",
+        "StartTime": "Komenca Tempo",
+        "EndTime": "Fina Tempo",
+        "Save": "Savi",
+        "AddTimeSlot": "Aldonu Time Slot",
+        "CopyFromDay": "Kopio de tago",
+        "Nearest": "Plej proksima",
+        "Today": "Hodiaŭ",
+        "Tomorrow": "Morgaŭ",
+        "AfterTomorrow": "Post morgaŭ"
+    }
+}

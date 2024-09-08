@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Ene",
+        "Feb": "Feb",
+        "Mar": "Si Mar",
+        "Apr": "Abr",
+        "May": "May",
+        "Jun": "Si Jun",
+        "Jul": "Hul",
+        "Aug": "Ago",
+        "Sep": "Sep",
+        "Oct": "Okt",
+        "Nov": "Nob",
+        "Dec": "Dis"
+    },
+    "monthsLong": {
+        "Jan": "Enero",
+        "Feb": "Pebrero",
+        "Mar": "Marso",
+        "Apr": "Abril",
+        "May": "May",
+        "Jun": "Hunyo",
+        "Jul": "Hulyo",
+        "Aug": "Agosto",
+        "Sep": "Septyembre",
+        "Oct": "Oktubre",
+        "Nov": "Nobyembre",
+        "Dec": "Disyembre"
+    },
+    "weekdays": {
+        "Sun": "Sun",
+        "Mon": "Si Mon",
+        "Tue": "Tue",
+        "Wed": "Miyerkules",
+        "Thu": "Huwebes",
+        "Fri": "Biyernes",
+        "Sat": "Sab"
+    },
+    "weekdaysLong": {
+        "Sun": "Domingo",
+        "Mon": "Lunes",
+        "Tue": "Martes",
+        "Wed": "Miyerkules",
+        "Thu": "Huwebes",
+        "Fri": "Biyernes",
+        "Sat": "Sabado"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Pagplano og Bag-ong Hitabo"
+        },
+        "tool": {
+            "HostedBy": "Gi-host ni {{name}}",
+            "Name": "Ngalan",
+            "AreYouIn": "Naa ka?",
+            "Yes": "Oo",
+            "No": "Dili",
+            "Ok": "Ok",
+            "Cancel": "Pagkanselar",
+            "Maybe": "Tingali",
+            "Conversation": "Pag-istoryahanay",
+            "Promote": "Ipasiugda kini nga kalihokan",
+            "Reminders": "Mga pahinumdom",
+            "RemindersLabel": "Gusto ko nga mapahibalo sa usa ka panghitabo sa:",
+            "MoreInfo": "Dugang impormasyon",
+            "Registration": "Pagparehistro",
+            "SetReminders": "Palihug pagtakda og mga pahinumdom",
+            "ReservationFee": "Bayad sa Pagpareserba",
+            "AddParticipants": "Idugang ang mga Partisipante",
+            "ManageReservation": "Pagdumala sa Pagpareserba",
+            "UpdateFutureReservations": "Gusto ba usab nimo nga i-update ang tanan nga umaabot nga reserbasyon sa parehas nga paagi?",
+            "RecurringAdmin": "Nagbalikbalik nga mga Setting",
+            "MakeReservation": "Paghimo og Pagpareserba",
+            "StartLiveStream": "Pag-klik sa Live Stream",
+            "LiveStreamEnded": "Natapos na ang live stream",
+            "ClickToViewRecording": "i-klik aron makita ang pagrekord",
+            "Checkin": "I-scan ang mga code sa nanambong",
+            "Myqr": "Check In",
+            "CloseEvent": {
+                "button": "Ikansela ang Hitabo",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Sigurado ka ba nga gusto nimong kanselahon kini nga panghitabo?",
+                        "Participant": "Adunay 1 ka partisipante niini nga kalihokan",
+                        "Participants": "Adunay {{count}} mga partisipante niini nga kalihokan",
+                        "Recurring": "Kini nga panghitabo nagbalikbalik. Gusto ba nimo nga kanselahon usab ang tanan nga umaabot nga mga higayon usab?"
+                    },
+                    "trip": {
+                        "Cancel": "Gusto ba nimong kanselahon ang imong biyahe {{tripDirection}} niini nga panghitabo?",
+                        "Passengers": "Adunay {{passengerCount}} mga pasahero nga nagsalig kanimo.",
+                        "Title": "Close Trip"
+                    },
+                    "directions": {
+                        "TO": "SA",
+                        "FROM": "GIKAN SA",
+                        "to": "sa",
+                        "from": "gikan sa"
+                    }
+                }
+            },
+            "Calendar": "Kalendaryo",
+            "Interests": "Mga interes",
+            "Directions": "Direksyon",
+            "TitleOfEvent": "Titulo sa panghitabo:",
+            "OpenTo": "Abli sa",
+            "GoingTo": "anaa sa",
+            "NotGoingTo": "dili sa",
+            "MaybeGoingTo": "basin naa sa",
+            "AdminDontPay": "Admin dili na kinahanglan magbayad",
+            "PublisherDontPay": "Dili kinahanglan nga mobayad ang magmamantala",
+            "EmptyList": "Walay sulod nga listahan",
+            "NeedToPayCredits": "Kinahanglang bayran: <span>{{amount}} nga mga kredito<\/span>",
+            "PleaseJoinParticipants": "Palihug apil {{participant}}",
+            "YouReservingPlace": "Magpareserba ka sa imong lugar.",
+            "SelectIncludesToAdd": "Pagpili og usa o daghan pa {{TypeDisplayPlural}} aron idugang:",
+            "YouHaveNotRegisteredAnyIncluded": "Wala ka pa nakarehistro og bisan unsang {{TypeDisplayPlural}}",
+            "Proceed": "Padayon",
+            "MakeChanges": "Luwasa ang Akong mga Kausaban",
+            "CancelReservation": "Ikansela ang tibuok nga reserbasyon",
+            "Total": "Total",
+            "RequiredRelatedParticipants": "Kini nga panghitabo nagkinahanglan og mga partisipante: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Palihug usba ang pagkaanaa &quot;{{title}}&quot; aron ma-update ang nagbalikbalik nga mga setting"
+        },
+        "composer": {
+            "SetLocation": "Ibutang ang Akong Lokasyon",
+            "SetInfoLink": "Ibutang ang Link sa dugang nga impormasyon",
+            "ChooseAvailability": "Pilia ang Magamit nga Serbisyo",
+            "ChooseActivity": "Pagpili og Kalihokan",
+            "ChoosePublisher": "Pilia ang Publisher",
+            "Day": "Adlaw",
+            "Starting": "Nagsugod",
+            "Duration": "Gidugayon",
+            "Hour": "Oras",
+            "Hours": "Mga oras",
+            "Minutes": "Minuto",
+            "Ending": "Pagtapos",
+            "People": "Mga tawo",
+            "Share": "Ipaambit",
+            "Continue": "Padayon",
+            "Recurring": "Nagbalikbalik",
+            "RecurringTitle": "Nagbalikbalik nga mga Adlaw",
+            "Daily": "Adlaw-adlaw",
+            "Weekly": "Kada semana",
+            "Monthly": "Kada bulan",
+            "SelectLocation": "Palihug pagpili una ug lokasyon.",
+            "eventType": "Matang sa Hitabo",
+            "EditTitle": "Hunahunaa ang usa ka makapaikag nga titulo ...",
+            "SetTitle": "Palihug ibutang ang titulo sa panghitabo",
+            "ScheduleOnlineConference": "Pag-eskedyul sa Online nga Komperensya",
+            "SOCDescription": "Palihug ipasabut ang oras sa pagsugod ug pagtapos sa komperensya. Ang matag tawo nga mobisita sa kalihokan sa kini nga yugto sa panahon awtomatik nga magkonektar sa online nga komperensya.",
+            "EndDate": "Katapusan",
+            "location": {
+                "Title": "Ibutang ang Imong Lokasyon"
+            },
+            "interest": {
+                "Title": "Pagpili og Kalihokan",
+                "Filter": "Pangitag interes..."
+            },
+            "SetLivestream": "Idikit ang link sa livestream \/ videoconference"
+        },
+        "EventAlreadyClosed": "Kini nga panghitabo natapos na",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Idugang sa Kalendaryo?",
+                "prompt": "Gusto ba nimong idugang kini nga panghitabo sa imong kalendaryo?",
+                "yes": "Oo",
+                "no": "Dili"
+            },
+            "dialog": {
+                "Title": "Idugang ang Hitabo sa imong Kalendaryo"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Mga magamit",
+        "NewAvailability": {
+            "Title": "Bag-ong Availability",
+            "SaveAvailability": "I-save ang Availability",
+            "SelectTemplate": "Palihug pilia ang Serbisyo",
+            "SelectLocation": "Palihug pilia ang Lokasyon",
+            "SelectArea": "Palihug pilia ang Lugar",
+            "Type": "Matang",
+            "Weekly": "Kada semana",
+            "RecurringStartDate": "Nagbalikbalik nga Petsa sa Pagsugod",
+            "EndDate": "Petsa sa Katapusan",
+            "SelectTime": "Pagdumala sa mga Time Slots",
+            "SelectTimeSlot": "Pagpili og time slot",
+            "SelectTimeSlots": "Pilia ang gusto nga mga time slot",
+            "PeopleMin": "Minimum nga mga bisita",
+            "PeopleMax": "Maximum nga mga bisita",
+            "PeopleLabels": "Gitugotan ang mga label",
+            "Next": "Sunod",
+            "Back": "Balik"
+        },
+        "EditAvailability": "I-edit ang Availability",
+        "SetVisitors": "Itakda ang mga Bisita",
+        "Price": "Presyo",
+        "SelectAction": "Palihug pagpili og aksyon",
+        "OpenProfile": "Ablihi ang profile",
+        "RemoveStaff": "Kuhaa ang mga kawani",
+        "PleaseSelectTimeSlots": "Palihug pagpili og mga time slot",
+        "ExceptionOccurred": "Exception nahitabo",
+        "NotEnoughCreditsToParticipateEvents": "Dili igo nga mga kredito aron makaapil {{eventsAmount}} nga mga panghitabo. Kinahanglan nimo ang {{needCredits}} mga kredito. Gusto mupalit?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Petsa sa pagsugod",
+            "endDate": "Petsa sa pagtapos",
+            "justOnce": "Kausa ra",
+            "justOnceWeekly": "Karong semanaha lang",
+            "justOnceMonthly": "Karong bulana lang",
+            "recurring": "Nagbalikbalik"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Libre nga panghitabo",
+            "optional": "Opsyonal nga kontribusyon",
+            "required": "Gikinahanglan nga bayad"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Opsyonal nga kontribusyon",
+            "required": "Gikinahanglan nga bayad",
+            "paid": "gibayran"
+        },
+        "confirmationDialog": {
+            "title": "Pagkumpirma sa pagbayad",
+            "content": "Kini nga panghitabo adunay opsyonal nga kontribusyon nga {{amount}}.",
+            "button": "Pagtampo"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} dili pa bahin sa panghitabo. Gusto ba nimong idugang sila isip usa ka partisipante?",
+        "userNotFound": "Wala makit-an ang tiggamit",
+        "confirmYes": "Oo",
+        "confirmNo": "Dili"
+    },
+    "notifications": {
+        "EventActivityIn": "Kalihokan sa panghitabo sa {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Ang nagbalikbalik nga mga lagda giusab alang sa panghitabo {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "pagdumala sa imong mga suskrisyon sa email",
+        "IfUnsubscribe": "Kung gusto nimo mag-unsubscribe",
+        "ClickHereToVisitEvent": "Palihug pag-klik dinhi aron bisitahan ang kalihokan",
+        "Calendars\/reminder": "Ang panghitabo nga &quot;{{{call 'message.getInstruction' 'name'}}&quot; magsugod sa {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Pun-a Kini nga Spreadsheet",
+        "fileLabel": "Pag-upload sa Spreadsheet:",
+        "importOptions": "Mga kapilian",
+        "importProgress": "Pag-uswag",
+        "sampleCSV": "Pag-download sa Sampol nga CSV",
+        "joinEventLabel": "Apil sa mga tiggamit sa random nga panghitabo",
+        "smsText": "Uy, nagpadala lang ko nimo og link sa {{communityName}}. Palihug tan-awa kini.",
+        "emailSubject": "Nagpadala lang kanimo og link",
+        "emailBody": "Uy, nagpadala lang ko nimo og imbitasyon sa {{communityName}}. Palihug tan-awa kini.",
+        "fileNotFound": "Sorry, CSV file wala makit-an.",
+        "fileEmpty": "Sorry, CSV file walay sulod.",
+        "fieldNotFound": "Ang gikinahanglan nga field &quot;{{1}}&quot; wala makit-an",
+        "userIdNotFound": "naay user pero walay sulod ang id",
+        "activateUsers": "ipadala ang mensahe sa pagpaaktibo sa mga tiggamit?",
+        "taskStreamInvalid": "dili balido ang stream sa buluhaton",
+        "instructionsEmpty": "walay sulod nga mga instruksyon sa stream sa buluhaton",
+        "interestsEmpty": "dili makakuha mga interes",
+        "interestAbsent": "interes {{1}} wala makit-an",
+        "complete": "Kompleto",
+        "errorLine": "linya {{1}}",
+        "errorsTitle": "Nahitabo ang mga kasaypanan",
+        "communityUsers": "Kini ang listahan sa mga komunidad"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Nagrepresentar sa usa ka panghitabo diin ang mga tawo makaapil",
+            "displayType": "Panghitabo"
+        },
+        "Calendars\/recurring": {
+            "description": "Gigamit alang sa pag-asoy sa mga sapa nga gituyo nga magbalikbalik matag karon ug unya",
+            "displayType": "Nagbalikbalik nga Hitabo"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Idugang ang Slot",
+        "StartTime": "Panahon sa Pagsugod",
+        "EndTime": "Panahon sa Katapusan",
+        "Save": "Tipigi",
+        "AddTimeSlot": "Idugang ang Time Slot",
+        "CopyFromDay": "Kopyaha gikan sa adlaw",
+        "Nearest": "Pinakaduol",
+        "Today": "Karon",
+        "Tomorrow": "Ugma",
+        "AfterTomorrow": "Pagka ugma"
+    }
+}

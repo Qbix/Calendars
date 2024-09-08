@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "ມັງກອນ",
+        "Feb": "ກຸມພາ",
+        "Mar": "ມີນາ",
+        "Apr": "ເມສາ",
+        "May": "ພຶດສະພາ",
+        "Jun": "ມິຖຸນາ",
+        "Jul": "ກໍລະກົດ",
+        "Aug": "ສິງຫາ",
+        "Sep": "ກັນຍາ",
+        "Oct": "ຕຸລາ",
+        "Nov": "ພະຈິກ",
+        "Dec": "ທັນວາ"
+    },
+    "monthsLong": {
+        "Jan": "ມັງກອນ",
+        "Feb": "ເດືອນກຸມພາ",
+        "Mar": "ມີນາ",
+        "Apr": "ເດືອນເມສາ",
+        "May": "ພຶດສະພາ",
+        "Jun": "ເດືອນມິຖຸນາ",
+        "Jul": "ກໍລະກົດ",
+        "Aug": "ສິງຫາ",
+        "Sep": "ກັນຍາ",
+        "Oct": "ຕຸລາ",
+        "Nov": "ເດືອນພະຈິກ",
+        "Dec": "ເດືອນທັນວາ"
+    },
+    "weekdays": {
+        "Sun": "ຕາເວັນ",
+        "Mon": "ຈັນ",
+        "Tue": "ອັງຄານ",
+        "Wed": "ພຸດ",
+        "Thu": "ພະຫັດ",
+        "Fri": "ວັນສຸກ",
+        "Sat": "ເສົາ"
+    },
+    "weekdaysLong": {
+        "Sun": "ວັນອາທິດ",
+        "Mon": "ວັນຈັນ",
+        "Tue": "ວັນອັງຄານ",
+        "Wed": "ວັນພຸດ",
+        "Thu": "ວັນພະຫັດ",
+        "Fri": "ວັນ​ສຸກ",
+        "Sat": "ວັນເສົາ"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "ວາງແຜນເຫດການໃໝ່"
+        },
+        "tool": {
+            "HostedBy": "ເປັນເຈົ້າພາບໂດຍ {{name}}",
+            "Name": "ຊື່",
+            "AreYouIn": "ເຈົ້າຢູ່ໃນບໍ?",
+            "Yes": "ແມ່ນແລ້ວ",
+            "No": "ບໍ່",
+            "Ok": "ຕົກ​ລົງ",
+            "Cancel": "ຍົກເລີກ",
+            "Maybe": "ບາງທີ",
+            "Conversation": "ການສົນທະນາ",
+            "Promote": "ສົ່ງເສີມເຫດການນີ້",
+            "Reminders": "ການແຈ້ງເຕືອນ",
+            "RemindersLabel": "ຂ້ອຍຕ້ອງການແຈ້ງເຫດການໃນ:",
+            "MoreInfo": "ຂໍ້​ມູນ​ເພີ່ມ​ເຕີມ",
+            "Registration": "ການລົງທະບຽນ",
+            "SetReminders": "ກະລຸນາຕັ້ງການແຈ້ງເຕືອນ",
+            "ReservationFee": "ຄ່າທໍານຽມການຈອງ",
+            "AddParticipants": "ເພີ່ມຜູ້ເຂົ້າຮ່ວມ",
+            "ManageReservation": "ຈັດການການຈອງ",
+            "UpdateFutureReservations": "ທ່ານຕ້ອງການອັບເດດການຈອງທັງໝົດໃນອະນາຄົດດ້ວຍວິທີດຽວກັນບໍ?",
+            "RecurringAdmin": "ການຕັ້ງຄ່າທີ່ເກີດຂຶ້ນຊ້ຳ",
+            "MakeReservation": "ເຮັດການຈອງ",
+            "StartLiveStream": "ຄລິກເພື່ອຖ່າຍທອດສົດ",
+            "LiveStreamEnded": "ການຖ່າຍທອດສົດໄດ້ສິ້ນສຸດລົງ",
+            "ClickToViewRecording": "ຄລິກເພື່ອເບິ່ງການບັນທຶກ",
+            "Checkin": "ສະແກນລະຫັດຜູ້ເຂົ້າຮ່ວມ",
+            "Myqr": "ເຊັກອິນ",
+            "CloseEvent": {
+                "button": "ຍົກເລີກເຫດການ",
+                "confirm": {
+                    "text": {
+                        "Cancel": "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການຍົກເລີກນັດໝາຍນີ້?",
+                        "Participant": "ມີຜູ້ເຂົ້າຮ່ວມ 1 ຄົນໃນງານນີ້",
+                        "Participants": "ມີຜູ້ເຂົ້າຮ່ວມ {{count}} ຄົນໃນເຫດການນີ້",
+                        "Recurring": "ເຫດການນີ້ເກີດຂຶ້ນຊ້ຳ. ທ່ານຕ້ອງການຍົກເລີກທຸກຕົວຢ່າງໃນອະນາຄົດຂອງມັນເຊັ່ນກັນບໍ?"
+                    },
+                    "trip": {
+                        "Cancel": "ທ່ານຕ້ອງການຍົກເລີກການເດີນທາງຂອງທ່ານ {{tripDirection}} ເຫດການນີ້ບໍ?",
+                        "Passengers": "ມີຜູ້ໂດຍສານ {{passengerCount}} ຄົນທີ່ເພິ່ງພາທ່ານ.",
+                        "Title": "ປິດການເດີນທາງ"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "ຈາກ",
+                        "to": "ກັບ",
+                        "from": "ຈາກ"
+                    }
+                }
+            },
+            "Calendar": "ປະຕິທິນ",
+            "Interests": "ຄວາມສົນໃຈ",
+            "Directions": "ທິດທາງ",
+            "TitleOfEvent": "ຊື່ເຫດການ:",
+            "OpenTo": "ເປີດໃຫ້",
+            "GoingTo": "ຈະຢູ່ທີ່",
+            "NotGoingTo": "ຈະບໍ່ຢູ່",
+            "MaybeGoingTo": "ອາດຈະຢູ່ທີ່",
+            "AdminDontPay": "Admin ບໍ່ຈໍາເປັນຕ້ອງຈ່າຍ",
+            "PublisherDontPay": "ຜູ້ເຜີຍແຜ່ບໍ່ຈໍາເປັນຕ້ອງຈ່າຍເງິນ",
+            "EmptyList": "ບັນຊີລາຍຊື່ເປົ່າ",
+            "NeedToPayCredits": "ຕ້ອງການຈ່າຍ: <span>ເຄຣດິດ {{amount}}<\/span>",
+            "PleaseJoinParticipants": "ກະລຸນາເຂົ້າຮ່ວມ {{participant}}",
+            "YouReservingPlace": "ເຈົ້າຈະຈອງສະຖານທີ່ຂອງເຈົ້າ.",
+            "SelectIncludesToAdd": "ເລືອກໜຶ່ງ ຫຼືຫຼາຍກວ່າ {{TypeDisplayPlural}} ເພື່ອເພີ່ມ:",
+            "YouHaveNotRegisteredAnyIncluded": "ທ່ານຍັງບໍ່ໄດ້ລົງທະບຽນໃດໆ {{TypeDisplayPlural}} ເທື່ອ",
+            "Proceed": "ດໍາເນີນການ",
+            "MakeChanges": "ບັນທຶກການປ່ຽນແປງຂອງຂ້ອຍ",
+            "CancelReservation": "ຍົກເລີກການຈອງທັງໝົດ",
+            "Total": "ທັງໝົດ",
+            "RequiredRelatedParticipants": "ເຫດການນີ້ຕ້ອງການຜູ້ເຂົ້າຮ່ວມ: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "ກະລຸນາແກ້ໄຂການມີໃຫ້ &quot;{{title}}&quot; ເພື່ອອັບເດດການຕັ້ງຄ່າທີ່ເກີດຂຶ້ນຊ້ຳໆ"
+        },
+        "composer": {
+            "SetLocation": "ຕັ້ງສະຖານທີ່ຂອງຂ້ອຍ",
+            "SetInfoLink": "ຕັ້ງລິ້ງໄປຫາຂໍ້ມູນເພີ່ມເຕີມ",
+            "ChooseAvailability": "ເລືອກບໍລິການທີ່ມີຢູ່",
+            "ChooseActivity": "ເລືອກກິດຈະກໍາ",
+            "ChoosePublisher": "ເລືອກຜູ້ເຜີຍແຜ່",
+            "Day": "ມື້",
+            "Starting": "ເລີ່ມ",
+            "Duration": "ໄລຍະເວລາ",
+            "Hour": "ຊົ່ວໂມງ",
+            "Hours": "ຊົ່ວໂມງ",
+            "Minutes": "ນາທີ",
+            "Ending": "ສິ້ນສຸດ",
+            "People": "ຄົນ",
+            "Share": "ແບ່ງປັນ",
+            "Continue": "ສືບຕໍ່",
+            "Recurring": "ເກີດຂຶ້ນຊ້ຳ",
+            "RecurringTitle": "ວັນທີ່ເກີດຂຶ້ນຊ້ຳ",
+            "Daily": "ປະຈໍາວັນ",
+            "Weekly": "ອາທິດ",
+            "Monthly": "ປະຈໍາເດືອນ",
+            "SelectLocation": "ກະລຸນາເລືອກສະຖານທີ່ກ່ອນ.",
+            "eventType": "ປະເພດເຫດການ",
+            "EditTitle": "ຄິດເຖິງຫົວຂໍ້ທີ່ໜ້າສົນໃຈ...",
+            "SetTitle": "ກະລຸນາຕັ້ງຫົວຂໍ້ເຫດການ",
+            "ScheduleOnlineConference": "ຈັດຕາຕະລາງກອງປະຊຸມອອນໄລນ໌",
+            "SOCDescription": "ກະລຸນາກໍານົດເວລາເລີ່ມຕົ້ນ ແລະສິ້ນສຸດກອງປະຊຸມ. ທຸກໆຄົນທີ່ໄປຢ້ຽມຢາມເຫດການໃນລະຫວ່າງໄລຍະເວລານີ້ຈະເຊື່ອມຕໍ່ອັດຕະໂນມັດກັບກອງປະຊຸມອອນໄລນ໌.",
+            "EndDate": "ຈົບ",
+            "location": {
+                "Title": "ກໍານົດສະຖານທີ່ຂອງທ່ານ"
+            },
+            "interest": {
+                "Title": "ເລືອກກິດຈະກໍາ",
+                "Filter": "ຄວາມສົນໃຈຄົ້ນຫາ ..."
+            },
+            "SetLivestream": "ວາງລິ້ງໃສ່ການຖ່າຍທອດສົດ \/ ກອງປະຊຸມວິດີໂອ"
+        },
+        "EventAlreadyClosed": "ເຫດການນີ້ປິດແລ້ວ",
+        "addToCalendar": {
+            "permissions": {
+                "title": "ເພີ່ມໃສ່ປະຕິທິນບໍ?",
+                "prompt": "ທ່ານຕ້ອງການເພີ່ມນັດໝາຍນີ້ໃສ່ປະຕິທິນຂອງເຈົ້າບໍ?",
+                "yes": "ແມ່ນແລ້ວ",
+                "no": "ບໍ່"
+            },
+            "dialog": {
+                "Title": "ເພີ່ມນັດໝາຍໃສ່ປະຕິທິນຂອງເຈົ້າ"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "ຄວາມພ້ອມ",
+        "NewAvailability": {
+            "Title": "ການມີໃຫ້ໃໝ່",
+            "SaveAvailability": "ບັນທຶກຄວາມພ້ອມ",
+            "SelectTemplate": "ກະລຸນາເລືອກບໍລິການ",
+            "SelectLocation": "ກະລຸນາເລືອກສະຖານທີ່",
+            "SelectArea": "ກະລຸນາເລືອກພື້ນທີ່",
+            "Type": "ປະເພດ",
+            "Weekly": "ອາທິດ",
+            "RecurringStartDate": "ວັນທີເລີ່ມຕົ້ນທີ່ເກີດຂຶ້ນຊ້ຳ",
+            "EndDate": "ວັນທີສິ້ນສຸດ",
+            "SelectTime": "ຈັດການເວລາສະລັອດຕິງ",
+            "SelectTimeSlot": "ເລືອກຊ່ອງເວລາ",
+            "SelectTimeSlots": "ເລືອກເວລາທີ່ຕ້ອງການ",
+            "PeopleMin": "ນັກທ່ອງທ່ຽວຕໍາ່ສຸດທີ່",
+            "PeopleMax": "ຜູ້ເຂົ້າຊົມສູງສຸດ",
+            "PeopleLabels": "ປ້າຍກຳກັບທີ່ອະນຸຍາດ",
+            "Next": "ຕໍ່ໄປ",
+            "Back": "ກັບຄືນໄປບ່ອນ"
+        },
+        "EditAvailability": "ແກ້ໄຂຄວາມພ້ອມ",
+        "SetVisitors": "ກໍານົດຜູ້ເຂົ້າຊົມ",
+        "Price": "ລາຄາ",
+        "SelectAction": "ກະລຸນາເລືອກການປະຕິບັດ",
+        "OpenProfile": "ເປີດໂປຣໄຟລ໌",
+        "RemoveStaff": "ເອົາພະນັກງານອອກ",
+        "PleaseSelectTimeSlots": "ກະລຸນາເລືອກເວລາ",
+        "ExceptionOccurred": "ຂໍ້ຍົກເວັ້ນເກີດຂຶ້ນ",
+        "NotEnoughCreditsToParticipateEvents": "ບໍ່ມີເຄຣດິດພຽງພໍເພື່ອເຂົ້າຮ່ວມກິດຈະກຳ {{eventsAmount}}. ທ່ານຕ້ອງການເຄຣດິດ {{needCredits}}. ຕ້ອງການຊື້?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "ວັນ​ທີ່​ເລີ່ມ",
+            "endDate": "ວັນທີສິ້ນສຸດ",
+            "justOnce": "ພຽງ​ແຕ່​ຄັ້ງ​ດຽວ",
+            "justOnceWeekly": "ອາທິດນີ້ເທົ່ານັ້ນ",
+            "justOnceMonthly": "ເດືອນນີ້ເທົ່ານັ້ນ",
+            "recurring": "ເກີດຂຶ້ນຊ້ຳ"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "ກິດຈະກຳຟຣີ",
+            "optional": "ການປະກອບສ່ວນທາງເລືອກ",
+            "required": "ການຈ່າຍເງິນທີ່ຕ້ອງການ"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "ການປະກອບສ່ວນທາງເລືອກ",
+            "required": "ການຈ່າຍເງິນທີ່ຕ້ອງການ",
+            "paid": "ຈ່າຍ"
+        },
+        "confirmationDialog": {
+            "title": "ການຢືນຢັນການຈ່າຍເງິນ",
+            "content": "ເຫດການນີ້ມີການປະກອບສ່ວນທາງເລືອກຂອງ {{amount}}.",
+            "button": "ປະກອບສ່ວນ"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ຍັງບໍ່ທັນເປັນສ່ວນໜຶ່ງຂອງເຫດການເທື່ອ. ທ່ານຕ້ອງການເພີ່ມເຂົາເຈົ້າເປັນຜູ້ເຂົ້າຮ່ວມບໍ?",
+        "userNotFound": "ບໍ່ພົບຜູ້ໃຊ້",
+        "confirmYes": "ແມ່ນແລ້ວ",
+        "confirmNo": "ບໍ່"
+    },
+    "notifications": {
+        "EventActivityIn": "ການເຄື່ອນໄຫວກິດຈະກຳໃນ {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "ປ່ຽນກົດລະບຽບການເກີດຂຶ້ນຊ້ຳສຳລັບເຫດການ {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "ຈັດການການສະໝັກໃຊ້ອີເມວຂອງທ່ານ",
+        "IfUnsubscribe": "ຖ້າທ່ານຕ້ອງການຍົກເລີກການຈອງ",
+        "ClickHereToVisitEvent": "ກະລຸນາຄລິກທີ່ນີ້ເພື່ອໄປຢ້ຽມຢາມເຫດການ",
+        "Calendars\/reminder": "ນັດໝາຍ &quot;{{{call 'message.getInstruction' 'name'}}&quot; ຈະເລີ່ມໃນ {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "ຕື່ມຂໍ້ມູນໃສ່ໃນຕາຕະລາງນີ້",
+        "fileLabel": "ອັບໂຫລດສະເປຣດຊີດ:",
+        "importOptions": "ທາງເລືອກ",
+        "importProgress": "ຄວາມຄືບໜ້າ",
+        "sampleCSV": "ດາວໂຫລດຕົວຢ່າງ CSV",
+        "joinEventLabel": "ເຂົ້າຮ່ວມຜູ້ໃຊ້ກັບເຫດການແບບສຸ່ມ",
+        "smsText": "Hey, ຂ້ອຍຫາກໍສົ່ງລິ້ງໄປຫາ {{communityName}}. ກະລຸນາກວດເບິ່ງມັນອອກ.",
+        "emailSubject": "ຫາກໍສົ່ງລິ້ງຫາເຈົ້າ",
+        "emailBody": "ສະບາຍດີ, ຂ້ອຍຫາກໍສົ່ງຄຳເຊີນຫາ {{communityName}}. ກະລຸນາກວດເບິ່ງມັນອອກ.",
+        "fileNotFound": "ຂໍອະໄພ, ບໍ່ພົບໄຟລ໌ CSV.",
+        "fileEmpty": "ຂໍອະໄພ, ໄຟລ໌ CSV ຫວ່າງເປົ່າ.",
+        "fieldNotFound": "ບໍ່ພົບຊ່ອງຂໍ້ມູນທີ່ຕ້ອງການ &quot;{{1}}&quot;",
+        "userIdNotFound": "ຜູ້ໃຊ້ມີຢູ່ແຕ່ id ຫວ່າງເປົ່າ",
+        "activateUsers": "ສົ່ງຂໍ້ຄວາມເປີດໃຊ້ກັບຜູ້ໃຊ້ບໍ?",
+        "taskStreamInvalid": "ການຖ່າຍທອດໜ້າວຽກບໍ່ຖືກຕ້ອງ",
+        "instructionsEmpty": "ຄຳແນະນຳການຖ່າຍທອດໜ້າວຽກຫວ່າງເປົ່າ",
+        "interestsEmpty": "ບໍ່ສາມາດໄດ້ຮັບຄວາມສົນໃຈ",
+        "interestAbsent": "ບໍ່ພົບດອກເບ້ຍ {{1}}",
+        "complete": "ສໍາເລັດ",
+        "errorLine": "ແຖວ {{1}}",
+        "errorsTitle": "ຄວາມຜິດພາດເກີດຂຶ້ນ",
+        "communityUsers": "ນີ້ແມ່ນລາຍຊື່ຊຸມຊົນ"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "ເປັນຕົວແທນຂອງເຫດການທີ່ປະຊາຊົນສາມາດເຂົ້າຮ່ວມໄດ້",
+            "displayType": "ເຫດການ"
+        },
+        "Calendars\/recurring": {
+            "description": "ໃຊ້ສໍາລັບສາຍນ້ໍາທີ່ຫມາຍເຖິງການເກີດຂຶ້ນເປັນແຕ່ລະໄລຍະ",
+            "displayType": "ເຫດການທີ່ເກີດຂຶ້ນຊ້ຳ"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "ເພີ່ມສະລັອດຕິງ",
+        "StartTime": "ເວລາເລີ່ມຕົ້ນ",
+        "EndTime": "ເວລາສິ້ນສຸດ",
+        "Save": "ບັນທຶກ",
+        "AddTimeSlot": "ເພີ່ມເວລາສະລັອດຕິງ",
+        "CopyFromDay": "ຄັດລອກຈາກມື້",
+        "Nearest": "ໃກ້ທີ່ສຸດ",
+        "Today": "ມື້​ນີ້",
+        "Tomorrow": "ມື້ອື່ນ",
+        "AfterTomorrow": "ຫຼັງຈາກມື້ອື່ນ"
+    }
+}

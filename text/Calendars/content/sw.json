@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Feb",
+        "Mar": "Machi",
+        "Apr": "Apr",
+        "May": "Mei",
+        "Jun": "Juni",
+        "Jul": "Julai",
+        "Aug": "Aug",
+        "Sep": "Sep",
+        "Oct": "Oktoba",
+        "Nov": "Nov",
+        "Dec": "Des"
+    },
+    "monthsLong": {
+        "Jan": "Januari",
+        "Feb": "Februari",
+        "Mar": "Machi",
+        "Apr": "Aprili",
+        "May": "Mei",
+        "Jun": "Juni",
+        "Jul": "Julai",
+        "Aug": "Agosti",
+        "Sep": "Septemba",
+        "Oct": "Oktoba",
+        "Nov": "Novemba",
+        "Dec": "Desemba"
+    },
+    "weekdays": {
+        "Sun": "Jua",
+        "Mon": "Mon",
+        "Tue": "Jumanne",
+        "Wed": "Jumatano",
+        "Thu": "Alhamisi",
+        "Fri": "Ijumaa",
+        "Sat": "Sat"
+    },
+    "weekdaysLong": {
+        "Sun": "Jumapili",
+        "Mon": "Jumatatu",
+        "Tue": "Jumanne",
+        "Wed": "Jumatano",
+        "Thu": "Alhamisi",
+        "Fri": "Ijumaa",
+        "Sat": "Jumamosi"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Panga Tukio Jipya"
+        },
+        "tool": {
+            "HostedBy": "Mwenyeji ni {{name}}",
+            "Name": "Jina",
+            "AreYouIn": "Je, uko ndani?",
+            "Yes": "Ndiyo",
+            "No": "Hapana",
+            "Ok": "Sawa",
+            "Cancel": "Ghairi",
+            "Maybe": "Labda",
+            "Conversation": "Mazungumzo",
+            "Promote": "Tangaza tukio hili",
+            "Reminders": "Vikumbusho",
+            "RemindersLabel": "Ninataka kuarifiwa kuhusu tukio katika:",
+            "MoreInfo": "Maelezo zaidi",
+            "Registration": "Usajili",
+            "SetReminders": "Tafadhali weka vikumbusho",
+            "ReservationFee": "Ada ya Kuhifadhi",
+            "AddParticipants": "Ongeza Washiriki",
+            "ManageReservation": "Dhibiti Uhifadhi",
+            "UpdateFutureReservations": "Je, ungependa pia kusasisha uhifadhi wote wa siku zijazo kwa njia ile ile?",
+            "RecurringAdmin": "Mipangilio Inayojirudia",
+            "MakeReservation": "Weka Nafasi",
+            "StartLiveStream": "Bofya ili Utiririshe Moja kwa Moja",
+            "LiveStreamEnded": "Utiririshaji wa moja kwa moja umekwisha",
+            "ClickToViewRecording": "bofya ili kutazama rekodi",
+            "Checkin": "Changanua misimbo ya waliohudhuria",
+            "Myqr": "Ingia",
+            "CloseEvent": {
+                "button": "Ghairi Tukio",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Je, una uhakika unataka kughairi tukio hili?",
+                        "Participant": "Kuna mshiriki 1 katika tukio hili",
+                        "Participants": "Kuna washiriki {{count}} katika tukio hili",
+                        "Recurring": "Tukio hili linajirudia. Je, ungependa pia kughairi matukio yake yote yajayo?"
+                    },
+                    "trip": {
+                        "Cancel": "Je, ungependa pia kughairi safari yako {{tripDirection}} tukio hili?",
+                        "Passengers": "Kuna abiria {{passengerCount}} wanaokutegemea.",
+                        "Title": "Funga Safari"
+                    },
+                    "directions": {
+                        "TO": "KWA",
+                        "FROM": "KUTOKA",
+                        "to": "kwa",
+                        "from": "kutoka"
+                    }
+                }
+            },
+            "Calendar": "Kalenda",
+            "Interests": "Maslahi",
+            "Directions": "Maelekezo",
+            "TitleOfEvent": "Kichwa cha tukio:",
+            "OpenTo": "Fungua kwa",
+            "GoingTo": "itakuwa saa",
+            "NotGoingTo": "haitakuwa",
+            "MaybeGoingTo": "labda itakuwa",
+            "AdminDontPay": "Msimamizi haitaji kulipa",
+            "PublisherDontPay": "Mchapishaji hauhitaji kulipa",
+            "EmptyList": "Orodha tupu",
+            "NeedToPayCredits": "Unahitaji kulipa: <span>{{amount}} mikopo<\/span>",
+            "PleaseJoinParticipants": "Tafadhali jiunge {{participant}}",
+            "YouReservingPlace": "Utakuwa unahifadhi nafasi yako.",
+            "SelectIncludesToAdd": "Chagua moja au zaidi {{TypeDisplayPlural}} ili kuongeza:",
+            "YouHaveNotRegisteredAnyIncluded": "Bado hujasajili {{TypeDisplayPlural}} yoyote",
+            "Proceed": "Endelea",
+            "MakeChanges": "Hifadhi Mabadiliko Yangu",
+            "CancelReservation": "Ghairi uhifadhi wote",
+            "Total": "Jumla",
+            "RequiredRelatedParticipants": "Tukio hili linahitaji washiriki: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Tafadhali hariri upatikanaji &quot;{{title}}&quot; ili kusasisha mipangilio inayojirudia",
+            "Presentation": "Wasilisho",
+            "YouAreNotParticipated": "Wewe si mshiriki wa tukio",
+            "LiveStreamStarted": "Utiririshaji wa moja kwa moja umeanza",
+            "WebRTCStarted": "Teleconference imeanza",
+            "WebRTCEnded": "Teleconference imekamilika"
+        },
+        "composer": {
+            "SetLocation": "Weka Mahali Pangu",
+            "SetInfoLink": "Weka Kiungo kwa maelezo ya ziada",
+            "ChooseAvailability": "Chagua Huduma Inayopatikana",
+            "ChooseActivity": "Chagua Shughuli",
+            "ChoosePublisher": "Chagua Mchapishaji",
+            "Day": "Siku",
+            "Starting": "Kuanzia",
+            "Duration": "Muda",
+            "Hour": "Saa",
+            "Hours": "Saa",
+            "Minutes": "Dakika",
+            "Ending": "Kumalizia",
+            "People": "Watu",
+            "Share": "Shiriki",
+            "Continue": "Endelea",
+            "Recurring": "Inarudiwa",
+            "RecurringTitle": "Siku Zinazorudiwa",
+            "Daily": "Kila siku",
+            "Weekly": "Kila wiki",
+            "Monthly": "Kila mwezi",
+            "SelectLocation": "Tafadhali chagua eneo kwanza.",
+            "eventType": "Aina ya Tukio",
+            "EditTitle": "Fikiria kichwa cha kuvutia...",
+            "SetTitle": "Tafadhali weka kichwa cha tukio",
+            "ScheduleOnlineConference": "Ratiba Mkutano wa Mtandaoni",
+            "SOCDescription": "Tafadhali fafanua wakati wa kuanza na mwisho wa mkutano. Kila mtu anayetembelea tukio katika kipindi hiki ataunganisha kiotomatiki kwenye mkutano wa mtandaoni.",
+            "EndDate": "Mwisho",
+            "location": {
+                "Title": "Weka Mahali Ulipo"
+            },
+            "interest": {
+                "Title": "Chagua Shughuli",
+                "Filter": "Tafuta mambo yanayokuvutia..."
+            },
+            "SetLivestream": "Bandika kiungo ili utiririshe moja kwa moja\/mkutano wa video",
+            "Locally": "ndani ya nchi",
+            "EventInfoLink": "Kiungo cha Taarifa ya Tukio",
+            "TicketPurchaseLink": "Kiungo cha Kununua Tiketi"
+        },
+        "EventAlreadyClosed": "Tukio hili tayari limefungwa",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Ungependa kuongeza kwenye Kalenda?",
+                "prompt": "Je, ungependa kuongeza tukio hili kwenye kalenda yako?",
+                "yes": "Ndiyo",
+                "no": "Hapana"
+            },
+            "dialog": {
+                "Title": "Ongeza Tukio kwenye Kalenda yako"
+            }
+        },
+        "ErrorLeaveEndedEvent": "Samahani, lakini huwezi kuondoka kwenye tukio lililomalizika"
+    },
+    "availabilities": {
+        "Title": "Upatikanaji",
+        "NewAvailability": {
+            "Title": "Upatikanaji Mpya",
+            "SaveAvailability": "Hifadhi Upatikanaji",
+            "SelectTemplate": "Tafadhali chagua Huduma",
+            "SelectLocation": "Tafadhali chagua Mahali",
+            "SelectArea": "Tafadhali chagua Eneo",
+            "Type": "Aina",
+            "Weekly": "Kila wiki",
+            "RecurringStartDate": "Tarehe ya Kuanza Mara kwa Mara",
+            "EndDate": "Tarehe ya mwisho",
+            "SelectTime": "Kusimamia Time Slots",
+            "SelectTimeSlot": "Chagua nafasi ya wakati",
+            "SelectTimeSlots": "Chagua nafasi za wakati unaotaka",
+            "PeopleMin": "Wageni wa chini zaidi",
+            "PeopleMax": "Idadi ya juu ya wageni",
+            "PeopleLabels": "Majukumu yanayoruhusiwa",
+            "Next": "Inayofuata",
+            "Back": "Nyuma",
+            "RecurringEndDate": "Tarehe ya Mwisho inayorudiwa",
+            "ScheduleOnlineConference": "Panga Mkutano wa Televisheni",
+            "SetLivestream": "Bandika kiungo ili utiririshe moja kwa moja\/mkutano wa video",
+            "SelectTimeZone": "Chagua saa za eneo"
+        },
+        "EditAvailability": "Hariri Upatikanaji",
+        "SetVisitors": "Weka Wageni",
+        "Price": "Bei",
+        "SelectAction": "Tafadhali chagua kitendo",
+        "OpenProfile": "Fungua wasifu",
+        "RemoveStaff": "Ondoa wafanyakazi",
+        "PleaseSelectTimeSlots": "Tafadhali chagua nafasi za saa",
+        "ExceptionOccurred": "Ubaguzi ulifanyika",
+        "NotEnoughCreditsToParticipateEvents": "Hakuna mikopo ya kutosha kushiriki {{eventsAmount}} matukio. Unahitaji {1000}} mikopo. Unataka kununua?",
+        "LiveStream": "Mtiririko wa moja kwa moja",
+        "InviteStaff": "Alika wafanyakazi"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Tarehe ya kuanza",
+            "endDate": "Tarehe ya mwisho",
+            "justOnce": "Mara moja tu",
+            "justOnceWeekly": "Wiki hii pekee",
+            "justOnceMonthly": "Mwezi huu pekee",
+            "recurring": "Inarudiwa"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Tukio la bure",
+            "optional": "Mchango wa hiari",
+            "required": "Malipo yanayohitajika"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Mchango wa hiari",
+            "required": "Malipo yanayohitajika",
+            "paid": "kulipwa"
+        },
+        "confirmationDialog": {
+            "title": "Uthibitisho wa malipo",
+            "content": "Tukio hili lina mchango wa hiari wa {{amount}}.",
+            "button": "Changia"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} bado si sehemu ya tukio. Je, ungependa kuwaongeza kama mshiriki?",
+        "userNotFound": "Mtumiaji hajapatikana",
+        "confirmYes": "Ndiyo",
+        "confirmNo": "Hapana"
+    },
+    "notifications": {
+        "EventActivityIn": "Shughuli ya tukio katika {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Sheria zinazojirudia zimebadilishwa kwa tukio {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "dhibiti usajili wako wa barua pepe",
+        "IfUnsubscribe": "Ukitaka kujiondoa",
+        "ClickHereToVisitEvent": "Tafadhali bofya hapa ili kutembelea tukio",
+        "Calendars\/reminder": "Tukio &quot;{999}}&quot; litaanza baada ya {{{call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Teleconference imeanza",
+            "Ended": "Teleconference imekamilika"
+        },
+        "livestream": {
+            "Started": "Utiririshaji wa moja kwa moja umeanza",
+            "Ended": "Mtiririko wa moja kwa moja umeisha",
+            "ClickToView": "Itazame hapa."
+        }
+    },
+    "import": {
+        "linkTitle": "Jaza Lahajedwali Hii",
+        "fileLabel": "Pakia Lahajedwali:",
+        "importOptions": "Chaguzi",
+        "importProgress": "Maendeleo",
+        "sampleCSV": "Pakua Sampuli ya CSV",
+        "joinEventLabel": "Jiunge na watumiaji kwenye tukio la nasibu",
+        "smsText": "Hujambo, nimekutumia kiungo kwa {{communityName}}. Tafadhali iangalie.",
+        "emailSubject": "Nimekutumia kiungo",
+        "emailBody": "Ala, nimekutumia mwaliko kwenye {{communityName}}. Tafadhali iangalie.",
+        "fileNotFound": "Samahani, faili ya CSV haikupatikana.",
+        "fileEmpty": "Samahani, faili ya CSV haina chochote.",
+        "fieldNotFound": "Sehemu inayohitajika &quot;{{1}}&quot; haijapatikana",
+        "userIdNotFound": "mtumiaji yupo lakini kitambulisho tupu",
+        "activateUsers": "kutuma ujumbe wa kuwezesha kwa watumiaji?",
+        "taskStreamInvalid": "mtiririko wa kazi ni batili",
+        "instructionsEmpty": "maagizo ya mtiririko wa kazi tupu",
+        "interestsEmpty": "hawezi kupata maslahi",
+        "interestAbsent": "maslahi {{1}} hayajapatikana",
+        "complete": "Kamilisha",
+        "errorLine": "mstari {{1}}",
+        "errorsTitle": "Hitilafu zimetokea",
+        "communityUsers": "Hii ni orodha ya jumuiya",
+        "toMainCommunityToo": "inahusiana na jamii kuu pia",
+        "ChooseFile": "chagua faili"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Inawakilisha tukio ambalo watu wanaweza kushiriki",
+            "displayType": "Tukio"
+        },
+        "Calendars\/recurring": {
+            "description": "Inatumika kwa mitiririko inayohusiana ambayo inakusudiwa kujirudia mara kwa mara",
+            "displayType": "Tukio Linalojirudia"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Ongeza Slot",
+        "StartTime": "Wakati wa Kuanza",
+        "EndTime": "Wakati wa Mwisho",
+        "Save": "Hifadhi",
+        "AddTimeSlot": "Ongeza Slot ya Wakati",
+        "CopyFromDay": "Nakili kutoka siku",
+        "Nearest": "Karibu zaidi",
+        "Today": "Leo",
+        "Tomorrow": "Kesho",
+        "AfterTomorrow": "Baada ya kesho"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Jisajili kwa Kalenda",
+        "copyLinkBelow": "Nakili kiungo hapa chini",
+        "goTo": "Enda kwa:",
+        "pasteCopiedTo": "Bandika kiungo kilichonakiliwa kwenye sehemu ya &quot;URL ya kalenda&quot;.",
+        "clickAddCalendar": "Bonyeza kitufe cha &quot;Ongeza kalenda&quot;.",
+        "copyLink": "Nakili Kiungo",
+        "tapToCopy": "Gusa kitufe kilicho hapa chini ili kunakili kiungo kwenye ubao wako wa kunakili",
+        "linkCopied": "Kiungo Kimenakiliwa",
+        "step2": "Kiungo Kimenakiliwa. Tunahusu kufungua Kalenda ya Google. Utahitaji kubandika kiungo kwenye kisanduku cha maandishi, bofya &quot;Ongeza kalenda&quot;, na ufunge kichupo (tazama picha ya skrini hapa chini)",
+        "calendarAppPreferences": "Fungua Mapendeleo katika Programu ya Kalenda kwenye Mac yako, na uweke Programu Chaguomsingi ya Kalenda kuwa kama inavyoonyeshwa hapa chini.",
+        "thenCloseDialog": "Kisha funga kidirisha hiki ili kujiandikisha kwa kalenda yako!",
+        "success": "Kalenda imesawazishwa"
+    }
+}

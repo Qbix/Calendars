@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "មករា",
+        "Feb": "ខែកុម្ភៈ",
+        "Mar": "មិនា",
+        "Apr": "មេសា",
+        "May": "ឧសភា",
+        "Jun": "មិថុនា",
+        "Jul": "ខែកក្កដា",
+        "Aug": "សីហា",
+        "Sep": "កញ្ញា",
+        "Oct": "តុលា",
+        "Nov": "ខែវិច្ឆិកា",
+        "Dec": "ខែធ្នូ"
+    },
+    "monthsLong": {
+        "Jan": "មករា",
+        "Feb": "ខែកុម្ភៈ",
+        "Mar": "ខែមីនា",
+        "Apr": "មេសា",
+        "May": "ឧសភា",
+        "Jun": "ខែមិថុនា",
+        "Jul": "ខែកក្កដា",
+        "Aug": "សីហា",
+        "Sep": "ខែកញ្ញា",
+        "Oct": "តុលា",
+        "Nov": "ខែវិច្ឆិកា",
+        "Dec": "ខែធ្នូ"
+    },
+    "weekdays": {
+        "Sun": "ព្រះអាទិត្យ",
+        "Mon": "ច័ន្ទ",
+        "Tue": "ថ្ងៃអង្គារ",
+        "Wed": "ថ្ងៃពុធ",
+        "Thu": "ធូ",
+        "Fri": "សុក្រ",
+        "Sat": "សៅរ៍"
+    },
+    "weekdaysLong": {
+        "Sun": "ថ្ងៃអាទិត្យ",
+        "Mon": "ថ្ងៃច័ន្ទ",
+        "Tue": "ថ្ងៃអង្គារ",
+        "Wed": "ថ្ងៃពុធ",
+        "Thu": "ថ្ងៃព្រហស្បតិ៍",
+        "Fri": "ថ្ងៃសុក្រ",
+        "Sat": "ថ្ងៃសៅរ៍"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "រៀបចំផែនការព្រឹត្តិការណ៍ថ្មី។"
+        },
+        "tool": {
+            "HostedBy": "រៀបចំដោយ {{name}}",
+            "Name": "ឈ្មោះ",
+            "AreYouIn": "តើអ្នកនៅក្នុង?",
+            "Yes": "បាទ",
+            "No": "ទេ",
+            "Ok": "យល់ព្រម",
+            "Cancel": "បោះបង់",
+            "Maybe": "ប្រហែល",
+            "Conversation": "ការសន្ទនា",
+            "Promote": "ផ្សព្វផ្សាយព្រឹត្តិការណ៍នេះ។",
+            "Reminders": "ការរំលឹក",
+            "RemindersLabel": "ខ្ញុំចង់ជូនដំណឹងអំពីព្រឹត្តិការណ៍មួយនៅក្នុង៖",
+            "MoreInfo": "ព័​ត៍​មាន​បន្ថែម",
+            "Registration": "ការចុះឈ្មោះ",
+            "SetReminders": "សូមកំណត់ការរំលឹក",
+            "ReservationFee": "ថ្លៃកក់",
+            "AddParticipants": "បន្ថែមអ្នកចូលរួម",
+            "ManageReservation": "គ្រប់គ្រងការកក់ទុក",
+            "UpdateFutureReservations": "តើអ្នកចង់ធ្វើបច្ចុប្បន្នភាពការកក់នាពេលអនាគតទាំងអស់តាមរបៀបដូចគ្នាដែរឬទេ?",
+            "RecurringAdmin": "ការកំណត់ឡើងវិញ",
+            "MakeReservation": "ធ្វើការកក់ទុក",
+            "StartLiveStream": "ចុចដើម្បីផ្សាយបន្តផ្ទាល់",
+            "LiveStreamEnded": "ការផ្សាយបន្តផ្ទាល់បានបញ្ចប់",
+            "ClickToViewRecording": "ចុចដើម្បីមើលការថត",
+            "Checkin": "ស្កេនលេខកូដអ្នកចូលរួម",
+            "Myqr": "កត់​ឈ្មោះ​ចូល",
+            "CloseEvent": {
+                "button": "បោះបង់ព្រឹត្តិការណ៍",
+                "confirm": {
+                    "text": {
+                        "Cancel": "តើអ្នកប្រាកដថាចង់លុបចោលព្រឹត្តិការណ៍នេះទេ?",
+                        "Participant": "មានអ្នកចូលរួម 1 នាក់នៅក្នុងព្រឹត្តិការណ៍នេះ។",
+                        "Participants": "មានអ្នកចូលរួម {{count}} នាក់នៅក្នុងព្រឹត្តិការណ៍នេះ។",
+                        "Recurring": "ព្រឹត្តិការណ៍នេះកើតឡើងដដែលៗ។ តើ​អ្នក​ចង់​បោះបង់​ករណី​អនាគត​ទាំងអស់​របស់​វា​ដែរ​ឬ​ទេ?"
+                    },
+                    "trip": {
+                        "Cancel": "តើអ្នកចង់បោះបង់ការធ្វើដំណើររបស់អ្នក {{tripDirection}} ព្រឹត្តិការណ៍នេះដែរឬទេ?",
+                        "Passengers": "មានអ្នកដំណើរ {{passengerCount}} នាក់ពឹងផ្អែកលើអ្នក។",
+                        "Title": "បិទការធ្វើដំណើរ"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "ពី",
+                        "to": "ទៅ",
+                        "from": "ពី"
+                    }
+                }
+            },
+            "Calendar": "ប្រតិទិន",
+            "Interests": "ចំណាប់អារម្មណ៍",
+            "Directions": "ទិសដៅ",
+            "TitleOfEvent": "ចំណងជើងព្រឹត្តិការណ៍៖",
+            "OpenTo": "បើកទៅ",
+            "GoingTo": "នឹងនៅ",
+            "NotGoingTo": "នឹងមិននៅ",
+            "MaybeGoingTo": "ប្រហែលជានៅ",
+            "AdminDontPay": "Admin មិនបាច់បង់ប្រាក់ទេ",
+            "PublisherDontPay": "អ្នកបោះពុម្ពមិនចាំបាច់បង់ប្រាក់ទេ។",
+            "EmptyList": "បញ្ជីទទេ",
+            "NeedToPayCredits": "ត្រូវការបង់ប្រាក់៖ <span>ឥណទាន {{amount}}<\/span>",
+            "PleaseJoinParticipants": "សូមចូលរួម {{participant}}",
+            "YouReservingPlace": "អ្នកនឹងកក់កន្លែងរបស់អ្នក។",
+            "SelectIncludesToAdd": "ជ្រើសរើសមួយ ឬច្រើន {{TypeDisplayPlural}} ដើម្បីបន្ថែម៖",
+            "YouHaveNotRegisteredAnyIncluded": "អ្នកមិនទាន់បានចុះឈ្មោះណាមួយ {{TypeDisplayPlural}} នៅឡើយទេ",
+            "Proceed": "បន្ត",
+            "MakeChanges": "រក្សាទុកការផ្លាស់ប្តូររបស់ខ្ញុំ",
+            "CancelReservation": "បោះបង់ការកក់ទុកទាំងស្រុង",
+            "Total": "សរុប",
+            "RequiredRelatedParticipants": "ព្រឹត្តិការណ៍នេះទាមទារអ្នកចូលរួម៖ {{requiredParticipantsList}}",
+            "AvailabilityWarning": "សូមកែសម្រួលភាពអាចរកបាន &quot;{{title}}&quot; ដើម្បីធ្វើបច្ចុប្បន្នភាពការកំណត់ដែលកើតឡើងដដែលៗ"
+        },
+        "composer": {
+            "SetLocation": "កំណត់ទីតាំងរបស់ខ្ញុំ",
+            "SetInfoLink": "កំណត់តំណទៅព័ត៌មានបន្ថែម",
+            "ChooseAvailability": "ជ្រើសរើសសេវាកម្មដែលមាន",
+            "ChooseActivity": "ជ្រើសរើសសកម្មភាព",
+            "ChoosePublisher": "ជ្រើសរើសអ្នកបោះពុម្ពផ្សាយ",
+            "Day": "ថ្ងៃ",
+            "Starting": "ចាប់ផ្តើម",
+            "Duration": "រយៈពេល",
+            "Hour": "ម៉ោង",
+            "Hours": "ម៉ោង",
+            "Minutes": "នាទី",
+            "Ending": "ការបញ្ចប់",
+            "People": "មនុស្ស",
+            "Share": "ចែករំលែក",
+            "Continue": "បន្ត",
+            "Recurring": "កើតឡើងម្តងទៀត",
+            "RecurringTitle": "ថ្ងៃកើតឡើងដដែលៗ",
+            "Daily": "ប្រចាំថ្ងៃ",
+            "Weekly": "ប្រចាំសប្តាហ៍",
+            "Monthly": "ប្រចាំខែ",
+            "SelectLocation": "សូមជ្រើសរើសទីតាំងជាមុនសិន។",
+            "eventType": "ប្រភេទព្រឹត្តិការណ៍",
+            "EditTitle": "គិតអំពីចំណងជើងគួរឱ្យចាប់អារម្មណ៍ ...",
+            "SetTitle": "សូមកំណត់ចំណងជើងព្រឹត្តិការណ៍",
+            "ScheduleOnlineConference": "កាលវិភាគសន្និសីទអនឡាញ",
+            "SOCDescription": "សូមកំណត់ពេលវេលាចាប់ផ្តើម និងបញ្ចប់សន្និសីទ។ មនុស្សគ្រប់រូបដែលចូលទស្សនាព្រឹត្តិការណ៍ក្នុងអំឡុងពេលនេះ នឹងភ្ជាប់ដោយស្វ័យប្រវត្តិទៅសន្និសីទអនឡាញ។",
+            "EndDate": "ចប់",
+            "location": {
+                "Title": "កំណត់ទីតាំងរបស់អ្នក។"
+            },
+            "interest": {
+                "Title": "ជ្រើសរើសសកម្មភាព",
+                "Filter": "ស្វែងរកចំណាប់អារម្មណ៍..."
+            },
+            "SetLivestream": "បិទភ្ជាប់តំណទៅការផ្សាយបន្តផ្ទាល់ \/ សន្និសីទវីដេអូ"
+        },
+        "EventAlreadyClosed": "ព្រឹត្តិការណ៍នេះបានបិទរួចហើយ",
+        "addToCalendar": {
+            "permissions": {
+                "title": "បន្ថែមទៅប្រតិទិន?",
+                "prompt": "តើអ្នកចង់បន្ថែមព្រឹត្តិការណ៍នេះទៅក្នុងប្រតិទិនរបស់អ្នកទេ?",
+                "yes": "បាទ",
+                "no": "ទេ"
+            },
+            "dialog": {
+                "Title": "បន្ថែមព្រឹត្តិការណ៍ទៅប្រតិទិនរបស់អ្នក។"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "ភាពអាចរកបាន",
+        "NewAvailability": {
+            "Title": "ភាពអាចរកបានថ្មី។",
+            "SaveAvailability": "រក្សាទុកភាពអាចរកបាន",
+            "SelectTemplate": "សូមជ្រើសរើសសេវាកម្ម",
+            "SelectLocation": "សូមជ្រើសរើសទីតាំង",
+            "SelectArea": "សូមជ្រើសរើសតំបន់",
+            "Type": "ប្រភេទ",
+            "Weekly": "ប្រចាំសប្តាហ៍",
+            "RecurringStartDate": "កាលបរិច្ឆេទចាប់ផ្តើមឡើងវិញ",
+            "EndDate": "កាលបរិច្ឆេទបញ្ចប់",
+            "SelectTime": "គ្រប់គ្រងរន្ធពេលវេលា",
+            "SelectTimeSlot": "ជ្រើសរើសចន្លោះពេល",
+            "SelectTimeSlots": "ជ្រើសរើសពេលវេលាដែលចង់បាន",
+            "PeopleMin": "អ្នកទស្សនាអប្បបរមា",
+            "PeopleMax": "អ្នកទស្សនាអតិបរមា",
+            "PeopleLabels": "ស្លាកត្រូវបានអនុញ្ញាត",
+            "Next": "បន្ទាប់",
+            "Back": "ត្រឡប់មកវិញ"
+        },
+        "EditAvailability": "កែសម្រួលភាពអាចរកបាន",
+        "SetVisitors": "កំណត់អ្នកទស្សនា",
+        "Price": "តម្លៃ",
+        "SelectAction": "សូមជ្រើសរើសសកម្មភាព",
+        "OpenProfile": "បើកប្រវត្តិរូប",
+        "RemoveStaff": "ដកបុគ្គលិកចេញ",
+        "PleaseSelectTimeSlots": "សូមជ្រើសរើសចន្លោះពេល",
+        "ExceptionOccurred": "ករណីលើកលែងបានកើតឡើង",
+        "NotEnoughCreditsToParticipateEvents": "មិនមានក្រេឌីតគ្រប់គ្រាន់ដើម្បីចូលរួមព្រឹត្តិការណ៍ {{eventsAmount}} ទេ។ អ្នកត្រូវការឥណទាន {{needCredits}} ។ ចង់​ទិញ?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "ថ្ងៃ​ចាប់ផ្តើម",
+            "endDate": "កាលបរិច្ឆេទបញ្ចប់",
+            "justOnce": "តែម្តង",
+            "justOnceWeekly": "សប្តាហ៍នេះតែប៉ុណ្ណោះ",
+            "justOnceMonthly": "ខែនេះតែប៉ុណ្ណោះ",
+            "recurring": "កើតឡើងម្តងទៀត"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "ព្រឹត្តិការណ៍ឥតគិតថ្លៃ",
+            "optional": "ការរួមចំណែកជាជម្រើស",
+            "required": "ការទូទាត់ចាំបាច់"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "ការរួមចំណែកជាជម្រើស",
+            "required": "ការទូទាត់ចាំបាច់",
+            "paid": "បង់"
+        },
+        "confirmationDialog": {
+            "title": "ការបញ្ជាក់ការទូទាត់",
+            "content": "ព្រឹត្តិការណ៍នេះមានការរួមចំណែកជាជម្រើសនៃ {{amount}} ។",
+            "button": "រួមចំណែក"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} មិនទាន់ជាផ្នែកនៃព្រឹត្តិការណ៍នេះទេ។ តើអ្នកចង់បន្ថែមពួកគេជាអ្នកចូលរួមទេ?",
+        "userNotFound": "រកមិនឃើញអ្នកប្រើប្រាស់ទេ។",
+        "confirmYes": "បាទ",
+        "confirmNo": "ទេ"
+    },
+    "notifications": {
+        "EventActivityIn": "សកម្មភាពព្រឹត្តិការណ៍នៅក្នុង {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "ច្បាប់កើតឡើងដដែលៗបានផ្លាស់ប្តូរសម្រាប់ព្រឹត្តិការណ៍ {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "គ្រប់គ្រងការជាវអ៊ីមែលរបស់អ្នក។",
+        "IfUnsubscribe": "ប្រសិនបើអ្នកចង់ឈប់ជាវ",
+        "ClickHereToVisitEvent": "សូមចុចទីនេះដើម្បីទស្សនាព្រឹត្តិការណ៍",
+        "Calendars\/reminder": "ព្រឹត្តិការណ៍ &quot;{{{call 'message.getInstruction' 'name'}}&quot; នឹង​ចាប់​ផ្តើម​នៅ​ក្នុង {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "បំពេញសៀវភៅបញ្ជីនេះ។",
+        "fileLabel": "ផ្ទុកឡើងសៀវភៅបញ្ជី៖",
+        "importOptions": "ជម្រើស",
+        "importProgress": "វឌ្ឍនភាព",
+        "sampleCSV": "ទាញយកគំរូ CSV",
+        "joinEventLabel": "ចូលរួមជាមួយអ្នកប្រើប្រាស់ទៅកាន់ព្រឹត្តិការណ៍ចៃដន្យ",
+        "smsText": "ហេ ខ្ញុំទើបតែផ្ញើតំណទៅ {{communityName}} ឱ្យអ្នក។ សូមពិនិត្យមើលវាចេញ។",
+        "emailSubject": "ទើបតែផ្ញើតំណទៅអ្នក។",
+        "emailBody": "ហេ ខ្ញុំទើបតែផ្ញើការអញ្ជើញទៅ {{communityName}} ឱ្យអ្នក។ សូមពិនិត្យមើលវាចេញ។",
+        "fileNotFound": "សូមអភ័យទោស រកមិនឃើញឯកសារ CSV ទេ។",
+        "fileEmpty": "សូមអភ័យទោស ឯកសារ CSV គឺទទេ។",
+        "fieldNotFound": "រកមិនឃើញវាលដែលត្រូវការ &quot;{{1}}&quot;",
+        "userIdNotFound": "អ្នកប្រើប្រាស់មាន ប៉ុន្តែលេខសម្គាល់ទទេ",
+        "activateUsers": "ផ្ញើសារធ្វើឱ្យសកម្មទៅកាន់អ្នកប្រើប្រាស់?",
+        "taskStreamInvalid": "ស្ទ្រីមភារកិច្ចមិនត្រឹមត្រូវ",
+        "instructionsEmpty": "ការណែនាំអំពីស្ទ្រីមកិច្ចការទទេ",
+        "interestsEmpty": "មិនអាចទទួលបានចំណាប់អារម្មណ៍",
+        "interestAbsent": "រកមិនឃើញចំណាប់អារម្មណ៍ {{1}}",
+        "complete": "បញ្ចប់",
+        "errorLine": "បន្ទាត់ {{1}}",
+        "errorsTitle": "កំហុសបានកើតឡើង",
+        "communityUsers": "នេះគឺជាបញ្ជីសហគមន៍"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "តំណាងឱ្យព្រឹត្តិការណ៍ដែលមនុស្សអាចចូលរួមបាន។",
+            "displayType": "ព្រឹត្តិការណ៍"
+        },
+        "Calendars\/recurring": {
+            "description": "ប្រើ​សម្រាប់​ទាក់ទង​នឹង​ការ​ផ្សាយ​ដែល​មាន​ន័យ​ថា​កើត​ឡើង​ជា​ប្រចាំ",
+            "displayType": "ព្រឹត្តិការណ៍កើតឡើងដដែលៗ"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "បន្ថែមរន្ធដោត",
+        "StartTime": "ពេលវេលាចាប់ផ្តើម",
+        "EndTime": "ពេលវេលាបញ្ចប់",
+        "Save": "រក្សាទុក",
+        "AddTimeSlot": "បន្ថែមរន្ធពេលវេលា",
+        "CopyFromDay": "ចម្លងពីថ្ងៃ",
+        "Nearest": "ជិតបំផុត។",
+        "Today": "ថ្ងៃនេះ",
+        "Tomorrow": "ថ្ងៃស្អែក",
+        "AfterTomorrow": "ខានស្អែក"
+    }
+}

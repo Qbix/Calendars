@@ -1,0 +1,319 @@
+{
+    "months": {
+        "Jan": "jan",
+        "Feb": "februar",
+        "Mar": "mar",
+        "Apr": "april",
+        "May": "Kan",
+        "Jun": "juni",
+        "Jul": "juli",
+        "Aug": "august",
+        "Sep": "september",
+        "Oct": "oktober",
+        "Nov": "november",
+        "Dec": "desember"
+    },
+    "monthsLong": {
+        "Jan": "januar",
+        "Feb": "februar",
+        "Mar": "mars",
+        "Apr": "april",
+        "May": "Kan",
+        "Jun": "juni",
+        "Jul": "juli",
+        "Aug": "august",
+        "Sep": "september",
+        "Oct": "oktober",
+        "Nov": "november",
+        "Dec": "desember"
+    },
+    "weekdays": {
+        "Sun": "Sol",
+        "Mon": "man",
+        "Tue": "ti",
+        "Wed": "Ons",
+        "Thu": "to",
+        "Fri": "fr",
+        "Sat": "lør"
+    },
+    "weekdaysLong": {
+        "Sun": "søndag",
+        "Mon": "mandag",
+        "Tue": "tirsdag",
+        "Wed": "onsdag",
+        "Thu": "Torsdag",
+        "Fri": "fredag",
+        "Sat": "lørdag"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Planlegg ny begivenhet"
+        },
+        "tool": {
+            "AreYouIn": "Er du inne?",
+            "Yes": "Ja",
+            "No": "Nei",
+            "Maybe": "Kan være",
+            "Conversation": "Samtale",
+            "Promote": "Fremmer denne hendelsen",
+            "Checkin": "Skann deltakerkoder",
+            "CloseEvent": {
+                "button": "Avbryt Event",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Er du sikker på at du vil avbryte denne hendelsen?",
+                        "Participant": "Det er 1 deltaker i dette arrangementet",
+                        "Participants": "Det er {{count}} deltakere i denne hendelsen",
+                        "Recurring": "Denne hendelsen er gjentakende. Vil du også kansellere alle fremtidige tilfeller i tillegg?"
+                    },
+                    "trip": {
+                        "Cancel": "Vil du også kansellere reisen din {{tripDirection}} denne hendelsen?",
+                        "Passengers": "Det er {{passengerCount}} passasjerer som stoler på deg.",
+                        "Title": "Lukk tur"
+                    },
+                    "directions": {
+                        "TO": "TIL",
+                        "FROM": "FRA",
+                        "to": "til",
+                        "from": "fra"
+                    }
+                }
+            },
+            "Calendar": "Kalender",
+            "Interests": "Interesser",
+            "Directions": "Veibeskrivelse",
+            "TitleOfEvent": "Tittel på begivenhet:",
+            "OpenTo": "Åpen for",
+            "MoreInfo": "Mer informasjon",
+            "Registration": "Registrering",
+            "GoingTo": "vil være kl",
+            "NotGoingTo": "vil ikke være kl",
+            "MaybeGoingTo": "blir kanskje kl",
+            "HostedBy": "Vert av {{name}}",
+            "LiveStream": "Klikk for å streame",
+            "Myqr": "Innsjekking",
+            "AdminDontPay": "Administratoren måtte ikke betale for å være med på dette arrangementet",
+            "Name": "Navn",
+            "ReservationFee": "Reservasjonsgebyr",
+            "AddParticipants": "Legg til deltakere",
+            "ManageReservation": "Administrer reservasjon",
+            "MakeReservation": "Gjør en reservasjon",
+            "StartLiveStream": "Klikk for å Live Stream",
+            "LiveStreamEnded": "Live stream er avsluttet",
+            "ClickToViewRecording": "Klikk for å se innspillingen",
+            "EmptyList": "Tom liste",
+            "NeedToPayCredits": "Behov for å betale: <span>{{amount}} studiepoeng<\/span>",
+            "PleaseJoinParticipants": "Bli med {{participant}}",
+            "YouReservingPlace": "Du reserverer deg.",
+            "SelectIncludesToAdd": "Velg en eller flere {{TypeDisplayPlural}} du vil legge til:",
+            "YouHaveNotRegisteredAnyIncluded": "Du har ikke registrert noen {{TypeDisplayPlural}} ennå",
+            "Proceed": "Fortsette",
+            "MakeChanges": "Gjøre endringer",
+            "CancelReservation": "Avbryt hele reservasjonen",
+            "Total": "Total",
+            "Ok": "Ok",
+            "Cancel": "Avbryt",
+            "Reminders": "Påminnelser",
+            "RemindersLabel": "Jeg ønsker å bli varslet om et arrangement i:",
+            "SetReminders": "Angi påminnelser",
+            "UpdateFutureReservations": "Vil du også oppdatere alle fremtidige reservasjoner på samme måte?",
+            "RecurringAdmin": "Gjentakende innstillinger",
+            "PublisherDontPay": "Utgiver trenger ikke betale",
+            "RequiredRelatedParticipants": "Dette arrangementet krever deltakere: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Rediger tilgjengeligheten &quot;{{title}}&quot; for å oppdatere tilbakevendende innstillinger"
+        },
+        "composer": {
+            "SetLocation": "Angi min posisjon",
+            "ChooseActivity": "Velg en aktivitet",
+            "ChoosePublisher": "Velg utgiver",
+            "Day": "Dag",
+            "Starting": "starter",
+            "People": "Mennesker",
+            "Share": "Dele",
+            "Recurring": "gjentakende",
+            "RecurringTitle": "Gjentatte dager",
+            "Daily": "Daglig",
+            "Weekly": "Ukentlig",
+            "Monthly": "Månedlig",
+            "SelectLocation": "Vennligst velg et sted først.",
+            "eventType": "Arrangementstype",
+            "EditTitle": "Tenk på en interessant tittel ...",
+            "SetTitle": "Vennligst sett inn hendelsestitel",
+            "location": {
+                "Title": "Angi posisjonen din"
+            },
+            "interest": {
+                "Title": "Velg en aktivitet",
+                "Filter": "Søkeinteresser ..."
+            },
+            "Ending": "ending",
+            "ScheduleOnlineConference": "Planlegg nettkonferanse",
+            "SOCDescription": "Angi start- og sluttid for konferansen. Hver bruker som er besøkt denne tidsperioden, vil automatisk koble seg til online konferanse.",
+            "EndDate": "Slutt",
+            "SetLivestream": "Lim inn lenke til livestream \/ videokonferanse",
+            "SetInfoLink": "Sett lenke til tilleggsinfo",
+            "ChooseService": "Velg tilgjengelig tjeneste",
+            "Continue": "Fortsette",
+            "ChooseAvailability": "Velg Tilgjengelig tjeneste",
+            "Duration": "Varighet",
+            "Hour": "Time",
+            "Hours": "Timer",
+            "Minutes": "Minutter"
+        },
+        "EventAlreadyClosed": "Denne hendelsen er allerede stengt",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Legg til i kalender?",
+                "prompt": "Vil du legge til denne hendelsen i kalenderen din?",
+                "yes": "Ja",
+                "no": "Nei"
+            },
+            "dialog": {
+                "Title": "Legg til hendelse i kalenderen din"
+            }
+        }
+    },
+    "recurring": {
+        "dialog": {
+            "justonce": "Bare denne ene gangen",
+            "recurring": "gjentakende",
+            "startDate": "Startdato",
+            "endDate": "Sluttdato",
+            "justOnce": "Bare en gang",
+            "justOnceWeekly": "Bare denne uken",
+            "justOnceMonthly": "Bare denne måneden"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Gratis arrangement",
+            "optional": "Valgfritt bidrag",
+            "required": "Påkrevd betaling"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Valgfritt bidrag",
+            "required": "Påkrevd betaling",
+            "paid": "betalt"
+        },
+        "confirmationDialog": {
+            "title": "Betalingsbekreftelse",
+            "content": "Denne begivenheten har et valgfritt bidrag på {{amount}}.",
+            "button": "Bidra"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} er ikke en del av arrangementet. Vil du legge dem til som deltaker?",
+        "userNotFound": "Bruker ikke funnet",
+        "confirmYes": "Ja",
+        "confirmNo": "Nei"
+    },
+    "notifications": {
+        "EventActivityIn": "Hendelsesaktivitet i {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Gjentatte regler endret for hendelse {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "administrer e-postabonnementene dine",
+        "IfUnsubscribe": "Hvis du vil melde deg ut",
+        "ClickHereToVisitEvent": "Klikk her for å besøke arrangementet",
+        "Calendars\/reminder": "Arrangementet &quot;{{{call 'message.getInstruction' 'name'}}&quot; starter om {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Fyll ut dette regnearket",
+        "fileLabel": "Last opp regneark:",
+        "joinEventLabel": "Bli med på tilfeldige hendelser",
+        "smsText": "Hei, jeg har nettopp sendt deg en lenke til {{communityName}}. Vennligst sjekk det ut.",
+        "emailSubject": "Har nettopp sendt deg en lenke",
+        "emailBody": "Hei, jeg sendte deg en invitasjon til {{communityName}}. Vennligst sjekk det ut.",
+        "fileNotFound": "Beklager, CSV-fil ble ikke funnet.",
+        "fileEmpty": "Beklager, CSV-filen er tom.",
+        "fieldNotFound": "Obligatorisk felt &quot;{{1}}&quot; ikke funnet",
+        "userIdNotFound": "bruker eksisterer, men id tom",
+        "activateUsers": "send aktiveringsmelding til brukere?",
+        "taskStreamInvalid": "oppgavestrøm ugyldig",
+        "instructionsEmpty": "oppgaver i oppgavestrømmen tom",
+        "interestsEmpty": "kan ikke få interesser",
+        "interestAbsent": "interesse {{1}} ikke funnet",
+        "complete": "Fullstendig",
+        "errorLine": "linje {{1}}",
+        "errorsTitle": "Feil oppstod",
+        "importOptions": "alternativer",
+        "importProgress": "Framgang",
+        "sampleCSV": "Last ned prøveeksempel CSV",
+        "communityUsers": "Dette er samfunnslisten"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Representerer et arrangement som folk kan delta på",
+            "displayType": "Begivenhet"
+        },
+        "Calendars\/recurring": {
+            "description": "Brukes til å relatere strømmer som er ment å gjenta seg med jevne mellomrom",
+            "displayType": "Gjentakende hendelse"
+        }
+    },
+    "services": {
+        "Title": "tjenester",
+        "NewService": {
+            "Title": "Ny tilgjengelighet",
+            "SaveService": "Lagre tilgjengelighet",
+            "SelectTemplate": "Velg Service",
+            "SelectLocation": "Velg beliggenhet",
+            "SelectArea": "Velg område",
+            "SelectTime": "Administrer tidsluker",
+            "SelectTimeSlot": "Velg en tidsluke",
+            "PeopleMin": "Minimumsbesøkende",
+            "PeopleMax": "Maksimum besøkende",
+            "PeopleLabels": "Etiketter tillatt",
+            "Next": "neste",
+            "Back": "Tilbake"
+        },
+        "EditService": "Rediger tilgjengelighet",
+        "SetVisitors": "Angi besøkende",
+        "Price": "Pris",
+        "SelectAction": "Velg handling",
+        "OpenProfile": "Åpen profil",
+        "RemoveStaff": "Fjern personalet"
+    },
+    "timeslots": {
+        "AddSlot": "Legg til spor",
+        "StartTime": "Starttid",
+        "EndTime": "Sluttid",
+        "Save": "Lagre",
+        "AddTimeSlot": "Legg til tidsluke",
+        "CopyFromDay": "Kopi fra dagen",
+        "Nearest": "Nærmeste",
+        "Today": "I dag",
+        "Tomorrow": "I morgen",
+        "AfterTomorrow": "Etter i morgen"
+    },
+    "availabilities": {
+        "Title": "Tilgjengelighet",
+        "NewAvailability": {
+            "Title": "Ny tilgjengelighet",
+            "SaveAvailability": "Lagre tilgjengelighet",
+            "SelectTemplate": "Velg Service",
+            "SelectLocation": "Velg Plassering",
+            "SelectArea": "Vennligst velg Område",
+            "SelectTime": "Administrer tidsluker",
+            "SelectTimeSlot": "Velg et tidsluke",
+            "PeopleMin": "Minimum besøkende",
+            "PeopleMax": "Maksimalt antall besøkende",
+            "PeopleLabels": "Etiketter tillatt",
+            "Next": "Neste",
+            "Back": "Tilbake",
+            "Type": "Type",
+            "Weekly": "Ukentlig",
+            "RecurringStartDate": "Gjentakende startdato",
+            "EndDate": "Sluttdato",
+            "SelectTimeSlots": "Velg ønsket tidsluke"
+        },
+        "EditAvailability": "Rediger tilgjengelighet",
+        "SetVisitors": "Sett besøkende",
+        "Price": "Pris",
+        "SelectAction": "Velg handling",
+        "OpenProfile": "Åpne profil",
+        "RemoveStaff": "Fjern personalet",
+        "PleaseSelectTimeSlots": "Velg tidsluker",
+        "ExceptionOccurred": "Unntak skjedde",
+        "NotEnoughCreditsToParticipateEvents": "Ikke nok studiepoeng til å delta på {{eventsAmount}} hendelser. Du trenger {{needCredits}} studiepoeng. Vil kjøpe?"
+    }
+}

@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "ජන",
+        "Feb": "පෙබ",
+        "Mar": "මාර්තු",
+        "Apr": "අප්රේල්",
+        "May": "මැයි",
+        "Jun": "ජූනි",
+        "Jul": "ජුලි",
+        "Aug": "අගෝස්තු",
+        "Sep": "සැප්",
+        "Oct": "ඔක්",
+        "Nov": "නොවැම්බර්",
+        "Dec": "දෙසැ"
+    },
+    "monthsLong": {
+        "Jan": "ජනවාරි",
+        "Feb": "පෙබරවාරි",
+        "Mar": "මාර්තු",
+        "Apr": "අප්රේල්",
+        "May": "මැයි",
+        "Jun": "ජූනි",
+        "Jul": "ජුලි",
+        "Aug": "අගෝස්තු",
+        "Sep": "සැප්තැම්බර්",
+        "Oct": "ඔක්තෝම්බර්",
+        "Nov": "නොවැම්බර්",
+        "Dec": "දෙසැම්බර්"
+    },
+    "weekdays": {
+        "Sun": "හිරු",
+        "Mon": "සඳු",
+        "Tue": "අඟහරුවාදා",
+        "Wed": "බදාදා",
+        "Thu": "බ්රහස්පතින්දා",
+        "Fri": "සිකු",
+        "Sat": "සෙනසුරාදා"
+    },
+    "weekdaysLong": {
+        "Sun": "ඉරිදා",
+        "Mon": "සඳුදා",
+        "Tue": "අඟහරුවාදා",
+        "Wed": "බදාදා",
+        "Thu": "බ්රහස්පතින්දා",
+        "Fri": "සිකුරාදා",
+        "Sat": "සෙනසුරාදා"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "නව සිදුවීමක් සැලසුම් කරන්න"
+        },
+        "tool": {
+            "HostedBy": "සත්කාරකත්වය දරන ලද්දේ {{name}}",
+            "Name": "නම",
+            "AreYouIn": "ඔබ ඇතුලේද?",
+            "Yes": "ඔව්",
+            "No": "නැත",
+            "Ok": "හරි",
+            "Cancel": "අවලංගු කරන්න",
+            "Maybe": "සමහර විට",
+            "Conversation": "සාකච්ඡාව",
+            "Promote": "මෙම සිදුවීම ප්‍රවර්ධනය කරන්න",
+            "Reminders": "මතක් කිරීම්",
+            "RemindersLabel": "මට සිදුවීමක් ගැන දැනුම් දීමට අවශ්‍යයි:",
+            "MoreInfo": "වැඩි විස්තර",
+            "Registration": "ලියාපදිංචි කිරීම",
+            "SetReminders": "කරුණාකර සිහිකැඳවීම් සකසන්න",
+            "ReservationFee": "වෙන්කිරීමේ ගාස්තුව",
+            "AddParticipants": "සහභාගිවන්නන් එකතු කරන්න",
+            "ManageReservation": "වෙන්කිරීම් කළමනාකරණය කරන්න",
+            "UpdateFutureReservations": "ඔබට සියලු අනාගත වෙන් කිරීම් එකම ආකාරයෙන් යාවත්කාලීන කිරීමට අවශ්‍යද?",
+            "RecurringAdmin": "පුනරාවර්තන සැකසුම්",
+            "MakeReservation": "වෙන්කරවා ගන්න",
+            "StartLiveStream": "සජීවී ප්‍රවාහයට ක්ලික් කරන්න",
+            "LiveStreamEnded": "සජීවී ප්‍රවාහය අවසන් වී ඇත",
+            "ClickToViewRecording": "පටිගත කිරීම බැලීමට ක්ලික් කරන්න",
+            "Checkin": "සහභාගිවන්නන්ගේ කේත පරිලෝකනය කරන්න",
+            "Myqr": "පැමිණීම වාර්තා කරන්න",
+            "CloseEvent": {
+                "button": "සිදුවීම අවලංගු කරන්න",
+                "confirm": {
+                    "text": {
+                        "Cancel": "ඔබට මෙම සිදුවීම අවලංගු කිරීමට අවශ්‍ය බව විශ්වාසද?",
+                        "Participant": "මෙම අවස්ථාවට සහභාගිවන්නන් 1 දෙනෙක් සිටී",
+                        "Participants": "මෙම අවස්ථාවට {{count}} සහභාගිවන්නන් ඇත",
+                        "Recurring": "මෙම සිදුවීම පුනරාවර්තනය වේ. ඔබට එහි සියලුම අනාගත අවස්ථාද අවලංගු කිරීමට අවශ්‍යද?"
+                    },
+                    "trip": {
+                        "Cancel": "ඔබට මෙම සිදුවීම {{tripDirection}} සංචාරය අවලංගු කිරීමට අවශ්‍යද?",
+                        "Passengers": "ඔබ මත විශ්වාසය තබන මගීන් {{passengerCount}} ඇත.",
+                        "Title": "සමීප සංචාරය"
+                    },
+                    "directions": {
+                        "TO": "වෙත",
+                        "FROM": "සිට",
+                        "to": "වෙත",
+                        "from": "සිට"
+                    }
+                }
+            },
+            "Calendar": "දින දසුන",
+            "Interests": "රුචිකත්වයන්",
+            "Directions": "දිශාවන්",
+            "TitleOfEvent": "සිදුවීමේ මාතෘකාව:",
+            "OpenTo": "සඳහා විවෘත",
+            "GoingTo": "දී වනු ඇත",
+            "NotGoingTo": "හි නොසිටිනු ඇත",
+            "MaybeGoingTo": "සමහර විට දී වනු ඇත",
+            "AdminDontPay": "ඇඩ්මින්ට ගෙවීමට අවශ්‍ය නැත",
+            "PublisherDontPay": "ප්‍රකාශකයා ගෙවීමට අවශ්‍ය නැත",
+            "EmptyList": "හිස් ලැයිස්තුව",
+            "NeedToPayCredits": "ගෙවීමට අවශ්‍යයි: <span>{{amount}} බැර<\/span>",
+            "PleaseJoinParticipants": "කරුණාකර එකතු වන්න {{participant}}",
+            "YouReservingPlace": "ඔබ ඔබේ ස්ථානය වෙන්කර ගනු ඇත.",
+            "SelectIncludesToAdd": "එක් කිරීමට {{TypeDisplayPlural}} එකක් හෝ කිහිපයක් තෝරන්න:",
+            "YouHaveNotRegisteredAnyIncluded": "ඔබ තවමත් {{TypeDisplayPlural}} කිසිවක් ලියාපදිංචි කර නැත",
+            "Proceed": "ඉදිරියට යන්න",
+            "MakeChanges": "මගේ වෙනස්කම් සුරකින්න",
+            "CancelReservation": "සම්පූර්ණ වෙන් කිරීම අවලංගු කරන්න",
+            "Total": "සමස්ත",
+            "RequiredRelatedParticipants": "මෙම සිදුවීමට සහභාගිවන්නන් අවශ්‍ය වේ: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "පුනරාවර්තන සැකසීම් යාවත්කාලීන කිරීමට කරුණාකර &quot;{{title}}&quot; පවතින බව සංස්කරණය කරන්න"
+        },
+        "composer": {
+            "SetLocation": "මගේ ස්ථානය සකසන්න",
+            "SetInfoLink": "අමතර තොරතුරු සඳහා සබැඳිය සකසන්න",
+            "ChooseAvailability": "පවතින සේවාව තෝරන්න",
+            "ChooseActivity": "ක්‍රියාකාරකමක් තෝරන්න",
+            "ChoosePublisher": "ප්‍රකාශකයා තෝරන්න",
+            "Day": "දවස",
+            "Starting": "පටන් ගන්නවා",
+            "Duration": "කාල සීමාව",
+            "Hour": "පැය",
+            "Hours": "පැය",
+            "Minutes": "මිනිත්තු",
+            "Ending": "අවසන්",
+            "People": "මිනිසුන්",
+            "Share": "බෙදාගන්න",
+            "Continue": "දිගටම කරගෙන යන්න",
+            "Recurring": "පුනරාවර්තන",
+            "RecurringTitle": "පුනරාවර්තන දින",
+            "Daily": "දිනපතා",
+            "Weekly": "සතිපතා",
+            "Monthly": "මාසික",
+            "SelectLocation": "කරුණාකර පළමුව ස්ථානයක් තෝරන්න.",
+            "eventType": "සිදුවීම් වර්ගය",
+            "EditTitle": "රසවත් මාතෘකාවක් ගැන සිතන්න ...",
+            "SetTitle": "කරුණාකර සිදුවීම් මාතෘකාව සකසන්න",
+            "ScheduleOnlineConference": "මාර්ගගත සම්මන්ත්‍රණය උපලේඛනගත කරන්න",
+            "SOCDescription": "කරුණාකර සම්මන්ත්‍රණ ආරම්භක සහ අවසන් වේලාව නිර්වචනය කරන්න. මෙම කාල සීමාව තුළ සිදුවීමට පැමිණෙන සෑම පුද්ගලයෙක්ම මාර්ගගත සම්මන්ත්‍රණයට ස්වයංක්‍රීයව සම්බන්ධ වනු ඇත.",
+            "EndDate": "අවසානය",
+            "location": {
+                "Title": "ඔබගේ ස්ථානය සකසන්න"
+            },
+            "interest": {
+                "Title": "ක්‍රියාකාරකමක් තෝරන්න",
+                "Filter": "සෙවුම් රුචිකත්වයන්..."
+            },
+            "SetLivestream": "සජීවී ප්‍රවාහයට \/ වීඩියෝ සම්මන්ත්‍රණයට සබැඳිය අලවන්න"
+        },
+        "EventAlreadyClosed": "මෙම සිදුවීම දැනටමත් වසා ඇත",
+        "addToCalendar": {
+            "permissions": {
+                "title": "දින දර්ශනයට එක් කරන්නද?",
+                "prompt": "ඔබ මෙම සිදුවීම ඔබේ දින දර්ශනයට එක් කිරීමට කැමතිද?",
+                "yes": "ඔව්",
+                "no": "නැත"
+            },
+            "dialog": {
+                "Title": "ඔබගේ දින දර්ශනයට සිදුවීම එක් කරන්න"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "ලබා ගත හැකි",
+        "NewAvailability": {
+            "Title": "නව ලබා ගැනීමේ හැකියාව",
+            "SaveAvailability": "පවතින බව සුරකින්න",
+            "SelectTemplate": "කරුණාකර සේවාව තෝරන්න",
+            "SelectLocation": "කරුණාකර ස්ථානය තෝරන්න",
+            "SelectArea": "කරුණාකර ප්‍රදේශය තෝරන්න",
+            "Type": "ටයිප් කරන්න",
+            "Weekly": "සතිපතා",
+            "RecurringStartDate": "පුනරාවර්තන ආරම්භක දිනය",
+            "EndDate": "අවසාන දිනය",
+            "SelectTime": "කාල පරාසයන් කළමනාකරණය කරන්න",
+            "SelectTimeSlot": "කාල පරාසයක් තෝරන්න",
+            "SelectTimeSlots": "අපේක්ෂිත කාල පරාසයන් තෝරන්න",
+            "PeopleMin": "අවම අමුත්තන්",
+            "PeopleMax": "උපරිම අමුත්තන්",
+            "PeopleLabels": "ලේබල් වලට අවසර ඇත",
+            "Next": "ඊළඟ",
+            "Back": "ආපසු"
+        },
+        "EditAvailability": "පවතින බව සංස්කරණය කරන්න",
+        "SetVisitors": "අමුත්තන් සකසන්න",
+        "Price": "මිල",
+        "SelectAction": "කරුණාකර ක්‍රියාව තෝරන්න",
+        "OpenProfile": "පැතිකඩ විවෘත කරන්න",
+        "RemoveStaff": "කාර්ය මණ්ඩලය ඉවත් කරන්න",
+        "PleaseSelectTimeSlots": "කරුණාකර කාල කොටස් තෝරන්න",
+        "ExceptionOccurred": "ව්යතිරේකයක් සිදු විය",
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} සිදුවීම්වලට සහභාගී වීමට ප්‍රමාණවත් ණය නැත. ඔබට ණය {{needCredits}}ක් අවශ්‍යයි. මිලදී ගැනීමට අවශ්‍යද?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "ආරම්භක දිනය",
+            "endDate": "අවසාන දිනය",
+            "justOnce": "එක් වරක් පමණි",
+            "justOnceWeekly": "මේ සතියේ පමණයි",
+            "justOnceMonthly": "මේ මාසේ විතරයි",
+            "recurring": "පුනරාවර්තන"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "නොමිලේ සිදුවීම",
+            "optional": "විකල්ප දායකත්වය",
+            "required": "අවශ්ය ගෙවීම"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "විකල්ප දායකත්වය",
+            "required": "අවශ්ය ගෙවීම",
+            "paid": "ගෙව්වා"
+        },
+        "confirmationDialog": {
+            "title": "ගෙවීම් තහවුරු කිරීම",
+            "content": "මෙම සිදුවීමට {{amount}} හි විකල්ප දායකත්වයක් ඇත.",
+            "button": "දායක වන්න"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} තවමත් සිදුවීමේ කොටසක් නොවේ. ඔබට ඔවුන්ව සහභාගිවන්නෙකු ලෙස එක් කිරීමට අවශ්‍යද?",
+        "userNotFound": "පරිශීලක හමු නොවීය",
+        "confirmYes": "ඔව්",
+        "confirmNo": "නැත"
+    },
+    "notifications": {
+        "EventActivityIn": "{{{stream.fields.title}}} හි සිදුවීම් ක්‍රියාකාරකම්",
+        "RecurringRulesChanged": "{{{call 'message.getInstruction' 'eventTitle'}}} සිදුවීම සඳහා පුනරාවර්තන රීති වෙනස් විය",
+        "ManageEmailSubscriptions": "ඔබගේ ඊමේල් දායකත්වයන් කළමනාකරණය කරන්න",
+        "IfUnsubscribe": "ඔබට දායකත්වයෙන් ඉවත් වීමට අවශ්‍ය නම්",
+        "ClickHereToVisitEvent": "සිදුවීම නැරඹීමට කරුණාකර මෙහි ක්ලික් කරන්න",
+        "Calendars\/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; සිදුවීම {{&call 'message.getInstruction' 'time'}}} දී ආරම්භ වනු ඇත"
+    },
+    "import": {
+        "linkTitle": "මෙම පැතුරුම්පත පුරවන්න",
+        "fileLabel": "පැතුරුම්පත උඩුගත කරන්න:",
+        "importOptions": "විකල්ප",
+        "importProgress": "ප්රගතිය",
+        "sampleCSV": "සාම්පල CSV බාගන්න",
+        "joinEventLabel": "අහඹු සිදුවීමකට පරිශීලකයන් හා එක්වන්න",
+        "smsText": "හේයි, මම ඔබට {{communityName}} වෙත සබැඳියක් එවා ඇත. කරුණාකර එය පරීක්ෂා කරන්න.",
+        "emailSubject": "ඔබට සබැඳියක් එවා ඇත",
+        "emailBody": "හේයි, මම ඔබට {{communityName}} වෙත ආරාධනාවක් එවා ඇත. කරුණාකර එය පරීක්ෂා කරන්න.",
+        "fileNotFound": "සමාවන්න, CSV ගොනුව හමු නොවීය.",
+        "fileEmpty": "සමාවන්න, CSV ගොනුව හිස්ය.",
+        "fieldNotFound": "අවශ්‍ය ක්ෂේත්‍රය &quot;{{1}}&quot; හමු නොවීය",
+        "userIdNotFound": "පරිශීලක පවතී නමුත් හැඳුනුම්පත හිස්",
+        "activateUsers": "පරිශීලකයින්ට සක්රිය කිරීමේ පණිවිඩයක් යවන්නද?",
+        "taskStreamInvalid": "කාර්ය ප්‍රවාහය වලංගු නැත",
+        "instructionsEmpty": "කාර්ය ප්‍රවාහ උපදෙස් හිස්",
+        "interestsEmpty": "උනන්දුව ලබා ගත නොහැක",
+        "interestAbsent": "පොලී {{1}} හමු නොවීය",
+        "complete": "සම්පූර්ණයි",
+        "errorLine": "පේළිය {{1}}",
+        "errorsTitle": "දෝෂ ඇති විය",
+        "communityUsers": "මෙය ප්‍රජා ලැයිස්තුවකි"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "මිනිසුන්ට සහභාගී විය හැකි සිදුවීමක් නියෝජනය කරයි",
+            "displayType": "සිදුවීම"
+        },
+        "Calendars\/recurring": {
+            "description": "වරින් වර පුනරාවර්තනය වීමට අදහස් කරන ප්‍රවාහ සම්බන්ධ කිරීම සඳහා භාවිතා වේ",
+            "displayType": "පුනරාවර්තන සිදුවීම"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Slot එකතු කරන්න",
+        "StartTime": "ආරම්භක වේලාව",
+        "EndTime": "අවසන් කාලය",
+        "Save": "සුරකින්න",
+        "AddTimeSlot": "කාල පරතරය එක් කරන්න",
+        "CopyFromDay": "දවසේ සිට පිටපත් කරන්න",
+        "Nearest": "ආසන්නතම",
+        "Today": "අද",
+        "Tomorrow": "හෙට",
+        "AfterTomorrow": "හෙටින් පස්සේ"
+    }
+}

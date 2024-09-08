@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "feb",
+        "Mar": "mar",
+        "Apr": "apr",
+        "May": "maja",
+        "Jun": "jun",
+        "Jul": "jul",
+        "Aug": "avg",
+        "Sep": "Sep",
+        "Oct": "okt",
+        "Nov": "nov",
+        "Dec": "dec"
+    },
+    "monthsLong": {
+        "Jan": "Januar",
+        "Feb": "februar",
+        "Mar": "mart",
+        "Apr": "april",
+        "May": "maja",
+        "Jun": "juna",
+        "Jul": "jula",
+        "Aug": "avgust",
+        "Sep": "septembra",
+        "Oct": "oktobar",
+        "Nov": "novembar",
+        "Dec": "decembar"
+    },
+    "weekdays": {
+        "Sun": "Ned",
+        "Mon": "pon",
+        "Tue": "uto",
+        "Wed": "sri",
+        "Thu": "čet",
+        "Fri": "pet",
+        "Sat": "Sat"
+    },
+    "weekdaysLong": {
+        "Sun": "Nedjelja",
+        "Mon": "ponedjeljak",
+        "Tue": "utorak",
+        "Wed": "srijeda",
+        "Thu": "četvrtak",
+        "Fri": "petak",
+        "Sat": "Subota"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Planirajte novi događaj"
+        },
+        "tool": {
+            "HostedBy": "Domaćin {{name}}",
+            "Name": "Ime",
+            "AreYouIn": "Jeste li za?",
+            "Yes": "Da",
+            "No": "br",
+            "Ok": "Uredu",
+            "Cancel": "Otkaži",
+            "Maybe": "Možda",
+            "Conversation": "Razgovor",
+            "Promote": "Promovirajte ovaj događaj",
+            "Reminders": "Podsjetnici",
+            "RemindersLabel": "Želim biti obaviješten o događaju u:",
+            "MoreInfo": "Više informacija",
+            "Registration": "Registracija",
+            "SetReminders": "Postavite podsjetnike",
+            "ReservationFee": "Naknada za rezervaciju",
+            "AddParticipants": "Dodaj učesnike",
+            "ManageReservation": "Upravljajte rezervacijom",
+            "UpdateFutureReservations": "Želite li također ažurirati sve buduće rezervacije na isti način?",
+            "RecurringAdmin": "Ponavljajuće postavke",
+            "MakeReservation": "Napravite rezervaciju",
+            "StartLiveStream": "Kliknite za prijenos uživo",
+            "LiveStreamEnded": "Prijenos uživo je završio",
+            "ClickToViewRecording": "kliknite da pogledate snimak",
+            "Checkin": "Skenirajte kodove učesnika",
+            "Myqr": "Provjeri",
+            "CloseEvent": {
+                "button": "Otkaži događaj",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Jeste li sigurni da želite otkazati ovaj događaj?",
+                        "Participant": "Postoji 1 učesnik u ovom događaju",
+                        "Participants": "U ovom događaju ima {{count}} učesnika",
+                        "Recurring": "Ovaj događaj se ponavlja. Želite li također otkazati sve njegove buduće instance?"
+                    },
+                    "trip": {
+                        "Cancel": "Želite li također otkazati svoje putovanje {{tripDirection}} na ovaj događaj?",
+                        "Passengers": "Postoji {{passengerCount}} putnika koji se oslanjaju na vas.",
+                        "Title": "Zatvori putovanje"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "OD",
+                        "to": "to",
+                        "from": "od"
+                    }
+                }
+            },
+            "Calendar": "Kalendar",
+            "Interests": "Interesi",
+            "Directions": "Upute",
+            "TitleOfEvent": "Naziv događaja:",
+            "OpenTo": "Otvoreno za",
+            "GoingTo": "bit će u",
+            "NotGoingTo": "neće biti u",
+            "MaybeGoingTo": "će možda biti u",
+            "AdminDontPay": "Admin ne mora da plati",
+            "PublisherDontPay": "Izdavač ne mora platiti",
+            "EmptyList": "Prazna lista",
+            "NeedToPayCredits": "Treba platiti: <span>{{amount}} kredita<\/span>",
+            "PleaseJoinParticipants": "Molimo pridružite se {{participant}}",
+            "YouReservingPlace": "Vi ćete rezervisati svoje mjesto.",
+            "SelectIncludesToAdd": "Odaberite jednu ili više {{TypeDisplayPlural}} za dodavanje:",
+            "YouHaveNotRegisteredAnyIncluded": "Još niste registrovali nijedan {{TypeDisplayPlural}}",
+            "Proceed": "Nastavi",
+            "MakeChanges": "Sačuvaj moje promjene",
+            "CancelReservation": "Otkažite cijelu rezervaciju",
+            "Total": "Ukupno",
+            "RequiredRelatedParticipants": "Ovaj događaj zahtijeva učesnike: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Uredite dostupnost &quot;{{title}}&quot; da ažurirate postavke koje se ponavljaju"
+        },
+        "composer": {
+            "SetLocation": "Postavite moju lokaciju",
+            "SetInfoLink": "Postavite Link na dodatne informacije",
+            "ChooseAvailability": "Odaberite Dostupna usluga",
+            "ChooseActivity": "Odaberite aktivnost",
+            "ChoosePublisher": "Odaberite Izdavač",
+            "Day": "Dan",
+            "Starting": "Počinjati",
+            "Duration": "Trajanje",
+            "Hour": "Sat",
+            "Hours": "Sati",
+            "Minutes": "Minute",
+            "Ending": "Kraj",
+            "People": "Ljudi",
+            "Share": "Dijeli",
+            "Continue": "Nastavi",
+            "Recurring": "Ponavlja se",
+            "RecurringTitle": "Dani koji se ponavljaju",
+            "Daily": "Dnevno",
+            "Weekly": "Nedeljno",
+            "Monthly": "Mjesečno",
+            "SelectLocation": "Molimo prvo odaberite lokaciju.",
+            "eventType": "Vrsta događaja",
+            "EditTitle": "Sjetite se zanimljivog naslova...",
+            "SetTitle": "Molimo postavite naslov događaja",
+            "ScheduleOnlineConference": "Zakažite online konferenciju",
+            "SOCDescription": "Molimo definišite vrijeme početka i završetka konferencije. Svaka osoba koja posjeti događaj tokom ovog vremenskog perioda će se automatski povezati na online konferenciju.",
+            "EndDate": "Kraj",
+            "location": {
+                "Title": "Postavite svoju lokaciju"
+            },
+            "interest": {
+                "Title": "Odaberite aktivnost",
+                "Filter": "Interesovanja za pretragu..."
+            },
+            "SetLivestream": "Zalijepite link na prijenos uživo \/ video konferenciju"
+        },
+        "EventAlreadyClosed": "Ovaj događaj je već zatvoren",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Dodati u kalendar?",
+                "prompt": "Želite li dodati ovaj događaj u svoj kalendar?",
+                "yes": "Da",
+                "no": "br"
+            },
+            "dialog": {
+                "Title": "Dodajte događaj u svoj kalendar"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Dostupnost",
+        "NewAvailability": {
+            "Title": "New Availability",
+            "SaveAvailability": "Sačuvaj dostupnost",
+            "SelectTemplate": "Molimo odaberite Usluga",
+            "SelectLocation": "Molimo odaberite Lokacija",
+            "SelectArea": "Molimo odaberite Područje",
+            "Type": "Tip",
+            "Weekly": "Nedeljno",
+            "RecurringStartDate": "Ponavljajući datum početka",
+            "EndDate": "Datum završetka",
+            "SelectTime": "Upravljajte vremenskim slotovima",
+            "SelectTimeSlot": "Odaberite vremenski termin",
+            "SelectTimeSlots": "Odaberite željene vremenske intervale",
+            "PeopleMin": "Minimum posjetitelja",
+            "PeopleMax": "Maksimalan broj posetilaca",
+            "PeopleLabels": "Oznake dozvoljene",
+            "Next": "Sljedeći",
+            "Back": "Nazad"
+        },
+        "EditAvailability": "Uredi dostupnost",
+        "SetVisitors": "Set Visitors",
+        "Price": "Cijena",
+        "SelectAction": "Molimo odaberite akciju",
+        "OpenProfile": "Otvori profil",
+        "RemoveStaff": "Uklonite osoblje",
+        "PleaseSelectTimeSlots": "Molimo odaberite termine",
+        "ExceptionOccurred": "Došlo je do izuzetka",
+        "NotEnoughCreditsToParticipateEvents": "Nema dovoljno kredita za učešće na {{eventsAmount}} događajima. Trebate {{needCredits}} kredita. Zelim kupiti?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Datum početka",
+            "endDate": "Datum završetka",
+            "justOnce": "Samo jednom",
+            "justOnceWeekly": "Samo ove sedmice",
+            "justOnceMonthly": "Samo ovaj mjesec",
+            "recurring": "Ponavlja se"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Besplatan događaj",
+            "optional": "Fakultativni doprinos",
+            "required": "Obavezna uplata"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Fakultativni doprinos",
+            "required": "Obavezna uplata",
+            "paid": "plaćeno"
+        },
+        "confirmationDialog": {
+            "title": "Potvrda plaćanja",
+            "content": "Ovaj događaj ima opcioni doprinos od {{amount}}.",
+            "button": "Doprinesite"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} još nije dio događaja. Želite li ih dodati kao učesnika?",
+        "userNotFound": "Korisnik nije pronađen",
+        "confirmYes": "Da",
+        "confirmNo": "br"
+    },
+    "notifications": {
+        "EventActivityIn": "Aktivnost događaja u {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Pravila koja se ponavljaju promijenjena za događaj {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "upravljajte svojim pretplatama na e-poštu",
+        "IfUnsubscribe": "Ako želite da se odjavite",
+        "ClickHereToVisitEvent": "Molimo kliknite ovdje da posjetite događaj",
+        "Calendars\/reminder": "Događaj &quot;{{{call 'message.getInstruction' 'name'}}&quot; će početi za {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Ispunite ovu tabelu",
+        "fileLabel": "Prenesi tabelu:",
+        "importOptions": "Opcije",
+        "importProgress": "Napredak",
+        "sampleCSV": "Preuzmite uzorak CSV-a",
+        "joinEventLabel": "Pridružite se korisnicima slučajnom događaju",
+        "smsText": "Hej, upravo sam ti poslao link na {{communityName}}. Molimo provjerite.",
+        "emailSubject": "Upravo sam ti poslao link",
+        "emailBody": "Hej, upravo sam ti poslao pozivnicu za {{communityName}}. Molimo provjerite.",
+        "fileNotFound": "Žao nam je, CSV fajl nije pronađen.",
+        "fileEmpty": "Žao nam je, CSV datoteka je prazna.",
+        "fieldNotFound": "Obavezno polje &quot;{{1}}&quot; nije pronađeno",
+        "userIdNotFound": "korisnik postoji, ali je id prazan",
+        "activateUsers": "poslati aktivacijsku poruku korisnicima?",
+        "taskStreamInvalid": "tok zadataka nevažeći",
+        "instructionsEmpty": "instrukcije toka zadataka su prazne",
+        "interestsEmpty": "ne mogu dobiti interese",
+        "interestAbsent": "interes {{1}} nije pronađen",
+        "complete": "Završeno",
+        "errorLine": "linija {{1}}",
+        "errorsTitle": "Došlo je do grešaka",
+        "communityUsers": "Ovo je lista zajednica"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Predstavlja događaj u kojem ljudi mogu učestvovati",
+            "displayType": "Događaj"
+        },
+        "Calendars\/recurring": {
+            "description": "Koristi se za povezivanje tokova koji se periodično ponavljaju",
+            "displayType": "Ponavljajući događaj"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Add Slot",
+        "StartTime": "Vrijeme početka",
+        "EndTime": "Vrijeme završetka",
+        "Save": "Sačuvaj",
+        "AddTimeSlot": "Dodaj termin",
+        "CopyFromDay": "Kopija od dana",
+        "Nearest": "Najbliži",
+        "Today": "Danas",
+        "Tomorrow": "sutra",
+        "AfterTomorrow": "Prekosutra"
+    }
+}

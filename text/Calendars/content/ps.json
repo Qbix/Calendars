@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "جان",
+        "Feb": "فبروري",
+        "Mar": "مار",
+        "Apr": "اپریل",
+        "May": "می",
+        "Jun": "جون",
+        "Jul": "جولای",
+        "Aug": "اګست",
+        "Sep": "سپتمبر",
+        "Oct": "اکتوبر",
+        "Nov": "نومبر",
+        "Dec": "دسمبر"
+    },
+    "monthsLong": {
+        "Jan": "جنوري",
+        "Feb": "فبروري",
+        "Mar": "مارچ",
+        "Apr": "اپریل",
+        "May": "می",
+        "Jun": "جون",
+        "Jul": "جولای",
+        "Aug": "اګست",
+        "Sep": "سپتمبر",
+        "Oct": "اکتوبر",
+        "Nov": "نومبر",
+        "Dec": "دسمبر"
+    },
+    "weekdays": {
+        "Sun": "لمر",
+        "Mon": "پیر",
+        "Tue": "سه",
+        "Wed": "چهارشنبه",
+        "Thu": "تیر",
+        "Fri": "جمعه",
+        "Sat": "شنبه"
+    },
+    "weekdaysLong": {
+        "Sun": "یک شنبه",
+        "Mon": "دوشنبه",
+        "Tue": "سه شنبه",
+        "Wed": "چهارشنبه",
+        "Thu": "پنجشنبه",
+        "Fri": "جمعه",
+        "Sat": "شنبه"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "نوې پیښه پلان کړئ"
+        },
+        "tool": {
+            "HostedBy": "کوربه د {{name}} لخوا",
+            "Name": "نوم",
+            "AreYouIn": "آیا تاسو پکې یاست؟",
+            "Yes": "هو",
+            "No": "نه",
+            "Ok": "سمه ده",
+            "Cancel": "لغوه کړئ",
+            "Maybe": "امکان لری",
+            "Conversation": "خبرې اترې",
+            "Promote": "دې پیښې ته وده ورکړئ",
+            "Reminders": "یادونه",
+            "RemindersLabel": "زه غواړم د یوې پیښې څخه خبر شم:",
+            "MoreInfo": "نور معلومات",
+            "Registration": "نوم لیکنه",
+            "SetReminders": "مهرباني وکړئ یادونه ترتیب کړئ",
+            "ReservationFee": "د ریزرویشن فیس",
+            "AddParticipants": "برخه اخیستونکي اضافه کړئ",
+            "ManageReservation": "د ریزرویشن اداره کول",
+            "UpdateFutureReservations": "ایا تاسو هم غواړئ ټول راتلونکي ریزرویشنونه په ورته ډول تازه کړئ؟",
+            "RecurringAdmin": "تکراري ترتیبات",
+            "MakeReservation": "ریزرویشن وکړئ",
+            "StartLiveStream": "د ژوندی جریان لپاره کلیک وکړئ",
+            "LiveStreamEnded": "ژوندۍ خپرونه پای ته ورسېده",
+            "ClickToViewRecording": "د ثبت کولو لیدو لپاره کلیک وکړئ",
+            "Checkin": "د ګډون کونکي کوډونه سکین کړئ",
+            "Myqr": "کتل",
+            "CloseEvent": {
+                "button": "پیښه لغوه کړه",
+                "confirm": {
+                    "text": {
+                        "Cancel": "ایا تاسو ډاډه یاست چې دا پیښه لغوه کول غواړئ؟",
+                        "Participant": "پدې پیښه کې 1 برخه اخیستونکی شتون لري",
+                        "Participants": "پدې پیښه کې {{count}} ګډون کوونکي شتون لري",
+                        "Recurring": "دا پیښه تکراریږي. ایا تاسو غواړئ د هغې ټول راتلونکي مثالونه هم لغوه کړئ؟"
+                    },
+                    "trip": {
+                        "Cancel": "ایا تاسو غواړئ خپل سفر {{tripDirection}} دا پیښه هم لغوه کړئ؟",
+                        "Passengers": "دلته {{passengerCount}} مسافر په تاسو تکیه کوي.",
+                        "Title": "سفر بند کړئ"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "FROM",
+                        "to": "ته",
+                        "from": "څخه"
+                    }
+                }
+            },
+            "Calendar": "کیلنڈر",
+            "Interests": "ګټو",
+            "Directions": "لارښوونې",
+            "TitleOfEvent": "د پیښې عنوان:",
+            "OpenTo": "ته پرانیستل شي",
+            "GoingTo": "کې به وي",
+            "NotGoingTo": "کې به نه وي",
+            "MaybeGoingTo": "شاید په وخت وي",
+            "AdminDontPay": "اډمین پیسو ته اړتیا نلري",
+            "PublisherDontPay": "خپرونکی تادیه کولو ته اړتیا نلري",
+            "EmptyList": "خالي لیست",
+            "NeedToPayCredits": "د پیسو ورکولو ته اړتیا ده: <span>{{amount}} کریډیټ<\/span>",
+            "PleaseJoinParticipants": "مهرباني وکړئ ګډون وکړئ {{participant}}",
+            "YouReservingPlace": "تاسو به خپل ځای خوندي کړئ.",
+            "SelectIncludesToAdd": "د اضافه کولو لپاره یو یا ډیر {{TypeDisplayPlural}} غوره کړئ:",
+            "YouHaveNotRegisteredAnyIncluded": "تاسو تراوسه هیڅ {{TypeDisplayPlural}} نه دی ثبت کړی",
+            "Proceed": "پرمخ لاړ شه",
+            "MakeChanges": "زما بدلونونه خوندي کړئ",
+            "CancelReservation": "ټول ریزرویشن لغوه کړئ",
+            "Total": "ټول",
+            "RequiredRelatedParticipants": "دا پیښه ګډون کونکو ته اړتیا لري: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "مهرباني وکړئ موجودیت &quot;{{title}}&quot; د تکراري ترتیباتو تازه کولو لپاره ترمیم کړئ"
+        },
+        "composer": {
+            "SetLocation": "زما ځای وټاکئ",
+            "SetInfoLink": "د اضافي معلوماتو لپاره لینک تنظیم کړئ",
+            "ChooseAvailability": "موجود خدمت غوره کړئ",
+            "ChooseActivity": "یو فعالیت غوره کړئ",
+            "ChoosePublisher": "خپرونکی غوره کړئ",
+            "Day": "ورځ",
+            "Starting": "پیل کول",
+            "Duration": "موده",
+            "Hour": "ساعت",
+            "Hours": "ساعتونه",
+            "Minutes": "دقیقې",
+            "Ending": "پای",
+            "People": "خلک",
+            "Share": "شریکول",
+            "Continue": "ادامه ورکړئ",
+            "Recurring": "تکراري",
+            "RecurringTitle": "تکراري ورځې",
+            "Daily": "ورځنی",
+            "Weekly": "اونۍ",
+            "Monthly": "میاشتنی",
+            "SelectLocation": "مهرباني وکړئ لومړی ځای وټاکئ.",
+            "eventType": "د پیښې ډول",
+            "EditTitle": "د یو په زړه پورې سرلیک په اړه فکر وکړئ ...",
+            "SetTitle": "مهرباني وکړئ د پیښې سرلیک وټاکئ",
+            "ScheduleOnlineConference": "د آنلاین کنفرانس مهالویش",
+            "SOCDescription": "مهرباني وکړئ د کنفرانس پیل او پای وخت تعریف کړئ. هر څوک چې د دې دورې په جریان کې پیښې څخه لیدنه کوي د آنلاین کنفرانس سره به په اوتومات ډول وصل شي.",
+            "EndDate": "پای",
+            "location": {
+                "Title": "خپل ځای وټاکئ"
+            },
+            "interest": {
+                "Title": "یو فعالیت غوره کړئ",
+                "Filter": "د ګټو لټون ..."
+            },
+            "SetLivestream": "ژوندی جریان \/ ویډیو کنفرانس ته لینک پیسټ کړئ"
+        },
+        "EventAlreadyClosed": "دا پیښه لا دمخه تړل شوې ده",
+        "addToCalendar": {
+            "permissions": {
+                "title": "په تقویم کې اضافه کړئ؟",
+                "prompt": "ایا تاسو غواړئ دا پیښه په خپل کیلنڈر کې اضافه کړئ؟",
+                "yes": "هو",
+                "no": "نه"
+            },
+            "dialog": {
+                "Title": "خپل کیلنڈر ته پیښه اضافه کړئ"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "موجودیتونه",
+        "NewAvailability": {
+            "Title": "نوی موجودیت",
+            "SaveAvailability": "موجودیت خوندي کړئ",
+            "SelectTemplate": "مهرباني وکړئ خدمت وټاکئ",
+            "SelectLocation": "مهرباني وکړئ ځای وټاکئ",
+            "SelectArea": "مهرباني وکړئ ساحه وټاکئ",
+            "Type": "ډول",
+            "Weekly": "اونۍ",
+            "RecurringStartDate": "تکراري پیل نیټه",
+            "EndDate": "د پای نیټه",
+            "SelectTime": "د وخت سلاټونه اداره کړئ",
+            "SelectTimeSlot": "د وخت سلاټ غوره کړئ",
+            "SelectTimeSlots": "د مطلوب وخت سلاټونه غوره کړئ",
+            "PeopleMin": "لږترلږه لیدونکي",
+            "PeopleMax": "اعظمي لیدونکي",
+            "PeopleLabels": "لیبلونه اجازه لري",
+            "Next": "بل",
+            "Back": "شاته"
+        },
+        "EditAvailability": "د موجودیت ترمیم",
+        "SetVisitors": "لیدونکي تنظیم کړئ",
+        "Price": "قیمت",
+        "SelectAction": "مهرباني وکړئ عمل وټاکئ",
+        "OpenProfile": "پروفایل خلاص کړئ",
+        "RemoveStaff": "کارمندان لرې کړئ",
+        "PleaseSelectTimeSlots": "مهرباني وکړئ د وخت سلاټونه وټاکئ",
+        "ExceptionOccurred": "استثنا رامنځته شوه",
+        "NotEnoughCreditsToParticipateEvents": "د {{eventsAmount}} پیښو د ګډون لپاره کافی کریډیټ نشته. تاسو {{needCredits}} کریډیټ ته اړتیا لرئ. غواړئ پیرود وکړئ؟"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "پیل نېټه",
+            "endDate": "د پای نیټه",
+            "justOnce": "یوازې یو ځل",
+            "justOnceWeekly": "یوازې پدې اونۍ کې",
+            "justOnceMonthly": "یوازې پدې میاشت کې",
+            "recurring": "تکراري"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "وړیا پیښه",
+            "optional": "اختیاري مرسته",
+            "required": "اړین تادیه"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "اختیاري مرسته",
+            "required": "اړین تادیه",
+            "paid": "تادیه شوی"
+        },
+        "confirmationDialog": {
+            "title": "د تادیې تایید",
+            "content": "دا پیښه د {{amount}} اختیاري ونډه لري.",
+            "button": "مرسته وکړي"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} لا تر اوسه د پیښې برخه نه ده. ایا تاسو غواړئ دوی د ګډون کونکي په توګه اضافه کړئ؟",
+        "userNotFound": "کارن ونه موندل شو",
+        "confirmYes": "هو",
+        "confirmNo": "نه"
+    },
+    "notifications": {
+        "EventActivityIn": "په {{{stream.fields.title}}} کې د پیښې فعالیت",
+        "RecurringRulesChanged": "د پیښې {{{call 'message.getInstruction' 'eventTitle'}}} لپاره تکراري مقررات بدل شوي",
+        "ManageEmailSubscriptions": "ستاسو د بریښنالیک ګډونونه اداره کړئ",
+        "IfUnsubscribe": "که تاسو غواړئ چې ګډون رد کړئ",
+        "ClickHereToVisitEvent": "مهرباني وکړئ د پیښې لیدو لپاره دلته کلیک وکړئ",
+        "Calendars\/reminder": "پیښه &quot;{999}}&quot; به په {{{call 'message.getInstruction' 'time'}}} کې پیل شي"
+    },
+    "import": {
+        "linkTitle": "دا سپریډ شیټ ډک کړئ",
+        "fileLabel": "سپریډ شیټ پورته کړئ:",
+        "importOptions": "اختیارونه",
+        "importProgress": "پرمختګ",
+        "sampleCSV": "نمونه CSV ډاونلوډ کړئ",
+        "joinEventLabel": "په تصادفي پیښې کې د کاروونکو سره یوځای شئ",
+        "smsText": "اې، ما یوازې تاسو ته {{communityName}} ته یو لینک لیږلی. مهرباني وکړئ دا وګورئ.",
+        "emailSubject": "یوازې تاسو ته یو لینک لیږلی",
+        "emailBody": "اې، ما یوازې تاسو ته بلنه لیږلې ده {{communityName}}. مهرباني وکړئ دا وګورئ.",
+        "fileNotFound": "بخښنه غواړم، CSV فایل ونه موندل شو.",
+        "fileEmpty": "بښنه غواړم، د CSV فایل خالي دی.",
+        "fieldNotFound": "اړین ساحه &quot;{{1}}&quot; ونه موندل شوه",
+        "userIdNotFound": "کارن شتون لري مګر ID خالي دی",
+        "activateUsers": "کاروونکو ته د فعالولو پیغام واستوئ؟",
+        "taskStreamInvalid": "کاري جریان ناسم",
+        "instructionsEmpty": "د کاري جریان لارښوونې خالي",
+        "interestsEmpty": "ګټې نشي ترلاسه کولی",
+        "interestAbsent": "سود {{1}} ونه موندل شو",
+        "complete": "بشپړ",
+        "errorLine": "کرښه {{1}}",
+        "errorsTitle": "تېروتنې رامنځته شوې",
+        "communityUsers": "دا د ټولنو لیست دی"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "د یوې پیښې استازیتوب کوي چې خلک پکې ګډون کولی شي",
+            "displayType": "پیښه"
+        },
+        "Calendars\/recurring": {
+            "description": "د اړونده جریانونو لپاره کارول کیږي چې د وخت په تیریدو سره تکرار کیږي",
+            "displayType": "تکراري پیښه"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "سلاټ اضافه کړئ",
+        "StartTime": "د پيل وخت",
+        "EndTime": "د پای وخت",
+        "Save": "خوندي کړئ",
+        "AddTimeSlot": "د وخت سلاټ اضافه کړئ",
+        "CopyFromDay": "د ورځې څخه کاپي",
+        "Nearest": "نږدې",
+        "Today": "نن",
+        "Tomorrow": "سبا",
+        "AfterTomorrow": "بل سبا"
+    }
+}

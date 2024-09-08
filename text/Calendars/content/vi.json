@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "tháng một",
+        "Feb": "tháng Hai",
+        "Mar": "Mar",
+        "Apr": "Tháng tư",
+        "May": "Có thể",
+        "Jun": "Tháng sáu",
+        "Jul": "Thg 7",
+        "Aug": "Tháng 8",
+        "Sep": "Tháng chín",
+        "Oct": "Tháng 10",
+        "Nov": "Tháng mười một",
+        "Dec": "Tháng mười hai"
+    },
+    "monthsLong": {
+        "Jan": "Tháng một",
+        "Feb": "tháng 2",
+        "Mar": "hành khúc",
+        "Apr": "tháng tư",
+        "May": "Có thể",
+        "Jun": "tháng Sáu",
+        "Jul": "tháng Bảy",
+        "Aug": "tháng Tám",
+        "Sep": "Tháng Chín",
+        "Oct": "Tháng Mười",
+        "Nov": "tháng Mười Một",
+        "Dec": "tháng 12"
+    },
+    "weekdays": {
+        "Sun": "mặt trời",
+        "Mon": "Thứ hai",
+        "Tue": "Thứ ba",
+        "Wed": "Thứ Tư",
+        "Thu": "Thu",
+        "Fri": "T6",
+        "Sat": "Đã ngồi"
+    },
+    "weekdaysLong": {
+        "Sun": "chủ nhật",
+        "Mon": "thứ hai",
+        "Tue": "thứ ba",
+        "Wed": "Thứ Tư",
+        "Thu": "Thứ năm",
+        "Fri": "Thứ sáu",
+        "Sat": "thứ bảy"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Lên kế hoạch cho sự kiện mới"
+        },
+        "tool": {
+            "HostedBy": "Được tổ chức bởi {{name}}",
+            "Name": "Tên",
+            "AreYouIn": "Bạn có tham gia không?",
+            "Yes": "Đúng",
+            "No": "Không",
+            "Ok": "Được rồi",
+            "Cancel": "Hủy bỏ",
+            "Maybe": "Có lẽ",
+            "Conversation": "Cuộc hội thoại",
+            "Promote": "Quảng cáo sự kiện này",
+            "Reminders": "Nhắc nhở",
+            "RemindersLabel": "Tôi muốn được thông báo về một sự kiện trong:",
+            "MoreInfo": "Thêm thông tin",
+            "Registration": "Đăng ký",
+            "SetReminders": "Vui lòng đặt lời nhắc",
+            "ReservationFee": "Phí đặt phòng",
+            "AddParticipants": "Thêm người tham gia",
+            "ManageReservation": "Quản lý đặt chỗ",
+            "UpdateFutureReservations": "Bạn cũng muốn cập nhật tất cả các đặt chỗ trong tương lai theo cùng một cách?",
+            "RecurringAdmin": "Cài đặt định kỳ",
+            "MakeReservation": "Đặt phòng",
+            "StartLiveStream": "Nhấp để phát trực tiếp",
+            "LiveStreamEnded": "Luồng trực tiếp đã kết thúc",
+            "ClickToViewRecording": "bấm để xem ghi âm",
+            "Checkin": "Quét mã người tham dự",
+            "Myqr": "Đăng ký vào",
+            "CloseEvent": {
+                "button": "Hủy sự kiện",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Bạn có chắc muốn hủy sự kiện này?",
+                        "Participant": "Có 1 người tham gia sự kiện này",
+                        "Participants": "Có {{count}} người tham gia sự kiện này",
+                        "Recurring": "Sự kiện này đang lặp lại. Bạn có muốn cũng hủy tất cả các phiên bản trong tương lai của nó không?"
+                    },
+                    "trip": {
+                        "Cancel": "Bạn có muốn hủy cả chuyến đi của mình {{tripDirection}} sự kiện này không?",
+                        "Passengers": "Có {{passengerCount}} hành khách dựa vào bạn.",
+                        "Title": "Đóng chuyến đi"
+                    },
+                    "directions": {
+                        "TO": "ĐẾN",
+                        "FROM": "TỪ",
+                        "to": "đến",
+                        "from": "từ"
+                    }
+                }
+            },
+            "Calendar": "Lịch",
+            "Interests": "Sở thích",
+            "Directions": "Hướng",
+            "TitleOfEvent": "Tiêu đề của sự kiện:",
+            "OpenTo": "Mở",
+            "GoingTo": "sẽ ở",
+            "NotGoingTo": "sẽ không ở",
+            "MaybeGoingTo": "có thể sẽ ở",
+            "AdminDontPay": "Admin không cần trả tiền",
+            "PublisherDontPay": "Nhà xuất bản không cần trả tiền",
+            "EmptyList": "Danh sách trống",
+            "NeedToPayCredits": "Cần thanh toán: <span>{{amount}} tín dụng<\/span>",
+            "PleaseJoinParticipants": "Hãy tham gia {{participant}}",
+            "YouReservingPlace": "Bạn sẽ giữ chỗ của mình.",
+            "SelectIncludesToAdd": "Chọn một hoặc nhiều {{TypeDisplayPlural}} để thêm:",
+            "YouHaveNotRegisteredAnyIncluded": "Bạn chưa đăng ký bất kỳ {{TypeDisplayPlural}} nào",
+            "Proceed": "Tiếp tục",
+            "MakeChanges": "Lưu các thay đổi của tôi",
+            "CancelReservation": "Hủy toàn bộ đặt chỗ",
+            "Total": "Tổng cộng",
+            "RequiredRelatedParticipants": "Sự kiện này yêu cầu người tham gia: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Vui lòng chỉnh sửa tính khả dụng &quot;{{title}}&quot; để cập nhật cài đặt định kỳ",
+            "Presentation": "Bài thuyết trình",
+            "YouAreNotParticipated": "Bạn không phải là người tham gia sự kiện",
+            "LiveStreamStarted": "Buổi phát trực tiếp đã bắt đầu",
+            "WebRTCStarted": "Hội nghị truyền hình đã bắt đầu",
+            "WebRTCEnded": "Hội nghị truyền hình đã kết thúc"
+        },
+        "composer": {
+            "SetLocation": "Đặt vị trí của tôi",
+            "SetInfoLink": "Đặt Liên kết đến thông tin bổ sung",
+            "ChooseAvailability": "Chọn dịch vụ có sẵn",
+            "ChooseActivity": "Chọn một hoạt động",
+            "ChoosePublisher": "Chọn nhà xuất bản",
+            "Day": "Ngày",
+            "Starting": "Bắt đầu",
+            "Duration": "Khoảng thời gian",
+            "Hour": "Giờ",
+            "Hours": "Giờ",
+            "Minutes": "Phút",
+            "Ending": "Kết thúc",
+            "People": "Mọi người",
+            "Share": "Chia sẻ",
+            "Continue": "Tiếp tục",
+            "Recurring": "Định kỳ",
+            "RecurringTitle": "Ngày định kỳ",
+            "Daily": "hằng ngày",
+            "Weekly": "Hàng tuần",
+            "Monthly": "Hàng tháng",
+            "SelectLocation": "Vui lòng chọn một địa điểm trước.",
+            "eventType": "Loại sự kiện",
+            "EditTitle": "Nghĩ về một tiêu đề thú vị ...",
+            "SetTitle": "Vui lòng đặt tiêu đề sự kiện",
+            "ScheduleOnlineConference": "Lên lịch hội thảo trực tuyến",
+            "SOCDescription": "Vui lòng xác định thời gian bắt đầu và kết thúc hội nghị. Mỗi người đến thăm sự kiện trong khoảng thời gian này sẽ tự động kết nối với hội nghị trực tuyến.",
+            "EndDate": "Chấm dứt",
+            "location": {
+                "Title": "Thiết lập vị trí của bạn"
+            },
+            "interest": {
+                "Title": "Chọn một hoạt động",
+                "Filter": "Tìm kiếm sở thích ..."
+            },
+            "SetLivestream": "Dán liên kết đến phát trực tiếp \/ hội nghị truyền hình",
+            "Locally": "tại địa phương",
+            "EventInfoLink": "Liên kết thông tin sự kiện",
+            "TicketPurchaseLink": "Liên kết mua vé"
+        },
+        "EventAlreadyClosed": "Sự kiện này đã kết thúc",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Thêm vào Lịch?",
+                "prompt": "Bạn có muốn thêm sự kiện này vào lịch của mình không?",
+                "yes": "Đúng",
+                "no": "Không"
+            },
+            "dialog": {
+                "Title": "Thêm sự kiện vào lịch của bạn"
+            }
+        },
+        "ErrorLeaveEndedEvent": "Xin lỗi, nhưng bạn không thể rời khỏi sự kiện đã kết thúc"
+    },
+    "availabilities": {
+        "Title": "Tính khả dụng",
+        "NewAvailability": {
+            "Title": "Tính sẵn có mới",
+            "SaveAvailability": "Lưu tính khả dụng",
+            "SelectTemplate": "Vui lòng chọn Dịch vụ",
+            "SelectLocation": "Vui lòng chọn Vị trí",
+            "SelectArea": "Vui lòng chọn Khu vực",
+            "Type": "Loại",
+            "Weekly": "Hàng tuần",
+            "RecurringStartDate": "Ngày bắt đầu định kỳ",
+            "EndDate": "Ngày cuối",
+            "SelectTime": "Quản lý các khe thời gian",
+            "SelectTimeSlot": "Chọn một khoảng thời gian",
+            "SelectTimeSlots": "Chọn các khoảng thời gian mong muốn",
+            "PeopleMin": "Số lượng khách truy cập tối thiểu",
+            "PeopleMax": "Số lượng khách truy cập tối đa",
+            "PeopleLabels": "Vai trò được phép",
+            "Next": "Kế tiếp",
+            "Back": "Trở lại",
+            "RecurringEndDate": "Ngày kết thúc định kỳ",
+            "ScheduleOnlineConference": "Lên lịch hội nghị từ xa",
+            "SetLivestream": "Dán liên kết tới buổi phát trực tiếp \/ hội nghị truyền hình",
+            "SelectTimeZone": "Chọn múi giờ"
+        },
+        "EditAvailability": "Chỉnh sửa tính khả dụng",
+        "SetVisitors": "Đặt khách truy cập",
+        "Price": "Giá",
+        "SelectAction": "Vui lòng chọn hành động",
+        "OpenProfile": "Mở hồ sơ",
+        "RemoveStaff": "Xóa nhân viên",
+        "PleaseSelectTimeSlots": "Vui lòng chọn các khoảng thời gian",
+        "ExceptionOccurred": "Ngoại lệ xảy ra",
+        "NotEnoughCreditsToParticipateEvents": "Không đủ tín dụng để tham gia {{eventsAmount}} sự kiện. Bạn cần {{needCredits}} tín dụng. Muốn mua?",
+        "LiveStream": "Trực tiếp",
+        "InviteStaff": "Mời nhân viên"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Ngày bắt đầu",
+            "endDate": "Ngày cuối",
+            "justOnce": "Chỉ một lần",
+            "justOnceWeekly": "Chỉ tuần này thôi",
+            "justOnceMonthly": "Chỉ trong tháng này",
+            "recurring": "Định kỳ"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Sự kiện miễn phí",
+            "optional": "Đóng góp tùy chọn",
+            "required": "Thanh toán bắt buộc"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Đóng góp tùy chọn",
+            "required": "Thanh toán bắt buộc",
+            "paid": "đã thanh toán"
+        },
+        "confirmationDialog": {
+            "title": "Xác nhận thanh toán",
+            "content": "Sự kiện này có một đóng góp tùy chọn là {{amount}}.",
+            "button": "Đóng góp"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} chưa phải là một phần của sự kiện. Bạn có muốn thêm họ làm người tham gia không?",
+        "userNotFound": "Người dùng không được tìm thấy",
+        "confirmYes": "Đúng",
+        "confirmNo": "Không"
+    },
+    "notifications": {
+        "EventActivityIn": "Hoạt động sự kiện trong {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Các quy tắc lặp lại đã thay đổi cho sự kiện {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "quản lý đăng ký email của bạn",
+        "IfUnsubscribe": "Nếu bạn muốn hủy đăng ký",
+        "ClickHereToVisitEvent": "Vui lòng bấm vào đây để tham quan sự kiện",
+        "Calendars\/reminder": "Sự kiện &quot;{{{call 'message.getInstruction' 'name'}}&quot; sẽ bắt đầu sau {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Hội nghị truyền hình đã bắt đầu",
+            "Ended": "Hội nghị truyền hình đã kết thúc"
+        },
+        "livestream": {
+            "Started": "Đã bắt đầu phát trực tiếp",
+            "Ended": "Luồng trực tiếp đã kết thúc",
+            "ClickToView": "Xem nó ở đây."
+        }
+    },
+    "import": {
+        "linkTitle": "Điền vào Bảng tính Này",
+        "fileLabel": "Tải lên bảng tính:",
+        "importOptions": "Tùy chọn",
+        "importProgress": "Phát triển",
+        "sampleCSV": "Tải xuống CSV mẫu",
+        "joinEventLabel": "Tham gia cùng người dùng vào sự kiện ngẫu nhiên",
+        "smsText": "Này, tôi vừa gửi cho bạn một liên kết tới {{communityName}}. Làm ơn hãy kiểm tra nó.",
+        "emailSubject": "Vừa gửi cho bạn một liên kết",
+        "emailBody": "Này, tôi vừa gửi cho bạn lời mời tham gia {{communityName}}. Làm ơn hãy kiểm tra nó.",
+        "fileNotFound": "Xin lỗi, không tìm thấy tệp CSV.",
+        "fileEmpty": "Xin lỗi, tệp CSV trống.",
+        "fieldNotFound": "Không tìm thấy trường bắt buộc &quot;{{1}}&quot;",
+        "userIdNotFound": "người dùng tồn tại nhưng id trống",
+        "activateUsers": "gửi tin nhắn kích hoạt cho người dùng?",
+        "taskStreamInvalid": "luồng nhiệm vụ không hợp lệ",
+        "instructionsEmpty": "hướng dẫn dòng nhiệm vụ trống",
+        "interestsEmpty": "không thể nhận được sở thích",
+        "interestAbsent": "quan tâm {{1}} không được tìm thấy",
+        "complete": "Hoàn chỉnh",
+        "errorLine": "dòng {{1}}",
+        "errorsTitle": "Đã xảy ra lỗi",
+        "communityUsers": "Đây là danh sách cộng đồng",
+        "toMainCommunityToo": "liên quan đến cộng đồng chính quá",
+        "ChooseFile": "chọn tập tin"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Trình bày một sự kiện mà mọi người có thể tham gia",
+            "displayType": "Biến cố"
+        },
+        "Calendars\/recurring": {
+            "description": "Được sử dụng cho các luồng liên quan được định kỳ lặp lại",
+            "displayType": "Sự kiện định kỳ"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Thêm vị trí",
+        "StartTime": "Thời gian bắt đầu",
+        "EndTime": "Thời gian kết thúc",
+        "Save": "Cứu",
+        "AddTimeSlot": "Thêm thời gian",
+        "CopyFromDay": "Sao chép từ ngày",
+        "Nearest": "Gần nhất",
+        "Today": "Hôm nay",
+        "Tomorrow": "Ngày mai",
+        "AfterTomorrow": "Sau ngày mai"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Đăng ký Lịch",
+        "copyLinkBelow": "Sao chép liên kết bên dưới",
+        "goTo": "Đi đến:",
+        "pasteCopiedTo": "Dán liên kết đã sao chép vào trường &quot;URL của lịch&quot;",
+        "clickAddCalendar": "Nhấp vào nút &quot;Thêm lịch&quot;",
+        "copyLink": "Sao chép đường dẫn",
+        "tapToCopy": "Nhấn vào nút bên dưới để sao chép liên kết vào khay nhớ tạm của bạn",
+        "linkCopied": "Đã sao chép liên kết",
+        "step2": "Đã sao chép liên kết. Chúng tôi sắp mở Lịch Google. Bạn sẽ cần dán liên kết vào hộp văn bản, nhấp vào &quot;Thêm lịch&quot; và đóng tab (xem ảnh chụp màn hình bên dưới)",
+        "calendarAppPreferences": "Mở Tùy chọn trong Ứng dụng Lịch trên máy Mac của bạn và đặt Ứng dụng Lịch mặc định như hiển thị bên dưới.",
+        "thenCloseDialog": "Sau đó đóng hộp thoại này để đăng ký lịch của bạn!",
+        "success": "Lịch đã được đồng bộ hóa thành công"
+    }
+}

@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Jan",
+        "Feb": "Feb",
+        "Mar": "Mär",
+        "Apr": "Apr",
+        "May": "Mee",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Aug",
+        "Sep": "Sep",
+        "Oct": "Okt",
+        "Nov": "Nov",
+        "Dec": "Dez"
+    },
+    "monthsLong": {
+        "Jan": "Januar",
+        "Feb": "Februar",
+        "Mar": "Mäerz",
+        "Apr": "Abrëll",
+        "May": "Mee",
+        "Jun": "Juni",
+        "Jul": "Juli",
+        "Aug": "August",
+        "Sep": "September",
+        "Oct": "Oktober",
+        "Nov": "November",
+        "Dec": "Dezember"
+    },
+    "weekdays": {
+        "Sun": "Sonn",
+        "Mon": "Mon",
+        "Tue": "Di",
+        "Wed": "Mit",
+        "Thu": "Do",
+        "Fri": "Fr",
+        "Sat": "Sa"
+    },
+    "weekdaysLong": {
+        "Sun": "Sonndeg",
+        "Mon": "Méindeg",
+        "Tue": "Dënschdeg",
+        "Wed": "Mëttwoch",
+        "Thu": "Donneschdeg",
+        "Fri": "Freideg",
+        "Sat": "Samschdeg"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Plan New Event"
+        },
+        "tool": {
+            "HostedBy": "Hostéiert vum {{name}}",
+            "Name": "Numm",
+            "AreYouIn": "Bass du do?",
+            "Yes": "jo",
+            "No": "Nee",
+            "Ok": "Ok",
+            "Cancel": "Ofbriechen",
+            "Maybe": "Vläicht",
+            "Conversation": "Gespréich",
+            "Promote": "Promotioun vun dësem Event",
+            "Reminders": "Erënnerungen",
+            "RemindersLabel": "Ech wëll vun engem Event informéiert ginn an:",
+            "MoreInfo": "Méi Infoen",
+            "Registration": "Aschreiwung",
+            "SetReminders": "Setzt w.e.g. Erënnerungen",
+            "ReservationFee": "Reservatiounsgebühr",
+            "AddParticipants": "Füügt Participanten",
+            "ManageReservation": "Reservatioun verwalten",
+            "UpdateFutureReservations": "Wëllt Dir och all zukünfteg Reservatiounen déiselwecht aktualiséieren?",
+            "RecurringAdmin": "Widderhuelend Astellungen",
+            "MakeReservation": "Maacht Reservatioun",
+            "StartLiveStream": "Klickt op Live Stream",
+            "LiveStreamEnded": "De Livestream ass eriwwer",
+            "ClickToViewRecording": "klickt op Opnahmen ze gesinn",
+            "Checkin": "Scan Participant Coden",
+            "Myqr": "Umellen",
+            "CloseEvent": {
+                "button": "Event annuléieren",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Sidd Dir sécher datt Dir dëst Evenement annuléiere wëllt?",
+                        "Participant": "Et gëtt 1 Participant un dësem Event",
+                        "Participants": "Et gi {{count}} Participanten un dësem Event",
+                        "Recurring": "Dëst Evenement ass widderhuelend. Wëllt Dir och all seng zukünfteg Instanzen annuléieren?"
+                    },
+                    "trip": {
+                        "Cancel": "Wëllt Dir och Är Rees {{tripDirection}} dëst Evenement annuléieren?",
+                        "Passengers": "Et sinn {{passengerCount}} Passagéier déi op Iech vertrauen.",
+                        "Title": "Zoumaachen Rees"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "VUN",
+                        "to": "zu",
+                        "from": "vun"
+                    }
+                }
+            },
+            "Calendar": "Kalenner",
+            "Interests": "Interessen",
+            "Directions": "Richtungen",
+            "TitleOfEvent": "Titel vum Event:",
+            "OpenTo": "Oppen fir",
+            "GoingTo": "wäert um",
+            "NotGoingTo": "wäert net bei",
+            "MaybeGoingTo": "wäert vläicht um",
+            "AdminDontPay": "Admin brauch net ze bezuelen",
+            "PublisherDontPay": "De Verlag brauch net ze bezuelen",
+            "EmptyList": "Eidel Lëscht",
+            "NeedToPayCredits": "Muss bezuelen: <span>{{amount}} Credits<\/span>",
+            "PleaseJoinParticipants": "Maacht mat {{participant}}",
+            "YouReservingPlace": "Dir reservéiert Är Plaz.",
+            "SelectIncludesToAdd": "Wielt een oder méi {{TypeDisplayPlural}} fir ze addéieren:",
+            "YouHaveNotRegisteredAnyIncluded": "Dir hutt nach keng {{TypeDisplayPlural}} registréiert",
+            "Proceed": "Fuert weider",
+            "MakeChanges": "Späichert Meng Ännerungen",
+            "CancelReservation": "Ganz Reservatioun annuléieren",
+            "Total": "Ganzen",
+            "RequiredRelatedParticipants": "Dëst Evenement erfuerdert Participanten: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Ännere w.e.g. Disponibilitéit &quot;{{title}}&quot; fir widderhuelend Astellungen ze aktualiséieren"
+        },
+        "composer": {
+            "SetLocation": "Set Meng Location",
+            "SetInfoLink": "Setzt Link op zousätzlech Informatioun",
+            "ChooseAvailability": "Wielt verfügbare Service",
+            "ChooseActivity": "Wielt eng Aktivitéit",
+            "ChoosePublisher": "Wielt Verlag",
+            "Day": "Dag",
+            "Starting": "Ugefaangen",
+            "Duration": "Dauer",
+            "Hour": "Stonn",
+            "Hours": "Stonnen",
+            "Minutes": "Minutt",
+            "Ending": "Enn",
+            "People": "Leit",
+            "Share": "Deelen",
+            "Continue": "Fuert weider",
+            "Recurring": "Widderhuelend",
+            "RecurringTitle": "Widderhuelend Deeg",
+            "Daily": "Deeglech",
+            "Weekly": "Wochemaart",
+            "Monthly": "Mount",
+            "SelectLocation": "Wielt w.e.g. eng Plaz fir d&#39;éischt.",
+            "eventType": "Event Typ",
+            "EditTitle": "Denkt un en interessanten Titel ...",
+            "SetTitle": "Setzt w.e.g. Eventtitel",
+            "ScheduleOnlineConference": "Zäitplang Online Konferenz",
+            "SOCDescription": "Weg definéieren Konferenz Start an Enn Zäit. All Persoun déi d&#39;Evenement während dëser Zäit besicht wäert sech automatesch un d&#39;Online Konferenz verbannen.",
+            "EndDate": "Enn",
+            "location": {
+                "Title": "Set Är Location"
+            },
+            "interest": {
+                "Title": "Wielt eng Aktivitéit",
+                "Filter": "Sich Interessen ..."
+            },
+            "SetLivestream": "Paste Link op Livestream \/ Videokonferenz"
+        },
+        "EventAlreadyClosed": "Dëst Evenement scho zou",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Add to Kalenner?",
+                "prompt": "Wëllt Dir dëst Evenement an Äre Kalenner addéieren?",
+                "yes": "jo",
+                "no": "Nee"
+            },
+            "dialog": {
+                "Title": "Füügt Event an Äre Kalenner"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Disponibilitéiten",
+        "NewAvailability": {
+            "Title": "Nei Disponibilitéit",
+            "SaveAvailability": "Späicheren Disponibilitéit",
+            "SelectTemplate": "Wielt w.e.g. Service",
+            "SelectLocation": "Wielt w.e.g. Location",
+            "SelectArea": "Wielt w.e.g. Area",
+            "Type": "Typ",
+            "Weekly": "Wochemaart",
+            "RecurringStartDate": "Widderhuelend Startdatum",
+            "EndDate": "Enn Datum",
+            "SelectTime": "Managen Zäit Plaze",
+            "SelectTimeSlot": "Wielt eng Zäit Stonneplang",
+            "SelectTimeSlots": "Wielt gewënschte Zäit Plaze",
+            "PeopleMin": "Minimum Visiteuren",
+            "PeopleMax": "Maximum Visiteuren",
+            "PeopleLabels": "Etiketten erlaabt",
+            "Next": "Nächst",
+            "Back": "Zréck"
+        },
+        "EditAvailability": "Edit Disponibilitéit",
+        "SetVisitors": "Set Visiteuren",
+        "Price": "Präis",
+        "SelectAction": "Wielt w.e.g. Aktioun",
+        "OpenProfile": "Open Profil",
+        "RemoveStaff": "Ewechzehuelen Personal",
+        "PleaseSelectTimeSlots": "Wielt weg Zäit Plaze",
+        "ExceptionOccurred": "Ausnam ass geschitt",
+        "NotEnoughCreditsToParticipateEvents": "Net genuch Kreditt fir {{eventsAmount}} Eventer matzemaachen. Dir braucht {{needCredits}} Credits. Wëllt kafen?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Ufanks Datum",
+            "endDate": "Enn Datum",
+            "justOnce": "Just eemol",
+            "justOnceWeekly": "Nëmmen dës Woch",
+            "justOnceMonthly": "Nëmmen dëse Mount",
+            "recurring": "Widderhuelend"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Gratis Event",
+            "optional": "Optional Bäitrag",
+            "required": "Néideg Bezuelen"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Optional Bäitrag",
+            "required": "Néideg Bezuelen",
+            "paid": "bezuelt"
+        },
+        "confirmationDialog": {
+            "title": "Bezuelen Bestätegung",
+            "content": "Dëst Evenement huet en optionalen Bäitrag vun {{amount}}.",
+            "button": "Bäitrag"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ass nach net Deel vum Event. Wëllt Dir se als Participant derbäisetzen?",
+        "userNotFound": "Benotzer net fonnt",
+        "confirmYes": "jo",
+        "confirmNo": "Nee"
+    },
+    "notifications": {
+        "EventActivityIn": "Eventaktivitéit am {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Widderhuelend Regele geännert fir Event {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "verwalten Är E-Mail Abonnementer",
+        "IfUnsubscribe": "Wann Dir wëllt ofzeschreiwen",
+        "ClickHereToVisitEvent": "Klickt w.e.g. hei fir Event ze besichen",
+        "Calendars\/reminder": "Event &quot;{{{call 'message.getInstruction' 'name'}}&quot; fänkt am {{&call 'message.getInstruction' 'time'}}} un"
+    },
+    "import": {
+        "linkTitle": "Fëllt dëse Spreadsheet aus",
+        "fileLabel": "Eroplueden Spreadsheet:",
+        "importOptions": "Optiounen",
+        "importProgress": "Fortschrëtt",
+        "sampleCSV": "Download Beispill CSV",
+        "joinEventLabel": "Maacht mat Benotzer op zoufälleg Event",
+        "smsText": "Hey, ech hunn Iech just e Link op {{communityName}} geschéckt. Weg kontrolléieren et aus.",
+        "emailSubject": "Just e Link geschéckt",
+        "emailBody": "Hey, ech hunn Iech just eng Invitatioun op {{communityName}} geschéckt. Weg kontrolléieren et aus.",
+        "fileNotFound": "Entschëllegt, CSV Datei net fonnt.",
+        "fileEmpty": "Entschëllegt, CSV Datei ass eidel.",
+        "fieldNotFound": "Néideg Feld &quot;{{1}}&quot; net fonnt",
+        "userIdNotFound": "Benotzer existéieren awer ID eidel",
+        "activateUsers": "schéckt Aktivéierungsmeldung un Benotzer?",
+        "taskStreamInvalid": "Task Stream ongëlteg",
+        "instructionsEmpty": "Task Stream Instruktioune eidel",
+        "interestsEmpty": "kann net Interesse kréien",
+        "interestAbsent": "Interessi {{1}} net fonnt",
+        "complete": "Komplett",
+        "errorLine": "Linn {{1}}",
+        "errorsTitle": "Feeler geschitt",
+        "communityUsers": "Dëst ass Gemeinschaftslëscht"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Representéiert en Event un deem d&#39;Leit kënne matmaachen",
+            "displayType": "Event"
+        },
+        "Calendars\/recurring": {
+            "description": "Benotzt fir Streams ze bezéien déi gemengt sinn periodesch zréckzekommen",
+            "displayType": "Widderhuelend Event"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Dobäizemaachen Slot",
+        "StartTime": "Start Zäit",
+        "EndTime": "Enn Zäit",
+        "Save": "Spueren",
+        "AddTimeSlot": "Dobäizemaachen Zäit Slot",
+        "CopyFromDay": "Kopie vum Dag",
+        "Nearest": "Am noosten",
+        "Today": "Haut",
+        "Tomorrow": "Muer",
+        "AfterTomorrow": "No muer"
+    }
+}

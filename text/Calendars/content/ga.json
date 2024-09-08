@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "Ean",
+        "Feb": "Feabh",
+        "Mar": "Mar",
+        "Apr": "Aibreán",
+        "May": "Bealtaine",
+        "Jun": "Meitheamh",
+        "Jul": "Iúil",
+        "Aug": "Lúnasa",
+        "Sep": "Meán Fómhair",
+        "Oct": "Deireadh Fómhair",
+        "Nov": "Samhain",
+        "Dec": "Dec"
+    },
+    "monthsLong": {
+        "Jan": "Eanáir",
+        "Feb": "Feabhra",
+        "Mar": "Márta",
+        "Apr": "Aibreán",
+        "May": "Bealtaine",
+        "Jun": "Meitheamh",
+        "Jul": "Iúil",
+        "Aug": "Lúnasa",
+        "Sep": "Meán Fómhair",
+        "Oct": "Deireadh Fómhair",
+        "Nov": "Samhain",
+        "Dec": "Nollaig"
+    },
+    "weekdays": {
+        "Sun": "ghrian",
+        "Mon": "Luan",
+        "Tue": "Dé Máirt",
+        "Wed": "Céad",
+        "Thu": "Thu",
+        "Fri": "Aoine",
+        "Sat": "Sath"
+    },
+    "weekdaysLong": {
+        "Sun": "Domhnach",
+        "Mon": "Dé Luain",
+        "Tue": "Dé Máirt",
+        "Wed": "Dé Céadaoin",
+        "Thu": "Déardaoin",
+        "Fri": "Dé hAoine",
+        "Sat": "Dé Sathairn"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Imeacht Nua a Phleanáil"
+        },
+        "tool": {
+            "HostedBy": "Arna óstáil ag {{name}}",
+            "Name": "Ainm",
+            "AreYouIn": "An bhfuil tú isteach?",
+            "Yes": "Tá",
+            "No": "Níl",
+            "Ok": "Ceart go leor",
+            "Cancel": "Cealaigh",
+            "Maybe": "B&#39;fhéidir",
+            "Conversation": "Comhrá",
+            "Promote": "Cuir an ócáid seo chun cinn",
+            "Reminders": "Meabhrúcháin",
+            "RemindersLabel": "Ba mhaith liom go gcuirfí ar an eolas mé faoi imeacht i:",
+            "MoreInfo": "Tuilleadh eolais",
+            "Registration": "Clárú",
+            "SetReminders": "Socraigh meabhrúcháin",
+            "ReservationFee": "Táille Áirithinte",
+            "AddParticipants": "Cuir Rannpháirtithe leis",
+            "ManageReservation": "Bainistigh Áirithint",
+            "UpdateFutureReservations": "Ar mhaith leat freisin gach áirithint amach anseo a nuashonrú ar an mbealach céanna?",
+            "RecurringAdmin": "Socruithe Athfhillteacha",
+            "MakeReservation": "Déan Áirithint",
+            "StartLiveStream": "Cliceáil chun Sruth Beo",
+            "LiveStreamEnded": "Tá deireadh tagtha le sruth beo",
+            "ClickToViewRecording": "cliceáil chun an taifeadadh a fheiceáil",
+            "Checkin": "Scan cóid freastalaithe",
+            "Myqr": "Seiceáil Isteach",
+            "CloseEvent": {
+                "button": "Cealaigh Imeacht",
+                "confirm": {
+                    "text": {
+                        "Cancel": "An bhfuil tú cinnte gur mhaith leat an t-imeacht seo a chealú?",
+                        "Participant": "Tá rannpháirtí amháin san imeacht seo",
+                        "Participants": "Tá {{count}} rannpháirtí san imeacht seo",
+                        "Recurring": "Tá an imeacht seo athfhillteach. Ar mhaith leat a cásanna go léir amach anseo a chur ar ceal freisin?"
+                    },
+                    "trip": {
+                        "Cancel": "Ar mhaith leat do thuras {{tripDirection}} an imeacht seo a chur ar ceal freisin?",
+                        "Passengers": "Tá {{passengerCount}} paisinéirí ag brath ort.",
+                        "Title": "Dún Turas"
+                    },
+                    "directions": {
+                        "TO": "CHUN",
+                        "FROM": "Ó",
+                        "to": "chun",
+                        "from": "ó"
+                    }
+                }
+            },
+            "Calendar": "Féilire",
+            "Interests": "Leasanna",
+            "Directions": "Treoracha",
+            "TitleOfEvent": "Teideal an imeachta:",
+            "OpenTo": "Oscailte do",
+            "GoingTo": "beidh ag",
+            "NotGoingTo": "ní bheidh ag",
+            "MaybeGoingTo": "beidh b&#39;fhéidir ag",
+            "AdminDontPay": "Ní gá don riarthóir íoc",
+            "PublisherDontPay": "Ní gá d’fhoilsitheoir íoc",
+            "EmptyList": "Liosta folamh",
+            "NeedToPayCredits": "Is gá íoc: <span>{{amount}} creidmheasanna<\/span>",
+            "PleaseJoinParticipants": "Glac páirt i {{participant}} le do thoil",
+            "YouReservingPlace": "Beidh d’áit á cur in áirithe agat.",
+            "SelectIncludesToAdd": "Roghnaigh {{TypeDisplayPlural}} amháin nó níos mó le cur leis:",
+            "YouHaveNotRegisteredAnyIncluded": "Níl {{TypeDisplayPlural}} ar bith cláraithe agat go fóill",
+            "Proceed": "Lean ar aghaidh",
+            "MakeChanges": "Sábháil Mo Athruithe",
+            "CancelReservation": "Cealaigh an áirithint iomlán",
+            "Total": "Iomlán",
+            "RequiredRelatedParticipants": "Teastaíonn rannpháirtithe ón imeacht seo: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Cuir infhaighteacht &quot;{{title}}&quot; in eagar le do thoil chun socruithe athfhillteacha a nuashonrú",
+            "Presentation": "cur i láthair",
+            "YouAreNotParticipated": "Níl tú i do rannpháirtí san imeacht",
+            "LiveStreamStarted": "Tá sruth beo tosaithe",
+            "WebRTCStarted": "Cuireadh tús le teileachomhdháil",
+            "WebRTCEnded": "Tháinig deireadh le teileachomhdháil"
+        },
+        "composer": {
+            "SetLocation": "Socraigh Mo Shuíomh",
+            "SetInfoLink": "Socraigh Nasc le faisnéis bhreise",
+            "ChooseAvailability": "Roghnaigh Seirbhís atá ar Fáil",
+            "ChooseActivity": "Roghnaigh Gníomhaíocht",
+            "ChoosePublisher": "Roghnaigh Foilsitheoir",
+            "Day": "Lá",
+            "Starting": "Ag tosú",
+            "Duration": "Fad",
+            "Hour": "Uair",
+            "Hours": "Uaireanta",
+            "Minutes": "Nóiméad",
+            "Ending": "dar críoch",
+            "People": "Daoine",
+            "Share": "Comhroinn",
+            "Continue": "Leanúint ar aghaidh",
+            "Recurring": "Athfhillteach",
+            "RecurringTitle": "Laethanta Athfhillteacha",
+            "Daily": "laethúil",
+            "Weekly": "Seachtainiúil",
+            "Monthly": "go míosúil",
+            "SelectLocation": "Roghnaigh suíomh ar dtús.",
+            "eventType": "Cineál Imeachta",
+            "EditTitle": "Smaoinigh ar theideal suimiúil...",
+            "SetTitle": "Socraigh teideal an imeachta",
+            "ScheduleOnlineConference": "Sceideal Comhdháil Ar Líne",
+            "SOCDescription": "Sainmhínigh am tosaithe agus críoch na comhdhála le do thoil. Nascfaidh gach duine a thugann cuairt ar an imeacht le linn na tréimhse ama seo go huathoibríoch le comhdháil ar líne.",
+            "EndDate": "Deireadh",
+            "location": {
+                "Title": "Socraigh Do Shuíomh"
+            },
+            "interest": {
+                "Title": "Roghnaigh Gníomhaíocht",
+                "Filter": "Suimeanna cuardaigh ..."
+            },
+            "SetLivestream": "Greamaigh nasc chuig sruth beo \/ físchomhdháil",
+            "Locally": "go háitiúil",
+            "EventInfoLink": "Nasc Faisnéise Imeachta",
+            "TicketPurchaseLink": "Nasc Ceannaigh Ticéad"
+        },
+        "EventAlreadyClosed": "Dúnadh an imeacht seo cheana féin",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Cuir le Féilire?",
+                "prompt": "Ar mhaith leat an t-imeacht seo a chur le d&#39;fhéilire?",
+                "yes": "Tá",
+                "no": "Níl"
+            },
+            "dialog": {
+                "Title": "Cuir Imeacht le d&#39;Fhéilire"
+            }
+        },
+        "ErrorLeaveEndedEvent": "Tá brón orainn, ach ní féidir leat imeacht dar críoch a fhágáil"
+    },
+    "availabilities": {
+        "Title": "Infhaighteacht",
+        "NewAvailability": {
+            "Title": "Infhaighteacht Nua",
+            "SaveAvailability": "Sábháil Infhaighteacht",
+            "SelectTemplate": "Roghnaigh Seirbhís",
+            "SelectLocation": "Roghnaigh Suíomh",
+            "SelectArea": "Roghnaigh Réimse le do thoil",
+            "Type": "Cineál",
+            "Weekly": "Seachtainiúil",
+            "RecurringStartDate": "Dáta Tosaigh Athfhillteach",
+            "EndDate": "Dáta deiridh",
+            "SelectTime": "Bainistigh Sliotáin Am",
+            "SelectTimeSlot": "Roghnaigh sliotán ama",
+            "SelectTimeSlots": "Roghnaigh sliotáin ama atá ag teastáil",
+            "PeopleMin": "Cuairteoirí íosta",
+            "PeopleMax": "Uasmhéid cuairteoirí",
+            "PeopleLabels": "Róil ceadaithe",
+            "Next": "Ar aghaidh",
+            "Back": "Ar ais",
+            "RecurringEndDate": "Dáta Deiridh Athfhillteach",
+            "ScheduleOnlineConference": "Teileachomhdháil a Sceideal",
+            "SetLivestream": "Greamaigh nasc chuig sruth beo \/ físchomhdháil",
+            "SelectTimeZone": "Roghnaigh TimeZone"
+        },
+        "EditAvailability": "Cuir Infhaighteacht in Eagar",
+        "SetVisitors": "Cuairteoirí Socraigh",
+        "Price": "Praghas",
+        "SelectAction": "Roghnaigh gníomh",
+        "OpenProfile": "Oscail próifíl",
+        "RemoveStaff": "Bain an fhoireann",
+        "PleaseSelectTimeSlots": "Roghnaigh sliotáin ama le do thoil",
+        "ExceptionOccurred": "Tharla eisceacht",
+        "NotEnoughCreditsToParticipateEvents": "Níl go leor creidiúintí chun páirt a ghlacadh {{eventsAmount}} imeachtaí. Teastaíonn {{needCredits}} creidiúint uait. Want a cheannach?",
+        "LiveStream": "Sruth beo",
+        "InviteStaff": "Tabhair cuireadh don fhoireann"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Dáta tosaigh",
+            "endDate": "Dáta deiridh",
+            "justOnce": "Díreach uair amháin",
+            "justOnceWeekly": "An tseachtain seo amháin",
+            "justOnceMonthly": "An mhí seo amháin",
+            "recurring": "Athfhillteach"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Imeacht saor in aisce",
+            "optional": "Ranníocaíocht roghnach",
+            "required": "Íocaíocht riachtanach"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Ranníocaíocht roghnach",
+            "required": "Íocaíocht riachtanach",
+            "paid": "íoctha"
+        },
+        "confirmationDialog": {
+            "title": "Deimhniú íocaíochta",
+            "content": "Tá ranníocaíocht roghnach de {{amount}} ag an imeacht seo.",
+            "button": "Cur"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "Níl {{1}} mar chuid den imeacht go fóill. Ar mhaith leat iad a chur leis mar rannpháirtí?",
+        "userNotFound": "Úsáideoir gan aimsiú",
+        "confirmYes": "Tá",
+        "confirmNo": "Níl"
+    },
+    "notifications": {
+        "EventActivityIn": "Gníomhaíocht imeachta i {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Athraíodh na rialacha athfhillteacha le haghaidh imeacht {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "bainistigh do shíntiúis ríomhphoist",
+        "IfUnsubscribe": "Más mian leat díliostáil",
+        "ClickHereToVisitEvent": "Cliceáil anseo le do thoil chun cuairt a thabhairt ar imeacht",
+        "Calendars\/reminder": "Cuirfear tús le himeacht &quot;{{{call 'message.getInstruction' 'name'}}&quot; i {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Cuireadh tús le teileachomhdháil",
+            "Ended": "Tháinig deireadh le teileachomhdháil"
+        },
+        "livestream": {
+            "Started": "Thosaigh sruth beo",
+            "Ended": "Tháinig deireadh le sruth beo",
+            "ClickToView": "Féach air anseo."
+        }
+    },
+    "import": {
+        "linkTitle": "Líon amach an Scarbhileog seo",
+        "fileLabel": "Uaslódáil Scarbhileog:",
+        "importOptions": "Roghanna",
+        "importProgress": "Dul chun cinn",
+        "sampleCSV": "Íosluchtaigh sampla CSV",
+        "joinEventLabel": "Glac le húsáideoirí chuig imeacht randamach",
+        "smsText": "Hey, tá mé díreach tar éis nasc chuig {{communityName}} a sheoladh chugat. Seiceáil le do thoil é.",
+        "emailSubject": "Níl le déanamh ach nasc a sheoladh chugat",
+        "emailBody": "Hey, tá mé díreach tar éis cuireadh a sheoladh chuig {{communityName}} chugat. Seiceáil le do thoil é.",
+        "fileNotFound": "Ár leithscéal, níor aimsíodh an comhad CSV.",
+        "fileEmpty": "Ár leithscéal, tá an comhad CSV folamh.",
+        "fieldNotFound": "Níor aimsíodh an réimse riachtanach &quot;{{1}}&quot;.",
+        "userIdNotFound": "úsáideoir ann ach id folamh",
+        "activateUsers": "teachtaireacht gníomhachtaithe a sheoladh chuig úsáideoirí?",
+        "taskStreamInvalid": "sruth tasc neamhbhailí",
+        "instructionsEmpty": "treoracha sruth tasc folamh",
+        "interestsEmpty": "ní féidir leasanna a fháil",
+        "interestAbsent": "ús {{1}} gan aimsiú",
+        "complete": "Críochnaigh",
+        "errorLine": "líne {{1}}",
+        "errorsTitle": "Tharla earráidí",
+        "communityUsers": "Is é seo an liosta pobail",
+        "toMainCommunityToo": "baint leis an bpríomhphobal freisin",
+        "ChooseFile": "roghnaigh comhad"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Is ionann é agus imeacht ar féidir le daoine páirt a ghlacadh ann",
+            "displayType": "Imeacht"
+        },
+        "Calendars\/recurring": {
+            "description": "Úsáidtear é le haghaidh sruthanna gaolmhara a bhfuil sé i gceist go dtarlóidh siad arís go tráthrialta",
+            "displayType": "Imeacht Athfhillteach"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Cuir Sliotán",
+        "StartTime": "Am Tosaigh",
+        "EndTime": "Am Deiridh",
+        "Save": "Sábháil",
+        "AddTimeSlot": "Cuir Sliotán Am",
+        "CopyFromDay": "Cóipeáil ón lá",
+        "Nearest": "is gaire",
+        "Today": "Inniu",
+        "Tomorrow": "amárach",
+        "AfterTomorrow": "Tar éis amárach"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Liostáil le Féilire",
+        "copyLinkBelow": "Cóipeáil an nasc thíos",
+        "goTo": "Téigh:",
+        "pasteCopiedTo": "Greamaigh nasc cóipeáilte chuig an réimse &quot;URL an fhéilire&quot;.",
+        "clickAddCalendar": "Cliceáil an cnaipe &quot;Cuir féilire&quot;.",
+        "copyLink": "Cóipeáil Nasc",
+        "tapToCopy": "Tapáil an cnaipe thíos chun an nasc chuig do ghearrthaisce a chóipeáil",
+        "linkCopied": "Cóipeáladh an Nasc",
+        "step2": "Cóipeáladh an Nasc. Táimid ar tí Google Calendar a oscailt. Beidh ort an nasc a ghreamú isteach sa bhosca téacs, cliceáil &quot;Cuir féilire leis&quot;, agus dún an cluaisín (féach an scáileán thíos)",
+        "calendarAppPreferences": "Oscail na Sainroghanna san App Féilire ar do Mac, agus socraigh App Féilire Réamhshocraithe a bheith mar a thaispeántar thíos.",
+        "thenCloseDialog": "Ansin dún an dialóg seo chun liostáil le d&#39;fhéilire!",
+        "success": "D&#39;éirigh le sioncronú an fhéilire"
+    }
+}

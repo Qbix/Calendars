@@ -1,0 +1,359 @@
+{
+    "months": {
+        "Jan": "janar",
+        "Feb": "shkurt",
+        "Mar": "mars",
+        "Apr": "Prill",
+        "May": "Mund",
+        "Jun": "qershor",
+        "Jul": "korrik",
+        "Aug": "gusht",
+        "Sep": "shtator",
+        "Oct": "tetor",
+        "Nov": "nëntor",
+        "Dec": "dhjetor"
+    },
+    "monthsLong": {
+        "Jan": "janar",
+        "Feb": "shkurt",
+        "Mar": "marsh",
+        "Apr": "prill",
+        "May": "Mund",
+        "Jun": "qershor",
+        "Jul": "korrik",
+        "Aug": "gusht",
+        "Sep": "shtator",
+        "Oct": "tetor",
+        "Nov": "Nëntor",
+        "Dec": "dhjetor"
+    },
+    "weekdays": {
+        "Sun": "dielli",
+        "Mon": "e hënë",
+        "Tue": "e martë",
+        "Wed": "e mërkurë",
+        "Thu": "e enjte",
+        "Fri": "e premte",
+        "Sat": "Shtu"
+    },
+    "weekdaysLong": {
+        "Sun": "të dielën",
+        "Mon": "e hënë",
+        "Tue": "e martë",
+        "Wed": "e mërkurë",
+        "Thu": "e enjte",
+        "Fri": "e premte",
+        "Sat": "e shtunë"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Planifikoni një ngjarje të re"
+        },
+        "tool": {
+            "AreYouIn": "Jeni brenda?",
+            "Yes": "po",
+            "No": "Nr",
+            "Maybe": "Ndoshta",
+            "Conversation": "bashkëbisedim",
+            "Promote": "Promovoni këtë ngjarje",
+            "Checkin": "Skanoni kodet e pjesëmarrësve",
+            "CloseEvent": {
+                "button": "Anulo ngjarjen",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Je i sigurt që dëshiron ta anulosh këtë ngjarje?",
+                        "Participant": "Ka 1 pjesëmarrës në këtë ngjarje",
+                        "Participants": "Ka {{count}} pjesëmarrës në këtë ngjarje",
+                        "Recurring": "Kjo ngjarje është e përsëritur. Dëshiron të anulosh gjithashtu të gjitha rastet e ardhshme?"
+                    },
+                    "trip": {
+                        "Cancel": "Dëshiron të anulosh edhe udhëtimin tënd {{tripDirection}} këtë ngjarje?",
+                        "Passengers": "Ka {{passengerCount}} pasagjerë që mbështeten te ju.",
+                        "Title": "Mbyll udhëtimin"
+                    },
+                    "directions": {
+                        "TO": "TE",
+                        "FROM": "NGA",
+                        "to": "te",
+                        "from": "nga"
+                    }
+                }
+            },
+            "Calendar": "Kalendari",
+            "Interests": "Interesat",
+            "Directions": "Drejtimet",
+            "TitleOfEvent": "Titulli i ngjarjes:",
+            "OpenTo": "E hapur për",
+            "MoreInfo": "Me shume informacion",
+            "Registration": "Regjistrimi",
+            "GoingTo": "do të jetë në",
+            "NotGoingTo": "nuk do të jetë në",
+            "MaybeGoingTo": "do të jetë ndoshta në",
+            "HostedBy": "Organizuar nga {{name}}",
+            "LiveStream": "Klikoni për të transmetuar live",
+            "Myqr": "Check In",
+            "AdminDontPay": "Administratori nuk ka nevojë të paguajë",
+            "Name": "Emri",
+            "ReservationFee": "Tarifa e rezervimit",
+            "AddParticipants": "Shto pjesëmarrës",
+            "ManageReservation": "Menaxho Rezervimin",
+            "MakeReservation": "Rezervoni",
+            "StartLiveStream": "Kliko për të Transmetuar drejtpërdrejt",
+            "LiveStreamEnded": "Transmetimi i drejtpërdrejtë ka përfunduar",
+            "ClickToViewRecording": "klikoni për të parë regjistrimin",
+            "EmptyList": "Lista e zbrazët",
+            "NeedToPayCredits": "Duhet të paguani: <span>{{amount}} kredite<\/span>",
+            "PleaseJoinParticipants": "Ju lutemi bashkohuni me {{participant}}",
+            "YouReservingPlace": "Ju do të rezervoni vendin tuaj.",
+            "SelectIncludesToAdd": "Zgjidh një ose më shumë {{TypeDisplayPlural}} për të shtuar:",
+            "YouHaveNotRegisteredAnyIncluded": "Nuk keni regjistruar ende asnjë {{TypeDisplayPlural}}",
+            "Proceed": "Vazhdoni",
+            "MakeChanges": "Ruaj ndryshimet e mia",
+            "CancelReservation": "Anuloni të gjithë rezervimin",
+            "Total": "Total",
+            "Ok": "Ne rregull",
+            "Cancel": "Anulo",
+            "Reminders": "Përkujtues",
+            "RemindersLabel": "Dua të njoftohem për një ngjarje në:",
+            "SetReminders": "Ju lutemi vendosni rikujtues",
+            "UpdateFutureReservations": "Dëshironi gjithashtu të përditësoni të gjitha rezervimet e ardhshme në të njëjtën mënyrë?",
+            "RecurringAdmin": "Cilësimet e përsëritura",
+            "PublisherDontPay": "Botuesi nuk ka nevojë të paguajë",
+            "RequiredRelatedParticipants": "Kjo ngjarje kërkon pjesëmarrës: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Ju lutemi modifikoni disponueshmërinë &quot;{{title}}&quot; për të përditësuar cilësimet e përsëritura",
+            "Presentation": "Prezantimi",
+            "YouAreNotParticipated": "Ju nuk jeni pjesëmarrës në ngjarje",
+            "LiveStreamStarted": "Transmetimi i drejtpërdrejtë ka filluar",
+            "WebRTCStarted": "Filloi telekonferenca",
+            "WebRTCEnded": "Përfundoi telekonferenca"
+        },
+        "composer": {
+            "SetLocation": "Cakto vendndodhjen time",
+            "ChooseActivity": "Zgjidhni një aktivitet",
+            "ChoosePublisher": "Zgjidhni Publisher",
+            "Day": "ditë",
+            "Starting": "Duke filluar",
+            "People": "Njerëzit",
+            "Share": "Shpërndaje",
+            "Recurring": "Të përsëritura",
+            "RecurringTitle": "Ditë të përsëritura",
+            "Daily": "Ditore",
+            "Weekly": "Javore",
+            "Monthly": "Mujore",
+            "SelectLocation": "Së pari, zgjidhni një vendndodhje.",
+            "eventType": "Lloji i ngjarjes",
+            "EditTitle": "Mendoni për një titull interesant...",
+            "SetTitle": "Ju lutemi vendosni titullin e ngjarjes",
+            "location": {
+                "Title": "Përcaktoni vendndodhjen tuaj"
+            },
+            "interest": {
+                "Title": "Zgjidhni një aktivitet",
+                "Filter": "Interesat e kërkimit..."
+            },
+            "Ending": "Përfundimi",
+            "ScheduleOnlineConference": "Programoni Konferencën Online",
+            "SOCDescription": "Ju lutemi, përcaktoni kohën e fillimit dhe përfundimit të konferencës. Çdo person që viziton ngjarjen gjatë kësaj periudhe kohore do të lidhet automatikisht me konferencën në internet.",
+            "EndDate": "fund",
+            "SetLivestream": "Ngjit lidhjen në transmetim të drejtpërdrejtë \/ videokonferencë",
+            "SetInfoLink": "Cakto lidhjen për informacion shtesë",
+            "ChooseService": "Zgjidhni Shërbimin e disponueshëm",
+            "Continue": "Vazhdoni",
+            "ChooseAvailability": "Zgjidhni shërbimin e disponueshëm",
+            "Duration": "Kohëzgjatja",
+            "Hour": "Ora",
+            "Hours": "orët",
+            "Minutes": "Minutat",
+            "Locally": "në nivel lokal",
+            "EventInfoLink": "Lidhja e informacionit të ngjarjes",
+            "TicketPurchaseLink": "Linku për blerjen e biletave"
+        },
+        "EventAlreadyClosed": "Kjo ngjarje tashmë është mbyllur",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Të shtohet në kalendar?",
+                "prompt": "Dëshironi ta shtoni këtë ngjarje në kalendarin tuaj?",
+                "yes": "po",
+                "no": "Nr"
+            },
+            "dialog": {
+                "Title": "Shtoni ngjarje në kalendarin tuaj"
+            }
+        },
+        "ErrorLeaveEndedEvent": "Na vjen keq, por nuk mund të largohesh nga eventi i përfunduar"
+    },
+    "recurring": {
+        "dialog": {
+            "justonce": "Vetëm këtë herë",
+            "recurring": "Të përsëritura",
+            "startDate": "Data e fillimit",
+            "endDate": "Data e përfundimit",
+            "justOnce": "Vetëm një herë",
+            "justOnceWeekly": "Vetëm këtë javë",
+            "justOnceMonthly": "Vetëm këtë muaj"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Ngjarje falas",
+            "optional": "Kontribut opsional",
+            "required": "Pagesa e nevojshme"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Kontribut opsional",
+            "required": "Pagesa e nevojshme",
+            "paid": "paguar"
+        },
+        "confirmationDialog": {
+            "title": "Konfirmim pagese",
+            "content": "Kjo ngjarje ka një kontribut opsional prej {{amount}}.",
+            "button": "Kontribuoni"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} nuk është ende pjesë e ngjarjes. Dëshiron t&#39;i shtosh si pjesëmarrës?",
+        "userNotFound": "Përdoruesi nuk u gjet",
+        "confirmYes": "po",
+        "confirmNo": "Nr"
+    },
+    "notifications": {
+        "EventActivityIn": "Aktiviteti i ngjarjeve në {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Rregullat e përsëritura ndryshuan për ngjarjen {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "menaxhoni abonimet tuaja me email",
+        "IfUnsubscribe": "Nëse dëshironi të çregjistroheni",
+        "ClickHereToVisitEvent": "Ju lutemi klikoni këtu për të vizituar ngjarjen",
+        "Calendars\/reminder": "Ngjarja &quot;{{{call 'message.getInstruction' 'name'}}&quot; do të fillojë në {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Filloi telekonferenca",
+            "Ended": "Përfundoi telekonferenca"
+        },
+        "livestream": {
+            "Started": "Transmetimi i drejtpërdrejtë filloi",
+            "Ended": "Transmetimi i drejtpërdrejtë përfundoi",
+            "ClickToView": "Shikoni këtu."
+        }
+    },
+    "import": {
+        "linkTitle": "Plotësoni këtë tabelë",
+        "fileLabel": "Ngarko fletëllogaritëse:",
+        "joinEventLabel": "Bashkojuni përdoruesve në ngjarje të rastësishme",
+        "smsText": "Hej, sapo të dërgova një lidhje te {{communityName}}. Ju lutemi shikoni atë.",
+        "emailSubject": "Sapo ju dërgova një lidhje",
+        "emailBody": "Hej, sapo të dërgova një ftesë te {{communityName}}. Ju lutemi shikoni atë.",
+        "fileNotFound": "Na vjen keq, skedari CSV nuk u gjet.",
+        "fileEmpty": "Na vjen keq, skedari CSV është bosh.",
+        "fieldNotFound": "Fusha e kërkuar &quot;{{1}}&quot; nuk u gjet",
+        "userIdNotFound": "përdoruesi ekziston por ID-ja është bosh",
+        "activateUsers": "dërgoni mesazh aktivizimi për përdoruesit?",
+        "taskStreamInvalid": "transmetimi i detyrës është i pavlefshëm",
+        "instructionsEmpty": "udhëzimet për rrjedhën e detyrave janë bosh",
+        "interestsEmpty": "nuk mund të marrë interesa",
+        "interestAbsent": "interesi {{1}} nuk u gjet",
+        "complete": "Kompletuar",
+        "errorLine": "rreshti {{1}}",
+        "errorsTitle": "Ndodhën gabime",
+        "importOptions": "Opsione",
+        "importProgress": "Përparim",
+        "sampleCSV": "Shkarkoni shembullin CSV",
+        "communityUsers": "Kjo është lista e komuniteteve",
+        "toMainCommunityToo": "lidhen edhe me komunitetin kryesor",
+        "ChooseFile": "zgjidhni skedarin"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Përfaqëson një ngjarje në të cilën njerëzit mund të marrin pjesë",
+            "displayType": "Ngjarja"
+        },
+        "Calendars\/recurring": {
+            "description": "Përdoret për lidhjen e transmetimeve që synohen të përsëriten periodikisht",
+            "displayType": "Ngjarje e përsëritur"
+        }
+    },
+    "services": {
+        "Title": "Sherbime",
+        "NewService": {
+            "Title": "Disponueshmëria e re",
+            "SaveService": "Ruani Disponueshmërinë",
+            "SelectTemplate": "Ju lutemi zgjidhni Shërbimin",
+            "SelectLocation": "Ju lutemi zgjidhni Vendndodhjen",
+            "SelectArea": "Ju lutemi zgjidhni Zonën",
+            "SelectTime": "Menaxhoni lojëra elektronike kohore",
+            "SelectTimeSlot": "Zgjidhni një slot kohe",
+            "PeopleMin": "Vizitorët minimale",
+            "PeopleMax": "Vizitorët maksimalë",
+            "PeopleLabels": "Etiketat lejohen",
+            "Next": "tjetër",
+            "Back": "prapa"
+        },
+        "EditService": "Ndryshoni Disponueshmërinë",
+        "SetVisitors": "Vendosni vizitorët",
+        "Price": "çmim",
+        "SelectAction": "Ju lutemi zgjidhni veprimin",
+        "OpenProfile": "Profil i hapur",
+        "RemoveStaff": "Hiq stafin"
+    },
+    "timeslots": {
+        "AddSlot": "Shto Slot",
+        "StartTime": "Koha e nisjes",
+        "EndTime": "Koha e Fundit",
+        "Save": "Ruaj",
+        "AddTimeSlot": "Shto Slot Kohe",
+        "CopyFromDay": "Kopjo nga dita",
+        "Nearest": "Më e afërta",
+        "Today": "Sot",
+        "Tomorrow": "Nesër",
+        "AfterTomorrow": "Pas nesër"
+    },
+    "availabilities": {
+        "Title": "Disponueshmëritë",
+        "NewAvailability": {
+            "Title": "Disponueshmëri e re",
+            "SaveAvailability": "Ruaj disponueshmërinë",
+            "SelectTemplate": "Ju lutemi zgjidhni Shërbimi",
+            "SelectLocation": "Ju lutemi zgjidhni Vendndodhjen",
+            "SelectArea": "Ju lutemi zgjidhni Zonën",
+            "SelectTime": "Menaxho slotet e kohës",
+            "SelectTimeSlot": "Zgjidhni një sferë kohore",
+            "PeopleMin": "Vizitorët minimalë",
+            "PeopleMax": "Numri maksimal i vizitorëve",
+            "PeopleLabels": "Rolet e lejuara",
+            "Next": "Tjetra",
+            "Back": "Mbrapa",
+            "Type": "Lloji",
+            "Weekly": "Javore",
+            "RecurringStartDate": "Data e përsëritur e fillimit",
+            "EndDate": "Data e përfundimit",
+            "SelectTimeSlots": "Zgjidhni kohën e dëshiruar",
+            "RecurringEndDate": "Data e përsëritur e përfundimit",
+            "ScheduleOnlineConference": "Programoni telekonferencën",
+            "SetLivestream": "Ngjit lidhjen në transmetim të drejtpërdrejtë \/ videokonferencë",
+            "SelectTimeZone": "Zgjidhni Zonën kohore"
+        },
+        "EditAvailability": "Modifiko disponueshmërinë",
+        "SetVisitors": "Vendosni Vizitorët",
+        "Price": "Çmimi",
+        "SelectAction": "Ju lutemi zgjidhni veprimin",
+        "OpenProfile": "Hap profilin",
+        "RemoveStaff": "Hiq stafin",
+        "PleaseSelectTimeSlots": "Ju lutemi zgjidhni periudhat kohore",
+        "ExceptionOccurred": "Ka ndodhur përjashtim",
+        "NotEnoughCreditsToParticipateEvents": "Nuk ka kredite të mjaftueshme për të marrë pjesë në {{eventsAmount}} ngjarje. Të duhen {{needCredits}} kredite. Dëshironi të blini?",
+        "LiveStream": "Transmetim i drejtpërdrejtë",
+        "InviteStaff": "Ftoni stafin"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Abonohu në Kalendar",
+        "copyLinkBelow": "Kopjo lidhjen më poshtë",
+        "goTo": "Shkoni në:",
+        "pasteCopiedTo": "Ngjit lidhjen e kopjuar në fushën &quot;URL e kalendarit&quot;.",
+        "clickAddCalendar": "Klikoni në butonin &quot;Shto kalendarin&quot;.",
+        "copyLink": "Kopjo lidhjen",
+        "tapToCopy": "Prekni butonin më poshtë për të kopjuar lidhjen në kujtesën tuaj",
+        "linkCopied": "Lidhja u kopjua",
+        "step2": "Lidhja u kopjua. Jemi për hapjen e &quot;Kalendarit të Google&quot;. Ju do të duhet të ngjisni lidhjen në kutinë e tekstit, klikoni &quot;Shto kalendarin&quot; dhe mbyllni skedën (shih pamjen e ekranit më poshtë)",
+        "calendarAppPreferences": "Hapni Preferencat në aplikacionin Calendar në Mac tuaj dhe vendosni aplikacionin e paracaktuar të kalendarit të jetë siç tregohet më poshtë.",
+        "thenCloseDialog": "Më pas mbylleni këtë dialog për t&#39;u abonuar në kalendarin tuaj!",
+        "success": "Kalendari u sinkronizua me sukses"
+    }
+}

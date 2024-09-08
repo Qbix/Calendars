@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "1-р сар",
+        "Feb": "Хоёрдугаар сар",
+        "Mar": "3-р сар",
+        "Apr": "4-р сар",
+        "May": "Тавдугаар сар",
+        "Jun": "6-р сар",
+        "Jul": "7-р сар",
+        "Aug": "Наймдугаар сар",
+        "Sep": "9-р сар",
+        "Oct": "Аравдугаар сар",
+        "Nov": "11-р сар",
+        "Dec": "12-р сар"
+    },
+    "monthsLong": {
+        "Jan": "Нэгдүгээр сар",
+        "Feb": "Хоёрдугаар сар",
+        "Mar": "Гуравдугаар сар",
+        "Apr": "Дөрөвдүгээр сар",
+        "May": "Тавдугаар сар",
+        "Jun": "Зургадугаар сар",
+        "Jul": "долдугаар сар",
+        "Aug": "Наймдугаар сар",
+        "Sep": "Есдүгээр сар",
+        "Oct": "Аравдугаар сар",
+        "Nov": "Арваннэгдүгээр сар",
+        "Dec": "Арванхоёрдугаар сар"
+    },
+    "weekdays": {
+        "Sun": "Нар",
+        "Mon": "Даваа",
+        "Tue": "Мягмар",
+        "Wed": "Лхагва",
+        "Thu": "Пүрэв",
+        "Fri": "Баасан",
+        "Sat": "Бямба"
+    },
+    "weekdaysLong": {
+        "Sun": "Ням гараг",
+        "Mon": "Даваа гараг",
+        "Tue": "Мягмар гараг",
+        "Wed": "Лхагва гараг",
+        "Thu": "Пүрэв гараг",
+        "Fri": "Баасан гараг",
+        "Sat": "Бямба гариг"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Шинэ арга хэмжээ төлөвлө"
+        },
+        "tool": {
+            "HostedBy": "Хөтлөгч {{name}}",
+            "Name": "Нэр",
+            "AreYouIn": "Та байгаа?",
+            "Yes": "Тиймээ",
+            "No": "Үгүй",
+            "Ok": "Болж байна уу",
+            "Cancel": "Цуцлах",
+            "Maybe": "Магадгүй",
+            "Conversation": "Яриа",
+            "Promote": "Энэ үйл явдлыг сурталчлах",
+            "Reminders": "Сануулга",
+            "RemindersLabel": "Би дараах үйл явдлын талаар мэдэгдэхийг хүсч байна:",
+            "MoreInfo": "Илүү мэдээлэл",
+            "Registration": "Бүртгэл",
+            "SetReminders": "Сануулагч тохируулна уу",
+            "ReservationFee": "Захиалгын хураамж",
+            "AddParticipants": "Оролцогчдыг нэмнэ үү",
+            "ManageReservation": "Захиалга удирдах",
+            "UpdateFutureReservations": "Та ирээдүйн бүх захиалгыг мөн адил шинэчлэхийг хүсэж байна уу?",
+            "RecurringAdmin": "Давтагдах тохиргоо",
+            "MakeReservation": "Захиалга хийх",
+            "StartLiveStream": "Шууд дамжуулахын тулд товшино уу",
+            "LiveStreamEnded": "Шууд дамжуулалт дууссан",
+            "ClickToViewRecording": "бичлэгийг үзэхийн тулд товшино уу",
+            "Checkin": "Оролцогчдын кодыг сканнердах",
+            "Myqr": "Шалгах",
+            "CloseEvent": {
+                "button": "Үйл явдлыг цуцлах",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Та энэ үйл явдлыг цуцлахдаа итгэлтэй байна уу?",
+                        "Participant": "Энэ арга хэмжээнд 1 оролцогч байна",
+                        "Participants": "Энэ арга хэмжээнд {{count}} оролцогч байна",
+                        "Recurring": "Энэ үйл явдал давтагдаж байна. Та мөн түүний ирээдүйн бүх тохиолдлыг цуцалмаар байна уу?"
+                    },
+                    "trip": {
+                        "Cancel": "Та энэ үйл явдлыг {{tripDirection}} аялалаа цуцлахыг хүсэж байна уу?",
+                        "Passengers": "Таньд найдаж буй {{passengerCount}} зорчигч байна.",
+                        "Title": "Аяллыг хаах"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "FROM",
+                        "to": "руу",
+                        "from": "-аас"
+                    }
+                }
+            },
+            "Calendar": "Хуанли",
+            "Interests": "Сонирхол",
+            "Directions": "Чиглэл",
+            "TitleOfEvent": "Үйл явдлын гарчиг:",
+            "OpenTo": "-д нээлттэй",
+            "GoingTo": "цагт байх болно",
+            "NotGoingTo": "дээр байхгүй болно",
+            "MaybeGoingTo": "байж магадгүй",
+            "AdminDontPay": "Админ төлөх шаардлагагүй",
+            "PublisherDontPay": "Нийтлэгч төлбөр төлөх шаардлагагүй",
+            "EmptyList": "Хоосон жагсаалт",
+            "NeedToPayCredits": "Төлбөр хийх шаардлагатай: <span>{{amount}} кредит<\/span>",
+            "PleaseJoinParticipants": "Нэгдээрэй {{participant}}",
+            "YouReservingPlace": "Та байраа захиалах болно.",
+            "SelectIncludesToAdd": "Нэмэх нэг буюу хэд хэдэн {{TypeDisplayPlural}} сонгоно уу:",
+            "YouHaveNotRegisteredAnyIncluded": "Та хараахан {{TypeDisplayPlural}} бүртгүүлээгүй байна",
+            "Proceed": "Үргэлжлүүлэх",
+            "MakeChanges": "Миний өөрчлөлтийг хадгалах",
+            "CancelReservation": "Захиалгыг бүхэлд нь цуцлах",
+            "Total": "Нийт",
+            "RequiredRelatedParticipants": "Энэ үйл явдалд оролцогч шаардлагатай: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Тогтмол тохиргоог шинэчлэхийн тулд &quot;{{title}}&quot;-н боломжит байдлыг засна уу"
+        },
+        "composer": {
+            "SetLocation": "Миний байршлыг тохируулах",
+            "SetInfoLink": "Нэмэлт мэдээлэл авах холбоосыг тохируулна уу",
+            "ChooseAvailability": "Боломжтой үйлчилгээг сонгоно уу",
+            "ChooseActivity": "Үйл ажиллагаа сонгоно уу",
+            "ChoosePublisher": "Нийтлэгчийг сонгоно уу",
+            "Day": "Өдөр",
+            "Starting": "Эхэлж байна",
+            "Duration": "Үргэлжлэх хугацаа",
+            "Hour": "Цаг",
+            "Hours": "Цаг",
+            "Minutes": "Минут",
+            "Ending": "Төгсгөл",
+            "People": "Хүмүүс",
+            "Share": "Хуваалцах",
+            "Continue": "Үргэлжлүүлэх",
+            "Recurring": "Дахин давтагдах",
+            "RecurringTitle": "Давтагдах өдрүүд",
+            "Daily": "Өдөр бүр",
+            "Weekly": "Долоо хоног бүр",
+            "Monthly": "Сар бүр",
+            "SelectLocation": "Эхлээд байршлаа сонгоно уу.",
+            "eventType": "Үйл явдлын төрөл",
+            "EditTitle": "Сонирхолтой гарчиг боддоо...",
+            "SetTitle": "Үйл явдлын гарчгийг тохируулна уу",
+            "ScheduleOnlineConference": "Онлайн хурлын хуваарь",
+            "SOCDescription": "Хурлын эхлэх, дуусах цагийг тодорхойл. Энэ хугацаанд үйл явдалд зочилсон хүн бүр онлайн хуралд автоматаар холбогдоно.",
+            "EndDate": "Төгсгөл",
+            "location": {
+                "Title": "Байршлаа тохируулна уу"
+            },
+            "interest": {
+                "Title": "Үйл ажиллагаа сонгоно уу",
+                "Filter": "Хайлтын сонирхол..."
+            },
+            "SetLivestream": "Шууд дамжуулалт \/ видео хурлын холбоосыг буулгана уу"
+        },
+        "EventAlreadyClosed": "Энэ үйл явдал аль хэдийн хаагдсан",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Календарт нэмэх үү?",
+                "prompt": "Та энэ үйл явдлыг хуанлидаа нэмэхийг хүсэж байна уу?",
+                "yes": "Тиймээ",
+                "no": "Үгүй"
+            },
+            "dialog": {
+                "Title": "Календартаа үйл явдал нэмнэ үү"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Боломжтой байдал",
+        "NewAvailability": {
+            "Title": "Шинэ бэлэн байдал",
+            "SaveAvailability": "Боломжийг хадгалах",
+            "SelectTemplate": "Үйлчилгээг сонгоно уу",
+            "SelectLocation": "Байршлыг сонгоно уу",
+            "SelectArea": "Талбайг сонгоно уу",
+            "Type": "Төрөл",
+            "Weekly": "Долоо хоног бүр",
+            "RecurringStartDate": "Тогтмол эхлэх огноо",
+            "EndDate": "Дуусах огноо",
+            "SelectTime": "Цагийн цэгүүдийг удирдах",
+            "SelectTimeSlot": "Хугацаа сонгох",
+            "SelectTimeSlots": "Хүссэн цагийг сонгоно уу",
+            "PeopleMin": "Хамгийн бага зочин",
+            "PeopleMax": "Хамгийн их зочин",
+            "PeopleLabels": "Зөвшөөрөгдсөн шошго",
+            "Next": "Дараачийн",
+            "Back": "Буцах"
+        },
+        "EditAvailability": "Боломжтой байдлыг засах",
+        "SetVisitors": "Зочдыг тохируулах",
+        "Price": "Үнэ",
+        "SelectAction": "Үйлдлийг сонгоно уу",
+        "OpenProfile": "Профайл нээх",
+        "RemoveStaff": "Ажилчдыг зайлуулах",
+        "PleaseSelectTimeSlots": "Цагийн зайг сонгоно уу",
+        "ExceptionOccurred": "Онцгой тохиолдол гарсан",
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} арга хэмжээнд оролцоход хангалттай кредит алга. Танд {{needCredits}} кредит хэрэгтэй. Худалдан авахыг хүсч байна уу?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Эхлэх өдөр",
+            "endDate": "Дуусах огноо",
+            "justOnce": "Нэг л удаа",
+            "justOnceWeekly": "Зөвхөн энэ долоо хоногт",
+            "justOnceMonthly": "Зөвхөн энэ сард",
+            "recurring": "Дахин давтагдах"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Үнэгүй арга хэмжээ",
+            "optional": "Нэмэлт хувь нэмэр",
+            "required": "Шаардлагатай төлбөр"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Нэмэлт хувь нэмэр",
+            "required": "Шаардлагатай төлбөр",
+            "paid": "төлсөн"
+        },
+        "confirmationDialog": {
+            "title": "Төлбөрийн баталгаа",
+            "content": "Энэ үйл явдалд {{amount}} нэмэлт оруулах боломжтой.",
+            "button": "Хувь нэмэр оруулах"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} энэ арга хэмжээнд хараахан ороогүй байна. Та тэднийг оролцогчоор нэмэхийг хүсэж байна уу?",
+        "userNotFound": "Хэрэглэгч олдсонгүй",
+        "confirmYes": "Тиймээ",
+        "confirmNo": "Үгүй"
+    },
+    "notifications": {
+        "EventActivityIn": "{{{stream.fields.title}}} дахь үйл явдлын үйл ажиллагаа",
+        "RecurringRulesChanged": "{{{call 'message.getInstruction' 'eventTitle'}}} үйл явдлын давтагдах дүрэм өөрчлөгдсөн",
+        "ManageEmailSubscriptions": "и-мэйл захиалгаа удирдах",
+        "IfUnsubscribe": "Хэрэв та бүртгэлээ цуцлахыг хүсвэл",
+        "ClickHereToVisitEvent": "Энд дарж үйл явдалтай танилцана уу",
+        "Calendars\/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; арга хэмжээ {{&call 'message.getInstruction' 'time'}}}-д эхэлнэ"
+    },
+    "import": {
+        "linkTitle": "Энэ хүснэгтийг бөглөнө үү",
+        "fileLabel": "Хүснэгт байршуулах:",
+        "importOptions": "Сонголтууд",
+        "importProgress": "Ахиц дэвшил",
+        "sampleCSV": "Жишээ CSV татаж авах",
+        "joinEventLabel": "Хэрэглэгчидтэй санамсаргүй үйл явдалд нэгдээрэй",
+        "smsText": "Хөөе, би танд {{communityName}} руу линк илгээлээ. Үүнийг шалгана уу.",
+        "emailSubject": "Зүгээр л танд линк илгээсэн",
+        "emailBody": "Хөөе, би танд {{communityName}} руу урилга илгээсэн. Үүнийг шалгана уу.",
+        "fileNotFound": "Уучлаарай, CSV файл олдсонгүй.",
+        "fileEmpty": "Уучлаарай, CSV файл хоосон байна.",
+        "fieldNotFound": "Шаардлагатай талбар &quot;{{1}}&quot; олдсонгүй",
+        "userIdNotFound": "хэрэглэгч байгаа боловч id хоосон байна",
+        "activateUsers": "хэрэглэгчдэд идэвхжүүлэх мессеж илгээх үү?",
+        "taskStreamInvalid": "ажлын урсгал буруу байна",
+        "instructionsEmpty": "ажлын урсгалын заавар хоосон",
+        "interestsEmpty": "ашиг сонирхлыг авч чадахгүй",
+        "interestAbsent": "сонирхол {{1}} олдсонгүй",
+        "complete": "Бүрэн",
+        "errorLine": "мөр {{1}}",
+        "errorsTitle": "Алдаа гарсан",
+        "communityUsers": "Энэ бол нийгэмлэгүүдийн жагсаалт юм"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Хүмүүс оролцох боломжтой үйл явдлыг төлөөлдөг",
+            "displayType": "Үйл явдал"
+        },
+        "Calendars\/recurring": {
+            "description": "Үе үе давтагдах урсгалуудыг холбоход ашигладаг",
+            "displayType": "Давтагдах үйл явдал"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Slot нэмэх",
+        "StartTime": "Эхлэх цаг",
+        "EndTime": "Дуусах цаг",
+        "Save": "Хадгалах",
+        "AddTimeSlot": "Хугацаа нэмэх",
+        "CopyFromDay": "Өдрөөс хуулбарлах",
+        "Nearest": "Хамгийн ойр",
+        "Today": "Өнөөдөр",
+        "Tomorrow": "Маргааш",
+        "AfterTomorrow": "Маргаашийн дараа"
+    }
+}

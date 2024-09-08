@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Yanvar",
+        "Feb": "Fevral",
+        "Mar": "mart",
+        "Apr": "aprel",
+        "May": "may",
+        "Jun": "Iyun",
+        "Jul": "Iyul",
+        "Aug": "avgust",
+        "Sep": "Sentabr",
+        "Oct": "oktyabr",
+        "Nov": "noyabr",
+        "Dec": "dekabr"
+    },
+    "monthsLong": {
+        "Jan": "Yanvar",
+        "Feb": "fevral",
+        "Mar": "Mart",
+        "Apr": "aprel",
+        "May": "may",
+        "Jun": "iyun",
+        "Jul": "iyul",
+        "Aug": "avgust",
+        "Sep": "sentyabr",
+        "Oct": "oktyabr",
+        "Nov": "noyabr",
+        "Dec": "dekabr"
+    },
+    "weekdays": {
+        "Sun": "Quyosh",
+        "Mon": "dus",
+        "Tue": "Seshanba",
+        "Wed": "Chorshanba",
+        "Thu": "Pays",
+        "Fri": "Juma",
+        "Sat": "Shanba"
+    },
+    "weekdaysLong": {
+        "Sun": "yakshanba",
+        "Mon": "dushanba",
+        "Tue": "seshanba",
+        "Wed": "chorshanba",
+        "Thu": "Payshanba",
+        "Fri": "Juma",
+        "Sat": "shanba"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Yangi tadbirni rejalashtirish"
+        },
+        "tool": {
+            "HostedBy": "Muallif: {{name}}",
+            "Name": "Ism",
+            "AreYouIn": "Siz kirganmisiz?",
+            "Yes": "Ha",
+            "No": "Yo&#39;q",
+            "Ok": "Ok",
+            "Cancel": "Bekor qilish",
+            "Maybe": "Balki",
+            "Conversation": "Suhbat",
+            "Promote": "Ushbu tadbirni targ&#39;ib qiling",
+            "Reminders": "Eslatmalar",
+            "RemindersLabel": "Menga quyidagi voqea haqida xabar berilsin:",
+            "MoreInfo": "Batafsil ma&#39;lumot",
+            "Registration": "Roʻyxatdan oʻtish",
+            "SetReminders": "Iltimos, eslatmalarni o&#39;rnating",
+            "ReservationFee": "Rezervasyon to&#39;lovi",
+            "AddParticipants": "Ishtirokchilarni qo&#39;shing",
+            "ManageReservation": "Rezervasyonni boshqarish",
+            "UpdateFutureReservations": "Kelajakdagi barcha bandlovlarni xuddi shu tarzda yangilashni xohlaysizmi?",
+            "RecurringAdmin": "Takroriy sozlamalar",
+            "MakeReservation": "Rezervasyon qiling",
+            "StartLiveStream": "Jonli translatsiya uchun bosing",
+            "LiveStreamEnded": "Jonli translatsiya tugadi",
+            "ClickToViewRecording": "yozuvni ko&#39;rish uchun bosing",
+            "Checkin": "Ishtirokchilar kodlarini skanerlang",
+            "Myqr": "Belgilanish",
+            "CloseEvent": {
+                "button": "Tadbirni bekor qilish",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Haqiqatan ham bu tadbirni bekor qilmoqchimisiz?",
+                        "Participant": "Ushbu tadbirda 1 nafar ishtirokchi bor",
+                        "Participants": "Ushbu tadbirda {{count}} ta ishtirokchi bor",
+                        "Recurring": "Bu hodisa takrorlanadi. Uning kelajakdagi barcha nusxalarini ham bekor qilmoqchimisiz?"
+                    },
+                    "trip": {
+                        "Cancel": "Ushbu tadbirni {{tripDirection}} sayohatingizni ham bekor qilmoqchimisiz?",
+                        "Passengers": "Sizga ishonadigan {{passengerCount}} nafar yoʻlovchi bor.",
+                        "Title": "Safarni yopish"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "FROM",
+                        "to": "uchun",
+                        "from": "dan"
+                    }
+                }
+            },
+            "Calendar": "Kalendar",
+            "Interests": "Qiziqishlar",
+            "Directions": "Yo&#39;nalishlar",
+            "TitleOfEvent": "Tadbir nomi:",
+            "OpenTo": "uchun ochiq",
+            "GoingTo": "da bo&#39;ladi",
+            "NotGoingTo": "da bo&#39;lmaydi",
+            "MaybeGoingTo": "da bo&#39;lishi mumkin",
+            "AdminDontPay": "Admin to&#39;lashi shart emas",
+            "PublisherDontPay": "Nashriyot to&#39;lashi shart emas",
+            "EmptyList": "Bo&#39;sh ro&#39;yxat",
+            "NeedToPayCredits": "Toʻlash kerak: <span>{{amount}} kredit<\/span>",
+            "PleaseJoinParticipants": "Iltimos, {{participant}}ga qoʻshiling",
+            "YouReservingPlace": "Joyingizni band qilasiz.",
+            "SelectIncludesToAdd": "Qo‘shish uchun bir yoki bir nechta {{TypeDisplayPlural}} ni tanlang:",
+            "YouHaveNotRegisteredAnyIncluded": "Siz hali {{TypeDisplayPlural}} roʻyxatdan oʻtmadingiz",
+            "Proceed": "Davom eting",
+            "MakeChanges": "Mening o&#39;zgarishlarimni saqlang",
+            "CancelReservation": "Butun bandlovni bekor qiling",
+            "Total": "Jami",
+            "RequiredRelatedParticipants": "Ushbu tadbir ishtirokchilarni talab qiladi: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Takroriy sozlamalarni yangilash uchun “{{title}}” mavjudligini tahrirlang"
+        },
+        "composer": {
+            "SetLocation": "Mening joylashuvimni o&#39;rnating",
+            "SetInfoLink": "Qo&#39;shimcha ma&#39;lumotlarga havolani o&#39;rnating",
+            "ChooseAvailability": "Mavjud xizmatni tanlang",
+            "ChooseActivity": "Faoliyatni tanlang",
+            "ChoosePublisher": "Publisher-ni tanlang",
+            "Day": "kun",
+            "Starting": "Boshlanmoqda",
+            "Duration": "Davomiyligi",
+            "Hour": "Soat",
+            "Hours": "Soat",
+            "Minutes": "Daqiqalar",
+            "Ending": "Tugatish",
+            "People": "Odamlar",
+            "Share": "Ulashish",
+            "Continue": "Davom eting",
+            "Recurring": "Takroriy",
+            "RecurringTitle": "Takroriy kunlar",
+            "Daily": "Kundalik",
+            "Weekly": "Haftalik",
+            "Monthly": "Oylik",
+            "SelectLocation": "Iltimos, avval manzilni tanlang.",
+            "eventType": "Tadbir turi",
+            "EditTitle": "Qiziqarli sarlavhani o&#39;ylab ko&#39;ring ...",
+            "SetTitle": "Iltimos, tadbir nomini belgilang",
+            "ScheduleOnlineConference": "Onlayn konferentsiyani rejalashtirish",
+            "SOCDescription": "Iltimos, konferentsiyaning boshlanish va tugash vaqtini belgilang. Ushbu vaqt davomida tadbirga tashrif buyurgan har bir kishi onlayn konferentsiyaga avtomatik ravishda ulanadi.",
+            "EndDate": "Oxiri",
+            "location": {
+                "Title": "Joylashuvingizni sozlang"
+            },
+            "interest": {
+                "Title": "Faoliyatni tanlang",
+                "Filter": "Qiziqishlarni qidirish ..."
+            },
+            "SetLivestream": "Jonli translatsiya \/ videokonferentsiya uchun havolani joylashtiring"
+        },
+        "EventAlreadyClosed": "Bu tadbir allaqachon yopilgan",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Taqvimga qo&#39;shilsinmi?",
+                "prompt": "Ushbu tadbirni taqvimingizga qo&#39;shishni xohlaysizmi?",
+                "yes": "Ha",
+                "no": "Yo&#39;q"
+            },
+            "dialog": {
+                "Title": "Taqvimingizga tadbir qo&#39;shing"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Mavjudligi",
+        "NewAvailability": {
+            "Title": "Yangi mavjudlik",
+            "SaveAvailability": "Mavjudlikni saqlash",
+            "SelectTemplate": "Xizmatni tanlang",
+            "SelectLocation": "Joylashuvni tanlang",
+            "SelectArea": "Maydonni tanlang",
+            "Type": "Turi",
+            "Weekly": "Haftalik",
+            "RecurringStartDate": "Takroriy boshlanish sanasi",
+            "EndDate": "Tugash sanasi",
+            "SelectTime": "Vaqt oralig&#39;ini boshqarish",
+            "SelectTimeSlot": "Vaqt oralig&#39;ini tanlang",
+            "SelectTimeSlots": "Kerakli vaqt oralig&#39;ini tanlang",
+            "PeopleMin": "Minimal tashrif buyuruvchilar",
+            "PeopleMax": "Maksimal tashrif buyuruvchilar",
+            "PeopleLabels": "Yorliqlarga ruxsat berilgan",
+            "Next": "Keyingi",
+            "Back": "Orqaga"
+        },
+        "EditAvailability": "Mavjudligini tahrirlash",
+        "SetVisitors": "Mehmonlarni sozlash",
+        "Price": "Narxi",
+        "SelectAction": "Iltimos, amalni tanlang",
+        "OpenProfile": "Profilni oching",
+        "RemoveStaff": "Xodimlarni olib tashlang",
+        "PleaseSelectTimeSlots": "Iltimos, vaqt oralig&#39;ini tanlang",
+        "ExceptionOccurred": "Istisno yuz berdi",
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} tadbirlarda ishtirok etish uchun kredit yetarli emas. Sizga {{needCredits}} ta kredit kerak. Sotib olmoqchimisiz?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Boshlanish sanasi",
+            "endDate": "Tugash sanasi",
+            "justOnce": "Faqat bir marta",
+            "justOnceWeekly": "Faqat shu hafta",
+            "justOnceMonthly": "Faqat shu oy",
+            "recurring": "Takroriy"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Bepul tadbir",
+            "optional": "Ixtiyoriy hissa",
+            "required": "Majburiy to&#39;lov"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Ixtiyoriy hissa",
+            "required": "Majburiy to&#39;lov",
+            "paid": "to&#39;langan"
+        },
+        "confirmationDialog": {
+            "title": "To&#39;lovni tasdiqlash",
+            "content": "Bu tadbirda {{amount}} ixtiyoriy hissasi bor.",
+            "button": "Hissa qo‘shish"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} hali tadbirning bir qismi emas. Ularni ishtirokchi sifatida qo&#39;shishni xohlaysizmi?",
+        "userNotFound": "Foydalanuvchi topilmadi",
+        "confirmYes": "Ha",
+        "confirmNo": "Yo&#39;q"
+    },
+    "notifications": {
+        "EventActivityIn": "{{{stream.fields.title}}}dagi tadbir faolligi",
+        "RecurringRulesChanged": "{{{call 'message.getInstruction' 'eventTitle'}}} hodisasi uchun takrorlanuvchi qoidalar oʻzgartirildi",
+        "ManageEmailSubscriptions": "elektron pochta obunalaringizni boshqaring",
+        "IfUnsubscribe": "Agar obunani bekor qilmoqchi bo&#39;lsangiz",
+        "ClickHereToVisitEvent": "Tadbirga tashrif buyurish uchun shu yerni bosing",
+        "Calendars\/reminder": "“{{{call 'message.getInstruction' 'name'}}” tadbiri {{&call 'message.getInstruction' 'time'}}} da boshlanadi"
+    },
+    "import": {
+        "linkTitle": "Ushbu elektron jadvalni to&#39;ldiring",
+        "fileLabel": "Elektron jadvalni yuklash:",
+        "importOptions": "Variantlar",
+        "importProgress": "Taraqqiyot",
+        "sampleCSV": "CSV namunasini yuklab oling",
+        "joinEventLabel": "Foydalanuvchilarni tasodifiy hodisaga qo&#39;shiling",
+        "smsText": "Hey, men sizga hozirgina {{communityName}} havolasini yubordim. Iltimos, tekshiring.",
+        "emailSubject": "Sizga shunchaki havola yuborildi",
+        "emailBody": "Hey, men hozir sizga {{communityName}} ga taklif yubordim. Iltimos, tekshiring.",
+        "fileNotFound": "Kechirasiz, CSV fayli topilmadi.",
+        "fileEmpty": "Kechirasiz, CSV fayli boʻsh.",
+        "fieldNotFound": "Majburiy maydon &quot;{{1}}&quot; topilmadi",
+        "userIdNotFound": "foydalanuvchi mavjud, lekin identifikatori bo&#39;sh",
+        "activateUsers": "foydalanuvchilarga faollashtirish xabari yuborilsinmi?",
+        "taskStreamInvalid": "vazifa oqimi yaroqsiz",
+        "instructionsEmpty": "vazifa oqimi ko&#39;rsatmalari bo&#39;sh",
+        "interestsEmpty": "manfaatlarga erisha olmaydi",
+        "interestAbsent": "qiziqish {{1}} topilmadi",
+        "complete": "Bajarildi",
+        "errorLine": "qator {{1}}",
+        "errorsTitle": "Xatolar yuz berdi",
+        "communityUsers": "Bu hamjamiyatlar ro&#39;yxati"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Odamlar ishtirok etishi mumkin bo&#39;lgan voqeani ifodalaydi",
+            "displayType": "Tadbir"
+        },
+        "Calendars\/recurring": {
+            "description": "Vaqti-vaqti bilan takrorlanishi kerak bo&#39;lgan oqimlarni bog&#39;lash uchun ishlatiladi",
+            "displayType": "Takroriy hodisa"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Slot qo&#39;shish",
+        "StartTime": "Boshlanish vaqti",
+        "EndTime": "Tugash vaqti",
+        "Save": "Saqlash",
+        "AddTimeSlot": "Vaqt oralig&#39;ini qo&#39;shing",
+        "CopyFromDay": "Kundan nusxa ko&#39;chiring",
+        "Nearest": "Eng yaqin",
+        "Today": "Bugun",
+        "Tomorrow": "Ertaga",
+        "AfterTomorrow": "Ertadan keyin"
+    }
+}

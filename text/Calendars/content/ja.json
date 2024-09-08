@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "1月",
+        "Feb": "2月",
+        "Mar": "3月",
+        "Apr": "4月",
+        "May": "5月",
+        "Jun": "6月",
+        "Jul": "7月",
+        "Aug": "8月",
+        "Sep": "9月",
+        "Oct": "10月",
+        "Nov": "11月",
+        "Dec": "12月"
+    },
+    "monthsLong": {
+        "Jan": "1月",
+        "Feb": "2月",
+        "Mar": "行進",
+        "Apr": "4月",
+        "May": "5月",
+        "Jun": "六月",
+        "Jul": "7月",
+        "Aug": "8月",
+        "Sep": "9月",
+        "Oct": "10月",
+        "Nov": "11月",
+        "Dec": "12月"
+    },
+    "weekdays": {
+        "Sun": "太陽",
+        "Mon": "月曜日",
+        "Tue": "火曜日",
+        "Wed": "結婚した",
+        "Thu": "木",
+        "Fri": "金",
+        "Sat": "土"
+    },
+    "weekdaysLong": {
+        "Sun": "日曜日",
+        "Mon": "月曜",
+        "Tue": "火曜日",
+        "Wed": "水曜日",
+        "Thu": "木曜日",
+        "Fri": "金曜日",
+        "Sat": "土曜日"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "新しいイベントを計画する"
+        },
+        "tool": {
+            "HostedBy": "{{name}}によってホストされています",
+            "Name": "名前",
+            "AreYouIn": "あなたは中にいますか？",
+            "Yes": "はい",
+            "No": "番号",
+            "Ok": "Ok",
+            "Cancel": "キャンセル",
+            "Maybe": "多分",
+            "Conversation": "会話",
+            "Promote": "このイベントを宣伝する",
+            "Reminders": "リマインダー",
+            "RemindersLabel": "次のイベントの通知を受け取りたい：",
+            "MoreInfo": "より詳しい情報",
+            "Registration": "登録",
+            "SetReminders": "リマインダーを設定してください",
+            "ReservationFee": "予約料",
+            "AddParticipants": "参加者を追加する",
+            "ManageReservation": "予約の管理",
+            "UpdateFutureReservations": "今後のすべての予約も同じように更新しますか？",
+            "RecurringAdmin": "定期的な設定",
+            "MakeReservation": "予約します",
+            "StartLiveStream": "クリックしてライブストリーム",
+            "LiveStreamEnded": "ライブストリームが終了しました",
+            "ClickToViewRecording": "クリックして録音を表示",
+            "Checkin": "出席者コードをスキャンする",
+            "Myqr": "チェックイン",
+            "CloseEvent": {
+                "button": "イベントをキャンセル",
+                "confirm": {
+                    "text": {
+                        "Cancel": "このイベントをキャンセルしてもよろしいですか？",
+                        "Participant": "このイベントには1人の参加者がいます",
+                        "Participants": "このイベントには{{count}}人の参加者がいます",
+                        "Recurring": "このイベントは繰り返し発生します。今後のすべてのインスタンスもキャンセルしますか？"
+                    },
+                    "trip": {
+                        "Cancel": "このイベントの旅行{{tripDirection}}もキャンセルしますか？",
+                        "Passengers": "あなたに頼っている{{passengerCount}}人の乗客がいます。",
+                        "Title": "クローズトリップ"
+                    },
+                    "directions": {
+                        "TO": "に",
+                        "FROM": "から",
+                        "to": "に",
+                        "from": "から"
+                    }
+                }
+            },
+            "Calendar": "カレンダー",
+            "Interests": "興味",
+            "Directions": "方向",
+            "TitleOfEvent": "イベントのタイトル：",
+            "OpenTo": "に開く",
+            "GoingTo": "になります",
+            "NotGoingTo": "になりません",
+            "MaybeGoingTo": "多分になります",
+            "AdminDontPay": "管理者は支払う必要はありません",
+            "PublisherDontPay": "出版社は支払う必要はありません",
+            "EmptyList": "空のリスト",
+            "NeedToPayCredits": "支払う必要がある： <span>{{amount}}クレジット<\/span>",
+            "PleaseJoinParticipants": "{{participant}}に参加してください",
+            "YouReservingPlace": "あなたはあなたの場所を予約するでしょう。",
+            "SelectIncludesToAdd": "追加する{{TypeDisplayPlural}}を1つ以上選択します。",
+            "YouHaveNotRegisteredAnyIncluded": "{{TypeDisplayPlural}}はまだ登録されていません",
+            "Proceed": "続行",
+            "MakeChanges": "変更を保存",
+            "CancelReservation": "予約全体をキャンセルする",
+            "Total": "合計",
+            "RequiredRelatedParticipants": "このイベントには参加者が必要です：{{requiredParticipantsList}}",
+            "AvailabilityWarning": "可用性「{{title}}」を編集して、定期的な設定を更新してください",
+            "Presentation": "プレゼンテーション",
+            "YouAreNotParticipated": "あなたはイベントの参加者ではありません",
+            "LiveStreamStarted": "ライブ配信が始まりました",
+            "WebRTCStarted": "電話会議が始まりました",
+            "WebRTCEnded": "電話会議終了"
+        },
+        "composer": {
+            "SetLocation": "私の場所を設定する",
+            "SetInfoLink": "追加情報へのリンクを設定",
+            "ChooseAvailability": "利用可能なサービスを選択",
+            "ChooseActivity": "アクティビティを選択してください",
+            "ChoosePublisher": "出版社を選択",
+            "Day": "日",
+            "Starting": "起動",
+            "Duration": "間隔",
+            "Hour": "時間",
+            "Hours": "時間",
+            "Minutes": "分",
+            "Ending": "エンディング",
+            "People": "人",
+            "Share": "シェア",
+            "Continue": "継続する",
+            "Recurring": "繰り返し",
+            "RecurringTitle": "定期的な日数",
+            "Daily": "毎日",
+            "Weekly": "毎週",
+            "Monthly": "毎月",
+            "SelectLocation": "最初に場所を選択してください。",
+            "eventType": "イベントタイプ",
+            "EditTitle": "面白いタイトルを考えてください...",
+            "SetTitle": "イベントタイトルを設定してください",
+            "ScheduleOnlineConference": "オンライン会議のスケジュール",
+            "SOCDescription": "会議の開始時間と終了時間を定義してください。この期間中にイベントにアクセスするすべての人は、オンライン会議に自動的に接続します。",
+            "EndDate": "終わり",
+            "location": {
+                "Title": "あなたの場所を設定する"
+            },
+            "interest": {
+                "Title": "アクティビティを選択してください",
+                "Filter": "興味のある検索..。"
+            },
+            "SetLivestream": "ライブストリーム\/ビデオ会議へのリンクを貼り付けます",
+            "Locally": "ローカルで",
+            "EventInfoLink": "イベント情報リンク",
+            "TicketPurchaseLink": "チケット購入リンク"
+        },
+        "EventAlreadyClosed": "このイベントはすでに終了しています",
+        "addToCalendar": {
+            "permissions": {
+                "title": "カレンダーに追加しますか？",
+                "prompt": "このイベントをカレンダーに追加しますか？",
+                "yes": "はい",
+                "no": "番号"
+            },
+            "dialog": {
+                "Title": "カレンダーにイベントを追加する"
+            }
+        },
+        "ErrorLeaveEndedEvent": "申し訳ありませんが、終了したイベントから退出することはできません"
+    },
+    "availabilities": {
+        "Title": "可用性",
+        "NewAvailability": {
+            "Title": "新しい可用性",
+            "SaveAvailability": "可用性を保存",
+            "SelectTemplate": "サービスを選択してください",
+            "SelectLocation": "場所を選択してください",
+            "SelectArea": "エリアを選択してください",
+            "Type": "タイプ",
+            "Weekly": "毎週",
+            "RecurringStartDate": "定期的な開始日",
+            "EndDate": "終了日",
+            "SelectTime": "タイムスロットの管理",
+            "SelectTimeSlot": "タイムスロットを選択します",
+            "SelectTimeSlots": "希望のタイムスロットを選択します",
+            "PeopleMin": "最小訪問者",
+            "PeopleMax": "最大訪問者",
+            "PeopleLabels": "許可される役割",
+            "Next": "次",
+            "Back": "戻る",
+            "RecurringEndDate": "定期的な終了日",
+            "ScheduleOnlineConference": "電話会議のスケジュールを設定する",
+            "SetLivestream": "ライブストリーム\/ビデオ会議へのリンクを貼り付けます",
+            "SelectTimeZone": "タイムゾーンの選択"
+        },
+        "EditAvailability": "可用性の編集",
+        "SetVisitors": "訪問者を設定する",
+        "Price": "価格",
+        "SelectAction": "アクションを選択してください",
+        "OpenProfile": "プロファイルを開く",
+        "RemoveStaff": "スタッフを削除する",
+        "PleaseSelectTimeSlots": "タイムスロットを選択してください",
+        "ExceptionOccurred": "例外が発生しました",
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}}イベントに参加するのに十分なクレジットがありません。 {{needCredits}}クレジットが必要です。買いたい？",
+        "LiveStream": "ライブストリーム",
+        "InviteStaff": "スタッフを招待する"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "開始日",
+            "endDate": "終了日",
+            "justOnce": "一度だけ",
+            "justOnceWeekly": "今週のみ",
+            "justOnceMonthly": "今月のみ",
+            "recurring": "繰り返し"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "無料イベント",
+            "optional": "オプションの貢献",
+            "required": "必要な支払い"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "オプションの貢献",
+            "required": "必要な支払い",
+            "paid": "有料"
+        },
+        "confirmationDialog": {
+            "title": "支払い確認",
+            "content": "このイベントには、オプションで{{amount}}の貢献があります。",
+            "button": "助ける"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}}はまだイベントの一部ではありません。それらを参加者として追加しますか？",
+        "userNotFound": "ユーザーが見つかりません",
+        "confirmYes": "はい",
+        "confirmNo": "番号"
+    },
+    "notifications": {
+        "EventActivityIn": "{{{stream.fields.title}}}でのイベントアクティビティ",
+        "RecurringRulesChanged": "イベント{{{call 'message.getInstruction' 'eventTitle'}}}の定期的なルールが変更されました",
+        "ManageEmailSubscriptions": "メール購読を管理する",
+        "IfUnsubscribe": "退会したい場合",
+        "ClickHereToVisitEvent": "イベントにアクセスするには、ここをクリックしてください",
+        "Calendars\/reminder": "イベント「{{{call 'message.getInstruction' 'name'}}」は{{&call 'message.getInstruction' 'time'}}}で始まります",
+        "webrtc": {
+            "Started": "電話会議が始まりました",
+            "Ended": "電話会議終了"
+        },
+        "livestream": {
+            "Started": "ライブストリームが始まりました",
+            "Ended": "ライブストリーム終了",
+            "ClickToView": "ここからご覧ください。"
+        }
+    },
+    "import": {
+        "linkTitle": "このスプレッドシートに記入する",
+        "fileLabel": "スプレッドシートのアップロード：",
+        "importOptions": "オプション",
+        "importProgress": "進捗",
+        "sampleCSV": "サンプルCSVをダウンロード",
+        "joinEventLabel": "ユーザーをランダムなイベントに参加させる",
+        "smsText": "ねえ、私はあなたに{{communityName}}へのリンクを送りました。チェックアウトしてください。",
+        "emailSubject": "リンクを送信しました",
+        "emailBody": "ねえ、私はあなたに{{communityName}}への招待状を送りました。チェックアウトしてください。",
+        "fileNotFound": "申し訳ありませんが、CSVファイルが見つかりません。",
+        "fileEmpty": "申し訳ありませんが、CSVファイルは空です。",
+        "fieldNotFound": "必須フィールド「{{1}}」が見つかりません",
+        "userIdNotFound": "ユーザーは存在しますが、IDは空です",
+        "activateUsers": "ユーザーにアクティベーションメッセージを送信しますか？",
+        "taskStreamInvalid": "タスクストリームが無効です",
+        "instructionsEmpty": "タスクストリーム命令が空",
+        "interestsEmpty": "興味を引くことができない",
+        "interestAbsent": "興味{{1}}が見つかりません",
+        "complete": "完了",
+        "errorLine": "行{{1}}",
+        "errorsTitle": "エラーが発生しました",
+        "communityUsers": "これはコミュニティリストです",
+        "toMainCommunityToo": "メインコミュニティにも関係する",
+        "ChooseFile": "ファイルを選ぶ"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "人々が参加できるイベントを表します",
+            "displayType": "イベント"
+        },
+        "Calendars\/recurring": {
+            "description": "定期的に繰り返されることを意図したストリームを関連付けるために使用されます",
+            "displayType": "定期的なイベント"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "スロットを追加",
+        "StartTime": "始まる時間",
+        "EndTime": "終了時間",
+        "Save": "保存する",
+        "AddTimeSlot": "タイムスロットを追加",
+        "CopyFromDay": "日からコピー",
+        "Nearest": "最寄り",
+        "Today": "今日",
+        "Tomorrow": "明日",
+        "AfterTomorrow": "明後日"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "カレンダーを購読する",
+        "copyLinkBelow": "以下のリンクをコピー",
+        "goTo": "次の場所に移動します。",
+        "pasteCopiedTo": "コピーしたリンクを「カレンダーのURL」欄に貼り付けます",
+        "clickAddCalendar": "「カレンダーを追加」ボタンをクリック",
+        "copyLink": "リンクをコピーする",
+        "tapToCopy": "下のボタンをタップしてリンクをクリップボードにコピーしてください",
+        "linkCopied": "リンクをコピーしました",
+        "step2": "リンクをコピーしました。Google カレンダーを開きます。テキストボックスにリンクを貼り付けて、「カレンダーを追加」をクリックし、タブを閉じます (下のスクリーンショットを参照)",
+        "calendarAppPreferences": "Mac のカレンダー アプリの環境設定を開き、デフォルトのカレンダー アプリを以下のように設定します。",
+        "thenCloseDialog": "カレンダーを購読するには、このダイアログを閉じてください。",
+        "success": "カレンダーが正常に同期されました"
+    }
+}

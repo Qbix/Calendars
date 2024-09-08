@@ -1,0 +1,359 @@
+{
+    "months": {
+        "Jan": "יאן",
+        "Feb": "פברואר",
+        "Mar": "מרץ",
+        "Apr": "Apr",
+        "May": "מאי",
+        "Jun": "יוני",
+        "Jul": "יול",
+        "Aug": "אוגוסט",
+        "Sep": "ספטמבר",
+        "Oct": "אוקטובר",
+        "Nov": "נובמבר",
+        "Dec": "דצמבר"
+    },
+    "monthsLong": {
+        "Jan": "ינואר",
+        "Feb": "פברואר",
+        "Mar": "מרץ",
+        "Apr": "אפריל",
+        "May": "מאי",
+        "Jun": "יוני",
+        "Jul": "יולי",
+        "Aug": "אוגוסט",
+        "Sep": "ספטמבר",
+        "Oct": "אוקטובר",
+        "Nov": "נובמבר",
+        "Dec": "דצמבר"
+    },
+    "weekdays": {
+        "Sun": "שמש",
+        "Mon": "יום שני",
+        "Tue": "יום שלישי",
+        "Wed": "להתחתן",
+        "Thu": "Thu",
+        "Fri": "יום שישי",
+        "Sat": "ישבה"
+    },
+    "weekdaysLong": {
+        "Sun": "יום ראשון",
+        "Mon": "יום שני",
+        "Tue": "יום שלישי",
+        "Wed": "יום רביעי",
+        "Thu": "יום חמישי",
+        "Fri": "יום שישי",
+        "Sat": "יום שבת"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "תכנית חדשה"
+        },
+        "tool": {
+            "AreYouIn": "אתה ב?",
+            "Yes": "כן",
+            "No": "לא",
+            "Maybe": "אולי",
+            "Conversation": "שיחה",
+            "Promote": "קדם את האירוע הזה",
+            "Checkin": "סרוק קודי משתתפים",
+            "CloseEvent": {
+                "button": "בטל אירוע",
+                "confirm": {
+                    "text": {
+                        "Cancel": "האם אתה בטוח שברצונך לבטל אירוע זה?",
+                        "Participant": "יש משתתף אחד באירוע זה",
+                        "Participants": "באירוע זה יש {{count}} משתתפים",
+                        "Recurring": "אירוע זה חוזר על עצמו. האם אתה רוצה גם לבטל את כל המופעים העתידיים שלה גם כן?"
+                    },
+                    "trip": {
+                        "Cancel": "האם תרצה גם לבטל את הטיול שלך {{tripDirection}} באירוע זה?",
+                        "Passengers": "יש {{passengerCount}} נוסעים מסתמכים עליך.",
+                        "Title": "טיול סגור"
+                    },
+                    "directions": {
+                        "TO": "ל",
+                        "FROM": "מ",
+                        "to": "ל",
+                        "from": "מ"
+                    }
+                }
+            },
+            "Calendar": "לוח שנה",
+            "Interests": "Readers",
+            "Directions": "כיוונים",
+            "TitleOfEvent": "כותרת האירוע:",
+            "OpenTo": "פתוח ל",
+            "MoreInfo": "עוד מידע",
+            "Registration": "הרשמה",
+            "GoingTo": "יהיה ב",
+            "NotGoingTo": "לא יהיה ב",
+            "MaybeGoingTo": "אולי יהיה בשעה",
+            "HostedBy": "מתארח על ידי {{name}}",
+            "LiveStream": "לחץ כדי להזרים חי",
+            "Myqr": "קבלה",
+            "AdminDontPay": "המנהל לא היה צריך לשלם כדי להצטרף לאירוע זה",
+            "Name": "שֵׁם",
+            "ReservationFee": "תעריף הזמנה",
+            "AddParticipants": "להוסיף משתתפים",
+            "ManageReservation": "נהל הזמנות",
+            "MakeReservation": "לבצע הזמנה",
+            "StartLiveStream": "לחץ לשידור חי",
+            "LiveStreamEnded": "שידור חי הסתיים",
+            "ClickToViewRecording": "לחץ לצפייה בהקלטה",
+            "EmptyList": "רשימה ריקה",
+            "NeedToPayCredits": "צריך לשלם: <span>{{amount}} נקודות זכות<\/span>",
+            "PleaseJoinParticipants": "אנא הצטרף ל- {{participant}}",
+            "YouReservingPlace": "אתה תאמין את מקומך.",
+            "SelectIncludesToAdd": "בחר אחד או יותר {{TypeDisplayPlural}} להוספה:",
+            "YouHaveNotRegisteredAnyIncluded": "עדיין לא רשמת אף {{TypeDisplayPlural}}",
+            "Proceed": "להמשיך",
+            "MakeChanges": "עושה שינויים",
+            "CancelReservation": "בטל את ההזמנה כולה",
+            "Total": "סך הכל",
+            "Ok": "בסדר",
+            "Cancel": "לְבַטֵל",
+            "Reminders": "תזכורות",
+            "RemindersLabel": "אני רוצה לקבל הודעה על אירוע ב:",
+            "SetReminders": "אנא הגדר תזכורות",
+            "UpdateFutureReservations": "האם אתה רוצה לעדכן את כל ההזמנות העתידיות באותה דרך?",
+            "RecurringAdmin": "הגדרות חוזרות",
+            "PublisherDontPay": "המו&quot;ל אינו צריך לשלם",
+            "RequiredRelatedParticipants": "באירוע זה נדרשים המשתתפים: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "אנא ערוך את הזמינות &quot;{{title}}&quot; כדי לעדכן את ההגדרות החוזרות",
+            "Presentation": "הַצָגָה",
+            "YouAreNotParticipated": "אתה לא משתתף באירוע",
+            "LiveStreamStarted": "שידור חי התחיל",
+            "WebRTCStarted": "ועידה טלפונית התחילה",
+            "WebRTCEnded": "הועידה הטלפונית הסתיימה"
+        },
+        "composer": {
+            "SetLocation": "הגדר את המיקום שלי",
+            "ChooseActivity": "בחר פעילות",
+            "ChoosePublisher": "בחר באפשרות מוציא לאור",
+            "Day": "יום",
+            "Starting": "החל",
+            "People": "אנשים",
+            "Share": "שתף",
+            "Recurring": "חוזרים",
+            "RecurringTitle": "ימים חוזרים",
+            "Daily": "יומי",
+            "Weekly": "שבועי",
+            "Monthly": "חודשי",
+            "SelectLocation": "בחר תחילה מיקום.",
+            "eventType": "סוג אירוע",
+            "EditTitle": "תחשוב על כותרת מעניינת ...",
+            "SetTitle": "הגדר כותרת אירוע",
+            "location": {
+                "Title": "הגדר את המיקום שלך"
+            },
+            "interest": {
+                "Title": "בחר פעילות",
+                "Filter": "חפש תחומי עניין ..."
+            },
+            "Ending": "מסתיים",
+            "ScheduleOnlineConference": "קבע זימון מקוון",
+            "SOCDescription": "אנא הגדר את זמן התחלת וסיום הכנס. כל משתמש שביקר בפרק זמן זה, יתחבר אוטומטית לוועידה המקוונת.",
+            "EndDate": "סוף",
+            "SetLivestream": "הדבק קישור לזרם חי \/ ועידת וידיאו",
+            "SetInfoLink": "הגדר קישור למידע נוסף",
+            "ChooseService": "בחר שירות זמין",
+            "Continue": "לְהַמשִׁיך",
+            "ChooseAvailability": "בחר שירות זמין",
+            "Duration": "מֶשֶׁך",
+            "Hour": "שָׁעָה",
+            "Hours": "שעה (ות",
+            "Minutes": "דקות",
+            "Locally": "באופן מקומי",
+            "EventInfoLink": "קישור למידע על האירוע",
+            "TicketPurchaseLink": "קישור לרכישת כרטיסים"
+        },
+        "EventAlreadyClosed": "האירוע הזה כבר נסגר",
+        "addToCalendar": {
+            "permissions": {
+                "title": "הוסף ליומן?",
+                "prompt": "האם ברצונך להוסיף אירוע זה ליומן שלך?",
+                "yes": "כן",
+                "no": "לא"
+            },
+            "dialog": {
+                "Title": "הוסף אירוע ליומן שלך"
+            }
+        },
+        "ErrorLeaveEndedEvent": "מצטערים, אבל אינך יכול לעזוב את האירוע שהסתיים"
+    },
+    "recurring": {
+        "dialog": {
+            "justonce": "רק הפעם",
+            "recurring": "חוזרים",
+            "startDate": "תאריך התחלה",
+            "endDate": "תאריך סיום",
+            "justOnce": "רק פעם אחת",
+            "justOnceWeekly": "רק השבוע",
+            "justOnceMonthly": "החודש בלבד"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "אירוע חינם",
+            "optional": "תרומה אופציונלית",
+            "required": "תשלום נדרש"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "תרומה אופציונלית",
+            "required": "תשלום נדרש",
+            "paid": "שולם"
+        },
+        "confirmationDialog": {
+            "title": "אישור תשלום",
+            "content": "לאירוע זה יש תרומה אופציונלית של {{amount}}.",
+            "button": "לתרום"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} עדיין אינו חלק מהאירוע. האם ברצונך להוסיף אותם כמשתתף?",
+        "userNotFound": "המשתמש לא נמצא",
+        "confirmYes": "כן",
+        "confirmNo": "לא"
+    },
+    "notifications": {
+        "EventActivityIn": "פעילות באירוע {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "כללים חוזרים השתנו לאירוע {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "נהל את מנויי הדוא&quot;ל שלך",
+        "IfUnsubscribe": "אם ברצונך לבטל את המנוי",
+        "ClickHereToVisitEvent": "אנא לחץ כאן לביקור באירוע",
+        "Calendars\/reminder": "האירוע &quot;{{{call 'message.getInstruction' 'name'}}&quot; יתחיל בעוד {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "ועידה טלפונית התחילה",
+            "Ended": "הועידה הטלפונית הסתיימה"
+        },
+        "livestream": {
+            "Started": "שידור חי התחיל",
+            "Ended": "השידור החי הסתיים",
+            "ClickToView": "הצג את זה כאן."
+        }
+    },
+    "import": {
+        "linkTitle": "מלא גיליון זה",
+        "fileLabel": "העלה גיליון אלקטרוני:",
+        "joinEventLabel": "הצטרף למשתמשים לאירוע אקראי",
+        "smsText": "היי, אני פשוט שלח לך קישור אל {{communityName}}. בבקשה תבדוק את זה.",
+        "emailSubject": "פשוט שלח לך קישור",
+        "emailBody": "היי, כרגע שלחתי לך הזמנה אל {{communityName}}. בבקשה תבדוק את זה.",
+        "fileNotFound": "מצטערים, קובץ CSV לא נמצא.",
+        "fileEmpty": "מצטערים, קובץ CSV ריק.",
+        "fieldNotFound": "שדה חובה &quot;{{1}}&quot; לא נמצא",
+        "userIdNotFound": "המשתמש קיים אך מזהה ריק",
+        "activateUsers": "לשלוח הודעת הפעלה למשתמשים?",
+        "taskStreamInvalid": "זרם המשימה אינו חוקי",
+        "instructionsEmpty": "הוראות זרם המשימות ריקות",
+        "interestsEmpty": "לא יכול לקבל אינטרסים",
+        "interestAbsent": "ריבית {{1}} לא נמצאה",
+        "complete": "השלם",
+        "errorLine": "שורה {{1}}",
+        "errorsTitle": "אירעו שגיאות",
+        "importOptions": "אפשרויות",
+        "importProgress": "התקדמות",
+        "sampleCSV": "הורד CSV לדוגמה",
+        "communityUsers": "זו רשימת קהילות",
+        "toMainCommunityToo": "מתייחסים גם לקהילה הראשית",
+        "ChooseFile": "בחר קובץ"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "מייצג אירוע שאנשים יכולים להשתתף בו",
+            "displayType": "אירוע"
+        },
+        "Calendars\/recurring": {
+            "description": "משמש לייחוס נחלים שנועדו לחזור לתקופת זמן",
+            "displayType": "אירוע חוזר"
+        }
+    },
+    "services": {
+        "Title": "שירותים",
+        "NewService": {
+            "Title": "זמינות חדשה",
+            "SaveService": "שמור זמינות",
+            "SelectTemplate": "אנא בחר שירות",
+            "SelectLocation": "אנא בחר מיקום",
+            "SelectArea": "אנא בחר אזור",
+            "SelectTime": "נהל משבצות זמן",
+            "SelectTimeSlot": "בחר משבצת זמן",
+            "PeopleMin": "מינימום מבקרים",
+            "PeopleMax": "מבקרים מקסימליים",
+            "PeopleLabels": "תוויות מותרות",
+            "Next": "הַבָּא",
+            "Back": "חזור"
+        },
+        "EditService": "ערוך זמינות",
+        "SetVisitors": "הגדר מבקרים",
+        "Price": "מחיר",
+        "SelectAction": "בחר פעולה",
+        "OpenProfile": "פרופיל פתוח",
+        "RemoveStaff": "הסר את הצוות"
+    },
+    "timeslots": {
+        "AddSlot": "הוסף חריץ",
+        "StartTime": "שעת התחלה",
+        "EndTime": "זמן סיום",
+        "Save": "לשמור",
+        "AddTimeSlot": "הוסף משבצת זמן",
+        "CopyFromDay": "העתק מהיום",
+        "Nearest": "הכי קרוב",
+        "Today": "היום",
+        "Tomorrow": "מָחָר",
+        "AfterTomorrow": "מחרתיים"
+    },
+    "availabilities": {
+        "Title": "זמינות",
+        "NewAvailability": {
+            "Title": "זמינות חדשה",
+            "SaveAvailability": "שמור זמינות",
+            "SelectTemplate": "אנא בחר שירות",
+            "SelectLocation": "אנא בחר מיקום",
+            "SelectArea": "אנא בחר אזור",
+            "SelectTime": "נהל חריצי זמן",
+            "SelectTimeSlot": "בחר משבצת זמן",
+            "PeopleMin": "מינימום מבקרים",
+            "PeopleMax": "מקסימום מבקרים",
+            "PeopleLabels": "תפקידים מותר",
+            "Next": "הַבָּא",
+            "Back": "חזור",
+            "Type": "סוּג",
+            "Weekly": "שְׁבוּעִי",
+            "RecurringStartDate": "תאריך התחלה חוזר",
+            "EndDate": "תאריך סיום",
+            "SelectTimeSlots": "בחר משבצות זמן רצויות",
+            "RecurringEndDate": "תאריך סיום חוזר",
+            "ScheduleOnlineConference": "תזמן ועידה טלפונית",
+            "SetLivestream": "הדבק קישור לשידור חי \/ ועידת וידאו",
+            "SelectTimeZone": "בחר אזור זמן"
+        },
+        "EditAvailability": "ערוך זמינות",
+        "SetVisitors": "הגדר מבקרים",
+        "Price": "מחיר",
+        "SelectAction": "אנא בחר פעולה",
+        "OpenProfile": "פתח פרופיל",
+        "RemoveStaff": "הסר צוות",
+        "PleaseSelectTimeSlots": "אנא בחר משבצות זמן",
+        "ExceptionOccurred": "חריג אירע",
+        "NotEnoughCreditsToParticipateEvents": "אין מספיק נקודות זכות להשתתפות באירועים {{eventsAmount}}. אתה זקוק לזיכויים של {{needCredits}}. רוצה לקנות?",
+        "LiveStream": "שידור חי",
+        "InviteStaff": "הזמינו את הצוות"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "הירשם ליומן",
+        "copyLinkBelow": "העתק את הקישור למטה",
+        "goTo": "לך ל:",
+        "pasteCopiedTo": "הדבק את הקישור שהועתק לשדה &quot;כתובת האתר של היומן&quot;.",
+        "clickAddCalendar": "לחץ על כפתור &quot;הוסף לוח שנה&quot;.",
+        "copyLink": "העתק קישור",
+        "tapToCopy": "הקש על הלחצן למטה כדי להעתיק את הקישור ללוח שלך",
+        "linkCopied": "הקישור הועתק",
+        "step2": "הקישור הועתק. אנחנו עומדים לפתוח את יומן Google. תצטרך להדביק את הקישור בתיבת הטקסט, ללחוץ על &quot;הוסף יומן&quot; ולסגור את הכרטיסייה (ראה צילום מסך למטה)",
+        "calendarAppPreferences": "פתח את ההעדפות באפליקציית לוח השנה ב-Mac שלך, והגדר את אפליקציית יומן ברירת המחדל להיות כפי שמוצג להלן.",
+        "thenCloseDialog": "לאחר מכן סגור את הדו-שיח הזה כדי להירשם ליומן שלך!",
+        "success": "היומן סונכרן בהצלחה"
+    }
+}

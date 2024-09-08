@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Ian",
+        "Feb": "Fepu",
+        "Mar": "Mati",
+        "Apr": "Ape",
+        "May": "Mae",
+        "Jun": "Iuni",
+        "Jul": "Iul",
+        "Aug": "Aok",
+        "Sep": "Sep",
+        "Oct": "Oke",
+        "Nov": "Nov",
+        "Dec": "Tes"
+    },
+    "monthsLong": {
+        "Jan": "Ianuari",
+        "Feb": "Fepuari",
+        "Mar": "Mati",
+        "Apr": "Apelila",
+        "May": "Mae",
+        "Jun": "Iuni",
+        "Jul": "Iuli",
+        "Aug": "Aukuso",
+        "Sep": "Setema",
+        "Oct": "Okitopa",
+        "Nov": "Novema",
+        "Dec": "Tesema"
+    },
+    "weekdays": {
+        "Sun": "La",
+        "Mon": "Mon",
+        "Tue": "Tue",
+        "Wed": "Aso Lulu",
+        "Thu": "Aso Sa",
+        "Fri": "Aso Faraile",
+        "Sat": "Aso Sa"
+    },
+    "weekdaysLong": {
+        "Sun": "Aso Sa",
+        "Mon": "Aso Gafua",
+        "Tue": "Aso Lua",
+        "Wed": "Aso Lulu",
+        "Thu": "Aso Tofi",
+        "Fri": "Aso Faralie",
+        "Sat": "Aso Tonaʻi"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Fuafua Mea Fou"
+        },
+        "tool": {
+            "HostedBy": "Talia e {{name}}",
+            "Name": "Igoa",
+            "AreYouIn": "Ete fia auai iai?",
+            "Yes": "ioe",
+            "No": "leai",
+            "Ok": "Ua lelei",
+            "Cancel": "Fa&#39;aleaogaina",
+            "Maybe": "Masalo",
+            "Conversation": "Talanoaga",
+            "Promote": "Fa&#39;alauiloa lenei mea",
+            "Reminders": "Faamanatu",
+            "RemindersLabel": "Ou te fia logoina i se mea na tupu i:",
+            "MoreInfo": "Fa&#39;amatalaga atili",
+            "Registration": "Fa&#39;amauina",
+            "SetReminders": "Fa&#39;amolemole seti fa&#39;amanatu",
+            "ReservationFee": "Totogi Fa&#39;asao",
+            "AddParticipants": "Faaopoopo Tagata Auai",
+            "ManageReservation": "Pulea Fa&#39;asao",
+            "UpdateFutureReservations": "E te mana&#39;o fo&#39;i e fa&#39;afou uma fa&#39;aagaga i le lumana&#39;i i le auala lava e tasi?",
+            "RecurringAdmin": "Fa&#39;atonu Fa&#39;aauau",
+            "MakeReservation": "Fai Faasao",
+            "StartLiveStream": "Kiliki e Live Stream",
+            "LiveStreamEnded": "Ua fa&#39;amutaina le fa&#39;asalalauga ola",
+            "ClickToViewRecording": "kiliki e matamata i le pueina",
+            "Checkin": "Va&#39;ai fa&#39;ailoga tagata auai",
+            "Myqr": "Siaki i totonu",
+            "CloseEvent": {
+                "button": "Fa&#39;aleaogaina Mea",
+                "confirm": {
+                    "text": {
+                        "Cancel": "E te mautinoa e te mana&#39;o e fa&#39;aleaogaina lenei fa&#39;alavelave?",
+                        "Participant": "E to&#39;a 1 le sui auai i lenei fa&#39;amoemoe",
+                        "Participants": "E iai {{count}} tagata auai i lenei mea",
+                        "Recurring": "O lenei mea na tupu e fai soo. E te mana&#39;o fo&#39;i e fa&#39;aleaogaina uma fo&#39;i taimi i le lumana&#39;i?"
+                    },
+                    "trip": {
+                        "Cancel": "E te mana&#39;o fo&#39;i e fa&#39;aleaogaina lau malaga {{tripDirection}} lea mea na tupu?",
+                        "Passengers": "E iai {{passengerCount}} pasese o lo&#39;o fa&#39;alagolago ia te oe.",
+                        "Title": "Tapuni le Malaga"
+                    },
+                    "directions": {
+                        "TO": "IA",
+                        "FROM": "MAI",
+                        "to": "ia",
+                        "from": "mai"
+                    }
+                }
+            },
+            "Calendar": "Kalena",
+            "Interests": "mea e fiafia i ai",
+            "Directions": "Fa&#39;atonuga",
+            "TitleOfEvent": "Igoa o le mea na tupu:",
+            "OpenTo": "Tatala i",
+            "GoingTo": "o le a i",
+            "NotGoingTo": "e le i ai i",
+            "MaybeGoingTo": "atonu o le a i",
+            "AdminDontPay": "E le tau totogia e le pule",
+            "PublisherDontPay": "E le mana&#39;omia ona totogi e le lomitusi",
+            "EmptyList": "Lisi gaogao",
+            "NeedToPayCredits": "Manaomia e totogi: <span>{{amount}} credits<\/span>",
+            "PleaseJoinParticipants": "Fa&#39;amolemole auai {{participant}}",
+            "YouReservingPlace": "E te fa&#39;asaoina lou nofoaga.",
+            "SelectIncludesToAdd": "Filifili se tasi pe sili atu {{TypeDisplayPlural}} e fa&#39;aopoopo:",
+            "YouHaveNotRegisteredAnyIncluded": "E te le&#39;i resitalaina se {{TypeDisplayPlural}}",
+            "Proceed": "Fa&#39;aauau",
+            "MakeChanges": "Faasao O&#39;u Suiga",
+            "CancelReservation": "Fa&#39;aleaogaina le reservation atoa",
+            "Total": "Aofa&#39;iga",
+            "RequiredRelatedParticipants": "O lenei mea e mana&#39;omia ai tagata auai: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Fa&#39;amolemole fa&#39;asa&#39;o avanoa &quot;{{title}}&quot; e fa&#39;afou ai fa&#39;asologa faifaipea"
+        },
+        "composer": {
+            "SetLocation": "Seti Lo&#39;u Nofoaga",
+            "SetInfoLink": "Seti So&#39;oga i fa&#39;amatalaga fa&#39;aopoopo",
+            "ChooseAvailability": "Filifili Avanoa Auaunaga",
+            "ChooseActivity": "Filifili se Gaoioiga",
+            "ChoosePublisher": "Filifili Lomiga",
+            "Day": "Aso",
+            "Starting": "Amata",
+            "Duration": "Umi",
+            "Hour": "Itula",
+            "Hours": "Itula",
+            "Minutes": "minute",
+            "Ending": "Fa&#39;ai&#39;uga",
+            "People": "Tagata",
+            "Share": "Faasoa",
+            "Continue": "Fa&#39;aauau",
+            "Recurring": "Toe fai",
+            "RecurringTitle": "Aso Fa&#39;aauau",
+            "Daily": "Aso uma",
+            "Weekly": "Vaiaso",
+            "Monthly": "Ta&#39;i masina",
+            "SelectLocation": "Fa&#39;amolemole filifili muamua se nofoaga.",
+            "eventType": "Ituaiga Mea",
+            "EditTitle": "Mafaufau i se igoa manaia...",
+            "SetTitle": "Fa&#39;amolemole seti le igoa o le mea na tupu",
+            "ScheduleOnlineConference": "Fa&#39;atulaga Konafesi i luga ole laiga",
+            "SOCDescription": "Fa&#39;amolemole fa&#39;amatala le taimi amata ma le fa&#39;ai&#39;uga o le konafesi. O tagata uma e asiasi i le mea na tupu i lenei vaitau o le a faʻafesoʻotaʻi i luga ole initaneti konafesi.",
+            "EndDate": "Fa&#39;ai&#39;uga",
+            "location": {
+                "Title": "Seti Lou Nofoaga"
+            },
+            "interest": {
+                "Title": "Filifili se Gaoioiga",
+                "Filter": "Su&#39;e mea e fiafia i ai..."
+            },
+            "SetLivestream": "Fa&#39;apipi&#39;i le feso&#39;ota&#39;iga i le fa&#39;asalalauga fa&#39;asalalau \/ koneferenisi vitiō"
+        },
+        "EventAlreadyClosed": "Ua uma ona tapunia lenei mea",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Fa&#39;aopoopo i le Kalena?",
+                "prompt": "E te mana&#39;o e fa&#39;aopoopo lenei mea i lau kalena?",
+                "yes": "ioe",
+                "no": "leai"
+            },
+            "dialog": {
+                "Title": "Fa&#39;aopoopo mea e fai i lau Kalena"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Avanoa",
+        "NewAvailability": {
+            "Title": "Avanoa Fou",
+            "SaveAvailability": "Faasaoina Avanoa",
+            "SelectTemplate": "Fa&#39;amolemole filifili Auaunaga",
+            "SelectLocation": "Fa&#39;amolemole filifili le nofoaga",
+            "SelectArea": "Fa&#39;amolemole filifili le Area",
+            "Type": "Ituaiga",
+            "Weekly": "Vaiaso",
+            "RecurringStartDate": "Aso Amata Fa&#39;aauau",
+            "EndDate": "Aso Fa&#39;ai&#39;u",
+            "SelectTime": "Pulea Taimi Slots",
+            "SelectTimeSlot": "Filifili se taimi avanoa",
+            "SelectTimeSlots": "Filifili avanoa e mana&#39;omia",
+            "PeopleMin": "Laiti tagata asiasi",
+            "PeopleMax": "Tele tagata asiasi",
+            "PeopleLabels": "Fa&#39;ailoga fa&#39;atagaina",
+            "Next": "Sosoo ai",
+            "Back": "Tua"
+        },
+        "EditAvailability": "Fa&#39;atonu Avanoa",
+        "SetVisitors": "Seti Tagata Asiasi",
+        "Price": "Tau",
+        "SelectAction": "Fa&#39;amolemole filifili le gaioiga",
+        "OpenProfile": "Tatala talatala",
+        "RemoveStaff": "Aveese le aufaigaluega",
+        "PleaseSelectTimeSlots": "Fa&#39;amolemole filifili avanoa avanoa",
+        "ExceptionOccurred": "Na tupu fa&#39;atasi",
+        "NotEnoughCreditsToParticipateEvents": "Le lava togi e auai ai {{eventsAmount}} mea tutupu. E te mana&#39;omia {{needCredits}} credits. Mana&#39;o e fa&#39;atau?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Aso amata",
+            "endDate": "Aso fa&#39;ai&#39;uga",
+            "justOnce": "Na&#39;o le tasi",
+            "justOnceWeekly": "Na&#39;o lenei vaiaso",
+            "justOnceMonthly": "O le masina lenei",
+            "recurring": "Toe fai"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Fa&#39;atasiga saoloto",
+            "optional": "Saofai faitalia",
+            "required": "Manaomia totogi"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Saofai faitalia",
+            "required": "Manaomia totogi",
+            "paid": "totogi"
+        },
+        "confirmationDialog": {
+            "title": "Fa&#39;amaoniga o totogi",
+            "content": "O lenei mea na tupu o lo&#39;o iai se sao fa&#39;apitoa a {{amount}}.",
+            "button": "Fesoasoani"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} e le&#39;i avea ma vaega o le mea na tupu. E te mana&#39;o e fa&#39;aopoopo i latou e fai ma sui auai?",
+        "userNotFound": "Le maua le tagata fa&#39;aoga",
+        "confirmYes": "ioe",
+        "confirmNo": "leai"
+    },
+    "notifications": {
+        "EventActivityIn": "Gaoioiga o mea na tupu i {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Ua suia tulafono faifaipea mo mea na tupu {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "pulea au imeli imeli",
+        "IfUnsubscribe": "Afai e te mana&#39;o e unsubscribe",
+        "ClickHereToVisitEvent": "Fa&#39;amolemole kiliki iinei e asiasi i le mea na tupu",
+        "Calendars\/reminder": "Mea &quot;{{{call 'message.getInstruction' 'name'}}&quot; o le a amata ile {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "Faatumu le Pepa Lenei",
+        "fileLabel": "La&#39;uina atu le Pepa Pepa:",
+        "importOptions": "Filifiliga",
+        "importProgress": "Alualu i luma",
+        "sampleCSV": "La&#39;u mai le Fa&#39;ata&#39;ita&#39;iga CSV",
+        "joinEventLabel": "Auai i tagata fa&#39;aoga ile fa&#39;alavelave fa&#39;afuase&#39;i",
+        "smsText": "Ei, na&#39;o ou lafo atu ia te oe se so&#39;oga i {{communityName}}. Faamolemole siaki mai.",
+        "emailSubject": "Fa&#39;atoa lafo atu ia te oe se so&#39;oga",
+        "emailBody": "Ei, na&#39;o la&#39;u lafo atu ia te oe se valaaulia i {{communityName}}. Faamolemole siaki mai.",
+        "fileNotFound": "Fa&#39;amalie atu, e le&#39;i maua le faila CSV.",
+        "fileEmpty": "Fa&#39;amalie atu, o lo&#39;o gaogao le faila CSV.",
+        "fieldNotFound": "E le maua le fanua mana&#39;omia &quot;{{1}}&quot;.",
+        "userIdNotFound": "e iai le tagata fa&#39;aoga ae leai se id",
+        "activateUsers": "auina atu le fe&#39;au fa&#39;agaoioiga i tagata fa&#39;aoga?",
+        "taskStreamInvalid": "e le aoga le tafega o galuega",
+        "instructionsEmpty": "gaogao faatonuga alia galuega",
+        "interestsEmpty": "e le mafai ona maua ni tului",
+        "interestAbsent": "tului {{1}} le maua",
+        "complete": "mae&#39;a",
+        "errorLine": "laina {{1}}",
+        "errorsTitle": "Na tutupu mea sese",
+        "communityUsers": "Ole lisi lea o nu&#39;u"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Fa&#39;atusa se mea e mafai ona auai tagata",
+            "displayType": "Mea na tupu"
+        },
+        "Calendars\/recurring": {
+            "description": "Fa&#39;aoga mo le fa&#39;afeso&#39;ota&#39;i o vaitafe e fa&#39;atatau e toe fa&#39;asolo mai i lea taimi ma lea taimi",
+            "displayType": "Mea Fa&#39;aauau"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Fa&#39;aopoopo Slot",
+        "StartTime": "Taimi Amata",
+        "EndTime": "Taimi Fa&#39;ai&#39;u",
+        "Save": "Faasaoina",
+        "AddTimeSlot": "Fa&#39;aopoopo le Time Slot",
+        "CopyFromDay": "Kopi mai le aso",
+        "Nearest": "Latalata",
+        "Today": "O aso nei",
+        "Tomorrow": "Taeao",
+        "AfterTomorrow": "A uma taeao"
+    }
+}

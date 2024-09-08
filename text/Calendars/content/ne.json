@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "जनवरी",
+        "Feb": "फेब्रुअरी",
+        "Mar": "मार्च",
+        "Apr": "अप्रिल",
+        "May": "सक्छ",
+        "Jun": "जुन",
+        "Jul": "जुलाइ",
+        "Aug": "अगस्ट",
+        "Sep": "सेप्टेम्बर",
+        "Oct": "अक्टोबर",
+        "Nov": "नोभेम्बर",
+        "Dec": "डिसेम्बर"
+    },
+    "monthsLong": {
+        "Jan": "जनवरी",
+        "Feb": "फेब्रुअरी",
+        "Mar": "मार्च",
+        "Apr": "अप्रिल",
+        "May": "सक्छ",
+        "Jun": "जुन",
+        "Jul": "जुलाई",
+        "Aug": "अगस्ट",
+        "Sep": "सेप्टेम्बर",
+        "Oct": "अक्टोबर",
+        "Nov": "नोभेम्बर",
+        "Dec": "डिसेम्बर"
+    },
+    "weekdays": {
+        "Sun": "सूर्य",
+        "Mon": "सोम",
+        "Tue": "मङ्गल",
+        "Wed": "बुध",
+        "Thu": "बृहस्",
+        "Fri": "शुक्र",
+        "Sat": "शनि"
+    },
+    "weekdaysLong": {
+        "Sun": "आइतबार",
+        "Mon": "सोमबार",
+        "Tue": "मंगलबार",
+        "Wed": "बुधबार",
+        "Thu": "बिहीबार",
+        "Fri": "शुक्रबार",
+        "Sat": "शनिबार"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "नयाँ घटनाको योजना बनाउनुहोस्"
+        },
+        "tool": {
+            "HostedBy": "{{name}} द्वारा आयोजित",
+            "Name": "नाम",
+            "AreYouIn": "तपाईं मा हुनुहुन्छ?",
+            "Yes": "हो",
+            "No": "छैन",
+            "Ok": "ठिक छ",
+            "Cancel": "रद्द गर्नुहोस्",
+            "Maybe": "हुनसक्छ",
+            "Conversation": "कुराकानी",
+            "Promote": "यो घटना प्रचार गर्नुहोस्",
+            "Reminders": "रिमाइन्डरहरू",
+            "RemindersLabel": "म एउटा घटना बारे सूचित गर्न चाहन्छु:",
+            "MoreInfo": "थप जानकारी",
+            "Registration": "दर्ता",
+            "SetReminders": "कृपया रिमाइन्डरहरू सेट गर्नुहोस्",
+            "ReservationFee": "आरक्षण शुल्क",
+            "AddParticipants": "सहभागीहरू थप्नुहोस्",
+            "ManageReservation": "आरक्षण प्रबन्ध गर्नुहोस्",
+            "UpdateFutureReservations": "के तपाईं पनि भविष्यका सबै आरक्षणहरू यस्तै रूपमा अद्यावधिक गर्न चाहनुहुन्छ?",
+            "RecurringAdmin": "पुनरावर्ती सेटिङहरू",
+            "MakeReservation": "आरक्षण गर्नुहोस्",
+            "StartLiveStream": "लाइभ स्ट्रिममा क्लिक गर्नुहोस्",
+            "LiveStreamEnded": "लाइभ स्ट्रिम समाप्त भएको छ",
+            "ClickToViewRecording": "रेकर्डिङ हेर्न क्लिक गर्नुहोस्",
+            "Checkin": "सहभागी कोडहरू स्क्यान गर्नुहोस्",
+            "Myqr": "चेक इन गर्नुहोस्",
+            "CloseEvent": {
+                "button": "कार्यक्रम रद्द गर्नुहोस्",
+                "confirm": {
+                    "text": {
+                        "Cancel": "के तपाइँ यो घटना रद्द गर्न निश्चित हुनुहुन्छ?",
+                        "Participant": "यस कार्यक्रममा १ जना सहभागी छन्",
+                        "Participants": "यस कार्यक्रममा {{count}} सहभागीहरू छन्",
+                        "Recurring": "यो घटना दोहोरिरहन्छ। के तपाइँ यसका सबै भविष्यका उदाहरणहरू पनि रद्द गर्न चाहनुहुन्छ?"
+                    },
+                    "trip": {
+                        "Cancel": "के तपाईं आफ्नो यात्रा {{tripDirection}} यो कार्यक्रम पनि रद्द गर्न चाहनुहुन्छ?",
+                        "Passengers": "तपाईंमा भर परेका {{passengerCount}} यात्रुहरू छन्।",
+                        "Title": "यात्रा बन्द गर्नुहोस्"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "बाट",
+                        "to": "को",
+                        "from": "बाट"
+                    }
+                }
+            },
+            "Calendar": "पात्रो",
+            "Interests": "रुचिहरू",
+            "Directions": "दिशाहरू",
+            "TitleOfEvent": "घटनाको शीर्षक:",
+            "OpenTo": "मा खोल्नुहोस्",
+            "GoingTo": "मा हुनेछ",
+            "NotGoingTo": "मा हुनेछैन",
+            "MaybeGoingTo": "मा हुन सक्छ",
+            "AdminDontPay": "प्रशासकले तिर्नु पर्दैन",
+            "PublisherDontPay": "प्रकाशकले तिर्नु पर्दैन",
+            "EmptyList": "खाली सूची",
+            "NeedToPayCredits": "तिर्न आवश्यक छ: <span>{{amount}} क्रेडिटहरू<\/span>",
+            "PleaseJoinParticipants": "कृपया {{participant}} मा सामेल हुनुहोस्",
+            "YouReservingPlace": "तपाईंले आफ्नो ठाउँ आरक्षित गर्नुहुनेछ।",
+            "SelectIncludesToAdd": "थप्नको लागि एक वा बढी {{TypeDisplayPlural}} चयन गर्नुहोस्:",
+            "YouHaveNotRegisteredAnyIncluded": "तपाईंले अहिलेसम्म कुनै पनि {{TypeDisplayPlural}} दर्ता गर्नुभएको छैन",
+            "Proceed": "अगाडि बढ्नुहोस्",
+            "MakeChanges": "मेरा परिवर्तनहरू बचत गर्नुहोस्",
+            "CancelReservation": "सम्पूर्ण आरक्षण रद्द गर्नुहोस्",
+            "Total": "कुल",
+            "RequiredRelatedParticipants": "यो कार्यक्रममा सहभागी हुन आवश्यक छ: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "पुनरावर्ती सेटिङहरू अद्यावधिक गर्न कृपया उपलब्धता &quot;{{title}}&quot; सम्पादन गर्नुहोस्"
+        },
+        "composer": {
+            "SetLocation": "मेरो स्थान सेट गर्नुहोस्",
+            "SetInfoLink": "थप जानकारीको लागि लिङ्क सेट गर्नुहोस्",
+            "ChooseAvailability": "उपलब्ध सेवा छनौट गर्नुहोस्",
+            "ChooseActivity": "एउटा गतिविधि छान्नुहोस्",
+            "ChoosePublisher": "प्रकाशक छान्नुहोस्",
+            "Day": "दिन",
+            "Starting": "सुरु गर्दै",
+            "Duration": "अवधि",
+            "Hour": "घण्टा",
+            "Hours": "घण्टा",
+            "Minutes": "मिनेट",
+            "Ending": "अन्त्य",
+            "People": "मानिसहरू",
+            "Share": "सेयर गर्नुहोस्",
+            "Continue": "जारी राख्नुहोस्",
+            "Recurring": "आवर्ती",
+            "RecurringTitle": "आवर्ती दिनहरू",
+            "Daily": "दैनिक",
+            "Weekly": "साप्ताहिक",
+            "Monthly": "मासिक",
+            "SelectLocation": "कृपया पहिले स्थान चयन गर्नुहोस्।",
+            "eventType": "घटना प्रकार",
+            "EditTitle": "एउटा रोचक शीर्षकको बारेमा सोच्नुहोस् ...",
+            "SetTitle": "कृपया घटना शीर्षक सेट गर्नुहोस्",
+            "ScheduleOnlineConference": "अनलाइन सम्मेलन तालिका",
+            "SOCDescription": "कृपया सम्मेलन सुरु र अन्त्य समय परिभाषित गर्नुहोस्। यस अवधिमा कार्यक्रम भ्रमण गर्ने प्रत्येक व्यक्ति अनलाइन सम्मेलनमा स्वत: जडान हुनेछ।",
+            "EndDate": "अन्त्य",
+            "location": {
+                "Title": "आफ्नो स्थान सेट गर्नुहोस्"
+            },
+            "interest": {
+                "Title": "एउटा गतिविधि छान्नुहोस्",
+                "Filter": "रुचिहरू खोज्नुहोस्..."
+            },
+            "SetLivestream": "लाइभस्ट्रिम \/ भिडियो सम्मेलनमा लिङ्क टाँस्नुहोस्"
+        },
+        "EventAlreadyClosed": "यो घटना पहिले नै बन्द छ",
+        "addToCalendar": {
+            "permissions": {
+                "title": "पात्रोमा थप्ने हो?",
+                "prompt": "के तपाईं आफ्नो पात्रोमा यो घटना थप्न चाहनुहुन्छ?",
+                "yes": "हो",
+                "no": "छैन"
+            },
+            "dialog": {
+                "Title": "आफ्नो पात्रोमा घटना थप्नुहोस्"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "उपलब्धताहरू",
+        "NewAvailability": {
+            "Title": "नयाँ उपलब्धता",
+            "SaveAvailability": "उपलब्धता बचत गर्नुहोस्",
+            "SelectTemplate": "कृपया सेवा चयन गर्नुहोस्",
+            "SelectLocation": "कृपया स्थान चयन गर्नुहोस्",
+            "SelectArea": "कृपया क्षेत्र चयन गर्नुहोस्",
+            "Type": "टाइप गर्नुहोस्",
+            "Weekly": "साप्ताहिक",
+            "RecurringStartDate": "पुनरावर्ती सुरु मिति",
+            "EndDate": "अन्त्य मिति",
+            "SelectTime": "समय स्लटहरू प्रबन्ध गर्नुहोस्",
+            "SelectTimeSlot": "समय स्लट चयन गर्नुहोस्",
+            "SelectTimeSlots": "इच्छित समय स्लटहरू चयन गर्नुहोस्",
+            "PeopleMin": "न्यूनतम आगन्तुकहरू",
+            "PeopleMax": "अधिकतम आगन्तुकहरू",
+            "PeopleLabels": "लेबलहरूलाई अनुमति दिइएको छ",
+            "Next": "अर्को",
+            "Back": "पछाडि"
+        },
+        "EditAvailability": "उपलब्धता सम्पादन गर्नुहोस्",
+        "SetVisitors": "आगन्तुकहरू सेट गर्नुहोस्",
+        "Price": "मूल्य",
+        "SelectAction": "कृपया कार्य चयन गर्नुहोस्",
+        "OpenProfile": "प्रोफाइल खोल्नुहोस्",
+        "RemoveStaff": "कर्मचारी हटाउन",
+        "PleaseSelectTimeSlots": "कृपया समय स्लटहरू चयन गर्नुहोस्",
+        "ExceptionOccurred": "अपवाद भयो",
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} घटनाहरूमा भाग लिन पर्याप्त क्रेडिटहरू छैनन्। तपाईंलाई {{needCredits}} क्रेडिट चाहिन्छ। खरीद गर्न चाहन्छु?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "सुरू मिति",
+            "endDate": "अन्त्य मिति",
+            "justOnce": "एक पटक मात्र",
+            "justOnceWeekly": "यो हप्ता मात्र",
+            "justOnceMonthly": "यो महिना मात्र",
+            "recurring": "आवर्ती"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "नि: शुल्क घटना",
+            "optional": "वैकल्पिक योगदान",
+            "required": "आवश्यक भुक्तानी"
+        },
+        "amountPlaceholder": "०",
+        "info": {
+            "optional": "वैकल्पिक योगदान",
+            "required": "आवश्यक भुक्तानी",
+            "paid": "भुक्तान गरियो"
+        },
+        "confirmationDialog": {
+            "title": "भुक्तानी पुष्टिकरण",
+            "content": "यो घटनामा {{amount}} को वैकल्पिक योगदान छ।",
+            "button": "योगदान गर्नुहोस्"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} अझै घटनाको अंश होइन। के तपाइँ तिनीहरूलाई सहभागीको रूपमा थप्न चाहनुहुन्छ?",
+        "userNotFound": "प्रयोगकर्ता फेला परेन",
+        "confirmYes": "हो",
+        "confirmNo": "छैन"
+    },
+    "notifications": {
+        "EventActivityIn": "{{{stream.fields.title}}} मा घटना गतिविधि",
+        "RecurringRulesChanged": "घटना {{{call 'message.getInstruction' 'eventTitle'}}} को लागि आवर्ती नियमहरू परिवर्तन गरियो",
+        "ManageEmailSubscriptions": "आफ्नो इमेल सदस्यता व्यवस्थापन",
+        "IfUnsubscribe": "यदि तपाइँ सदस्यता रद्द गर्न चाहनुहुन्छ भने",
+        "ClickHereToVisitEvent": "घटना भ्रमण गर्न कृपया यहाँ क्लिक गर्नुहोस्",
+        "Calendars\/reminder": "घटना &quot;{{{call 'message.getInstruction' 'name'}}&quot; {{&call 'message.getInstruction' 'time'}}} मा सुरु हुनेछ"
+    },
+    "import": {
+        "linkTitle": "यो स्प्रेडसिट भर्नुहोस्",
+        "fileLabel": "स्प्रेडसिट अपलोड गर्नुहोस्:",
+        "importOptions": "विकल्पहरू",
+        "importProgress": "प्रगति",
+        "sampleCSV": "नमूना CSV डाउनलोड गर्नुहोस्",
+        "joinEventLabel": "अनियमित घटनामा प्रयोगकर्ताहरूसँग सामेल हुनुहोस्",
+        "smsText": "हे, मैले भर्खरै तपाईंलाई {{communityName}} मा लिङ्क पठाएँ। कृपया यसलाई जाँच गर्नुहोस्।",
+        "emailSubject": "भर्खरै तपाइँलाई लिङ्क पठाउनुभयो",
+        "emailBody": "हे, मैले भर्खरै तपाईंलाई {{communityName}} मा निमन्त्रणा पठाएँ। कृपया यसलाई जाँच गर्नुहोस्।",
+        "fileNotFound": "माफ गर्नुहोस्, CSV फाइल फेला परेन।",
+        "fileEmpty": "माफ गर्नुहोस्, CSV फाइल खाली छ।",
+        "fieldNotFound": "आवश्यक फिल्ड &quot;{{1}}&quot; फेला परेन",
+        "userIdNotFound": "प्रयोगकर्ता अवस्थित छ तर आईडी खाली छ",
+        "activateUsers": "प्रयोगकर्ताहरूलाई सक्रियता सन्देश पठाउनुहोस्?",
+        "taskStreamInvalid": "कार्य स्ट्रिम अवैध",
+        "instructionsEmpty": "कार्य स्ट्रिम निर्देशनहरू खाली",
+        "interestsEmpty": "चासो पाउन सक्दैन",
+        "interestAbsent": "ब्याज {{1}} फेला परेन",
+        "complete": "पूरा",
+        "errorLine": "रेखा {{1}}",
+        "errorsTitle": "त्रुटिहरू भयो",
+        "communityUsers": "यो समुदायहरूको सूची हो"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "मानिसहरू सहभागी हुन सक्ने घटनाको प्रतिनिधित्व गर्दछ",
+            "displayType": "घटना"
+        },
+        "Calendars\/recurring": {
+            "description": "आवधिक रूपमा दोहोरिने स्ट्रिमहरू सम्बन्धित गर्न प्रयोग गरिन्छ",
+            "displayType": "पुनरावर्ती घटना"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "स्लट थप्नुहोस्",
+        "StartTime": "सुरु समय",
+        "EndTime": "अन्त्य समय",
+        "Save": "बचत गर्नुहोस्",
+        "AddTimeSlot": "टाइम स्लट थप्नुहोस्",
+        "CopyFromDay": "दिन देखि प्रतिलिपि",
+        "Nearest": "निकटतम",
+        "Today": "आज",
+        "Tomorrow": "भोलि",
+        "AfterTomorrow": "भोलि पछि"
+    }
+}

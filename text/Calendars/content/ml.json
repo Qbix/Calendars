@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "ജന",
+        "Feb": "ഫെബ്രുവരി",
+        "Mar": "മാർ",
+        "Apr": "ഏപ്രിൽ",
+        "May": "മെയ്",
+        "Jun": "ജൂൺ",
+        "Jul": "ജൂലൈ",
+        "Aug": "ഓഗസ്റ്റ്",
+        "Sep": "സെപ്തംബർ",
+        "Oct": "ഒക്ടോ",
+        "Nov": "നവം",
+        "Dec": "ഡിസംബർ"
+    },
+    "monthsLong": {
+        "Jan": "ജനുവരി",
+        "Feb": "ഫെബ്രുവരി",
+        "Mar": "മാർച്ച്",
+        "Apr": "ഏപ്രിൽ",
+        "May": "മെയ്",
+        "Jun": "ജൂൺ",
+        "Jul": "ജൂലൈ",
+        "Aug": "ഓഗസ്റ്റ്",
+        "Sep": "സെപ്റ്റംബർ",
+        "Oct": "ഒക്ടോബർ",
+        "Nov": "നവംബർ",
+        "Dec": "ഡിസംബർ"
+    },
+    "weekdays": {
+        "Sun": "സൂര്യൻ",
+        "Mon": "മോൺ",
+        "Tue": "ചൊവ്വ",
+        "Wed": "ബുധൻ",
+        "Thu": "വ്യാഴം",
+        "Fri": "വെള്ളി",
+        "Sat": "ശനി"
+    },
+    "weekdaysLong": {
+        "Sun": "ഞായറാഴ്ച",
+        "Mon": "തിങ്കളാഴ്ച",
+        "Tue": "ചൊവ്വാഴ്ച",
+        "Wed": "ബുധനാഴ്ച",
+        "Thu": "വ്യാഴാഴ്ച",
+        "Fri": "വെള്ളിയാഴ്ച",
+        "Sat": "ശനിയാഴ്ച"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "പുതിയ ഇവന്റ് ആസൂത്രണം ചെയ്യുക"
+        },
+        "tool": {
+            "HostedBy": "ഹോസ്റ്റ് ചെയ്തത് {{name}}",
+            "Name": "പേര്",
+            "AreYouIn": "നിങ്ങൾ അകത്തുണ്ടോ?",
+            "Yes": "അതെ",
+            "No": "ഇല്ല",
+            "Ok": "ശരി",
+            "Cancel": "റദ്ദാക്കുക",
+            "Maybe": "ഒരുപക്ഷേ",
+            "Conversation": "സംഭാഷണം",
+            "Promote": "ഈ ഇവന്റ് പ്രോത്സാഹിപ്പിക്കുക",
+            "Reminders": "ഓർമ്മപ്പെടുത്തലുകൾ",
+            "RemindersLabel": "ഇനിപ്പറയുന്നതിലെ ഒരു ഇവന്റിനെക്കുറിച്ച് എനിക്ക് അറിയിക്കണം:",
+            "MoreInfo": "കൂടുതൽ വിവരങ്ങൾ",
+            "Registration": "രജിസ്ട്രേഷൻ",
+            "SetReminders": "ദയവായി റിമൈൻഡറുകൾ സജ്ജീകരിക്കുക",
+            "ReservationFee": "റിസർവേഷൻ ഫീസ്",
+            "AddParticipants": "പങ്കാളികളെ ചേർക്കുക",
+            "ManageReservation": "റിസർവേഷൻ കൈകാര്യം ചെയ്യുക",
+            "UpdateFutureReservations": "ഭാവിയിലെ എല്ലാ റിസർവേഷനുകളും ഒരേ രീതിയിൽ അപ്ഡേറ്റ് ചെയ്യണോ?",
+            "RecurringAdmin": "ആവർത്തന ക്രമീകരണങ്ങൾ",
+            "MakeReservation": "റിസർവേഷൻ നടത്തുക",
+            "StartLiveStream": "ലൈവ് സ്ട്രീം ചെയ്യാൻ ക്ലിക്ക് ചെയ്യുക",
+            "LiveStreamEnded": "തത്സമയ സ്ട്രീം അവസാനിച്ചു",
+            "ClickToViewRecording": "റെക്കോർഡിംഗ് കാണാൻ ക്ലിക്ക് ചെയ്യുക",
+            "Checkin": "പങ്കെടുക്കുന്നവരുടെ കോഡുകൾ സ്കാൻ ചെയ്യുക",
+            "Myqr": "ചെക്ക് - ഇൻ ചെയ്യുക",
+            "CloseEvent": {
+                "button": "ഇവന്റ് റദ്ദാക്കുക",
+                "confirm": {
+                    "text": {
+                        "Cancel": "ഈ ഇവന്റ് റദ്ദാക്കണമെന്ന് തീർച്ചയാണോ?",
+                        "Participant": "ഈ ഇവന്റിൽ 1 പങ്കാളിയുണ്ട്",
+                        "Participants": "ഈ ഇവന്റിൽ {{count}} പങ്കാളികൾ ഉണ്ട്",
+                        "Recurring": "ഈ സംഭവം ആവർത്തിക്കുന്നു. അതിന്റെ എല്ലാ ഭാവി സംഭവങ്ങളും റദ്ദാക്കാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ?"
+                    },
+                    "trip": {
+                        "Cancel": "ഈ ഇവന്റ് {{tripDirection}} യാത്ര റദ്ദാക്കാനും നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ?",
+                        "Passengers": "നിങ്ങളെ ആശ്രയിക്കുന്ന {{passengerCount}} യാത്രക്കാർ ഉണ്ട്.",
+                        "Title": "യാത്ര അടയ്ക്കുക"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "മുതൽ",
+                        "to": "വരെ",
+                        "from": "നിന്ന്"
+                    }
+                }
+            },
+            "Calendar": "കലണ്ടർ",
+            "Interests": "താൽപ്പര്യങ്ങൾ",
+            "Directions": "ദിശകൾ",
+            "TitleOfEvent": "ഇവന്റിന്റെ തലക്കെട്ട്:",
+            "OpenTo": "തുറക്കുക",
+            "GoingTo": "യിൽ ആയിരിക്കും",
+            "NotGoingTo": "ഉണ്ടാകില്ല",
+            "MaybeGoingTo": "ആയിരിക്കാം",
+            "AdminDontPay": "അഡ്മിൻ പണം നൽകേണ്ടതില്ല",
+            "PublisherDontPay": "പ്രസാധകർ പണം നൽകേണ്ടതില്ല",
+            "EmptyList": "ശൂന്യമായ ലിസ്റ്റ്",
+            "NeedToPayCredits": "പണമടയ്ക്കേണ്ടതുണ്ട്: <span>{{amount}} ക്രെഡിറ്റുകൾ<\/span>",
+            "PleaseJoinParticipants": "ദയവായി ചേരുക {{participant}}",
+            "YouReservingPlace": "നിങ്ങൾ നിങ്ങളുടെ സ്ഥലം റിസർവ് ചെയ്യും.",
+            "SelectIncludesToAdd": "ചേർക്കാൻ ഒന്നോ അതിലധികമോ {{TypeDisplayPlural}} തിരഞ്ഞെടുക്കുക:",
+            "YouHaveNotRegisteredAnyIncluded": "നിങ്ങൾ ഇതുവരെ {{TypeDisplayPlural}} ഒന്നും രജിസ്റ്റർ ചെയ്തിട്ടില്ല",
+            "Proceed": "തുടരുക",
+            "MakeChanges": "എന്റെ മാറ്റങ്ങൾ സംരക്ഷിക്കുക",
+            "CancelReservation": "മുഴുവൻ റിസർവേഷനും റദ്ദാക്കുക",
+            "Total": "ആകെ",
+            "RequiredRelatedParticipants": "ഈ ഇവന്റിന് പങ്കാളികൾ ആവശ്യമാണ്: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "ആവർത്തിച്ചുള്ള ക്രമീകരണങ്ങൾ അപ്ഡേറ്റ് ചെയ്യാൻ &quot;{{title}}&quot; ലഭ്യത എഡിറ്റ് ചെയ്യുക"
+        },
+        "composer": {
+            "SetLocation": "എന്റെ ലൊക്കേഷൻ സജ്ജമാക്കുക",
+            "SetInfoLink": "അധിക വിവരങ്ങളിലേക്ക് ലിങ്ക് സജ്ജീകരിക്കുക",
+            "ChooseAvailability": "ലഭ്യമായ സേവനം തിരഞ്ഞെടുക്കുക",
+            "ChooseActivity": "ഒരു പ്രവർത്തനം തിരഞ്ഞെടുക്കുക",
+            "ChoosePublisher": "പ്രസാധകനെ തിരഞ്ഞെടുക്കുക",
+            "Day": "ദിവസം",
+            "Starting": "തുടങ്ങുന്ന",
+            "Duration": "കാലാവധി",
+            "Hour": "മണിക്കൂർ",
+            "Hours": "മണിക്കൂറുകൾ",
+            "Minutes": "മിനിറ്റ്",
+            "Ending": "അവസാനിക്കുന്നു",
+            "People": "ആളുകൾ",
+            "Share": "പങ്കിടുക",
+            "Continue": "തുടരുക",
+            "Recurring": "ആവർത്തിക്കുന്നു",
+            "RecurringTitle": "ആവർത്തിച്ചുള്ള ദിവസങ്ങൾ",
+            "Daily": "ദിവസേന",
+            "Weekly": "പ്രതിവാരം",
+            "Monthly": "പ്രതിമാസ",
+            "SelectLocation": "ആദ്യം ഒരു ലൊക്കേഷൻ തിരഞ്ഞെടുക്കുക.",
+            "eventType": "ഇവന്റ് തരം",
+            "EditTitle": "രസകരമായ ഒരു തലക്കെട്ട് ചിന്തിക്കൂ...",
+            "SetTitle": "ഇവന്റ് ശീർഷകം സജ്ജീകരിക്കുക",
+            "ScheduleOnlineConference": "ഓൺലൈൻ കോൺഫറൻസ് ഷെഡ്യൂൾ ചെയ്യുക",
+            "SOCDescription": "കോൺഫറൻസ് ആരംഭ സമയവും അവസാനിക്കുന്ന സമയവും നിർവ്വചിക്കുക. ഈ കാലയളവിൽ ഇവന്റ് സന്ദർശിക്കുന്ന ഓരോ വ്യക്തിയും ഓൺലൈൻ കോൺഫറൻസിലേക്ക് സ്വയമേവ ബന്ധിപ്പിക്കും.",
+            "EndDate": "അവസാനിക്കുന്നു",
+            "location": {
+                "Title": "നിങ്ങളുടെ ലൊക്കേഷൻ സജ്ജമാക്കുക"
+            },
+            "interest": {
+                "Title": "ഒരു പ്രവർത്തനം തിരഞ്ഞെടുക്കുക",
+                "Filter": "തിരയൽ താൽപ്പര്യങ്ങൾ..."
+            },
+            "SetLivestream": "ലൈവ് സ്ട്രീം \/ വീഡിയോ കോൺഫറൻസിലേക്ക് ലിങ്ക് ഒട്ടിക്കുക"
+        },
+        "EventAlreadyClosed": "ഈ ഇവന്റ് ഇതിനകം അടച്ചു",
+        "addToCalendar": {
+            "permissions": {
+                "title": "കലണ്ടറിലേക്ക് ചേർക്കണോ?",
+                "prompt": "നിങ്ങളുടെ കലണ്ടറിലേക്ക് ഈ ഇവന്റ് ചേർക്കാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ?",
+                "yes": "അതെ",
+                "no": "ഇല്ല"
+            },
+            "dialog": {
+                "Title": "നിങ്ങളുടെ കലണ്ടറിലേക്ക് ഇവന്റ് ചേർക്കുക"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "ലഭ്യതകൾ",
+        "NewAvailability": {
+            "Title": "പുതിയ ലഭ്യത",
+            "SaveAvailability": "ലഭ്യത സംരക്ഷിക്കുക",
+            "SelectTemplate": "ദയവായി സേവനം തിരഞ്ഞെടുക്കുക",
+            "SelectLocation": "ദയവായി ലൊക്കേഷൻ തിരഞ്ഞെടുക്കുക",
+            "SelectArea": "ദയവായി ഏരിയ തിരഞ്ഞെടുക്കുക",
+            "Type": "ടൈപ്പ് ചെയ്യുക",
+            "Weekly": "പ്രതിവാരം",
+            "RecurringStartDate": "ആവർത്തിച്ചുള്ള ആരംഭ തീയതി",
+            "EndDate": "അവസാന ദിവസം",
+            "SelectTime": "സമയ സ്ലോട്ടുകൾ നിയന്ത്രിക്കുക",
+            "SelectTimeSlot": "ഒരു സമയ സ്ലോട്ട് തിരഞ്ഞെടുക്കുക",
+            "SelectTimeSlots": "ആവശ്യമുള്ള സമയ സ്ലോട്ടുകൾ തിരഞ്ഞെടുക്കുക",
+            "PeopleMin": "ഏറ്റവും കുറഞ്ഞ സന്ദർശകർ",
+            "PeopleMax": "പരമാവധി സന്ദർശകർ",
+            "PeopleLabels": "ലേബലുകൾ അനുവദിച്ചിരിക്കുന്നു",
+            "Next": "അടുത്തത്",
+            "Back": "തിരികെ"
+        },
+        "EditAvailability": "ലഭ്യത എഡിറ്റ് ചെയ്യുക",
+        "SetVisitors": "സന്ദർശകരെ സജ്ജമാക്കുക",
+        "Price": "വില",
+        "SelectAction": "ദയവായി പ്രവർത്തനം തിരഞ്ഞെടുക്കുക",
+        "OpenProfile": "പ്രൊഫൈൽ തുറക്കുക",
+        "RemoveStaff": "ജീവനക്കാരെ നീക്കം ചെയ്യുക",
+        "PleaseSelectTimeSlots": "ദയവായി സമയ സ്ലോട്ടുകൾ തിരഞ്ഞെടുക്കുക",
+        "ExceptionOccurred": "അപവാദം സംഭവിച്ചു",
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} ഇവന്റുകളിൽ പങ്കെടുക്കാൻ മതിയായ ക്രെഡിറ്റുകൾ ഇല്ല. നിങ്ങൾക്ക് {{needCredits}} ക്രെഡിറ്റുകൾ ആവശ്യമാണ്. വാങ്ങണം?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "തുടങ്ങുന്ന ദിവസം",
+            "endDate": "അവസാന ദിവസം",
+            "justOnce": "ഒരു പ്രാവശ്യം",
+            "justOnceWeekly": "ഈ ആഴ്ച മാത്രം",
+            "justOnceMonthly": "ഈ മാസം മാത്രം",
+            "recurring": "ആവർത്തിക്കുന്നു"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "സൗജന്യ ഇവന്റ്",
+            "optional": "ഓപ്ഷണൽ സംഭാവന",
+            "required": "ആവശ്യമായ പേയ്മെന്റ്"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "ഓപ്ഷണൽ സംഭാവന",
+            "required": "ആവശ്യമായ പേയ്മെന്റ്",
+            "paid": "പണം നൽകി"
+        },
+        "confirmationDialog": {
+            "title": "പണമടച്ചതിന്റെ സ്ഥിരീകരണം",
+            "content": "ഈ ഇവന്റിന് {{amount}} എന്ന ഓപ്‌ഷണൽ സംഭാവനയുണ്ട്.",
+            "button": "സംഭാവന ചെയ്യുക"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ഇതുവരെ ഇവന്റിന്റെ ഭാഗമായിട്ടില്ല. അവരെ ഒരു പങ്കാളിയായി ചേർക്കണോ?",
+        "userNotFound": "ഉപയോക്താവിനെ കണ്ടെത്തിയില്ല",
+        "confirmYes": "അതെ",
+        "confirmNo": "ഇല്ല"
+    },
+    "notifications": {
+        "EventActivityIn": "{{{stream.fields.title}}} എന്നതിലെ ഇവന്റ് പ്രവർത്തനം",
+        "RecurringRulesChanged": "{{{call 'message.getInstruction' 'eventTitle'}}} ഇവന്റിന്റെ ആവർത്തന നിയമങ്ങൾ മാറ്റി",
+        "ManageEmailSubscriptions": "നിങ്ങളുടെ ഇമെയിൽ സബ്‌സ്‌ക്രിപ്‌ഷനുകൾ നിയന്ത്രിക്കുക",
+        "IfUnsubscribe": "നിങ്ങൾക്ക് അൺസബ്സ്ക്രൈബ് ചെയ്യണമെങ്കിൽ",
+        "ClickHereToVisitEvent": "ഇവന്റ് സന്ദർശിക്കാൻ ദയവായി ഇവിടെ ക്ലിക്ക് ചെയ്യുക",
+        "Calendars\/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; ഇവന്റ് {{&call 'message.getInstruction' 'time'}}}-ൽ ആരംഭിക്കും"
+    },
+    "import": {
+        "linkTitle": "ഈ സ്പ്രെഡ്ഷീറ്റ് പൂരിപ്പിക്കുക",
+        "fileLabel": "സ്‌പ്രെഡ്‌ഷീറ്റ് അപ്‌ലോഡ് ചെയ്യുക:",
+        "importOptions": "ഓപ്ഷനുകൾ",
+        "importProgress": "പുരോഗതി",
+        "sampleCSV": "സാമ്പിൾ CSV ഡൗൺലോഡ് ചെയ്യുക",
+        "joinEventLabel": "ക്രമരഹിതമായ ഇവന്റിന് ഉപയോക്താക്കളുമായി ചേരുക",
+        "smsText": "ഹേയ്, ഞാൻ നിങ്ങൾക്ക് {{communityName}} എന്നതിലേക്ക് ഒരു ലിങ്ക് അയച്ചു. ദയവായി ഇത് പരിശോധിക്കുക.",
+        "emailSubject": "നിങ്ങൾക്ക് ഒരു ലിങ്ക് അയച്ചു",
+        "emailBody": "ഹേയ്, ഞാൻ നിങ്ങൾക്ക് {{communityName}} എന്നതിലേക്ക് ഒരു ക്ഷണം അയച്ചു. ദയവായി ഇത് പരിശോധിക്കുക.",
+        "fileNotFound": "ക്ഷമിക്കണം, CSV ഫയൽ കണ്ടെത്തിയില്ല.",
+        "fileEmpty": "ക്ഷമിക്കണം, CSV ഫയൽ ശൂന്യമാണ്.",
+        "fieldNotFound": "ആവശ്യമായ &quot;{{1}}&quot; ഫീൽഡ് കണ്ടെത്തിയില്ല",
+        "userIdNotFound": "ഉപയോക്താവ് ഉണ്ടെങ്കിലും ഐഡി ശൂന്യമാണ്",
+        "activateUsers": "ഉപയോക്താക്കൾക്ക് സജീവമാക്കൽ സന്ദേശം അയക്കണോ?",
+        "taskStreamInvalid": "ടാസ്ക് സ്ട്രീം അസാധുവാണ്",
+        "instructionsEmpty": "ടാസ്‌ക് സ്ട്രീം നിർദ്ദേശങ്ങൾ ശൂന്യമാണ്",
+        "interestsEmpty": "താൽപ്പര്യങ്ങൾ നേടാൻ കഴിയില്ല",
+        "interestAbsent": "പലിശ {{1}} കണ്ടെത്തിയില്ല",
+        "complete": "പൂർത്തിയാക്കുക",
+        "errorLine": "ലൈൻ {{1}}",
+        "errorsTitle": "പിശകുകൾ സംഭവിച്ചു",
+        "communityUsers": "ഇത് കമ്മ്യൂണിറ്റികളുടെ പട്ടികയാണ്"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "ആളുകൾക്ക് പങ്കെടുക്കാൻ കഴിയുന്ന ഒരു ഇവന്റിനെ പ്രതിനിധീകരിക്കുന്നു",
+            "displayType": "സംഭവം"
+        },
+        "Calendars\/recurring": {
+            "description": "ആനുകാലികമായി ആവർത്തിക്കാൻ ഉദ്ദേശിക്കുന്ന സ്ട്രീമുകളുമായി ബന്ധപ്പെടുത്താൻ ഉപയോഗിക്കുന്നു",
+            "displayType": "ആവർത്തിച്ചുള്ള ഇവന്റ്"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "സ്ലോട്ട് ചേർക്കുക",
+        "StartTime": "ആരംഭ സമയം",
+        "EndTime": "അവസാന സമയം",
+        "Save": "രക്ഷിക്കും",
+        "AddTimeSlot": "ടൈം സ്ലോട്ട് ചേർക്കുക",
+        "CopyFromDay": "ദിവസം മുതൽ പകർത്തുക",
+        "Nearest": "ഏറ്റവും അടുത്തുള്ളത്",
+        "Today": "ഇന്ന്",
+        "Tomorrow": "നാളെ",
+        "AfterTomorrow": "നാളെ കഴിഞ്ഞ്"
+    }
+}

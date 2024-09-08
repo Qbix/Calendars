@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "Ian",
+        "Feb": "Feb",
+        "Mar": "Mar",
+        "Apr": "Apr",
+        "May": "Mei",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Aug",
+        "Sep": "Sep",
+        "Oct": "Oct",
+        "Nov": "Nov",
+        "Dec": "Dek"
+    },
+    "monthsLong": {
+        "Jan": "Ianuali",
+        "Feb": "Pepeluali",
+        "Mar": "Malaki",
+        "Apr": "Apelila",
+        "May": "Mei",
+        "Jun": "Iune",
+        "Jul": "Iulai",
+        "Aug": "Aukake",
+        "Sep": "Kepakemapa",
+        "Oct": "Okakopa",
+        "Nov": "Nowemapa",
+        "Dec": "Kekemapa"
+    },
+    "weekdays": {
+        "Sun": "Lā",
+        "Mon": "Mon",
+        "Tue": "Poalua",
+        "Wed": "Pōʻalua",
+        "Thu": "Poaha",
+        "Fri": "Pōʻalima",
+        "Sat": "Sat"
+    },
+    "weekdaysLong": {
+        "Sun": "Lāpule",
+        "Mon": "PōʻakahiEnglish",
+        "Tue": "Pōʻalua",
+        "Wed": "Pōʻakolu",
+        "Thu": "Pōʻahā",
+        "Fri": "Pōʻalima",
+        "Sat": "Pōʻaono"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "E hoʻolālā i ka hanana hou"
+        },
+        "tool": {
+            "HostedBy": "Hoʻokipa ʻia e {{name}}",
+            "Name": "Inoa",
+            "AreYouIn": "Aia &#39;oe i laila?",
+            "Yes": "ae",
+            "No": "Aʻole",
+            "Ok": "ʻAe",
+            "Cancel": "Hoʻopau",
+            "Maybe": "Malia paha",
+            "Conversation": "Kūkākūkā",
+            "Promote": "Hoʻolaha i kēia hanana",
+            "Reminders": "Hoʻomanaʻo",
+            "RemindersLabel": "Makemake au e hoʻolaha ʻia no kahi hanana ma:",
+            "MoreInfo": "ʻIke hou aku",
+            "Registration": "Kakau inoa",
+            "SetReminders": "E ʻoluʻolu e hoʻonoho i nā mea hoʻomanaʻo",
+            "ReservationFee": "Uku Hoopaa",
+            "AddParticipants": "Hoʻohui i nā mea komo",
+            "ManageReservation": "E mālama i ka mālama ʻana",
+            "UpdateFutureReservations": "Makemake ʻoe e hōʻano hou i nā hoʻopaʻa ʻana a pau e hiki mai ana ma ke ʻano like?",
+            "RecurringAdmin": "Hoʻonohonoho hou",
+            "MakeReservation": "Hana Hoʻopaʻa",
+            "StartLiveStream": "Kaomi iā Live Stream",
+            "LiveStreamEnded": "Ua pau ke kahawai ola",
+            "ClickToViewRecording": "kaomi e nānā i ka hoʻopaʻa ʻana",
+            "Checkin": "E ʻimi i nā code o ka mea hele",
+            "Myqr": "Hōʻoiaʻiʻo",
+            "CloseEvent": {
+                "button": "Hoʻopau i ka hanana",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Makemake ʻoe e kāpae i kēia hanana?",
+                        "Participant": "He 1 ka mea komo ma keia hanana",
+                        "Participants": "Aia {{count}} i komo i keia hanana",
+                        "Recurring": "Ke hoʻomau nei kēia hanana. Makemake ʻoe e hoʻopau pū i kona mau manawa e hiki mai ana?"
+                    },
+                    "trip": {
+                        "Cancel": "Makemake ʻoe e kāpae i kāu huakaʻi {{tripDirection}} i kēia hanana?",
+                        "Passengers": "Aia he {{passengerCount}} mau kaʻa e hilinaʻi nei iā ʻoe.",
+                        "Title": "Hoʻopau i ka huakaʻi"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "MAI",
+                        "to": "i",
+                        "from": "mai"
+                    }
+                }
+            },
+            "Calendar": "Kalena",
+            "Interests": "Nā mea hoihoi",
+            "Directions": "Nā kuhikuhi",
+            "TitleOfEvent": "Poʻo inoa o ka hanana:",
+            "OpenTo": "Wehe i",
+            "GoingTo": "aia ma",
+            "NotGoingTo": "ʻaʻole ma",
+            "MaybeGoingTo": "aia paha ma",
+            "AdminDontPay": "ʻAʻole pono ke Admin e uku",
+            "PublisherDontPay": "ʻAʻole pono ka mea hoʻopuka e uku",
+            "EmptyList": "Papa inoa hakahaka",
+            "NeedToPayCredits": "Pono e uku: <span>{{amount}} aie<\/span>",
+            "PleaseJoinParticipants": "E ʻoluʻolu e hui pū me {{participant}}",
+            "YouReservingPlace": "E mālama ʻoe i kou wahi.",
+            "SelectIncludesToAdd": "E koho i hoʻokahi a ʻoi aku paha {{TypeDisplayPlural}} e hoʻohui:",
+            "YouHaveNotRegisteredAnyIncluded": "ʻAʻole ʻoe i hoʻopaʻa inoa i kekahi {{TypeDisplayPlural}}.",
+            "Proceed": "E hoʻomau",
+            "MakeChanges": "E mālama i kaʻu mau hoʻololi",
+            "CancelReservation": "Hoʻopau i ke kau ʻana holoʻokoʻa",
+            "Total": "Huina",
+            "RequiredRelatedParticipants": "Pono kēia hanana i nā mea komo: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "E ʻoluʻolu e hoʻoponopono i ka loaʻa ʻana o &quot;{{title}}&quot; e hoʻololi i nā hoʻonohonoho hoʻomau"
+        },
+        "composer": {
+            "SetLocation": "Hoʻonoho i koʻu wahi",
+            "SetInfoLink": "E hoʻonoho i ka loulou i ka ʻike hou aku",
+            "ChooseAvailability": "E koho i ka lawelawe i loaʻa",
+            "ChooseActivity": "E koho i kahi hana",
+            "ChoosePublisher": "E koho i ka mea hoʻopuka",
+            "Day": "Lā",
+            "Starting": "E hoomaka ana",
+            "Duration": "Ka lōʻihi",
+            "Hour": "Hola",
+            "Hours": "Nā hola",
+            "Minutes": "Nā minuke",
+            "Ending": "Hoʻopau",
+            "People": "Kanaka",
+            "Share": "Kaʻana like",
+            "Continue": "E hoʻomau",
+            "Recurring": "Ke hoʻomau nei",
+            "RecurringTitle": "Nā lā hou",
+            "Daily": "ʻO kēlā me kēia lā",
+            "Weekly": "ʻO kēlā me kēia pule",
+            "Monthly": "ʻO kēlā me kēia mahina",
+            "SelectLocation": "E koho mua i kahi.",
+            "eventType": "ʻAno Hanana",
+            "EditTitle": "E noʻonoʻo i kahi poʻo inoa hoihoi...",
+            "SetTitle": "E ʻoluʻolu e hoʻonoho i ke poʻo inoa hanana",
+            "ScheduleOnlineConference": "Hoʻonohonoho i ka ʻaha kūkā ma ka pūnaewele",
+            "SOCDescription": "E ʻoluʻolu e wehewehe i ka manawa hoʻomaka a hoʻopau. ʻO kēlā me kēia kanaka e kipa aku i ka hanana i kēia manawa e hoʻopili ʻokoʻa i ka hālāwai kūkā pūnaewele.",
+            "EndDate": "Hoʻopau",
+            "location": {
+                "Title": "E hoʻonoho i kou wahi"
+            },
+            "interest": {
+                "Title": "E koho i kahi hana",
+                "Filter": "Huli i nā mea hoihoi..."
+            },
+            "SetLivestream": "Hoʻopili i ka loulou i ka livestream \/ videoconference"
+        },
+        "EventAlreadyClosed": "Ua pani ʻia kēia hanana",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Pākuʻi i ka Kalena?",
+                "prompt": "Makemake ʻoe e hoʻohui i kēia hanana i kāu kalena?",
+                "yes": "ae",
+                "no": "Aʻole"
+            },
+            "dialog": {
+                "Title": "Hoʻohui i ka hanana i kāu Kalena"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Loaʻa",
+        "NewAvailability": {
+            "Title": "Loaʻa Hou",
+            "SaveAvailability": "E mālama i ka loaʻa",
+            "SelectTemplate": "E ʻoluʻolu e koho i ka lawelawe",
+            "SelectLocation": "E ʻoluʻolu e koho i kahi",
+            "SelectArea": "E ʻoluʻolu e koho ʻĀpana",
+            "Type": "ʻAno",
+            "Weekly": "ʻO kēlā me kēia pule",
+            "RecurringStartDate": "Ka lā hoʻomaka hou",
+            "EndDate": "Lā Hoʻopau",
+            "SelectTime": "Hoʻoponopono i nā kau manawa",
+            "SelectTimeSlot": "E koho i kahi kau manawa",
+            "SelectTimeSlots": "E koho i nā kau manawa i makemake ʻia",
+            "PeopleMin": "Nā malihini liʻiliʻi",
+            "PeopleMax": "Ka nui o na malihini kipa",
+            "PeopleLabels": "ʻAe ʻia nā lepili",
+            "Next": "Aʻe",
+            "Back": "Ke kua"
+        },
+        "EditAvailability": "Hoʻoponopono i ka loaʻa",
+        "SetVisitors": "Hoʻonoho i nā malihini",
+        "Price": "Kumukuai",
+        "SelectAction": "E ʻoluʻolu e koho i ka hana",
+        "OpenProfile": "Wehe ʻaoʻao",
+        "RemoveStaff": "Wehe i nā limahana",
+        "PleaseSelectTimeSlots": "E ʻoluʻolu e koho i nā kau manawa",
+        "ExceptionOccurred": "Ua kū ʻole",
+        "NotEnoughCreditsToParticipateEvents": "ʻAʻole lawa nā ʻaiʻē e komo i nā hanana {{eventsAmount}}. Pono ʻoe i {{needCredits}} hōʻaiʻē. Makemake e kūʻai?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "lā hoʻomaka",
+            "endDate": "lā hoʻopau",
+            "justOnce": "Hoʻokahi wale nō",
+            "justOnceWeekly": "ʻO kēia pule wale nō",
+            "justOnceMonthly": "ʻO kēia mahina wale nō",
+            "recurring": "Ke hoʻomau nei"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Hana manuahi",
+            "optional": "Hāʻawi koho",
+            "required": "Uku koiia"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Hāʻawi koho",
+            "required": "Uku koiia",
+            "paid": "uku"
+        },
+        "confirmationDialog": {
+            "title": "Hōʻoiaʻiʻo uku",
+            "content": "Loaʻa i kēia hanana kahi hāʻawi koho o {{amount}}.",
+            "button": "Hāʻawi"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "ʻAʻole ʻo {{1}} i ʻāpana o ka hanana. Makemake ʻoe e hoʻohui iā lākou ma ke ʻano he mea komo?",
+        "userNotFound": "ʻAʻole i loaʻa ka mea hoʻohana",
+        "confirmYes": "ae",
+        "confirmNo": "Aʻole"
+    },
+    "notifications": {
+        "EventActivityIn": "Hana hanana ma {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Hoʻololi ʻia nā lula no ka hanana {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "mālama i kāu leka uila",
+        "IfUnsubscribe": "Inā makemake ʻoe e haʻalele",
+        "ClickHereToVisitEvent": "E ʻoluʻolu e kaomi maanei e kipa i ka hanana",
+        "Calendars\/reminder": "E hoʻomaka ana ka hanana &quot;{{{call 'message.getInstruction' 'name'}}&quot; i {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "E hoʻopiha i kēia Pāhaʻi",
+        "fileLabel": "Hoʻouka i ka Papapalapala:",
+        "importOptions": "Nā koho",
+        "importProgress": "Holomua",
+        "sampleCSV": "Hoʻoiho i ka laʻana CSV",
+        "joinEventLabel": "E hui pū i nā mea hoʻohana i ka hanana hanana",
+        "smsText": "ʻAe, ua hoʻouna aku nei au iā ʻoe i kahi loulou i {{communityName}}. E ʻoluʻolu e nānā.",
+        "emailSubject": "Ua hoʻouna wale aku i kahi loulou",
+        "emailBody": "ʻAe, ua hoʻouna aku nei au iā ʻoe i kono kono iā {{communityName}}. E ʻoluʻolu e nānā.",
+        "fileNotFound": "E kala mai, ʻaʻole i loaʻa ka faila CSV.",
+        "fileEmpty": "E kala mai, nele ka waihona CSV.",
+        "fieldNotFound": "ʻAʻole i loaʻa ka māla makemake &quot;{{1}}&quot;.",
+        "userIdNotFound": "Aia ka mea hoʻohana akā ʻaʻohe id",
+        "activateUsers": "hoʻouna i ka leka hoʻāla i nā mea hoʻohana?",
+        "taskStreamInvalid": "hewa ʻole ke kahawai hana",
+        "instructionsEmpty": "ʻAʻohe ʻōlelo kuhikuhi kahawai hana",
+        "interestsEmpty": "ʻaʻole hiki ke loaʻa nā hoihoi",
+        "interestAbsent": "ʻAʻole i loaʻa ka hoihoi {{1}}.",
+        "complete": "Paʻa",
+        "errorLine": "laina {{1}}",
+        "errorsTitle": "Ua hala nā hewa",
+        "communityUsers": "ʻO kēia ka papa inoa o nā kaiāulu"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Hōʻike i kahi hanana e hiki ai i nā kānaka ke komo",
+            "displayType": "Hanana"
+        },
+        "Calendars\/recurring": {
+            "description": "Hoʻohana ʻia no ka pili ʻana i nā kahawai i manaʻo ʻia e hana hou i kēlā me kēia manawa",
+            "displayType": "Hana Hou"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Pākuʻi Slot",
+        "StartTime": "Manawa Hoomaka",
+        "EndTime": "Manawa Hoopau",
+        "Save": "Mālama",
+        "AddTimeSlot": "Hoʻohui i ka manawa manawa",
+        "CopyFromDay": "Kope mai ka lā",
+        "Nearest": "Kokoke",
+        "Today": "I kēia lā",
+        "Tomorrow": "Āpōpō",
+        "AfterTomorrow": "Ma hope o ka lā ʻapōpō"
+    }
+}

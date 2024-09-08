@@ -1,0 +1,166 @@
+.Calendars_service_browser_tool {
+	padding: 20px 0;
+}
+.Calendars_service_browser_tool h3 {margin: 5px 0;}
+.Calendars_service_browser_tool .Calendars_service_browser_payment_info {
+	text-transform: capitalize;
+}
+.Calendars_service_browser_tool .Calendars_step {
+	width: 100%;
+	padding: 5px 5px 10px 50px;
+	box-sizing: border-box;
+	vertical-align: middle; min-height: 40px;
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	background-position: left 5px;
+	position: relative;
+}
+.Calendars_composer_availabilities .Q_dialog_content,
+.Calendars_composer_publisher .Q_dialog_content {
+	padding: 5px;
+	overflow-x: hidden;
+	min-width: 300px;
+}
+.Calendars_composer_availabilities .Q_dialog_content .Streams_participants_tool .Streams_participants_invite {
+	display: none;
+}
+.Calendars_service_browser_title {
+	margin-top: 10px;
+}
+.Calendars_service_browser_tool .Calendars_step::before {
+	font-family: 'qplatform-calendars' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #444;
+    font-size: 32px;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+}
+.Calendars_service_browser_tool .Calendars_step.Calendars_service_browser_publisher::before {
+	font-family: 'qplatform-communities' !important;
+	content: "\e91b"; color: #3b31d2;
+}
+.Calendars_service_browser_tool .Calendars_step.Calendars_service_browser_availability::before {
+	content: "\e90e"; color: #bf0a07;
+}
+.Calendars_service_browser_tool .Calendars_step.Calendars_service_browser_location::before {
+	content: "\e904";
+}
+.Calendars_service_browser_tool .Calendars_step.Calendars_service_browser_livestream:before {
+	content: "\e90b";
+	top: 0;
+}
+.Calendars_service_browser_tool .Calendars_step.Calendars_service_browser_time::before {
+	content: "\e908";
+}
+.Calendars_service_browser_tool .Calendars_step.Calendars_service_browser_privacy::before {
+	content: "\e905"; color: #394ad5; top: 0;
+}
+.Calendars_service_browser_tool .Calendars_step.Calendars_service_browser_payment::before {
+	content: "\e909"; color: #e5891e; top: 0;
+}
+.Calendars_composer_payment_amount {
+	margin: 5px 0 0 0;
+}
+.Calendars_composer_payment_amount_input, .Calendars_composer_payment_decimal_input {
+	width: 90px;
+	border: none !important;
+	background-color: #fff0 !important;
+}
+
+.Calendars_composer_payment_amount_input {
+	text-align: right;
+	margin-right: 0;
+	padding-right: 1px !important;
+}
+
+.Calendars_composer_payment_decimal_input {
+	padding-left: 1px !important;
+	margin-left: 0;
+	width: 28px;
+}
+
+.Calendars_composer_payment_amount_input_wrapper {
+	vertical-align: -10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	overflow: hidden;
+	border-bottom: 1px solid #aaa;
+	background-color: #ffffff;
+	display: inline-block;
+}
+.Calendars_composer_payment_amount_input_wrapper.warn {
+	background-color: #ffb1ac;
+}
+
+.Calendars_service_browser_tool .Q_button {
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.Calendars_service_browser_tool .Calendars_service_browser_availability_button,
+.Calendars_service_browser_tool .Calendars_service_browser_location_button,
+.Calendars_service_browser_tool .Calendars_service_browser_publisher_button {
+	width: 100%;
+	cursor: pointer;
+}
+
+.Q_button.Streams_aspect_publisher {
+	height: 37px;
+	padding: 0;
+	background-color: #3b31d2;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b31d2', endColorstr='#29248E');
+	background: -webkit-gradient(linear, left top, left bottom, from(#3b31d2), to(#29248E));
+	background: -moz-linear-gradient(top, #3b31d2, #29248E);
+	color: white;
+}
+.Q_button.Streams_aspect_publisher .Users_avatar_icon {
+	height: 33px;
+	width: auto;
+}
+.Calendars_service_browser_tool .Calendars_service_browser_date {
+	margin: 2px; padding: 2px; width: 150px; text-align: center;
+	background: white; background: rgba(255, 255, 255, 0.5);
+	border-radius: 3px; border: 1px solid #ccc; cursor: pointer;
+}
+.Calendars_service_browser_tool .Calendars_timeslots_tool .Calendars_timeslot {margin-top: 0;}
+.Calendars_service_browser_tool input,
+.Calendars_service_browser_tool select {
+	font-size: 16px;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 4px;
+}
+.Calendars_service_browser_tool .Calendars_minmax {
+	height: 33px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.Calendars_service_browser_tool .Calendars_minmax[name=peopleMin] {
+	width: 40px;
+}
+.Calendars_service_browser_tool .Calendars_minmax[name=peopleMax] {
+	width: 50px;
+}
+.Calendars_service_browser_tool .Calendars_service_browser_share {
+    padding: 10px 50px 10px 50px;
+    font-weight: bold;
+    font-size: 20px;
+	margin: 0 auto;
+}
+.Calendars_service_browser .Calendars_step.Q_buttons {
+	padding: 5px;
+}
+.Calendars_composer_publisher .Q_dialog_content .Users_avatar_tool {
+	margin-right: 5px;
+}
+.Calendars_service_browser_tool .Calendars_recurring_dialog_controls {
+	margin-bottom: 10px;
+}

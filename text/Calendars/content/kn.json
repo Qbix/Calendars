@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "ಜನವರಿ",
+        "Feb": "ಫೆಬ್ರವರಿ",
+        "Mar": "ಮಾರ್",
+        "Apr": "ಎಪ್ರಿಲ್",
+        "May": "ಮೇ",
+        "Jun": "ಜೂನ್",
+        "Jul": "ಜುಲೈ",
+        "Aug": "ಆಗಸ್ಟ್",
+        "Sep": "ಸೆ",
+        "Oct": "ಅಕ್ಟೋಬರ್",
+        "Nov": "ನವೆಂಬರ್",
+        "Dec": "ಡಿ"
+    },
+    "monthsLong": {
+        "Jan": "ಜನವರಿ",
+        "Feb": "ಫೆಬ್ರವರಿ",
+        "Mar": "ಮಾರ್ಚ್",
+        "Apr": "ಏಪ್ರಿಲ್",
+        "May": "ಮೇ",
+        "Jun": "ಜೂನ್",
+        "Jul": "ಜುಲೈ",
+        "Aug": "ಆಗಸ್ಟ್",
+        "Sep": "ಸೆಪ್ಟೆಂಬರ್",
+        "Oct": "ಅಕ್ಟೋಬರ್",
+        "Nov": "ನವೆಂಬರ್",
+        "Dec": "ಡಿಸೆಂಬರ್"
+    },
+    "weekdays": {
+        "Sun": "ಸೂರ್ಯ",
+        "Mon": "ಸೋಮ",
+        "Tue": "ಮಂಗಳವಾರ",
+        "Wed": "ಬುಧ",
+        "Thu": "ಗುರು",
+        "Fri": "ಶುಕ್ರ",
+        "Sat": "ಶನಿ"
+    },
+    "weekdaysLong": {
+        "Sun": "ಭಾನುವಾರ",
+        "Mon": "ಸೋಮವಾರ",
+        "Tue": "ಮಂಗಳವಾರ",
+        "Wed": "ಬುಧವಾರ",
+        "Thu": "ಗುರುವಾರ",
+        "Fri": "ಶುಕ್ರವಾರ",
+        "Sat": "ಶನಿವಾರ"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "ಹೊಸ ಈವೆಂಟ್ ಅನ್ನು ಯೋಜಿಸಿ"
+        },
+        "tool": {
+            "HostedBy": "{{name}} ಮೂಲಕ ಹೋಸ್ಟ್ ಮಾಡಲಾಗಿದೆ",
+            "Name": "ಹೆಸರು",
+            "AreYouIn": "ನೀವು ಒಳಗೆ ಇದ್ದೀರಾ?",
+            "Yes": "ಹೌದು",
+            "No": "ಸಂ",
+            "Ok": "ಸರಿ",
+            "Cancel": "ರದ್ದುಮಾಡು",
+            "Maybe": "ಇರಬಹುದು",
+            "Conversation": "ಸಂಭಾಷಣೆ",
+            "Promote": "ಈ ಘಟನೆಯನ್ನು ಪ್ರಚಾರ ಮಾಡಿ",
+            "Reminders": "ಜ್ಞಾಪನೆಗಳು",
+            "RemindersLabel": "ನಾನು ಈವೆಂಟ್‌ನ ಕುರಿತು ತಿಳಿಸಲು ಬಯಸುತ್ತೇನೆ:",
+            "MoreInfo": "ಹೆಚ್ಚಿನ ಮಾಹಿತಿ",
+            "Registration": "ನೋಂದಣಿ",
+            "SetReminders": "ದಯವಿಟ್ಟು ಜ್ಞಾಪನೆಗಳನ್ನು ಹೊಂದಿಸಿ",
+            "ReservationFee": "ಮೀಸಲಾತಿ ಶುಲ್ಕ",
+            "AddParticipants": "ಭಾಗವಹಿಸುವವರನ್ನು ಸೇರಿಸಿ",
+            "ManageReservation": "ಮೀಸಲಾತಿ ನಿರ್ವಹಿಸಿ",
+            "UpdateFutureReservations": "ನೀವು ಎಲ್ಲಾ ಭವಿಷ್ಯದ ಕಾಯ್ದಿರಿಸುವಿಕೆಗಳನ್ನು ಅದೇ ರೀತಿಯಲ್ಲಿ ನವೀಕರಿಸಲು ಬಯಸುವಿರಾ?",
+            "RecurringAdmin": "ಮರುಕಳಿಸುವ ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+            "MakeReservation": "ಮೀಸಲಾತಿ ಮಾಡಿ",
+            "StartLiveStream": "ಲೈವ್ ಸ್ಟ್ರೀಮ್ ಮಾಡಲು ಕ್ಲಿಕ್ ಮಾಡಿ",
+            "LiveStreamEnded": "ಲೈವ್ ಸ್ಟ್ರೀಮ್ ಕೊನೆಗೊಂಡಿದೆ",
+            "ClickToViewRecording": "ರೆಕಾರ್ಡಿಂಗ್ ವೀಕ್ಷಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ",
+            "Checkin": "ಪಾಲ್ಗೊಳ್ಳುವವರ ಕೋಡ್‌ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ",
+            "Myqr": "ಚೆಕ್ ಇನ್",
+            "CloseEvent": {
+                "button": "ಈವೆಂಟ್ ರದ್ದುಮಾಡಿ",
+                "confirm": {
+                    "text": {
+                        "Cancel": "ಈ ಈವೆಂಟ್ ಅನ್ನು ರದ್ದುಗೊಳಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?",
+                        "Participant": "ಈ ಈವೆಂಟ್‌ನಲ್ಲಿ 1 ಭಾಗವಹಿಸುವವರು ಇದ್ದಾರೆ",
+                        "Participants": "ಈ ಈವೆಂಟ್‌ನಲ್ಲಿ {{count}} ಭಾಗವಹಿಸುವವರು ಇದ್ದಾರೆ",
+                        "Recurring": "ಈ ಘಟನೆ ಮರುಕಳಿಸುತ್ತಿದೆ. ನೀವು ಅದರ ಎಲ್ಲಾ ಭವಿಷ್ಯದ ನಿದರ್ಶನಗಳನ್ನು ಸಹ ರದ್ದುಗೊಳಿಸಲು ಬಯಸುವಿರಾ?"
+                    },
+                    "trip": {
+                        "Cancel": "ಈ ಈವೆಂಟ್‌ನ {{tripDirection}} ಪ್ರವಾಸವನ್ನು ಸಹ ರದ್ದುಗೊಳಿಸಲು ನೀವು ಬಯಸುವಿರಾ?",
+                        "Passengers": "{{passengerCount}} ಪ್ರಯಾಣಿಕರು ನಿಮ್ಮನ್ನು ಅವಲಂಬಿಸಿದ್ದಾರೆ.",
+                        "Title": "ಪ್ರವಾಸವನ್ನು ಮುಚ್ಚಿ"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "ಇಂದ",
+                        "to": "ಗೆ",
+                        "from": "ನಿಂದ"
+                    }
+                }
+            },
+            "Calendar": "ಕ್ಯಾಲೆಂಡರ್",
+            "Interests": "ಆಸಕ್ತಿಗಳು",
+            "Directions": "ನಿರ್ದೇಶನಗಳು",
+            "TitleOfEvent": "ಘಟನೆಯ ಶೀರ್ಷಿಕೆ:",
+            "OpenTo": "ಗೆ ತೆರೆಯಿರಿ",
+            "GoingTo": "ನಲ್ಲಿ ಇರುತ್ತದೆ",
+            "NotGoingTo": "ನಲ್ಲಿ ಇರುವುದಿಲ್ಲ",
+            "MaybeGoingTo": "ನಲ್ಲಿ ಇರಬಹುದು",
+            "AdminDontPay": "ನಿರ್ವಾಹಕರು ಪಾವತಿಸುವ ಅಗತ್ಯವಿಲ್ಲ",
+            "PublisherDontPay": "ಪ್ರಕಾಶಕರು ಪಾವತಿಸುವ ಅಗತ್ಯವಿಲ್ಲ",
+            "EmptyList": "ಖಾಲಿ ಪಟ್ಟಿ",
+            "NeedToPayCredits": "ಪಾವತಿಸುವ ಅಗತ್ಯವಿದೆ: <span>{{amount}} ಕ್ರೆಡಿಟ್‌ಗಳು<\/span>",
+            "PleaseJoinParticipants": "ದಯವಿಟ್ಟು ಸೇರಿಕೊಳ್ಳಿ {{participant}}",
+            "YouReservingPlace": "ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ನೀವು ಕಾಯ್ದಿರಿಸುತ್ತೀರಿ.",
+            "SelectIncludesToAdd": "ಸೇರಿಸಲು ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನದನ್ನು ಆಯ್ಕೆಮಾಡಿ {{TypeDisplayPlural}}:",
+            "YouHaveNotRegisteredAnyIncluded": "ನೀವು ಇನ್ನೂ ಯಾವುದೇ {{TypeDisplayPlural}} ಅನ್ನು ನೋಂದಾಯಿಸಿಲ್ಲ",
+            "Proceed": "ಮುಂದುವರೆಯಲು",
+            "MakeChanges": "ನನ್ನ ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿ",
+            "CancelReservation": "ಸಂಪೂರ್ಣ ಕಾಯ್ದಿರಿಸುವಿಕೆಯನ್ನು ರದ್ದುಗೊಳಿಸಿ",
+            "Total": "ಒಟ್ಟು",
+            "RequiredRelatedParticipants": "ಈ ಈವೆಂಟ್‌ಗೆ ಭಾಗವಹಿಸುವವರು ಅಗತ್ಯವಿದೆ: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "ಮರುಕಳಿಸುವ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ನವೀಕರಿಸಲು &quot;{{title}}&quot; ಲಭ್ಯತೆಯನ್ನು ಸಂಪಾದಿಸಿ",
+            "Presentation": "ಪ್ರಸ್ತುತಿ",
+            "YouAreNotParticipated": "ನೀವು ಈವೆಂಟ್‌ನಲ್ಲಿ ಭಾಗವಹಿಸುವವರಲ್ಲ",
+            "LiveStreamStarted": "ಲೈವ್ ಸ್ಟ್ರೀಮ್ ಪ್ರಾರಂಭವಾಗಿದೆ",
+            "WebRTCStarted": "ಟೆಲಿಕಾನ್ಫರೆನ್ಸ್ ಪ್ರಾರಂಭವಾಯಿತು",
+            "WebRTCEnded": "ಟೆಲಿಕಾನ್ಫರೆನ್ಸ್ ಮುಗಿದಿದೆ"
+        },
+        "composer": {
+            "SetLocation": "ನನ್ನ ಸ್ಥಳವನ್ನು ಹೊಂದಿಸಿ",
+            "SetInfoLink": "ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿಗೆ ಲಿಂಕ್ ಅನ್ನು ಹೊಂದಿಸಿ",
+            "ChooseAvailability": "ಲಭ್ಯವಿರುವ ಸೇವೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+            "ChooseActivity": "ಒಂದು ಚಟುವಟಿಕೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+            "ChoosePublisher": "ಪ್ರಕಾಶಕರನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+            "Day": "ದಿನ",
+            "Starting": "ಆರಂಭಿಕ",
+            "Duration": "ಅವಧಿ",
+            "Hour": "ಗಂಟೆ",
+            "Hours": "ಗಂಟೆಗಳು",
+            "Minutes": "ನಿಮಿಷಗಳು",
+            "Ending": "ಕೊನೆಗೊಳ್ಳುತ್ತಿದೆ",
+            "People": "ಜನರು",
+            "Share": "ಹಂಚಿಕೊಳ್ಳಿ",
+            "Continue": "ಮುಂದುವರಿಸಿ",
+            "Recurring": "ಮರುಕಳಿಸುವ",
+            "RecurringTitle": "ಮರುಕಳಿಸುವ ದಿನಗಳು",
+            "Daily": "ಪ್ರತಿದಿನ",
+            "Weekly": "ಸಾಪ್ತಾಹಿಕ",
+            "Monthly": "ಮಾಸಿಕ",
+            "SelectLocation": "ದಯವಿಟ್ಟು ಮೊದಲು ಸ್ಥಳವನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+            "eventType": "ಈವೆಂಟ್ ಪ್ರಕಾರ",
+            "EditTitle": "ಆಸಕ್ತಿದಾಯಕ ಶೀರ್ಷಿಕೆಯನ್ನು ಯೋಚಿಸಿ ...",
+            "SetTitle": "ದಯವಿಟ್ಟು ಈವೆಂಟ್ ಶೀರ್ಷಿಕೆಯನ್ನು ಹೊಂದಿಸಿ",
+            "ScheduleOnlineConference": "ಆನ್‌ಲೈನ್ ಸಮ್ಮೇಳನವನ್ನು ನಿಗದಿಪಡಿಸಿ",
+            "SOCDescription": "ದಯವಿಟ್ಟು ಸಮ್ಮೇಳನದ ಪ್ರಾರಂಭ ಮತ್ತು ಅಂತಿಮ ಸಮಯವನ್ನು ವಿವರಿಸಿ. ಈ ಅವಧಿಯಲ್ಲಿ ಈವೆಂಟ್‌ಗೆ ಭೇಟಿ ನೀಡುವ ಪ್ರತಿಯೊಬ್ಬ ವ್ಯಕ್ತಿಯು ಆನ್‌ಲೈನ್ ಕಾನ್ಫರೆನ್ಸ್‌ಗೆ ಸ್ವಯಂ ಸಂಪರ್ಕ ಹೊಂದುತ್ತಾರೆ.",
+            "EndDate": "ಅಂತ್ಯ",
+            "location": {
+                "Title": "ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ಹೊಂದಿಸಿ"
+            },
+            "interest": {
+                "Title": "ಒಂದು ಚಟುವಟಿಕೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+                "Filter": "ಹುಡುಕಾಟ ಆಸಕ್ತಿಗಳು..."
+            },
+            "SetLivestream": "ಲೈವ್‌ಸ್ಟ್ರೀಮ್ \/ ವಿಡಿಯೋ ಕಾನ್ಫರೆನ್ಸ್‌ಗೆ ಲಿಂಕ್ ಅನ್ನು ಅಂಟಿಸಿ",
+            "Locally": "ಸ್ಥಳೀಯವಾಗಿ",
+            "EventInfoLink": "ಈವೆಂಟ್ ಮಾಹಿತಿ ಲಿಂಕ್",
+            "TicketPurchaseLink": "ಟಿಕೆಟ್ ಖರೀದಿ ಲಿಂಕ್"
+        },
+        "EventAlreadyClosed": "ಈ ಈವೆಂಟ್ ಅನ್ನು ಈಗಾಗಲೇ ಮುಚ್ಚಲಾಗಿದೆ",
+        "addToCalendar": {
+            "permissions": {
+                "title": "ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಸೇರಿಸುವುದೇ?",
+                "prompt": "ಈ ಈವೆಂಟ್ ಅನ್ನು ನಿಮ್ಮ ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಸೇರಿಸಲು ನೀವು ಬಯಸುವಿರಾ?",
+                "yes": "ಹೌದು",
+                "no": "ಸಂ"
+            },
+            "dialog": {
+                "Title": "ನಿಮ್ಮ ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಈವೆಂಟ್ ಸೇರಿಸಿ"
+            }
+        },
+        "ErrorLeaveEndedEvent": "ಕ್ಷಮಿಸಿ, ಆದರೆ ನೀವು ಮುಕ್ತಾಯಗೊಂಡ ಈವೆಂಟ್ ಅನ್ನು ಬಿಡಲು ಸಾಧ್ಯವಿಲ್ಲ"
+    },
+    "availabilities": {
+        "Title": "ಲಭ್ಯತೆಗಳು",
+        "NewAvailability": {
+            "Title": "ಹೊಸ ಲಭ್ಯತೆ",
+            "SaveAvailability": "ಲಭ್ಯತೆಯನ್ನು ಉಳಿಸಿ",
+            "SelectTemplate": "ದಯವಿಟ್ಟು ಸೇವೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+            "SelectLocation": "ದಯವಿಟ್ಟು ಸ್ಥಳವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+            "SelectArea": "ದಯವಿಟ್ಟು ಪ್ರದೇಶವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+            "Type": "ಮಾದರಿ",
+            "Weekly": "ಸಾಪ್ತಾಹಿಕ",
+            "RecurringStartDate": "ಪುನರಾವರ್ತಿತ ಪ್ರಾರಂಭ ದಿನಾಂಕ",
+            "EndDate": "ಅಂತಿಮ ದಿನಾಂಕ",
+            "SelectTime": "ಟೈಮ್ ಸ್ಲಾಟ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಿ",
+            "SelectTimeSlot": "ಸಮಯದ ಸ್ಲಾಟ್ ಆಯ್ಕೆಮಾಡಿ",
+            "SelectTimeSlots": "ಬಯಸಿದ ಸಮಯದ ಸ್ಲಾಟ್‌ಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+            "PeopleMin": "ಕನಿಷ್ಠ ಸಂದರ್ಶಕರು",
+            "PeopleMax": "ಗರಿಷ್ಠ ಸಂದರ್ಶಕರು",
+            "PeopleLabels": "ಪಾತ್ರಗಳನ್ನು ಅನುಮತಿಸಲಾಗಿದೆ",
+            "Next": "ಮುಂದೆ",
+            "Back": "ಹಿಂದೆ",
+            "RecurringEndDate": "ಮರುಕಳಿಸುವ ಅಂತಿಮ ದಿನಾಂಕ",
+            "ScheduleOnlineConference": "ಟೆಲಿಕಾನ್ಫರೆನ್ಸ್ ಅನ್ನು ನಿಗದಿಪಡಿಸಿ",
+            "SetLivestream": "ಲೈವ್‌ಸ್ಟ್ರೀಮ್ \/ ವಿಡಿಯೋ ಕಾನ್ಫರೆನ್ಸ್‌ಗೆ ಲಿಂಕ್ ಅನ್ನು ಅಂಟಿಸಿ",
+            "SelectTimeZone": "ಸಮಯವಲಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ"
+        },
+        "EditAvailability": "ಲಭ್ಯತೆಯನ್ನು ಸಂಪಾದಿಸಿ",
+        "SetVisitors": "ಸಂದರ್ಶಕರನ್ನು ಹೊಂದಿಸಿ",
+        "Price": "ಬೆಲೆ",
+        "SelectAction": "ದಯವಿಟ್ಟು ಕ್ರಿಯೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+        "OpenProfile": "ಪ್ರೊಫೈಲ್ ತೆರೆಯಿರಿ",
+        "RemoveStaff": "ಸಿಬ್ಬಂದಿ ತೆಗೆದುಹಾಕಿ",
+        "PleaseSelectTimeSlots": "ದಯವಿಟ್ಟು ಸಮಯದ ಸ್ಲಾಟ್‌ಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+        "ExceptionOccurred": "ವಿನಾಯಿತಿ ಸಂಭವಿಸಿದೆ",
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} ಈವೆಂಟ್‌ಗಳಲ್ಲಿ ಭಾಗವಹಿಸಲು ಸಾಕಷ್ಟು ಕ್ರೆಡಿಟ್‌ಗಳಿಲ್ಲ. ನಿಮಗೆ {{needCredits}} ಕ್ರೆಡಿಟ್‌ಗಳ ಅಗತ್ಯವಿದೆ. ಖರೀದಿಸಲು ಬಯಸುವಿರಾ?",
+        "LiveStream": "ನಿರಂತರ ಪ್ರಸಾರ",
+        "InviteStaff": "ಸಿಬ್ಬಂದಿಯನ್ನು ಆಹ್ವಾನಿಸಿ"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "ಪ್ರಾರಂಭ ದಿನಾಂಕ",
+            "endDate": "ಅಂತಿಮ ದಿನಾಂಕ",
+            "justOnce": "ಕೇವಲ ಒಮ್ಮೆ",
+            "justOnceWeekly": "ಈ ವಾರ ಮಾತ್ರ",
+            "justOnceMonthly": "ಈ ತಿಂಗಳು ಮಾತ್ರ",
+            "recurring": "ಮರುಕಳಿಸುವ"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "ಉಚಿತ ಈವೆಂಟ್",
+            "optional": "ಐಚ್ಛಿಕ ಕೊಡುಗೆ",
+            "required": "ಅಗತ್ಯವಿರುವ ಪಾವತಿ"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "ಐಚ್ಛಿಕ ಕೊಡುಗೆ",
+            "required": "ಅಗತ್ಯವಿರುವ ಪಾವತಿ",
+            "paid": "ಪಾವತಿಸಲಾಗಿದೆ"
+        },
+        "confirmationDialog": {
+            "title": "ಹಣ ಪಾವತಿ ದೃಢೀಕರಣ",
+            "content": "ಈ ಈವೆಂಟ್ ಐಚ್ಛಿಕ ಕೊಡುಗೆಯನ್ನು {{amount}} ಹೊಂದಿದೆ.",
+            "button": "ಕೊಡುಗೆ ನೀಡಿ"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ಇನ್ನೂ ಈವೆಂಟ್‌ನ ಭಾಗವಾಗಿಲ್ಲ. ನೀವು ಅವರನ್ನು ಪಾಲ್ಗೊಳ್ಳುವವರಂತೆ ಸೇರಿಸಲು ಬಯಸುವಿರಾ?",
+        "userNotFound": "ಬಳಕೆದಾರ ಕಂಡುಬಂದಿಲ್ಲ",
+        "confirmYes": "ಹೌದು",
+        "confirmNo": "ಸಂ"
+    },
+    "notifications": {
+        "EventActivityIn": "{{{stream.fields.title}}} ನಲ್ಲಿ ಈವೆಂಟ್ ಚಟುವಟಿಕೆ",
+        "RecurringRulesChanged": "ಈವೆಂಟ್‌ಗೆ ಮರುಕಳಿಸುವ ನಿಯಮಗಳನ್ನು ಬದಲಾಯಿಸಲಾಗಿದೆ {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "ನಿಮ್ಮ ಇಮೇಲ್ ಚಂದಾದಾರಿಕೆಗಳನ್ನು ನಿರ್ವಹಿಸಿ",
+        "IfUnsubscribe": "ನೀವು ಅನ್‌ಸಬ್‌ಸ್ಕ್ರೈಬ್ ಮಾಡಲು ಬಯಸಿದರೆ",
+        "ClickHereToVisitEvent": "ಈವೆಂಟ್‌ಗೆ ಭೇಟಿ ನೀಡಲು ದಯವಿಟ್ಟು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ",
+        "Calendars\/reminder": "ಈವೆಂಟ್ &quot;{{{call 'message.getInstruction' 'name'}}&quot; {{&call 'message.getInstruction' 'time'}}} ನಲ್ಲಿ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ",
+        "webrtc": {
+            "Started": "ಟೆಲಿಕಾನ್ಫರೆನ್ಸ್ ಪ್ರಾರಂಭವಾಯಿತು",
+            "Ended": "ಟೆಲಿಕಾನ್ಫರೆನ್ಸ್ ಮುಗಿದಿದೆ"
+        },
+        "livestream": {
+            "Started": "ಲೈವ್ ಸ್ಟ್ರೀಮ್ ಪ್ರಾರಂಭವಾಗಿದೆ",
+            "Ended": "ಲೈವ್ ಸ್ಟ್ರೀಮ್ ಕೊನೆಗೊಂಡಿದೆ",
+            "ClickToView": "ಅದನ್ನು ಇಲ್ಲಿ ವೀಕ್ಷಿಸಿ."
+        }
+    },
+    "import": {
+        "linkTitle": "ಈ ಸ್ಪ್ರೆಡ್‌ಶೀಟ್ ಅನ್ನು ಭರ್ತಿ ಮಾಡಿ",
+        "fileLabel": "ಸ್ಪ್ರೆಡ್‌ಶೀಟ್ ಅನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ:",
+        "importOptions": "ಆಯ್ಕೆಗಳು",
+        "importProgress": "ಪ್ರಗತಿ",
+        "sampleCSV": "ಮಾದರಿ CSV ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+        "joinEventLabel": "ಯಾದೃಚ್ಛಿಕ ಈವೆಂಟ್‌ಗೆ ಬಳಕೆದಾರರನ್ನು ಸೇರಿ",
+        "smsText": "ಹೇ, ನಾನು ನಿಮಗೆ {{communityName}} ಗೆ ಲಿಂಕ್ ಕಳುಹಿಸಿದ್ದೇನೆ. ದಯವಿಟ್ಟು ಇದನ್ನು ಪರಿಶೀಲಿಸಿ.",
+        "emailSubject": "ಈಗಷ್ಟೇ ನಿಮಗೆ ಲಿಂಕ್ ಕಳುಹಿಸಿದೆ",
+        "emailBody": "ಹೇ, ನಾನು ನಿಮಗೆ {{communityName}} ಗೆ ಆಹ್ವಾನವನ್ನು ಕಳುಹಿಸಿದ್ದೇನೆ. ದಯವಿಟ್ಟು ಇದನ್ನು ಪರಿಶೀಲಿಸಿ.",
+        "fileNotFound": "ಕ್ಷಮಿಸಿ, CSV ಫೈಲ್ ಕಂಡುಬಂದಿಲ್ಲ.",
+        "fileEmpty": "ಕ್ಷಮಿಸಿ, CSV ಫೈಲ್ ಖಾಲಿಯಾಗಿದೆ.",
+        "fieldNotFound": "ಅಗತ್ಯವಿರುವ ಕ್ಷೇತ್ರ &quot;{{1}}&quot; ಕಂಡುಬಂದಿಲ್ಲ",
+        "userIdNotFound": "ಬಳಕೆದಾರ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ ಆದರೆ ಐಡಿ ಖಾಲಿಯಾಗಿದೆ",
+        "activateUsers": "ಬಳಕೆದಾರರಿಗೆ ಸಕ್ರಿಯಗೊಳಿಸುವ ಸಂದೇಶವನ್ನು ಕಳುಹಿಸುವುದೇ?",
+        "taskStreamInvalid": "ಟಾಸ್ಕ್ ಸ್ಟ್ರೀಮ್ ಅಮಾನ್ಯವಾಗಿದೆ",
+        "instructionsEmpty": "ಟಾಸ್ಕ್ ಸ್ಟ್ರೀಮ್ ಸೂಚನೆಗಳು ಖಾಲಿಯಾಗಿವೆ",
+        "interestsEmpty": "ಆಸಕ್ತಿಗಳನ್ನು ಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ",
+        "interestAbsent": "ಆಸಕ್ತಿ {{1}} ಕಂಡುಬಂದಿಲ್ಲ",
+        "complete": "ಸಂಪೂರ್ಣ",
+        "errorLine": "ಸಾಲು {{1}}",
+        "errorsTitle": "ದೋಷಗಳು ಸಂಭವಿಸಿವೆ",
+        "communityUsers": "ಇದು ಸಮುದಾಯಗಳ ಪಟ್ಟಿ",
+        "toMainCommunityToo": "ಮುಖ್ಯ ಸಮುದಾಯಕ್ಕೂ ಸಂಬಂಧಿಸಿವೆ",
+        "ChooseFile": "ಫೈಲ್ ಆಯ್ಕೆ"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "ಜನರು ಭಾಗವಹಿಸಬಹುದಾದ ಈವೆಂಟ್ ಅನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತದೆ",
+            "displayType": "ಈವೆಂಟ್"
+        },
+        "Calendars\/recurring": {
+            "description": "ನಿಯತಕಾಲಿಕವಾಗಿ ಮರುಕಳಿಸಲು ಉದ್ದೇಶಿಸಿರುವ ಸ್ಟ್ರೀಮ್‌ಗಳನ್ನು ಸಂಬಂಧಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ",
+            "displayType": "ಮರುಕಳಿಸುವ ಈವೆಂಟ್"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "ಸ್ಲಾಟ್ ಸೇರಿಸಿ",
+        "StartTime": "ಆರಂಭವಾಗುವ",
+        "EndTime": "ಅಂತಿಮ ಸಮಯ",
+        "Save": "ಉಳಿಸಿ",
+        "AddTimeSlot": "ಟೈಮ್ ಸ್ಲಾಟ್ ಸೇರಿಸಿ",
+        "CopyFromDay": "ದಿನದಿಂದ ನಕಲಿಸಿ",
+        "Nearest": "ಹತ್ತಿರದ",
+        "Today": "ಇಂದು",
+        "Tomorrow": "ನಾಳೆ",
+        "AfterTomorrow": "ನಾಳೆಯ ನಂತರ"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಚಂದಾದಾರರಾಗಿ",
+        "copyLinkBelow": "ಕೆಳಗಿನ ಲಿಂಕ್ ಅನ್ನು ನಕಲಿಸಿ",
+        "goTo": "ಇಲ್ಲಿಗೆ ಹೋಗಿ:",
+        "pasteCopiedTo": "&quot;ಕ್ಯಾಲೆಂಡರ್ನ URL&quot; ಕ್ಷೇತ್ರಕ್ಕೆ ನಕಲಿಸಿದ ಲಿಂಕ್ ಅನ್ನು ಅಂಟಿಸಿ",
+        "clickAddCalendar": "&quot;ಕ್ಯಾಲೆಂಡರ್ ಸೇರಿಸಿ&quot; ಬಟನ್ ಕ್ಲಿಕ್ ಮಾಡಿ",
+        "copyLink": "ಲಿಂಕ್ ನಕಲಿಸಿ",
+        "tapToCopy": "ನಿಮ್ಮ ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ಲಿಂಕ್ ಅನ್ನು ನಕಲಿಸಲು ಕೆಳಗಿನ ಬಟನ್ ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ",
+        "linkCopied": "ಲಿಂಕ್ ನಕಲಿಸಲಾಗಿದೆ",
+        "step2": "ಲಿಂಕ್ ನಕಲಿಸಲಾಗಿದೆ. ನಾವು ಓಪನ್ ಗೂಗಲ್ ಕ್ಯಾಲೆಂಡರ್ ಬಗ್ಗೆ. ನೀವು ಲಿಂಕ್ ಅನ್ನು ಪಠ್ಯ ಪೆಟ್ಟಿಗೆಯಲ್ಲಿ ಅಂಟಿಸಬೇಕಾಗುತ್ತದೆ, &quot;ಕ್ಯಾಲೆಂಡರ್ ಸೇರಿಸಿ&quot; ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ಟ್ಯಾಬ್ ಅನ್ನು ಮುಚ್ಚಿ (ಕೆಳಗಿನ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ನೋಡಿ)",
+        "calendarAppPreferences": "ನಿಮ್ಮ ಮ್ಯಾಕ್‌ನಲ್ಲಿ ಕ್ಯಾಲೆಂಡರ್ ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ಆದ್ಯತೆಗಳನ್ನು ತೆರೆಯಿರಿ ಮತ್ತು ಕೆಳಗೆ ತೋರಿಸಿರುವಂತೆ ಡೀಫಾಲ್ಟ್ ಕ್ಯಾಲೆಂಡರ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹೊಂದಿಸಿ.",
+        "thenCloseDialog": "ನಂತರ ನಿಮ್ಮ ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಚಂದಾದಾರರಾಗಲು ಈ ಸಂವಾದವನ್ನು ಮುಚ್ಚಿರಿ!",
+        "success": "ಕ್ಯಾಲೆಂಡರ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಿಂಕ್ ಮಾಡಲಾಗಿದೆ"
+    }
+}

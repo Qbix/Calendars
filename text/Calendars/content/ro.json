@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "ian",
+        "Feb": "feb",
+        "Mar": "Mar",
+        "Apr": "Aprilie",
+        "May": "Mai",
+        "Jun": "Iunie",
+        "Jul": "iul",
+        "Aug": "aug",
+        "Sep": "sept",
+        "Oct": "oct",
+        "Nov": "nov",
+        "Dec": "Dec"
+    },
+    "monthsLong": {
+        "Jan": "ianuarie",
+        "Feb": "februarie",
+        "Mar": "Martie",
+        "Apr": "Aprilie",
+        "May": "Mai",
+        "Jun": "iunie",
+        "Jul": "iulie",
+        "Aug": "August",
+        "Sep": "Septembrie",
+        "Oct": "octombrie",
+        "Nov": "noiembrie",
+        "Dec": "decembrie"
+    },
+    "weekdays": {
+        "Sun": "Soare",
+        "Mon": "Lun",
+        "Tue": "mar",
+        "Wed": "mier",
+        "Thu": "joi",
+        "Fri": "vineri",
+        "Sat": "sat"
+    },
+    "weekdaysLong": {
+        "Sun": "duminică",
+        "Mon": "luni",
+        "Tue": "marţi",
+        "Wed": "miercuri",
+        "Thu": "joi",
+        "Fri": "vineri",
+        "Sat": "sâmbătă"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Planificați un nou eveniment"
+        },
+        "tool": {
+            "HostedBy": "Găzduit de {{name}}",
+            "Name": "Nume",
+            "AreYouIn": "Esti in?",
+            "Yes": "da",
+            "No": "Nu",
+            "Ok": "O.K",
+            "Cancel": "Anulare",
+            "Maybe": "Poate",
+            "Conversation": "Conversaţie",
+            "Promote": "Promovați acest eveniment",
+            "Reminders": "Mementouri",
+            "RemindersLabel": "Doresc să fiu anunțat despre un eveniment în:",
+            "MoreInfo": "Mai multe informatii",
+            "Registration": "Înregistrare",
+            "SetReminders": "Vă rugăm să setați mementouri",
+            "ReservationFee": "Taxa de rezervare",
+            "AddParticipants": "Adăugați participanți",
+            "ManageReservation": "Gestionați rezervarea",
+            "UpdateFutureReservations": "De asemenea, doriți să actualizați toate rezervările viitoare în același mod?",
+            "RecurringAdmin": "Setări recurente",
+            "MakeReservation": "A face rezervare",
+            "StartLiveStream": "Faceți clic pentru a transmite live",
+            "LiveStreamEnded": "Fluxul live s-a încheiat",
+            "ClickToViewRecording": "faceți clic pentru a vizualiza înregistrarea",
+            "Checkin": "Scanați codurile participanților",
+            "Myqr": "Verifica",
+            "CloseEvent": {
+                "button": "Anulează evenimentul",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Sigur doriți să anulați acest eveniment?",
+                        "Participant": "Există 1 participant la acest eveniment",
+                        "Participants": "Există {{count}} participanți la acest eveniment",
+                        "Recurring": "Acest eveniment este recurent. Doriți să anulați și toate instanțele viitoare?"
+                    },
+                    "trip": {
+                        "Cancel": "Doriți să vă anulați călătoria {{tripDirection}} acest eveniment?",
+                        "Passengers": "Există {{passengerCount}} pasageri care se bazează pe tine.",
+                        "Title": "Închideți călătoria"
+                    },
+                    "directions": {
+                        "TO": "LA",
+                        "FROM": "DIN",
+                        "to": "la",
+                        "from": "din"
+                    }
+                }
+            },
+            "Calendar": "Calendar",
+            "Interests": "Interese",
+            "Directions": "Directii",
+            "TitleOfEvent": "Titlul evenimentului:",
+            "OpenTo": "Deschis la",
+            "GoingTo": "va fi la",
+            "NotGoingTo": "nu va fi la",
+            "MaybeGoingTo": "va fi poate la",
+            "AdminDontPay": "Administratorul nu trebuie să plătească",
+            "PublisherDontPay": "Editorul nu trebuie să plătească",
+            "EmptyList": "Lista goală",
+            "NeedToPayCredits": "Trebuie să plătiți: <span>{{amount}} credite<\/span>",
+            "PleaseJoinParticipants": "Vă rugăm să vă alăturați {{participant}}",
+            "YouReservingPlace": "Îți vei rezerva locul.",
+            "SelectIncludesToAdd": "Selectați unul sau mai multe {{TypeDisplayPlural}} pentru a adăuga:",
+            "YouHaveNotRegisteredAnyIncluded": "Nu ați înregistrat încă niciun {{TypeDisplayPlural}}",
+            "Proceed": "Continua",
+            "MakeChanges": "Salvați modificările mele",
+            "CancelReservation": "Anulați întreaga rezervare",
+            "Total": "Total",
+            "RequiredRelatedParticipants": "Acest eveniment necesită participanți: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Editați disponibilitatea „{{title}}” pentru a actualiza setările recurente",
+            "Presentation": "Prezentare",
+            "YouAreNotParticipated": "Nu sunteți participant la eveniment",
+            "LiveStreamStarted": "Fluxul live a început",
+            "WebRTCStarted": "A început teleconferința",
+            "WebRTCEnded": "Teleconferința s-a încheiat"
+        },
+        "composer": {
+            "SetLocation": "Setați locația mea",
+            "SetInfoLink": "Setați Link pentru informații suplimentare",
+            "ChooseAvailability": "Alegeți Serviciu disponibil",
+            "ChooseActivity": "Alegeți o activitate",
+            "ChoosePublisher": "Alegeți editor",
+            "Day": "Zi",
+            "Starting": "Pornire",
+            "Duration": "Durată",
+            "Hour": "Ora",
+            "Hours": "Ore",
+            "Minutes": "Minute",
+            "Ending": "Final",
+            "People": "oameni",
+            "Share": "Acțiune",
+            "Continue": "Continua",
+            "Recurring": "Recurente",
+            "RecurringTitle": "Zile recurente",
+            "Daily": "Zilnic",
+            "Weekly": "Săptămânal",
+            "Monthly": "Lunar",
+            "SelectLocation": "Vă rugăm să selectați mai întâi o locație.",
+            "eventType": "Tip de eveniment",
+            "EditTitle": "Gândește-te la un titlu interesant...",
+            "SetTitle": "Vă rugăm să setați titlul evenimentului",
+            "ScheduleOnlineConference": "Programează o conferință online",
+            "SOCDescription": "Vă rugăm să definiți ora de începere și de sfârșit a conferinței. Fiecare persoană care vizitează evenimentul în această perioadă de timp se va conecta automat la conferința online.",
+            "EndDate": "Sfârșit",
+            "location": {
+                "Title": "Setați locația"
+            },
+            "interest": {
+                "Title": "Alegeți o activitate",
+                "Filter": "Interese de căutare..."
+            },
+            "SetLivestream": "Lipiți linkul către fluxul live\/videoconferință",
+            "Locally": "la nivel local",
+            "EventInfoLink": "Link pentru informații despre eveniment",
+            "TicketPurchaseLink": "Link de cumpărare a biletelor"
+        },
+        "EventAlreadyClosed": "Acest eveniment a fost deja închis",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Adăugați la Calendar?",
+                "prompt": "Doriți să adăugați acest eveniment în calendarul dvs.?",
+                "yes": "da",
+                "no": "Nu"
+            },
+            "dialog": {
+                "Title": "Adăugați un eveniment la calendarul dvs"
+            }
+        },
+        "ErrorLeaveEndedEvent": "Ne pare rău, dar nu puteți părăsi evenimentul încheiat"
+    },
+    "availabilities": {
+        "Title": "Disponibilități",
+        "NewAvailability": {
+            "Title": "Disponibilitate nouă",
+            "SaveAvailability": "Salvați disponibilitatea",
+            "SelectTemplate": "Vă rugăm să selectați Serviciu",
+            "SelectLocation": "Vă rugăm să selectați Locație",
+            "SelectArea": "Vă rugăm să selectați Zona",
+            "Type": "Tip",
+            "Weekly": "Săptămânal",
+            "RecurringStartDate": "Data de începere recurentă",
+            "EndDate": "Data de încheiere",
+            "SelectTime": "Gestionați intervalele de timp",
+            "SelectTimeSlot": "Selectați un interval orar",
+            "SelectTimeSlots": "Selectați intervalele de timp dorite",
+            "PeopleMin": "Vizitatori minim",
+            "PeopleMax": "Numar maxim de vizitatori",
+            "PeopleLabels": "Roluri permise",
+            "Next": "Următorul",
+            "Back": "Înapoi",
+            "RecurringEndDate": "Data de încheiere recurentă",
+            "ScheduleOnlineConference": "Programați teleconferință",
+            "SetLivestream": "Lipiți linkul către fluxul live\/videoconferință",
+            "SelectTimeZone": "Selectați fusul orar"
+        },
+        "EditAvailability": "Editați disponibilitatea",
+        "SetVisitors": "Setați vizitatori",
+        "Price": "Preț",
+        "SelectAction": "Vă rugăm să selectați acțiunea",
+        "OpenProfile": "Deschide profilul",
+        "RemoveStaff": "Îndepărtați personalul",
+        "PleaseSelectTimeSlots": "Vă rugăm să selectați intervalele de timp",
+        "ExceptionOccurred": "A avut loc o excepție",
+        "NotEnoughCreditsToParticipateEvents": "Nu sunt suficiente credite pentru a participa la {{eventsAmount}} evenimente. Aveți nevoie de {{needCredits}} credite. Vreau sa cumpar?",
+        "LiveStream": "Transmitere live",
+        "InviteStaff": "Invitați personalul"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Data de început",
+            "endDate": "Data de încheiere",
+            "justOnce": "Doar odata",
+            "justOnceWeekly": "Numai săptămâna aceasta",
+            "justOnceMonthly": "Doar luna aceasta",
+            "recurring": "Recurente"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Eveniment gratuit",
+            "optional": "Contribuție opțională",
+            "required": "Plata obligatorie"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Contribuție opțională",
+            "required": "Plata obligatorie",
+            "paid": "plătit"
+        },
+        "confirmationDialog": {
+            "title": "Confirmarea platii",
+            "content": "Acest eveniment are o contribuție opțională de {{amount}}.",
+            "button": "A contribui"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} nu face încă parte din eveniment. Doriți să-i adăugați ca participant?",
+        "userNotFound": "Utilizator nu a fost găsit",
+        "confirmYes": "da",
+        "confirmNo": "Nu"
+    },
+    "notifications": {
+        "EventActivityIn": "Activitatea evenimentului în {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Regulile recurente au fost modificate pentru eveniment {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "gestionați-vă abonamentele de e-mail",
+        "IfUnsubscribe": "Dacă doriți să vă dezabonați",
+        "ClickHereToVisitEvent": "Vă rugăm să faceți clic aici pentru a vizita evenimentul",
+        "Calendars\/reminder": "Evenimentul „{{{call 'message.getInstruction' 'name'}}” va începe în {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "A început teleconferința",
+            "Ended": "Teleconferința s-a încheiat"
+        },
+        "livestream": {
+            "Started": "Fluxul live a început",
+            "Ended": "Fluxul live s-a încheiat",
+            "ClickToView": "Vizualizați-l aici."
+        }
+    },
+    "import": {
+        "linkTitle": "Completați această foaie de calcul",
+        "fileLabel": "Încărcați foaie de calcul:",
+        "importOptions": "Opțiuni",
+        "importProgress": "Progres",
+        "sampleCSV": "Descărcați exemplu de CSV",
+        "joinEventLabel": "Alăturați-vă utilizatorilor la un eveniment aleatoriu",
+        "smsText": "Hei, tocmai ți-am trimis un link către {{communityName}}. Te rog sa verifici.",
+        "emailSubject": "Tocmai ți-am trimis un link",
+        "emailBody": "Hei, tocmai ți-am trimis o invitație la {{communityName}}. Te rog sa verifici.",
+        "fileNotFound": "Ne pare rău, fișierul CSV nu a fost găsit.",
+        "fileEmpty": "Ne pare rău, fișierul CSV este gol.",
+        "fieldNotFound": "Câmpul obligatoriu „{{1}}” nu a fost găsit",
+        "userIdNotFound": "utilizator există, dar ID este gol",
+        "activateUsers": "trimite mesaj de activare utilizatorilor?",
+        "taskStreamInvalid": "fluxul de activități nevalid",
+        "instructionsEmpty": "instrucțiunile fluxului de activități sunt goale",
+        "interestsEmpty": "nu pot obține dobânzi",
+        "interestAbsent": "interesul {{1}} nu a fost găsit",
+        "complete": "Complet",
+        "errorLine": "linie {{1}}",
+        "errorsTitle": "Au apărut erori",
+        "communityUsers": "Aceasta este lista comunităților",
+        "toMainCommunityToo": "se referă și la comunitatea principală",
+        "ChooseFile": "alege fișierul"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Reprezintă un eveniment la care oamenii pot participa",
+            "displayType": "Eveniment"
+        },
+        "Calendars\/recurring": {
+            "description": "Folosit pentru relaţionarea fluxurilor care sunt menite să se repete periodic",
+            "displayType": "Eveniment recurent"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Adăugați un slot",
+        "StartTime": "Timpul de începere",
+        "EndTime": "Sfârșitul timpului",
+        "Save": "salva",
+        "AddTimeSlot": "Adăugați interval de timp",
+        "CopyFromDay": "Copie din zi",
+        "Nearest": "Cel mai apropiat",
+        "Today": "Astăzi",
+        "Tomorrow": "Mâine",
+        "AfterTomorrow": "Poimaine"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Abonați-vă la Calendar",
+        "copyLinkBelow": "Copiați linkul de mai jos",
+        "goTo": "Mergi la:",
+        "pasteCopiedTo": "Inserați linkul copiat în câmpul „Adresa URL a calendarului”.",
+        "clickAddCalendar": "Faceți clic pe butonul „Adăugați calendar”.",
+        "copyLink": "Copiază legătură",
+        "tapToCopy": "Atingeți butonul de mai jos pentru a copia linkul în clipboard",
+        "linkCopied": "Link copiat",
+        "step2": "Link copiat. Suntem despre Google Calendar deschis. Va trebui să inserați linkul în caseta de text, să faceți clic pe „Adăugați calendar” și să închideți fila (vezi captura de ecran de mai jos)",
+        "calendarAppPreferences": "Deschideți Preferințe în aplicația Calendar pe Mac și setați aplicația Calendar implicită să fie așa cum se arată mai jos.",
+        "thenCloseDialog": "Apoi, închideți acest dialog pentru a vă abona la calendarul dvs.!",
+        "success": "Calendarul a fost sincronizat cu succes"
+    }
+}

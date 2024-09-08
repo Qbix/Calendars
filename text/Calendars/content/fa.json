@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "ژان",
+        "Feb": "فوریه",
+        "Mar": "مارس",
+        "Apr": "آوریل",
+        "May": "ممکن است",
+        "Jun": "ژوئن",
+        "Jul": "ژوئیه",
+        "Aug": "اوت",
+        "Sep": "سپتامبر",
+        "Oct": "اکتبر",
+        "Nov": "نوامبر",
+        "Dec": "دسامبر"
+    },
+    "monthsLong": {
+        "Jan": "ژانویه",
+        "Feb": "فوریه",
+        "Mar": "مارس",
+        "Apr": "آوریل",
+        "May": "ممکن است",
+        "Jun": "ژوئن",
+        "Jul": "جولای",
+        "Aug": "اوت",
+        "Sep": "سپتامبر",
+        "Oct": "اکتبر",
+        "Nov": "نوامبر",
+        "Dec": "دسامبر"
+    },
+    "weekdays": {
+        "Sun": "آفتاب",
+        "Mon": "دوشنبه",
+        "Tue": "سه شنبه",
+        "Wed": "چهارشنبه",
+        "Thu": "پنج شنبه",
+        "Fri": "جمعه",
+        "Sat": "نشست"
+    },
+    "weekdaysLong": {
+        "Sun": "یکشنبه",
+        "Mon": "دوشنبه",
+        "Tue": "سهشنبه",
+        "Wed": "چهار شنبه",
+        "Thu": "پنج شنبه",
+        "Fri": "جمعه",
+        "Sat": "شنبه"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "برنامه ریزی رویداد جدید"
+        },
+        "tool": {
+            "HostedBy": "میزبانی شده توسط {{name}}",
+            "Name": "نام",
+            "AreYouIn": "شما داخل هستید؟",
+            "Yes": "آره",
+            "No": "خیر",
+            "Ok": "خوب",
+            "Cancel": "لغو کنید",
+            "Maybe": "شاید",
+            "Conversation": "گفتگو",
+            "Promote": "این رویداد را تبلیغ کنید",
+            "Reminders": "یادآوری ها",
+            "RemindersLabel": "من می خواهم از یک رویداد در:",
+            "MoreInfo": "اطلاعات بیشتر",
+            "Registration": "ثبت",
+            "SetReminders": "لطفاً یادآورها را تنظیم کنید",
+            "ReservationFee": "هزینه رزرو",
+            "AddParticipants": "شرکت کنندگان اضافه کردن",
+            "ManageReservation": "مدیریت رزرو",
+            "UpdateFutureReservations": "آیا می خواهید همه رزروهای آینده را نیز به همین ترتیب به روز کنید؟",
+            "RecurringAdmin": "تنظیمات تکراری",
+            "MakeReservation": "رزرو کنید",
+            "StartLiveStream": "برای پخش زنده کلیک کنید",
+            "LiveStreamEnded": "پخش زنده به پایان رسیده است",
+            "ClickToViewRecording": "برای مشاهده ضبط کلیک کنید",
+            "Checkin": "اسکن کدهای شرکت کنندگان",
+            "Myqr": "بررسی کنید",
+            "CloseEvent": {
+                "button": "لغو رویداد",
+                "confirm": {
+                    "text": {
+                        "Cancel": "آیا اطمینان دارید که می خواهید این رویداد را لغو کنید؟",
+                        "Participant": "1 شرکت کننده در این رویداد وجود دارد",
+                        "Participants": "{{count}} شرکت کننده در این رویداد وجود دارد",
+                        "Recurring": "این رویداد تکراری است. آیا می‌خواهید تمام نمونه‌های بعدی آن را نیز لغو کنید؟"
+                    },
+                    "trip": {
+                        "Cancel": "آیا می‌خواهید سفر {{tripDirection}} این رویداد را نیز لغو کنید؟",
+                        "Passengers": "{{passengerCount}} مسافری به شما تکیه می کنند.",
+                        "Title": "بستن سفر"
+                    },
+                    "directions": {
+                        "TO": "به",
+                        "FROM": "از جانب",
+                        "to": "به",
+                        "from": "از جانب"
+                    }
+                }
+            },
+            "Calendar": "تقویم",
+            "Interests": "منافع",
+            "Directions": "جهت ها",
+            "TitleOfEvent": "عنوان رویداد:",
+            "OpenTo": "باز به",
+            "GoingTo": "خواهد بود در",
+            "NotGoingTo": "نخواهد بود در",
+            "MaybeGoingTo": "خواهد بود شاید در",
+            "AdminDontPay": "ادمین نیازی به پرداخت ندارد",
+            "PublisherDontPay": "ناشر نیازی به پرداخت ندارد",
+            "EmptyList": "لیست خالی",
+            "NeedToPayCredits": "نیاز به پرداخت: <span>{{amount}} اعتبار<\/span>",
+            "PleaseJoinParticipants": "لطفاً به {{participant}} بپیوندید",
+            "YouReservingPlace": "شما جای خود را رزرو خواهید کرد",
+            "SelectIncludesToAdd": "یک یا چند {{TypeDisplayPlural}} را برای افزودن انتخاب کنید:",
+            "YouHaveNotRegisteredAnyIncluded": "شما هنوز هیچ {{TypeDisplayPlural}} را ثبت نکرده اید",
+            "Proceed": "ادامه دهید",
+            "MakeChanges": "ذخیره تغییرات من",
+            "CancelReservation": "کل رزرو را لغو کنید",
+            "Total": "جمع",
+            "RequiredRelatedParticipants": "این رویداد به شرکت کنندگان نیاز دارد: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "لطفاً برای به‌روزرسانی تنظیمات تکراری، «{{title}}» در دسترس بودن را ویرایش کنید",
+            "Presentation": "ارائه",
+            "YouAreNotParticipated": "شما یک شرکت کننده در رویداد نیستید",
+            "LiveStreamStarted": "پخش زنده شروع شده است",
+            "WebRTCStarted": "کنفرانس تلفنی شروع شد",
+            "WebRTCEnded": "کنفرانس تلفنی پایان یافت"
+        },
+        "composer": {
+            "SetLocation": "مکان من را تنظیم کنید",
+            "SetInfoLink": "پیوند را روی اطلاعات اضافی تنظیم کنید",
+            "ChooseAvailability": "سرویس موجود را انتخاب کنید",
+            "ChooseActivity": "یک فعالیت را انتخاب کنید",
+            "ChoosePublisher": "Publisher را انتخاب کنید",
+            "Day": "روز",
+            "Starting": "راه افتادن",
+            "Duration": "مدت زمان",
+            "Hour": "ساعت",
+            "Hours": "ساعت ها",
+            "Minutes": "دقایق",
+            "Ending": "پایان یافتن",
+            "People": "مردم",
+            "Share": "اشتراک گذاری",
+            "Continue": "ادامه هید",
+            "Recurring": "مکرر",
+            "RecurringTitle": "روزهای تکراری",
+            "Daily": "روزانه",
+            "Weekly": "هفتگی",
+            "Monthly": "ماهانه",
+            "SelectLocation": "لطفا ابتدا یک مکان را انتخاب کنید.",
+            "eventType": "نوع رویداد",
+            "EditTitle": "یه عنوان جالب فکر کن...",
+            "SetTitle": "لطفا عنوان رویداد را تنظیم کنید",
+            "ScheduleOnlineConference": "برنامه کنفرانس آنلاین",
+            "SOCDescription": "لطفا زمان شروع و پایان کنفرانس را تعریف کنید. هر فردی که در این دوره زمانی از رویداد بازدید می کند، به طور خودکار به کنفرانس آنلاین متصل می شود.",
+            "EndDate": "پایان",
+            "location": {
+                "Title": "مکان خود را تنظیم کنید"
+            },
+            "interest": {
+                "Title": "یک فعالیت را انتخاب کنید",
+                "Filter": "علایق جستجو..."
+            },
+            "SetLivestream": "پیوند را به پخش زنده \/ ویدئو کنفرانس بچسبانید",
+            "Locally": "به صورت محلی",
+            "EventInfoLink": "لینک اطلاعات رویداد",
+            "TicketPurchaseLink": "لینک خرید بلیط"
+        },
+        "EventAlreadyClosed": "این رویداد قبلاً بسته شده است",
+        "addToCalendar": {
+            "permissions": {
+                "title": "به تقویم اضافه شود؟",
+                "prompt": "آیا می خواهید این رویداد را به تقویم خود اضافه کنید؟",
+                "yes": "آره",
+                "no": "خیر"
+            },
+            "dialog": {
+                "Title": "رویداد را به تقویم خود اضافه کنید"
+            }
+        },
+        "ErrorLeaveEndedEvent": "متأسفیم، اما نمی توانید رویداد پایان یافته را ترک کنید"
+    },
+    "availabilities": {
+        "Title": "موجودی ها",
+        "NewAvailability": {
+            "Title": "در دسترس بودن جدید",
+            "SaveAvailability": "ذخیره در دسترس بودن",
+            "SelectTemplate": "لطفا خدمات را انتخاب کنید",
+            "SelectLocation": "لطفا مکان را انتخاب کنید",
+            "SelectArea": "لطفا منطقه را انتخاب کنید",
+            "Type": "تایپ کنید",
+            "Weekly": "هفتگی",
+            "RecurringStartDate": "تاریخ شروع تکراری",
+            "EndDate": "تاریخ پایان",
+            "SelectTime": "مدیریت زمان اسلات",
+            "SelectTimeSlot": "یک بازه زمانی را انتخاب کنید",
+            "SelectTimeSlots": "بازه های زمانی مورد نظر را انتخاب کنید",
+            "PeopleMin": "حداقل بازدید کننده",
+            "PeopleMax": "حداکثر بازدید کننده",
+            "PeopleLabels": "نقش های مجاز",
+            "Next": "بعد",
+            "Back": "بازگشت",
+            "RecurringEndDate": "تاریخ پایان تکراری",
+            "ScheduleOnlineConference": "برنامه کنفرانس تلفنی",
+            "SetLivestream": "پیوند را به پخش زنده \/ ویدئو کنفرانس بچسبانید",
+            "SelectTimeZone": "منطقه زمانی را انتخاب کنید"
+        },
+        "EditAvailability": "ویرایش در دسترس بودن",
+        "SetVisitors": "بازدیدکنندگان را تنظیم کنید",
+        "Price": "قیمت",
+        "SelectAction": "لطفا اقدام را انتخاب کنید",
+        "OpenProfile": "نمایه را باز کنید",
+        "RemoveStaff": "کارکنان را حذف کنید",
+        "PleaseSelectTimeSlots": "لطفا بازه های زمانی را انتخاب کنید",
+        "ExceptionOccurred": "استثنا رخ داد",
+        "NotEnoughCreditsToParticipateEvents": "اعتبار کافی برای شرکت در رویدادهای {{eventsAmount}} وجود ندارد. به {{needCredits}} اعتبار نیاز دارید. می خواهید بخرید؟",
+        "LiveStream": "پخش زنده",
+        "InviteStaff": "کارکنان را دعوت کنید"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "تاریخ شروع",
+            "endDate": "تاریخ پایان",
+            "justOnce": "فقط یک بار",
+            "justOnceWeekly": "فقط این هفته",
+            "justOnceMonthly": "فقط این ماه",
+            "recurring": "مکرر"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "رویداد رایگان",
+            "optional": "مشارکت اختیاری",
+            "required": "پرداخت مورد نیاز"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "مشارکت اختیاری",
+            "required": "پرداخت مورد نیاز",
+            "paid": "پرداخت شده"
+        },
+        "confirmationDialog": {
+            "title": "تاییدیه پرداخت",
+            "content": "این رویداد دارای سهم اختیاری {{amount}} است.",
+            "button": "مشارکت"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} هنوز بخشی از رویداد نیست. آیا می خواهید آنها را به عنوان یک شرکت کننده اضافه کنید؟",
+        "userNotFound": "کاربر پیدا نشد",
+        "confirmYes": "آره",
+        "confirmNo": "خیر"
+    },
+    "notifications": {
+        "EventActivityIn": "فعالیت رویداد در {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "قوانین تکراری برای رویداد تغییر کرد {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "اشتراک های ایمیل خود را مدیریت کنید",
+        "IfUnsubscribe": "اگر می خواهید اشتراک را لغو کنید",
+        "ClickHereToVisitEvent": "لطفا برای بازدید از رویداد اینجا را کلیک کنید",
+        "Calendars\/reminder": "رویداد &quot;{{{call 'message.getInstruction' 'name'}}&quot; در {{&call 'message.getInstruction' 'time'}}} شروع می‌شود",
+        "webrtc": {
+            "Started": "کنفرانس تلفنی شروع شد",
+            "Ended": "کنفرانس تلفنی پایان یافت"
+        },
+        "livestream": {
+            "Started": "پخش زنده شروع شد",
+            "Ended": "پخش زنده به پایان رسید",
+            "ClickToView": "آن را اینجا مشاهده کنید."
+        }
+    },
+    "import": {
+        "linkTitle": "این صفحه گسترده را پر کنید",
+        "fileLabel": "آپلود صفحه گسترده:",
+        "importOptions": "گزینه ها",
+        "importProgress": "پیش رفتن",
+        "sampleCSV": "دانلود نمونه CSV",
+        "joinEventLabel": "کاربران را به رویداد تصادفی بپیوندید",
+        "smsText": "سلام، من همین الان برای شما پیوندی به {{communityName}} فرستادم. لطفا آن را بررسی کنید.",
+        "emailSubject": "فقط برای شما لینک فرستادم",
+        "emailBody": "سلام، من همین الان برای شما دعوت نامه ای به {{communityName}} فرستادم. لطفا آن را بررسی کنید.",
+        "fileNotFound": "با عرض پوزش، فایل CSV یافت نشد.",
+        "fileEmpty": "با عرض پوزش، فایل CSV خالی است.",
+        "fieldNotFound": "فیلد الزامی &quot;{{1}}&quot; یافت نشد",
+        "userIdNotFound": "کاربر وجود دارد اما شناسه خالی است",
+        "activateUsers": "ارسال پیام فعال سازی برای کاربران؟",
+        "taskStreamInvalid": "جریان کار نامعتبر است",
+        "instructionsEmpty": "دستورالعمل های جریان کار خالی است",
+        "interestsEmpty": "نمی تواند منافع را بدست آورد",
+        "interestAbsent": "علاقه {{1}} یافت نشد",
+        "complete": "کامل",
+        "errorLine": "خط {{1}}",
+        "errorsTitle": "خطاهایی رخ داده است",
+        "communityUsers": "این لیست جوامع است",
+        "toMainCommunityToo": "به جامعه اصلی نیز مربوط می شود",
+        "ChooseFile": "انتخاب فایل"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "نشان دهنده رویدادی است که افراد می توانند در آن شرکت کنند",
+            "displayType": "رویداد"
+        },
+        "Calendars\/recurring": {
+            "description": "برای ارتباط جریان هایی که قرار است به طور دوره ای تکرار شوند استفاده می شود",
+            "displayType": "رویداد تکراری"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "اسلات اضافه کنید",
+        "StartTime": "زمان شروع",
+        "EndTime": "زمان پایان",
+        "Save": "صرفه جویی",
+        "AddTimeSlot": "اسلات زمان را اضافه کنید",
+        "CopyFromDay": "کپی از روز",
+        "Nearest": "نزدیکترین",
+        "Today": "امروز",
+        "Tomorrow": "فردا",
+        "AfterTomorrow": "پس فردا"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "مشترک شدن در تقویم",
+        "copyLinkBelow": "لینک زیر را کپی کنید",
+        "goTo": "قابل اعتماد و متخصص:",
+        "pasteCopiedTo": "پیوند کپی شده را در قسمت «URL تقویم» جای‌گذاری کنید",
+        "clickAddCalendar": "روی دکمه &quot;افزودن تقویم&quot; کلیک کنید",
+        "copyLink": "لینک را کپی کنید",
+        "tapToCopy": "روی دکمه زیر ضربه بزنید تا پیوند را در کلیپ بورد خود کپی کنید",
+        "linkCopied": "پیوند کپی شد",
+        "step2": "پیوند کپی شد. ما در مورد باز کردن تقویم Google هستیم. شما باید پیوند را در کادر متنی قرار دهید، روی &quot;افزودن تقویم&quot; کلیک کنید و برگه را ببندید (عکس زیر را ببینید)",
+        "calendarAppPreferences": "تنظیمات برگزیده را در برنامه Calendar در Mac خود باز کنید و برنامه تقویم پیش فرض را مطابق شکل زیر تنظیم کنید.",
+        "thenCloseDialog": "سپس این گفتگو را ببندید تا در تقویم خود مشترک شوید!",
+        "success": "تقویم با موفقیت همگام سازی شد"
+    }
+}

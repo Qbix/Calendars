@@ -1,0 +1,138 @@
+<div class="Calendars_event_composer">
+	{{#if showPublisher}}
+	<div class="Calendars_step Calendars_event_composer_publisher">
+		<button class="Q_button Streams_aspect_publisher Calendars_event_composer_publisher_button">
+			{{event.composer.ChoosePublisher}}
+		</button>
+		<input type="hidden" class="Calendars_composer_step">
+	</div>
+	{{/if}}
+	<div class="Calendars_step Calendars_event_composer_interest">
+		<button class="Q_button Streams_aspect_interests Calendars_event_composer_interest_button">
+			{{event.composer.ChooseActivity}}
+		</button>
+		<div class="Calendars_event_composer_title">
+			<input name="eventTitle" class="Calendars_event_composer_title Q_placeholder" placeholder="{{event.composer.EditTitle}}">
+		</div>
+		<input type="hidden" class="Calendars_composer_step">
+	</div>
+	<div class="Calendars_step Calendars_event_composer_type">
+		<select name="eventType"></select>
+	</div>
+	{{#if show.location}}
+	<div class="Calendars_step Calendars_event_composer_location" data-locationDefined="{{locationDefined}}">
+		{{{tool "Places/location" showCurrent=false showAreas=true}}}
+		<button class="Calendars_event_composer_location_button Q_button">
+			{{event.composer.SetLocation}}
+		</button>
+		<input type="hidden" class="Calendars_composer_step" value="">
+	</div>
+	{{/if}}
+	{{#if show.livestream}}
+	<div class="Calendars_step Calendars_event_composer_livestream">
+		<button class="Q_button" name="scheduleOnlineConference">{{event.composer.ScheduleOnlineConference}}</button>
+		<div class="or">OR</div>
+		<input name="livestream" placeholder="{{event.composer.SetLivestream}}" data-type="url">
+		<input type="hidden" class="Calendars_composer_step" value="">
+	</div>
+	{{/if}}
+	{{#if show.externalLinks}}
+	<div class="Calendars_step Calendars_event_composer_link">
+		<input name="eventUrl" placeholder="{{event.composer.EventInfoLink}}">
+		<input name="ticketsUrl" placeholder="{{event.composer.TicketPurchaseLink}}">
+		<input type="hidden" class="Calendars_composer_step" value="true">
+	</div>
+	{{/if}}
+	<div class="Calendars_step Calendars_event_composer_times">
+		<div class="Calendars_event_composer_date_container">
+			<label for="Calendars_event_composer_date">{{event.composer.Day}}:</label>
+			{{{ datePicker}}}
+			{{{tool "Calendars/recurring"}}}
+		</div>
+		<div class="Calendars_event_composer_time_container">
+			<label>{{event.composer.Starting}}:</label>
+			{{{ timeRange}}}
+            <select name="timezoneName">
+                <option>GMT-12</option>
+                <option>GMT-11</option>
+                <option>GMT-10</option>
+                <option>GMT-9</option>
+                <option>GMT-8</option>
+                <option>GMT-7</option>
+                <option>GMT-6</option>
+                <option>GMT-5</option>
+                <option>GMT-4</option>
+                <option>GMT-3</option>
+                <option>GMT-2</option>
+                <option>GMT-1</option>
+                <option>GMT+0</option>
+                <option>GMT+1</option>
+                <option>GMT+2</option>
+                <option>GMT+3</option>
+                <option>GMT+4</option>
+                <option>GMT+5</option>
+                <option>GMT+6</option>
+                <option>GMT+7</option>
+                <option>GMT+8</option>
+                <option>GMT+9</option>
+                <option>GMT+10</option>
+                <option>GMT+11</option>
+                <option>GMT+12</option>
+            </select>
+		</div>
+		<div class="Calendars_event_composer_duration_container">
+			<label>{{event.composer.Duration}}:</label>
+			<select name="duration_hours">
+				<option value="">{{event.composer.Hours}}</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+			</select>
+			<select name="duration_minutes">
+				<option value="">{{event.composer.Minutes}}</option>
+				<option value="0">00</option>
+				<option value="15">15</option>
+				<option value="30">30</option>
+				<option value="45">45</option>
+			</select>
+		</div>
+	</div>
+	<div class="Calendars_step Calendars_event_composer_privacy">
+		<input name="peopleMin" type="text" maxlength="2" value="{{peopleMin}}" class="Calendars_minmax" >
+		<span>&ndash;</span>
+		<input name="peopleMax" type="text" maxlength="4" value="{{peopleMax}}" class="Calendars_minmax">
+		<select name="labels" class="Calendars_event_composer_labels">
+			{{#each labels}}
+				<option value="{{@key}}">{{this}}</option>
+			{{/each}}
+		</select>
+	</div>
+	<div class="Calendars_step Calendars_event_composer_payment">
+		{{{tool "Calendars/payment"}}}
+		<input type="hidden" class="Calendars_composer_step" value="true">
+	</div>
+	<div class="Q_buttons Calendars_step">
+		<button class="Q_button Q_aspect_when Calendars_event_composer_share">{{event.composer.Share}}</button>
+	</div>
+</div>

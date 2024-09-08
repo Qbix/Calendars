@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "ינואר",
+        "Feb": "פברואר",
+        "Mar": "לְקַלְקֵל",
+        "Apr": "אפריל",
+        "May": "מאי",
+        "Jun": "יוני",
+        "Jul": "יולי",
+        "Aug": "אוגוסט",
+        "Sep": "ספטמבר",
+        "Oct": "אוקטובר",
+        "Nov": "נובמבר",
+        "Dec": "דצמבר"
+    },
+    "monthsLong": {
+        "Jan": "יָנוּאָר",
+        "Feb": "פברואר",
+        "Mar": "מרץ",
+        "Apr": "אַפּרִיל",
+        "May": "מאי",
+        "Jun": "יוני",
+        "Jul": "יולי",
+        "Aug": "אוגוסט",
+        "Sep": "סֶפּטֶמבֶּר",
+        "Oct": "אוֹקְטוֹבֶּר",
+        "Nov": "נוֹבֶמבֶּר",
+        "Dec": "דֵצֶמבֶּר"
+    },
+    "weekdays": {
+        "Sun": "שמש",
+        "Mon": "יום שני",
+        "Tue": "יום שלישי",
+        "Wed": "היינו עושים",
+        "Thu": "יום ה&#39;",
+        "Fri": "שישי",
+        "Sat": "ישב"
+    },
+    "weekdaysLong": {
+        "Sun": "יוֹם רִאשׁוֹן",
+        "Mon": "יוֹם שֵׁנִי",
+        "Tue": "יוֹם שְׁלִישִׁי",
+        "Wed": "יום רביעי",
+        "Thu": "יוֹם חֲמִישִׁי",
+        "Fri": "יוֹם שִׁישִׁי",
+        "Sat": "יום שבת"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "תכנן אירוע חדש"
+        },
+        "tool": {
+            "HostedBy": "מתארח על ידי {{name}}",
+            "Name": "שֵׁם",
+            "AreYouIn": "אתה ב?",
+            "Yes": "כן",
+            "No": "לא",
+            "Ok": "בסדר",
+            "Cancel": "לְבַטֵל",
+            "Maybe": "אולי",
+            "Conversation": "שִׂיחָה",
+            "Promote": "קדם את האירוע הזה",
+            "Reminders": "תזכורות",
+            "RemindersLabel": "אני רוצה לקבל הודעה על אירוע ב:",
+            "MoreInfo": "עוד מידע",
+            "Registration": "הַרשָׁמָה",
+            "SetReminders": "נא להגדיר תזכורות",
+            "ReservationFee": "עמלת הזמנה",
+            "AddParticipants": "להוסיף משתתפים",
+            "ManageReservation": "ניהול הזמנה",
+            "UpdateFutureReservations": "האם גם אתה רוצה לעדכן את כל ההזמנות העתידיות באותו אופן?",
+            "RecurringAdmin": "הגדרות חוזרות",
+            "MakeReservation": "לבצע הזמנה",
+            "StartLiveStream": "לחץ לסטרימינג בשידור חי",
+            "LiveStreamEnded": "השידור החי הסתיים",
+            "ClickToViewRecording": "לחץ לצפייה בהקלטה",
+            "Checkin": "סרוק את קודי המשתתפים",
+            "Myqr": "קבלה",
+            "CloseEvent": {
+                "button": "בטל את האירוע",
+                "confirm": {
+                    "text": {
+                        "Cancel": "האם אתה בטוח שברצונך לבטל את האירוע הזה?",
+                        "Participant": "יש 1 משתתף באירוע זה",
+                        "Participants": "יש {{count}} משתתפים באירוע הזה",
+                        "Recurring": "האירוע הזה חוזר על עצמו. האם אתה רוצה גם לבטל את כל המופעים העתידיים שלו?"
+                    },
+                    "trip": {
+                        "Cancel": "האם אתה רוצה גם לבטל את הטיול שלך {{tripDirection}} אירוע זה?",
+                        "Passengers": "יש {{passengerCount}} נוסעים שמסתמכים עליך.",
+                        "Title": "סגור טיול"
+                    },
+                    "directions": {
+                        "TO": "ל",
+                        "FROM": "מ",
+                        "to": "ל",
+                        "from": "מ"
+                    }
+                }
+            },
+            "Calendar": "לוּחַ שָׁנָה",
+            "Interests": "תחומי עניין",
+            "Directions": "כיוונים",
+            "TitleOfEvent": "כותרת האירוע:",
+            "OpenTo": "פתוח ל",
+            "GoingTo": "יהיה ב",
+            "NotGoingTo": "לא יהיה ב",
+            "MaybeGoingTo": "יהיה אולי ב",
+            "AdminDontPay": "אדמין לא צריך לשלם",
+            "PublisherDontPay": "מוציא לאור לא צריך לשלם",
+            "EmptyList": "רשימה ריקה",
+            "NeedToPayCredits": "צריך לשלם: <span>{{amount}} זיכויים<\/span>",
+            "PleaseJoinParticipants": "נא להצטרף {{participant}}",
+            "YouReservingPlace": "אתה תשריין את מקומך.",
+            "SelectIncludesToAdd": "בחר אחד או יותר {{TypeDisplayPlural}} להוספה:",
+            "YouHaveNotRegisteredAnyIncluded": "עדיין לא רשמת אף {{TypeDisplayPlural}}",
+            "Proceed": "להמשיך",
+            "MakeChanges": "שמור את השינויים שלי",
+            "CancelReservation": "בטל את כל ההזמנה",
+            "Total": "סך הכל",
+            "RequiredRelatedParticipants": "אירוע זה דורש משתתפים: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "אנא ערוך את הזמינות &quot;{{title}}&quot; כדי לעדכן הגדרות חוזרות"
+        },
+        "composer": {
+            "SetLocation": "הגדר את המיקום שלי",
+            "SetInfoLink": "הגדר קישור למידע נוסף",
+            "ChooseAvailability": "בחר שירות זמין",
+            "ChooseActivity": "בחר פעילות",
+            "ChoosePublisher": "בחר ב-Publisher",
+            "Day": "יְוֹם",
+            "Starting": "מתחיל",
+            "Duration": "מֶשֶׁך",
+            "Hour": "שָׁעָה",
+            "Hours": "שעה (ות",
+            "Minutes": "דקות",
+            "Ending": "סִיוּם",
+            "People": "אֲנָשִׁים",
+            "Share": "לַחֲלוֹק",
+            "Continue": "לְהַמשִׁיך",
+            "Recurring": "מַחזוֹרִי",
+            "RecurringTitle": "ימים חוזרים",
+            "Daily": "יומי",
+            "Weekly": "שְׁבוּעִי",
+            "Monthly": "יַרחוֹן",
+            "SelectLocation": "אנא בחר מיקום תחילה.",
+            "eventType": "סוג אירוע",
+            "EditTitle": "תחשוב על כותרת מעניינת...",
+            "SetTitle": "נא להגדיר את כותרת האירוע",
+            "ScheduleOnlineConference": "קבע ועידה מקוונת",
+            "SOCDescription": "נא להגדיר את שעת ההתחלה והסיום של הוועידה. כל אדם המבקר באירוע במהלך פרק זמן זה יתחבר אוטומטית לוועידה מקוונת.",
+            "EndDate": "סוֹף",
+            "location": {
+                "Title": "הגדר את המיקום שלך"
+            },
+            "interest": {
+                "Title": "בחר פעילות",
+                "Filter": "תחומי עניין בחיפוש..."
+            },
+            "SetLivestream": "הדבק קישור לשידור חי \/ ועידת וידאו"
+        },
+        "EventAlreadyClosed": "האירוע הזה כבר נסגר",
+        "addToCalendar": {
+            "permissions": {
+                "title": "להוסיף ליומן?",
+                "prompt": "האם תרצה להוסיף את האירוע הזה ליומן שלך?",
+                "yes": "כן",
+                "no": "לא"
+            },
+            "dialog": {
+                "Title": "הוסף אירוע ליומן שלך"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "זמינות",
+        "NewAvailability": {
+            "Title": "זמינות חדשה",
+            "SaveAvailability": "שמור זמינות",
+            "SelectTemplate": "אנא בחר שירות",
+            "SelectLocation": "אנא בחר מיקום",
+            "SelectArea": "אנא בחר אזור",
+            "Type": "סוּג",
+            "Weekly": "שְׁבוּעִי",
+            "RecurringStartDate": "תאריך התחלה חוזר",
+            "EndDate": "תאריך סיום",
+            "SelectTime": "נהל משבצות זמן",
+            "SelectTimeSlot": "בחר משבצת זמן",
+            "SelectTimeSlots": "בחר משבצות זמן רצויות",
+            "PeopleMin": "מינימום מבקרים",
+            "PeopleMax": "מקסימום מבקרים",
+            "PeopleLabels": "תוויות מותר",
+            "Next": "הַבָּא",
+            "Back": "חזור"
+        },
+        "EditAvailability": "ערוך זמינות",
+        "SetVisitors": "הגדר מבקרים",
+        "Price": "מחיר",
+        "SelectAction": "אנא בחר פעולה",
+        "OpenProfile": "פתח פרופיל",
+        "RemoveStaff": "הסר את הצוות",
+        "PleaseSelectTimeSlots": "אנא בחר משבצות זמן",
+        "ExceptionOccurred": "אירעה חריגה",
+        "NotEnoughCreditsToParticipateEvents": "אין מספיק קרדיטים כדי להשתתף באירועים של {{eventsAmount}}. אתה צריך {{needCredits}} זיכויים. רוצה לקנות?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "תאריך התחלה",
+            "endDate": "תאריך סיום",
+            "justOnce": "רק פעם אחת",
+            "justOnceWeekly": "השבוע בלבד",
+            "justOnceMonthly": "החודש בלבד",
+            "recurring": "מַחזוֹרִי"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "אירוע חינם",
+            "optional": "תרומה אופציונלית",
+            "required": "תשלום נדרש"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "תרומה אופציונלית",
+            "required": "תשלום נדרש",
+            "paid": "שולם"
+        },
+        "confirmationDialog": {
+            "title": "אישור תשלום",
+            "content": "לאירוע הזה יש תרומה אופציונלית של {{amount}}.",
+            "button": "לתרום"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} עדיין לא חלק מהאירוע. האם אתה רוצה להוסיף אותם כמשתתף?",
+        "userNotFound": "המשתמש לא נמצא",
+        "confirmYes": "כן",
+        "confirmNo": "לא"
+    },
+    "notifications": {
+        "EventActivityIn": "פעילות אירוע ב-{{{stream.fields.title}}}",
+        "RecurringRulesChanged": "כללים חוזרים השתנו עבור האירוע {{{call 'message.getInstruction' 'eventTitle'}}}",
+        "ManageEmailSubscriptions": "לנהל את מנויי האימייל שלך",
+        "IfUnsubscribe": "אם אתה רוצה לבטל את המנוי",
+        "ClickHereToVisitEvent": "אנא לחץ כאן כדי לבקר באירוע",
+        "Calendars\/reminder": "האירוע &quot;{{{call 'message.getInstruction' 'name'}}&quot; יתחיל בעוד {{&call 'message.getInstruction' 'time'}}}"
+    },
+    "import": {
+        "linkTitle": "מלא את הגיליון האלקטרוני הזה",
+        "fileLabel": "העלה גיליון אלקטרוני:",
+        "importOptions": "אפשרויות",
+        "importProgress": "התקדמות",
+        "sampleCSV": "הורד CSV לדוגמה",
+        "joinEventLabel": "הצטרף משתמשים לאירוע אקראי",
+        "smsText": "היי, זה עתה שלחתי לך קישור אל {{communityName}}. בבקשה תבדוק את זה.",
+        "emailSubject": "הרגע שלחתי לך קישור",
+        "emailBody": "היי, זה עתה שלחתי לך הזמנה אל {{communityName}}. בבקשה תבדוק את זה.",
+        "fileNotFound": "מצטערים, קובץ CSV לא נמצא.",
+        "fileEmpty": "מצטערים, קובץ ה-CSV ריק.",
+        "fieldNotFound": "השדה הנדרש &quot;{{1}}&quot; לא נמצא",
+        "userIdNotFound": "המשתמש קיים אך המזהה ריק",
+        "activateUsers": "לשלוח הודעת הפעלה למשתמשים?",
+        "taskStreamInvalid": "זרם המשימות לא חוקי",
+        "instructionsEmpty": "הוראות זרם המשימות ריקות",
+        "interestsEmpty": "לא יכול להשיג אינטרסים",
+        "interestAbsent": "עניין {{1}} לא נמצא",
+        "complete": "לְהַשְׁלִים",
+        "errorLine": "שורה {{1}}",
+        "errorsTitle": "אירעו שגיאות",
+        "communityUsers": "זו רשימת הקהילות"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "מייצג אירוע שאנשים יכולים להשתתף בו",
+            "displayType": "מִקרֶה"
+        },
+        "Calendars\/recurring": {
+            "description": "משמש לקישור זרמים שאמורים לחזור על עצמם מעת לעת",
+            "displayType": "אירוע חוזר"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "הוסף חריץ",
+        "StartTime": "שעת התחלה",
+        "EndTime": "שעת סיום",
+        "Save": "להציל",
+        "AddTimeSlot": "הוסף משבצת זמן",
+        "CopyFromDay": "העתק מהיום",
+        "Nearest": "הכי קרוב",
+        "Today": "היום",
+        "Tomorrow": "מָחָר",
+        "AfterTomorrow": "מחרתיים"
+    }
+}

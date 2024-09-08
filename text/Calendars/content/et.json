@@ -1,0 +1,333 @@
+{
+    "months": {
+        "Jan": "jaan",
+        "Feb": "veebr",
+        "Mar": "märts",
+        "Apr": "apr",
+        "May": "mai",
+        "Jun": "juuni",
+        "Jul": "juuli",
+        "Aug": "augustil",
+        "Sep": "sept",
+        "Oct": "okt",
+        "Nov": "nov",
+        "Dec": "dets"
+    },
+    "monthsLong": {
+        "Jan": "jaanuaril",
+        "Feb": "veebruaril",
+        "Mar": "märtsil",
+        "Apr": "aprill",
+        "May": "mai",
+        "Jun": "juunini",
+        "Jul": "juulil",
+        "Aug": "august",
+        "Sep": "septembril",
+        "Oct": "oktoober",
+        "Nov": "novembril",
+        "Dec": "detsember"
+    },
+    "weekdays": {
+        "Sun": "Päike",
+        "Mon": "Esmasp",
+        "Tue": "teisip",
+        "Wed": "kolmap",
+        "Thu": "Neljap",
+        "Fri": "P",
+        "Sat": "laup"
+    },
+    "weekdaysLong": {
+        "Sun": "pühapäev",
+        "Mon": "esmaspäev",
+        "Tue": "teisipäeval",
+        "Wed": "kolmapäeval",
+        "Thu": "neljapäeval",
+        "Fri": "reedel",
+        "Sat": "laupäeval"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Planeerige uus sündmus"
+        },
+        "tool": {
+            "HostedBy": "Majutaja: {{name}}",
+            "Name": "Nimi",
+            "AreYouIn": "Kas sa oled sees?",
+            "Yes": "Jah",
+            "No": "Ei",
+            "Ok": "Okei",
+            "Cancel": "Tühista",
+            "Maybe": "Võib olla",
+            "Conversation": "Vestlus",
+            "Promote": "Reklaamige seda sündmust",
+            "Reminders": "Meeldetuletused",
+            "RemindersLabel": "Soovin, et mind teavitataks sündmusest:",
+            "MoreInfo": "Rohkem infot",
+            "Registration": "Registreerimine",
+            "SetReminders": "Määrake meeldetuletused",
+            "ReservationFee": "Broneerimistasu",
+            "AddParticipants": "Lisa osalejaid",
+            "ManageReservation": "Halda broneeringut",
+            "UpdateFutureReservations": "Kas soovite ka kõiki tulevasi broneeringuid samal viisil värskendada?",
+            "RecurringAdmin": "Korduvad seaded",
+            "MakeReservation": "Tee broneering",
+            "StartLiveStream": "Klõpsake otseülekandeks",
+            "LiveStreamEnded": "Otseülekanne on lõppenud",
+            "ClickToViewRecording": "klõpsake salvestise vaatamiseks",
+            "Checkin": "Kontrollige osalejate koode",
+            "Myqr": "Sisseregistreerimine",
+            "CloseEvent": {
+                "button": "Tühista sündmus",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Kas olete kindel, et soovite selle sündmuse tühistada?",
+                        "Participant": "Sellel üritusel on 1 osaleja",
+                        "Participants": "Sellel sündmusel on {{count}} osalejat",
+                        "Recurring": "See sündmus on korduv. Kas soovite tühistada ka kõik selle tulevased eksemplarid?"
+                    },
+                    "trip": {
+                        "Cancel": "Kas soovite ka oma reisi {{tripDirection}} selle sündmuse tühistada?",
+                        "Passengers": "Teie peale loodavad {{passengerCount}} reisijat.",
+                        "Title": "Sule Reis"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "FROM",
+                        "to": "juurde",
+                        "from": "alates"
+                    }
+                }
+            },
+            "Calendar": "Kalender",
+            "Interests": "Huvid",
+            "Directions": "Juhised",
+            "TitleOfEvent": "Sündmuse pealkiri:",
+            "OpenTo": "Avatud",
+            "GoingTo": "saab olema kell",
+            "NotGoingTo": "ei ole kohal",
+            "MaybeGoingTo": "saab ehk kell",
+            "AdminDontPay": "Admin ei pea maksma",
+            "PublisherDontPay": "Väljaandja ei pea maksma",
+            "EmptyList": "Tühi nimekiri",
+            "NeedToPayCredits": "Vajadus maksta: <span>{{amount}} krediiti<\/span>",
+            "PleaseJoinParticipants": "Palun liituge {{participant}}",
+            "YouReservingPlace": "Sa broneerid oma koha.",
+            "SelectIncludesToAdd": "Valige üks või mitu {{TypeDisplayPlural}}, mida lisada:",
+            "YouHaveNotRegisteredAnyIncluded": "Te pole veel ühtegi {{TypeDisplayPlural}} registreerinud",
+            "Proceed": "Jätkake",
+            "MakeChanges": "Salvesta minu muudatused",
+            "CancelReservation": "Tühista kogu broneering",
+            "Total": "Kokku",
+            "RequiredRelatedParticipants": "See sündmus nõuab osalejaid: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Korduvate seadete värskendamiseks muutke saadavust „{{title}}”.",
+            "Presentation": "Esitlus",
+            "YouAreNotParticipated": "Te ei ole üritusel osaleja",
+            "LiveStreamStarted": "Otseülekanne on alanud",
+            "WebRTCStarted": "Telekonverents algas",
+            "WebRTCEnded": "Telekonverents lõppes"
+        },
+        "composer": {
+            "SetLocation": "Määra Minu asukoht",
+            "SetInfoLink": "Määra link lisateabele",
+            "ChooseAvailability": "Valige Saadaolev teenus",
+            "ChooseActivity": "Valige tegevus",
+            "ChoosePublisher": "Valige Väljaandja",
+            "Day": "päev",
+            "Starting": "Käivitamine",
+            "Duration": "Kestus",
+            "Hour": "Tund",
+            "Hours": "Tundi",
+            "Minutes": "Minutid",
+            "Ending": "Lõpetamine",
+            "People": "Inimesed",
+            "Share": "Jaga",
+            "Continue": "Jätka",
+            "Recurring": "Korduv",
+            "RecurringTitle": "Korduvad päevad",
+            "Daily": "Igapäevane",
+            "Weekly": "Iganädalane",
+            "Monthly": "Igakuine",
+            "SelectLocation": "Valige esmalt asukoht.",
+            "eventType": "Sündmuse tüüp",
+            "EditTitle": "Mõelge mõnele huvitavale pealkirjale...",
+            "SetTitle": "Määrake sündmuse pealkiri",
+            "ScheduleOnlineConference": "Planeerige veebikonverents",
+            "SOCDescription": "Määrake konverentsi algus- ja lõpuaeg. Iga inimene, kes selle aja jooksul üritust külastab, loob automaatselt ühenduse veebikonverentsiga.",
+            "EndDate": "Lõpp",
+            "location": {
+                "Title": "Määrake oma asukoht"
+            },
+            "interest": {
+                "Title": "Valige tegevus",
+                "Filter": "Otsinguhuvid..."
+            },
+            "SetLivestream": "Kleepige otseülekande\/videokonverentsi link",
+            "Locally": "kohapeal",
+            "EventInfoLink": "Sündmuse info link",
+            "TicketPurchaseLink": "Pileti ostmise link"
+        },
+        "EventAlreadyClosed": "See üritus on juba suletud",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Kas lisada kalendrisse?",
+                "prompt": "Kas soovite selle sündmuse oma kalendrisse lisada?",
+                "yes": "Jah",
+                "no": "Ei"
+            },
+            "dialog": {
+                "Title": "Lisage sündmus oma kalendrisse"
+            }
+        },
+        "ErrorLeaveEndedEvent": "Vabandust, kuid te ei saa lõppenud sündmusest lahkuda"
+    },
+    "availabilities": {
+        "Title": "Saadavused",
+        "NewAvailability": {
+            "Title": "Uus saadavus",
+            "SaveAvailability": "Salvesta saadavus",
+            "SelectTemplate": "Valige Teenus",
+            "SelectLocation": "Palun valige Asukoht",
+            "SelectArea": "Valige piirkond",
+            "Type": "Tüüp",
+            "Weekly": "Iganädalane",
+            "RecurringStartDate": "Korduv alguskuupäev",
+            "EndDate": "Lõppkuupäev",
+            "SelectTime": "Hallake ajapilusid",
+            "SelectTimeSlot": "Valige ajapilu",
+            "SelectTimeSlots": "Valige soovitud ajavahemikud",
+            "PeopleMin": "Minimaalne külastajate arv",
+            "PeopleMax": "Maksimaalne külastajate arv",
+            "PeopleLabels": "Rollid lubatud",
+            "Next": "Edasi",
+            "Back": "tagasi",
+            "RecurringEndDate": "Korduv lõppkuupäev",
+            "ScheduleOnlineConference": "Planeerige telekonverents",
+            "SetLivestream": "Kleepige otseülekande \/ videokonverentsi link",
+            "SelectTimeZone": "Valige ajavöönd"
+        },
+        "EditAvailability": "Redigeeri saadavust",
+        "SetVisitors": "Määra külastajad",
+        "Price": "Hind",
+        "SelectAction": "Valige toiming",
+        "OpenProfile": "Ava profiil",
+        "RemoveStaff": "Eemaldage töötajad",
+        "PleaseSelectTimeSlots": "Palun valige ajavahemikud",
+        "ExceptionOccurred": "Tekkis erand",
+        "NotEnoughCreditsToParticipateEvents": "Pole piisavalt krediiti, et osaleda {{eventsAmount}} sündmusel. Vajate {{needCredits}} krediiti. Tahan osta?",
+        "LiveStream": "Otseülekanne",
+        "InviteStaff": "Kutsuge töötajaid"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Algus kuupäev",
+            "endDate": "Lõppkuupäev",
+            "justOnce": "Ainult üks kord",
+            "justOnceWeekly": "Ainult sel nädalal",
+            "justOnceMonthly": "Ainult sel kuul",
+            "recurring": "Korduv"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Tasuta üritus",
+            "optional": "Valikuline panus",
+            "required": "Nõutav makse"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Valikuline panus",
+            "required": "Nõutav makse",
+            "paid": "makstud"
+        },
+        "confirmationDialog": {
+            "title": "Maksekinnitus",
+            "content": "Sellel sündmusel on valikuline panus {{amount}}.",
+            "button": "Panustada"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} ei ole veel sündmuse osa. Kas soovite nad osalejaks lisada?",
+        "userNotFound": "Kasutajat ei leitud",
+        "confirmYes": "Jah",
+        "confirmNo": "Ei"
+    },
+    "notifications": {
+        "EventActivityIn": "Sündmused: {{{stream.fields.title}}}",
+        "RecurringRulesChanged": "Sündmuse {{{call 'message.getInstruction' 'eventTitle'}}} korduvaid reegleid muudeti",
+        "ManageEmailSubscriptions": "hallata oma e-posti tellimusi",
+        "IfUnsubscribe": "Kui soovite tellimusest loobuda",
+        "ClickHereToVisitEvent": "Ürituse külastamiseks klõpsake siin",
+        "Calendars\/reminder": "Sündmus &quot;{{{call 'message.getInstruction' 'name'}}&quot; algab {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Telekonverents algas",
+            "Ended": "Telekonverents lõppes"
+        },
+        "livestream": {
+            "Started": "Otseülekanne algas",
+            "Ended": "Otseülekanne lõppes",
+            "ClickToView": "Vaata seda siit."
+        }
+    },
+    "import": {
+        "linkTitle": "Täitke see arvutustabel",
+        "fileLabel": "Laadi üles arvutustabel:",
+        "importOptions": "Valikud",
+        "importProgress": "Edusammud",
+        "sampleCSV": "Laadige alla CSV näidis",
+        "joinEventLabel": "Liituge kasutajatega juhusliku sündmusega",
+        "smsText": "Tere, saatsin teile just lingi aadressile {{communityName}}. Palun kontrollige seda.",
+        "emailSubject": "Saatsin sulle just lingi",
+        "emailBody": "Tere, saatsin teile just kutse aadressile {{communityName}}. Palun kontrollige seda.",
+        "fileNotFound": "Vabandust, CSV-faili ei leitud.",
+        "fileEmpty": "Vabandust, CSV-fail on tühi.",
+        "fieldNotFound": "Kohustuslikku välja &quot;{{1}}&quot; ei leitud",
+        "userIdNotFound": "kasutaja on olemas, kuid ID on tühi",
+        "activateUsers": "Kas saata kasutajatele aktiveerimissõnum?",
+        "taskStreamInvalid": "ülesandevoog on kehtetu",
+        "instructionsEmpty": "ülesandevoo juhised tühjad",
+        "interestsEmpty": "ei saa huvisid",
+        "interestAbsent": "huvi {{1}} ei leitud",
+        "complete": "Täielik",
+        "errorLine": "rida {{1}}",
+        "errorsTitle": "Tekkisid vead",
+        "communityUsers": "See on kogukondade loend",
+        "toMainCommunityToo": "seotud ka põhikogukonnaga",
+        "ChooseFile": "Vali fail"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Esindab sündmust, millest inimesed saavad osa võtta",
+            "displayType": "Sündmus"
+        },
+        "Calendars\/recurring": {
+            "description": "Kasutatakse perioodiliselt korduvate voogude seostamiseks",
+            "displayType": "Korduv sündmus"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Lisa pesa",
+        "StartTime": "Algusaeg",
+        "EndTime": "Lõpuaeg",
+        "Save": "Salvesta",
+        "AddTimeSlot": "Lisage ajapilu",
+        "CopyFromDay": "Kopeeri päevast",
+        "Nearest": "Lähim",
+        "Today": "Täna",
+        "Tomorrow": "Homme",
+        "AfterTomorrow": "Ülehomme"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Tellige kalender",
+        "copyLinkBelow": "Kopeeri link allpool",
+        "goTo": "Minema:",
+        "pasteCopiedTo": "Kleepige kopeeritud link väljale „Kalendri URL”.",
+        "clickAddCalendar": "Klõpsake nuppu &quot;Lisa kalender&quot;.",
+        "copyLink": "Kopeeri link",
+        "tapToCopy": "Lingi lõikelauale kopeerimiseks puudutage allolevat nuppu",
+        "linkCopied": "Link kopeeritud",
+        "step2": "Link kopeeritud. Avame Google&#39;i kalendri. Peate kleepima lingi tekstikasti, klõpsama &quot;Lisa kalender&quot; ja sulgema vahekaardi (vt allpool olevat ekraanipilti).",
+        "calendarAppPreferences": "Avage oma Maci rakenduses Calendar suvand Eelistused ja määrake kalendri vaikerakendus selliseks, nagu allpool näidatud.",
+        "thenCloseDialog": "Seejärel sulgege see dialoog oma kalendri tellimiseks!",
+        "success": "Kalender sünkrooniti edukalt"
+    }
+}

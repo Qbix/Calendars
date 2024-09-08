@@ -1,0 +1,293 @@
+{
+    "months": {
+        "Jan": "январь",
+        "Feb": "февраль",
+        "Mar": "Мар",
+        "Apr": "апрель",
+        "May": "Май",
+        "Jun": "июнь",
+        "Jul": "июль",
+        "Aug": "август",
+        "Sep": "сентябрь",
+        "Oct": "октябрь",
+        "Nov": "ноябрь",
+        "Dec": "декабрь"
+    },
+    "monthsLong": {
+        "Jan": "Январь",
+        "Feb": "Февраль",
+        "Mar": "Март",
+        "Apr": "Апрель",
+        "May": "Май",
+        "Jun": "Июнь",
+        "Jul": "Июль",
+        "Aug": "Август",
+        "Sep": "Сентябрь",
+        "Oct": "Октябрь",
+        "Nov": "Ноябрь",
+        "Dec": "Декабрь"
+    },
+    "weekdays": {
+        "Sun": "Sun",
+        "Mon": "Дүйш",
+        "Tue": "шей",
+        "Wed": "Шар",
+        "Thu": "Пш",
+        "Fri": "Жм",
+        "Sat": "Сб"
+    },
+    "weekdaysLong": {
+        "Sun": "Жекшемби",
+        "Mon": "Дүйшөмбү",
+        "Tue": "Шейшемби",
+        "Wed": "Шаршемби",
+        "Thu": "Бейшемби",
+        "Fri": "Жума",
+        "Sat": "Ишемби"
+    },
+    "event": {
+        "preview": {
+            "EventComposerDialogTitle": "Жаңы окуяны пландаштырыңыз"
+        },
+        "tool": {
+            "HostedBy": "Уюштуруучу: {{name}}",
+            "Name": "аты",
+            "AreYouIn": "Сен дагы катышасыңбы?",
+            "Yes": "Ооба",
+            "No": "Жок",
+            "Ok": "Макул",
+            "Cancel": "Жокко чыгаруу",
+            "Maybe": "Болушу мүмкүн",
+            "Conversation": "Сүйлөшүү",
+            "Promote": "Бул иш-чараны жайылтуу",
+            "Reminders": "Эскерткичтер",
+            "RemindersLabel": "Төмөндөгү окуя тууралуу кабардар болгум келет:",
+            "MoreInfo": "Көбүрөөк маалымат",
+            "Registration": "Каттоо",
+            "SetReminders": "Сураныч, эстеткичтерди орнотуңуз",
+            "ReservationFee": "Брондоо акысы",
+            "AddParticipants": "Катышуучуларды кошуу",
+            "ManageReservation": "Резервди башкаруу",
+            "UpdateFutureReservations": "Сиз дагы бардык келечектеги ээлеп коюуларды ушундай жол менен жаңырткыңыз келеби?",
+            "RecurringAdmin": "Кайталануучу Орнотуулар",
+            "MakeReservation": "Резерв кылуу",
+            "StartLiveStream": "Түз Агым үчүн чыкылдатыңыз",
+            "LiveStreamEnded": "Түз берүү аяктады",
+            "ClickToViewRecording": "жазууну көрүү үчүн чыкылдатыңыз",
+            "Checkin": "Катышуучулардын коддорун скандоо",
+            "Myqr": "Каттоого киргизүү",
+            "CloseEvent": {
+                "button": "Окуяны жокко чыгаруу",
+                "confirm": {
+                    "text": {
+                        "Cancel": "Бул иш-чараны чын эле жокко чыгаргыңыз келеби?",
+                        "Participant": "Бул иш-чарада 1 катышуучу бар",
+                        "Participants": "Бул иш-чарада {{count}} катышуучу бар",
+                        "Recurring": "Бул окуя кайталанып жатат. Анын бардык келечектеги учурларын да жокко чыгаргыңыз келеби?"
+                    },
+                    "trip": {
+                        "Cancel": "Бул иш-чараны {{tripDirection}} сапарыңыздан да жокко чыгаргыңыз келеби?",
+                        "Passengers": "Сизге таянган {{passengerCount}} жүргүнчү бар.",
+                        "Title": "Сапарды жабуу"
+                    },
+                    "directions": {
+                        "TO": "TO",
+                        "FROM": "FROM",
+                        "to": "чейин",
+                        "from": "тартып"
+                    }
+                }
+            },
+            "Calendar": "Календар",
+            "Interests": "Кызыкчылыктар",
+            "Directions": "Багыттар",
+            "TitleOfEvent": "Иш-чаранын аталышы:",
+            "OpenTo": "Ачуу",
+            "GoingTo": "болот",
+            "NotGoingTo": "болбойт",
+            "MaybeGoingTo": "болушу мүмкүн",
+            "AdminDontPay": "Админ төлөөнүн кереги жок",
+            "PublisherDontPay": "Жарыялоочу төлөөнүн кереги жок",
+            "EmptyList": "Бош тизме",
+            "NeedToPayCredits": "Төлөш керек: <span>{{amount}} кредит<\/span>",
+            "PleaseJoinParticipants": "Сураныч, кошулуңуз {{participant}}",
+            "YouReservingPlace": "Орунуңузду ээлеп аласыз.",
+            "SelectIncludesToAdd": "Кошуу үчүн бир же бир нече {{TypeDisplayPlural}} тандаңыз:",
+            "YouHaveNotRegisteredAnyIncluded": "Сиз азырынча эч кандай {{TypeDisplayPlural}} катталган жоксуз",
+            "Proceed": "Улантуу",
+            "MakeChanges": "Менин өзгөртүүлөрүмдү сактоо",
+            "CancelReservation": "Бүтүндөй ээлеп коюуну жокко чыгаруу",
+            "Total": "Бардыгы",
+            "RequiredRelatedParticipants": "Бул иш-чарага катышуучулар керек: {{requiredParticipantsList}}",
+            "AvailabilityWarning": "Кайталануучу жөндөөлөрдү жаңыртуу үчүн &quot;{{title}}&quot; жеткиликтүүлүгүн түзөтүңүз"
+        },
+        "composer": {
+            "SetLocation": "Менин жайгашкан жеримди коюу",
+            "SetInfoLink": "Кошумча маалымат үчүн Шилтемени коюңуз",
+            "ChooseAvailability": "Жеткиликтүү кызматты тандаңыз",
+            "ChooseActivity": "Иш-аракетти тандаңыз",
+            "ChoosePublisher": "Жарыялоочуну тандаңыз",
+            "Day": "Күн",
+            "Starting": "Баштоо",
+            "Duration": "Узактыгы",
+            "Hour": "Саат",
+            "Hours": "Саат",
+            "Minutes": "Мүнөттөр",
+            "Ending": "Аяктоо",
+            "People": "Адамдар",
+            "Share": "Бөлүшүү",
+            "Continue": "Улантуу",
+            "Recurring": "Кайталануучу",
+            "RecurringTitle": "Кайталануучу күндөр",
+            "Daily": "Күнүмдүк",
+            "Weekly": "Апта сайын",
+            "Monthly": "Ай сайын",
+            "SelectLocation": "Сураныч, биринчи орун тандаңыз.",
+            "eventType": "Окуя түрү",
+            "EditTitle": "Кызыктуу аталышты ойлоп көрүңүз...",
+            "SetTitle": "Сураныч, окуянын аталышын коюңуз",
+            "ScheduleOnlineConference": "Онлайн конференцияны пландаштырыңыз",
+            "SOCDescription": "Конференциянын башталышы жана аяктоо убактысын аныктаңыз. Бул убакыт аралыгында иш-чарага келген ар бир адам онлайн конференцияга автоматтык түрдө кошулат.",
+            "EndDate": "Аягы",
+            "location": {
+                "Title": "Жайгашкан жериңизди орнотуңуз"
+            },
+            "interest": {
+                "Title": "Иш-аракетти тандаңыз",
+                "Filter": "Кызыкчылыктарды издөө..."
+            },
+            "SetLivestream": "Түз агымга \/ видеоконференцияга шилтемени чаптаңыз"
+        },
+        "EventAlreadyClosed": "Бул иш-чара мурунтан эле жабылган",
+        "addToCalendar": {
+            "permissions": {
+                "title": "Жылнаамага кошулсунбу?",
+                "prompt": "Бул окуяны календарыңызга кошкуңуз келеби?",
+                "yes": "Ооба",
+                "no": "Жок"
+            },
+            "dialog": {
+                "Title": "Календарыңызга Окуя кошуңуз"
+            }
+        }
+    },
+    "availabilities": {
+        "Title": "Жеткиликтүүлүк",
+        "NewAvailability": {
+            "Title": "Жаңы жеткиликтүүлүк",
+            "SaveAvailability": "Жеткиликтүүлүгүн сактоо",
+            "SelectTemplate": "Кызматты тандаңыз",
+            "SelectLocation": "Сураныч, Жайгашкан жерди тандаңыз",
+            "SelectArea": "Сураныч, аймакты тандаңыз",
+            "Type": "Түр",
+            "Weekly": "Апта сайын",
+            "RecurringStartDate": "Кайталануучу башталыш датасы",
+            "EndDate": "Аяктоо күнү",
+            "SelectTime": "Убакыт Slots башкаруу",
+            "SelectTimeSlot": "Убакыт аралыгын тандаңыз",
+            "SelectTimeSlots": "Каалаган убакыт аралыгын тандаңыз",
+            "PeopleMin": "Минималдуу коноктор",
+            "PeopleMax": "Максималдуу коноктор",
+            "PeopleLabels": "Энбелгилерге уруксат берилген",
+            "Next": "Кийинки",
+            "Back": "Артка"
+        },
+        "EditAvailability": "Жеткиликтүүлүгүн түзөтүү",
+        "SetVisitors": "Конокторду коюу",
+        "Price": "Баасы",
+        "SelectAction": "Сураныч, аракет тандаңыз",
+        "OpenProfile": "Профиль ачуу",
+        "RemoveStaff": "Кызматкерлерди алып салуу",
+        "PleaseSelectTimeSlots": "Сураныч, убакыт аралыгын тандаңыз",
+        "ExceptionOccurred": "Өзгөчө кырдаал болду",
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} иш-чараларга катышуу үчүн кредиттер жетишсиз. Сизге {{needCredits}} кредит керек. Сатып алгыңыз келеби?"
+    },
+    "recurring": {
+        "dialog": {
+            "startDate": "Башталган күнү",
+            "endDate": "Аяктоо күнү",
+            "justOnce": "Бир эле жолу",
+            "justOnceWeekly": "Ушул жумада гана",
+            "justOnceMonthly": "Ушул айда гана",
+            "recurring": "Кайталануучу"
+        }
+    },
+    "payment": {
+        "selectOptions": {
+            "free": "Акысыз иш-чара",
+            "optional": "Кошумча салым",
+            "required": "Милдеттүү төлөм"
+        },
+        "amountPlaceholder": "0",
+        "info": {
+            "optional": "Кошумча салым",
+            "required": "Милдеттүү төлөм",
+            "paid": "төлөнгөн"
+        },
+        "confirmationDialog": {
+            "title": "Төлөмдү ырастоо",
+            "content": "Бул окуянын кошумча салымы {{amount}}.",
+            "button": "салым кошуу"
+        }
+    },
+    "QRScanner": {
+        "confirmParticipate": "{{1}} азырынча окуянын бир бөлүгү эмес. Аларды катышуучу катары кошкуңуз келеби?",
+        "userNotFound": "Колдонуучу табылган жок",
+        "confirmYes": "Ооба",
+        "confirmNo": "Жок"
+    },
+    "notifications": {
+        "EventActivityIn": "{{{stream.fields.title}}} шаарында болгон иш-чара",
+        "RecurringRulesChanged": "{{{call 'message.getInstruction' 'eventTitle'}}} окуясы үчүн кайталануучу эрежелер өзгөртүлдү",
+        "ManageEmailSubscriptions": "электрондук почта жазылууларыңызды башкаруу",
+        "IfUnsubscribe": "Эгер сиз жазылууну токтоткуңуз келсе",
+        "ClickHereToVisitEvent": "Сураныч, иш-чарага баруу үчүн бул жерди басыңыз",
+        "Calendars\/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; иш-чарасы {{&call 'message.getInstruction' 'time'}}} башталат"
+    },
+    "import": {
+        "linkTitle": "Бул электрондук жадыбалды толтуруңуз",
+        "fileLabel": "Электрондук жадыбалды жүктөө:",
+        "importOptions": "Параметрлер",
+        "importProgress": "Прогресс",
+        "sampleCSV": "CSV үлгүсүн жүктөп алыңыз",
+        "joinEventLabel": "Колдонуучуларга туш келди окуяга кошулуңуз",
+        "smsText": "Эй, мен сизге жаңы эле {{communityName}} шилтемесин жөнөттүм. Сураныч, текшерип көрүңүз.",
+        "emailSubject": "Жөн гана сизге шилтеме жөнөттү",
+        "emailBody": "Эй, мен сизге жаңы эле {{communityName}} чакыруу жөнөттүм. Сураныч, текшерип көрүңүз.",
+        "fileNotFound": "Кечиресиз, CSV файл табылган жок.",
+        "fileEmpty": "Кечиресиз, CSV файлы бош.",
+        "fieldNotFound": "Милдеттүү талаа &quot;{{1}}&quot; табылган жок",
+        "userIdNotFound": "колдонуучу бар, бирок id бош",
+        "activateUsers": "колдонуучуларга активдештирүү билдирүүсүн жөнөтөсүзбү?",
+        "taskStreamInvalid": "тапшырма агымы жараксыз",
+        "instructionsEmpty": "тапшырма агымынын нускамалары бош",
+        "interestsEmpty": "кызыкчылыктарды ала албайт",
+        "interestAbsent": "кызыгуу {{1}} табылган жок",
+        "complete": "Бүттү",
+        "errorLine": "сап {{1}}",
+        "errorsTitle": "Каталар пайда болду",
+        "communityUsers": "Бул жамааттардын тизмеси"
+    },
+    "types": {
+        "Calendars\/event": {
+            "description": "Адамдар катыша турган иш-чараны билдирет",
+            "displayType": "Окуя"
+        },
+        "Calendars\/recurring": {
+            "description": "Мезгил-мезгили менен кайталанып турган агымдарды байланыштыруу үчүн колдонулат",
+            "displayType": "Кайталануучу окуя"
+        }
+    },
+    "timeslots": {
+        "AddSlot": "Slot кошуу",
+        "StartTime": "Баштоо убактысы",
+        "EndTime": "Аяктоо убактысы",
+        "Save": "Сактоо",
+        "AddTimeSlot": "Убакыт аралыгын кошуу",
+        "CopyFromDay": "күндөн көчүрүү",
+        "Nearest": "Эң жакын",
+        "Today": "Бүгүн",
+        "Tomorrow": "Эртең",
+        "AfterTomorrow": "Бүрсүгүнү"
+    }
+}
