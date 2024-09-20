@@ -2,6 +2,13 @@
 function Assets_before_Streams_unrelateTo_Calendars_event ($params) {
 	$relatedTo = $params['relatedTo'];
 
+	if (is_array($relatedTo)) {
+		foreach ($relatedTo as $item) {
+			Assets_before_Streams_unrelateTo_Calendars_event(['relatedTo' => $item]);
+		}
+		return;
+	}
+
 	// if event already started, don't refund credits
 	$event = Streams_Stream::fetch($relatedTo->toPublisherId, $relatedTo->toPublisherId, $relatedTo->toStreamName);
 	if ((int)$event->getAttribute('startTime') <= time()) {
