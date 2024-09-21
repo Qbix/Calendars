@@ -104,7 +104,7 @@ Q.Tool.define("Calendars/event/preview", ["Streams/preview"], function(options, 
 		participants: true
 	},
 	icon: {
-		size: '80'
+		size: '500x'
 	},
 	templateStyle: Calendars.event.templateStyle || "classic",
 	textfill: Q.getObject("Communities.event.preview.textfill", Q),
