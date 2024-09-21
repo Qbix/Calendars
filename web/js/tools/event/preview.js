@@ -50,7 +50,7 @@ Q.Tool.define("Calendars/event/preview", ["Streams/preview"], function(options, 
 			tool.$('.Calendars_event_titleContent').html(changed.title);
 		}
 		if (changed.icon) {
-			var icon = Q.Streams.iconUrl(changed.icon, tool.state.icon.size || '500x');
+			var icon = Q.Streams.iconUrl(changed.icon, tool.state.icon.size);
 			tool.$('.Calendars_event_preview_background').css(
 				'background-image', 'url(' + icon + ')'
 			);
@@ -104,7 +104,7 @@ Q.Tool.define("Calendars/event/preview", ["Streams/preview"], function(options, 
 		participants: true
 	},
 	icon: {
-		size: '500x'
+		size: '80'
 	},
 	templateStyle: Calendars.event.templateStyle || "classic",
 	textfill: Q.getObject("Communities.event.preview.textfill", Q),
@@ -172,7 +172,7 @@ Q.Tool.define("Calendars/event/preview", ["Streams/preview"], function(options, 
 			tool.prefix
 		);
 		var fields = {
-			src: stream.iconUrl(state.icon.size || '500x'),
+			src: stream.iconUrl(state.icon.size),
 			title: stream.fields.title,
 			info: info,
 			participantsTool: participantsTool,
