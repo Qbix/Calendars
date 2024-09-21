@@ -59,16 +59,9 @@
 		},
 		"images": {
 			"Calendars/event": {
-				"sizes": {
-					"40": "40.png",
-					"50": "50.png",
-					"80": "80.png",
-					"200": "200.png",
-					"400": "400.png",
-					"500x333": "500x.png"
-				},
+				"sizes": ["40", "50", "80", "200x", "500x", "1000x"],
+				"defaultSize": "1000x",
 				"maxStretch": 2,
-				"defaultSize": "400",
 				"defaultCacheBust": 1000
 			}
 		},
