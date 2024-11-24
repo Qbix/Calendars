@@ -1,6 +1,6 @@
 <?php
 	
-function Streams_0_4_4_Calendars()
+function Calendars_0_4_4_Streams()
 {
 	$communityId = Users::communityId();
 
@@ -64,4 +64,4 @@ function Streams_0_4_4_Calendars()
 	}
 	echo "\n";
 }
-Streams_0_4_4_Calendars();
+Calendars_0_4_4_Streams();
