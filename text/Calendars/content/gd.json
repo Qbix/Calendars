@@ -119,7 +119,12 @@
             "CancelReservation": "Sguir an glèidheadh gu lèir",
             "Total": "Iomlan",
             "RequiredRelatedParticipants": "Feumaidh an tachartas seo com-pàirtichean: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Deasaich cothrom air &quot;{{title}}&quot; gus na roghainnean ath-chuairteachaidh ùrachadh"
+            "AvailabilityWarning": "Deasaich cothrom air &quot;{{title}}&quot; gus na roghainnean ath-chuairteachaidh ùrachadh",
+            "Presentation": "taisbeanadh",
+            "YouAreNotParticipated": "Chan eil thu nad chom-pàirtiche san tachartas",
+            "LiveStreamStarted": "Tha sruth beò air tòiseachadh",
+            "WebRTCStarted": "Thòisich tele-cho-labhairt",
+            "WebRTCEnded": "Thàinig tele-cho-labhairt gu crìch"
         },
         "composer": {
             "SetLocation": "Suidhich mo shuidheachadh",
@@ -156,7 +161,10 @@
                 "Title": "Tagh Gnìomh",
                 "Filter": "Lorg ùidhean ..."
             },
-            "SetLivestream": "Cuir a-steach ceangal gu sruth-beò \/ co-labhairt bhidio"
+            "SetLivestream": "Cuir a-steach ceangal gu sruth-beò \/ co-labhairt bhidio",
+            "Locally": "gu h-ionadail",
+            "EventInfoLink": "Ceangal Fiosrachaidh Tachartas",
+            "TicketPurchaseLink": "Ceangal Ceannach Tiogaidean"
         },
         "EventAlreadyClosed": "Tha an tachartas seo dùinte mu thràth",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Cuir Tachartas ris a’ Mhìosachan agad"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Duilich, ach chan urrainn dhut an tachartas crìochnaichte fhàgail"
     },
     "availabilities": {
         "Title": "Ri fhaotainn",
@@ -190,7 +199,11 @@
             "PeopleMax": "Luchd-tadhail as àirde",
             "PeopleLabels": "Bileagan ceadaichte",
             "Next": "Air adhart",
-            "Back": "Air ais"
+            "Back": "Air ais",
+            "RecurringEndDate": "Ceann-latha crìochnachaidh ath-chuairteachaidh",
+            "ScheduleOnlineConference": "Clàr-ama Tele-cho-labhairt",
+            "SetLivestream": "Cuir a-steach ceangal gu sruth-beò \/ co-labhairt bhidio",
+            "SelectTimeZone": "Tagh TimeZone"
         },
         "EditAvailability": "Deasaich ri fhaotainn",
         "SetVisitors": "Suidhich Luchd-tadhail",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Thoir air falbh luchd-obrach",
         "PleaseSelectTimeSlots": "Feuch an tagh thu slotan ùine",
         "ExceptionOccurred": "Thachair eisgeachd",
-        "NotEnoughCreditsToParticipateEvents": "Chan eil creideasan gu leòr ann airson com-pàirt a ghabhail ann an {{eventsAmount}} tachartasan. Feumaidh tu {{needCredits}} creideas. Ag iarraidh a cheannach?"
+        "NotEnoughCreditsToParticipateEvents": "Chan eil creideasan gu leòr ann airson com-pàirt a ghabhail ann an {{eventsAmount}} tachartasan. Feumaidh tu {{needCredits}} creideas. Ag iarraidh a cheannach?",
+        "InviteStaff": "Thoir cuireadh do luchd-obrach",
+        "LiveStream": "Sruth beò"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "stiùir na fo-sgrìobhaidhean post-d agad",
         "IfUnsubscribe": "Ma tha thu airson crìoch a chur air an fho-sgrìobhadh",
         "ClickHereToVisitEvent": "Feuch an cliog thu an seo gus tadhal air tachartas",
-        "Calendars\/reminder": "Tòisichidh tachartas &quot;{{{call 'message.getInstruction' 'name'}}&quot; ann an {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Tòisichidh tachartas &quot;{{{call 'message.getInstruction' 'name'}}&quot; ann an {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Thòisich tele-cho-labhairt",
+            "Ended": "Thàinig tele-cho-labhairt gu crìch"
+        },
+        "livestream": {
+            "Started": "Thòisich sruth beò",
+            "Ended": "Thàinig sruth beò gu crìch",
+            "ClickToView": "Seall e an seo."
+        }
     },
     "import": {
         "linkTitle": "Lìon a-mach an spreadsheet seo",
@@ -266,7 +290,9 @@
         "complete": "Crìochnaich",
         "errorLine": "loidhne {{1}}",
         "errorsTitle": "Thachair mearachdan",
-        "communityUsers": "Seo liosta choimhearsnachdan"
+        "communityUsers": "Seo liosta choimhearsnachdan",
+        "toMainCommunityToo": "ceangailte ris a’ phrìomh choimhearsnachd cuideachd",
+        "ChooseFile": "tagh faidhle"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "An-diugh",
         "Tomorrow": "A-màireach",
         "AfterTomorrow": "Às deidh a-màireach"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Subscribe to Calendar",
+        "copyLinkBelow": "Cliog air a’ phutan gu h-ìosal gus lethbhreac a dhèanamh den cheangal chun bhòrd bhidio agad",
+        "tapToCopy": "Tap air a’ phutan gu h-ìosal gus an ceangal chun bhòrd bhidio agad a chopaigeadh",
+        "goTo": "Rach gu:",
+        "pasteCopiedTo": "Cuir a-steach ceangal leth-bhreac gu raon &quot;URL a&#39; mhìosachain&quot;.",
+        "clickAddCalendar": "Briog air a &#39;phutan &quot;Cuir mìosachan&quot;.",
+        "copyLink": "Dèan lethbhreac den cheangal",
+        "linkCopied": "Ceangal air a lethbhreacadh",
+        "step2": "Ceangal air a lethbhreacadh. Tha sinn mu dheidhinn Google Calendar fosgailte. Feumaidh tu an ceangal a chuir a-steach don bhogsa teacsa, cliog air “Cuir mìosachan ris”, agus dùin an taba (faic an dealbh gu h-ìosal)",
+        "calendarAppPreferences": "Fosgail na Roghainnean san App Mìosachan air do Mac, agus suidhich an App Mìosachan bunaiteach gus a bhith mar a chithear gu h-ìosal.",
+        "thenCloseDialog": "An uairsin dùin an còmhradh seo gus fo-sgrìobhadh don mhìosachan agad!",
+        "success": "Chaidh a&#39; mhìosachan a shioncronachadh gu soirbheachail"
     }
 }

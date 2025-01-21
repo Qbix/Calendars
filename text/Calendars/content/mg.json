@@ -119,7 +119,12 @@
             "CancelReservation": "Foana ny famandrihana manontolo",
             "Total": "sokajy",
             "RequiredRelatedParticipants": "Mitaky mpandray anjara ity hetsika ity: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Azafady, ovay ny fisian&#39;ny &quot;{{title}}&quot; hanavao ny fanovana miverimberina"
+            "AvailabilityWarning": "Azafady, ovay ny fisian&#39;ny &quot;{{title}}&quot; hanavao ny fanovana miverimberina",
+            "Presentation": "Presentation",
+            "YouAreNotParticipated": "Tsy mpandray anjara amin&#39;ny hetsika ianao",
+            "LiveStreamStarted": "Nanomboka ny fampitana mivantana",
+            "WebRTCStarted": "Nanomboka ny teleconference",
+            "WebRTCEnded": "Nifarana ny teleconference"
         },
         "composer": {
             "SetLocation": "Apetraho ny toerana misy ahy",
@@ -156,7 +161,10 @@
                 "Title": "Misafidiana hetsika iray",
                 "Filter": "Fikarohana mahaliana ..."
             },
-            "SetLivestream": "Apetaho ny rohy mankany amin&#39;ny streaming mivantana \/ fihaonambe video"
+            "SetLivestream": "Apetaho ny rohy mankany amin&#39;ny streaming mivantana \/ fihaonambe video",
+            "Locally": "eo an-toerana",
+            "EventInfoLink": "Rohy momba ny hetsika",
+            "TicketPurchaseLink": "Rohy fividianana tapakila"
         },
         "EventAlreadyClosed": "Efa nikatona ity hetsika ity",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Ampio ny hetsika amin&#39;ny kalandrie"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Miala tsiny fa tsy afaka miala amin&#39;ny hetsika tapitra ianao"
     },
     "availabilities": {
         "Title": "Availability",
@@ -190,7 +199,11 @@
             "PeopleMax": "Maximum mpitsidika",
             "PeopleLabels": "Etikety azo atao",
             "Next": "Manaraka",
-            "Back": "indray"
+            "Back": "indray",
+            "RecurringEndDate": "Daty famaranana miverimberina",
+            "ScheduleOnlineConference": "Fandaharana Teleconference",
+            "SetLivestream": "Apetaho ny rohy mankany amin&#39;ny mivantana \/ fihaonambe video",
+            "SelectTimeZone": "Mifidiana timeZone"
         },
         "EditAvailability": "Ahitsio Availability",
         "SetVisitors": "Mametraha mpitsidika",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Esory ny mpiasa",
         "PleaseSelectTimeSlots": "Mifidiana toerana misy fotoana azafady",
         "ExceptionOccurred": "Nisy ny fanavahana",
-        "NotEnoughCreditsToParticipateEvents": "Tsy ampy ny crédit handray anjara amin&#39;ny hetsika {{eventsAmount}}. Mila crédit {{needCredits}} ianao. Te hividy?"
+        "NotEnoughCreditsToParticipateEvents": "Tsy ampy ny crédit handray anjara amin&#39;ny hetsika {{eventsAmount}}. Mila crédit {{needCredits}} ianao. Te hividy?",
+        "InviteStaff": "Manasà mpiasa",
+        "LiveStream": "Live streaming"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "tantano ny famandrihanao mailaka",
         "IfUnsubscribe": "Raha te hiala misoratra anarana ianao",
         "ClickHereToVisitEvent": "Tsindrio eto raha hitsidika hetsika",
-        "Calendars\/reminder": "Ny hetsika &quot;{{{call 'message.getInstruction' 'name'}}&quot; dia hanomboka amin&#39;ny {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Ny hetsika &quot;{{{call 'message.getInstruction' 'name'}}&quot; dia hanomboka amin&#39;ny {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Nanomboka ny teleconference",
+            "Ended": "Nifarana ny teleconference"
+        },
+        "livestream": {
+            "Started": "Nanomboka ny streaming mivantana",
+            "Ended": "Nifarana ny fampitana mivantana",
+            "ClickToView": "Jereo eto."
+        }
     },
     "import": {
         "linkTitle": "Fenoy ity Spreadsheet ity",
@@ -266,7 +290,9 @@
         "complete": "feno",
         "errorLine": "tsipika {{1}}",
         "errorsTitle": "Nisy lesoka",
-        "communityUsers": "Ity ny lisitry ny vondrom-piarahamonina"
+        "communityUsers": "Ity ny lisitry ny vondrom-piarahamonina",
+        "toMainCommunityToo": "mifandray amin&#39;ny fiaraha-monina lehibe koa",
+        "ChooseFile": "mifidy rakitra"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "ankehitriny",
         "Tomorrow": "rahampitso",
         "AfterTomorrow": "Aorian&#39;ny ampitso"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Misoratra anarana amin&#39;ny Calendar",
+        "copyLinkBelow": "Kitiho ny bokotra etsy ambany handikana ny rohy mankany amin&#39;ny takelakao",
+        "tapToCopy": "Tsindrio ny bokotra etsy ambany raha te handika ny rohy mankany amin&#39;ny solaitrabenao",
+        "goTo": "Mandehana any amin&#39;ny:",
+        "pasteCopiedTo": "Apetaho amin&#39;ny saha &quot;URL an&#39;ny kalandrie&quot; ny rohy voadika",
+        "clickAddCalendar": "Tsindrio ny bokotra &quot;Add calendar&quot;.",
+        "copyLink": "Copy Link",
+        "linkCopied": "Rohy voadika",
+        "step2": "Rohy voadika. Manokatra Google Calendar izahay. Mila mametaka ny rohy ao anaty boaty lahatsoratra ianao, tsindrio ny &quot;Add calendrier&quot;, ary akatona ny tabilao (jereo ny pikantsary etsy ambany)",
+        "calendarAppPreferences": "Sokafy ny Préférences ao amin&#39;ny App Calendar amin&#39;ny Mac-nao, ary apetraho ny App Calendar Default ho toy ny aseho eto ambany.",
+        "thenCloseDialog": "Dia farano ity fifanakalozan-kevitra ity mba hisoratra anarana amin&#39;ny kalandrie!",
+        "success": "Vita soa aman-tsara ny kalandrie"
     }
 }

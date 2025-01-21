@@ -119,7 +119,12 @@
             "CancelReservation": "Бүтүндөй ээлеп коюуну жокко чыгаруу",
             "Total": "Бардыгы",
             "RequiredRelatedParticipants": "Бул иш-чарага катышуучулар керек: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Кайталануучу жөндөөлөрдү жаңыртуу үчүн &quot;{{title}}&quot; жеткиликтүүлүгүн түзөтүңүз"
+            "AvailabilityWarning": "Кайталануучу жөндөөлөрдү жаңыртуу үчүн &quot;{{title}}&quot; жеткиликтүүлүгүн түзөтүңүз",
+            "Presentation": "Презентация",
+            "YouAreNotParticipated": "Сиз иш-чаранын катышуучусу эмессиз",
+            "LiveStreamStarted": "Түз берүү башталды",
+            "WebRTCStarted": "Телеконференция башталды",
+            "WebRTCEnded": "Телеконференция аяктады"
         },
         "composer": {
             "SetLocation": "Менин жайгашкан жеримди коюу",
@@ -156,7 +161,10 @@
                 "Title": "Иш-аракетти тандаңыз",
                 "Filter": "Кызыкчылыктарды издөө..."
             },
-            "SetLivestream": "Түз агымга \/ видеоконференцияга шилтемени чаптаңыз"
+            "SetLivestream": "Түз агымга \/ видеоконференцияга шилтемени чаптаңыз",
+            "Locally": "жергиликтүү",
+            "EventInfoLink": "Окуя тууралуу маалымат шилтемеси",
+            "TicketPurchaseLink": "Билет сатып алуу шилтемеси"
         },
         "EventAlreadyClosed": "Бул иш-чара мурунтан эле жабылган",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Календарыңызга Окуя кошуңуз"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Кечиресиз, бирок сиз аяктаган окуядан чыга албайсыз"
     },
     "availabilities": {
         "Title": "Жеткиликтүүлүк",
@@ -190,7 +199,11 @@
             "PeopleMax": "Максималдуу коноктор",
             "PeopleLabels": "Энбелгилерге уруксат берилген",
             "Next": "Кийинки",
-            "Back": "Артка"
+            "Back": "Артка",
+            "RecurringEndDate": "Кайталануучу аяктоо датасы",
+            "ScheduleOnlineConference": "Телеконференциянын тартиби",
+            "SetLivestream": "Түз агымга \/ видеоконференцияга шилтемени чаптаңыз",
+            "SelectTimeZone": "Убакыт алкагын тандаңыз"
         },
         "EditAvailability": "Жеткиликтүүлүгүн түзөтүү",
         "SetVisitors": "Конокторду коюу",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Кызматкерлерди алып салуу",
         "PleaseSelectTimeSlots": "Сураныч, убакыт аралыгын тандаңыз",
         "ExceptionOccurred": "Өзгөчө кырдаал болду",
-        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} иш-чараларга катышуу үчүн кредиттер жетишсиз. Сизге {{needCredits}} кредит керек. Сатып алгыңыз келеби?"
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} иш-чараларга катышуу үчүн кредиттер жетишсиз. Сизге {{needCredits}} кредит керек. Сатып алгыңыз келеби?",
+        "InviteStaff": "Кызматкерлерди чакырыңыз",
+        "LiveStream": "Түз агым"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "электрондук почта жазылууларыңызды башкаруу",
         "IfUnsubscribe": "Эгер сиз жазылууну токтоткуңуз келсе",
         "ClickHereToVisitEvent": "Сураныч, иш-чарага баруу үчүн бул жерди басыңыз",
-        "Calendars\/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; иш-чарасы {{&call 'message.getInstruction' 'time'}}} башталат"
+        "Calendars\/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; иш-чарасы {{&call 'message.getInstruction' 'time'}}} башталат",
+        "webrtc": {
+            "Started": "Телеконференция башталды",
+            "Ended": "Телеконференция аяктады"
+        },
+        "livestream": {
+            "Started": "Түз агым башталды",
+            "Ended": "Түз берүү аяктады",
+            "ClickToView": "Аны бул жерден көрүңүз."
+        }
     },
     "import": {
         "linkTitle": "Бул электрондук жадыбалды толтуруңуз",
@@ -266,7 +290,9 @@
         "complete": "Бүттү",
         "errorLine": "сап {{1}}",
         "errorsTitle": "Каталар пайда болду",
-        "communityUsers": "Бул жамааттардын тизмеси"
+        "communityUsers": "Бул жамааттардын тизмеси",
+        "toMainCommunityToo": "негизги коомчулукка да тиешелүү",
+        "ChooseFile": "файлды тандоо"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Бүгүн",
         "Tomorrow": "Эртең",
         "AfterTomorrow": "Бүрсүгүнү"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Календарга жазылыңыз",
+        "copyLinkBelow": "Шилтемени алмашуу буфериңизге көчүрүү үчүн төмөнкү баскычты басыңыз",
+        "tapToCopy": "Шилтемени алмашуу буфериңизге көчүрүү үчүн төмөнкү баскычты басыңыз",
+        "goTo": "Төмөнкүгө өтүңүз:",
+        "pasteCopiedTo": "Көчүрүлгөн шилтемени &quot;Календардын URL&quot; талаасына чаптаңыз",
+        "clickAddCalendar": "&quot;Календар кошуу&quot; баскычын чыкылдатыңыз",
+        "copyLink": "Шилтемени көчүрүү",
+        "linkCopied": "Шилтеме көчүрүлдү",
+        "step2": "Шилтеме көчүрүлдү. Биз ачык Google Календар жөнүндө. Шилтемени текст кутучасына чаптап, &quot;Календар кошуу&quot; баскычын чыкылдатып, өтмөктү жабуу керек (төмөндөгү скриншотту караңыз)",
+        "calendarAppPreferences": "Mac түзмөгүңүздөгү Календар колдонмосунда Артыкчылыктарды ачып, Демейки Календар колдонмосун төмөндө көрсөтүлгөндөй кылып коюңуз.",
+        "thenCloseDialog": "Анда календарыңызга жазылуу үчүн бул диалогду жабыңыз!",
+        "success": "Жылнаама ийгиликтүү шайкештирилди"
     }
 }

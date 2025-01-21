@@ -119,7 +119,12 @@
             "CancelReservation": "सम्पूर्ण आरक्षण रद्द गर्नुहोस्",
             "Total": "कुल",
             "RequiredRelatedParticipants": "यो कार्यक्रममा सहभागी हुन आवश्यक छ: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "पुनरावर्ती सेटिङहरू अद्यावधिक गर्न कृपया उपलब्धता &quot;{{title}}&quot; सम्पादन गर्नुहोस्"
+            "AvailabilityWarning": "पुनरावर्ती सेटिङहरू अद्यावधिक गर्न कृपया उपलब्धता &quot;{{title}}&quot; सम्पादन गर्नुहोस्",
+            "Presentation": "प्रस्तुति",
+            "YouAreNotParticipated": "तपाईं कार्यक्रमको सहभागी हुनुहुन्न",
+            "LiveStreamStarted": "लाइभ स्ट्रिम सुरु भएको छ",
+            "WebRTCStarted": "टेलिफोन सम्मेलन सुरु भयो",
+            "WebRTCEnded": "टेलिफोन सम्मेलन सकियो"
         },
         "composer": {
             "SetLocation": "मेरो स्थान सेट गर्नुहोस्",
@@ -156,7 +161,10 @@
                 "Title": "एउटा गतिविधि छान्नुहोस्",
                 "Filter": "रुचिहरू खोज्नुहोस्..."
             },
-            "SetLivestream": "लाइभस्ट्रिम \/ भिडियो सम्मेलनमा लिङ्क टाँस्नुहोस्"
+            "SetLivestream": "लाइभस्ट्रिम \/ भिडियो सम्मेलनमा लिङ्क टाँस्नुहोस्",
+            "Locally": "स्थानीय रूपमा",
+            "EventInfoLink": "घटना जानकारी लिङ्क",
+            "TicketPurchaseLink": "टिकट खरिद लिङ्क"
         },
         "EventAlreadyClosed": "यो घटना पहिले नै बन्द छ",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "आफ्नो पात्रोमा घटना थप्नुहोस्"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "माफ गर्नुहोस्, तर तपाईं समाप्त भएको घटना छोड्न सक्नुहुन्न"
     },
     "availabilities": {
         "Title": "उपलब्धताहरू",
@@ -190,7 +199,11 @@
             "PeopleMax": "अधिकतम आगन्तुकहरू",
             "PeopleLabels": "लेबलहरूलाई अनुमति दिइएको छ",
             "Next": "अर्को",
-            "Back": "पछाडि"
+            "Back": "पछाडि",
+            "RecurringEndDate": "पुनरावर्ती अन्त्य मिति",
+            "ScheduleOnlineConference": "टेलीकन्फ्रेन्सको तालिका बनाउनुहोस्",
+            "SetLivestream": "लाइभस्ट्रिम \/ भिडियो सम्मेलनमा लिङ्क टाँस्नुहोस्",
+            "SelectTimeZone": "समय क्षेत्र चयन गर्नुहोस्"
         },
         "EditAvailability": "उपलब्धता सम्पादन गर्नुहोस्",
         "SetVisitors": "आगन्तुकहरू सेट गर्नुहोस्",
@@ -200,7 +213,9 @@
         "RemoveStaff": "कर्मचारी हटाउन",
         "PleaseSelectTimeSlots": "कृपया समय स्लटहरू चयन गर्नुहोस्",
         "ExceptionOccurred": "अपवाद भयो",
-        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} घटनाहरूमा भाग लिन पर्याप्त क्रेडिटहरू छैनन्। तपाईंलाई {{needCredits}} क्रेडिट चाहिन्छ। खरीद गर्न चाहन्छु?"
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} घटनाहरूमा भाग लिन पर्याप्त क्रेडिटहरू छैनन्। तपाईंलाई {{needCredits}} क्रेडिट चाहिन्छ। खरीद गर्न चाहन्छु?",
+        "InviteStaff": "कर्मचारीलाई आमन्त्रित गर्नुहोस्",
+        "LiveStream": "लाइभ स्ट्रिम"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "आफ्नो इमेल सदस्यता व्यवस्थापन",
         "IfUnsubscribe": "यदि तपाइँ सदस्यता रद्द गर्न चाहनुहुन्छ भने",
         "ClickHereToVisitEvent": "घटना भ्रमण गर्न कृपया यहाँ क्लिक गर्नुहोस्",
-        "Calendars\/reminder": "घटना &quot;{{{call 'message.getInstruction' 'name'}}&quot; {{&call 'message.getInstruction' 'time'}}} मा सुरु हुनेछ"
+        "Calendars\/reminder": "घटना &quot;{{{call 'message.getInstruction' 'name'}}&quot; {{&call 'message.getInstruction' 'time'}}} मा सुरु हुनेछ",
+        "webrtc": {
+            "Started": "टेलिफोन सम्मेलन सुरु भयो",
+            "Ended": "टेलिफोन सम्मेलन सकियो"
+        },
+        "livestream": {
+            "Started": "लाइभ स्ट्रिम सुरु भयो",
+            "Ended": "लाइभ स्ट्रिम समाप्त भयो",
+            "ClickToView": "यसलाई यहाँ हेर्नुहोस्।"
+        }
     },
     "import": {
         "linkTitle": "यो स्प्रेडसिट भर्नुहोस्",
@@ -266,7 +290,9 @@
         "complete": "पूरा",
         "errorLine": "रेखा {{1}}",
         "errorsTitle": "त्रुटिहरू भयो",
-        "communityUsers": "यो समुदायहरूको सूची हो"
+        "communityUsers": "यो समुदायहरूको सूची हो",
+        "toMainCommunityToo": "मुख्य समुदायसँग पनि सम्बन्धित छ",
+        "ChooseFile": "फाइल चयन गर्नुहोस्"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "आज",
         "Tomorrow": "भोलि",
         "AfterTomorrow": "भोलि पछि"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "पात्रोको सदस्यता लिनुहोस्",
+        "copyLinkBelow": "तपाईंको क्लिपबोर्डमा लिङ्क प्रतिलिपि गर्न तलको बटनमा क्लिक गर्नुहोस्",
+        "tapToCopy": "आफ्नो क्लिपबोर्डमा लिङ्क प्रतिलिपि गर्न तलको बटन ट्याप गर्नुहोस्",
+        "goTo": "जानुहोस्:",
+        "pasteCopiedTo": "&quot;क्यालेन्डरको URL&quot; फिल्डमा प्रतिलिपि गरिएको लिङ्क टाँस्नुहोस्",
+        "clickAddCalendar": "&quot;क्यालेन्डर थप्नुहोस्&quot; बटनमा क्लिक गर्नुहोस्",
+        "copyLink": "लिङ्क प्रतिलिपि गर्नुहोस्",
+        "linkCopied": "लिङ्क प्रतिलिपि गरियो",
+        "step2": "लिङ्क प्रतिलिपि गरियो। हामी गुगल क्यालेन्डर खोल्ने बारे छौं। तपाईंले पाठ बाकसमा लिङ्क टाँस्नु पर्छ, &quot;क्यालेन्डर थप्नुहोस्&quot; मा क्लिक गर्नुहोस्, र ट्याब बन्द गर्नुहोस् (तलको स्क्रिनसट हेर्नुहोस्)",
+        "calendarAppPreferences": "आफ्नो म्याकमा क्यालेन्डर एपमा प्राथमिकताहरू खोल्नुहोस्, र तल देखाइए अनुसार पूर्वनिर्धारित पात्रो एप सेट गर्नुहोस्।",
+        "thenCloseDialog": "त्यसपछि आफ्नो पात्रोको सदस्यता लिन यो संवाद बन्द गर्नुहोस्!",
+        "success": "क्यालेन्डर सफलतापूर्वक सिंक गरियो"
     }
 }

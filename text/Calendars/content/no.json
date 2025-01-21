@@ -119,7 +119,12 @@
             "CancelReservation": "Kanseller hele reservasjonen",
             "Total": "Total",
             "RequiredRelatedParticipants": "Dette arrangementet krever deltakere: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Rediger tilgjengeligheten «{{title}}» for å oppdatere gjentakende innstillinger"
+            "AvailabilityWarning": "Rediger tilgjengeligheten «{{title}}» for å oppdatere gjentakende innstillinger",
+            "Presentation": "Presentasjon",
+            "YouAreNotParticipated": "Du er ikke deltaker på arrangementet",
+            "LiveStreamStarted": "Direktesending har startet",
+            "WebRTCStarted": "Telekonferanse startet",
+            "WebRTCEnded": "Telekonferansen avsluttet"
         },
         "composer": {
             "SetLocation": "Angi Min posisjon",
@@ -156,7 +161,10 @@
                 "Title": "Velg en aktivitet",
                 "Filter": "Søk etter interesser ..."
             },
-            "SetLivestream": "Lim inn lenke til livestream\/videokonferanse"
+            "SetLivestream": "Lim inn lenke til livestream\/videokonferanse",
+            "Locally": "lokalt",
+            "EventInfoLink": "Link til arrangementsinfo",
+            "TicketPurchaseLink": "Link til billettkjøp"
         },
         "EventAlreadyClosed": "Dette arrangementet er allerede stengt",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Legg til hendelse i kalenderen din"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Beklager, men du kan ikke forlate avsluttet arrangement"
     },
     "availabilities": {
         "Title": "Tilgjengelighet",
@@ -190,7 +199,11 @@
             "PeopleMax": "Maksimalt antall besøkende",
             "PeopleLabels": "Etiketter tillatt",
             "Next": "Neste",
-            "Back": "Tilbake"
+            "Back": "Tilbake",
+            "RecurringEndDate": "Gjentakende sluttdato",
+            "ScheduleOnlineConference": "Planlegg telefonkonferanse",
+            "SetLivestream": "Lim inn lenke til livestream\/videokonferanse",
+            "SelectTimeZone": "Velg tidssone"
         },
         "EditAvailability": "Rediger tilgjengelighet",
         "SetVisitors": "Sett besøkende",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Fjern personalet",
         "PleaseSelectTimeSlots": "Vennligst velg tidsluker",
         "ExceptionOccurred": "Unntak skjedde",
-        "NotEnoughCreditsToParticipateEvents": "Ikke nok kreditter til å delta i {{eventsAmount}} arrangementer. Du trenger {{needCredits}} kreditter. Vil kjøpe?"
+        "NotEnoughCreditsToParticipateEvents": "Ikke nok kreditter til å delta i {{eventsAmount}} arrangementer. Du trenger {{needCredits}} kreditter. Vil kjøpe?",
+        "InviteStaff": "Inviter ansatte",
+        "LiveStream": "Direktesending"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "administrere e-postabonnementene dine",
         "IfUnsubscribe": "Hvis du vil avslutte abonnementet",
         "ClickHereToVisitEvent": "Klikk her for å besøke arrangementet",
-        "Calendars\/reminder": "Arrangementet «{{{call 'message.getInstruction' 'name'}}» starter om {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Arrangementet «{{{call 'message.getInstruction' 'name'}}» starter om {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Telekonferanse startet",
+            "Ended": "Telekonferansen avsluttet"
+        },
+        "livestream": {
+            "Started": "Direktesending startet",
+            "Ended": "Direktesending er avsluttet",
+            "ClickToView": "Se den her."
+        }
     },
     "import": {
         "linkTitle": "Fyll ut dette regnearket",
@@ -266,7 +290,9 @@
         "complete": "Fullstendig",
         "errorLine": "linje {{1}}",
         "errorsTitle": "Det oppsto feil",
-        "communityUsers": "Dette er fellesskapsliste"
+        "communityUsers": "Dette er fellesskapsliste",
+        "toMainCommunityToo": "forholde seg til hovedsamfunnet også",
+        "ChooseFile": "velg fil"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "I dag",
         "Tomorrow": "I morgen",
         "AfterTomorrow": "Etter i morgen"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Abonner på Kalender",
+        "copyLinkBelow": "Klikk på knappen nedenfor for å kopiere linken til utklippstavlen din",
+        "tapToCopy": "Trykk på knappen nedenfor for å kopiere lenken til utklippstavlen din",
+        "goTo": "Gå til:",
+        "pasteCopiedTo": "Lim inn den kopierte lenken i feltet &quot;URL for kalender&quot;.",
+        "clickAddCalendar": "Klikk på &quot;Legg til kalender&quot;-knappen",
+        "copyLink": "Kopier lenke",
+        "linkCopied": "Link kopiert",
+        "step2": "Link kopiert. Vi er i ferd med å åpne Google Kalender. Du må lime inn lenken i tekstboksen, klikke på &quot;Legg til kalender&quot; og lukke fanen (se skjermbilde nedenfor)",
+        "calendarAppPreferences": "Åpne Preferansene i Kalender-appen på Mac-en, og still inn Standard Kalender-app som vist nedenfor.",
+        "thenCloseDialog": "Lukk deretter denne dialogboksen for å abonnere på kalenderen din!",
+        "success": "Kalender ble synkronisert"
     }
 }

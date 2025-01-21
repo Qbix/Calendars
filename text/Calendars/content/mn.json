@@ -119,7 +119,12 @@
             "CancelReservation": "Захиалгыг бүхэлд нь цуцлах",
             "Total": "Нийт",
             "RequiredRelatedParticipants": "Энэ үйл явдалд оролцогч шаардлагатай: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Тогтмол тохиргоог шинэчлэхийн тулд &quot;{{title}}&quot;-н боломжит байдлыг засна уу"
+            "AvailabilityWarning": "Тогтмол тохиргоог шинэчлэхийн тулд &quot;{{title}}&quot;-н боломжит байдлыг засна уу",
+            "Presentation": "Илтгэл",
+            "YouAreNotParticipated": "Та үйл явдлын оролцогч биш",
+            "LiveStreamStarted": "Шууд дамжуулалт эхэлсэн",
+            "WebRTCStarted": "Телеконференц эхэллээ",
+            "WebRTCEnded": "Телеконференц дууслаа"
         },
         "composer": {
             "SetLocation": "Миний байршлыг тохируулах",
@@ -156,7 +161,10 @@
                 "Title": "Үйл ажиллагаа сонгоно уу",
                 "Filter": "Хайлтын сонирхол..."
             },
-            "SetLivestream": "Шууд дамжуулалт \/ видео хурлын холбоосыг буулгана уу"
+            "SetLivestream": "Шууд дамжуулалт \/ видео хурлын холбоосыг буулгана уу",
+            "Locally": "орон нутагт",
+            "EventInfoLink": "Үйл явдлын мэдээллийн холбоос",
+            "TicketPurchaseLink": "Тасалбар худалдаж авах холбоос"
         },
         "EventAlreadyClosed": "Энэ үйл явдал аль хэдийн хаагдсан",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Календартаа үйл явдал нэмнэ үү"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Уучлаарай, гэхдээ та дууссан үйл явдлыг орхиж болохгүй"
     },
     "availabilities": {
         "Title": "Боломжтой байдал",
@@ -190,7 +199,11 @@
             "PeopleMax": "Хамгийн их зочин",
             "PeopleLabels": "Зөвшөөрөгдсөн шошго",
             "Next": "Дараачийн",
-            "Back": "Буцах"
+            "Back": "Буцах",
+            "RecurringEndDate": "Тогтмол дуусах огноо",
+            "ScheduleOnlineConference": "Телеконференцийн хуваарь",
+            "SetLivestream": "Шууд дамжуулалт \/ видео хурлын холбоосыг буулгана уу",
+            "SelectTimeZone": "Цагийн бүсийг сонгоно уу"
         },
         "EditAvailability": "Боломжтой байдлыг засах",
         "SetVisitors": "Зочдыг тохируулах",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Ажилчдыг зайлуулах",
         "PleaseSelectTimeSlots": "Цагийн зайг сонгоно уу",
         "ExceptionOccurred": "Онцгой тохиолдол гарсан",
-        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} арга хэмжээнд оролцоход хангалттай кредит алга. Танд {{needCredits}} кредит хэрэгтэй. Худалдан авахыг хүсч байна уу?"
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} арга хэмжээнд оролцоход хангалттай кредит алга. Танд {{needCredits}} кредит хэрэгтэй. Худалдан авахыг хүсч байна уу?",
+        "InviteStaff": "Ажилчдыг урих",
+        "LiveStream": "Шууд дамжуулалт"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "и-мэйл захиалгаа удирдах",
         "IfUnsubscribe": "Хэрэв та бүртгэлээ цуцлахыг хүсвэл",
         "ClickHereToVisitEvent": "Энд дарж үйл явдалтай танилцана уу",
-        "Calendars\/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; арга хэмжээ {{&call 'message.getInstruction' 'time'}}}-д эхэлнэ"
+        "Calendars\/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; арга хэмжээ {{&call 'message.getInstruction' 'time'}}}-д эхэлнэ",
+        "webrtc": {
+            "Started": "Телеконференц эхэллээ",
+            "Ended": "Телеконференц дууслаа"
+        },
+        "livestream": {
+            "Started": "Шууд дамжуулалт эхэлсэн",
+            "Ended": "Шууд дамжуулалт дууссан",
+            "ClickToView": "Эндээс үзнэ үү."
+        }
     },
     "import": {
         "linkTitle": "Энэ хүснэгтийг бөглөнө үү",
@@ -266,7 +290,9 @@
         "complete": "Бүрэн",
         "errorLine": "мөр {{1}}",
         "errorsTitle": "Алдаа гарсан",
-        "communityUsers": "Энэ бол нийгэмлэгүүдийн жагсаалт юм"
+        "communityUsers": "Энэ бол нийгэмлэгүүдийн жагсаалт юм",
+        "toMainCommunityToo": "үндсэн нийгэмлэгтэй ч холбоотой",
+        "ChooseFile": "файлыг сонгоно уу"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Өнөөдөр",
         "Tomorrow": "Маргааш",
         "AfterTomorrow": "Маргаашийн дараа"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Календарт бүртгүүлнэ үү",
+        "copyLinkBelow": "Холбоосыг санах ойдоо хуулахын тулд доорх товчийг дарна уу",
+        "tapToCopy": "Холбоосыг санах ойдоо хуулахын тулд доорх товчийг товшино уу",
+        "goTo": "Дараах руу очих:",
+        "pasteCopiedTo": "Хуулсан холбоосыг &quot;Календарийн URL&quot; талбарт буулгана уу",
+        "clickAddCalendar": "&quot;Хуанли нэмэх&quot; товчийг дарна уу",
+        "copyLink": "Холбоосыг хуулах",
+        "linkCopied": "Холбоосыг хуулсан",
+        "step2": "Холбоосыг хуулсан. Бид Google Хуанли нээх тухай юм. Та холбоосыг текст хайрцагт буулгаж, &quot;Хуанли нэмэх&quot; дээр дарж, табыг хаах хэрэгтэй (доорх дэлгэцийн зургийг харна уу)",
+        "calendarAppPreferences": "Mac дээрх Хуанлийн програмын тохиргоог нээгээд, үндсэн хуанлийн програмыг доор үзүүлсэн шиг тохируулна уу.",
+        "thenCloseDialog": "Дараа нь календартаа бүртгүүлэхийн тулд энэ харилцах цонхыг хаа!",
+        "success": "Хуанли амжилттай синк хийгдсэн"
     }
 }

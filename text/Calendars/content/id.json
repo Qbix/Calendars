@@ -119,7 +119,12 @@
             "CancelReservation": "Batalkan seluruh reservasi",
             "Total": "Total",
             "RequiredRelatedParticipants": "Acara ini membutuhkan peserta: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Harap edit ketersediaan &quot;{{title}}&quot; untuk memperbarui setelan berulang"
+            "AvailabilityWarning": "Harap edit ketersediaan &quot;{{title}}&quot; untuk memperbarui setelan berulang",
+            "Presentation": "Presentasi",
+            "YouAreNotParticipated": "Anda bukan peserta acara tersebut",
+            "LiveStreamStarted": "Siaran langsung telah dimulai",
+            "WebRTCStarted": "Telekonferensi dimulai",
+            "WebRTCEnded": "Telekonferensi berakhir"
         },
         "composer": {
             "SetLocation": "Setel Lokasi Saya",
@@ -156,7 +161,10 @@
                 "Title": "Pilih Aktivitas",
                 "Filter": "Telusuri minat..."
             },
-            "SetLivestream": "Tempel tautan ke streaming langsung \/ konferensi video"
+            "SetLivestream": "Tempel tautan ke streaming langsung \/ konferensi video",
+            "Locally": "secara lokal",
+            "EventInfoLink": "Tautan Info Acara",
+            "TicketPurchaseLink": "Tautan Pembelian Tiket"
         },
         "EventAlreadyClosed": "Acara ini sudah ditutup",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Tambahkan Acara ke Kalender Anda"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Maaf, tetapi Anda tidak dapat meninggalkan acara yang sudah berakhir"
     },
     "availabilities": {
         "Title": "Ketersediaan",
@@ -190,7 +199,11 @@
             "PeopleMax": "Pengunjung maksimum",
             "PeopleLabels": "Label diperbolehkan",
             "Next": "Berikutnya",
-            "Back": "Kembali"
+            "Back": "Kembali",
+            "RecurringEndDate": "Tanggal Akhir Berulang",
+            "ScheduleOnlineConference": "Jadwal Telekonferensi",
+            "SetLivestream": "Tempel tautan ke siaran langsung \/ konferensi video",
+            "SelectTimeZone": "Pilih zona waktu"
         },
         "EditAvailability": "Sunting Ketersediaan",
         "SetVisitors": "Tetapkan Pengunjung",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Hapus staf",
         "PleaseSelectTimeSlots": "Silakan pilih slot waktu",
         "ExceptionOccurred": "Pengecualian terjadi",
-        "NotEnoughCreditsToParticipateEvents": "Kredit tidak cukup untuk berpartisipasi dalam {{eventsAmount}} acara. Anda membutuhkan {{needCredits}} kredit. Ingin membeli?"
+        "NotEnoughCreditsToParticipateEvents": "Kredit tidak cukup untuk berpartisipasi dalam {{eventsAmount}} acara. Anda membutuhkan {{needCredits}} kredit. Ingin membeli?",
+        "InviteStaff": "Undang staf",
+        "LiveStream": "Siaran langsung"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "kelola langganan email Anda",
         "IfUnsubscribe": "Jika Anda ingin berhenti berlangganan",
         "ClickHereToVisitEvent": "Silakan klik di sini untuk mengunjungi acara",
-        "Calendars\/reminder": "Acara &quot;{{{call 'message.getInstruction' 'name'}}&quot; akan dimulai pada {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Acara &quot;{{{call 'message.getInstruction' 'name'}}&quot; akan dimulai pada {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Telekonferensi dimulai",
+            "Ended": "Telekonferensi berakhir"
+        },
+        "livestream": {
+            "Started": "Streaming langsung dimulai",
+            "Ended": "Siaran langsung berakhir",
+            "ClickToView": "Lihat di sini."
+        }
     },
     "import": {
         "linkTitle": "Isi Spreadsheet Ini",
@@ -266,7 +290,9 @@
         "complete": "Menyelesaikan",
         "errorLine": "baris {{1}}",
         "errorsTitle": "Terjadi kesalahan",
-        "communityUsers": "Ini adalah daftar komunitas"
+        "communityUsers": "Ini adalah daftar komunitas",
+        "toMainCommunityToo": "berhubungan dengan komunitas utama juga",
+        "ChooseFile": "pilih berkas"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Hari ini",
         "Tomorrow": "Besok",
         "AfterTomorrow": "Lusa"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Berlangganan Kalender",
+        "copyLinkBelow": "Klik tombol di bawah ini untuk menyalin tautan ke clipboard Anda",
+        "tapToCopy": "Ketuk tombol di bawah untuk menyalin tautan ke papan klip Anda",
+        "goTo": "Pergi ke:",
+        "pasteCopiedTo": "Tempel tautan yang disalin ke bidang &quot;URL kalender&quot;",
+        "clickAddCalendar": "Klik tombol &quot;Tambahkan kalender&quot;",
+        "copyLink": "Salin Tautan",
+        "linkCopied": "Tautan Telah Disalin",
+        "step2": "Tautan Disalin. Kami akan membuka Google Kalender. Anda perlu menempelkan tautan ke kotak teks, klik &quot;Tambahkan kalender&quot;, dan tutup tab (lihat tangkapan layar di bawah)",
+        "calendarAppPreferences": "Buka Preferensi di Aplikasi Kalender di Mac Anda, dan atur Aplikasi Kalender Default seperti yang ditunjukkan di bawah ini.",
+        "thenCloseDialog": "Kemudian tutup dialog ini untuk berlangganan kalender Anda!",
+        "success": "Kalender berhasil disinkronisasikan"
     }
 }

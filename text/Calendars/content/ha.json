@@ -119,7 +119,12 @@
             "CancelReservation": "Soke duk ajiyar wuri",
             "Total": "Jimlar",
             "RequiredRelatedParticipants": "Wannan taron yana buƙatar mahalarta: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Da fatan za a shirya samuwa &quot;{999}}&quot; don sabunta saitunan mai maimaitawa"
+            "AvailabilityWarning": "Da fatan za a shirya samuwa &quot;{999}}&quot; don sabunta saitunan mai maimaitawa",
+            "Presentation": "Gabatarwa",
+            "YouAreNotParticipated": "Ba ku da mahalarta taron",
+            "LiveStreamStarted": "An fara yawo kai tsaye",
+            "WebRTCStarted": "An fara taron wayar tarho",
+            "WebRTCEnded": "Teleconference ya ƙare"
         },
         "composer": {
             "SetLocation": "Saita Wurina",
@@ -156,7 +161,10 @@
                 "Title": "Zaɓi Ayyuka",
                 "Filter": "Bincika abubuwan sha&#39;awa..."
             },
-            "SetLivestream": "Manna hanyar haɗi zuwa livestream\/conference na bidiyo"
+            "SetLivestream": "Manna hanyar haɗi zuwa livestream\/conference na bidiyo",
+            "Locally": "na gida",
+            "EventInfoLink": "Haɗin Bayanin taron",
+            "TicketPurchaseLink": "Hanyar Siyan Tikitin"
         },
         "EventAlreadyClosed": "An riga an rufe wannan taron",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Ƙara Event zuwa Kalandarku"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Yi haƙuri, amma ba za ku iya barin abin da ya ƙare ba"
     },
     "availabilities": {
         "Title": "Samfura",
@@ -190,7 +199,11 @@
             "PeopleMax": "Maziyartan baƙi",
             "PeopleLabels": "An yarda da lakabi",
             "Next": "Na gaba",
-            "Back": "Baya"
+            "Back": "Baya",
+            "RecurringEndDate": "Kwanan Ƙarshen Maimaitawa",
+            "ScheduleOnlineConference": "Jadawalin Teleconference",
+            "SetLivestream": "Manna hanyar haɗi zuwa livestream\/conference na bidiyo",
+            "SelectTimeZone": "Zaɓi yankin lokaci"
         },
         "EditAvailability": "Gyara Samuwar",
         "SetVisitors": "Saita Baƙi",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Cire ma&#39;aikata",
         "PleaseSelectTimeSlots": "Da fatan za a zaɓi ramukan lokaci",
         "ExceptionOccurred": "Banda ya faru",
-        "NotEnoughCreditsToParticipateEvents": "Babu isassun ƙididdigewa don shiga abubuwan {{eventsAmount}}. Kuna buƙatar ƙididdiga {{needCredits}} Kuna so ku saya?"
+        "NotEnoughCreditsToParticipateEvents": "Babu isassun ƙididdigewa don shiga abubuwan {{eventsAmount}}. Kuna buƙatar ƙididdiga {{needCredits}} Kuna so ku saya?",
+        "InviteStaff": "Gayyatar ma&#39;aikata",
+        "LiveStream": "Yawo kai tsaye"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "sarrafa biyan kuɗin imel ɗin ku",
         "IfUnsubscribe": "Idan kuna son cirewa",
         "ClickHereToVisitEvent": "Da fatan za a danna nan don ziyartar taron",
-        "Calendars\/reminder": "Lamarin &quot;{999}}&quot; zai fara a cikin {{{call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Lamarin &quot;{999}}&quot; zai fara a cikin {{{call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "An fara taron wayar tarho",
+            "Ended": "Teleconference ya ƙare"
+        },
+        "livestream": {
+            "Started": "An fara yawo kai tsaye",
+            "Ended": "Ya ƙare rafi kai tsaye",
+            "ClickToView": "Duba shi anan."
+        }
     },
     "import": {
         "linkTitle": "Cika Wannan Rubutun",
@@ -266,7 +290,9 @@
         "complete": "Cikakkun",
         "errorLine": "layi {{1}}",
         "errorsTitle": "Kurakurai sun faru",
-        "communityUsers": "Wannan jerin al&#39;umma ne"
+        "communityUsers": "Wannan jerin al&#39;umma ne",
+        "toMainCommunityToo": "dangantaka da babban al&#39;umma kuma",
+        "ChooseFile": "zabi fayil"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Yau",
         "Tomorrow": "Gobe",
         "AfterTomorrow": "Bayan gobe"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Biyan kuɗi zuwa Kalanda",
+        "copyLinkBelow": "Danna maɓallin da ke ƙasa don kwafi hanyar haɗin zuwa allo",
+        "tapToCopy": "Matsa maɓallin da ke ƙasa don kwafi hanyar haɗi zuwa allon allo",
+        "goTo": "Je zuwa:",
+        "pasteCopiedTo": "Manna hanyar da aka kwafi zuwa filin &quot;URL na kalanda&quot;.",
+        "clickAddCalendar": "Danna maballin &quot;Ƙara kalanda&quot;.",
+        "copyLink": "Kwafi Link",
+        "linkCopied": "An Kwafi mahada",
+        "step2": "An Kwafi mahada. Muna gab da buɗe Google Calendar. Kuna buƙatar manna hanyar haɗi a cikin akwatin rubutu, danna &quot;Ƙara kalanda&quot;, sannan ku rufe shafin (duba hoton da ke ƙasa)",
+        "calendarAppPreferences": "Bude abubuwan da ake so a cikin Kalanda App akan Mac ɗin ku, kuma saita Default Calendar App don zama kamar yadda aka nuna a ƙasa.",
+        "thenCloseDialog": "Sannan rufe wannan maganganun don biyan kuɗi zuwa kalandarku!",
+        "success": "Anyi nasarar daidaita kalanda"
     }
 }

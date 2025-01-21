@@ -119,7 +119,12 @@
             "CancelReservation": "Rhoxisa lonke ugcino",
             "Total": "Iyonke",
             "RequiredRelatedParticipants": "Lo msitho ufuna abathathi-nxaxheba: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Nceda uhlele ukufumaneka &quot;{{title}}&quot; ukuhlaziya useto oluqhubekayo"
+            "AvailabilityWarning": "Nceda uhlele ukufumaneka &quot;{{title}}&quot; ukuhlaziya useto oluqhubekayo",
+            "Presentation": "Inkcazo-ntetho",
+            "YouAreNotParticipated": "Awungomthathi-nxaxheba kulo msitho",
+            "LiveStreamStarted": "Usasazo olubukhoma luqalile",
+            "WebRTCStarted": "I-Teleconference iqalile",
+            "WebRTCEnded": "I-Teleconference iphelile"
         },
         "composer": {
             "SetLocation": "Seta Indawo yam",
@@ -156,7 +161,10 @@
                 "Title": "Khetha uMsebenzi",
                 "Filter": "Khangela izinto onomdla kuzo ..."
             },
-            "SetLivestream": "Coca ikhonkco kwi-livestream \/ videoconference"
+            "SetLivestream": "Coca ikhonkco kwi-livestream \/ videoconference",
+            "Locally": "ekuhlaleni",
+            "EventInfoLink": "Ikhonkco loLwazi loMnyhadala",
+            "TicketPurchaseLink": "Ikhonkco lokuthenga itikiti"
         },
         "EventAlreadyClosed": "Lo msitho sele uvaliwe",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Yongeza uMnyhadala kwiKhalenda yakho"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Uxolo, kodwa awukwazi ukushiya umcimbi ogqityiweyo"
     },
     "availabilities": {
         "Title": "Ukufumaneka",
@@ -190,7 +199,11 @@
             "PeopleMax": "Ubuninzi beendwendwe",
             "PeopleLabels": "Iileyibhile zivumelekile",
             "Next": "Okulandelayo",
-            "Back": "Emva"
+            "Back": "Emva",
+            "RecurringEndDate": "Umhla wokuphela ophindayo",
+            "ScheduleOnlineConference": "Cwangcisa iTeleconference",
+            "SetLivestream": "Ncamathelisa ikhonkco kwi-livestream \/ videoconference",
+            "SelectTimeZone": "Khetha iZowuni yexesha"
         },
         "EditAvailability": "Hlela Ubukho",
         "SetVisitors": "Misela iindwendwe",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Susa abasebenzi",
         "PleaseSelectTimeSlots": "Nceda ukhethe iindawo zokubeka ixesha",
         "ExceptionOccurred": "Ukhetho lwenzekile",
-        "NotEnoughCreditsToParticipateEvents": "Akukho khredithi zaneleyo zokuthatha inxaxheba {{eventsAmount}} kwimisitho. Udinga {{needCredits}} iikhredithi. Ufuna ukuthenga?"
+        "NotEnoughCreditsToParticipateEvents": "Akukho khredithi zaneleyo zokuthatha inxaxheba {{eventsAmount}} kwimisitho. Udinga {{needCredits}} iikhredithi. Ufuna ukuthenga?",
+        "InviteStaff": "Mema abasebenzi",
+        "LiveStream": "Umthombo philayo"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "lawula imirhumo yakho ye-imeyile",
         "IfUnsubscribe": "Ukuba ufuna ukuyeka ukubhalisa",
         "ClickHereToVisitEvent": "Nceda ucofe apha ukutyelela umcimbi",
-        "Calendars\/reminder": "Umsitho &quot;{{{call 'message.getInstruction' 'name'}}&quot; uyakuqala ngo {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Umsitho &quot;{{{call 'message.getInstruction' 'name'}}&quot; uyakuqala ngo {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "I-Teleconference iqalile",
+            "Ended": "I-Teleconference iphelile"
+        },
+        "livestream": {
+            "Started": "Usasazo oluphilayo luqalile",
+            "Ended": "Uqukuqelelo olubukhoma luphelile",
+            "ClickToView": "Yijonge apha."
+        }
     },
     "import": {
         "linkTitle": "Gcwalisa Le Spreadsheet",
@@ -266,7 +290,9 @@
         "complete": "Gqibezela",
         "errorLine": "umgca {{1}}",
         "errorsTitle": "Iimpazamo zenzekile",
-        "communityUsers": "Olu luluhlu loluntu"
+        "communityUsers": "Olu luluhlu loluntu",
+        "toMainCommunityToo": "nxulumana noluntu oluphambili ngokunjalo",
+        "ChooseFile": "khetha ifayile"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Namhlanje",
         "Tomorrow": "Ngomso",
         "AfterTomorrow": "Emva kwengomso"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Bhalisa kwiKhalenda",
+        "copyLinkBelow": "Cofa iqhosha elingezantsi ukukopa ikhonkco kwibhodi eqhotyoshwayo",
+        "tapToCopy": "Cofa iqhosha elingezantsi ukukopa ikhonkco kwibhodi eqhotyoshwayo",
+        "goTo": "Yiya e:",
+        "pasteCopiedTo": "Ncamathelisa ikhonkco elikhutshelweyo kwindawo ethi &quot;URL yekhalenda&quot;.",
+        "clickAddCalendar": "Cofa iqhosha elithi &quot;Yongeza ikhalenda&quot;.",
+        "copyLink": "Khuphela ikhonkco",
+        "linkCopied": "Ikhonkco Ikopishiwe",
+        "step2": "Ikhonkco Ikopishiwe. Simalunga nokuvula iKhalenda kaGoogle. Kuya kufuneka uncamathisele ikhonkco kwibhokisi yokubhaliweyo, cofa u-&quot;Yongeza ikhalenda&quot;, kwaye uvale ithebhu (jonga umfanekiso weskrini ongezantsi)",
+        "calendarAppPreferences": "Vula Okukhethwayo kwiKhalenda yeApp kwiMac yakho, kwaye usete iKhalenda eMiselweyo ukuba iboniswe ngezantsi.",
+        "thenCloseDialog": "Emva koko uvale le ngxoxo ukuze ubhalise kwikhalenda yakho!",
+        "success": "Ikhalenda iye yangqanyaniswa ngempumelelo"
     }
 }

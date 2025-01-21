@@ -119,7 +119,12 @@
             "CancelReservation": "Ganz Reservatioun annuléieren",
             "Total": "Ganzen",
             "RequiredRelatedParticipants": "Dëst Evenement erfuerdert Participanten: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Ännere w.e.g. Disponibilitéit &quot;{{title}}&quot; fir widderhuelend Astellungen ze aktualiséieren"
+            "AvailabilityWarning": "Ännere w.e.g. Disponibilitéit &quot;{{title}}&quot; fir widderhuelend Astellungen ze aktualiséieren",
+            "Presentation": "Presentatioun",
+            "YouAreNotParticipated": "Dir sidd net e Participant vum Event",
+            "LiveStreamStarted": "Live Stream huet ugefaang",
+            "WebRTCStarted": "Telekonferenz ugefaang",
+            "WebRTCEnded": "D&#39;Telekonferenz ass eriwwer"
         },
         "composer": {
             "SetLocation": "Set Meng Location",
@@ -156,7 +161,10 @@
                 "Title": "Wielt eng Aktivitéit",
                 "Filter": "Sich Interessen ..."
             },
-            "SetLivestream": "Paste Link op Livestream \/ Videokonferenz"
+            "SetLivestream": "Paste Link op Livestream \/ Videokonferenz",
+            "Locally": "lokal",
+            "EventInfoLink": "Event Info Link",
+            "TicketPurchaseLink": "Ticket Kaf Link"
         },
         "EventAlreadyClosed": "Dëst Evenement scho zou",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Füügt Event an Äre Kalenner"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Entschëllegt, awer Dir kënnt net ofgeschloss Event verloossen"
     },
     "availabilities": {
         "Title": "Disponibilitéiten",
@@ -190,7 +199,11 @@
             "PeopleMax": "Maximum Visiteuren",
             "PeopleLabels": "Etiketten erlaabt",
             "Next": "Nächst",
-            "Back": "Zréck"
+            "Back": "Zréck",
+            "RecurringEndDate": "Widderhuelend Enn Datum",
+            "ScheduleOnlineConference": "Zäitplang Telekonferenz",
+            "SetLivestream": "Paste Link op Livestream \/ Videokonferenz",
+            "SelectTimeZone": "Wielt ZäitZone"
         },
         "EditAvailability": "Edit Disponibilitéit",
         "SetVisitors": "Set Visiteuren",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Ewechzehuelen Personal",
         "PleaseSelectTimeSlots": "Wielt weg Zäit Plaze",
         "ExceptionOccurred": "Ausnam ass geschitt",
-        "NotEnoughCreditsToParticipateEvents": "Net genuch Kreditt fir {{eventsAmount}} Eventer matzemaachen. Dir braucht {{needCredits}} Credits. Wëllt kafen?"
+        "NotEnoughCreditsToParticipateEvents": "Net genuch Kreditt fir {{eventsAmount}} Eventer matzemaachen. Dir braucht {{needCredits}} Credits. Wëllt kafen?",
+        "InviteStaff": "Invitéieren Personal",
+        "LiveStream": "Livestream"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "verwalten Är E-Mail Abonnementer",
         "IfUnsubscribe": "Wann Dir wëllt ofzeschreiwen",
         "ClickHereToVisitEvent": "Klickt w.e.g. hei fir Event ze besichen",
-        "Calendars\/reminder": "Event &quot;{{{call 'message.getInstruction' 'name'}}&quot; fänkt am {{&call 'message.getInstruction' 'time'}}} un"
+        "Calendars\/reminder": "Event &quot;{{{call 'message.getInstruction' 'name'}}&quot; fänkt am {{&call 'message.getInstruction' 'time'}}} un",
+        "webrtc": {
+            "Started": "D&#39;Telekonferenz huet ugefaang",
+            "Ended": "D&#39;Telekonferenz ass eriwwer"
+        },
+        "livestream": {
+            "Started": "Live Stream ugefaang",
+            "Ended": "De Livestream ass eriwwer",
+            "ClickToView": "Kuckt et hei."
+        }
     },
     "import": {
         "linkTitle": "Fëllt dëse Spreadsheet aus",
@@ -266,7 +290,9 @@
         "complete": "Komplett",
         "errorLine": "Linn {{1}}",
         "errorsTitle": "Feeler geschitt",
-        "communityUsers": "Dëst ass Gemeinschaftslëscht"
+        "communityUsers": "Dëst ass Gemeinschaftslëscht",
+        "toMainCommunityToo": "bezéien sech och op d&#39;Haaptgemeinschaft",
+        "ChooseFile": "wielt Fichier"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Haut",
         "Tomorrow": "Muer",
         "AfterTomorrow": "No muer"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Abonnéiert Iech op de Kalenner",
+        "copyLinkBelow": "Klickt op de Knäppchen hei ënnen fir de Link op Äre Clipboard ze kopéieren",
+        "tapToCopy": "Tippen op de Knäppchen hei ënnen fir de Link op Äre Clipboard ze kopéieren",
+        "goTo": "Géi op:",
+        "pasteCopiedTo": "Paste kopéiert Link op &quot;URL vum Kalenner&quot; Feld",
+        "clickAddCalendar": "Klickt op &quot;Kalenner derbäi&quot; Knäppchen",
+        "copyLink": "Link kopéieren",
+        "linkCopied": "Link kopéiert",
+        "step2": "Link kopéiert. Mir sinn iwwer oppe Google Kalenner. Dir musst de Link an d&#39;Textbox pechen, klickt op &quot;Kalenner derbäi&quot;, an d&#39;Tab zoumaachen (kuckt Screenshot hei ënnen)",
+        "calendarAppPreferences": "Öffnen d&#39;Astellungen an der Kalenner App op Ärem Mac, a setzt d&#39;Default Calendar App op wéi hei ënnendrënner.",
+        "thenCloseDialog": "Da maacht dësen Dialog zou fir op Äre Kalenner ze abonnéieren!",
+        "success": "Kalenner gouf erfollegräich synchroniséiert"
     }
 }

@@ -119,7 +119,12 @@
             "CancelReservation": "Tevahiya veqetandinê betal bike",
             "Total": "Hemî",
             "RequiredRelatedParticipants": "Ev bûyer ji beşdaran re hewce dike: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Ji kerema xwe hebûna &quot;{{title}}&quot; biguherîne da ku mîhengên dûbare nûve bike"
+            "AvailabilityWarning": "Ji kerema xwe hebûna &quot;{{title}}&quot; biguherîne da ku mîhengên dûbare nûve bike",
+            "Presentation": "Pêşkêşî",
+            "YouAreNotParticipated": "Hûn ne beşdarê bûyerê ne",
+            "LiveStreamStarted": "Weşana zindî dest pê kir",
+            "WebRTCStarted": "Telekonferansê dest pê kir",
+            "WebRTCEnded": "Telekonferans bi dawî bû"
         },
         "composer": {
             "SetLocation": "Cihê Min Set",
@@ -156,7 +161,10 @@
                 "Title": "Çalakiyek hilbijêrin",
                 "Filter": "Lêgerîna berjewendiyan..."
             },
-            "SetLivestream": "Zencîreya zindî \/ vîdyokonferansê bişopînin"
+            "SetLivestream": "Zencîreya zindî \/ vîdyokonferansê bişopînin",
+            "Locally": "herêmî",
+            "EventInfoLink": "Girêdana Agahdariya Bûyerê",
+            "TicketPurchaseLink": "Girêdana Kirîna Bilêtê"
         },
         "EventAlreadyClosed": "Ev bûyer jixwe girtiye",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Bûyer li Salnameya xwe zêde bikin"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Bibore, lê tu nikarî ji bûyera qedandî derkevî"
     },
     "availabilities": {
         "Title": "Availabilities",
@@ -190,7 +199,11 @@
             "PeopleMax": "Ziyaretvanên herî zêde",
             "PeopleLabels": "Labels destûr",
             "Next": "Piştî",
-            "Back": "Paş"
+            "Back": "Paş",
+            "RecurringEndDate": "Dîroka Dawî ya Dubare",
+            "ScheduleOnlineConference": "Bernameya Telekonferansê",
+            "SetLivestream": "Zencîreya zindî \/ vîdyokonferansê bişopînin",
+            "SelectTimeZone": "TimeZone hilbijêre"
         },
         "EditAvailability": "Edit Availability",
         "SetVisitors": "Serdanvanên Set",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Karmendan derxistin",
         "PleaseSelectTimeSlots": "Ji kerema xwe hêlînên demê hilbijêrin",
         "ExceptionOccurred": "Îstîsnayek çêbû",
-        "NotEnoughCreditsToParticipateEvents": "Ji bo beşdarbûna {{eventsAmount}} bûyeran kredî têrê nakin. Ji te re {{needCredits}} kredî lazim in. Dixwazin bikirin?"
+        "NotEnoughCreditsToParticipateEvents": "Ji bo beşdarbûna {{eventsAmount}} bûyeran kredî têrê nakin. Ji te re {{needCredits}} kredî lazim in. Dixwazin bikirin?",
+        "InviteStaff": "Karmendan vexwendin",
+        "LiveStream": "Weşana zindî"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "aboneyên e-nameya xwe birêve bibin",
         "IfUnsubscribe": "Ger tu dixwazî abonetiyê bikî",
         "ClickHereToVisitEvent": "Ji kerema xwe li vir bikirtînin ku hûn serdana bûyerê bikin",
-        "Calendars\/reminder": "Bûyera &quot;{{{call 'message.getInstruction' 'name'}}&quot; dê di {{&call 'message.getInstruction' 'time'}}} de dest pê bike"
+        "Calendars\/reminder": "Bûyera &quot;{{{call 'message.getInstruction' 'name'}}&quot; dê di {{&call 'message.getInstruction' 'time'}}} de dest pê bike",
+        "webrtc": {
+            "Started": "Telekonferansê dest pê kir",
+            "Ended": "Telekonferans bi dawî bû"
+        },
+        "livestream": {
+            "Started": "Weşana zindî dest pê kir",
+            "Ended": "Weşana zindî bi dawî bû",
+            "ClickToView": "Li vir bibînin."
+        }
     },
     "import": {
         "linkTitle": "Vê Spreadsheet dagirin",
@@ -266,7 +290,9 @@
         "complete": "Tevî",
         "errorLine": "rêz {{1}}",
         "errorsTitle": "Çewtî çêbûn",
-        "communityUsers": "Ev lîsteya civakan e"
+        "communityUsers": "Ev lîsteya civakan e",
+        "toMainCommunityToo": "bi civaka sereke re jî têkildar in",
+        "ChooseFile": "pelê hilbijêre"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Îro",
         "Tomorrow": "Sibê",
         "AfterTomorrow": "Piştî sibê"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Subscribe to Calendar",
+        "copyLinkBelow": "Bişkojka jêrîn bikirtînin da ku zencîreyê li clipboard-a xwe kopî bikin",
+        "tapToCopy": "Bişkojka jêrîn bikirtînin da ku zencîreyê li klîpboarda xwe kopî bikin",
+        "goTo": "Biçe:",
+        "pasteCopiedTo": "Girêdana kopîkirî li qada &quot;URL ya salnameyê&quot; bixin",
+        "clickAddCalendar": "Bişkojka &quot;Salname lê zêde bike&quot; bikirtînin",
+        "copyLink": "Girêdanê kopî bikin",
+        "linkCopied": "Girêdan kopî kirin",
+        "step2": "Girêdan kopî kirin. Em li ser Salnameya Google vekirî ne. Hûn ê hewce bikin ku zencîreyê li qutiya nivîsê bixin, &quot;Salname lê zêde bike&quot; bikirtînin û tabloyê bigirin (li jêr dîmenderê bibînin)",
+        "calendarAppPreferences": "Di App Calendar-ê de li ser Mac-a xwe Vebijêrkên Vebijêrk vekin, û Bernameya Salnameyê ya Pêşnuma wekî ku li jêr tê xuyang kirin saz bikin.",
+        "thenCloseDialog": "Dûv re vê diyalogê bigire da ku bibe abone li salnameya xwe!",
+        "success": "Salname bi serfirazî hat senkronîzekirin"
     }
 }

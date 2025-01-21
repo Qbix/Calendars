@@ -119,7 +119,12 @@
             "CancelReservation": "Letsani kusungitsa konse",
             "Total": "Zonse",
             "RequiredRelatedParticipants": "Chochitikachi chikufunika otenga nawo mbali: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Chonde sinthani kupezeka &quot;{{title}}&quot; kuti musinthe zochunira"
+            "AvailabilityWarning": "Chonde sinthani kupezeka &quot;{{title}}&quot; kuti musinthe zochunira",
+            "Presentation": "Ulaliki",
+            "YouAreNotParticipated": "Simuli nawo pamwambowu",
+            "LiveStreamStarted": "Live stream yayamba",
+            "WebRTCStarted": "Teleconference idayamba",
+            "WebRTCEnded": "Teleconference inatha"
         },
         "composer": {
             "SetLocation": "Khazikitsani Malo Anga",
@@ -156,7 +161,10 @@
                 "Title": "Sankhani Ntchito",
                 "Filter": "Sakani zokonda ..."
             },
-            "SetLivestream": "Ikani ulalo wa livestream \/ videoconference"
+            "SetLivestream": "Ikani ulalo wa livestream \/ videoconference",
+            "Locally": "kwanuko",
+            "EventInfoLink": "Ulalo wa Info Info",
+            "TicketPurchaseLink": "Ulalo Wogula Tikiti"
         },
         "EventAlreadyClosed": "Chochitikachi chatsekedwa kale",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Onjezani Chochitika ku Kalendala yanu"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Pepani, koma simungathe kusiya chochitika chomwe chatha"
     },
     "availabilities": {
         "Title": "Zopezeka",
@@ -190,7 +199,11 @@
             "PeopleMax": "Kuchuluka kwa alendo",
             "PeopleLabels": "Zolemba zololedwa",
             "Next": "Ena",
-            "Back": "Kubwerera"
+            "Back": "Kubwerera",
+            "RecurringEndDate": "Tsiku Lomaliza Lobwerezabwereza",
+            "ScheduleOnlineConference": "Konzani Teleconference",
+            "SetLivestream": "Ikani ulalo wa livestream \/ videoconference",
+            "SelectTimeZone": "Sankhani timeZone"
         },
         "EditAvailability": "Sinthani Kupezeka",
         "SetVisitors": "Khazikitsani Alendo",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Chotsani antchito",
         "PleaseSelectTimeSlots": "Chonde sankhani nthawi",
         "ExceptionOccurred": "Kupatulapo kunachitika",
-        "NotEnoughCreditsToParticipateEvents": "Palibe ndalama zokwanira zochitira nawo {{eventsAmount}} zochitika. Mufunika {{needCredits}} makirediti. Mukufuna kugula?"
+        "NotEnoughCreditsToParticipateEvents": "Palibe ndalama zokwanira zochitira nawo {{eventsAmount}} zochitika. Mufunika {{needCredits}} makirediti. Mukufuna kugula?",
+        "InviteStaff": "Itanani ogwira ntchito",
+        "LiveStream": "Mtsinje wamoyo"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "konzani zolembetsa zanu za imelo",
         "IfUnsubscribe": "Ngati mukufuna kusiya kulemba",
         "ClickHereToVisitEvent": "Chonde dinani apa kuti muwone chochitika",
-        "Calendars\/reminder": "Chochitika &quot;{{{call 'message.getInstruction' 'name'}}&quot; chidzayamba pakadutsa {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Chochitika &quot;{{{call 'message.getInstruction' 'name'}}&quot; chidzayamba pakadutsa {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Teleconference idayamba",
+            "Ended": "Teleconference inatha"
+        },
+        "livestream": {
+            "Started": "Live stream inayamba",
+            "Ended": "Live stream yatha",
+            "ClickToView": "Onani apa."
+        }
     },
     "import": {
         "linkTitle": "Lembani Tsambali",
@@ -266,7 +290,9 @@
         "complete": "Malizitsani",
         "errorLine": "mzere {{1}}",
         "errorsTitle": "Zolakwika zidachitika",
-        "communityUsers": "Uwu ndi mndandanda wamagulu"
+        "communityUsers": "Uwu ndi mndandanda wamagulu",
+        "toMainCommunityToo": "zikugwirizananso ndi anthu ammudzi",
+        "ChooseFile": "sankhani fayilo"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Lero",
         "Tomorrow": "Mawa",
         "AfterTomorrow": "Pambuyo mawa"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Lembetsani ku Kalendala",
+        "copyLinkBelow": "Dinani batani ili m&#39;munsimu kuti mukopere ulalo wapa bolodi lanu",
+        "tapToCopy": "Dinani batani ili m&#39;munsimu kuti mukopere ulalo wapa bolodi lanu",
+        "goTo": "Pitani ku:",
+        "pasteCopiedTo": "Matani ulalo womwe wakopedwa kugawo la &quot;URL ya kalendala&quot;.",
+        "clickAddCalendar": "Dinani &quot;Add kalendala&quot; batani",
+        "copyLink": "Copy Link",
+        "linkCopied": "Ulalo Wakopedwa",
+        "step2": "Ulalo Wakopedwa. Tatsala pang&#39;ono kutsegula Google Calendar. Muyenera kumata ulalo mubokosi lolemba, dinani &quot;Onjezani kalendala&quot;, ndikutseka tabu (onani chithunzi pansipa)",
+        "calendarAppPreferences": "Tsegulani Zokonda mu Pulogalamu ya Kalendala pa Mac yanu, ndikukhazikitsa Pulogalamu Yokhazikika ya Kalendala kuti ikhale monga momwe zilili pansipa.",
+        "thenCloseDialog": "Kenako tsekani zokambiranazi kuti mulembetse ku kalendala yanu!",
+        "success": "Kalendala idalumikizidwa bwino"
     }
 }

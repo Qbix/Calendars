@@ -119,7 +119,12 @@
             "CancelReservation": "සම්පූර්ණ වෙන් කිරීම අවලංගු කරන්න",
             "Total": "සමස්ත",
             "RequiredRelatedParticipants": "මෙම සිදුවීමට සහභාගිවන්නන් අවශ්‍ය වේ: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "පුනරාවර්තන සැකසීම් යාවත්කාලීන කිරීමට කරුණාකර &quot;{{title}}&quot; පවතින බව සංස්කරණය කරන්න"
+            "AvailabilityWarning": "පුනරාවර්තන සැකසීම් යාවත්කාලීන කිරීමට කරුණාකර &quot;{{title}}&quot; පවතින බව සංස්කරණය කරන්න",
+            "Presentation": "ඉදිරිපත් කිරීම",
+            "YouAreNotParticipated": "ඔබ උත්සවයට සහභාගිවන්නෙක් නොවේ",
+            "LiveStreamStarted": "සජීවී ප්‍රවාහය ආරම්භ වී ඇත",
+            "WebRTCStarted": "දුරකථන සම්මන්ත්‍රණය ආරම්භ විය",
+            "WebRTCEnded": "දුරකථන සම්මන්ත්‍රණය අවසන් විය"
         },
         "composer": {
             "SetLocation": "මගේ ස්ථානය සකසන්න",
@@ -156,7 +161,10 @@
                 "Title": "ක්‍රියාකාරකමක් තෝරන්න",
                 "Filter": "සෙවුම් රුචිකත්වයන්..."
             },
-            "SetLivestream": "සජීවී ප්‍රවාහයට \/ වීඩියෝ සම්මන්ත්‍රණයට සබැඳිය අලවන්න"
+            "SetLivestream": "සජීවී ප්‍රවාහයට \/ වීඩියෝ සම්මන්ත්‍රණයට සබැඳිය අලවන්න",
+            "Locally": "දේශීය වශයෙන්",
+            "EventInfoLink": "සිදුවීම් තොරතුරු සබැඳිය",
+            "TicketPurchaseLink": "ටිකට් මිලදී ගැනීමේ සබැඳිය"
         },
         "EventAlreadyClosed": "මෙම සිදුවීම දැනටමත් වසා ඇත",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "ඔබගේ දින දර්ශනයට සිදුවීම එක් කරන්න"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "කණගාටුයි, නමුත් ඔබට අවසන් වූ සිදුවීම හැර යා නොහැක"
     },
     "availabilities": {
         "Title": "ලබා ගත හැකි",
@@ -190,7 +199,11 @@
             "PeopleMax": "උපරිම අමුත්තන්",
             "PeopleLabels": "ලේබල් වලට අවසර ඇත",
             "Next": "ඊළඟ",
-            "Back": "ආපසු"
+            "Back": "ආපසු",
+            "RecurringEndDate": "පුනරාවර්තන අවසන් දිනය",
+            "ScheduleOnlineConference": "උපලේඛනගත දුරකථන සාකච්ඡා",
+            "SetLivestream": "සජීවී ප්‍රවාහයට \/ වීඩියෝ සම්මන්ත්‍රණයට සබැඳිය අලවන්න",
+            "SelectTimeZone": "කාල කලාපය තෝරන්න"
         },
         "EditAvailability": "පවතින බව සංස්කරණය කරන්න",
         "SetVisitors": "අමුත්තන් සකසන්න",
@@ -200,7 +213,9 @@
         "RemoveStaff": "කාර්ය මණ්ඩලය ඉවත් කරන්න",
         "PleaseSelectTimeSlots": "කරුණාකර කාල කොටස් තෝරන්න",
         "ExceptionOccurred": "ව්යතිරේකයක් සිදු විය",
-        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} සිදුවීම්වලට සහභාගී වීමට ප්‍රමාණවත් ණය නැත. ඔබට ණය {{needCredits}}ක් අවශ්‍යයි. මිලදී ගැනීමට අවශ්‍යද?"
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} සිදුවීම්වලට සහභාගී වීමට ප්‍රමාණවත් ණය නැත. ඔබට ණය {{needCredits}}ක් අවශ්‍යයි. මිලදී ගැනීමට අවශ්‍යද?",
+        "InviteStaff": "කාර්ය මණ්ඩලයට ආරාධනා කරන්න",
+        "LiveStream": "සජීවී ප්‍රවාහය"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "ඔබගේ ඊමේල් දායකත්වයන් කළමනාකරණය කරන්න",
         "IfUnsubscribe": "ඔබට දායකත්වයෙන් ඉවත් වීමට අවශ්‍ය නම්",
         "ClickHereToVisitEvent": "සිදුවීම නැරඹීමට කරුණාකර මෙහි ක්ලික් කරන්න",
-        "Calendars\/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; සිදුවීම {{&call 'message.getInstruction' 'time'}}} දී ආරම්භ වනු ඇත"
+        "Calendars\/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; සිදුවීම {{&call 'message.getInstruction' 'time'}}} දී ආරම්භ වනු ඇත",
+        "webrtc": {
+            "Started": "දුරකථන සම්මන්ත්‍රණය ආරම්භ විය",
+            "Ended": "දුරකථන සම්මන්ත්‍රණය අවසන් විය"
+        },
+        "livestream": {
+            "Started": "සජීවී ප්‍රවාහය ආරම්භ විය",
+            "Ended": "සජීවී ප්‍රවාහය අවසන් විය",
+            "ClickToView": "එය මෙතැනින් බලන්න."
+        }
     },
     "import": {
         "linkTitle": "මෙම පැතුරුම්පත පුරවන්න",
@@ -266,7 +290,9 @@
         "complete": "සම්පූර්ණයි",
         "errorLine": "පේළිය {{1}}",
         "errorsTitle": "දෝෂ ඇති විය",
-        "communityUsers": "මෙය ප්‍රජා ලැයිස්තුවකි"
+        "communityUsers": "මෙය ප්‍රජා ලැයිස්තුවකි",
+        "toMainCommunityToo": "ප්‍රධාන ප්‍රජාවටත් සම්බන්ධයි",
+        "ChooseFile": "ගොනුව තෝරන්න"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "අද",
         "Tomorrow": "හෙට",
         "AfterTomorrow": "හෙටින් පස්සේ"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "දින දර්ශනයට දායක වන්න",
+        "copyLinkBelow": "සබැඳිය ඔබගේ පසුරු පුවරුවට පිටපත් කිරීමට පහත බොත්තම ක්ලික් කරන්න",
+        "tapToCopy": "සබැඳිය ඔබගේ පසුරු පුවරුවට පිටපත් කිරීමට පහත බොත්තම තට්ටු කරන්න",
+        "goTo": "යන්න:",
+        "pasteCopiedTo": "පිටපත් කළ සබැඳිය &quot;දින දර්ශනයේ URL&quot; ක්ෂේත්‍රයට අලවන්න",
+        "clickAddCalendar": "&quot;දින දර්ශනය එකතු කරන්න&quot; බොත්තම ක්ලික් කරන්න",
+        "copyLink": "සබැඳිය පිටපත් කරන්න",
+        "linkCopied": "සබැඳිය පිටපත් කරන ලදී",
+        "step2": "සබැඳිය පිටපත් කරන ලදී. අපි විවෘත Google දින දර්ශනය ගැන. ඔබට සබැඳිය පෙළ කොටුවට ඇලවීමට අවශ්‍ය වනු ඇත, &quot;දින දර්ශනය එක් කරන්න&quot; ක්ලික් කර ටැබය වසා දමන්න (පහත තිර රුව බලන්න)",
+        "calendarAppPreferences": "ඔබගේ මැක් මත දින දර්ශන යෙදුමේ මනාප විවෘත කර, පහත දැක්වෙන පරිදි පෙරනිමි දින දර්ශන යෙදුම සකසන්න.",
+        "thenCloseDialog": "ඉන්පසු ඔබේ දින දර්ශනයට දායක වීමට මෙම සංවාදය වසන්න!",
+        "success": "දින දර්ශනය සාර්ථකව සමමුහුර්ත කරන ලදී"
     }
 }

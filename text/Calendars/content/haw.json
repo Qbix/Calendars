@@ -119,7 +119,12 @@
             "CancelReservation": "Hoʻopau i ke kau ʻana holoʻokoʻa",
             "Total": "Huina",
             "RequiredRelatedParticipants": "Pono kēia hanana i nā mea komo: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "E ʻoluʻolu e hoʻoponopono i ka loaʻa ʻana o &quot;{{title}}&quot; e hoʻololi i nā hoʻonohonoho hoʻomau"
+            "AvailabilityWarning": "E ʻoluʻolu e hoʻoponopono i ka loaʻa ʻana o &quot;{{title}}&quot; e hoʻololi i nā hoʻonohonoho hoʻomau",
+            "Presentation": "Hōʻike",
+            "YouAreNotParticipated": "ʻAʻole ʻoe he mea komo i ka hanana",
+            "LiveStreamStarted": "Ua hoʻomaka ke kahawai ola",
+            "WebRTCStarted": "Ua hoʻomaka ʻia ka teleconference",
+            "WebRTCEnded": "Ua pau ka teleconference"
         },
         "composer": {
             "SetLocation": "Hoʻonoho i koʻu wahi",
@@ -156,7 +161,10 @@
                 "Title": "E koho i kahi hana",
                 "Filter": "Huli i nā mea hoihoi..."
             },
-            "SetLivestream": "Hoʻopili i ka loulou i ka livestream \/ videoconference"
+            "SetLivestream": "Hoʻopili i ka loulou i ka livestream \/ videoconference",
+            "Locally": "kūloko",
+            "EventInfoLink": "Loulou ʻIke hanana",
+            "TicketPurchaseLink": "Link Kūʻai Ticket"
         },
         "EventAlreadyClosed": "Ua pani ʻia kēia hanana",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Hoʻohui i ka hanana i kāu Kalena"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "E kala mai, ʻaʻole hiki iā ʻoe ke haʻalele i ka hanana i pau"
     },
     "availabilities": {
         "Title": "Loaʻa",
@@ -190,7 +199,11 @@
             "PeopleMax": "Ka nui o na malihini kipa",
             "PeopleLabels": "ʻAe ʻia nā lepili",
             "Next": "Aʻe",
-            "Back": "Ke kua"
+            "Back": "Ke kua",
+            "RecurringEndDate": "Lā Hoʻopau hou",
+            "ScheduleOnlineConference": "Hoʻonohonoho i ka Teleconference",
+            "SetLivestream": "Hoʻopili i ka loulou i ka livestream \/ hālāwai wikiō",
+            "SelectTimeZone": "E koho i ka timeZone"
         },
         "EditAvailability": "Hoʻoponopono i ka loaʻa",
         "SetVisitors": "Hoʻonoho i nā malihini",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Wehe i nā limahana",
         "PleaseSelectTimeSlots": "E ʻoluʻolu e koho i nā kau manawa",
         "ExceptionOccurred": "Ua kū ʻole",
-        "NotEnoughCreditsToParticipateEvents": "ʻAʻole lawa nā ʻaiʻē e komo i nā hanana {{eventsAmount}}. Pono ʻoe i {{needCredits}} hōʻaiʻē. Makemake e kūʻai?"
+        "NotEnoughCreditsToParticipateEvents": "ʻAʻole lawa nā ʻaiʻē e komo i nā hanana {{eventsAmount}}. Pono ʻoe i {{needCredits}} hōʻaiʻē. Makemake e kūʻai?",
+        "InviteStaff": "E kono i nā limahana",
+        "LiveStream": "Ke kahawai ola"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "mālama i kāu leka uila",
         "IfUnsubscribe": "Inā makemake ʻoe e haʻalele",
         "ClickHereToVisitEvent": "E ʻoluʻolu e kaomi maanei e kipa i ka hanana",
-        "Calendars\/reminder": "E hoʻomaka ana ka hanana &quot;{{{call 'message.getInstruction' 'name'}}&quot; i {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "E hoʻomaka ana ka hanana &quot;{{{call 'message.getInstruction' 'name'}}&quot; i {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Hoʻomaka ka ʻaha kūkā",
+            "Ended": "Ua pau ka teleconference"
+        },
+        "livestream": {
+            "Started": "Ua hoʻomaka ke kahawai ola",
+            "Ended": "Ua pau ke kahawai ola",
+            "ClickToView": "E nana maanei."
+        }
     },
     "import": {
         "linkTitle": "E hoʻopiha i kēia Pāhaʻi",
@@ -266,7 +290,9 @@
         "complete": "Paʻa",
         "errorLine": "laina {{1}}",
         "errorsTitle": "Ua hala nā hewa",
-        "communityUsers": "ʻO kēia ka papa inoa o nā kaiāulu"
+        "communityUsers": "ʻO kēia ka papa inoa o nā kaiāulu",
+        "toMainCommunityToo": "pili pū me ke kaiāulu nui",
+        "ChooseFile": "koho faila"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "I kēia lā",
         "Tomorrow": "Āpōpō",
         "AfterTomorrow": "Ma hope o ka lā ʻapōpō"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Kau inoa i ka Kalena",
+        "copyLinkBelow": "E kaomi i ke pihi ma lalo nei e kope i ka loulou i kāu papa paʻi",
+        "tapToCopy": "E kaomi i ke pihi ma lalo no ke kope ʻana i ka loulou i kāu papa ʻokiʻoki",
+        "goTo": "E hele i:",
+        "pasteCopiedTo": "Hoʻopili i ka loulou i kope ʻia i ke kahua &quot;URL o ka alemanaka&quot;.",
+        "clickAddCalendar": "Kaomi &quot;Add calendar&quot; pihi",
+        "copyLink": "Hoʻopili kope",
+        "linkCopied": "Kope ʻia ka loulou",
+        "step2": "Kope ʻia ka loulou. E pili ana mākou i ka wehe ʻana iā Google Calendar. Pono ʻoe e hoʻopili i ka loulou i loko o ka pahu kikokikona, kaomi &quot;Add calendar&quot;, a pani i ka pā (e ʻike i ke kiʻi ma lalo)",
+        "calendarAppPreferences": "E wehe i nā Koho ma ka Kalena App ma kāu Mac, a hoʻonohonoho i ka Default Calendar App e like me ka mea i hōʻike ʻia ma lalo nei.",
+        "thenCloseDialog": "A laila e pani i kēia kamaʻilio e kau inoa i kāu kalena!",
+        "success": "Ua holo pono ka kalena"
     }
 }

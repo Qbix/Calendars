@@ -119,7 +119,12 @@
             "CancelReservation": "Hlakola kopo kaofela",
             "Total": "Kakaretso",
             "RequiredRelatedParticipants": "Ketsahalo ena e hloka banka-karolo: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Ka kopo, fetola &quot;{999}}&quot; ho ntlafatsa litlhophiso tse hlahang khafetsa"
+            "AvailabilityWarning": "Ka kopo, fetola &quot;{999}}&quot; ho ntlafatsa litlhophiso tse hlahang khafetsa",
+            "Presentation": "Nehelano",
+            "YouAreNotParticipated": "Ha se uena ea nkang karolo ketsahalong eo",
+            "LiveStreamStarted": "Live stream e se e qalile",
+            "WebRTCStarted": "Teleconference e qalile",
+            "WebRTCEnded": "Teleconference e felile"
         },
         "composer": {
             "SetLocation": "Beha Sebaka sa Ka",
@@ -156,7 +161,10 @@
                 "Title": "Khetha Ketsahalo",
                 "Filter": "Batla lintho tseo u li ratang ..."
             },
-            "SetLivestream": "Beha sehokelo ho livestream \/ videoconference"
+            "SetLivestream": "Beha sehokelo ho livestream \/ videoconference",
+            "Locally": "sebakeng sa heno",
+            "EventInfoLink": "Sehokelo sa Litaba tsa Ketsahalo",
+            "TicketPurchaseLink": "Sehokelo sa ho Reka Litekete"
         },
         "EventAlreadyClosed": "Ketsahalo ena e se e koetsoe",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Kenya Ketsahalo ho Khalendara ea hau"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Tšoarelo, empa u ka se tlohe ketsahalo e felileng"
     },
     "availabilities": {
         "Title": "Lintho tse fumanehang",
@@ -190,7 +199,11 @@
             "PeopleMax": "Boholo ba baeti",
             "PeopleLabels": "Li-labels li lumelletsoe",
             "Next": "E &#39;ngoe",
-            "Back": "Morao"
+            "Back": "Morao",
+            "RecurringEndDate": "Letsatsi la ho Qetela khafetsa",
+            "ScheduleOnlineConference": "Kemiso ea Teleconference",
+            "SetLivestream": "Beha sehokelo ho livestream \/ videoconference",
+            "SelectTimeZone": "Khetha timeZone"
         },
         "EditAvailability": "Fetola Boteng",
         "SetVisitors": "Beha Baeti",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Tlosa basebetsi",
         "PleaseSelectTimeSlots": "Ka kopo, khetha libaka tsa nako",
         "ExceptionOccurred": "Mokhelo o etsahetse",
-        "NotEnoughCreditsToParticipateEvents": "Ha ho na mekoloto e lekaneng ho nka karolo {{eventsAmount}} liketsahalong. U hloka {{100}} likalimo. U batla ho reka?"
+        "NotEnoughCreditsToParticipateEvents": "Ha ho na mekoloto e lekaneng ho nka karolo {{eventsAmount}} liketsahalong. U hloka {{100}} likalimo. U batla ho reka?",
+        "InviteStaff": "Mema basebetsi",
+        "LiveStream": "Live stream"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "laola lipehelo tsa hau tsa lengolo-tsoibila",
         "IfUnsubscribe": "Haeba u batla ho itokolla",
         "ClickHereToVisitEvent": "Ka kopo, tobetsa mona ho etela ketsahalo",
-        "Calendars\/reminder": "Ketsahalo &quot;{999}}&quot; e tla qala ka {{{call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Ketsahalo &quot;{999}}&quot; e tla qala ka {{{call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Teleconference e qalile",
+            "Ended": "Teleconference e felile"
+        },
+        "livestream": {
+            "Started": "Live stream e qalile",
+            "Ended": "Live stream e felile",
+            "ClickToView": "E shebe mona."
+        }
     },
     "import": {
         "linkTitle": "Tlatsa Spreadsheet Ena",
@@ -266,7 +290,9 @@
         "complete": "Feletseng",
         "errorLine": "mola {{1}}",
         "errorsTitle": "Ho bile le liphoso",
-        "communityUsers": "Lena ke lenane la sechaba"
+        "communityUsers": "Lena ke lenane la sechaba",
+        "toMainCommunityToo": "amana le sechaba se seholo hape",
+        "ChooseFile": "khetha faele"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Kajeno",
         "Tomorrow": "Hosane",
         "AfterTomorrow": "Kamora hosane"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Ingolise ho Khalendara",
+        "copyLinkBelow": "Tobetsa konopo e ka tlase ho kopitsa sehokelo sa clipboard ea hau",
+        "tapToCopy": "Tlanya konopo e ka tlase ho kopitsa sehokelo sa clipboard ea hau",
+        "goTo": "Eya ho:",
+        "pasteCopiedTo": "Beha sehokelo se kopilitsoeng sebakeng sa &quot;URL ea almanaka&quot;.",
+        "clickAddCalendar": "Tobetsa konopo ea &quot;Add calendar&quot;.",
+        "copyLink": "Kopitsa Link",
+        "linkCopied": "Sehokelo se Kopisitsoe",
+        "step2": "Sehokelo se Kopisitsoe. Re haufi le ho bula Khalendara ea Google. U tla hloka ho beha sehokelo lebokoseng la mongolo, tobetsa &quot;Eketsa almanaka&quot;, &#39;me u koale tabo (sheba skrini se ka tlase)",
+        "calendarAppPreferences": "Bula Likhetho ho App ea Khalendara ho Mac ea hau, &#39;me u hlophise App ea Khalendara ea Default hore e be joalo ka ha e bonts&#39;itsoe ka tlase.",
+        "thenCloseDialog": "Ebe u koala puisano ena ho ingolisa ho almanaka ea hau!",
+        "success": "Khalendara e hokahantsoe ka katleho"
     }
 }

@@ -119,7 +119,12 @@
             "CancelReservation": "Anile tout rezèvasyon an",
             "Total": "Total",
             "RequiredRelatedParticipants": "Evènman sa a egzije patisipan yo: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Tanpri modifye disponiblite &quot;{{title}}&quot; pou mete ajou paramèt renouvlab yo"
+            "AvailabilityWarning": "Tanpri modifye disponiblite &quot;{{title}}&quot; pou mete ajou paramèt renouvlab yo",
+            "Presentation": "Prezantasyon",
+            "YouAreNotParticipated": "Ou pa yon patisipan nan evènman an",
+            "LiveStreamStarted": "Live stream te kòmanse",
+            "WebRTCStarted": "Telekonferans te kòmanse",
+            "WebRTCEnded": "Telekonferans te fini"
         },
         "composer": {
             "SetLocation": "Mete kote mwen an",
@@ -156,7 +161,10 @@
                 "Title": "Chwazi yon Aktivite",
                 "Filter": "Rechèch enterè..."
             },
-            "SetLivestream": "Kole lyen pou difizyon \/ videyokonferans"
+            "SetLivestream": "Kole lyen pou difizyon \/ videyokonferans",
+            "Locally": "lokalman",
+            "EventInfoLink": "Link Enfòmasyon sou evènman an",
+            "TicketPurchaseLink": "Lyen pou achte tikè"
         },
         "EventAlreadyClosed": "Evènman sa a deja fèmen",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Ajoute Evènman nan Kalandriye w la"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Padon, men ou pa ka kite evènman ki te fini"
     },
     "availabilities": {
         "Title": "Disponibilite",
@@ -190,7 +199,11 @@
             "PeopleMax": "Vizitè maksimòm",
             "PeopleLabels": "Etikèt yo pèmèt",
             "Next": "Next",
-            "Back": "Retounen"
+            "Back": "Retounen",
+            "RecurringEndDate": "Dat fen renouvlab",
+            "ScheduleOnlineConference": "Orè telekonferans",
+            "SetLivestream": "Kole lyen pou difizyon \/ videyokonferans",
+            "SelectTimeZone": "Chwazi TimeZone"
         },
         "EditAvailability": "Edit Disponibilite",
         "SetVisitors": "Mete vizitè yo",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Retire anplwaye yo",
         "PleaseSelectTimeSlots": "Tanpri chwazi plas tan yo",
         "ExceptionOccurred": "Eksepsyon ki te fèt",
-        "NotEnoughCreditsToParticipateEvents": "Pa gen ase kredi pou patisipe nan {{eventsAmount}} evènman yo. Ou bezwen {{needCredits}} kredi. Vle achte?"
+        "NotEnoughCreditsToParticipateEvents": "Pa gen ase kredi pou patisipe nan {{eventsAmount}} evènman yo. Ou bezwen {{needCredits}} kredi. Vle achte?",
+        "InviteStaff": "Envite anplwaye yo",
+        "LiveStream": "Live kouran"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "jere abònman imel ou yo",
         "IfUnsubscribe": "Si ou vle dezabòne",
         "ClickHereToVisitEvent": "Tanpri klike isit la pou vizite evènman an",
-        "Calendars\/reminder": "Evènman &quot;{{{call 'message.getInstruction' 'name'}}&quot; ap kòmanse nan {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Evènman &quot;{{{call 'message.getInstruction' 'name'}}&quot; ap kòmanse nan {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Telekonferans te kòmanse",
+            "Ended": "Telekonferans te fini"
+        },
+        "livestream": {
+            "Started": "Live stream te kòmanse",
+            "Ended": "Live stream te fini",
+            "ClickToView": "Gade li isit la."
+        }
     },
     "import": {
         "linkTitle": "Ranpli Fèy kalkil sa a",
@@ -266,7 +290,9 @@
         "complete": "Ranpli",
         "errorLine": "liy {{1}}",
         "errorsTitle": "Erè ki te fèt",
-        "communityUsers": "Sa a se lis kominote yo"
+        "communityUsers": "Sa a se lis kominote yo",
+        "toMainCommunityToo": "gen rapò ak kominote prensipal la tou",
+        "ChooseFile": "chwazi dosye"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Jodi a",
         "Tomorrow": "Demen",
         "AfterTomorrow": "Apre demen"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Abònman ak Kalandriye",
+        "copyLinkBelow": "Klike sou bouton ki anba a pou kopye lyen an nan clipboard ou",
+        "tapToCopy": "Tape bouton ki anba a pou kopye lyen an nan clipboard ou",
+        "goTo": "Ale nan:",
+        "pasteCopiedTo": "Kole lyen kopye nan jaden &quot;URL nan kalandriye&quot;.",
+        "clickAddCalendar": "Klike sou bouton &quot;Ajoute kalandriye&quot;.",
+        "copyLink": "Kopi Link",
+        "linkCopied": "Lyen kopye",
+        "step2": "Lyen kopye. Nou se sou louvri Google Kalandriye. Ou pral bezwen kole lyen an nan bwat tèks la, klike sou &quot;Ajoute kalandriye&quot;, epi fèmen tab la (gade ekran anba a)",
+        "calendarAppPreferences": "Louvri Preferans yo nan Aplikasyon Kalandriye a sou Mac ou a, epi mete Aplikasyon Kalandriye Default yo jan yo montre anba a.",
+        "thenCloseDialog": "Lè sa a, fèmen dyalòg sa a pou abònman nan kalandriye ou!",
+        "success": "Kalandriye te senkronize avèk siksè"
     }
 }

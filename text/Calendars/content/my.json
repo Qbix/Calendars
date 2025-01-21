@@ -119,7 +119,12 @@
             "CancelReservation": "ကြိုတင်မှာယူမှုတစ်ခုလုံးကို ပယ်ဖျက်ပါ။",
             "Total": "စုစုပေါင်း",
             "RequiredRelatedParticipants": "ဤအစီအစဉ်တွင် ပါဝင်သူများ လိုအပ်သည်- {{requiredParticipantsList}}",
-            "AvailabilityWarning": "ထပ်တလဲလဲ ဆက်တင်များကို အပ်ဒိတ်လုပ်ရန် &quot;{{title}}&quot; ရရှိနိုင်မှုကို တည်းဖြတ်ပါ။"
+            "AvailabilityWarning": "ထပ်တလဲလဲ ဆက်တင်များကို အပ်ဒိတ်လုပ်ရန် &quot;{{title}}&quot; ရရှိနိုင်မှုကို တည်းဖြတ်ပါ။",
+            "Presentation": "တင်ပြခြင်း။",
+            "YouAreNotParticipated": "သင်သည် အစီအစဉ်တွင် ပါဝင်သူမဟုတ်ပါ။",
+            "LiveStreamStarted": "တိုက်ရိုက်ထုတ်လွှင့်မှု စတင်ပါပြီ။",
+            "WebRTCStarted": "တယ်လီကွန်ဖရင့် စတင်ပါပြီ။",
+            "WebRTCEnded": "တယ်လီကွန်ဖရင့် ပြီးသွားသည်။"
         },
         "composer": {
             "SetLocation": "ကျွန်ုပ်၏တည်နေရာကို သတ်မှတ်ပါ။",
@@ -156,7 +161,10 @@
                 "Title": "လုပ်ဆောင်ချက်တစ်ခုကို ရွေးချယ်ပါ။",
                 "Filter": "အကျိုးစီးပွားရှာဖွေပါ..."
             },
-            "SetLivestream": "တိုက်ရိုက်ထုတ်လွှင့်မှု \/ ဗီဒီယိုအစည်းအဝေးသို့ လင့်ခ်ကို ကူးထည့်ပါ။"
+            "SetLivestream": "တိုက်ရိုက်ထုတ်လွှင့်မှု \/ ဗီဒီယိုအစည်းအဝေးသို့ လင့်ခ်ကို ကူးထည့်ပါ။",
+            "Locally": "ပြည်တွင်းမှာ",
+            "EventInfoLink": "ပွဲအချက်အလက်လင့်ခ်",
+            "TicketPurchaseLink": "လက်မှတ်ဝယ်ယူရန်လင့်ခ်"
         },
         "EventAlreadyClosed": "ဒီပွဲက ပိတ်နေပြီ။",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "သင့်ပြက္ခဒိန်တွင် အစီအစဉ်ထည့်ပါ။"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "ဝမ်းနည်းပါသည်၊ သို့သော် ပြီးဆုံးသွားသော အစီအစဉ်ကို သင် မချန်ထားနိုင်ပါ။"
     },
     "availabilities": {
         "Title": "ရရှိနိုင်ပါသည်။",
@@ -190,7 +199,11 @@
             "PeopleMax": "အများဆုံးလာရောက်လည်ပတ်သူ",
             "PeopleLabels": "တံဆိပ်များခွင့်ပြုထားသည်။",
             "Next": "နောက်တစ်ခု",
-            "Back": "ကျော"
+            "Back": "ကျော",
+            "RecurringEndDate": "ထပ်တလဲလဲ ကုန်ဆုံးရက်စွဲ",
+            "ScheduleOnlineConference": "တယ်လီကွန်ဖရင့်ကို စီစဉ်ပါ။",
+            "SetLivestream": "တိုက်ရိုက်ထုတ်လွှင့်မှု \/ ဗီဒီယိုအစည်းအဝေးသို့ လင့်ခ်ကို ကူးထည့်ပါ။",
+            "SelectTimeZone": "TimeZone ကို ရွေးပါ။"
         },
         "EditAvailability": "ရရှိနိုင်မှုကို တည်းဖြတ်ပါ။",
         "SetVisitors": "ဧည့်သည်များကို သတ်မှတ်ပါ။",
@@ -200,7 +213,9 @@
         "RemoveStaff": "ဝန်ထမ်းကို ဖယ်ရှားပါ။",
         "PleaseSelectTimeSlots": "ကျေးဇူးပြု၍ အချိန်ကွက်များကို ရွေးပါ။",
         "ExceptionOccurred": "ခြွင်းချက်ဖြစ်သွားသည်။",
-        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} ပွဲများကို ပါဝင်ရန် ခရက်ဒစ် မလုံလောက်ပါ။ သင်သည် ခရက်ဒစ် {{needCredits}} ခု လိုအပ်ပါသည်။ ဝယ်ချင်တယ်?"
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} ပွဲများကို ပါဝင်ရန် ခရက်ဒစ် မလုံလောက်ပါ။ သင်သည် ခရက်ဒစ် {{needCredits}} ခု လိုအပ်ပါသည်။ ဝယ်ချင်တယ်?",
+        "InviteStaff": "ဝန်ထမ်းတွေကို ဖိတ်ခေါ်ပါတယ်။",
+        "LiveStream": "တိုက်ရိုက်ထုတ်လွှင့်မှု"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "သင့်အီးမေးလ်စာရင်းသွင်းမှုများကို စီမံပါ။",
         "IfUnsubscribe": "စာရင်းသွင်းချင်ရင် ဖြုတ်လိုက်ပါ။",
         "ClickHereToVisitEvent": "ပွဲကိုလာရောက်ကြည့်ရှုရန် ဤနေရာကိုနှိပ်ပါ။",
-        "Calendars\/reminder": "အစီအစဉ် &quot;{{{call 'message.getInstruction' 'name'}}&quot; ကို {{&call 'message.getInstruction' 'time'}}} တွင် စတင်ပါမည်"
+        "Calendars\/reminder": "အစီအစဉ် &quot;{{{call 'message.getInstruction' 'name'}}&quot; ကို {{&call 'message.getInstruction' 'time'}}} တွင် စတင်ပါမည်",
+        "webrtc": {
+            "Started": "တယ်လီကွန်ဖရင့် စတင်ပါပြီ။",
+            "Ended": "တယ်လီကွန်ဖရင့် ပြီးသွားသည်။"
+        },
+        "livestream": {
+            "Started": "တိုက်ရိုက်ထုတ်လွှင့်မှု စတင်ပါပြီ။",
+            "Ended": "တိုက်ရိုက်ထုတ်လွှင့်မှု ပြီးဆုံးသွားပါပြီ။",
+            "ClickToView": "ဤနေရာတွင် ကြည့်ရှုပါ။"
+        }
     },
     "import": {
         "linkTitle": "ဤစာရင်းဇယားကို ဖြည့်စွက်ပါ။",
@@ -266,7 +290,9 @@
         "complete": "ပြီးအောင်",
         "errorLine": "စာကြောင်း {{1}}",
         "errorsTitle": "အမှားအယွင်းများ ဖြစ်ပေါ်ခဲ့သည်။",
-        "communityUsers": "ဤသည်မှာ အသိုင်းအဝိုင်းများစာရင်းဖြစ်သည်။"
+        "communityUsers": "ဤသည်မှာ အသိုင်းအဝိုင်းများစာရင်းဖြစ်သည်။",
+        "toMainCommunityToo": "ပင်မအသိုင်းအဝိုင်းနှင့်လည်း သက်ဆိုင်ပါသည်။",
+        "ChooseFile": "ဖိုင်ကိုရွေးချယ်ပါ။"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "ဒီနေ့",
         "Tomorrow": "မနက်ဖြန်",
         "AfterTomorrow": "မနက်ဖြန်ပြီးရင်"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Calendar သို့ စာရင်းသွင်းပါ။",
+        "copyLinkBelow": "သင့်ကလစ်ဘုတ်သို့ လင့်ခ်ကို ကူးယူရန် အောက်ပါခလုတ်ကို နှိပ်ပါ။",
+        "tapToCopy": "သင့်ကလစ်ဘုတ်သို့ လင့်ခ်ကို ကူးယူရန် အောက်ပါခလုတ်ကို တို့ပါ။",
+        "goTo": "သွားရန်-",
+        "pasteCopiedTo": "ကူးယူထားသောလင့်ခ်ကို &quot;ပြက္ခဒိန်၏ URL&quot; အကွက်သို့ ကူးထည့်ပါ။",
+        "clickAddCalendar": "&quot;Add Calendar&quot; ခလုတ်ကို နှိပ်ပါ။",
+        "copyLink": "လင့်ခ်ကို ကူးယူပါ။",
+        "linkCopied": "လင့်ခ်ကို ကူးယူထားသည်။",
+        "step2": "လင့်ခ်ကို ကူးယူထားသည်။ ကျွန်ုပ်တို့သည် Google Calendar ဖွင့်ခြင်းအကြောင်းဖြစ်သည်။ လင့်ခ်ကို စာသားပုံးထဲသို့ ကူးထည့်ရန်၊ &quot;Add Calendar&quot; ကို နှိပ်ပြီး တက်ဘ်ကို ပိတ်ပါ (အောက်ပါ ဖန်သားပြင်ပုံကို ကြည့်ပါ)",
+        "calendarAppPreferences": "သင့် Mac ရှိ Calendar အက်ပ်ရှိ ဦးစားပေးများကို ဖွင့်ပြီး ပုံသေပြက္ခဒိန်အက်ပ်ကို အောက်တွင်ဖော်ပြထားသည့်အတိုင်း သတ်မှတ်ပေးပါ။",
+        "thenCloseDialog": "ထို့နောက် သင့်ပြက္ခဒိန်သို့ စာရင်းသွင်းရန် ဤဒိုင်ယာလော့ခ်ကို ပိတ်ပါ။",
+        "success": "ပြက္ခဒိန်ကို အောင်မြင်စွာ စင့်ခ်လုပ်ထားပါသည်။"
     }
 }

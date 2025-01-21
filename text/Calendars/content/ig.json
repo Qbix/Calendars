@@ -119,7 +119,12 @@
             "CancelReservation": "Kagbuo ndoputa niile",
             "Total": "Mkpokọta",
             "RequiredRelatedParticipants": "Ihe omume a chọrọ ndị sonyere: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Biko dezie nnweta &quot;{{title}}&quot; iji melite ntọala ugboro ugboro"
+            "AvailabilityWarning": "Biko dezie nnweta &quot;{{title}}&quot; iji melite ntọala ugboro ugboro",
+            "Presentation": "Ngosipụta",
+            "YouAreNotParticipated": "Ị bụghị onye so na mmemme ahụ",
+            "LiveStreamStarted": "Ebidola iyi ndụ",
+            "WebRTCStarted": "Teleconference malitere",
+            "WebRTCEnded": "Ekwentị ekwensu kwụsịrị"
         },
         "composer": {
             "SetLocation": "Tọọ ebe m",
@@ -156,7 +161,10 @@
                 "Title": "Họrọ mmemme",
                 "Filter": "Chọọ mmasị..."
             },
-            "SetLivestream": "Tapawa njikọ na ntanetị \/ vidiyo vidiyo"
+            "SetLivestream": "Tapawa njikọ na ntanetị \/ vidiyo vidiyo",
+            "Locally": "na mpaghara",
+            "EventInfoLink": "Njikọ ozi mmemme",
+            "TicketPurchaseLink": "Njikọ Ịzụta tiketi"
         },
         "EventAlreadyClosed": "Emechiela mmemme a",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Tinye mmemme na kalenda gị"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Ndo, mana ị nweghị ike ịpụ mmemme kwụsịrị"
     },
     "availabilities": {
         "Title": "Nnweta",
@@ -190,7 +199,11 @@
             "PeopleMax": "Kachasị ọbịa",
             "PeopleLabels": "Ekwenyere akara",
             "Next": "Osote",
-            "Back": "Azu"
+            "Back": "Azu",
+            "RecurringEndDate": "Ụbọchị ngwụcha na-eme ugboro ugboro",
+            "ScheduleOnlineConference": "Hazie teleconference",
+            "SetLivestream": "Tapawa njikọ na ntanetị \/ vidiyo vidiyo",
+            "SelectTimeZone": "Họrọ mpaghara oge"
         },
         "EditAvailability": "Dezie Nnweta",
         "SetVisitors": "Tọọ ndị ọbịa",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Wepụ ndị ọrụ",
         "PleaseSelectTimeSlots": "Biko họrọ oghere oge",
         "ExceptionOccurred": "Ewezuga mere",
-        "NotEnoughCreditsToParticipateEvents": "Ezughị kredit iji sonye mmemme {{eventsAmount}}. Ị chọrọ kredit {{needCredits}}. Chọrọ ịzụrụ?"
+        "NotEnoughCreditsToParticipateEvents": "Ezughị kredit iji sonye mmemme {{eventsAmount}}. Ị chọrọ kredit {{needCredits}}. Chọrọ ịzụrụ?",
+        "InviteStaff": "Kpọọ ndị ọrụ",
+        "LiveStream": "iyi dị ndụ"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "jikwaa ndebanye aha email gị",
         "IfUnsubscribe": "Ọ bụrụ na ịchọrọ ịwepu aha",
         "ClickHereToVisitEvent": "Biko pịa ebe a ka ileta mmemme",
-        "Calendars\/reminder": "Mmemme &quot;{999}}&quot; ga-amalite na {{{call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Mmemme &quot;{999}}&quot; ga-amalite na {{{call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Teleconference malitere",
+            "Ended": "Ekwentị ekwensu kwụsịrị"
+        },
+        "livestream": {
+            "Started": "Ebidola iyi ndụ",
+            "Ended": "Mgbasa ozi dị ndụ kwụsịrị",
+            "ClickToView": "Lelee ya ebe a."
+        }
     },
     "import": {
         "linkTitle": "Dejupụta akwụkwọ mpịakọta a",
@@ -266,7 +290,9 @@
         "complete": "Zuru oke",
         "errorLine": "ahịrị {{1}}",
         "errorsTitle": "Njehie mere",
-        "communityUsers": "Nke a bụ ndepụta obodo"
+        "communityUsers": "Nke a bụ ndepụta obodo",
+        "toMainCommunityToo": "mekọrịtakwa na obodo isi",
+        "ChooseFile": "họrọ faịlụ"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Taa",
         "Tomorrow": "Echi",
         "AfterTomorrow": "Mgbe echi"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Debanye aha na kalenda",
+        "copyLinkBelow": "Pịa bọtịnụ dị n&#39;okpuru ka idetuo njikọ na klipbọọdụ gị",
+        "tapToCopy": "Pịa bọtịnụ dị n&#39;okpuru ka idetuo njikọ na klipbọọdụ gị",
+        "goTo": "Gaa na:",
+        "pasteCopiedTo": "Tapawa njikọ e depụtaghachiri na mpaghara &quot;URL nke kalenda&quot;.",
+        "clickAddCalendar": "Pịa bọtịnụ &quot;Tinye kalenda&quot;.",
+        "copyLink": "Detuo njikọ",
+        "linkCopied": "Eṅomiri njikọ",
+        "step2": "Eṅomiri njikọ. Anyị na-achọ imepe kalenda Google. Ị ga-achọ ịmanye njikọ ahụ n&#39;ime igbe ederede, pịa &quot;Tinye kalenda&quot;, mechie taabụ (lee nseta ihuenyo n&#39;okpuru)",
+        "calendarAppPreferences": "Mepee mmasị na ngwa kalịnda na Mac gị, wee tọọ ngwa kalenda ndị kpọpụtara ka ọ dị ka egosiri n&#39;okpuru.",
+        "thenCloseDialog": "Mgbe ahụ mechie mkparịta ụka a iji denye aha na kalenda gị!",
+        "success": "Mekọrịtara kalịnda nke ọma"
     }
 }

@@ -119,7 +119,12 @@
             "CancelReservation": "Whakakorehia te rahui katoa",
             "Total": "Tapeke",
             "RequiredRelatedParticipants": "Me whai kaiuru tenei huihuinga: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Tena koa whakatikahia te waatea &quot;{{title}}&quot; ki te whakahou i nga tautuhinga auau"
+            "AvailabilityWarning": "Tena koa whakatikahia te waatea &quot;{{title}}&quot; ki te whakahou i nga tautuhinga auau",
+            "Presentation": "Whakaaturanga",
+            "YouAreNotParticipated": "Ehara koe i te kaiuru ki te huihuinga",
+            "LiveStreamStarted": "Kua timata te roma ora",
+            "WebRTCStarted": "I timata te huihuinga waea",
+            "WebRTCEnded": "Ka mutu te huihuinga waea"
         },
         "composer": {
             "SetLocation": "Tautuhi Taku Tauwāhi",
@@ -156,7 +161,10 @@
                 "Title": "Kōwhiria he Mahi",
                 "Filter": "Rapu hiahia ..."
             },
-            "SetLivestream": "Whakapiri hono ki te roma ora \/ hui ataata"
+            "SetLivestream": "Whakapiri hono ki te roma ora \/ hui ataata",
+            "Locally": "rohe",
+            "EventInfoLink": "Hononga Korero Takahanga",
+            "TicketPurchaseLink": "Hononga Hoko Tikiti"
         },
         "EventAlreadyClosed": "Kua katia tenei kaupapa",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Tāpiri Takahanga ki to Maramataka"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Aroha mai, engari kaore e taea e koe te waiho i te takahanga kua mutu"
     },
     "availabilities": {
         "Title": "Nga waatea",
@@ -190,7 +199,11 @@
             "PeopleMax": "Te nuinga o nga manuhiri",
             "PeopleLabels": "Whakaaetia nga tapanga",
             "Next": "Whai muri",
-            "Back": "Whakamuri"
+            "Back": "Whakamuri",
+            "RecurringEndDate": "Te Ra Whakamutunga Whakahoki",
+            "ScheduleOnlineConference": "Apiti Waea Waea",
+            "SetLivestream": "Whakapiri hono ki te roma ora \/ hui ataata",
+            "SelectTimeZone": "Tīpako Rohewā"
         },
         "EditAvailability": "Whakatika Wateatanga",
         "SetVisitors": "Tautuhi Manuhiri",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Tango kaimahi",
         "PleaseSelectTimeSlots": "Tīpakohia koa nga waahi waahi",
         "ExceptionOccurred": "I puta keehe",
-        "NotEnoughCreditsToParticipateEvents": "He iti rawa nga whiwhinga hei whakauru {{eventsAmount}} ki nga huihuinga. Me whiwhi {{needCredits}} koe. E hiahia ana koe ki te hoko?"
+        "NotEnoughCreditsToParticipateEvents": "He iti rawa nga whiwhinga hei whakauru {{eventsAmount}} ki nga huihuinga. Me whiwhi {{needCredits}} koe. E hiahia ana koe ki te hoko?",
+        "InviteStaff": "Powhiri kaimahi",
+        "LiveStream": "Rere ora"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "whakahaere i o ohaurunga imeera",
         "IfUnsubscribe": "Mena kei te pirangi koe ki te whakakore i te ohauru",
         "ClickHereToVisitEvent": "Paatohia a konei ki te haere ki te huihuinga",
-        "Calendars\/reminder": "Ka timata te takahanga &quot;{{{call 'message.getInstruction' 'name'}}&quot; i {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Ka timata te takahanga &quot;{{{call 'message.getInstruction' 'name'}}&quot; i {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "I timata te huihuinga waea",
+            "Ended": "Ka mutu te huihuinga waea"
+        },
+        "livestream": {
+            "Started": "I timata te roma ora",
+            "Ended": "I mutu te roma ora",
+            "ClickToView": "Tirohia i konei."
+        }
     },
     "import": {
         "linkTitle": "Whakakiia Tenei Ripanga",
@@ -266,7 +290,9 @@
         "complete": "Kua oti",
         "errorLine": "raina {{1}}",
         "errorsTitle": "I puta nga hapa",
-        "communityUsers": "Koinei te rarangi hapori"
+        "communityUsers": "Koinei te rarangi hapori",
+        "toMainCommunityToo": "e pa ana ki te hapori matua hoki",
+        "ChooseFile": "whiriwhiri kōnae"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "I tenei ra",
         "Tomorrow": "Apopo",
         "AfterTomorrow": "I muri apopo"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Ohauru ki te Maramataka",
+        "copyLinkBelow": "Patohia te paatene i raro nei hei kape i te hono ki to papatopenga",
+        "tapToCopy": "Patohia te paatene i raro nei hei kape i te hono ki to papatopenga",
+        "goTo": "Haere ki:",
+        "pasteCopiedTo": "Whakapiri hono kua tāruatia ki te mara &quot;URL o te maramataka&quot;.",
+        "clickAddCalendar": "Pāwhiritia te pātene &quot;Tāpiri maramataka&quot;.",
+        "copyLink": "Tārua Hononga",
+        "linkCopied": "Hononga Kua Tāruatia",
+        "step2": "Hononga Kua Tāruatia. Kei te tuwhera maatau Maramataka Google. Me whakapiri koe i te hono ki roto i te pouaka kuputuhi, pawhiria te &quot;Tāpiri maramataka&quot;, ka kati i te ripa (tirohia te whakaahua i raro nei)",
+        "calendarAppPreferences": "Whakatuwherahia nga Manakohanga i roto i te Maramataka Maramataka i runga i to Mac, ka tautuhi i te Maramataka Taunoa Taunoa kia rite ki nga whakaaturanga i raro nei.",
+        "thenCloseDialog": "Katia tenei korero ki te ohauru ki to maramataka!",
+        "success": "I pai te tukutahitanga o te maramataka"
     }
 }

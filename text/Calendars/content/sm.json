@@ -119,7 +119,12 @@
             "CancelReservation": "Fa&#39;aleaogaina le reservation atoa",
             "Total": "Aofa&#39;iga",
             "RequiredRelatedParticipants": "O lenei mea e mana&#39;omia ai tagata auai: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Fa&#39;amolemole fa&#39;asa&#39;o avanoa &quot;{{title}}&quot; e fa&#39;afou ai fa&#39;asologa faifaipea"
+            "AvailabilityWarning": "Fa&#39;amolemole fa&#39;asa&#39;o avanoa &quot;{{title}}&quot; e fa&#39;afou ai fa&#39;asologa faifaipea",
+            "Presentation": "Tulaga",
+            "YouAreNotParticipated": "E le o oe o se tagata auai i le mea na tupu",
+            "LiveStreamStarted": "Ua amata le fa&#39;asalalauga ola",
+            "WebRTCStarted": "Teleconference na amata",
+            "WebRTCEnded": "Na muta le teleconference"
         },
         "composer": {
             "SetLocation": "Seti Lo&#39;u Nofoaga",
@@ -156,7 +161,10 @@
                 "Title": "Filifili se Gaoioiga",
                 "Filter": "Su&#39;e mea e fiafia i ai..."
             },
-            "SetLivestream": "Fa&#39;apipi&#39;i le feso&#39;ota&#39;iga i le fa&#39;asalalauga fa&#39;asalalau \/ koneferenisi vitiō"
+            "SetLivestream": "Fa&#39;apipi&#39;i le feso&#39;ota&#39;iga i le fa&#39;asalalauga fa&#39;asalalau \/ koneferenisi vitiō",
+            "Locally": "i le lotoifale",
+            "EventInfoLink": "Fa&#39;amatalaga Fa&#39;amatalaga So&#39;oga",
+            "TicketPurchaseLink": "So&#39;oga o Fa&#39;atauga Tiketike"
         },
         "EventAlreadyClosed": "Ua uma ona tapunia lenei mea",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Fa&#39;aopoopo mea e fai i lau Kalena"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Fa&#39;amalie atu, ae e le mafai ona e tu&#39;ua le mea na tupu"
     },
     "availabilities": {
         "Title": "Avanoa",
@@ -190,7 +199,11 @@
             "PeopleMax": "Tele tagata asiasi",
             "PeopleLabels": "Fa&#39;ailoga fa&#39;atagaina",
             "Next": "Sosoo ai",
-            "Back": "Tua"
+            "Back": "Tua",
+            "RecurringEndDate": "Aso Fa&#39;ai&#39;u faifaipea",
+            "ScheduleOnlineConference": "Fa&#39;atonu Teleconference",
+            "SetLivestream": "Fa&#39;apipi&#39;i le feso&#39;ota&#39;iga i le fa&#39;asalalauga fa&#39;asalalau \/ fa&#39;asalalauga vitiō",
+            "SelectTimeZone": "Filifili le timeZone"
         },
         "EditAvailability": "Fa&#39;atonu Avanoa",
         "SetVisitors": "Seti Tagata Asiasi",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Aveese le aufaigaluega",
         "PleaseSelectTimeSlots": "Fa&#39;amolemole filifili avanoa avanoa",
         "ExceptionOccurred": "Na tupu fa&#39;atasi",
-        "NotEnoughCreditsToParticipateEvents": "Le lava togi e auai ai {{eventsAmount}} mea tutupu. E te mana&#39;omia {{needCredits}} credits. Mana&#39;o e fa&#39;atau?"
+        "NotEnoughCreditsToParticipateEvents": "Le lava togi e auai ai {{eventsAmount}} mea tutupu. E te mana&#39;omia {{needCredits}} credits. Mana&#39;o e fa&#39;atau?",
+        "InviteStaff": "Valaaulia le aufaigaluega",
+        "LiveStream": "Live stream"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "pulea au imeli imeli",
         "IfUnsubscribe": "Afai e te mana&#39;o e unsubscribe",
         "ClickHereToVisitEvent": "Fa&#39;amolemole kiliki iinei e asiasi i le mea na tupu",
-        "Calendars\/reminder": "Mea &quot;{{{call 'message.getInstruction' 'name'}}&quot; o le a amata ile {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Mea &quot;{{{call 'message.getInstruction' 'name'}}&quot; o le a amata ile {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Teleconference na amata",
+            "Ended": "Na muta le teleconference"
+        },
+        "livestream": {
+            "Started": "Na amata le fa&#39;asalalauga ola",
+            "Ended": "Ua uma le fa&#39;asalalauga",
+            "ClickToView": "Va&#39;ai iinei."
+        }
     },
     "import": {
         "linkTitle": "Faatumu le Pepa Lenei",
@@ -266,7 +290,9 @@
         "complete": "mae&#39;a",
         "errorLine": "laina {{1}}",
         "errorsTitle": "Na tutupu mea sese",
-        "communityUsers": "Ole lisi lea o nu&#39;u"
+        "communityUsers": "Ole lisi lea o nu&#39;u",
+        "toMainCommunityToo": "feso&#39;ota&#39;i ma nu&#39;u tele fo&#39;i",
+        "ChooseFile": "filifili faila"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "O aso nei",
         "Tomorrow": "Taeao",
         "AfterTomorrow": "A uma taeao"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Fa&#39;asoa ile Kalena",
+        "copyLinkBelow": "Kiliki le ki lalo e kopi ai le so&#39;oga i lau laupapa kilipa",
+        "tapToCopy": "Oomi le faamau i lalo e kopi ai le sootaga i lau laupapa kilipa",
+        "goTo": "Alu i le:",
+        "pasteCopiedTo": "Fa&#39;apipi&#39;i le feso&#39;ota&#39;iga kopi i le fanua &quot;URL o le kalena&quot;.",
+        "clickAddCalendar": "Kiliki &quot;Add calendar&quot; button",
+        "copyLink": "Kopi So&#39;oga",
+        "linkCopied": "So&#39;oga Kopi",
+        "step2": "So&#39;oga Kopi. O loʻo matou faʻatatau ile Google Calendar. E te manaʻomia le faʻapipiʻi o le fesoʻotaʻiga i totonu o le pusa tusi, kiliki &quot;Add calendar&quot;, ma tapuni le tab (vaʻai le faʻamalama i lalo)",
+        "calendarAppPreferences": "Tatala le Fa&#39;ailoga i le Kalena App i luga o lau Mac, ma seti le Fa&#39;atonu Kalena App e pei ona fa&#39;aalia i lalo.",
+        "thenCloseDialog": "Ona tapuni lea o le talanoaga e lesitala i lau kalena!",
+        "success": "Ua manuia le fa&#39;amaopoopoina o le kalena"
     }
 }

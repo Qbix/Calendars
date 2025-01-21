@@ -119,7 +119,12 @@
             "CancelReservation": "ຍົກເລີກການຈອງທັງໝົດ",
             "Total": "ທັງໝົດ",
             "RequiredRelatedParticipants": "ເຫດການນີ້ຕ້ອງການຜູ້ເຂົ້າຮ່ວມ: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "ກະລຸນາແກ້ໄຂການມີໃຫ້ &quot;{{title}}&quot; ເພື່ອອັບເດດການຕັ້ງຄ່າທີ່ເກີດຂຶ້ນຊ້ຳໆ"
+            "AvailabilityWarning": "ກະລຸນາແກ້ໄຂການມີໃຫ້ &quot;{{title}}&quot; ເພື່ອອັບເດດການຕັ້ງຄ່າທີ່ເກີດຂຶ້ນຊ້ຳໆ",
+            "Presentation": "ການນໍາສະເຫນີ",
+            "YouAreNotParticipated": "ທ່ານບໍ່ແມ່ນຜູ້ເຂົ້າຮ່ວມຂອງເຫດການ",
+            "LiveStreamStarted": "ການຖ່າຍທອດສົດໄດ້ເລີ່ມຕົ້ນແລ້ວ",
+            "WebRTCStarted": "ການປະຊຸມທາງໂທລະສັບໄດ້ເລີ່ມຕົ້ນ",
+            "WebRTCEnded": "ການ​ປະ​ຊຸມ​ທາງ​ໂທລະ​ຄົມ​ສິ້ນ​ສຸດ​ລົງ​"
         },
         "composer": {
             "SetLocation": "ຕັ້ງສະຖານທີ່ຂອງຂ້ອຍ",
@@ -156,7 +161,10 @@
                 "Title": "ເລືອກກິດຈະກໍາ",
                 "Filter": "ຄວາມສົນໃຈຄົ້ນຫາ ..."
             },
-            "SetLivestream": "ວາງລິ້ງໃສ່ການຖ່າຍທອດສົດ \/ ກອງປະຊຸມວິດີໂອ"
+            "SetLivestream": "ວາງລິ້ງໃສ່ການຖ່າຍທອດສົດ \/ ກອງປະຊຸມວິດີໂອ",
+            "Locally": "ທ້ອງຖິ່ນ",
+            "EventInfoLink": "ລິ້ງຂໍ້ມູນເຫດການ",
+            "TicketPurchaseLink": "ລິ້ງຊື້ປີ້"
         },
         "EventAlreadyClosed": "ເຫດການນີ້ປິດແລ້ວ",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "ເພີ່ມນັດໝາຍໃສ່ປະຕິທິນຂອງເຈົ້າ"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "ຂໍອະໄພ, ແຕ່ທ່ານບໍ່ສາມາດອອກຈາກເຫດການທີ່ສິ້ນສຸດໄດ້"
     },
     "availabilities": {
         "Title": "ຄວາມພ້ອມ",
@@ -190,7 +199,11 @@
             "PeopleMax": "ຜູ້ເຂົ້າຊົມສູງສຸດ",
             "PeopleLabels": "ປ້າຍກຳກັບທີ່ອະນຸຍາດ",
             "Next": "ຕໍ່ໄປ",
-            "Back": "ກັບຄືນໄປບ່ອນ"
+            "Back": "ກັບຄືນໄປບ່ອນ",
+            "RecurringEndDate": "ວັນທີສິ້ນສຸດທີ່ເກີດຂຶ້ນຊ້ຳ",
+            "ScheduleOnlineConference": "ຕາຕະລາງການປະຊຸມໂທລະຄົມ",
+            "SetLivestream": "ວາງລິ້ງໃສ່ການຖ່າຍທອດສົດ \/ ກອງປະຊຸມວິດີໂອ",
+            "SelectTimeZone": "ເລືອກເຂດເວລາ"
         },
         "EditAvailability": "ແກ້ໄຂຄວາມພ້ອມ",
         "SetVisitors": "ກໍານົດຜູ້ເຂົ້າຊົມ",
@@ -200,7 +213,9 @@
         "RemoveStaff": "ເອົາພະນັກງານອອກ",
         "PleaseSelectTimeSlots": "ກະລຸນາເລືອກເວລາ",
         "ExceptionOccurred": "ຂໍ້ຍົກເວັ້ນເກີດຂຶ້ນ",
-        "NotEnoughCreditsToParticipateEvents": "ບໍ່ມີເຄຣດິດພຽງພໍເພື່ອເຂົ້າຮ່ວມກິດຈະກຳ {{eventsAmount}}. ທ່ານຕ້ອງການເຄຣດິດ {{needCredits}}. ຕ້ອງການຊື້?"
+        "NotEnoughCreditsToParticipateEvents": "ບໍ່ມີເຄຣດິດພຽງພໍເພື່ອເຂົ້າຮ່ວມກິດຈະກຳ {{eventsAmount}}. ທ່ານຕ້ອງການເຄຣດິດ {{needCredits}}. ຕ້ອງການຊື້?",
+        "InviteStaff": "ເຊີນພະນັກງານ",
+        "LiveStream": "ຖ່າຍທອດສົດ"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "ຈັດການການສະໝັກໃຊ້ອີເມວຂອງທ່ານ",
         "IfUnsubscribe": "ຖ້າທ່ານຕ້ອງການຍົກເລີກການຈອງ",
         "ClickHereToVisitEvent": "ກະລຸນາຄລິກທີ່ນີ້ເພື່ອໄປຢ້ຽມຢາມເຫດການ",
-        "Calendars\/reminder": "ນັດໝາຍ &quot;{{{call 'message.getInstruction' 'name'}}&quot; ຈະເລີ່ມໃນ {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "ນັດໝາຍ &quot;{{{call 'message.getInstruction' 'name'}}&quot; ຈະເລີ່ມໃນ {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "ການປະຊຸມທາງໂທລະສັບໄດ້ເລີ່ມຕົ້ນ",
+            "Ended": "ການ​ປະ​ຊຸມ​ທາງ​ໂທລະ​ຄົມ​ສິ້ນ​ສຸດ​ລົງ​"
+        },
+        "livestream": {
+            "Started": "ເລີ່ມການຖ່າຍທອດສົດແລ້ວ",
+            "Ended": "ການຖ່າຍທອດສົດສິ້ນສຸດລົງ",
+            "ClickToView": "ເບິ່ງມັນຢູ່ທີ່ນີ້."
+        }
     },
     "import": {
         "linkTitle": "ຕື່ມຂໍ້ມູນໃສ່ໃນຕາຕະລາງນີ້",
@@ -266,7 +290,9 @@
         "complete": "ສໍາເລັດ",
         "errorLine": "ແຖວ {{1}}",
         "errorsTitle": "ຄວາມຜິດພາດເກີດຂຶ້ນ",
-        "communityUsers": "ນີ້ແມ່ນລາຍຊື່ຊຸມຊົນ"
+        "communityUsers": "ນີ້ແມ່ນລາຍຊື່ຊຸມຊົນ",
+        "toMainCommunityToo": "ກ່ຽວຂ້ອງກັບຊຸມຊົນຕົ້ນຕໍເຊັ່ນກັນ",
+        "ChooseFile": "ເລືອກໄຟລ໌"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "ມື້​ນີ້",
         "Tomorrow": "ມື້ອື່ນ",
         "AfterTomorrow": "ຫຼັງຈາກມື້ອື່ນ"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "ສະໝັກໃຊ້ປະຕິທິນ",
+        "copyLinkBelow": "ຄລິກທີ່ປຸ່ມດ້ານລຸ່ມເພື່ອສຳເນົາລິ້ງໃສ່ຄລິບບອດຂອງທ່ານ",
+        "tapToCopy": "ແຕະທີ່ປຸ່ມຂ້າງລຸ່ມນີ້ເພື່ອສຳເນົາລິ້ງໃສ່ຄລິບບອດຂອງທ່ານ",
+        "goTo": "ໄປທີ່:",
+        "pasteCopiedTo": "ວາງລິ້ງທີ່ສຳເນົາໃສ່ຊ່ອງຂໍ້ມູນ &quot;URL ຂອງປະຕິທິນ&quot;.",
+        "clickAddCalendar": "ໃຫ້ຄລິກໃສ່ປຸ່ມ &quot;ເພີ່ມປະຕິທິນ&quot;.",
+        "copyLink": "ສຳເນົາລິ້ງ",
+        "linkCopied": "ສຳເນົາລິ້ງແລ້ວ",
+        "step2": "ສຳເນົາລິ້ງແລ້ວ. ພວກເຮົາກ່ຽວກັບການເປີດປະຕິທິນກູໂກ. ທ່ານ​ຈະ​ຕ້ອງ​ໄດ້​ວາງ​ການ​ເຊື່ອມ​ຕໍ່​ເຂົ້າ​ໄປ​ໃນ​ກ່ອງ​ຂໍ້​ຄວາມ​, ໃຫ້​ຄລິກ​ໃສ່ &quot;ເພີ່ມ​ປະ​ຕິ​ທິນ​&quot; ແລະ​ປິດ​ແຖບ (ເບິ່ງ screenshot ຂ້າງ​ລຸ່ມ​ນີ້​)",
+        "calendarAppPreferences": "ເປີດ​ການ​ຕັ້ງ​ຄ່າ​ໃນ App ປະ​ຕິ​ທິນ​ໃນ Mac ຂອງ​ທ່ານ​, ແລະ​ຕັ້ງ​ຄ່າ Default Calendar App ເປັນ​ຮູບ​ຂ້າງ​ລຸ່ມ​ນີ້​.",
+        "thenCloseDialog": "ຈາກນັ້ນປິດກ່ອງໂຕ້ຕອບນີ້ເພື່ອສະໝັກໃຊ້ປະຕິທິນຂອງເຈົ້າ!",
+        "success": "ປະຕິທິນຖືກຊິງຄ໌ສຳເລັດແລ້ວ"
     }
 }

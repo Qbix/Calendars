@@ -119,7 +119,12 @@
             "CancelReservation": "Khansela konke ukubhukha",
             "Total": "Isamba",
             "RequiredRelatedParticipants": "Lo mcimbi udinga ababambiqhaza: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Sicela uhlele ukutholakala kokuthi &quot;{{title}}&quot; ukuze ubuyekeze izilungiselelo eziphindelelayo"
+            "AvailabilityWarning": "Sicela uhlele ukutholakala kokuthi &quot;{{title}}&quot; ukuze ubuyekeze izilungiselelo eziphindelelayo",
+            "Presentation": "Isethulo",
+            "YouAreNotParticipated": "Awuyena umhlanganyeli womcimbi",
+            "LiveStreamStarted": "Ukusakaza bukhoma sekuqalile",
+            "WebRTCStarted": "I-Teleconference iqalile",
+            "WebRTCEnded": "I-Teleconference iphelile"
         },
         "composer": {
             "SetLocation": "Setha Indawo Yami",
@@ -156,7 +161,10 @@
                 "Title": "Khetha Umsebenzi",
                 "Filter": "Sesha izithakazelo..."
             },
-            "SetLivestream": "Namathisela isixhumanisi ukuze usakaze bukhoma \/ inkomfa yevidiyo"
+            "SetLivestream": "Namathisela isixhumanisi ukuze usakaze bukhoma \/ inkomfa yevidiyo",
+            "Locally": "endaweni",
+            "EventInfoLink": "Isixhumanisi Solwazi Lomcimbi",
+            "TicketPurchaseLink": "Isixhumanisi Sokuthenga Amathikithi"
         },
         "EventAlreadyClosed": "Lo mcimbi usuvele uvaliwe",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Engeza Umcimbi Ekhalendeni lakho"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Uxolo, kodwa awukwazi ukushiya umcimbi ophelile"
     },
     "availabilities": {
         "Title": "Ukutholakala",
@@ -190,7 +199,11 @@
             "PeopleMax": "Izivakashi eziphezulu",
             "PeopleLabels": "Amalebula avunyelwe",
             "Next": "Olandelayo",
-            "Back": "Emuva"
+            "Back": "Emuva",
+            "RecurringEndDate": "Idethi Yokuphela Eqhubekayo",
+            "ScheduleOnlineConference": "Hlela i-Teleconference",
+            "SetLivestream": "Namathisela isixhumanisi ukuze usakaze bukhoma \/ inkomfa yevidiyo",
+            "SelectTimeZone": "KhethaIzoni yesikhathi"
         },
         "EditAvailability": "Hlela Ukutholakala",
         "SetVisitors": "Setha Izivakashi",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Susa abasebenzi",
         "PleaseSelectTimeSlots": "Sicela ukhethe izikhala zesikhathi",
         "ExceptionOccurred": "Kwenzeke okuhlukile",
-        "NotEnoughCreditsToParticipateEvents": "Awekho amakhredithi anele okubamba iqhaza {{eventsAmount}} emicimbini. Udinga {{100}} amakhredithi. Ufuna ukuthenga?"
+        "NotEnoughCreditsToParticipateEvents": "Awekho amakhredithi anele okubamba iqhaza {{eventsAmount}} emicimbini. Udinga {{100}} amakhredithi. Ufuna ukuthenga?",
+        "InviteStaff": "Mema abasebenzi",
+        "LiveStream": "Ukusakaza bukhoma"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "phatha ukubhalisa kwakho kwe-imeyili",
         "IfUnsubscribe": "Uma ufuna ukuzikhipha ohlwini",
         "ClickHereToVisitEvent": "Sicela uchofoze lapha ukuze uvakashele umcimbi",
-        "Calendars\/reminder": "Umcimbi &quot;{{{call 'message.getInstruction' 'name'}}&quot; uzoqala ngo-{{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Umcimbi &quot;{{{call 'message.getInstruction' 'name'}}&quot; uzoqala ngo-{{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "I-Teleconference iqalile",
+            "Ended": "I-Teleconference iphelile"
+        },
+        "livestream": {
+            "Started": "Ukusakaza bukhoma kuqalile",
+            "Ended": "Ukusakaza bukhoma kuphelile",
+            "ClickToView": "Ibuke lapha."
+        }
     },
     "import": {
         "linkTitle": "Gcwalisa Lesi Sipredishithi",
@@ -266,7 +290,9 @@
         "complete": "Qedela",
         "errorLine": "umugqa {{1}}",
         "errorsTitle": "Kuvele amaphutha",
-        "communityUsers": "Lolu uhlu lwemiphakathi"
+        "communityUsers": "Lolu uhlu lwemiphakathi",
+        "toMainCommunityToo": "zihlobene nomphakathi omkhulu futhi",
+        "ChooseFile": "khetha ifayela"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Namuhla",
         "Tomorrow": "Kusasa",
         "AfterTomorrow": "Ngemva kwakusasa"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Bhalisela Ikhalenda",
+        "copyLinkBelow": "Chofoza inkinobho engezansi ukuze ukopishe isixhumanisi ebhodini lakho lokunamathisela",
+        "tapToCopy": "Thepha inkinobho engezansi ukuze ukopishe isixhumanisi ebhodini lakho lokunamathisela",
+        "goTo": "Iya ku:",
+        "pasteCopiedTo": "Namathisela isixhumanisi esikopishiwe kunkambu ethi &quot;URL yekhalenda&quot;.",
+        "clickAddCalendar": "Chofoza inkinobho ethi &quot;Engeza ikhalenda&quot;.",
+        "copyLink": "Kopisha Isixhumanisi",
+        "linkCopied": "Isixhumanisi Sikopishiwe",
+        "step2": "Isixhumanisi Sikopishiwe. Simayelana nokuvula i-Google Khalenda. Uzodinga ukunamathisela isixhumanisi ebhokisini lombhalo, chofoza okuthi &quot;Engeza ikhalenda&quot;, bese uvala ithebhu (bona isithombe-skrini ngezansi)",
+        "calendarAppPreferences": "Vula Okuncamelayo Kuhlelo Lokusebenza Lwekhalenda ku-Mac yakho, bese usetha Uhlelo Lokusebenza Lwekhalenda Oluzenzakalelayo ukuthi lube njengoba kuboniswe ngezansi.",
+        "thenCloseDialog": "Bese uvala le ngxoxo ukuze ubhalisele ikhalenda lakho!",
+        "success": "Ikhalenda livunyelaniswe ngempumelelo"
     }
 }

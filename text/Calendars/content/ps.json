@@ -119,7 +119,12 @@
             "CancelReservation": "ټول ریزرویشن لغوه کړئ",
             "Total": "ټول",
             "RequiredRelatedParticipants": "دا پیښه ګډون کونکو ته اړتیا لري: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "مهرباني وکړئ موجودیت &quot;{{title}}&quot; د تکراري ترتیباتو تازه کولو لپاره ترمیم کړئ"
+            "AvailabilityWarning": "مهرباني وکړئ موجودیت &quot;{{title}}&quot; د تکراري ترتیباتو تازه کولو لپاره ترمیم کړئ",
+            "Presentation": "پریزنټیشن",
+            "YouAreNotParticipated": "تاسو د غونډې ګډونوال نه یاست",
+            "LiveStreamStarted": "ژوندۍ خپرونه پیل شوه",
+            "WebRTCStarted": "ټلیفوني کنفرانس پیل شو",
+            "WebRTCEnded": "ټلیفوني کنفرانس پای ته ورسید"
         },
         "composer": {
             "SetLocation": "زما ځای وټاکئ",
@@ -156,7 +161,10 @@
                 "Title": "یو فعالیت غوره کړئ",
                 "Filter": "د ګټو لټون ..."
             },
-            "SetLivestream": "ژوندی جریان \/ ویډیو کنفرانس ته لینک پیسټ کړئ"
+            "SetLivestream": "ژوندی جریان \/ ویډیو کنفرانس ته لینک پیسټ کړئ",
+            "Locally": "په محلي توګه",
+            "EventInfoLink": "د پیښې معلوماتو لینک",
+            "TicketPurchaseLink": "د ټکټ پیرود لینک"
         },
         "EventAlreadyClosed": "دا پیښه لا دمخه تړل شوې ده",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "خپل کیلنڈر ته پیښه اضافه کړئ"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "بخښنه غواړئ، مګر تاسو نشئ کولی پای ته رسیدلې پیښه پریږدئ"
     },
     "availabilities": {
         "Title": "موجودیتونه",
@@ -190,7 +199,11 @@
             "PeopleMax": "اعظمي لیدونکي",
             "PeopleLabels": "لیبلونه اجازه لري",
             "Next": "بل",
-            "Back": "شاته"
+            "Back": "شاته",
+            "RecurringEndDate": "تکراري پای نیټه",
+            "ScheduleOnlineConference": "د مخابراتي کنفرانس مهالویش",
+            "SetLivestream": "ژوندی جریان \/ ویډیو کنفرانس ته لینک پیسټ کړئ",
+            "SelectTimeZone": "د وخت زون غوره کړئ"
         },
         "EditAvailability": "د موجودیت ترمیم",
         "SetVisitors": "لیدونکي تنظیم کړئ",
@@ -200,7 +213,9 @@
         "RemoveStaff": "کارمندان لرې کړئ",
         "PleaseSelectTimeSlots": "مهرباني وکړئ د وخت سلاټونه وټاکئ",
         "ExceptionOccurred": "استثنا رامنځته شوه",
-        "NotEnoughCreditsToParticipateEvents": "د {{eventsAmount}} پیښو د ګډون لپاره کافی کریډیټ نشته. تاسو {{needCredits}} کریډیټ ته اړتیا لرئ. غواړئ پیرود وکړئ؟"
+        "NotEnoughCreditsToParticipateEvents": "د {{eventsAmount}} پیښو د ګډون لپاره کافی کریډیټ نشته. تاسو {{needCredits}} کریډیټ ته اړتیا لرئ. غواړئ پیرود وکړئ؟",
+        "InviteStaff": "کارمندانو ته بلنه ورکړئ",
+        "LiveStream": "ژوندۍ خپرونه"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "ستاسو د بریښنالیک ګډونونه اداره کړئ",
         "IfUnsubscribe": "که تاسو غواړئ چې ګډون رد کړئ",
         "ClickHereToVisitEvent": "مهرباني وکړئ د پیښې لیدو لپاره دلته کلیک وکړئ",
-        "Calendars\/reminder": "پیښه &quot;{999}}&quot; به په {{{call 'message.getInstruction' 'time'}}} کې پیل شي"
+        "Calendars\/reminder": "پیښه &quot;{999}}&quot; به په {{{call 'message.getInstruction' 'time'}}} کې پیل شي",
+        "webrtc": {
+            "Started": "ټلیفوني کنفرانس پیل شو",
+            "Ended": "ټلیفوني کنفرانس پای ته ورسید"
+        },
+        "livestream": {
+            "Started": "ژوندی جریان پیل شو",
+            "Ended": "ژوندۍ خپرونه پای ته ورسېده",
+            "ClickToView": "دلته یې وګورئ."
+        }
     },
     "import": {
         "linkTitle": "دا سپریډ شیټ ډک کړئ",
@@ -266,7 +290,9 @@
         "complete": "بشپړ",
         "errorLine": "کرښه {{1}}",
         "errorsTitle": "تېروتنې رامنځته شوې",
-        "communityUsers": "دا د ټولنو لیست دی"
+        "communityUsers": "دا د ټولنو لیست دی",
+        "toMainCommunityToo": "د اصلي ټولنې سره هم تړاو لري",
+        "ChooseFile": "فایل غوره کړئ"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "نن",
         "Tomorrow": "سبا",
         "AfterTomorrow": "بل سبا"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "کیلنڈر کې ګډون وکړئ",
+        "copyLinkBelow": "لاندې تڼۍ کلیک وکړئ ترڅو لینک خپل کلپ بورډ ته کاپي کړئ",
+        "tapToCopy": "خپل کلپ بورډ ته د لینک کاپي کولو لپاره لاندې تڼۍ کېکاږئ",
+        "goTo": "ورتګ:",
+        "pasteCopiedTo": "د کاپي شوي لینک &quot;د کیلنڈر URL&quot; ساحه کې پیسټ کړئ",
+        "clickAddCalendar": "د &quot;کیلنڈر اضافه کړئ&quot; تڼۍ کلیک وکړئ",
+        "copyLink": "لینک کاپي کړئ",
+        "linkCopied": "لینک کاپي شوی",
+        "step2": "لینک کاپي شوی. موږ د ګوګل کیلنڈر د خلاصولو په اړه یو. تاسو به اړتیا ولرئ لینک په متن بکس کې پیسټ کړئ، &quot;کیلنڈر اضافه کړئ&quot; کلیک وکړئ، او ټب بند کړئ (لاندې سکرین شاټ وګورئ)",
+        "calendarAppPreferences": "په خپل میک کې د کیلنڈر ایپ کې غوره توبونه خلاص کړئ ، او د ډیفالټ کیلنڈر ایپ تنظیم کړئ لکه څنګه چې لاندې ښودل شوي.",
+        "thenCloseDialog": "بیا دا ډیالوګ بند کړئ ترڅو خپل کیلنڈر کې ګډون وکړئ!",
+        "success": "کیلنڈر په بریالیتوب سره همغږي شو"
     }
 }

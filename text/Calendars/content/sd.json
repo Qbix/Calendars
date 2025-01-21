@@ -119,7 +119,12 @@
             "CancelReservation": "مڪمل رزرويشن منسوخ ڪريو",
             "Total": "ڪُل",
             "RequiredRelatedParticipants": "ھن واقعي ۾ شرڪت جي ضرورت آھي: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "مھرباني ڪري دستيابي کي تبديل ڪريو &quot;{{title}}&quot; بار بار سيٽنگون تازه ڪاري ڪرڻ لاء"
+            "AvailabilityWarning": "مھرباني ڪري دستيابي کي تبديل ڪريو &quot;{{title}}&quot; بار بار سيٽنگون تازه ڪاري ڪرڻ لاء",
+            "Presentation": "پيشڪش",
+            "YouAreNotParticipated": "توهان واقعي جو حصو نه آهيو",
+            "LiveStreamStarted": "لائيو اسٽريم شروع ٿي چڪو آهي",
+            "WebRTCStarted": "ٽيلي ڪانفرنس شروع ٿي",
+            "WebRTCEnded": "ٽيلي ڪانفرنس ختم ٿي وئي"
         },
         "composer": {
             "SetLocation": "سيٽ ڪريو منهنجو مقام",
@@ -156,7 +161,10 @@
                 "Title": "هڪ سرگرمي چونڊيو",
                 "Filter": "دلچسپين جي ڳولا ڪريو ..."
             },
-            "SetLivestream": "لائيو اسٽريم \/ ويڊيو ڪانفرنس ۾ لنڪ پيسٽ ڪريو"
+            "SetLivestream": "لائيو اسٽريم \/ ويڊيو ڪانفرنس ۾ لنڪ پيسٽ ڪريو",
+            "Locally": "مقامي طور تي",
+            "EventInfoLink": "واقعي جي معلومات لنڪ",
+            "TicketPurchaseLink": "ٽڪيٽ خريداري لنڪ"
         },
         "EventAlreadyClosed": "هي واقعو اڳ ئي بند ٿي چڪو آهي",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "پنھنجي ڪئلينڊر ۾ واقعو شامل ڪريو"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "معاف ڪجو، پر توھان ختم ٿيل واقعي کي ڇڏي نٿا سگھو"
     },
     "availabilities": {
         "Title": "دستيابي",
@@ -190,7 +199,11 @@
             "PeopleMax": "وڌ ۾ وڌ سياحن",
             "PeopleLabels": "ليبل جي اجازت ڏني وئي",
             "Next": "اڳيان",
-            "Back": "پوئتي"
+            "Back": "پوئتي",
+            "RecurringEndDate": "بار بار ختم ٿيڻ جي تاريخ",
+            "ScheduleOnlineConference": "شيڊول ٽيلي ڪانفرنس",
+            "SetLivestream": "لائيو اسٽريم \/ وڊيو ڪانفرنس ۾ لنڪ پيسٽ ڪريو",
+            "SelectTimeZone": "ٽائم زون چونڊيو"
         },
         "EditAvailability": "تدوين دستيابي",
         "SetVisitors": "مهمان مقرر ڪريو",
@@ -200,7 +213,9 @@
         "RemoveStaff": "اسٽاف کي هٽايو",
         "PleaseSelectTimeSlots": "مھرباني ڪري ٽائيم سلاٽ چونڊيو",
         "ExceptionOccurred": "استثنا ٿيو",
-        "NotEnoughCreditsToParticipateEvents": "ڪافي ڪريڊٽ نه آھن حصو وٺڻ لاءِ {{eventsAmount}} واقعن ۾. توھان کي ضرورت آھي {{needCredits}} ڪريڊٽ. خريد ڪرڻ چاهيو ٿا؟"
+        "NotEnoughCreditsToParticipateEvents": "ڪافي ڪريڊٽ نه آھن حصو وٺڻ لاءِ {{eventsAmount}} واقعن ۾. توھان کي ضرورت آھي {{needCredits}} ڪريڊٽ. خريد ڪرڻ چاهيو ٿا؟",
+        "InviteStaff": "اسٽاف کي دعوت ڏيو",
+        "LiveStream": "لائيو وهڪرو"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "پنھنجي اي ميل رڪنيت کي منظم ڪريو",
         "IfUnsubscribe": "جيڪڏھن توھان چاھيو ٿا رڪنيت ختم ڪريو",
         "ClickHereToVisitEvent": "مھرباني ڪري ھتي ڪلڪ ڪريو واقعي جو دورو ڪرڻ لاء",
-        "Calendars\/reminder": "ايونٽ &quot;{{{call 'message.getInstruction' 'name'}}&quot; ۾ شروع ٿيندو {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "ايونٽ &quot;{{{call 'message.getInstruction' 'name'}}&quot; ۾ شروع ٿيندو {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "ٽيلي ڪانفرنس شروع ٿي",
+            "Ended": "ٽيلي ڪانفرنس ختم ٿي وئي"
+        },
+        "livestream": {
+            "Started": "لائيو اسٽريم شروع ٿيو",
+            "Ended": "لائيو اسٽريم ختم ٿي ويو",
+            "ClickToView": "ان کي ڏسو هتي."
+        }
     },
     "import": {
         "linkTitle": "هن اسپريڊ شيٽ کي ڀريو",
@@ -266,7 +290,9 @@
         "complete": "مڪمل",
         "errorLine": "لائن {{1}}",
         "errorsTitle": "غلطيون ٿي ويون",
-        "communityUsers": "هي ڪميونٽين جي فهرست آهي"
+        "communityUsers": "هي ڪميونٽين جي فهرست آهي",
+        "toMainCommunityToo": "مکيه ڪميونٽي سان پڻ تعلق رکي ٿو",
+        "ChooseFile": "فائل چونڊيو"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "اڄ",
         "Tomorrow": "سڀاڻي",
         "AfterTomorrow": "سڀاڻي کانپوء"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "رڪنيت حاصل ڪريو ڪئلينڊر",
+        "copyLinkBelow": "پنهنجي ڪلپ بورڊ تي لنڪ ڪاپي ڪرڻ لاءِ هيٺ ڏنل بٽڻ تي ڪلڪ ڪريو",
+        "tapToCopy": "پنھنجي ڪلپ بورڊ تي لنڪ کي نقل ڪرڻ لاءِ ھيٺ ڏنل بٽڻ تي ٽيپ ڪريو",
+        "goTo": "ڏانھن وڃو:",
+        "pasteCopiedTo": "ڪاپي ڪيل لنڪ کي &quot;ڪلينڊر جو URL&quot; فيلڊ ۾ پيسٽ ڪريو",
+        "clickAddCalendar": "&quot;ڪلينڊر شامل ڪريو&quot; بٽڻ تي ڪلڪ ڪريو",
+        "copyLink": "ڪاپي لنڪ",
+        "linkCopied": "لنڪ ڪاپي ڪئي وئي",
+        "step2": "لنڪ ڪاپي ٿيل. اسان کليل گوگل ڪئلينڊر بابت آهيون. توهان کي لنڪ پيسٽ ڪرڻ جي ضرورت پوندي ٽيڪسٽ باڪس ۾، ڪلڪ ڪريو &quot;ڪئلينڊر شامل ڪريو&quot;، ۽ ٽيب بند ڪريو (هيٺ اسڪرين شاٽ ڏسو)",
+        "calendarAppPreferences": "پنھنجي Mac تي ڪئلينڊر ايپ ۾ ترجيحات کوليو، ۽ ھيٺ ڏنل ڏيکاريل ھجڻ لاءِ ڊفالٽ ڪئلينڊر ايپ سيٽ ڪريو.",
+        "thenCloseDialog": "پوءِ ھن ڊائلاگ کي بند ڪريو پنھنجي ڪئلينڊر جي رڪنيت حاصل ڪرڻ لاءِ!",
+        "success": "ڪئلينڊر ڪاميابيءَ سان هم وقت ٿي ويو"
     }
 }

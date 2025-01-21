@@ -119,7 +119,12 @@
             "CancelReservation": "Abrigavi totum reservatio",
             "Total": "Totalis",
             "RequiredRelatedParticipants": "Eventus hic participes postulat: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Quaeso emendare disponibilitate &quot;{{title}}&quot; ad update occasus frequentes"
+            "AvailabilityWarning": "Quaeso emendare disponibilitate &quot;{{title}}&quot; ad update occasus frequentes",
+            "Presentation": "Praesentatio",
+            "YouAreNotParticipated": "Non es particeps eventu",
+            "LiveStreamStarted": "Vivamus amnis coepi",
+            "WebRTCStarted": "Teleconference coepi",
+            "WebRTCEnded": "Teleconference finivit"
         },
         "composer": {
             "SetLocation": "Pone mihi Location",
@@ -156,7 +161,10 @@
                 "Title": "Elige quod operatio",
                 "Filter": "Quaerere utilitates..."
             },
-            "SetLivestream": "Crustulum link ad livestream \/ videoconference"
+            "SetLivestream": "Crustulum link ad livestream \/ videoconference",
+            "Locally": "localiter",
+            "EventInfoLink": "Eventus Info Link",
+            "TicketPurchaseLink": "Tessera Purchase Link"
         },
         "EventAlreadyClosed": "Haec res iam clausi",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Add Event to your Calendar"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Nos paenitet, sed eventum finitum relinquere non potes"
     },
     "availabilities": {
         "Title": "Availabilities",
@@ -190,7 +199,11 @@
             "PeopleMax": "Maxime visitatores",
             "PeopleLabels": "Titulus permissus",
             "Next": "deinde",
-            "Back": "Retro"
+            "Back": "Retro",
+            "RecurringEndDate": "Redit finem Date",
+            "ScheduleOnlineConference": "Schedule Teleconference",
+            "SetLivestream": "Crustulum link ad livestream \/ videoconference",
+            "SelectTimeZone": "Lego timeZone"
         },
         "EditAvailability": "Edit Availability",
         "SetVisitors": "Set Visitatores",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Remove virgam",
         "PleaseSelectTimeSlots": "Quaeso eligere tempus foramina",
         "ExceptionOccurred": "Exceptio occurrit",
-        "NotEnoughCreditsToParticipateEvents": "Non satis credita {999}} eventa participare. Opus est tibi {1000}} creditis. Vis emere?"
+        "NotEnoughCreditsToParticipateEvents": "Non satis credita {999}} eventa participare. Opus est tibi {1000}} creditis. Vis emere?",
+        "InviteStaff": "virgam invitare",
+        "LiveStream": "Vivamus stream"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "administrare vestri email subnotationes",
         "IfUnsubscribe": "Si vis unsubscribe",
         "ClickHereToVisitEvent": "Please preme here to visit event",
-        "Calendars\/reminder": "Eventus &quot;{999}}&quot; incipiet in {{{call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Eventus &quot;{999}}&quot; incipiet in {{{call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Teleconference coepi",
+            "Ended": "Teleconference finivit"
+        },
+        "livestream": {
+            "Started": "Vivamus amnis coepi",
+            "Ended": "Vivamus amnis finivit",
+            "ClickToView": "Vide hic."
+        }
     },
     "import": {
         "linkTitle": "Imple Ex hoc Spreadsheet",
@@ -266,7 +290,9 @@
         "complete": "Complete",
         "errorLine": "linea {{1}}",
         "errorsTitle": "Errores occurrit",
-        "communityUsers": "Communitates haec est index"
+        "communityUsers": "Communitates haec est index",
+        "toMainCommunityToo": "ad principalis civitatis quoque",
+        "ChooseFile": "eligere file"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "hodie",
         "Tomorrow": "Cras",
         "AfterTomorrow": "Post crastinum"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Subscribe ut Calendar",
+        "copyLinkBelow": "Infra ipsum preme ut effingo nexum tuum clipboard",
+        "tapToCopy": "ICTUS puga infra ut effingo nexum tuum clipboard",
+        "goTo": "Perge ad:",
+        "pasteCopiedTo": "Crustulum exscriptus nexus ad &quot;URL fastorum&quot; agrum",
+        "clickAddCalendar": "Click &quot;addere calendarium&quot; button",
+        "copyLink": "Effingo Link",
+        "linkCopied": "Link Copied",
+        "step2": "Link Copied. Nos de Google Calendarium apertum. Nexum in textili conglutinare necesse erit, preme &quot;Calendarium addere&quot;, et tabam claudere (vide tortor infra)",
+        "calendarAppPreferences": "Optiones in App Kalendario tuo aperi in Mac, et pone Default Calendar App ut infra ostenderis.",
+        "thenCloseDialog": "Deinde claude hunc dialogum ut subscribas fastis tuis!",
+        "success": "Calendar est feliciter synced"
     }
 }

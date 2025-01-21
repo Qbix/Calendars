@@ -119,7 +119,12 @@
             "CancelReservation": "Butun bandlovni bekor qiling",
             "Total": "Jami",
             "RequiredRelatedParticipants": "Ushbu tadbir ishtirokchilarni talab qiladi: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Takroriy sozlamalarni yangilash uchun “{{title}}” mavjudligini tahrirlang"
+            "AvailabilityWarning": "Takroriy sozlamalarni yangilash uchun “{{title}}” mavjudligini tahrirlang",
+            "Presentation": "Taqdimot",
+            "YouAreNotParticipated": "Siz tadbir ishtirokchisi emassiz",
+            "LiveStreamStarted": "Jonli translatsiya boshlandi",
+            "WebRTCStarted": "Telekonferentsiya boshlandi",
+            "WebRTCEnded": "Telekonferentsiya yakunlandi"
         },
         "composer": {
             "SetLocation": "Mening joylashuvimni o&#39;rnating",
@@ -156,7 +161,10 @@
                 "Title": "Faoliyatni tanlang",
                 "Filter": "Qiziqishlarni qidirish ..."
             },
-            "SetLivestream": "Jonli translatsiya \/ videokonferentsiya uchun havolani joylashtiring"
+            "SetLivestream": "Jonli translatsiya \/ videokonferentsiya uchun havolani joylashtiring",
+            "Locally": "mahalliy",
+            "EventInfoLink": "Tadbir haqida ma&#39;lumot havolasi",
+            "TicketPurchaseLink": "Chipta sotib olish havolasi"
         },
         "EventAlreadyClosed": "Bu tadbir allaqachon yopilgan",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Taqvimingizga tadbir qo&#39;shing"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Kechirasiz, lekin yakunlangan tadbirni tark eta olmaysiz"
     },
     "availabilities": {
         "Title": "Mavjudligi",
@@ -190,7 +199,11 @@
             "PeopleMax": "Maksimal tashrif buyuruvchilar",
             "PeopleLabels": "Yorliqlarga ruxsat berilgan",
             "Next": "Keyingi",
-            "Back": "Orqaga"
+            "Back": "Orqaga",
+            "RecurringEndDate": "Takroriy tugash sanasi",
+            "ScheduleOnlineConference": "Telekonferentsiyani rejalashtirish",
+            "SetLivestream": "Jonli translatsiya \/ videokonferentsiya uchun havolani joylashtiring",
+            "SelectTimeZone": "Vaqt zonasini tanlang"
         },
         "EditAvailability": "Mavjudligini tahrirlash",
         "SetVisitors": "Mehmonlarni sozlash",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Xodimlarni olib tashlang",
         "PleaseSelectTimeSlots": "Iltimos, vaqt oralig&#39;ini tanlang",
         "ExceptionOccurred": "Istisno yuz berdi",
-        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} tadbirlarda ishtirok etish uchun kredit yetarli emas. Sizga {{needCredits}} ta kredit kerak. Sotib olmoqchimisiz?"
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} tadbirlarda ishtirok etish uchun kredit yetarli emas. Sizga {{needCredits}} ta kredit kerak. Sotib olmoqchimisiz?",
+        "InviteStaff": "Xodimlarni taklif qiling",
+        "LiveStream": "Jonli translatsiya"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "elektron pochta obunalaringizni boshqaring",
         "IfUnsubscribe": "Agar obunani bekor qilmoqchi bo&#39;lsangiz",
         "ClickHereToVisitEvent": "Tadbirga tashrif buyurish uchun shu yerni bosing",
-        "Calendars\/reminder": "“{{{call 'message.getInstruction' 'name'}}” tadbiri {{&call 'message.getInstruction' 'time'}}} da boshlanadi"
+        "Calendars\/reminder": "“{{{call 'message.getInstruction' 'name'}}” tadbiri {{&call 'message.getInstruction' 'time'}}} da boshlanadi",
+        "webrtc": {
+            "Started": "Telekonferentsiya boshlandi",
+            "Ended": "Telekonferentsiya yakunlandi"
+        },
+        "livestream": {
+            "Started": "Jonli translatsiya boshlandi",
+            "Ended": "Jonli translatsiya tugadi",
+            "ClickToView": "Bu yerda koʻring."
+        }
     },
     "import": {
         "linkTitle": "Ushbu elektron jadvalni to&#39;ldiring",
@@ -266,7 +290,9 @@
         "complete": "Bajarildi",
         "errorLine": "qator {{1}}",
         "errorsTitle": "Xatolar yuz berdi",
-        "communityUsers": "Bu hamjamiyatlar ro&#39;yxati"
+        "communityUsers": "Bu hamjamiyatlar ro&#39;yxati",
+        "toMainCommunityToo": "asosiy jamoaga ham tegishli",
+        "ChooseFile": "faylni tanlang"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Bugun",
         "Tomorrow": "Ertaga",
         "AfterTomorrow": "Ertadan keyin"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Taqvimga obuna bo&#39;ling",
+        "copyLinkBelow": "Havolani clipboardga nusxalash uchun quyidagi tugmani bosing",
+        "tapToCopy": "Havolani vaqtinchalik xotiraga nusxalash uchun quyidagi tugmani bosing",
+        "goTo": "O&#39;tish:",
+        "pasteCopiedTo": "Nusxalangan havolani “Taqvim URL manzili” maydoniga joylashtiring",
+        "clickAddCalendar": "&quot;Taqvim qo&#39;shish&quot; tugmasini bosing",
+        "copyLink": "Havolani nusxalash",
+        "linkCopied": "Havoladan nusxa olindi",
+        "step2": "Havoladan nusxa olindi. Biz ochiq Google Taqvim haqida. Havolani matn maydoniga joylashtirishingiz kerak, &quot;Taqvim qo&#39;shish&quot; tugmasini bosing va yorliqni yoping (quyida skrinshotga qarang)",
+        "calendarAppPreferences": "Mac kompyuteringizda Taqvim ilovasida Preferences-ni oching va Standart kalendar ilovasini quyida ko‘rsatilganidek qilib o‘rnating.",
+        "thenCloseDialog": "Keyin taqvimingizga obuna bo&#39;lish uchun ushbu dialog oynasini yoping!",
+        "success": "Taqvim muvaffaqiyatli sinxronlashtirildi"
     }
 }

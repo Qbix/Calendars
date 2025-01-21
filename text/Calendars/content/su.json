@@ -119,7 +119,12 @@
             "CancelReservation": "Ngabolaykeun sakabéh reservations",
             "Total": "Total",
             "RequiredRelatedParticipants": "Ieu acara merlukeun pamilon: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Mangga édit kasadiaan &quot;{{title}}&quot; pikeun ngamutahirkeun setélan nu ngulang deui"
+            "AvailabilityWarning": "Mangga édit kasadiaan &quot;{{title}}&quot; pikeun ngamutahirkeun setélan nu ngulang deui",
+            "Presentation": "Presentasi",
+            "YouAreNotParticipated": "Anjeun lain pamilon acara",
+            "LiveStreamStarted": "Live stream geus dimimitian",
+            "WebRTCStarted": "Teleconference dimimitian",
+            "WebRTCEnded": "Teleconference réngsé"
         },
         "composer": {
             "SetLocation": "Setel Lokasi Abdi",
@@ -156,7 +161,10 @@
                 "Title": "Pilih hiji Kagiatan",
                 "Filter": "Pilarian kapentingan ..."
             },
-            "SetLivestream": "Tempelkeun tautan kana livestream \/ konperénsi pidéo"
+            "SetLivestream": "Tempelkeun tautan kana livestream \/ konperénsi pidéo",
+            "Locally": "sacara lokal",
+            "EventInfoLink": "Patalina Info Acara",
+            "TicketPurchaseLink": "Patalina Meuli Tiket"
         },
         "EventAlreadyClosed": "Acara ieu parantos ditutup",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Tambahkeun Kajadian kana Kalénder anjeun"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Hampura, tapi anjeun teu bisa ninggalkeun acara réngsé"
     },
     "availabilities": {
         "Title": "Kasadiaan",
@@ -190,7 +199,11 @@
             "PeopleMax": "Datangna maksimum",
             "PeopleLabels": "Labels diwenangkeun",
             "Next": "Teras",
-            "Back": "Balik deui"
+            "Back": "Balik deui",
+            "RecurringEndDate": "Tanggal Tungtung Ngulang",
+            "ScheduleOnlineConference": "Ngajadwalkeun Teleconference",
+            "SetLivestream": "Tempelkeun tautan kana livestream \/ konperénsi pidéo",
+            "SelectTimeZone": "Pilih TimeZone"
         },
         "EditAvailability": "Edit Kasadiaan",
         "SetVisitors": "Atur sémah",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Leupaskeun staf",
         "PleaseSelectTimeSlots": "Mangga pilih slot waktu",
         "ExceptionOccurred": "Pangecualian lumangsung",
-        "NotEnoughCreditsToParticipateEvents": "Teu cukup sks pikeun ilubiung {{eventsAmount}} acara. Anjeun peryogi {{needCredits}} sks. Rék meuli?"
+        "NotEnoughCreditsToParticipateEvents": "Teu cukup sks pikeun ilubiung {{eventsAmount}} acara. Anjeun peryogi {{needCredits}} sks. Rék meuli?",
+        "InviteStaff": "Ujang staf",
+        "LiveStream": "Siaran langsung"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "ngatur langganan surélék anjeun",
         "IfUnsubscribe": "Upami anjeun hoyong unsubscribe",
         "ClickHereToVisitEvent": "Mangga klik di dieu pikeun nganjang acara",
-        "Calendars\/reminder": "Acara &quot;{{{call 'message.getInstruction' 'name'}}&quot; bakal dimimitian dina {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Acara &quot;{{{call 'message.getInstruction' 'name'}}&quot; bakal dimimitian dina {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Teleconference dimimitian",
+            "Ended": "Teleconference réngsé"
+        },
+        "livestream": {
+            "Started": "Live stream dimimitian",
+            "Ended": "Live stream réngsé",
+            "ClickToView": "Tingali di dieu."
+        }
     },
     "import": {
         "linkTitle": "Eusian Spreadsheet Ieu",
@@ -266,7 +290,9 @@
         "complete": "Lengkep",
         "errorLine": "garis {{1}}",
         "errorsTitle": "Kasalahan lumangsung",
-        "communityUsers": "Ieu daptar komunitas"
+        "communityUsers": "Ieu daptar komunitas",
+        "toMainCommunityToo": "patali jeung komunitas utama ogé",
+        "ChooseFile": "pilih file"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Kiwari",
         "Tomorrow": "isukan",
         "AfterTomorrow": "Sanggeus isukan"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Ngalanggan Calendar",
+        "copyLinkBelow": "Pencét tombol di handap pikeun nyalin tautan ka clipboard anjeun",
+        "tapToCopy": "Ketok tombol di handap pikeun nyalin tautan ka clipboard anjeun",
+        "goTo": "Pindah ka:",
+        "pasteCopiedTo": "Tempelkeun tautan anu ditiron kana widang &quot;URL almenak&quot;.",
+        "clickAddCalendar": "Pencét tombol &quot;Tambahkeun kalénder&quot;.",
+        "copyLink": "Nyalin Tumbu",
+        "linkCopied": "Link Disalin",
+        "step2": "Link Disalin. Kami ngeunaan muka Google Calendar. Anjeun kedah nempelkeun tautan kana kotak téks, klik &quot;Tambahkeun kalénder&quot;, sareng tutup tabna (tingali layar di handap)",
+        "calendarAppPreferences": "Buka Préferénsi dina Aplikasi Kalénder dina Mac anjeun, sareng setel Aplikasi Kalénder Default janten sapertos anu dipidangkeun di handap ieu.",
+        "thenCloseDialog": "Teras tutup dialog ieu pikeun ngalanggan kalénder anjeun!",
+        "success": "Kalénder suksés disingkronkeun"
     }
 }

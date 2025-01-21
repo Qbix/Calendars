@@ -119,7 +119,12 @@
             "CancelReservation": "Nuligi tutan rezervadon",
             "Total": "Entute",
             "RequiredRelatedParticipants": "Ĉi tiu evento postulas partoprenantojn: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Bonvolu redakti haveblecon &quot;{{title}}&quot; por ĝisdatigi ripetiĝantajn agordojn"
+            "AvailabilityWarning": "Bonvolu redakti haveblecon &quot;{{title}}&quot; por ĝisdatigi ripetiĝantajn agordojn",
+            "Presentation": "Prezento",
+            "YouAreNotParticipated": "Vi ne estas partoprenanto de la evento",
+            "LiveStreamStarted": "Viva fluo komenciĝis",
+            "WebRTCStarted": "Telekonferenco komenciĝis",
+            "WebRTCEnded": "Telekonferenco finiĝis"
         },
         "composer": {
             "SetLocation": "Agordu Mian Lokon",
@@ -156,7 +161,10 @@
                 "Title": "Elektu Agadon",
                 "Filter": "Serĉaj interesoj..."
             },
-            "SetLivestream": "Algluu ligilon al livestream \/ videokonferenco"
+            "SetLivestream": "Algluu ligilon al livestream \/ videokonferenco",
+            "Locally": "loke",
+            "EventInfoLink": "Event Info Ligilo",
+            "TicketPurchaseLink": "Ligo por Aĉeto de Biletoj"
         },
         "EventAlreadyClosed": "Ĉi tiu evento jam fermiĝis",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Aldonu Eventon al via Kalendaro"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Pardonu, sed vi ne povas forlasi finitan eventon"
     },
     "availabilities": {
         "Title": "Haveblecoj",
@@ -190,7 +199,11 @@
             "PeopleMax": "Maksimumaj vizitantoj",
             "PeopleLabels": "Etikedoj permesitaj",
             "Next": "Poste",
-            "Back": "Reen"
+            "Back": "Reen",
+            "RecurringEndDate": "Ripetanta Fina Dato",
+            "ScheduleOnlineConference": "Programu Telekonferencon",
+            "SetLivestream": "Algluu ligon al livestream \/ videokonferenco",
+            "SelectTimeZone": "Elektu horzonon"
         },
         "EditAvailability": "Redakti Haveblecon",
         "SetVisitors": "Agordu Vizitantojn",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Forigi personaron",
         "PleaseSelectTimeSlots": "Bonvolu elekti tempoperiodojn",
         "ExceptionOccurred": "Okazis escepto",
-        "NotEnoughCreditsToParticipateEvents": "Ne sufiĉaj kreditoj por partopreni {{eventsAmount}} eventojn. Vi bezonas {{needCredits}} kreditojn. Ĉu vi volas aĉeti?"
+        "NotEnoughCreditsToParticipateEvents": "Ne sufiĉaj kreditoj por partopreni {{eventsAmount}} eventojn. Vi bezonas {{needCredits}} kreditojn. Ĉu vi volas aĉeti?",
+        "InviteStaff": "Invitu personaron",
+        "LiveStream": "Viva rivereto"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "administru viajn retpoŝtajn abonojn",
         "IfUnsubscribe": "Se vi volas malaboni",
         "ClickHereToVisitEvent": "Bonvolu klaki ĉi tie por viziti eventon",
-        "Calendars\/reminder": "Okazaĵo &quot;{{{call 'message.getInstruction' 'name'}}&quot; komenciĝos en {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Okazaĵo &quot;{{{call 'message.getInstruction' 'name'}}&quot; komenciĝos en {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Telekonferenco komenciĝis",
+            "Ended": "Telekonferenco finiĝis"
+        },
+        "livestream": {
+            "Started": "Viva rivereto komenciĝis",
+            "Ended": "Viva fluo finiĝis",
+            "ClickToView": "Rigardu ĝin ĉi tie."
+        }
     },
     "import": {
         "linkTitle": "Plenigu Ĉi tiun Tabulfolion",
@@ -266,7 +290,9 @@
         "complete": "Kompleta",
         "errorLine": "linio {{1}}",
         "errorsTitle": "Eraroj okazis",
-        "communityUsers": "Ĉi tio estas listo de komunumoj"
+        "communityUsers": "Ĉi tio estas listo de komunumoj",
+        "toMainCommunityToo": "rilatas al ĉefa komunumo ankaŭ",
+        "ChooseFile": "elektu dosieron"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Hodiaŭ",
         "Tomorrow": "Morgaŭ",
         "AfterTomorrow": "Post morgaŭ"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Abonu Kalendaron",
+        "copyLinkBelow": "Alklaku la suban butonon por kopii la ligon al via tondujo",
+        "tapToCopy": "Frapu la suban butonon por kopii la ligon al via tondujo",
+        "goTo": "Iru al:",
+        "pasteCopiedTo": "Algluu kopiitan ligon al kampo &quot;URL de kalendaro&quot;.",
+        "clickAddCalendar": "Alklaku la butonon &quot;Aldoni kalendaron&quot;.",
+        "copyLink": "Kopiu Ligo",
+        "linkCopied": "Ligo Kopiita",
+        "step2": "Ligo Kopiita. Ni temas pri malferma Google Calendar. Vi devos alglui la ligilon en la tekstujon, alklaku &quot;Aldoni kalendaron&quot; kaj fermi la langeton (vidu ekrankopion sube)",
+        "calendarAppPreferences": "Malfermu la Preferojn en la Kalendara Apo en via Mac, kaj agordu Defaŭltan Kalendaran Apon kiel montrita sube.",
+        "thenCloseDialog": "Poste fermu ĉi tiun dialogon por aboni vian kalendaron!",
+        "success": "Kalendaro estis sukcese sinkronigita"
     }
 }

@@ -119,7 +119,12 @@
             "CancelReservation": "Չեղարկել ամբողջ ամրագրումը",
             "Total": "Ընդամենը",
             "RequiredRelatedParticipants": "Այս միջոցառման համար անհրաժեշտ են մասնակիցներ՝ {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Խնդրում ենք խմբագրել «{{title}}» հասանելիությունը՝ պարբերական կարգավորումները թարմացնելու համար"
+            "AvailabilityWarning": "Խնդրում ենք խմբագրել «{{title}}» հասանելիությունը՝ պարբերական կարգավորումները թարմացնելու համար",
+            "Presentation": "Ներկայացում",
+            "YouAreNotParticipated": "Դուք միջոցառման մասնակից չեք",
+            "LiveStreamStarted": "Ուղիղ հեռարձակումը սկսվել է",
+            "WebRTCStarted": "Հեռախոսազրույցը սկսվեց",
+            "WebRTCEnded": "Հեռախոսազրույցն ավարտվեց"
         },
         "composer": {
             "SetLocation": "Սահմանել իմ գտնվելու վայրը",
@@ -156,7 +161,10 @@
                 "Title": "Ընտրեք Գործունեություն",
                 "Filter": "Որոնման հետաքրքրություններ..."
             },
-            "SetLivestream": "Տեղադրեք հղումը ուղիղ հեռարձակման\/տեսակոնֆերանսի համար"
+            "SetLivestream": "Տեղադրեք հղումը ուղիղ հեռարձակման\/տեսակոնֆերանսի համար",
+            "Locally": "տեղական մակարդակով",
+            "EventInfoLink": "Միջոցառումների տեղեկատու հղում",
+            "TicketPurchaseLink": "Տոմսերի գնման հղում"
         },
         "EventAlreadyClosed": "Այս միջոցառումն արդեն փակվել է",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Ավելացրեք իրադարձություն ձեր օրացույցում"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Ներողություն, բայց դուք չեք կարող լքել ավարտված միջոցառումը"
     },
     "availabilities": {
         "Title": "Հասանելիություններ",
@@ -190,7 +199,11 @@
             "PeopleMax": "Առավելագույն այցելուներ",
             "PeopleLabels": "Պիտակներ թույլատրվում են",
             "Next": "Հաջորդը",
-            "Back": "Ետ"
+            "Back": "Ետ",
+            "RecurringEndDate": "Կրկնվող ավարտի ամսաթիվ",
+            "ScheduleOnlineConference": "Ժամանակացույց Հեռակոնֆերանս",
+            "SetLivestream": "Տեղադրեք հղումը ուղիղ հեռարձակման\/տեսակոնֆերանսի համար",
+            "SelectTimeZone": "Ընտրեք ժամային գոտի"
         },
         "EditAvailability": "Խմբագրել հասանելիությունը",
         "SetVisitors": "Սահմանել այցելուներ",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Հեռացրեք անձնակազմը",
         "PleaseSelectTimeSlots": "Խնդրում ենք ընտրել ժամային հատվածները",
         "ExceptionOccurred": "Բացառություն է տեղի ունեցել",
-        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} միջոցառումներին մասնակցելու համար բավարար միավորներ չկան: Ձեզ անհրաժեշտ է {{needCredits}} վարկ: Ցանկանու՞մ եք գնել:"
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} միջոցառումներին մասնակցելու համար բավարար միավորներ չկան: Ձեզ անհրաժեշտ է {{needCredits}} վարկ: Ցանկանու՞մ եք գնել:",
+        "InviteStaff": "Հրավիրեք անձնակազմին",
+        "LiveStream": "Ուղիղ հեռարձակում"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "կառավարել ձեր էլփոստի բաժանորդագրությունները",
         "IfUnsubscribe": "Եթե ցանկանում եք չեղարկել բաժանորդագրությունը",
         "ClickHereToVisitEvent": "Միջոցառումն այցելելու համար խնդրում ենք սեղմել այստեղ",
-        "Calendars\/reminder": "Իրադարձությունը «{{{call 'message.getInstruction' 'name'}}» կսկսվի {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Իրադարձությունը «{{{call 'message.getInstruction' 'name'}}» կսկսվի {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Հեռախոսազրույցը սկսվեց",
+            "Ended": "Հեռախոսազրույցն ավարտվեց"
+        },
+        "livestream": {
+            "Started": "Ուղիղ հեռարձակումը սկսվեց",
+            "Ended": "Ուղիղ հեռարձակումն ավարտվեց",
+            "ClickToView": "Դիտեք այն այստեղ:"
+        }
     },
     "import": {
         "linkTitle": "Լրացրեք այս աղյուսակը",
@@ -266,7 +290,9 @@
         "complete": "Ամբողջական",
         "errorLine": "տող {{1}}",
         "errorsTitle": "Սխալներ են տեղի ունեցել",
-        "communityUsers": "Սա համայնքների ցուցակն է"
+        "communityUsers": "Սա համայնքների ցուցակն է",
+        "toMainCommunityToo": "վերաբերում են նաև հիմնական համայնքին",
+        "ChooseFile": "ընտրել ֆայլը"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Այսօր",
         "Tomorrow": "Վաղը",
         "AfterTomorrow": "Վաղվանից հետո"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Բաժանորդագրվեք Օրացույցին",
+        "copyLinkBelow": "Սեղմեք ներքևի կոճակը՝ հղումը ձեր clipboard-ում պատճենելու համար",
+        "tapToCopy": "Հպեք ներքևի կոճակին՝ հղումը ձեր clipboard-ին պատճենելու համար",
+        "goTo": "Գնալ դեպի՝",
+        "pasteCopiedTo": "Տեղադրեք պատճենված հղումը «Օրացույցի URL» դաշտում",
+        "clickAddCalendar": "Սեղմեք «Ավելացնել օրացույց» կոճակը",
+        "copyLink": "Պատճենել հղումը",
+        "linkCopied": "Հղումը պատճենված է",
+        "step2": "Հղումը պատճենված է: Մենք Google Օրացույցի բացման մասին ենք: Դուք պետք է տեղադրեք հղումը տեքստային տուփի մեջ, սեղմեք «Ավելացնել օրացույց» և փակեք ներդիրը (տե՛ս ստորև նշված սքրինշոթը)",
+        "calendarAppPreferences": "Բացեք Նախապատվությունները Calendar հավելվածում ձեր Mac-ում և կարգավորեք Default Calendar App-ը, ինչպես ցույց է տրված ստորև:",
+        "thenCloseDialog": "Այնուհետև փակեք այս երկխոսությունը՝ ձեր օրացույցին բաժանորդագրվելու համար:",
+        "success": "Օրացույցը հաջողությամբ համաժամացվել է"
     }
 }

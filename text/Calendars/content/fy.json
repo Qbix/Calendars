@@ -119,7 +119,12 @@
             "CancelReservation": "Ofbrekke hiele reservearring",
             "Total": "Totaal",
             "RequiredRelatedParticipants": "Dit evenemint fereasket dielnimmers: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Bewurkje asjebleaft beskikberens &quot;{{title}}&quot; om weromkommende ynstellings te aktualisearjen"
+            "AvailabilityWarning": "Bewurkje asjebleaft beskikberens &quot;{{title}}&quot; om weromkommende ynstellings te aktualisearjen",
+            "Presentation": "Presintaasje",
+            "YouAreNotParticipated": "Jo binne gjin dielnimmer oan it evenemint",
+            "LiveStreamStarted": "Live stream is begûn",
+            "WebRTCStarted": "Telekonferinsje begûn",
+            "WebRTCEnded": "Telekonferinsje einige"
         },
         "composer": {
             "SetLocation": "Myn lokaasje ynstelle",
@@ -156,7 +161,10 @@
                 "Title": "Kies in aktiviteit",
                 "Filter": "Sykje ynteresses ..."
             },
-            "SetLivestream": "Plak keppeling nei livestream \/ fideokonferinsje"
+            "SetLivestream": "Plak keppeling nei livestream \/ fideokonferinsje",
+            "Locally": "lokaal",
+            "EventInfoLink": "Event Info Link",
+            "TicketPurchaseLink": "Ticket Purchase Link"
         },
         "EventAlreadyClosed": "Dit evenemint is al ôfsletten",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Foegje evenemint ta oan jo kalinder"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Sorry, mar jo kinne it einige evenemint net ferlitte"
     },
     "availabilities": {
         "Title": "Beskikberens",
@@ -190,7 +199,11 @@
             "PeopleMax": "Maksimum besikers",
             "PeopleLabels": "Labels tastien",
             "Next": "Folgjende",
-            "Back": "Efter"
+            "Back": "Efter",
+            "RecurringEndDate": "Weromkommende eindatum",
+            "ScheduleOnlineConference": "Skema Teleconference",
+            "SetLivestream": "Plak keppeling nei livestream \/ fideokonferinsje",
+            "SelectTimeZone": "Selektearje tiidsône"
         },
         "EditAvailability": "Beskikberens bewurkje",
         "SetVisitors": "Besikers ynstelle",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Fuortsmite personiel",
         "PleaseSelectTimeSlots": "Graach selektearje tiid slots",
         "ExceptionOccurred": "Utsûndering barde",
-        "NotEnoughCreditsToParticipateEvents": "Net genôch credits om mei te dwaan oan {{eventsAmount}} eveneminten. Jo hawwe {{needCredits}} credits nedich. Wol keapje?"
+        "NotEnoughCreditsToParticipateEvents": "Net genôch credits om mei te dwaan oan {{eventsAmount}} eveneminten. Jo hawwe {{needCredits}} credits nedich. Wol keapje?",
+        "InviteStaff": "Noegje personiel",
+        "LiveStream": "Live stream"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "beheare jo e-postabonneminten",
         "IfUnsubscribe": "As jo wolle ôfmelde",
         "ClickHereToVisitEvent": "Klikje hjir asjebleaft om it evenemint te besykjen",
-        "Calendars\/reminder": "Event &quot;{{{call 'message.getInstruction' 'name'}}&quot; sil begjinne yn {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Event &quot;{{{call 'message.getInstruction' 'name'}}&quot; sil begjinne yn {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Telekonferinsje begûn",
+            "Ended": "Telekonferinsje einige"
+        },
+        "livestream": {
+            "Started": "Live stream begûn",
+            "Ended": "Live stream einige",
+            "ClickToView": "Besjoch it hjir."
+        }
     },
     "import": {
         "linkTitle": "Folje dit Spreadsheet yn",
@@ -266,7 +290,9 @@
         "complete": "Kompleet",
         "errorLine": "line {{1}}",
         "errorsTitle": "Der barde flaters",
-        "communityUsers": "Dit is mienskipslist"
+        "communityUsers": "Dit is mienskipslist",
+        "toMainCommunityToo": "ek relatearje oan haadmienskip",
+        "ChooseFile": "kieze triem"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Hjoed",
         "Tomorrow": "Moarn",
         "AfterTomorrow": "Nei moarn"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Abonnearje op Calendar",
+        "copyLinkBelow": "Klikje op de knop hjirûnder om de keppeling nei jo klamboerd te kopiearjen",
+        "tapToCopy": "Tik op de knop hjirûnder om de keppeling nei jo klamboerd te kopiearjen",
+        "goTo": "Gean nei:",
+        "pasteCopiedTo": "Plak kopiearre keppeling nei &quot;URL fan kalinder&quot; fjild",
+        "clickAddCalendar": "Klik op &quot;Tafoegje kalinder&quot; knop",
+        "copyLink": "Link kopiearje",
+        "linkCopied": "Link kopiearre",
+        "step2": "Link kopiearre. Wy binne oer iepen Google Calendar. Jo moatte de keppeling yn it tekstfak plakke, klikje op &quot;kalinder taheakje&quot;, en slute de ljepper (sjoch skermôfbylding hjirûnder)",
+        "calendarAppPreferences": "Iepenje de Foarkarren yn &#39;e Calendar-app op jo Mac, en set Standert kalinder-app yn as hjirûnder werjûn.",
+        "thenCloseDialog": "Slút dan dit dialoochfinster om jo te abonnearjen op jo aginda!",
+        "success": "Kalinder is mei súkses syngronisearre"
     }
 }

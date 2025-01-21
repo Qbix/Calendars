@@ -119,7 +119,12 @@
             "CancelReservation": "മുഴുവൻ റിസർവേഷനും റദ്ദാക്കുക",
             "Total": "ആകെ",
             "RequiredRelatedParticipants": "ഈ ഇവന്റിന് പങ്കാളികൾ ആവശ്യമാണ്: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "ആവർത്തിച്ചുള്ള ക്രമീകരണങ്ങൾ അപ്ഡേറ്റ് ചെയ്യാൻ &quot;{{title}}&quot; ലഭ്യത എഡിറ്റ് ചെയ്യുക"
+            "AvailabilityWarning": "ആവർത്തിച്ചുള്ള ക്രമീകരണങ്ങൾ അപ്ഡേറ്റ് ചെയ്യാൻ &quot;{{title}}&quot; ലഭ്യത എഡിറ്റ് ചെയ്യുക",
+            "Presentation": "അവതരണം",
+            "YouAreNotParticipated": "നിങ്ങൾ ഇവൻ്റിൻ്റെ പങ്കാളിയല്ല",
+            "LiveStreamStarted": "ലൈവ് സ്ട്രീം ആരംഭിച്ചു",
+            "WebRTCStarted": "ടെലി കോൺഫറൻസ് ആരംഭിച്ചു",
+            "WebRTCEnded": "ടെലി കോൺഫറൻസ് അവസാനിച്ചു"
         },
         "composer": {
             "SetLocation": "എന്റെ ലൊക്കേഷൻ സജ്ജമാക്കുക",
@@ -156,7 +161,10 @@
                 "Title": "ഒരു പ്രവർത്തനം തിരഞ്ഞെടുക്കുക",
                 "Filter": "തിരയൽ താൽപ്പര്യങ്ങൾ..."
             },
-            "SetLivestream": "ലൈവ് സ്ട്രീം \/ വീഡിയോ കോൺഫറൻസിലേക്ക് ലിങ്ക് ഒട്ടിക്കുക"
+            "SetLivestream": "ലൈവ് സ്ട്രീം \/ വീഡിയോ കോൺഫറൻസിലേക്ക് ലിങ്ക് ഒട്ടിക്കുക",
+            "Locally": "പ്രാദേശികമായി",
+            "EventInfoLink": "ഇവൻ്റ് വിവര ലിങ്ക്",
+            "TicketPurchaseLink": "ടിക്കറ്റ് വാങ്ങൽ ലിങ്ക്"
         },
         "EventAlreadyClosed": "ഈ ഇവന്റ് ഇതിനകം അടച്ചു",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "നിങ്ങളുടെ കലണ്ടറിലേക്ക് ഇവന്റ് ചേർക്കുക"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "ക്ഷമിക്കണം, അവസാനിച്ച ഇവൻ്റ് ഉപേക്ഷിക്കാൻ നിങ്ങൾക്ക് കഴിയില്ല"
     },
     "availabilities": {
         "Title": "ലഭ്യതകൾ",
@@ -190,7 +199,11 @@
             "PeopleMax": "പരമാവധി സന്ദർശകർ",
             "PeopleLabels": "ലേബലുകൾ അനുവദിച്ചിരിക്കുന്നു",
             "Next": "അടുത്തത്",
-            "Back": "തിരികെ"
+            "Back": "തിരികെ",
+            "RecurringEndDate": "ആവർത്തിച്ചുള്ള അവസാന തീയതി",
+            "ScheduleOnlineConference": "ടെലികോൺഫറൻസ് ഷെഡ്യൂൾ ചെയ്യുക",
+            "SetLivestream": "ലൈവ് സ്ട്രീം \/ വീഡിയോ കോൺഫറൻസിലേക്ക് ലിങ്ക് ഒട്ടിക്കുക",
+            "SelectTimeZone": "സമയമേഖല തിരഞ്ഞെടുക്കുക"
         },
         "EditAvailability": "ലഭ്യത എഡിറ്റ് ചെയ്യുക",
         "SetVisitors": "സന്ദർശകരെ സജ്ജമാക്കുക",
@@ -200,7 +213,9 @@
         "RemoveStaff": "ജീവനക്കാരെ നീക്കം ചെയ്യുക",
         "PleaseSelectTimeSlots": "ദയവായി സമയ സ്ലോട്ടുകൾ തിരഞ്ഞെടുക്കുക",
         "ExceptionOccurred": "അപവാദം സംഭവിച്ചു",
-        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} ഇവന്റുകളിൽ പങ്കെടുക്കാൻ മതിയായ ക്രെഡിറ്റുകൾ ഇല്ല. നിങ്ങൾക്ക് {{needCredits}} ക്രെഡിറ്റുകൾ ആവശ്യമാണ്. വാങ്ങണം?"
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} ഇവന്റുകളിൽ പങ്കെടുക്കാൻ മതിയായ ക്രെഡിറ്റുകൾ ഇല്ല. നിങ്ങൾക്ക് {{needCredits}} ക്രെഡിറ്റുകൾ ആവശ്യമാണ്. വാങ്ങണം?",
+        "InviteStaff": "ജീവനക്കാരെ ക്ഷണിക്കുക",
+        "LiveStream": "തത്സമയ സ്ട്രീം"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "നിങ്ങളുടെ ഇമെയിൽ സബ്‌സ്‌ക്രിപ്‌ഷനുകൾ നിയന്ത്രിക്കുക",
         "IfUnsubscribe": "നിങ്ങൾക്ക് അൺസബ്സ്ക്രൈബ് ചെയ്യണമെങ്കിൽ",
         "ClickHereToVisitEvent": "ഇവന്റ് സന്ദർശിക്കാൻ ദയവായി ഇവിടെ ക്ലിക്ക് ചെയ്യുക",
-        "Calendars\/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; ഇവന്റ് {{&call 'message.getInstruction' 'time'}}}-ൽ ആരംഭിക്കും"
+        "Calendars\/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; ഇവന്റ് {{&call 'message.getInstruction' 'time'}}}-ൽ ആരംഭിക്കും",
+        "webrtc": {
+            "Started": "ടെലി കോൺഫറൻസ് ആരംഭിച്ചു",
+            "Ended": "ടെലി കോൺഫറൻസ് അവസാനിച്ചു"
+        },
+        "livestream": {
+            "Started": "ലൈവ് സ്ട്രീം ആരംഭിച്ചു",
+            "Ended": "തത്സമയ സ്ട്രീം അവസാനിച്ചു",
+            "ClickToView": "അത് ഇവിടെ കാണുക."
+        }
     },
     "import": {
         "linkTitle": "ഈ സ്പ്രെഡ്ഷീറ്റ് പൂരിപ്പിക്കുക",
@@ -266,7 +290,9 @@
         "complete": "പൂർത്തിയാക്കുക",
         "errorLine": "ലൈൻ {{1}}",
         "errorsTitle": "പിശകുകൾ സംഭവിച്ചു",
-        "communityUsers": "ഇത് കമ്മ്യൂണിറ്റികളുടെ പട്ടികയാണ്"
+        "communityUsers": "ഇത് കമ്മ്യൂണിറ്റികളുടെ പട്ടികയാണ്",
+        "toMainCommunityToo": "പ്രധാന സമൂഹവുമായും ബന്ധപ്പെട്ടിരിക്കുന്നു",
+        "ChooseFile": "ഫയൽ തിരഞ്ഞെടുക്കുക"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "ഇന്ന്",
         "Tomorrow": "നാളെ",
         "AfterTomorrow": "നാളെ കഴിഞ്ഞ്"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "കലണ്ടറിലേക്ക് സബ്‌സ്‌ക്രൈബ് ചെയ്യുക",
+        "copyLinkBelow": "നിങ്ങളുടെ ക്ലിപ്പ്ബോർഡിലേക്ക് ലിങ്ക് പകർത്താൻ ചുവടെയുള്ള ബട്ടൺ ക്ലിക്കുചെയ്യുക",
+        "tapToCopy": "നിങ്ങളുടെ ക്ലിപ്പ്ബോർഡിലേക്ക് ലിങ്ക് പകർത്താൻ ചുവടെയുള്ള ബട്ടൺ ടാപ്പുചെയ്യുക",
+        "goTo": "ഇതിലേക്ക് പോകുക:",
+        "pasteCopiedTo": "&quot;കലണ്ടറിൻ്റെ URL&quot; ഫീൽഡിലേക്ക് പകർത്തിയ ലിങ്ക് ഒട്ടിക്കുക",
+        "clickAddCalendar": "&quot;കലണ്ടർ ചേർക്കുക&quot; ബട്ടൺ ക്ലിക്കുചെയ്യുക",
+        "copyLink": "ലിങ്ക് പകർത്തുക",
+        "linkCopied": "ലിങ്ക് പകർത്തി",
+        "step2": "ലിങ്ക് പകർത്തി. ഞങ്ങൾ Google കലണ്ടർ തുറക്കുന്നതിനെക്കുറിച്ചാണ്. നിങ്ങൾ ലിങ്ക് ടെക്‌സ്‌റ്റ്‌ബോക്‌സിലേക്ക് ഒട്ടിക്കേണ്ടതുണ്ട്, &quot;കലണ്ടർ ചേർക്കുക&quot; ക്ലിക്കുചെയ്യുക, തുടർന്ന് ടാബ് അടയ്ക്കുക (ചുവടെയുള്ള സ്‌ക്രീൻഷോട്ട് കാണുക)",
+        "calendarAppPreferences": "നിങ്ങളുടെ മാക്കിലെ കലണ്ടർ ആപ്പിലെ മുൻഗണനകൾ തുറക്കുക, താഴെ കാണിച്ചിരിക്കുന്നതുപോലെ ഡിഫോൾട്ട് കലണ്ടർ ആപ്പ് സജ്ജമാക്കുക.",
+        "thenCloseDialog": "തുടർന്ന് നിങ്ങളുടെ കലണ്ടർ സബ്‌സ്‌ക്രൈബുചെയ്യാൻ ഈ ഡയലോഗ് അടയ്‌ക്കുക!",
+        "success": "കലണ്ടർ സമന്വയിപ്പിച്ചു"
     }
 }

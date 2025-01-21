@@ -119,7 +119,12 @@
             "CancelReservation": "Otkažite cijelu rezervaciju",
             "Total": "Ukupno",
             "RequiredRelatedParticipants": "Ovaj događaj zahtijeva učesnike: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Uredite dostupnost &quot;{{title}}&quot; da ažurirate postavke koje se ponavljaju"
+            "AvailabilityWarning": "Uredite dostupnost &quot;{{title}}&quot; da ažurirate postavke koje se ponavljaju",
+            "Presentation": "Prezentacija",
+            "YouAreNotParticipated": "Niste učesnik događaja",
+            "LiveStreamStarted": "Prijenos uživo je počeo",
+            "WebRTCStarted": "Telekonferencija je počela",
+            "WebRTCEnded": "Telekonferencija je završena"
         },
         "composer": {
             "SetLocation": "Postavite moju lokaciju",
@@ -156,7 +161,10 @@
                 "Title": "Odaberite aktivnost",
                 "Filter": "Interesovanja za pretragu..."
             },
-            "SetLivestream": "Zalijepite link na prijenos uživo \/ video konferenciju"
+            "SetLivestream": "Zalijepite link na prijenos uživo \/ video konferenciju",
+            "Locally": "lokalno",
+            "EventInfoLink": "Link sa informacijama o događaju",
+            "TicketPurchaseLink": "Link za kupovinu ulaznica"
         },
         "EventAlreadyClosed": "Ovaj događaj je već zatvoren",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Dodajte događaj u svoj kalendar"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Žao nam je, ali ne možete napustiti završeni događaj"
     },
     "availabilities": {
         "Title": "Dostupnost",
@@ -190,7 +199,11 @@
             "PeopleMax": "Maksimalan broj posetilaca",
             "PeopleLabels": "Oznake dozvoljene",
             "Next": "Sljedeći",
-            "Back": "Nazad"
+            "Back": "Nazad",
+            "RecurringEndDate": "Ponavljajući datum završetka",
+            "ScheduleOnlineConference": "Zakažite telekonferenciju",
+            "SetLivestream": "Zalijepite link na prijenos uživo \/ video konferenciju",
+            "SelectTimeZone": "Odaberite vremensku zonu"
         },
         "EditAvailability": "Uredi dostupnost",
         "SetVisitors": "Set Visitors",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Uklonite osoblje",
         "PleaseSelectTimeSlots": "Molimo odaberite termine",
         "ExceptionOccurred": "Došlo je do izuzetka",
-        "NotEnoughCreditsToParticipateEvents": "Nema dovoljno kredita za učešće na {{eventsAmount}} događajima. Trebate {{needCredits}} kredita. Zelim kupiti?"
+        "NotEnoughCreditsToParticipateEvents": "Nema dovoljno kredita za učešće na {{eventsAmount}} događajima. Trebate {{needCredits}} kredita. Zelim kupiti?",
+        "InviteStaff": "Pozovite osoblje",
+        "LiveStream": "Prijenos uživo"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "upravljajte svojim pretplatama na e-poštu",
         "IfUnsubscribe": "Ako želite da se odjavite",
         "ClickHereToVisitEvent": "Molimo kliknite ovdje da posjetite događaj",
-        "Calendars\/reminder": "Događaj &quot;{{{call 'message.getInstruction' 'name'}}&quot; će početi za {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Događaj &quot;{{{call 'message.getInstruction' 'name'}}&quot; će početi za {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Telekonferencija je počela",
+            "Ended": "Telekonferencija je završena"
+        },
+        "livestream": {
+            "Started": "Prijenos uživo je počeo",
+            "Ended": "Prijenos uživo je završio",
+            "ClickToView": "Pogledajte ovdje."
+        }
     },
     "import": {
         "linkTitle": "Ispunite ovu tabelu",
@@ -266,7 +290,9 @@
         "complete": "Završeno",
         "errorLine": "linija {{1}}",
         "errorsTitle": "Došlo je do grešaka",
-        "communityUsers": "Ovo je lista zajednica"
+        "communityUsers": "Ovo je lista zajednica",
+        "toMainCommunityToo": "odnose se i na glavnu zajednicu",
+        "ChooseFile": "izaberite datoteku"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Danas",
         "Tomorrow": "sutra",
         "AfterTomorrow": "Prekosutra"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Pretplatite se na kalendar",
+        "copyLinkBelow": "Kliknite na dugme ispod da kopirate vezu u međuspremnik",
+        "tapToCopy": "Dodirnite dugme ispod da kopirate vezu u međuspremnik",
+        "goTo": "Idi na:",
+        "pasteCopiedTo": "Zalijepite kopiranu vezu u polje &quot;URL kalendara&quot;.",
+        "clickAddCalendar": "Kliknite na dugme &quot;Dodaj kalendar&quot;.",
+        "copyLink": "Kopiraj vezu",
+        "linkCopied": "Link Kopirano",
+        "step2": "Link Kopirano. Radimo o otvorenom Google kalendaru. Morat ćete zalijepiti vezu u okvir za tekst, kliknuti na &quot;Dodaj kalendar&quot; i zatvoriti karticu (pogledajte snimak ekrana ispod)",
+        "calendarAppPreferences": "Otvorite Preferences u aplikaciji Kalendar na vašem Mac-u i postavite Default Calendar App kao što je prikazano ispod.",
+        "thenCloseDialog": "Zatim zatvorite ovaj dijalog da se pretplatite na svoj kalendar!",
+        "success": "Kalendar je uspješno sinhroniziran"
     }
 }

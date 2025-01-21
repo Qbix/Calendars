@@ -119,7 +119,12 @@
             "CancelReservation": "Ncua tseg tag nrho",
             "Total": "Tag nrho",
             "RequiredRelatedParticipants": "Qhov kev tshwm sim no xav tau cov neeg koom nrog: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Thov kho qhov muaj nyob hauv &quot;{{title}}&quot; los hloov kho cov teeb tsa rov tshwm sim"
+            "AvailabilityWarning": "Thov kho qhov muaj nyob hauv &quot;{{title}}&quot; los hloov kho cov teeb tsa rov tshwm sim",
+            "Presentation": "Kev nthuav qhia",
+            "YouAreNotParticipated": "Koj tsis yog ib tus neeg koom nrog qhov kev tshwm sim",
+            "LiveStreamStarted": "Live stream tau pib",
+            "WebRTCStarted": "Teleconference pib",
+            "WebRTCEnded": "Teleconference xaus"
         },
         "composer": {
             "SetLocation": "Teem Kuv Qhov Chaw",
@@ -156,7 +161,10 @@
                 "Title": "Xaiv ib qho Kev Ua Si",
                 "Filter": "Nrhiav kev txaus siab..."
             },
-            "SetLivestream": "Paste txuas rau livestream \/ videoconference"
+            "SetLivestream": "Paste txuas rau livestream \/ videoconference",
+            "Locally": "hauv zos",
+            "EventInfoLink": "Event Info Link",
+            "TicketPurchaseLink": "Daim pib Purchase Link"
         },
         "EventAlreadyClosed": "Qhov xwm txheej no twb kaw lawm",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Ntxiv qhov xwm txheej rau koj daim ntawv qhia hnub"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Thov txim, tab sis koj tsis tuaj yeem tawm qhov kev tshwm sim xaus"
     },
     "availabilities": {
         "Title": "Muaj peev xwm",
@@ -190,7 +199,11 @@
             "PeopleMax": "Cov neeg tuaj xyuas siab tshaj plaws",
             "PeopleLabels": "Daim ntawv tso cai",
             "Next": "Tom ntej no",
-            "Back": "Rov qab"
+            "Back": "Rov qab",
+            "RecurringEndDate": "Rov ua dua Hnub Kawg",
+            "ScheduleOnlineConference": "Teem sijhawm Teleconference",
+            "SetLivestream": "Paste txuas rau livestream \/ videoconference",
+            "SelectTimeZone": "Xaiv timeZone"
         },
         "EditAvailability": "Kho kom raug Muaj",
         "SetVisitors": "Teeb Cov Neeg Qhua",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Tshem tawm cov neeg ua haujlwm",
         "PleaseSelectTimeSlots": "Thov xaiv lub sijhawm",
         "ExceptionOccurred": "Kev zam tshwm sim",
-        "NotEnoughCreditsToParticipateEvents": "Tsis muaj credit txaus los koom {{eventsAmount}} cov xwm txheej. Koj xav tau {{needCredits}} khab nias. Xav yuav?"
+        "NotEnoughCreditsToParticipateEvents": "Tsis muaj credit txaus los koom {{eventsAmount}} cov xwm txheej. Koj xav tau {{needCredits}} khab nias. Xav yuav?",
+        "InviteStaff": "Caw cov neeg ua haujlwm",
+        "LiveStream": "Live kwj"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "tswj koj tus email subscriptions",
         "IfUnsubscribe": "Yog koj xav unsubscribe",
         "ClickHereToVisitEvent": "Thov nias ntawm no mus saib kev tshwm sim",
-        "Calendars\/reminder": "Kev tshwm sim &quot;{{{call 'message.getInstruction' 'name'}}&quot; yuav pib hauv {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Kev tshwm sim &quot;{{{call 'message.getInstruction' 'name'}}&quot; yuav pib hauv {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Teleconference pib",
+            "Ended": "Teleconference xaus"
+        },
+        "livestream": {
+            "Started": "Live stream pib",
+            "Ended": "Live stream tas lawm",
+            "ClickToView": "Saib ntawm no."
+        }
     },
     "import": {
         "linkTitle": "Sau Daim Ntawv Tshaj Qhia no",
@@ -266,7 +290,9 @@
         "complete": "Ua kom tiav",
         "errorLine": "kab {{1}}",
         "errorsTitle": "Qhov yuam kev tshwm sim",
-        "communityUsers": "Nov yog cov npe hauv zej zog"
+        "communityUsers": "Nov yog cov npe hauv zej zog",
+        "toMainCommunityToo": "cuam tshuam rau lub zej zog tseem ceeb thiab",
+        "ChooseFile": "xaiv cov ntaub ntawv"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Hnub no",
         "Tomorrow": "Tag kis",
         "AfterTomorrow": "Tom qab tag kis"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Sau npe rau daim ntawv qhia hnub",
+        "copyLinkBelow": "Nyem lub pob hauv qab no kom luam qhov txuas mus rau koj daim ntawv teev cia",
+        "tapToCopy": "Coj mus rhaub khawm hauv qab no kom luam qhov txuas rau koj daim ntawv teev cia",
+        "goTo": "Mus rau:",
+        "pasteCopiedTo": "Paste the copy link to &quot;URL of calendar&quot; teb",
+        "clickAddCalendar": "Nyem &quot;Add calendar&quot; khawm",
+        "copyLink": "Copy Link",
+        "linkCopied": "Link Copyed",
+        "step2": "Link Copyed. Peb tab tom hais txog qhib Google Calendar. Koj yuav tsum tau muab qhov txuas mus rau hauv lub thawv ntawv, nyem &quot;Ntxiv daim ntawv qhia hnub&quot;, thiab kaw lub tab (saib screenshot hauv qab no)",
+        "calendarAppPreferences": "Qhib Cov Kev Xaiv hauv Calendar App ntawm koj Mac, thiab teeb tsa Default Calendar App kom ua raws li qhia hauv qab no.",
+        "thenCloseDialog": "Tom qab ntawd kaw qhov kev sib tham no txhawm rau sau npe rau koj daim ntawv qhia hnub!",
+        "success": "Calendar tau ua tiav tiav"
     }
 }

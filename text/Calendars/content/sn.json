@@ -119,7 +119,12 @@
             "CancelReservation": "Kanzura kurongeka kwese",
             "Total": "Total",
             "RequiredRelatedParticipants": "Chiitiko ichi chinoda vatori vechikamu: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Ndapota gadzirisa zviripo &quot;{{title}}&quot; kuti uvandudze marongero anodzokororwa"
+            "AvailabilityWarning": "Ndapota gadzirisa zviripo &quot;{{title}}&quot; kuti uvandudze marongero anodzokororwa",
+            "Presentation": "Presentation",
+            "YouAreNotParticipated": "Iwe hausi mutori wechikamu chechiitiko",
+            "LiveStreamStarted": "Live stream yatanga",
+            "WebRTCStarted": "Teleconference yakatanga",
+            "WebRTCEnded": "Teleconference yapera"
         },
         "composer": {
             "SetLocation": "Seta Nzvimbo Yangu",
@@ -156,7 +161,10 @@
                 "Title": "Sarudza Chiitiko",
                 "Filter": "Tsvaga zvaunofarira ..."
             },
-            "SetLivestream": "Namira chinongedzo kune livestream \/ videoconference"
+            "SetLivestream": "Namira chinongedzo kune livestream \/ videoconference",
+            "Locally": "munharaunda",
+            "EventInfoLink": "Chiitiko Info Link",
+            "TicketPurchaseLink": "Tikiti Kutenga Link"
         },
         "EventAlreadyClosed": "Chiitiko ichi chakatovharwa",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Wedzera Chiitiko kuKarenda yako"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Tine urombo, asi haugone kusiya chiitiko chapera"
     },
     "availabilities": {
         "Title": "Availabilities",
@@ -190,7 +199,11 @@
             "PeopleMax": "Maximum vashanyi",
             "PeopleLabels": "Mazita anotenderwa",
             "Next": "Next",
-            "Back": "Back"
+            "Back": "Back",
+            "RecurringEndDate": "Recurring End Date",
+            "ScheduleOnlineConference": "Ronga Teleconference",
+            "SetLivestream": "Namira chinongedzo kune livestream \/ videoconference",
+            "SelectTimeZone": "Sarudza timeZone"
         },
         "EditAvailability": "Edit Kuwanikwa",
         "SetVisitors": "Seta Vashanyi",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Bvisa tsvimbo",
         "PleaseSelectTimeSlots": "Ndapota sarudza nzvimbo dzenguva",
         "ExceptionOccurred": "Kunze kwakaitika",
-        "NotEnoughCreditsToParticipateEvents": "Hapana makiredhiti akakwana kutora chikamu {{eventsAmount}} zviitiko. Unoda {{needCredits}} makiredhiti. Unoda kutenga?"
+        "NotEnoughCreditsToParticipateEvents": "Hapana makiredhiti akakwana kutora chikamu {{eventsAmount}} zviitiko. Unoda {{needCredits}} makiredhiti. Unoda kutenga?",
+        "InviteStaff": "Koka vashandi",
+        "LiveStream": "Live stream"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "gadzirisa zvinyoreso zvako zveemail",
         "IfUnsubscribe": "Kana uchida kuzvibvisa",
         "ClickHereToVisitEvent": "Ndokumbira tinya pano kuti ushanyire chiitiko",
-        "Calendars\/reminder": "Chiitiko &quot;{{{call 'message.getInstruction' 'name'}}&quot; chichatanga muna {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Chiitiko &quot;{{{call 'message.getInstruction' 'name'}}&quot; chichatanga muna {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Teleconference yakatanga",
+            "Ended": "Teleconference yapera"
+        },
+        "livestream": {
+            "Started": "Live stream yakatanga",
+            "Ended": "Live stream yapera",
+            "ClickToView": "Zvione pano."
+        }
     },
     "import": {
         "linkTitle": "Zadza Iri Spreadsheet",
@@ -266,7 +290,9 @@
         "complete": "Complete",
         "errorLine": "mutsetse {{1}}",
         "errorsTitle": "Zvikanganiso zvakaitika",
-        "communityUsers": "Urwu ndirwo runyorwa rwenharaunda"
+        "communityUsers": "Urwu ndirwo runyorwa rwenharaunda",
+        "toMainCommunityToo": "zvine chekuita nenharaunda huru zvakare",
+        "ChooseFile": "sarudza faira"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Nhasi",
         "Tomorrow": "Mangwana",
         "AfterTomorrow": "Mushure memangwana"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Nyorera kuKarenda",
+        "copyLinkBelow": "Dzvanya bhatani riri pazasi kuti ukope chinongedzo kune yako clipboard",
+        "tapToCopy": "Tinya bhatani riri pazasi kuti ukope chinongedzo kune chako clipboard",
+        "goTo": "Enda ku:",
+        "pasteCopiedTo": "Namira link yakakopwa kumunda we &quot;URL yekarenda&quot;.",
+        "clickAddCalendar": "Dzvanya bhatani rekuti &quot;Wedzera kalendari&quot;.",
+        "copyLink": "Copy Link",
+        "linkCopied": "Link Copied",
+        "step2": "Link Copied. Tave kuvhura Google Calendar. Iwe unozofanirwa kunamira chinongedzo mubhokisi rezvinyorwa, tinya &quot;Wedzera karenda&quot;, uye vhara iyo tebhu (ona skrini pazasi)",
+        "calendarAppPreferences": "Vhura izvo zvaunofarira muKarenda App paMac yako, uye isa Default Calendar App kuti ive sezvakaratidzwa pazasi.",
+        "thenCloseDialog": "Wobva wavhara dialog iyi kuti unyore kukarenda yako!",
+        "success": "Karenda yakawiriraniswa zvakabudirira"
     }
 }

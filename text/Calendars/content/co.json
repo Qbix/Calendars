@@ -119,7 +119,12 @@
             "CancelReservation": "Cancella tutta a riservazione",
             "Total": "Totale",
             "RequiredRelatedParticipants": "Questu avvenimentu richiede i participanti: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Per piacè editate a dispunibilità &quot;{{title}}&quot; per aghjurnà i paràmetri recurrenti"
+            "AvailabilityWarning": "Per piacè editate a dispunibilità &quot;{{title}}&quot; per aghjurnà i paràmetri recurrenti",
+            "Presentation": "Presentazione",
+            "YouAreNotParticipated": "Ùn site micca un participante di l&#39;avvenimentu",
+            "LiveStreamStarted": "U live stream hè iniziatu",
+            "WebRTCStarted": "A teleconferenza hà iniziatu",
+            "WebRTCEnded": "A teleconferenza hè finita"
         },
         "composer": {
             "SetLocation": "Set My Location",
@@ -156,7 +161,10 @@
                 "Title": "Sceglite una attività",
                 "Filter": "interessi di ricerca..."
             },
-            "SetLivestream": "Incolla u ligame à u livestream \/ videoconferenza"
+            "SetLivestream": "Incolla u ligame à u livestream \/ videoconferenza",
+            "Locally": "lucale",
+            "EventInfoLink": "Link Info Event",
+            "TicketPurchaseLink": "Link per l&#39;acquistu di u bigliettu"
         },
         "EventAlreadyClosed": "Stu avvenimentu hè digià chjusu",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Aggiungi Eventu à u vostru Calendariu"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Scusate, ma ùn pudete micca lascià l&#39;avvenimentu finitu"
     },
     "availabilities": {
         "Title": "Disponibilità",
@@ -190,7 +199,11 @@
             "PeopleMax": "Massimu di visitatori",
             "PeopleLabels": "Etichette permesse",
             "Next": "Dopu",
-            "Back": "Torna"
+            "Back": "Torna",
+            "RecurringEndDate": "Data di fine recurrente",
+            "ScheduleOnlineConference": "Schedule Teleconferenza",
+            "SetLivestream": "Incolla u ligame à u livestream \/ videoconferenza",
+            "SelectTimeZone": "Selezziunà TimeZone"
         },
         "EditAvailability": "Edita Disponibilità",
         "SetVisitors": "Set Visitors",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Eliminate u persunale",
         "PleaseSelectTimeSlots": "Per piacè selezziunate intervalli di tempu",
         "ExceptionOccurred": "Eccezzioni accaduta",
-        "NotEnoughCreditsToParticipateEvents": "Ùn ci hè abbastanza crediti per participà à {{eventsAmount}} avvenimenti. Avete bisognu di {{needCredits}} crediti. Vulete cumprà?"
+        "NotEnoughCreditsToParticipateEvents": "Ùn ci hè abbastanza crediti per participà à {{eventsAmount}} avvenimenti. Avete bisognu di {{needCredits}} crediti. Vulete cumprà?",
+        "InviteStaff": "Invita u persunale",
+        "LiveStream": "Stream in diretta"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "gestisce i vostri abbonamenti email",
         "IfUnsubscribe": "Sè vo vulete unsubscribe",
         "ClickHereToVisitEvent": "Per piacè cliccate quì per visità l&#39;avvenimentu",
-        "Calendars\/reminder": "L&#39;avvenimentu &quot;{{{call 'message.getInstruction' 'name'}}&quot; cumminciarà in {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "L&#39;avvenimentu &quot;{{{call 'message.getInstruction' 'name'}}&quot; cumminciarà in {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "A teleconferenza hà iniziatu",
+            "Ended": "A teleconferenza hè finita"
+        },
+        "livestream": {
+            "Started": "A live stream hà iniziatu",
+            "Ended": "A trasmissione in diretta hè finita",
+            "ClickToView": "Vede quì."
+        }
     },
     "import": {
         "linkTitle": "Riempite stu Spreadsheet",
@@ -266,7 +290,9 @@
         "complete": "Cumpleta",
         "errorLine": "linea {{1}}",
         "errorsTitle": "Errori accaduti",
-        "communityUsers": "Questa hè a lista di e cumunità"
+        "communityUsers": "Questa hè a lista di e cumunità",
+        "toMainCommunityToo": "ligate ancu à a cumunità principale",
+        "ChooseFile": "sceglie u schedariu"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Oghje",
         "Tomorrow": "Dumane",
         "AfterTomorrow": "Dopu dumane"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Abbonate à u Calendariu",
+        "copyLinkBelow": "Cliccate u buttone sottu per copià u ligame in u vostru clipboard",
+        "tapToCopy": "Toccate u buttone sottu per copià u ligame in u vostru clipboard",
+        "goTo": "Andà à:",
+        "pasteCopiedTo": "Incolla u ligame copiatu à u campu &quot;URL di u calendariu&quot;.",
+        "clickAddCalendar": "Cliccate u buttone &quot;Add calendar&quot;.",
+        "copyLink": "Copia Link",
+        "linkCopied": "Link Copiatu",
+        "step2": "Link Copiatu. Semu nantu à Google Calendar apertu. Avete bisognu di incollà u ligame in a casella di testu, cliccate &quot;Aggiungi calendariu&quot;, è chjude a tabulazione (vede a screenshot sottu)",
+        "calendarAppPreferences": "Aprite i Preferenze in l&#39;App Calendar in u vostru Mac, è stabilisce l&#39;App Calendar Default per esse cum&#39;è mostratu quì sottu.",
+        "thenCloseDialog": "Allora chjude stu dialogu per abbonate à u vostru calendariu!",
+        "success": "U calendariu hè statu sincronizatu cù successu"
     }
 }

@@ -119,7 +119,12 @@
             "CancelReservation": "ਪੂਰੀ ਰਿਜ਼ਰਵੇਸ਼ਨ ਰੱਦ ਕਰੋ",
             "Total": "ਕੁੱਲ",
             "RequiredRelatedParticipants": "ਇਸ ਇਵੈਂਟ ਲਈ ਭਾਗੀਦਾਰਾਂ ਦੀ ਲੋੜ ਹੈ: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "ਆਵਰਤੀ ਸੈਟਿੰਗਾਂ ਨੂੰ ਅੱਪਡੇਟ ਕਰਨ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਉਪਲਬਧਤਾ &quot;{{title}}&quot; ਨੂੰ ਸੰਪਾਦਿਤ ਕਰੋ"
+            "AvailabilityWarning": "ਆਵਰਤੀ ਸੈਟਿੰਗਾਂ ਨੂੰ ਅੱਪਡੇਟ ਕਰਨ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਉਪਲਬਧਤਾ &quot;{{title}}&quot; ਨੂੰ ਸੰਪਾਦਿਤ ਕਰੋ",
+            "Presentation": "ਪੇਸ਼ਕਾਰੀ",
+            "YouAreNotParticipated": "ਤੁਸੀਂ ਇਵੈਂਟ ਦੇ ਭਾਗੀਦਾਰ ਨਹੀਂ ਹੋ",
+            "LiveStreamStarted": "ਲਾਈਵ ਸਟ੍ਰੀਮ ਸ਼ੁਰੂ ਹੋ ਗਈ ਹੈ",
+            "WebRTCStarted": "ਟੈਲੀਕਾਨਫਰੰਸ ਸ਼ੁਰੂ ਹੋ ਗਈ",
+            "WebRTCEnded": "ਟੈਲੀਕਾਨਫਰੰਸ ਸਮਾਪਤ ਹੋਈ"
         },
         "composer": {
             "SetLocation": "ਮੇਰਾ ਟਿਕਾਣਾ ਸੈੱਟ ਕਰੋ",
@@ -156,7 +161,10 @@
                 "Title": "ਕੋਈ ਗਤੀਵਿਧੀ ਚੁਣੋ",
                 "Filter": "ਦਿਲਚਸਪੀਆਂ ਖੋਜੋ..."
             },
-            "SetLivestream": "ਲਾਈਵਸਟ੍ਰੀਮ \/ ਵੀਡੀਓ ਕਾਨਫਰੰਸ ਲਈ ਲਿੰਕ ਪੇਸਟ ਕਰੋ"
+            "SetLivestream": "ਲਾਈਵਸਟ੍ਰੀਮ \/ ਵੀਡੀਓ ਕਾਨਫਰੰਸ ਲਈ ਲਿੰਕ ਪੇਸਟ ਕਰੋ",
+            "Locally": "ਸਥਾਨਕ ਤੌਰ &#39;ਤੇ",
+            "EventInfoLink": "ਇਵੈਂਟ ਜਾਣਕਾਰੀ ਲਿੰਕ",
+            "TicketPurchaseLink": "ਟਿਕਟ ਖਰੀਦ ਲਿੰਕ"
         },
         "EventAlreadyClosed": "ਇਹ ਇਵੈਂਟ ਪਹਿਲਾਂ ਹੀ ਬੰਦ ਹੈ",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "ਆਪਣੇ ਕੈਲੰਡਰ ਵਿੱਚ ਇਵੈਂਟ ਸ਼ਾਮਲ ਕਰੋ"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "ਮਾਫ਼ ਕਰਨਾ, ਪਰ ਤੁਸੀਂ ਸਮਾਪਤ ਹੋਏ ਇਵੈਂਟ ਨੂੰ ਨਹੀਂ ਛੱਡ ਸਕਦੇ"
     },
     "availabilities": {
         "Title": "ਉਪਲਬਧਤਾਵਾਂ",
@@ -190,7 +199,11 @@
             "PeopleMax": "ਵੱਧ ਤੋਂ ਵੱਧ ਸੈਲਾਨੀ",
             "PeopleLabels": "ਲੇਬਲ ਦੀ ਇਜਾਜ਼ਤ ਹੈ",
             "Next": "ਅਗਲਾ",
-            "Back": "ਵਾਪਸ"
+            "Back": "ਵਾਪਸ",
+            "RecurringEndDate": "ਆਵਰਤੀ ਸਮਾਪਤੀ ਮਿਤੀ",
+            "ScheduleOnlineConference": "ਟੈਲੀਕਾਨਫਰੰਸ ਨੂੰ ਤਹਿ ਕਰੋ",
+            "SetLivestream": "ਲਾਈਵਸਟ੍ਰੀਮ \/ ਵੀਡੀਓ ਕਾਨਫਰੰਸ ਲਈ ਲਿੰਕ ਪੇਸਟ ਕਰੋ",
+            "SelectTimeZone": "ਟਾਈਮ ਜ਼ੋਨ ਚੁਣੋ"
         },
         "EditAvailability": "ਉਪਲਬਧਤਾ ਦਾ ਸੰਪਾਦਨ ਕਰੋ",
         "SetVisitors": "ਵਿਜ਼ਟਰ ਸੈੱਟ ਕਰੋ",
@@ -200,7 +213,9 @@
         "RemoveStaff": "ਸਟਾਫ ਨੂੰ ਹਟਾਓ",
         "PleaseSelectTimeSlots": "ਕਿਰਪਾ ਕਰਕੇ ਸਮਾਂ ਸਲਾਟ ਚੁਣੋ",
         "ExceptionOccurred": "ਅਪਵਾਦ ਆਇਆ",
-        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} ਸਮਾਗਮਾਂ ਵਿੱਚ ਭਾਗ ਲੈਣ ਲਈ ਲੋੜੀਂਦੇ ਕ੍ਰੈਡਿਟ ਨਹੀਂ ਹਨ। ਤੁਹਾਨੂੰ {{needCredits}} ਕ੍ਰੈਡਿਟ ਦੀ ਲੋੜ ਹੈ। ਖਰੀਦਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} ਸਮਾਗਮਾਂ ਵਿੱਚ ਭਾਗ ਲੈਣ ਲਈ ਲੋੜੀਂਦੇ ਕ੍ਰੈਡਿਟ ਨਹੀਂ ਹਨ। ਤੁਹਾਨੂੰ {{needCredits}} ਕ੍ਰੈਡਿਟ ਦੀ ਲੋੜ ਹੈ। ਖਰੀਦਣਾ ਚਾਹੁੰਦੇ ਹੋ?",
+        "InviteStaff": "ਸਟਾਫ ਨੂੰ ਸੱਦਾ ਦਿਓ",
+        "LiveStream": "ਲਾਈਵ ਸਟ੍ਰੀਮ"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "ਆਪਣੀਆਂ ਈਮੇਲ ਗਾਹਕੀਆਂ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰੋ",
         "IfUnsubscribe": "ਜੇਕਰ ਤੁਸੀਂ ਗਾਹਕੀ ਰੱਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ",
         "ClickHereToVisitEvent": "ਕਿਰਪਾ ਕਰਕੇ ਇਵੈਂਟ &#39;ਤੇ ਜਾਣ ਲਈ ਇੱਥੇ ਕਲਿੱਕ ਕਰੋ",
-        "Calendars\/reminder": "ਇਵੈਂਟ &quot;{{{call 'message.getInstruction' 'name'}}&quot; {{&call 'message.getInstruction' 'time'}}} ਵਿੱਚ ਸ਼ੁਰੂ ਹੋਵੇਗਾ"
+        "Calendars\/reminder": "ਇਵੈਂਟ &quot;{{{call 'message.getInstruction' 'name'}}&quot; {{&call 'message.getInstruction' 'time'}}} ਵਿੱਚ ਸ਼ੁਰੂ ਹੋਵੇਗਾ",
+        "webrtc": {
+            "Started": "ਟੈਲੀਕਾਨਫਰੰਸ ਸ਼ੁਰੂ ਹੋ ਗਈ",
+            "Ended": "ਟੈਲੀਕਾਨਫਰੰਸ ਸਮਾਪਤ ਹੋਈ"
+        },
+        "livestream": {
+            "Started": "ਲਾਈਵ ਸਟ੍ਰੀਮ ਸ਼ੁਰੂ ਹੋਈ",
+            "Ended": "ਲਾਈਵ ਸਟ੍ਰੀਮ ਸਮਾਪਤ ਹੋਈ",
+            "ClickToView": "ਇਸਨੂੰ ਇੱਥੇ ਦੇਖੋ।"
+        }
     },
     "import": {
         "linkTitle": "ਇਸ ਸਪ੍ਰੈਡਸ਼ੀਟ ਨੂੰ ਭਰੋ",
@@ -266,7 +290,9 @@
         "complete": "ਸੰਪੂਰਨ",
         "errorLine": "ਲਾਈਨ {{1}}",
         "errorsTitle": "ਗਲਤੀਆਂ ਆਈਆਂ",
-        "communityUsers": "ਇਹ ਭਾਈਚਾਰਿਆਂ ਦੀ ਸੂਚੀ ਹੈ"
+        "communityUsers": "ਇਹ ਭਾਈਚਾਰਿਆਂ ਦੀ ਸੂਚੀ ਹੈ",
+        "toMainCommunityToo": "ਮੁੱਖ ਭਾਈਚਾਰੇ ਨਾਲ ਵੀ ਸਬੰਧਤ ਹੈ",
+        "ChooseFile": "ਫਾਇਲ ਦੀ ਚੋਣ ਕਰੋ"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "ਅੱਜ",
         "Tomorrow": "ਕੱਲ੍ਹ",
         "AfterTomorrow": "ਕੱਲ ਦੇ ਬਾਅਦ"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "ਕੈਲੰਡਰ ਦੀ ਗਾਹਕੀ ਲਓ",
+        "copyLinkBelow": "ਲਿੰਕ ਨੂੰ ਆਪਣੇ ਕਲਿੱਪਬੋਰਡ &#39;ਤੇ ਕਾਪੀ ਕਰਨ ਲਈ ਹੇਠਾਂ ਦਿੱਤੇ ਬਟਨ &#39;ਤੇ ਕਲਿੱਕ ਕਰੋ",
+        "tapToCopy": "ਲਿੰਕ ਨੂੰ ਆਪਣੇ ਕਲਿੱਪਬੋਰਡ &#39;ਤੇ ਕਾਪੀ ਕਰਨ ਲਈ ਹੇਠਾਂ ਦਿੱਤੇ ਬਟਨ &#39;ਤੇ ਟੈਪ ਕਰੋ",
+        "goTo": "ਇਸ &#39;ਤੇ ਜਾਓ:",
+        "pasteCopiedTo": "ਕਾਪੀ ਕੀਤੇ ਲਿੰਕ ਨੂੰ &quot;ਕੈਲੰਡਰ ਦਾ URL&quot; ਖੇਤਰ ਵਿੱਚ ਪੇਸਟ ਕਰੋ",
+        "clickAddCalendar": "&quot;ਕੈਲੰਡਰ ਸ਼ਾਮਲ ਕਰੋ&quot; ਬਟਨ &#39;ਤੇ ਕਲਿੱਕ ਕਰੋ",
+        "copyLink": "ਲਿੰਕ ਕਾਪੀ ਕਰੋ",
+        "linkCopied": "ਲਿੰਕ ਕਾਪੀ ਕੀਤਾ ਗਿਆ",
+        "step2": "ਲਿੰਕ ਕਾਪੀ ਕੀਤਾ ਗਿਆ। ਅਸੀਂ ਗੂਗਲ ਕੈਲੰਡਰ ਨੂੰ ਖੋਲ੍ਹਣ ਬਾਰੇ ਹਾਂ। ਤੁਹਾਨੂੰ ਟੈਕਸਟ ਬਾਕਸ ਵਿੱਚ ਲਿੰਕ ਪੇਸਟ ਕਰਨ ਦੀ ਲੋੜ ਹੋਵੇਗੀ, &quot;ਕੈਲੰਡਰ ਸ਼ਾਮਲ ਕਰੋ&quot; &#39;ਤੇ ਕਲਿੱਕ ਕਰੋ, ਅਤੇ ਟੈਬ ਨੂੰ ਬੰਦ ਕਰੋ (ਹੇਠਾਂ ਸਕ੍ਰੀਨਸ਼ੌਟ ਦੇਖੋ)",
+        "calendarAppPreferences": "ਆਪਣੇ ਮੈਕ &#39;ਤੇ ਕੈਲੰਡਰ ਐਪ ਵਿੱਚ ਤਰਜੀਹਾਂ ਨੂੰ ਖੋਲ੍ਹੋ, ਅਤੇ ਹੇਠਾਂ ਦਰਸਾਏ ਅਨੁਸਾਰ ਡਿਫੌਲਟ ਕੈਲੰਡਰ ਐਪ ਨੂੰ ਸੈੱਟ ਕਰੋ।",
+        "thenCloseDialog": "ਫਿਰ ਆਪਣੇ ਕੈਲੰਡਰ ਦੀ ਗਾਹਕੀ ਲੈਣ ਲਈ ਇਸ ਡਾਇਲਾਗ ਨੂੰ ਬੰਦ ਕਰੋ!",
+        "success": "ਕੈਲੰਡਰ ਸਫਲਤਾਪੂਰਵਕ ਸਿੰਕ ਕੀਤਾ ਗਿਆ ਸੀ"
     }
 }

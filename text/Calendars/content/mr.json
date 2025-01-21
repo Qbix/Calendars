@@ -119,7 +119,12 @@
             "CancelReservation": "संपूर्ण आरक्षण रद्द करा",
             "Total": "एकूण",
             "RequiredRelatedParticipants": "या इव्हेंटसाठी सहभागी आवश्यक आहेत: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "आवर्ती सेटिंग्ज अपडेट करण्यासाठी कृपया उपलब्धता &quot;{{title}}&quot; संपादित करा"
+            "AvailabilityWarning": "आवर्ती सेटिंग्ज अपडेट करण्यासाठी कृपया उपलब्धता &quot;{{title}}&quot; संपादित करा",
+            "Presentation": "सादरीकरण",
+            "YouAreNotParticipated": "तुम्ही कार्यक्रमाचे सहभागी नाही",
+            "LiveStreamStarted": "थेट प्रवाह सुरू झाला आहे",
+            "WebRTCStarted": "टेलिकॉन्फरन्स सुरू झाली",
+            "WebRTCEnded": "टेलिकॉन्फरन्स संपली"
         },
         "composer": {
             "SetLocation": "माझे स्थान सेट करा",
@@ -156,7 +161,10 @@
                 "Title": "एक क्रियाकलाप निवडा",
                 "Filter": "स्वारस्य शोधा ..."
             },
-            "SetLivestream": "थेट प्रवाह \/ व्हिडिओ कॉन्फरन्ससाठी लिंक पेस्ट करा"
+            "SetLivestream": "थेट प्रवाह \/ व्हिडिओ कॉन्फरन्ससाठी लिंक पेस्ट करा",
+            "Locally": "स्थानिक पातळीवर",
+            "EventInfoLink": "इव्हेंट माहिती लिंक",
+            "TicketPurchaseLink": "तिकीट खरेदी लिंक"
         },
         "EventAlreadyClosed": "हा कार्यक्रम आधीच बंद झाला आहे",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "तुमच्या कॅलेंडरमध्ये इव्हेंट जोडा"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "क्षमस्व, परंतु आपण समाप्त झालेला कार्यक्रम सोडू शकत नाही"
     },
     "availabilities": {
         "Title": "उपलब्धता",
@@ -190,7 +199,11 @@
             "PeopleMax": "जास्तीत जास्त अभ्यागत",
             "PeopleLabels": "लेबलांना परवानगी आहे",
             "Next": "पुढे",
-            "Back": "मागे"
+            "Back": "मागे",
+            "RecurringEndDate": "आवर्ती समाप्ती तारीख",
+            "ScheduleOnlineConference": "टेलीकॉन्फरन्स शेड्यूल करा",
+            "SetLivestream": "थेट प्रवाह \/ व्हिडिओ कॉन्फरन्ससाठी लिंक पेस्ट करा",
+            "SelectTimeZone": "टाइमझोन निवडा"
         },
         "EditAvailability": "उपलब्धता संपादित करा",
         "SetVisitors": "अभ्यागत सेट करा",
@@ -200,7 +213,9 @@
         "RemoveStaff": "कर्मचारी काढून टाका",
         "PleaseSelectTimeSlots": "कृपया टाइम स्लॉट निवडा",
         "ExceptionOccurred": "अपवाद आला",
-        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} इव्हेंटमध्ये भाग घेण्यासाठी पुरेसे क्रेडिट नाहीत. तुम्हाला {{needCredits}} क्रेडिटची आवश्यकता आहे. खरेदी करू इच्छिता?"
+        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} इव्हेंटमध्ये भाग घेण्यासाठी पुरेसे क्रेडिट नाहीत. तुम्हाला {{needCredits}} क्रेडिटची आवश्यकता आहे. खरेदी करू इच्छिता?",
+        "InviteStaff": "कर्मचाऱ्यांना आमंत्रित करा",
+        "LiveStream": "थेट प्रवाह"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "तुमची ईमेल सदस्यता व्यवस्थापित करा",
         "IfUnsubscribe": "तुम्हाला सदस्यत्व रद्द करायचे असल्यास",
         "ClickHereToVisitEvent": "कार्यक्रमाला भेट देण्यासाठी कृपया येथे क्लिक करा",
-        "Calendars\/reminder": "इव्हेंट &quot;{{{call 'message.getInstruction' 'name'}}&quot; {{&call 'message.getInstruction' 'time'}}} मध्ये सुरू होईल"
+        "Calendars\/reminder": "इव्हेंट &quot;{{{call 'message.getInstruction' 'name'}}&quot; {{&call 'message.getInstruction' 'time'}}} मध्ये सुरू होईल",
+        "webrtc": {
+            "Started": "टेलिकॉन्फरन्स सुरू झाली",
+            "Ended": "टेलिकॉन्फरन्स संपली"
+        },
+        "livestream": {
+            "Started": "थेट प्रवाह सुरू झाला",
+            "Ended": "थेट प्रवाह संपला",
+            "ClickToView": "ते येथे पहा."
+        }
     },
     "import": {
         "linkTitle": "हे स्प्रेडशीट भरा",
@@ -266,7 +290,9 @@
         "complete": "पूर्ण",
         "errorLine": "ओळ {{1}}",
         "errorsTitle": "चुका झाल्या",
-        "communityUsers": "ही समुदायांची यादी आहे"
+        "communityUsers": "ही समुदायांची यादी आहे",
+        "toMainCommunityToo": "मुख्य समुदायाशी देखील संबंधित आहे",
+        "ChooseFile": "फाइल निवडा"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "आज",
         "Tomorrow": "उद्या",
         "AfterTomorrow": "परवा"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "कॅलेंडरची सदस्यता घ्या",
+        "copyLinkBelow": "तुमच्या क्लिपबोर्डवर लिंक कॉपी करण्यासाठी खालील बटणावर क्लिक करा",
+        "tapToCopy": "तुमच्या क्लिपबोर्डवर लिंक कॉपी करण्यासाठी खालील बटणावर टॅप करा",
+        "goTo": "येथे जा:",
+        "pasteCopiedTo": "&quot;कॅलेंडरची URL&quot; फील्डमध्ये कॉपी केलेली लिंक पेस्ट करा",
+        "clickAddCalendar": "&quot;कॅलेंडर जोडा&quot; बटणावर क्लिक करा",
+        "copyLink": "लिंक कॉपी करा",
+        "linkCopied": "लिंक कॉपी केली",
+        "step2": "लिंक कॉपी केली. आम्ही उघडलेल्या Google Calendar बद्दल आहोत. तुम्हाला टेक्स्टबॉक्समध्ये लिंक पेस्ट करावी लागेल, &quot;कॅलेंडर जोडा&quot; वर क्लिक करा आणि टॅब बंद करा (खाली स्क्रीनशॉट पहा)",
+        "calendarAppPreferences": "तुमच्या Mac वर कॅलेंडर ॲपमध्ये प्राधान्ये उघडा आणि खाली दाखवल्याप्रमाणे डीफॉल्ट कॅलेंडर ॲप सेट करा.",
+        "thenCloseDialog": "मग तुमच्या कॅलेंडरची सदस्यता घेण्यासाठी हा संवाद बंद करा!",
+        "success": "कॅलेंडर यशस्वीरित्या समक्रमित केले गेले"
     }
 }

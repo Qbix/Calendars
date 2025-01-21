@@ -119,7 +119,12 @@
             "CancelReservation": "Тамоми фармоишро бекор кунед",
             "Total": "Ҳамагӣ",
             "RequiredRelatedParticipants": "Ин чорабинӣ аз иштирокчиён талаб мекунад: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Лутфан дастрасии &quot;{{title}}&quot; -ро таҳрир кунед, то танзимоти такроршавандаро навсозӣ кунед"
+            "AvailabilityWarning": "Лутфан дастрасии &quot;{{title}}&quot; -ро таҳрир кунед, то танзимоти такроршавандаро навсозӣ кунед",
+            "Presentation": "Муаррифӣ",
+            "YouAreNotParticipated": "Шумо иштирокчии чорабинӣ нестед",
+            "LiveStreamStarted": "Ҷараёни мустақим оғоз ёфт",
+            "WebRTCStarted": "Телеконференция оғоз ёфт",
+            "WebRTCEnded": "Телеконференция ба охир расид"
         },
         "composer": {
             "SetLocation": "Ҷойгиршавии манро таъин кунед",
@@ -156,7 +161,10 @@
                 "Title": "Фаъолиятро интихоб кунед",
                 "Filter": "Ҷустуҷӯи манфиатҳои ..."
             },
-            "SetLivestream": "Истинодро ба пахши мустақим \/ видеоконфронс гузоред"
+            "SetLivestream": "Истинодро ба пахши мустақим \/ видеоконфронс гузоред",
+            "Locally": "махаллй",
+            "EventInfoLink": "Истинод дар бораи рӯйдод",
+            "TicketPurchaseLink": "Истиноди хариди чипта"
         },
         "EventAlreadyClosed": "Ин чорабинӣ аллакай баста шуд",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Ба тақвими худ чорабинӣ илова кунед"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Бубахшед, аммо шумо наметавонед чорабинии анҷомшударо тарк кунед"
     },
     "availabilities": {
         "Title": "Мавҷудиятҳо",
@@ -190,7 +199,11 @@
             "PeopleMax": "Шумораи максималии меҳмонон",
             "PeopleLabels": "Тамғакоғазҳо иҷозат дода шудаанд",
             "Next": "Баъдӣ",
-            "Back": "Бозгашт"
+            "Back": "Бозгашт",
+            "RecurringEndDate": "Санаи анҷоми такроршаванда",
+            "ScheduleOnlineConference": "Ҷадвали телеконференсия",
+            "SetLivestream": "Истинодро ба пахши мустақим \/ видеоконфронс гузоред",
+            "SelectTimeZone": "Минтақаи вақтро интихоб кунед"
         },
         "EditAvailability": "Таҳрири мавҷудият",
         "SetVisitors": "Муайян кардани меҳмонон",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Кормандонро хориҷ кунед",
         "PleaseSelectTimeSlots": "Лутфан фосилаҳои вақтро интихоб кунед",
         "ExceptionOccurred": "Истисно ба амал омад",
-        "NotEnoughCreditsToParticipateEvents": "Барои иштирок дар чорабиниҳои {{eventsAmount}} кредити кофӣ нест. Ба шумо {{needCredits}} кредит лозим аст. Мехоҳед харед?"
+        "NotEnoughCreditsToParticipateEvents": "Барои иштирок дар чорабиниҳои {{eventsAmount}} кредити кофӣ нест. Ба шумо {{needCredits}} кредит лозим аст. Мехоҳед харед?",
+        "InviteStaff": "Кормандонро даъват кунед",
+        "LiveStream": "Ҷараёни мустақим"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "обунаҳои почтаи электронии худро идора кунед",
         "IfUnsubscribe": "Агар шумо хоҳед, ки обунаро қатъ кунед",
         "ClickHereToVisitEvent": "Лутфан ин ҷо клик кунед барои дидани чорабинӣ",
-        "Calendars\/reminder": "Чорабинии &quot;{{{call 'message.getInstruction' 'name'}}&quot; дар {{&call 'message.getInstruction' 'time'}}} оғоз мешавад"
+        "Calendars\/reminder": "Чорабинии &quot;{{{call 'message.getInstruction' 'name'}}&quot; дар {{&call 'message.getInstruction' 'time'}}} оғоз мешавад",
+        "webrtc": {
+            "Started": "Телеконференсия оғоз ёфт",
+            "Ended": "Телеконференция ба охир расид"
+        },
+        "livestream": {
+            "Started": "Ҷараёни мустақим оғоз ёфт",
+            "Ended": "Ҷараёни мустақим анҷом ёфт",
+            "ClickToView": "Онро дар ин ҷо бубинед."
+        }
     },
     "import": {
         "linkTitle": "Ин ҷадвали электрониро пур кунед",
@@ -266,7 +290,9 @@
         "complete": "Анҷом",
         "errorLine": "сатр {{1}}",
         "errorsTitle": "Хатогиҳо рӯй доданд",
-        "communityUsers": "Ин рӯйхати ҷамоатҳо аст"
+        "communityUsers": "Ин рӯйхати ҷамоатҳо аст",
+        "toMainCommunityToo": "ба ҷомеаи асосӣ низ дахл дорад",
+        "ChooseFile": "файлро интихоб кунед"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Имруз",
         "Tomorrow": "Пагох",
         "AfterTomorrow": "Пас аз пагох"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Ба тақвим обуна шавед",
+        "copyLinkBelow": "Барои нусхабардории истинод ба буфери худ тугмаи зерро клик кунед",
+        "tapToCopy": "Барои нусхабардории истинод ба буфери худ, тугмаи зерро клик кунед",
+        "goTo": "Ба:",
+        "pasteCopiedTo": "Истиноди нусхабардориро ба майдони &quot;URL-и тақвим&quot; часбонед",
+        "clickAddCalendar": "Тугмаи &quot;Иловаи тақвим&quot; -ро клик кунед",
+        "copyLink": "Истиноди нусхабардорӣ",
+        "linkCopied": "Пайванд нусхабардорӣ карда шуд",
+        "step2": "Пайванд нусхабардорӣ карда шуд. Мо дар бораи кушодани тақвими Google ҳастем. Ба шумо лозим меояд, ки истинодро ба қуттии матн гузоред, &quot;Иловаи тақвим&quot; -ро клик кунед ва ҷадвалро пӯшед (ба тасвири зер нигаред)",
+        "calendarAppPreferences": "Дар барномаи тақвими Mac-и худ Preferences -ро кушоед ва Барномаи тақвими пешфарзро тавре танзим кунед, ки дар зер нишон дода шудааст.",
+        "thenCloseDialog": "Пас ин муколамаро пӯшед, то ба тақвими худ обуна шавед!",
+        "success": "Тақвим бомуваффақият ҳамоҳанг карда шуд"
     }
 }

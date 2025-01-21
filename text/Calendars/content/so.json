@@ -119,7 +119,12 @@
             "CancelReservation": "Jooji boos qabsiga oo dhan",
             "Total": "Wadarta",
             "RequiredRelatedParticipants": "Dhacdadani waxay u baahan tahay ka qaybgalayaasha: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Fadlan wax ka beddel helitaanka &quot;{999}}&quot; si aad u cusboonaysiiso dejimaha soo noqnoqda"
+            "AvailabilityWarning": "Fadlan wax ka beddel helitaanka &quot;{999}}&quot; si aad u cusboonaysiiso dejimaha soo noqnoqda",
+            "Presentation": "Soo bandhigid",
+            "YouAreNotParticipated": "Ma tihid ka qaybqaataha dhacdada",
+            "LiveStreamStarted": "Si toos ah ayay u bilaabatay",
+            "WebRTCStarted": "Teleconference ayaa bilaabmay",
+            "WebRTCEnded": "Teleconference ayaa dhamaaday"
         },
         "composer": {
             "SetLocation": "Deji goobtayda",
@@ -156,7 +161,10 @@
                 "Title": "Dooro Waxqabad",
                 "Filter": "Raadi danaha..."
             },
-            "SetLivestream": "Ku dheji xidhiidhka tooska ah\/conference video"
+            "SetLivestream": "Ku dheji xidhiidhka tooska ah\/conference video",
+            "Locally": "gudaha",
+            "EventInfoLink": "Xiriirinta Macluumaadka Dhacdada",
+            "TicketPurchaseLink": "Xidhiidhka Iibka Tigidhada"
         },
         "EventAlreadyClosed": "Dhacdadan mar hore ayaa la xidhay",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Kudar Dhacdada jadwalkaaga"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Waan ka xunahay, laakiin kama bixi kartid dhacdada dhammaatay"
     },
     "availabilities": {
         "Title": "Helitaanka",
@@ -190,7 +199,11 @@
             "PeopleMax": "Booqdayaasha ugu badan",
             "PeopleLabels": "Calaamadaha waa la oggol yahay",
             "Next": "Xiga",
-            "Back": "Dib u noqo"
+            "Back": "Dib u noqo",
+            "RecurringEndDate": "Taariikhda Dhamaadka Soo Noqnoqda",
+            "ScheduleOnlineConference": "Jadwalka Teleconference",
+            "SetLivestream": "Ku dheji xidhiidhka tooska ah\/conference video",
+            "SelectTimeZone": "Dooro timeZone"
         },
         "EditAvailability": "Wax ka beddel Helitaanka",
         "SetVisitors": "Deji Booqdayaasha",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Ka saar shaqaalaha",
         "PleaseSelectTimeSlots": "Fadlan dooro boosaska wakhtiga",
         "ExceptionOccurred": "Ka reeban ayaa dhacay",
-        "NotEnoughCreditsToParticipateEvents": "Dhibcaha kuma filna inaad ka qaybgasho dhacdooyinka {{eventsAmount}} Waxaad u baahan tahay {{1000} credits Ma rabtaa inaad iibsato?"
+        "NotEnoughCreditsToParticipateEvents": "Dhibcaha kuma filna inaad ka qaybgasho dhacdooyinka {{eventsAmount}} Waxaad u baahan tahay {{1000} credits Ma rabtaa inaad iibsato?",
+        "InviteStaff": "Casuum shaqaalaha",
+        "LiveStream": "Daawasho toos ah"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "maamul isdiiwaangelintaada iimaylka",
         "IfUnsubscribe": "Hadii aad rabto in aad iska saarto",
         "ClickHereToVisitEvent": "Fadlan halkan guji si aad u booqato dhacdada",
-        "Calendars\/reminder": "Dhacdada &quot;{999}}&quot; waxay bilaabmi doontaa {{{call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Dhacdada &quot;{999}}&quot; waxay bilaabmi doontaa {{{call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Teleconference ayaa bilaabmay",
+            "Ended": "Teleconference ayaa dhamaaday"
+        },
+        "livestream": {
+            "Started": "Daawashada tooska ah ayaa bilaabatay",
+            "Ended": "Socodkii tooska ahaa wuu dhamaaday",
+            "ClickToView": "Halkan ka daawo"
+        }
     },
     "import": {
         "linkTitle": "Buuxi xaashidan",
@@ -266,7 +290,9 @@
         "complete": "Dhameystiran",
         "errorLine": "line {{1}}",
         "errorsTitle": "Khaladaad ayaa dhacay",
-        "communityUsers": "Kani waa liiska beelaha"
+        "communityUsers": "Kani waa liiska beelaha",
+        "toMainCommunityToo": "la xidhiidha bulshada guud sidoo kale",
+        "ChooseFile": "dooro faylka"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Maanta",
         "Tomorrow": "Berrito",
         "AfterTomorrow": "Berri ka dib"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Subscribe to Calendar",
+        "copyLinkBelow": "Guji badhanka hoose si aad u koobiyeeyso isku xirka sabuuraddaada",
+        "tapToCopy": "Taabo badhanka hoose si aad u koobiyeeyso isku xirka sabuuraddaada",
+        "goTo": "Aad:",
+        "pasteCopiedTo": "Ku dheji xiriirka la guuriyay &quot;URL of calendar&quot; goobta",
+        "clickAddCalendar": "Guji badhanka &quot;Add calendar&quot;.",
+        "copyLink": "Nuqul ka samee Linkiga",
+        "linkCopied": "Xiriirinta waa la guuriyay",
+        "step2": "Xiriirinta waa la guuriyay Waxaan ku saabsan nahay Google Calendar furan. Waxaad u baahan doontaa inaad ku dhejiso isku xirka sanduuqa qoraalka, dhagsii &quot;Add calendar&quot;, oo xidh tab (eeg sawirka hoose)",
+        "calendarAppPreferences": "Fur dookhyada App Calendar ee Mac kaaga, oo u deji App Calendar App inuu noqdo sida hoos ku cad.",
+        "thenCloseDialog": "Kadib xidh wada hadalkan si aad isu diiwaan geliso jadwalkaaga!",
+        "success": "Kalandarka si guul leh ayaa la isku waafajiyay"
     }
 }

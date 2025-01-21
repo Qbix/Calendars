@@ -119,7 +119,12 @@
             "CancelReservation": "Kanselahin ang buong reserbasyon",
             "Total": "Kabuuan",
             "RequiredRelatedParticipants": "Ang kaganapang ito ay nangangailangan ng mga kalahok: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Paki-edit ang availability &quot;{{title}}&quot; upang i-update ang mga umuulit na setting"
+            "AvailabilityWarning": "Paki-edit ang availability &quot;{{title}}&quot; upang i-update ang mga umuulit na setting",
+            "Presentation": "Pagtatanghal",
+            "YouAreNotParticipated": "Hindi ka kalahok ng kaganapan",
+            "LiveStreamStarted": "Nagsimula na ang live stream",
+            "WebRTCStarted": "Nagsimula ang teleconference",
+            "WebRTCEnded": "Natapos ang teleconference"
         },
         "composer": {
             "SetLocation": "Itakda ang Aking Lokasyon",
@@ -156,7 +161,10 @@
                 "Title": "Pumili ng isang Aktibidad",
                 "Filter": "Mga interes sa paghahanap..."
             },
-            "SetLivestream": "I-paste ang link sa livestream \/ videoconference"
+            "SetLivestream": "I-paste ang link sa livestream \/ videoconference",
+            "Locally": "lokal",
+            "EventInfoLink": "Link ng Impormasyon ng Kaganapan",
+            "TicketPurchaseLink": "Link sa Pagbili ng Ticket"
         },
         "EventAlreadyClosed": "Sarado na ang kaganapang ito",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Magdagdag ng Kaganapan sa iyong Kalendaryo"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Paumanhin, ngunit hindi ka maaaring umalis sa natapos na kaganapan"
     },
     "availabilities": {
         "Title": "Mga Availability",
@@ -190,7 +199,11 @@
             "PeopleMax": "Pinakamaraming bisita",
             "PeopleLabels": "Pinapayagan ang mga label",
             "Next": "Susunod",
-            "Back": "Bumalik"
+            "Back": "Bumalik",
+            "RecurringEndDate": "Paulit-ulit na Petsa ng Pagtatapos",
+            "ScheduleOnlineConference": "Mag-iskedyul ng Teleconference",
+            "SetLivestream": "I-paste ang link sa livestream \/ videoconference",
+            "SelectTimeZone": "Piliin ang timeZone"
         },
         "EditAvailability": "I-edit ang Availability",
         "SetVisitors": "Itakda ang mga Bisita",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Alisin ang mga tauhan",
         "PleaseSelectTimeSlots": "Mangyaring pumili ng mga puwang ng oras",
         "ExceptionOccurred": "Naganap ang pagbubukod",
-        "NotEnoughCreditsToParticipateEvents": "Hindi sapat na mga kredito para makasali {{eventsAmount}} ng mga kaganapan. Kailangan mo ng {{needCredits}} na mga kredito. Gustong bumili?"
+        "NotEnoughCreditsToParticipateEvents": "Hindi sapat na mga kredito para makasali {{eventsAmount}} ng mga kaganapan. Kailangan mo ng {{needCredits}} na mga kredito. Gustong bumili?",
+        "InviteStaff": "Mag-imbita ng mga tauhan",
+        "LiveStream": "Live stream"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "pamahalaan ang iyong mga subscription sa email",
         "IfUnsubscribe": "Kung gusto mong mag-unsubscribe",
         "ClickHereToVisitEvent": "Mangyaring mag-click dito upang bisitahin ang kaganapan",
-        "Calendars\/reminder": "Magsisimula ang kaganapang &quot;{{{call 'message.getInstruction' 'name'}}&quot; sa {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Magsisimula ang kaganapang &quot;{{{call 'message.getInstruction' 'name'}}&quot; sa {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Nagsimula ang teleconference",
+            "Ended": "Natapos ang teleconference"
+        },
+        "livestream": {
+            "Started": "Nagsimula ang live stream",
+            "Ended": "Natapos ang live stream",
+            "ClickToView": "Tingnan mo dito."
+        }
     },
     "import": {
         "linkTitle": "Punan ang Spreadsheet na Ito",
@@ -266,7 +290,9 @@
         "complete": "Kumpleto",
         "errorLine": "linya {{1}}",
         "errorsTitle": "Nagkaroon ng mga error",
-        "communityUsers": "Ito ang listahan ng mga komunidad"
+        "communityUsers": "Ito ang listahan ng mga komunidad",
+        "toMainCommunityToo": "nauugnay din sa pangunahing komunidad",
+        "ChooseFile": "pumili ng file"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Ngayong araw",
         "Tomorrow": "Bukas",
         "AfterTomorrow": "Makalawa"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Mag-subscribe sa Calendar",
+        "copyLinkBelow": "I-click ang button sa ibaba upang kopyahin ang link sa iyong clipboard",
+        "tapToCopy": "I-tap ang button sa ibaba para kopyahin ang link sa iyong clipboard",
+        "goTo": "Pumunta sa:",
+        "pasteCopiedTo": "I-paste ang kinopyang link sa field na &quot;URL ng kalendaryo.&quot;",
+        "clickAddCalendar": "I-click ang button na &quot;Magdagdag ng kalendaryo.&quot;",
+        "copyLink": "Kopyahin ang Link",
+        "linkCopied": "Nakopya ang Link",
+        "step2": "Nakopya ang Link. Kami ay tungkol sa bukas na Google Calendar. Kakailanganin mong i-paste ang link sa textbox, i-click ang &quot;Magdagdag ng kalendaryo&quot;, at isara ang tab (tingnan ang screenshot sa ibaba)",
+        "calendarAppPreferences": "Buksan ang Mga Kagustuhan sa Calendar App sa iyong Mac, at itakda ang Default na Calendar App na tulad ng ipinapakita sa ibaba.",
+        "thenCloseDialog": "Pagkatapos ay isara ang dialog na ito upang mag-subscribe sa iyong kalendaryo!",
+        "success": "Matagumpay na na-sync ang kalendaryo"
     }
 }

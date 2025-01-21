@@ -119,7 +119,12 @@
             "CancelReservation": "បោះបង់ការកក់ទុកទាំងស្រុង",
             "Total": "សរុប",
             "RequiredRelatedParticipants": "ព្រឹត្តិការណ៍នេះទាមទារអ្នកចូលរួម៖ {{requiredParticipantsList}}",
-            "AvailabilityWarning": "សូមកែសម្រួលភាពអាចរកបាន &quot;{{title}}&quot; ដើម្បីធ្វើបច្ចុប្បន្នភាពការកំណត់ដែលកើតឡើងដដែលៗ"
+            "AvailabilityWarning": "សូមកែសម្រួលភាពអាចរកបាន &quot;{{title}}&quot; ដើម្បីធ្វើបច្ចុប្បន្នភាពការកំណត់ដែលកើតឡើងដដែលៗ",
+            "Presentation": "បទបង្ហាញ",
+            "YouAreNotParticipated": "អ្នកមិនមែនជាអ្នកចូលរួមក្នុងព្រឹត្តិការណ៍នេះទេ។",
+            "LiveStreamStarted": "ការផ្សាយបន្តផ្ទាល់បានចាប់ផ្តើមហើយ។",
+            "WebRTCStarted": "សន្និសីទទូរគមនាគមន៍បានចាប់ផ្តើម",
+            "WebRTCEnded": "សន្និសីទទូរគមនាគមន៍បានបញ្ចប់"
         },
         "composer": {
             "SetLocation": "កំណត់ទីតាំងរបស់ខ្ញុំ",
@@ -156,7 +161,10 @@
                 "Title": "ជ្រើសរើសសកម្មភាព",
                 "Filter": "ស្វែងរកចំណាប់អារម្មណ៍..."
             },
-            "SetLivestream": "បិទភ្ជាប់តំណទៅការផ្សាយបន្តផ្ទាល់ \/ សន្និសីទវីដេអូ"
+            "SetLivestream": "បិទភ្ជាប់តំណទៅការផ្សាយបន្តផ្ទាល់ \/ សន្និសីទវីដេអូ",
+            "Locally": "ក្នុងស្រុក",
+            "EventInfoLink": "តំណភ្ជាប់ព័ត៌មានព្រឹត្តិការណ៍",
+            "TicketPurchaseLink": "តំណភ្ជាប់ការទិញសំបុត្រ"
         },
         "EventAlreadyClosed": "ព្រឹត្តិការណ៍នេះបានបិទរួចហើយ",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "បន្ថែមព្រឹត្តិការណ៍ទៅប្រតិទិនរបស់អ្នក។"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "សូមអភ័យទោស ប៉ុន្តែអ្នកមិនអាចចាកចេញពីព្រឹត្តិការណ៍ដែលបានបញ្ចប់បានទេ។"
     },
     "availabilities": {
         "Title": "ភាពអាចរកបាន",
@@ -190,7 +199,11 @@
             "PeopleMax": "អ្នកទស្សនាអតិបរមា",
             "PeopleLabels": "ស្លាកត្រូវបានអនុញ្ញាត",
             "Next": "បន្ទាប់",
-            "Back": "ត្រឡប់មកវិញ"
+            "Back": "ត្រឡប់មកវិញ",
+            "RecurringEndDate": "កាលបរិច្ឆេទបញ្ចប់ដែលកើតឡើងដដែលៗ",
+            "ScheduleOnlineConference": "កាលវិភាគសន្និសីទទូរគមនាគមន៍",
+            "SetLivestream": "បិទភ្ជាប់តំណទៅការផ្សាយបន្តផ្ទាល់ \/ សន្និសីទវីដេអូ",
+            "SelectTimeZone": "ជ្រើសរើសតំបន់ពេលវេលា"
         },
         "EditAvailability": "កែសម្រួលភាពអាចរកបាន",
         "SetVisitors": "កំណត់អ្នកទស្សនា",
@@ -200,7 +213,9 @@
         "RemoveStaff": "ដកបុគ្គលិកចេញ",
         "PleaseSelectTimeSlots": "សូមជ្រើសរើសចន្លោះពេល",
         "ExceptionOccurred": "ករណីលើកលែងបានកើតឡើង",
-        "NotEnoughCreditsToParticipateEvents": "មិនមានក្រេឌីតគ្រប់គ្រាន់ដើម្បីចូលរួមព្រឹត្តិការណ៍ {{eventsAmount}} ទេ។ អ្នកត្រូវការឥណទាន {{needCredits}} ។ ចង់​ទិញ?"
+        "NotEnoughCreditsToParticipateEvents": "មិនមានក្រេឌីតគ្រប់គ្រាន់ដើម្បីចូលរួមព្រឹត្តិការណ៍ {{eventsAmount}} ទេ។ អ្នកត្រូវការឥណទាន {{needCredits}} ។ ចង់​ទិញ?",
+        "InviteStaff": "អញ្ជើញបុគ្គលិក",
+        "LiveStream": "ការផ្សាយបន្តផ្ទាល់"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "គ្រប់គ្រងការជាវអ៊ីមែលរបស់អ្នក។",
         "IfUnsubscribe": "ប្រសិនបើអ្នកចង់ឈប់ជាវ",
         "ClickHereToVisitEvent": "សូមចុចទីនេះដើម្បីទស្សនាព្រឹត្តិការណ៍",
-        "Calendars\/reminder": "ព្រឹត្តិការណ៍ &quot;{{{call 'message.getInstruction' 'name'}}&quot; នឹង​ចាប់​ផ្តើម​នៅ​ក្នុង {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "ព្រឹត្តិការណ៍ &quot;{{{call 'message.getInstruction' 'name'}}&quot; នឹង​ចាប់​ផ្តើម​នៅ​ក្នុង {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "សន្និសីទទូរគមនាគមន៍បានចាប់ផ្តើម",
+            "Ended": "សន្និសីទទូរគមនាគមន៍បានបញ្ចប់"
+        },
+        "livestream": {
+            "Started": "ការផ្សាយបន្តផ្ទាល់បានចាប់ផ្តើម",
+            "Ended": "ការផ្សាយបន្តផ្ទាល់បានបញ្ចប់",
+            "ClickToView": "មើលវានៅទីនេះ។"
+        }
     },
     "import": {
         "linkTitle": "បំពេញសៀវភៅបញ្ជីនេះ។",
@@ -266,7 +290,9 @@
         "complete": "បញ្ចប់",
         "errorLine": "បន្ទាត់ {{1}}",
         "errorsTitle": "កំហុសបានកើតឡើង",
-        "communityUsers": "នេះគឺជាបញ្ជីសហគមន៍"
+        "communityUsers": "នេះគឺជាបញ្ជីសហគមន៍",
+        "toMainCommunityToo": "ទាក់ទងនឹងសហគមន៍សំខាន់ៗផងដែរ។",
+        "ChooseFile": "ជ្រើសរើសឯកសារ"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "ថ្ងៃនេះ",
         "Tomorrow": "ថ្ងៃស្អែក",
         "AfterTomorrow": "ខានស្អែក"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "ជាវប្រចាំទៅប្រតិទិន",
+        "copyLinkBelow": "ចុចប៊ូតុងខាងក្រោមដើម្បីចម្លងតំណទៅក្ដារតម្បៀតខ្ទាស់របស់អ្នក។",
+        "tapToCopy": "ចុចប៊ូតុងខាងក្រោមដើម្បីចម្លងតំណទៅក្ដារតម្បៀតខ្ទាស់របស់អ្នក។",
+        "goTo": "ទៅកាន់៖",
+        "pasteCopiedTo": "បិទភ្ជាប់តំណដែលបានចម្លងទៅវាល &quot;URL នៃប្រតិទិន&quot;",
+        "clickAddCalendar": "ចុចប៊ូតុង &quot;បន្ថែមប្រតិទិន&quot;",
+        "copyLink": "ចម្លងតំណ",
+        "linkCopied": "បានចម្លងតំណ",
+        "step2": "បានចម្លងតំណ។ យើងនិយាយអំពីការបើក Google ប្រតិទិន។ អ្នកនឹងត្រូវបិទភ្ជាប់តំណភ្ជាប់ទៅក្នុងប្រអប់អត្ថបទ ចុច &quot;បន្ថែមប្រតិទិន&quot; ហើយបិទផ្ទាំង (សូមមើលរូបថតអេក្រង់ខាងក្រោម)",
+        "calendarAppPreferences": "បើក Preferences នៅក្នុងកម្មវិធី Calendar នៅលើ Mac របស់អ្នក ហើយកំណត់ Default Calendar App អោយដូចរូបខាងក្រោម។",
+        "thenCloseDialog": "បន្ទាប់មកបិទប្រអប់នេះ ដើម្បីជាវប្រតិទិនរបស់អ្នក!",
+        "success": "ប្រតិទិនត្រូវបានធ្វើសមកាលកម្មដោយជោគជ័យ"
     }
 }

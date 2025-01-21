@@ -119,7 +119,12 @@
             "CancelReservation": "Ikansela ang tibuok nga reserbasyon",
             "Total": "Total",
             "RequiredRelatedParticipants": "Kini nga panghitabo nagkinahanglan og mga partisipante: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Palihug usba ang pagkaanaa &quot;{{title}}&quot; aron ma-update ang nagbalikbalik nga mga setting"
+            "AvailabilityWarning": "Palihug usba ang pagkaanaa &quot;{{title}}&quot; aron ma-update ang nagbalikbalik nga mga setting",
+            "Presentation": "Presentasyon",
+            "YouAreNotParticipated": "Dili ka usa ka partisipante sa kalihokan",
+            "LiveStreamStarted": "Nagsugod na ang live stream",
+            "WebRTCStarted": "Nagsugod ang teleconference",
+            "WebRTCEnded": "Natapos ang teleconference"
         },
         "composer": {
             "SetLocation": "Ibutang ang Akong Lokasyon",
@@ -156,7 +161,10 @@
                 "Title": "Pagpili og Kalihokan",
                 "Filter": "Pangitag interes..."
             },
-            "SetLivestream": "Idikit ang link sa livestream \/ videoconference"
+            "SetLivestream": "Idikit ang link sa livestream \/ videoconference",
+            "Locally": "lokal",
+            "EventInfoLink": "Link sa Impormasyon sa Panghitabo",
+            "TicketPurchaseLink": "Link sa Pagpalit sa Tiket"
         },
         "EventAlreadyClosed": "Kini nga panghitabo natapos na",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Idugang ang Hitabo sa imong Kalendaryo"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Sorry, pero dili ka makabiya sa natapos nga panghitabo"
     },
     "availabilities": {
         "Title": "Mga magamit",
@@ -190,7 +199,11 @@
             "PeopleMax": "Maximum nga mga bisita",
             "PeopleLabels": "Gitugotan ang mga label",
             "Next": "Sunod",
-            "Back": "Balik"
+            "Back": "Balik",
+            "RecurringEndDate": "Nagbalikbalik nga Petsa sa Katapusan",
+            "ScheduleOnlineConference": "Pag-eskedyul sa Teleconference",
+            "SetLivestream": "Idikit ang link sa livestream \/ videoconference",
+            "SelectTimeZone": "Pilia ang timeZone"
         },
         "EditAvailability": "I-edit ang Availability",
         "SetVisitors": "Itakda ang mga Bisita",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Kuhaa ang mga kawani",
         "PleaseSelectTimeSlots": "Palihug pagpili og mga time slot",
         "ExceptionOccurred": "Exception nahitabo",
-        "NotEnoughCreditsToParticipateEvents": "Dili igo nga mga kredito aron makaapil {{eventsAmount}} nga mga panghitabo. Kinahanglan nimo ang {{needCredits}} mga kredito. Gusto mupalit?"
+        "NotEnoughCreditsToParticipateEvents": "Dili igo nga mga kredito aron makaapil {{eventsAmount}} nga mga panghitabo. Kinahanglan nimo ang {{needCredits}} mga kredito. Gusto mupalit?",
+        "InviteStaff": "Pagdapit og mga kawani",
+        "LiveStream": "Live stream"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "pagdumala sa imong mga suskrisyon sa email",
         "IfUnsubscribe": "Kung gusto nimo mag-unsubscribe",
         "ClickHereToVisitEvent": "Palihug pag-klik dinhi aron bisitahan ang kalihokan",
-        "Calendars\/reminder": "Ang panghitabo nga &quot;{{{call 'message.getInstruction' 'name'}}&quot; magsugod sa {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Ang panghitabo nga &quot;{{{call 'message.getInstruction' 'name'}}&quot; magsugod sa {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Nagsugod ang teleconference",
+            "Ended": "Natapos ang teleconference"
+        },
+        "livestream": {
+            "Started": "Nagsugod ang live stream",
+            "Ended": "Natapos ang live stream",
+            "ClickToView": "Tan-awa kini dinhi."
+        }
     },
     "import": {
         "linkTitle": "Pun-a Kini nga Spreadsheet",
@@ -266,7 +290,9 @@
         "complete": "Kompleto",
         "errorLine": "linya {{1}}",
         "errorsTitle": "Nahitabo ang mga kasaypanan",
-        "communityUsers": "Kini ang listahan sa mga komunidad"
+        "communityUsers": "Kini ang listahan sa mga komunidad",
+        "toMainCommunityToo": "may kalabotan usab sa panguna nga komunidad",
+        "ChooseFile": "pilia ang file"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Karon",
         "Tomorrow": "Ugma",
         "AfterTomorrow": "Pagka ugma"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Mag-subscribe sa Kalendaryo",
+        "copyLinkBelow": "I-klik ang buton sa ubos aron kopyahon ang link sa imong clipboard",
+        "tapToCopy": "I-tap ang buton sa ubos aron kopyahon ang link sa imong clipboard",
+        "goTo": "Adto sa:",
+        "pasteCopiedTo": "Idikit ang gikopya nga link sa field nga &quot;URL sa kalendaryo&quot;.",
+        "clickAddCalendar": "I-klik ang &quot;Add calendar&quot; button",
+        "copyLink": "Kopyaha ang Link",
+        "linkCopied": "Gikopya ang Link",
+        "step2": "Gikopya ang Link. Kita mahitungod sa pag-abli sa Google Calendar. Kinahanglan nimong i-paste ang link sa textbox, i-klik ang &quot;Add calendar&quot;, ug isira ang tab (tan-awa ang screenshot sa ubos)",
+        "calendarAppPreferences": "Ablihi ang Preferences sa Calendar App sa imong Mac, ug itakda ang Default Calendar App nga ingon sa gipakita sa ubos.",
+        "thenCloseDialog": "Dayon isira kini nga dialog aron mag-subscribe sa imong kalendaryo!",
+        "success": "Ang kalendaryo malampuson nga na-sync"
     }
 }

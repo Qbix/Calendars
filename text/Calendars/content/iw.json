@@ -119,7 +119,12 @@
             "CancelReservation": "בטל את כל ההזמנה",
             "Total": "סך הכל",
             "RequiredRelatedParticipants": "אירוע זה דורש משתתפים: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "אנא ערוך את הזמינות &quot;{{title}}&quot; כדי לעדכן הגדרות חוזרות"
+            "AvailabilityWarning": "אנא ערוך את הזמינות &quot;{{title}}&quot; כדי לעדכן הגדרות חוזרות",
+            "Presentation": "הַצָגָה",
+            "YouAreNotParticipated": "אתה לא משתתף באירוע",
+            "LiveStreamStarted": "שידור חי התחיל",
+            "WebRTCStarted": "ועידה טלפונית התחילה",
+            "WebRTCEnded": "הועידה הטלפונית הסתיימה"
         },
         "composer": {
             "SetLocation": "הגדר את המיקום שלי",
@@ -156,7 +161,10 @@
                 "Title": "בחר פעילות",
                 "Filter": "תחומי עניין בחיפוש..."
             },
-            "SetLivestream": "הדבק קישור לשידור חי \/ ועידת וידאו"
+            "SetLivestream": "הדבק קישור לשידור חי \/ ועידת וידאו",
+            "Locally": "באופן מקומי",
+            "EventInfoLink": "קישור למידע על האירוע",
+            "TicketPurchaseLink": "קישור לרכישת כרטיסים"
         },
         "EventAlreadyClosed": "האירוע הזה כבר נסגר",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "הוסף אירוע ליומן שלך"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "מצטערים, אבל אתה לא יכול לעזוב את האירוע שהסתיים"
     },
     "availabilities": {
         "Title": "זמינות",
@@ -190,7 +199,11 @@
             "PeopleMax": "מקסימום מבקרים",
             "PeopleLabels": "תוויות מותר",
             "Next": "הַבָּא",
-            "Back": "חזור"
+            "Back": "חזור",
+            "RecurringEndDate": "תאריך סיום חוזר",
+            "ScheduleOnlineConference": "תזמן ועידה טלפונית",
+            "SetLivestream": "הדבק קישור לשידור חי \/ ועידת וידאו",
+            "SelectTimeZone": "בחר אזור זמן"
         },
         "EditAvailability": "ערוך זמינות",
         "SetVisitors": "הגדר מבקרים",
@@ -200,7 +213,9 @@
         "RemoveStaff": "הסר את הצוות",
         "PleaseSelectTimeSlots": "אנא בחר משבצות זמן",
         "ExceptionOccurred": "אירעה חריגה",
-        "NotEnoughCreditsToParticipateEvents": "אין מספיק קרדיטים כדי להשתתף באירועים של {{eventsAmount}}. אתה צריך {{needCredits}} זיכויים. רוצה לקנות?"
+        "NotEnoughCreditsToParticipateEvents": "אין מספיק קרדיטים כדי להשתתף באירועים של {{eventsAmount}}. אתה צריך {{needCredits}} זיכויים. רוצה לקנות?",
+        "InviteStaff": "הזמינו צוות",
+        "LiveStream": "שידור חי"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "לנהל את מנויי האימייל שלך",
         "IfUnsubscribe": "אם אתה רוצה לבטל את המנוי",
         "ClickHereToVisitEvent": "אנא לחץ כאן כדי לבקר באירוע",
-        "Calendars\/reminder": "האירוע &quot;{{{call 'message.getInstruction' 'name'}}&quot; יתחיל בעוד {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "האירוע &quot;{{{call 'message.getInstruction' 'name'}}&quot; יתחיל בעוד {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "ועידה טלפונית התחילה",
+            "Ended": "הועידה הטלפונית הסתיימה"
+        },
+        "livestream": {
+            "Started": "שידור חי התחיל",
+            "Ended": "השידור החי הסתיים",
+            "ClickToView": "הצג את זה כאן."
+        }
     },
     "import": {
         "linkTitle": "מלא את הגיליון האלקטרוני הזה",
@@ -266,7 +290,9 @@
         "complete": "לְהַשְׁלִים",
         "errorLine": "שורה {{1}}",
         "errorsTitle": "אירעו שגיאות",
-        "communityUsers": "זו רשימת הקהילות"
+        "communityUsers": "זו רשימת הקהילות",
+        "toMainCommunityToo": "מתייחסים גם לקהילה הראשית",
+        "ChooseFile": "בחר קובץ"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "היום",
         "Tomorrow": "מָחָר",
         "AfterTomorrow": "מחרתיים"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "הירשם ליומן",
+        "copyLinkBelow": "לחץ על הלחצן למטה כדי להעתיק את הקישור ללוח שלך",
+        "tapToCopy": "הקש על הלחצן למטה כדי להעתיק את הקישור ללוח שלך",
+        "goTo": "עבור אל:",
+        "pasteCopiedTo": "הדבק את הקישור שהועתק לשדה &quot;כתובת האתר של היומן&quot;.",
+        "clickAddCalendar": "לחץ על כפתור &quot;הוסף לוח שנה&quot;.",
+        "copyLink": "העתק קישור",
+        "linkCopied": "הקישור הועתק",
+        "step2": "הקישור הועתק. אנחנו עומדים לפתוח את יומן Google. תצטרך להדביק את הקישור בתיבת הטקסט, ללחוץ על &quot;הוסף יומן&quot; ולסגור את הכרטיסייה (ראה צילום מסך למטה)",
+        "calendarAppPreferences": "פתח את ההעדפות באפליקציית לוח השנה ב-Mac שלך, והגדר את אפליקציית יומן ברירת המחדל להיות כפי שמוצג להלן.",
+        "thenCloseDialog": "לאחר מכן סגור את הדו-שיח הזה כדי להירשם ליומן שלך!",
+        "success": "היומן סונכרן בהצלחה"
     }
 }

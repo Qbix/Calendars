@@ -119,7 +119,12 @@
             "CancelReservation": "באָטל מאַכן גאַנץ רעזערוואַציע",
             "Total": "גאַנץ",
             "RequiredRelatedParticipants": "דעם געשעעניש ריקווייערז פּאַרטיסאַפּאַנץ: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "ביטע רעדאַגירן אַוויילאַביליטי &quot;{{title}}&quot; צו דערהייַנטיקן ריקערייטינג סעטטינגס"
+            "AvailabilityWarning": "ביטע רעדאַגירן אַוויילאַביליטי &quot;{{title}}&quot; צו דערהייַנטיקן ריקערייטינג סעטטינגס",
+            "Presentation": "פּרעזענטירונג",
+            "YouAreNotParticipated": "איר זענט נישט אַ באַטייליקטער פון דער געשעעניש",
+            "LiveStreamStarted": "לייוו סטרים האט סטאַרטעד",
+            "WebRTCStarted": "טעלעקאָנפערענסע אנגעהויבן",
+            "WebRTCEnded": "טעלעקאָנפערענץ האָט זיך געענדיקט"
         },
         "composer": {
             "SetLocation": "שטעלן מיין אָרט",
@@ -156,7 +161,10 @@
                 "Title": "קלייַבן אַן אַקטיוויטעט",
                 "Filter": "זוכן אינטערעסן ..."
             },
-            "SetLivestream": "פּאַפּ לינק צו לייווסטרים \/ ווידעא קאָנפערענסע"
+            "SetLivestream": "פּאַפּ לינק צו לייווסטרים \/ ווידעא קאָנפערענסע",
+            "Locally": "לאָוקאַלי",
+            "EventInfoLink": "געשעעניש אינפֿאָרמאַציע לינק",
+            "TicketPurchaseLink": "בילעט קויפן לינק"
         },
         "EventAlreadyClosed": "די געשעעניש שוין פארמאכט",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "לייג עווענט צו דיין קאַלענדאַר"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "אנטשולדיגט, אָבער איר קענען נישט לאָזן די געענדיקט געשעעניש"
     },
     "availabilities": {
         "Title": "אַוואַילאַביליטיז",
@@ -190,7 +199,11 @@
             "PeopleMax": "מאַקסימום וויזיטערז",
             "PeopleLabels": "לאַבעלס ערלויבט",
             "Next": "ווייַטער",
-            "Back": "צוריק"
+            "Back": "צוריק",
+            "RecurringEndDate": "ריקערינג סוף טאָג",
+            "ScheduleOnlineConference": "פּלאַן טעלעקאָנפערענסע",
+            "SetLivestream": "פּאַפּ לינק צו לייווסטרים \/ ווידעא קאָנפערענסע",
+            "SelectTimeZone": "אויסקלייַבן צייט זאָנע"
         },
         "EditAvailability": "רעדאַגירן אַוואַילאַביליטי",
         "SetVisitors": "שטעלן וויזאַטערז",
@@ -200,7 +213,9 @@
         "RemoveStaff": "אַראָפּנעמען שטעקן",
         "PleaseSelectTimeSlots": "ביטע אויסקלייַבן צייט סלאָץ",
         "ExceptionOccurred": "אויסנאם איז פארגעקומען",
-        "NotEnoughCreditsToParticipateEvents": "ניט גענוג קרעדיץ צו אָנטייל נעמען אין {{eventsAmount}} events. איר דאַרפֿן {{needCredits}} קרעדיץ. ווילן צו קויפן?"
+        "NotEnoughCreditsToParticipateEvents": "ניט גענוג קרעדיץ צו אָנטייל נעמען אין {{eventsAmount}} events. איר דאַרפֿן {{needCredits}} קרעדיץ. ווילן צו קויפן?",
+        "InviteStaff": "לאַדן שטעקן",
+        "LiveStream": "לעבן סטרים"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "פירן דיין E- בריוו סאַבסקריפּשאַנז",
         "IfUnsubscribe": "אויב איר ווילן צו אַבאָנירן",
         "ClickHereToVisitEvent": "ביטע גיט דאָ צו באַזוכן די געשעעניש",
-        "Calendars\/reminder": "געשעעניש &quot;{{{call 'message.getInstruction' 'name'}}&quot; וועט אָנהייבן אין {{&call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "געשעעניש &quot;{{{call 'message.getInstruction' 'name'}}&quot; וועט אָנהייבן אין {{&call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "טעלעקאָנפערענסע אנגעהויבן",
+            "Ended": "טעלעקאָנפערענץ האָט זיך געענדיקט"
+        },
+        "livestream": {
+            "Started": "לייוו סטרים סטאַרטעד",
+            "Ended": "לייוו סטרים איז געענדיקט",
+            "ClickToView": "קוק עס דאָ."
+        }
     },
     "import": {
         "linkTitle": "פּלאָמבירן דעם ספּרעדשיט",
@@ -266,7 +290,9 @@
         "complete": "גאַנץ",
         "errorLine": "שורה {{1}}",
         "errorsTitle": "ערראָרס פארגעקומען",
-        "communityUsers": "דאָס איז דער רשימה פון קהילות"
+        "communityUsers": "דאָס איז דער רשימה פון קהילות",
+        "toMainCommunityToo": "פאַרבינדן צו די הויפּט קהל אויך",
+        "ChooseFile": "קלייַבן טעקע"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "היינט",
         "Tomorrow": "מאָרגן",
         "AfterTomorrow": "נאך מארגן"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "אַבאָנירן צו קאַלענדאַר",
+        "copyLinkBelow": "דריקט דעם קנעפּל אונטן צו נאָכמאַכן די לינק צו דיין קליפּבאָרד",
+        "tapToCopy": "צאַפּן אויף די קנעפּל אונטן צו נאָכמאַכן די לינק צו דיין קליפּבאָרד",
+        "goTo": "גיין צו:",
+        "pasteCopiedTo": "פּאַפּ קאַפּיד לינק צו &quot;URL פון קאַלענדאַר&quot; פעלד",
+        "clickAddCalendar": "דריקט &quot;לייג קאַלענדאַר&quot; קנעפּל",
+        "copyLink": "קאָפּי לינק",
+        "linkCopied": "לינק קאַפּיד",
+        "step2": "לינק קאַפּיד. מיר זענען וועגן עפענען Google קאַלענדאַר. איר וועט דאַרפֿן צו פּאַפּ די לינק אין די טעקסטבאָקס, גיט &quot;לייג קאַלענדאַר&quot; און פאַרמאַכן די קוויטל (זען סקרעענשאָט אונטן)",
+        "calendarAppPreferences": "עפֿענען די פּרעפֿערענצן אין די קאַלענדאַר אַפּ אויף דיין מעק, און שטעלן די דיפאָלט קאַלענדאַר אַפּ ווי געוויזן אונטן.",
+        "thenCloseDialog": "דערנאָך נאָענט דעם דיאַלאָג צו אַבאָנירן צו דיין קאַלענדאַר!",
+        "success": "קאַלענדאַר איז הצלחה סינסעד"
     }
 }

@@ -119,7 +119,12 @@
             "CancelReservation": "Fagilee gbogbo ifiṣura",
             "Total": "Lapapọ",
             "RequiredRelatedParticipants": "Iṣẹlẹ yii nilo awọn olukopa: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Jọwọ ṣatunkọ wiwa &quot;{999}}&quot; lati ṣe imudojuiwọn awọn eto loorekoore"
+            "AvailabilityWarning": "Jọwọ ṣatunkọ wiwa &quot;{999}}&quot; lati ṣe imudojuiwọn awọn eto loorekoore",
+            "Presentation": "Igbejade",
+            "YouAreNotParticipated": "Iwọ kii ṣe alabaṣe iṣẹlẹ naa",
+            "LiveStreamStarted": "Sisanwọle ifiwe ti bẹrẹ",
+            "WebRTCStarted": "Teleconference bẹrẹ",
+            "WebRTCEnded": "Teleconference ti pari"
         },
         "composer": {
             "SetLocation": "Ṣeto Ipo Mi",
@@ -156,7 +161,10 @@
                 "Title": "Yan aṣayan iṣẹ-ṣiṣe kan",
                 "Filter": "Ṣewadii awọn ifẹ..."
             },
-            "SetLivestream": "Lẹẹmọ ọna asopọ si ṣiṣan ifiwe \/ apejọ fidio"
+            "SetLivestream": "Lẹẹmọ ọna asopọ si ṣiṣan ifiwe \/ apejọ fidio",
+            "Locally": "tibile",
+            "EventInfoLink": "Iṣẹlẹ Alaye Link",
+            "TicketPurchaseLink": "Tiketi Ra Link"
         },
         "EventAlreadyClosed": "Iṣẹlẹ yii ti wa ni pipade",
         "addToCalendar": {
@@ -169,7 +177,8 @@
             "dialog": {
                 "Title": "Ṣafikun Iṣẹlẹ si Kalẹnda rẹ"
             }
-        }
+        },
+        "ErrorLeaveEndedEvent": "Ma binu, ṣugbọn o ko le fi iṣẹlẹ ti o pari silẹ"
     },
     "availabilities": {
         "Title": "Awọn wiwa",
@@ -190,7 +199,11 @@
             "PeopleMax": "O pọju alejo",
             "PeopleLabels": "Awọn akole laaye",
             "Next": "Itele",
-            "Back": "Pada"
+            "Back": "Pada",
+            "RecurringEndDate": "Loorekoore Ipari Ọjọ",
+            "ScheduleOnlineConference": "Iṣeto Teleconference",
+            "SetLivestream": "Lẹẹmọ ọna asopọ si ṣiṣan ifiwe \/ apejọ fidio",
+            "SelectTimeZone": "Yan aago agbegbe"
         },
         "EditAvailability": "Ṣatunkọ Wiwa",
         "SetVisitors": "Ṣeto Alejo",
@@ -200,7 +213,9 @@
         "RemoveStaff": "Yọ awọn oṣiṣẹ kuro",
         "PleaseSelectTimeSlots": "Jọwọ yan awọn aaye akoko",
         "ExceptionOccurred": "Iyatọ lodo",
-        "NotEnoughCreditsToParticipateEvents": "Ko si awọn kirẹditi to lati kopa ninu awọn iṣẹlẹ {{eventsAmount}}. O nilo awọn kirẹditi {{needCredits}}. Ṣe o fẹ ra?"
+        "NotEnoughCreditsToParticipateEvents": "Ko si awọn kirẹditi to lati kopa ninu awọn iṣẹlẹ {{eventsAmount}}. O nilo awọn kirẹditi {{needCredits}}. Ṣe o fẹ ra?",
+        "InviteStaff": "Pe oṣiṣẹ",
+        "LiveStream": "ṣiṣan ifiwe"
     },
     "recurring": {
         "dialog": {
@@ -242,7 +257,16 @@
         "ManageEmailSubscriptions": "ṣakoso awọn alabapin imeeli rẹ",
         "IfUnsubscribe": "Ti o ba fẹ yọọ kuro",
         "ClickHereToVisitEvent": "Jọwọ tẹ ibi lati ṣabẹwo si iṣẹlẹ",
-        "Calendars\/reminder": "Iṣẹlẹ &quot;{999}}&quot; yoo bẹrẹ ni {{{call 'message.getInstruction' 'time'}}}"
+        "Calendars\/reminder": "Iṣẹlẹ &quot;{999}}&quot; yoo bẹrẹ ni {{{call 'message.getInstruction' 'time'}}}",
+        "webrtc": {
+            "Started": "Teleconference bẹrẹ",
+            "Ended": "Teleconference ti pari"
+        },
+        "livestream": {
+            "Started": "Sisanwọle Live bẹrẹ",
+            "Ended": "Sisan ifiwe pari",
+            "ClickToView": "Wo o nibi."
+        }
     },
     "import": {
         "linkTitle": "Fọwọsi Iwe-ipeja yii",
@@ -266,7 +290,9 @@
         "complete": "Pari",
         "errorLine": "ila {{1}}",
         "errorsTitle": "Awọn aṣiṣe waye",
-        "communityUsers": "Eyi ni atokọ agbegbe"
+        "communityUsers": "Eyi ni atokọ agbegbe",
+        "toMainCommunityToo": "ni ibatan si agbegbe akọkọ paapaa",
+        "ChooseFile": "yan faili"
     },
     "types": {
         "Calendars\/event": {
@@ -289,5 +315,19 @@
         "Today": "Loni",
         "Tomorrow": "Ọla",
         "AfterTomorrow": "Lẹhin ọla"
+    },
+    "subscribe": {
+        "subscribeToCalendar": "Alabapin si Kalẹnda",
+        "copyLinkBelow": "Tẹ bọtini ti o wa ni isalẹ lati daakọ ọna asopọ si agekuru agekuru rẹ",
+        "tapToCopy": "Fọwọ ba bọtini ni isalẹ lati daakọ ọna asopọ si agekuru agekuru rẹ",
+        "goTo": "Lọ si:",
+        "pasteCopiedTo": "Lẹẹmọ ọna asopọ ti a daakọ si aaye &quot;URL ti kalẹnda&quot;.",
+        "clickAddCalendar": "Tẹ bọtini &quot;Fi kalẹnda kun&quot;.",
+        "copyLink": "Daakọ Ọna asopọ",
+        "linkCopied": "Dakọ ọna asopọ",
+        "step2": "Dakọ ọna asopọ. A fẹrẹ ṣii Kalẹnda Google. Iwọ yoo nilo lati lẹẹmọ ọna asopọ sinu apoti ọrọ, tẹ “Fi kalẹnda kun”, ki o si pa taabu naa (wo sikirinifoto ni isalẹ)",
+        "calendarAppPreferences": "Ṣii Awọn ayanfẹ ni Ohun elo Kalẹnda lori Mac rẹ, ki o ṣeto Ohun elo Kalẹnda Aiyipada lati jẹ bi a ṣe han ni isalẹ.",
+        "thenCloseDialog": "Lẹhinna pa ọrọ sisọ yii lati ṣe alabapin si kalẹnda rẹ!",
+        "success": "Kalẹnda ti muṣiṣẹpọ ni aṣeyọri"
     }
 }
