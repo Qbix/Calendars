@@ -24,9 +24,9 @@ function Calendars_paymentStatus_post($params)
 	}
 	$user = Users::loggedInUser(true);
 	$stream = Streams_Stream::fetch($user->id, $publisherId, $streamName, true);
-	if (!$stream->testWriteLevel('join')) {
-		throw new Users_Exception_NotAuthorized();
-	}
+	// if (!$stream->testWriteLevel('join')) {
+	// 	throw new Users_Exception_NotAuthorized();
+	// }
 
 	Q_Response::setSlot('payment', Assets_Credits::checkJoinPaid($user->id, $stream));
 }
