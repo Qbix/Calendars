@@ -3,21 +3,29 @@
 		"type": "Streams/participating",
 		"title": "My Events",
 		"icon": "",
-		"readLevel": "0",
-		"writeLevel": "0",
-		"adminLevel": "0"
+		"readLevel": 0,
+		"writeLevel": 0,
+		"adminLevel": 0
 	},
 	"Calendars/availabilities/main": {
 		"type": "Streams/category",
 		"title": "Availabilities",
 		"icon": "",
-		"readLevel": "40",
-		"writeLevel": "10",
-		"adminLevel": "0"
+		"readLevel": 40,
+		"writeLevel": 10,
+		"adminLevel": 0
+	},
+	"Calendars/calendar/main": {
+		"type": "Calendars/calendar",
+		"title": "Main Community Calendar",
+		"icon": "Calendars/calendar",
+		"readLevel": 23,
+		"writeLevel": 23,
+		"adminLevel": 20
 	},
 	"Calendars/user/calendar": {
 		"type": "Calendars/calendar",
-		"title": "Main Calendar",
+		"title": "User Calendar",
 		"icon": "",
 		"readLevel": 0,
 		"writeLevel": 0,
