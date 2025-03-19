@@ -30,7 +30,8 @@ function Calendars_import_post()
 		throw new Exception("field taskStreamName required");
 	}
 
-	$texts = Q_Text::get('Calendars/content')['import'];
+	$content = Q_Text::get('Calendars/content');
+	$texts = $content['import'];
 
 	// check permissions
 	$authorized = Users_Label::can($communityId, $luid);

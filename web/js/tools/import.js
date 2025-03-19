@@ -57,6 +57,7 @@ Q.Tool.define("Calendars/import", function (options) {
 			tool.$progressElement = $(".Calendars_import_progress", tool.element);
 
 			$("button[name=sampleCSV]", tool.element).on('click', function () {
+				window.open(fields.href);
 				//window.location = Q.url("{{baseUrl}}/import/sample?communityId=" + state.communityId);
 				return false;
 			});
@@ -159,8 +160,7 @@ Q.Tool.define("Calendars/import", function (options) {
 	}
 });
 
-Q.Template.set('Calendars/import/tool',
-	  `{{#if href}}<a href="{{href}}">{{import.linkTitle}}</a>{{/if}}
+Q.Template.set('Calendars/import/tool', `
 	<form enctype="multipart/form-data">
 		<fieldset>
 			<legend>{{import.fileLabel}}</legend>
