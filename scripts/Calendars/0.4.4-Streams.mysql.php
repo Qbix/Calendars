@@ -38,8 +38,8 @@ function Calendars_0_4_4_Streams()
 	echo "\n";
 
 	echo "Adding Calendars/admins and Calendars/staff roles";
-	Users_Label::addLabel("Calendars/admins", $communityId, "Calendars Admin", "{{Calendars}}/img/icons/Calendars/labels/admins", false);
-	Users_Label::addLabel("Calendars/staff", $communityId, "Calendars Staff", "{{Calendars}}/img/icons/Calendars/labels/staff", false);
+	Users_Label::addLabel("Calendars/admins", $communityId, "Calendars Admin", "{{Calendars}}/img/icons/labels/Calendars/admins", false);
+	Users_Label::addLabel("Calendars/staff", $communityId, "Calendars Staff", "{{Calendars}}/img/icons/labels/Calendars/staff", false);
 
 	// access stream for managing community roles
 	$stream = new Streams_Stream();
