@@ -1844,7 +1844,7 @@ Q.Template.set('Calendars/event/tool',
 	'{{#if icon.src}}' +
 	' data-icon-src="{{icon.src}} ' +
 	'{{/if}}' +
-	'data-streams-preview=\'{"publisherId":"{{stream.fields.publisherId}}","streamName":"{{stream.fields.name}}", "cacheBust": false, "closeable": false, "imagepicker": {"cacheBust": false, "showSize": "1000x", "save": "Calendars/event", "saveSizeName": "Calendars/event"}}\'>' +
+	'data-streams-preview=\'{"publisherId":"{{stream.fields.publisherId}}","streamName":"{{stream.fields.name}}", "cacheBust": false, "closeable": false, "imagepicker": {"cacheBust": false, "showSize": "500x", "save": "Calendars/event", "saveSizeName": "Calendars/event"}}\'>' +
 	'</div></div>' +
 	'{{#if show.hosts}}' +
 	'  <div class="Calendars_event_hosts">' +
