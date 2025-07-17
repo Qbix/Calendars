@@ -38,7 +38,7 @@ Q.Tool.define("Calendars/payment", function(options) {
 		Q.Template.render('Calendars/payment/select',
 		{
 			selectOptions: selectOptions,
-			currency: tool.options.currency
+			currency: tool.state.currency
 		},
 		function (err, html) {
 			if (err) return;
@@ -112,7 +112,7 @@ Q.Tool.define("Calendars/payment", function(options) {
 		return {
 			type: tool.$select.val(),
 			amount: parseFloat(tool.$amount.val()).toFixed(2),
-			currency: tool.options.currency
+			currency: tool.state.currency
 		};
 	}
 });
