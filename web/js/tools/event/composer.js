@@ -676,7 +676,7 @@ function _showLocations () {
 				});
 			};
 			Q.addScript(src, function () {
-				var all = Q.Streams.Interests.all[Users.communityId];
+				var all = Q.Streams.Interests.all[tool.communityId];
 				for (var k in all[tool.category]) {
 					var info = Q.getObject([tool.category, k, tool.interest], all);
 					if (!info) {
