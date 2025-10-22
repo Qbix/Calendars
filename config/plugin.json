@@ -2,7 +2,7 @@
 	"Q": {
 		"pluginInfo": {
 			"Calendars": {
-				"version": "0.5.3",
+				"version": "0.5.2",
 				"compatible": "0.1",
 				"requires": {
 					"Users": "1.0",
@@ -113,7 +113,10 @@
 		},
 		"types": {
 			"Calendars/calendar": {
-				"emoji": "📅"
+				"emoji": "📅",
+				"defaults": {
+					"icon": "{{Calendars}}/img/icons/Calendars/calendar"
+				}
 			},
 			"Calendars/event": {
 				"emoji": "🕒",
