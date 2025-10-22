@@ -62,57 +62,34 @@ Q.Tool.define("Calendars/import", function (options) {
 				return false;
 			});
 
-			_continue();
-		});
-
-		function _continue() {
-			var $input = tool.$('input[type=file]')
-				.click(function (event) {
-					event.stopPropagation();
-				}).change(_change);
-			// for browsers that don't support the change event, have an interval
-			this.ival = setInterval(function () {
-				if ($input.val()) {
-					_change();
-				}
-			}, 1000);
-		}
-
-		function _change() {
-			if (!this.value) {
-				return; // it was canceled
-			}
-
-			$("span", tool.$fileLabel).html(`(processing ${this.value})`);
-			
-			// task stream already defined, no need define it again
-			Streams.retainWith(tool).create({
-				publisherId: Users.loggedInUserId(),
-				type: 'Streams/task',
-				title: 'Importing events into ' + state.communityId
-			}, function (err) {
-				if (err) {
-					return;
+			tool.$('input[type=file]').click(function (event) {
+				event.stopPropagation();
+			}).change(function () {
+				if (!this.value) {
+					return; // it was canceled
 				}
 
-				state.taskStream = this;
+				$("span", tool.$fileLabel).html(`(processing ${this.value})`);
 
-				// join current user to task stream to get messages
-				this.join(function (err) {
+				// task stream already defined, no need define it again
+				Streams.retainWith(tool).create({
+					publisherId: Users.loggedInUserId(),
+					type: 'Streams/task',
+					title: 'Importing events into ' + state.communityId
+				}, function (err) {
 					if (err) {
 						return;
 					}
 
-					state.taskStream.refresh(function () {
-						tool.postFile();
-					}, {
-						evenIfNotRetained: true
-					});
-				});
+					state.taskStream = this;
 
-				$("input[name=taskStreamName]", tool.element).val(state.taskStream.fields.name);
+					this.observe();
+
+					$("input[name=taskStreamName]", tool.element).val(state.taskStream.fields.name);
+					tool.postFile();
+				});
 			});
-		}
+		});
 	},
 	/**
 	 * send CSV file to server
@@ -153,8 +130,8 @@ Q.Tool.define("Calendars/import", function (options) {
 	},
 	Q: {
 		beforeRemove: function () {
-			if (this.ival) {
-				clearInterval(this.ival);
+			if (this.state.taskStream) {
+				this.state.taskStream.neglect();
 			}
 		}
 	}
