@@ -14,8 +14,7 @@ function Calendars_0_4_Streams()
 		$stream = Streams_Stream::fetch($communityId, $communityId, $streamName);
 		if (!($stream instanceof Streams_Stream)) {
 			$stream = Streams::create($communityId, $communityId, 'Calendars/calendar', array(
-				'name' => $streamName,
-				'title' => $communityName
+				'name' => $streamName
 			));
 		}
 

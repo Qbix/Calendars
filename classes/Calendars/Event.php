@@ -613,7 +613,7 @@ class Calendars_Event extends Base_Calendars_Event
 	 * @return array
 	 */
 	static function relateToCommunity($event, $communityId) {
-		$communityEventsCategory = Calendars::eventsCalendar($communityId);
+		$communityEventsCategory = Calendars::stream($communityId);
 		$startTime = $event->getAttribute('startTime');
 		$event->relateTo($communityEventsCategory, 'Calendars/events', null, array(
 			'skipAccess' => true,

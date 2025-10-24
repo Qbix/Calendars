@@ -113,7 +113,14 @@
 		},
 		"types": {
 			"Calendars/calendar": {
-				"emoji": "📅"
+				"emoji": "📅",
+				"defaults": {
+					"icon": "{{Calendars}}/img/icons/Calendars/calendar",
+					"title": "Calendar",
+					"readLevel": 23,
+					"writeLevel": 23,
+					"adminLevel": 20
+				},
 			},
 			"Calendars/event": {
 				"emoji": "🕒",

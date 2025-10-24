@@ -115,21 +115,14 @@ class Calendars
 	
 	/**
 	 * Get or create Calendars/calendar/$experienceId stream for some community
-	 * @method eventsCalendars
+	 * @method stream
 	 * @param $communityId
-	 * @param [$title=null] The title to use, if creating one
 	 * @param [$experienceId='main'] The experienceId, defaults to main
+	 * @param [$fields=array()] Any other fields, such as title
 	 * @return Streams_Stream
 	 */
-	static function eventsCalendar($communityId, $title = null, $experienceId = 'main') {
+	static function stream($communityId, $experienceId = 'main', $fields = array()) {
 		$streamName = "Calendars/calendar/$experienceId";
-		$stream = Streams_Stream::fetch($communityId, $communityId, $streamName);
-		if (!($stream instanceof Streams_Stream)) {
-			$stream = Streams::create($communityId, $communityId, 'Calendars/calendar', array(
-				'name' => $streamName,
-				'title' => $title
-			));
-		}
-		return $stream;
+		return Streams_Stream::fetchOrCreate($communityId, $communityId, $streamName, compact('fields'));
 	}
 }

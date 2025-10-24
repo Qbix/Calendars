@@ -9,6 +9,8 @@ function Calendars_after_Users_setLoggedInUser($params)
 
 	// join user to category Calendars/calendar/main of main community
 	$communityId = Users::communityId();
-	$stream = Calendars::eventsCalendar($communityId, Users::communityName() . ' Events');
+	$stream = Calendars::stream($communityId, 'main', array(
+		'title' => Users::communityName() . ' Events'
+	));
 	$stream->join();
 }
