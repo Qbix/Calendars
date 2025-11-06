@@ -255,7 +255,8 @@ class Calendars_Event extends Base_Calendars_Event
 			'placeId' => null,
 			'venueName' => null,
 			'areaSelected' => null,
-			'livestream' => null,
+			'teleconference' => null,
+			'teleconferenceData' => null,
 			'startTime' => null,
 			'localStartDateTime' => null,
 			'endTime' => null,
@@ -279,7 +280,7 @@ class Calendars_Event extends Base_Calendars_Event
 			'description' => ""
 		));
 
-		if (!$r['placeId'] && !$r['livestream']) {
+		if (!$r['placeId'] && !$r['teleconference']) {
 			throw new Q_Exception_RequiredField(array('field' => 'location or live stream URL'));
 		}
 
@@ -469,7 +470,7 @@ class Calendars_Event extends Base_Calendars_Event
 				'venue' => $venue,
 				'eventUrl' => $r['eventUrl'],
 				'ticketsUrl' => $r['ticketsUrl'],
-				'livestream' => $r['livestream'],
+				'teleconference' => $r['teleconference'],
 				'startTime' => $startTime,
 				'localStartDateTime' => $localStartDateTime,
 				'endTime' => $endTime,
@@ -599,6 +600,17 @@ class Calendars_Event extends Base_Calendars_Event
 		// save location info to extended table
 		$location = self::getLocation($event);
 		$event->location = $location ? Q::json_encode($location) : null;
+
+		//create WebRTC stream if teleconference checkbox is checked
+		if($r['teleconference'] && class_exists('Media_WebRTC') && method_exists('Media_WebRTC', 'scheduleOrUpdateRoomStream')) {
+			$webrtcAndLivestream = Media_WebRTC::scheduleOrUpdateRoomStream(null, null, $r['teleconferenceData']);
+			if(isset($webrtcAndLivestream['livestreamStream'])) {
+				$webrtcAndLivestream['livestreamStream']->relateTo($event, 'Calendars/event/livestream', null, $o);
+			}
+			if(isset($webrtcAndLivestream['webrtcStream'])) {
+				$webrtcAndLivestream['webrtcStream']->relateTo($event, 'Calendars/event/webrtc', null, $o);
+			}
+		}
 
 		$event->changed();
 
@@ -830,6 +842,11 @@ class Calendars_Event extends Base_Calendars_Event
 				'fromPublisherId' => $userId
 			))->orderBy('weight', false)->fetchDbRows();
 			foreach ($relations as $relation) {
+				//WebRTC rooms stream in online events is created in the event composer (via WebRTC scheduler tool) when an event is created. 
+				//We should keep this relation even if publisher clicked on "No"
+				if($isPublisher && $relation->type == 'Calendars/event/webrtc') {
+					continue;
+				}
 				Streams::unrelate(
 					$userId,
 					$relation->toPublisherId,
@@ -1023,6 +1040,18 @@ class Calendars_Event extends Base_Calendars_Event
 		), 'after');
 
 		return $participant;
+	}
+
+	/**
+	 * Subscribe user on Calendars/event/livestream/started messages (when user clicks "Notify me when live" in event tool on front-end)
+	 * @method subscribeOnLivestreamStart
+	 * @static
+	 * @param {Streams_Stream} $stream Event stream
+	 * @param {string} $userId Id of user need to participate
+	 * @return {Streams_Participating} The row representing the participant
+	 */
+	static function subscribeOnLivestreamStart() {
+
 	}
 
 	/**
@@ -1584,7 +1613,7 @@ class Calendars_Event extends Base_Calendars_Event
 	}
 
 	/**
-	 * Post a message to Calendars/event about webrtc and livestream
+	 * Post a message to Calendars/event about webrtc teleconference
 	 * @method postMessage
 	 * @param {Streams_Stream} $streamWebrtc
 	 * @param {string} $action can be "join", "leave", "relate" and "unrelate"
@@ -1592,7 +1621,7 @@ class Calendars_Event extends Base_Calendars_Event
 	 */
 	static function postMessage ($streamWebrtc, $action, $relatedStream = null) {
 		list($relations, $streams) = $streamWebrtc->related(null, false, array(
-			'type' => 'Media/webrtc',
+			'type' => 'Calendars/event/webrtc',
 			'where' => array(
 				'toStreamName' => new Db_Range('Calendars/event/', false, false, true)
 			),
@@ -1621,7 +1650,39 @@ class Calendars_Event extends Base_Calendars_Event
 					$what = 'ended';
 				}
 				break;
-			case 'relate':
+			case 'livestreamStart':
+				$type = 'livestream';
+				$what = 'started';
+				/* $livestreamStream = Streams::fetchOne(null, $relatedStream['publisherId'], $relatedStream['streamName']);
+		
+
+				$addedUsers = Streams_Avatar::select()->where(array(
+						'toUserId' => $relatedStream['publisherId']
+					))->limit(1)->fetchDbRow();
+
+				$addedUsers = Streams_Avatar::fetch('', $relatedStream['publisherId'])
+
+				$user = Users::fetch($user, true);
+
+				
+				$instructions['url'] = $livestreamStream->url(); */
+				$instructions['publisherId'] = $relatedStream['publisherId'];
+				$instructions['streamName'] = $relatedStream['streamName'];
+				Streams::relate(
+					null,
+					$streamEvent->publisherId,
+					$streamEvent->name,
+					'Calendars/event/livestream',
+					$relatedStream['publisherId'],
+					$relatedStream['streamName'],
+					array('skipAccess' => true)
+
+				);
+				break;
+			case 'livestreamStop':
+				$type = 'livestream';
+				$what = 'stopped';
+			case 'relate': //probably we should remove relate and unrelate parts
 				if ($relatedStream->type === 'Media/webrtc/livestream') {
 					$type = 'livestream';
 					$what = 'started';
@@ -1646,7 +1707,7 @@ class Calendars_Event extends Base_Calendars_Event
 			return false;
 		}
 		$streamEvent->post($streamEvent->publisherId, array(
-			'type' => "Calendars/event/$type/$what",
+			'type' => "Calendars/event/$type/$what", //Calendars/event/livestream/started
 			'instructions' => $instructions
 		), true);
 		return true;

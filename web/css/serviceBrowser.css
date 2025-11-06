@@ -53,7 +53,7 @@
 .Calendars_service_browser_tool .Calendars_step.Calendars_service_browser_location::before {
 	content: "\e904";
 }
-.Calendars_service_browser_tool .Calendars_step.Calendars_service_browser_livestream:before {
+.Calendars_service_browser_tool .Calendars_step.Calendars_service_browser_teleconference:before {
 	content: "\e90b";
 	top: 0;
 }

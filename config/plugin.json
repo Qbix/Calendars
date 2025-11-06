@@ -34,7 +34,9 @@
 			"Streams/message/Streams/join": ["Calendars/after/Streams_message_Streams_join"],
 			"Streams/message/Streams/leave": ["Calendars/after/Streams_message_Streams_leave"],
 			"Streams/relateTo/Media/webrtc": ["Calendars/after/Streams/relateTo/Media/webrtc"],
-			"Streams/unrelateTo/Media/webrtc": ["Calendars/after/Streams/unrelateTo/Media/webrtc"]
+			"Streams/unrelateTo/Media/webrtc": ["Calendars/after/Streams/unrelateTo/Media/webrtc"],
+			"Streams/message/Media/livestream/start": ["Calendars/after/Streams_message_Media_livestream_start"],
+			"Streams/message/Media/livestream/stop": ["Calendars/after/Streams_message_Media_livestream_stop"]
 		},
 		"web": {
 			"requireValidNonce": ["Calendars"]
@@ -235,6 +237,9 @@
 			"notices": { /* track message type to show notification as Q.Notice */
 				"Calendars/reminder": {
 					"timeout": 10
+				},
+				"Calendars/event/livestream/started": {
+					"timeout": 10
 				}
 			}
 		}
@@ -261,7 +266,7 @@
 		},
 		"newEvent": {
 			"location": true,
-			"livestream": true
+			"teleconference": true
 		},
 		"event": {
 			"hideIfNoParticipants": false,

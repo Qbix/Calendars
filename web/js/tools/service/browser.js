@@ -56,7 +56,7 @@ Q.Tool.define("Calendars/service/browser", function(options) {
 		tool.$availabilityStep = tool.$(".Calendars_service_browser_availability input.Calendars_composer_step");
 		tool.$payment = tool.$('.Calendars_service_browser_payment');
 		tool.$location = tool.$('.Calendars_service_browser_location');
-		tool.$livestream = tool.$('.Calendars_service_browser_livestream');
+		tool.$teleconference = tool.$('.Calendars_service_browser_teleconference');
 		tool.$locationStep = $('input.Calendars_composer_step', tool.$location);
 		tool.$time = tool.$('.Calendars_service_browser_time');
 		tool.$eventUrl = true;
@@ -149,11 +149,11 @@ Q.Tool.define("Calendars/service/browser", function(options) {
 			tool.$location.show();
 		}
 
-		var livestream = availabilityTool.stream.getAttribute('livestream');
-		if (livestream === "true") {
-			tool.$livestream.show();
+		var teleconference = availabilityTool.stream.getAttribute('teleconference') || availabilityTool.stream.getAttribute('livestream'); //livestream is for backward compatibility
+		if (teleconference === "true") {
+			tool.$teleconference.show();
 		} else {
-			tool.$livestream.hide();
+			tool.$teleconference.hide();
 		}
 
 		var assetsTemplate = availabilityTool.stream.getAttribute('serviceTemplate');
@@ -223,7 +223,7 @@ Q.Tool.define("Calendars/service/browser", function(options) {
 			[tool.$availability],
 			[tool.$payment],
 			[tool.$location],
-			[tool.$livestream],
+			[tool.$teleconference],
 			[tool.$privacy],
 			[tool.$time]
 		],
@@ -310,12 +310,12 @@ Q.Tool.define("Calendars/service/browser", function(options) {
 			return Q.alert(tool.text.availabilities.PleaseSelectTimeSlots);
 		}
 
-		var livestream = tool.availabilityTool.stream.getAttribute('livestream');
-		var livestreamUrl = tool.availabilityTool.stream.getAttribute('livestreamUrl');
+		var teleconference = tool.availabilityTool.stream.getAttribute('teleconference') || tool.availabilityTool.stream.getAttribute('livestream'); //livestream is for backward compatibility
+		var teleconferenceUrl = tool.availabilityTool.stream.getAttribute('teleconferenceUrl') || tool.availabilityTool.stream.getAttribute('livestreamUrl');
 		var fields = {
 			publisherId: state.communityId,
 			availability: state.availability,
-			livestream: livestream === "true" ? livestreamUrl ? livestreamUrl : "online" : "",
+			teleconference: teleconference === "true" ? teleconferenceUrl ? teleconferenceUrl : "online" : "",
 			timeSlots: timeSlots,
 			recurring: $("[data-value=recurring]", tool.$time).hasClass("Q_selected")
 		};

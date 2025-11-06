@@ -226,7 +226,7 @@ Q.Tool.define("Calendars/event/composer", function(options) {
 		tool.$eventType = tool.$('.Calendars_event_composer_type select');
 		tool.$location = tool.$('.Calendars_event_composer_location');
 		tool.$locationStep = $('.Calendars_composer_step', tool.$location);
-		tool.$livestream = tool.$('.Calendars_event_composer_livestream');
+		tool.$teleconference = tool.$('.Calendars_event_composer_teleconference');
 		tool.$eventUrl = tool.$('.Calendars_event_composer_link');
 		tool.$address = tool.$('.Places_address_tool');
 		tool.$results = tool.$('.Q_filter_results', tool.$address);
@@ -263,23 +263,24 @@ Q.Tool.define("Calendars/event/composer", function(options) {
 			Q.handle(state.choosePublisher, tool, [this]);
 		});
 
-		var $livestreamUrl = $("input[name=livestream]", tool.$livestream);
-		var $scheduleOnlineConference = $("button[name=scheduleOnlineConference]", tool.$livestream);
-		var $livestreamStep = $("input.Calendars_composer_step", tool.$livestream);
-		$livestreamStep.on("change", function () {
-			$toolElement.attr("data-online", $livestreamStep.val());
+		var $teleconferenceUrl = $("input[name=teleconference]", tool.$teleconference);
+		var $schedulerButton = $(".Calendars_event_composer_teleconference_scheduler", tool.$teleconference);
+		var $scheduleOnlineConference = $("button[name=scheduleOnlineConference]", tool.$teleconference);
+		var $teleconferenceStep = $("input.Calendars_composer_step", tool.$teleconference);
+		$teleconferenceStep.on("change", function () {
+			$toolElement.attr("data-online", $teleconferenceStep.val());
 		});
-		// on change $livestream, call prepareSteps
-		$livestreamUrl.on('change input', function () {
+		// on change $teleconference, call prepareSteps
+		$teleconferenceUrl.on('change input', function () {
 			var val = $(this).val();
-			var $placeHolder = $livestreamUrl.closest(".Q_placeholders_container");
+			var $placeHolder = $teleconferenceUrl.closest(".Q_placeholders_container");
 
 			if (val.matchTypes('url').length) {
-				$livestreamStep.val('online').trigger("change");
+				$teleconferenceStep.val('online').trigger("change");
 				$scheduleOnlineConference.removeClass("Q_selected");
 				$placeHolder.addClass("Q_selected");
 			} else {
-				$livestreamStep.val('').trigger("change");
+				$teleconferenceStep.val('').trigger("change");
 				$placeHolder.removeClass("Q_selected");
 			}
 
@@ -288,20 +289,57 @@ Q.Tool.define("Calendars/event/composer", function(options) {
 
 		// Set Schedule Conference
 		$scheduleOnlineConference.on(Q.Pointer.fastclick, function () {
+			var eventTitle = $("input", tool.$title).val();
+			tool.webrtcSchedulerData = tool.webrtcSchedulerData ? tool.webrtcSchedulerData : {
+				topic: eventTitle,
+				scheduleLivestream: true,
+				invitedAttendeesIds: []
+			}
 			if ($scheduleOnlineConference.hasClass("Q_selected")) {
 				$scheduleOnlineConference.removeClass("Q_selected");
-				$livestreamStep.val('').trigger("change");
+				$teleconferenceStep.val('').trigger("change");
+				$schedulerButton.addClass("Q_disabled_2");
 			} else {
 				$scheduleOnlineConference.addClass("Q_selected");
-				$livestreamUrl.val('');
-				$livestreamUrl.closest(".Q_placeholders_container").removeClass("Q_selected");
-				$livestreamStep.val('online').trigger("change");
+				$teleconferenceUrl.val('');
+				$teleconferenceUrl.closest(".Q_placeholders_container").removeClass("Q_selected");
+				$teleconferenceStep.val('online').trigger("change");
+				$schedulerButton.removeClass("Q_disabled_2");
 			}
 
 			tool.prepareSteps();
 		});
+		
+		//open WebRTC scheduler tool
+		$schedulerButton.on(Q.Pointer.fastclick, function () {
+			var eventTitle = $("input", tool.$title).val();
+			Q.Dialogs.push({
+				title: Q.getObject(['event', 'composer', 'scheduleTeleconference'], tool.text),
+				className: '',
+				apply: true,
+				content: Q.Tool.setUpElement('div', 'Media/webrtc/scheduler', {
+					publisherId: null,
+					streamName: null,
+					formOnly: true,
+					meetingParams: tool.webrtcSchedulerData ? tool.webrtcSchedulerData : {
+						topic: eventTitle,
+						scheduleLivestream: true,
+						invitedAttendeesIds: [],
+					}
+				}),
+				onActivate: function (dialogElement, dialogObj) {
+					tool.webrtcSchedulerTool = Q.Tool.from(dialogObj.content, 'Media/webrtc/scheduler')
+					tool.webrtcSchedulerData = tool.webrtcSchedulerTool.state.meetingParams;
 
-		var $interestsButton =  tool.$('.Calendars_event_composer_interest_button');
+				},
+				onClose: function () {
+					tool.webrtcSchedulerData = tool.webrtcSchedulerTool.state.meetingParams;
+					console.log('tool.webrtcSchedulerData', tool.webrtcSchedulerData)
+				}
+			})
+		});
+
+		var $interestsButton = tool.$('.Calendars_event_composer_interest_button');
 		$interestsButton.plugin('Q/clickable', {
 			press: {size: 1.2},
 			release: {size: 1.2}
@@ -358,6 +396,7 @@ Q.Tool.define("Calendars/event/composer", function(options) {
 			press: {size: 1.2},
 			release: {size: 1.2}
 		}).on(Q.Pointer.click, function () {
+			console.log('tool.webrtcSchedulerData', tool.webrtcSchedulerData)
 			if (!Q.Users.loggedInUser) {
 				alert('Please log in first');
 				return;
@@ -397,7 +436,7 @@ Q.Tool.define("Calendars/event/composer", function(options) {
 			}
 			var eventTitle = $("input", tool.$title).val();
 			var eventType = tool.$eventType instanceof jQuery ? tool.$eventType.val() : null;
-			var livestream = $("input.Calendars_composer_step", tool.$livestream).val() || null;
+			var teleconference = $("input.Calendars_composer_step", tool.$teleconference).val() || null;
 			var eventUrl = $("input[name=eventUrl]", tool.$eventUrl).val() || null;
 			var ticketsUrl = $("input[name=ticketsUrl]", tool.$eventUrl).val() || null;
 			var fields = {
@@ -407,7 +446,8 @@ Q.Tool.define("Calendars/event/composer", function(options) {
 				eventType: eventType,
 				eventTitle: eventTitle,
 				placeId: state.placeId,
-				livestream: livestream,
+				teleconference: teleconference,
+				teleconferenceData: tool.webrtcSchedulerData,
 				eventUrl: eventUrl,
 				ticketsUrl: ticketsUrl,
 				areaSelected: state.areaSelected || null,
@@ -550,7 +590,7 @@ Q.Tool.define("Calendars/event/composer", function(options) {
 			[tool.$publisher],
 			[tool.$interest],
 			[tool.$eventType],
-			[tool.$location, 'or', tool.$livestream],
+			[tool.$location, 'or', tool.$teleconference],
 			[tool.$eventUrl],
 			[tool.$date, 'and', tool.$time],
 			[tool.$labels],
