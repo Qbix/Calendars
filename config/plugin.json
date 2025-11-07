@@ -2,7 +2,7 @@
 	"Q": {
 		"pluginInfo": {
 			"Calendars": {
-				"version": "0.5.2",
+				"version": "0.5.3",
 				"compatible": "0.1",
 				"requires": {
 					"Users": "1.0",
