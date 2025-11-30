@@ -795,7 +795,7 @@ class Calendars_Event extends Base_Calendars_Event
 	 * @param {bool} [$options.skipPayment=false] Sometime need to skip payment, for instance when participate staffer.
 	 * @param {Boolean} [$options.skipRecurringParticipant=false] If true don't manage recurring participant
 	 * @param {Boolean} [$options.skipSubscription=false] If true skip subscription to stream
-	 * @param {bool} [$options.forcePayment=false] If true, do payment if required. If false, throw exception.
+	 * @param {bool} [$options.autoCharge=false] If true, do payment if required. If false, throw exception.
 	 * @param {array} [$options.relatedParticipants] If defined array of related participants, relate all of them to event.
 	 * Array format: array(array("publisherId" => ..., "streamName" => ...), ...)
 	 * @throws Streams_Exception_Full
@@ -921,18 +921,18 @@ class Calendars_Event extends Base_Calendars_Event
 					}
 
 					if ($paymentRequired) {
-						if (!Q::ifset($options, "forcePayment", false)) {
+						if (!Q::ifset($options, "autoCharge", false)) {
 							throw new Streams_Exception_Payment();
 						}
 						Q::event("Assets/credits/post", array(
 							"amount" => $resAmount,
 							"currency" => $payment["currency"],
 							"toStream" => $stream,
-							"forcePayment" => true
+							"autoCharge" => true
 						));
 
 						// after payment try again to unsure that payments success
-						$options["forcePayment"] = false;
+						$options["autoCharge"] = false;
 						return self::rsvp($stream, $userId, $going, $options);
 					}
 				}

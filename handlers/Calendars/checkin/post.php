@@ -75,7 +75,7 @@ function Calendars_checkin_post($params)
 		}
 
 		// join user to event
-		$participant = Calendars_Event::rsvp($eventStream, $userId, 'yes', array("forcePayment" => true));
+		$participant = Calendars_Event::rsvp($eventStream, $userId, 'yes', array("autoCharge" => true));
 	}
 	$participant->setExtra(array('checkin' => true));
 	$participant->state = 'participating';
