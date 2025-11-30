@@ -488,7 +488,7 @@ class Calendars_Event extends Base_Calendars_Event
 			$fields['writeLevel'] = 0;
 			$fields['adminLevel'] = 0;
 		} elseif ($r['payment']) {
-			$fields['readLevel'] = 20;
+			$fields['readLevel'] = Streams::$READ_LEVEL['content'];
 		}
 
 		// save the event in the database
