@@ -178,7 +178,7 @@ Q.Tool.define("Calendars/event/preview", ["Streams/preview"], function(options, 
 			participantsTool: participantsTool,
 			avatarTool: avatarTool,
 			show: state.show,
-			hideUnpaid: Q.getObject("Calendars.event.unpaid.hide.location", Q)
+			hideUnpaid: Q.getObject("Calendars.Event.unpaid.hide.location", Q)
 		};
 		Q.Template.render('Calendars/event/preview', fields, function (err, html) {
 			if (err) return;
