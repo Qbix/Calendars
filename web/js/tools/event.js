@@ -932,7 +932,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		var publisherId = this.state.publisherId;
 		var eventId = this.state.streamName.split('/').pop();
 		return new Q.Promise(function(resolve, reject) {
-			Q.req('Calendars/paymentStatus', ['payment'], function (err, response) {
+			Q.req('Calendars/payment', ['status'], function (err, response) {
 				var r = response && response.errors;
 				var msg = Q.firstErrorMessage(err, r);
 				if (msg) {
@@ -940,7 +940,6 @@ Q.Tool.define("Calendars/event", function(options) {
 				}
 				resolve(response);
 			}, {
-				method: 'post',
 				fields: {
 					publisherId: publisherId,
 					eventId: eventId,
@@ -971,11 +970,13 @@ Q.Tool.define("Calendars/event", function(options) {
 			return;
 		}
 		return tool.getPaymentStatus().then(function(data) {
-			if (Q.getObject("slots.payment", data)) {
-				var p = data.slots.payment;
-				state.payment.content += p ? ' (' + tool.text.payment.info.paid + ')' : '';
-				state.payment.date = p.insertedTime;
+			var status = Q.getObject("slots.status", data);
+			if (!status) {
+				return;
 			}
+
+			state.payment.content += status ? ' (' + tool.text.payment.info.paid + ')' : '';
+			state.payment.date = status.insertedTime;
 		}).catch(function(err) {
 			console.warn(err);
 		}).then(function() {
