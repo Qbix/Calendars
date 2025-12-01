@@ -488,7 +488,7 @@ class Calendars_Event extends Base_Calendars_Event
 			$fields['writeLevel'] = 0;
 			$fields['adminLevel'] = 0;
 		} elseif ($r['payment']) {
-			$fields['readLevel'] = Streams::$READ_LEVEL['content'];
+			//$fields['readLevel'] = Streams::$READ_LEVEL['content'];
 		}
 
 		// save the event in the database
@@ -924,7 +924,7 @@ class Calendars_Event extends Base_Calendars_Event
 						if (!Q::ifset($options, "autoCharge", false)) {
 							throw new Streams_Exception_Payment();
 						}
-						Q::event("Assets/credits/post", array(
+						Q::event("Assets/pay/post", array(
 							"amount" => $resAmount,
 							"currency" => $payment["currency"],
 							"toStream" => $stream,
