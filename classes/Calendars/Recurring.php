@@ -376,7 +376,7 @@ class Calendars_Recurring
 					$going = "no";
 				}
 				Calendars_Event::rsvp($event, $participant->userId, $going, array(
-					"forcePayment" => true,
+					"autoCharge" => true,
 					"relatedParticipants" => $relatedParticipants,
 					"skipRecurringParticipant" => true
 				));

@@ -67,7 +67,7 @@ function Calendars_going_post($params)
 			$participant = Calendars_Event::rsvp($stream, $user->id, $going);
 			break;
 		case 'yes':
-			$participant = Calendars_Event::rsvp($stream, $user->id, $going, array("forcePayment" => true));
+			$participant = Calendars_Event::rsvp($stream, $user->id, $going, array("autoCharge" => true));
 			break;
 	}
 

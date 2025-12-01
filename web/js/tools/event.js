@@ -29,7 +29,7 @@ var Places = Q.Places;
  *   @param {Object} [relatedParticipants] Object with settings for related participants
  *   @param {String} [relatedParticipants.currency='credits'] Currency to show
  *   @param {Boolean} [relatedParticipants.showMath=true] Whether to show summary credits calculation
- *   @param {Array} [options.skipClickable] List of selectors which will skiped from apply Q/clickable plugin.
+ *   @param {Array} [options.skipClickable] List of selectors for which we should not apply Q/clickable plugin.
  *   @param {Q.Event} [options.onRefresh] Occurs when the tool is refreshed
  *   @param {Q.Event} [options.onGoing] Occurs right after tool is refreshed or when someone clicks on on of the "going" buttons
  *   @param {Q.Event} [options.onTitleChanged] Occurs when event title changed
@@ -413,7 +413,9 @@ Q.Tool.define("Calendars/event", function(options) {
 				tool.$rsvpElement = $(".Calendars_going_prompt .Calendars_going", tool.element);
 				tool.getPaymentInfo();
 
-				Q.activate(tool.element, _proceed.bind(stream));
+				setTimeout(function () {
+					Q.activate(tool.element, _proceed.bind(stream));
+				}, 0);
 
 				tool.$('.Calendars_info .Q_button').click(function () {
 					var $this = $(this);
@@ -1464,8 +1466,9 @@ Q.Tool.define("Calendars/event", function(options) {
 	 * @method rsvp
 	 * @param {string} rsvp yes, no, maybe
 	 * @param {function} callback called on success
+	 * @param {Object} options any options to pass to Q.Users.login()
 	 */
-	rsvp: function (rsvp, callback) {
+	rsvp: function (rsvp, callback, options) {
 		var tool = this;
 		var $te = $(this.element);
 		var state = this.state;
@@ -1475,9 +1478,9 @@ Q.Tool.define("Calendars/event", function(options) {
 		var userId = Users.loggedInUserId();
 		if (!userId) {
 			var redirectUrl = Q.url(["event", state.publisherId, state.streamName.split('/').pop()].join('/') + "?rsvp=yes");
-			Q.Users.login({
-				successUrl: redirectUrl,
-			});
+			Q.Users.login(Q.extend({
+				successUrl: redirectUrl
+			}, options));
 			Q.Users.onComplete.setOnce(function () {
 				Q.handle(redirectUrl);
 			});
@@ -1659,7 +1662,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		}
 
 		function _pay(resolve, reject) {
-			Q.Assets.Credits.pay({
+			Q.Assets.pay({
 				amount: summary,
 				currency: paymentCurrency,
 				toStream: {
@@ -1718,7 +1721,9 @@ Q.Tool.define("Calendars/event", function(options) {
 		tool.$(".Calendars_info .Streams_aspect_chats")[state.show.chat ? "slideDown" : "slideUp"](300);
 
 		// if event location undefined, hide location section
-		if (Q.getObject("fields.location", tool.stream) && (tool.stream.testWriteLevel(40) || tool.stream.testPermission('Places/location'))) {
+		if (Q.plugins.Travel
+		&& Q.getObject("fields.location", tool.stream)
+		&& (tool.stream.testWriteLevel(40) || tool.stream.testPermission('Places/location'))) {
 			state.show.location = true;
 			state.show.trips = true;
 		} else {
@@ -1842,8 +1847,8 @@ Q.Tool.define("Calendars/event", function(options) {
 Q.Template.set('Calendars/event/tool',
 '<div class="Calendars_event_curtain">' +
 	'<div class="Q_tool Streams_preview_tool Streams_image_preview_tool Streams_internal_preview" ' +
-	'{{#if icon.src}}' +
-	' data-icon-src="{{icon.src}} ' +
+	'{{#if icon}}' +
+	' data-icon-src="{{icon}}"' +
 	'{{/if}}' +
 	'data-streams-preview=\'{"publisherId":"{{stream.fields.publisherId}}","streamName":"{{stream.fields.name}}", "cacheBust": false, "closeable": false, "imagepicker": {"cacheBust": false, "showSize": "500x", "save": "Calendars/event", "saveSizeName": "Calendars/event"}}\'>' +
 	'</div></div>' +

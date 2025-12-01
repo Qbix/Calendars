@@ -1,3 +1,7 @@
+:root {
+	--calendars-event-preview-height: 200px;
+}
+
 .Calendars_event_preview_tool .Streams_participants_tool {
 	white-space: nowrap;
 	height: 60px;
@@ -21,7 +25,7 @@
 }
 .Calendars_event_preview_container {
 	position: relative;
-	height: 140px;
+	height: var(--calendars-event-preview-height);
 	overflow: hidden;
 	width: 100%;
 	box-shadow: #222 0 2px 1px;
@@ -52,7 +56,7 @@
 .Calendars_event_preview_foreground {
 	position: absolute; top: 0; left: 0; right: 0; bottom: 0;
 	background: url(../img/bg/event-preview.png);
-	background-size: 100% 140px;
+	background-size: 100% var(--calendars-event-preview-height);
 	backdrop-filter: brightness(0.8) blur(10px);
 	-webkit-backdrop-filter: brightness(0.8) blur(10px);
 	font-size: 24px; color: white; text-shadow: black 0 0 4px;
@@ -237,7 +241,7 @@
 /* <square template> */
 .Calendars_event_preview_tool.Calendars_event_preview_template_square .Calendars_event_preview_container {
 	white-space: nowrap;
-	height: 140px;
+	height: var(--calendars-event-preview-height);
 	box-shadow: #222 0 0 1px;
 }
 @media (max-width: 680px) {
@@ -249,7 +253,7 @@
 	display:inline-block;
 	position: relative;
 	filter: none;
-	width: 140px;
+	width: var(--calendars-event-preview-height);
 }
 @media (max-width: 680px) {
 	.Calendars_event_preview_tool.Calendars_event_preview_template_square .Calendars_event_preview_background {
@@ -258,7 +262,7 @@
 }
 .Calendars_event_preview_tool.Calendars_event_preview_template_square .Calendars_event_preview_foreground {
 	display:inline-block;
-	width: calc(100% - 140px);
+	width: calc(100% - var(--calendars-event-preview-height));
 	position: relative;
 	background: none;
 	background-color: #f8f8f8;
@@ -309,7 +313,7 @@
 	position: relative;
 	background: none;
 	background-color: #f8f8f8;
-	height: 140px;
+	height: var(--calendars-event-preview-height);
 }
 .Calendars_event_preview_tool.Calendars_event_preview_template_tall .Calendars_event_title {
 	position: relative;

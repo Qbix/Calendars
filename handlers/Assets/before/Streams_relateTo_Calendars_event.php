@@ -50,7 +50,7 @@ function Assets_before_Streams_relateTo_Calendars_event ($params) {
 
 	if (class_exists("Assets_Credits")) {
 		$needCredits = Assets_Credits::convert($amount, $currency, "credits");
-		$forcePayment = true;
-		Assets_Credits::spend($needCredits, Assets::JOINED_PAID_STREAM, $stream->publisherId, @compact("toPublisherId", "toStreamName", "fromPublisherId", "fromStreamName", "forcePayment"));
+		$autoCharge = true;
+		Assets_Credits::spend($needCredits, Assets::JOINED_PAID_STREAM, $stream->publisherId, @compact("toPublisherId", "toStreamName", "fromPublisherId", "fromStreamName", "autoCharge"));
 	}
 }
