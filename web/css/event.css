@@ -398,7 +398,7 @@
 }
 
 .Calendars_event_title_label {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(100, 100, 100, 0.75);
 	font-size: 14px;
 }
 .Calendars_event_tool .Streams_participants_tool .Users_avatar_tool .Users_avatar_icon {

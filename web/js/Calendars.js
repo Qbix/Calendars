@@ -680,6 +680,10 @@ Calendars.Recurring = {
 	}
 };
 
+Q.Text.get('Calendars/content', function (err, text) {
+	Q.text.Calendars = text;
+});
+
 Calendars.Recurring.dialog.options = {
 	period: "weekly",
 	days: [],
