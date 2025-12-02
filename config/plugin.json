@@ -286,6 +286,9 @@
 			},
 			"icon": {
 				"search": ["google"]
+			},
+			"mode": {
+				"prepayment": false /* mode which use going 'maybe' instead 'yes' when user first participated and pay $1 */
 			}
 		},
 		"user": {

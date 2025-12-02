@@ -124,7 +124,9 @@
             "CancelReservation": "Cancel entire reservation",
             "Total": "Total",
             "RequiredRelatedParticipants": "This event requires participants: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Please edit availability \"{{title}}\" to update recurring settings"
+            "AvailabilityWarning": "Please edit availability \"{{title}}\" to update recurring settings",
+            "Prepayment": "Prepayment",
+            "PrepaymentConfirm": "We'll charge a nominal fee of $1. You'll receive the corresponding number of credits. These credits will be applied toward your full payment for the event."
         },
         "composer": {
             "SetLocation": "Set My Location",
