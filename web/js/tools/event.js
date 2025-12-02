@@ -1963,7 +1963,7 @@ Q.Template.set('Calendars/event/tool',
 	'</div></div>' +
 	'{{#if show.hosts}}' +
 	'  <div class="Calendars_event_hosts">' +
-	'    {{{tool "Users/avatar" icon=50 userId=stream.fields.publisherId className="Calendars_event_publisher" templates-contents-name="Calendars/event/hosts/avatar/contents"}}}' +
+	'    {{{tool "Users/avatar" icon=1000 userId=stream.fields.publisherId className="Calendars_event_publisher" templates-contents-name="Calendars/event/hosts/avatar/contents"}}}' +
 	'  </div>' +
 	'{{/if}}' +
 	'{{#if show.participants}}' +

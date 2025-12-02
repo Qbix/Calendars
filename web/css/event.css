@@ -95,7 +95,7 @@
     position: absolute;
     top: -25px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -80%) scale(1.4);
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 	background: var(--html-bg-color);
 }
