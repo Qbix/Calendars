@@ -488,8 +488,10 @@ class Calendars_Event extends Base_Calendars_Event
 			$fields['writeLevel'] = 0;
 			$fields['adminLevel'] = 0;
 		} elseif ($r['payment']) {
-			//$fields['readLevel'] = Streams::$READ_LEVEL['content'];
-		}
+            // because of changes in global access model (relation access 20 while fields access 25) we can't read attributes with level 20
+            // so decided to leave readLevel 40
+            //$fields['readLevel'] = 20;
+        }
 
 		// save the event in the database
 		$event = Streams::create(null, $publisherId, 'Calendars/event', $fields);
@@ -1005,8 +1007,11 @@ class Calendars_Event extends Base_Calendars_Event
 		$startTime = $stream->getAttribute('startTime');
 		$participant->setExtra(@compact('going', 'startTime'));
 		if ($going === 'no') {
-			$participant->revokeRoles("attendee");
+			$participant->revokeRoles(["attendee", "requested"]);
+        } elseif($going === 'maybe') {
+            $participant->grantRoles("requested");
 		} else {
+            $participant->revokeRoles("requested");
 			$participant->grantRoles("attendee");
 		}
 		$participant->save();
