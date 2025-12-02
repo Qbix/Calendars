@@ -1671,19 +1671,6 @@ Q.Tool.define("Calendars/event", function(options) {
 		}
 
 		function _pay(resolve, reject) {
-			Q.Assets.Payments.stripe({
-				amount: 0, // needCredits - currentCredits,
-				currency: options.currency || 'USD',
-				reason: 'EventParticipation',
-				onSuccess: function () {
-					
-				},
-			}, function(err, data) {
-				if (err) {
-					return;
-				}
-				_relate();
-			});
 			Q.Assets.pay({
 				amount: summary,
 				currency: paymentCurrency,
