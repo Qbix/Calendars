@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Terima kasih kerana berminat dengan {{title}}"
+	},
+	"approved": {
+		"Subject": "Kehadiran Diluluskan",
+		"AttendanceApproved": "tahniah! Kehadiran anda telah diluluskan untuk {{title}}"
+	},
+	"requested": {
+		"Subject": "Kehadiran Dipohon",
+		"AttendanceRequested": "Kami mengesahkan permintaan anda untuk hadir: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Kehadiran Tidak Diluluskan",
+		"AttendanceRejected": "Pentadbir tidak meluluskan permintaan anda untuk hadir: {{title}}"
+	},
+	"paid": {
+		"Subject": "Pengesahan Pembayaran Berjaya",
+		"YouveBeenCharged": "Anda telah dicaj {{amount}} {{currency}} (dan {{credits}} kredit). Anda sudah bersedia! Jumpa anda di {{title}}"
+	}
+}

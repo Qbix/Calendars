@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Go raibh maith agat as do sp\u00e9is i {{title}}"
+	},
+	"approved": {
+		"Subject": "Tinreamh ceadaithe",
+		"AttendanceApproved": "Comhghairdeas! T\u00e1 do l\u00e1ithreacht ceadaithe do {{title}}"
+	},
+	"requested": {
+		"Subject": "Iarradh l\u00e1ithreacht",
+		"AttendanceRequested": "T\u00e1imid ag deimhni\u00fa d\u2019iarratais chun freastal: {{title}}"
+	},
+	"rejected": {
+		"Subject": "N\u00edor ceada\u00edodh l\u00e1ithreacht",
+		"AttendanceRejected": "N\u00edor cheadaigh na riarth\u00f3ir\u00ed d\u2019iarratas freastal: {{title}}"
+	},
+	"paid": {
+		"Subject": "Deimhni\u00fa \u00cdoca\u00edochta Rath\u00fail",
+		"YouveBeenCharged": "Gearradh {{amount}} {{currency}} ort (agus creidmheas {{credits}} ). T\u00e1 gach rud r\u00e9idh! Feicfidh m\u00e9 th\u00fa ag {{title}}"
+	}
+}

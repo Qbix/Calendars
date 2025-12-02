@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "D\u011bkujeme za v\u00e1\u0161 z\u00e1jem o {{title}}"
+	},
+	"approved": {
+		"Subject": "\u00da\u010dast schv\u00e1lena",
+		"AttendanceApproved": "Gratulujeme! Va\u0161e \u00fa\u010dast na kurzu {{title}} byla schv\u00e1lena."
+	},
+	"requested": {
+		"Subject": "Po\u017eadovan\u00e1 \u00fa\u010dast",
+		"AttendanceRequested": "Potvrzujeme va\u0161i \u017e\u00e1dost o \u00fa\u010dast: {{title}}"
+	},
+	"rejected": {
+		"Subject": "\u00da\u010dast neschv\u00e1lena",
+		"AttendanceRejected": "Administr\u00e1to\u0159i neschv\u00e1lili va\u0161i \u017e\u00e1dost o \u00fa\u010dast: {{title}}"
+	},
+	"paid": {
+		"Subject": "\u00dasp\u011b\u0161n\u00e9 potvrzen\u00ed platby",
+		"YouveBeenCharged": "Bylo v\u00e1m na\u00fa\u010dtov\u00e1no {{amount}} {{currency}} (a {{credits}} kredit\u016f). V\u0161e je p\u0159ipraveno! Uvid\u00edme se ve {{title}}"
+	}
+}

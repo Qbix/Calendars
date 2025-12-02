@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "V\u0103 mul\u021bumim pentru interesul acordat companiei {{title}}"
+	},
+	"approved": {
+		"Subject": "Prezen\u021b\u0103 aprobat\u0103",
+		"AttendanceApproved": "Felicit\u0103ri! Prezen\u021ba dumneavoastr\u0103 a fost aprobat\u0103 pentru {{title}}"
+	},
+	"requested": {
+		"Subject": "Prezen\u021b\u0103 solicitat\u0103",
+		"AttendanceRequested": "Confirm\u0103m solicitarea dumneavoastr\u0103 de participare: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Prezen\u021b\u0103 neaprobat\u0103",
+		"AttendanceRejected": "Administratorii nu au aprobat solicitarea dvs. de participare: {{title}}"
+	},
+	"paid": {
+		"Subject": "Confirmarea pl\u0103\u021bii reu\u0219ite",
+		"YouveBeenCharged": "\u021ai s-au facturat {{amount}} {{currency}} (\u0219i {{credits}} credite). E\u0219ti gata! Ne vedem la {{title}}"
+	}
+}

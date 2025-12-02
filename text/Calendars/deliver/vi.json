@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "C\u1ea3m \u01a1n b\u1ea1n \u0111\u00e3 quan t\u00e2m \u0111\u1ebfn {{title}}"
+	},
+	"approved": {
+		"Subject": "\u0110\u00e3 ch\u1ea5p thu\u1eadn tham d\u1ef1",
+		"AttendanceApproved": "Xin ch\u00fac m\u1eebng! S\u1ef1 tham d\u1ef1 c\u1ee7a b\u1ea1n \u0111\u00e3 \u0111\u01b0\u1ee3c ch\u1ea5p thu\u1eadn cho {{title}}"
+	},
+	"requested": {
+		"Subject": "Y\u00eau c\u1ea7u tham d\u1ef1",
+		"AttendanceRequested": "Ch\u00fang t\u00f4i \u0111ang x\u00e1c nh\u1eadn y\u00eau c\u1ea7u tham d\u1ef1 c\u1ee7a b\u1ea1n: {{title}}"
+	},
+	"rejected": {
+		"Subject": "\u0110i\u1ec3m danh kh\u00f4ng \u0111\u01b0\u1ee3c ch\u1ea5p thu\u1eadn",
+		"AttendanceRejected": "Qu\u1ea3n tr\u1ecb vi\u00ean kh\u00f4ng ch\u1ea5p thu\u1eadn y\u00eau c\u1ea7u tham d\u1ef1 c\u1ee7a b\u1ea1n: {{title}}"
+	},
+	"paid": {
+		"Subject": "X\u00e1c nh\u1eadn thanh to\u00e1n th\u00e0nh c\u00f4ng",
+		"YouveBeenCharged": "B\u1ea1n \u0111\u00e3 b\u1ecb tr\u1eeb {{amount}} {{currency}} (v\u00e0 {{credits}} \u0111i\u1ec3m t\u00edn d\u1ee5ng). B\u1ea1n \u0111\u00e3 ho\u00e0n t\u1ea5t! H\u1eb9n g\u1eb7p l\u1ea1i b\u1ea1n t\u1ea1i {{title}}"
+	}
+}

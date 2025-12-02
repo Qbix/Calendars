@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "T\u00e4name teid huvi eest {{title}} vastu"
+	},
+	"approved": {
+		"Subject": "Kohalolek heaks kiidetud",
+		"AttendanceApproved": "Palju \u00f5nne! Teie osalemine {{title}} klassis on kinnitatud."
+	},
+	"requested": {
+		"Subject": "Soovitud osalemine",
+		"AttendanceRequested": "Kinnitame teie osalemistaotlust: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Kohalolek ei ole kinnitatud",
+		"AttendanceRejected": "Administraatorid ei kinnitanud teie osalemistaotlust: {{title}}"
+	},
+	"paid": {
+		"Subject": "Eduka makse kinnitus",
+		"YouveBeenCharged": "Teilt on v\u00f5etud {{amount}} {{currency}} (ja {{credits}} krediiti). K\u00f5ik on valmis! N\u00e4eme {{title}} s"
+	}
+}

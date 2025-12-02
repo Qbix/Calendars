@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Eskerrik asko {{title}} n interesa agertzeagatik."
+	},
+	"approved": {
+		"Subject": "Bertaratzea onartuta",
+		"AttendanceApproved": "Zorionak! Zure bertaratzea {{title}} onartu da."
+	},
+	"requested": {
+		"Subject": "Bertaratzea eskatuta",
+		"AttendanceRequested": "Zure eskaera baieztatzen ari gara: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Bertaratzea ez da onartu",
+		"AttendanceRejected": "Administratzaileek ez dute zure bertaratzeko eskaera onartu: {{title}}"
+	},
+	"paid": {
+		"Subject": "Ordainketa arrakastatsua baieztatzea",
+		"YouveBeenCharged": "{{amount}} {{currency}} (eta {{credits}} kreditu) kobratu dizkizute. Prest zaude! {{title}} ikusiko dugu elkar."
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "{{title}} il\u0259 maraqland\u0131\u011f\u0131n\u0131z \u00fc\u00e7\u00fcn t\u0259\u015f\u0259kk\u00fcr edirik"
+	},
+	"approved": {
+		"Subject": "\u0130\u015ftirak t\u0259sdiql\u0259ndi",
+		"AttendanceApproved": "T\u0259brik edirik! Sizin i\u015ftirak\u0131n\u0131z {{title}} \u00fc\u00e7\u00fcn t\u0259sdiql\u0259ndi"
+	},
+	"requested": {
+		"Subject": "\u0130\u015ftirak t\u0259l\u0259b olunur",
+		"AttendanceRequested": "\u0130\u015ftirak etm\u0259k ist\u0259yinizi t\u0259sdiq edirik: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Davamiyy\u0259t T\u0259sdiql\u0259nm\u0259di",
+		"AttendanceRejected": "Adminl\u0259r i\u015ftirak etm\u0259k ist\u0259yinizi t\u0259sdiq etm\u0259di: {{title}}"
+	},
+	"paid": {
+		"Subject": "U\u011furlu \u00d6d\u0259ni\u015f T\u0259sdiqi",
+		"YouveBeenCharged": "Sizd\u0259n {{amount}} {{currency}} (v\u0259 {{credits}} kredit) tutuldu. Ham\u0131n\u0131z haz\u0131rs\u0131n\u0131z! {{title}} d\u0259 g\u00f6r\u00fc\u015f\u0259n\u0259d\u0259k"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Paldies par j\u016bsu interesi par {{title}}"
+	},
+	"approved": {
+		"Subject": "Apmekl\u0113jums apstiprin\u0101ts",
+		"AttendanceApproved": "Apsveicam! J\u016bsu dal\u012bba {{title}} sesij\u0101 ir apstiprin\u0101ta."
+	},
+	"requested": {
+		"Subject": "Piepras\u012bta dal\u012bba",
+		"AttendanceRequested": "M\u0113s apstiprin\u0101m j\u016bsu pieteikumu dal\u012bbai: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Apmekl\u0113jums nav apstiprin\u0101ts",
+		"AttendanceRejected": "Administratori neapstiprin\u0101ja j\u016bsu piepras\u012bjumu piedal\u012bties: {{title}}"
+	},
+	"paid": {
+		"Subject": "Veiksm\u012bga maks\u0101juma apstiprin\u0101jums",
+		"YouveBeenCharged": "No jums ir iekas\u0113ta summa {{amount}} {{currency}} (un {{credits}} kred\u012bts). Viss gatavs! Tiekamies {{title}}"
+	}
+}

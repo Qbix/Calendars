@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Asante kwa shauku yako katika {{title}}"
+	},
+	"approved": {
+		"Subject": "Mahudhurio Yameidhinishwa",
+		"AttendanceApproved": "Hongera! Mahudhurio yako yameidhinishwa kwa {{title}}"
+	},
+	"requested": {
+		"Subject": "Mahudhurio Yameombwa",
+		"AttendanceRequested": "Tunathibitisha ombi lako la kuhudhuria: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Mahudhurio Hayajaidhinishwa",
+		"AttendanceRejected": "Wasimamizi hawakuidhinisha ombi lako la kuhudhuria: {{title}}"
+	},
+	"paid": {
+		"Subject": "Uthibitishaji wa Malipo Mafanikio",
+		"YouveBeenCharged": "Umetozwa {{amount}} {{currency}} (na mikopo {{credits}} ). Uko tayari! Tukutane kwa {{title}}"
+	}
+}

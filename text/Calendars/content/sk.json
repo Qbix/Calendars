@@ -1,333 +1,342 @@
 {
-    "months": {
-        "Jan": "jan",
-        "Feb": "feb",
-        "Mar": "Mar",
-        "Apr": "Apr",
-        "May": "Smieť",
-        "Jun": "jún",
-        "Jul": "júl",
-        "Aug": "Aug",
-        "Sep": "sept",
-        "Oct": "okt",
-        "Nov": "nov",
-        "Dec": "dec"
-    },
-    "monthsLong": {
-        "Jan": "januára",
-        "Feb": "februára",
-        "Mar": "marca",
-        "Apr": "apríla",
-        "May": "Smieť",
-        "Jun": "júna",
-        "Jul": "júla",
-        "Aug": "augusta",
-        "Sep": "septembra",
-        "Oct": "októbra",
-        "Nov": "novembra",
-        "Dec": "December"
-    },
-    "weekdays": {
-        "Sun": "slnko",
-        "Mon": "Po",
-        "Tue": "Ut",
-        "Wed": "St",
-        "Thu": "Št",
-        "Fri": "Pia",
-        "Sat": "So"
-    },
-    "weekdaysLong": {
-        "Sun": "nedeľu",
-        "Mon": "pondelok",
-        "Tue": "utorok",
-        "Wed": "streda",
-        "Thu": "štvrtok",
-        "Fri": "piatok",
-        "Sat": "sobota"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "Naplánujte si novú udalosť"
-        },
-        "tool": {
-            "HostedBy": "Hostiteľ: {{name}}",
-            "Name": "názov",
-            "AreYouIn": "si tam?",
-            "Yes": "Áno",
-            "No": "nie",
-            "Ok": "Dobre",
-            "Cancel": "Zrušiť",
-            "Maybe": "Možno",
-            "Conversation": "Konverzácia",
-            "Promote": "Propagujte toto podujatie",
-            "Reminders": "Pripomienky",
-            "RemindersLabel": "Chcem byť informovaný o udalosti v:",
-            "MoreInfo": "Viac informácií",
-            "Registration": "Registrácia",
-            "SetReminders": "Nastavte si pripomienky",
-            "ReservationFee": "Rezervačný poplatok",
-            "AddParticipants": "Pridať účastníkov",
-            "ManageReservation": "Spravovať rezerváciu",
-            "UpdateFutureReservations": "Chcete tiež aktualizovať všetky budúce rezervácie rovnakým spôsobom?",
-            "RecurringAdmin": "Opakujúce sa nastavenia",
-            "MakeReservation": "Urobiť rezerváciu",
-            "StartLiveStream": "Kliknutím spustíte priamy prenos",
-            "LiveStreamEnded": "Priamy prenos sa skončil",
-            "ClickToViewRecording": "kliknutím zobrazíte záznam",
-            "Checkin": "Naskenujte kódy účastníkov",
-            "Myqr": "Check In",
-            "CloseEvent": {
-                "button": "Zrušiť udalosť",
-                "confirm": {
-                    "text": {
-                        "Cancel": "Naozaj chcete zrušiť túto udalosť?",
-                        "Participant": "V tejto udalosti je 1 účastník",
-                        "Participants": "Tejto udalosti je {{count}} účastníkov",
-                        "Recurring": "Táto udalosť sa opakuje. Chcete tiež zrušiť všetky jeho budúce inštancie?"
-                    },
-                    "trip": {
-                        "Cancel": "Chcete tiež zrušiť svoju cestu {{tripDirection}} na túto udalosť?",
-                        "Passengers": "Existuje {{passengerCount}} cestujúcich, ktorí sa na vás spoliehajú.",
-                        "Title": "Zatvoriť cestu"
-                    },
-                    "directions": {
-                        "TO": "TO",
-                        "FROM": "OD",
-                        "to": "do",
-                        "from": "od"
-                    }
-                }
-            },
-            "Calendar": "Kalendár",
-            "Interests": "Záujmy",
-            "Directions": "Inštrukcie",
-            "TitleOfEvent": "Názov podujatia:",
-            "OpenTo": "Otvorený do",
-            "GoingTo": "bude o",
-            "NotGoingTo": "nebude pri",
-            "MaybeGoingTo": "bude možno o",
-            "AdminDontPay": "Admin nemusí platiť",
-            "PublisherDontPay": "Vydavateľ nemusí platiť",
-            "EmptyList": "Prázdny zoznam",
-            "NeedToPayCredits": "Je potrebné zaplatiť: <span>{{amount}} kreditov<\/span>",
-            "PleaseJoinParticipants": "Pripojte sa k {{participant}}",
-            "YouReservingPlace": "Budete si rezervovať svoje miesto.",
-            "SelectIncludesToAdd": "Vyberte jeden alebo viac {{TypeDisplayPlural}} na pridanie:",
-            "YouHaveNotRegisteredAnyIncluded": "Zatiaľ ste nezaregistrovali žiadne {{TypeDisplayPlural}}",
-            "Proceed": "Pokračujte",
-            "MakeChanges": "Uložiť moje zmeny",
-            "CancelReservation": "Zrušiť celú rezerváciu",
-            "Total": "Celkom",
-            "RequiredRelatedParticipants": "Táto udalosť vyžaduje účastníkov: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Ak chcete aktualizovať opakujúce sa nastavenia, upravte dostupnosť „{{title}}“.",
-            "Presentation": "Prezentácia",
-            "YouAreNotParticipated": "Nie ste účastníkom udalosti",
-            "LiveStreamStarted": "Priamy prenos sa začal",
-            "WebRTCStarted": "Telekonferencia začala",
-            "WebRTCEnded": "Telekonferencia sa skončila"
-        },
-        "composer": {
-            "SetLocation": "Nastaviť moju polohu",
-            "SetInfoLink": "Nastavte odkaz na ďalšie informácie",
-            "ChooseAvailability": "Vyberte Dostupnú službu",
-            "ChooseActivity": "Vyberte aktivitu",
-            "ChoosePublisher": "Vyberte Vydavateľ",
-            "Day": "deň",
-            "Starting": "Spustenie",
-            "Duration": "Trvanie",
-            "Hour": "hodina",
-            "Hours": "hodiny",
-            "Minutes": "Minúty",
-            "Ending": "Koniec",
-            "People": "Ľudia",
-            "Share": "zdieľam",
-            "Continue": "ďalej",
-            "Recurring": "Opakujúce sa",
-            "RecurringTitle": "Opakujúce sa dni",
-            "Daily": "Denne",
-            "Weekly": "Týždenne",
-            "Monthly": "Mesačne",
-            "SelectLocation": "Najprv vyberte miesto.",
-            "eventType": "Typ udalosti",
-            "EditTitle": "Vymyslite zaujímavý názov...",
-            "SetTitle": "Nastavte názov udalosti",
-            "ScheduleOnlineConference": "Naplánujte si online konferenciu",
-            "SOCDescription": "Zadajte čas začiatku a konca konferencie. Každá osoba, ktorá navštívi udalosť počas tohto časového obdobia, sa automaticky pripojí k online konferencii.",
-            "EndDate": "Koniec",
-            "location": {
-                "Title": "Nastavte svoju polohu"
-            },
-            "interest": {
-                "Title": "Vyberte aktivitu",
-                "Filter": "Hľadať záujmy..."
-            },
-            "SetLivestream": "Prilepte odkaz na priamy prenos \/ videokonferenciu",
-            "Locally": "lokálne",
-            "EventInfoLink": "Odkaz na informácie o udalosti",
-            "TicketPurchaseLink": "Odkaz na nákup lístkov"
-        },
-        "EventAlreadyClosed": "Táto udalosť je už uzavretá",
-        "addToCalendar": {
-            "permissions": {
-                "title": "Pridať do kalendára?",
-                "prompt": "Chceli by ste pridať túto udalosť do svojho kalendára?",
-                "yes": "Áno",
-                "no": "nie"
-            },
-            "dialog": {
-                "Title": "Pridajte udalosť do svojho kalendára"
-            }
-        },
-        "ErrorLeaveEndedEvent": "Ľutujeme, ale ukončenú udalosť nemôžete opustiť"
-    },
-    "availabilities": {
-        "Title": "Dostupnosť",
-        "NewAvailability": {
-            "Title": "Nová dostupnosť",
-            "SaveAvailability": "Uložiť dostupnosť",
-            "SelectTemplate": "Vyberte položku Služba",
-            "SelectLocation": "Vyberte umiestnenie",
-            "SelectArea": "Vyberte oblasť",
-            "Type": "Typ",
-            "Weekly": "Týždenne",
-            "RecurringStartDate": "Opakovaný dátum začiatku",
-            "EndDate": "Dátum ukončenia",
-            "SelectTime": "Spravujte časové sloty",
-            "SelectTimeSlot": "Vyberte časový úsek",
-            "SelectTimeSlots": "Vyberte požadované časové úseky",
-            "PeopleMin": "Minimálna návštevnosť",
-            "PeopleMax": "Maximálny počet návštevníkov",
-            "PeopleLabels": "Roly povolené",
-            "Next": "Ďalšie",
-            "Back": "späť",
-            "RecurringEndDate": "Opakujúci sa dátum ukončenia",
-            "ScheduleOnlineConference": "Naplánujte si telekonferenciu",
-            "SetLivestream": "Prilepte odkaz na priamy prenos \/ videokonferenciu",
-            "SelectTimeZone": "Vyberte časové pásmo"
-        },
-        "EditAvailability": "Upraviť dostupnosť",
-        "SetVisitors": "Nastaviť návštevníkov",
-        "Price": "cena",
-        "SelectAction": "Vyberte akciu",
-        "OpenProfile": "Otvorte profil",
-        "RemoveStaff": "Odstráňte personál",
-        "PleaseSelectTimeSlots": "Vyberte časové úseky",
-        "ExceptionOccurred": "Nastala výnimka",
-        "NotEnoughCreditsToParticipateEvents": "Nedostatok kreditov na účasť na {{eventsAmount}} udalostiach. Potrebujete {{100}} kreditov. Chcieť kúpiť?",
-        "LiveStream": "Živý prenos",
-        "InviteStaff": "Pozvite personál"
-    },
-    "recurring": {
-        "dialog": {
-            "startDate": "Dátum začiatku",
-            "endDate": "Dátum ukončenia",
-            "justOnce": "Len raz",
-            "justOnceWeekly": "Len tento týždeň",
-            "justOnceMonthly": "Len tento mesiac",
-            "recurring": "Opakujúce sa"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "Bezplatná akcia",
-            "optional": "Voliteľný príspevok",
-            "required": "Požadovaná platba"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "Voliteľný príspevok",
-            "required": "Požadovaná platba",
-            "paid": "zaplatené"
-        },
-        "confirmationDialog": {
-            "title": "Potvrdenie platby",
-            "content": "Táto udalosť má nepovinný príspevok vo výške {{amount}}.",
-            "button": "Prispieť"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} ešte nie je súčasťou udalosti. Chcete ich pridať ako účastníkov?",
-        "userNotFound": "Užívateľ Nenájdený",
-        "confirmYes": "Áno",
-        "confirmNo": "nie"
-    },
-    "notifications": {
-        "EventActivityIn": "Aktivita udalosti v {{{stream.fields.title}}}",
-        "RecurringRulesChanged": "Opakujúce sa pravidlá sa zmenili pre udalosť {{{call 'message.getInstruction' 'eventTitle'}}}",
-        "ManageEmailSubscriptions": "spravujte svoje odbery e-mailov",
-        "IfUnsubscribe": "Ak sa chcete odhlásiť",
-        "ClickHereToVisitEvent": "Ak chcete navštíviť udalosť, kliknite sem",
-        "Calendars\/reminder": "Udalosť „{{{call 'message.getInstruction' 'name'}}“ sa začne o {{&call 'message.getInstruction' 'time'}}}",
-        "webrtc": {
-            "Started": "Telekonferencia začala",
-            "Ended": "Telekonferencia sa skončila"
-        },
-        "livestream": {
-            "Started": "Živý prenos sa začal",
-            "Ended": "Priamy prenos sa skončil",
-            "ClickToView": "Pozrite si to tu."
-        }
-    },
-    "import": {
-        "linkTitle": "Vyplňte túto tabuľku",
-        "fileLabel": "Nahrať tabuľku:",
-        "importOptions": "možnosti",
-        "importProgress": "Pokrok",
-        "sampleCSV": "Stiahnite si vzorový CSV",
-        "joinEventLabel": "Pripojte používateľov k náhodnej udalosti",
-        "smsText": "Ahoj, práve som ti poslal odkaz na {{communityName}}. Skontrolujte si to.",
-        "emailSubject": "Práve som vám poslal odkaz",
-        "emailBody": "Ahoj, práve som ti poslal pozvánku na {{communityName}}. Skontrolujte si to.",
-        "fileNotFound": "Ľutujeme, súbor CSV sa nenašiel.",
-        "fileEmpty": "Ľutujeme, súbor CSV je prázdny.",
-        "fieldNotFound": "Povinné pole „{{1}}“ sa nenašlo",
-        "userIdNotFound": "používateľ existuje, ale ID je prázdne",
-        "activateUsers": "poslať aktivačnú správu používateľom?",
-        "taskStreamInvalid": "tok úloh je neplatný",
-        "instructionsEmpty": "inštrukcie toku úloh sú prázdne",
-        "interestsEmpty": "nemôže získať záujmy",
-        "interestAbsent": "záujem {{1}} sa nenašiel",
-        "complete": "Dokončiť",
-        "errorLine": "riadok {{1}}",
-        "errorsTitle": "Vyskytli sa chyby",
-        "communityUsers": "Toto je zoznam komunít",
-        "toMainCommunityToo": "sa týkajú aj hlavnej komunity",
-        "ChooseFile": "vyberte súbor"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "Predstavuje udalosť, ktorej sa ľudia môžu zúčastniť",
-            "displayType": "Udalosť"
-        },
-        "Calendars\/recurring": {
-            "description": "Používa sa na súvisiace streamy, ktoré sa majú pravidelne opakovať",
-            "displayType": "Opakujúca sa udalosť"
-        }
-    },
-    "timeslots": {
-        "AddSlot": "Pridať slot",
-        "StartTime": "Doba spustenia",
-        "EndTime": "Čas ukončenia",
-        "Save": "Uložiť",
-        "AddTimeSlot": "Pridať časový slot",
-        "CopyFromDay": "Kopírovať zo dňa",
-        "Nearest": "Najbližšie",
-        "Today": "dnes",
-        "Tomorrow": "zajtra",
-        "AfterTomorrow": "Pozajtra"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "Prihláste sa na odber Kalendára",
-        "copyLinkBelow": "Kopírovať odkaz nižšie",
-        "goTo": "Ísť do:",
-        "pasteCopiedTo": "Prilepte skopírovaný odkaz do poľa „URL kalendára“.",
-        "clickAddCalendar": "Kliknite na tlačidlo „Pridať kalendár“.",
-        "copyLink": "Skopírovať odkaz",
-        "tapToCopy": "Klepnutím na tlačidlo nižšie skopírujete odkaz do schránky",
-        "linkCopied": "Odkaz bol skopírovaný",
-        "step2": "Odkaz bol skopírovaný. Ide o otvorenie Kalendára Google. Budete musieť vložiť odkaz do textového poľa, kliknúť na „Pridať kalendár“ a zatvoriť kartu (pozri snímku obrazovky nižšie)",
-        "calendarAppPreferences": "Otvorte Predvoľby v aplikácii Kalendár na Macu a nastavte Predvolenú aplikáciu Kalendár tak, ako je uvedené nižšie.",
-        "thenCloseDialog": "Potom zatvorte toto dialógové okno a prihláste sa na odber svojho kalendára!",
-        "success": "Kalendár bol úspešne synchronizovaný"
-    }
+	"months": {
+		"Jan": "jan",
+		"Feb": "feb",
+		"Mar": "Mar",
+		"Apr": "Apr",
+		"May": "Smie\u0165",
+		"Jun": "j\u00fan",
+		"Jul": "j\u00fal",
+		"Aug": "Aug",
+		"Sep": "sept",
+		"Oct": "okt",
+		"Nov": "nov",
+		"Dec": "dec"
+	},
+	"monthsLong": {
+		"Jan": "janu\u00e1ra",
+		"Feb": "febru\u00e1ra",
+		"Mar": "marca",
+		"Apr": "apr\u00edla",
+		"May": "Smie\u0165",
+		"Jun": "j\u00fana",
+		"Jul": "j\u00fala",
+		"Aug": "augusta",
+		"Sep": "septembra",
+		"Oct": "okt\u00f3bra",
+		"Nov": "novembra",
+		"Dec": "December"
+	},
+	"weekdays": {
+		"Sun": "slnko",
+		"Mon": "Po",
+		"Tue": "Ut",
+		"Wed": "St",
+		"Thu": "\u0160t",
+		"Fri": "Pia",
+		"Sat": "So"
+	},
+	"weekdaysLong": {
+		"Sun": "nede\u013eu",
+		"Mon": "pondelok",
+		"Tue": "utorok",
+		"Wed": "streda",
+		"Thu": "\u0161tvrtok",
+		"Fri": "piatok",
+		"Sat": "sobota"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Napl\u00e1nujte si nov\u00fa udalos\u0165"
+		},
+		"tool": {
+			"HostedBy": "Hostite\u013e: {{name}}",
+			"Name": "n\u00e1zov",
+			"AreYouIn": "si tam?",
+			"Yes": "\u00c1no",
+			"No": "nie",
+			"Ok": "Dobre",
+			"Cancel": "Zru\u0161i\u0165",
+			"Maybe": "Mo\u017eno",
+			"Conversation": "Konverz\u00e1cia",
+			"Promote": "Propagujte toto podujatie",
+			"Reminders": "Pripomienky",
+			"RemindersLabel": "Chcem by\u0165 informovan\u00fd o udalosti v:",
+			"MoreInfo": "Viac inform\u00e1ci\u00ed",
+			"Registration": "Registr\u00e1cia",
+			"SetReminders": "Nastavte si pripomienky",
+			"ReservationFee": "Rezerva\u010dn\u00fd poplatok",
+			"AddParticipants": "Prida\u0165 \u00fa\u010dastn\u00edkov",
+			"ManageReservation": "Spravova\u0165 rezerv\u00e1ciu",
+			"UpdateFutureReservations": "Chcete tie\u017e aktualizova\u0165 v\u0161etky bud\u00face rezerv\u00e1cie rovnak\u00fdm sp\u00f4sobom?",
+			"RecurringAdmin": "Opakuj\u00face sa nastavenia",
+			"MakeReservation": "Urobi\u0165 rezerv\u00e1ciu",
+			"StartLiveStream": "Kliknut\u00edm spust\u00edte priamy prenos",
+			"LiveStreamEnded": "Priamy prenos sa skon\u010dil",
+			"ClickToViewRecording": "kliknut\u00edm zobraz\u00edte z\u00e1znam",
+			"Checkin": "Naskenujte k\u00f3dy \u00fa\u010dastn\u00edkov",
+			"Myqr": "Check In",
+			"CloseEvent": {
+				"button": "Zru\u0161i\u0165 udalos\u0165",
+				"confirm": {
+					"text": {
+						"Cancel": "Naozaj chcete zru\u0161i\u0165 t\u00fato udalos\u0165?",
+						"Participant": "V tejto udalosti je 1 \u00fa\u010dastn\u00edk",
+						"Participants": "Tejto udalosti je {{count}} \u00fa\u010dastn\u00edkov",
+						"Recurring": "T\u00e1to udalos\u0165 sa opakuje. Chcete tie\u017e zru\u0161i\u0165 v\u0161etky jeho bud\u00face in\u0161tancie?"
+					},
+					"trip": {
+						"Cancel": "Chcete tie\u017e zru\u0161i\u0165 svoju cestu {{tripDirection}} na t\u00fato udalos\u0165?",
+						"Passengers": "Existuje {{passengerCount}} cestuj\u00facich, ktor\u00ed sa na v\u00e1s spoliehaj\u00fa.",
+						"Title": "Zatvori\u0165 cestu"
+					},
+					"directions": {
+						"TO": "TO",
+						"FROM": "OD",
+						"to": "do",
+						"from": "od"
+					}
+				}
+			},
+			"Calendar": "Kalend\u00e1r",
+			"Interests": "Z\u00e1ujmy",
+			"Directions": "In\u0161trukcie",
+			"TitleOfEvent": "N\u00e1zov podujatia:",
+			"OpenTo": "Otvoren\u00fd do",
+			"GoingTo": "bude o",
+			"NotGoingTo": "nebude pri",
+			"MaybeGoingTo": "bude mo\u017eno o",
+			"AdminDontPay": "Admin nemus\u00ed plati\u0165",
+			"PublisherDontPay": "Vydavate\u013e nemus\u00ed plati\u0165",
+			"EmptyList": "Pr\u00e1zdny zoznam",
+			"NeedToPayCredits": "Je potrebn\u00e9 zaplati\u0165: <span>{{amount}} kreditov</span>",
+			"PleaseJoinParticipants": "Pripojte sa k {{participant}}",
+			"YouReservingPlace": "Budete si rezervova\u0165 svoje miesto.",
+			"SelectIncludesToAdd": "Vyberte jeden alebo viac {{TypeDisplayPlural}} na pridanie:",
+			"YouHaveNotRegisteredAnyIncluded": "Zatia\u013e ste nezaregistrovali \u017eiadne {{TypeDisplayPlural}}",
+			"Proceed": "Pokra\u010dujte",
+			"MakeChanges": "Ulo\u017ei\u0165 moje zmeny",
+			"CancelReservation": "Zru\u0161i\u0165 cel\u00fa rezerv\u00e1ciu",
+			"Total": "Celkom",
+			"RequiredRelatedParticipants": "T\u00e1to udalos\u0165 vy\u017eaduje \u00fa\u010dastn\u00edkov: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "Ak chcete aktualizova\u0165 opakuj\u00face sa nastavenia, upravte dostupnos\u0165 \u201e{{title}}\u201c.",
+			"Presentation": "Prezent\u00e1cia",
+			"YouAreNotParticipated": "Nie ste \u00fa\u010dastn\u00edkom udalosti",
+			"LiveStreamStarted": "Priamy prenos sa za\u010dal",
+			"WebRTCStarted": "Telekonferencia za\u010dala",
+			"WebRTCEnded": "Telekonferencia sa skon\u010dila"
+		},
+		"composer": {
+			"SetLocation": "Nastavi\u0165 moju polohu",
+			"SetInfoLink": "Nastavte odkaz na \u010fal\u0161ie inform\u00e1cie",
+			"ChooseAvailability": "Vyberte Dostupn\u00fa slu\u017ebu",
+			"ChooseActivity": "Vyberte aktivitu",
+			"ChoosePublisher": "Vyberte Vydavate\u013e",
+			"Day": "de\u0148",
+			"Starting": "Spustenie",
+			"Duration": "Trvanie",
+			"Hour": "hodina",
+			"Hours": "hodiny",
+			"Minutes": "Min\u00faty",
+			"Ending": "Koniec",
+			"People": "\u013dudia",
+			"Share": "zdie\u013eam",
+			"Continue": "\u010falej",
+			"Recurring": "Opakuj\u00face sa",
+			"RecurringTitle": "Opakuj\u00face sa dni",
+			"Daily": "Denne",
+			"Weekly": "T\u00fd\u017edenne",
+			"Monthly": "Mesa\u010dne",
+			"SelectLocation": "Najprv vyberte miesto.",
+			"eventType": "Typ udalosti",
+			"EditTitle": "Vymyslite zauj\u00edmav\u00fd n\u00e1zov...",
+			"SetTitle": "Nastavte n\u00e1zov udalosti",
+			"ScheduleOnlineConference": "Napl\u00e1nujte si online konferenciu",
+			"SOCDescription": "Zadajte \u010das za\u010diatku a konca konferencie. Ka\u017ed\u00e1 osoba, ktor\u00e1 nav\u0161t\u00edvi udalos\u0165 po\u010das tohto \u010dasov\u00e9ho obdobia, sa automaticky pripoj\u00ed k online konferencii.",
+			"EndDate": "Koniec",
+			"location": {
+				"Title": "Nastavte svoju polohu"
+			},
+			"interest": {
+				"Title": "Vyberte aktivitu",
+				"Filter": "H\u013eada\u0165 z\u00e1ujmy..."
+			},
+			"SetLivestream": "Prilepte odkaz na priamy prenos / videokonferenciu",
+			"Locally": "lok\u00e1lne",
+			"EventInfoLink": "Odkaz na inform\u00e1cie o udalosti",
+			"TicketPurchaseLink": "Odkaz na n\u00e1kup l\u00edstkov"
+		},
+		"EventAlreadyClosed": "T\u00e1to udalos\u0165 je u\u017e uzavret\u00e1",
+		"addToCalendar": {
+			"permissions": {
+				"title": "Prida\u0165 do kalend\u00e1ra?",
+				"prompt": "Chceli by ste prida\u0165 t\u00fato udalos\u0165 do svojho kalend\u00e1ra?",
+				"yes": "\u00c1no",
+				"no": "nie"
+			},
+			"dialog": {
+				"Title": "Pridajte udalos\u0165 do svojho kalend\u00e1ra"
+			}
+		},
+		"ErrorLeaveEndedEvent": "\u013dutujeme, ale ukon\u010den\u00fa udalos\u0165 nem\u00f4\u017eete opusti\u0165"
+	},
+	"availabilities": {
+		"Title": "Dostupnos\u0165",
+		"NewAvailability": {
+			"Title": "Nov\u00e1 dostupnos\u0165",
+			"SaveAvailability": "Ulo\u017ei\u0165 dostupnos\u0165",
+			"SelectTemplate": "Vyberte polo\u017eku Slu\u017eba",
+			"SelectLocation": "Vyberte umiestnenie",
+			"SelectArea": "Vyberte oblas\u0165",
+			"Type": "Typ",
+			"Weekly": "T\u00fd\u017edenne",
+			"RecurringStartDate": "Opakovan\u00fd d\u00e1tum za\u010diatku",
+			"EndDate": "D\u00e1tum ukon\u010denia",
+			"SelectTime": "Spravujte \u010dasov\u00e9 sloty",
+			"SelectTimeSlot": "Vyberte \u010dasov\u00fd \u00fasek",
+			"SelectTimeSlots": "Vyberte po\u017eadovan\u00e9 \u010dasov\u00e9 \u00faseky",
+			"PeopleMin": "Minim\u00e1lna n\u00e1v\u0161tevnos\u0165",
+			"PeopleMax": "Maxim\u00e1lny po\u010det n\u00e1v\u0161tevn\u00edkov",
+			"PeopleLabels": "Roly povolen\u00e9",
+			"Next": "\u010eal\u0161ie",
+			"Back": "sp\u00e4\u0165",
+			"RecurringEndDate": "Opakuj\u00faci sa d\u00e1tum ukon\u010denia",
+			"ScheduleOnlineConference": "Napl\u00e1nujte si telekonferenciu",
+			"SetLivestream": "Prilepte odkaz na priamy prenos / videokonferenciu",
+			"SelectTimeZone": "Vyberte \u010dasov\u00e9 p\u00e1smo"
+		},
+		"EditAvailability": "Upravi\u0165 dostupnos\u0165",
+		"SetVisitors": "Nastavi\u0165 n\u00e1v\u0161tevn\u00edkov",
+		"Price": "cena",
+		"SelectAction": "Vyberte akciu",
+		"OpenProfile": "Otvorte profil",
+		"RemoveStaff": "Odstr\u00e1\u0148te person\u00e1l",
+		"PleaseSelectTimeSlots": "Vyberte \u010dasov\u00e9 \u00faseky",
+		"ExceptionOccurred": "Nastala v\u00fdnimka",
+		"NotEnoughCreditsToParticipateEvents": "Nedostatok kreditov na \u00fa\u010das\u0165 na {{eventsAmount}} udalostiach. Potrebujete {{100}} kreditov. Chcie\u0165 k\u00fapi\u0165?",
+		"LiveStream": "\u017div\u00fd prenos",
+		"InviteStaff": "Pozvite person\u00e1l"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "D\u00e1tum za\u010diatku",
+			"endDate": "D\u00e1tum ukon\u010denia",
+			"justOnce": "Len raz",
+			"justOnceWeekly": "Len tento t\u00fd\u017ede\u0148",
+			"justOnceMonthly": "Len tento mesiac",
+			"recurring": "Opakuj\u00face sa"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "Bezplatn\u00e1 akcia",
+			"optional": "Volite\u013en\u00fd pr\u00edspevok",
+			"required": "Po\u017eadovan\u00e1 platba"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "Volite\u013en\u00fd pr\u00edspevok",
+			"required": "Po\u017eadovan\u00e1 platba",
+			"paid": "zaplaten\u00e9"
+		},
+		"confirmationDialog": {
+			"title": "Potvrdenie platby",
+			"content": "T\u00e1to udalos\u0165 m\u00e1 nepovinn\u00fd pr\u00edspevok vo v\u00fd\u0161ke {{amount}}.",
+			"button": "Prispie\u0165"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} e\u0161te nie je s\u00fa\u010das\u0165ou udalosti. Chcete ich prida\u0165 ako \u00fa\u010dastn\u00edkov?",
+		"userNotFound": "U\u017e\u00edvate\u013e Nen\u00e1jden\u00fd",
+		"confirmYes": "\u00c1no",
+		"confirmNo": "nie"
+	},
+	"notifications": {
+		"EventActivityIn": "Aktivita udalosti v {{{stream.fields.title}}}",
+		"RecurringRulesChanged": "Opakuj\u00face sa pravidl\u00e1 sa zmenili pre udalos\u0165 {{{call 'message.getInstruction' 'eventTitle'}}}",
+		"ManageEmailSubscriptions": "spravujte svoje odbery e-mailov",
+		"IfUnsubscribe": "Ak sa chcete odhl\u00e1si\u0165",
+		"ClickHereToVisitEvent": "Ak chcete nav\u0161t\u00edvi\u0165 udalos\u0165, kliknite sem",
+		"Calendars/reminder": "Udalos\u0165 \u201e{{{call 'message.getInstruction' 'name'}}\u201c sa za\u010dne o {{&call 'message.getInstruction' 'time'}}}",
+		"webrtc": {
+			"Started": "Telekonferencia za\u010dala",
+			"Ended": "Telekonferencia sa skon\u010dila"
+		},
+		"livestream": {
+			"Started": "\u017div\u00fd prenos sa za\u010dal",
+			"Ended": "Priamy prenos sa skon\u010dil",
+			"ClickToView": "Pozrite si to tu."
+		}
+	},
+	"import": {
+		"linkTitle": "Vypl\u0148te t\u00fato tabu\u013eku",
+		"fileLabel": "Nahra\u0165 tabu\u013eku:",
+		"importOptions": "mo\u017enosti",
+		"importProgress": "Pokrok",
+		"sampleCSV": "Stiahnite si vzorov\u00fd CSV",
+		"joinEventLabel": "Pripojte pou\u017e\u00edvate\u013eov k n\u00e1hodnej udalosti",
+		"smsText": "Ahoj, pr\u00e1ve som ti poslal odkaz na {{communityName}}. Skontrolujte si to.",
+		"emailSubject": "Pr\u00e1ve som v\u00e1m poslal odkaz",
+		"emailBody": "Ahoj, pr\u00e1ve som ti poslal pozv\u00e1nku na {{communityName}}. Skontrolujte si to.",
+		"fileNotFound": "\u013dutujeme, s\u00fabor CSV sa nena\u0161iel.",
+		"fileEmpty": "\u013dutujeme, s\u00fabor CSV je pr\u00e1zdny.",
+		"fieldNotFound": "Povinn\u00e9 pole \u201e{{1}}\u201c sa nena\u0161lo",
+		"userIdNotFound": "pou\u017e\u00edvate\u013e existuje, ale ID je pr\u00e1zdne",
+		"activateUsers": "posla\u0165 aktiva\u010dn\u00fa spr\u00e1vu pou\u017e\u00edvate\u013eom?",
+		"taskStreamInvalid": "tok \u00faloh je neplatn\u00fd",
+		"instructionsEmpty": "in\u0161trukcie toku \u00faloh s\u00fa pr\u00e1zdne",
+		"interestsEmpty": "nem\u00f4\u017ee z\u00edska\u0165 z\u00e1ujmy",
+		"interestAbsent": "z\u00e1ujem {{1}} sa nena\u0161iel",
+		"complete": "Dokon\u010di\u0165",
+		"errorLine": "riadok {{1}}",
+		"errorsTitle": "Vyskytli sa chyby",
+		"communityUsers": "Toto je zoznam komun\u00edt",
+		"toMainCommunityToo": "sa t\u00fdkaj\u00fa aj hlavnej komunity",
+		"ChooseFile": "vyberte s\u00fabor"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "Predstavuje udalos\u0165, ktorej sa \u013eudia m\u00f4\u017eu z\u00fa\u010dastni\u0165",
+			"displayType": "Udalos\u0165"
+		},
+		"Calendars/recurring": {
+			"description": "Pou\u017e\u00edva sa na s\u00favisiace streamy, ktor\u00e9 sa maj\u00fa pravidelne opakova\u0165",
+			"displayType": "Opakuj\u00faca sa udalos\u0165"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "Prida\u0165 slot",
+		"StartTime": "Doba spustenia",
+		"EndTime": "\u010cas ukon\u010denia",
+		"Save": "Ulo\u017ei\u0165",
+		"AddTimeSlot": "Prida\u0165 \u010dasov\u00fd slot",
+		"CopyFromDay": "Kop\u00edrova\u0165 zo d\u0148a",
+		"Nearest": "Najbli\u017e\u0161ie",
+		"Today": "dnes",
+		"Tomorrow": "zajtra",
+		"AfterTomorrow": "Pozajtra"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "Prihl\u00e1ste sa na odber Kalend\u00e1ra",
+		"copyLinkBelow": "Kop\u00edrova\u0165 odkaz ni\u017e\u0161ie",
+		"goTo": "\u00cds\u0165 do:",
+		"pasteCopiedTo": "Prilepte skop\u00edrovan\u00fd odkaz do po\u013ea \u201eURL kalend\u00e1ra\u201c.",
+		"clickAddCalendar": "Kliknite na tla\u010didlo \u201ePrida\u0165 kalend\u00e1r\u201c.",
+		"copyLink": "Skop\u00edrova\u0165 odkaz",
+		"tapToCopy": "Klepnut\u00edm na tla\u010didlo ni\u017e\u0161ie skop\u00edrujete odkaz do schr\u00e1nky",
+		"linkCopied": "Odkaz bol skop\u00edrovan\u00fd",
+		"step2": "Odkaz bol skop\u00edrovan\u00fd. Ide o otvorenie Kalend\u00e1ra Google. Budete musie\u0165 vlo\u017ei\u0165 odkaz do textov\u00e9ho po\u013ea, klikn\u00fa\u0165 na \u201ePrida\u0165 kalend\u00e1r\u201c a zatvori\u0165 kartu (pozri sn\u00edmku obrazovky ni\u017e\u0161ie)",
+		"calendarAppPreferences": "Otvorte Predvo\u013eby v aplik\u00e1cii Kalend\u00e1r na Macu a nastavte Predvolen\u00fa aplik\u00e1ciu Kalend\u00e1r tak, ako je uveden\u00e9 ni\u017e\u0161ie.",
+		"thenCloseDialog": "Potom zatvorte toto dial\u00f3gov\u00e9 okno a prihl\u00e1ste sa na odber svojho kalend\u00e1ra!",
+		"success": "Kalend\u00e1r bol \u00faspe\u0161ne synchronizovan\u00fd"
+	},
+	"@override": {
+		"Assets/content": {
+			"payments": {
+				"reasons": {
+					"EventParticipation": "\u00da\u010das\u0165 na podujat\u00ed"
+				}
+			}
+		}
+	}
 }

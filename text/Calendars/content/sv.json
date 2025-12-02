@@ -1,333 +1,342 @@
 {
-    "months": {
-        "Jan": "Jan",
-        "Feb": "feb",
-        "Mar": "Mar",
-        "Apr": "apr",
-        "May": "Maj",
-        "Jun": "jun",
-        "Jul": "jul",
-        "Aug": "aug",
-        "Sep": "sep",
-        "Oct": "okt",
-        "Nov": "nov",
-        "Dec": "dec"
-    },
-    "monthsLong": {
-        "Jan": "januari",
-        "Feb": "februari",
-        "Mar": "Mars",
-        "Apr": "april",
-        "May": "Maj",
-        "Jun": "juni",
-        "Jul": "juli",
-        "Aug": "augusti",
-        "Sep": "september",
-        "Oct": "oktober",
-        "Nov": "november",
-        "Dec": "december"
-    },
-    "weekdays": {
-        "Sun": "Sol",
-        "Mon": "mån",
-        "Tue": "tis",
-        "Wed": "ons",
-        "Thu": "tors",
-        "Fri": "fre",
-        "Sat": "lö"
-    },
-    "weekdaysLong": {
-        "Sun": "söndag",
-        "Mon": "måndag",
-        "Tue": "tisdag",
-        "Wed": "onsdag",
-        "Thu": "torsdag",
-        "Fri": "fredag",
-        "Sat": "lördag"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "Planera nytt evenemang"
-        },
-        "tool": {
-            "HostedBy": "Värd av {{name}}",
-            "Name": "namn",
-            "AreYouIn": "Är du med?",
-            "Yes": "Ja",
-            "No": "Nej",
-            "Ok": "Ok",
-            "Cancel": "Annullera",
-            "Maybe": "Kanske",
-            "Conversation": "Konversation",
-            "Promote": "Marknadsför detta evenemang",
-            "Reminders": "Påminnelser",
-            "RemindersLabel": "Jag vill bli meddelad om en händelse i:",
-            "MoreInfo": "Mer information",
-            "Registration": "Registrering",
-            "SetReminders": "Vänligen ställ in påminnelser",
-            "ReservationFee": "Bokningsavgift",
-            "AddParticipants": "Lägg till deltagare",
-            "ManageReservation": "Hantera bokning",
-            "UpdateFutureReservations": "Vill du också uppdatera alla framtida reservationer på samma sätt?",
-            "RecurringAdmin": "Återkommande inställningar",
-            "MakeReservation": "Gör reservation",
-            "StartLiveStream": "Klicka för att livestreama",
-            "LiveStreamEnded": "Livestreamen har avslutats",
-            "ClickToViewRecording": "klicka för att se inspelningen",
-            "Checkin": "Skanna deltagarkoder",
-            "Myqr": "Checka in",
-            "CloseEvent": {
-                "button": "Avbryt event",
-                "confirm": {
-                    "text": {
-                        "Cancel": "Är du säker på att du vill avbryta detta evenemang?",
-                        "Participant": "Det är 1 deltagare i detta evenemang",
-                        "Participants": "Det är {{count}} deltagare i detta evenemang",
-                        "Recurring": "Denna händelse är återkommande. Vill du också avbryta alla framtida instanser?"
-                    },
-                    "trip": {
-                        "Cancel": "Vill du också avboka din resa {{tripDirection}} detta evenemang?",
-                        "Passengers": "Det finns {{passengerCount}} passagerare som litar på dig.",
-                        "Title": "Stäng resa"
-                    },
-                    "directions": {
-                        "TO": "TILL",
-                        "FROM": "FRÅN",
-                        "to": "till",
-                        "from": "från"
-                    }
-                }
-            },
-            "Calendar": "Kalender",
-            "Interests": "Intressen",
-            "Directions": "Vägbeskrivning",
-            "TitleOfEvent": "Titel på händelsen:",
-            "OpenTo": "Öppen för",
-            "GoingTo": "kommer vara",
-            "NotGoingTo": "kommer inte att vara kl",
-            "MaybeGoingTo": "kommer kanske att vara kl",
-            "AdminDontPay": "Admin behöver inte betala",
-            "PublisherDontPay": "Utgivaren behöver inte betala",
-            "EmptyList": "Tom lista",
-            "NeedToPayCredits": "Behöver betala: <span>{{amount}} krediter<\/span>",
-            "PleaseJoinParticipants": "Gå med i {{participant}}",
-            "YouReservingPlace": "Du kommer att reservera din plats.",
-            "SelectIncludesToAdd": "Välj en eller flera {{TypeDisplayPlural}} att lägga till:",
-            "YouHaveNotRegisteredAnyIncluded": "Du har inte registrerat någon {{TypeDisplayPlural}} än",
-            "Proceed": "Fortsätt",
-            "MakeChanges": "Spara mina ändringar",
-            "CancelReservation": "Avboka hela bokningen",
-            "Total": "Total",
-            "RequiredRelatedParticipants": "Detta event kräver deltagare: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Vänligen redigera tillgängligheten &quot;{{title}}&quot; för att uppdatera återkommande inställningar",
-            "Presentation": "Presentation",
-            "YouAreNotParticipated": "Du är inte deltagare i evenemanget",
-            "LiveStreamStarted": "Livestream har startat",
-            "WebRTCStarted": "Telefonkonferensen startade",
-            "WebRTCEnded": "Telefonkonferensen avslutades"
-        },
-        "composer": {
-            "SetLocation": "Ställ in min plats",
-            "SetInfoLink": "Ställ in länk till ytterligare information",
-            "ChooseAvailability": "Välj Tillgänglig tjänst",
-            "ChooseActivity": "Välj en aktivitet",
-            "ChoosePublisher": "Välj Publisher",
-            "Day": "Dag",
-            "Starting": "Startande",
-            "Duration": "Varaktighet",
-            "Hour": "Timme",
-            "Hours": "Timmar",
-            "Minutes": "Minuter",
-            "Ending": "Slut",
-            "People": "människor",
-            "Share": "Dela med sig",
-            "Continue": "Fortsätta",
-            "Recurring": "Återkommande",
-            "RecurringTitle": "Återkommande dagar",
-            "Daily": "Dagligen",
-            "Weekly": "Varje vecka",
-            "Monthly": "En gång i månaden",
-            "SelectLocation": "Välj en plats först.",
-            "eventType": "Event typ",
-            "EditTitle": "Tänk på en intressant titel...",
-            "SetTitle": "Vänligen ange evenemangets titel",
-            "ScheduleOnlineConference": "Schemalägg onlinekonferens",
-            "SOCDescription": "Vänligen definiera konferensens start- och sluttid. Varje person som besöker evenemanget under denna tidsperiod kommer automatiskt att ansluta till onlinekonferensen.",
-            "EndDate": "Slutet",
-            "location": {
-                "Title": "Ställ in din plats"
-            },
-            "interest": {
-                "Title": "Välj en aktivitet",
-                "Filter": "Sökintressen..."
-            },
-            "SetLivestream": "Klistra in länk till livestream\/videokonferens",
-            "Locally": "lokalt",
-            "EventInfoLink": "Evenemangsinformationslänk",
-            "TicketPurchaseLink": "Länk till biljettköp"
-        },
-        "EventAlreadyClosed": "Det här evenemanget har redan stängts",
-        "addToCalendar": {
-            "permissions": {
-                "title": "Lägg till i kalendern?",
-                "prompt": "Vill du lägga till denna händelse i din kalender?",
-                "yes": "Ja",
-                "no": "Nej"
-            },
-            "dialog": {
-                "Title": "Lägg till händelse i din kalender"
-            }
-        },
-        "ErrorLeaveEndedEvent": "Tyvärr, men du kan inte lämna ett avslutat evenemang"
-    },
-    "availabilities": {
-        "Title": "Tillgängligheter",
-        "NewAvailability": {
-            "Title": "Ny tillgänglighet",
-            "SaveAvailability": "Spara tillgänglighet",
-            "SelectTemplate": "Vänligen välj Service",
-            "SelectLocation": "Vänligen välj Plats",
-            "SelectArea": "Vänligen välj Område",
-            "Type": "Typ",
-            "Weekly": "Varje vecka",
-            "RecurringStartDate": "Återkommande startdatum",
-            "EndDate": "Slutdatum",
-            "SelectTime": "Hantera tidsluckor",
-            "SelectTimeSlot": "Välj en tidslucka",
-            "SelectTimeSlots": "Välj önskade tidsluckor",
-            "PeopleMin": "Minsta antal besökare",
-            "PeopleMax": "Maximalt antal besökare",
-            "PeopleLabels": "Roller tillåtna",
-            "Next": "Nästa",
-            "Back": "Tillbaka",
-            "RecurringEndDate": "Återkommande slutdatum",
-            "ScheduleOnlineConference": "Schemalägg telefonkonferens",
-            "SetLivestream": "Klistra in länk till livestream\/videokonferens",
-            "SelectTimeZone": "Välj tidszon"
-        },
-        "EditAvailability": "Redigera tillgänglighet",
-        "SetVisitors": "Ställ in besökare",
-        "Price": "Pris",
-        "SelectAction": "Välj åtgärd",
-        "OpenProfile": "Öppna profilen",
-        "RemoveStaff": "Ta bort personal",
-        "PleaseSelectTimeSlots": "Välj tidsluckor",
-        "ExceptionOccurred": "Undantag inträffade",
-        "NotEnoughCreditsToParticipateEvents": "Inte tillräckligt med krediter för att delta i {{eventsAmount}} evenemang. Du behöver {{needCredits}} krediter. Vill köpa?",
-        "LiveStream": "Direktsändning",
-        "InviteStaff": "Bjud in personal"
-    },
-    "recurring": {
-        "dialog": {
-            "startDate": "Start datum",
-            "endDate": "Slutdatum",
-            "justOnce": "Bara en gång",
-            "justOnceWeekly": "Endast denna vecka",
-            "justOnceMonthly": "Endast denna månad",
-            "recurring": "Återkommande"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "Gratis event",
-            "optional": "Valfritt bidrag",
-            "required": "Krävs betalning"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "Valfritt bidrag",
-            "required": "Krävs betalning",
-            "paid": "betalas"
-        },
-        "confirmationDialog": {
-            "title": "Betalningsbekräftelse",
-            "content": "Denna händelse har ett valfritt bidrag på {{amount}}.",
-            "button": "Bidra"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} är ännu inte en del av evenemanget. Vill du lägga till dem som deltagare?",
-        "userNotFound": "Användaren hittades inte",
-        "confirmYes": "Ja",
-        "confirmNo": "Nej"
-    },
-    "notifications": {
-        "EventActivityIn": "Händelseaktivitet i {{{stream.fields.title}}}",
-        "RecurringRulesChanged": "Återkommande regler ändrade för händelse {{{call 'message.getInstruction' 'eventTitle'}}}",
-        "ManageEmailSubscriptions": "hantera dina e-postprenumerationer",
-        "IfUnsubscribe": "Om du vill avsluta prenumerationen",
-        "ClickHereToVisitEvent": "Klicka här för att besöka eventet",
-        "Calendars\/reminder": "Händelsen &quot;{{{call 'message.getInstruction' 'name'}}&quot; startar om {{&call 'message.getInstruction' 'time'}}}",
-        "webrtc": {
-            "Started": "Telefonkonferensen startade",
-            "Ended": "Telefonkonferensen avslutades"
-        },
-        "livestream": {
-            "Started": "Livestream startade",
-            "Ended": "Livestreamen avslutades",
-            "ClickToView": "Se den här."
-        }
-    },
-    "import": {
-        "linkTitle": "Fyll i detta kalkylblad",
-        "fileLabel": "Ladda upp kalkylblad:",
-        "importOptions": "alternativ",
-        "importProgress": "Framsteg",
-        "sampleCSV": "Ladda ner exempel på CSV",
-        "joinEventLabel": "Gå med användare till slumpmässiga händelser",
-        "smsText": "Hej, jag har precis skickat en länk till {{communityName}}. Vänligen kolla upp det.",
-        "emailSubject": "Har precis skickat en länk till dig",
-        "emailBody": "Hej, jag skickade precis en inbjudan till {{communityName}}. Vänligen kolla upp det.",
-        "fileNotFound": "Tyvärr, CSV-filen hittades inte.",
-        "fileEmpty": "Tyvärr, CSV-filen är tom.",
-        "fieldNotFound": "Det obligatoriska fältet &quot;{{1}}&quot; hittades inte",
-        "userIdNotFound": "användaren finns men id tomt",
-        "activateUsers": "skicka aktiveringsmeddelande till användare?",
-        "taskStreamInvalid": "ogiltig uppgiftsström",
-        "instructionsEmpty": "uppgiftsströmsinstruktionerna är tomma",
-        "interestsEmpty": "kan inte få intressen",
-        "interestAbsent": "intresse {{1}} hittades inte",
-        "complete": "Komplett",
-        "errorLine": "rad {{1}}",
-        "errorsTitle": "Fel uppstod",
-        "communityUsers": "Detta är gemenskapslistan",
-        "toMainCommunityToo": "relatera till huvudgemenskapen också",
-        "ChooseFile": "Välj FIL"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "Representerar en händelse som människor kan delta i",
-            "displayType": "Händelse"
-        },
-        "Calendars\/recurring": {
-            "description": "Används för att relatera strömmar som är tänkta att återkomma med jämna mellanrum",
-            "displayType": "Återkommande händelse"
-        }
-    },
-    "timeslots": {
-        "AddSlot": "Lägg till slot",
-        "StartTime": "Starttid",
-        "EndTime": "Sluttid",
-        "Save": "Spara",
-        "AddTimeSlot": "Lägg till tidslucka",
-        "CopyFromDay": "Kopia från dagen",
-        "Nearest": "Närmast",
-        "Today": "I dag",
-        "Tomorrow": "I morgon",
-        "AfterTomorrow": "Efter imorgon"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "Prenumerera på Kalender",
-        "copyLinkBelow": "Kopiera länken nedan",
-        "goTo": "Gå till:",
-        "pasteCopiedTo": "Klistra in den kopierade länken i fältet &quot;URL för kalender&quot;.",
-        "clickAddCalendar": "Klicka på knappen &quot;Lägg till kalender&quot;.",
-        "copyLink": "Kopiera länk",
-        "tapToCopy": "Tryck på knappen nedan för att kopiera länken till ditt urklipp",
-        "linkCopied": "Länk kopierad",
-        "step2": "Länk kopierad. Vi håller på att öppna Google Kalender. Du måste klistra in länken i textrutan, klicka på &quot;Lägg till kalender&quot; och stänga fliken (se skärmdump nedan)",
-        "calendarAppPreferences": "Öppna inställningarna i kalenderappen på din Mac och ställ in standardkalenderappen som visas nedan.",
-        "thenCloseDialog": "Stäng sedan den här dialogrutan för att prenumerera på din kalender!",
-        "success": "Kalendern har synkroniserats"
-    }
+	"months": {
+		"Jan": "Jan",
+		"Feb": "feb",
+		"Mar": "Mar",
+		"Apr": "apr",
+		"May": "Maj",
+		"Jun": "jun",
+		"Jul": "jul",
+		"Aug": "aug",
+		"Sep": "sep",
+		"Oct": "okt",
+		"Nov": "nov",
+		"Dec": "dec"
+	},
+	"monthsLong": {
+		"Jan": "januari",
+		"Feb": "februari",
+		"Mar": "Mars",
+		"Apr": "april",
+		"May": "Maj",
+		"Jun": "juni",
+		"Jul": "juli",
+		"Aug": "augusti",
+		"Sep": "september",
+		"Oct": "oktober",
+		"Nov": "november",
+		"Dec": "december"
+	},
+	"weekdays": {
+		"Sun": "Sol",
+		"Mon": "m\u00e5n",
+		"Tue": "tis",
+		"Wed": "ons",
+		"Thu": "tors",
+		"Fri": "fre",
+		"Sat": "l\u00f6"
+	},
+	"weekdaysLong": {
+		"Sun": "s\u00f6ndag",
+		"Mon": "m\u00e5ndag",
+		"Tue": "tisdag",
+		"Wed": "onsdag",
+		"Thu": "torsdag",
+		"Fri": "fredag",
+		"Sat": "l\u00f6rdag"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Planera nytt evenemang"
+		},
+		"tool": {
+			"HostedBy": "V\u00e4rd av {{name}}",
+			"Name": "namn",
+			"AreYouIn": "\u00c4r du med?",
+			"Yes": "Ja",
+			"No": "Nej",
+			"Ok": "Ok",
+			"Cancel": "Annullera",
+			"Maybe": "Kanske",
+			"Conversation": "Konversation",
+			"Promote": "Marknadsf\u00f6r detta evenemang",
+			"Reminders": "P\u00e5minnelser",
+			"RemindersLabel": "Jag vill bli meddelad om en h\u00e4ndelse i:",
+			"MoreInfo": "Mer information",
+			"Registration": "Registrering",
+			"SetReminders": "V\u00e4nligen st\u00e4ll in p\u00e5minnelser",
+			"ReservationFee": "Bokningsavgift",
+			"AddParticipants": "L\u00e4gg till deltagare",
+			"ManageReservation": "Hantera bokning",
+			"UpdateFutureReservations": "Vill du ocks\u00e5 uppdatera alla framtida reservationer p\u00e5 samma s\u00e4tt?",
+			"RecurringAdmin": "\u00c5terkommande inst\u00e4llningar",
+			"MakeReservation": "G\u00f6r reservation",
+			"StartLiveStream": "Klicka f\u00f6r att livestreama",
+			"LiveStreamEnded": "Livestreamen har avslutats",
+			"ClickToViewRecording": "klicka f\u00f6r att se inspelningen",
+			"Checkin": "Skanna deltagarkoder",
+			"Myqr": "Checka in",
+			"CloseEvent": {
+				"button": "Avbryt event",
+				"confirm": {
+					"text": {
+						"Cancel": "\u00c4r du s\u00e4ker p\u00e5 att du vill avbryta detta evenemang?",
+						"Participant": "Det \u00e4r 1 deltagare i detta evenemang",
+						"Participants": "Det \u00e4r {{count}} deltagare i detta evenemang",
+						"Recurring": "Denna h\u00e4ndelse \u00e4r \u00e5terkommande. Vill du ocks\u00e5 avbryta alla framtida instanser?"
+					},
+					"trip": {
+						"Cancel": "Vill du ocks\u00e5 avboka din resa {{tripDirection}} detta evenemang?",
+						"Passengers": "Det finns {{passengerCount}} passagerare som litar p\u00e5 dig.",
+						"Title": "St\u00e4ng resa"
+					},
+					"directions": {
+						"TO": "TILL",
+						"FROM": "FR\u00c5N",
+						"to": "till",
+						"from": "fr\u00e5n"
+					}
+				}
+			},
+			"Calendar": "Kalender",
+			"Interests": "Intressen",
+			"Directions": "V\u00e4gbeskrivning",
+			"TitleOfEvent": "Titel p\u00e5 h\u00e4ndelsen:",
+			"OpenTo": "\u00d6ppen f\u00f6r",
+			"GoingTo": "kommer vara",
+			"NotGoingTo": "kommer inte att vara kl",
+			"MaybeGoingTo": "kommer kanske att vara kl",
+			"AdminDontPay": "Admin beh\u00f6ver inte betala",
+			"PublisherDontPay": "Utgivaren beh\u00f6ver inte betala",
+			"EmptyList": "Tom lista",
+			"NeedToPayCredits": "Beh\u00f6ver betala: <span>{{amount}} krediter</span>",
+			"PleaseJoinParticipants": "G\u00e5 med i {{participant}}",
+			"YouReservingPlace": "Du kommer att reservera din plats.",
+			"SelectIncludesToAdd": "V\u00e4lj en eller flera {{TypeDisplayPlural}} att l\u00e4gga till:",
+			"YouHaveNotRegisteredAnyIncluded": "Du har inte registrerat n\u00e5gon {{TypeDisplayPlural}} \u00e4n",
+			"Proceed": "Forts\u00e4tt",
+			"MakeChanges": "Spara mina \u00e4ndringar",
+			"CancelReservation": "Avboka hela bokningen",
+			"Total": "Total",
+			"RequiredRelatedParticipants": "Detta event kr\u00e4ver deltagare: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "V\u00e4nligen redigera tillg\u00e4ngligheten &quot;{{title}}&quot; f\u00f6r att uppdatera \u00e5terkommande inst\u00e4llningar",
+			"Presentation": "Presentation",
+			"YouAreNotParticipated": "Du \u00e4r inte deltagare i evenemanget",
+			"LiveStreamStarted": "Livestream har startat",
+			"WebRTCStarted": "Telefonkonferensen startade",
+			"WebRTCEnded": "Telefonkonferensen avslutades"
+		},
+		"composer": {
+			"SetLocation": "St\u00e4ll in min plats",
+			"SetInfoLink": "St\u00e4ll in l\u00e4nk till ytterligare information",
+			"ChooseAvailability": "V\u00e4lj Tillg\u00e4nglig tj\u00e4nst",
+			"ChooseActivity": "V\u00e4lj en aktivitet",
+			"ChoosePublisher": "V\u00e4lj Publisher",
+			"Day": "Dag",
+			"Starting": "Startande",
+			"Duration": "Varaktighet",
+			"Hour": "Timme",
+			"Hours": "Timmar",
+			"Minutes": "Minuter",
+			"Ending": "Slut",
+			"People": "m\u00e4nniskor",
+			"Share": "Dela med sig",
+			"Continue": "Forts\u00e4tta",
+			"Recurring": "\u00c5terkommande",
+			"RecurringTitle": "\u00c5terkommande dagar",
+			"Daily": "Dagligen",
+			"Weekly": "Varje vecka",
+			"Monthly": "En g\u00e5ng i m\u00e5naden",
+			"SelectLocation": "V\u00e4lj en plats f\u00f6rst.",
+			"eventType": "Event typ",
+			"EditTitle": "T\u00e4nk p\u00e5 en intressant titel...",
+			"SetTitle": "V\u00e4nligen ange evenemangets titel",
+			"ScheduleOnlineConference": "Schemal\u00e4gg onlinekonferens",
+			"SOCDescription": "V\u00e4nligen definiera konferensens start- och sluttid. Varje person som bes\u00f6ker evenemanget under denna tidsperiod kommer automatiskt att ansluta till onlinekonferensen.",
+			"EndDate": "Slutet",
+			"location": {
+				"Title": "St\u00e4ll in din plats"
+			},
+			"interest": {
+				"Title": "V\u00e4lj en aktivitet",
+				"Filter": "S\u00f6kintressen..."
+			},
+			"SetLivestream": "Klistra in l\u00e4nk till livestream/videokonferens",
+			"Locally": "lokalt",
+			"EventInfoLink": "Evenemangsinformationsl\u00e4nk",
+			"TicketPurchaseLink": "L\u00e4nk till biljettk\u00f6p"
+		},
+		"EventAlreadyClosed": "Det h\u00e4r evenemanget har redan st\u00e4ngts",
+		"addToCalendar": {
+			"permissions": {
+				"title": "L\u00e4gg till i kalendern?",
+				"prompt": "Vill du l\u00e4gga till denna h\u00e4ndelse i din kalender?",
+				"yes": "Ja",
+				"no": "Nej"
+			},
+			"dialog": {
+				"Title": "L\u00e4gg till h\u00e4ndelse i din kalender"
+			}
+		},
+		"ErrorLeaveEndedEvent": "Tyv\u00e4rr, men du kan inte l\u00e4mna ett avslutat evenemang"
+	},
+	"availabilities": {
+		"Title": "Tillg\u00e4ngligheter",
+		"NewAvailability": {
+			"Title": "Ny tillg\u00e4nglighet",
+			"SaveAvailability": "Spara tillg\u00e4nglighet",
+			"SelectTemplate": "V\u00e4nligen v\u00e4lj Service",
+			"SelectLocation": "V\u00e4nligen v\u00e4lj Plats",
+			"SelectArea": "V\u00e4nligen v\u00e4lj Omr\u00e5de",
+			"Type": "Typ",
+			"Weekly": "Varje vecka",
+			"RecurringStartDate": "\u00c5terkommande startdatum",
+			"EndDate": "Slutdatum",
+			"SelectTime": "Hantera tidsluckor",
+			"SelectTimeSlot": "V\u00e4lj en tidslucka",
+			"SelectTimeSlots": "V\u00e4lj \u00f6nskade tidsluckor",
+			"PeopleMin": "Minsta antal bes\u00f6kare",
+			"PeopleMax": "Maximalt antal bes\u00f6kare",
+			"PeopleLabels": "Roller till\u00e5tna",
+			"Next": "N\u00e4sta",
+			"Back": "Tillbaka",
+			"RecurringEndDate": "\u00c5terkommande slutdatum",
+			"ScheduleOnlineConference": "Schemal\u00e4gg telefonkonferens",
+			"SetLivestream": "Klistra in l\u00e4nk till livestream/videokonferens",
+			"SelectTimeZone": "V\u00e4lj tidszon"
+		},
+		"EditAvailability": "Redigera tillg\u00e4nglighet",
+		"SetVisitors": "St\u00e4ll in bes\u00f6kare",
+		"Price": "Pris",
+		"SelectAction": "V\u00e4lj \u00e5tg\u00e4rd",
+		"OpenProfile": "\u00d6ppna profilen",
+		"RemoveStaff": "Ta bort personal",
+		"PleaseSelectTimeSlots": "V\u00e4lj tidsluckor",
+		"ExceptionOccurred": "Undantag intr\u00e4ffade",
+		"NotEnoughCreditsToParticipateEvents": "Inte tillr\u00e4ckligt med krediter f\u00f6r att delta i {{eventsAmount}} evenemang. Du beh\u00f6ver {{needCredits}} krediter. Vill k\u00f6pa?",
+		"LiveStream": "Direkts\u00e4ndning",
+		"InviteStaff": "Bjud in personal"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "Start datum",
+			"endDate": "Slutdatum",
+			"justOnce": "Bara en g\u00e5ng",
+			"justOnceWeekly": "Endast denna vecka",
+			"justOnceMonthly": "Endast denna m\u00e5nad",
+			"recurring": "\u00c5terkommande"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "Gratis event",
+			"optional": "Valfritt bidrag",
+			"required": "Kr\u00e4vs betalning"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "Valfritt bidrag",
+			"required": "Kr\u00e4vs betalning",
+			"paid": "betalas"
+		},
+		"confirmationDialog": {
+			"title": "Betalningsbekr\u00e4ftelse",
+			"content": "Denna h\u00e4ndelse har ett valfritt bidrag p\u00e5 {{amount}}.",
+			"button": "Bidra"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} \u00e4r \u00e4nnu inte en del av evenemanget. Vill du l\u00e4gga till dem som deltagare?",
+		"userNotFound": "Anv\u00e4ndaren hittades inte",
+		"confirmYes": "Ja",
+		"confirmNo": "Nej"
+	},
+	"notifications": {
+		"EventActivityIn": "H\u00e4ndelseaktivitet i {{{stream.fields.title}}}",
+		"RecurringRulesChanged": "\u00c5terkommande regler \u00e4ndrade f\u00f6r h\u00e4ndelse {{{call 'message.getInstruction' 'eventTitle'}}}",
+		"ManageEmailSubscriptions": "hantera dina e-postprenumerationer",
+		"IfUnsubscribe": "Om du vill avsluta prenumerationen",
+		"ClickHereToVisitEvent": "Klicka h\u00e4r f\u00f6r att bes\u00f6ka eventet",
+		"Calendars/reminder": "H\u00e4ndelsen &quot;{{{call 'message.getInstruction' 'name'}}&quot; startar om {{&call 'message.getInstruction' 'time'}}}",
+		"webrtc": {
+			"Started": "Telefonkonferensen startade",
+			"Ended": "Telefonkonferensen avslutades"
+		},
+		"livestream": {
+			"Started": "Livestream startade",
+			"Ended": "Livestreamen avslutades",
+			"ClickToView": "Se den h\u00e4r."
+		}
+	},
+	"import": {
+		"linkTitle": "Fyll i detta kalkylblad",
+		"fileLabel": "Ladda upp kalkylblad:",
+		"importOptions": "alternativ",
+		"importProgress": "Framsteg",
+		"sampleCSV": "Ladda ner exempel p\u00e5 CSV",
+		"joinEventLabel": "G\u00e5 med anv\u00e4ndare till slumpm\u00e4ssiga h\u00e4ndelser",
+		"smsText": "Hej, jag har precis skickat en l\u00e4nk till {{communityName}}. V\u00e4nligen kolla upp det.",
+		"emailSubject": "Har precis skickat en l\u00e4nk till dig",
+		"emailBody": "Hej, jag skickade precis en inbjudan till {{communityName}}. V\u00e4nligen kolla upp det.",
+		"fileNotFound": "Tyv\u00e4rr, CSV-filen hittades inte.",
+		"fileEmpty": "Tyv\u00e4rr, CSV-filen \u00e4r tom.",
+		"fieldNotFound": "Det obligatoriska f\u00e4ltet &quot;{{1}}&quot; hittades inte",
+		"userIdNotFound": "anv\u00e4ndaren finns men id tomt",
+		"activateUsers": "skicka aktiveringsmeddelande till anv\u00e4ndare?",
+		"taskStreamInvalid": "ogiltig uppgiftsstr\u00f6m",
+		"instructionsEmpty": "uppgiftsstr\u00f6msinstruktionerna \u00e4r tomma",
+		"interestsEmpty": "kan inte f\u00e5 intressen",
+		"interestAbsent": "intresse {{1}} hittades inte",
+		"complete": "Komplett",
+		"errorLine": "rad {{1}}",
+		"errorsTitle": "Fel uppstod",
+		"communityUsers": "Detta \u00e4r gemenskapslistan",
+		"toMainCommunityToo": "relatera till huvudgemenskapen ocks\u00e5",
+		"ChooseFile": "V\u00e4lj FIL"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "Representerar en h\u00e4ndelse som m\u00e4nniskor kan delta i",
+			"displayType": "H\u00e4ndelse"
+		},
+		"Calendars/recurring": {
+			"description": "Anv\u00e4nds f\u00f6r att relatera str\u00f6mmar som \u00e4r t\u00e4nkta att \u00e5terkomma med j\u00e4mna mellanrum",
+			"displayType": "\u00c5terkommande h\u00e4ndelse"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "L\u00e4gg till slot",
+		"StartTime": "Starttid",
+		"EndTime": "Sluttid",
+		"Save": "Spara",
+		"AddTimeSlot": "L\u00e4gg till tidslucka",
+		"CopyFromDay": "Kopia fr\u00e5n dagen",
+		"Nearest": "N\u00e4rmast",
+		"Today": "I dag",
+		"Tomorrow": "I morgon",
+		"AfterTomorrow": "Efter imorgon"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "Prenumerera p\u00e5 Kalender",
+		"copyLinkBelow": "Kopiera l\u00e4nken nedan",
+		"goTo": "G\u00e5 till:",
+		"pasteCopiedTo": "Klistra in den kopierade l\u00e4nken i f\u00e4ltet &quot;URL f\u00f6r kalender&quot;.",
+		"clickAddCalendar": "Klicka p\u00e5 knappen &quot;L\u00e4gg till kalender&quot;.",
+		"copyLink": "Kopiera l\u00e4nk",
+		"tapToCopy": "Tryck p\u00e5 knappen nedan f\u00f6r att kopiera l\u00e4nken till ditt urklipp",
+		"linkCopied": "L\u00e4nk kopierad",
+		"step2": "L\u00e4nk kopierad. Vi h\u00e5ller p\u00e5 att \u00f6ppna Google Kalender. Du m\u00e5ste klistra in l\u00e4nken i textrutan, klicka p\u00e5 &quot;L\u00e4gg till kalender&quot; och st\u00e4nga fliken (se sk\u00e4rmdump nedan)",
+		"calendarAppPreferences": "\u00d6ppna inst\u00e4llningarna i kalenderappen p\u00e5 din Mac och st\u00e4ll in standardkalenderappen som visas nedan.",
+		"thenCloseDialog": "St\u00e4ng sedan den h\u00e4r dialogrutan f\u00f6r att prenumerera p\u00e5 din kalender!",
+		"success": "Kalendern har synkroniserats"
+	},
+	"@override": {
+		"Assets/content": {
+			"payments": {
+				"reasons": {
+					"EventParticipation": "Deltagande i evenemanget"
+				}
+			}
+		}
+	}
 }

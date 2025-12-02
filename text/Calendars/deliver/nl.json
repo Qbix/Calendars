@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Bedankt voor uw interesse in {{title}}"
+	},
+	"approved": {
+		"Subject": "Aanwezigheid goedgekeurd",
+		"AttendanceApproved": "Gefeliciteerd! Uw aanwezigheid is goedgekeurd voor {{title}}"
+	},
+	"requested": {
+		"Subject": "Aanwezigheid gevraagd",
+		"AttendanceRequested": "Wij bevestigen uw verzoek om deel te nemen: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Aanwezigheid niet goedgekeurd",
+		"AttendanceRejected": "Beheerders hebben uw verzoek om deel te nemen niet goedgekeurd: {{title}}"
+	},
+	"paid": {
+		"Subject": "Bevestiging van succesvolle betaling",
+		"YouveBeenCharged": "Je hebt {{amount}} {{currency}} (en {{credits}} credits) in rekening gebracht. Je bent klaar! Tot ziens bij {{title}}"
+	}
+}

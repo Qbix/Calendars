@@ -1,333 +1,342 @@
 {
-    "months": {
-        "Jan": "Jan",
-        "Feb": "Feb",
-        "Mar": "Beschädigen",
-        "Apr": "Apr",
-        "May": "Kann",
-        "Jun": "Jun",
-        "Jul": "Juli",
-        "Aug": "Aug",
-        "Sep": "Sep",
-        "Oct": "Okt",
-        "Nov": "Nov",
-        "Dec": "Dez"
-    },
-    "monthsLong": {
-        "Jan": "Januar",
-        "Feb": "Februar",
-        "Mar": "Marsch",
-        "Apr": "April",
-        "May": "Kann",
-        "Jun": "Juni",
-        "Jul": "Juli",
-        "Aug": "August",
-        "Sep": "September",
-        "Oct": "Oktober",
-        "Nov": "November",
-        "Dec": "Dezember"
-    },
-    "weekdays": {
-        "Sun": "Sonne",
-        "Mon": "Mo",
-        "Tue": "Di",
-        "Wed": "Heiraten",
-        "Thu": "Do",
-        "Fri": "Fr",
-        "Sat": "Sa"
-    },
-    "weekdaysLong": {
-        "Sun": "Sonntag",
-        "Mon": "Montag",
-        "Tue": "Dienstag",
-        "Wed": "Mittwoch",
-        "Thu": "Donnerstag",
-        "Fri": "Freitag",
-        "Sat": "Samstag"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "Neue Veranstaltung planen"
-        },
-        "tool": {
-            "HostedBy": "Gehostet von {{name}}",
-            "Name": "Name",
-            "AreYouIn": "Bist du dabei?",
-            "Yes": "ja",
-            "No": "Nein",
-            "Ok": "In Ordnung",
-            "Cancel": "Abbrechen",
-            "Maybe": "Könnte sein",
-            "Conversation": "Gespräch",
-            "Promote": "Werben Sie für diese Veranstaltung",
-            "Reminders": "Erinnerungen",
-            "RemindersLabel": "Ich möchte über eine Veranstaltung benachrichtigt werden in:",
-            "MoreInfo": "Mehr Info",
-            "Registration": "Anmeldung",
-            "SetReminders": "Bitte setzen Sie Erinnerungen",
-            "ReservationFee": "REservierungs-Gebühr",
-            "AddParticipants": "Teilnehmer hinzufügen",
-            "ManageReservation": "Reservierung verwalten",
-            "UpdateFutureReservations": "Möchten Sie auch alle zukünftigen Reservierungen auf die gleiche Weise aktualisieren?",
-            "RecurringAdmin": "Wiederkehrende Einstellungen",
-            "MakeReservation": "Reservieren",
-            "StartLiveStream": "Klicken Sie auf Livestream",
-            "LiveStreamEnded": "Der Livestream ist beendet",
-            "ClickToViewRecording": "Klicken Sie hier, um die Aufzeichnung anzuzeigen",
-            "Checkin": "Teilnehmercodes scannen",
-            "Myqr": "Einchecken",
-            "CloseEvent": {
-                "button": "Ereignis abbrechen",
-                "confirm": {
-                    "text": {
-                        "Cancel": "Möchten Sie diese Veranstaltung wirklich stornieren?",
-                        "Participant": "Es gibt 1 Teilnehmer an dieser Veranstaltung",
-                        "Participants": "Es gibt {{count}} Teilnehmer an dieser Veranstaltung",
-                        "Recurring": "Dieses Ereignis ist wiederkehrend. Möchten Sie auch alle zukünftigen Instanzen stornieren?"
-                    },
-                    "trip": {
-                        "Cancel": "Möchten Sie auch Ihre Reise {{tripDirection}} zu diesem Termin stornieren?",
-                        "Passengers": "Es gibt {{passengerCount}} Passagiere, die sich auf Sie verlassen.",
-                        "Title": "Reise schließen"
-                    },
-                    "directions": {
-                        "TO": "ZU",
-                        "FROM": "VON",
-                        "to": "zu",
-                        "from": "von"
-                    }
-                }
-            },
-            "Calendar": "Kalender",
-            "Interests": "Interessen",
-            "Directions": "Richtungen",
-            "TitleOfEvent": "Titel der Veranstaltung:",
-            "OpenTo": "Geöffnet für",
-            "GoingTo": "wird bei ... sein",
-            "NotGoingTo": "wird nicht dabei sein",
-            "MaybeGoingTo": "wird vielleicht dabei sein",
-            "AdminDontPay": "Admin muss nicht bezahlen",
-            "PublisherDontPay": "Der Publisher muss nichts bezahlen",
-            "EmptyList": "Leere Liste",
-            "NeedToPayCredits": "Muss bezahlen: <span>{{amount}} Credits<\/span>",
-            "PleaseJoinParticipants": "Bitte treten Sie {{participant}} bei",
-            "YouReservingPlace": "Sie werden Ihren Platz reservieren.",
-            "SelectIncludesToAdd": "Wählen Sie ein oder mehrere {{TypeDisplayPlural}} zum Hinzufügen aus:",
-            "YouHaveNotRegisteredAnyIncluded": "Sie haben noch keine {{TypeDisplayPlural}} registriert",
-            "Proceed": "Vorgehen",
-            "MakeChanges": "Meine Änderungen speichern",
-            "CancelReservation": "Stornieren Sie die gesamte Reservierung",
-            "Total": "Gesamt",
-            "RequiredRelatedParticipants": "Diese Veranstaltung erfordert folgende Teilnehmer: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Bitte bearbeiten Sie die Verfügbarkeit &quot;{{title}}&quot;, um wiederkehrende Einstellungen zu aktualisieren",
-            "Presentation": "Präsentation",
-            "YouAreNotParticipated": "Sie sind kein Teilnehmer der Veranstaltung",
-            "LiveStreamStarted": "Livestream hat begonnen",
-            "WebRTCStarted": "Telefonkonferenz gestartet",
-            "WebRTCEnded": "Telefonkonferenz beendet"
-        },
-        "composer": {
-            "SetLocation": "Meinen Standort festlegen",
-            "SetInfoLink": "Link zu Zusatzinfos setzen",
-            "ChooseAvailability": "Wählen Sie Verfügbarer Dienst",
-            "ChooseActivity": "Wählen Sie eine Aktivität aus",
-            "ChoosePublisher": "Wählen Sie Herausgeber",
-            "Day": "Tag",
-            "Starting": "Beginnend",
-            "Duration": "Dauer",
-            "Hour": "Stunde",
-            "Hours": "Std",
-            "Minutes": "Protokoll",
-            "Ending": "Ende",
-            "People": "Menschen",
-            "Share": "Teilen",
-            "Continue": "Fortsetzen",
-            "Recurring": "Wiederkehrend",
-            "RecurringTitle": "Wiederkehrende Tage",
-            "Daily": "Täglich",
-            "Weekly": "Wöchentlich",
-            "Monthly": "Monatlich",
-            "SelectLocation": "Bitte wählen Sie zuerst einen Standort aus.",
-            "eventType": "Ereignistyp",
-            "EditTitle": "Denken Sie an einen interessanten Titel ...",
-            "SetTitle": "Bitte Veranstaltungstitel festlegen",
-            "ScheduleOnlineConference": "Online-Konferenz planen",
-            "SOCDescription": "Bitte legen Sie Start- und Endzeit der Konferenz fest. Jede Person, die die Veranstaltung in diesem Zeitraum besucht, wird automatisch mit der Online-Konferenz verbunden.",
-            "EndDate": "Ende",
-            "location": {
-                "Title": "Setze deinen Standpunkt"
-            },
-            "interest": {
-                "Title": "Wählen Sie eine Aktivität aus",
-                "Filter": "Suchinteressen ..."
-            },
-            "SetLivestream": "Link zu Livestream \/ Videokonferenz einfügen",
-            "Locally": "örtlich",
-            "EventInfoLink": "Link zur Veranstaltungsinformation",
-            "TicketPurchaseLink": "Link zum Ticketkauf"
-        },
-        "EventAlreadyClosed": "Diese Veranstaltung ist bereits geschlossen",
-        "addToCalendar": {
-            "permissions": {
-                "title": "Zum Kalender hinzufügen?",
-                "prompt": "Möchten Sie diese Veranstaltung Ihrem Kalender hinzufügen?",
-                "yes": "ja",
-                "no": "Nein"
-            },
-            "dialog": {
-                "Title": "Ereignis zu Ihrem Kalender hinzufügen"
-            }
-        },
-        "ErrorLeaveEndedEvent": "Tut mir leid, aber Sie können die beendete Veranstaltung nicht verlassen"
-    },
-    "availabilities": {
-        "Title": "Verfügbarkeiten",
-        "NewAvailability": {
-            "Title": "Neue Verfügbarkeit",
-            "SaveAvailability": "Verfügbarkeit speichern",
-            "SelectTemplate": "Bitte wählen Sie Service",
-            "SelectLocation": "Bitte Standort auswählen",
-            "SelectArea": "Bitte Bereich auswählen",
-            "Type": "Typ",
-            "Weekly": "Wöchentlich",
-            "RecurringStartDate": "Wiederkehrendes Startdatum",
-            "EndDate": "Endtermin",
-            "SelectTime": "Zeitfenster verwalten",
-            "SelectTimeSlot": "Wählen Sie ein Zeitfenster aus",
-            "SelectTimeSlots": "Wählen Sie die gewünschten Zeitfenster aus",
-            "PeopleMin": "Mindestbesucherzahl",
-            "PeopleMax": "Maximale Besucherzahl",
-            "PeopleLabels": "Erlaubte Rollen",
-            "Next": "Nächste",
-            "Back": "Zurück",
-            "RecurringEndDate": "Wiederkehrendes Enddatum",
-            "ScheduleOnlineConference": "Planen Sie eine Telefonkonferenz",
-            "SetLivestream": "Link zum Livestream\/Videokonferenz einfügen",
-            "SelectTimeZone": "Wähle Zeitzone aus"
-        },
-        "EditAvailability": "Verfügbarkeit bearbeiten",
-        "SetVisitors": "Besucher festlegen",
-        "Price": "Preis",
-        "SelectAction": "Bitte Aktion auswählen",
-        "OpenProfile": "Profil öffnen",
-        "RemoveStaff": "Personal entfernen",
-        "PleaseSelectTimeSlots": "Bitte wählen Sie Zeitfenster aus",
-        "ExceptionOccurred": "Ausnahme aufgetreten",
-        "NotEnoughCreditsToParticipateEvents": "Nicht genug Guthaben, um an {{eventsAmount}} Veranstaltungen teilzunehmen. Sie benötigen {{needCredits}} Credits. Will kaufen?",
-        "LiveStream": "Liveübertragung",
-        "InviteStaff": "Mitarbeiter einladen"
-    },
-    "recurring": {
-        "dialog": {
-            "startDate": "Startdatum",
-            "endDate": "Endtermin",
-            "justOnce": "Nur einmal",
-            "justOnceWeekly": "Nur diese Woche",
-            "justOnceMonthly": "Nur diesen Monat",
-            "recurring": "Wiederkehrend"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "Kostenlose Veranstaltung",
-            "optional": "Optionaler Beitrag",
-            "required": "Erforderliche Zahlung"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "Optionaler Beitrag",
-            "required": "Erforderliche Zahlung",
-            "paid": "bezahlt"
-        },
-        "confirmationDialog": {
-            "title": "Zahlungsbestätigung",
-            "content": "Diese Veranstaltung hat einen optionalen Beitrag von {{amount}}.",
-            "button": "Dazu beitragen"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} ist noch nicht Teil des Events. Möchten Sie sie als Teilnehmer hinzufügen?",
-        "userNotFound": "Benutzer wurde nicht gefunden",
-        "confirmYes": "ja",
-        "confirmNo": "Nein"
-    },
-    "notifications": {
-        "EventActivityIn": "Ereignisaktivität in {{{stream.fields.title}}}",
-        "RecurringRulesChanged": "Wiederkehrende Regeln für Ereignis {{{call 'message.getInstruction' 'eventTitle'}}} geändert",
-        "ManageEmailSubscriptions": "Verwalten Sie Ihre E-Mail-Abonnements",
-        "IfUnsubscribe": "Wenn Sie sich abmelden möchten",
-        "ClickHereToVisitEvent": "Bitte klicken Sie hier, um die Veranstaltung zu besuchen",
-        "Calendars\/reminder": "Veranstaltung &quot;{{{call 'message.getInstruction' 'name'}}&quot; beginnt in {{&call 'message.getInstruction' 'time'}}}",
-        "webrtc": {
-            "Started": "Telefonkonferenz gestartet",
-            "Ended": "Telefonkonferenz beendet"
-        },
-        "livestream": {
-            "Started": "Livestream gestartet",
-            "Ended": "Livestream beendet",
-            "ClickToView": "Sehen Sie es sich hier an."
-        }
-    },
-    "import": {
-        "linkTitle": "Füllen Sie diese Tabelle aus",
-        "fileLabel": "Tabelle hochladen:",
-        "importOptions": "Optionen",
-        "importProgress": "Fortschritt",
-        "sampleCSV": "Beispiel-CSV herunterladen",
-        "joinEventLabel": "Schließen Sie sich Benutzern zu zufälligen Ereignissen an",
-        "smsText": "Hey, ich habe dir gerade einen Link zu {{communityName}} geschickt. Bitte überprüfen Sie es.",
-        "emailSubject": "Hab dir gerade einen Link geschickt",
-        "emailBody": "Hey, ich habe dir gerade eine Einladung zu {{communityName}} geschickt. Bitte überprüfen Sie es.",
-        "fileNotFound": "Entschuldigung, CSV-Datei nicht gefunden.",
-        "fileEmpty": "Die CSV-Datei ist leider leer.",
-        "fieldNotFound": "Erforderliches Feld &quot;{{1}}&quot; nicht gefunden",
-        "userIdNotFound": "Benutzer vorhanden, aber ID leer",
-        "activateUsers": "Aktivierungsnachricht an Benutzer senden?",
-        "taskStreamInvalid": "Taskstream ungültig",
-        "instructionsEmpty": "Taskstream-Anweisungen leer",
-        "interestsEmpty": "kann keine Interessen bekommen",
-        "interestAbsent": "Interesse {{1}} nicht gefunden",
-        "complete": "Vollständig",
-        "errorLine": "Linie {{1}}",
-        "errorsTitle": "Fehler aufgetreten",
-        "communityUsers": "Dies ist die Community-Liste",
-        "toMainCommunityToo": "beziehen sich auch auf die Hauptgemeinschaft",
-        "ChooseFile": "Datei wählen"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "Stellt ein Ereignis dar, an dem Personen teilnehmen können",
-            "displayType": "Fall"
-        },
-        "Calendars\/recurring": {
-            "description": "Wird verwendet, um Streams in Beziehung zu setzen, die sich regelmäßig wiederholen sollen",
-            "displayType": "Wiederkehrendes Ereignis"
-        }
-    },
-    "timeslots": {
-        "AddSlot": "Steckplatz hinzufügen",
-        "StartTime": "Startzeit",
-        "EndTime": "Endzeit",
-        "Save": "Speichern",
-        "AddTimeSlot": "Zeitfenster hinzufügen",
-        "CopyFromDay": "Tag kopieren",
-        "Nearest": "Nächste",
-        "Today": "Heute",
-        "Tomorrow": "Morgen",
-        "AfterTomorrow": "Übermorgen"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "Kalender abonnieren",
-        "copyLinkBelow": "Link unten kopieren",
-        "goTo": "Gehe zu:",
-        "pasteCopiedTo": "Kopierten Link in das Feld &quot;URL des Kalenders&quot; einfügen",
-        "clickAddCalendar": "Klicken Sie auf die Schaltfläche &quot;Kalender hinzufügen&quot;.",
-        "copyLink": "Link kopieren",
-        "tapToCopy": "Tippen Sie auf die Schaltfläche unten, um den Link in Ihre Zwischenablage zu kopieren",
-        "linkCopied": "Link kopiert",
-        "step2": "Link kopiert. Wir öffnen gerade Google Kalender. Sie müssen den Link in das Textfeld einfügen, auf „Kalender hinzufügen“ klicken und die Registerkarte schließen (siehe Screenshot unten).",
-        "calendarAppPreferences": "Öffnen Sie die Einstellungen in der Kalender-App auf Ihrem Mac und legen Sie die Standard-Kalender-App wie unten gezeigt fest.",
-        "thenCloseDialog": "Schließen Sie dann diesen Dialog, um Ihren Kalender zu abonnieren!",
-        "success": "Der Kalender wurde erfolgreich synchronisiert"
-    }
+	"months": {
+		"Jan": "Jan",
+		"Feb": "Feb",
+		"Mar": "Besch\u00e4digen",
+		"Apr": "Apr",
+		"May": "Kann",
+		"Jun": "Jun",
+		"Jul": "Juli",
+		"Aug": "Aug",
+		"Sep": "Sep",
+		"Oct": "Okt",
+		"Nov": "Nov",
+		"Dec": "Dez"
+	},
+	"monthsLong": {
+		"Jan": "Januar",
+		"Feb": "Februar",
+		"Mar": "Marsch",
+		"Apr": "April",
+		"May": "Kann",
+		"Jun": "Juni",
+		"Jul": "Juli",
+		"Aug": "August",
+		"Sep": "September",
+		"Oct": "Oktober",
+		"Nov": "November",
+		"Dec": "Dezember"
+	},
+	"weekdays": {
+		"Sun": "Sonne",
+		"Mon": "Mo",
+		"Tue": "Di",
+		"Wed": "Heiraten",
+		"Thu": "Do",
+		"Fri": "Fr",
+		"Sat": "Sa"
+	},
+	"weekdaysLong": {
+		"Sun": "Sonntag",
+		"Mon": "Montag",
+		"Tue": "Dienstag",
+		"Wed": "Mittwoch",
+		"Thu": "Donnerstag",
+		"Fri": "Freitag",
+		"Sat": "Samstag"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Neue Veranstaltung planen"
+		},
+		"tool": {
+			"HostedBy": "Gehostet von {{name}}",
+			"Name": "Name",
+			"AreYouIn": "Bist du dabei?",
+			"Yes": "ja",
+			"No": "Nein",
+			"Ok": "In Ordnung",
+			"Cancel": "Abbrechen",
+			"Maybe": "K\u00f6nnte sein",
+			"Conversation": "Gespr\u00e4ch",
+			"Promote": "Werben Sie f\u00fcr diese Veranstaltung",
+			"Reminders": "Erinnerungen",
+			"RemindersLabel": "Ich m\u00f6chte \u00fcber eine Veranstaltung benachrichtigt werden in:",
+			"MoreInfo": "Mehr Info",
+			"Registration": "Anmeldung",
+			"SetReminders": "Bitte setzen Sie Erinnerungen",
+			"ReservationFee": "REservierungs-Geb\u00fchr",
+			"AddParticipants": "Teilnehmer hinzuf\u00fcgen",
+			"ManageReservation": "Reservierung verwalten",
+			"UpdateFutureReservations": "M\u00f6chten Sie auch alle zuk\u00fcnftigen Reservierungen auf die gleiche Weise aktualisieren?",
+			"RecurringAdmin": "Wiederkehrende Einstellungen",
+			"MakeReservation": "Reservieren",
+			"StartLiveStream": "Klicken Sie auf Livestream",
+			"LiveStreamEnded": "Der Livestream ist beendet",
+			"ClickToViewRecording": "Klicken Sie hier, um die Aufzeichnung anzuzeigen",
+			"Checkin": "Teilnehmercodes scannen",
+			"Myqr": "Einchecken",
+			"CloseEvent": {
+				"button": "Ereignis abbrechen",
+				"confirm": {
+					"text": {
+						"Cancel": "M\u00f6chten Sie diese Veranstaltung wirklich stornieren?",
+						"Participant": "Es gibt 1 Teilnehmer an dieser Veranstaltung",
+						"Participants": "Es gibt {{count}} Teilnehmer an dieser Veranstaltung",
+						"Recurring": "Dieses Ereignis ist wiederkehrend. M\u00f6chten Sie auch alle zuk\u00fcnftigen Instanzen stornieren?"
+					},
+					"trip": {
+						"Cancel": "M\u00f6chten Sie auch Ihre Reise {{tripDirection}} zu diesem Termin stornieren?",
+						"Passengers": "Es gibt {{passengerCount}} Passagiere, die sich auf Sie verlassen.",
+						"Title": "Reise schlie\u00dfen"
+					},
+					"directions": {
+						"TO": "ZU",
+						"FROM": "VON",
+						"to": "zu",
+						"from": "von"
+					}
+				}
+			},
+			"Calendar": "Kalender",
+			"Interests": "Interessen",
+			"Directions": "Richtungen",
+			"TitleOfEvent": "Titel der Veranstaltung:",
+			"OpenTo": "Ge\u00f6ffnet f\u00fcr",
+			"GoingTo": "wird bei ... sein",
+			"NotGoingTo": "wird nicht dabei sein",
+			"MaybeGoingTo": "wird vielleicht dabei sein",
+			"AdminDontPay": "Admin muss nicht bezahlen",
+			"PublisherDontPay": "Der Publisher muss nichts bezahlen",
+			"EmptyList": "Leere Liste",
+			"NeedToPayCredits": "Muss bezahlen: <span>{{amount}} Credits</span>",
+			"PleaseJoinParticipants": "Bitte treten Sie {{participant}} bei",
+			"YouReservingPlace": "Sie werden Ihren Platz reservieren.",
+			"SelectIncludesToAdd": "W\u00e4hlen Sie ein oder mehrere {{TypeDisplayPlural}} zum Hinzuf\u00fcgen aus:",
+			"YouHaveNotRegisteredAnyIncluded": "Sie haben noch keine {{TypeDisplayPlural}} registriert",
+			"Proceed": "Vorgehen",
+			"MakeChanges": "Meine \u00c4nderungen speichern",
+			"CancelReservation": "Stornieren Sie die gesamte Reservierung",
+			"Total": "Gesamt",
+			"RequiredRelatedParticipants": "Diese Veranstaltung erfordert folgende Teilnehmer: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "Bitte bearbeiten Sie die Verf\u00fcgbarkeit &quot;{{title}}&quot;, um wiederkehrende Einstellungen zu aktualisieren",
+			"Presentation": "Pr\u00e4sentation",
+			"YouAreNotParticipated": "Sie sind kein Teilnehmer der Veranstaltung",
+			"LiveStreamStarted": "Livestream hat begonnen",
+			"WebRTCStarted": "Telefonkonferenz gestartet",
+			"WebRTCEnded": "Telefonkonferenz beendet"
+		},
+		"composer": {
+			"SetLocation": "Meinen Standort festlegen",
+			"SetInfoLink": "Link zu Zusatzinfos setzen",
+			"ChooseAvailability": "W\u00e4hlen Sie Verf\u00fcgbarer Dienst",
+			"ChooseActivity": "W\u00e4hlen Sie eine Aktivit\u00e4t aus",
+			"ChoosePublisher": "W\u00e4hlen Sie Herausgeber",
+			"Day": "Tag",
+			"Starting": "Beginnend",
+			"Duration": "Dauer",
+			"Hour": "Stunde",
+			"Hours": "Std",
+			"Minutes": "Protokoll",
+			"Ending": "Ende",
+			"People": "Menschen",
+			"Share": "Teilen",
+			"Continue": "Fortsetzen",
+			"Recurring": "Wiederkehrend",
+			"RecurringTitle": "Wiederkehrende Tage",
+			"Daily": "T\u00e4glich",
+			"Weekly": "W\u00f6chentlich",
+			"Monthly": "Monatlich",
+			"SelectLocation": "Bitte w\u00e4hlen Sie zuerst einen Standort aus.",
+			"eventType": "Ereignistyp",
+			"EditTitle": "Denken Sie an einen interessanten Titel ...",
+			"SetTitle": "Bitte Veranstaltungstitel festlegen",
+			"ScheduleOnlineConference": "Online-Konferenz planen",
+			"SOCDescription": "Bitte legen Sie Start- und Endzeit der Konferenz fest. Jede Person, die die Veranstaltung in diesem Zeitraum besucht, wird automatisch mit der Online-Konferenz verbunden.",
+			"EndDate": "Ende",
+			"location": {
+				"Title": "Setze deinen Standpunkt"
+			},
+			"interest": {
+				"Title": "W\u00e4hlen Sie eine Aktivit\u00e4t aus",
+				"Filter": "Suchinteressen ..."
+			},
+			"SetLivestream": "Link zu Livestream / Videokonferenz einf\u00fcgen",
+			"Locally": "\u00f6rtlich",
+			"EventInfoLink": "Link zur Veranstaltungsinformation",
+			"TicketPurchaseLink": "Link zum Ticketkauf"
+		},
+		"EventAlreadyClosed": "Diese Veranstaltung ist bereits geschlossen",
+		"addToCalendar": {
+			"permissions": {
+				"title": "Zum Kalender hinzuf\u00fcgen?",
+				"prompt": "M\u00f6chten Sie diese Veranstaltung Ihrem Kalender hinzuf\u00fcgen?",
+				"yes": "ja",
+				"no": "Nein"
+			},
+			"dialog": {
+				"Title": "Ereignis zu Ihrem Kalender hinzuf\u00fcgen"
+			}
+		},
+		"ErrorLeaveEndedEvent": "Tut mir leid, aber Sie k\u00f6nnen die beendete Veranstaltung nicht verlassen"
+	},
+	"availabilities": {
+		"Title": "Verf\u00fcgbarkeiten",
+		"NewAvailability": {
+			"Title": "Neue Verf\u00fcgbarkeit",
+			"SaveAvailability": "Verf\u00fcgbarkeit speichern",
+			"SelectTemplate": "Bitte w\u00e4hlen Sie Service",
+			"SelectLocation": "Bitte Standort ausw\u00e4hlen",
+			"SelectArea": "Bitte Bereich ausw\u00e4hlen",
+			"Type": "Typ",
+			"Weekly": "W\u00f6chentlich",
+			"RecurringStartDate": "Wiederkehrendes Startdatum",
+			"EndDate": "Endtermin",
+			"SelectTime": "Zeitfenster verwalten",
+			"SelectTimeSlot": "W\u00e4hlen Sie ein Zeitfenster aus",
+			"SelectTimeSlots": "W\u00e4hlen Sie die gew\u00fcnschten Zeitfenster aus",
+			"PeopleMin": "Mindestbesucherzahl",
+			"PeopleMax": "Maximale Besucherzahl",
+			"PeopleLabels": "Erlaubte Rollen",
+			"Next": "N\u00e4chste",
+			"Back": "Zur\u00fcck",
+			"RecurringEndDate": "Wiederkehrendes Enddatum",
+			"ScheduleOnlineConference": "Planen Sie eine Telefonkonferenz",
+			"SetLivestream": "Link zum Livestream/Videokonferenz einf\u00fcgen",
+			"SelectTimeZone": "W\u00e4hle Zeitzone aus"
+		},
+		"EditAvailability": "Verf\u00fcgbarkeit bearbeiten",
+		"SetVisitors": "Besucher festlegen",
+		"Price": "Preis",
+		"SelectAction": "Bitte Aktion ausw\u00e4hlen",
+		"OpenProfile": "Profil \u00f6ffnen",
+		"RemoveStaff": "Personal entfernen",
+		"PleaseSelectTimeSlots": "Bitte w\u00e4hlen Sie Zeitfenster aus",
+		"ExceptionOccurred": "Ausnahme aufgetreten",
+		"NotEnoughCreditsToParticipateEvents": "Nicht genug Guthaben, um an {{eventsAmount}} Veranstaltungen teilzunehmen. Sie ben\u00f6tigen {{needCredits}} Credits. Will kaufen?",
+		"LiveStream": "Live\u00fcbertragung",
+		"InviteStaff": "Mitarbeiter einladen"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "Startdatum",
+			"endDate": "Endtermin",
+			"justOnce": "Nur einmal",
+			"justOnceWeekly": "Nur diese Woche",
+			"justOnceMonthly": "Nur diesen Monat",
+			"recurring": "Wiederkehrend"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "Kostenlose Veranstaltung",
+			"optional": "Optionaler Beitrag",
+			"required": "Erforderliche Zahlung"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "Optionaler Beitrag",
+			"required": "Erforderliche Zahlung",
+			"paid": "bezahlt"
+		},
+		"confirmationDialog": {
+			"title": "Zahlungsbest\u00e4tigung",
+			"content": "Diese Veranstaltung hat einen optionalen Beitrag von {{amount}}.",
+			"button": "Dazu beitragen"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} ist noch nicht Teil des Events. M\u00f6chten Sie sie als Teilnehmer hinzuf\u00fcgen?",
+		"userNotFound": "Benutzer wurde nicht gefunden",
+		"confirmYes": "ja",
+		"confirmNo": "Nein"
+	},
+	"notifications": {
+		"EventActivityIn": "Ereignisaktivit\u00e4t in {{{stream.fields.title}}}",
+		"RecurringRulesChanged": "Wiederkehrende Regeln f\u00fcr Ereignis {{{call 'message.getInstruction' 'eventTitle'}}} ge\u00e4ndert",
+		"ManageEmailSubscriptions": "Verwalten Sie Ihre E-Mail-Abonnements",
+		"IfUnsubscribe": "Wenn Sie sich abmelden m\u00f6chten",
+		"ClickHereToVisitEvent": "Bitte klicken Sie hier, um die Veranstaltung zu besuchen",
+		"Calendars/reminder": "Veranstaltung &quot;{{{call 'message.getInstruction' 'name'}}&quot; beginnt in {{&call 'message.getInstruction' 'time'}}}",
+		"webrtc": {
+			"Started": "Telefonkonferenz gestartet",
+			"Ended": "Telefonkonferenz beendet"
+		},
+		"livestream": {
+			"Started": "Livestream gestartet",
+			"Ended": "Livestream beendet",
+			"ClickToView": "Sehen Sie es sich hier an."
+		}
+	},
+	"import": {
+		"linkTitle": "F\u00fcllen Sie diese Tabelle aus",
+		"fileLabel": "Tabelle hochladen:",
+		"importOptions": "Optionen",
+		"importProgress": "Fortschritt",
+		"sampleCSV": "Beispiel-CSV herunterladen",
+		"joinEventLabel": "Schlie\u00dfen Sie sich Benutzern zu zuf\u00e4lligen Ereignissen an",
+		"smsText": "Hey, ich habe dir gerade einen Link zu {{communityName}} geschickt. Bitte \u00fcberpr\u00fcfen Sie es.",
+		"emailSubject": "Hab dir gerade einen Link geschickt",
+		"emailBody": "Hey, ich habe dir gerade eine Einladung zu {{communityName}} geschickt. Bitte \u00fcberpr\u00fcfen Sie es.",
+		"fileNotFound": "Entschuldigung, CSV-Datei nicht gefunden.",
+		"fileEmpty": "Die CSV-Datei ist leider leer.",
+		"fieldNotFound": "Erforderliches Feld &quot;{{1}}&quot; nicht gefunden",
+		"userIdNotFound": "Benutzer vorhanden, aber ID leer",
+		"activateUsers": "Aktivierungsnachricht an Benutzer senden?",
+		"taskStreamInvalid": "Taskstream ung\u00fcltig",
+		"instructionsEmpty": "Taskstream-Anweisungen leer",
+		"interestsEmpty": "kann keine Interessen bekommen",
+		"interestAbsent": "Interesse {{1}} nicht gefunden",
+		"complete": "Vollst\u00e4ndig",
+		"errorLine": "Linie {{1}}",
+		"errorsTitle": "Fehler aufgetreten",
+		"communityUsers": "Dies ist die Community-Liste",
+		"toMainCommunityToo": "beziehen sich auch auf die Hauptgemeinschaft",
+		"ChooseFile": "Datei w\u00e4hlen"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "Stellt ein Ereignis dar, an dem Personen teilnehmen k\u00f6nnen",
+			"displayType": "Fall"
+		},
+		"Calendars/recurring": {
+			"description": "Wird verwendet, um Streams in Beziehung zu setzen, die sich regelm\u00e4\u00dfig wiederholen sollen",
+			"displayType": "Wiederkehrendes Ereignis"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "Steckplatz hinzuf\u00fcgen",
+		"StartTime": "Startzeit",
+		"EndTime": "Endzeit",
+		"Save": "Speichern",
+		"AddTimeSlot": "Zeitfenster hinzuf\u00fcgen",
+		"CopyFromDay": "Tag kopieren",
+		"Nearest": "N\u00e4chste",
+		"Today": "Heute",
+		"Tomorrow": "Morgen",
+		"AfterTomorrow": "\u00dcbermorgen"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "Kalender abonnieren",
+		"copyLinkBelow": "Link unten kopieren",
+		"goTo": "Gehe zu:",
+		"pasteCopiedTo": "Kopierten Link in das Feld &quot;URL des Kalenders&quot; einf\u00fcgen",
+		"clickAddCalendar": "Klicken Sie auf die Schaltfl\u00e4che &quot;Kalender hinzuf\u00fcgen&quot;.",
+		"copyLink": "Link kopieren",
+		"tapToCopy": "Tippen Sie auf die Schaltfl\u00e4che unten, um den Link in Ihre Zwischenablage zu kopieren",
+		"linkCopied": "Link kopiert",
+		"step2": "Link kopiert. Wir \u00f6ffnen gerade Google Kalender. Sie m\u00fcssen den Link in das Textfeld einf\u00fcgen, auf \u201eKalender hinzuf\u00fcgen\u201c klicken und die Registerkarte schlie\u00dfen (siehe Screenshot unten).",
+		"calendarAppPreferences": "\u00d6ffnen Sie die Einstellungen in der Kalender-App auf Ihrem Mac und legen Sie die Standard-Kalender-App wie unten gezeigt fest.",
+		"thenCloseDialog": "Schlie\u00dfen Sie dann diesen Dialog, um Ihren Kalender zu abonnieren!",
+		"success": "Der Kalender wurde erfolgreich synchronisiert"
+	},
+	"@override": {
+		"Assets/content": {
+			"payments": {
+				"reasons": {
+					"EventParticipation": "Veranstaltungsteilnahme"
+				}
+			}
+		}
+	}
 }
