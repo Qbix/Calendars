@@ -1,333 +1,342 @@
 {
-    "months": {
-        "Jan": "Jan",
-        "Feb": "feb",
-        "Mar": "mar",
-        "Apr": "apr",
-        "May": "maí",
-        "Jun": "júní",
-        "Jul": "júlí",
-        "Aug": "ágúst",
-        "Sep": "sept",
-        "Oct": "okt",
-        "Nov": "nóv",
-        "Dec": "des"
-    },
-    "monthsLong": {
-        "Jan": "janúar",
-        "Feb": "febrúar",
-        "Mar": "mars",
-        "Apr": "apríl",
-        "May": "maí",
-        "Jun": "júní",
-        "Jul": "júlí",
-        "Aug": "ágúst",
-        "Sep": "september",
-        "Oct": "október",
-        "Nov": "nóvember",
-        "Dec": "desember"
-    },
-    "weekdays": {
-        "Sun": "Sun",
-        "Mon": "mán",
-        "Tue": "þri",
-        "Wed": "miðvikud",
-        "Thu": "fim",
-        "Fri": "fös",
-        "Sat": "lau"
-    },
-    "weekdaysLong": {
-        "Sun": "sunnudag",
-        "Mon": "Mánudagur",
-        "Tue": "þriðjudag",
-        "Wed": "miðvikudag",
-        "Thu": "fimmtudag",
-        "Fri": "föstudag",
-        "Sat": "laugardag"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "Skipuleggðu nýjan viðburð"
-        },
-        "tool": {
-            "HostedBy": "Hýst af {{name}}",
-            "Name": "Nafn",
-            "AreYouIn": "Ert þú inni?",
-            "Yes": "Já",
-            "No": "Nei",
-            "Ok": "Allt í lagi",
-            "Cancel": "Hætta við",
-            "Maybe": "Kannski",
-            "Conversation": "Samtal",
-            "Promote": "Kynntu þennan viðburð",
-            "Reminders": "Áminningar",
-            "RemindersLabel": "Ég vil fá tilkynningu um viðburð í:",
-            "MoreInfo": "Meiri upplýsingar",
-            "Registration": "Skráning",
-            "SetReminders": "Vinsamlega stilltu áminningar",
-            "ReservationFee": "Bókunargjald",
-            "AddParticipants": "Bæta við þátttakendum",
-            "ManageReservation": "Stjórna pöntun",
-            "UpdateFutureReservations": "Viltu líka uppfæra allar framtíðarpantanir á sama hátt?",
-            "RecurringAdmin": "Endurteknar stillingar",
-            "MakeReservation": "Gerðu pöntun",
-            "StartLiveStream": "Smelltu til að streyma í beinni",
-            "LiveStreamEnded": "Straumi í beinni er lokið",
-            "ClickToViewRecording": "smelltu til að skoða upptöku",
-            "Checkin": "Skannaðu þátttakendakóða",
-            "Myqr": "Innritun",
-            "CloseEvent": {
-                "button": "Hætta við viðburð",
-                "confirm": {
-                    "text": {
-                        "Cancel": "Ertu viss um að þú viljir hætta við þennan viðburð?",
-                        "Participant": "Það er 1 þátttakandi í þessum viðburði",
-                        "Participants": "Það eru {{count}} þátttakendur í þessum viðburði",
-                        "Recurring": "Þessi atburður er endurtekinn. Viltu líka hætta við öll framtíðartilvik þess líka?"
-                    },
-                    "trip": {
-                        "Cancel": "Viltu líka hætta við ferðina þína {{tripDirection}} þennan viðburð?",
-                        "Passengers": "Það eru {{passengerCount}} farþegar sem treysta á þig.",
-                        "Title": "Loka ferð"
-                    },
-                    "directions": {
-                        "TO": "TIL",
-                        "FROM": "FRÁ",
-                        "to": "til",
-                        "from": "frá"
-                    }
-                }
-            },
-            "Calendar": "Dagatal",
-            "Interests": "Áhugamál",
-            "Directions": "Leiðbeiningar",
-            "TitleOfEvent": "Titill viðburðar:",
-            "OpenTo": "Opið fyrir",
-            "GoingTo": "verður kl",
-            "NotGoingTo": "verður ekki kl",
-            "MaybeGoingTo": "verður kannski kl",
-            "AdminDontPay": "Admin þarf ekki að borga",
-            "PublisherDontPay": "Útgefandi þarf ekki að borga",
-            "EmptyList": "Tómur listi",
-            "NeedToPayCredits": "Þarf að borga: <span>{{amount}} inneign<\/span>",
-            "PleaseJoinParticipants": "Vinsamlegast vertu með {{participant}}",
-            "YouReservingPlace": "Þú munt panta þinn pláss.",
-            "SelectIncludesToAdd": "Veldu einn eða fleiri {{TypeDisplayPlural}} til að bæta við:",
-            "YouHaveNotRegisteredAnyIncluded": "Þú hefur ekki skráð neina {{TypeDisplayPlural}} ennþá",
-            "Proceed": "Haltu áfram",
-            "MakeChanges": "Vista breytingarnar mínar",
-            "CancelReservation": "Hætta við alla pöntunina",
-            "Total": "Samtals",
-            "RequiredRelatedParticipants": "Þessi viðburður krefst þátttakenda: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Vinsamlega breyttu tiltæku „{{title}}“ til að uppfæra endurteknar stillingar",
-            "Presentation": "Kynning",
-            "YouAreNotParticipated": "Þú ert ekki þátttakandi í viðburðinum",
-            "LiveStreamStarted": "Bein útsending er hafin",
-            "WebRTCStarted": "Símafundur hófst",
-            "WebRTCEnded": "Símafundi lokið"
-        },
-        "composer": {
-            "SetLocation": "Stilltu staðsetningu mína",
-            "SetInfoLink": "Stilltu tengil á frekari upplýsingar",
-            "ChooseAvailability": "Veldu Tiltæk þjónusta",
-            "ChooseActivity": "Veldu athöfn",
-            "ChoosePublisher": "Veldu Útgefandi",
-            "Day": "Dagur",
-            "Starting": "Byrjar",
-            "Duration": "Lengd",
-            "Hour": "Klukkutími",
-            "Hours": "Klukkutímar",
-            "Minutes": "Fundargerð",
-            "Ending": "Endir",
-            "People": "Fólk",
-            "Share": "Deildu",
-            "Continue": "Halda áfram",
-            "Recurring": "Endurtekið",
-            "RecurringTitle": "Endurteknir dagar",
-            "Daily": "Daglega",
-            "Weekly": "Vikulega",
-            "Monthly": "Mánaðarlega",
-            "SelectLocation": "Vinsamlegast veldu staðsetningu fyrst.",
-            "eventType": "Tegund atburðar",
-            "EditTitle": "Hugsaðu þér áhugaverðan titil...",
-            "SetTitle": "Vinsamlega stilltu titil viðburðar",
-            "ScheduleOnlineConference": "Skipuleggðu netráðstefnu",
-            "SOCDescription": "Vinsamlega skilgreindu upphafs- og lokatíma ráðstefnunnar. Sérhver einstaklingur sem heimsækir viðburðinn á þessu tímabili mun sjálfkrafa tengjast netráðstefnu.",
-            "EndDate": "Enda",
-            "location": {
-                "Title": "Stilltu staðsetningu þína"
-            },
-            "interest": {
-                "Title": "Veldu athöfn",
-                "Filter": "Leita áhugamál..."
-            },
-            "SetLivestream": "Límdu hlekk í beina útsendingu \/ myndráðstefnu",
-            "Locally": "á staðnum",
-            "EventInfoLink": "Hlekkur fyrir upplýsingar um viðburð",
-            "TicketPurchaseLink": "Hlekkur til miðakaupa"
-        },
-        "EventAlreadyClosed": "Þessum viðburði er þegar lokað",
-        "addToCalendar": {
-            "permissions": {
-                "title": "Bæta við dagatal?",
-                "prompt": "Viltu bæta þessum viðburði við dagatalið þitt?",
-                "yes": "Já",
-                "no": "Nei"
-            },
-            "dialog": {
-                "Title": "Bættu viðburði við dagatalið þitt"
-            }
-        },
-        "ErrorLeaveEndedEvent": "Því miður, en þú getur ekki yfirgefið lokinn viðburð"
-    },
-    "availabilities": {
-        "Title": "Framboð",
-        "NewAvailability": {
-            "Title": "Nýtt framboð",
-            "SaveAvailability": "Vista framboð",
-            "SelectTemplate": "Vinsamlegast veldu Þjónusta",
-            "SelectLocation": "Vinsamlegast veldu staðsetningu",
-            "SelectArea": "Vinsamlegast veldu svæði",
-            "Type": "Tegund",
-            "Weekly": "Vikulega",
-            "RecurringStartDate": "Endurtekinn upphafsdagur",
-            "EndDate": "Loka dagsetning",
-            "SelectTime": "Stjórna tíma rifum",
-            "SelectTimeSlot": "Veldu tíma",
-            "SelectTimeSlots": "Veldu þann tíma sem þú vilt",
-            "PeopleMin": "Lágmarks gestir",
-            "PeopleMax": "Hámarksfjöldi gesta",
-            "PeopleLabels": "Hlutverk leyfð",
-            "Next": "Næst",
-            "Back": "Til baka",
-            "RecurringEndDate": "Endurtekin lokadagsetning",
-            "ScheduleOnlineConference": "Skipuleggðu símafund",
-            "SetLivestream": "Límdu hlekk í beina útsendingu \/ myndráðstefnu",
-            "SelectTimeZone": "Veldu tímabelti"
-        },
-        "EditAvailability": "Breyta framboði",
-        "SetVisitors": "Setja gestir",
-        "Price": "Verð",
-        "SelectAction": "Vinsamlegast veldu aðgerð",
-        "OpenProfile": "Opna prófíl",
-        "RemoveStaff": "Fjarlægðu starfsfólk",
-        "PleaseSelectTimeSlots": "Vinsamlegast veldu tímar",
-        "ExceptionOccurred": "Undantekning átti sér stað",
-        "NotEnoughCreditsToParticipateEvents": "Ekki nægar inneignir til að taka þátt í {{eventsAmount}} viðburðum. Þú þarft {{needCredits}} inneign. Vil kaupa?",
-        "LiveStream": "Bein útsending",
-        "InviteStaff": "Bjóddu starfsfólki"
-    },
-    "recurring": {
-        "dialog": {
-            "startDate": "Upphafsdagur",
-            "endDate": "Loka dagsetning",
-            "justOnce": "Bara einu sinni",
-            "justOnceWeekly": "Aðeins þessa vikuna",
-            "justOnceMonthly": "Aðeins þennan mánuð",
-            "recurring": "Endurtekið"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "Ókeypis viðburður",
-            "optional": "Valfrjálst framlag",
-            "required": "Áskilið greiðslu"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "Valfrjálst framlag",
-            "required": "Áskilið greiðslu",
-            "paid": "greitt"
-        },
-        "confirmationDialog": {
-            "title": "Staðfesting á greiðslu",
-            "content": "Þessi viðburður hefur valfrjálst framlag upp á {{amount}}.",
-            "button": "Leggðu til"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} er ekki enn hluti af viðburðinum. Viltu bæta þeim við sem þátttakanda?",
-        "userNotFound": "Notandi finnst ekki",
-        "confirmYes": "Já",
-        "confirmNo": "Nei"
-    },
-    "notifications": {
-        "EventActivityIn": "Viðburðarvirkni í {{{stream.fields.title}}}",
-        "RecurringRulesChanged": "Endurteknum reglum breytt fyrir viðburð {{{call 'message.getInstruction' 'eventTitle'}}}",
-        "ManageEmailSubscriptions": "stjórna tölvupóstáskriftum þínum",
-        "IfUnsubscribe": "Ef þú vilt segja upp áskrift",
-        "ClickHereToVisitEvent": "Vinsamlegast smelltu hér til að heimsækja viðburðinn",
-        "Calendars\/reminder": "Viðburðurinn „{{{call 'message.getInstruction' 'name'}}“ mun hefjast eftir {{&call 'message.getInstruction' 'time'}}}",
-        "webrtc": {
-            "Started": "Símafundur hófst",
-            "Ended": "Símafundi lokið"
-        },
-        "livestream": {
-            "Started": "Bein útsending hófst",
-            "Ended": "Beinni útsendingu lauk",
-            "ClickToView": "Skoðaðu það hér."
-        }
-    },
-    "import": {
-        "linkTitle": "Fylltu út þennan töflureikni",
-        "fileLabel": "Hladdu upp töflureikni:",
-        "importOptions": "Valmöguleikar",
-        "importProgress": "Framfarir",
-        "sampleCSV": "Sækja sýnishorn af CSV",
-        "joinEventLabel": "Vertu með notendum í tilviljunarkenndan viðburð",
-        "smsText": "Hæ, ég sendi þér hlekk á {{communityName}}. Vinsamlegast athugaðu það.",
-        "emailSubject": "Sendi þér bara link",
-        "emailBody": "Hæ, ég sendi þér boð á {{communityName}}. Vinsamlegast athugaðu það.",
-        "fileNotFound": "Því miður, CSV skrá fannst ekki.",
-        "fileEmpty": "Því miður er CSV skráin tóm.",
-        "fieldNotFound": "Áskilinn reitur &quot;{{1}}&quot; fannst ekki",
-        "userIdNotFound": "notandi er til en auðkennið er tómt",
-        "activateUsers": "senda virkjunarskilaboð til notenda?",
-        "taskStreamInvalid": "verkefnastraumur ógildur",
-        "instructionsEmpty": "verkstraumsleiðbeiningar tómar",
-        "interestsEmpty": "getur ekki fengið áhugamál",
-        "interestAbsent": "áhugasvið {{1}} fannst ekki",
-        "complete": "Heill",
-        "errorLine": "lína {{1}}",
-        "errorsTitle": "Villur komu upp",
-        "communityUsers": "Þetta er samfélagslisti",
-        "toMainCommunityToo": "tengjast aðalsamfélaginu líka",
-        "ChooseFile": "Veldu skrá"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "Táknar viðburði sem fólk getur tekið þátt í",
-            "displayType": "Viðburður"
-        },
-        "Calendars\/recurring": {
-            "description": "Notað til að tengja strauma sem eiga að endurtaka sig reglulega",
-            "displayType": "Endurtekinn viðburður"
-        }
-    },
-    "timeslots": {
-        "AddSlot": "Bæta við rauf",
-        "StartTime": "Byrjunartími",
-        "EndTime": "Lokatími",
-        "Save": "Vista",
-        "AddTimeSlot": "Bæta við tímarauf",
-        "CopyFromDay": "Afrit frá dags",
-        "Nearest": "Næst",
-        "Today": "Í dag",
-        "Tomorrow": "Á morgun",
-        "AfterTomorrow": "Eftir morgundaginn"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "Gerast áskrifandi að dagatalinu",
-        "copyLinkBelow": "Afritaðu hlekkinn að neðan",
-        "goTo": "Fara til:",
-        "pasteCopiedTo": "Límdu afritaðan tengil í reitinn „Vefslóð dagatals“",
-        "clickAddCalendar": "Smelltu á &quot;Bæta við dagatali&quot; hnappinn",
-        "copyLink": "Afritaðu hlekk",
-        "tapToCopy": "Pikkaðu á hnappinn hér að neðan til að afrita hlekkinn á klemmuspjaldið þitt",
-        "linkCopied": "Hlekkur afritaður",
-        "step2": "Hlekkur afritaður. Við erum um að opna Google dagatal. Þú þarft að líma hlekkinn inn í textareitinn, smelltu á &quot;Bæta við dagatali&quot; og loka flipanum (sjá skjámynd hér að neðan)",
-        "calendarAppPreferences": "Opnaðu Preferences í Calendar App á Mac þínum og stilltu Default Calendar App til að vera eins og sýnt er hér að neðan.",
-        "thenCloseDialog": "Lokaðu síðan þessum glugga til að gerast áskrifandi að dagatalinu þínu!",
-        "success": "Dagatalið var samstillt"
-    }
+	"months": {
+		"Jan": "Jan",
+		"Feb": "feb",
+		"Mar": "mar",
+		"Apr": "apr",
+		"May": "ma\u00ed",
+		"Jun": "j\u00fan\u00ed",
+		"Jul": "j\u00fal\u00ed",
+		"Aug": "\u00e1g\u00fast",
+		"Sep": "sept",
+		"Oct": "okt",
+		"Nov": "n\u00f3v",
+		"Dec": "des"
+	},
+	"monthsLong": {
+		"Jan": "jan\u00faar",
+		"Feb": "febr\u00faar",
+		"Mar": "mars",
+		"Apr": "apr\u00edl",
+		"May": "ma\u00ed",
+		"Jun": "j\u00fan\u00ed",
+		"Jul": "j\u00fal\u00ed",
+		"Aug": "\u00e1g\u00fast",
+		"Sep": "september",
+		"Oct": "okt\u00f3ber",
+		"Nov": "n\u00f3vember",
+		"Dec": "desember"
+	},
+	"weekdays": {
+		"Sun": "Sun",
+		"Mon": "m\u00e1n",
+		"Tue": "\u00feri",
+		"Wed": "mi\u00f0vikud",
+		"Thu": "fim",
+		"Fri": "f\u00f6s",
+		"Sat": "lau"
+	},
+	"weekdaysLong": {
+		"Sun": "sunnudag",
+		"Mon": "M\u00e1nudagur",
+		"Tue": "\u00feri\u00f0judag",
+		"Wed": "mi\u00f0vikudag",
+		"Thu": "fimmtudag",
+		"Fri": "f\u00f6studag",
+		"Sat": "laugardag"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Skipulegg\u00f0u n\u00fdjan vi\u00f0bur\u00f0"
+		},
+		"tool": {
+			"HostedBy": "H\u00fdst af {{name}}",
+			"Name": "Nafn",
+			"AreYouIn": "Ert \u00fe\u00fa inni?",
+			"Yes": "J\u00e1",
+			"No": "Nei",
+			"Ok": "Allt \u00ed lagi",
+			"Cancel": "H\u00e6tta vi\u00f0",
+			"Maybe": "Kannski",
+			"Conversation": "Samtal",
+			"Promote": "Kynntu \u00feennan vi\u00f0bur\u00f0",
+			"Reminders": "\u00c1minningar",
+			"RemindersLabel": "\u00c9g vil f\u00e1 tilkynningu um vi\u00f0bur\u00f0 \u00ed:",
+			"MoreInfo": "Meiri uppl\u00fdsingar",
+			"Registration": "Skr\u00e1ning",
+			"SetReminders": "Vinsamlega stilltu \u00e1minningar",
+			"ReservationFee": "B\u00f3kunargjald",
+			"AddParticipants": "B\u00e6ta vi\u00f0 \u00fe\u00e1tttakendum",
+			"ManageReservation": "Stj\u00f3rna p\u00f6ntun",
+			"UpdateFutureReservations": "Viltu l\u00edka uppf\u00e6ra allar framt\u00ed\u00f0arpantanir \u00e1 sama h\u00e1tt?",
+			"RecurringAdmin": "Endurteknar stillingar",
+			"MakeReservation": "Ger\u00f0u p\u00f6ntun",
+			"StartLiveStream": "Smelltu til a\u00f0 streyma \u00ed beinni",
+			"LiveStreamEnded": "Straumi \u00ed beinni er loki\u00f0",
+			"ClickToViewRecording": "smelltu til a\u00f0 sko\u00f0a uppt\u00f6ku",
+			"Checkin": "Skanna\u00f0u \u00fe\u00e1tttakendak\u00f3\u00f0a",
+			"Myqr": "Innritun",
+			"CloseEvent": {
+				"button": "H\u00e6tta vi\u00f0 vi\u00f0bur\u00f0",
+				"confirm": {
+					"text": {
+						"Cancel": "Ertu viss um a\u00f0 \u00fe\u00fa viljir h\u00e6tta vi\u00f0 \u00feennan vi\u00f0bur\u00f0?",
+						"Participant": "\u00dea\u00f0 er 1 \u00fe\u00e1tttakandi \u00ed \u00feessum vi\u00f0bur\u00f0i",
+						"Participants": "\u00dea\u00f0 eru {{count}} \u00fe\u00e1tttakendur \u00ed \u00feessum vi\u00f0bur\u00f0i",
+						"Recurring": "\u00deessi atbur\u00f0ur er endurtekinn. Viltu l\u00edka h\u00e6tta vi\u00f0 \u00f6ll framt\u00ed\u00f0artilvik \u00feess l\u00edka?"
+					},
+					"trip": {
+						"Cancel": "Viltu l\u00edka h\u00e6tta vi\u00f0 fer\u00f0ina \u00fe\u00edna {{tripDirection}} \u00feennan vi\u00f0bur\u00f0?",
+						"Passengers": "\u00dea\u00f0 eru {{passengerCount}} far\u00feegar sem treysta \u00e1 \u00feig.",
+						"Title": "Loka fer\u00f0"
+					},
+					"directions": {
+						"TO": "TIL",
+						"FROM": "FR\u00c1",
+						"to": "til",
+						"from": "fr\u00e1"
+					}
+				}
+			},
+			"Calendar": "Dagatal",
+			"Interests": "\u00c1hugam\u00e1l",
+			"Directions": "Lei\u00f0beiningar",
+			"TitleOfEvent": "Titill vi\u00f0bur\u00f0ar:",
+			"OpenTo": "Opi\u00f0 fyrir",
+			"GoingTo": "ver\u00f0ur kl",
+			"NotGoingTo": "ver\u00f0ur ekki kl",
+			"MaybeGoingTo": "ver\u00f0ur kannski kl",
+			"AdminDontPay": "Admin \u00fearf ekki a\u00f0 borga",
+			"PublisherDontPay": "\u00datgefandi \u00fearf ekki a\u00f0 borga",
+			"EmptyList": "T\u00f3mur listi",
+			"NeedToPayCredits": "\u00dearf a\u00f0 borga: <span>{{amount}} inneign</span>",
+			"PleaseJoinParticipants": "Vinsamlegast vertu me\u00f0 {{participant}}",
+			"YouReservingPlace": "\u00de\u00fa munt panta \u00feinn pl\u00e1ss.",
+			"SelectIncludesToAdd": "Veldu einn e\u00f0a fleiri {{TypeDisplayPlural}} til a\u00f0 b\u00e6ta vi\u00f0:",
+			"YouHaveNotRegisteredAnyIncluded": "\u00de\u00fa hefur ekki skr\u00e1\u00f0 neina {{TypeDisplayPlural}} enn\u00fe\u00e1",
+			"Proceed": "Haltu \u00e1fram",
+			"MakeChanges": "Vista breytingarnar m\u00ednar",
+			"CancelReservation": "H\u00e6tta vi\u00f0 alla p\u00f6ntunina",
+			"Total": "Samtals",
+			"RequiredRelatedParticipants": "\u00deessi vi\u00f0bur\u00f0ur krefst \u00fe\u00e1tttakenda: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "Vinsamlega breyttu tilt\u00e6ku \u201e{{title}}\u201c til a\u00f0 uppf\u00e6ra endurteknar stillingar",
+			"Presentation": "Kynning",
+			"YouAreNotParticipated": "\u00de\u00fa ert ekki \u00fe\u00e1tttakandi \u00ed vi\u00f0bur\u00f0inum",
+			"LiveStreamStarted": "Bein \u00fatsending er hafin",
+			"WebRTCStarted": "S\u00edmafundur h\u00f3fst",
+			"WebRTCEnded": "S\u00edmafundi loki\u00f0"
+		},
+		"composer": {
+			"SetLocation": "Stilltu sta\u00f0setningu m\u00edna",
+			"SetInfoLink": "Stilltu tengil \u00e1 frekari uppl\u00fdsingar",
+			"ChooseAvailability": "Veldu Tilt\u00e6k \u00fej\u00f3nusta",
+			"ChooseActivity": "Veldu ath\u00f6fn",
+			"ChoosePublisher": "Veldu \u00datgefandi",
+			"Day": "Dagur",
+			"Starting": "Byrjar",
+			"Duration": "Lengd",
+			"Hour": "Klukkut\u00edmi",
+			"Hours": "Klukkut\u00edmar",
+			"Minutes": "Fundarger\u00f0",
+			"Ending": "Endir",
+			"People": "F\u00f3lk",
+			"Share": "Deildu",
+			"Continue": "Halda \u00e1fram",
+			"Recurring": "Endurteki\u00f0",
+			"RecurringTitle": "Endurteknir dagar",
+			"Daily": "Daglega",
+			"Weekly": "Vikulega",
+			"Monthly": "M\u00e1na\u00f0arlega",
+			"SelectLocation": "Vinsamlegast veldu sta\u00f0setningu fyrst.",
+			"eventType": "Tegund atbur\u00f0ar",
+			"EditTitle": "Hugsa\u00f0u \u00fe\u00e9r \u00e1hugaver\u00f0an titil...",
+			"SetTitle": "Vinsamlega stilltu titil vi\u00f0bur\u00f0ar",
+			"ScheduleOnlineConference": "Skipulegg\u00f0u netr\u00e1\u00f0stefnu",
+			"SOCDescription": "Vinsamlega skilgreindu upphafs- og lokat\u00edma r\u00e1\u00f0stefnunnar. S\u00e9rhver einstaklingur sem heims\u00e6kir vi\u00f0bur\u00f0inn \u00e1 \u00feessu t\u00edmabili mun sj\u00e1lfkrafa tengjast netr\u00e1\u00f0stefnu.",
+			"EndDate": "Enda",
+			"location": {
+				"Title": "Stilltu sta\u00f0setningu \u00fe\u00edna"
+			},
+			"interest": {
+				"Title": "Veldu ath\u00f6fn",
+				"Filter": "Leita \u00e1hugam\u00e1l..."
+			},
+			"SetLivestream": "L\u00edmdu hlekk \u00ed beina \u00fatsendingu / myndr\u00e1\u00f0stefnu",
+			"Locally": "\u00e1 sta\u00f0num",
+			"EventInfoLink": "Hlekkur fyrir uppl\u00fdsingar um vi\u00f0bur\u00f0",
+			"TicketPurchaseLink": "Hlekkur til mi\u00f0akaupa"
+		},
+		"EventAlreadyClosed": "\u00deessum vi\u00f0bur\u00f0i er \u00feegar loka\u00f0",
+		"addToCalendar": {
+			"permissions": {
+				"title": "B\u00e6ta vi\u00f0 dagatal?",
+				"prompt": "Viltu b\u00e6ta \u00feessum vi\u00f0bur\u00f0i vi\u00f0 dagatali\u00f0 \u00feitt?",
+				"yes": "J\u00e1",
+				"no": "Nei"
+			},
+			"dialog": {
+				"Title": "B\u00e6ttu vi\u00f0bur\u00f0i vi\u00f0 dagatali\u00f0 \u00feitt"
+			}
+		},
+		"ErrorLeaveEndedEvent": "\u00dev\u00ed mi\u00f0ur, en \u00fe\u00fa getur ekki yfirgefi\u00f0 lokinn vi\u00f0bur\u00f0"
+	},
+	"availabilities": {
+		"Title": "Frambo\u00f0",
+		"NewAvailability": {
+			"Title": "N\u00fdtt frambo\u00f0",
+			"SaveAvailability": "Vista frambo\u00f0",
+			"SelectTemplate": "Vinsamlegast veldu \u00dej\u00f3nusta",
+			"SelectLocation": "Vinsamlegast veldu sta\u00f0setningu",
+			"SelectArea": "Vinsamlegast veldu sv\u00e6\u00f0i",
+			"Type": "Tegund",
+			"Weekly": "Vikulega",
+			"RecurringStartDate": "Endurtekinn upphafsdagur",
+			"EndDate": "Loka dagsetning",
+			"SelectTime": "Stj\u00f3rna t\u00edma rifum",
+			"SelectTimeSlot": "Veldu t\u00edma",
+			"SelectTimeSlots": "Veldu \u00feann t\u00edma sem \u00fe\u00fa vilt",
+			"PeopleMin": "L\u00e1gmarks gestir",
+			"PeopleMax": "H\u00e1marksfj\u00f6ldi gesta",
+			"PeopleLabels": "Hlutverk leyf\u00f0",
+			"Next": "N\u00e6st",
+			"Back": "Til baka",
+			"RecurringEndDate": "Endurtekin lokadagsetning",
+			"ScheduleOnlineConference": "Skipulegg\u00f0u s\u00edmafund",
+			"SetLivestream": "L\u00edmdu hlekk \u00ed beina \u00fatsendingu / myndr\u00e1\u00f0stefnu",
+			"SelectTimeZone": "Veldu t\u00edmabelti"
+		},
+		"EditAvailability": "Breyta frambo\u00f0i",
+		"SetVisitors": "Setja gestir",
+		"Price": "Ver\u00f0",
+		"SelectAction": "Vinsamlegast veldu a\u00f0ger\u00f0",
+		"OpenProfile": "Opna pr\u00f3f\u00edl",
+		"RemoveStaff": "Fjarl\u00e6g\u00f0u starfsf\u00f3lk",
+		"PleaseSelectTimeSlots": "Vinsamlegast veldu t\u00edmar",
+		"ExceptionOccurred": "Undantekning \u00e1tti s\u00e9r sta\u00f0",
+		"NotEnoughCreditsToParticipateEvents": "Ekki n\u00e6gar inneignir til a\u00f0 taka \u00fe\u00e1tt \u00ed {{eventsAmount}} vi\u00f0bur\u00f0um. \u00de\u00fa \u00fearft {{needCredits}} inneign. Vil kaupa?",
+		"LiveStream": "Bein \u00fatsending",
+		"InviteStaff": "Bj\u00f3ddu starfsf\u00f3lki"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "Upphafsdagur",
+			"endDate": "Loka dagsetning",
+			"justOnce": "Bara einu sinni",
+			"justOnceWeekly": "A\u00f0eins \u00feessa vikuna",
+			"justOnceMonthly": "A\u00f0eins \u00feennan m\u00e1nu\u00f0",
+			"recurring": "Endurteki\u00f0"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "\u00d3keypis vi\u00f0bur\u00f0ur",
+			"optional": "Valfrj\u00e1lst framlag",
+			"required": "\u00c1skili\u00f0 grei\u00f0slu"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "Valfrj\u00e1lst framlag",
+			"required": "\u00c1skili\u00f0 grei\u00f0slu",
+			"paid": "greitt"
+		},
+		"confirmationDialog": {
+			"title": "Sta\u00f0festing \u00e1 grei\u00f0slu",
+			"content": "\u00deessi vi\u00f0bur\u00f0ur hefur valfrj\u00e1lst framlag upp \u00e1 {{amount}}.",
+			"button": "Legg\u00f0u til"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} er ekki enn hluti af vi\u00f0bur\u00f0inum. Viltu b\u00e6ta \u00feeim vi\u00f0 sem \u00fe\u00e1tttakanda?",
+		"userNotFound": "Notandi finnst ekki",
+		"confirmYes": "J\u00e1",
+		"confirmNo": "Nei"
+	},
+	"notifications": {
+		"EventActivityIn": "Vi\u00f0bur\u00f0arvirkni \u00ed {{{stream.fields.title}}}",
+		"RecurringRulesChanged": "Endurteknum reglum breytt fyrir vi\u00f0bur\u00f0 {{{call 'message.getInstruction' 'eventTitle'}}}",
+		"ManageEmailSubscriptions": "stj\u00f3rna t\u00f6lvup\u00f3st\u00e1skriftum \u00fe\u00ednum",
+		"IfUnsubscribe": "Ef \u00fe\u00fa vilt segja upp \u00e1skrift",
+		"ClickHereToVisitEvent": "Vinsamlegast smelltu h\u00e9r til a\u00f0 heims\u00e6kja vi\u00f0bur\u00f0inn",
+		"Calendars/reminder": "Vi\u00f0bur\u00f0urinn \u201e{{{call 'message.getInstruction' 'name'}}\u201c mun hefjast eftir {{&call 'message.getInstruction' 'time'}}}",
+		"webrtc": {
+			"Started": "S\u00edmafundur h\u00f3fst",
+			"Ended": "S\u00edmafundi loki\u00f0"
+		},
+		"livestream": {
+			"Started": "Bein \u00fatsending h\u00f3fst",
+			"Ended": "Beinni \u00fatsendingu lauk",
+			"ClickToView": "Sko\u00f0a\u00f0u \u00fea\u00f0 h\u00e9r."
+		}
+	},
+	"import": {
+		"linkTitle": "Fylltu \u00fat \u00feennan t\u00f6flureikni",
+		"fileLabel": "Hladdu upp t\u00f6flureikni:",
+		"importOptions": "Valm\u00f6guleikar",
+		"importProgress": "Framfarir",
+		"sampleCSV": "S\u00e6kja s\u00fdnishorn af CSV",
+		"joinEventLabel": "Vertu me\u00f0 notendum \u00ed tilviljunarkenndan vi\u00f0bur\u00f0",
+		"smsText": "H\u00e6, \u00e9g sendi \u00fe\u00e9r hlekk \u00e1 {{communityName}}. Vinsamlegast athuga\u00f0u \u00fea\u00f0.",
+		"emailSubject": "Sendi \u00fe\u00e9r bara link",
+		"emailBody": "H\u00e6, \u00e9g sendi \u00fe\u00e9r bo\u00f0 \u00e1 {{communityName}}. Vinsamlegast athuga\u00f0u \u00fea\u00f0.",
+		"fileNotFound": "\u00dev\u00ed mi\u00f0ur, CSV skr\u00e1 fannst ekki.",
+		"fileEmpty": "\u00dev\u00ed mi\u00f0ur er CSV skr\u00e1in t\u00f3m.",
+		"fieldNotFound": "\u00c1skilinn reitur &quot;{{1}}&quot; fannst ekki",
+		"userIdNotFound": "notandi er til en au\u00f0kenni\u00f0 er t\u00f3mt",
+		"activateUsers": "senda virkjunarskilabo\u00f0 til notenda?",
+		"taskStreamInvalid": "verkefnastraumur \u00f3gildur",
+		"instructionsEmpty": "verkstraumslei\u00f0beiningar t\u00f3mar",
+		"interestsEmpty": "getur ekki fengi\u00f0 \u00e1hugam\u00e1l",
+		"interestAbsent": "\u00e1hugasvi\u00f0 {{1}} fannst ekki",
+		"complete": "Heill",
+		"errorLine": "l\u00edna {{1}}",
+		"errorsTitle": "Villur komu upp",
+		"communityUsers": "\u00deetta er samf\u00e9lagslisti",
+		"toMainCommunityToo": "tengjast a\u00f0alsamf\u00e9laginu l\u00edka",
+		"ChooseFile": "Veldu skr\u00e1"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "T\u00e1knar vi\u00f0bur\u00f0i sem f\u00f3lk getur teki\u00f0 \u00fe\u00e1tt \u00ed",
+			"displayType": "Vi\u00f0bur\u00f0ur"
+		},
+		"Calendars/recurring": {
+			"description": "Nota\u00f0 til a\u00f0 tengja strauma sem eiga a\u00f0 endurtaka sig reglulega",
+			"displayType": "Endurtekinn vi\u00f0bur\u00f0ur"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "B\u00e6ta vi\u00f0 rauf",
+		"StartTime": "Byrjunart\u00edmi",
+		"EndTime": "Lokat\u00edmi",
+		"Save": "Vista",
+		"AddTimeSlot": "B\u00e6ta vi\u00f0 t\u00edmarauf",
+		"CopyFromDay": "Afrit fr\u00e1 dags",
+		"Nearest": "N\u00e6st",
+		"Today": "\u00cd dag",
+		"Tomorrow": "\u00c1 morgun",
+		"AfterTomorrow": "Eftir morgundaginn"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "Gerast \u00e1skrifandi a\u00f0 dagatalinu",
+		"copyLinkBelow": "Afrita\u00f0u hlekkinn a\u00f0 ne\u00f0an",
+		"goTo": "Fara til:",
+		"pasteCopiedTo": "L\u00edmdu afrita\u00f0an tengil \u00ed reitinn \u201eVefsl\u00f3\u00f0 dagatals\u201c",
+		"clickAddCalendar": "Smelltu \u00e1 &quot;B\u00e6ta vi\u00f0 dagatali&quot; hnappinn",
+		"copyLink": "Afrita\u00f0u hlekk",
+		"tapToCopy": "Pikka\u00f0u \u00e1 hnappinn h\u00e9r a\u00f0 ne\u00f0an til a\u00f0 afrita hlekkinn \u00e1 klemmuspjaldi\u00f0 \u00feitt",
+		"linkCopied": "Hlekkur afrita\u00f0ur",
+		"step2": "Hlekkur afrita\u00f0ur. Vi\u00f0 erum um a\u00f0 opna Google dagatal. \u00de\u00fa \u00fearft a\u00f0 l\u00edma hlekkinn inn \u00ed textareitinn, smelltu \u00e1 &quot;B\u00e6ta vi\u00f0 dagatali&quot; og loka flipanum (sj\u00e1 skj\u00e1mynd h\u00e9r a\u00f0 ne\u00f0an)",
+		"calendarAppPreferences": "Opna\u00f0u Preferences \u00ed Calendar App \u00e1 Mac \u00fe\u00ednum og stilltu Default Calendar App til a\u00f0 vera eins og s\u00fdnt er h\u00e9r a\u00f0 ne\u00f0an.",
+		"thenCloseDialog": "Loka\u00f0u s\u00ed\u00f0an \u00feessum glugga til a\u00f0 gerast \u00e1skrifandi a\u00f0 dagatalinu \u00fe\u00ednu!",
+		"success": "Dagatali\u00f0 var samstillt"
+	},
+	"@override": {
+		"Assets/content": {
+			"payments": {
+				"reasons": {
+					"EventParticipation": "\u00de\u00e1tttaka \u00ed vi\u00f0bur\u00f0i"
+				}
+			}
+		}
+	}
 }

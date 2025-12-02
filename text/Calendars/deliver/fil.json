@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Salamat sa iyong interes sa {{title}}"
+	},
+	"approved": {
+		"Subject": "Inaprubahan ang Pagdalo",
+		"AttendanceApproved": "Binabati kita! Ang iyong pagdalo ay naaprubahan para sa {{title}}"
+	},
+	"requested": {
+		"Subject": "Hiniling na Pagdalo",
+		"AttendanceRequested": "Kinukumpirma namin ang iyong kahilingang dumalo: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Hindi Naaprubahan ang Pagdalo",
+		"AttendanceRejected": "Hindi inaprubahan ng mga admin ang iyong kahilingang dumalo: {{title}}"
+	},
+	"paid": {
+		"Subject": "Matagumpay na Kumpirmasyon sa Pagbabayad",
+		"YouveBeenCharged": "Nasingil ka ng {{amount}} {{currency}} (at {{credits}} na kredito). Handa ka na! Magkita-kita tayo sa {{title}}"
+	}
+}

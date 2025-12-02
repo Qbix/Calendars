@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Grazzi tal-interess tieg\u0127ek {{title}}"
+	},
+	"approved": {
+		"Subject": "Attendenza Approvata",
+		"AttendanceApproved": "Prosit! L-attendenza tieg\u0127ek \u0121iet approvata g\u0127al {{title}}"
+	},
+	"requested": {
+		"Subject": "Attendenza Mitluba",
+		"AttendanceRequested": "Qed nikkonfermaw it-talba tieg\u0127ek biex tattendi: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Attendenza Mhux Approvata",
+		"AttendanceRejected": "L-amministraturi ma approvawx it-talba tieg\u0127ek biex tattendi: {{title}}"
+	},
+	"paid": {
+		"Subject": "Konferma ta&#39; \u0126las b&#39;Su\u010b\u010bess",
+		"YouveBeenCharged": "\u0120ejt i\u010b\u010bar\u0121jat {{amount}} {{currency}} (u {{credits}} kreditu). Lest! Narak fl- {{title}}"
+	}
+}

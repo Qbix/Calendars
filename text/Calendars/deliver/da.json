@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Tak for din interesse i {{title}}"
+	},
+	"approved": {
+		"Subject": "Godkendt fremm\u00f8de",
+		"AttendanceApproved": "Tillykke! Din deltagelse er blevet godkendt til {{title}}"
+	},
+	"requested": {
+		"Subject": "Anmodet deltagelse",
+		"AttendanceRequested": "Vi bekr\u00e6fter din anmodning om at deltage: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Fremm\u00f8de ikke godkendt",
+		"AttendanceRejected": "Administratorer godkendte ikke din anmodning om at deltage: {{title}}"
+	},
+	"paid": {
+		"Subject": "Bekr\u00e6ftelse af betaling",
+		"YouveBeenCharged": "Du er blevet opkr\u00e6vet {{amount}} {{currency}} (og {{credits}} kreditter). S\u00e5 er du klar! Vi ses kl. {{title}}"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Diolch am eich diddordeb yn {{title}}"
+	},
+	"approved": {
+		"Subject": "Presenoldeb wedi&#39;i Gymeradwyo",
+		"AttendanceApproved": "Llongyfarchiadau! Mae eich presenoldeb wedi&#39;i gymeradwyo ar gyfer {{title}}"
+	},
+	"requested": {
+		"Subject": "Gofynnwyd am Bresenoldeb",
+		"AttendanceRequested": "Rydym yn cadarnhau eich cais i fynychu: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Presenoldeb Heb ei Gymeradwyo",
+		"AttendanceRejected": "Ni chymeradwyodd y gweinyddwyr eich cais i fynychu: {{title}}"
+	},
+	"paid": {
+		"Subject": "Cadarnhad Taliad Llwyddiannus",
+		"YouveBeenCharged": "Rydych chi wedi cael eich codi {{amount}} {{currency}} (a {{credits}} o gredydau). Rydych chi&#39;n barod! Gwelwn ni chi yn {{title}}"
+	}
+}

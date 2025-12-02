@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Kiitos kiinnostuksestasi {{title}} kohtaan"
+	},
+	"approved": {
+		"Subject": "L\u00e4sn\u00e4olo hyv\u00e4ksytty",
+		"AttendanceApproved": "Onnittelut! L\u00e4sn\u00e4olosi on hyv\u00e4ksytty {{title}} tilaisuuteen."
+	},
+	"requested": {
+		"Subject": "L\u00e4sn\u00e4olopyynt\u00f6",
+		"AttendanceRequested": "Vahvistamme osallistumispyynt\u00f6si: {{title}}"
+	},
+	"rejected": {
+		"Subject": "L\u00e4sn\u00e4oloa ei hyv\u00e4ksytty",
+		"AttendanceRejected": "Yll\u00e4pit\u00e4j\u00e4t eiv\u00e4t hyv\u00e4ksyneet osallistumispyynt\u00f6\u00e4si: {{title}}"
+	},
+	"paid": {
+		"Subject": "Maksun onnistumisvahvistus",
+		"YouveBeenCharged": "Sinulta on veloitettu {{amount}} {{currency}} (ja {{credits}} krediitti\u00e4). Olet valmis! N\u00e4hd\u00e4\u00e4n osoitteessa {{title}}"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Dankie vir u belangstelling in {{title}}"
+	},
+	"approved": {
+		"Subject": "Bywoning Goedgekeur",
+		"AttendanceApproved": "Baie geluk! Jou bywoning is goedgekeur vir {{title}}"
+	},
+	"requested": {
+		"Subject": "Bywoning versoek",
+		"AttendanceRequested": "Ons bevestig u versoek om by te woon: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Bywoning nie goedgekeur nie",
+		"AttendanceRejected": "Administrateurs het jou versoek om by te woon nie goedgekeur nie: {{title}}"
+	},
+	"paid": {
+		"Subject": "Suksesvolle Betalingbevestiging",
+		"YouveBeenCharged": "Jy is {{amount}} {{currency}} (en {{credits}} krediete) gehef. Jy&#39;s gereed! Sien jou by {{title}}"
+	}
+}

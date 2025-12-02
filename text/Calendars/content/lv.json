@@ -1,333 +1,342 @@
 {
-    "months": {
-        "Jan": "janvāris",
-        "Feb": "febr",
-        "Mar": "marts",
-        "Apr": "apr",
-        "May": "maijā",
-        "Jun": "jūnijs",
-        "Jul": "jūl",
-        "Aug": "augusts",
-        "Sep": "sept",
-        "Oct": "okt",
-        "Nov": "nov",
-        "Dec": "decembris"
-    },
-    "monthsLong": {
-        "Jan": "janvārī",
-        "Feb": "februāris",
-        "Mar": "marts",
-        "Apr": "aprīlis",
-        "May": "maijā",
-        "Jun": "jūnijs",
-        "Jul": "jūlijā",
-        "Aug": "augusts",
-        "Sep": "septembris",
-        "Oct": "oktobris",
-        "Nov": "novembris",
-        "Dec": "decembris"
-    },
-    "weekdays": {
-        "Sun": "Saule",
-        "Mon": "Pirmd",
-        "Tue": "Otr",
-        "Wed": "Tr",
-        "Thu": "Ce",
-        "Fri": "Piekt",
-        "Sat": "sestdien"
-    },
-    "weekdaysLong": {
-        "Sun": "svētdiena",
-        "Mon": "pirmdiena",
-        "Tue": "otrdiena",
-        "Wed": "trešdiena",
-        "Thu": "ceturtdiena",
-        "Fri": "piektdiena",
-        "Sat": "sestdiena"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "Plānojiet jaunu notikumu"
-        },
-        "tool": {
-            "HostedBy": "Vada {{name}}",
-            "Name": "Vārds",
-            "AreYouIn": "Vai tu esi iekšā?",
-            "Yes": "Jā",
-            "No": "Nē",
-            "Ok": "Labi",
-            "Cancel": "Atcelt",
-            "Maybe": "Var būt",
-            "Conversation": "Saruna",
-            "Promote": "Reklamējiet šo notikumu",
-            "Reminders": "Atgādinājumi",
-            "RemindersLabel": "Es vēlos saņemt paziņojumu par notikumu šeit:",
-            "MoreInfo": "Vairāk informācijas",
-            "Registration": "Reģistrācija",
-            "SetReminders": "Lūdzu, iestatiet atgādinājumus",
-            "ReservationFee": "Rezervācijas maksa",
-            "AddParticipants": "Pievienot dalībniekus",
-            "ManageReservation": "Pārvaldīt rezervāciju",
-            "UpdateFutureReservations": "Vai arī vēlaties atjaunināt visas turpmākās rezervācijas tādā pašā veidā?",
-            "RecurringAdmin": "Atkārtoti iestatījumi",
-            "MakeReservation": "Veiciet rezervāciju",
-            "StartLiveStream": "Noklikšķiniet, lai straumētu tiešraidē",
-            "LiveStreamEnded": "Tiešraides straume ir beigusies",
-            "ClickToViewRecording": "noklikšķiniet, lai skatītu ierakstu",
-            "Checkin": "Skenējiet dalībnieku kodus",
-            "Myqr": "Reģistrēties",
-            "CloseEvent": {
-                "button": "Atcelt notikumu",
-                "confirm": {
-                    "text": {
-                        "Cancel": "Vai tiešām vēlaties atcelt šo notikumu?",
-                        "Participant": "Šajā pasākumā ir 1 dalībnieks",
-                        "Participants": "Šajā pasākumā ir {{count}} dalībnieki",
-                        "Recurring": "Šis pasākums atkārtojas. Vai vēlaties arī atcelt visus turpmākos gadījumus?"
-                    },
-                    "trip": {
-                        "Cancel": "Vai vēlaties arī atcelt savu ceļojumu {{tripDirection}} šajā pasākumā?",
-                        "Passengers": "Uz jums paļaujas {{passengerCount}} pasažieri.",
-                        "Title": "Aizvērt ceļojumu"
-                    },
-                    "directions": {
-                        "TO": "UZ",
-                        "FROM": "NO",
-                        "to": "uz",
-                        "from": "no"
-                    }
-                }
-            },
-            "Calendar": "Kalendārs",
-            "Interests": "Intereses",
-            "Directions": "Norādes",
-            "TitleOfEvent": "Pasākuma nosaukums:",
-            "OpenTo": "Atvērts uz",
-            "GoingTo": "būs plkst",
-            "NotGoingTo": "nebūs plkst",
-            "MaybeGoingTo": "varbūt būs plkst",
-            "AdminDontPay": "Administratoram nav jāmaksā",
-            "PublisherDontPay": "Izdevējam nav jāmaksā",
-            "EmptyList": "Tukšs saraksts",
-            "NeedToPayCredits": "Jāmaksā: <span>{{amount}} kredīti<\/span>",
-            "PleaseJoinParticipants": "Lūdzu, pievienojieties {{participant}}",
-            "YouReservingPlace": "Jūs rezervēsiet savu vietu.",
-            "SelectIncludesToAdd": "Atlasiet vienu vai vairākus {{TypeDisplayPlural}}, ko pievienot:",
-            "YouHaveNotRegisteredAnyIncluded": "Jūs vēl neesat reģistrējis nevienu {{TypeDisplayPlural}}",
-            "Proceed": "Turpināt",
-            "MakeChanges": "Saglabāt manas izmaiņas",
-            "CancelReservation": "Atcelt visu rezervāciju",
-            "Total": "Kopā",
-            "RequiredRelatedParticipants": "Šim pasākumam ir nepieciešami dalībnieki: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Lūdzu, rediģējiet pieejamību &quot;{{title}}&quot;, lai atjauninātu periodiskos iestatījumus",
-            "Presentation": "Prezentācija",
-            "YouAreNotParticipated": "Jūs neesat pasākuma dalībnieks",
-            "LiveStreamStarted": "Tiešraides straume ir sākusies",
-            "WebRTCStarted": "Sākās telekonference",
-            "WebRTCEnded": "Telekonference beidzās"
-        },
-        "composer": {
-            "SetLocation": "Iestatīt manu atrašanās vietu",
-            "SetInfoLink": "Iestatīt saiti uz papildu informāciju",
-            "ChooseAvailability": "Izvēlieties Pieejamo pakalpojumu",
-            "ChooseActivity": "Izvēlieties aktivitāti",
-            "ChoosePublisher": "Izvēlieties Izdevējs",
-            "Day": "diena",
-            "Starting": "Sākas",
-            "Duration": "Ilgums",
-            "Hour": "Stunda",
-            "Hours": "Stundas",
-            "Minutes": "Minūtes",
-            "Ending": "Beigas",
-            "People": "Cilvēki",
-            "Share": "Dalīties",
-            "Continue": "Turpināt",
-            "Recurring": "Atkārtojas",
-            "RecurringTitle": "Atkārtotas dienas",
-            "Daily": "Ikdienas",
-            "Weekly": "Iknedēļas",
-            "Monthly": "Ikmēneša",
-            "SelectLocation": "Lūdzu, vispirms atlasiet atrašanās vietu.",
-            "eventType": "Pasākuma veids",
-            "EditTitle": "Padomājiet par interesantu nosaukumu...",
-            "SetTitle": "Lūdzu, iestatiet pasākuma nosaukumu",
-            "ScheduleOnlineConference": "Ieplānojiet tiešsaistes konferenci",
-            "SOCDescription": "Lūdzu, norādiet konferences sākuma un beigu laiku. Katra persona, kas apmeklēs pasākumu šajā laika periodā, automātiski izveidos savienojumu ar tiešsaistes konferenci.",
-            "EndDate": "Beigas",
-            "location": {
-                "Title": "Iestatiet savu atrašanās vietu"
-            },
-            "interest": {
-                "Title": "Izvēlieties aktivitāti",
-                "Filter": "Meklēt intereses..."
-            },
-            "SetLivestream": "Ielīmējiet saiti uz tiešraides straumi\/videokonferenci",
-            "Locally": "lokāli",
-            "EventInfoLink": "Pasākuma informācijas saite",
-            "TicketPurchaseLink": "Biļešu iegādes saite"
-        },
-        "EventAlreadyClosed": "Šis pasākums jau ir slēgts",
-        "addToCalendar": {
-            "permissions": {
-                "title": "Vai pievienot kalendāram?",
-                "prompt": "Vai vēlaties pievienot šo notikumu savam kalendāram?",
-                "yes": "Jā",
-                "no": "Nē"
-            },
-            "dialog": {
-                "Title": "Pievienojiet notikumu savam kalendāram"
-            }
-        },
-        "ErrorLeaveEndedEvent": "Atvainojiet, bet jūs nevarat atstāt beigušos notikumu"
-    },
-    "availabilities": {
-        "Title": "Pieejamība",
-        "NewAvailability": {
-            "Title": "Jauna pieejamība",
-            "SaveAvailability": "Saglabāt pieejamību",
-            "SelectTemplate": "Lūdzu, atlasiet pakalpojumu",
-            "SelectLocation": "Lūdzu, atlasiet atrašanās vietu",
-            "SelectArea": "Lūdzu, atlasiet apgabalu",
-            "Type": "Tips",
-            "Weekly": "Iknedēļas",
-            "RecurringStartDate": "Atkārtots sākuma datums",
-            "EndDate": "Beigu datums",
-            "SelectTime": "Pārvaldiet laika nišas",
-            "SelectTimeSlot": "Izvēlieties laika nišu",
-            "SelectTimeSlots": "Izvēlieties vajadzīgos laika posmus",
-            "PeopleMin": "Minimālais apmeklētāju skaits",
-            "PeopleMax": "Maksimālais apmeklētāju skaits",
-            "PeopleLabels": "Atļautas lomas",
-            "Next": "Nākamais",
-            "Back": "Atpakaļ",
-            "RecurringEndDate": "Atkārtots beigu datums",
-            "ScheduleOnlineConference": "Ieplānojiet telekonferenci",
-            "SetLivestream": "Ielīmējiet saiti uz tiešraides straumi\/videokonferenci",
-            "SelectTimeZone": "Izvēlieties laika joslu"
-        },
-        "EditAvailability": "Rediģēt pieejamību",
-        "SetVisitors": "Iestatīt apmeklētājus",
-        "Price": "Cena",
-        "SelectAction": "Lūdzu, atlasiet darbību",
-        "OpenProfile": "Atvērt profilu",
-        "RemoveStaff": "Noņemt personālu",
-        "PleaseSelectTimeSlots": "Lūdzu, atlasiet laika nišas",
-        "ExceptionOccurred": "Notika izņēmums",
-        "NotEnoughCreditsToParticipateEvents": "Nav pietiekami daudz kredītpunktu, lai piedalītos {{eventsAmount}} pasākumos. Jums ir nepieciešami {{needCredits}} kredīti. Vai vēlaties iegādāties?",
-        "LiveStream": "Tiešraide",
-        "InviteStaff": "Uzaiciniet darbiniekus"
-    },
-    "recurring": {
-        "dialog": {
-            "startDate": "Sākuma datums",
-            "endDate": "Beigu datums",
-            "justOnce": "Tikai vienu reizi",
-            "justOnceWeekly": "Tikai šonedēļ",
-            "justOnceMonthly": "Tikai šomēnes",
-            "recurring": "Atkārtojas"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "Bezmaksas pasākums",
-            "optional": "Izvēles ieguldījums",
-            "required": "Nepieciešamais maksājums"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "Izvēles ieguldījums",
-            "required": "Nepieciešamais maksājums",
-            "paid": "samaksāts"
-        },
-        "confirmationDialog": {
-            "title": "Maksājuma apstiprinājums",
-            "content": "Šim notikumam ir neobligāts ieguldījums {{amount}}.",
-            "button": "Piedalieties"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} vēl nav daļa no notikuma. Vai vēlaties pievienot viņus kā dalībnieku?",
-        "userNotFound": "Lietotājs nav atrasts",
-        "confirmYes": "Jā",
-        "confirmNo": "Nē"
-    },
-    "notifications": {
-        "EventActivityIn": "Pasākuma aktivitātes šajā periodā: {{{stream.fields.title}}}",
-        "RecurringRulesChanged": "Notikumam {{{call 'message.getInstruction' 'eventTitle'}}} ir mainīti periodiskie noteikumi",
-        "ManageEmailSubscriptions": "pārvaldīt savus e-pasta abonementus",
-        "IfUnsubscribe": "Ja vēlaties anulēt abonementu",
-        "ClickHereToVisitEvent": "Lūdzu, noklikšķiniet šeit, lai apmeklētu pasākumu",
-        "Calendars\/reminder": "Pasākums &quot;{{{call 'message.getInstruction' 'name'}}&quot; sāksies {{&call 'message.getInstruction' 'time'}}}",
-        "webrtc": {
-            "Started": "Sākās telekonference",
-            "Ended": "Telekonference beidzās"
-        },
-        "livestream": {
-            "Started": "Sākta tiešraide",
-            "Ended": "Tiešraide ir beigusies",
-            "ClickToView": "Skatiet to šeit."
-        }
-    },
-    "import": {
-        "linkTitle": "Aizpildiet šo izklājlapu",
-        "fileLabel": "Augšupielādēt izklājlapu:",
-        "importOptions": "Iespējas",
-        "importProgress": "Progress",
-        "sampleCSV": "Lejupielādēt CSV paraugu",
-        "joinEventLabel": "Pievienojiet lietotājus nejaušam notikumam",
-        "smsText": "Sveiki, es tikko nosūtīju jums saiti uz {{communityName}}. Lūdzu, pārbaudiet to.",
-        "emailSubject": "Tikko nosūtīja jums saiti",
-        "emailBody": "Sveiki, es tikko nosūtīju jums ielūgumu uz {{communityName}}. Lūdzu, pārbaudiet to.",
-        "fileNotFound": "Diemžēl CSV fails netika atrasts.",
-        "fileEmpty": "Atvainojiet, CSV fails ir tukšs.",
-        "fieldNotFound": "Obligātais lauks &quot;{{1}}&quot; netika atrasts",
-        "userIdNotFound": "lietotājs pastāv, bet ID ir tukšs",
-        "activateUsers": "Vai nosūtīt lietotājiem aktivizācijas ziņojumu?",
-        "taskStreamInvalid": "uzdevumu straume nav derīga",
-        "instructionsEmpty": "uzdevumu straumes norādījumi ir tukši",
-        "interestsEmpty": "nevar iegūt intereses",
-        "interestAbsent": "interese {{1}} nav atrasta",
-        "complete": "Pabeigts",
-        "errorLine": "rinda {{1}}",
-        "errorsTitle": "Radās kļūdas",
-        "communityUsers": "Šis ir kopienu saraksts",
-        "toMainCommunityToo": "attiecas arī uz galveno kopienu",
-        "ChooseFile": "izvēlēties failu"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "Apzīmē notikumu, kurā cilvēki var piedalīties",
-            "displayType": "Pasākums"
-        },
-        "Calendars\/recurring": {
-            "description": "Izmanto saistīto straumēm, kurām ir paredzēts periodiski atkārtot",
-            "displayType": "Atkārtots pasākums"
-        }
-    },
-    "timeslots": {
-        "AddSlot": "Pievienot slotu",
-        "StartTime": "Sākuma laiks",
-        "EndTime": "Beigu laiks",
-        "Save": "Saglabāt",
-        "AddTimeSlot": "Pievienojiet laika slotu",
-        "CopyFromDay": "Kopēt no dienas",
-        "Nearest": "Tuvākais",
-        "Today": "Šodien",
-        "Tomorrow": "rīt",
-        "AfterTomorrow": "Pēc rītdienas"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "Abonējiet kalendāru",
-        "copyLinkBelow": "Kopējiet saiti zemāk",
-        "goTo": "Iet uz:",
-        "pasteCopiedTo": "Ielīmējiet nokopēto saiti laukā &quot;Kalendāra URL&quot;.",
-        "clickAddCalendar": "Noklikšķiniet uz pogas &quot;Pievienot kalendāru&quot;.",
-        "copyLink": "Kopēt saiti",
-        "tapToCopy": "Pieskarieties tālāk esošajai pogai, lai kopētu saiti starpliktuvē",
-        "linkCopied": "Saite nokopēta",
-        "step2": "Saite nokopēta. Mēs gatavojamies atvērt Google kalendāru. Jums būs jāielīmē saite tekstlodziņā, noklikšķiniet uz &quot;Pievienot kalendāru&quot; un aizveriet cilni (skatiet tālāk redzamo ekrānuzņēmumu).",
-        "calendarAppPreferences": "Mac datora lietotnē Calendar atveriet iestatījumus un iestatiet noklusējuma kalendāra lietotni, kā parādīts tālāk.",
-        "thenCloseDialog": "Pēc tam aizveriet šo dialoglodziņu, lai abonētu savu kalendāru!",
-        "success": "Kalendārs tika veiksmīgi sinhronizēts"
-    }
+	"months": {
+		"Jan": "janv\u0101ris",
+		"Feb": "febr",
+		"Mar": "marts",
+		"Apr": "apr",
+		"May": "maij\u0101",
+		"Jun": "j\u016bnijs",
+		"Jul": "j\u016bl",
+		"Aug": "augusts",
+		"Sep": "sept",
+		"Oct": "okt",
+		"Nov": "nov",
+		"Dec": "decembris"
+	},
+	"monthsLong": {
+		"Jan": "janv\u0101r\u012b",
+		"Feb": "febru\u0101ris",
+		"Mar": "marts",
+		"Apr": "apr\u012blis",
+		"May": "maij\u0101",
+		"Jun": "j\u016bnijs",
+		"Jul": "j\u016blij\u0101",
+		"Aug": "augusts",
+		"Sep": "septembris",
+		"Oct": "oktobris",
+		"Nov": "novembris",
+		"Dec": "decembris"
+	},
+	"weekdays": {
+		"Sun": "Saule",
+		"Mon": "Pirmd",
+		"Tue": "Otr",
+		"Wed": "Tr",
+		"Thu": "Ce",
+		"Fri": "Piekt",
+		"Sat": "sestdien"
+	},
+	"weekdaysLong": {
+		"Sun": "sv\u0113tdiena",
+		"Mon": "pirmdiena",
+		"Tue": "otrdiena",
+		"Wed": "tre\u0161diena",
+		"Thu": "ceturtdiena",
+		"Fri": "piektdiena",
+		"Sat": "sestdiena"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Pl\u0101nojiet jaunu notikumu"
+		},
+		"tool": {
+			"HostedBy": "Vada {{name}}",
+			"Name": "V\u0101rds",
+			"AreYouIn": "Vai tu esi iek\u0161\u0101?",
+			"Yes": "J\u0101",
+			"No": "N\u0113",
+			"Ok": "Labi",
+			"Cancel": "Atcelt",
+			"Maybe": "Var b\u016bt",
+			"Conversation": "Saruna",
+			"Promote": "Reklam\u0113jiet \u0161o notikumu",
+			"Reminders": "Atg\u0101din\u0101jumi",
+			"RemindersLabel": "Es v\u0113los sa\u0146emt pazi\u0146ojumu par notikumu \u0161eit:",
+			"MoreInfo": "Vair\u0101k inform\u0101cijas",
+			"Registration": "Re\u0123istr\u0101cija",
+			"SetReminders": "L\u016bdzu, iestatiet atg\u0101din\u0101jumus",
+			"ReservationFee": "Rezerv\u0101cijas maksa",
+			"AddParticipants": "Pievienot dal\u012bbniekus",
+			"ManageReservation": "P\u0101rvald\u012bt rezerv\u0101ciju",
+			"UpdateFutureReservations": "Vai ar\u012b v\u0113laties atjaunin\u0101t visas turpm\u0101k\u0101s rezerv\u0101cijas t\u0101d\u0101 pa\u0161\u0101 veid\u0101?",
+			"RecurringAdmin": "Atk\u0101rtoti iestat\u012bjumi",
+			"MakeReservation": "Veiciet rezerv\u0101ciju",
+			"StartLiveStream": "Noklik\u0161\u0137iniet, lai straum\u0113tu tie\u0161raid\u0113",
+			"LiveStreamEnded": "Tie\u0161raides straume ir beigusies",
+			"ClickToViewRecording": "noklik\u0161\u0137iniet, lai skat\u012btu ierakstu",
+			"Checkin": "Sken\u0113jiet dal\u012bbnieku kodus",
+			"Myqr": "Re\u0123istr\u0113ties",
+			"CloseEvent": {
+				"button": "Atcelt notikumu",
+				"confirm": {
+					"text": {
+						"Cancel": "Vai tie\u0161\u0101m v\u0113laties atcelt \u0161o notikumu?",
+						"Participant": "\u0160aj\u0101 pas\u0101kum\u0101 ir 1 dal\u012bbnieks",
+						"Participants": "\u0160aj\u0101 pas\u0101kum\u0101 ir {{count}}\u00a0dal\u012bbnieki",
+						"Recurring": "\u0160is pas\u0101kums atk\u0101rtojas. Vai v\u0113laties ar\u012b atcelt visus turpm\u0101kos gad\u012bjumus?"
+					},
+					"trip": {
+						"Cancel": "Vai v\u0113laties ar\u012b atcelt savu ce\u013cojumu {{tripDirection}} \u0161aj\u0101 pas\u0101kum\u0101?",
+						"Passengers": "Uz jums pa\u013caujas {{passengerCount}} pasa\u017eieri.",
+						"Title": "Aizv\u0113rt ce\u013cojumu"
+					},
+					"directions": {
+						"TO": "UZ",
+						"FROM": "NO",
+						"to": "uz",
+						"from": "no"
+					}
+				}
+			},
+			"Calendar": "Kalend\u0101rs",
+			"Interests": "Intereses",
+			"Directions": "Nor\u0101des",
+			"TitleOfEvent": "Pas\u0101kuma nosaukums:",
+			"OpenTo": "Atv\u0113rts uz",
+			"GoingTo": "b\u016bs plkst",
+			"NotGoingTo": "neb\u016bs plkst",
+			"MaybeGoingTo": "varb\u016bt b\u016bs plkst",
+			"AdminDontPay": "Administratoram nav j\u0101maks\u0101",
+			"PublisherDontPay": "Izdev\u0113jam nav j\u0101maks\u0101",
+			"EmptyList": "Tuk\u0161s saraksts",
+			"NeedToPayCredits": "J\u0101maks\u0101: <span>{{amount}} kred\u012bti</span>",
+			"PleaseJoinParticipants": "L\u016bdzu, pievienojieties {{participant}}",
+			"YouReservingPlace": "J\u016bs rezerv\u0113siet savu vietu.",
+			"SelectIncludesToAdd": "Atlasiet vienu vai vair\u0101kus {{TypeDisplayPlural}}, ko pievienot:",
+			"YouHaveNotRegisteredAnyIncluded": "J\u016bs v\u0113l neesat re\u0123istr\u0113jis nevienu {{TypeDisplayPlural}}",
+			"Proceed": "Turpin\u0101t",
+			"MakeChanges": "Saglab\u0101t manas izmai\u0146as",
+			"CancelReservation": "Atcelt visu rezerv\u0101ciju",
+			"Total": "Kop\u0101",
+			"RequiredRelatedParticipants": "\u0160im pas\u0101kumam ir nepiecie\u0161ami dal\u012bbnieki: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "L\u016bdzu, redi\u0123\u0113jiet pieejam\u012bbu &quot;{{title}}&quot;, lai atjaunin\u0101tu periodiskos iestat\u012bjumus",
+			"Presentation": "Prezent\u0101cija",
+			"YouAreNotParticipated": "J\u016bs neesat pas\u0101kuma dal\u012bbnieks",
+			"LiveStreamStarted": "Tie\u0161raides straume ir s\u0101kusies",
+			"WebRTCStarted": "S\u0101k\u0101s telekonference",
+			"WebRTCEnded": "Telekonference beidz\u0101s"
+		},
+		"composer": {
+			"SetLocation": "Iestat\u012bt manu atra\u0161an\u0101s vietu",
+			"SetInfoLink": "Iestat\u012bt saiti uz papildu inform\u0101ciju",
+			"ChooseAvailability": "Izv\u0113lieties Pieejamo pakalpojumu",
+			"ChooseActivity": "Izv\u0113lieties aktivit\u0101ti",
+			"ChoosePublisher": "Izv\u0113lieties Izdev\u0113js",
+			"Day": "diena",
+			"Starting": "S\u0101kas",
+			"Duration": "Ilgums",
+			"Hour": "Stunda",
+			"Hours": "Stundas",
+			"Minutes": "Min\u016btes",
+			"Ending": "Beigas",
+			"People": "Cilv\u0113ki",
+			"Share": "Dal\u012bties",
+			"Continue": "Turpin\u0101t",
+			"Recurring": "Atk\u0101rtojas",
+			"RecurringTitle": "Atk\u0101rtotas dienas",
+			"Daily": "Ikdienas",
+			"Weekly": "Ikned\u0113\u013cas",
+			"Monthly": "Ikm\u0113ne\u0161a",
+			"SelectLocation": "L\u016bdzu, vispirms atlasiet atra\u0161an\u0101s vietu.",
+			"eventType": "Pas\u0101kuma veids",
+			"EditTitle": "Padom\u0101jiet par interesantu nosaukumu...",
+			"SetTitle": "L\u016bdzu, iestatiet pas\u0101kuma nosaukumu",
+			"ScheduleOnlineConference": "Iepl\u0101nojiet tie\u0161saistes konferenci",
+			"SOCDescription": "L\u016bdzu, nor\u0101diet konferences s\u0101kuma un beigu laiku. Katra persona, kas apmekl\u0113s pas\u0101kumu \u0161aj\u0101 laika period\u0101, autom\u0101tiski izveidos savienojumu ar tie\u0161saistes konferenci.",
+			"EndDate": "Beigas",
+			"location": {
+				"Title": "Iestatiet savu atra\u0161an\u0101s vietu"
+			},
+			"interest": {
+				"Title": "Izv\u0113lieties aktivit\u0101ti",
+				"Filter": "Mekl\u0113t intereses..."
+			},
+			"SetLivestream": "Iel\u012bm\u0113jiet saiti uz tie\u0161raides straumi/videokonferenci",
+			"Locally": "lok\u0101li",
+			"EventInfoLink": "Pas\u0101kuma inform\u0101cijas saite",
+			"TicketPurchaseLink": "Bi\u013ce\u0161u ieg\u0101des saite"
+		},
+		"EventAlreadyClosed": "\u0160is pas\u0101kums jau ir sl\u0113gts",
+		"addToCalendar": {
+			"permissions": {
+				"title": "Vai pievienot kalend\u0101ram?",
+				"prompt": "Vai v\u0113laties pievienot \u0161o notikumu savam kalend\u0101ram?",
+				"yes": "J\u0101",
+				"no": "N\u0113"
+			},
+			"dialog": {
+				"Title": "Pievienojiet notikumu savam kalend\u0101ram"
+			}
+		},
+		"ErrorLeaveEndedEvent": "Atvainojiet, bet j\u016bs nevarat atst\u0101t beigu\u0161os notikumu"
+	},
+	"availabilities": {
+		"Title": "Pieejam\u012bba",
+		"NewAvailability": {
+			"Title": "Jauna pieejam\u012bba",
+			"SaveAvailability": "Saglab\u0101t pieejam\u012bbu",
+			"SelectTemplate": "L\u016bdzu, atlasiet pakalpojumu",
+			"SelectLocation": "L\u016bdzu, atlasiet atra\u0161an\u0101s vietu",
+			"SelectArea": "L\u016bdzu, atlasiet apgabalu",
+			"Type": "Tips",
+			"Weekly": "Ikned\u0113\u013cas",
+			"RecurringStartDate": "Atk\u0101rtots s\u0101kuma datums",
+			"EndDate": "Beigu datums",
+			"SelectTime": "P\u0101rvaldiet laika ni\u0161as",
+			"SelectTimeSlot": "Izv\u0113lieties laika ni\u0161u",
+			"SelectTimeSlots": "Izv\u0113lieties vajadz\u012bgos laika posmus",
+			"PeopleMin": "Minim\u0101lais apmekl\u0113t\u0101ju skaits",
+			"PeopleMax": "Maksim\u0101lais apmekl\u0113t\u0101ju skaits",
+			"PeopleLabels": "At\u013cautas lomas",
+			"Next": "N\u0101kamais",
+			"Back": "Atpaka\u013c",
+			"RecurringEndDate": "Atk\u0101rtots beigu datums",
+			"ScheduleOnlineConference": "Iepl\u0101nojiet telekonferenci",
+			"SetLivestream": "Iel\u012bm\u0113jiet saiti uz tie\u0161raides straumi/videokonferenci",
+			"SelectTimeZone": "Izv\u0113lieties laika joslu"
+		},
+		"EditAvailability": "Redi\u0123\u0113t pieejam\u012bbu",
+		"SetVisitors": "Iestat\u012bt apmekl\u0113t\u0101jus",
+		"Price": "Cena",
+		"SelectAction": "L\u016bdzu, atlasiet darb\u012bbu",
+		"OpenProfile": "Atv\u0113rt profilu",
+		"RemoveStaff": "No\u0146emt person\u0101lu",
+		"PleaseSelectTimeSlots": "L\u016bdzu, atlasiet laika ni\u0161as",
+		"ExceptionOccurred": "Notika iz\u0146\u0113mums",
+		"NotEnoughCreditsToParticipateEvents": "Nav pietiekami daudz kred\u012btpunktu, lai piedal\u012btos {{eventsAmount}} pas\u0101kumos. Jums ir nepiecie\u0161ami {{needCredits}} kred\u012bti. Vai v\u0113laties ieg\u0101d\u0101ties?",
+		"LiveStream": "Tie\u0161raide",
+		"InviteStaff": "Uzaiciniet darbiniekus"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "S\u0101kuma datums",
+			"endDate": "Beigu datums",
+			"justOnce": "Tikai vienu reizi",
+			"justOnceWeekly": "Tikai \u0161oned\u0113\u013c",
+			"justOnceMonthly": "Tikai \u0161om\u0113nes",
+			"recurring": "Atk\u0101rtojas"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "Bezmaksas pas\u0101kums",
+			"optional": "Izv\u0113les ieguld\u012bjums",
+			"required": "Nepiecie\u0161amais maks\u0101jums"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "Izv\u0113les ieguld\u012bjums",
+			"required": "Nepiecie\u0161amais maks\u0101jums",
+			"paid": "samaks\u0101ts"
+		},
+		"confirmationDialog": {
+			"title": "Maks\u0101juma apstiprin\u0101jums",
+			"content": "\u0160im notikumam ir neoblig\u0101ts ieguld\u012bjums {{amount}}.",
+			"button": "Piedalieties"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} v\u0113l nav da\u013ca no notikuma. Vai v\u0113laties pievienot vi\u0146us k\u0101 dal\u012bbnieku?",
+		"userNotFound": "Lietot\u0101js nav atrasts",
+		"confirmYes": "J\u0101",
+		"confirmNo": "N\u0113"
+	},
+	"notifications": {
+		"EventActivityIn": "Pas\u0101kuma aktivit\u0101tes \u0161aj\u0101 period\u0101: {{{stream.fields.title}}}",
+		"RecurringRulesChanged": "Notikumam {{{call 'message.getInstruction' 'eventTitle'}}} ir main\u012bti periodiskie noteikumi",
+		"ManageEmailSubscriptions": "p\u0101rvald\u012bt savus e-pasta abonementus",
+		"IfUnsubscribe": "Ja v\u0113laties anul\u0113t abonementu",
+		"ClickHereToVisitEvent": "L\u016bdzu, noklik\u0161\u0137iniet \u0161eit, lai apmekl\u0113tu pas\u0101kumu",
+		"Calendars/reminder": "Pas\u0101kums &quot;{{{call 'message.getInstruction' 'name'}}&quot; s\u0101ksies {{&call 'message.getInstruction' 'time'}}}",
+		"webrtc": {
+			"Started": "S\u0101k\u0101s telekonference",
+			"Ended": "Telekonference beidz\u0101s"
+		},
+		"livestream": {
+			"Started": "S\u0101kta tie\u0161raide",
+			"Ended": "Tie\u0161raide ir beigusies",
+			"ClickToView": "Skatiet to \u0161eit."
+		}
+	},
+	"import": {
+		"linkTitle": "Aizpildiet \u0161o izkl\u0101jlapu",
+		"fileLabel": "Aug\u0161upiel\u0101d\u0113t izkl\u0101jlapu:",
+		"importOptions": "Iesp\u0113jas",
+		"importProgress": "Progress",
+		"sampleCSV": "Lejupiel\u0101d\u0113t CSV paraugu",
+		"joinEventLabel": "Pievienojiet lietot\u0101jus nejau\u0161am notikumam",
+		"smsText": "Sveiki, es tikko nos\u016bt\u012bju jums saiti uz {{communityName}}. L\u016bdzu, p\u0101rbaudiet to.",
+		"emailSubject": "Tikko nos\u016bt\u012bja jums saiti",
+		"emailBody": "Sveiki, es tikko nos\u016bt\u012bju jums iel\u016bgumu uz {{communityName}}. L\u016bdzu, p\u0101rbaudiet to.",
+		"fileNotFound": "Diem\u017e\u0113l CSV fails netika atrasts.",
+		"fileEmpty": "Atvainojiet, CSV fails ir tuk\u0161s.",
+		"fieldNotFound": "Oblig\u0101tais lauks &quot;{{1}}&quot; netika atrasts",
+		"userIdNotFound": "lietot\u0101js past\u0101v, bet ID ir tuk\u0161s",
+		"activateUsers": "Vai nos\u016bt\u012bt lietot\u0101jiem aktiviz\u0101cijas zi\u0146ojumu?",
+		"taskStreamInvalid": "uzdevumu straume nav der\u012bga",
+		"instructionsEmpty": "uzdevumu straumes nor\u0101d\u012bjumi ir tuk\u0161i",
+		"interestsEmpty": "nevar ieg\u016bt intereses",
+		"interestAbsent": "interese {{1}} nav atrasta",
+		"complete": "Pabeigts",
+		"errorLine": "rinda {{1}}",
+		"errorsTitle": "Rad\u0101s k\u013c\u016bdas",
+		"communityUsers": "\u0160is ir kopienu saraksts",
+		"toMainCommunityToo": "attiecas ar\u012b uz galveno kopienu",
+		"ChooseFile": "izv\u0113l\u0113ties failu"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "Apz\u012bm\u0113 notikumu, kur\u0101 cilv\u0113ki var piedal\u012bties",
+			"displayType": "Pas\u0101kums"
+		},
+		"Calendars/recurring": {
+			"description": "Izmanto saist\u012bto straum\u0113m, kur\u0101m ir paredz\u0113ts periodiski atk\u0101rtot",
+			"displayType": "Atk\u0101rtots pas\u0101kums"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "Pievienot slotu",
+		"StartTime": "S\u0101kuma laiks",
+		"EndTime": "Beigu laiks",
+		"Save": "Saglab\u0101t",
+		"AddTimeSlot": "Pievienojiet laika slotu",
+		"CopyFromDay": "Kop\u0113t no dienas",
+		"Nearest": "Tuv\u0101kais",
+		"Today": "\u0160odien",
+		"Tomorrow": "r\u012bt",
+		"AfterTomorrow": "P\u0113c r\u012btdienas"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "Abon\u0113jiet kalend\u0101ru",
+		"copyLinkBelow": "Kop\u0113jiet saiti zem\u0101k",
+		"goTo": "Iet uz:",
+		"pasteCopiedTo": "Iel\u012bm\u0113jiet nokop\u0113to saiti lauk\u0101 &quot;Kalend\u0101ra URL&quot;.",
+		"clickAddCalendar": "Noklik\u0161\u0137iniet uz pogas &quot;Pievienot kalend\u0101ru&quot;.",
+		"copyLink": "Kop\u0113t saiti",
+		"tapToCopy": "Pieskarieties t\u0101l\u0101k eso\u0161ajai pogai, lai kop\u0113tu saiti starpliktuv\u0113",
+		"linkCopied": "Saite nokop\u0113ta",
+		"step2": "Saite nokop\u0113ta. M\u0113s gatavojamies atv\u0113rt Google kalend\u0101ru. Jums b\u016bs j\u0101iel\u012bm\u0113 saite tekstlodzi\u0146\u0101, noklik\u0161\u0137iniet uz &quot;Pievienot kalend\u0101ru&quot; un aizveriet cilni (skatiet t\u0101l\u0101k redzamo ekr\u0101nuz\u0146\u0113mumu).",
+		"calendarAppPreferences": "Mac datora lietotn\u0113 Calendar atveriet iestat\u012bjumus un iestatiet noklus\u0113juma kalend\u0101ra lietotni, k\u0101 par\u0101d\u012bts t\u0101l\u0101k.",
+		"thenCloseDialog": "P\u0113c tam aizveriet \u0161o dialoglodzi\u0146u, lai abon\u0113tu savu kalend\u0101ru!",
+		"success": "Kalend\u0101rs tika veiksm\u012bgi sinhroniz\u0113ts"
+	},
+	"@override": {
+		"Assets/content": {
+			"payments": {
+				"reasons": {
+					"EventParticipation": "Dal\u012bba pas\u0101kumos"
+				}
+			}
+		}
+	}
 }

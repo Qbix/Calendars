@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Gracias por su inter\u00e9s en {{title}}"
+	},
+	"approved": {
+		"Subject": "Asistencia Aprobada",
+		"AttendanceApproved": "\u00a1Felicitaciones! Tu asistencia ha sido aprobada para {{title}}"
+	},
+	"requested": {
+		"Subject": "Se solicita asistencia",
+		"AttendanceRequested": "Estamos confirmando tu solicitud para asistir: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Asistencia no aprobada",
+		"AttendanceRejected": "Los administradores no aprobaron su solicitud para asistir: {{title}}"
+	},
+	"paid": {
+		"Subject": "Confirmaci\u00f3n de pago exitosa",
+		"YouveBeenCharged": "Te han cobrado {{amount}} {{currency}} (y {{credits}} cr\u00e9ditos). \u00a1Listo! Nos vemos a {{title}}"
+	}
+}

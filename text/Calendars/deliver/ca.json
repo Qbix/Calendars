@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Gr\u00e0cies pel vostre inter\u00e8s en {{title}}"
+	},
+	"approved": {
+		"Subject": "Assist\u00e8ncia aprovada",
+		"AttendanceApproved": "Enhorabona! La teva assist\u00e8ncia ha estat aprovada per a {{title}}"
+	},
+	"requested": {
+		"Subject": "Assist\u00e8ncia sol\u00b7licitada",
+		"AttendanceRequested": "Confirmem la vostra sol\u00b7licitud d&#39;assist\u00e8ncia: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Assist\u00e8ncia no aprovada",
+		"AttendanceRejected": "Els administradors no han aprovat la teva sol\u00b7licitud d&#39;assist\u00e8ncia: {{title}}"
+	},
+	"paid": {
+		"Subject": "Confirmaci\u00f3 de pagament correcta",
+		"YouveBeenCharged": "T&#39;han carregat {{amount}} {{currency}} (i {{credits}} cr\u00e8dits). Ja est\u00e0! Ens veiem a {{title}}"
+	}
+}

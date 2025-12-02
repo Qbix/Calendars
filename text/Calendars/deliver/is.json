@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "\u00deakka \u00fe\u00e9r fyrir \u00e1hugann \u00e1 {{title}}"
+	},
+	"approved": {
+		"Subject": "M\u00e6ting sam\u00feykkt",
+		"AttendanceApproved": "Til hamingju! M\u00e6ting \u00fe\u00edn hefur veri\u00f0 sam\u00feykkt fyrir {{title}}"
+	},
+	"requested": {
+		"Subject": "\u00d3ska\u00f0 eftir m\u00e6tingu",
+		"AttendanceRequested": "Vi\u00f0 sta\u00f0festum bei\u00f0ni \u00fe\u00edna um a\u00f0 m\u00e6ta: {{title}}"
+	},
+	"rejected": {
+		"Subject": "M\u00e6ting ekki sam\u00feykkt",
+		"AttendanceRejected": "Stj\u00f3rnendur sam\u00feykktu ekki bei\u00f0ni \u00fe\u00edna um a\u00f0 m\u00e6ta: {{title}}"
+	},
+	"paid": {
+		"Subject": "Sta\u00f0festing \u00e1 grei\u00f0slu t\u00f3kst",
+		"YouveBeenCharged": "\u00de\u00fa hefur veri\u00f0 rukka\u00f0ur {{amount}} {{currency}} (og {{credits}} inneign). Allt er tilb\u00fai\u00f0! Sj\u00e1umst \u00e1 {{title}}"
+	}
+}

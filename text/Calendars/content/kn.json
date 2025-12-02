@@ -1,333 +1,342 @@
 {
-    "months": {
-        "Jan": "ಜನವರಿ",
-        "Feb": "ಫೆಬ್ರವರಿ",
-        "Mar": "ಮಾರ್",
-        "Apr": "ಎಪ್ರಿಲ್",
-        "May": "ಮೇ",
-        "Jun": "ಜೂನ್",
-        "Jul": "ಜುಲೈ",
-        "Aug": "ಆಗಸ್ಟ್",
-        "Sep": "ಸೆ",
-        "Oct": "ಅಕ್ಟೋಬರ್",
-        "Nov": "ನವೆಂಬರ್",
-        "Dec": "ಡಿ"
-    },
-    "monthsLong": {
-        "Jan": "ಜನವರಿ",
-        "Feb": "ಫೆಬ್ರವರಿ",
-        "Mar": "ಮಾರ್ಚ್",
-        "Apr": "ಏಪ್ರಿಲ್",
-        "May": "ಮೇ",
-        "Jun": "ಜೂನ್",
-        "Jul": "ಜುಲೈ",
-        "Aug": "ಆಗಸ್ಟ್",
-        "Sep": "ಸೆಪ್ಟೆಂಬರ್",
-        "Oct": "ಅಕ್ಟೋಬರ್",
-        "Nov": "ನವೆಂಬರ್",
-        "Dec": "ಡಿಸೆಂಬರ್"
-    },
-    "weekdays": {
-        "Sun": "ಸೂರ್ಯ",
-        "Mon": "ಸೋಮ",
-        "Tue": "ಮಂಗಳವಾರ",
-        "Wed": "ಬುಧ",
-        "Thu": "ಗುರು",
-        "Fri": "ಶುಕ್ರ",
-        "Sat": "ಶನಿ"
-    },
-    "weekdaysLong": {
-        "Sun": "ಭಾನುವಾರ",
-        "Mon": "ಸೋಮವಾರ",
-        "Tue": "ಮಂಗಳವಾರ",
-        "Wed": "ಬುಧವಾರ",
-        "Thu": "ಗುರುವಾರ",
-        "Fri": "ಶುಕ್ರವಾರ",
-        "Sat": "ಶನಿವಾರ"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "ಹೊಸ ಈವೆಂಟ್ ಅನ್ನು ಯೋಜಿಸಿ"
-        },
-        "tool": {
-            "HostedBy": "{{name}} ಮೂಲಕ ಹೋಸ್ಟ್ ಮಾಡಲಾಗಿದೆ",
-            "Name": "ಹೆಸರು",
-            "AreYouIn": "ನೀವು ಒಳಗೆ ಇದ್ದೀರಾ?",
-            "Yes": "ಹೌದು",
-            "No": "ಸಂ",
-            "Ok": "ಸರಿ",
-            "Cancel": "ರದ್ದುಮಾಡು",
-            "Maybe": "ಇರಬಹುದು",
-            "Conversation": "ಸಂಭಾಷಣೆ",
-            "Promote": "ಈ ಘಟನೆಯನ್ನು ಪ್ರಚಾರ ಮಾಡಿ",
-            "Reminders": "ಜ್ಞಾಪನೆಗಳು",
-            "RemindersLabel": "ನಾನು ಈವೆಂಟ್‌ನ ಕುರಿತು ತಿಳಿಸಲು ಬಯಸುತ್ತೇನೆ:",
-            "MoreInfo": "ಹೆಚ್ಚಿನ ಮಾಹಿತಿ",
-            "Registration": "ನೋಂದಣಿ",
-            "SetReminders": "ದಯವಿಟ್ಟು ಜ್ಞಾಪನೆಗಳನ್ನು ಹೊಂದಿಸಿ",
-            "ReservationFee": "ಮೀಸಲಾತಿ ಶುಲ್ಕ",
-            "AddParticipants": "ಭಾಗವಹಿಸುವವರನ್ನು ಸೇರಿಸಿ",
-            "ManageReservation": "ಮೀಸಲಾತಿ ನಿರ್ವಹಿಸಿ",
-            "UpdateFutureReservations": "ನೀವು ಎಲ್ಲಾ ಭವಿಷ್ಯದ ಕಾಯ್ದಿರಿಸುವಿಕೆಗಳನ್ನು ಅದೇ ರೀತಿಯಲ್ಲಿ ನವೀಕರಿಸಲು ಬಯಸುವಿರಾ?",
-            "RecurringAdmin": "ಮರುಕಳಿಸುವ ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
-            "MakeReservation": "ಮೀಸಲಾತಿ ಮಾಡಿ",
-            "StartLiveStream": "ಲೈವ್ ಸ್ಟ್ರೀಮ್ ಮಾಡಲು ಕ್ಲಿಕ್ ಮಾಡಿ",
-            "LiveStreamEnded": "ಲೈವ್ ಸ್ಟ್ರೀಮ್ ಕೊನೆಗೊಂಡಿದೆ",
-            "ClickToViewRecording": "ರೆಕಾರ್ಡಿಂಗ್ ವೀಕ್ಷಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ",
-            "Checkin": "ಪಾಲ್ಗೊಳ್ಳುವವರ ಕೋಡ್‌ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ",
-            "Myqr": "ಚೆಕ್ ಇನ್",
-            "CloseEvent": {
-                "button": "ಈವೆಂಟ್ ರದ್ದುಮಾಡಿ",
-                "confirm": {
-                    "text": {
-                        "Cancel": "ಈ ಈವೆಂಟ್ ಅನ್ನು ರದ್ದುಗೊಳಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?",
-                        "Participant": "ಈ ಈವೆಂಟ್‌ನಲ್ಲಿ 1 ಭಾಗವಹಿಸುವವರು ಇದ್ದಾರೆ",
-                        "Participants": "ಈ ಈವೆಂಟ್‌ನಲ್ಲಿ {{count}} ಭಾಗವಹಿಸುವವರು ಇದ್ದಾರೆ",
-                        "Recurring": "ಈ ಘಟನೆ ಮರುಕಳಿಸುತ್ತಿದೆ. ನೀವು ಅದರ ಎಲ್ಲಾ ಭವಿಷ್ಯದ ನಿದರ್ಶನಗಳನ್ನು ಸಹ ರದ್ದುಗೊಳಿಸಲು ಬಯಸುವಿರಾ?"
-                    },
-                    "trip": {
-                        "Cancel": "ಈ ಈವೆಂಟ್‌ನ {{tripDirection}} ಪ್ರವಾಸವನ್ನು ಸಹ ರದ್ದುಗೊಳಿಸಲು ನೀವು ಬಯಸುವಿರಾ?",
-                        "Passengers": "{{passengerCount}} ಪ್ರಯಾಣಿಕರು ನಿಮ್ಮನ್ನು ಅವಲಂಬಿಸಿದ್ದಾರೆ.",
-                        "Title": "ಪ್ರವಾಸವನ್ನು ಮುಚ್ಚಿ"
-                    },
-                    "directions": {
-                        "TO": "TO",
-                        "FROM": "ಇಂದ",
-                        "to": "ಗೆ",
-                        "from": "ನಿಂದ"
-                    }
-                }
-            },
-            "Calendar": "ಕ್ಯಾಲೆಂಡರ್",
-            "Interests": "ಆಸಕ್ತಿಗಳು",
-            "Directions": "ನಿರ್ದೇಶನಗಳು",
-            "TitleOfEvent": "ಘಟನೆಯ ಶೀರ್ಷಿಕೆ:",
-            "OpenTo": "ಗೆ ತೆರೆಯಿರಿ",
-            "GoingTo": "ನಲ್ಲಿ ಇರುತ್ತದೆ",
-            "NotGoingTo": "ನಲ್ಲಿ ಇರುವುದಿಲ್ಲ",
-            "MaybeGoingTo": "ನಲ್ಲಿ ಇರಬಹುದು",
-            "AdminDontPay": "ನಿರ್ವಾಹಕರು ಪಾವತಿಸುವ ಅಗತ್ಯವಿಲ್ಲ",
-            "PublisherDontPay": "ಪ್ರಕಾಶಕರು ಪಾವತಿಸುವ ಅಗತ್ಯವಿಲ್ಲ",
-            "EmptyList": "ಖಾಲಿ ಪಟ್ಟಿ",
-            "NeedToPayCredits": "ಪಾವತಿಸುವ ಅಗತ್ಯವಿದೆ: <span>{{amount}} ಕ್ರೆಡಿಟ್‌ಗಳು<\/span>",
-            "PleaseJoinParticipants": "ದಯವಿಟ್ಟು ಸೇರಿಕೊಳ್ಳಿ {{participant}}",
-            "YouReservingPlace": "ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ನೀವು ಕಾಯ್ದಿರಿಸುತ್ತೀರಿ.",
-            "SelectIncludesToAdd": "ಸೇರಿಸಲು ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನದನ್ನು ಆಯ್ಕೆಮಾಡಿ {{TypeDisplayPlural}}:",
-            "YouHaveNotRegisteredAnyIncluded": "ನೀವು ಇನ್ನೂ ಯಾವುದೇ {{TypeDisplayPlural}} ಅನ್ನು ನೋಂದಾಯಿಸಿಲ್ಲ",
-            "Proceed": "ಮುಂದುವರೆಯಲು",
-            "MakeChanges": "ನನ್ನ ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿ",
-            "CancelReservation": "ಸಂಪೂರ್ಣ ಕಾಯ್ದಿರಿಸುವಿಕೆಯನ್ನು ರದ್ದುಗೊಳಿಸಿ",
-            "Total": "ಒಟ್ಟು",
-            "RequiredRelatedParticipants": "ಈ ಈವೆಂಟ್‌ಗೆ ಭಾಗವಹಿಸುವವರು ಅಗತ್ಯವಿದೆ: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "ಮರುಕಳಿಸುವ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ನವೀಕರಿಸಲು &quot;{{title}}&quot; ಲಭ್ಯತೆಯನ್ನು ಸಂಪಾದಿಸಿ",
-            "Presentation": "ಪ್ರಸ್ತುತಿ",
-            "YouAreNotParticipated": "ನೀವು ಈವೆಂಟ್‌ನಲ್ಲಿ ಭಾಗವಹಿಸುವವರಲ್ಲ",
-            "LiveStreamStarted": "ಲೈವ್ ಸ್ಟ್ರೀಮ್ ಪ್ರಾರಂಭವಾಗಿದೆ",
-            "WebRTCStarted": "ಟೆಲಿಕಾನ್ಫರೆನ್ಸ್ ಪ್ರಾರಂಭವಾಯಿತು",
-            "WebRTCEnded": "ಟೆಲಿಕಾನ್ಫರೆನ್ಸ್ ಮುಗಿದಿದೆ"
-        },
-        "composer": {
-            "SetLocation": "ನನ್ನ ಸ್ಥಳವನ್ನು ಹೊಂದಿಸಿ",
-            "SetInfoLink": "ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿಗೆ ಲಿಂಕ್ ಅನ್ನು ಹೊಂದಿಸಿ",
-            "ChooseAvailability": "ಲಭ್ಯವಿರುವ ಸೇವೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
-            "ChooseActivity": "ಒಂದು ಚಟುವಟಿಕೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
-            "ChoosePublisher": "ಪ್ರಕಾಶಕರನ್ನು ಆಯ್ಕೆಮಾಡಿ",
-            "Day": "ದಿನ",
-            "Starting": "ಆರಂಭಿಕ",
-            "Duration": "ಅವಧಿ",
-            "Hour": "ಗಂಟೆ",
-            "Hours": "ಗಂಟೆಗಳು",
-            "Minutes": "ನಿಮಿಷಗಳು",
-            "Ending": "ಕೊನೆಗೊಳ್ಳುತ್ತಿದೆ",
-            "People": "ಜನರು",
-            "Share": "ಹಂಚಿಕೊಳ್ಳಿ",
-            "Continue": "ಮುಂದುವರಿಸಿ",
-            "Recurring": "ಮರುಕಳಿಸುವ",
-            "RecurringTitle": "ಮರುಕಳಿಸುವ ದಿನಗಳು",
-            "Daily": "ಪ್ರತಿದಿನ",
-            "Weekly": "ಸಾಪ್ತಾಹಿಕ",
-            "Monthly": "ಮಾಸಿಕ",
-            "SelectLocation": "ದಯವಿಟ್ಟು ಮೊದಲು ಸ್ಥಳವನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
-            "eventType": "ಈವೆಂಟ್ ಪ್ರಕಾರ",
-            "EditTitle": "ಆಸಕ್ತಿದಾಯಕ ಶೀರ್ಷಿಕೆಯನ್ನು ಯೋಚಿಸಿ ...",
-            "SetTitle": "ದಯವಿಟ್ಟು ಈವೆಂಟ್ ಶೀರ್ಷಿಕೆಯನ್ನು ಹೊಂದಿಸಿ",
-            "ScheduleOnlineConference": "ಆನ್‌ಲೈನ್ ಸಮ್ಮೇಳನವನ್ನು ನಿಗದಿಪಡಿಸಿ",
-            "SOCDescription": "ದಯವಿಟ್ಟು ಸಮ್ಮೇಳನದ ಪ್ರಾರಂಭ ಮತ್ತು ಅಂತಿಮ ಸಮಯವನ್ನು ವಿವರಿಸಿ. ಈ ಅವಧಿಯಲ್ಲಿ ಈವೆಂಟ್‌ಗೆ ಭೇಟಿ ನೀಡುವ ಪ್ರತಿಯೊಬ್ಬ ವ್ಯಕ್ತಿಯು ಆನ್‌ಲೈನ್ ಕಾನ್ಫರೆನ್ಸ್‌ಗೆ ಸ್ವಯಂ ಸಂಪರ್ಕ ಹೊಂದುತ್ತಾರೆ.",
-            "EndDate": "ಅಂತ್ಯ",
-            "location": {
-                "Title": "ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ಹೊಂದಿಸಿ"
-            },
-            "interest": {
-                "Title": "ಒಂದು ಚಟುವಟಿಕೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
-                "Filter": "ಹುಡುಕಾಟ ಆಸಕ್ತಿಗಳು..."
-            },
-            "SetLivestream": "ಲೈವ್‌ಸ್ಟ್ರೀಮ್ \/ ವಿಡಿಯೋ ಕಾನ್ಫರೆನ್ಸ್‌ಗೆ ಲಿಂಕ್ ಅನ್ನು ಅಂಟಿಸಿ",
-            "Locally": "ಸ್ಥಳೀಯವಾಗಿ",
-            "EventInfoLink": "ಈವೆಂಟ್ ಮಾಹಿತಿ ಲಿಂಕ್",
-            "TicketPurchaseLink": "ಟಿಕೆಟ್ ಖರೀದಿ ಲಿಂಕ್"
-        },
-        "EventAlreadyClosed": "ಈ ಈವೆಂಟ್ ಅನ್ನು ಈಗಾಗಲೇ ಮುಚ್ಚಲಾಗಿದೆ",
-        "addToCalendar": {
-            "permissions": {
-                "title": "ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಸೇರಿಸುವುದೇ?",
-                "prompt": "ಈ ಈವೆಂಟ್ ಅನ್ನು ನಿಮ್ಮ ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಸೇರಿಸಲು ನೀವು ಬಯಸುವಿರಾ?",
-                "yes": "ಹೌದು",
-                "no": "ಸಂ"
-            },
-            "dialog": {
-                "Title": "ನಿಮ್ಮ ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಈವೆಂಟ್ ಸೇರಿಸಿ"
-            }
-        },
-        "ErrorLeaveEndedEvent": "ಕ್ಷಮಿಸಿ, ಆದರೆ ನೀವು ಮುಕ್ತಾಯಗೊಂಡ ಈವೆಂಟ್ ಅನ್ನು ಬಿಡಲು ಸಾಧ್ಯವಿಲ್ಲ"
-    },
-    "availabilities": {
-        "Title": "ಲಭ್ಯತೆಗಳು",
-        "NewAvailability": {
-            "Title": "ಹೊಸ ಲಭ್ಯತೆ",
-            "SaveAvailability": "ಲಭ್ಯತೆಯನ್ನು ಉಳಿಸಿ",
-            "SelectTemplate": "ದಯವಿಟ್ಟು ಸೇವೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
-            "SelectLocation": "ದಯವಿಟ್ಟು ಸ್ಥಳವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
-            "SelectArea": "ದಯವಿಟ್ಟು ಪ್ರದೇಶವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
-            "Type": "ಮಾದರಿ",
-            "Weekly": "ಸಾಪ್ತಾಹಿಕ",
-            "RecurringStartDate": "ಪುನರಾವರ್ತಿತ ಪ್ರಾರಂಭ ದಿನಾಂಕ",
-            "EndDate": "ಅಂತಿಮ ದಿನಾಂಕ",
-            "SelectTime": "ಟೈಮ್ ಸ್ಲಾಟ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಿ",
-            "SelectTimeSlot": "ಸಮಯದ ಸ್ಲಾಟ್ ಆಯ್ಕೆಮಾಡಿ",
-            "SelectTimeSlots": "ಬಯಸಿದ ಸಮಯದ ಸ್ಲಾಟ್‌ಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
-            "PeopleMin": "ಕನಿಷ್ಠ ಸಂದರ್ಶಕರು",
-            "PeopleMax": "ಗರಿಷ್ಠ ಸಂದರ್ಶಕರು",
-            "PeopleLabels": "ಪಾತ್ರಗಳನ್ನು ಅನುಮತಿಸಲಾಗಿದೆ",
-            "Next": "ಮುಂದೆ",
-            "Back": "ಹಿಂದೆ",
-            "RecurringEndDate": "ಮರುಕಳಿಸುವ ಅಂತಿಮ ದಿನಾಂಕ",
-            "ScheduleOnlineConference": "ಟೆಲಿಕಾನ್ಫರೆನ್ಸ್ ಅನ್ನು ನಿಗದಿಪಡಿಸಿ",
-            "SetLivestream": "ಲೈವ್‌ಸ್ಟ್ರೀಮ್ \/ ವಿಡಿಯೋ ಕಾನ್ಫರೆನ್ಸ್‌ಗೆ ಲಿಂಕ್ ಅನ್ನು ಅಂಟಿಸಿ",
-            "SelectTimeZone": "ಸಮಯವಲಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ"
-        },
-        "EditAvailability": "ಲಭ್ಯತೆಯನ್ನು ಸಂಪಾದಿಸಿ",
-        "SetVisitors": "ಸಂದರ್ಶಕರನ್ನು ಹೊಂದಿಸಿ",
-        "Price": "ಬೆಲೆ",
-        "SelectAction": "ದಯವಿಟ್ಟು ಕ್ರಿಯೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
-        "OpenProfile": "ಪ್ರೊಫೈಲ್ ತೆರೆಯಿರಿ",
-        "RemoveStaff": "ಸಿಬ್ಬಂದಿ ತೆಗೆದುಹಾಕಿ",
-        "PleaseSelectTimeSlots": "ದಯವಿಟ್ಟು ಸಮಯದ ಸ್ಲಾಟ್‌ಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
-        "ExceptionOccurred": "ವಿನಾಯಿತಿ ಸಂಭವಿಸಿದೆ",
-        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} ಈವೆಂಟ್‌ಗಳಲ್ಲಿ ಭಾಗವಹಿಸಲು ಸಾಕಷ್ಟು ಕ್ರೆಡಿಟ್‌ಗಳಿಲ್ಲ. ನಿಮಗೆ {{needCredits}} ಕ್ರೆಡಿಟ್‌ಗಳ ಅಗತ್ಯವಿದೆ. ಖರೀದಿಸಲು ಬಯಸುವಿರಾ?",
-        "LiveStream": "ನಿರಂತರ ಪ್ರಸಾರ",
-        "InviteStaff": "ಸಿಬ್ಬಂದಿಯನ್ನು ಆಹ್ವಾನಿಸಿ"
-    },
-    "recurring": {
-        "dialog": {
-            "startDate": "ಪ್ರಾರಂಭ ದಿನಾಂಕ",
-            "endDate": "ಅಂತಿಮ ದಿನಾಂಕ",
-            "justOnce": "ಕೇವಲ ಒಮ್ಮೆ",
-            "justOnceWeekly": "ಈ ವಾರ ಮಾತ್ರ",
-            "justOnceMonthly": "ಈ ತಿಂಗಳು ಮಾತ್ರ",
-            "recurring": "ಮರುಕಳಿಸುವ"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "ಉಚಿತ ಈವೆಂಟ್",
-            "optional": "ಐಚ್ಛಿಕ ಕೊಡುಗೆ",
-            "required": "ಅಗತ್ಯವಿರುವ ಪಾವತಿ"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "ಐಚ್ಛಿಕ ಕೊಡುಗೆ",
-            "required": "ಅಗತ್ಯವಿರುವ ಪಾವತಿ",
-            "paid": "ಪಾವತಿಸಲಾಗಿದೆ"
-        },
-        "confirmationDialog": {
-            "title": "ಹಣ ಪಾವತಿ ದೃಢೀಕರಣ",
-            "content": "ಈ ಈವೆಂಟ್ ಐಚ್ಛಿಕ ಕೊಡುಗೆಯನ್ನು {{amount}} ಹೊಂದಿದೆ.",
-            "button": "ಕೊಡುಗೆ ನೀಡಿ"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} ಇನ್ನೂ ಈವೆಂಟ್‌ನ ಭಾಗವಾಗಿಲ್ಲ. ನೀವು ಅವರನ್ನು ಪಾಲ್ಗೊಳ್ಳುವವರಂತೆ ಸೇರಿಸಲು ಬಯಸುವಿರಾ?",
-        "userNotFound": "ಬಳಕೆದಾರ ಕಂಡುಬಂದಿಲ್ಲ",
-        "confirmYes": "ಹೌದು",
-        "confirmNo": "ಸಂ"
-    },
-    "notifications": {
-        "EventActivityIn": "{{{stream.fields.title}}} ನಲ್ಲಿ ಈವೆಂಟ್ ಚಟುವಟಿಕೆ",
-        "RecurringRulesChanged": "ಈವೆಂಟ್‌ಗೆ ಮರುಕಳಿಸುವ ನಿಯಮಗಳನ್ನು ಬದಲಾಯಿಸಲಾಗಿದೆ {{{call 'message.getInstruction' 'eventTitle'}}}",
-        "ManageEmailSubscriptions": "ನಿಮ್ಮ ಇಮೇಲ್ ಚಂದಾದಾರಿಕೆಗಳನ್ನು ನಿರ್ವಹಿಸಿ",
-        "IfUnsubscribe": "ನೀವು ಅನ್‌ಸಬ್‌ಸ್ಕ್ರೈಬ್ ಮಾಡಲು ಬಯಸಿದರೆ",
-        "ClickHereToVisitEvent": "ಈವೆಂಟ್‌ಗೆ ಭೇಟಿ ನೀಡಲು ದಯವಿಟ್ಟು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ",
-        "Calendars\/reminder": "ಈವೆಂಟ್ &quot;{{{call 'message.getInstruction' 'name'}}&quot; {{&call 'message.getInstruction' 'time'}}} ನಲ್ಲಿ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ",
-        "webrtc": {
-            "Started": "ಟೆಲಿಕಾನ್ಫರೆನ್ಸ್ ಪ್ರಾರಂಭವಾಯಿತು",
-            "Ended": "ಟೆಲಿಕಾನ್ಫರೆನ್ಸ್ ಮುಗಿದಿದೆ"
-        },
-        "livestream": {
-            "Started": "ಲೈವ್ ಸ್ಟ್ರೀಮ್ ಪ್ರಾರಂಭವಾಗಿದೆ",
-            "Ended": "ಲೈವ್ ಸ್ಟ್ರೀಮ್ ಕೊನೆಗೊಂಡಿದೆ",
-            "ClickToView": "ಅದನ್ನು ಇಲ್ಲಿ ವೀಕ್ಷಿಸಿ."
-        }
-    },
-    "import": {
-        "linkTitle": "ಈ ಸ್ಪ್ರೆಡ್‌ಶೀಟ್ ಅನ್ನು ಭರ್ತಿ ಮಾಡಿ",
-        "fileLabel": "ಸ್ಪ್ರೆಡ್‌ಶೀಟ್ ಅನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ:",
-        "importOptions": "ಆಯ್ಕೆಗಳು",
-        "importProgress": "ಪ್ರಗತಿ",
-        "sampleCSV": "ಮಾದರಿ CSV ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
-        "joinEventLabel": "ಯಾದೃಚ್ಛಿಕ ಈವೆಂಟ್‌ಗೆ ಬಳಕೆದಾರರನ್ನು ಸೇರಿ",
-        "smsText": "ಹೇ, ನಾನು ನಿಮಗೆ {{communityName}} ಗೆ ಲಿಂಕ್ ಕಳುಹಿಸಿದ್ದೇನೆ. ದಯವಿಟ್ಟು ಇದನ್ನು ಪರಿಶೀಲಿಸಿ.",
-        "emailSubject": "ಈಗಷ್ಟೇ ನಿಮಗೆ ಲಿಂಕ್ ಕಳುಹಿಸಿದೆ",
-        "emailBody": "ಹೇ, ನಾನು ನಿಮಗೆ {{communityName}} ಗೆ ಆಹ್ವಾನವನ್ನು ಕಳುಹಿಸಿದ್ದೇನೆ. ದಯವಿಟ್ಟು ಇದನ್ನು ಪರಿಶೀಲಿಸಿ.",
-        "fileNotFound": "ಕ್ಷಮಿಸಿ, CSV ಫೈಲ್ ಕಂಡುಬಂದಿಲ್ಲ.",
-        "fileEmpty": "ಕ್ಷಮಿಸಿ, CSV ಫೈಲ್ ಖಾಲಿಯಾಗಿದೆ.",
-        "fieldNotFound": "ಅಗತ್ಯವಿರುವ ಕ್ಷೇತ್ರ &quot;{{1}}&quot; ಕಂಡುಬಂದಿಲ್ಲ",
-        "userIdNotFound": "ಬಳಕೆದಾರ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ ಆದರೆ ಐಡಿ ಖಾಲಿಯಾಗಿದೆ",
-        "activateUsers": "ಬಳಕೆದಾರರಿಗೆ ಸಕ್ರಿಯಗೊಳಿಸುವ ಸಂದೇಶವನ್ನು ಕಳುಹಿಸುವುದೇ?",
-        "taskStreamInvalid": "ಟಾಸ್ಕ್ ಸ್ಟ್ರೀಮ್ ಅಮಾನ್ಯವಾಗಿದೆ",
-        "instructionsEmpty": "ಟಾಸ್ಕ್ ಸ್ಟ್ರೀಮ್ ಸೂಚನೆಗಳು ಖಾಲಿಯಾಗಿವೆ",
-        "interestsEmpty": "ಆಸಕ್ತಿಗಳನ್ನು ಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ",
-        "interestAbsent": "ಆಸಕ್ತಿ {{1}} ಕಂಡುಬಂದಿಲ್ಲ",
-        "complete": "ಸಂಪೂರ್ಣ",
-        "errorLine": "ಸಾಲು {{1}}",
-        "errorsTitle": "ದೋಷಗಳು ಸಂಭವಿಸಿವೆ",
-        "communityUsers": "ಇದು ಸಮುದಾಯಗಳ ಪಟ್ಟಿ",
-        "toMainCommunityToo": "ಮುಖ್ಯ ಸಮುದಾಯಕ್ಕೂ ಸಂಬಂಧಿಸಿವೆ",
-        "ChooseFile": "ಫೈಲ್ ಆಯ್ಕೆ"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "ಜನರು ಭಾಗವಹಿಸಬಹುದಾದ ಈವೆಂಟ್ ಅನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತದೆ",
-            "displayType": "ಈವೆಂಟ್"
-        },
-        "Calendars\/recurring": {
-            "description": "ನಿಯತಕಾಲಿಕವಾಗಿ ಮರುಕಳಿಸಲು ಉದ್ದೇಶಿಸಿರುವ ಸ್ಟ್ರೀಮ್‌ಗಳನ್ನು ಸಂಬಂಧಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ",
-            "displayType": "ಮರುಕಳಿಸುವ ಈವೆಂಟ್"
-        }
-    },
-    "timeslots": {
-        "AddSlot": "ಸ್ಲಾಟ್ ಸೇರಿಸಿ",
-        "StartTime": "ಆರಂಭವಾಗುವ",
-        "EndTime": "ಅಂತಿಮ ಸಮಯ",
-        "Save": "ಉಳಿಸಿ",
-        "AddTimeSlot": "ಟೈಮ್ ಸ್ಲಾಟ್ ಸೇರಿಸಿ",
-        "CopyFromDay": "ದಿನದಿಂದ ನಕಲಿಸಿ",
-        "Nearest": "ಹತ್ತಿರದ",
-        "Today": "ಇಂದು",
-        "Tomorrow": "ನಾಳೆ",
-        "AfterTomorrow": "ನಾಳೆಯ ನಂತರ"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಚಂದಾದಾರರಾಗಿ",
-        "copyLinkBelow": "ಕೆಳಗಿನ ಲಿಂಕ್ ಅನ್ನು ನಕಲಿಸಿ",
-        "goTo": "ಇಲ್ಲಿಗೆ ಹೋಗಿ:",
-        "pasteCopiedTo": "&quot;ಕ್ಯಾಲೆಂಡರ್ನ URL&quot; ಕ್ಷೇತ್ರಕ್ಕೆ ನಕಲಿಸಿದ ಲಿಂಕ್ ಅನ್ನು ಅಂಟಿಸಿ",
-        "clickAddCalendar": "&quot;ಕ್ಯಾಲೆಂಡರ್ ಸೇರಿಸಿ&quot; ಬಟನ್ ಕ್ಲಿಕ್ ಮಾಡಿ",
-        "copyLink": "ಲಿಂಕ್ ನಕಲಿಸಿ",
-        "tapToCopy": "ನಿಮ್ಮ ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ಲಿಂಕ್ ಅನ್ನು ನಕಲಿಸಲು ಕೆಳಗಿನ ಬಟನ್ ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ",
-        "linkCopied": "ಲಿಂಕ್ ನಕಲಿಸಲಾಗಿದೆ",
-        "step2": "ಲಿಂಕ್ ನಕಲಿಸಲಾಗಿದೆ. ನಾವು ಓಪನ್ ಗೂಗಲ್ ಕ್ಯಾಲೆಂಡರ್ ಬಗ್ಗೆ. ನೀವು ಲಿಂಕ್ ಅನ್ನು ಪಠ್ಯ ಪೆಟ್ಟಿಗೆಯಲ್ಲಿ ಅಂಟಿಸಬೇಕಾಗುತ್ತದೆ, &quot;ಕ್ಯಾಲೆಂಡರ್ ಸೇರಿಸಿ&quot; ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ಟ್ಯಾಬ್ ಅನ್ನು ಮುಚ್ಚಿ (ಕೆಳಗಿನ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ನೋಡಿ)",
-        "calendarAppPreferences": "ನಿಮ್ಮ ಮ್ಯಾಕ್‌ನಲ್ಲಿ ಕ್ಯಾಲೆಂಡರ್ ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ಆದ್ಯತೆಗಳನ್ನು ತೆರೆಯಿರಿ ಮತ್ತು ಕೆಳಗೆ ತೋರಿಸಿರುವಂತೆ ಡೀಫಾಲ್ಟ್ ಕ್ಯಾಲೆಂಡರ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹೊಂದಿಸಿ.",
-        "thenCloseDialog": "ನಂತರ ನಿಮ್ಮ ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಚಂದಾದಾರರಾಗಲು ಈ ಸಂವಾದವನ್ನು ಮುಚ್ಚಿರಿ!",
-        "success": "ಕ್ಯಾಲೆಂಡರ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಿಂಕ್ ಮಾಡಲಾಗಿದೆ"
-    }
+	"months": {
+		"Jan": "\u0c9c\u0ca8\u0cb5\u0cb0\u0cbf",
+		"Feb": "\u0cab\u0cc6\u0cac\u0ccd\u0cb0\u0cb5\u0cb0\u0cbf",
+		"Mar": "\u0cae\u0cbe\u0cb0\u0ccd",
+		"Apr": "\u0c8e\u0caa\u0ccd\u0cb0\u0cbf\u0cb2\u0ccd",
+		"May": "\u0cae\u0cc7",
+		"Jun": "\u0c9c\u0cc2\u0ca8\u0ccd",
+		"Jul": "\u0c9c\u0cc1\u0cb2\u0cc8",
+		"Aug": "\u0c86\u0c97\u0cb8\u0ccd\u0c9f\u0ccd",
+		"Sep": "\u0cb8\u0cc6",
+		"Oct": "\u0c85\u0c95\u0ccd\u0c9f\u0ccb\u0cac\u0cb0\u0ccd",
+		"Nov": "\u0ca8\u0cb5\u0cc6\u0c82\u0cac\u0cb0\u0ccd",
+		"Dec": "\u0ca1\u0cbf"
+	},
+	"monthsLong": {
+		"Jan": "\u0c9c\u0ca8\u0cb5\u0cb0\u0cbf",
+		"Feb": "\u0cab\u0cc6\u0cac\u0ccd\u0cb0\u0cb5\u0cb0\u0cbf",
+		"Mar": "\u0cae\u0cbe\u0cb0\u0ccd\u0c9a\u0ccd",
+		"Apr": "\u0c8f\u0caa\u0ccd\u0cb0\u0cbf\u0cb2\u0ccd",
+		"May": "\u0cae\u0cc7",
+		"Jun": "\u0c9c\u0cc2\u0ca8\u0ccd",
+		"Jul": "\u0c9c\u0cc1\u0cb2\u0cc8",
+		"Aug": "\u0c86\u0c97\u0cb8\u0ccd\u0c9f\u0ccd",
+		"Sep": "\u0cb8\u0cc6\u0caa\u0ccd\u0c9f\u0cc6\u0c82\u0cac\u0cb0\u0ccd",
+		"Oct": "\u0c85\u0c95\u0ccd\u0c9f\u0ccb\u0cac\u0cb0\u0ccd",
+		"Nov": "\u0ca8\u0cb5\u0cc6\u0c82\u0cac\u0cb0\u0ccd",
+		"Dec": "\u0ca1\u0cbf\u0cb8\u0cc6\u0c82\u0cac\u0cb0\u0ccd"
+	},
+	"weekdays": {
+		"Sun": "\u0cb8\u0cc2\u0cb0\u0ccd\u0caf",
+		"Mon": "\u0cb8\u0ccb\u0cae",
+		"Tue": "\u0cae\u0c82\u0c97\u0cb3\u0cb5\u0cbe\u0cb0",
+		"Wed": "\u0cac\u0cc1\u0ca7",
+		"Thu": "\u0c97\u0cc1\u0cb0\u0cc1",
+		"Fri": "\u0cb6\u0cc1\u0c95\u0ccd\u0cb0",
+		"Sat": "\u0cb6\u0ca8\u0cbf"
+	},
+	"weekdaysLong": {
+		"Sun": "\u0cad\u0cbe\u0ca8\u0cc1\u0cb5\u0cbe\u0cb0",
+		"Mon": "\u0cb8\u0ccb\u0cae\u0cb5\u0cbe\u0cb0",
+		"Tue": "\u0cae\u0c82\u0c97\u0cb3\u0cb5\u0cbe\u0cb0",
+		"Wed": "\u0cac\u0cc1\u0ca7\u0cb5\u0cbe\u0cb0",
+		"Thu": "\u0c97\u0cc1\u0cb0\u0cc1\u0cb5\u0cbe\u0cb0",
+		"Fri": "\u0cb6\u0cc1\u0c95\u0ccd\u0cb0\u0cb5\u0cbe\u0cb0",
+		"Sat": "\u0cb6\u0ca8\u0cbf\u0cb5\u0cbe\u0cb0"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "\u0cb9\u0cca\u0cb8 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0caf\u0ccb\u0c9c\u0cbf\u0cb8\u0cbf"
+		},
+		"tool": {
+			"HostedBy": "{{name}} \u0cae\u0cc2\u0cb2\u0c95 \u0cb9\u0ccb\u0cb8\u0ccd\u0c9f\u0ccd \u0cae\u0cbe\u0ca1\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6",
+			"Name": "\u0cb9\u0cc6\u0cb8\u0cb0\u0cc1",
+			"AreYouIn": "\u0ca8\u0cc0\u0cb5\u0cc1 \u0c92\u0cb3\u0c97\u0cc6 \u0c87\u0ca6\u0ccd\u0ca6\u0cc0\u0cb0\u0cbe?",
+			"Yes": "\u0cb9\u0ccc\u0ca6\u0cc1",
+			"No": "\u0cb8\u0c82",
+			"Ok": "\u0cb8\u0cb0\u0cbf",
+			"Cancel": "\u0cb0\u0ca6\u0ccd\u0ca6\u0cc1\u0cae\u0cbe\u0ca1\u0cc1",
+			"Maybe": "\u0c87\u0cb0\u0cac\u0cb9\u0cc1\u0ca6\u0cc1",
+			"Conversation": "\u0cb8\u0c82\u0cad\u0cbe\u0cb7\u0ca3\u0cc6",
+			"Promote": "\u0c88 \u0c98\u0c9f\u0ca8\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ccd\u0cb0\u0c9a\u0cbe\u0cb0 \u0cae\u0cbe\u0ca1\u0cbf",
+			"Reminders": "\u0c9c\u0ccd\u0c9e\u0cbe\u0caa\u0ca8\u0cc6\u0c97\u0cb3\u0cc1",
+			"RemindersLabel": "\u0ca8\u0cbe\u0ca8\u0cc1 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd\u200c\u0ca8 \u0c95\u0cc1\u0cb0\u0cbf\u0ca4\u0cc1 \u0ca4\u0cbf\u0cb3\u0cbf\u0cb8\u0cb2\u0cc1 \u0cac\u0caf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0cc7\u0ca8\u0cc6:",
+			"MoreInfo": "\u0cb9\u0cc6\u0c9a\u0ccd\u0c9a\u0cbf\u0ca8 \u0cae\u0cbe\u0cb9\u0cbf\u0ca4\u0cbf",
+			"Registration": "\u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbf",
+			"SetReminders": "\u0ca6\u0caf\u0cb5\u0cbf\u0c9f\u0ccd\u0c9f\u0cc1 \u0c9c\u0ccd\u0c9e\u0cbe\u0caa\u0ca8\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0cca\u0c82\u0ca6\u0cbf\u0cb8\u0cbf",
+			"ReservationFee": "\u0cae\u0cc0\u0cb8\u0cb2\u0cbe\u0ca4\u0cbf \u0cb6\u0cc1\u0cb2\u0ccd\u0c95",
+			"AddParticipants": "\u0cad\u0cbe\u0c97\u0cb5\u0cb9\u0cbf\u0cb8\u0cc1\u0cb5\u0cb5\u0cb0\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cbf",
+			"ManageReservation": "\u0cae\u0cc0\u0cb8\u0cb2\u0cbe\u0ca4\u0cbf \u0ca8\u0cbf\u0cb0\u0ccd\u0cb5\u0cb9\u0cbf\u0cb8\u0cbf",
+			"UpdateFutureReservations": "\u0ca8\u0cc0\u0cb5\u0cc1 \u0c8e\u0cb2\u0ccd\u0cb2\u0cbe \u0cad\u0cb5\u0cbf\u0cb7\u0ccd\u0caf\u0ca6 \u0c95\u0cbe\u0caf\u0ccd\u0ca6\u0cbf\u0cb0\u0cbf\u0cb8\u0cc1\u0cb5\u0cbf\u0c95\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0ca6\u0cc7 \u0cb0\u0cc0\u0ca4\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0ca8\u0cb5\u0cc0\u0c95\u0cb0\u0cbf\u0cb8\u0cb2\u0cc1 \u0cac\u0caf\u0cb8\u0cc1\u0cb5\u0cbf\u0cb0\u0cbe?",
+			"RecurringAdmin": "\u0cae\u0cb0\u0cc1\u0c95\u0cb3\u0cbf\u0cb8\u0cc1\u0cb5 \u0cb8\u0cc6\u0c9f\u0ccd\u0c9f\u0cbf\u0c82\u0c97\u0ccd\u200c\u0c97\u0cb3\u0cc1",
+			"MakeReservation": "\u0cae\u0cc0\u0cb8\u0cb2\u0cbe\u0ca4\u0cbf \u0cae\u0cbe\u0ca1\u0cbf",
+			"StartLiveStream": "\u0cb2\u0cc8\u0cb5\u0ccd \u0cb8\u0ccd\u0c9f\u0ccd\u0cb0\u0cc0\u0cae\u0ccd \u0cae\u0cbe\u0ca1\u0cb2\u0cc1 \u0c95\u0ccd\u0cb2\u0cbf\u0c95\u0ccd \u0cae\u0cbe\u0ca1\u0cbf",
+			"LiveStreamEnded": "\u0cb2\u0cc8\u0cb5\u0ccd \u0cb8\u0ccd\u0c9f\u0ccd\u0cb0\u0cc0\u0cae\u0ccd \u0c95\u0cca\u0ca8\u0cc6\u0c97\u0cca\u0c82\u0ca1\u0cbf\u0ca6\u0cc6",
+			"ClickToViewRecording": "\u0cb0\u0cc6\u0c95\u0cbe\u0cb0\u0ccd\u0ca1\u0cbf\u0c82\u0c97\u0ccd \u0cb5\u0cc0\u0c95\u0ccd\u0cb7\u0cbf\u0cb8\u0cb2\u0cc1 \u0c95\u0ccd\u0cb2\u0cbf\u0c95\u0ccd \u0cae\u0cbe\u0ca1\u0cbf",
+			"Checkin": "\u0caa\u0cbe\u0cb2\u0ccd\u0c97\u0cca\u0cb3\u0ccd\u0cb3\u0cc1\u0cb5\u0cb5\u0cb0 \u0c95\u0ccb\u0ca1\u0ccd\u200c\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0ccd\u0c95\u0ccd\u0caf\u0cbe\u0ca8\u0ccd \u0cae\u0cbe\u0ca1\u0cbf",
+			"Myqr": "\u0c9a\u0cc6\u0c95\u0ccd \u0c87\u0ca8\u0ccd",
+			"CloseEvent": {
+				"button": "\u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd \u0cb0\u0ca6\u0ccd\u0ca6\u0cc1\u0cae\u0cbe\u0ca1\u0cbf",
+				"confirm": {
+					"text": {
+						"Cancel": "\u0c88 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb0\u0ca6\u0ccd\u0ca6\u0cc1\u0c97\u0cca\u0cb3\u0cbf\u0cb8\u0cb2\u0cc1 \u0ca8\u0cc0\u0cb5\u0cc1 \u0c96\u0c9a\u0cbf\u0ca4\u0cb5\u0cbe\u0c97\u0cbf \u0cac\u0caf\u0cb8\u0cc1\u0cb5\u0cbf\u0cb0\u0cbe?",
+						"Participant": "\u0c88 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf 1 \u0cad\u0cbe\u0c97\u0cb5\u0cb9\u0cbf\u0cb8\u0cc1\u0cb5\u0cb5\u0cb0\u0cc1 \u0c87\u0ca6\u0ccd\u0ca6\u0cbe\u0cb0\u0cc6",
+						"Participants": "\u0c88 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf {{count}} \u0cad\u0cbe\u0c97\u0cb5\u0cb9\u0cbf\u0cb8\u0cc1\u0cb5\u0cb5\u0cb0\u0cc1 \u0c87\u0ca6\u0ccd\u0ca6\u0cbe\u0cb0\u0cc6",
+						"Recurring": "\u0c88 \u0c98\u0c9f\u0ca8\u0cc6 \u0cae\u0cb0\u0cc1\u0c95\u0cb3\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0cbf\u0ca6\u0cc6. \u0ca8\u0cc0\u0cb5\u0cc1 \u0c85\u0ca6\u0cb0 \u0c8e\u0cb2\u0ccd\u0cb2\u0cbe \u0cad\u0cb5\u0cbf\u0cb7\u0ccd\u0caf\u0ca6 \u0ca8\u0cbf\u0ca6\u0cb0\u0ccd\u0cb6\u0ca8\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0cb9 \u0cb0\u0ca6\u0ccd\u0ca6\u0cc1\u0c97\u0cca\u0cb3\u0cbf\u0cb8\u0cb2\u0cc1 \u0cac\u0caf\u0cb8\u0cc1\u0cb5\u0cbf\u0cb0\u0cbe?"
+					},
+					"trip": {
+						"Cancel": "\u0c88 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd\u200c\u0ca8 {{tripDirection}} \u0caa\u0ccd\u0cb0\u0cb5\u0cbe\u0cb8\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0cb9 \u0cb0\u0ca6\u0ccd\u0ca6\u0cc1\u0c97\u0cca\u0cb3\u0cbf\u0cb8\u0cb2\u0cc1 \u0ca8\u0cc0\u0cb5\u0cc1 \u0cac\u0caf\u0cb8\u0cc1\u0cb5\u0cbf\u0cb0\u0cbe?",
+						"Passengers": "{{passengerCount}} \u0caa\u0ccd\u0cb0\u0caf\u0cbe\u0ca3\u0cbf\u0c95\u0cb0\u0cc1 \u0ca8\u0cbf\u0cae\u0ccd\u0cae\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0cb5\u0cb2\u0c82\u0cac\u0cbf\u0cb8\u0cbf\u0ca6\u0ccd\u0ca6\u0cbe\u0cb0\u0cc6.",
+						"Title": "\u0caa\u0ccd\u0cb0\u0cb5\u0cbe\u0cb8\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cae\u0cc1\u0c9a\u0ccd\u0c9a\u0cbf"
+					},
+					"directions": {
+						"TO": "TO",
+						"FROM": "\u0c87\u0c82\u0ca6",
+						"to": "\u0c97\u0cc6",
+						"from": "\u0ca8\u0cbf\u0c82\u0ca6"
+					}
+				}
+			},
+			"Calendar": "\u0c95\u0ccd\u0caf\u0cbe\u0cb2\u0cc6\u0c82\u0ca1\u0cb0\u0ccd",
+			"Interests": "\u0c86\u0cb8\u0c95\u0ccd\u0ca4\u0cbf\u0c97\u0cb3\u0cc1",
+			"Directions": "\u0ca8\u0cbf\u0cb0\u0ccd\u0ca6\u0cc7\u0cb6\u0ca8\u0c97\u0cb3\u0cc1",
+			"TitleOfEvent": "\u0c98\u0c9f\u0ca8\u0cc6\u0caf \u0cb6\u0cc0\u0cb0\u0ccd\u0cb7\u0cbf\u0c95\u0cc6:",
+			"OpenTo": "\u0c97\u0cc6 \u0ca4\u0cc6\u0cb0\u0cc6\u0caf\u0cbf\u0cb0\u0cbf",
+			"GoingTo": "\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0c87\u0cb0\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6",
+			"NotGoingTo": "\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0c87\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2",
+			"MaybeGoingTo": "\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0c87\u0cb0\u0cac\u0cb9\u0cc1\u0ca6\u0cc1",
+			"AdminDontPay": "\u0ca8\u0cbf\u0cb0\u0ccd\u0cb5\u0cbe\u0cb9\u0c95\u0cb0\u0cc1 \u0caa\u0cbe\u0cb5\u0ca4\u0cbf\u0cb8\u0cc1\u0cb5 \u0c85\u0c97\u0ca4\u0ccd\u0caf\u0cb5\u0cbf\u0cb2\u0ccd\u0cb2",
+			"PublisherDontPay": "\u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb6\u0c95\u0cb0\u0cc1 \u0caa\u0cbe\u0cb5\u0ca4\u0cbf\u0cb8\u0cc1\u0cb5 \u0c85\u0c97\u0ca4\u0ccd\u0caf\u0cb5\u0cbf\u0cb2\u0ccd\u0cb2",
+			"EmptyList": "\u0c96\u0cbe\u0cb2\u0cbf \u0caa\u0c9f\u0ccd\u0c9f\u0cbf",
+			"NeedToPayCredits": "\u0caa\u0cbe\u0cb5\u0ca4\u0cbf\u0cb8\u0cc1\u0cb5 \u0c85\u0c97\u0ca4\u0ccd\u0caf\u0cb5\u0cbf\u0ca6\u0cc6: <span>{{amount}} \u0c95\u0ccd\u0cb0\u0cc6\u0ca1\u0cbf\u0c9f\u0ccd\u200c\u0c97\u0cb3\u0cc1</span>",
+			"PleaseJoinParticipants": "\u0ca6\u0caf\u0cb5\u0cbf\u0c9f\u0ccd\u0c9f\u0cc1 \u0cb8\u0cc7\u0cb0\u0cbf\u0c95\u0cca\u0cb3\u0ccd\u0cb3\u0cbf {{participant}}",
+			"YouReservingPlace": "\u0ca8\u0cbf\u0cae\u0ccd\u0cae \u0cb8\u0ccd\u0ca5\u0cb3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca8\u0cc0\u0cb5\u0cc1 \u0c95\u0cbe\u0caf\u0ccd\u0ca6\u0cbf\u0cb0\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0cc0\u0cb0\u0cbf.",
+			"SelectIncludesToAdd": "\u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cb2\u0cc1 \u0c92\u0c82\u0ca6\u0cc1 \u0c85\u0ca5\u0cb5\u0cbe \u0cb9\u0cc6\u0c9a\u0ccd\u0c9a\u0cbf\u0ca8\u0ca6\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0caf\u0ccd\u0c95\u0cc6\u0cae\u0cbe\u0ca1\u0cbf {{TypeDisplayPlural}}:",
+			"YouHaveNotRegisteredAnyIncluded": "\u0ca8\u0cc0\u0cb5\u0cc1 \u0c87\u0ca8\u0ccd\u0ca8\u0cc2 \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 {{TypeDisplayPlural}} \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0cb8\u0cbf\u0cb2\u0ccd\u0cb2",
+			"Proceed": "\u0cae\u0cc1\u0c82\u0ca6\u0cc1\u0cb5\u0cb0\u0cc6\u0caf\u0cb2\u0cc1",
+			"MakeChanges": "\u0ca8\u0ca8\u0ccd\u0ca8 \u0cac\u0ca6\u0cb2\u0cbe\u0cb5\u0ca3\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0cb3\u0cbf\u0cb8\u0cbf",
+			"CancelReservation": "\u0cb8\u0c82\u0caa\u0cc2\u0cb0\u0ccd\u0ca3 \u0c95\u0cbe\u0caf\u0ccd\u0ca6\u0cbf\u0cb0\u0cbf\u0cb8\u0cc1\u0cb5\u0cbf\u0c95\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb0\u0ca6\u0ccd\u0ca6\u0cc1\u0c97\u0cca\u0cb3\u0cbf\u0cb8\u0cbf",
+			"Total": "\u0c92\u0c9f\u0ccd\u0c9f\u0cc1",
+			"RequiredRelatedParticipants": "\u0c88 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd\u200c\u0c97\u0cc6 \u0cad\u0cbe\u0c97\u0cb5\u0cb9\u0cbf\u0cb8\u0cc1\u0cb5\u0cb5\u0cb0\u0cc1 \u0c85\u0c97\u0ca4\u0ccd\u0caf\u0cb5\u0cbf\u0ca6\u0cc6: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "\u0cae\u0cb0\u0cc1\u0c95\u0cb3\u0cbf\u0cb8\u0cc1\u0cb5 \u0cb8\u0cc6\u0c9f\u0ccd\u0c9f\u0cbf\u0c82\u0c97\u0ccd\u200c\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca8\u0cb5\u0cc0\u0c95\u0cb0\u0cbf\u0cb8\u0cb2\u0cc1 &quot;{{title}}&quot; \u0cb2\u0cad\u0ccd\u0caf\u0ca4\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0c82\u0caa\u0cbe\u0ca6\u0cbf\u0cb8\u0cbf",
+			"Presentation": "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4\u0cbf",
+			"YouAreNotParticipated": "\u0ca8\u0cc0\u0cb5\u0cc1 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0cad\u0cbe\u0c97\u0cb5\u0cb9\u0cbf\u0cb8\u0cc1\u0cb5\u0cb5\u0cb0\u0cb2\u0ccd\u0cb2",
+			"LiveStreamStarted": "\u0cb2\u0cc8\u0cb5\u0ccd \u0cb8\u0ccd\u0c9f\u0ccd\u0cb0\u0cc0\u0cae\u0ccd \u0caa\u0ccd\u0cb0\u0cbe\u0cb0\u0c82\u0cad\u0cb5\u0cbe\u0c97\u0cbf\u0ca6\u0cc6",
+			"WebRTCStarted": "\u0c9f\u0cc6\u0cb2\u0cbf\u0c95\u0cbe\u0ca8\u0ccd\u0cab\u0cb0\u0cc6\u0ca8\u0ccd\u0cb8\u0ccd \u0caa\u0ccd\u0cb0\u0cbe\u0cb0\u0c82\u0cad\u0cb5\u0cbe\u0caf\u0cbf\u0ca4\u0cc1",
+			"WebRTCEnded": "\u0c9f\u0cc6\u0cb2\u0cbf\u0c95\u0cbe\u0ca8\u0ccd\u0cab\u0cb0\u0cc6\u0ca8\u0ccd\u0cb8\u0ccd \u0cae\u0cc1\u0c97\u0cbf\u0ca6\u0cbf\u0ca6\u0cc6"
+		},
+		"composer": {
+			"SetLocation": "\u0ca8\u0ca8\u0ccd\u0ca8 \u0cb8\u0ccd\u0ca5\u0cb3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0cca\u0c82\u0ca6\u0cbf\u0cb8\u0cbf",
+			"SetInfoLink": "\u0cb9\u0cc6\u0c9a\u0ccd\u0c9a\u0cc1\u0cb5\u0cb0\u0cbf \u0cae\u0cbe\u0cb9\u0cbf\u0ca4\u0cbf\u0c97\u0cc6 \u0cb2\u0cbf\u0c82\u0c95\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0cca\u0c82\u0ca6\u0cbf\u0cb8\u0cbf",
+			"ChooseAvailability": "\u0cb2\u0cad\u0ccd\u0caf\u0cb5\u0cbf\u0cb0\u0cc1\u0cb5 \u0cb8\u0cc7\u0cb5\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0caf\u0ccd\u0c95\u0cc6\u0cae\u0cbe\u0ca1\u0cbf",
+			"ChooseActivity": "\u0c92\u0c82\u0ca6\u0cc1 \u0c9a\u0c9f\u0cc1\u0cb5\u0c9f\u0cbf\u0c95\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0caf\u0ccd\u0c95\u0cc6\u0cae\u0cbe\u0ca1\u0cbf",
+			"ChoosePublisher": "\u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb6\u0c95\u0cb0\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0caf\u0ccd\u0c95\u0cc6\u0cae\u0cbe\u0ca1\u0cbf",
+			"Day": "\u0ca6\u0cbf\u0ca8",
+			"Starting": "\u0c86\u0cb0\u0c82\u0cad\u0cbf\u0c95",
+			"Duration": "\u0c85\u0cb5\u0ca7\u0cbf",
+			"Hour": "\u0c97\u0c82\u0c9f\u0cc6",
+			"Hours": "\u0c97\u0c82\u0c9f\u0cc6\u0c97\u0cb3\u0cc1",
+			"Minutes": "\u0ca8\u0cbf\u0cae\u0cbf\u0cb7\u0c97\u0cb3\u0cc1",
+			"Ending": "\u0c95\u0cca\u0ca8\u0cc6\u0c97\u0cca\u0cb3\u0ccd\u0cb3\u0cc1\u0ca4\u0ccd\u0ca4\u0cbf\u0ca6\u0cc6",
+			"People": "\u0c9c\u0ca8\u0cb0\u0cc1",
+			"Share": "\u0cb9\u0c82\u0c9a\u0cbf\u0c95\u0cca\u0cb3\u0ccd\u0cb3\u0cbf",
+			"Continue": "\u0cae\u0cc1\u0c82\u0ca6\u0cc1\u0cb5\u0cb0\u0cbf\u0cb8\u0cbf",
+			"Recurring": "\u0cae\u0cb0\u0cc1\u0c95\u0cb3\u0cbf\u0cb8\u0cc1\u0cb5",
+			"RecurringTitle": "\u0cae\u0cb0\u0cc1\u0c95\u0cb3\u0cbf\u0cb8\u0cc1\u0cb5 \u0ca6\u0cbf\u0ca8\u0c97\u0cb3\u0cc1",
+			"Daily": "\u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0ca6\u0cbf\u0ca8",
+			"Weekly": "\u0cb8\u0cbe\u0caa\u0ccd\u0ca4\u0cbe\u0cb9\u0cbf\u0c95",
+			"Monthly": "\u0cae\u0cbe\u0cb8\u0cbf\u0c95",
+			"SelectLocation": "\u0ca6\u0caf\u0cb5\u0cbf\u0c9f\u0ccd\u0c9f\u0cc1 \u0cae\u0cca\u0ca6\u0cb2\u0cc1 \u0cb8\u0ccd\u0ca5\u0cb3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0caf\u0ccd\u0c95\u0cc6\u0cae\u0cbe\u0ca1\u0cbf.",
+			"eventType": "\u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd \u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb0",
+			"EditTitle": "\u0c86\u0cb8\u0c95\u0ccd\u0ca4\u0cbf\u0ca6\u0cbe\u0caf\u0c95 \u0cb6\u0cc0\u0cb0\u0ccd\u0cb7\u0cbf\u0c95\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0caf\u0ccb\u0c9a\u0cbf\u0cb8\u0cbf ...",
+			"SetTitle": "\u0ca6\u0caf\u0cb5\u0cbf\u0c9f\u0ccd\u0c9f\u0cc1 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd \u0cb6\u0cc0\u0cb0\u0ccd\u0cb7\u0cbf\u0c95\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0cca\u0c82\u0ca6\u0cbf\u0cb8\u0cbf",
+			"ScheduleOnlineConference": "\u0c86\u0ca8\u0ccd\u200c\u0cb2\u0cc8\u0ca8\u0ccd \u0cb8\u0cae\u0ccd\u0cae\u0cc7\u0cb3\u0ca8\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca8\u0cbf\u0c97\u0ca6\u0cbf\u0caa\u0ca1\u0cbf\u0cb8\u0cbf",
+			"SOCDescription": "\u0ca6\u0caf\u0cb5\u0cbf\u0c9f\u0ccd\u0c9f\u0cc1 \u0cb8\u0cae\u0ccd\u0cae\u0cc7\u0cb3\u0ca8\u0ca6 \u0caa\u0ccd\u0cb0\u0cbe\u0cb0\u0c82\u0cad \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0c82\u0ca4\u0cbf\u0cae \u0cb8\u0cae\u0caf\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb5\u0cbf\u0cb5\u0cb0\u0cbf\u0cb8\u0cbf. \u0c88 \u0c85\u0cb5\u0ca7\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd\u200c\u0c97\u0cc6 \u0cad\u0cc7\u0c9f\u0cbf \u0ca8\u0cc0\u0ca1\u0cc1\u0cb5 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0caf\u0cca\u0cac\u0ccd\u0cac \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf\u0caf\u0cc1 \u0c86\u0ca8\u0ccd\u200c\u0cb2\u0cc8\u0ca8\u0ccd \u0c95\u0cbe\u0ca8\u0ccd\u0cab\u0cb0\u0cc6\u0ca8\u0ccd\u0cb8\u0ccd\u200c\u0c97\u0cc6 \u0cb8\u0ccd\u0cb5\u0caf\u0c82 \u0cb8\u0c82\u0caa\u0cb0\u0ccd\u0c95 \u0cb9\u0cca\u0c82\u0ca6\u0cc1\u0ca4\u0ccd\u0ca4\u0cbe\u0cb0\u0cc6.",
+			"EndDate": "\u0c85\u0c82\u0ca4\u0ccd\u0caf",
+			"location": {
+				"Title": "\u0ca8\u0cbf\u0cae\u0ccd\u0cae \u0cb8\u0ccd\u0ca5\u0cb3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0cca\u0c82\u0ca6\u0cbf\u0cb8\u0cbf"
+			},
+			"interest": {
+				"Title": "\u0c92\u0c82\u0ca6\u0cc1 \u0c9a\u0c9f\u0cc1\u0cb5\u0c9f\u0cbf\u0c95\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0caf\u0ccd\u0c95\u0cc6\u0cae\u0cbe\u0ca1\u0cbf",
+				"Filter": "\u0cb9\u0cc1\u0ca1\u0cc1\u0c95\u0cbe\u0c9f \u0c86\u0cb8\u0c95\u0ccd\u0ca4\u0cbf\u0c97\u0cb3\u0cc1..."
+			},
+			"SetLivestream": "\u0cb2\u0cc8\u0cb5\u0ccd\u200c\u0cb8\u0ccd\u0c9f\u0ccd\u0cb0\u0cc0\u0cae\u0ccd / \u0cb5\u0cbf\u0ca1\u0cbf\u0caf\u0ccb \u0c95\u0cbe\u0ca8\u0ccd\u0cab\u0cb0\u0cc6\u0ca8\u0ccd\u0cb8\u0ccd\u200c\u0c97\u0cc6 \u0cb2\u0cbf\u0c82\u0c95\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0c82\u0c9f\u0cbf\u0cb8\u0cbf",
+			"Locally": "\u0cb8\u0ccd\u0ca5\u0cb3\u0cc0\u0caf\u0cb5\u0cbe\u0c97\u0cbf",
+			"EventInfoLink": "\u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd \u0cae\u0cbe\u0cb9\u0cbf\u0ca4\u0cbf \u0cb2\u0cbf\u0c82\u0c95\u0ccd",
+			"TicketPurchaseLink": "\u0c9f\u0cbf\u0c95\u0cc6\u0c9f\u0ccd \u0c96\u0cb0\u0cc0\u0ca6\u0cbf \u0cb2\u0cbf\u0c82\u0c95\u0ccd"
+		},
+		"EventAlreadyClosed": "\u0c88 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0c88\u0c97\u0cbe\u0c97\u0cb2\u0cc7 \u0cae\u0cc1\u0c9a\u0ccd\u0c9a\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6",
+		"addToCalendar": {
+			"permissions": {
+				"title": "\u0c95\u0ccd\u0caf\u0cbe\u0cb2\u0cc6\u0c82\u0ca1\u0cb0\u0ccd\u200c\u0c97\u0cc6 \u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cc7?",
+				"prompt": "\u0c88 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca8\u0cbf\u0cae\u0ccd\u0cae \u0c95\u0ccd\u0caf\u0cbe\u0cb2\u0cc6\u0c82\u0ca1\u0cb0\u0ccd\u200c\u0c97\u0cc6 \u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cb2\u0cc1 \u0ca8\u0cc0\u0cb5\u0cc1 \u0cac\u0caf\u0cb8\u0cc1\u0cb5\u0cbf\u0cb0\u0cbe?",
+				"yes": "\u0cb9\u0ccc\u0ca6\u0cc1",
+				"no": "\u0cb8\u0c82"
+			},
+			"dialog": {
+				"Title": "\u0ca8\u0cbf\u0cae\u0ccd\u0cae \u0c95\u0ccd\u0caf\u0cbe\u0cb2\u0cc6\u0c82\u0ca1\u0cb0\u0ccd\u200c\u0c97\u0cc6 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd \u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cbf"
+			}
+		},
+		"ErrorLeaveEndedEvent": "\u0c95\u0ccd\u0cb7\u0cae\u0cbf\u0cb8\u0cbf, \u0c86\u0ca6\u0cb0\u0cc6 \u0ca8\u0cc0\u0cb5\u0cc1 \u0cae\u0cc1\u0c95\u0ccd\u0ca4\u0cbe\u0caf\u0c97\u0cca\u0c82\u0ca1 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0cac\u0cbf\u0ca1\u0cb2\u0cc1 \u0cb8\u0cbe\u0ca7\u0ccd\u0caf\u0cb5\u0cbf\u0cb2\u0ccd\u0cb2"
+	},
+	"availabilities": {
+		"Title": "\u0cb2\u0cad\u0ccd\u0caf\u0ca4\u0cc6\u0c97\u0cb3\u0cc1",
+		"NewAvailability": {
+			"Title": "\u0cb9\u0cca\u0cb8 \u0cb2\u0cad\u0ccd\u0caf\u0ca4\u0cc6",
+			"SaveAvailability": "\u0cb2\u0cad\u0ccd\u0caf\u0ca4\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0cb3\u0cbf\u0cb8\u0cbf",
+			"SelectTemplate": "\u0ca6\u0caf\u0cb5\u0cbf\u0c9f\u0ccd\u0c9f\u0cc1 \u0cb8\u0cc7\u0cb5\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0caf\u0ccd\u0c95\u0cc6\u0cae\u0cbe\u0ca1\u0cbf",
+			"SelectLocation": "\u0ca6\u0caf\u0cb5\u0cbf\u0c9f\u0ccd\u0c9f\u0cc1 \u0cb8\u0ccd\u0ca5\u0cb3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0caf\u0ccd\u0c95\u0cc6\u0cae\u0cbe\u0ca1\u0cbf",
+			"SelectArea": "\u0ca6\u0caf\u0cb5\u0cbf\u0c9f\u0ccd\u0c9f\u0cc1 \u0caa\u0ccd\u0cb0\u0ca6\u0cc7\u0cb6\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0caf\u0ccd\u0c95\u0cc6\u0cae\u0cbe\u0ca1\u0cbf",
+			"Type": "\u0cae\u0cbe\u0ca6\u0cb0\u0cbf",
+			"Weekly": "\u0cb8\u0cbe\u0caa\u0ccd\u0ca4\u0cbe\u0cb9\u0cbf\u0c95",
+			"RecurringStartDate": "\u0caa\u0cc1\u0ca8\u0cb0\u0cbe\u0cb5\u0cb0\u0ccd\u0ca4\u0cbf\u0ca4 \u0caa\u0ccd\u0cb0\u0cbe\u0cb0\u0c82\u0cad \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95",
+			"EndDate": "\u0c85\u0c82\u0ca4\u0cbf\u0cae \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95",
+			"SelectTime": "\u0c9f\u0cc8\u0cae\u0ccd \u0cb8\u0ccd\u0cb2\u0cbe\u0c9f\u0ccd\u200c\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca8\u0cbf\u0cb0\u0ccd\u0cb5\u0cb9\u0cbf\u0cb8\u0cbf",
+			"SelectTimeSlot": "\u0cb8\u0cae\u0caf\u0ca6 \u0cb8\u0ccd\u0cb2\u0cbe\u0c9f\u0ccd \u0c86\u0caf\u0ccd\u0c95\u0cc6\u0cae\u0cbe\u0ca1\u0cbf",
+			"SelectTimeSlots": "\u0cac\u0caf\u0cb8\u0cbf\u0ca6 \u0cb8\u0cae\u0caf\u0ca6 \u0cb8\u0ccd\u0cb2\u0cbe\u0c9f\u0ccd\u200c\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0caf\u0ccd\u0c95\u0cc6\u0cae\u0cbe\u0ca1\u0cbf",
+			"PeopleMin": "\u0c95\u0ca8\u0cbf\u0cb7\u0ccd\u0ca0 \u0cb8\u0c82\u0ca6\u0cb0\u0ccd\u0cb6\u0c95\u0cb0\u0cc1",
+			"PeopleMax": "\u0c97\u0cb0\u0cbf\u0cb7\u0ccd\u0ca0 \u0cb8\u0c82\u0ca6\u0cb0\u0ccd\u0cb6\u0c95\u0cb0\u0cc1",
+			"PeopleLabels": "\u0caa\u0cbe\u0ca4\u0ccd\u0cb0\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0ca8\u0cc1\u0cae\u0ca4\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6",
+			"Next": "\u0cae\u0cc1\u0c82\u0ca6\u0cc6",
+			"Back": "\u0cb9\u0cbf\u0c82\u0ca6\u0cc6",
+			"RecurringEndDate": "\u0cae\u0cb0\u0cc1\u0c95\u0cb3\u0cbf\u0cb8\u0cc1\u0cb5 \u0c85\u0c82\u0ca4\u0cbf\u0cae \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95",
+			"ScheduleOnlineConference": "\u0c9f\u0cc6\u0cb2\u0cbf\u0c95\u0cbe\u0ca8\u0ccd\u0cab\u0cb0\u0cc6\u0ca8\u0ccd\u0cb8\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca8\u0cbf\u0c97\u0ca6\u0cbf\u0caa\u0ca1\u0cbf\u0cb8\u0cbf",
+			"SetLivestream": "\u0cb2\u0cc8\u0cb5\u0ccd\u200c\u0cb8\u0ccd\u0c9f\u0ccd\u0cb0\u0cc0\u0cae\u0ccd / \u0cb5\u0cbf\u0ca1\u0cbf\u0caf\u0ccb \u0c95\u0cbe\u0ca8\u0ccd\u0cab\u0cb0\u0cc6\u0ca8\u0ccd\u0cb8\u0ccd\u200c\u0c97\u0cc6 \u0cb2\u0cbf\u0c82\u0c95\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0c82\u0c9f\u0cbf\u0cb8\u0cbf",
+			"SelectTimeZone": "\u0cb8\u0cae\u0caf\u0cb5\u0cb2\u0caf\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0caf\u0ccd\u0c95\u0cc6\u0cae\u0cbe\u0ca1\u0cbf"
+		},
+		"EditAvailability": "\u0cb2\u0cad\u0ccd\u0caf\u0ca4\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0c82\u0caa\u0cbe\u0ca6\u0cbf\u0cb8\u0cbf",
+		"SetVisitors": "\u0cb8\u0c82\u0ca6\u0cb0\u0ccd\u0cb6\u0c95\u0cb0\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0cca\u0c82\u0ca6\u0cbf\u0cb8\u0cbf",
+		"Price": "\u0cac\u0cc6\u0cb2\u0cc6",
+		"SelectAction": "\u0ca6\u0caf\u0cb5\u0cbf\u0c9f\u0ccd\u0c9f\u0cc1 \u0c95\u0ccd\u0cb0\u0cbf\u0caf\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0caf\u0ccd\u0c95\u0cc6\u0cae\u0cbe\u0ca1\u0cbf",
+		"OpenProfile": "\u0caa\u0ccd\u0cb0\u0cca\u0cab\u0cc8\u0cb2\u0ccd \u0ca4\u0cc6\u0cb0\u0cc6\u0caf\u0cbf\u0cb0\u0cbf",
+		"RemoveStaff": "\u0cb8\u0cbf\u0cac\u0ccd\u0cac\u0c82\u0ca6\u0cbf \u0ca4\u0cc6\u0c97\u0cc6\u0ca6\u0cc1\u0cb9\u0cbe\u0c95\u0cbf",
+		"PleaseSelectTimeSlots": "\u0ca6\u0caf\u0cb5\u0cbf\u0c9f\u0ccd\u0c9f\u0cc1 \u0cb8\u0cae\u0caf\u0ca6 \u0cb8\u0ccd\u0cb2\u0cbe\u0c9f\u0ccd\u200c\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0caf\u0ccd\u0c95\u0cc6\u0cae\u0cbe\u0ca1\u0cbf",
+		"ExceptionOccurred": "\u0cb5\u0cbf\u0ca8\u0cbe\u0caf\u0cbf\u0ca4\u0cbf \u0cb8\u0c82\u0cad\u0cb5\u0cbf\u0cb8\u0cbf\u0ca6\u0cc6",
+		"NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd\u200c\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf \u0cad\u0cbe\u0c97\u0cb5\u0cb9\u0cbf\u0cb8\u0cb2\u0cc1 \u0cb8\u0cbe\u0c95\u0cb7\u0ccd\u0c9f\u0cc1 \u0c95\u0ccd\u0cb0\u0cc6\u0ca1\u0cbf\u0c9f\u0ccd\u200c\u0c97\u0cb3\u0cbf\u0cb2\u0ccd\u0cb2. \u0ca8\u0cbf\u0cae\u0c97\u0cc6 {{needCredits}} \u0c95\u0ccd\u0cb0\u0cc6\u0ca1\u0cbf\u0c9f\u0ccd\u200c\u0c97\u0cb3 \u0c85\u0c97\u0ca4\u0ccd\u0caf\u0cb5\u0cbf\u0ca6\u0cc6. \u0c96\u0cb0\u0cc0\u0ca6\u0cbf\u0cb8\u0cb2\u0cc1 \u0cac\u0caf\u0cb8\u0cc1\u0cb5\u0cbf\u0cb0\u0cbe?",
+		"LiveStream": "\u0ca8\u0cbf\u0cb0\u0c82\u0ca4\u0cb0 \u0caa\u0ccd\u0cb0\u0cb8\u0cbe\u0cb0",
+		"InviteStaff": "\u0cb8\u0cbf\u0cac\u0ccd\u0cac\u0c82\u0ca6\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0cb9\u0ccd\u0cb5\u0cbe\u0ca8\u0cbf\u0cb8\u0cbf"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "\u0caa\u0ccd\u0cb0\u0cbe\u0cb0\u0c82\u0cad \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95",
+			"endDate": "\u0c85\u0c82\u0ca4\u0cbf\u0cae \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95",
+			"justOnce": "\u0c95\u0cc6\u0cd5\u0cb5\u0cb2 \u0c92\u0cae\u0ccd\u0cae\u0cc6",
+			"justOnceWeekly": "\u0c88 \u0cb5\u0cbe\u0cb0 \u0cae\u0cbe\u0ca4\u0ccd\u0cb0",
+			"justOnceMonthly": "\u0c88 \u0ca4\u0cbf\u0c82\u0c97\u0cb3\u0cc1 \u0cae\u0cbe\u0ca4\u0ccd\u0cb0",
+			"recurring": "\u0cae\u0cb0\u0cc1\u0c95\u0cb3\u0cbf\u0cb8\u0cc1\u0cb5"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "\u0c89\u0c9a\u0cbf\u0ca4 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd",
+			"optional": "\u0c90\u0c9a\u0ccd\u0c9b\u0cbf\u0c95 \u0c95\u0cca\u0ca1\u0cc1\u0c97\u0cc6",
+			"required": "\u0c85\u0c97\u0ca4\u0ccd\u0caf\u0cb5\u0cbf\u0cb0\u0cc1\u0cb5 \u0caa\u0cbe\u0cb5\u0ca4\u0cbf"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "\u0c90\u0c9a\u0ccd\u0c9b\u0cbf\u0c95 \u0c95\u0cca\u0ca1\u0cc1\u0c97\u0cc6",
+			"required": "\u0c85\u0c97\u0ca4\u0ccd\u0caf\u0cb5\u0cbf\u0cb0\u0cc1\u0cb5 \u0caa\u0cbe\u0cb5\u0ca4\u0cbf",
+			"paid": "\u0caa\u0cbe\u0cb5\u0ca4\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6"
+		},
+		"confirmationDialog": {
+			"title": "\u0cb9\u0ca3 \u0caa\u0cbe\u0cb5\u0ca4\u0cbf \u0ca6\u0cc3\u0ca2\u0cbf\u0cd5\u0c95\u0cb0\u0ca3",
+			"content": "\u0c88 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd \u0c90\u0c9a\u0ccd\u0c9b\u0cbf\u0c95 \u0c95\u0cca\u0ca1\u0cc1\u0c97\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 {{amount}} \u0cb9\u0cca\u0c82\u0ca6\u0cbf\u0ca6\u0cc6.",
+			"button": "\u0c95\u0cca\u0ca1\u0cc1\u0c97\u0cc6 \u0ca8\u0cc0\u0ca1\u0cbf"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} \u0c87\u0ca8\u0ccd\u0ca8\u0cc2 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd\u200c\u0ca8 \u0cad\u0cbe\u0c97\u0cb5\u0cbe\u0c97\u0cbf\u0cb2\u0ccd\u0cb2. \u0ca8\u0cc0\u0cb5\u0cc1 \u0c85\u0cb5\u0cb0\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0cbe\u0cb2\u0ccd\u0c97\u0cca\u0cb3\u0ccd\u0cb3\u0cc1\u0cb5\u0cb5\u0cb0\u0c82\u0ca4\u0cc6 \u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cb2\u0cc1 \u0cac\u0caf\u0cb8\u0cc1\u0cb5\u0cbf\u0cb0\u0cbe?",
+		"userNotFound": "\u0cac\u0cb3\u0c95\u0cc6\u0ca6\u0cbe\u0cb0 \u0c95\u0c82\u0ca1\u0cc1\u0cac\u0c82\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2",
+		"confirmYes": "\u0cb9\u0ccc\u0ca6\u0cc1",
+		"confirmNo": "\u0cb8\u0c82"
+	},
+	"notifications": {
+		"EventActivityIn": "{{{stream.fields.title}}} \u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd \u0c9a\u0c9f\u0cc1\u0cb5\u0c9f\u0cbf\u0c95\u0cc6",
+		"RecurringRulesChanged": "\u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd\u200c\u0c97\u0cc6 \u0cae\u0cb0\u0cc1\u0c95\u0cb3\u0cbf\u0cb8\u0cc1\u0cb5 \u0ca8\u0cbf\u0caf\u0cae\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cac\u0ca6\u0cb2\u0cbe\u0caf\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6 {{{call 'message.getInstruction' 'eventTitle'}}}",
+		"ManageEmailSubscriptions": "\u0ca8\u0cbf\u0cae\u0ccd\u0cae \u0c87\u0cae\u0cc7\u0cb2\u0ccd \u0c9a\u0c82\u0ca6\u0cbe\u0ca6\u0cbe\u0cb0\u0cbf\u0c95\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca8\u0cbf\u0cb0\u0ccd\u0cb5\u0cb9\u0cbf\u0cb8\u0cbf",
+		"IfUnsubscribe": "\u0ca8\u0cc0\u0cb5\u0cc1 \u0c85\u0ca8\u0ccd\u200c\u0cb8\u0cac\u0ccd\u200c\u0cb8\u0ccd\u0c95\u0ccd\u0cb0\u0cc8\u0cac\u0ccd \u0cae\u0cbe\u0ca1\u0cb2\u0cc1 \u0cac\u0caf\u0cb8\u0cbf\u0ca6\u0cb0\u0cc6",
+		"ClickHereToVisitEvent": "\u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd\u200c\u0c97\u0cc6 \u0cad\u0cc7\u0c9f\u0cbf \u0ca8\u0cc0\u0ca1\u0cb2\u0cc1 \u0ca6\u0caf\u0cb5\u0cbf\u0c9f\u0ccd\u0c9f\u0cc1 \u0c87\u0cb2\u0ccd\u0cb2\u0cbf \u0c95\u0ccd\u0cb2\u0cbf\u0c95\u0ccd \u0cae\u0cbe\u0ca1\u0cbf",
+		"Calendars/reminder": "\u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd &quot;{{{call 'message.getInstruction' 'name'}}&quot; {{&call 'message.getInstruction' 'time'}}} \u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0caa\u0ccd\u0cb0\u0cbe\u0cb0\u0c82\u0cad\u0cb5\u0cbe\u0c97\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6",
+		"webrtc": {
+			"Started": "\u0c9f\u0cc6\u0cb2\u0cbf\u0c95\u0cbe\u0ca8\u0ccd\u0cab\u0cb0\u0cc6\u0ca8\u0ccd\u0cb8\u0ccd \u0caa\u0ccd\u0cb0\u0cbe\u0cb0\u0c82\u0cad\u0cb5\u0cbe\u0caf\u0cbf\u0ca4\u0cc1",
+			"Ended": "\u0c9f\u0cc6\u0cb2\u0cbf\u0c95\u0cbe\u0ca8\u0ccd\u0cab\u0cb0\u0cc6\u0ca8\u0ccd\u0cb8\u0ccd \u0cae\u0cc1\u0c97\u0cbf\u0ca6\u0cbf\u0ca6\u0cc6"
+		},
+		"livestream": {
+			"Started": "\u0cb2\u0cc8\u0cb5\u0ccd \u0cb8\u0ccd\u0c9f\u0ccd\u0cb0\u0cc0\u0cae\u0ccd \u0caa\u0ccd\u0cb0\u0cbe\u0cb0\u0c82\u0cad\u0cb5\u0cbe\u0c97\u0cbf\u0ca6\u0cc6",
+			"Ended": "\u0cb2\u0cc8\u0cb5\u0ccd \u0cb8\u0ccd\u0c9f\u0ccd\u0cb0\u0cc0\u0cae\u0ccd \u0c95\u0cca\u0ca8\u0cc6\u0c97\u0cca\u0c82\u0ca1\u0cbf\u0ca6\u0cc6",
+			"ClickToView": "\u0c85\u0ca6\u0ca8\u0ccd\u0ca8\u0cc1 \u0c87\u0cb2\u0ccd\u0cb2\u0cbf \u0cb5\u0cc0\u0c95\u0ccd\u0cb7\u0cbf\u0cb8\u0cbf."
+		}
+	},
+	"import": {
+		"linkTitle": "\u0c88 \u0cb8\u0ccd\u0caa\u0ccd\u0cb0\u0cc6\u0ca1\u0ccd\u200c\u0cb6\u0cc0\u0c9f\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0cad\u0cb0\u0ccd\u0ca4\u0cbf \u0cae\u0cbe\u0ca1\u0cbf",
+		"fileLabel": "\u0cb8\u0ccd\u0caa\u0ccd\u0cb0\u0cc6\u0ca1\u0ccd\u200c\u0cb6\u0cc0\u0c9f\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0caa\u0ccd\u200c\u0cb2\u0ccb\u0ca1\u0ccd \u0cae\u0cbe\u0ca1\u0cbf:",
+		"importOptions": "\u0c86\u0caf\u0ccd\u0c95\u0cc6\u0c97\u0cb3\u0cc1",
+		"importProgress": "\u0caa\u0ccd\u0cb0\u0c97\u0ca4\u0cbf",
+		"sampleCSV": "\u0cae\u0cbe\u0ca6\u0cb0\u0cbf CSV \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca1\u0ccc\u0ca8\u0ccd\u200c\u0cb2\u0ccb\u0ca1\u0ccd \u0cae\u0cbe\u0ca1\u0cbf",
+		"joinEventLabel": "\u0caf\u0cbe\u0ca6\u0cc3\u0c9a\u0ccd\u0c9b\u0cbf\u0c95 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd\u200c\u0c97\u0cc6 \u0cac\u0cb3\u0c95\u0cc6\u0ca6\u0cbe\u0cb0\u0cb0\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0cc7\u0cb0\u0cbf",
+		"smsText": "\u0cb9\u0cc7, \u0ca8\u0cbe\u0ca8\u0cc1 \u0ca8\u0cbf\u0cae\u0c97\u0cc6 {{communityName}} \u0c97\u0cc6 \u0cb2\u0cbf\u0c82\u0c95\u0ccd \u0c95\u0cb3\u0cc1\u0cb9\u0cbf\u0cb8\u0cbf\u0ca6\u0ccd\u0ca6\u0cc7\u0ca8\u0cc6. \u0ca6\u0caf\u0cb5\u0cbf\u0c9f\u0ccd\u0c9f\u0cc1 \u0c87\u0ca6\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0cbf\u0cb8\u0cbf.",
+		"emailSubject": "\u0c88\u0c97\u0cb7\u0ccd\u0c9f\u0cc7 \u0ca8\u0cbf\u0cae\u0c97\u0cc6 \u0cb2\u0cbf\u0c82\u0c95\u0ccd \u0c95\u0cb3\u0cc1\u0cb9\u0cbf\u0cb8\u0cbf\u0ca6\u0cc6",
+		"emailBody": "\u0cb9\u0cc7, \u0ca8\u0cbe\u0ca8\u0cc1 \u0ca8\u0cbf\u0cae\u0c97\u0cc6 {{communityName}} \u0c97\u0cc6 \u0c86\u0cb9\u0ccd\u0cb5\u0cbe\u0ca8\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c95\u0cb3\u0cc1\u0cb9\u0cbf\u0cb8\u0cbf\u0ca6\u0ccd\u0ca6\u0cc7\u0ca8\u0cc6. \u0ca6\u0caf\u0cb5\u0cbf\u0c9f\u0ccd\u0c9f\u0cc1 \u0c87\u0ca6\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0cbf\u0cb8\u0cbf.",
+		"fileNotFound": "\u0c95\u0ccd\u0cb7\u0cae\u0cbf\u0cb8\u0cbf, CSV \u0cab\u0cc8\u0cb2\u0ccd \u0c95\u0c82\u0ca1\u0cc1\u0cac\u0c82\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2.",
+		"fileEmpty": "\u0c95\u0ccd\u0cb7\u0cae\u0cbf\u0cb8\u0cbf, CSV \u0cab\u0cc8\u0cb2\u0ccd \u0c96\u0cbe\u0cb2\u0cbf\u0caf\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+		"fieldNotFound": "\u0c85\u0c97\u0ca4\u0ccd\u0caf\u0cb5\u0cbf\u0cb0\u0cc1\u0cb5 \u0c95\u0ccd\u0cb7\u0cc7\u0ca4\u0ccd\u0cb0 &quot;{{1}}&quot; \u0c95\u0c82\u0ca1\u0cc1\u0cac\u0c82\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2",
+		"userIdNotFound": "\u0cac\u0cb3\u0c95\u0cc6\u0ca6\u0cbe\u0cb0 \u0c85\u0cb8\u0ccd\u0ca4\u0cbf\u0ca4\u0ccd\u0cb5\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf\u0ca6\u0cc6 \u0c86\u0ca6\u0cb0\u0cc6 \u0c90\u0ca1\u0cbf \u0c96\u0cbe\u0cb2\u0cbf\u0caf\u0cbe\u0c97\u0cbf\u0ca6\u0cc6",
+		"activateUsers": "\u0cac\u0cb3\u0c95\u0cc6\u0ca6\u0cbe\u0cb0\u0cb0\u0cbf\u0c97\u0cc6 \u0cb8\u0c95\u0ccd\u0cb0\u0cbf\u0caf\u0c97\u0cca\u0cb3\u0cbf\u0cb8\u0cc1\u0cb5 \u0cb8\u0c82\u0ca6\u0cc7\u0cb6\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c95\u0cb3\u0cc1\u0cb9\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cc7?",
+		"taskStreamInvalid": "\u0c9f\u0cbe\u0cb8\u0ccd\u0c95\u0ccd \u0cb8\u0ccd\u0c9f\u0ccd\u0cb0\u0cc0\u0cae\u0ccd \u0c85\u0cae\u0cbe\u0ca8\u0ccd\u0caf\u0cb5\u0cbe\u0c97\u0cbf\u0ca6\u0cc6",
+		"instructionsEmpty": "\u0c9f\u0cbe\u0cb8\u0ccd\u0c95\u0ccd \u0cb8\u0ccd\u0c9f\u0ccd\u0cb0\u0cc0\u0cae\u0ccd \u0cb8\u0cc2\u0c9a\u0ca8\u0cc6\u0c97\u0cb3\u0cc1 \u0c96\u0cbe\u0cb2\u0cbf\u0caf\u0cbe\u0c97\u0cbf\u0cb5\u0cc6",
+		"interestsEmpty": "\u0c86\u0cb8\u0c95\u0ccd\u0ca4\u0cbf\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca1\u0cc6\u0caf\u0cb2\u0cc1 \u0cb8\u0cbe\u0ca7\u0ccd\u0caf\u0cb5\u0cbf\u0cb2\u0ccd\u0cb2",
+		"interestAbsent": "\u0c86\u0cb8\u0c95\u0ccd\u0ca4\u0cbf {{1}} \u0c95\u0c82\u0ca1\u0cc1\u0cac\u0c82\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2",
+		"complete": "\u0cb8\u0c82\u0caa\u0cc2\u0cb0\u0ccd\u0ca3",
+		"errorLine": "\u0cb8\u0cbe\u0cb2\u0cc1 {{1}}",
+		"errorsTitle": "\u0ca6\u0ccb\u0cb7\u0c97\u0cb3\u0cc1 \u0cb8\u0c82\u0cad\u0cb5\u0cbf\u0cb8\u0cbf\u0cb5\u0cc6",
+		"communityUsers": "\u0c87\u0ca6\u0cc1 \u0cb8\u0cae\u0cc1\u0ca6\u0cbe\u0caf\u0c97\u0cb3 \u0caa\u0c9f\u0ccd\u0c9f\u0cbf",
+		"toMainCommunityToo": "\u0cae\u0cc1\u0c96\u0ccd\u0caf \u0cb8\u0cae\u0cc1\u0ca6\u0cbe\u0caf\u0c95\u0ccd\u0c95\u0cc2 \u0cb8\u0c82\u0cac\u0c82\u0ca7\u0cbf\u0cb8\u0cbf\u0cb5\u0cc6",
+		"ChooseFile": "\u0cab\u0cc6\u0cd6\u0cb2\u0ccd \u0c86\u0caf\u0ccd\u0c95\u0cc6"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "\u0c9c\u0ca8\u0cb0\u0cc1 \u0cad\u0cbe\u0c97\u0cb5\u0cb9\u0cbf\u0cb8\u0cac\u0cb9\u0cc1\u0ca6\u0cbe\u0ca6 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0ca8\u0cbf\u0ca7\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6",
+			"displayType": "\u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd"
+		},
+		"Calendars/recurring": {
+			"description": "\u0ca8\u0cbf\u0caf\u0ca4\u0c95\u0cbe\u0cb2\u0cbf\u0c95\u0cb5\u0cbe\u0c97\u0cbf \u0cae\u0cb0\u0cc1\u0c95\u0cb3\u0cbf\u0cb8\u0cb2\u0cc1 \u0c89\u0ca6\u0ccd\u0ca6\u0cc7\u0cb6\u0cbf\u0cb8\u0cbf\u0cb0\u0cc1\u0cb5 \u0cb8\u0ccd\u0c9f\u0ccd\u0cb0\u0cc0\u0cae\u0ccd\u200c\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0c82\u0cac\u0c82\u0ca7\u0cbf\u0cb8\u0cb2\u0cc1 \u0cac\u0cb3\u0cb8\u0cb2\u0cbe\u0c97\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6",
+			"displayType": "\u0cae\u0cb0\u0cc1\u0c95\u0cb3\u0cbf\u0cb8\u0cc1\u0cb5 \u0c88\u0cb5\u0cc6\u0c82\u0c9f\u0ccd"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "\u0cb8\u0ccd\u0cb2\u0cbe\u0c9f\u0ccd \u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cbf",
+		"StartTime": "\u0c86\u0cb0\u0c82\u0cad\u0cb5\u0cbe\u0c97\u0cc1\u0cb5",
+		"EndTime": "\u0c85\u0c82\u0ca4\u0cbf\u0cae \u0cb8\u0cae\u0caf",
+		"Save": "\u0c89\u0cb3\u0cbf\u0cb8\u0cbf",
+		"AddTimeSlot": "\u0c9f\u0cc8\u0cae\u0ccd \u0cb8\u0ccd\u0cb2\u0cbe\u0c9f\u0ccd \u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cbf",
+		"CopyFromDay": "\u0ca6\u0cbf\u0ca8\u0ca6\u0cbf\u0c82\u0ca6 \u0ca8\u0c95\u0cb2\u0cbf\u0cb8\u0cbf",
+		"Nearest": "\u0cb9\u0ca4\u0ccd\u0ca4\u0cbf\u0cb0\u0ca6",
+		"Today": "\u0c87\u0c82\u0ca6\u0cc1",
+		"Tomorrow": "\u0ca8\u0cbe\u0cb3\u0cc6",
+		"AfterTomorrow": "\u0ca8\u0cbe\u0cb3\u0cc6\u0caf \u0ca8\u0c82\u0ca4\u0cb0"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "\u0c95\u0ccd\u0caf\u0cbe\u0cb2\u0cc6\u0c82\u0ca1\u0cb0\u0ccd\u200c\u0c97\u0cc6 \u0c9a\u0c82\u0ca6\u0cbe\u0ca6\u0cbe\u0cb0\u0cb0\u0cbe\u0c97\u0cbf",
+		"copyLinkBelow": "\u0c95\u0cc6\u0cb3\u0c97\u0cbf\u0ca8 \u0cb2\u0cbf\u0c82\u0c95\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca8\u0c95\u0cb2\u0cbf\u0cb8\u0cbf",
+		"goTo": "\u0c87\u0cb2\u0ccd\u0cb2\u0cbf\u0c97\u0cc6 \u0cb9\u0ccb\u0c97\u0cbf:",
+		"pasteCopiedTo": "&quot;\u0c95\u0ccd\u0caf\u0cbe\u0cb2\u0cc6\u0c82\u0ca1\u0cb0\u0ccd\u0ca8 URL&quot; \u0c95\u0ccd\u0cb7\u0cc7\u0ca4\u0ccd\u0cb0\u0c95\u0ccd\u0c95\u0cc6 \u0ca8\u0c95\u0cb2\u0cbf\u0cb8\u0cbf\u0ca6 \u0cb2\u0cbf\u0c82\u0c95\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0c82\u0c9f\u0cbf\u0cb8\u0cbf",
+		"clickAddCalendar": "&quot;\u0c95\u0ccd\u0caf\u0cbe\u0cb2\u0cc6\u0c82\u0ca1\u0cb0\u0ccd \u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cbf&quot; \u0cac\u0c9f\u0ca8\u0ccd \u0c95\u0ccd\u0cb2\u0cbf\u0c95\u0ccd \u0cae\u0cbe\u0ca1\u0cbf",
+		"copyLink": "\u0cb2\u0cbf\u0c82\u0c95\u0ccd \u0ca8\u0c95\u0cb2\u0cbf\u0cb8\u0cbf",
+		"tapToCopy": "\u0ca8\u0cbf\u0cae\u0ccd\u0cae \u0c95\u0ccd\u0cb2\u0cbf\u0caa\u0ccd\u200c\u0cac\u0ccb\u0cb0\u0ccd\u0ca1\u0ccd\u200c\u0c97\u0cc6 \u0cb2\u0cbf\u0c82\u0c95\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca8\u0c95\u0cb2\u0cbf\u0cb8\u0cb2\u0cc1 \u0c95\u0cc6\u0cb3\u0c97\u0cbf\u0ca8 \u0cac\u0c9f\u0ca8\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0c9f\u0ccd\u0caf\u0cbe\u0caa\u0ccd \u0cae\u0cbe\u0ca1\u0cbf",
+		"linkCopied": "\u0cb2\u0cbf\u0c82\u0c95\u0ccd \u0ca8\u0c95\u0cb2\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6",
+		"step2": "\u0cb2\u0cbf\u0c82\u0c95\u0ccd \u0ca8\u0c95\u0cb2\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6. \u0ca8\u0cbe\u0cb5\u0cc1 \u0c93\u0caa\u0ca8\u0ccd \u0c97\u0cc2\u0c97\u0cb2\u0ccd \u0c95\u0ccd\u0caf\u0cbe\u0cb2\u0cc6\u0c82\u0ca1\u0cb0\u0ccd \u0cac\u0c97\u0ccd\u0c97\u0cc6. \u0ca8\u0cc0\u0cb5\u0cc1 \u0cb2\u0cbf\u0c82\u0c95\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca0\u0ccd\u0caf \u0caa\u0cc6\u0c9f\u0ccd\u0c9f\u0cbf\u0c97\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c85\u0c82\u0c9f\u0cbf\u0cb8\u0cac\u0cc7\u0c95\u0cbe\u0c97\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6, &quot;\u0c95\u0ccd\u0caf\u0cbe\u0cb2\u0cc6\u0c82\u0ca1\u0cb0\u0ccd \u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cbf&quot; \u0c95\u0ccd\u0cb2\u0cbf\u0c95\u0ccd \u0cae\u0cbe\u0ca1\u0cbf \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c9f\u0ccd\u0caf\u0cbe\u0cac\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0cae\u0cc1\u0c9a\u0ccd\u0c9a\u0cbf (\u0c95\u0cc6\u0cb3\u0c97\u0cbf\u0ca8 \u0cb8\u0ccd\u0c95\u0ccd\u0cb0\u0cc0\u0ca8\u0ccd\u200c\u0cb6\u0cbe\u0c9f\u0ccd \u0ca8\u0ccb\u0ca1\u0cbf)",
+		"calendarAppPreferences": "\u0ca8\u0cbf\u0cae\u0ccd\u0cae \u0cae\u0ccd\u0caf\u0cbe\u0c95\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0c95\u0ccd\u0caf\u0cbe\u0cb2\u0cc6\u0c82\u0ca1\u0cb0\u0ccd \u0c85\u0caa\u0ccd\u0cb2\u0cbf\u0c95\u0cc7\u0cb6\u0ca8\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0c86\u0ca6\u0ccd\u0caf\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca4\u0cc6\u0cb0\u0cc6\u0caf\u0cbf\u0cb0\u0cbf \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c95\u0cc6\u0cb3\u0c97\u0cc6 \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cbf\u0cb0\u0cc1\u0cb5\u0c82\u0ca4\u0cc6 \u0ca1\u0cc0\u0cab\u0cbe\u0cb2\u0ccd\u0c9f\u0ccd \u0c95\u0ccd\u0caf\u0cbe\u0cb2\u0cc6\u0c82\u0ca1\u0cb0\u0ccd \u0c85\u0caa\u0ccd\u0cb2\u0cbf\u0c95\u0cc7\u0cb6\u0ca8\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0cca\u0c82\u0ca6\u0cbf\u0cb8\u0cbf.",
+		"thenCloseDialog": "\u0ca8\u0c82\u0ca4\u0cb0 \u0ca8\u0cbf\u0cae\u0ccd\u0cae \u0c95\u0ccd\u0caf\u0cbe\u0cb2\u0cc6\u0c82\u0ca1\u0cb0\u0ccd\u200c\u0c97\u0cc6 \u0c9a\u0c82\u0ca6\u0cbe\u0ca6\u0cbe\u0cb0\u0cb0\u0cbe\u0c97\u0cb2\u0cc1 \u0c88 \u0cb8\u0c82\u0cb5\u0cbe\u0ca6\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cae\u0cc1\u0c9a\u0ccd\u0c9a\u0cbf\u0cb0\u0cbf!",
+		"success": "\u0c95\u0ccd\u0caf\u0cbe\u0cb2\u0cc6\u0c82\u0ca1\u0cb0\u0ccd \u0c85\u0ca8\u0ccd\u0ca8\u0cc1 \u0caf\u0cb6\u0cb8\u0ccd\u0cb5\u0cbf\u0caf\u0cbe\u0c97\u0cbf \u0cb8\u0cbf\u0c82\u0c95\u0ccd \u0cae\u0cbe\u0ca1\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6"
+	},
+	"@override": {
+		"Assets/content": {
+			"payments": {
+				"reasons": {
+					"EventParticipation": "\u0c95\u0cbe\u0cb0\u0ccd\u0caf\u0c95\u0ccd\u0cb0\u0cae\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf \u0cad\u0cbe\u0c97\u0cb5\u0cb9\u0cbf\u0cb8\u0cc1\u0cb5\u0cbf\u0c95\u0cc6"
+				}
+			}
+		}
+	}
 }

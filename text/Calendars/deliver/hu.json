@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "K\u00f6sz\u00f6nj\u00fck \u00e9rdekl\u0151d\u00e9s\u00e9t {{title}} ir\u00e1nt"
+	},
+	"approved": {
+		"Subject": "Jelenl\u00e9t j\u00f3v\u00e1hagyva",
+		"AttendanceApproved": "Gratul\u00e1lunk! A r\u00e9szv\u00e9teledet j\u00f3v\u00e1hagytuk a {{title}} programban."
+	},
+	"requested": {
+		"Subject": "R\u00e9szv\u00e9teli k\u00e9relem",
+		"AttendanceRequested": "Meger\u0151s\u00edtj\u00fck r\u00e9szv\u00e9teli k\u00e9relm\u00e9t: {{title}}"
+	},
+	"rejected": {
+		"Subject": "A r\u00e9szv\u00e9tel nem enged\u00e9lyezett",
+		"AttendanceRejected": "Az adminisztr\u00e1torok nem hagyt\u00e1k j\u00f3v\u00e1 a r\u00e9szv\u00e9teli k\u00e9relmedet: {{title}}"
+	},
+	"paid": {
+		"Subject": "Sikeres fizet\u00e9s visszaigazol\u00e1sa",
+		"YouveBeenCharged": "{{amount}} {{currency}} (\u00e9s {{credits}} kredittel) terhelt\u00fck meg a sz\u00e1ml\u00e1dat. K\u00e9sz is vagy! Tal\u00e1lkozunk {{title}} esn\u00e9l."
+	}
+}
