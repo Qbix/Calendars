@@ -473,3 +473,19 @@
 	transform: scale(2);
 	margin-right: 20px;
 }
+.Calendars_event_roles h2 {
+	font-size: 1.3em;
+}
+.Calendars_event_roles [data-role] {
+	display: inline-block;
+	font-size: 1em;
+	text-transform: capitalize;
+	padding: 5px 10px;
+	border: 1px solid #888888;
+	background-color: rgba(255, 255, 255, .2);
+	border-radius: 5px;
+	cursor: pointer;
+}
+.Calendars_event_roles [data-role].Q_selected {
+	background-color: #fff;
+}
