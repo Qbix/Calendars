@@ -1922,9 +1922,11 @@ Q.Template.set('Calendars/event/tool',
 	'		<div class="Calendars_info_icon"><i class="qp-communities-qrcode"></i></div>' +
 	'		<div class="Calendars_info_content">{{text.event.tool.Myqr}}</div>' +
 	'	</div>' +
+	'{{#if show.trips}}' +
 	'	<div class="Q_button Travel_aspect_trips" {{#ifEquals show.trips false}}style="display:none"{{/ifEquals}}>' +
 	'		<div class="Calendars_info_buttons">{{{tool "Travel/trips" publisherId=stream.fields.publisherId streamName=stream.fields.name}}}</div>' +
 	'	</div>' +
+	'{{/if}}' +
 	'{{#if show.time}}' +
 	'	<div class="Q_button Q_aspect_when" data-invoke="time">' +
 	'		<div class="Calendars_info_icon"><i class="qp-calendars-time"></i></div>' +
