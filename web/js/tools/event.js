@@ -44,6 +44,8 @@ Q.Tool.define("Calendars/event", function(options) {
 	var userId = Users.loggedInUserId();
 	var $toolElement = $(this.element);
 
+	tool.modePrepayment = Q.getObject("Event.mode.prepayment", Calendars);
+
 	state.publisherId = state.publisherId || Q.getObject("stream.publisherId", state) || Q.getObject("stream.fields.publisherId", state);
 	state.streamName = state.streamName || Q.getObject("stream.name", state) || Q.getObject("stream.fields.name", state);
 
@@ -934,7 +936,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		var publisherId = this.state.publisherId;
 		var eventId = this.state.streamName.split('/').pop();
 		return new Q.Promise(function(resolve, reject) {
-			Q.req('Calendars/payment', ['status'], function (err, response) {
+			Q.req('Calendars/payment', ['status', 'info'], function (err, response) {
 				var r = response && response.errors;
 				var msg = Q.firstErrorMessage(err, r);
 				if (msg) {
@@ -975,7 +977,9 @@ Q.Tool.define("Calendars/event", function(options) {
 		if (!Users.loggedInUserId()) {
 			return;
 		}
-		return tool.getPaymentStatus().then(function(data) {
+
+		tool.getPaymentStatus().then(function(data) {
+			state.payment.isAssetsCustomer = Q.getObject("slots.info.isAssetsCustomer", data);
 			var status = Q.getObject("slots.status", data);
 			if (!status) {
 				return;
@@ -1519,6 +1523,36 @@ Q.Tool.define("Calendars/event", function(options) {
 			});
 		}
 
+		// prepayment mode
+        if (rsvp === 'yes' && tool.modePrepayment) {
+			if (state.payment.isAssetsCustomer) {
+				return tool.rsvp('maybe', callback, options);
+			}
+
+			Q.confirm(tool.text.event.tool.PrepaymentConfirm, function (result) {
+				if (!result) {
+					tool.$rsvpElement.removeClass('Q_working');
+					Q.handle(callback, tool, [false]);
+					return;
+				}
+
+				Q.Assets.Payments.stripe({
+					amount: 1,
+					currency: 'USD',
+					description: tool.text.event.tool.Prepayment
+				}, function(err, data) {
+					if (err) {
+						tool.$rsvpElement.removeClass('Q_working');
+						Q.handle(callback, tool, [false]);
+						return;
+					}
+                    state.payment.isAssetsCustomer = true;
+					tool.rsvp('maybe', callback, options);
+				});
+			});
+            return;
+        }
+
 		// check if required related participants added
 		if (!tool.checkRelatedParticipants()) {
 			tool.addRelatedParticipants({
@@ -1534,7 +1568,7 @@ Q.Tool.define("Calendars/event", function(options) {
 			return false;
 		}
 
-		if (isPublisher || state.isAdmin || !state.payment) {
+		if (isPublisher || state.isAdmin || !state.payment || rsvp === 'maybe') {
 			return _saveGoing(rsvp).then(_saveGoingCallback);
 		}
 
@@ -1846,6 +1880,72 @@ Q.Tool.define("Calendars/event", function(options) {
 			});
 		}
 	},
+	/**
+	 * Allow admins update participants roles
+	 * @method handleRoles
+	 * @param {string} userId
+	 * @param {Element|jQuery} element
+	 */
+	handleRoles: function (userId, element) {
+		var tool = this;
+		var state = this.state;
+
+		if (!state.isAdmin) {
+			return;
+		}
+
+		Q.req("Calendars/event", ["roles"], function (err, response) {
+			if (Q.firstErrorMessage(err, response && response.errors)) {
+				return;
+			}
+
+			var roles = ['requested', 'attendee'];
+			Q.Template.render('Calendars/event/roles', {
+				roles
+			}, function (err, html) {
+				if (err) {
+					return;
+				}
+
+				var $html = $(html);
+				Q.each(response.slots.roles, function () {
+					$("[data-role=" + this + "]", $html).addClass('Q_selected');
+				});
+				$("[data-role]", $html).on(Q.Pointer.fastclick, function () {
+					var $this = $(this);
+                    $this.addClass('Q_working');
+					Q.req("Calendars/event", ["roles"], function (err, response) {
+						if (Q.firstErrorMessage(err, response && response.errors)) {
+							return;
+						}
+
+						if (response.slots.roles) {
+							$this.addClass('Q_selected').siblings().removeClass('Q_selected');
+						}
+
+						$this.removeClass('Q_working');
+					}, {
+						method: "PUT",
+						fields: {
+							publisherId: state.publisherId,
+							streamName: state.streamName,
+							userId,
+							roles,
+							role: $this.attr("data-role")
+						}
+					});
+
+				});
+				$(element).append($html);
+			});
+		}, {
+			fields: {
+				publisherId: state.publisherId,
+				streamName: state.streamName,
+				userId
+			}
+		});
+	},
 	Q: {
 		beforeRemove: function () {
 
@@ -2043,6 +2143,15 @@ Q.Template.set('Calendars/event/reminders',
 	'{{#each remindersConfig}}' +
 	'	<label><input type="checkbox" {{this.checked}} value="{{@key}}">{{this.name}}</label>' +
 	'{{/each}}'
+);
+
+Q.Template.set('Calendars/event/roles',
+`<div class="Calendars_event_roles">
+	<h2>Roles management</h2>
+	{{#each roles}}
+		<div data-role="{{this}}">{{this}}</div>		
+	{{/each}}
+</div>`
 );
 
 })(Q, Q.jQuery, window);
