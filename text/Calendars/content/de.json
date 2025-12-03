@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "Sie sind kein Teilnehmer der Veranstaltung",
 			"LiveStreamStarted": "Livestream hat begonnen",
 			"WebRTCStarted": "Telefonkonferenz gestartet",
-			"WebRTCEnded": "Telefonkonferenz beendet"
+			"WebRTCEnded": "Telefonkonferenz beendet",
+			"Prepayment": "Vorauszahlung",
+			"PrepaymentConfirm": "Wir erheben eine geringe Geb\u00fchr von 1 US-Dollar. Sie erhalten die entsprechende Anzahl an Gutschriften. Diese Gutschriften werden mit Ihrer Gesamtzahlung f\u00fcr die Veranstaltung verrechnet."
 		},
 		"composer": {
 			"SetLocation": "Meinen Standort festlegen",
@@ -236,7 +238,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "Optionaler Beitrag",
-			"required": "Erforderliche Zahlung",
+			"required": "Teilnahmegeb\u00fchr: {{amount}} {{currency}}",
 			"paid": "bezahlt"
 		},
 		"confirmationDialog": {

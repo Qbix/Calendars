@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "Te ei ole \u00fcritusel osaleja",
 			"LiveStreamStarted": "Otse\u00fclekanne on alanud",
 			"WebRTCStarted": "Telekonverents algas",
-			"WebRTCEnded": "Telekonverents l\u00f5ppes"
+			"WebRTCEnded": "Telekonverents l\u00f5ppes",
+			"Prepayment": "Ettemaks",
+			"PrepaymentConfirm": "V\u00f5tame nominaalse tasu 1 dollar. Saate vastava arvu krediite. Neid krediite arvestatakse teie \u00fcrituse t\u00e4ismaksumuse hulka."
 		},
 		"composer": {
 			"SetLocation": "M\u00e4\u00e4ra Minu asukoht",
@@ -236,7 +238,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "Valikuline panus",
-			"required": "N\u00f5utav makse",
+			"required": "Osav\u00f5tu hind: {{amount}} {{currency}}",
 			"paid": "makstud"
 		},
 		"confirmationDialog": {

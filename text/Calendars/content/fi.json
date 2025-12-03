@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "Et ole tapahtuman osallistuja",
 			"LiveStreamStarted": "Suora l\u00e4hetys on alkanut",
 			"WebRTCStarted": "Puhelinkonferenssi alkoi",
-			"WebRTCEnded": "Puhelinkonferenssi p\u00e4\u00e4ttyi"
+			"WebRTCEnded": "Puhelinkonferenssi p\u00e4\u00e4ttyi",
+			"Prepayment": "Ennakkomaksu",
+			"PrepaymentConfirm": "Veloitamme nimellisen 1 dollarin maksun. Saat vastaavan m\u00e4\u00e4r\u00e4n krediittej\u00e4. N\u00e4m\u00e4 krediitit k\u00e4ytet\u00e4\u00e4n tapahtuman koko maksuun."
 		},
 		"composer": {
 			"SetLocation": "Aseta Oma sijainti",
@@ -236,7 +238,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "Valinnainen panos",
-			"required": "Vaadittu maksu",
+			"required": "Osallistumismaksu: {{amount}} {{currency}}",
 			"paid": "maksettu"
 		},
 		"confirmationDialog": {

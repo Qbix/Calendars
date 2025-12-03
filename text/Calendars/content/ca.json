@@ -125,7 +125,9 @@
 			"YouAreNotParticipated": "No sou participant de l&#39;esdeveniment",
 			"LiveStreamStarted": "La reproducci\u00f3 en directe ha comen\u00e7at",
 			"WebRTCStarted": "Va comen\u00e7ar la teleconfer\u00e8ncia",
-			"WebRTCEnded": "S&#39;ha acabat la teleconfer\u00e8ncia"
+			"WebRTCEnded": "S&#39;ha acabat la teleconfer\u00e8ncia",
+			"Prepayment": "Prepagament",
+			"PrepaymentConfirm": "Cobrarem una tarifa nominal d&#39;1 $. Rebr\u00e0s el nombre corresponent de cr\u00e8dits. Aquests cr\u00e8dits s&#39;aplicaran al pagament complet de l&#39;esdeveniment."
 		},
 		"composer": {
 			"SetLocation": "Estableix la meva ubicaci\u00f3",
@@ -202,7 +204,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "Aportaci\u00f3 opcional",
-			"required": "Pagament obligatori",
+			"required": "Preu per assistir-hi: {{amount}} {{currency}}",
 			"paid": "pagat"
 		},
 		"confirmationDialog": {

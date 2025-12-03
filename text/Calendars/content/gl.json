@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "Non es participante do evento",
 			"LiveStreamStarted": "Comezou a emisi\u00f3n en directo",
 			"WebRTCStarted": "Comezou a teleconferencia",
-			"WebRTCEnded": "Rematou a teleconferencia"
+			"WebRTCEnded": "Rematou a teleconferencia",
+			"Prepayment": "Prepago",
+			"PrepaymentConfirm": "Cobraremos unha tarifa nominal de 1 $. Recibir\u00e1s o n\u00famero correspondente de cr\u00e9ditos. Estes cr\u00e9ditos aplicaranse ao teu pago completo do evento."
 		},
 		"composer": {
 			"SetLocation": "Establecer a mi\u00f1a localizaci\u00f3n",
@@ -236,7 +238,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "Contribuci\u00f3n opcional",
-			"required": "Pago obrigatorio",
+			"required": "Prezo para asistir: {{amount}} {{currency}}",
 			"paid": "pagado"
 		},
 		"confirmationDialog": {

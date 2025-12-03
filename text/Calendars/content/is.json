@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "\u00de\u00fa ert ekki \u00fe\u00e1tttakandi \u00ed vi\u00f0bur\u00f0inum",
 			"LiveStreamStarted": "Bein \u00fatsending er hafin",
 			"WebRTCStarted": "S\u00edmafundur h\u00f3fst",
-			"WebRTCEnded": "S\u00edmafundi loki\u00f0"
+			"WebRTCEnded": "S\u00edmafundi loki\u00f0",
+			"Prepayment": "Fyrirframgrei\u00f0sla",
+			"PrepaymentConfirm": "Vi\u00f0 innheimtum v\u00e6ga \u00fe\u00f3knun upp \u00e1 $1. \u00de\u00fa f\u00e6r\u00f0 samsvarandi fj\u00f6lda eininga. \u00deessar einingar ver\u00f0a nota\u00f0ar til a\u00f0 grei\u00f0a fyrir vi\u00f0bur\u00f0inn a\u00f0 fullu."
 		},
 		"composer": {
 			"SetLocation": "Stilltu sta\u00f0setningu m\u00edna",
@@ -236,7 +238,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "Valfrj\u00e1lst framlag",
-			"required": "\u00c1skili\u00f0 grei\u00f0slu",
+			"required": "Ver\u00f0 fyrir \u00fe\u00e1ttt\u00f6ku: {{amount}} {{currency}}",
 			"paid": "greitt"
 		},
 		"confirmationDialog": {

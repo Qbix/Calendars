@@ -125,7 +125,9 @@
 			"YouAreNotParticipated": "Jy is nie &#39;n deelnemer van die geleentheid nie",
 			"LiveStreamStarted": "Regstreekse stroom het begin",
 			"WebRTCStarted": "Telekonferensie het begin",
-			"WebRTCEnded": "Telekonferensie ge\u00ebindig"
+			"WebRTCEnded": "Telekonferensie ge\u00ebindig",
+			"Prepayment": "Vooruitbetaling",
+			"PrepaymentConfirm": "Ons hef &#39;n nominale fooi van $1. Jy sal die ooreenstemmende aantal krediete ontvang. Hierdie krediete sal toegepas word op jou volle betaling vir die geleentheid."
 		},
 		"composer": {
 			"SetLocation": "Stel My ligging",
@@ -202,7 +204,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "Opsionele bydrae",
-			"required": "Vereiste betaling",
+			"required": "Prys om by te woon: {{amount}} {{currency}}",
 			"paid": "betaal"
 		},
 		"confirmationDialog": {

@@ -125,7 +125,9 @@
 			"YouAreNotParticipated": "Ez zara ekitaldiko partaide",
 			"LiveStreamStarted": "Zuzeneko igorpena hasi da",
 			"WebRTCStarted": "Telekonferentzia hasi zen",
-			"WebRTCEnded": "Telekonferentzia amaitu zen"
+			"WebRTCEnded": "Telekonferentzia amaitu zen",
+			"Prepayment": "Aurrez ordainduta",
+			"PrepaymentConfirm": "$ 1eko kuota nominala kobratuko dizugu. Dagokion kreditu kopurua jasoko duzu. Kreditu hauek ekitaldiaren ordainketa osoari aplikatuko zaizkio."
 		},
 		"composer": {
 			"SetLocation": "Ezarri Nire kokapena",
@@ -202,7 +204,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "Aukerako ekarpena",
-			"required": "Beharrezko ordainketa",
+			"required": "Bertaratzeko prezioa: {{amount}} {{currency}}",
 			"paid": "ordaindu"
 		},
 		"confirmationDialog": {

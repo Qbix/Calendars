@@ -125,7 +125,9 @@
 			"YouAreNotParticipated": "Anda bukan peserta acara tersebut",
 			"LiveStreamStarted": "Streaming langsung telah dimulai",
 			"WebRTCStarted": "Telekonferensi dimulai",
-			"WebRTCEnded": "Telekonferensi berakhir"
+			"WebRTCEnded": "Telekonferensi berakhir",
+			"Prepayment": "Pembayaran di muka",
+			"PrepaymentConfirm": "Kami akan mengenakan biaya nominal sebesar $1. Anda akan menerima jumlah kredit yang sesuai. Kredit ini akan digunakan untuk pembayaran penuh acara Anda."
 		},
 		"composer": {
 			"SetLocation": "Tetapkan Lokasi Saya",
@@ -202,7 +204,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "Kontribusi opsional",
-			"required": "Pembayaran wajib",
+			"required": "Harga untuk Hadir: {{amount}} {{currency}}",
 			"paid": "dibayar"
 		},
 		"confirmationDialog": {

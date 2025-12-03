@@ -125,7 +125,9 @@
 			"YouAreNotParticipated": "Niste sudionik doga\u0111aja",
 			"LiveStreamStarted": "Po\u010deo je prijenos u\u017eivo",
 			"WebRTCStarted": "Telekonferencija je zapo\u010dela",
-			"WebRTCEnded": "Telekonferencija je zavr\u0161ila"
+			"WebRTCEnded": "Telekonferencija je zavr\u0161ila",
+			"Prepayment": "Pretplata",
+			"PrepaymentConfirm": "Naplatit \u0107emo nominalnu naknadu od 1 USD. Primit \u0107ete odgovaraju\u0107i broj kredita. Ti \u0107e se krediti primijeniti na va\u0161u punu uplatu za doga\u0111aj."
 		},
 		"composer": {
 			"SetLocation": "Postavite moju lokaciju",
@@ -202,7 +204,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "Fakultativni doprinos",
-			"required": "Obavezno pla\u0107anje",
+			"required": "Cijena za sudjelovanje: {{amount}} {{currency}}",
 			"paid": "pla\u0107eni"
 		},
 		"confirmationDialog": {

@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "Vous n&#39;\u00eates pas un participant de l&#39;\u00e9v\u00e9nement",
 			"LiveStreamStarted": "La diffusion en direct a commenc\u00e9",
 			"WebRTCStarted": "La t\u00e9l\u00e9conf\u00e9rence a commenc\u00e9",
-			"WebRTCEnded": "T\u00e9l\u00e9conf\u00e9rence termin\u00e9e"
+			"WebRTCEnded": "T\u00e9l\u00e9conf\u00e9rence termin\u00e9e",
+			"Prepayment": "Paiement anticip\u00e9",
+			"PrepaymentConfirm": "Nous vous facturerons des frais minimes de 1 $. Vous recevrez le nombre de cr\u00e9dits correspondant. Ces cr\u00e9dits seront d\u00e9duits du montant total de votre inscription \u00e0 l&#39;\u00e9v\u00e9nement."
 		},
 		"composer": {
 			"SetLocation": "D\u00e9finir ma position",
@@ -236,7 +238,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "Cotisation facultative",
-			"required": "Paiement requis",
+			"required": "Prix d&#39;entr\u00e9e : {{amount}} {{currency}}",
 			"paid": "pay\u00e9"
 		},
 		"confirmationDialog": {

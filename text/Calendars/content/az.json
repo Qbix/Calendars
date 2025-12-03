@@ -125,7 +125,9 @@
 			"YouAreNotParticipated": "Siz t\u0259dbirin i\u015ftirak\u00e7\u0131s\u0131 deyilsiniz",
 			"LiveStreamStarted": "Canl\u0131 yay\u0131m ba\u015flad\u0131",
 			"WebRTCStarted": "Telekonfrans ba\u015flad\u0131",
-			"WebRTCEnded": "Telekonfrans ba\u015fa \u00e7at\u0131b"
+			"WebRTCEnded": "Telekonfrans ba\u015fa \u00e7at\u0131b",
+			"Prepayment": "\u0130lkin \u00f6d\u0259ni\u015f",
+			"PrepaymentConfirm": "Biz $1 nominal r\u00fcsum alaca\u011f\u0131q. Siz m\u00fcvafiq sayda kredit alacaqs\u0131n\u0131z. Bu kreditl\u0259r t\u0259dbir \u00fc\u00e7\u00fcn tam \u00f6d\u0259ni\u015finiz\u0259 t\u0259tbiq olunacaq."
 		},
 		"composer": {
 			"SetLocation": "Yerimi t\u0259yin edin",
@@ -202,7 +204,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "K\u00f6n\u00fcll\u00fc t\u00f6hf\u0259",
-			"required": "T\u0259l\u0259b olunan \u00f6d\u0259ni\u015f",
+			"required": "\u0130\u015ftirak \u00fc\u00e7\u00fcn qiym\u0259t: {{amount}} {{currency}}",
 			"paid": "\u00f6d\u0259nilmi\u015fdir"
 		},
 		"confirmationDialog": {

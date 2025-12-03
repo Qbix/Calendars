@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "Nid ydych yn cymryd rhan yn y digwyddiad",
 			"LiveStreamStarted": "Mae llif byw wedi dechrau",
 			"WebRTCStarted": "Dechreuodd telegynhadledd",
-			"WebRTCEnded": "Daeth telegynhadledd i ben"
+			"WebRTCEnded": "Daeth telegynhadledd i ben",
+			"Prepayment": "Rhagdaliad",
+			"PrepaymentConfirm": "Byddwn yn codi ffi enwol o $1. Byddwch yn derbyn y nifer cyfatebol o gredydau. Bydd y credydau hyn yn cael eu defnyddio tuag at eich taliad llawn am y digwyddiad."
 		},
 		"composer": {
 			"SetLocation": "Gosod Fy Lleoliad",
@@ -236,7 +238,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "Cyfraniad dewisol",
-			"required": "Taliad gofynnol",
+			"required": "Pris i Fynychu: {{amount}} {{currency}}",
 			"paid": "taledig"
 		},
 		"confirmationDialog": {

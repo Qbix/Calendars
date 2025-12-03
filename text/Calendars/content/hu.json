@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "\u00d6n nem r\u00e9sztvev\u0151je az esem\u00e9nynek",
 			"LiveStreamStarted": "Elindult az \u00e9l\u0151 k\u00f6zvet\u00edt\u00e9s",
 			"WebRTCStarted": "Megkezd\u0151d\u00f6tt a telekonferencia",
-			"WebRTCEnded": "A telekonferencia v\u00e9get \u00e9rt"
+			"WebRTCEnded": "A telekonferencia v\u00e9get \u00e9rt",
+			"Prepayment": "El\u0151refizet\u00e9s",
+			"PrepaymentConfirm": "1 doll\u00e1ros n\u00e9vleges d\u00edjat sz\u00e1m\u00edtunk fel. A megfelel\u0151 sz\u00e1m\u00fa kreditet kapod meg. Ezeket a krediteket a rendezv\u00e9ny teljes befizet\u00e9s\u00e9be fogjuk besz\u00e1m\u00edtani."
 		},
 		"composer": {
 			"SetLocation": "Saj\u00e1t poz\u00edci\u00f3 be\u00e1ll\u00edt\u00e1sa",
@@ -236,7 +238,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "V\u00e1laszthat\u00f3 hozz\u00e1j\u00e1rul\u00e1s",
-			"required": "K\u00f6telez\u0151 fizet\u00e9s",
+			"required": "R\u00e9szv\u00e9teli \u00e1r: {{amount}} {{currency}}",
 			"paid": "fizetett"
 		},
 		"confirmationDialog": {

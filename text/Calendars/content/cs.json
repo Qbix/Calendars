@@ -125,7 +125,9 @@
 			"YouAreNotParticipated": "Nejste \u00fa\u010dastn\u00edkem akce",
 			"LiveStreamStarted": "\u017div\u00fd p\u0159enos byl zah\u00e1jen",
 			"WebRTCStarted": "Telekonference zah\u00e1jena",
-			"WebRTCEnded": "Telekonference skon\u010dila"
+			"WebRTCEnded": "Telekonference skon\u010dila",
+			"Prepayment": "Platba p\u0159edem",
+			"PrepaymentConfirm": "\u00da\u010dtujeme si nomin\u00e1ln\u00ed poplatek 1 dolar. Obdr\u017e\u00edte odpov\u00eddaj\u00edc\u00ed po\u010det kredit\u016f. Tyto kredity budou zapo\u010d\u00edt\u00e1ny do va\u0161\u00ed celkov\u00e9 platby za akci."
 		},
 		"composer": {
 			"SetLocation": "Nastavte moji polohu",
@@ -202,7 +204,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "Nepovinn\u00fd p\u0159\u00edsp\u011bvek",
-			"required": "Po\u017eadovan\u00e1 platba",
+			"required": "Cena za \u00fa\u010dast: {{amount}} {{currency}}",
 			"paid": "zaplaceno"
 		},
 		"confirmationDialog": {

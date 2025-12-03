@@ -125,7 +125,9 @@
 			"YouAreNotParticipated": "Du er ikke deltager i arrangementet",
 			"LiveStreamStarted": "Livestream er startet",
 			"WebRTCStarted": "Telekonference startet",
-			"WebRTCEnded": "Telekonference afsluttet"
+			"WebRTCEnded": "Telekonference afsluttet",
+			"Prepayment": "Forudbetaling",
+			"PrepaymentConfirm": "Vi opkr\u00e6ver et nominelt gebyr p\u00e5 $1. Du modtager det tilsvarende antal kreditter. Disse kreditter vil blive anvendt til din fulde betaling for arrangementet."
 		},
 		"composer": {
 			"SetLocation": "Indstil min placering",
@@ -202,7 +204,7 @@
 		"amountPlaceholder": "0",
 		"info": {
 			"optional": "Valgfrit bidrag",
-			"required": "P\u00e5kr\u00e6vet betaling",
+			"required": "Pris for at deltage: {{amount}} {{currency}}",
 			"paid": "betalt"
 		},
 		"confirmationDialog": {
