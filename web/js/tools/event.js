@@ -965,7 +965,7 @@ Q.Tool.define("Calendars/event", function(options) {
 			return Q.Promise.resolve();
 		}
 		state.payment = {};
-		state.payment.content = tool.text.payment.info[payment.type] + ' ' + payment.amount + ' ' + payment.currency;
+		state.payment.content = (tool.text.payment.info[payment.type]).interpolate(payment);
 		state.payment.description = tool.stream.fields.title;
 		Q.each(['amount', 'currency', 'type'], function(index, key) {
 			state.payment[key] = payment[key];
@@ -979,6 +979,9 @@ Q.Tool.define("Calendars/event", function(options) {
 		}
 
 		tool.getPaymentStatus().then(function(data) {
+			if (!state.payment) {
+				return;
+			}
 			state.payment.isAssetsCustomer = Q.getObject("slots.info.isAssetsCustomer", data);
 			var status = Q.getObject("slots.status", data);
 			if (!status) {
@@ -1525,7 +1528,7 @@ Q.Tool.define("Calendars/event", function(options) {
 
 		// prepayment mode
         if (rsvp === 'yes' && tool.modePrepayment) {
-			if (state.payment.isAssetsCustomer) {
+			if (state.payment && state.payment.isAssetsCustomer) {
 				return tool.rsvp('maybe', callback, options);
 			}
 

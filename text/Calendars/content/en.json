@@ -237,7 +237,7 @@
         "amountPlaceholder": "0",
         "info": {
             "optional": "Optional contribution",
-            "required": "Required payment",
+            "required": "Price to Attend:",
             "paid": "paid"
         },
         "confirmationDialog": {
