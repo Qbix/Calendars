@@ -25,7 +25,7 @@ var Places = Q.Places;
  *   @param {Boolean} [options.show.interests=true]
  *   @param {Boolean} [options.show.openTo=true]
  *   @param {Boolean} [options.autoStartWebrtc=false] - If event is online, automatically start teleconference on event started.
- *   @param {Boolean|Integer} [options.hideParticipants=0] If integer, hide participants tool if participants less or equal to this number. If false, never hide participants tool.
+ *   @param {Boolean|Integer} [options.hideParticipants=false] If integer, hide participants tool if participants less or equal to this number. If false, never hide participants tool.
  *   @param {Object} [relatedParticipants] Object with settings for related participants
  *   @param {String} [relatedParticipants.currency='credits'] Currency to show
  *   @param {Boolean} [relatedParticipants.showMath=true] Whether to show summary credits calculation
@@ -173,7 +173,7 @@ Q.Tool.define("Calendars/event", function(options) {
 	mode: Q.getObject("Communities.event.mode", Q) || "classic",
 	autoStartWebrtc: true,
 	eventRecurring: null,
-	hideParticipants: 0,
+	hideParticipants: false,
 	relatedParticipants: {
 		currency: 'credits',
 		showMath: true
