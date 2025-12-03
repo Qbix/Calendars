@@ -274,6 +274,7 @@
 		},
 		"event": {
 			"hideIfNoParticipants": false,
+			"hideLocationIfNotPaid": false,
 			"templateStyle": "classic", /* can be "classic", "tall", "square" */
 			"reminders": {
 				"86400": { /* 24 hours */

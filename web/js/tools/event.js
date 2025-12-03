@@ -179,7 +179,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		chat: false,
 		time: true,
 		reminders: false,
-		location: false,
+		location: true,
 		interests: true,
 		eventType: false,
 		openTo: true,
@@ -1379,6 +1379,10 @@ Q.Tool.define("Calendars/event", function(options) {
 								amount: 0, // needCredits - currentCredits,
 								currency: options.currency || 'USD',
 								reason: 'EventParticipation',
+								metadata: {
+									publisherId: tool.state.publisherId,
+									streamName: tool.state.streamName
+								},
 								onSuccess: function () {
 									
 								},
@@ -1515,7 +1519,7 @@ Q.Tool.define("Calendars/event", function(options) {
 	 * Make RSVP action
 	 * @method rsvp
 	 * @param {string} rsvp yes, no, maybe
-	 * @param {function} callback called on success
+	 * @param {function} callback receives first parameter true on success, false on failure
 	 * @param {Object} options any options to pass to Q.Users.login()
 	 */
 	rsvp: function (rsvp, callback, options) {
@@ -1566,26 +1570,18 @@ Q.Tool.define("Calendars/event", function(options) {
 				return tool.rsvp('maybe', callback, options);
 			}
 
-			Q.confirm(tool.text.event.tool.PrepaymentConfirm, function (result) {
-				if (!result) {
-					tool.$rsvpElement.removeClass('Q_working');
+			Q.Assets.Payments.stripe({
+				amount: 1,
+				currency: 'USD',
+				description: tool.text.event.tool.Prepayment
+			}, function(err, data) {
+				tool.$rsvpElement.removeClass('Q_working');
+				if (err) {
 					Q.handle(callback, tool, [false]);
 					return;
 				}
-
-				Q.Assets.Payments.stripe({
-					amount: 1,
-					currency: 'USD',
-					description: tool.text.event.tool.Prepayment
-				}, function(err, data) {
-					if (err) {
-						tool.$rsvpElement.removeClass('Q_working');
-						Q.handle(callback, tool, [false]);
-						return;
-					}
-                    state.payment.isAssetsCustomer = true;
-					tool.rsvp('maybe', callback, options);
-				});
+				state.payment.isAssetsCustomer = true;
+				tool.rsvp('maybe', callback, options);
 			});
             return;
         }
@@ -1745,6 +1741,7 @@ Q.Tool.define("Calendars/event", function(options) {
 			Q.Assets.pay({
 				amount: summary,
 				currency: paymentCurrency,
+				reason: 'EventParticipation',
 				toStream: {
 					publisherId: state.publisherId,
 					streamName: state.streamName
@@ -1806,7 +1803,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		&& (tool.stream.testWriteLevel(40) || tool.stream.testPermission('Places/location'))) {
 			state.show.location = true;
 			state.show.trips = true;
-		} else {
+		} else if (!Calendars.event && Calendars.event.hideLocationIfNotPaid) {
 			state.show.location = false;
 			state.show.trips = false;
 		}
@@ -1814,7 +1811,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		tool.$(".Calendars_info .Q_aspect_where")[state.show.location ? "slideDown" : "slideUp"](300);
 
 		state.livestream = tool.stream.getAttribute('livestream');
-		// if event location undefined, hide location section
+		// if event livestream undefined, hide location section
 		if (state.livestream && (tool.stream.testWriteLevel(40) || tool.stream.testPermission('Media/livestream'))) {
 			state.show.livestream = {
 				state: tool.livestreamState(),
