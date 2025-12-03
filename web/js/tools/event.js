@@ -132,6 +132,22 @@ Q.Tool.define("Calendars/event", function(options) {
 		tool.switchChatWebrtc(false);
 	}, tool);
 
+	Streams.Stream.onMessage(state.publisherId, state.streamName, 'Streams/participant/save')
+	.set(function(message) {
+		Streams.get.force(state.publisherId, state.streamName, function (err, eventStream, extra) {
+			tool.participants = extra.participants || [];
+			var participantsTool = Q.Tool.from($(".Calendars_event_participants", tool.element)[0], "Streams/participants");
+			if (!participantsTool) {
+				return console.warn("Calendars/event: participants tool not found");
+			}
+
+			Q.handle(participantsTool.state.onRefresh, participantsTool);
+		}, {
+			withParticipant: true,
+			participants: 100
+		});
+	}, tool);
+
 	state.onInvoke('livestream').set(function (stream) {
 		state.webrtc = null;
 		tool.getGoing(userId, function (going) {
@@ -768,6 +784,24 @@ Q.Tool.define("Calendars/event", function(options) {
 						tool: tool,
 						userId: participant.userId,
 						type: 'checkin'
+					});
+				} else if (participant.testRoles('requested')) {
+					Calendars.Event.updateParticipants({
+						tool: tool,
+						userId: participant.userId,
+						type: 'requested'
+					});
+				} else if (participant.testRoles('attendee')) {
+					Calendars.Event.updateParticipants({
+						tool: tool,
+						userId: participant.userId,
+						type: 'attendee'
+					});
+				} else if (participant.testRoles('paid')) {
+					Calendars.Event.updateParticipants({
+						tool: tool,
+						userId: participant.userId,
+						type: 'paid'
 					});
 				}
 			});
@@ -1915,6 +1949,7 @@ Q.Tool.define("Calendars/event", function(options) {
 					var $this = $(this);
                     $this.addClass('Q_working');
 					Q.req("Calendars/event", ["roles"], function (err, response) {
+						$this.removeClass('Q_working');
 						if (Q.firstErrorMessage(err, response && response.errors)) {
 							return;
 						}
@@ -1922,8 +1957,6 @@ Q.Tool.define("Calendars/event", function(options) {
 						if (response.slots.roles) {
 							$this.addClass('Q_selected').siblings().removeClass('Q_selected');
 						}
-
-						$this.removeClass('Q_working');
 					}, {
 						method: "PUT",
 						fields: {

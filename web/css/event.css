@@ -489,3 +489,24 @@
 .Calendars_event_roles [data-role].Q_selected {
 	background-color: #fff;
 }
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=requested]:after,
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=attendee]:after,
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=paid]:after {
+	content: "\00a0";
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+	width: 15px;
+	height: 15px;
+}
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=requested]:after {
+	background-color: red;
+}
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=attendee]:after {
+	background-color: yellow;
+}
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=paid]:after {
+	background-color: green;
+}
