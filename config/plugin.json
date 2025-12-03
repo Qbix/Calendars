@@ -34,7 +34,8 @@
 			"Streams/message/Streams/join": ["Calendars/after/Streams_message_Streams_join"],
 			"Streams/message/Streams/leave": ["Calendars/after/Streams_message_Streams_leave"],
 			"Streams/relateTo/Media/webrtc": ["Calendars/after/Streams/relateTo/Media/webrtc"],
-			"Streams/unrelateTo/Media/webrtc": ["Calendars/after/Streams/unrelateTo/Media/webrtc"]
+			"Streams/unrelateTo/Media/webrtc": ["Calendars/after/Streams/unrelateTo/Media/webrtc"],
+			"Db/Row/Streams_Participant/saveExecute": ["Calendars/after/Streams_Participant_saveExecute"]
 		},
 		"web": {
 			"requireValidNonce": ["Calendars"]
