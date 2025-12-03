@@ -254,7 +254,8 @@
 				"duration": 7200,
 				"payment": {
 					"amountMin": 1,
-					"amountMax": 1000
+					"amountMax": 1000,
+					"currency": "credits"
 				},
 				"participants": {
 					"maxShow": 10,
