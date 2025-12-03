@@ -234,12 +234,15 @@ Calendars.Event = {
 				return;
 			}
 
-			// checkin action
-			if (params.type === 'checkin') {
-				$(avatarTool.element).attr({"data-checkin": true});
-			}
-
 			switch (params.type) {
+				case 'checkin':
+					$(avatarTool.element).attr({"data-checkin": true});
+					break;
+				case 'requested':
+				case 'attendee':
+				case 'paid':
+					$(avatarTool.element).attr({"data-role": params.type});
+					break;
 				case 'staff':
 					$(avatarTool.element).attr({"data-staff": true}).tool('Q/badge', {
 						tr: {
