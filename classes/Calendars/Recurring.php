@@ -375,7 +375,7 @@ class Calendars_Recurring
 				} else {
 					$going = "no";
 				}
-				Calendars_Event::rsvp($event, $participant->userId, $going, array(
+				Calendars_Event::going($event, $participant->userId, $going, array(
 					"autoCharge" => true,
 					"relatedParticipants" => $relatedParticipants,
 					"skipRecurringParticipant" => true

@@ -61,13 +61,13 @@ function Calendars_going_post($params)
 			}
 			//----------------------------------
 
-			$participant = Calendars_Event::rsvp($stream, $user->id, 'no');
+			$participant = Calendars_Event::going($stream, $user->id, 'no');
 			break;
 		case 'maybe':
-			$participant = Calendars_Event::rsvp($stream, $user->id, $going);
+			$participant = Calendars_Event::going($stream, $user->id, $going);
 			break;
 		case 'yes':
-			$participant = Calendars_Event::rsvp($stream, $user->id, $going, array("autoCharge" => true));
+			$participant = Calendars_Event::going($stream, $user->id, $going, array("autoCharge" => true));
 			break;
 	}
 

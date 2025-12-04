@@ -115,7 +115,7 @@ Q.Tool.define("Calendars/event", function(options) {
 	Streams.Stream.onMessage(state.publisherId, state.streamName, 'Calendars/going')
 	.set(function(message) {
 		if (message.byUserId === userId) {
-			tool.rsvp(message.getInstruction('going'));
+			tool.going(message.getInstruction('going'));
 		}
 	}, tool);
 
@@ -165,7 +165,7 @@ Q.Tool.define("Calendars/event", function(options) {
 	streamName: null,
 	show: {
 		hosts: true,
-		rsvp: true,
+		going: true,
 		participants: false,
 		promote: false,
 		moreInfo: false,
@@ -428,7 +428,7 @@ Q.Tool.define("Calendars/event", function(options) {
 					$(".Calendars_event_endTime", tool.element).tool("Q/timestamp", timeStampOptions);
 				}
 
-				tool.$rsvpElement = $(".Calendars_going_prompt .Calendars_going", tool.element);
+				tool.$goingElement = $(".Calendars_going_prompt .Calendars_going", tool.element);
 				tool.getPaymentInfo();
 
 				setTimeout(function () {
@@ -560,7 +560,7 @@ Q.Tool.define("Calendars/event", function(options) {
 					return;
 				}
 
-				tool.rsvp($this.attr('data-going'));
+				tool.going($this.attr('data-going'));
 			});
 
 			var $unseen = tool.$('.Streams_aspect_chats .Calendars_info_unseen');
@@ -722,10 +722,10 @@ Q.Tool.define("Calendars/event", function(options) {
 				});
 			});
 
-			// force rsvp if defined in GET params
-			var rsvp = new URLSearchParams(window.location.search).get('rsvp');
-			if (rsvp) {
-				tool.rsvp(rsvp);
+			// force going if defined in GET params
+			var going = new URLSearchParams(window.location.search).get('going');
+			if (going) {
+				tool.going(going);
 			}
 		}
 
@@ -1234,7 +1234,7 @@ Q.Tool.define("Calendars/event", function(options) {
 							}
 
 							Q.Dialogs.pop();
-							tool.rsvp('no');
+							tool.going('no');
 						},
 						{ title: toolText.CloseEvent.button }
 						);
@@ -1516,13 +1516,13 @@ Q.Tool.define("Calendars/event", function(options) {
 		return alreadyParticipated;
 	},
 	/**
-	 * Make RSVP action
-	 * @method rsvp
-	 * @param {string} rsvp yes, no, maybe
+	 * Update whether you are going
+	 * @method going
+	 * @param {string} going yes, no, maybe
 	 * @param {function} callback receives first parameter true on success, false on failure
 	 * @param {Object} options any options to pass to Q.Users.login()
 	 */
-	rsvp: function (rsvp, callback, options) {
+	going: function (going, callback, options) {
 		var tool = this;
 		var $te = $(this.element);
 		var state = this.state;
@@ -1531,7 +1531,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		var paymentCurrency = Q.getObject("payment.currency", state);
 		var userId = Users.loggedInUserId();
 		if (!userId) {
-			var redirectUrl = Q.url(["event", state.publisherId, state.streamName.split('/').pop()].join('/') + "?rsvp=yes");
+			var redirectUrl = Q.url(["event", state.publisherId, state.streamName.split('/').pop()].join('/') + "?going=yes");
 			Q.Users.login(Q.extend({
 				successUrl: redirectUrl
 			}, options));
@@ -1543,8 +1543,8 @@ Q.Tool.define("Calendars/event", function(options) {
 			return false;
 		}
 
-		// if rsvp already changed, do nothing
-		if ($te.attr('data-going') === rsvp) {
+		// if going already changed, do nothing
+		if ($te.attr('data-going') === going) {
 			Q.handle(callback, tool, [false]);
 			return false;
 		}
@@ -1552,22 +1552,22 @@ Q.Tool.define("Calendars/event", function(options) {
 		var isPublisher = userId === state.publisherId;
 
 		var _saveGoingCallback = function () {
-			tool.going(rsvp);
-			Q.handle(tool.state.onGoing, tool, [rsvp, tool.stream]);
+			tool.going(going);
+			Q.handle(tool.state.onGoing, tool, [going, tool.stream]);
 		};
 
-		tool.$rsvpElement.addClass('Q_working');
+		tool.$goingElement.addClass('Q_working');
 
-		if (rsvp === 'no') {
-			return _saveGoing(rsvp).then(_saveGoingCallback).catch(function () {
-				tool.$rsvpElement.removeClass('Q_working');
+		if (going === 'no') {
+			return _saveGoing(going).then(_saveGoingCallback).catch(function () {
+				tool.$goingElement.removeClass('Q_working');
 			});
 		}
 
 		// prepayment mode
-        if (rsvp === 'yes' && tool.modePrepayment) {
+        if (going === 'yes' && tool.modePrepayment) {
 			if (state.payment && state.payment.isAssetsCustomer) {
-				return tool.rsvp('maybe', callback, options);
+				return tool.going('maybe', callback, options);
 			}
 
 			Q.Assets.Payments.stripe({
@@ -1575,13 +1575,13 @@ Q.Tool.define("Calendars/event", function(options) {
 				currency: 'USD',
 				description: tool.text.event.tool.Prepayment
 			}, function(err, data) {
-				tool.$rsvpElement.removeClass('Q_working');
+				tool.$goingElement.removeClass('Q_working');
 				if (err) {
 					Q.handle(callback, tool, [false]);
 					return;
 				}
 				state.payment.isAssetsCustomer = true;
-				tool.rsvp('maybe', callback, options);
+				tool.going('maybe', callback, options);
 			});
             return;
         }
@@ -1591,7 +1591,7 @@ Q.Tool.define("Calendars/event", function(options) {
 			tool.addRelatedParticipants({
 				callback: function (process) {
 					if (process) {
-						tool.rsvp(rsvp, callback);
+						tool.going(going, callback);
 					} else {
 						Q.handle(callback, tool, [false]);
 					}
@@ -1601,8 +1601,8 @@ Q.Tool.define("Calendars/event", function(options) {
 			return false;
 		}
 
-		if (isPublisher || state.isAdmin || !state.payment || rsvp === 'maybe') {
-			return _saveGoing(rsvp).then(_saveGoingCallback);
+		if (isPublisher || state.isAdmin || !state.payment || going === 'maybe') {
+			return _saveGoing(going).then(_saveGoingCallback);
 		}
 
 		var summary = paymentAmount || 0;
@@ -1615,10 +1615,10 @@ Q.Tool.define("Calendars/event", function(options) {
 				err && console.warn(err);
 			}).then(function(){
 				tool.getPaymentInfo();
-				tool.$rsvpElement.removeClass('Q_working');
+				tool.$goingElement.removeClass('Q_working');
 				Q.handle(state.onPaid, tool);
 			});
-			return _saveGoing(rsvp).then(_saveGoingCallback);
+			return _saveGoing(going).then(_saveGoingCallback);
 		}
 
 		// collect payment for related participants
@@ -1644,11 +1644,12 @@ Q.Tool.define("Calendars/event", function(options) {
 
 		});
 
+		_saveGoing(going).then(_saveGoingCallback);
+
 		_pay(function(err, data) {
-			_saveGoing(rsvp).then(_saveGoingCallback);
 			Q.handle(state.onPaid, tool);
 		}, function() {
-			tool.$rsvpElement.removeClass('Q_working');
+			tool.$goingElement.removeClass('Q_working');
 			Q.handle(callback, tool, [false]);
 		});
 
@@ -1763,8 +1764,8 @@ Q.Tool.define("Calendars/event", function(options) {
 		// check event type
 		state.show.eventType = !!tool.stream.getAttribute("eventType");
 
-		// don't show rsvp for started events
-		state.show.rsvp = parseInt(tool.stream.getAttribute('startTime')) * 1000 > Date.now();
+		// don't show going for started events
+		state.show.going = parseInt(tool.stream.getAttribute('startTime')) * 1000 > Date.now();
 
 		// check if user is publisher or admin for current community
 		if (state.isAdmin) {
@@ -1834,7 +1835,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		tool.$(".Calendars_info .Streams_aspect_presentation")[state.show.presentation ? "slideDown" : "slideUp"](300);
 	},
 	/**
-	 * Make all needed actions if rsvp changed.
+	 * Make all needed actions if going changed.
 	 * @method going
 	 */
 	going: function (g, duringRefresh) {
@@ -2002,7 +2003,7 @@ Q.Template.set('Calendars/event/tool',
 	'{{#if show.participants}}' +
 	'<div class="Calendars_event_participants"></div>' +
 	'{{/if}}' +
-	'{{#if show.rsvp}}' +
+	'{{#if show.going}}' +
 	'	<div class="Q_big_prompt Calendars_going_prompt">' +
 	'		{{text.event.tool.AreYouIn}}' +
 	'		<span class="Calendars_going">' +

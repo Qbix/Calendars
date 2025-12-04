@@ -211,7 +211,7 @@ class Calendars_Event extends Base_Calendars_Event
 				}
 
 				try {
-					Calendars_Event::rsvp($event, $user->id);
+					Calendars_Event::going($event, $user->id, 'yes');
 				} catch (Exception $e) {}
 
 				$randomAmount--;
@@ -512,7 +512,7 @@ class Calendars_Event extends Base_Calendars_Event
 		// so need join him to event, because publisher sure going
 		if(Q_Request::method() === 'POST' && !Users::isCommunityId($publisherId)) {
 			// join publisher to event
-			$participant = self::rsvp($event, $publisherId);
+			$participant = self::going($event, $publisherId);
 		}
 
 		// save any access labels
@@ -787,7 +787,7 @@ class Calendars_Event extends Base_Calendars_Event
 		return $result;
 	}
 	/**
-	 * Make user participated to event
+	 * Join event and indicate whether you are going or not
 	 * @method join
 	 * @static
 	 * @param {Streams_Stream} $stream Event stream
@@ -804,7 +804,7 @@ class Calendars_Event extends Base_Calendars_Event
 	 * @throws Q_Exception_MissingRow
 	 * @return {Streams_Participating} The row representing the participant
 	 */
-	static function rsvp ($stream, $userId, $going = 'yes', $options = array()) {
+	static function going($stream, $userId, $going = 'yes', $options = array()) {
 		// check if event already started
 		if ((int)$stream->getAttribute("startTime") < time()) {
 			return;
@@ -935,7 +935,7 @@ class Calendars_Event extends Base_Calendars_Event
 
 						// after payment try again to unsure that payments success
 						$options["autoCharge"] = false;
-						return self::rsvp($stream, $userId, $going, $options);
+						return self::going($stream, $userId, $going, $options);
 					}
 				}
 			}
@@ -1016,7 +1016,7 @@ class Calendars_Event extends Base_Calendars_Event
 		}
 		$participant->save();
 
-		// Let everyone in the stream know of a change in RSVP
+		// Let everyone in the stream know of a change in going
 		$stream->post($user->id, array(
 			'type' => 'Calendars/going',
 			'instructions' => array('going' => $going)
@@ -1099,15 +1099,15 @@ class Calendars_Event extends Base_Calendars_Event
 		}
 	}
 	/**
-	 * Get RSVP for userId in event
-	 * @method getRsvp
+	 * Get whether userId is going to an event
+	 * @method getGoing
 	 * @static
 	 * @param {Streams_Stream} $event Required.
 	 * @param {String} $userId If null loggedin user used.
 	 * @throws
 	 * @return String Yes, No, Maybe
 	 */
-	static function getRsvp($event, $userId = null) {
+	static function getGoing($event, $userId = null) {
 		if (!$userId) {
 			$loggedInUser = Users::loggedInUser();
 			$userId = Q::ifset($loggedInUser, "id", null);
@@ -1482,7 +1482,7 @@ class Calendars_Event extends Base_Calendars_Event
 			}
 
 			if ($userId) {
-				self::rsvp($event, $userId, 'yes', array(
+				self::going($event, $userId, 'yes', array(
 					'skipPayment' => true,
 					'skipSubscription' => true,
 					'skipRecurringParticipant' => true,

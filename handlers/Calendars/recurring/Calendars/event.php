@@ -226,7 +226,7 @@ function processRecurringEvent ($newEvent, $recurringStream) {
 			Users::setLoggedInUser($participant->userId);
 
 			// join user to event with autoCharge option
-			Calendars_Event::rsvp($newEvent, $participant->userId, 'yes', array(
+			Calendars_Event::going($newEvent, $participant->userId, 'yes', array(
 				"autoCharge" => true,
 				"relatedParticipants" => Q::ifset($extra, "relatedParticipants", array())
 			));
