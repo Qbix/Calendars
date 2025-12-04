@@ -307,6 +307,11 @@
 			"reasons": {
 				"EventParticipation": true
 			}
+		},
+		"credits": {
+			"text": {
+				"load": ["Calendars/content"]
+			}
 		}
 	}
 }
