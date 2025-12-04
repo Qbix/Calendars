@@ -1835,18 +1835,18 @@ Q.Tool.define("Calendars/event", function(options) {
 		tool.$(".Calendars_info .Streams_aspect_presentation")[state.show.presentation ? "slideDown" : "slideUp"](300);
 	},
 	/**
-	 * Make all needed actions if going changed.
+	 * Update the interface based on going changing
 	 * @method going
 	 */
-	going: function (g, duringRefresh) {
-		g = g || "no";
+	going: function (going, duringRefresh) {
+		going = going || "no";
 		var tool = this;
 
 		tool.setShow();
 
-		$(tool.element).attr('data-going', g);
+		$(tool.element).attr('data-going', going);
 
-		tool.$('.Calendars_going [data-going=' + g + ']')
+		tool.$('.Calendars_going [data-going=' + going + ']')
 			.addClass('Q_selected')
 			.siblings().removeClass('Q_selected');
 

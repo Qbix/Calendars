@@ -24,6 +24,7 @@
 			"Db/Row/Streams_Participant/save": ["Calendars/before/Streams_Participant"]
 		},
 		"handlersAfterEvent": {
+			"Assets/credits/spend": ["Calendars/after/Assets_credits_spend"],
 			"Streams/create/Calendars/event": ["Calendars/after/Streams_create_Calendars_event"],
 			"Streams/create/Calendars/recurring": ["Calendars/after/Streams_create_Calendars_recurring"],
 			"Users/setLoggedInUser": ["Calendars/after/Users_setLoggedInUser"],
