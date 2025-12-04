@@ -923,19 +923,28 @@ class Calendars_Event extends Base_Calendars_Event
 					}
 
 					if ($paymentRequired) {
-						if (!Q::ifset($options, "autoCharge", false)) {
-							throw new Streams_Exception_Payment();
-						}
-						Q::event("Assets/pay/post", array(
-							"amount" => $resAmount,
-							"currency" => $payment["currency"],
-							"toStream" => $stream,
-							"autoCharge" => true
-						));
+						if (Q::ifset($options, "autoCharge", false)) {
+							Q::event("Assets/pay/post", array(
+								"amount" => $resAmount,
+								"currency" => $payment["currency"],
+								"toStream" => $stream,
+								"autoCharge" => true
+							));
 
-						// after payment try again to unsure that payments success
-						$options["autoCharge"] = false;
-						return self::going($stream, $userId, $going, $options);
+							// after payment try again to unsure that payments success
+							$options["autoCharge"] = false;
+							return self::going($stream, $userId, $going, $options);
+						}
+						// Payment is required,
+						// user doesn't have enough credits,
+						// and can't automatically buy them.
+						// So set their going = maybe, until they pay manually.
+						// Then the Calendars/after/Assets/credits/spend hook
+						// will set their going = yes
+						if ($going === 'yes') {
+							$going = 'maybe';
+						}
+						return;
 					}
 				}
 			}
@@ -1008,9 +1017,9 @@ class Calendars_Event extends Base_Calendars_Event
 		$participant->setExtra(@compact('going', 'startTime'));
 		if ($going === 'no') {
 			$participant->revokeRoles(["attendee", "requested"]);
-        } elseif($going === 'maybe') {
+        } else if($going === 'maybe') {
             $participant->grantRoles("requested");
-		} else {
+		} else if ($going === 'yes') {
             $participant->revokeRoles("requested");
 			$participant->grantRoles("attendee");
 		}

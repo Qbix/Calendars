@@ -115,7 +115,7 @@ Q.Tool.define("Calendars/event", function(options) {
 	Streams.Stream.onMessage(state.publisherId, state.streamName, 'Calendars/going')
 	.set(function(message) {
 		if (message.byUserId === userId) {
-			tool.going(message.getInstruction('going'));
+			tool.updateInterface(message.getInstruction('going'));
 		}
 	}, tool);
 
@@ -560,7 +560,7 @@ Q.Tool.define("Calendars/event", function(options) {
 					return;
 				}
 
-				tool.going($this.attr('data-going'));
+				tool.updateInterface($this.attr('data-going'));
 			});
 
 			var $unseen = tool.$('.Streams_aspect_chats .Calendars_info_unseen');
@@ -583,13 +583,13 @@ Q.Tool.define("Calendars/event", function(options) {
 					var msg = Q.firstErrorMessage(err);
 					if (msg) {
 						console.warn(msg);
-						tool.going('no', true);
+						tool.updateInterface('no', true);
 					} else {
-						tool.going(participant && participant.getExtra('going'), true);
+						tool.updateInterface(participant && participant.getExtra('going'), true);
 					}
 				});
 			} else {
-				tool.going('no', true);
+				tool.updateInterface('no', true);
 			}
 
 			// close event button handler
@@ -725,7 +725,7 @@ Q.Tool.define("Calendars/event", function(options) {
 			// force going if defined in GET params
 			var going = new URLSearchParams(window.location.search).get('going');
 			if (going) {
-				tool.going(going);
+				tool.updateInterface(going);
 			}
 		}
 
@@ -1234,7 +1234,7 @@ Q.Tool.define("Calendars/event", function(options) {
 							}
 
 							Q.Dialogs.pop();
-							tool.going('no');
+							tool.updateInterface('no');
 						},
 						{ title: toolText.CloseEvent.button }
 						);
@@ -1552,7 +1552,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		var isPublisher = userId === state.publisherId;
 
 		var _saveGoingCallback = function () {
-			tool.going(going);
+			tool.updateInterface(going);
 			Q.handle(tool.state.onGoing, tool, [going, tool.stream]);
 		};
 
@@ -1602,6 +1602,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		}
 
 		if (isPublisher || state.isAdmin || !state.payment || going === 'maybe') {
+			// no impediments
 			return _saveGoing(going).then(_saveGoingCallback);
 		}
 
@@ -1609,6 +1610,8 @@ Q.Tool.define("Calendars/event", function(options) {
 		var paymentDetails = [
 			{userId: userId, amount: paymentAmount}
 		];
+
+		_saveGoing(going).then(_saveGoingCallback);
 
 		if (paymentType === 'optional') {
 			_donate().catch(function(err){
@@ -1618,10 +1621,14 @@ Q.Tool.define("Calendars/event", function(options) {
 				tool.$goingElement.removeClass('Q_working');
 				Q.handle(state.onPaid, tool);
 			});
-			return _saveGoing(going).then(_saveGoingCallback);
+			return;
 		}
 
-		// collect payment for related participants
+		// if we are here, the payment is required.
+		// user who tries to set going = yes will end up having going = maybe
+		// until they pay.
+
+		// calculate additional payment for related participants
 		Q.each(state.relatedParticipants.participants, function (streamType, data) {
 			var relatedTool = Q.getObject("relatedTool", data);
 			if (!relatedTool) {
@@ -1643,8 +1650,6 @@ Q.Tool.define("Calendars/event", function(options) {
 			}
 
 		});
-
-		_saveGoing(going).then(_saveGoingCallback);
 
 		_pay(function(err, data) {
 			Q.handle(state.onPaid, tool);
@@ -1838,7 +1843,7 @@ Q.Tool.define("Calendars/event", function(options) {
 	 * Update the interface based on going changing
 	 * @method going
 	 */
-	going: function (going, duringRefresh) {
+	updateInterface: function (going, duringRefresh) {
 		going = going || "no";
 		var tool = this;
 
@@ -1850,7 +1855,7 @@ Q.Tool.define("Calendars/event", function(options) {
 			.addClass('Q_selected')
 			.siblings().removeClass('Q_selected');
 
-		if (g === 'no' && !duringRefresh) {
+		if (going === 'no' && !duringRefresh) {
 			_checkTrips();
 		}
 
