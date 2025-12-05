@@ -71,6 +71,7 @@ function Calendars_going_post($params)
 			break;
 	}
 
-	Q_Response::setSlot('stream', $stream);
-	Q_Response::setSlot('participant', $participant);
+	Q_Response::setSlot('stream', $stream->exportArray());
+	Q_Response::setSlot('participant', $participant->exportArray());
+	Q_Response::setSlot('payment', $participant->get('paymentIntent', false));
 }

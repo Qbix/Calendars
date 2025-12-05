@@ -535,7 +535,7 @@ class Calendars_Availability {
 						continue;
 					}
 
-					Calendars_Event::rsvp($event, $staffParticipant->userId, 'yes', array(
+					Calendars_Event::going($event, $staffParticipant->userId, 'yes', array(
 						'skipPayment' => true,
 						'extra' => array('role' => 'staff')
 					));

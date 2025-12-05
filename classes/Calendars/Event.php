@@ -794,7 +794,8 @@ class Calendars_Event extends Base_Calendars_Event
 	 * @param {string} $userId Id of user need to participate
 	 * @param {string} $going Whether user going. Can ge one of "yes", "no", "maybe"
 	 * @param {array} [$options]
-	 * @param {bool} [$options.skipPayment=false] Sometime need to skip payment, for instance when participate staffer.
+	 * @param {bool} [$options.skipPayment=false] Sometime need to skip payment, for instance when participate staffer,
+	 * 	or to avoid infinite loop various callers of this function
 	 * @param {Boolean} [$options.skipRecurringParticipant=false] If true don't manage recurring participant
 	 * @param {Boolean} [$options.skipSubscription=false] If true skip subscription to stream
 	 * @param {bool} [$options.autoCharge=false] If true, do payment if required. If false, throw exception.
@@ -807,7 +808,7 @@ class Calendars_Event extends Base_Calendars_Event
 	static function going($stream, $userId, $going = 'yes', $options = array()) {
 		// check if event already started
 		if ((int)$stream->getAttribute("startTime") < time()) {
-			return;
+			throw new Q_Exception("Event already started");
 		}
 
 		$user = Users_User::fetch($userId, true);
@@ -815,6 +816,7 @@ class Calendars_Event extends Base_Calendars_Event
 		$isAdmin = (bool)Users::roles(Users::currentCommunityId(true), Q_Config::expect('Calendars', 'events', 'admins'));
 		$skipPayment = Q::ifset($options, 'skipPayment', false);
 		$relatedParticipants = Q::ifset($options, "relatedParticipants", null);
+		$paymentIntent = false;
 
 		$recurringCategory = Calendars_Recurring::fromStream($stream);
 
@@ -823,7 +825,7 @@ class Calendars_Event extends Base_Calendars_Event
 		if ($going == 'no') {
 			$stream->leave($options);
 
-			$stream->unsubscribe($options);
+			// $stream->unsubscribe($options);
 
 			// unrelate all relatedParticipants streams related by this user
 			$relations = Streams_RelatedTo::select()->where(array(
@@ -923,17 +925,21 @@ class Calendars_Event extends Base_Calendars_Event
 					}
 
 					if ($paymentRequired) {
-						if (Q::ifset($options, "autoCharge", false)) {
-							Q::event("Assets/pay/post", array(
-								"amount" => $resAmount,
-								"currency" => $payment["currency"],
-								"toStream" => $stream,
-								"autoCharge" => true
-							));
-
-							// after payment try again to unsure that payments success
-							$options["autoCharge"] = false;
-							return self::going($stream, $userId, $going, $options);
+						$result = Assets::pay(
+							Users::communityId(), 
+							$userId, 
+							$resAmount,
+							'EventParticipation',
+							array_merge($options, array(
+								'toPublisherId' => $stream->publisherId,
+								'toStreamName' => $stream->name,
+								'autoCharge' => $options['autoCharge']
+							))
+						);
+						if (!empty($result['success'])) {
+							// after a successful payment, set going and skip payment
+							$options['skipPayment'] = true;
+							return self::going($stream, $userId, $going, $options);	
 						}
 						// Payment is required,
 						// user doesn't have enough credits,
@@ -943,8 +949,8 @@ class Calendars_Event extends Base_Calendars_Event
 						// will set their going = yes
 						if ($going === 'yes') {
 							$going = 'maybe';
+							$paymentIntent = $result;
 						}
-						return;
 					}
 				}
 			}
@@ -1035,6 +1041,10 @@ class Calendars_Event extends Base_Calendars_Event
 			'stream', 'user', 'participant', 'going', 'recurringCategory',
 			'isAdmin', 'skipPayment', 'relatedParticipants'
 		), 'after');
+
+		if ($paymentIntent) {
+			$participant->set('paymentIntent', $paymentIntent);
+		}
 
 		return $participant;
 	}

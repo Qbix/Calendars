@@ -1516,245 +1516,331 @@ Q.Tool.define("Calendars/event", function(options) {
 		return alreadyParticipated;
 	},
 	/**
-	 * Update whether you are going
+	 * Update whether the current user is "going" to an event.
+	 *
+	 * This is the authoritative client-side handler for event participation.
+	 *
+	 * Responsibilities:
+	 *  - Trigger login if needed, then retry automatically
+	 *  - Prevent redundant updates
+	 *  - Perform optimistic UI update, revert on any failure
+	 *  - Support prepayment mode (create Stripe customer first)
+	 *  - Ensure required related-participants flow completes first
+	 *  - Process optional payments (donation UI)
+	 *  - Process required payments ONLY when server responds with slots.payment
+	 *  - Refresh stream + participant on every server response
+	 *
+	 * The server determines when payment is needed.
+	 * The client never computes amounts or calls Assets.pay().
+	 *
 	 * @method going
-	 * @param {string} going yes, no, maybe
-	 * @param {function} callback receives first parameter true on success, false on failure
-	 * @param {Object} options any options to pass to Q.Users.login()
+	 * @param {String} going  "yes", "no", or "maybe"
+	 * @param {Function} callback Receives (true|false)
+	 * @param {Object} options Passed to Q.Users.login()
 	 */
 	going: function (going, callback, options) {
-		var tool = this;
-		var $te = $(this.element);
+		var tool  = this;
+		var $te   = $(this.element);
 		var state = this.state;
-		var paymentType = Q.getObject("payment.type", state);
-		var paymentAmount = Q.getObject("payment.amount", state);
+
+		var paymentType     = Q.getObject("payment.type", state);
+		var paymentAmount   = Q.getObject("payment.amount", state);
 		var paymentCurrency = Q.getObject("payment.currency", state);
+
 		var userId = Users.loggedInUserId();
+
+		//-------------------------------------------------------------
+		// 0. Require login
+		//-------------------------------------------------------------
 		if (!userId) {
-			var redirectUrl = Q.url(["event", state.publisherId, state.streamName.split('/').pop()].join('/') + "?going=yes");
-			Q.Users.login(Q.extend({
-				successUrl: redirectUrl
-			}, options));
-			Q.Users.onComplete.setOnce(function () {
-				Q.handle(redirectUrl);
+			Users.login({
+				onSuccess: {
+					"Users": function () {
+						tool.going(going, callback, options);
+					}
+				}
 			});
+			return false;
+		}
 
+		//-------------------------------------------------------------
+		// 1. No-op if unchanged
+		//-------------------------------------------------------------
+		var previousGoing = $te.attr("data-going");
+
+		if (previousGoing === going) {
 			Q.handle(callback, tool, [false]);
 			return false;
 		}
 
-		// if going already changed, do nothing
-		if ($te.attr('data-going') === going) {
-			Q.handle(callback, tool, [false]);
-			return false;
-		}
-
-		var isPublisher = userId === state.publisherId;
-
-		var _saveGoingCallback = function () {
-			tool.updateInterface(going);
-			Q.handle(tool.state.onGoing, tool, [going, tool.stream]);
+		//-------------------------------------------------------------
+		// 2. UI utility helpers
+		//-------------------------------------------------------------
+		var revertUI = function () {
+			$te.attr("data-going", previousGoing);
+			tool.updateInterface(previousGoing);
+			tool.$goingElement.removeClass("Q_working");
 		};
 
-		tool.$goingElement.addClass('Q_working');
+		var finalizeUI = function () {
+			tool.updateInterface(going);
+			Q.handle(state.onGoing, tool, [going, tool.stream]);
+		};
 
-		if (going === 'no') {
-			return _saveGoing(going).then(_saveGoingCallback).catch(function () {
-				tool.$goingElement.removeClass('Q_working');
-			});
+		tool.$goingElement.addClass("Q_working");
+
+		var isPublisher = (userId === state.publisherId);
+
+		//-------------------------------------------------------------
+		// 3. going = "no"
+		//-------------------------------------------------------------
+		if (going === "no") {
+			return _saveGoing("no")
+				.then(finalizeUI)
+				.catch(revertUI);
 		}
 
-		// prepayment mode
-        if (going === 'yes' && tool.modePrepayment) {
+		//-------------------------------------------------------------
+		// 4. Prepayment mode (ensure Stripe customer profile)
+		//-------------------------------------------------------------
+		if (going === "yes" && tool.modePrepayment) {
+
 			if (state.payment && state.payment.isAssetsCustomer) {
-				return tool.going('maybe', callback, options);
+				return tool.going("maybe", callback, options);
 			}
 
 			Q.Assets.Payments.stripe({
 				amount: 1,
-				currency: 'USD',
+				currency: "USD",
 				description: tool.text.event.tool.Prepayment
-			}, function(err, data) {
-				tool.$goingElement.removeClass('Q_working');
+			}, function (err) {
 				if (err) {
+					revertUI();
 					Q.handle(callback, tool, [false]);
 					return;
 				}
 				state.payment.isAssetsCustomer = true;
-				tool.going('maybe', callback, options);
+				tool.going("maybe", callback, options);
 			});
-            return;
-        }
 
-		// check if required related participants added
+			return;
+		}
+
+		//-------------------------------------------------------------
+		// 5. Required related participants must be added first
+		//-------------------------------------------------------------
 		if (!tool.checkRelatedParticipants()) {
 			tool.addRelatedParticipants({
-				callback: function (process) {
-					if (process) {
-						tool.going(going, callback);
+				callback: function (ok) {
+					if (ok) {
+						tool.going(going, callback, options);
 					} else {
+						revertUI();
 						Q.handle(callback, tool, [false]);
 					}
 				}
 			});
-
 			return false;
 		}
 
-		if (isPublisher || state.isAdmin || !state.payment || going === 'maybe') {
-			// no impediments
-			return _saveGoing(going).then(_saveGoingCallback);
+		//-------------------------------------------------------------
+		// 6. No payment required
+		//-------------------------------------------------------------
+		if (isPublisher || state.isAdmin || !state.payment || going === "maybe") {
+			return _saveGoing(going)
+				.then(finalizeUI)
+				.catch(revertUI);
 		}
 
-		var summary = paymentAmount || 0;
-		var paymentDetails = [
-			{userId: userId, amount: paymentAmount}
-		];
+		//-------------------------------------------------------------
+		// 7. Payment MAY be required — only server decides.
+		//    Optimistic UI: save now, let server override via slots.payment.
+		//-------------------------------------------------------------
+		_saveGoing(going)
+			.then(finalizeUI)
+			.catch(revertUI);
 
-		_saveGoing(going).then(_saveGoingCallback);
-
-		if (paymentType === 'optional') {
-			_donate().catch(function(err){
-				err && console.warn(err);
-			}).then(function(){
-				tool.getPaymentInfo();
-				tool.$goingElement.removeClass('Q_working');
-				Q.handle(state.onPaid, tool);
-			});
+		//-------------------------------------------------------------
+		// 8. Optional donation-style payment
+		//-------------------------------------------------------------
+		if (paymentType === "optional") {
+			_donate()
+				.catch(function (err) { err && console.warn(err); })
+				.then(function () {
+					tool.getPaymentInfo();
+					tool.$goingElement.removeClass("Q_working");
+					Q.handle(state.onPaid, tool);
+				});
 			return;
 		}
 
-		// if we are here, the payment is required.
-		// user who tries to set going = yes will end up having going = maybe
-		// until they pay.
+		//-------------------------------------------------------------
+		// 9. Required payment:
+		//    Do nothing here. The server returns slots.payment.
+		//    Stripe is handled inside _saveGoing().
+		//-------------------------------------------------------------
 
-		// calculate additional payment for related participants
-		Q.each(state.relatedParticipants.participants, function (streamType, data) {
-			var relatedTool = Q.getObject("relatedTool", data);
-			if (!relatedTool) {
-				return console.warn(streamType + " relation, but related tool empty");
-			}
-			var relations = tool.getMyRelations(relatedTool);
-			var amountParticipants = Q.getObject("length", relations) || 0;
-			summary += (amountParticipants * paymentAmount);
 
-			// collect payments details for all related streams
-			if (amountParticipants) {
-				Q.each(relations, function (index, previewState) {
-					paymentDetails.push({
-						publisherId: previewState.publisherId,
-						streamName: previewState.streamName,
-						amount: paymentAmount
-					});
-				});
-			}
 
-		});
+		// ==================================================================
+		// INTERNAL HELPERS
+		// ==================================================================
 
-		_pay(function(err, data) {
-			Q.handle(state.onPaid, tool);
-		}, function() {
-			tool.$goingElement.removeClass('Q_working');
-			Q.handle(callback, tool, [false]);
-		});
+		/**
+		 * Save "going" state to server.
+		 *
+		 * Handles:
+		 *  - Server-side errors
+		 *  - Refreshing stream & participant
+		 *  - Triggering Stripe when server returns slots.payment
+		 *
+		 * @method _saveGoing
+		 * @private
+		 * @param {String} targetGoing
+		 * @return {Promise}
+		 */
+		function _saveGoing(targetGoing) {
+			var changed = ($te.attr("data-going") !== targetGoing);
 
-		function _saveGoing(dataGoing) {
-			var fields = {
-				publisherId: state.publisherId,
-				eventId: state.streamName.split('/').pop(),
-				going: dataGoing,
-				clientId: Q.clientId()
-			};
-
-			var statusChanged = $te.attr('data-going') !== dataGoing;
-			if (statusChanged) {
-				$te.attr('data-going', dataGoing);
+			if (changed) {
+				$te.attr("data-going", targetGoing);
 			}
 
-			return new Q.Promise(function(resolve, reject){
-				if (!statusChanged) {
-					return reject("status has not changed");
-				}
+			return new Q.Promise(function (resolve, reject) {
 
-				Q.req('Calendars/going', '', function (err, response) {
-					Streams.Stream.refresh(state.publisherId, state.streamName, function () {
-						tool.stream = this;
+				if (!changed) return reject("no_change");
 
-						var r = response && response.errors;
-						var msg = Q.firstErrorMessage(err, r);
+				Q.req(
+					"Calendars/going",
+					["stream","participant","payment"],
+					function (err, response) {
+
+						var msg = Q.firstErrorMessage(err, response);
 						if (msg) {
-							Q.alert(msg, {title: "Sorry"});
+							Q.alert(msg, { title: "Sorry" });
 							return reject(msg);
 						}
 
-						Q.handle(callback, tool, [true]);
-						resolve(response);
-					}, {
-						withParticipant: true,
-						messages: true,
-						unlessSocket: true
-					});
-				}, {
-					method: 'post',
-					fields: fields
-				});
-			});
-		}
+						Streams.Stream.refresh(
+							state.publisherId,
+							state.streamName,
+							function () {
+								tool.stream = this;
 
-		function _donate() {
-			var cacheKey = Q.Cache.key([state.publisherId, state.streamName, "donation"].join('.'));
-			var cache = Q.Cache.session(cacheKey);
+								var paySlot    = Q.getObject(["slots","payment"], response);
+								var payDetails = paySlot && paySlot.details;
 
-			return new Q.Promise(function(resolve, reject){
-				Q.Template.render('Calendars/event/payment',
-					{
-						content: tool.text.payment.confirmationDialog.content.interpolate({
-							amount: paymentAmount + ' ' + paymentCurrency
-						}),
-						button: tool.text.payment.confirmationDialog.button + ' '
-					},
-					function (err, html) {
-						if (err) {
-							return reject(err);
-						}
+								//-------------------------------------------------
+								// Server instructs client to open Stripe
+								//-------------------------------------------------
+								if (payDetails && payDetails.intentToken) {
 
-						if (Q.getObject(['subject'], cache.get(cacheKey))) {
-							return reject();
-						}
+									var intent = payDetails.intent;
+									var stripeOptions = {
+										intentToken   : payDetails.intentToken,
+										amount        : intent.amount,
+										currency      : intent.currency,
+										reason        : intent.reason,
+										// metadata      : intent.metadata || {},
+										toPublisherId : intent.toPublisherId,
+										toStreamName  : intent.toStreamName
+									};
 
-						Q.Dialogs.push({
-							className: 'Q_dialog_audio',
-							title: tool.text.payment.confirmationDialog.title,
-							content: html,
-							destroyOnClose: true,
-							onActivate : function (dialog) {
-								$('.Payment-confirmation-button', dialog).on(Q.Pointer.fastclick, function(){
-									Q.Dialogs.pop();
-									resolve(_pay());
-									return false;
-								});
+									Q.Assets.Payments.stripe(
+										stripeOptions,
+										function () {
+											tool.getPaymentInfo();
+											Q.handle(state.onPaid, tool);
+											resolve(response);
+										},
+										function () {
+											revertUI();
+											reject("stripe_cancel");
+										}
+									);
+
+									return;
+								}
+
+								//-------------------------------------------------
+								// Normal success
+								//-------------------------------------------------
+								resolve(response);
 							},
-							onClose: function () {
-								cache.set(cacheKey, 0, true);
+							{
+								withParticipant: true,
+								messages: true,
+								unlessSocket: true
 							}
-						});
+						);
+					},
+					{
+						method: "post",
+						fields: {
+							publisherId: state.publisherId,
+							eventId: state.streamName.split("/").pop(),
+							going: targetGoing,
+							clientId: Q.clientId()
+						}
 					}
 				);
 			});
 		}
 
-		function _pay(resolve, reject) {
-			Q.Assets.pay({
-				amount: summary,
-				currency: paymentCurrency,
-				reason: 'EventParticipation',
-				toStream: {
-					publisherId: state.publisherId,
-					streamName: state.streamName
-				},
-				items: paymentDetails,
-				onSuccess: resolve,
-				onFailure: reject,
+		/**
+		 * Optional donation payment dialog.
+		 *
+		 * User may refuse; the main flow continues without error.
+		 *
+		 * @method _donate
+		 * @private
+		 * @return {Promise}
+		 */
+		function _donate() {
+			var cacheKey = Q.Cache.key([
+				state.publisherId,
+				state.streamName,
+				"donation"
+			].join("."));
+
+			var cache = Q.Cache.session(cacheKey);
+
+			return new Q.Promise(function (resolve, reject) {
+
+				Q.Template.render(
+					"Calendars/event/payment",
+					{
+						content: tool.text.payment.confirmationDialog.content.interpolate({
+							amount: paymentAmount + " " + paymentCurrency
+						}),
+						button: tool.text.payment.confirmationDialog.button + " "
+					},
+					function (err, html) {
+						if (err) return reject(err);
+
+						if (cache.get(cacheKey)) {
+							return reject("already_shown");
+						}
+
+						Q.Dialogs.push({
+							className: "Q_dialog_audio",
+							title: tool.text.payment.confirmationDialog.title,
+							content: html,
+							destroyOnClose: true,
+							onActivate: function (dialog) {
+								$(".Payment-confirmation-button", dialog)
+									.on(Q.Pointer.fastclick, function () {
+										Q.Dialogs.pop();
+										resolve();
+										return false;
+									});
+							},
+							onClose: function () {
+								cache.set(cacheKey, 1, true);
+							}
+						});
+					}
+				);
 			});
 		}
 	},
