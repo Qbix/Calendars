@@ -18,14 +18,12 @@ function Calendars_after_Streams_leave($params)
 			continue;
 		}
 
-		$eventPublisherId = $stream->publisherId;
-		$eventStreamName  = $stream->name;
 
 		// Fetch event in proper viewer context
 		$event = Streams_Stream::fetch(
 			$asUserId,
-			$eventPublisherId,
-			$eventStreamName
+			$stream->publisherId,
+			$stream->name
 		);
 
 		// No refunds after event start
@@ -38,8 +36,8 @@ function Calendars_after_Streams_leave($params)
 		$joinRow = Assets_Credits::checkJoinPaid(
 			$asUserId,
 			array(
-				'publisherId' => $eventPublisherId,
-				'streamName'  => $eventStreamName
+				'publisherId' => $stream->publisherId,
+				'streamName'  => $stream->name
 			),
 			null,
 			array(
@@ -59,8 +57,9 @@ function Calendars_after_Streams_leave($params)
 			$joinRow->toUserId,        // event publisher (receiver of original payment)
 			$joinRow->fromUserId,      // attendee
 			array(
-				'toPublisherId' => $eventPublisherId,
-				'toStreamName'  => $eventStreamName
+				'toPublisherId' => $event->publisherId,
+				'toStreamName'  => $event->name,
+				'toStreamTitle' => $event->title
 			)
 		);
 	}

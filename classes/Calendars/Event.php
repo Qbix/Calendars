@@ -796,6 +796,7 @@ class Calendars_Event extends Base_Calendars_Event
 	 * @param {array} [$options]
 	 * @param {bool} [$options.skipPayment=false] Sometime need to skip payment, for instance when participate staffer,
 	 * 	or to avoid infinite loop various callers of this function
+	 * @param {boolean} [$options.paid] Send along with skipPayment if we want to indicate the event was already paid for
 	 * @param {Boolean} [$options.skipRecurringParticipant=false] If true don't manage recurring participant
 	 * @param {Boolean} [$options.skipSubscription=false] If true skip subscription to stream
 	 * @param {bool} [$options.autoCharge=false] If true, do payment if required. If false, throw exception.
@@ -817,6 +818,7 @@ class Calendars_Event extends Base_Calendars_Event
 		$skipPayment = Q::ifset($options, 'skipPayment', false);
 		$relatedParticipants = Q::ifset($options, "relatedParticipants", null);
 		$paymentIntent = false;
+		$paid = Q::ifset($options, 'paid', false);
 
 		$recurringCategory = Calendars_Recurring::fromStream($stream);
 
@@ -938,6 +940,7 @@ class Calendars_Event extends Base_Calendars_Event
 						);
 						if (!empty($result['success'])) {
 							// after a successful payment, set going and skip payment
+							$options['paid'] = 'autoCharge';
 							$options['skipPayment'] = true;
 							return self::going($stream, $userId, $going, $options);	
 						}
@@ -1044,6 +1047,8 @@ class Calendars_Event extends Base_Calendars_Event
 
 		if ($paymentIntent) {
 			$participant->set('paymentIntent', $paymentIntent);
+		} else if ($paid) {
+			$participant->set('paid', $paid);
 		}
 
 		return $participant;

@@ -1712,7 +1712,7 @@ Q.Tool.define("Calendars/event", function(options) {
 
 				Q.req(
 					"Calendars/going",
-					["stream","participant","payment"],
+					["stream","participant","payment","paid"],
 					function (err, response) {
 
 						var msg = Q.firstErrorMessage(err, response);
@@ -1727,17 +1727,19 @@ Q.Tool.define("Calendars/event", function(options) {
 							function () {
 								tool.stream = this;
 
-								var paySlot    = Q.getObject(["slots","payment"], response);
-								var payDetails = paySlot && paySlot.details;
+								var slots = response.slots || {};
+								var payment  = slots.payment;
+								var paid = slots.paid;
+								var paymentDetails = payment && payment.details;
 
 								//-------------------------------------------------
 								// Server instructs client to open Stripe
 								//-------------------------------------------------
-								if (payDetails && payDetails.intentToken) {
+								if (paymentDetails && pamentyDetails.intentToken) {
 
-									var intent = payDetails.intent;
+									var intent = paymentDetails.intent;
 									var stripeOptions = {
-										intentToken   : payDetails.intentToken,
+										intentToken   : paymentDetails.intentToken,
 										amount        : intent.amount,
 										currency      : intent.currency,
 										reason        : intent.reason,
@@ -1760,6 +1762,8 @@ Q.Tool.define("Calendars/event", function(options) {
 									);
 
 									return;
+								} else if (paid) {
+									Q.handle(state.onPaid, tool);
 								}
 
 								//-------------------------------------------------
