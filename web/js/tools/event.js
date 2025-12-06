@@ -354,6 +354,8 @@ Q.Tool.define("Calendars/event", function(options) {
 							return console.warn(msg);
 						}
 
+						tool.participant = participant;
+
 						var remindersSaved = participant.getExtra('reminders') || null;
 						var remindersConfig = {};
 
@@ -1584,7 +1586,7 @@ Q.Tool.define("Calendars/event", function(options) {
 
 		var finalizeUI = function () {
 			tool.updateInterface(going);
-			Q.handle(state.onGoing, tool, [going, tool.stream]);
+			Q.handle(state.onGoing, tool, [going, tool.stream, tool.participant]);
 		};
 
 		tool.$goingElement.addClass("Q_working");
@@ -1731,6 +1733,7 @@ Q.Tool.define("Calendars/event", function(options) {
 								var payment  = slots.payment;
 								var paid = slots.paid;
 								var paymentDetails = payment && payment.details;
+								var participant = new Streams.Participant(slots.participant);
 
 								//-------------------------------------------------
 								// Server instructs client to open Stripe
@@ -1763,7 +1766,7 @@ Q.Tool.define("Calendars/event", function(options) {
 
 									return;
 								} else if (paid) {
-									Q.handle(state.onPaid, tool);
+									Q.handle(state.onPaid, tool, [payment]);
 								}
 
 								//-------------------------------------------------
