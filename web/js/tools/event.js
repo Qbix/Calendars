@@ -996,7 +996,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		var tool = this;
 		var state = this.state;
 		var $calendarsPayment = tool.$('.Calendars_payment');
-		var payment = tool.stream.attributes.payment;
+		var payment = tool.stream && tool.stream.getAttribute('payment');
 		if (!payment) {
 			return Q.Promise.resolve();
 		}
