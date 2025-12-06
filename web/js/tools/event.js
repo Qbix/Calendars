@@ -1738,7 +1738,7 @@ Q.Tool.define("Calendars/event", function(options) {
 								//-------------------------------------------------
 								// Server instructs client to open Stripe
 								//-------------------------------------------------
-								if (paymentDetails && pamentyDetails.intentToken) {
+								if (paymentDetails && paymentDetails.intentToken) {
 
 									var intent = paymentDetails.intent;
 									var stripeOptions = {
