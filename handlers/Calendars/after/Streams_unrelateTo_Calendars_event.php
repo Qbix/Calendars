@@ -36,7 +36,7 @@ function Calendars_after_Streams_unrelateTo_Calendars_event($params)
 		return true;
 	}
 
-	// Refund FROM event publisher → TO the user
+	// Refund FROM event publisher TO the user
 	Assets_Credits::refund(
 		null,                      // community
 		$paid->amount,             // amount

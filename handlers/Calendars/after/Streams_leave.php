@@ -49,7 +49,7 @@ function Calendars_after_Streams_leave($params)
 			continue; // no payment OR already refunded
 		}
 
-		// Refund FROM event host → TO the attendee
+		// Refund FROM event host to TO the attendee
 		Assets_Credits::refund(
 			null,                      // community
 			$joinRow->amount,          // exact amount paid

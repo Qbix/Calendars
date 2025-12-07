@@ -942,6 +942,9 @@ class Calendars_Event extends Base_Calendars_Event
 							// after a successful payment, set going and skip payment
 							$options['paid'] = 'autoCharge';
 							$options['skipPayment'] = true;
+							// the below call to self::going() is optional, because
+							// the webhook will call self::going() again after
+							// the charge is processed.
 							return self::going($stream, $userId, $going, $options);	
 						}
 						// Payment is required,
@@ -949,7 +952,7 @@ class Calendars_Event extends Base_Calendars_Event
 						// and can't automatically buy them.
 						// So set their going = maybe, until they pay manually.
 						// Then the Calendars/after/Assets/credits/spend hook
-						// will set their going = yes
+						// (called by our webhook) will set their going = yes.
 						if ($going === 'yes') {
 							$going = 'maybe';
 							$paymentIntent = $result;

@@ -1727,19 +1727,24 @@ Q.Tool.define("Calendars/event", function(options) {
 							state.publisherId,
 							state.streamName,
 							function () {
-								tool.stream = this;
-
 								var slots = response.slots || {};
 								var payment  = slots.payment;
 								var paid = slots.paid;
 								var paymentDetails = payment && payment.details;
-								var participant = new Streams.Participant(slots.participant);
+
+								tool.stream = this;
+								if (slots.participant) {
+									tool.participant = new Streams.Participant(slots.participant);
+								}
 
 								//-------------------------------------------------
 								// Server instructs client to open Stripe
 								//-------------------------------------------------
-								if (paymentDetails && paymentDetails.intentToken) {
+								if (paymentDetails && paymentDetails.intent) {
 
+									// Note that mere presence of .intentToken without
+									// a corresponding .intent object means that the server
+									// has 
 									var intent = paymentDetails.intent;
 									var stripeOptions = {
 										intentToken   : paymentDetails.intentToken,
