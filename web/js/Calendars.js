@@ -283,7 +283,8 @@ Calendars.Event = {
 					}).activate();
 					break;
 				default:
-					console.warn("type " + params.type + " unrecognized");
+					// maybe someone else will handle it
+					break;
 			}
 		});
 	},
