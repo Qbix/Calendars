@@ -1,12 +1,17 @@
 .Calendars_event_curtain .Streams_image_preview_tool {
 	width: 100%;
+	max-height: 50%;
 	padding: 0;
 	margin: 0;
 }
 
-.Calendars_event_curtain img {
-	width: 100% !important;
+.Calendars_event_curtain img.Streams_image_preview_icon {
+	width: calc(min(100%, 60vh)) !important;
 	height: auto !important;
+}
+
+.Q_notMobile .Calendars_event_curtain {
+	border-radius: 10px;
 }
 
 .Calendars_event_curtain .Streams_preview_loading {
@@ -36,6 +41,7 @@
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 10px;
+	text-align: center;
 }
 .Calendars_event_background {
 	width: 100%;

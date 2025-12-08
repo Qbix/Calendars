@@ -2149,16 +2149,12 @@ Q.Template.set('Calendars/event/tool',
 	'		<div class="Calendars_info_content">{{text.event.tool.Promote}}</div>' +
 	'	</div>' +
 	'{{/if}}' +
-	'{{#if show.checkin}}' +
-	'	<div class="Q_button Calendars_aspect_checkin Calendars_aspect_admin" data-invoke="checkin">' +
-	'		<div class="Calendars_info_icon"><i class="qp-communities-qrcode"></i></div>' +
-	'		<div class="Calendars_info_content">{{text.event.tool.Checkin}}</div>' +
-	'	</div>' +
-	'{{/if}}' +
+	'{{#if show.myqr}}' +
 	'	<div class="Q_button Calendars_aspect_myqr" {{#ifEquals show.myqr false}}style="display:none"{{/ifEquals}} data-invoke="myqr">' +
 	'		<div class="Calendars_info_icon"><i class="qp-communities-qrcode"></i></div>' +
 	'		<div class="Calendars_info_content">{{text.event.tool.Myqr}}</div>' +
 	'	</div>' +
+	'{{/if}}' +
 	'{{#if show.trips}}' +
 	'	<div class="Q_button Travel_aspect_trips" {{#ifEquals show.trips false}}style="display:none"{{/ifEquals}}>' +
 	'		<div class="Calendars_info_buttons">{{{tool "Travel/trips" publisherId=stream.fields.publisherId streamName=stream.fields.name}}}</div>' +
@@ -2222,6 +2218,12 @@ Q.Template.set('Calendars/event/tool',
 	'	<div class="Q_button Calendars_aspect_recurring Calendars_aspect_admin">' +
 	'		<div class="Calendars_info_icon"><i class="Calendars_composer_recurring_admin"></i></div>' +
 	'		<div class="Calendars_info_content">{{text.event.tool.RecurringAdmin}}</div>' +
+	'	</div>' +
+	'{{/if}}' +
+	'{{#if show.checkin}}' +
+	'	<div class="Q_button Calendars_aspect_checkin Calendars_aspect_admin" data-invoke="checkin">' +
+	'		<div class="Calendars_info_icon"><i class="qp-communities-qrcode"></i></div>' +
+	'		<div class="Calendars_info_content">{{text.event.tool.Checkin}}</div>' +
 	'	</div>' +
 	'{{/if}}' +
 	'{{#if show.closeEvent}}' +
