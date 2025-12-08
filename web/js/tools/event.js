@@ -295,7 +295,7 @@ Q.Tool.define("Calendars/event", function(options) {
 				stream: stream,
 				startTime: startTime,
 				endTime: endTime,
-				icon: state.icon || tool.stream.iconUrl('500x'),
+				icon: state.icon || tool.stream.iconUrl('1000x'),
 				peopleMin: tool.stream.getAttribute('peopleMin', Q.getObject("Event.defaults.peopleMin", Calendars)),
 				peopleMax: tool.stream.getAttribute('peopleMax', Q.getObject("Event.defaults.peopleMax", Calendars)),
 				labelTitles: labelTitles,
@@ -2096,7 +2096,7 @@ Q.Template.set('Calendars/event/tool',
 	'{{#if icon}}' +
 	' data-icon-src="{{icon}}"' +
 	'{{/if}}' +
-	'data-streams-preview=\'{"publisherId":"{{stream.fields.publisherId}}","streamName":"{{stream.fields.name}}", "cacheBust": false, "closeable": false, "imagepicker": {"cacheBust": false, "showSize": "500x", "save": "Calendars/event", "saveSizeName": "Calendars/event"}}\'>' +
+	'data-streams-preview=\'{"publisherId":"{{stream.fields.publisherId}}","streamName":"{{stream.fields.name}}", "cacheBust": false, "closeable": false, "imagepicker": {"cacheBust": false, "showSize": "1000x", "save": "Calendars/event", "saveSizeName": "Calendars/event"}}\'>' +
 	'</div></div>' +
 	'{{#if show.hosts}}' +
 	'  <div class="Calendars_event_hosts">' +

@@ -10,8 +10,9 @@
 	height: auto !important;
 }
 
-.Q_notMobile .Calendars_event_curtain {
-	border-radius: 10px;
+.Q_notMobile .Calendars_event_curtain img.Streams_image_preview_icon {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .Calendars_event_curtain .Streams_preview_loading {
