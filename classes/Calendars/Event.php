@@ -52,7 +52,7 @@ class Calendars_Event extends Base_Calendars_Event
 		$address = Q::ifset($location, "address", null);
 		$startTime = (int)$stream->getAttribute('startTime', 0);
 		$endTime = $stream->getAttribute('endTime', $startTime + $duration);
-		$timezoneName = $timezoneName ? $timezoneName : $stream->getAttribute('timezoneName', 'UTC');
+		$timezoneName = $timezoneName ?: $stream->getAttribute('timezoneName', 'UTC');
 
 		$dt = new DateTime("now", new DateTimeZone($timezoneName));
 
@@ -64,7 +64,7 @@ class Calendars_Event extends Base_Calendars_Event
 		$content = $stream->content;
 		return @compact(
 			'publisherId', 'streamName',
-			'startTime', 'endTime', 'start', 'end', 'timezone', 'timezoneName',
+			'startTime', 'endTime', 'start', 'end', 'timezoneName', 'timezoneName',
 			'title', 'content', 'url', 'address', 'createdTime'
 		);
 	}
@@ -279,8 +279,9 @@ class Calendars_Event extends Base_Calendars_Event
 			'description' => ""
 		));
 
-		if (!$r['placeId'] && !$r['livestream']) {
-			throw new Q_Exception_RequiredField(array('field' => 'location or live stream URL'));
+        $timezoneName = Q::ifset($r, 'timezoneName', Q_Config::get('Calendars', 'events', 'defaults', 'timezoneName', null));
+		if (!$r['placeId'] && !$r['livestream'] && !$timezoneName) {
+			throw new Q_Exception_RequiredField(array('field' => 'location or live stream URL or timezoneName'));
 		}
 
 		if (empty($r['localStartDateTime']) && empty($r['startTime'])) {
@@ -399,7 +400,6 @@ class Calendars_Event extends Base_Calendars_Event
 		$localStartDateTime = Q::ifset($r, 'localStartDateTime', null);
 		$localEndDateTime = Q::ifset($r, 'localEndDateTime', null);
 		$duration = Q::ifset($r, 'duration', null);
-		$timezone = Q::ifset($r, 'timezoneName', null);
 
 		// location
 		$venue = null;
@@ -419,14 +419,14 @@ class Calendars_Event extends Base_Calendars_Event
 			$venue = Q::ifset($r, 'venueName', $locationStream->title);
 			$lat = $locationStream->getAttribute('latitude');
 			$lng = $locationStream->getAttribute('longitude');
-			$timezone = $locationStream->getAttribute('timeZone');
+            $timezoneName = $locationStream->getAttribute('timeZone');
 		}
 
 		if (!$startTime) {
 			if ($locationStream) {
 				$startTime = (int)self::calculateStartTime($localStartDateTime, $locationStream);
 			} else {
-				$startTime = new DateTime($localStartDateTime, new DateTimeZone($timezone));
+				$startTime = new DateTime($localStartDateTime, new DateTimeZone($timezoneName));
 				$startTime = (int)$startTime->format('U');
 			}
 		}
@@ -437,7 +437,7 @@ class Calendars_Event extends Base_Calendars_Event
 				if ($locationStream) {
 					$endTime = self::calculateStartTime($localEndDateTime, $locationStream);
 				} else {
-					$endTime = new DateTime($localEndDateTime, new DateTimeZone($timezone));
+					$endTime = new DateTime($localEndDateTime, new DateTimeZone($timezoneName));
 					$endTime = $endTime->format('U');
 				}
 			} elseif ($duration) {
@@ -473,7 +473,7 @@ class Calendars_Event extends Base_Calendars_Event
 				'startTime' => $startTime,
 				'localStartDateTime' => $localStartDateTime,
 				'endTime' => $endTime,
-				'timezoneName' => $timezone,
+				'timezoneName' => $timezoneName,
 				'peopleMin' => $peopleMin,
 				'peopleMax' => $peopleMax,
 				'labels' => $labels,

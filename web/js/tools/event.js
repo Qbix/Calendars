@@ -1907,10 +1907,11 @@ Q.Tool.define("Calendars/event", function(options) {
 		&& (tool.stream.testWriteLevel(40) || tool.stream.testPermission('Places/location'))) {
 			state.show.location = true;
 			state.show.trips = true;
-		} else if (!Calendars.event && Calendars.event.hideLocationIfNotPaid) {
+		} else if (!Q.getObject("fields.location", tool.stream) || Q.getObject("event.hideLocationIfNotPaid", Calendars) === true) {
 			state.show.location = false;
 			state.show.trips = false;
 		}
+
 		tool.$(".Calendars_info .Travel_aspect_trips")[state.show.trips ? "slideDown" : "slideUp"](300);
 		tool.$(".Calendars_info .Q_aspect_where")[state.show.location ? "slideDown" : "slideUp"](300);
 
@@ -1936,6 +1937,11 @@ Q.Tool.define("Calendars/event", function(options) {
 
 		state.show.presentation = tool.stream.testWriteLevel(40) || tool.stream.testPermission('Media/presentation');
 		tool.$(".Calendars_info .Streams_aspect_presentation")[state.show.presentation ? "slideDown" : "slideUp"](300);
+
+		// interests
+		if (Q.isEmpty(Calendars.Event.getInterests(tool.stream))) {
+			state.show.interests = false;
+		}
 	},
 	/**
 	 * Update the interface based on going changing
