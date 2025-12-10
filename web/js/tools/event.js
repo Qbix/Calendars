@@ -562,7 +562,7 @@ Q.Tool.define("Calendars/event", function(options) {
 					return;
 				}
 
-				tool.updateInterface($this.attr('data-going'));
+				tool.going($this.attr('data-going'));
 			});
 
 			var $unseen = tool.$('.Streams_aspect_chats .Calendars_info_unseen');
