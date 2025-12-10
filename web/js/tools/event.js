@@ -541,9 +541,9 @@ Q.Tool.define("Calendars/event", function(options) {
 				participantsTool.Q.onStateChanged('count').add(function () {
 					var $participants = $(participantsTool.element);
 					if (state.hideParticipants === false || this.state.count > (parseInt(state.hideParticipants) || 0) || stream.getAttribute("userId") === userId) {
-						$participants.show();
+						$participants[0].style.display = 'flex';
 					} else {
-						$participants.hide();
+						$participants[0].style.display = 'none';
 						// TODO: close events once everyone leaves?
 					}
 				});
