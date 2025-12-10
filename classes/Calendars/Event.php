@@ -889,6 +889,8 @@ class Calendars_Event extends Base_Calendars_Event
 				$paymentRequired = false;
 				$payment = $stream->getAttribute("payment");
 				$amount = Q::ifset($payment, "amount", 0);
+				$discount = Q::ifset($payment, "discount", 0);
+				$bonus = Q::ifset($payment, "bonus", 0);
 				$resAmount = 0;
 				$paymentType = Q::ifset($payment, "type", null);
 				if ($paymentType == "required" && ($isPublisher || $isAdmin)) {
@@ -927,6 +929,7 @@ class Calendars_Event extends Base_Calendars_Event
 					}
 
 					if ($paymentRequired) {
+						$token = Q::ifset($_SESSION, 'Streams', 'invite', 'token', null);
 						$result = Assets::pay(
 							Users::communityId(), 
 							$userId, 
@@ -969,17 +972,23 @@ class Calendars_Event extends Base_Calendars_Event
 			}
 
 			// collect stats by event
-			Users_Vote::saveActivity("Calendars/event", $stream->title);
+			$parts = explode('/', $stream->name);
+			$eventId = end($parts);
+			Users_Vote::saveActivity("Calendars/event", $eventId);
 
 			// collect stats by availability
 			$availability = self::getAvailability($stream);
 			if ($availability) {
-				Users_Vote::saveActivity("Calendars/availability", $availability->title);
+				$parts = explode('/', $availability->name);
+				$availabilityId = end($parts);
+				Users_Vote::saveActivity("Calendars/availability", $availabilityId);
 
 				// collect stats by service
 				$service = self::getService($stream);
 				if ($service) {
-					Users_Vote::saveActivity("Assets/service", $service->title);
+					$parts = explode('/', $service->name);
+					$serviceId = end($parts);
+					Users_Vote::saveActivity("Assets/service", $serviceId);
 				}
 			}
 
