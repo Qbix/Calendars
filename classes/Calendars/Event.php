@@ -1814,15 +1814,15 @@ class Calendars_Event extends Base_Calendars_Event
 		
 		// Determine the range of events to check
 		// We need to select events that are IN BETWEEN the old and new positions
-		// If moving forward: events between oldStartTime (inclusive) and newStartTime (exclusive)
-		// If moving backward: events between newStartTime (exclusive) and oldStartTime (inclusive)
+		// If moving forward: events between oldStartTime (inclusive) and newStartTime (inclusive)
+		// If moving backward: events between newStartTime (inclusive) and oldStartTime (inclusive)
 		if ($timeShift > 0) {
 			// Moving forward - select events that will be pushed back
 			$minTime = $oldStartTime;
-			$maxTime = $newStartTime - 1; // exclusive of destination
+			$maxTime = $newStartTime;
 		} else {
 			// Moving backward - select events that will be pushed forward
-			$minTime = $newStartTime + 1; // exclusive of destination
+			$minTime = $newStartTime;
 			$maxTime = $oldStartTime;
 		}
 		
