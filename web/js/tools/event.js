@@ -323,6 +323,9 @@ Q.Tool.define("Calendars/event", function(options) {
 						ordering: participantsOrdering,
 						invite: {
 							readLevel: 25
+						},
+						avatar: {
+							icon: '40',
 						}
 					});
 				}

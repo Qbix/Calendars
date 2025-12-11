@@ -153,6 +153,9 @@ Q.Tool.define("Calendars/event/preview", ["Streams/preview"], function(options, 
 			streamName: stream.fields.name,
 			max: stream.getAttribute('peopleMax'),
 			invite: false,
+			avatar: {
+				icon: '40',
+			},
 			maxShow: 6
 		}, 'Streams_participants', tool.prefix, {
 			'data-q-retain': "retain"

@@ -408,10 +408,6 @@
 	color: rgba(100, 100, 100, 0.75);
 	font-size: 14px;
 }
-.Calendars_event_tool .Streams_participants_tool .Users_avatar_tool .Users_avatar_icon {
-	width: 40px;
-	height: 40px;
-}
 .Calendars_event_tool .Users_avatar_tool {
 	position: relative;
 	text-overflow: clip;
