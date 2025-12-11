@@ -1754,4 +1754,197 @@ class Calendars_Event extends Base_Calendars_Event
 			return null;
 		}
 	}
+
+	/**
+	 * Reschedule an event by updating its startTime and adjusting related events
+	 * @method reschedule
+	 * @static
+	 * @param {string} $publisherId The publisher of the event
+	 * @param {string} $streamName The name of the event stream
+	 * @param {integer} $newStartTime The new start time timestamp
+	 * @param {array} [$options=array()] Additional options
+	 * @param {string} [$options.asUserId] The user performing the reschedule
+	 * @return {Streams_Stream} The updated event stream
+	 */
+	static function reschedule($publisherId, $streamName, $newStartTime, $options = array())
+	{
+		$asUserId = Q::ifset($options, 'asUserId', Users::loggedInUser(true)->id);
+		
+		// Fetch the event stream
+		$event = Streams::fetchOne($asUserId, $publisherId, $streamName, true);
+		
+		// Check if user has permission to edit this event
+		// if (!$event->testWriteLevel('edit')) {
+		// 	throw new Users_Exception_NotAuthorized();
+		// }
+		
+		// Get old startTime and endTime
+		$oldStartTime = (int)$event->getAttribute('startTime', 0);
+		if (!$oldStartTime) {
+			throw new Q_Exception("Event doesn't have a startTime");
+		}
+		$oldEndTime = (int)$event->getAttribute('endTime', 0);
+		if (!$oldEndTime) {
+			throw new Q_Exception("Event doesn't have an endTime");
+		}
+		
+		// Calculate the event's duration
+		$eventDuration = $oldEndTime - $oldStartTime;
+		
+		// Calculate the time shift for the event being rescheduled
+		$timeShift = $newStartTime - $oldStartTime;
+		
+		if ($timeShift === 0) {
+			return $event; // No change needed
+		}
+		
+		// Events in between move in the OPPOSITE direction by the event's DURATION
+		// If event moves forward (+timeShift), other events move backward (-eventDuration)
+		// If event moves backward (-timeShift), other events move forward (+eventDuration)
+		$otherEventsShift = $timeShift > 0 ? -$eventDuration : $eventDuration;
+		
+		// Find all calendars this event is related to
+		list($relations, $calendars) = Streams::related(
+			$asUserId,
+			$publisherId,
+			$streamName,
+			false,
+			array('type' => array('Calendars/event', 'Calendars/events'), 'skipAccess' => true)
+		);
+		
+		// Determine the range of events to check
+		// We need to select events that are IN BETWEEN the old and new positions
+		// If moving forward: events between oldStartTime (inclusive) and newStartTime (exclusive)
+		// If moving backward: events between newStartTime (exclusive) and oldStartTime (inclusive)
+		if ($timeShift > 0) {
+			// Moving forward - select events that will be pushed back
+			$minTime = $oldStartTime;
+			$maxTime = $newStartTime - 1; // exclusive of destination
+		} else {
+			// Moving backward - select events that will be pushed forward
+			$minTime = $newStartTime + 1; // exclusive of destination
+			$maxTime = $oldStartTime;
+		}
+		
+		// Collect all events to update and check permissions
+		$eventsToUpdate = array();
+		$calendarUpdates = array();
+		
+		foreach ($calendars as $calendar) {
+			// Check if user has permission to manage relations on this calendar
+			// if (!$calendar->testWriteLevel('relations')) {
+			// 	throw new Users_Exception_NotAuthorized();
+			// }
+			
+			$relationType = null;
+			foreach ($relations as $rel) {
+				if ($rel->toStreamName === $calendar->name 
+				&& $rel->toPublisherId === $calendar->publisherId) {
+					$relationType = $rel->type;
+					break;
+				}
+			}
+			
+			if (!$relationType) {
+				continue;
+			}
+			
+			// Get all events in this calendar within the affected time range
+			// These are events whose weight (startTime in relations) falls in the range
+			list($categoryRelations, $categoryEvents) = Streams::related(
+				$asUserId,
+				$calendar->publisherId,
+				$calendar->name,
+				true,
+				array(
+					'min' => $minTime,
+					'max' => $maxTime,
+					'type' => $relationType,
+					'skipAccess' => true
+				)
+			);
+			
+			$calendarKey = $calendar->publisherId . "\t" . $calendar->name . "\t" . $relationType;
+			$calendarUpdates[$calendarKey] = array(
+				'calendar' => $calendar,
+				'relationType' => $relationType,
+				'updates' => array()
+			);
+			
+			foreach ($categoryRelations as $relation) {
+				$name = $relation->fromStreamName;
+				$relatedEvent = Q::ifset($categoryEvents, $name, null);
+				if (!$relatedEvent) {
+					continue;
+				}
+				
+				// Check if user has permission to edit this event
+				// if (!$relatedEvent->testWriteLevel('edit')) {
+				// 	throw new Users_Exception_NotAuthorized();
+				// }
+				
+				$eventKey = $relatedEvent->publisherId . "\t" . $relatedEvent->name;
+				
+				if ($name === $streamName) {
+					// This is the event being rescheduled
+					$calendarUpdates[$calendarKey]['updates'][] = array(
+						'fromStreamName' => $name,
+						'newWeight' => $newStartTime
+					);
+				} else {
+					// Other events in the range move by the event's duration in opposite direction
+					$currentWeight = $relation->weight;
+					$newWeight = $currentWeight + $otherEventsShift;
+					
+					$calendarUpdates[$calendarKey]['updates'][] = array(
+						'fromStreamName' => $name,
+						'newWeight' => $newWeight
+					);
+					
+					// Store event for updating if not already stored
+					if (!isset($eventsToUpdate[$eventKey])) {
+						$eventsToUpdate[$eventKey] = $relatedEvent;
+					}
+				}
+			}
+		}
+		
+		// Update all affected events' startTime and endTime
+		foreach ($eventsToUpdate as $relatedEvent) {
+			$relatedStartTime = (int)$relatedEvent->getAttribute('startTime', 0);
+			$relatedEndTime = (int)$relatedEvent->getAttribute('endTime', 0);
+			
+			$relatedEvent->setAttribute('startTime', $relatedStartTime + $otherEventsShift);
+			if ($relatedEndTime) {
+				$relatedEvent->setAttribute('endTime', $relatedEndTime + $otherEventsShift);
+			}
+			$relatedEvent->changed();
+		}
+		
+		// Update the main event's startTime and endTime
+		$event->setAttribute('startTime', $newStartTime);
+		$newEndTime = $newStartTime + $eventDuration;
+		$event->setAttribute('endTime', $newEndTime);
+		$event->changed();
+		
+		// Update all relations in each calendar
+		foreach ($calendarUpdates as $calendarUpdate) {
+			$calendar = $calendarUpdate['calendar'];
+			$relationType = $calendarUpdate['relationType'];
+			
+			foreach ($calendarUpdate['updates'] as $update) {
+				Streams::updateRelations(
+					$asUserId,
+					$calendar->publisherId,
+					$calendar->name,
+					$publisherId,
+					$update['fromStreamName'],
+					array($relationType => $update['newWeight']),
+					array('skipAccess' => true)
+				);
+			}
+		}
+		
+		return $event;
+	}
 }
