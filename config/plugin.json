@@ -141,7 +141,13 @@
 					"Streams/chat/message": {
 						"post": true
 					},
-					"Calendars/going": {
+					"Calendars/going/yes": {
+						"subject": ["Calendars/content", ["notifications", "EventActivityIn"]]
+					},
+					"Calendars/going/no": {
+						"subject": ["Calendars/content", ["notifications", "EventActivityIn"]]
+					},
+					"Calendars/going/maybe": {
 						"subject": ["Calendars/content", ["notifications", "EventActivityIn"]]
 					},
 					"Calendars/checkin": {
