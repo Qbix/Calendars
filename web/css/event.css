@@ -504,11 +504,14 @@
 	width: 15px;
 	height: 15px;
 }
-.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=requested]:after {
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=rejected]:after {
 	background-color: red;
 }
-.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=attendee]:after {
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=requested]:after {
 	background-color: yellow;
+}
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=attendee]:after {
+	background-color: blue;
 }
 .Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=paid]:after {
 	background-color: green;
