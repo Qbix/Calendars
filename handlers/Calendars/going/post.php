@@ -7,7 +7,6 @@
  * @param {string} [$params.publisherId] Required. The id of the event's publisher
  * @param {string} [$params.eventId] Required. The id of the event.
  * @param {string} [$params.going] Required. Can be one of "no", "maybe" or "yes"
- * @return void
  */
 function Calendars_going_post($params)
 {

@@ -964,11 +964,10 @@ class Calendars_Event extends Base_Calendars_Event
 				}
 			}
 
-			// join user to event
-			$stream->join($options);
-
 			if (!Q::ifset($options, 'skipSubscription', false)) {
 				$stream->subscribe($options);
+			} else {
+				$stream->join($options); // simply join event
 			}
 
 			// collect stats by event

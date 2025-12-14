@@ -48,19 +48,9 @@ function Calendars_after_Streams_relateTo_Calendars_event ($params) {
 		return true;
 	}
 
-	if (class_exists("Assets")) {
-		Assets::pay(
-			null,                         // communityId (auto)
-			$stream->publisherId,         // userId (payer)
-			$amount,                      // original amount
-			Assets::JOINED_PAID_STREAM,   // reason
-			array(
-				'currency'      => $currency,
-				'payments'      => 'stripe',
-				'toPublisherId' => $toPublisherId,
-				'toStreamName'  => $toStreamName,
-				'autoCharge'    => true
-			)
-		);
+	if (class_exists("Assets_Credits")) {
+		$needCredits = Assets_Credits::convert($amount, $currency, "credits");
+		$autoCharge = true;
+		Assets_Credits::spend($needCredits, Assets::JOINED_PAID_STREAM, $stream->publisherId, @compact("toPublisherId", "toStreamName", "fromPublisherId", "fromStreamName", "autoCharge"));
 	}
 }
