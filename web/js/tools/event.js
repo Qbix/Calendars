@@ -298,8 +298,8 @@ Q.Tool.define("Calendars/event", function(options) {
 				startTime: startTime,
 				endTime: endTime,
 				icon: state.icon || tool.stream.iconUrl('1000x'),
-				peopleMin: tool.stream.getAttribute('peopleMin', Q.getObject("Event.defaults.peopleMin", Calendars)),
-				peopleMax: tool.stream.getAttribute('peopleMax', Q.getObject("Event.defaults.peopleMax", Calendars)),
+				peopleMin: tool.stream.getAttribute('peopleMin', Q.getObject("Event.defaults.peopleMin", Calendars) || 0),
+				peopleMax: tool.stream.getAttribute('peopleMax', Q.getObject("Event.defaults.peopleMax", Calendars) || 100),
 				labelTitles: labelTitles,
 				relatedParticipants: state.relatedParticipants.participants,
 				authorizedToEdit: stream.testWriteLevel('edit'),
@@ -313,7 +313,7 @@ Q.Tool.define("Calendars/event", function(options) {
 				Q.replace(tool.element, html);
 
 				var $participants = $(".Calendars_event_participants", tool.element);
-				if ($participants.length && tool.stream && tool.stream.fields.participatingCount >= state.peopleMin) {
+				if ($participants.length && tool.stream && tool.stream.fields.participatingCount >= fields.peopleMin) {
 					$participants.tool("Streams/participants", {
 						max: state.peopleMax,
 						maxShow: Q.getObject("Event.defaults.participants.maxShow", Calendars),
