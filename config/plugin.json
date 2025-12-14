@@ -267,7 +267,7 @@
 					"currency": "credits"
 				},
 				"participants": {
-					"maxShow": 10,
+					"maxShow": 100,
 					"showBlanks": true
 				}
 			},
