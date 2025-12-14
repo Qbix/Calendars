@@ -313,7 +313,7 @@ Q.Tool.define("Calendars/event", function(options) {
 				Q.replace(tool.element, html);
 
 				var $participants = $(".Calendars_event_participants", tool.element);
-				if ($participants.length) {
+				if ($participants.length && $participants.length >= state.peoplMin) {
 					$participants.tool("Streams/participants", {
 						max: state.peopleMax,
 						maxShow: Q.getObject("Event.defaults.participants.maxShow", Calendars),
