@@ -238,6 +238,7 @@ Calendars.Event = {
 				case 'checkin':
 					$(avatarTool.element).attr({"data-checkin": true});
 					break;
+				case 'rejected':
 				case 'requested':
 				case 'attendee':
 				case 'paid':

@@ -475,6 +475,10 @@
 .Calendars_event_reminders .Q_dialog_content label input[type=checkbox] {
 	transform: scale(2);
 	margin-right: 20px;
+
+}
+.Calendars_event_roles {
+	margin-bottom: 10px;
 }
 .Calendars_event_roles h2 {
 	font-size: 1.3em;
@@ -492,9 +496,7 @@
 .Calendars_event_roles [data-role].Q_selected {
 	background-color: #fff;
 }
-.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=requested]:after,
-.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=attendee]:after,
-.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=paid]:after {
+.Calendars_event_tool[data-modeprepayment=true][data-admin=true] .Calendars_event_participants .Users_avatar_tool:before {
 	content: "\00a0";
 	display: block;
 	position: absolute;
@@ -504,15 +506,15 @@
 	width: 15px;
 	height: 15px;
 }
-.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=rejected]:after {
+.Calendars_event_tool[data-modeprepayment=true][data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=rejected]:before {
 	background-color: red;
 }
-.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=requested]:after {
+.Calendars_event_tool[data-modeprepayment=true][data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=requested]:before {
 	background-color: yellow;
 }
-.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=attendee]:after {
+.Calendars_event_tool[data-modeprepayment=true][data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=attendee]:before {
 	background-color: blue;
 }
-.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=paid]:after {
+.Calendars_event_tool[data-modeprepayment=true][data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=paid]:before {
 	background-color: green;
 }

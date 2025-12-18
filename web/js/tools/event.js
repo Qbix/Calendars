@@ -51,6 +51,7 @@ Q.Tool.define("Calendars/event", function(options) {
 
 	Q.Assets.Payments.load();
 
+	tool.modePrepayment && $toolElement.attr("data-modePrepayment", tool.modePrepayment);
 	$toolElement.attr("data-mode", this.state.mode);
 	$toolElement.attr("data-admin", Q.getObject("Event.isAdmin", Calendars));
 
@@ -792,6 +793,19 @@ Q.Tool.define("Calendars/event", function(options) {
 						userId: participant.userId,
 						type: 'checkin'
 					});
+				}
+				if (participant.testRoles('paid')) {
+					Calendars.Event.updateParticipants({
+						tool: tool,
+						userId: participant.userId,
+						type: 'paid'
+					});
+				} else if (participant.testRoles('rejected')) {
+					Calendars.Event.updateParticipants({
+						tool: tool,
+						userId: participant.userId,
+						type: 'rejected'
+					});
 				} else if (participant.testRoles('requested')) {
 					Calendars.Event.updateParticipants({
 						tool: tool,
@@ -803,12 +817,6 @@ Q.Tool.define("Calendars/event", function(options) {
 						tool: tool,
 						userId: participant.userId,
 						type: 'attendee'
-					});
-				} else if (participant.testRoles('paid')) {
-					Calendars.Event.updateParticipants({
-						tool: tool,
-						userId: participant.userId,
-						type: 'paid'
 					});
 				}
 			});
@@ -2039,7 +2047,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		var tool = this;
 		var state = this.state;
 
-		if (!state.isAdmin) {
+		if (!state.isAdmin || !tool.modePrepayment) {
 			return;
 		}
 
@@ -2048,7 +2056,7 @@ Q.Tool.define("Calendars/event", function(options) {
 				return;
 			}
 
-			var roles = ['requested', 'attendee'];
+			var roles = ['rejected', 'requested', 'attendee', 'paid'];
 			Q.Template.render('Calendars/event/roles', {
 				roles
 			}, function (err, html) {
