@@ -1600,6 +1600,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		var finalizeUI = function () {
 			tool.updateInterface(going);
 			Q.handle(state.onGoing, tool, [going, tool.stream, tool.participant]);
+			Q.handle(callback, tool);
 		};
 
 		tool.$goingElement.addClass("Q_working");
@@ -2056,7 +2057,7 @@ Q.Tool.define("Calendars/event", function(options) {
 				return;
 			}
 
-			var roles = ['rejected', 'requested', 'registered', 'paid'];
+			var roles = ['rejected', 'requested', 'registered'];
 			Q.Template.render('Calendars/event/roles', {
 				roles
 			}, function (err, html) {
@@ -2086,7 +2087,6 @@ Q.Tool.define("Calendars/event", function(options) {
 							publisherId: state.publisherId,
 							streamName: state.streamName,
 							userId,
-							roles,
 							role: $this.attr("data-role")
 						}
 					});

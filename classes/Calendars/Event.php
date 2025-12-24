@@ -1038,10 +1038,9 @@ class Calendars_Event extends Base_Calendars_Event
 		if ($going === 'no') {
 			$participant->revokeRoles(["registered", "requested"]);
         } else if($going === 'maybe') {
-            $participant->grantRoles("requested");
+            self::grantRoles($participant, "requested");
 		} else if ($going === 'yes') {
-            $participant->revokeRoles("requested");
-			$participant->grantRoles("registered");
+            self::grantRoles($participant, "registered");
 		}
 		$participant->save();
 
@@ -1064,6 +1063,56 @@ class Calendars_Event extends Base_Calendars_Event
 
 		return $participant;
 	}
+
+    /**
+     * Grant roles to Calendars/event participants. Some roles can be grouped. Grouped roles excludes siblings.
+     * @method grantRoles
+     * @static
+     * @param {Streams_Participant} $participant
+     * @param {string|array} $roles
+     * @paramt {bool} [$save] whether to make save after roles updated
+     * @throws Q_Exception_BadValue
+     * @throws Users_Exception_NotLoggedIn
+     */
+    static function grantRoles (&$participant, $roles, $save = false) {
+        $groups = array(
+            array('rejected', 'requested', 'registered')
+        );
+
+        if (is_array($roles)) {
+            foreach ($roles as $role) {
+                self::grantRoles($participant, $role);
+            }
+            return;
+        } elseif (is_string($roles)) {
+            $role = $roles;
+        } else {
+            throw new Q_Exception_BadValue(array(
+                'internal' => $roles,
+                'problem' => 'can be string or array of strings'
+            ));
+        }
+
+        $revokeRoles = array();
+        foreach ($groups as $group) {
+            if (in_array($role, $group)) {
+                if ($participant->testRoles('rejected')) {
+                    $adminLabels = Q_Config::get("Calendars", "events", "admins", array());
+                    if(!($adminLabels && (bool)Users::roles(Users::communityId(), $adminLabels, array(), (Users::loggedInUser(true))->id))) {
+                        return;
+                    }
+                }
+
+                $revokeRoles = $group;
+            }
+        }
+
+        if (!empty($revokeRoles)) {
+            $participant->revokeRoles($revokeRoles);
+        }
+        $participant->grantRoles(array($role));
+        $save && $participant->save();
+    }
 
 	/**
 	 * Relate additional streams (pets, ...) to event
