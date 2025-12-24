@@ -78,6 +78,7 @@ function Calendars_checkin_post($params)
 		$participant = Calendars_Event::going($eventStream, $userId, 'yes', array("autoCharge" => true));
 	}
 	$participant->setExtra(array('checkin' => true));
+    $participant->grantRoles('attendee');
 	$participant->state = 'participating';
 	$participant->streamType = $eventStream->type;
 	$participant->save();
