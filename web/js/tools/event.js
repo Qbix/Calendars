@@ -1600,7 +1600,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		var finalizeUI = function () {
 			tool.updateInterface(going);
 			Q.handle(state.onGoing, tool, [going, tool.stream, tool.participant]);
-			Q.handle(callback, tool);
+			Q.handle(callback, tool, [true]);
 		};
 
 		tool.$goingElement.addClass("Q_working");
