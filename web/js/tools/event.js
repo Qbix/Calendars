@@ -1621,7 +1621,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		//-------------------------------------------------------------
 		if (going === "yes" && tool.modePrepayment) {
 
-			if (state.payment && state.payment.isAssetsCustomer) {
+			if (!tool.stream.getAttribute('payment') || Q.getObject("payment.isAssetsCustomer", state)) {
 				return tool.going("maybe", callback, options);
 			}
 
