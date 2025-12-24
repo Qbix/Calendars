@@ -1093,6 +1093,11 @@ class Calendars_Event extends Base_Calendars_Event
             ));
         }
 
+        // role already exists
+        if ($participant->testRoles($role)) {
+            return;
+        }
+
         $revokeRoles = array();
         foreach ($groups as $group) {
             if (in_array($role, $group)) {
