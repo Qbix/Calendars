@@ -1036,12 +1036,12 @@ class Calendars_Event extends Base_Calendars_Event
 		$startTime = $stream->getAttribute('startTime');
 		$participant->setExtra(@compact('going', 'startTime'));
 		if ($going === 'no') {
-			$participant->revokeRoles(["attendee", "requested"]);
+			$participant->revokeRoles(["registered", "requested"]);
         } else if($going === 'maybe') {
             $participant->grantRoles("requested");
 		} else if ($going === 'yes') {
             $participant->revokeRoles("requested");
-			$participant->grantRoles("attendee");
+			$participant->grantRoles("registered");
 		}
 		$participant->save();
 

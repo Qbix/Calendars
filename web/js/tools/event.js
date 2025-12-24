@@ -812,11 +812,11 @@ Q.Tool.define("Calendars/event", function(options) {
 						userId: participant.userId,
 						type: 'requested'
 					});
-				} else if (participant.testRoles('attendee')) {
+				} else if (participant.testRoles('registered')) {
 					Calendars.Event.updateParticipants({
 						tool: tool,
 						userId: participant.userId,
-						type: 'attendee'
+						type: 'registered'
 					});
 				}
 			});
@@ -1893,7 +1893,7 @@ Q.Tool.define("Calendars/event", function(options) {
 				state.show.adminRecurring = true;
 			}
 		} else {
-			state.show.myqr = !!(tool.stream.participant && tool.stream.participant.testRoles('attendee'));
+			state.show.myqr = !!(tool.stream.participant && tool.stream.participant.testRoles('registered'));
 		}
 		tool.$(".Calendars_info .Calendars_aspect_myqr")[state.show.myqr ? "slideDown" : "slideUp"](300);
 
@@ -1941,7 +1941,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		tool.$(".Calendars_info .Q_aspect_conference")[state.show.livestream ? "slideDown" : "slideUp"](300);
 
 		// if config Calendats/event/reminders empty, it's no sense to show it
-		if (tool.stream.participant && tool.stream.participant.testRoles('attendee')) {
+		if (tool.stream.participant && tool.stream.participant.testRoles('registered')) {
 			state.show.reminders = !Q.isEmpty(Q.getObject("Event.reminders", Calendars));
 		} else {
 			state.show.reminders = false;
@@ -2056,7 +2056,7 @@ Q.Tool.define("Calendars/event", function(options) {
 				return;
 			}
 
-			var roles = ['rejected', 'requested', 'attendee', 'paid'];
+			var roles = ['rejected', 'requested', 'registered', 'paid'];
 			Q.Template.render('Calendars/event/roles', {
 				roles
 			}, function (err, html) {

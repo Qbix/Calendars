@@ -42,7 +42,7 @@ function Calendars_after_Streams_unrelateTo_Calendars_event($params)
 		$paid->amount,             // amount
 		Assets::LEFT_PAID_STREAM,  // reason
 		$paid->toUserId,           // fromUserId (publisher or host)
-		$paid->fromUserId,         // toUserId (attendee)
+		$paid->fromUserId,         // toUserId (registered)
 		array(
 			'toPublisherId'   => $rel->toPublisherId,
 			'toStreamName'    => $rel->toStreamName,

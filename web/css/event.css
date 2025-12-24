@@ -512,7 +512,7 @@
 .Calendars_event_tool[data-modeprepayment=true][data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=requested]:before {
 	background-color: yellow;
 }
-.Calendars_event_tool[data-modeprepayment=true][data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=attendee]:before {
+.Calendars_event_tool[data-modeprepayment=true][data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=registered]:before {
 	background-color: blue;
 }
 .Calendars_event_tool[data-modeprepayment=true][data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=paid]:before {

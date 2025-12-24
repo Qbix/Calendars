@@ -240,7 +240,7 @@ Calendars.Event = {
 					break;
 				case 'rejected':
 				case 'requested':
-				case 'attendee':
+				case 'registered':
 				case 'paid':
 					$(avatarTool.element).attr({"data-role": params.type});
 					break;
