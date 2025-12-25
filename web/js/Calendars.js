@@ -241,8 +241,12 @@ Calendars.Event = {
 				case 'rejected':
 				case 'requested':
 				case 'registered':
-				case 'paid':
 					$(avatarTool.element).attr({"data-role": params.type});
+					break;
+				case 'paid-no':
+				case 'paid-reserved':
+				case 'paid-fully':
+					$(avatarTool.element).attr({"data-paid": params.type.split('-').pop()});
 					break;
 				case 'staff':
 					$(avatarTool.element).attr({"data-staff": true}).tool('Q/badge', {

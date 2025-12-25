@@ -756,36 +756,26 @@ Q.Tool.define("Calendars/event", function(options) {
 
 				var extra = participant.extra ? JSON.parse(participant.extra) : null;
 
-				if (participant.testRoles('leader')) {
-					Calendars.Event.updateParticipants({
-						tool: tool,
-						userId: participant.userId,
-						type: 'leader'
-					});
-				} else if (participant.testRoles('host')) {
-					Calendars.Event.updateParticipants({
-						tool: tool,
-						userId: participant.userId,
-						type: 'host'
-					});
-				} else if (participant.testRoles('speaker')) {
-					Calendars.Event.updateParticipants({
-						tool: tool,
-						userId: participant.userId,
-						type: 'speaker'
-					});
-				} else if (participant.testRoles('staff')) {
-					// logged user is a staff in this event
-					if (Q.Users.loggedInUserId() === participant.userId) {
-						$te.attr("data-staff", true);
-					}
+				Calendars.Event.updateParticipants({
+					tool: tool,
+					userId: participant.userId,
+					type: (function () {
+						if (participant.testRoles('leader')) {
+							return 'leader';
+						} else if (participant.testRoles('host')) {
+							return 'host';
+						} else if (participant.testRoles('speaker')) {
+							return 'speaker';
+						} else if (participant.testRoles('staff')) {
+							// logged user is a staff in this event
+							if (Q.Users.loggedInUserId() === participant.userId) {
+								$te.attr("data-staff", true);
+							}
 
-					Calendars.Event.updateParticipants({
-						tool: tool,
-						userId: participant.userId,
-						type: 'staff'
-					});
-				}
+							return 'staff';
+						}
+					})()
+				});
 
 				if (Q.getObject(['checkin'], extra)) {
 					Calendars.Event.updateParticipants({
@@ -794,29 +784,35 @@ Q.Tool.define("Calendars/event", function(options) {
 						type: 'checkin'
 					});
 				}
-				if (participant.testRoles('paid')) {
+
+				Calendars.Event.updateParticipants({
+					tool: tool,
+					userId: participant.userId,
+					type: (function () {
+						if (participant.testRoles('rejected')) {
+							return 'rejected';
+						} else if (participant.testRoles('requested')) {
+							return 'requested';
+						} else if (participant.testRoles('registered')) {
+							return 'registered';
+						}
+					})()
+				});
+
+				if (Q.getObject("type", tool.stream.getAttribute('payment')) === 'required') {
 					Calendars.Event.updateParticipants({
 						tool: tool,
 						userId: participant.userId,
-						type: 'paid'
-					});
-				} else if (participant.testRoles('rejected')) {
-					Calendars.Event.updateParticipants({
-						tool: tool,
-						userId: participant.userId,
-						type: 'rejected'
-					});
-				} else if (participant.testRoles('requested')) {
-					Calendars.Event.updateParticipants({
-						tool: tool,
-						userId: participant.userId,
-						type: 'requested'
-					});
-				} else if (participant.testRoles('registered')) {
-					Calendars.Event.updateParticipants({
-						tool: tool,
-						userId: participant.userId,
-						type: 'registered'
+						type: (function () {
+							switch (Q.getObject(['paid'], extra)) {
+								case 'reserved':
+									return 'paid-reserved';
+								case 'fully':
+									return 'paid-fully';
+								case 'no':
+									return 'paid-no';
+							}
+						})()
 					});
 				}
 			});
@@ -1628,6 +1624,7 @@ Q.Tool.define("Calendars/event", function(options) {
 			Q.Assets.Payments.stripe({
 				amount: 1,
 				currency: "USD",
+				reason: 'EventParticipation',
 				description: tool.text.event.tool.Prepayment
 			}, function (err) {
 				if (err) {
@@ -2052,14 +2049,14 @@ Q.Tool.define("Calendars/event", function(options) {
 			return;
 		}
 
-		Q.req("Calendars/event", ["roles"], function (err, response) {
+		Q.req("Calendars/event", ["roles", "paid"], function (err, response) {
 			if (Q.firstErrorMessage(err, response && response.errors)) {
 				return;
 			}
 
-			var roles = ['rejected', 'requested', 'registered'];
 			Q.Template.render('Calendars/event/roles', {
-				roles
+				roles: ['rejected', 'requested', 'registered'],
+				paid: ['no', 'reserved', 'fully']
 			}, function (err, html) {
 				if (err) {
 					return;
@@ -2088,6 +2085,31 @@ Q.Tool.define("Calendars/event", function(options) {
 							streamName: state.streamName,
 							userId,
 							role: $this.attr("data-role")
+						}
+					});
+
+				});
+
+				$("[data-paid=" + response.slots.paid + "]", $html).addClass('Q_selected');
+				$("[data-paid]", $html).on(Q.Pointer.fastclick, function () {
+					var $this = $(this);
+					$this.addClass('Q_working');
+					Q.req("Calendars/event", ["paid"], function (err, response) {
+						$this.removeClass('Q_working');
+						if (Q.firstErrorMessage(err, response && response.errors)) {
+							return;
+						}
+
+						if (response.slots.paid) {
+							$this.addClass('Q_selected').siblings().removeClass('Q_selected');
+						}
+					}, {
+						method: "PUT",
+						fields: {
+							publisherId: state.publisherId,
+							streamName: state.streamName,
+							userId,
+							paid: $this.attr("data-paid")
 						}
 					});
 
@@ -2308,6 +2330,12 @@ Q.Template.set('Calendars/event/roles',
 	<h2>Roles management</h2>
 	{{#each roles}}
 		<div data-role="{{this}}">{{this}}</div>		
+	{{/each}}
+</div>
+<div class="Calendars_event_paid">
+	<h2>Paid management</h2>
+	{{#each paid}}
+		<div data-paid="{{this}}">{{this}}</div>		
 	{{/each}}
 </div>`
 );

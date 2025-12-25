@@ -477,13 +477,16 @@
 	margin-right: 20px;
 
 }
-.Calendars_event_roles {
+.Calendars_event_roles,
+.Calendars_event_paid {
 	margin-bottom: 10px;
 }
-.Calendars_event_roles h2 {
+.Calendars_event_roles h2,
+.Calendars_event_paid h2 {
 	font-size: 1.3em;
 }
-.Calendars_event_roles [data-role] {
+.Calendars_event_roles [data-role],
+.Calendars_event_paid [data-paid] {
 	display: inline-block;
 	font-size: 1em;
 	text-transform: capitalize;
@@ -493,10 +496,11 @@
 	border-radius: 5px;
 	cursor: pointer;
 }
-.Calendars_event_roles [data-role].Q_selected {
+.Calendars_event_roles [data-role].Q_selected,
+.Calendars_event_paid [data-paid].Q_selected {
 	background-color: #fff;
 }
-.Calendars_event_tool[data-modeprepayment=true][data-admin=true] .Calendars_event_participants .Users_avatar_tool:before {
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool:before {
 	content: "\00a0";
 	display: block;
 	position: absolute;
@@ -506,15 +510,31 @@
 	width: 15px;
 	height: 15px;
 }
-.Calendars_event_tool[data-modeprepayment=true][data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=rejected]:before {
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=rejected]:before {
 	background-color: red;
 }
-.Calendars_event_tool[data-modeprepayment=true][data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=requested]:before {
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=requested]:before {
 	background-color: yellow;
 }
-.Calendars_event_tool[data-modeprepayment=true][data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=registered]:before {
-	background-color: blue;
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=registered]:before {
+	background-color: green;
 }
-.Calendars_event_tool[data-modeprepayment=true][data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=paid]:before {
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool:after {
+	content: "\00a0";
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+	bottom: 15px;
+	left: 0;
+	width: 15px;
+	height: 15px;
+}
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-paid=no]:after {
+	background-color: red;
+}
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-paid=reserved]:after {
+	background-color: yellow;
+}
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-paid=fully]:after {
 	background-color: green;
 }
