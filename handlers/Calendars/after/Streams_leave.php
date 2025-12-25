@@ -38,10 +38,6 @@ function Calendars_after_Streams_leave($params)
 			array(
 				'publisherId' => $stream->publisherId,
 				'streamName'  => $stream->name
-			),
-			null,
-			array(
-				'reasons' => array(Assets::JOINED_PAID_STREAM, 'EventParticipation')
 			)
 		);
 

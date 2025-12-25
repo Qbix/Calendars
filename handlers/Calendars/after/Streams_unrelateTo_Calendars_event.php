@@ -28,8 +28,7 @@ function Calendars_after_Streams_unrelateTo_Calendars_event($params)
 	$paid = Assets_Credits::checkJoinPaid(
 		$rel->fromPublisherId,
 		array('publisherId' => $rel->toPublisherId,   'streamName' => $rel->toStreamName),
-		array('publisherId' => $rel->fromPublisherId, 'streamName' => $rel->fromStreamName),
-		array('reasons'     => array(Assets::JOINED_PAID_STREAM))
+		array('publisherId' => $rel->fromPublisherId, 'streamName' => $rel->fromStreamName)
 	);
 
 	if (!$paid) {
