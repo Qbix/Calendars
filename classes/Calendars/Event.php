@@ -1037,10 +1037,19 @@ class Calendars_Event extends Base_Calendars_Event
 		$participant->setExtra(@compact('going', 'startTime'));
 		if ($going === 'no') {
 			$participant->revokeRoles(["registered", "requested"]);
+            if ($payment) {
+                $participant->setExtra('paid', 'no');
+            }
         } else if($going === 'maybe') {
             self::grantRoles($participant, "requested");
+            if ($payment) {
+                $participant->setExtra('paid', 'reserved');
+            }
 		} else if ($going === 'yes') {
             self::grantRoles($participant, "registered");
+            if ($payment) {
+                $participant->setExtra('paid', 'fully');
+            }
 		}
 		$participant->save();
 
