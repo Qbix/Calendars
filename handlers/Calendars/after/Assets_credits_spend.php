@@ -12,10 +12,10 @@ function Calendars_after_Assets_credits_spend($params)
     }
 
     $stream = Streams_Stream::fetch($toPublisherId, $toPublisherId, $toStreamName);
-    if (Assets_Credits::checkJoinPaid($fromUserId, array(
+    if (Assets_Credits::getPaymentsInfo($fromUserId, array(
         'publisherId' => $toPublisherId,
         'streamName'  => $toStreamName
-    ))) {
+    ))["conclusion"]["fullyPaid"]) {
         // TODO: check whether event requires approval,
         // and whether the user has been approved.
         // For now, just let them attend the event and see its location.

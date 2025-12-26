@@ -903,7 +903,7 @@ class Calendars_Event extends Base_Calendars_Event
 						)
 					), true);
 				} elseif (!$skipPayment && $paymentType == 'required') {
-					if (!Assets_Credits::checkJoinPaid($userId, $stream)) {
+					if (!Assets_Credits::getPaymentsInfo($userId, $stream)["conclusion"]["fullyPaid"]) {
 						$resAmount += $amount;
 						$paymentRequired = true;
 					}
@@ -918,10 +918,10 @@ class Calendars_Event extends Base_Calendars_Event
 							'type' => $relatedParticipant["relationType"]
 						))->fetchDbRows();
 						foreach ($relatedRows as $relatedRow) {
-							if (!Assets_Credits::checkJoinPaid($userId, $stream, array(
+							if (!Assets_Credits::getPaymentsInfo($userId, $stream, array(
 									'publisherId' => $relatedRow->fromPublisherId,
 									'streamName' => $relatedRow->fromStreamName)
-							)) {
+							)["conclusion"]["fullyPaid"]) {
 								$resAmount += $amount;
 								$paymentRequired = true;
 							}

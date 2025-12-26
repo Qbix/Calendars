@@ -25,23 +25,23 @@ function Calendars_after_Streams_unrelateTo_Calendars_event($params)
 	}
 
 	// Lookup the payment previously made
-	$paid = Assets_Credits::checkJoinPaid(
+	$payments = Assets_Credits::getPaymentsInfo(
 		$rel->fromPublisherId,
 		array('publisherId' => $rel->toPublisherId,   'streamName' => $rel->toStreamName),
 		array('publisherId' => $rel->fromPublisherId, 'streamName' => $rel->fromStreamName)
 	);
 
-	if (!$paid) {
+	if (!$payments["conclusion"]["amount"]) {
 		return true;
 	}
 
 	// Refund FROM event publisher TO the user
 	Assets_Credits::refund(
 		null,                      // community
-		$paid->amount,             // amount
+        $payments["conclusion"]["amount"],             // amount
 		Assets::LEFT_PAID_STREAM,  // reason
-		$paid->toUserId,           // fromUserId (publisher or host)
-		$paid->fromUserId,         // toUserId (registered)
+        $payments["conclusion"]["toUserId"],           // fromUserId (publisher or host)
+        $payments["conclusion"]["fromUserId"],         // toUserId (registered)
 		array(
 			'toPublisherId'   => $rel->toPublisherId,
 			'toStreamName'    => $rel->toStreamName,
