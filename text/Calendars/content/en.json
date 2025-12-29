@@ -249,6 +249,7 @@
 	"QRScanner": {
 		"confirmParticipate": "{{1}} isn't yet part of the event. Do you want to add them as a participant?",
 		"userNotFound": "User not found",
+		"UserAlreadyCheckedIn": "{{1}} already was checked in by {{2}}!",
 		"confirmYes": "Yes",
 		"confirmNo": "No"
 	},

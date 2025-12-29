@@ -55,7 +55,9 @@ function Calendars_checkin_post($params)
 		}
 	}
 
-	// get participant
+    $text = Q_Text::get("Calendars/content");
+
+    // get participant
 	$participant = new Streams_Participant();
 	$participant->publisherId = $eventStream->publisherId;
 	$participant->streamName = $eventStream->name;
@@ -65,7 +67,6 @@ function Calendars_checkin_post($params)
 	// get or create this row
 	if(!$participant->retrieve()){
 		if (empty($req['join'])) {
-			$text = Q_Text::get("Calendars/content");
 			$user = Users_User::fetch($userId, true);
 			$message = Q::text($text['QRScanner']['confirmParticipate'], array($user->displayName()));
 
@@ -77,20 +78,32 @@ function Calendars_checkin_post($params)
 		// join user to event
 		$participant = Calendars_Event::going($eventStream, $userId, 'yes', array("autoCharge" => true));
 	}
-	$participant->setExtra(array('checkin' => true));
-    $participant->grantRoles('attendee');
-	$participant->state = 'participating';
-	$participant->streamType = $eventStream->type;
-	$participant->save();
 
-	// send message to inform all clients
-	$eventStream->post($publisherId, array(
-		'type' => 'Calendars/checkin',
-		'instructions' => array(
-			'userId' => $userId,
-			'checkin' => true
-		)
-	));
+    if ($participant->getExtra('checkin') === true) {
+        $user = Users_User::fetch($userId, true);
+        if ($checkedInByUserId = $participant->getExtra('checkedInByUserId')) {
+            $checkedInByUserName = Users_User::fetch($checkedInByUserId, true)->displayName();
+        } else {
+            $checkedInByUserName = "unknown user";
+        }
+        Q_Response::setSlot('message', Q::text($text['QRScanner']['UserAlreadyCheckedIn'], array($user->displayName(), $checkedInByUserName)));
+    } else {
+        $participant->setExtra(array('checkin' => true));
+        $participant->setExtra(array('checkedInByUserId' => $currentUser->id));
+        $participant->grantRoles('attendee');
+        $participant->state = 'participating';
+        $participant->streamType = $eventStream->type;
+        $participant->save();
+
+        // send message to inform all clients
+        $eventStream->post($publisherId, array(
+            'type' => 'Calendars/checkin',
+            'instructions' => array(
+                'userId' => $userId,
+                'checkin' => true
+            )
+        ));
+    }
 
 	Q_Response::setSlot('participating', true);
 	Q_Response::setSlot('participant', $participant);
