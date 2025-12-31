@@ -234,22 +234,32 @@ Calendars.Event = {
 				return;
 			}
 
+			var $avatarToolElement = $(avatarTool.element);
+
 			switch (params.type) {
 				case 'checkin':
-					$(avatarTool.element).attr({"data-checkin": true});
+					$avatarToolElement.attr({"data-checkin": true}).tool('Q/badge', {
+						tr: {
+							size: "16px",
+							bottom: "15px",
+							right: "0px",
+							className: "Calendars_event_checkin",
+							display: 'block'
+						}
+					}).activate();
 					break;
 				case 'rejected':
 				case 'requested':
 				case 'registered':
-					$(avatarTool.element).attr({"data-role": params.type});
+					$avatarToolElement.attr({"data-role": params.type});
 					break;
 				case 'paid-no':
 				case 'paid-reserved':
 				case 'paid-fully':
-					$(avatarTool.element).attr({"data-paid": params.type.split('-').pop()});
+					$avatarToolElement.attr({"data-paid": params.type.split('-').pop()});
 					break;
 				case 'staff':
-					$(avatarTool.element).attr({"data-staff": true}).tool('Q/badge', {
+					$avatarToolElement.attr({"data-staff": true}).tool('Q/badge', {
 						tr: {
 							size: "16px",
 							top: "0px",
@@ -261,7 +271,7 @@ Calendars.Event = {
 					}).activate();
 					break;
 				case 'speaker':
-					$(avatarTool.element).attr({"data-speaker": true}).tool('Q/badge', {
+					$avatarToolElement.attr({"data-speaker": true}).tool('Q/badge', {
 						tr: {
 							size: "16px",
 							top: "0px",
@@ -275,7 +285,7 @@ Calendars.Event = {
 					break;
 				case 'leader':
 				case 'host':
-					$(avatarTool.element).attr("data-" + params.type, true).tool('Q/badge', {
+					$avatarToolElement.attr("data-" + params.type, true).tool('Q/badge', {
 						tr: {
 							size: "16px",
 							top: "0px",

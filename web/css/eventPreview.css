@@ -206,9 +206,6 @@
 	line-height: 14px;
 	display: block;
 }
-.Calendars_event_preview_tool .Users_avatar_tool[data-checkin=true]::after {
-	top: 28px;
-}
 .Calendars_event_preview_tool.Calendars_event_preview_noParticipants {
 	display: none;
 }
