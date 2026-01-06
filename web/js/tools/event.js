@@ -933,7 +933,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		//check if there is WebRTC stream. It should exist if the host checked "teleconference" checkbox while creating the event.
 		//this WebRTC stream should have at least readlevel=10 to be visible by Q.Streams.related
 		
-		Q.Streams.related(tool.state.publisherId, tool.state.streamName, 'Calendars/event/webrtc', true, { dontFilterUsers: true, participants: 100 }, function () {
+		Q.Streams.related(tool.state.publisherId, tool.state.streamName, 'Calendars/event/webrtc', true, { dontFilterUsers: true/* , participants: 100  */}, function () {
 			let webrtcStream;
 			for (let i in this.relatedStreams) {
 				if (this.relatedStreams[i].fields.type == 'Media/webrtc') {
@@ -1184,7 +1184,8 @@ Q.Tool.define("Calendars/event", function(options) {
 					apply: true,
 					content: Q.Tool.setUpElement('div', 'Media/webrtc/scheduler', {
 						publisherId: tool.webrtcStream.fields.publisherId,
-						streamName: tool.webrtcStream.fields.name
+						streamName: tool.webrtcStream.fields.name,
+						showSaveButton: true
 					}),
 					onActivate: function (dialogElement, dialogObj) {
 						tool.webrtcSchedulerTool = Q.Tool.from(dialogObj.content, 'Media/webrtc/scheduler')
