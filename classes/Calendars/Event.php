@@ -814,7 +814,7 @@ class Calendars_Event extends Base_Calendars_Event
 
 		$user = Users_User::fetch($userId, true);
 		$isPublisher = $userId == $stream->publisherId;
-		$isAdmin = (bool)Users::roles(Users::currentCommunityId(true), Q_Config::expect('Calendars', 'events', 'admins'));
+		$isAdmin = (bool)Users::roles($publisherId, Q_Config::expect('Calendars', 'events', 'admins'));
 		$skipPayment = Q::ifset($options, 'skipPayment', false);
 		$relatedParticipants = Q::ifset($options, "relatedParticipants", null);
 		$paymentIntent = false;
@@ -902,7 +902,7 @@ class Calendars_Event extends Base_Calendars_Event
 							"reason" => $isPublisher ? "publisher" : "admin"
 						)
 					), true);
-				} elseif (!$skipPayment && $paymentType == 'required') {
+				} else if (!$skipPayment && $paymentType == 'required') {
 					if (!Assets_Credits::checkJoinPaid($userId, $stream)) {
 						$resAmount += $amount;
 						$paymentRequired = true;
