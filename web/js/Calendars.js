@@ -234,14 +234,32 @@ Calendars.Event = {
 				return;
 			}
 
-			// checkin action
-			if (params.type === 'checkin') {
-				$(avatarTool.element).attr({"data-checkin": true});
-			}
+			var $avatarToolElement = $(avatarTool.element);
 
 			switch (params.type) {
+				case 'checkin':
+					$avatarToolElement.attr({"data-checkin": true}).tool('Q/badge', {
+						tr: {
+							size: "16px",
+							bottom: "15px",
+							right: "0px",
+							className: "Calendars_event_checkin",
+							display: 'block'
+						}
+					}).activate();
+					break;
+				case 'rejected':
+				case 'requested':
+				case 'registered':
+					$avatarToolElement.attr({"data-role": params.type});
+					break;
+				case 'paid-no':
+				case 'paid-reserved':
+				case 'paid-fully':
+					$avatarToolElement.attr({"data-paid": params.type.split('-').pop()});
+					break;
 				case 'staff':
-					$(avatarTool.element).attr({"data-staff": true}).tool('Q/badge', {
+					$avatarToolElement.attr({"data-staff": true}).tool('Q/badge', {
 						tr: {
 							size: "16px",
 							top: "0px",
@@ -253,7 +271,7 @@ Calendars.Event = {
 					}).activate();
 					break;
 				case 'speaker':
-					$(avatarTool.element).attr({"data-speaker": true}).tool('Q/badge', {
+					$avatarToolElement.attr({"data-speaker": true}).tool('Q/badge', {
 						tr: {
 							size: "16px",
 							top: "0px",
@@ -267,7 +285,7 @@ Calendars.Event = {
 					break;
 				case 'leader':
 				case 'host':
-					$(avatarTool.element).attr("data-" + params.type, true).tool('Q/badge', {
+					$avatarToolElement.attr("data-" + params.type, true).tool('Q/badge', {
 						tr: {
 							size: "16px",
 							top: "0px",
@@ -280,7 +298,8 @@ Calendars.Event = {
 					}).activate();
 					break;
 				default:
-					console.warn("type " + params.type + " unrecognized");
+					// maybe someone else will handle it
+					break;
 			}
 		});
 	},
@@ -679,6 +698,10 @@ Calendars.Recurring = {
 		});
 	}
 };
+
+Q.Text.get('Calendars/content', function (err, text) {
+	Q.text.Calendars = text;
+});
 
 Calendars.Recurring.dialog.options = {
 	period: "weekly",

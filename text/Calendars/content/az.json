@@ -1,359 +1,370 @@
 {
-    "months": {
-        "Jan": "Yanvar",
-        "Feb": "Fevral",
-        "Mar": "mart",
-        "Apr": "aprel",
-        "May": "Bilər",
-        "Jun": "İyun",
-        "Jul": "İyul",
-        "Aug": "avqust",
-        "Sep": "Sentyabr",
-        "Oct": "Oktyabr",
-        "Nov": "noyabr",
-        "Dec": "dekabr"
-    },
-    "monthsLong": {
-        "Jan": "yanvar",
-        "Feb": "fevral",
-        "Mar": "mart",
-        "Apr": "aprel",
-        "May": "Bilər",
-        "Jun": "iyun",
-        "Jul": "iyul",
-        "Aug": "avqust",
-        "Sep": "sentyabr",
-        "Oct": "oktyabr",
-        "Nov": "noyabr",
-        "Dec": "dekabr"
-    },
-    "weekdays": {
-        "Sun": "Günəş",
-        "Mon": "Bazar ertəsi",
-        "Tue": "Çərşənbə axşamı",
-        "Wed": "Çərşənbə",
-        "Thu": "Cr",
-        "Fri": "Cümə",
-        "Sat": "Oturdu"
-    },
-    "weekdaysLong": {
-        "Sun": "bazar günü",
-        "Mon": "bazar ertəsi",
-        "Tue": "çərşənbə axşamı",
-        "Wed": "çərşənbə",
-        "Thu": "cümə axşamı",
-        "Fri": "cümə",
-        "Sat": "şənbə"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "Yeni Tədbir Planlayın"
-        },
-        "tool": {
-            "AreYouIn": "siz daxilsiniz?",
-            "Yes": "Bəli",
-            "No": "Yox",
-            "Maybe": "Ola bilər",
-            "Conversation": "Söhbət",
-            "Promote": "Bu tədbiri təbliğ edin",
-            "Checkin": "İştirakçı kodlarını skan edin",
-            "CloseEvent": {
-                "button": "Tədbiri ləğv edin",
-                "confirm": {
-                    "text": {
-                        "Cancel": "Bu tədbiri ləğv etmək istədiyinizə əminsiniz?",
-                        "Participant": "Bu tədbirdə 1 iştirakçı var",
-                        "Participants": "Bu tədbirdə {{count}} iştirakçı var",
-                        "Recurring": "Bu hadisə təkrarlanır. Onun bütün gələcək nümunələrini də ləğv etmək istəyirsiniz?"
-                    },
-                    "trip": {
-                        "Cancel": "Siz də bu tədbiri {{tripDirection}} səyahətinizi ləğv etmək istəyirsiniz?",
-                        "Passengers": "Sizə güvənən {{passengerCount}} sərnişin var.",
-                        "Title": "Səfəri bağlayın"
-                    },
-                    "directions": {
-                        "TO": "TO",
-                        "FROM": "FROM",
-                        "to": "üçün",
-                        "from": "-dan"
-                    }
-                }
-            },
-            "Calendar": "Təqvim",
-            "Interests": "Maraqlar",
-            "Directions": "İstiqamətlər",
-            "TitleOfEvent": "Tədbirin adı:",
-            "OpenTo": "üçün açıqdır",
-            "MoreInfo": "Daha çox məlumat",
-            "Registration": "Qeydiyyat",
-            "GoingTo": "-də olacaq",
-            "NotGoingTo": "-də olmayacaq",
-            "MaybeGoingTo": "bəlkə də olacaq",
-            "HostedBy": "Ev sahibi: {{name}}",
-            "LiveStream": "Canlı yayım üçün vurun",
-            "Myqr": "Kontrol",
-            "AdminDontPay": "Admin ödəməyə ehtiyac yoxdur",
-            "Name": "ad",
-            "ReservationFee": "Rezervasyon haqqı",
-            "AddParticipants": "İştirakçılar əlavə edin",
-            "ManageReservation": "Rezervasyonu idarə edin",
-            "MakeReservation": "Rezervasiya edin",
-            "StartLiveStream": "Canlı Yayım üçün klikləyin",
-            "LiveStreamEnded": "Canlı yayım bitdi",
-            "ClickToViewRecording": "yazıya baxmaq üçün klikləyin",
-            "EmptyList": "Boş siyahı",
-            "NeedToPayCredits": "Ödəmək lazımdır: <span>{{amount}} kredit<\/span>",
-            "PleaseJoinParticipants": "Zəhmət olmasa qoşulun {{participant}}",
-            "YouReservingPlace": "Yerinizi rezerv edəcəksiniz.",
-            "SelectIncludesToAdd": "Əlavə etmək üçün bir və ya daha çox {{TypeDisplayPlural}} seçin:",
-            "YouHaveNotRegisteredAnyIncluded": "Siz hələ heç bir {{TypeDisplayPlural}} qeydiyyatdan keçməmisiniz",
-            "Proceed": "Davam et",
-            "MakeChanges": "Dəyişikliklərimi Saxla",
-            "CancelReservation": "Bütün rezervasiyanı ləğv edin",
-            "Total": "Ümumi",
-            "Ok": "Tamam",
-            "Cancel": "Ləğv et",
-            "Reminders": "Xatırlatmalar",
-            "RemindersLabel": "Mənə hadisə barədə bildiriş almaq istəyirəm:",
-            "SetReminders": "Xatırlatmalar təyin edin",
-            "UpdateFutureReservations": "Siz də bütün gələcək rezervasiyaları eyni şəkildə yeniləmək istəyirsiniz?",
-            "RecurringAdmin": "Təkrarlanan Parametrlər",
-            "PublisherDontPay": "Yayımcının ödəniş etməsinə ehtiyac yoxdur",
-            "RequiredRelatedParticipants": "Bu tədbir iştirakçılar tələb edir: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Təkrarlanan parametrləri yeniləmək üçün &quot;{{title}}&quot; əlçatanlığını redaktə edin",
-            "Presentation": "Təqdimat",
-            "YouAreNotParticipated": "Siz tədbirin iştirakçısı deyilsiniz",
-            "LiveStreamStarted": "Canlı yayım başladı",
-            "WebRTCStarted": "Telekonfrans başladı",
-            "WebRTCEnded": "Telekonfrans başa çatıb"
-        },
-        "composer": {
-            "SetLocation": "Yerimi təyin edin",
-            "ChooseActivity": "Fəaliyyət seçin",
-            "ChoosePublisher": "Nəşriyyatı seçin",
-            "Day": "Gün",
-            "Starting": "Başlanır",
-            "People": "Xalq",
-            "Share": "Paylaşın",
-            "Recurring": "Təkrarlanan",
-            "RecurringTitle": "Təkrarlanan Günlər",
-            "Daily": "Gündəlik",
-            "Weekly": "Həftəlik",
-            "Monthly": "Aylıq",
-            "SelectLocation": "Lütfən, əvvəlcə yer seçin.",
-            "eventType": "Hadisə növü",
-            "EditTitle": "Maraqlı bir başlıq düşünün...",
-            "SetTitle": "Tədbirin başlığını təyin edin",
-            "location": {
-                "Title": "Yerinizi təyin edin"
-            },
-            "interest": {
-                "Title": "Fəaliyyət seçin",
-                "Filter": "Axtarış maraqları..."
-            },
-            "Ending": "Son",
-            "ScheduleOnlineConference": "Onlayn konfransı planlaşdırın",
-            "SOCDescription": "Zəhmət olmasa konfransın başlama və bitmə vaxtını təyin edin. Bu müddət ərzində tədbiri ziyarət edən hər bir şəxs avtomatik olaraq onlayn konfransa qoşulacaq.",
-            "EndDate": "Son",
-            "SetLivestream": "Canlı yayıma\/videokonfransa keçidi yapışdırın",
-            "SetInfoLink": "Əlavə məlumat üçün Linki təyin edin",
-            "ChooseService": "Mövcud Xidməti seçin",
-            "Continue": "Davam et",
-            "ChooseAvailability": "Mövcud Xidməti seçin",
-            "Duration": "Müddət",
-            "Hour": "Saat",
-            "Hours": "Saat",
-            "Minutes": "Dəqiqələr",
-            "Locally": "yerli",
-            "EventInfoLink": "Hadisə haqqında məlumat bağlantısı",
-            "TicketPurchaseLink": "Bilet Alma Linki"
-        },
-        "EventAlreadyClosed": "Bu tədbir artıq bağlanıb",
-        "addToCalendar": {
-            "permissions": {
-                "title": "Təqvimə əlavə edilsin?",
-                "prompt": "Bu tədbiri təqviminizə əlavə etmək istərdinizmi?",
-                "yes": "Bəli",
-                "no": "Yox"
-            },
-            "dialog": {
-                "Title": "Təqviminizə Tədbir əlavə edin"
-            }
-        },
-        "ErrorLeaveEndedEvent": "Üzr istəyirik, lakin bitmiş tədbiri tərk edə bilməzsiniz"
-    },
-    "recurring": {
-        "dialog": {
-            "justonce": "Yalnız bir dəfə",
-            "recurring": "Təkrarlanan",
-            "startDate": "Başlama tarixi",
-            "endDate": "Bitmə vaxtı",
-            "justOnce": "Yalnız bir dəfə",
-            "justOnceWeekly": "Yalnız bu həftə",
-            "justOnceMonthly": "Yalnız bu ay"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "Pulsuz tədbir",
-            "optional": "Könüllü töhfə",
-            "required": "Tələb olunan ödəniş"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "Könüllü töhfə",
-            "required": "Tələb olunan ödəniş",
-            "paid": "ödənilmişdir"
-        },
-        "confirmationDialog": {
-            "title": "Ödənişin təsdiqi",
-            "content": "Bu tədbirin {{amount}} əlavə töhfəsi var.",
-            "button": "töhfə verin"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} hələ tədbirin bir hissəsi deyil. Onları iştirakçı kimi əlavə etmək istəyirsiniz?",
-        "userNotFound": "İstifadəçi tapılmadı",
-        "confirmYes": "Bəli",
-        "confirmNo": "Yox"
-    },
-    "notifications": {
-        "EventActivityIn": "{{{stream.fields.title}}} daxilində tədbir fəaliyyəti",
-        "RecurringRulesChanged": "{{{call 'message.getInstruction' 'eventTitle'}}} tədbiri üçün təkrarlanan qaydalar dəyişdirildi",
-        "ManageEmailSubscriptions": "e-poçt abunəliyinizi idarə edin",
-        "IfUnsubscribe": "Abunəni ləğv etmək istəyirsinizsə",
-        "ClickHereToVisitEvent": "Tədbiri ziyarət etmək üçün bura klikləyin",
-        "Calendars\/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; tədbiri {{&call 'message.getInstruction' 'time'}}} tarixində başlayacaq",
-        "webrtc": {
-            "Started": "Telekonfrans başladı",
-            "Ended": "Telekonfrans başa çatıb"
-        },
-        "livestream": {
-            "Started": "Canlı yayım başladı",
-            "Ended": "Canlı yayım bitdi",
-            "ClickToView": "Burada baxın."
-        }
-    },
-    "import": {
-        "linkTitle": "Bu cədvəli doldurun",
-        "fileLabel": "Cədvəl yükləyin:",
-        "joinEventLabel": "İstifadəçiləri təsadüfi hadisəyə qoşulun",
-        "smsText": "Hey, indicə sizə {{communityName}} linki göndərdim. Zəhmət olmasa yoxlayın.",
-        "emailSubject": "Sadəcə sizə bir keçid göndərdi",
-        "emailBody": "Hey, indicə sizə {{communityName}} dəvəti göndərdim. Zəhmət olmasa yoxlayın.",
-        "fileNotFound": "Üzr istəyirik, CSV faylı tapılmadı.",
-        "fileEmpty": "Üzr istəyirik, CSV faylı boşdur.",
-        "fieldNotFound": "Tələb olunan sahə &quot;{{1}}&quot; tapılmadı",
-        "userIdNotFound": "istifadəçi mövcuddur, lakin id boşdur",
-        "activateUsers": "istifadəçilərə aktivasiya mesajı göndərilsin?",
-        "taskStreamInvalid": "tapşırıq axını etibarsızdır",
-        "instructionsEmpty": "tapşırıq axını təlimatları boş",
-        "interestsEmpty": "maraqları əldə edə bilməz",
-        "interestAbsent": "maraq {{1}} tapılmadı",
-        "complete": "Tamamlayın",
-        "errorLine": "xətt {{1}}",
-        "errorsTitle": "Səhvlər baş verdi",
-        "importOptions": "Seçimlər",
-        "importProgress": "Tərəqqi",
-        "sampleCSV": "Nümunə CSV yükləyin",
-        "communityUsers": "Bu icmaların siyahısıdır",
-        "toMainCommunityToo": "əsas cəmiyyətə də aiddir",
-        "ChooseFile": "faylı seçin"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "İnsanların iştirak edə biləcəyi bir tədbiri təmsil edir",
-            "displayType": "Hadisə"
-        },
-        "Calendars\/recurring": {
-            "description": "Dövri olaraq təkrarlanması nəzərdə tutulan axınları əlaqələndirmək üçün istifadə olunur",
-            "displayType": "Təkrarlanan hadisə"
-        }
-    },
-    "services": {
-        "Title": "Xidmətlər",
-        "NewService": {
-            "Title": "Yeni Mövcudluq",
-            "SaveService": "Mövcudluğu qeyd edin",
-            "SelectTemplate": "Xahiş edirəm Xidmət seçin",
-            "SelectLocation": "Zəhmət olmasa Yer seçin",
-            "SelectArea": "Zəhmət olmasa Sahəni seçin",
-            "SelectTime": "Vaxt yuvalarını idarə edin",
-            "SelectTimeSlot": "Vaxt yuvasını seçin",
-            "PeopleMin": "Minimum ziyarətçi",
-            "PeopleMax": "Maksimum ziyarətçi",
-            "PeopleLabels": "Etiketlərə icazə verilir",
-            "Next": "Sonrakı",
-            "Back": "Geri"
-        },
-        "EditService": "Mövcudluğu düzəldin",
-        "SetVisitors": "Ziyarətçiləri təyin edin",
-        "Price": "Qiyməti",
-        "SelectAction": "Zəhmət olmasa hərəkət seçin",
-        "OpenProfile": "Açıq profil",
-        "RemoveStaff": "Heyəti çıxarın"
-    },
-    "timeslots": {
-        "AddSlot": "Yuva əlavə edin",
-        "StartTime": "Başlama vaxtı",
-        "EndTime": "Bitmə vaxtı",
-        "Save": "Yadda saxla",
-        "AddTimeSlot": "Vaxt Slotu əlavə edin",
-        "CopyFromDay": "Gündən kopyalayın",
-        "Nearest": "Ən yaxın",
-        "Today": "Bu gün",
-        "Tomorrow": "Sabah",
-        "AfterTomorrow": "Sabahdan sonra"
-    },
-    "availabilities": {
-        "Title": "Mövcudluqlar",
-        "NewAvailability": {
-            "Title": "Yeni Əlçatımlılıq",
-            "SaveAvailability": "Mövcudluğu Saxla",
-            "SelectTemplate": "Zəhmət olmasa Xidmət seçin",
-            "SelectLocation": "Zəhmət olmasa Məkanı seçin",
-            "SelectArea": "Zəhmət olmasa Ərazi seçin",
-            "SelectTime": "Vaxt Slotlarını idarə edin",
-            "SelectTimeSlot": "Vaxt aralığını seçin",
-            "PeopleMin": "Minimum ziyarətçilər",
-            "PeopleMax": "Maksimum ziyarətçi",
-            "PeopleLabels": "Rollara icazə verilir",
-            "Next": "Sonrakı",
-            "Back": "Geri",
-            "Type": "Növ",
-            "Weekly": "Həftəlik",
-            "RecurringStartDate": "Təkrarlanan Başlama Tarixi",
-            "EndDate": "Bitmə vaxtı",
-            "SelectTimeSlots": "İstədiyiniz vaxt aralıqlarını seçin",
-            "RecurringEndDate": "Təkrarlanan Bitmə Tarixi",
-            "ScheduleOnlineConference": "Telekonfrans cədvəli",
-            "SetLivestream": "Canlı yayıma\/videokonfransa keçidi yapışdırın",
-            "SelectTimeZone": "Saat qurşağı seçin"
-        },
-        "EditAvailability": "Mövcudluğu redaktə edin",
-        "SetVisitors": "Ziyarətçiləri təyin edin",
-        "Price": "Qiymət",
-        "SelectAction": "Lütfən, hərəkət seçin",
-        "OpenProfile": "Profili açın",
-        "RemoveStaff": "Heyəti çıxarın",
-        "PleaseSelectTimeSlots": "Zəhmət olmasa vaxt aralıqlarını seçin",
-        "ExceptionOccurred": "İstisna baş verdi",
-        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} tədbirdə iştirak etmək üçün kifayət qədər kredit yoxdur. Sizə {{needCredits}} kredit lazımdır. Almaq istəyirəm?",
-        "LiveStream": "Canlı yayım",
-        "InviteStaff": "İşçiləri dəvət edin"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "Təqvimə abunə olun",
-        "copyLinkBelow": "Aşağıdakı linki kopyalayın",
-        "goTo": "Getmək:",
-        "pasteCopiedTo": "Kopyalanmış linki &quot;Təqvimin URL-i&quot; sahəsinə yapışdırın",
-        "clickAddCalendar": "&quot;Təqvim əlavə et&quot; düyməsini basın",
-        "copyLink": "Linki kopyalayın",
-        "tapToCopy": "Linki buferinizə köçürmək üçün aşağıdakı düyməyə toxunun",
-        "linkCopied": "Link Kopyalandı",
-        "step2": "Link Kopyalandı. Biz açıq Google Təqvim haqqındayıq. Linki mətn qutusuna yapışdırmalı, &quot;Təqvim əlavə et&quot; düyməsini sıxmalı və nişanı bağlamalısınız (aşağıdakı ekran görüntüsünə baxın)",
-        "calendarAppPreferences": "Mac-da Təqvim Tətbiqində Üstünlükləri açın və Defolt Təqvim Tətbiqini aşağıda göstərildiyi kimi təyin edin.",
-        "thenCloseDialog": "Sonra təqviminizə abunə olmaq üçün bu dialoqu bağlayın!",
-        "success": "Təqvim uğurla sinxronlaşdırıldı"
-    }
+	"months": {
+		"Jan": "Yanvar",
+		"Feb": "Fevral",
+		"Mar": "mart",
+		"Apr": "aprel",
+		"May": "Bil\u0259r",
+		"Jun": "\u0130yun",
+		"Jul": "\u0130yul",
+		"Aug": "avqust",
+		"Sep": "Sentyabr",
+		"Oct": "Oktyabr",
+		"Nov": "noyabr",
+		"Dec": "dekabr"
+	},
+	"monthsLong": {
+		"Jan": "yanvar",
+		"Feb": "fevral",
+		"Mar": "mart",
+		"Apr": "aprel",
+		"May": "Bil\u0259r",
+		"Jun": "iyun",
+		"Jul": "iyul",
+		"Aug": "avqust",
+		"Sep": "sentyabr",
+		"Oct": "oktyabr",
+		"Nov": "noyabr",
+		"Dec": "dekabr"
+	},
+	"weekdays": {
+		"Sun": "G\u00fcn\u0259\u015f",
+		"Mon": "Bazar ert\u0259si",
+		"Tue": "\u00c7\u0259r\u015f\u0259nb\u0259 ax\u015fam\u0131",
+		"Wed": "\u00c7\u0259r\u015f\u0259nb\u0259",
+		"Thu": "Cr",
+		"Fri": "C\u00fcm\u0259",
+		"Sat": "Oturdu"
+	},
+	"weekdaysLong": {
+		"Sun": "bazar g\u00fcn\u00fc",
+		"Mon": "bazar ert\u0259si",
+		"Tue": "\u00e7\u0259r\u015f\u0259nb\u0259 ax\u015fam\u0131",
+		"Wed": "\u00e7\u0259r\u015f\u0259nb\u0259",
+		"Thu": "c\u00fcm\u0259 ax\u015fam\u0131",
+		"Fri": "c\u00fcm\u0259",
+		"Sat": "\u015f\u0259nb\u0259"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Yeni T\u0259dbir Planlay\u0131n"
+		},
+		"tool": {
+			"AreYouIn": "siz daxilsiniz?",
+			"Yes": "B\u0259li",
+			"No": "Yox",
+			"Maybe": "Ola bil\u0259r",
+			"Conversation": "S\u00f6hb\u0259t",
+			"Promote": "Bu t\u0259dbiri t\u0259bli\u011f edin",
+			"Checkin": "\u0130\u015ftirak\u00e7\u0131 kodlar\u0131n\u0131 skan edin",
+			"CloseEvent": {
+				"button": "T\u0259dbiri l\u0259\u011fv edin",
+				"confirm": {
+					"text": {
+						"Cancel": "Bu t\u0259dbiri l\u0259\u011fv etm\u0259k ist\u0259diyiniz\u0259 \u0259minsiniz?",
+						"Participant": "Bu t\u0259dbird\u0259 1 i\u015ftirak\u00e7\u0131 var",
+						"Participants": "Bu t\u0259dbird\u0259 {{count}} i\u015ftirak\u00e7\u0131 var",
+						"Recurring": "Bu hadis\u0259 t\u0259krarlan\u0131r. Onun b\u00fct\u00fcn g\u0259l\u0259c\u0259k n\u00fcmun\u0259l\u0259rini d\u0259 l\u0259\u011fv etm\u0259k ist\u0259yirsiniz?"
+					},
+					"trip": {
+						"Cancel": "Siz d\u0259 bu t\u0259dbiri {{tripDirection}} s\u0259yah\u0259tinizi l\u0259\u011fv etm\u0259k ist\u0259yirsiniz?",
+						"Passengers": "Siz\u0259 g\u00fcv\u0259n\u0259n {{passengerCount}} s\u0259rni\u015fin var.",
+						"Title": "S\u0259f\u0259ri ba\u011flay\u0131n"
+					},
+					"directions": {
+						"TO": "TO",
+						"FROM": "FROM",
+						"to": "\u00fc\u00e7\u00fcn",
+						"from": "-dan"
+					}
+				}
+			},
+			"Calendar": "T\u0259qvim",
+			"Interests": "Maraqlar",
+			"Directions": "\u0130stiqam\u0259tl\u0259r",
+			"TitleOfEvent": "T\u0259dbirin ad\u0131:",
+			"OpenTo": "\u00fc\u00e7\u00fcn a\u00e7\u0131qd\u0131r",
+			"MoreInfo": "Daha \u00e7ox m\u0259lumat",
+			"Registration": "Qeydiyyat",
+			"GoingTo": "-d\u0259 olacaq",
+			"NotGoingTo": "-d\u0259 olmayacaq",
+			"MaybeGoingTo": "b\u0259lk\u0259 d\u0259 olacaq",
+			"HostedBy": "Ev sahibi: {{name}}",
+			"LiveStream": "Canl\u0131 yay\u0131m \u00fc\u00e7\u00fcn vurun",
+			"Myqr": "Kontrol",
+			"AdminDontPay": "Admin \u00f6d\u0259m\u0259y\u0259 ehtiyac yoxdur",
+			"Name": "ad",
+			"ReservationFee": "Rezervasyon haqq\u0131",
+			"AddParticipants": "\u0130\u015ftirak\u00e7\u0131lar \u0259lav\u0259 edin",
+			"ManageReservation": "Rezervasyonu idar\u0259 edin",
+			"MakeReservation": "Rezervasiya edin",
+			"StartLiveStream": "Canl\u0131 Yay\u0131m \u00fc\u00e7\u00fcn klikl\u0259yin",
+			"LiveStreamEnded": "Canl\u0131 yay\u0131m bitdi",
+			"ClickToViewRecording": "yaz\u0131ya baxmaq \u00fc\u00e7\u00fcn klikl\u0259yin",
+			"EmptyList": "Bo\u015f siyah\u0131",
+			"NeedToPayCredits": "\u00d6d\u0259m\u0259k laz\u0131md\u0131r: <span>{{amount}} kredit</span>",
+			"PleaseJoinParticipants": "Z\u0259hm\u0259t olmasa qo\u015fulun {{participant}}",
+			"YouReservingPlace": "Yerinizi rezerv ed\u0259c\u0259ksiniz.",
+			"SelectIncludesToAdd": "\u018flav\u0259 etm\u0259k \u00fc\u00e7\u00fcn bir v\u0259 ya daha \u00e7ox {{TypeDisplayPlural}} se\u00e7in:",
+			"YouHaveNotRegisteredAnyIncluded": "Siz h\u0259l\u0259 he\u00e7 bir {{TypeDisplayPlural}} qeydiyyatdan ke\u00e7m\u0259misiniz",
+			"Proceed": "Davam et",
+			"MakeChanges": "D\u0259yi\u015fiklikl\u0259rimi Saxla",
+			"CancelReservation": "B\u00fct\u00fcn rezervasiyan\u0131 l\u0259\u011fv edin",
+			"Total": "\u00dcmumi",
+			"Ok": "Tamam",
+			"Cancel": "L\u0259\u011fv et",
+			"Reminders": "Xat\u0131rlatmalar",
+			"RemindersLabel": "M\u0259n\u0259 hadis\u0259 bar\u0259d\u0259 bildiri\u015f almaq ist\u0259yir\u0259m:",
+			"SetReminders": "Xat\u0131rlatmalar t\u0259yin edin",
+			"UpdateFutureReservations": "Siz d\u0259 b\u00fct\u00fcn g\u0259l\u0259c\u0259k rezervasiyalar\u0131 eyni \u015f\u0259kild\u0259 yenil\u0259m\u0259k ist\u0259yirsiniz?",
+			"RecurringAdmin": "T\u0259krarlanan Parametrl\u0259r",
+			"PublisherDontPay": "Yay\u0131mc\u0131n\u0131n \u00f6d\u0259ni\u015f etm\u0259sin\u0259 ehtiyac yoxdur",
+			"RequiredRelatedParticipants": "Bu t\u0259dbir i\u015ftirak\u00e7\u0131lar t\u0259l\u0259b edir: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "T\u0259krarlanan parametrl\u0259ri yenil\u0259m\u0259k \u00fc\u00e7\u00fcn &quot;{{title}}&quot; \u0259l\u00e7atanl\u0131\u011f\u0131n\u0131 redakt\u0259 edin",
+			"Presentation": "T\u0259qdimat",
+			"YouAreNotParticipated": "Siz t\u0259dbirin i\u015ftirak\u00e7\u0131s\u0131 deyilsiniz",
+			"LiveStreamStarted": "Canl\u0131 yay\u0131m ba\u015flad\u0131",
+			"WebRTCStarted": "Telekonfrans ba\u015flad\u0131",
+			"WebRTCEnded": "Telekonfrans ba\u015fa \u00e7at\u0131b",
+			"Prepayment": "\u0130lkin \u00f6d\u0259ni\u015f",
+			"PrepaymentConfirm": "Biz $1 nominal r\u00fcsum alaca\u011f\u0131q. Siz m\u00fcvafiq sayda kredit alacaqs\u0131n\u0131z. Bu kreditl\u0259r t\u0259dbir \u00fc\u00e7\u00fcn tam \u00f6d\u0259ni\u015finiz\u0259 t\u0259tbiq olunacaq."
+		},
+		"composer": {
+			"SetLocation": "Yerimi t\u0259yin edin",
+			"ChooseActivity": "F\u0259aliyy\u0259t se\u00e7in",
+			"ChoosePublisher": "N\u0259\u015friyyat\u0131 se\u00e7in",
+			"Day": "G\u00fcn",
+			"Starting": "Ba\u015flan\u0131r",
+			"People": "Xalq",
+			"Share": "Payla\u015f\u0131n",
+			"Recurring": "T\u0259krarlanan",
+			"RecurringTitle": "T\u0259krarlanan G\u00fcnl\u0259r",
+			"Daily": "G\u00fcnd\u0259lik",
+			"Weekly": "H\u0259ft\u0259lik",
+			"Monthly": "Ayl\u0131q",
+			"SelectLocation": "L\u00fctf\u0259n, \u0259vv\u0259lc\u0259 yer se\u00e7in.",
+			"eventType": "Hadis\u0259 n\u00f6v\u00fc",
+			"EditTitle": "Maraql\u0131 bir ba\u015fl\u0131q d\u00fc\u015f\u00fcn\u00fcn...",
+			"SetTitle": "T\u0259dbirin ba\u015fl\u0131\u011f\u0131n\u0131 t\u0259yin edin",
+			"location": {
+				"Title": "Yerinizi t\u0259yin edin"
+			},
+			"interest": {
+				"Title": "F\u0259aliyy\u0259t se\u00e7in",
+				"Filter": "Axtar\u0131\u015f maraqlar\u0131..."
+			},
+			"Ending": "Son",
+			"ScheduleOnlineConference": "Onlayn konfrans\u0131 planla\u015fd\u0131r\u0131n",
+			"SOCDescription": "Z\u0259hm\u0259t olmasa konfrans\u0131n ba\u015flama v\u0259 bitm\u0259 vaxt\u0131n\u0131 t\u0259yin edin. Bu m\u00fcdd\u0259t \u0259rzind\u0259 t\u0259dbiri ziyar\u0259t ed\u0259n h\u0259r bir \u015f\u0259xs avtomatik olaraq onlayn konfransa qo\u015fulacaq.",
+			"EndDate": "Son",
+			"SetLivestream": "Canl\u0131 yay\u0131ma/videokonfransa ke\u00e7idi yap\u0131\u015fd\u0131r\u0131n",
+			"SetInfoLink": "\u018flav\u0259 m\u0259lumat \u00fc\u00e7\u00fcn Linki t\u0259yin edin",
+			"ChooseService": "M\u00f6vcud Xidm\u0259ti se\u00e7in",
+			"Continue": "Davam et",
+			"ChooseAvailability": "M\u00f6vcud Xidm\u0259ti se\u00e7in",
+			"Duration": "M\u00fcdd\u0259t",
+			"Hour": "Saat",
+			"Hours": "Saat",
+			"Minutes": "D\u0259qiq\u0259l\u0259r",
+			"Locally": "yerli",
+			"EventInfoLink": "Hadis\u0259 haqq\u0131nda m\u0259lumat ba\u011flant\u0131s\u0131",
+			"TicketPurchaseLink": "Bilet Alma Linki"
+		},
+		"EventAlreadyClosed": "Bu t\u0259dbir art\u0131q ba\u011flan\u0131b",
+		"addToCalendar": {
+			"permissions": {
+				"title": "T\u0259qvim\u0259 \u0259lav\u0259 edilsin?",
+				"prompt": "Bu t\u0259dbiri t\u0259qviminiz\u0259 \u0259lav\u0259 etm\u0259k ist\u0259rdinizmi?",
+				"yes": "B\u0259li",
+				"no": "Yox"
+			},
+			"dialog": {
+				"Title": "T\u0259qviminiz\u0259 T\u0259dbir \u0259lav\u0259 edin"
+			}
+		},
+		"ErrorLeaveEndedEvent": "\u00dczr ist\u0259yirik, lakin bitmi\u015f t\u0259dbiri t\u0259rk ed\u0259 bilm\u0259zsiniz"
+	},
+	"recurring": {
+		"dialog": {
+			"justonce": "Yaln\u0131z bir d\u0259f\u0259",
+			"recurring": "T\u0259krarlanan",
+			"startDate": "Ba\u015flama tarixi",
+			"endDate": "Bitm\u0259 vaxt\u0131",
+			"justOnce": "Yaln\u0131z bir d\u0259f\u0259",
+			"justOnceWeekly": "Yaln\u0131z bu h\u0259ft\u0259",
+			"justOnceMonthly": "Yaln\u0131z bu ay"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "Pulsuz t\u0259dbir",
+			"optional": "K\u00f6n\u00fcll\u00fc t\u00f6hf\u0259",
+			"required": "T\u0259l\u0259b olunan \u00f6d\u0259ni\u015f"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "K\u00f6n\u00fcll\u00fc t\u00f6hf\u0259",
+			"required": "\u0130\u015ftirak \u00fc\u00e7\u00fcn qiym\u0259t: {{amount}} {{currency}}",
+			"paid": "\u00f6d\u0259nilmi\u015fdir"
+		},
+		"confirmationDialog": {
+			"title": "\u00d6d\u0259ni\u015fin t\u0259sdiqi",
+			"content": "Bu t\u0259dbirin {{amount}} \u0259lav\u0259 t\u00f6hf\u0259si var.",
+			"button": "t\u00f6hf\u0259 verin"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} h\u0259l\u0259 t\u0259dbirin bir hiss\u0259si deyil. Onlar\u0131 i\u015ftirak\u00e7\u0131 kimi \u0259lav\u0259 etm\u0259k ist\u0259yirsiniz?",
+		"userNotFound": "\u0130stifad\u0259\u00e7i tap\u0131lmad\u0131",
+		"confirmYes": "B\u0259li",
+		"confirmNo": "Yox"
+	},
+	"notifications": {
+		"EventActivityIn": "{{{stream.fields.title}}} daxilind\u0259 t\u0259dbir f\u0259aliyy\u0259ti",
+		"RecurringRulesChanged": "{{{call 'message.getInstruction' 'eventTitle'}}} t\u0259dbiri \u00fc\u00e7\u00fcn t\u0259krarlanan qaydalar d\u0259yi\u015fdirildi",
+		"ManageEmailSubscriptions": "e-po\u00e7t abun\u0259liyinizi idar\u0259 edin",
+		"IfUnsubscribe": "Abun\u0259ni l\u0259\u011fv etm\u0259k ist\u0259yirsinizs\u0259",
+		"ClickHereToVisitEvent": "T\u0259dbiri ziyar\u0259t etm\u0259k \u00fc\u00e7\u00fcn bura klikl\u0259yin",
+		"Calendars/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; t\u0259dbiri {{&call 'message.getInstruction' 'time'}}} tarixind\u0259 ba\u015flayacaq",
+		"webrtc": {
+			"Started": "Telekonfrans ba\u015flad\u0131",
+			"Ended": "Telekonfrans ba\u015fa \u00e7at\u0131b"
+		},
+		"livestream": {
+			"Started": "Canl\u0131 yay\u0131m ba\u015flad\u0131",
+			"Ended": "Canl\u0131 yay\u0131m bitdi",
+			"ClickToView": "Burada bax\u0131n."
+		}
+	},
+	"import": {
+		"linkTitle": "Bu c\u0259dv\u0259li doldurun",
+		"fileLabel": "C\u0259dv\u0259l y\u00fckl\u0259yin:",
+		"joinEventLabel": "\u0130stifad\u0259\u00e7il\u0259ri t\u0259sad\u00fcfi hadis\u0259y\u0259 qo\u015fulun",
+		"smsText": "Hey, indic\u0259 siz\u0259 {{communityName}} linki g\u00f6nd\u0259rdim. Z\u0259hm\u0259t olmasa yoxlay\u0131n.",
+		"emailSubject": "Sad\u0259c\u0259 siz\u0259 bir ke\u00e7id g\u00f6nd\u0259rdi",
+		"emailBody": "Hey, indic\u0259 siz\u0259 {{communityName}} d\u0259v\u0259ti g\u00f6nd\u0259rdim. Z\u0259hm\u0259t olmasa yoxlay\u0131n.",
+		"fileNotFound": "\u00dczr ist\u0259yirik, CSV fayl\u0131 tap\u0131lmad\u0131.",
+		"fileEmpty": "\u00dczr ist\u0259yirik, CSV fayl\u0131 bo\u015fdur.",
+		"fieldNotFound": "T\u0259l\u0259b olunan sah\u0259 &quot;{{1}}&quot; tap\u0131lmad\u0131",
+		"userIdNotFound": "istifad\u0259\u00e7i m\u00f6vcuddur, lakin id bo\u015fdur",
+		"activateUsers": "istifad\u0259\u00e7il\u0259r\u0259 aktivasiya mesaj\u0131 g\u00f6nd\u0259rilsin?",
+		"taskStreamInvalid": "tap\u015f\u0131r\u0131q ax\u0131n\u0131 etibars\u0131zd\u0131r",
+		"instructionsEmpty": "tap\u015f\u0131r\u0131q ax\u0131n\u0131 t\u0259limatlar\u0131 bo\u015f",
+		"interestsEmpty": "maraqlar\u0131 \u0259ld\u0259 ed\u0259 bilm\u0259z",
+		"interestAbsent": "maraq {{1}} tap\u0131lmad\u0131",
+		"complete": "Tamamlay\u0131n",
+		"errorLine": "x\u0259tt {{1}}",
+		"errorsTitle": "S\u0259hvl\u0259r ba\u015f verdi",
+		"importOptions": "Se\u00e7iml\u0259r",
+		"importProgress": "T\u0259r\u0259qqi",
+		"sampleCSV": "N\u00fcmun\u0259 CSV y\u00fckl\u0259yin",
+		"communityUsers": "Bu icmalar\u0131n siyah\u0131s\u0131d\u0131r",
+		"toMainCommunityToo": "\u0259sas c\u0259miyy\u0259t\u0259 d\u0259 aiddir",
+		"ChooseFile": "fayl\u0131 se\u00e7in"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "\u0130nsanlar\u0131n i\u015ftirak ed\u0259 bil\u0259c\u0259yi bir t\u0259dbiri t\u0259msil edir",
+			"displayType": "Hadis\u0259"
+		},
+		"Calendars/recurring": {
+			"description": "D\u00f6vri olaraq t\u0259krarlanmas\u0131 n\u0259z\u0259rd\u0259 tutulan ax\u0131nlar\u0131 \u0259laq\u0259l\u0259ndirm\u0259k \u00fc\u00e7\u00fcn istifad\u0259 olunur",
+			"displayType": "T\u0259krarlanan hadis\u0259"
+		}
+	},
+	"services": {
+		"Title": "Xidm\u0259tl\u0259r",
+		"NewService": {
+			"Title": "Yeni M\u00f6vcudluq",
+			"SaveService": "M\u00f6vcudlu\u011fu qeyd edin",
+			"SelectTemplate": "Xahi\u015f edir\u0259m Xidm\u0259t se\u00e7in",
+			"SelectLocation": "Z\u0259hm\u0259t olmasa Yer se\u00e7in",
+			"SelectArea": "Z\u0259hm\u0259t olmasa Sah\u0259ni se\u00e7in",
+			"SelectTime": "Vaxt yuvalar\u0131n\u0131 idar\u0259 edin",
+			"SelectTimeSlot": "Vaxt yuvas\u0131n\u0131 se\u00e7in",
+			"PeopleMin": "Minimum ziyar\u0259t\u00e7i",
+			"PeopleMax": "Maksimum ziyar\u0259t\u00e7i",
+			"PeopleLabels": "Etiketl\u0259r\u0259 icaz\u0259 verilir",
+			"Next": "Sonrak\u0131",
+			"Back": "Geri"
+		},
+		"EditService": "M\u00f6vcudlu\u011fu d\u00fcz\u0259ldin",
+		"SetVisitors": "Ziyar\u0259t\u00e7il\u0259ri t\u0259yin edin",
+		"Price": "Qiym\u0259ti",
+		"SelectAction": "Z\u0259hm\u0259t olmasa h\u0259r\u0259k\u0259t se\u00e7in",
+		"OpenProfile": "A\u00e7\u0131q profil",
+		"RemoveStaff": "Hey\u0259ti \u00e7\u0131xar\u0131n"
+	},
+	"timeslots": {
+		"AddSlot": "Yuva \u0259lav\u0259 edin",
+		"StartTime": "Ba\u015flama vaxt\u0131",
+		"EndTime": "Bitm\u0259 vaxt\u0131",
+		"Save": "Yadda saxla",
+		"AddTimeSlot": "Vaxt Slotu \u0259lav\u0259 edin",
+		"CopyFromDay": "G\u00fcnd\u0259n kopyalay\u0131n",
+		"Nearest": "\u018fn yax\u0131n",
+		"Today": "Bu g\u00fcn",
+		"Tomorrow": "Sabah",
+		"AfterTomorrow": "Sabahdan sonra"
+	},
+	"availabilities": {
+		"Title": "M\u00f6vcudluqlar",
+		"NewAvailability": {
+			"Title": "Yeni \u018fl\u00e7at\u0131ml\u0131l\u0131q",
+			"SaveAvailability": "M\u00f6vcudlu\u011fu Saxla",
+			"SelectTemplate": "Z\u0259hm\u0259t olmasa Xidm\u0259t se\u00e7in",
+			"SelectLocation": "Z\u0259hm\u0259t olmasa M\u0259kan\u0131 se\u00e7in",
+			"SelectArea": "Z\u0259hm\u0259t olmasa \u018frazi se\u00e7in",
+			"SelectTime": "Vaxt Slotlar\u0131n\u0131 idar\u0259 edin",
+			"SelectTimeSlot": "Vaxt aral\u0131\u011f\u0131n\u0131 se\u00e7in",
+			"PeopleMin": "Minimum ziyar\u0259t\u00e7il\u0259r",
+			"PeopleMax": "Maksimum ziyar\u0259t\u00e7i",
+			"PeopleLabels": "Rollara icaz\u0259 verilir",
+			"Next": "Sonrak\u0131",
+			"Back": "Geri",
+			"Type": "N\u00f6v",
+			"Weekly": "H\u0259ft\u0259lik",
+			"RecurringStartDate": "T\u0259krarlanan Ba\u015flama Tarixi",
+			"EndDate": "Bitm\u0259 vaxt\u0131",
+			"SelectTimeSlots": "\u0130st\u0259diyiniz vaxt aral\u0131qlar\u0131n\u0131 se\u00e7in",
+			"RecurringEndDate": "T\u0259krarlanan Bitm\u0259 Tarixi",
+			"ScheduleOnlineConference": "Telekonfrans c\u0259dv\u0259li",
+			"SetLivestream": "Canl\u0131 yay\u0131ma/videokonfransa ke\u00e7idi yap\u0131\u015fd\u0131r\u0131n",
+			"SelectTimeZone": "Saat qur\u015fa\u011f\u0131 se\u00e7in"
+		},
+		"EditAvailability": "M\u00f6vcudlu\u011fu redakt\u0259 edin",
+		"SetVisitors": "Ziyar\u0259t\u00e7il\u0259ri t\u0259yin edin",
+		"Price": "Qiym\u0259t",
+		"SelectAction": "L\u00fctf\u0259n, h\u0259r\u0259k\u0259t se\u00e7in",
+		"OpenProfile": "Profili a\u00e7\u0131n",
+		"RemoveStaff": "Hey\u0259ti \u00e7\u0131xar\u0131n",
+		"PleaseSelectTimeSlots": "Z\u0259hm\u0259t olmasa vaxt aral\u0131qlar\u0131n\u0131 se\u00e7in",
+		"ExceptionOccurred": "\u0130stisna ba\u015f verdi",
+		"NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} t\u0259dbird\u0259 i\u015ftirak etm\u0259k \u00fc\u00e7\u00fcn kifay\u0259t q\u0259d\u0259r kredit yoxdur. Siz\u0259 {{needCredits}} kredit laz\u0131md\u0131r. Almaq ist\u0259yir\u0259m?",
+		"LiveStream": "Canl\u0131 yay\u0131m",
+		"InviteStaff": "\u0130\u015f\u00e7il\u0259ri d\u0259v\u0259t edin"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "T\u0259qvim\u0259 abun\u0259 olun",
+		"copyLinkBelow": "A\u015fa\u011f\u0131dak\u0131 linki kopyalay\u0131n",
+		"goTo": "Getm\u0259k:",
+		"pasteCopiedTo": "Kopyalanm\u0131\u015f linki &quot;T\u0259qvimin URL-i&quot; sah\u0259sin\u0259 yap\u0131\u015fd\u0131r\u0131n",
+		"clickAddCalendar": "&quot;T\u0259qvim \u0259lav\u0259 et&quot; d\u00fcym\u0259sini bas\u0131n",
+		"copyLink": "Linki kopyalay\u0131n",
+		"tapToCopy": "Linki buferiniz\u0259 k\u00f6\u00e7\u00fcrm\u0259k \u00fc\u00e7\u00fcn a\u015fa\u011f\u0131dak\u0131 d\u00fcym\u0259y\u0259 toxunun",
+		"linkCopied": "Link Kopyaland\u0131",
+		"step2": "Link Kopyaland\u0131. Biz a\u00e7\u0131q Google T\u0259qvim haqq\u0131nday\u0131q. Linki m\u0259tn qutusuna yap\u0131\u015fd\u0131rmal\u0131, &quot;T\u0259qvim \u0259lav\u0259 et&quot; d\u00fcym\u0259sini s\u0131xmal\u0131 v\u0259 ni\u015fan\u0131 ba\u011flamal\u0131s\u0131n\u0131z (a\u015fa\u011f\u0131dak\u0131 ekran g\u00f6r\u00fcnt\u00fcs\u00fcn\u0259 bax\u0131n)",
+		"calendarAppPreferences": "Mac-da T\u0259qvim T\u0259tbiqind\u0259 \u00dcst\u00fcnl\u00fckl\u0259ri a\u00e7\u0131n v\u0259 Defolt T\u0259qvim T\u0259tbiqini a\u015fa\u011f\u0131da g\u00f6st\u0259rildiyi kimi t\u0259yin edin.",
+		"thenCloseDialog": "Sonra t\u0259qviminiz\u0259 abun\u0259 olmaq \u00fc\u00e7\u00fcn bu dialoqu ba\u011flay\u0131n!",
+		"success": "T\u0259qvim u\u011furla sinxronla\u015fd\u0131r\u0131ld\u0131"
+	},
+	"@override": {
+		"Assets/content": {
+			"payments": {
+				"reasons": {
+					"EventParticipation": "T\u0259dbird\u0259 i\u015ftirak"
+				}
+			}
+		}
+	}
 }

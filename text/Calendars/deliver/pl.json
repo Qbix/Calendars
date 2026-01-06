@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Dzi\u0119kujemy za zainteresowanie {{title}}"
+	},
+	"approved": {
+		"Subject": "Obecno\u015b\u0107 zatwierdzona",
+		"AttendanceApproved": "Gratulacje! Twoja obecno\u015b\u0107 zosta\u0142a zatwierdzona na {{title}}"
+	},
+	"requested": {
+		"Subject": "Obecno\u015b\u0107 wymagana",
+		"AttendanceRequested": "Potwierdzamy Twoj\u0105 pro\u015bb\u0119 o udzia\u0142: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Obecno\u015b\u0107 niezatwierdzona",
+		"AttendanceRejected": "Administratorzy nie zatwierdzili Twojej pro\u015bby o uczestnictwo: {{title}}"
+	},
+	"paid": {
+		"Subject": "Pomy\u015blne potwierdzenie p\u0142atno\u015bci",
+		"YouveBeenCharged": "Obci\u0105\u017cono Ci\u0119 kwot\u0105 {{amount}} {{currency}} (i {{credits}} kredyt\u00f3w). Wszystko gotowe! Do zobaczenia pod {{title}}"
+	}
+}

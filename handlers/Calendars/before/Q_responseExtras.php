@@ -16,6 +16,7 @@ function Calendars_before_Q_responseExtras()
 
 	// set some configs
 	Q_Response::setScriptData('Q.plugins.Calendars.Event.unpaid.hide', Q_Config::get('Calendars', 'event', 'unpaid', 'hide', null));
+    Q_Response::setScriptData('Q.plugins.Calendars.Event.mode', Q_Config::get('Calendars', 'event', 'mode', null));
 	Q_Response::setScriptData('Q.plugins.Calendars.Event.isAdmin', Calendars_Event::isAdmin());
 	Q_Response::setScriptData('Q.plugins.Calendars.Event.reminders', Q_Config::get('Calendars', 'event', 'reminders', null));
 }

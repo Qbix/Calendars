@@ -207,7 +207,8 @@ Q.Tool.define("Calendars/event/composer", function(options) {
 		if (!tool.element.innerHTML) {
 			Q.Template.render('Calendars/templates/event/composer', {
 				peopleMin: Q.getObject('Calendars.Event.defaults.peopleMin') || 2,
-				peopleMax: Q.getObject('Calendars.Event.defaults.peopleMax') || 10
+				peopleMax: Q.getObject('Calendars.Event.defaults.peopleMax') || 10,
+				payment: Q.getObject("Event.defaults.payment.currency", Calendars) || 'credits'
 			}, function (err, html) {
 				Q.replace(tool.element, html);;
 				tool.refresh();
@@ -716,7 +717,7 @@ function _showLocations () {
 				});
 			};
 			Q.addScript(src, function () {
-				var all = Q.Streams.Interests.all[Users.communityId];
+				var all = Q.Streams.Interests.all[tool.communityId];
 				for (var k in all[tool.category]) {
 					var info = Q.getObject([tool.category, k, tool.interest], all);
 					if (!info) {

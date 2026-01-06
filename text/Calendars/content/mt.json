@@ -1,333 +1,342 @@
 {
-    "months": {
-        "Jan": "Jan",
-        "Feb": "Frar",
-        "Mar": "Mar",
-        "Apr": "Apr",
-        "May": "Mejju",
-        "Jun": "Ġunju",
-        "Jul": "Jul",
-        "Aug": "Awissu",
-        "Sep": "Settembru",
-        "Oct": "Ottubru",
-        "Nov": "Nov",
-        "Dec": "Diċ"
-    },
-    "monthsLong": {
-        "Jan": "Jannar",
-        "Feb": "Frar",
-        "Mar": "Marzu",
-        "Apr": "April",
-        "May": "Mejju",
-        "Jun": "Ġunju",
-        "Jul": "Lulju",
-        "Aug": "Awissu",
-        "Sep": "Settembru",
-        "Oct": "Ottubru",
-        "Nov": "Novembru",
-        "Dec": "Diċembru"
-    },
-    "weekdays": {
-        "Sun": "xemx",
-        "Mon": "Mon",
-        "Tue": "Tm",
-        "Wed": "Wed",
-        "Thu": "Ħam",
-        "Fri": "Ġim",
-        "Sat": "Sat"
-    },
-    "weekdaysLong": {
-        "Sun": "il-Ħadd",
-        "Mon": "it-Tnejn",
-        "Tue": "it-Tlieta",
-        "Wed": "l-Erbgħa",
-        "Thu": "il-Ħamis",
-        "Fri": "il-Ġimgħa",
-        "Sat": "is-Sibt"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "Ippjana Avveniment Ġdid"
-        },
-        "tool": {
-            "HostedBy": "Ospitat minn {{name}}",
-            "Name": "Isem",
-            "AreYouIn": "Int?",
-            "Yes": "Iva",
-            "No": "Nru",
-            "Ok": "Kollox sew",
-            "Cancel": "Ikkanċella",
-            "Maybe": "Jista &#39;jkun",
-            "Conversation": "Konversazzjoni",
-            "Promote": "Ippromwovi dan l-avveniment",
-            "Reminders": "Tfakkiriet",
-            "RemindersLabel": "Irrid niġi notifikat b&#39;avveniment fi:",
-            "MoreInfo": "Iktar informazzjoni",
-            "Registration": "Reġistrazzjoni",
-            "SetReminders": "Jekk jogħġbok issettja tfakkiriet",
-            "ReservationFee": "Ħlas ta&#39; Riżerva",
-            "AddParticipants": "Żid Parteċipanti",
-            "ManageReservation": "Immaniġġja Riżerva",
-            "UpdateFutureReservations": "Trid ukoll taġġorna r-riżervi futuri kollha bl-istess mod?",
-            "RecurringAdmin": "Settings rikorrenti",
-            "MakeReservation": "Agħmel Riżerva",
-            "StartLiveStream": "Ikklikkja biex Live Stream",
-            "LiveStreamEnded": "Live stream intemm",
-            "ClickToViewRecording": "ikklikkja biex tara r-reġistrazzjoni",
-            "Checkin": "Skennja l-kodiċijiet tal-parteċipanti",
-            "Myqr": "Check In",
-            "CloseEvent": {
-                "button": "Ikkanċella Avveniment",
-                "confirm": {
-                    "text": {
-                        "Cancel": "Żgur li trid tikkanċella dan l-avveniment?",
-                        "Participant": "Hemm parteċipant 1 f&#39;dan l-avveniment",
-                        "Participants": "Hemm {{count}} parteċipanti f&#39;dan l-avveniment",
-                        "Recurring": "Dan l-avveniment huwa rikorrenti. Trid tikkanċella wkoll l-istanzi futuri kollha tagħha wkoll?"
-                    },
-                    "trip": {
-                        "Cancel": "Trid tikkanċella wkoll il-vjaġġ tiegħek {{tripDirection}} dan l-avveniment?",
-                        "Passengers": "Hemm {{passengerCount}} passiġġieri li jiddependu fuqek.",
-                        "Title": "Agħlaq Vjaġġ"
-                    },
-                    "directions": {
-                        "TO": "TO",
-                        "FROM": "MINN",
-                        "to": "biex",
-                        "from": "minn"
-                    }
-                }
-            },
-            "Calendar": "Kalendarju",
-            "Interests": "Interessi",
-            "Directions": "Direzzjonijiet",
-            "TitleOfEvent": "Titolu tal-avveniment:",
-            "OpenTo": "Miftuħa għal",
-            "GoingTo": "se jkun fi",
-            "NotGoingTo": "mhux se jkun fuq",
-            "MaybeGoingTo": "forsi tkun fuq",
-            "AdminDontPay": "L-amministratur m&#39;għandux għalfejn iħallas",
-            "PublisherDontPay": "Il-pubblikatur m&#39;għandux għalfejn iħallas",
-            "EmptyList": "Lista vojta",
-            "NeedToPayCredits": "Ħtieġa li tħallas: <span>{{amount}} krediti<\/span>",
-            "PleaseJoinParticipants": "Jekk jogħġbok ingħaqad ma&#39; {{participant}}",
-            "YouReservingPlace": "Int tkun qed tirriserva postek.",
-            "SelectIncludesToAdd": "Agħżel wieħed jew aktar {{TypeDisplayPlural}} biex iżżid:",
-            "YouHaveNotRegisteredAnyIncluded": "Għadek ma rreġistrajt l-ebda {{TypeDisplayPlural}}",
-            "Proceed": "Ipproċedi",
-            "MakeChanges": "Issejvja l-Bidliet Tiegħi",
-            "CancelReservation": "Ikkanċella riżervazzjoni kollha",
-            "Total": "Total",
-            "RequiredRelatedParticipants": "Dan l-avveniment jeħtieġ parteċipanti: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Jekk jogħġbok editja d-disponibbiltà &quot;{{title}}&quot; biex taġġorna s-settings rikorrenti",
-            "Presentation": "Preżentazzjoni",
-            "YouAreNotParticipated": "M&#39;intix parteċipant tal-avveniment",
-            "LiveStreamStarted": "Live stream beda",
-            "WebRTCStarted": "Bdiet it-telekonferenza",
-            "WebRTCEnded": "Telekonferenza ntemmet"
-        },
-        "composer": {
-            "SetLocation": "Issettja l-Post Tiegħi",
-            "SetInfoLink": "Issettja Link għal informazzjoni addizzjonali",
-            "ChooseAvailability": "Agħżel Servizz Disponibbli",
-            "ChooseActivity": "Agħżel Attività",
-            "ChoosePublisher": "Agħżel Pubblikatur",
-            "Day": "Jum",
-            "Starting": "Bidu",
-            "Duration": "Tul ta&#39; żmien",
-            "Hour": "Siegha",
-            "Hours": "Sigħat",
-            "Minutes": "Minuti",
-            "Ending": "Tispiċċa",
-            "People": "Nies",
-            "Share": "Aqsam",
-            "Continue": "Kompli",
-            "Recurring": "Rikorrenti",
-            "RecurringTitle": "Jiem Rikorrenti",
-            "Daily": "Kuljum",
-            "Weekly": "Kull ġimgħa",
-            "Monthly": "Kull xahar",
-            "SelectLocation": "Jekk jogħġbok agħżel post l-ewwel.",
-            "eventType": "Tip ta&#39; Avveniment",
-            "EditTitle": "Aħseb f&#39;titlu interessanti...",
-            "SetTitle": "Jekk jogħġbok issettja t-titlu tal-avveniment",
-            "ScheduleOnlineConference": "Skeda Konferenza Online",
-            "SOCDescription": "Jekk jogħġbok iddefinixxi l-ħin tal-bidu u t-tmiem tal-konferenza. Kull persuna li żżur l-avveniment matul dan il-perjodu ta’ żmien se tikkonnettja awtomatikament mal-konferenza onlajn.",
-            "EndDate": "Tmiem",
-            "location": {
-                "Title": "Issettja l-Post tiegħek"
-            },
-            "interest": {
-                "Title": "Agħżel Attività",
-                "Filter": "Interessi ta&#39; tfittxija..."
-            },
-            "SetLivestream": "Paste link għal livestream \/ vidjokonferenza",
-            "Locally": "lokalment",
-            "EventInfoLink": "Link tal-Informazzjoni tal-Avveniment",
-            "TicketPurchaseLink": "Link tax-Xiri tal-Biljett"
-        },
-        "EventAlreadyClosed": "Dan l-avveniment diġà għalaq",
-        "addToCalendar": {
-            "permissions": {
-                "title": "Żid mal-Kalendarju?",
-                "prompt": "Tixtieq iżżid dan l-avveniment mal-kalendarju tiegħek?",
-                "yes": "Iva",
-                "no": "Nru"
-            },
-            "dialog": {
-                "Title": "Żid Avveniment mal-Kalendarju tiegħek"
-            }
-        },
-        "ErrorLeaveEndedEvent": "Jiddispjacini, imma ma tistax tħalli l-avveniment intemm"
-    },
-    "availabilities": {
-        "Title": "Disponibiltajiet",
-        "NewAvailability": {
-            "Title": "Disponibbiltà Ġdida",
-            "SaveAvailability": "Ħlief Disponibbiltà",
-            "SelectTemplate": "Jekk jogħġbok agħżel Servizz",
-            "SelectLocation": "Jekk jogħġbok agħżel Post",
-            "SelectArea": "Jekk jogħġbok agħżel Żona",
-            "Type": "Tip",
-            "Weekly": "Kull ġimgħa",
-            "RecurringStartDate": "Data tal-Bidu Rikorrenti",
-            "EndDate": "Data tat-Tmiem",
-            "SelectTime": "Immaniġġja Slots tal-Ħin",
-            "SelectTimeSlot": "Agħżel ħin",
-            "SelectTimeSlots": "Agħżel il-ħinijiet mixtieqa",
-            "PeopleMin": "Viżitaturi minimi",
-            "PeopleMax": "Viżitaturi massimu",
-            "PeopleLabels": "Rwoli permessi",
-            "Next": "Li jmiss",
-            "Back": "Lura",
-            "RecurringEndDate": "Data tat-Tmiem Rikorrenti",
-            "ScheduleOnlineConference": "Skeda Telekonferenza",
-            "SetLivestream": "Paste link għal livestream \/ vidjokonferenza",
-            "SelectTimeZone": "Agħżel iż-Żona tal-ħin"
-        },
-        "EditAvailability": "Editja Disponibbiltà",
-        "SetVisitors": "Issettja Viżitaturi",
-        "Price": "Prezz",
-        "SelectAction": "Jekk jogħġbok agħżel azzjoni",
-        "OpenProfile": "Profil miftuħ",
-        "RemoveStaff": "Neħħi l-persunal",
-        "PleaseSelectTimeSlots": "Jekk jogħġbok agħżel is-slots tal-ħin",
-        "ExceptionOccurred": "Eċċezzjoni seħħet",
-        "NotEnoughCreditsToParticipateEvents": "Mhux biżżejjed krediti biex tipparteċipa {{eventsAmount}} avvenimenti. Għandek bżonn {{needCredits}} krediti. Trid tixtri?",
-        "LiveStream": "Live stream",
-        "InviteStaff": "Jistieden lill-persunal"
-    },
-    "recurring": {
-        "dialog": {
-            "startDate": "Data tal-bidu",
-            "endDate": "Data tat-tmiem",
-            "justOnce": "Darba biss",
-            "justOnceWeekly": "Din il-ġimgħa biss",
-            "justOnceMonthly": "Dan ix-xahar biss",
-            "recurring": "Rikorrenti"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "Avveniment b&#39;xejn",
-            "optional": "Kontribuzzjoni fakultattiva",
-            "required": "Ħlas meħtieġ"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "Kontribuzzjoni fakultattiva",
-            "required": "Ħlas meħtieġ",
-            "paid": "imħallas"
-        },
-        "confirmationDialog": {
-            "title": "Konferma tal-ħlas",
-            "content": "Dan l-avveniment għandu kontribuzzjoni fakultattiva ta&#39; {{amount}}.",
-            "button": "Ikkontribwixxi"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} għadu mhux parti mill-avveniment. Trid iżżidhom bħala parteċipant?",
-        "userNotFound": "Utent ma nstabx",
-        "confirmYes": "Iva",
-        "confirmNo": "Nru"
-    },
-    "notifications": {
-        "EventActivityIn": "Attività tal-avveniment fi {{{stream.fields.title}}}",
-        "RecurringRulesChanged": "Ir-regoli rikorrenti mibdula għall-avveniment {{{call 'message.getInstruction' 'eventTitle'}}}",
-        "ManageEmailSubscriptions": "immaniġġja l-abbonamenti tal-email tiegħek",
-        "IfUnsubscribe": "Jekk trid tneħħi l-abbonament",
-        "ClickHereToVisitEvent": "Jekk jogħġbok ikklikkja hawn biex iżżur l-avveniment",
-        "Calendars\/reminder": "L-avveniment &quot;{{{call 'message.getInstruction' 'name'}}&quot; se jibda fi {{&call 'message.getInstruction' 'time'}}}",
-        "webrtc": {
-            "Started": "Bdiet it-telekonferenza",
-            "Ended": "Telekonferenza ntemmet"
-        },
-        "livestream": {
-            "Started": "Live stream beda",
-            "Ended": "Live stream intemmet",
-            "ClickToView": "Araha hawn."
-        }
-    },
-    "import": {
-        "linkTitle": "Imla Din Spreadsheet",
-        "fileLabel": "Ittella Spreadsheet:",
-        "importOptions": "Għażliet",
-        "importProgress": "Progress",
-        "sampleCSV": "Niżżel il-kampjun CSV",
-        "joinEventLabel": "Ingħaqad mal-utenti għal avveniment każwali",
-        "smsText": "Ħej, għadni kif bgħattlek link għal {{communityName}}. Jekk jogħġbok iċċekkjaha.",
-        "emailSubject": "Għadni bgħatlek link",
-        "emailBody": "Ħej, għadni kif bgħattlek stedina għal {{communityName}}. Jekk jogħġbok iċċekkjaha.",
-        "fileNotFound": "Jiddispjaċini, il-fajl CSV ma nstabx.",
-        "fileEmpty": "Jiddispjacini, il-fajl CSV huwa vojt.",
-        "fieldNotFound": "Il-qasam meħtieġ &quot;{{1}}&quot; ma nstabx",
-        "userIdNotFound": "utent jeżisti iżda id vojt",
-        "activateUsers": "tibgħat messaġġ ta&#39; attivazzjoni lill-utenti?",
-        "taskStreamInvalid": "fluss tal-kompiti invalidu",
-        "instructionsEmpty": "istruzzjonijiet tal-fluss tal-kompiti vojta",
-        "interestsEmpty": "ma tistax tikseb interessi",
-        "interestAbsent": "interess {{1}} ma nstabx",
-        "complete": "Imla",
-        "errorLine": "linja {{1}}",
-        "errorsTitle": "Żbalji seħħew",
-        "communityUsers": "Din hija lista tal-komunitajiet",
-        "toMainCommunityToo": "jirrelataw mal-komunità prinċipali wkoll",
-        "ChooseFile": "agħżel fajl"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "Jirrappreżenta avveniment li n-nies jistgħu jipparteċipaw fih",
-            "displayType": "Avveniment"
-        },
-        "Calendars\/recurring": {
-            "description": "Użat biex jirrelata flussi li huma maħsuba li jerġgħu jseħħu perjodikament",
-            "displayType": "Avveniment Rikorrenti"
-        }
-    },
-    "timeslots": {
-        "AddSlot": "Żid Slot",
-        "StartTime": "Ħin tal-Bidu",
-        "EndTime": "Ħin tat-Tmiem",
-        "Save": "Ħlief",
-        "AddTimeSlot": "Żid Time Slot",
-        "CopyFromDay": "Kopja minn jum",
-        "Nearest": "L-eqreb",
-        "Today": "Illum",
-        "Tomorrow": "Għada",
-        "AfterTomorrow": "Pitgħada"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "Abbona għall-Kalendarju",
-        "copyLinkBelow": "Ikkopja l-link Hawn taħt",
-        "goTo": "Mur fuq:",
-        "pasteCopiedTo": "Paste link ikkupjat għall-qasam &quot;URL tal-kalendarju&quot;.",
-        "clickAddCalendar": "Ikklikkja &quot;Żid kalendarju&quot; buttuna",
-        "copyLink": "Ikkopja Link",
-        "tapToCopy": "Tektek il-buttuna hawn taħt biex tikkopja l-link mal-clipboard tiegħek",
-        "linkCopied": "Link Ikkupjat",
-        "step2": "Link Ikkupjat. Aħna dwar Google Calendar miftuħ. Ikollok bżonn tippejstja l-link fil-kaxxa tat-test, ikklikkja &quot;Żid kalendarju&quot;, u tagħlaq it-tab (ara screenshot hawn taħt)",
-        "calendarAppPreferences": "Iftaħ il-Preferenzi fl-App Kalendarju fuq il-Mac tiegħek, u ssettja l-App Kalendarju Default biex tkun kif muri hawn taħt.",
-        "thenCloseDialog": "Imbagħad agħlaq dan id-djalogu biex tabbona għall-kalendarju tiegħek!",
-        "success": "Il-kalendarju ġie sinkronizzat b&#39;suċċess"
-    }
+	"months": {
+		"Jan": "Jan",
+		"Feb": "Frar",
+		"Mar": "Mar",
+		"Apr": "Apr",
+		"May": "Mejju",
+		"Jun": "\u0120unju",
+		"Jul": "Jul",
+		"Aug": "Awissu",
+		"Sep": "Settembru",
+		"Oct": "Ottubru",
+		"Nov": "Nov",
+		"Dec": "Di\u010b"
+	},
+	"monthsLong": {
+		"Jan": "Jannar",
+		"Feb": "Frar",
+		"Mar": "Marzu",
+		"Apr": "April",
+		"May": "Mejju",
+		"Jun": "\u0120unju",
+		"Jul": "Lulju",
+		"Aug": "Awissu",
+		"Sep": "Settembru",
+		"Oct": "Ottubru",
+		"Nov": "Novembru",
+		"Dec": "Di\u010bembru"
+	},
+	"weekdays": {
+		"Sun": "xemx",
+		"Mon": "Mon",
+		"Tue": "Tm",
+		"Wed": "Wed",
+		"Thu": "\u0126am",
+		"Fri": "\u0120im",
+		"Sat": "Sat"
+	},
+	"weekdaysLong": {
+		"Sun": "il-\u0126add",
+		"Mon": "it-Tnejn",
+		"Tue": "it-Tlieta",
+		"Wed": "l-Erbg\u0127a",
+		"Thu": "il-\u0126amis",
+		"Fri": "il-\u0120img\u0127a",
+		"Sat": "is-Sibt"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Ippjana Avveniment \u0120did"
+		},
+		"tool": {
+			"HostedBy": "Ospitat minn {{name}}",
+			"Name": "Isem",
+			"AreYouIn": "Int?",
+			"Yes": "Iva",
+			"No": "Nru",
+			"Ok": "Kollox sew",
+			"Cancel": "Ikkan\u010bella",
+			"Maybe": "Jista &#39;jkun",
+			"Conversation": "Konversazzjoni",
+			"Promote": "Ippromwovi dan l-avveniment",
+			"Reminders": "Tfakkiriet",
+			"RemindersLabel": "Irrid ni\u0121i notifikat b&#39;avveniment fi:",
+			"MoreInfo": "Iktar informazzjoni",
+			"Registration": "Re\u0121istrazzjoni",
+			"SetReminders": "Jekk jog\u0127\u0121bok issettja tfakkiriet",
+			"ReservationFee": "\u0126las ta&#39; Ri\u017cerva",
+			"AddParticipants": "\u017bid Parte\u010bipanti",
+			"ManageReservation": "Immani\u0121\u0121ja Ri\u017cerva",
+			"UpdateFutureReservations": "Trid ukoll ta\u0121\u0121orna r-ri\u017cervi futuri kollha bl-istess mod?",
+			"RecurringAdmin": "Settings rikorrenti",
+			"MakeReservation": "Ag\u0127mel Ri\u017cerva",
+			"StartLiveStream": "Ikklikkja biex Live Stream",
+			"LiveStreamEnded": "Live stream intemm",
+			"ClickToViewRecording": "ikklikkja biex tara r-re\u0121istrazzjoni",
+			"Checkin": "Skennja l-kodi\u010bijiet tal-parte\u010bipanti",
+			"Myqr": "Check In",
+			"CloseEvent": {
+				"button": "Ikkan\u010bella Avveniment",
+				"confirm": {
+					"text": {
+						"Cancel": "\u017bgur li trid tikkan\u010bella dan l-avveniment?",
+						"Participant": "Hemm parte\u010bipant 1 f&#39;dan l-avveniment",
+						"Participants": "Hemm {{count}} parte\u010bipanti f&#39;dan l-avveniment",
+						"Recurring": "Dan l-avveniment huwa rikorrenti. Trid tikkan\u010bella wkoll l-istanzi futuri kollha tag\u0127ha wkoll?"
+					},
+					"trip": {
+						"Cancel": "Trid tikkan\u010bella wkoll il-vja\u0121\u0121 tieg\u0127ek {{tripDirection}} dan l-avveniment?",
+						"Passengers": "Hemm {{passengerCount}} passi\u0121\u0121ieri li jiddependu fuqek.",
+						"Title": "Ag\u0127laq Vja\u0121\u0121"
+					},
+					"directions": {
+						"TO": "TO",
+						"FROM": "MINN",
+						"to": "biex",
+						"from": "minn"
+					}
+				}
+			},
+			"Calendar": "Kalendarju",
+			"Interests": "Interessi",
+			"Directions": "Direzzjonijiet",
+			"TitleOfEvent": "Titolu tal-avveniment:",
+			"OpenTo": "Miftu\u0127a g\u0127al",
+			"GoingTo": "se jkun fi",
+			"NotGoingTo": "mhux se jkun fuq",
+			"MaybeGoingTo": "forsi tkun fuq",
+			"AdminDontPay": "L-amministratur m&#39;g\u0127andux g\u0127alfejn i\u0127allas",
+			"PublisherDontPay": "Il-pubblikatur m&#39;g\u0127andux g\u0127alfejn i\u0127allas",
+			"EmptyList": "Lista vojta",
+			"NeedToPayCredits": "\u0126tie\u0121a li t\u0127allas: <span>{{amount}} krediti</span>",
+			"PleaseJoinParticipants": "Jekk jog\u0127\u0121bok ing\u0127aqad ma&#39; {{participant}}",
+			"YouReservingPlace": "Int tkun qed tirriserva postek.",
+			"SelectIncludesToAdd": "Ag\u0127\u017cel wie\u0127ed jew aktar {{TypeDisplayPlural}} biex i\u017c\u017cid:",
+			"YouHaveNotRegisteredAnyIncluded": "G\u0127adek ma rre\u0121istrajt l-ebda {{TypeDisplayPlural}}",
+			"Proceed": "Ippro\u010bedi",
+			"MakeChanges": "Issejvja l-Bidliet Tieg\u0127i",
+			"CancelReservation": "Ikkan\u010bella ri\u017cervazzjoni kollha",
+			"Total": "Total",
+			"RequiredRelatedParticipants": "Dan l-avveniment je\u0127tie\u0121 parte\u010bipanti: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "Jekk jog\u0127\u0121bok editja d-disponibbilt\u00e0 &quot;{{title}}&quot; biex ta\u0121\u0121orna s-settings rikorrenti",
+			"Presentation": "Pre\u017centazzjoni",
+			"YouAreNotParticipated": "M&#39;intix parte\u010bipant tal-avveniment",
+			"LiveStreamStarted": "Live stream beda",
+			"WebRTCStarted": "Bdiet it-telekonferenza",
+			"WebRTCEnded": "Telekonferenza ntemmet"
+		},
+		"composer": {
+			"SetLocation": "Issettja l-Post Tieg\u0127i",
+			"SetInfoLink": "Issettja Link g\u0127al informazzjoni addizzjonali",
+			"ChooseAvailability": "Ag\u0127\u017cel Servizz Disponibbli",
+			"ChooseActivity": "Ag\u0127\u017cel Attivit\u00e0",
+			"ChoosePublisher": "Ag\u0127\u017cel Pubblikatur",
+			"Day": "Jum",
+			"Starting": "Bidu",
+			"Duration": "Tul ta&#39; \u017cmien",
+			"Hour": "Siegha",
+			"Hours": "Sig\u0127at",
+			"Minutes": "Minuti",
+			"Ending": "Tispi\u010b\u010ba",
+			"People": "Nies",
+			"Share": "Aqsam",
+			"Continue": "Kompli",
+			"Recurring": "Rikorrenti",
+			"RecurringTitle": "Jiem Rikorrenti",
+			"Daily": "Kuljum",
+			"Weekly": "Kull \u0121img\u0127a",
+			"Monthly": "Kull xahar",
+			"SelectLocation": "Jekk jog\u0127\u0121bok ag\u0127\u017cel post l-ewwel.",
+			"eventType": "Tip ta&#39; Avveniment",
+			"EditTitle": "A\u0127seb f&#39;titlu interessanti...",
+			"SetTitle": "Jekk jog\u0127\u0121bok issettja t-titlu tal-avveniment",
+			"ScheduleOnlineConference": "Skeda Konferenza Online",
+			"SOCDescription": "Jekk jog\u0127\u0121bok iddefinixxi l-\u0127in tal-bidu u t-tmiem tal-konferenza. Kull persuna li \u017c\u017cur l-avveniment matul dan il-perjodu ta\u2019 \u017cmien se tikkonnettja awtomatikament mal-konferenza onlajn.",
+			"EndDate": "Tmiem",
+			"location": {
+				"Title": "Issettja l-Post tieg\u0127ek"
+			},
+			"interest": {
+				"Title": "Ag\u0127\u017cel Attivit\u00e0",
+				"Filter": "Interessi ta&#39; tfittxija..."
+			},
+			"SetLivestream": "Paste link g\u0127al livestream / vidjokonferenza",
+			"Locally": "lokalment",
+			"EventInfoLink": "Link tal-Informazzjoni tal-Avveniment",
+			"TicketPurchaseLink": "Link tax-Xiri tal-Biljett"
+		},
+		"EventAlreadyClosed": "Dan l-avveniment di\u0121\u00e0 g\u0127alaq",
+		"addToCalendar": {
+			"permissions": {
+				"title": "\u017bid mal-Kalendarju?",
+				"prompt": "Tixtieq i\u017c\u017cid dan l-avveniment mal-kalendarju tieg\u0127ek?",
+				"yes": "Iva",
+				"no": "Nru"
+			},
+			"dialog": {
+				"Title": "\u017bid Avveniment mal-Kalendarju tieg\u0127ek"
+			}
+		},
+		"ErrorLeaveEndedEvent": "Jiddispjacini, imma ma tistax t\u0127alli l-avveniment intemm"
+	},
+	"availabilities": {
+		"Title": "Disponibiltajiet",
+		"NewAvailability": {
+			"Title": "Disponibbilt\u00e0 \u0120dida",
+			"SaveAvailability": "\u0126lief Disponibbilt\u00e0",
+			"SelectTemplate": "Jekk jog\u0127\u0121bok ag\u0127\u017cel Servizz",
+			"SelectLocation": "Jekk jog\u0127\u0121bok ag\u0127\u017cel Post",
+			"SelectArea": "Jekk jog\u0127\u0121bok ag\u0127\u017cel \u017bona",
+			"Type": "Tip",
+			"Weekly": "Kull \u0121img\u0127a",
+			"RecurringStartDate": "Data tal-Bidu Rikorrenti",
+			"EndDate": "Data tat-Tmiem",
+			"SelectTime": "Immani\u0121\u0121ja Slots tal-\u0126in",
+			"SelectTimeSlot": "Ag\u0127\u017cel \u0127in",
+			"SelectTimeSlots": "Ag\u0127\u017cel il-\u0127inijiet mixtieqa",
+			"PeopleMin": "Vi\u017citaturi minimi",
+			"PeopleMax": "Vi\u017citaturi massimu",
+			"PeopleLabels": "Rwoli permessi",
+			"Next": "Li jmiss",
+			"Back": "Lura",
+			"RecurringEndDate": "Data tat-Tmiem Rikorrenti",
+			"ScheduleOnlineConference": "Skeda Telekonferenza",
+			"SetLivestream": "Paste link g\u0127al livestream / vidjokonferenza",
+			"SelectTimeZone": "Ag\u0127\u017cel i\u017c-\u017bona tal-\u0127in"
+		},
+		"EditAvailability": "Editja Disponibbilt\u00e0",
+		"SetVisitors": "Issettja Vi\u017citaturi",
+		"Price": "Prezz",
+		"SelectAction": "Jekk jog\u0127\u0121bok ag\u0127\u017cel azzjoni",
+		"OpenProfile": "Profil miftu\u0127",
+		"RemoveStaff": "Ne\u0127\u0127i l-persunal",
+		"PleaseSelectTimeSlots": "Jekk jog\u0127\u0121bok ag\u0127\u017cel is-slots tal-\u0127in",
+		"ExceptionOccurred": "E\u010b\u010bezzjoni se\u0127\u0127et",
+		"NotEnoughCreditsToParticipateEvents": "Mhux bi\u017c\u017cejjed krediti biex tipparte\u010bipa {{eventsAmount}} avvenimenti. G\u0127andek b\u017conn {{needCredits}} krediti. Trid tixtri?",
+		"LiveStream": "Live stream",
+		"InviteStaff": "Jistieden lill-persunal"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "Data tal-bidu",
+			"endDate": "Data tat-tmiem",
+			"justOnce": "Darba biss",
+			"justOnceWeekly": "Din il-\u0121img\u0127a biss",
+			"justOnceMonthly": "Dan ix-xahar biss",
+			"recurring": "Rikorrenti"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "Avveniment b&#39;xejn",
+			"optional": "Kontribuzzjoni fakultattiva",
+			"required": "\u0126las me\u0127tie\u0121"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "Kontribuzzjoni fakultattiva",
+			"required": "\u0126las me\u0127tie\u0121",
+			"paid": "im\u0127allas"
+		},
+		"confirmationDialog": {
+			"title": "Konferma tal-\u0127las",
+			"content": "Dan l-avveniment g\u0127andu kontribuzzjoni fakultattiva ta&#39; {{amount}}.",
+			"button": "Ikkontribwixxi"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} g\u0127adu mhux parti mill-avveniment. Trid i\u017c\u017cidhom b\u0127ala parte\u010bipant?",
+		"userNotFound": "Utent ma nstabx",
+		"confirmYes": "Iva",
+		"confirmNo": "Nru"
+	},
+	"notifications": {
+		"EventActivityIn": "Attivit\u00e0 tal-avveniment fi {{{stream.fields.title}}}",
+		"RecurringRulesChanged": "Ir-regoli rikorrenti mibdula g\u0127all-avveniment {{{call 'message.getInstruction' 'eventTitle'}}}",
+		"ManageEmailSubscriptions": "immani\u0121\u0121ja l-abbonamenti tal-email tieg\u0127ek",
+		"IfUnsubscribe": "Jekk trid tne\u0127\u0127i l-abbonament",
+		"ClickHereToVisitEvent": "Jekk jog\u0127\u0121bok ikklikkja hawn biex i\u017c\u017cur l-avveniment",
+		"Calendars/reminder": "L-avveniment &quot;{{{call 'message.getInstruction' 'name'}}&quot; se jibda fi {{&call 'message.getInstruction' 'time'}}}",
+		"webrtc": {
+			"Started": "Bdiet it-telekonferenza",
+			"Ended": "Telekonferenza ntemmet"
+		},
+		"livestream": {
+			"Started": "Live stream beda",
+			"Ended": "Live stream intemmet",
+			"ClickToView": "Araha hawn."
+		}
+	},
+	"import": {
+		"linkTitle": "Imla Din Spreadsheet",
+		"fileLabel": "Ittella Spreadsheet:",
+		"importOptions": "G\u0127a\u017cliet",
+		"importProgress": "Progress",
+		"sampleCSV": "Ni\u017c\u017cel il-kampjun CSV",
+		"joinEventLabel": "Ing\u0127aqad mal-utenti g\u0127al avveniment ka\u017cwali",
+		"smsText": "\u0126ej, g\u0127adni kif bg\u0127attlek link g\u0127al {{communityName}}. Jekk jog\u0127\u0121bok i\u010b\u010bekkjaha.",
+		"emailSubject": "G\u0127adni bg\u0127atlek link",
+		"emailBody": "\u0126ej, g\u0127adni kif bg\u0127attlek stedina g\u0127al {{communityName}}. Jekk jog\u0127\u0121bok i\u010b\u010bekkjaha.",
+		"fileNotFound": "Jiddispja\u010bini, il-fajl CSV ma nstabx.",
+		"fileEmpty": "Jiddispjacini, il-fajl CSV huwa vojt.",
+		"fieldNotFound": "Il-qasam me\u0127tie\u0121 &quot;{{1}}&quot; ma nstabx",
+		"userIdNotFound": "utent je\u017cisti i\u017cda id vojt",
+		"activateUsers": "tibg\u0127at messa\u0121\u0121 ta&#39; attivazzjoni lill-utenti?",
+		"taskStreamInvalid": "fluss tal-kompiti invalidu",
+		"instructionsEmpty": "istruzzjonijiet tal-fluss tal-kompiti vojta",
+		"interestsEmpty": "ma tistax tikseb interessi",
+		"interestAbsent": "interess {{1}} ma nstabx",
+		"complete": "Imla",
+		"errorLine": "linja {{1}}",
+		"errorsTitle": "\u017bbalji se\u0127\u0127ew",
+		"communityUsers": "Din hija lista tal-komunitajiet",
+		"toMainCommunityToo": "jirrelataw mal-komunit\u00e0 prin\u010bipali wkoll",
+		"ChooseFile": "ag\u0127\u017cel fajl"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "Jirrappre\u017centa avveniment li n-nies jistg\u0127u jipparte\u010bipaw fih",
+			"displayType": "Avveniment"
+		},
+		"Calendars/recurring": {
+			"description": "U\u017cat biex jirrelata flussi li huma ma\u0127suba li jer\u0121g\u0127u jse\u0127\u0127u perjodikament",
+			"displayType": "Avveniment Rikorrenti"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "\u017bid Slot",
+		"StartTime": "\u0126in tal-Bidu",
+		"EndTime": "\u0126in tat-Tmiem",
+		"Save": "\u0126lief",
+		"AddTimeSlot": "\u017bid Time Slot",
+		"CopyFromDay": "Kopja minn jum",
+		"Nearest": "L-eqreb",
+		"Today": "Illum",
+		"Tomorrow": "G\u0127ada",
+		"AfterTomorrow": "Pitg\u0127ada"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "Abbona g\u0127all-Kalendarju",
+		"copyLinkBelow": "Ikkopja l-link Hawn ta\u0127t",
+		"goTo": "Mur fuq:",
+		"pasteCopiedTo": "Paste link ikkupjat g\u0127all-qasam &quot;URL tal-kalendarju&quot;.",
+		"clickAddCalendar": "Ikklikkja &quot;\u017bid kalendarju&quot; buttuna",
+		"copyLink": "Ikkopja Link",
+		"tapToCopy": "Tektek il-buttuna hawn ta\u0127t biex tikkopja l-link mal-clipboard tieg\u0127ek",
+		"linkCopied": "Link Ikkupjat",
+		"step2": "Link Ikkupjat. A\u0127na dwar Google Calendar miftu\u0127. Ikollok b\u017conn tippejstja l-link fil-kaxxa tat-test, ikklikkja &quot;\u017bid kalendarju&quot;, u tag\u0127laq it-tab (ara screenshot hawn ta\u0127t)",
+		"calendarAppPreferences": "Ifta\u0127 il-Preferenzi fl-App Kalendarju fuq il-Mac tieg\u0127ek, u ssettja l-App Kalendarju Default biex tkun kif muri hawn ta\u0127t.",
+		"thenCloseDialog": "Imbag\u0127ad ag\u0127laq dan id-djalogu biex tabbona g\u0127all-kalendarju tieg\u0127ek!",
+		"success": "Il-kalendarju \u0121ie sinkronizzat b&#39;su\u010b\u010bess"
+	},
+	"@override": {
+		"Assets/content": {
+			"payments": {
+				"reasons": {
+					"EventParticipation": "Parte\u010bipazzjoni fl-Avveniment"
+				}
+			}
+		}
+	}
 }

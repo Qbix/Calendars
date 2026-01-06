@@ -17,7 +17,7 @@
 	},
 	"Calendars/calendar/main": {
 		"type": "Calendars/calendar",
-		"title": "Main Community Calendar",
+		"title": "{{communityName}} Events",
 		"icon": "Calendars/calendar",
 		"readLevel": 23,
 		"writeLevel": 23,

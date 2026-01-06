@@ -1,333 +1,342 @@
 {
-    "months": {
-        "Jan": "sausio mėn",
-        "Feb": "vasario mėn",
-        "Mar": "Kov",
-        "Apr": "Balandžio mėn",
-        "May": "Gegužė",
-        "Jun": "birželio mėn",
-        "Jul": "liepos mėn",
-        "Aug": "rugpjūčio mėn",
-        "Sep": "rugsėjis",
-        "Oct": "spalio mėn",
-        "Nov": "Lapkričio mėn",
-        "Dec": "gruod"
-    },
-    "monthsLong": {
-        "Jan": "sausio mėn",
-        "Feb": "vasario mėn",
-        "Mar": "Kovas",
-        "Apr": "Balandis",
-        "May": "Gegužė",
-        "Jun": "birželio mėn",
-        "Jul": "liepos mėn",
-        "Aug": "Rugpjūtis",
-        "Sep": "rugsėjis",
-        "Oct": "Spalio mėn",
-        "Nov": "lapkritis",
-        "Dec": "gruodį"
-    },
-    "weekdays": {
-        "Sun": "Saulė",
-        "Mon": "Pirm",
-        "Tue": "antradienis",
-        "Wed": "trečia",
-        "Thu": "Ketvirtadienis",
-        "Fri": "penk",
-        "Sat": "Šešt"
-    },
-    "weekdaysLong": {
-        "Sun": "sekmadienis",
-        "Mon": "pirmadienis",
-        "Tue": "antradienis",
-        "Wed": "trečiadienį",
-        "Thu": "ketvirtadienis",
-        "Fri": "penktadienis",
-        "Sat": "šeštadienis"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "Suplanuokite naują įvykį"
-        },
-        "tool": {
-            "HostedBy": "Priima {{name}}",
-            "Name": "vardas",
-            "AreYouIn": "Ar tu esi?",
-            "Yes": "Taip",
-            "No": "Nr",
-            "Ok": "Gerai",
-            "Cancel": "Atšaukti",
-            "Maybe": "Gal būt",
-            "Conversation": "Pokalbis",
-            "Promote": "Reklamuokite šį įvykį",
-            "Reminders": "Priminimai",
-            "RemindersLabel": "Noriu gauti pranešimą apie įvykį:",
-            "MoreInfo": "Daugiau informacijos",
-            "Registration": "Registracija",
-            "SetReminders": "Nustatykite priminimus",
-            "ReservationFee": "Rezervacijos mokestis",
-            "AddParticipants": "Pridėti dalyvių",
-            "ManageReservation": "Tvarkyti rezervaciją",
-            "UpdateFutureReservations": "Ar taip pat norite atnaujinti visas būsimas rezervacijas taip pat?",
-            "RecurringAdmin": "Pasikartojantys nustatymai",
-            "MakeReservation": "Padaryti rezervaciją",
-            "StartLiveStream": "Spustelėkite tiesioginį srautą",
-            "LiveStreamEnded": "Tiesioginė transliacija baigėsi",
-            "ClickToViewRecording": "spustelėkite norėdami peržiūrėti įrašą",
-            "Checkin": "Nuskaitykite dalyvių kodus",
-            "Myqr": "Įsiregistruoti",
-            "CloseEvent": {
-                "button": "Atšaukti įvykį",
-                "confirm": {
-                    "text": {
-                        "Cancel": "Ar tikrai norite atšaukti šį įvykį?",
-                        "Participant": "Šiame renginyje yra 1 dalyvis",
-                        "Participants": "Šiame įvykyje yra {{count}} dalyvių",
-                        "Recurring": "Šis įvykis kartojasi. Ar taip pat norite atšaukti visus būsimus jo atvejus?"
-                    },
-                    "trip": {
-                        "Cancel": "Ar taip pat norite atšaukti kelionę {{tripDirection}} šį įvykį?",
-                        "Passengers": "Yra {{passengerCount}} keleivių, kurie jumis pasitiki.",
-                        "Title": "Uždaryti kelionę"
-                    },
-                    "directions": {
-                        "TO": "KAM",
-                        "FROM": "NUO",
-                        "to": "į",
-                        "from": "iš"
-                    }
-                }
-            },
-            "Calendar": "Kalendorius",
-            "Interests": "Pomėgiai",
-            "Directions": "Kryptys",
-            "TitleOfEvent": "Renginio pavadinimas:",
-            "OpenTo": "Atidaryta",
-            "GoingTo": "bus adresu",
-            "NotGoingTo": "nebus",
-            "MaybeGoingTo": "gal bus",
-            "AdminDontPay": "Administratoriui mokėti nereikia",
-            "PublisherDontPay": "Leidėjui mokėti nereikia",
-            "EmptyList": "Tuščias sąrašas",
-            "NeedToPayCredits": "Reikia sumokėti: <span>{{amount}} kreditą<\/span>",
-            "PleaseJoinParticipants": "Prašome prisijungti prie {{participant}}",
-            "YouReservingPlace": "Jūs rezervuosite savo vietą.",
-            "SelectIncludesToAdd": "Pasirinkite vieną ar daugiau {{TypeDisplayPlural}}, kuriuos norite pridėti:",
-            "YouHaveNotRegisteredAnyIncluded": "Dar neužregistravote {{TypeDisplayPlural}}",
-            "Proceed": "Tęskite",
-            "MakeChanges": "Išsaugoti mano pakeitimus",
-            "CancelReservation": "Atšaukti visą rezervaciją",
-            "Total": "Iš viso",
-            "RequiredRelatedParticipants": "Šiam renginiui reikia dalyvių: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Jei norite atnaujinti pasikartojančius nustatymus, redaguokite pasiekiamumą „{{title}}“.",
-            "Presentation": "Pristatymas",
-            "YouAreNotParticipated": "Jūs nesate renginio dalyvis",
-            "LiveStreamStarted": "Tiesioginė transliacija prasidėjo",
-            "WebRTCStarted": "Prasidėjo telekonferencija",
-            "WebRTCEnded": "Telekonferencija baigėsi"
-        },
-        "composer": {
-            "SetLocation": "Nustatyti Mano vietą",
-            "SetInfoLink": "Nustatyti nuorodą į papildomą informaciją",
-            "ChooseAvailability": "Pasirinkite prieinamą paslaugą",
-            "ChooseActivity": "Pasirinkite veiklą",
-            "ChoosePublisher": "Pasirinkite Leidėjas",
-            "Day": "Diena",
-            "Starting": "Pradedama",
-            "Duration": "Trukmė",
-            "Hour": "Valanda",
-            "Hours": "Valandos",
-            "Minutes": "Minutės",
-            "Ending": "Pabaiga",
-            "People": "Žmonės",
-            "Share": "Dalintis",
-            "Continue": "Tęsti",
-            "Recurring": "Pasikartojantis",
-            "RecurringTitle": "Pasikartojančios dienos",
-            "Daily": "Kasdien",
-            "Weekly": "Kas savaitę",
-            "Monthly": "Kas mėnesį",
-            "SelectLocation": "Pirmiausia pasirinkite vietą.",
-            "eventType": "Renginio tipas",
-            "EditTitle": "Sugalvok įdomų pavadinimą...",
-            "SetTitle": "Nustatykite įvykio pavadinimą",
-            "ScheduleOnlineConference": "Suplanuokite internetinę konferenciją",
-            "SOCDescription": "Nurodykite konferencijos pradžios ir pabaigos laiką. Kiekvienas asmuo, apsilankęs renginyje per šį laikotarpį, automatiškai prisijungs prie internetinės konferencijos.",
-            "EndDate": "Pabaiga",
-            "location": {
-                "Title": "Nustatykite savo vietą"
-            },
-            "interest": {
-                "Title": "Pasirinkite veiklą",
-                "Filter": "Paieškos pomėgiai..."
-            },
-            "SetLivestream": "Įklijuokite nuorodą į tiesioginę transliaciją \/ vaizdo konferenciją",
-            "Locally": "lokaliai",
-            "EventInfoLink": "Renginio informacijos nuoroda",
-            "TicketPurchaseLink": "Bilietų pirkimo nuoroda"
-        },
-        "EventAlreadyClosed": "Šis renginys jau uždarytas",
-        "addToCalendar": {
-            "permissions": {
-                "title": "Pridėti prie kalendoriaus?",
-                "prompt": "Ar norėtumėte įtraukti šį įvykį į savo kalendorių?",
-                "yes": "Taip",
-                "no": "Nr"
-            },
-            "dialog": {
-                "Title": "Įtraukite įvykį į savo kalendorių"
-            }
-        },
-        "ErrorLeaveEndedEvent": "Atsiprašome, bet negalite išeiti iš pasibaigusio įvykio"
-    },
-    "availabilities": {
-        "Title": "Prieinamumas",
-        "NewAvailability": {
-            "Title": "Naujas prieinamumas",
-            "SaveAvailability": "Išsaugoti prieinamumą",
-            "SelectTemplate": "Prašome pasirinkti Paslaugą",
-            "SelectLocation": "Prašome pasirinkti vietą",
-            "SelectArea": "Pasirinkite sritį",
-            "Type": "Tipas",
-            "Weekly": "Kas savaitę",
-            "RecurringStartDate": "Pasikartojanti pradžios data",
-            "EndDate": "Pabaigos data",
-            "SelectTime": "Tvarkykite laiko tarpsnius",
-            "SelectTimeSlot": "Pasirinkite laiko tarpą",
-            "SelectTimeSlots": "Pasirinkite norimus laiko tarpus",
-            "PeopleMin": "Minimalus lankytojų skaičius",
-            "PeopleMax": "Maksimalus lankytojų skaičius",
-            "PeopleLabels": "Leidžiami vaidmenys",
-            "Next": "Kitas",
-            "Back": "Atgal",
-            "RecurringEndDate": "Pasikartojanti pabaigos data",
-            "ScheduleOnlineConference": "Suplanuokite telekonferenciją",
-            "SetLivestream": "Įklijuokite nuorodą į tiesioginę transliaciją \/ vaizdo konferenciją",
-            "SelectTimeZone": "Pasirinkite laiko juostą"
-        },
-        "EditAvailability": "Redaguoti prieinamumą",
-        "SetVisitors": "Nustatyti lankytojus",
-        "Price": "Kaina",
-        "SelectAction": "Pasirinkite veiksmą",
-        "OpenProfile": "Atidaryti profilį",
-        "RemoveStaff": "Pašalinti darbuotojus",
-        "PleaseSelectTimeSlots": "Pasirinkite laiko tarpus",
-        "ExceptionOccurred": "Įvyko išimtis",
-        "NotEnoughCreditsToParticipateEvents": "Nepakanka kreditų dalyvauti {{eventsAmount}} renginiuose. Jums reikia {{needCredits}} kreditų. Noriu pirkti?",
-        "LiveStream": "Tiesiogiai",
-        "InviteStaff": "Pakvieskite darbuotojus"
-    },
-    "recurring": {
-        "dialog": {
-            "startDate": "Pradžios data",
-            "endDate": "Pabaigos data",
-            "justOnce": "Tik vieną kartą",
-            "justOnceWeekly": "Tik šią savaitę",
-            "justOnceMonthly": "Tik šį mėnesį",
-            "recurring": "Pasikartojantis"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "Nemokamas renginys",
-            "optional": "Neprivalomas įnašas",
-            "required": "Reikalingas mokėjimas"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "Neprivalomas įnašas",
-            "required": "Reikalingas mokėjimas",
-            "paid": "mokama"
-        },
-        "confirmationDialog": {
-            "title": "Mokėjimo patvirtinimas",
-            "content": "Šis įvykis pasirenkamas {{amount}}.",
-            "button": "Prisidėti"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} dar nėra įvykio dalis. Ar norite įtraukti juos kaip dalyvius?",
-        "userNotFound": "Vartotojas nerastas",
-        "confirmYes": "Taip",
-        "confirmNo": "Nr"
-    },
-    "notifications": {
-        "EventActivityIn": "Įvykių veikla {{{stream.fields.title}}}",
-        "RecurringRulesChanged": "Pakeistas pasikartojančios įvykio {{{call 'message.getInstruction' 'eventTitle'}}} taisyklės",
-        "ManageEmailSubscriptions": "tvarkyti savo el. pašto prenumeratas",
-        "IfUnsubscribe": "Jei norite atsisakyti prenumeratos",
-        "ClickHereToVisitEvent": "Norėdami apsilankyti renginyje, spustelėkite čia",
-        "Calendars\/reminder": "Įvykis „{{{call 'message.getInstruction' 'name'}}“ prasidės {{&call 'message.getInstruction' 'time'}}}",
-        "webrtc": {
-            "Started": "Prasidėjo telekonferencija",
-            "Ended": "Telekonferencija baigėsi"
-        },
-        "livestream": {
-            "Started": "Pradėta tiesioginė transliacija",
-            "Ended": "Tiesioginė transliacija baigėsi",
-            "ClickToView": "Peržiūrėkite čia."
-        }
-    },
-    "import": {
-        "linkTitle": "Užpildykite šią skaičiuoklę",
-        "fileLabel": "Įkelti skaičiuoklę:",
-        "importOptions": "Galimybės",
-        "importProgress": "Progresas",
-        "sampleCSV": "Atsisiųskite CSV pavyzdį",
-        "joinEventLabel": "Prisijunkite prie vartotojų atsitiktinio įvykio",
-        "smsText": "Sveiki, ką tik išsiunčiau jums nuorodą į {{communityName}}. Prašome patikrinti.",
-        "emailSubject": "Ką tik atsiuntė jums nuorodą",
-        "emailBody": "Sveiki, ką tik išsiunčiau jums kvietimą į {{communityName}}. Prašome patikrinti.",
-        "fileNotFound": "Atsiprašome, CSV failas nerastas.",
-        "fileEmpty": "Atsiprašome, CSV failas tuščias.",
-        "fieldNotFound": "Privalomas laukas „{{1}}“ nerastas",
-        "userIdNotFound": "vartotojas egzistuoja, bet ID tuščias",
-        "activateUsers": "siųsti aktyvinimo pranešimą vartotojams?",
-        "taskStreamInvalid": "užduočių srautas netinkamas",
-        "instructionsEmpty": "užduočių srauto instrukcijos tuščios",
-        "interestsEmpty": "negali gauti interesų",
-        "interestAbsent": "palūkanų {{1}} nerasta",
-        "complete": "Užbaigti",
-        "errorLine": "eilutė {{1}}",
-        "errorsTitle": "Įvyko klaidų",
-        "communityUsers": "Tai yra bendruomenių sąrašas",
-        "toMainCommunityToo": "susieti ir su pagrindine bendruomene",
-        "ChooseFile": "pasirinkti failą"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "Atstovauja renginiui, kuriame žmonės gali dalyvauti",
-            "displayType": "Renginys"
-        },
-        "Calendars\/recurring": {
-            "description": "Naudojamas susieti srautus, kurie turi periodiškai pasikartoti",
-            "displayType": "Pasikartojantis įvykis"
-        }
-    },
-    "timeslots": {
-        "AddSlot": "Pridėti lizdą",
-        "StartTime": "Pradžios laikas",
-        "EndTime": "Pabaigos laikas",
-        "Save": "Sutaupyti",
-        "AddTimeSlot": "Pridėti laiko tarpą",
-        "CopyFromDay": "Kopijuoti iš dienos",
-        "Nearest": "Artimiausias",
-        "Today": "Šiandien",
-        "Tomorrow": "Rytoj",
-        "AfterTomorrow": "Po rytojaus"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "Prenumeruokite Kalendorių",
-        "copyLinkBelow": "Nukopijuokite nuorodą žemiau",
-        "goTo": "Eiti į:",
-        "pasteCopiedTo": "Įklijuokite nukopijuotą nuorodą į lauką „Kalendoriaus URL“.",
-        "clickAddCalendar": "Spustelėkite mygtuką „Pridėti kalendorių“.",
-        "copyLink": "Nukopijuoti nuorodą",
-        "tapToCopy": "Bakstelėkite toliau esantį mygtuką, kad nukopijuotumėte nuorodą į mainų sritį",
-        "linkCopied": "Nuoroda nukopijuota",
-        "step2": "Nuoroda nukopijuota. Mes ketiname atidaryti „Google“ kalendorių. Turėsite įklijuoti nuorodą į teksto laukelį, spustelėti „Pridėti kalendorių“ ir uždaryti skirtuką (žr. toliau pateiktą ekrano kopiją)",
-        "calendarAppPreferences": "„Mac“ kompiuteryje atidarykite „Preferences“ kalendoriaus programoje ir nustatykite numatytąją kalendoriaus programą, kaip parodyta toliau.",
-        "thenCloseDialog": "Tada uždarykite šį dialogo langą, kad užsiprenumeruotumėte savo kalendorių!",
-        "success": "Kalendorius sėkmingai sinchronizuotas"
-    }
+	"months": {
+		"Jan": "sausio m\u0117n",
+		"Feb": "vasario m\u0117n",
+		"Mar": "Kov",
+		"Apr": "Baland\u017eio m\u0117n",
+		"May": "Gegu\u017e\u0117",
+		"Jun": "bir\u017eelio m\u0117n",
+		"Jul": "liepos m\u0117n",
+		"Aug": "rugpj\u016b\u010dio m\u0117n",
+		"Sep": "rugs\u0117jis",
+		"Oct": "spalio m\u0117n",
+		"Nov": "Lapkri\u010dio m\u0117n",
+		"Dec": "gruod"
+	},
+	"monthsLong": {
+		"Jan": "sausio m\u0117n",
+		"Feb": "vasario m\u0117n",
+		"Mar": "Kovas",
+		"Apr": "Balandis",
+		"May": "Gegu\u017e\u0117",
+		"Jun": "bir\u017eelio m\u0117n",
+		"Jul": "liepos m\u0117n",
+		"Aug": "Rugpj\u016btis",
+		"Sep": "rugs\u0117jis",
+		"Oct": "Spalio m\u0117n",
+		"Nov": "lapkritis",
+		"Dec": "gruod\u012f"
+	},
+	"weekdays": {
+		"Sun": "Saul\u0117",
+		"Mon": "Pirm",
+		"Tue": "antradienis",
+		"Wed": "tre\u010dia",
+		"Thu": "Ketvirtadienis",
+		"Fri": "penk",
+		"Sat": "\u0160e\u0161t"
+	},
+	"weekdaysLong": {
+		"Sun": "sekmadienis",
+		"Mon": "pirmadienis",
+		"Tue": "antradienis",
+		"Wed": "tre\u010diadien\u012f",
+		"Thu": "ketvirtadienis",
+		"Fri": "penktadienis",
+		"Sat": "\u0161e\u0161tadienis"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Suplanuokite nauj\u0105 \u012fvyk\u012f"
+		},
+		"tool": {
+			"HostedBy": "Priima {{name}}",
+			"Name": "vardas",
+			"AreYouIn": "Ar tu esi?",
+			"Yes": "Taip",
+			"No": "Nr",
+			"Ok": "Gerai",
+			"Cancel": "At\u0161aukti",
+			"Maybe": "Gal b\u016bt",
+			"Conversation": "Pokalbis",
+			"Promote": "Reklamuokite \u0161\u012f \u012fvyk\u012f",
+			"Reminders": "Priminimai",
+			"RemindersLabel": "Noriu gauti prane\u0161im\u0105 apie \u012fvyk\u012f:",
+			"MoreInfo": "Daugiau informacijos",
+			"Registration": "Registracija",
+			"SetReminders": "Nustatykite priminimus",
+			"ReservationFee": "Rezervacijos mokestis",
+			"AddParticipants": "Prid\u0117ti dalyvi\u0173",
+			"ManageReservation": "Tvarkyti rezervacij\u0105",
+			"UpdateFutureReservations": "Ar taip pat norite atnaujinti visas b\u016bsimas rezervacijas taip pat?",
+			"RecurringAdmin": "Pasikartojantys nustatymai",
+			"MakeReservation": "Padaryti rezervacij\u0105",
+			"StartLiveStream": "Spustel\u0117kite tiesiogin\u012f sraut\u0105",
+			"LiveStreamEnded": "Tiesiogin\u0117 transliacija baig\u0117si",
+			"ClickToViewRecording": "spustel\u0117kite nor\u0117dami per\u017ei\u016br\u0117ti \u012fra\u0161\u0105",
+			"Checkin": "Nuskaitykite dalyvi\u0173 kodus",
+			"Myqr": "\u012esiregistruoti",
+			"CloseEvent": {
+				"button": "At\u0161aukti \u012fvyk\u012f",
+				"confirm": {
+					"text": {
+						"Cancel": "Ar tikrai norite at\u0161aukti \u0161\u012f \u012fvyk\u012f?",
+						"Participant": "\u0160iame renginyje yra 1 dalyvis",
+						"Participants": "\u0160iame \u012fvykyje yra {{count}} dalyvi\u0173",
+						"Recurring": "\u0160is \u012fvykis kartojasi. Ar taip pat norite at\u0161aukti visus b\u016bsimus jo atvejus?"
+					},
+					"trip": {
+						"Cancel": "Ar taip pat norite at\u0161aukti kelion\u0119 {{tripDirection}} \u0161\u012f \u012fvyk\u012f?",
+						"Passengers": "Yra {{passengerCount}} keleivi\u0173, kurie jumis pasitiki.",
+						"Title": "U\u017edaryti kelion\u0119"
+					},
+					"directions": {
+						"TO": "KAM",
+						"FROM": "NUO",
+						"to": "\u012f",
+						"from": "i\u0161"
+					}
+				}
+			},
+			"Calendar": "Kalendorius",
+			"Interests": "Pom\u0117giai",
+			"Directions": "Kryptys",
+			"TitleOfEvent": "Renginio pavadinimas:",
+			"OpenTo": "Atidaryta",
+			"GoingTo": "bus adresu",
+			"NotGoingTo": "nebus",
+			"MaybeGoingTo": "gal bus",
+			"AdminDontPay": "Administratoriui mok\u0117ti nereikia",
+			"PublisherDontPay": "Leid\u0117jui mok\u0117ti nereikia",
+			"EmptyList": "Tu\u0161\u010dias s\u0105ra\u0161as",
+			"NeedToPayCredits": "Reikia sumok\u0117ti: <span>{{amount}} kredit\u0105</span>",
+			"PleaseJoinParticipants": "Pra\u0161ome prisijungti prie {{participant}}",
+			"YouReservingPlace": "J\u016bs rezervuosite savo viet\u0105.",
+			"SelectIncludesToAdd": "Pasirinkite vien\u0105 ar daugiau {{TypeDisplayPlural}}, kuriuos norite prid\u0117ti:",
+			"YouHaveNotRegisteredAnyIncluded": "Dar neu\u017eregistravote {{TypeDisplayPlural}}",
+			"Proceed": "T\u0119skite",
+			"MakeChanges": "I\u0161saugoti mano pakeitimus",
+			"CancelReservation": "At\u0161aukti vis\u0105 rezervacij\u0105",
+			"Total": "I\u0161 viso",
+			"RequiredRelatedParticipants": "\u0160iam renginiui reikia dalyvi\u0173: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "Jei norite atnaujinti pasikartojan\u010dius nustatymus, redaguokite pasiekiamum\u0105 \u201e{{title}}\u201c.",
+			"Presentation": "Pristatymas",
+			"YouAreNotParticipated": "J\u016bs nesate renginio dalyvis",
+			"LiveStreamStarted": "Tiesiogin\u0117 transliacija prasid\u0117jo",
+			"WebRTCStarted": "Prasid\u0117jo telekonferencija",
+			"WebRTCEnded": "Telekonferencija baig\u0117si"
+		},
+		"composer": {
+			"SetLocation": "Nustatyti Mano viet\u0105",
+			"SetInfoLink": "Nustatyti nuorod\u0105 \u012f papildom\u0105 informacij\u0105",
+			"ChooseAvailability": "Pasirinkite prieinam\u0105 paslaug\u0105",
+			"ChooseActivity": "Pasirinkite veikl\u0105",
+			"ChoosePublisher": "Pasirinkite Leid\u0117jas",
+			"Day": "Diena",
+			"Starting": "Pradedama",
+			"Duration": "Trukm\u0117",
+			"Hour": "Valanda",
+			"Hours": "Valandos",
+			"Minutes": "Minut\u0117s",
+			"Ending": "Pabaiga",
+			"People": "\u017dmon\u0117s",
+			"Share": "Dalintis",
+			"Continue": "T\u0119sti",
+			"Recurring": "Pasikartojantis",
+			"RecurringTitle": "Pasikartojan\u010dios dienos",
+			"Daily": "Kasdien",
+			"Weekly": "Kas savait\u0119",
+			"Monthly": "Kas m\u0117nes\u012f",
+			"SelectLocation": "Pirmiausia pasirinkite viet\u0105.",
+			"eventType": "Renginio tipas",
+			"EditTitle": "Sugalvok \u012fdom\u0173 pavadinim\u0105...",
+			"SetTitle": "Nustatykite \u012fvykio pavadinim\u0105",
+			"ScheduleOnlineConference": "Suplanuokite internetin\u0119 konferencij\u0105",
+			"SOCDescription": "Nurodykite konferencijos prad\u017eios ir pabaigos laik\u0105. Kiekvienas asmuo, apsilank\u0119s renginyje per \u0161\u012f laikotarp\u012f, automati\u0161kai prisijungs prie internetin\u0117s konferencijos.",
+			"EndDate": "Pabaiga",
+			"location": {
+				"Title": "Nustatykite savo viet\u0105"
+			},
+			"interest": {
+				"Title": "Pasirinkite veikl\u0105",
+				"Filter": "Paie\u0161kos pom\u0117giai..."
+			},
+			"SetLivestream": "\u012eklijuokite nuorod\u0105 \u012f tiesiogin\u0119 transliacij\u0105 / vaizdo konferencij\u0105",
+			"Locally": "lokaliai",
+			"EventInfoLink": "Renginio informacijos nuoroda",
+			"TicketPurchaseLink": "Biliet\u0173 pirkimo nuoroda"
+		},
+		"EventAlreadyClosed": "\u0160is renginys jau u\u017edarytas",
+		"addToCalendar": {
+			"permissions": {
+				"title": "Prid\u0117ti prie kalendoriaus?",
+				"prompt": "Ar nor\u0117tum\u0117te \u012ftraukti \u0161\u012f \u012fvyk\u012f \u012f savo kalendori\u0173?",
+				"yes": "Taip",
+				"no": "Nr"
+			},
+			"dialog": {
+				"Title": "\u012etraukite \u012fvyk\u012f \u012f savo kalendori\u0173"
+			}
+		},
+		"ErrorLeaveEndedEvent": "Atsipra\u0161ome, bet negalite i\u0161eiti i\u0161 pasibaigusio \u012fvykio"
+	},
+	"availabilities": {
+		"Title": "Prieinamumas",
+		"NewAvailability": {
+			"Title": "Naujas prieinamumas",
+			"SaveAvailability": "I\u0161saugoti prieinamum\u0105",
+			"SelectTemplate": "Pra\u0161ome pasirinkti Paslaug\u0105",
+			"SelectLocation": "Pra\u0161ome pasirinkti viet\u0105",
+			"SelectArea": "Pasirinkite srit\u012f",
+			"Type": "Tipas",
+			"Weekly": "Kas savait\u0119",
+			"RecurringStartDate": "Pasikartojanti prad\u017eios data",
+			"EndDate": "Pabaigos data",
+			"SelectTime": "Tvarkykite laiko tarpsnius",
+			"SelectTimeSlot": "Pasirinkite laiko tarp\u0105",
+			"SelectTimeSlots": "Pasirinkite norimus laiko tarpus",
+			"PeopleMin": "Minimalus lankytoj\u0173 skai\u010dius",
+			"PeopleMax": "Maksimalus lankytoj\u0173 skai\u010dius",
+			"PeopleLabels": "Leid\u017eiami vaidmenys",
+			"Next": "Kitas",
+			"Back": "Atgal",
+			"RecurringEndDate": "Pasikartojanti pabaigos data",
+			"ScheduleOnlineConference": "Suplanuokite telekonferencij\u0105",
+			"SetLivestream": "\u012eklijuokite nuorod\u0105 \u012f tiesiogin\u0119 transliacij\u0105 / vaizdo konferencij\u0105",
+			"SelectTimeZone": "Pasirinkite laiko juost\u0105"
+		},
+		"EditAvailability": "Redaguoti prieinamum\u0105",
+		"SetVisitors": "Nustatyti lankytojus",
+		"Price": "Kaina",
+		"SelectAction": "Pasirinkite veiksm\u0105",
+		"OpenProfile": "Atidaryti profil\u012f",
+		"RemoveStaff": "Pa\u0161alinti darbuotojus",
+		"PleaseSelectTimeSlots": "Pasirinkite laiko tarpus",
+		"ExceptionOccurred": "\u012evyko i\u0161imtis",
+		"NotEnoughCreditsToParticipateEvents": "Nepakanka kredit\u0173 dalyvauti {{eventsAmount}} renginiuose. Jums reikia {{needCredits}} kredit\u0173. Noriu pirkti?",
+		"LiveStream": "Tiesiogiai",
+		"InviteStaff": "Pakvieskite darbuotojus"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "Prad\u017eios data",
+			"endDate": "Pabaigos data",
+			"justOnce": "Tik vien\u0105 kart\u0105",
+			"justOnceWeekly": "Tik \u0161i\u0105 savait\u0119",
+			"justOnceMonthly": "Tik \u0161\u012f m\u0117nes\u012f",
+			"recurring": "Pasikartojantis"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "Nemokamas renginys",
+			"optional": "Neprivalomas \u012fna\u0161as",
+			"required": "Reikalingas mok\u0117jimas"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "Neprivalomas \u012fna\u0161as",
+			"required": "Reikalingas mok\u0117jimas",
+			"paid": "mokama"
+		},
+		"confirmationDialog": {
+			"title": "Mok\u0117jimo patvirtinimas",
+			"content": "\u0160is \u012fvykis pasirenkamas {{amount}}.",
+			"button": "Prisid\u0117ti"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} dar n\u0117ra \u012fvykio dalis. Ar norite \u012ftraukti juos kaip dalyvius?",
+		"userNotFound": "Vartotojas nerastas",
+		"confirmYes": "Taip",
+		"confirmNo": "Nr"
+	},
+	"notifications": {
+		"EventActivityIn": "\u012evyki\u0173 veikla {{{stream.fields.title}}}",
+		"RecurringRulesChanged": "Pakeistas pasikartojan\u010dios \u012fvykio {{{call 'message.getInstruction' 'eventTitle'}}} taisykl\u0117s",
+		"ManageEmailSubscriptions": "tvarkyti savo el. pa\u0161to prenumeratas",
+		"IfUnsubscribe": "Jei norite atsisakyti prenumeratos",
+		"ClickHereToVisitEvent": "Nor\u0117dami apsilankyti renginyje, spustel\u0117kite \u010dia",
+		"Calendars/reminder": "\u012evykis \u201e{{{call 'message.getInstruction' 'name'}}\u201c prasid\u0117s {{&call 'message.getInstruction' 'time'}}}",
+		"webrtc": {
+			"Started": "Prasid\u0117jo telekonferencija",
+			"Ended": "Telekonferencija baig\u0117si"
+		},
+		"livestream": {
+			"Started": "Prad\u0117ta tiesiogin\u0117 transliacija",
+			"Ended": "Tiesiogin\u0117 transliacija baig\u0117si",
+			"ClickToView": "Per\u017ei\u016br\u0117kite \u010dia."
+		}
+	},
+	"import": {
+		"linkTitle": "U\u017epildykite \u0161i\u0105 skai\u010diuokl\u0119",
+		"fileLabel": "\u012ekelti skai\u010diuokl\u0119:",
+		"importOptions": "Galimyb\u0117s",
+		"importProgress": "Progresas",
+		"sampleCSV": "Atsisi\u0173skite CSV pavyzd\u012f",
+		"joinEventLabel": "Prisijunkite prie vartotoj\u0173 atsitiktinio \u012fvykio",
+		"smsText": "Sveiki, k\u0105 tik i\u0161siun\u010diau jums nuorod\u0105 \u012f {{communityName}}. Pra\u0161ome patikrinti.",
+		"emailSubject": "K\u0105 tik atsiunt\u0117 jums nuorod\u0105",
+		"emailBody": "Sveiki, k\u0105 tik i\u0161siun\u010diau jums kvietim\u0105 \u012f {{communityName}}. Pra\u0161ome patikrinti.",
+		"fileNotFound": "Atsipra\u0161ome, CSV failas nerastas.",
+		"fileEmpty": "Atsipra\u0161ome, CSV failas tu\u0161\u010dias.",
+		"fieldNotFound": "Privalomas laukas \u201e{{1}}\u201c nerastas",
+		"userIdNotFound": "vartotojas egzistuoja, bet ID tu\u0161\u010dias",
+		"activateUsers": "si\u0173sti aktyvinimo prane\u0161im\u0105 vartotojams?",
+		"taskStreamInvalid": "u\u017eduo\u010di\u0173 srautas netinkamas",
+		"instructionsEmpty": "u\u017eduo\u010di\u0173 srauto instrukcijos tu\u0161\u010dios",
+		"interestsEmpty": "negali gauti interes\u0173",
+		"interestAbsent": "pal\u016bkan\u0173 {{1}} nerasta",
+		"complete": "U\u017ebaigti",
+		"errorLine": "eilut\u0117 {{1}}",
+		"errorsTitle": "\u012evyko klaid\u0173",
+		"communityUsers": "Tai yra bendruomeni\u0173 s\u0105ra\u0161as",
+		"toMainCommunityToo": "susieti ir su pagrindine bendruomene",
+		"ChooseFile": "pasirinkti fail\u0105"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "Atstovauja renginiui, kuriame \u017emon\u0117s gali dalyvauti",
+			"displayType": "Renginys"
+		},
+		"Calendars/recurring": {
+			"description": "Naudojamas susieti srautus, kurie turi periodi\u0161kai pasikartoti",
+			"displayType": "Pasikartojantis \u012fvykis"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "Prid\u0117ti lizd\u0105",
+		"StartTime": "Prad\u017eios laikas",
+		"EndTime": "Pabaigos laikas",
+		"Save": "Sutaupyti",
+		"AddTimeSlot": "Prid\u0117ti laiko tarp\u0105",
+		"CopyFromDay": "Kopijuoti i\u0161 dienos",
+		"Nearest": "Artimiausias",
+		"Today": "\u0160iandien",
+		"Tomorrow": "Rytoj",
+		"AfterTomorrow": "Po rytojaus"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "Prenumeruokite Kalendori\u0173",
+		"copyLinkBelow": "Nukopijuokite nuorod\u0105 \u017eemiau",
+		"goTo": "Eiti \u012f:",
+		"pasteCopiedTo": "\u012eklijuokite nukopijuot\u0105 nuorod\u0105 \u012f lauk\u0105 \u201eKalendoriaus URL\u201c.",
+		"clickAddCalendar": "Spustel\u0117kite mygtuk\u0105 \u201ePrid\u0117ti kalendori\u0173\u201c.",
+		"copyLink": "Nukopijuoti nuorod\u0105",
+		"tapToCopy": "Bakstel\u0117kite toliau esant\u012f mygtuk\u0105, kad nukopijuotum\u0117te nuorod\u0105 \u012f main\u0173 srit\u012f",
+		"linkCopied": "Nuoroda nukopijuota",
+		"step2": "Nuoroda nukopijuota. Mes ketiname atidaryti \u201eGoogle\u201c kalendori\u0173. Tur\u0117site \u012fklijuoti nuorod\u0105 \u012f teksto laukel\u012f, spustel\u0117ti \u201ePrid\u0117ti kalendori\u0173\u201c ir u\u017edaryti skirtuk\u0105 (\u017er. toliau pateikt\u0105 ekrano kopij\u0105)",
+		"calendarAppPreferences": "\u201eMac\u201c kompiuteryje atidarykite \u201ePreferences\u201c kalendoriaus programoje ir nustatykite numatyt\u0105j\u0105 kalendoriaus program\u0105, kaip parodyta toliau.",
+		"thenCloseDialog": "Tada u\u017edarykite \u0161\u012f dialogo lang\u0105, kad u\u017esiprenumeruotum\u0117te savo kalendori\u0173!",
+		"success": "Kalendorius s\u0117kmingai sinchronizuotas"
+	},
+	"@override": {
+		"Assets/content": {
+			"payments": {
+				"reasons": {
+					"EventParticipation": "Dalyvavimas renginiuose"
+				}
+			}
+		}
+	}
 }

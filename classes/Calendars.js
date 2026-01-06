@@ -17,22 +17,23 @@ function Calendars() { }
 module.exports = Calendars;
 
 var Streams = Q.plugins.Streams;
-Streams.Message.define('Calendars/going', function () {}, {
+Streams.Message.define('Calendars/going/yes', function () {}, {
 	goingText: function (language) {
-		var message = this.message || this;
-		var text = Q.Text.get("Calendars/content", {
-			language: language
-		});
+		var text = Q.Text.get("Calendars/content", { language });
+		return Q.getObject(["event", "tool", "GoingTo"], text);
+	}
+});
 
-		switch (message.getInstruction('going')) {
-			case 'yes':
-				return Q.getObject(["event", "tool", "GoingTo"], text);
-			case 'no':
-				return Q.getObject(["event", "tool", "NotGoingTo"], text);
-			case 'maybe':
-				return Q.getObject(["event", "tool", "MaybeGoingTo"], text)
-		}
+Streams.Message.define('Calendars/going/no', function () {}, {
+	goingText: function (language) {
+		var text = Q.Text.get("Calendars/content", { language });
+		return Q.getObject(["event", "tool", "NotGoingTo"], text);
+	}
+});
 
-		return 'undefined';
+Streams.Message.define('Calendars/going/maybe', function () {}, {
+	goingText: function (language) {
+		var text = Q.Text.get("Calendars/content", { language });
+		return Q.getObject(["event", "tool", "MaybeGoingTo"], text);
 	}
 });

@@ -2,7 +2,7 @@
 	"Q": {
 		"pluginInfo": {
 			"Calendars": {
-				"version": "0.5.2",
+				"version": "0.5.3",
 				"compatible": "0.1",
 				"requires": {
 					"Users": "1.0",
@@ -19,12 +19,14 @@
 			"Q/sessionExtras": ["Calendars/before/Q_sessionExtras"],
 			"Streams/close/Assets/service": ["Calendars/before/Streams_close_Assets_service"],
 			"Streams/close/Calendars/event": ["Calendars/before/Streams_close_Calendars_event"],
-			"Streams/relateTo/Calendars/event": ["Assets/before/Streams_relateTo_Calendars_event"],
-			"Streams/unrelateTo/Calendars/event": ["Assets/before/Streams_unrelateTo_Calendars_event"],
 			"Db/Row/Streams_Participant/save": ["Calendars/before/Streams_Participant"]
 		},
 		"handlersAfterEvent": {
+			"Assets/credits/spend": ["Calendars/after/Assets_credits_spend"],
 			"Streams/create/Calendars/event": ["Calendars/after/Streams_create_Calendars_event"],
+			"Streams/leave": ["Calendars/after/Streams_leave"],
+			"Streams/relateTo/Calendars/event": ["Calendars/after/Streams_relateTo_Calendars_event"],
+			"Streams/unrelateTo/Calendars/event": ["Calendars/after/Streams_unrelateTo_Calendars_event"],
 			"Streams/create/Calendars/recurring": ["Calendars/after/Streams_create_Calendars_recurring"],
 			"Users/setLoggedInUser": ["Calendars/after/Users_setLoggedInUser"],
 			"Streams/Stream/save/Assets/service": ["Calendars/after/Streams_Stream_save_Assets_service"],
@@ -36,7 +38,8 @@
 			"Streams/relateTo/Media/webrtc": ["Calendars/after/Streams/relateTo/Media/webrtc"],
 			"Streams/unrelateTo/Media/webrtc": ["Calendars/after/Streams/unrelateTo/Media/webrtc"],
 			"Streams/message/Media/livestream/start": ["Calendars/after/Streams_message_Media_livestream_start"],
-			"Streams/message/Media/livestream/stop": ["Calendars/after/Streams_message_Media_livestream_stop"]
+			"Streams/message/Media/livestream/stop": ["Calendars/after/Streams_message_Media_livestream_stop"],
+			"Db/Row/Streams_Participant/saveExecute": ["Calendars/after/Streams_Participant_saveExecute"]
 		},
 		"web": {
 			"requireValidNonce": ["Calendars"]
@@ -61,8 +64,8 @@
 		},
 		"images": {
 			"Calendars/event": {
-				"sizes": ["40", "50", "80", "200x", "500x"],
-				"defaultSize": "500x",
+				"sizes": ["40", "50", "80", "200x", "1000x"],
+				"defaultSize": "1000x",
 				"maxStretch": 2,
 				"defaultCacheBust": 1000
 			}
@@ -115,7 +118,14 @@
 		},
 		"types": {
 			"Calendars/calendar": {
-				"emoji": "📅"
+				"emoji": "📅",
+				"defaults": {
+					"icon": "{{Calendars}}/img/icons/Calendars/calendar",
+					"title": "Calendar",
+					"readLevel": 23,
+					"writeLevel": 23,
+					"adminLevel": 20
+				},
 			},
 			"Calendars/event": {
 				"emoji": "🕒",
@@ -133,7 +143,13 @@
 					"Streams/chat/message": {
 						"post": true
 					},
-					"Calendars/going": {
+					"Calendars/going/yes": {
+						"subject": ["Calendars/content", ["notifications", "EventActivityIn"]]
+					},
+					"Calendars/going/no": {
+						"subject": ["Calendars/content", ["notifications", "EventActivityIn"]]
+					},
+					"Calendars/going/maybe": {
 						"subject": ["Calendars/content", ["notifications", "EventActivityIn"]]
 					},
 					"Calendars/checkin": {
@@ -252,10 +268,11 @@
 				"duration": 7200,
 				"payment": {
 					"amountMin": 1,
-					"amountMax": 1000
+					"amountMax": 1000,
+					"currency": "credits"
 				},
 				"participants": {
-					"maxShow": 10,
+					"maxShow": 100,
 					"showBlanks": true
 				}
 			},
@@ -270,6 +287,7 @@
 		},
 		"event": {
 			"hideIfNoParticipants": false,
+			"hideLocationIfNotPaid": false,
 			"templateStyle": "classic", /* can be "classic", "tall", "square" */
 			"reminders": {
 				"86400": { /* 24 hours */
@@ -284,6 +302,9 @@
 			},
 			"icon": {
 				"search": ["google"]
+			},
+			"mode": {
+				"prepayment": false /* mode which use going 'maybe' instead 'yes' when user first participated and pay $1 */
 			}
 		},
 		"user": {
@@ -291,6 +312,24 @@
 				"alerts": { /* if user subscribed to personal calendar, each event will be preceded by alert */
 					"minutes": 5
 				}
+			}
+		}
+	},
+	"Assets": {
+		"payments": {
+			"reasons": {
+				"EventParticipation": {
+					"withoutIntentToken": {
+						"currency": "USD",
+						"min": 0,
+						"max": 1
+					}
+				}
+			}
+		},
+		"credits": {
+			"text": {
+				"load": ["Calendars/content"]
 			}
 		}
 	}

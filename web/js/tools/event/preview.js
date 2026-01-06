@@ -14,7 +14,7 @@ var Places = Q.Places;
  *   @param {Object} [options.show]
  *   @param {Boolean} [options.show.hosts=true]
  *   @param {Object} [options.icon]
- *   @param {Object} [options.icon.size='80'] If you remove the CSS blur, set this to '500x' or null
+ *   @param {Object} [options.icon.size='80'] If you remove the CSS blur, set this to '1000x' or null
  *   @param {Boolean|String} [options.show.participants=true] Can be true, false and 'publishers' - which means display only to event publisher.
  *   @param {Boolean|Object} [options.textfill=false] You can pass true or an object of options to apply Q/textfill on the titles
  *   @param {String} [options.templateStyle=classic] Template style. Can be "classic", "square" (icon square on the left) and "tall" (icon on the top).
@@ -153,6 +153,9 @@ Q.Tool.define("Calendars/event/preview", ["Streams/preview"], function(options, 
 			streamName: stream.fields.name,
 			max: stream.getAttribute('peopleMax'),
 			invite: false,
+			avatar: {
+				icon: '40',
+			},
 			maxShow: 6
 		}, 'Streams_participants', tool.prefix, {
 			'data-q-retain': "retain"
@@ -178,7 +181,7 @@ Q.Tool.define("Calendars/event/preview", ["Streams/preview"], function(options, 
 			participantsTool: participantsTool,
 			avatarTool: avatarTool,
 			show: state.show,
-			hideUnpaid: Q.getObject("Calendars.event.unpaid.hide.location", Q)
+			hideUnpaid: Q.getObject("Calendars.Event.unpaid.hide.location", Q)
 		};
 		Q.Template.render('Calendars/event/preview', fields, function (err, html) {
 			if (err) return;

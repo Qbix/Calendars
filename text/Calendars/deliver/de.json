@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Vielen Dank f\u00fcr Ihr Interesse an {{title}}"
+	},
+	"approved": {
+		"Subject": "Anwesenheit genehmigt",
+		"AttendanceApproved": "Herzlichen Gl\u00fcckwunsch! Ihre Teilnahme an der Veranstaltung {{title}} wurde genehmigt."
+	},
+	"requested": {
+		"Subject": "Anwesenheit erw\u00fcnscht",
+		"AttendanceRequested": "Wir best\u00e4tigen Ihre Teilnahmeanfrage: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Anwesenheit nicht genehmigt",
+		"AttendanceRejected": "Die Administratoren haben Ihre Teilnahmeanfrage nicht genehmigt: {{title}}"
+	},
+	"paid": {
+		"Subject": "Zahlungsbest\u00e4tigung erfolgreich",
+		"YouveBeenCharged": "Es wurden Ihnen {{amount}} {{currency}} (und {{credits}} Credits) berechnet. Alles erledigt! Wir sehen uns um {{title}}"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "D\u0117kojame, kad domit\u0117s {{title}}"
+	},
+	"approved": {
+		"Subject": "Dalyvavimas patvirtintas",
+		"AttendanceApproved": "Sveikiname! J\u016bs\u0173 dalyvavimas {{title}} konferencijoje patvirtintas."
+	},
+	"requested": {
+		"Subject": "Pageidaujamas dalyvavimas",
+		"AttendanceRequested": "Patvirtiname j\u016bs\u0173 pra\u0161ym\u0105 dalyvauti: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Dalyvavimas nepatvirtintas",
+		"AttendanceRejected": "Administratoriai nepatvirtino j\u016bs\u0173 pra\u0161ymo dalyvauti: {{title}}"
+	},
+	"paid": {
+		"Subject": "S\u0117kmingo mok\u0117jimo patvirtinimas",
+		"YouveBeenCharged": "Jums buvo nuskai\u010diuota {{amount}} {{currency}} (ir {{credits}} kreditas). Viskas paruo\u0161ta! Iki pasimatymo {{title}}"
+	}
+}

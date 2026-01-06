@@ -60,7 +60,7 @@ function Calendars_event_post($params) {
 		// try to join user to all events created
 		foreach ($events as $event) {
 			try {
-				Calendars_Event::rsvp($event, $userId, 'yes', array("forcePayment" => true));
+				Calendars_Event::going($event, $userId, 'yes', array("autoCharge" => true));
 			} catch (Exception $e) {
 				// if payment required and user short of credits and exception throws during charge
 			}

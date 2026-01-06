@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Faleminderit p\u00ebr interesin tuaj n\u00eb {{title}}"
+	},
+	"approved": {
+		"Subject": "Pjes\u00ebmarrja u miratua",
+		"AttendanceApproved": "Urime! Pjes\u00ebmarrja juaj \u00ebsht\u00eb miratuar p\u00ebr {{title}}"
+	},
+	"requested": {
+		"Subject": "K\u00ebrkohet pjes\u00ebmarrje",
+		"AttendanceRequested": "Po e konfirmojm\u00eb k\u00ebrkes\u00ebn tuaj p\u00ebr pjes\u00ebmarrje: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Pjes\u00ebmarrja nuk u miratua",
+		"AttendanceRejected": "Administrator\u00ebt nuk e miratuan k\u00ebrkes\u00ebn tuaj p\u00ebr t\u00eb marr\u00eb pjes\u00eb: {{title}}"
+	},
+	"paid": {
+		"Subject": "Konfirmim i suksessh\u00ebm i pages\u00ebs",
+		"YouveBeenCharged": "Ju jan\u00eb ngarkuar {{amount}} {{currency}} (dhe {{credits}} kredite). Jeni gati! Shihemi n\u00eb or\u00ebn {{title}}"
+	}
+}

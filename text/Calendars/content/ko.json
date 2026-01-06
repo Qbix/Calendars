@@ -1,333 +1,342 @@
 {
-    "months": {
-        "Jan": "1월",
-        "Feb": "2월",
-        "Mar": "망치다",
-        "Apr": "4월",
-        "May": "할 수있다",
-        "Jun": "준",
-        "Jul": "7월",
-        "Aug": "8월",
-        "Sep": "9월",
-        "Oct": "10월",
-        "Nov": "11월",
-        "Dec": "12월"
-    },
-    "monthsLong": {
-        "Jan": "1 월",
-        "Feb": "2 월",
-        "Mar": "3 월",
-        "Apr": "4 월",
-        "May": "할 수있다",
-        "Jun": "6 월",
-        "Jul": "칠월",
-        "Aug": "팔월",
-        "Sep": "구월",
-        "Oct": "십월",
-        "Nov": "십일월",
-        "Dec": "12 월"
-    },
-    "weekdays": {
-        "Sun": "태양",
-        "Mon": "월",
-        "Tue": "화요일",
-        "Wed": "수",
-        "Thu": "목",
-        "Fri": "금",
-        "Sat": "수능"
-    },
-    "weekdaysLong": {
-        "Sun": "일요일",
-        "Mon": "월요일",
-        "Tue": "화요일",
-        "Wed": "수요일",
-        "Thu": "목요일",
-        "Fri": "금요일",
-        "Sat": "토요일"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "새로운 이벤트 계획"
-        },
-        "tool": {
-            "HostedBy": "{{name}} 주최",
-            "Name": "이름",
-            "AreYouIn": "당신은 안에 있습니까?",
-            "Yes": "네",
-            "No": "아니",
-            "Ok": "확인",
-            "Cancel": "취소",
-            "Maybe": "아마도",
-            "Conversation": "대화",
-            "Promote": "이 이벤트를 홍보",
-            "Reminders": "미리 알림",
-            "RemindersLabel": "이벤트 알림을 받고 싶습니다:",
-            "MoreInfo": "더 많은 정보",
-            "Registration": "등록",
-            "SetReminders": "알림을 설정하세요",
-            "ReservationFee": "예약 수수료",
-            "AddParticipants": "참가자 추가",
-            "ManageReservation": "예약 관리",
-            "UpdateFutureReservations": "앞으로의 모든 예약도 같은 방식으로 업데이트하시겠습니까?",
-            "RecurringAdmin": "반복 설정",
-            "MakeReservation": "예약하기",
-            "StartLiveStream": "클릭하여 실시간 스트리밍",
-            "LiveStreamEnded": "실시간 스트리밍이 종료되었습니다.",
-            "ClickToViewRecording": "녹음을 보려면 클릭하십시오",
-            "Checkin": "참석자 코드 스캔",
-            "Myqr": "체크인",
-            "CloseEvent": {
-                "button": "이벤트 취소",
-                "confirm": {
-                    "text": {
-                        "Cancel": "이 이벤트를 취소하시겠습니까?",
-                        "Participant": "이 이벤트에 1명의 참가자가 있습니다",
-                        "Participants": "이 이벤트에는 {{count}}명의 참가자가 있습니다",
-                        "Recurring": "이 이벤트는 반복됩니다. 향후 모든 인스턴스도 취소하시겠습니까?"
-                    },
-                    "trip": {
-                        "Cancel": "이번 이벤트도 {{tripDirection}} 여행을 취소하시겠습니까?",
-                        "Passengers": "당신을 의지하는 승객이 {{passengerCount}}명 있습니다.",
-                        "Title": "여행 닫기"
-                    },
-                    "directions": {
-                        "TO": "에게",
-                        "FROM": "에서",
-                        "to": "에게",
-                        "from": "~에서"
-                    }
-                }
-            },
-            "Calendar": "달력",
-            "Interests": "이해",
-            "Directions": "지도",
-            "TitleOfEvent": "이벤트 제목:",
-            "OpenTo": "에 열려있다",
-            "GoingTo": "에 있을 것이다",
-            "NotGoingTo": "에 없을 것이다",
-            "MaybeGoingTo": "아마에있을 것입니다",
-            "AdminDontPay": "관리자는 지불할 필요가 없습니다",
-            "PublisherDontPay": "게시자는 비용을 지불할 필요가 없습니다.",
-            "EmptyList": "빈 목록",
-            "NeedToPayCredits": "지불해야 함: <span>{{amount}} 크레딧<\/span>",
-            "PleaseJoinParticipants": "가입하세요 {{participant}}",
-            "YouReservingPlace": "자리를 예약하게 됩니다.",
-            "SelectIncludesToAdd": "추가할 {{TypeDisplayPlural}}을(를) 하나 이상 선택하세요.",
-            "YouHaveNotRegisteredAnyIncluded": "아직 {{TypeDisplayPlural}}을(를) 등록하지 않았습니다.",
-            "Proceed": "진행하다",
-            "MakeChanges": "내 변경 사항 저장",
-            "CancelReservation": "전체 예약 취소",
-            "Total": "총",
-            "RequiredRelatedParticipants": "이 이벤트에는 참가자가 필요합니다. {{requiredParticipantsList}}",
-            "AvailabilityWarning": "반복 설정을 업데이트하려면 예약 가능 여부 &quot;{{title}}&quot;를 수정하세요.",
-            "Presentation": "프레젠테이션",
-            "YouAreNotParticipated": "이벤트 참여자가 아닙니다.",
-            "LiveStreamStarted": "실시간 스트림이 시작되었습니다.",
-            "WebRTCStarted": "원격회의가 시작되었습니다.",
-            "WebRTCEnded": "원격회의가 종료되었습니다."
-        },
-        "composer": {
-            "SetLocation": "내 위치 설정",
-            "SetInfoLink": "추가 정보에 대한 링크 설정",
-            "ChooseAvailability": "사용 가능한 서비스 선택",
-            "ChooseActivity": "활동 선택",
-            "ChoosePublisher": "게시자 선택",
-            "Day": "낮",
-            "Starting": "시작",
-            "Duration": "지속",
-            "Hour": "시",
-            "Hours": "시간",
-            "Minutes": "분",
-            "Ending": "종결",
-            "People": "사람들",
-            "Share": "공유하다",
-            "Continue": "계속하다",
-            "Recurring": "반복",
-            "RecurringTitle": "반복 일수",
-            "Daily": "일일",
-            "Weekly": "주간",
-            "Monthly": "월간 간행물",
-            "SelectLocation": "먼저 위치를 선택하세요.",
-            "eventType": "이벤트 유형",
-            "EditTitle": "재미있는 제목을 생각해 보세요...",
-            "SetTitle": "이벤트 제목을 설정하세요",
-            "ScheduleOnlineConference": "온라인 회의 일정 잡기",
-            "SOCDescription": "회의 시작 및 종료 시간을 정의하십시오. 이 기간 동안 이벤트를 방문하는 모든 사람은 온라인 회의에 자동으로 연결됩니다.",
-            "EndDate": "끝",
-            "location": {
-                "Title": "위치 설정"
-            },
-            "interest": {
-                "Title": "활동 선택",
-                "Filter": "검색 관심분야 ..."
-            },
-            "SetLivestream": "라이브스트림\/화상회의 링크 붙여넣기",
-            "Locally": "장소 상에서",
-            "EventInfoLink": "이벤트 정보 링크",
-            "TicketPurchaseLink": "티켓 구매 링크"
-        },
-        "EventAlreadyClosed": "이미 종료된 이벤트입니다.",
-        "addToCalendar": {
-            "permissions": {
-                "title": "캘린더에 추가하시겠습니까?",
-                "prompt": "이 이벤트를 캘린더에 추가하시겠습니까?",
-                "yes": "네",
-                "no": "아니"
-            },
-            "dialog": {
-                "Title": "캘린더에 이벤트 추가"
-            }
-        },
-        "ErrorLeaveEndedEvent": "죄송하지만 종료된 이벤트를 종료할 수 없습니다."
-    },
-    "availabilities": {
-        "Title": "가용성",
-        "NewAvailability": {
-            "Title": "새로운 가용성",
-            "SaveAvailability": "가용성 저장",
-            "SelectTemplate": "서비스를 선택하십시오",
-            "SelectLocation": "위치를 선택하세요",
-            "SelectArea": "지역을 선택하세요",
-            "Type": "유형",
-            "Weekly": "주간",
-            "RecurringStartDate": "반복 시작 날짜",
-            "EndDate": "종료일",
-            "SelectTime": "시간 슬롯 관리",
-            "SelectTimeSlot": "시간대 선택",
-            "SelectTimeSlots": "원하는 시간대 선택",
-            "PeopleMin": "최소 방문자",
-            "PeopleMax": "최대 방문자",
-            "PeopleLabels": "허용되는 역할",
-            "Next": "다음",
-            "Back": "뒤",
-            "RecurringEndDate": "반복 종료 날짜",
-            "ScheduleOnlineConference": "원격 회의 예약",
-            "SetLivestream": "실시간 스트리밍\/화상 회의에 링크 붙여넣기",
-            "SelectTimeZone": "시간대 선택"
-        },
-        "EditAvailability": "가용성 수정",
-        "SetVisitors": "방문자 설정",
-        "Price": "가격",
-        "SelectAction": "작업을 선택하십시오",
-        "OpenProfile": "프로필 열기",
-        "RemoveStaff": "직원 제거",
-        "PleaseSelectTimeSlots": "시간대를 선택하세요",
-        "ExceptionOccurred": "예외가 발생했습니다",
-        "NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} 이벤트에 참여하기에 크레딧이 충분하지 않습니다. {{needCredits}} 크레딧이 필요합니다. 구매하시겠습니까?",
-        "LiveStream": "라이브 스트림",
-        "InviteStaff": "직원 초대"
-    },
-    "recurring": {
-        "dialog": {
-            "startDate": "시작일",
-            "endDate": "종료일",
-            "justOnce": "딱 한번",
-            "justOnceWeekly": "이번주만",
-            "justOnceMonthly": "이번 달만",
-            "recurring": "반복"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "무료 이벤트",
-            "optional": "선택적 기여",
-            "required": "필수 결제"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "선택적 기여",
-            "required": "필수 결제",
-            "paid": "유급의"
-        },
-        "confirmationDialog": {
-            "title": "지불 확인서",
-            "content": "이 이벤트에는 {{amount}}의 선택적 기여가 있습니다.",
-            "button": "기여하다"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}}은(는) 아직 이벤트에 참여하지 않습니다. 참가자로 추가하시겠습니까?",
-        "userNotFound": "사용자를 찾을 수 없음",
-        "confirmYes": "네",
-        "confirmNo": "아니"
-    },
-    "notifications": {
-        "EventActivityIn": "{{{stream.fields.title}}}의 이벤트 활동",
-        "RecurringRulesChanged": "이벤트 {{{call 'message.getInstruction' 'eventTitle'}}}에 대한 반복 규칙이 변경됨",
-        "ManageEmailSubscriptions": "이메일 구독 관리",
-        "IfUnsubscribe": "구독 취소를 원하시면",
-        "ClickHereToVisitEvent": "이벤트를 방문하려면 여기를 클릭하세요.",
-        "Calendars\/reminder": "이벤트 &#39;{{{call 'message.getInstruction' 'name'}}&#39;이(가) {{&call 'message.getInstruction' 'time'}}}에 시작됩니다.",
-        "webrtc": {
-            "Started": "원격회의가 시작되었습니다.",
-            "Ended": "원격회의가 종료되었습니다."
-        },
-        "livestream": {
-            "Started": "실시간 스트림이 시작되었습니다.",
-            "Ended": "실시간 스트림이 종료되었습니다.",
-            "ClickToView": "여기에서 확인하세요."
-        }
-    },
-    "import": {
-        "linkTitle": "이 스프레드시트 작성",
-        "fileLabel": "스프레드시트 업로드:",
-        "importOptions": "옵션",
-        "importProgress": "진전",
-        "sampleCSV": "샘플 CSV 다운로드",
-        "joinEventLabel": "무작위 이벤트에 사용자 참여",
-        "smsText": "안녕하세요, 방금 {{communityName}}에 대한 링크를 보냈습니다. 그것을 확인하시기 바랍니다.",
-        "emailSubject": "방금 링크를 보냈습니다",
-        "emailBody": "안녕하세요, 방금 {{communityName}}님에게 초대장을 보냈습니다. 그것을 확인하시기 바랍니다.",
-        "fileNotFound": "죄송합니다. CSV 파일을 찾을 수 없습니다.",
-        "fileEmpty": "죄송합니다. CSV 파일이 비어 있습니다.",
-        "fieldNotFound": "필수 필드 &quot;{{1}}&quot;을(를) 찾을 수 없습니다.",
-        "userIdNotFound": "사용자가 있지만 ID가 비어 있습니다.",
-        "activateUsers": "사용자에게 활성화 메시지를 보내시겠습니까?",
-        "taskStreamInvalid": "작업 스트림이 잘못되었습니다.",
-        "instructionsEmpty": "작업 스트림 지침이 비어 있습니다.",
-        "interestsEmpty": "이익을 얻을 수 없다",
-        "interestAbsent": "관심 {{1}}을(를) 찾을 수 없습니다.",
-        "complete": "완벽한",
-        "errorLine": "줄 {{1}}",
-        "errorsTitle": "오류 발생",
-        "communityUsers": "커뮤니티 목록입니다.",
-        "toMainCommunityToo": "메인 커뮤니티와도 관련이 있습니다.",
-        "ChooseFile": "파일을 선택"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "사람들이 참여할 수 있는 이벤트를 나타냅니다.",
-            "displayType": "이벤트"
-        },
-        "Calendars\/recurring": {
-            "description": "주기적으로 되풀이되는 스트림을 연결하는 데 사용됩니다.",
-            "displayType": "반복 이벤트"
-        }
-    },
-    "timeslots": {
-        "AddSlot": "슬롯 추가",
-        "StartTime": "시작 시간",
-        "EndTime": "종료 시간",
-        "Save": "구하다",
-        "AddTimeSlot": "시간 슬롯 추가",
-        "CopyFromDay": "오늘부터 복사",
-        "Nearest": "가장 가까운",
-        "Today": "오늘",
-        "Tomorrow": "내일",
-        "AfterTomorrow": "내일 이후에"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "캘린더 구독",
-        "copyLinkBelow": "아래 링크 복사",
-        "goTo": "이동 :",
-        "pasteCopiedTo": "복사한 링크를 &quot;캘린더 URL&quot; 필드에 붙여넣기",
-        "clickAddCalendar": "&quot;캘린더 추가&quot; 버튼 클릭",
-        "copyLink": "링크 복사",
-        "tapToCopy": "링크를 클립보드에 복사하려면 아래 버튼을 탭하세요.",
-        "linkCopied": "링크가 복사되었습니다",
-        "step2": "링크가 복사되었습니다. 구글캘린더 공개에 관한 내용입니다. 링크를 텍스트 상자에 붙여넣고 &#39;캘린더 추가&#39;를 클릭한 다음 탭을 닫아야 합니다(아래 스크린샷 참조).",
-        "calendarAppPreferences": "Mac의 캘린더 앱에서 환경설정을 열고 기본 캘린더 앱을 아래와 같이 설정하세요.",
-        "thenCloseDialog": "그런 다음 이 대화 상자를 닫고 캘린더를 구독하세요!",
-        "success": "캘린더가 성공적으로 동기화되었습니다."
-    }
+	"months": {
+		"Jan": "1\uc6d4",
+		"Feb": "2\uc6d4",
+		"Mar": "\ub9dd\uce58\ub2e4",
+		"Apr": "4\uc6d4",
+		"May": "\ud560 \uc218\uc788\ub2e4",
+		"Jun": "\uc900",
+		"Jul": "7\uc6d4",
+		"Aug": "8\uc6d4",
+		"Sep": "9\uc6d4",
+		"Oct": "10\uc6d4",
+		"Nov": "11\uc6d4",
+		"Dec": "12\uc6d4"
+	},
+	"monthsLong": {
+		"Jan": "1 \uc6d4",
+		"Feb": "2 \uc6d4",
+		"Mar": "3 \uc6d4",
+		"Apr": "4 \uc6d4",
+		"May": "\ud560 \uc218\uc788\ub2e4",
+		"Jun": "6 \uc6d4",
+		"Jul": "\uce60\uc6d4",
+		"Aug": "\ud314\uc6d4",
+		"Sep": "\uad6c\uc6d4",
+		"Oct": "\uc2ed\uc6d4",
+		"Nov": "\uc2ed\uc77c\uc6d4",
+		"Dec": "12 \uc6d4"
+	},
+	"weekdays": {
+		"Sun": "\ud0dc\uc591",
+		"Mon": "\uc6d4",
+		"Tue": "\ud654\uc694\uc77c",
+		"Wed": "\uc218",
+		"Thu": "\ubaa9",
+		"Fri": "\uae08",
+		"Sat": "\uc218\ub2a5"
+	},
+	"weekdaysLong": {
+		"Sun": "\uc77c\uc694\uc77c",
+		"Mon": "\uc6d4\uc694\uc77c",
+		"Tue": "\ud654\uc694\uc77c",
+		"Wed": "\uc218\uc694\uc77c",
+		"Thu": "\ubaa9\uc694\uc77c",
+		"Fri": "\uae08\uc694\uc77c",
+		"Sat": "\ud1a0\uc694\uc77c"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "\uc0c8\ub85c\uc6b4 \uc774\ubca4\ud2b8 \uacc4\ud68d"
+		},
+		"tool": {
+			"HostedBy": "{{name}} \uc8fc\ucd5c",
+			"Name": "\uc774\ub984",
+			"AreYouIn": "\ub2f9\uc2e0\uc740 \uc548\uc5d0 \uc788\uc2b5\ub2c8\uae4c?",
+			"Yes": "\ub124",
+			"No": "\uc544\ub2c8",
+			"Ok": "\ud655\uc778",
+			"Cancel": "\ucde8\uc18c",
+			"Maybe": "\uc544\ub9c8\ub3c4",
+			"Conversation": "\ub300\ud654",
+			"Promote": "\uc774 \uc774\ubca4\ud2b8\ub97c \ud64d\ubcf4",
+			"Reminders": "\ubbf8\ub9ac \uc54c\ub9bc",
+			"RemindersLabel": "\uc774\ubca4\ud2b8 \uc54c\ub9bc\uc744 \ubc1b\uace0 \uc2f6\uc2b5\ub2c8\ub2e4:",
+			"MoreInfo": "\ub354 \ub9ce\uc740 \uc815\ubcf4",
+			"Registration": "\ub4f1\ub85d",
+			"SetReminders": "\uc54c\ub9bc\uc744 \uc124\uc815\ud558\uc138\uc694",
+			"ReservationFee": "\uc608\uc57d \uc218\uc218\ub8cc",
+			"AddParticipants": "\ucc38\uac00\uc790 \ucd94\uac00",
+			"ManageReservation": "\uc608\uc57d \uad00\ub9ac",
+			"UpdateFutureReservations": "\uc55e\uc73c\ub85c\uc758 \ubaa8\ub4e0 \uc608\uc57d\ub3c4 \uac19\uc740 \ubc29\uc2dd\uc73c\ub85c \uc5c5\ub370\uc774\ud2b8\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?",
+			"RecurringAdmin": "\ubc18\ubcf5 \uc124\uc815",
+			"MakeReservation": "\uc608\uc57d\ud558\uae30",
+			"StartLiveStream": "\ud074\ub9ad\ud558\uc5ec \uc2e4\uc2dc\uac04 \uc2a4\ud2b8\ub9ac\ubc0d",
+			"LiveStreamEnded": "\uc2e4\uc2dc\uac04 \uc2a4\ud2b8\ub9ac\ubc0d\uc774 \uc885\ub8cc\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+			"ClickToViewRecording": "\ub179\uc74c\uc744 \ubcf4\ub824\uba74 \ud074\ub9ad\ud558\uc2ed\uc2dc\uc624",
+			"Checkin": "\ucc38\uc11d\uc790 \ucf54\ub4dc \uc2a4\uce94",
+			"Myqr": "\uccb4\ud06c\uc778",
+			"CloseEvent": {
+				"button": "\uc774\ubca4\ud2b8 \ucde8\uc18c",
+				"confirm": {
+					"text": {
+						"Cancel": "\uc774 \uc774\ubca4\ud2b8\ub97c \ucde8\uc18c\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?",
+						"Participant": "\uc774 \uc774\ubca4\ud2b8\uc5d0 1\uba85\uc758 \ucc38\uac00\uc790\uac00 \uc788\uc2b5\ub2c8\ub2e4",
+						"Participants": "\uc774 \uc774\ubca4\ud2b8\uc5d0\ub294 {{count}}\uba85\uc758 \ucc38\uac00\uc790\uac00 \uc788\uc2b5\ub2c8\ub2e4",
+						"Recurring": "\uc774 \uc774\ubca4\ud2b8\ub294 \ubc18\ubcf5\ub429\ub2c8\ub2e4. \ud5a5\ud6c4 \ubaa8\ub4e0 \uc778\uc2a4\ud134\uc2a4\ub3c4 \ucde8\uc18c\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?"
+					},
+					"trip": {
+						"Cancel": "\uc774\ubc88 \uc774\ubca4\ud2b8\ub3c4 {{tripDirection}} \uc5ec\ud589\uc744 \ucde8\uc18c\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?",
+						"Passengers": "\ub2f9\uc2e0\uc744 \uc758\uc9c0\ud558\ub294 \uc2b9\uac1d\uc774 {{passengerCount}}\uba85 \uc788\uc2b5\ub2c8\ub2e4.",
+						"Title": "\uc5ec\ud589 \ub2eb\uae30"
+					},
+					"directions": {
+						"TO": "\uc5d0\uac8c",
+						"FROM": "\uc5d0\uc11c",
+						"to": "\uc5d0\uac8c",
+						"from": "~\uc5d0\uc11c"
+					}
+				}
+			},
+			"Calendar": "\ub2ec\ub825",
+			"Interests": "\uc774\ud574",
+			"Directions": "\uc9c0\ub3c4",
+			"TitleOfEvent": "\uc774\ubca4\ud2b8 \uc81c\ubaa9:",
+			"OpenTo": "\uc5d0 \uc5f4\ub824\uc788\ub2e4",
+			"GoingTo": "\uc5d0 \uc788\uc744 \uac83\uc774\ub2e4",
+			"NotGoingTo": "\uc5d0 \uc5c6\uc744 \uac83\uc774\ub2e4",
+			"MaybeGoingTo": "\uc544\ub9c8\uc5d0\uc788\uc744 \uac83\uc785\ub2c8\ub2e4",
+			"AdminDontPay": "\uad00\ub9ac\uc790\ub294 \uc9c0\ubd88\ud560 \ud544\uc694\uac00 \uc5c6\uc2b5\ub2c8\ub2e4",
+			"PublisherDontPay": "\uac8c\uc2dc\uc790\ub294 \ube44\uc6a9\uc744 \uc9c0\ubd88\ud560 \ud544\uc694\uac00 \uc5c6\uc2b5\ub2c8\ub2e4.",
+			"EmptyList": "\ube48 \ubaa9\ub85d",
+			"NeedToPayCredits": "\uc9c0\ubd88\ud574\uc57c \ud568: <span>{{amount}} \ud06c\ub808\ub527</span>",
+			"PleaseJoinParticipants": "\uac00\uc785\ud558\uc138\uc694 {{participant}}",
+			"YouReservingPlace": "\uc790\ub9ac\ub97c \uc608\uc57d\ud558\uac8c \ub429\ub2c8\ub2e4.",
+			"SelectIncludesToAdd": "\ucd94\uac00\ud560 {{TypeDisplayPlural}}\uc744(\ub97c) \ud558\ub098 \uc774\uc0c1 \uc120\ud0dd\ud558\uc138\uc694.",
+			"YouHaveNotRegisteredAnyIncluded": "\uc544\uc9c1 {{TypeDisplayPlural}}\uc744(\ub97c) \ub4f1\ub85d\ud558\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4.",
+			"Proceed": "\uc9c4\ud589\ud558\ub2e4",
+			"MakeChanges": "\ub0b4 \ubcc0\uacbd \uc0ac\ud56d \uc800\uc7a5",
+			"CancelReservation": "\uc804\uccb4 \uc608\uc57d \ucde8\uc18c",
+			"Total": "\ucd1d",
+			"RequiredRelatedParticipants": "\uc774 \uc774\ubca4\ud2b8\uc5d0\ub294 \ucc38\uac00\uc790\uac00 \ud544\uc694\ud569\ub2c8\ub2e4. {{requiredParticipantsList}}",
+			"AvailabilityWarning": "\ubc18\ubcf5 \uc124\uc815\uc744 \uc5c5\ub370\uc774\ud2b8\ud558\ub824\uba74 \uc608\uc57d \uac00\ub2a5 \uc5ec\ubd80 &quot;{{title}}&quot;\ub97c \uc218\uc815\ud558\uc138\uc694.",
+			"Presentation": "\ud504\ub808\uc820\ud14c\uc774\uc158",
+			"YouAreNotParticipated": "\uc774\ubca4\ud2b8 \ucc38\uc5ec\uc790\uac00 \uc544\ub2d9\ub2c8\ub2e4.",
+			"LiveStreamStarted": "\uc2e4\uc2dc\uac04 \uc2a4\ud2b8\ub9bc\uc774 \uc2dc\uc791\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+			"WebRTCStarted": "\uc6d0\uaca9\ud68c\uc758\uac00 \uc2dc\uc791\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+			"WebRTCEnded": "\uc6d0\uaca9\ud68c\uc758\uac00 \uc885\ub8cc\ub418\uc5c8\uc2b5\ub2c8\ub2e4."
+		},
+		"composer": {
+			"SetLocation": "\ub0b4 \uc704\uce58 \uc124\uc815",
+			"SetInfoLink": "\ucd94\uac00 \uc815\ubcf4\uc5d0 \ub300\ud55c \ub9c1\ud06c \uc124\uc815",
+			"ChooseAvailability": "\uc0ac\uc6a9 \uac00\ub2a5\ud55c \uc11c\ube44\uc2a4 \uc120\ud0dd",
+			"ChooseActivity": "\ud65c\ub3d9 \uc120\ud0dd",
+			"ChoosePublisher": "\uac8c\uc2dc\uc790 \uc120\ud0dd",
+			"Day": "\ub0ae",
+			"Starting": "\uc2dc\uc791",
+			"Duration": "\uc9c0\uc18d",
+			"Hour": "\uc2dc",
+			"Hours": "\uc2dc\uac04",
+			"Minutes": "\ubd84",
+			"Ending": "\uc885\uacb0",
+			"People": "\uc0ac\ub78c\ub4e4",
+			"Share": "\uacf5\uc720\ud558\ub2e4",
+			"Continue": "\uacc4\uc18d\ud558\ub2e4",
+			"Recurring": "\ubc18\ubcf5",
+			"RecurringTitle": "\ubc18\ubcf5 \uc77c\uc218",
+			"Daily": "\uc77c\uc77c",
+			"Weekly": "\uc8fc\uac04",
+			"Monthly": "\uc6d4\uac04 \uac04\ud589\ubb3c",
+			"SelectLocation": "\uba3c\uc800 \uc704\uce58\ub97c \uc120\ud0dd\ud558\uc138\uc694.",
+			"eventType": "\uc774\ubca4\ud2b8 \uc720\ud615",
+			"EditTitle": "\uc7ac\ubbf8\uc788\ub294 \uc81c\ubaa9\uc744 \uc0dd\uac01\ud574 \ubcf4\uc138\uc694...",
+			"SetTitle": "\uc774\ubca4\ud2b8 \uc81c\ubaa9\uc744 \uc124\uc815\ud558\uc138\uc694",
+			"ScheduleOnlineConference": "\uc628\ub77c\uc778 \ud68c\uc758 \uc77c\uc815 \uc7a1\uae30",
+			"SOCDescription": "\ud68c\uc758 \uc2dc\uc791 \ubc0f \uc885\ub8cc \uc2dc\uac04\uc744 \uc815\uc758\ud558\uc2ed\uc2dc\uc624. \uc774 \uae30\uac04 \ub3d9\uc548 \uc774\ubca4\ud2b8\ub97c \ubc29\ubb38\ud558\ub294 \ubaa8\ub4e0 \uc0ac\ub78c\uc740 \uc628\ub77c\uc778 \ud68c\uc758\uc5d0 \uc790\ub3d9\uc73c\ub85c \uc5f0\uacb0\ub429\ub2c8\ub2e4.",
+			"EndDate": "\ub05d",
+			"location": {
+				"Title": "\uc704\uce58 \uc124\uc815"
+			},
+			"interest": {
+				"Title": "\ud65c\ub3d9 \uc120\ud0dd",
+				"Filter": "\uac80\uc0c9 \uad00\uc2ec\ubd84\uc57c ..."
+			},
+			"SetLivestream": "\ub77c\uc774\ube0c\uc2a4\ud2b8\ub9bc/\ud654\uc0c1\ud68c\uc758 \ub9c1\ud06c \ubd99\uc5ec\ub123\uae30",
+			"Locally": "\uc7a5\uc18c \uc0c1\uc5d0\uc11c",
+			"EventInfoLink": "\uc774\ubca4\ud2b8 \uc815\ubcf4 \ub9c1\ud06c",
+			"TicketPurchaseLink": "\ud2f0\ucf13 \uad6c\ub9e4 \ub9c1\ud06c"
+		},
+		"EventAlreadyClosed": "\uc774\ubbf8 \uc885\ub8cc\ub41c \uc774\ubca4\ud2b8\uc785\ub2c8\ub2e4.",
+		"addToCalendar": {
+			"permissions": {
+				"title": "\uce98\ub9b0\ub354\uc5d0 \ucd94\uac00\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?",
+				"prompt": "\uc774 \uc774\ubca4\ud2b8\ub97c \uce98\ub9b0\ub354\uc5d0 \ucd94\uac00\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?",
+				"yes": "\ub124",
+				"no": "\uc544\ub2c8"
+			},
+			"dialog": {
+				"Title": "\uce98\ub9b0\ub354\uc5d0 \uc774\ubca4\ud2b8 \ucd94\uac00"
+			}
+		},
+		"ErrorLeaveEndedEvent": "\uc8c4\uc1a1\ud558\uc9c0\ub9cc \uc885\ub8cc\ub41c \uc774\ubca4\ud2b8\ub97c \uc885\ub8cc\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4."
+	},
+	"availabilities": {
+		"Title": "\uac00\uc6a9\uc131",
+		"NewAvailability": {
+			"Title": "\uc0c8\ub85c\uc6b4 \uac00\uc6a9\uc131",
+			"SaveAvailability": "\uac00\uc6a9\uc131 \uc800\uc7a5",
+			"SelectTemplate": "\uc11c\ube44\uc2a4\ub97c \uc120\ud0dd\ud558\uc2ed\uc2dc\uc624",
+			"SelectLocation": "\uc704\uce58\ub97c \uc120\ud0dd\ud558\uc138\uc694",
+			"SelectArea": "\uc9c0\uc5ed\uc744 \uc120\ud0dd\ud558\uc138\uc694",
+			"Type": "\uc720\ud615",
+			"Weekly": "\uc8fc\uac04",
+			"RecurringStartDate": "\ubc18\ubcf5 \uc2dc\uc791 \ub0a0\uc9dc",
+			"EndDate": "\uc885\ub8cc\uc77c",
+			"SelectTime": "\uc2dc\uac04 \uc2ac\ub86f \uad00\ub9ac",
+			"SelectTimeSlot": "\uc2dc\uac04\ub300 \uc120\ud0dd",
+			"SelectTimeSlots": "\uc6d0\ud558\ub294 \uc2dc\uac04\ub300 \uc120\ud0dd",
+			"PeopleMin": "\ucd5c\uc18c \ubc29\ubb38\uc790",
+			"PeopleMax": "\ucd5c\ub300 \ubc29\ubb38\uc790",
+			"PeopleLabels": "\ud5c8\uc6a9\ub418\ub294 \uc5ed\ud560",
+			"Next": "\ub2e4\uc74c",
+			"Back": "\ub4a4",
+			"RecurringEndDate": "\ubc18\ubcf5 \uc885\ub8cc \ub0a0\uc9dc",
+			"ScheduleOnlineConference": "\uc6d0\uaca9 \ud68c\uc758 \uc608\uc57d",
+			"SetLivestream": "\uc2e4\uc2dc\uac04 \uc2a4\ud2b8\ub9ac\ubc0d/\ud654\uc0c1 \ud68c\uc758\uc5d0 \ub9c1\ud06c \ubd99\uc5ec\ub123\uae30",
+			"SelectTimeZone": "\uc2dc\uac04\ub300 \uc120\ud0dd"
+		},
+		"EditAvailability": "\uac00\uc6a9\uc131 \uc218\uc815",
+		"SetVisitors": "\ubc29\ubb38\uc790 \uc124\uc815",
+		"Price": "\uac00\uaca9",
+		"SelectAction": "\uc791\uc5c5\uc744 \uc120\ud0dd\ud558\uc2ed\uc2dc\uc624",
+		"OpenProfile": "\ud504\ub85c\ud544 \uc5f4\uae30",
+		"RemoveStaff": "\uc9c1\uc6d0 \uc81c\uac70",
+		"PleaseSelectTimeSlots": "\uc2dc\uac04\ub300\ub97c \uc120\ud0dd\ud558\uc138\uc694",
+		"ExceptionOccurred": "\uc608\uc678\uac00 \ubc1c\uc0dd\ud588\uc2b5\ub2c8\ub2e4",
+		"NotEnoughCreditsToParticipateEvents": "{{eventsAmount}} \uc774\ubca4\ud2b8\uc5d0 \ucc38\uc5ec\ud558\uae30\uc5d0 \ud06c\ub808\ub527\uc774 \ucda9\ubd84\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. {{needCredits}} \ud06c\ub808\ub527\uc774 \ud544\uc694\ud569\ub2c8\ub2e4. \uad6c\ub9e4\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?",
+		"LiveStream": "\ub77c\uc774\ube0c \uc2a4\ud2b8\ub9bc",
+		"InviteStaff": "\uc9c1\uc6d0 \ucd08\ub300"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "\uc2dc\uc791\uc77c",
+			"endDate": "\uc885\ub8cc\uc77c",
+			"justOnce": "\ub531 \ud55c\ubc88",
+			"justOnceWeekly": "\uc774\ubc88\uc8fc\ub9cc",
+			"justOnceMonthly": "\uc774\ubc88 \ub2ec\ub9cc",
+			"recurring": "\ubc18\ubcf5"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "\ubb34\ub8cc \uc774\ubca4\ud2b8",
+			"optional": "\uc120\ud0dd\uc801 \uae30\uc5ec",
+			"required": "\ud544\uc218 \uacb0\uc81c"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "\uc120\ud0dd\uc801 \uae30\uc5ec",
+			"required": "\ud544\uc218 \uacb0\uc81c",
+			"paid": "\uc720\uae09\uc758"
+		},
+		"confirmationDialog": {
+			"title": "\uc9c0\ubd88 \ud655\uc778\uc11c",
+			"content": "\uc774 \uc774\ubca4\ud2b8\uc5d0\ub294 {{amount}}\uc758 \uc120\ud0dd\uc801 \uae30\uc5ec\uac00 \uc788\uc2b5\ub2c8\ub2e4.",
+			"button": "\uae30\uc5ec\ud558\ub2e4"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}}\uc740(\ub294) \uc544\uc9c1 \uc774\ubca4\ud2b8\uc5d0 \ucc38\uc5ec\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \ucc38\uac00\uc790\ub85c \ucd94\uac00\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?",
+		"userNotFound": "\uc0ac\uc6a9\uc790\ub97c \ucc3e\uc744 \uc218 \uc5c6\uc74c",
+		"confirmYes": "\ub124",
+		"confirmNo": "\uc544\ub2c8"
+	},
+	"notifications": {
+		"EventActivityIn": "{{{stream.fields.title}}}\uc758 \uc774\ubca4\ud2b8 \ud65c\ub3d9",
+		"RecurringRulesChanged": "\uc774\ubca4\ud2b8 {{{call 'message.getInstruction' 'eventTitle'}}}\uc5d0 \ub300\ud55c \ubc18\ubcf5 \uaddc\uce59\uc774 \ubcc0\uacbd\ub428",
+		"ManageEmailSubscriptions": "\uc774\uba54\uc77c \uad6c\ub3c5 \uad00\ub9ac",
+		"IfUnsubscribe": "\uad6c\ub3c5 \ucde8\uc18c\ub97c \uc6d0\ud558\uc2dc\uba74",
+		"ClickHereToVisitEvent": "\uc774\ubca4\ud2b8\ub97c \ubc29\ubb38\ud558\ub824\uba74 \uc5ec\uae30\ub97c \ud074\ub9ad\ud558\uc138\uc694.",
+		"Calendars/reminder": "\uc774\ubca4\ud2b8 &#39;{{{call 'message.getInstruction' 'name'}}&#39;\uc774(\uac00) {{&call 'message.getInstruction' 'time'}}}\uc5d0 \uc2dc\uc791\ub429\ub2c8\ub2e4.",
+		"webrtc": {
+			"Started": "\uc6d0\uaca9\ud68c\uc758\uac00 \uc2dc\uc791\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+			"Ended": "\uc6d0\uaca9\ud68c\uc758\uac00 \uc885\ub8cc\ub418\uc5c8\uc2b5\ub2c8\ub2e4."
+		},
+		"livestream": {
+			"Started": "\uc2e4\uc2dc\uac04 \uc2a4\ud2b8\ub9bc\uc774 \uc2dc\uc791\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+			"Ended": "\uc2e4\uc2dc\uac04 \uc2a4\ud2b8\ub9bc\uc774 \uc885\ub8cc\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+			"ClickToView": "\uc5ec\uae30\uc5d0\uc11c \ud655\uc778\ud558\uc138\uc694."
+		}
+	},
+	"import": {
+		"linkTitle": "\uc774 \uc2a4\ud504\ub808\ub4dc\uc2dc\ud2b8 \uc791\uc131",
+		"fileLabel": "\uc2a4\ud504\ub808\ub4dc\uc2dc\ud2b8 \uc5c5\ub85c\ub4dc:",
+		"importOptions": "\uc635\uc158",
+		"importProgress": "\uc9c4\uc804",
+		"sampleCSV": "\uc0d8\ud50c CSV \ub2e4\uc6b4\ub85c\ub4dc",
+		"joinEventLabel": "\ubb34\uc791\uc704 \uc774\ubca4\ud2b8\uc5d0 \uc0ac\uc6a9\uc790 \ucc38\uc5ec",
+		"smsText": "\uc548\ub155\ud558\uc138\uc694, \ubc29\uae08 {{communityName}}\uc5d0 \ub300\ud55c \ub9c1\ud06c\ub97c \ubcf4\ub0c8\uc2b5\ub2c8\ub2e4. \uadf8\uac83\uc744 \ud655\uc778\ud558\uc2dc\uae30 \ubc14\ub78d\ub2c8\ub2e4.",
+		"emailSubject": "\ubc29\uae08 \ub9c1\ud06c\ub97c \ubcf4\ub0c8\uc2b5\ub2c8\ub2e4",
+		"emailBody": "\uc548\ub155\ud558\uc138\uc694, \ubc29\uae08 {{communityName}}\ub2d8\uc5d0\uac8c \ucd08\ub300\uc7a5\uc744 \ubcf4\ub0c8\uc2b5\ub2c8\ub2e4. \uadf8\uac83\uc744 \ud655\uc778\ud558\uc2dc\uae30 \ubc14\ub78d\ub2c8\ub2e4.",
+		"fileNotFound": "\uc8c4\uc1a1\ud569\ub2c8\ub2e4. CSV \ud30c\uc77c\uc744 \ucc3e\uc744 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4.",
+		"fileEmpty": "\uc8c4\uc1a1\ud569\ub2c8\ub2e4. CSV \ud30c\uc77c\uc774 \ube44\uc5b4 \uc788\uc2b5\ub2c8\ub2e4.",
+		"fieldNotFound": "\ud544\uc218 \ud544\ub4dc &quot;{{1}}&quot;\uc744(\ub97c) \ucc3e\uc744 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4.",
+		"userIdNotFound": "\uc0ac\uc6a9\uc790\uac00 \uc788\uc9c0\ub9cc ID\uac00 \ube44\uc5b4 \uc788\uc2b5\ub2c8\ub2e4.",
+		"activateUsers": "\uc0ac\uc6a9\uc790\uc5d0\uac8c \ud65c\uc131\ud654 \uba54\uc2dc\uc9c0\ub97c \ubcf4\ub0b4\uc2dc\uaca0\uc2b5\ub2c8\uae4c?",
+		"taskStreamInvalid": "\uc791\uc5c5 \uc2a4\ud2b8\ub9bc\uc774 \uc798\ubabb\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+		"instructionsEmpty": "\uc791\uc5c5 \uc2a4\ud2b8\ub9bc \uc9c0\uce68\uc774 \ube44\uc5b4 \uc788\uc2b5\ub2c8\ub2e4.",
+		"interestsEmpty": "\uc774\uc775\uc744 \uc5bb\uc744 \uc218 \uc5c6\ub2e4",
+		"interestAbsent": "\uad00\uc2ec {{1}}\uc744(\ub97c) \ucc3e\uc744 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4.",
+		"complete": "\uc644\ubcbd\ud55c",
+		"errorLine": "\uc904 {{1}}",
+		"errorsTitle": "\uc624\ub958 \ubc1c\uc0dd",
+		"communityUsers": "\ucee4\ubba4\ub2c8\ud2f0 \ubaa9\ub85d\uc785\ub2c8\ub2e4.",
+		"toMainCommunityToo": "\uba54\uc778 \ucee4\ubba4\ub2c8\ud2f0\uc640\ub3c4 \uad00\ub828\uc774 \uc788\uc2b5\ub2c8\ub2e4.",
+		"ChooseFile": "\ud30c\uc77c\uc744 \uc120\ud0dd"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "\uc0ac\ub78c\ub4e4\uc774 \ucc38\uc5ec\ud560 \uc218 \uc788\ub294 \uc774\ubca4\ud2b8\ub97c \ub098\ud0c0\ub0c5\ub2c8\ub2e4.",
+			"displayType": "\uc774\ubca4\ud2b8"
+		},
+		"Calendars/recurring": {
+			"description": "\uc8fc\uae30\uc801\uc73c\ub85c \ub418\ud480\uc774\ub418\ub294 \uc2a4\ud2b8\ub9bc\uc744 \uc5f0\uacb0\ud558\ub294 \ub370 \uc0ac\uc6a9\ub429\ub2c8\ub2e4.",
+			"displayType": "\ubc18\ubcf5 \uc774\ubca4\ud2b8"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "\uc2ac\ub86f \ucd94\uac00",
+		"StartTime": "\uc2dc\uc791 \uc2dc\uac04",
+		"EndTime": "\uc885\ub8cc \uc2dc\uac04",
+		"Save": "\uad6c\ud558\ub2e4",
+		"AddTimeSlot": "\uc2dc\uac04 \uc2ac\ub86f \ucd94\uac00",
+		"CopyFromDay": "\uc624\ub298\ubd80\ud130 \ubcf5\uc0ac",
+		"Nearest": "\uac00\uc7a5 \uac00\uae4c\uc6b4",
+		"Today": "\uc624\ub298",
+		"Tomorrow": "\ub0b4\uc77c",
+		"AfterTomorrow": "\ub0b4\uc77c \uc774\ud6c4\uc5d0"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "\uce98\ub9b0\ub354 \uad6c\ub3c5",
+		"copyLinkBelow": "\uc544\ub798 \ub9c1\ud06c \ubcf5\uc0ac",
+		"goTo": "\uc774\ub3d9 :",
+		"pasteCopiedTo": "\ubcf5\uc0ac\ud55c \ub9c1\ud06c\ub97c &quot;\uce98\ub9b0\ub354 URL&quot; \ud544\ub4dc\uc5d0 \ubd99\uc5ec\ub123\uae30",
+		"clickAddCalendar": "&quot;\uce98\ub9b0\ub354 \ucd94\uac00&quot; \ubc84\ud2bc \ud074\ub9ad",
+		"copyLink": "\ub9c1\ud06c \ubcf5\uc0ac",
+		"tapToCopy": "\ub9c1\ud06c\ub97c \ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ud558\ub824\uba74 \uc544\ub798 \ubc84\ud2bc\uc744 \ud0ed\ud558\uc138\uc694.",
+		"linkCopied": "\ub9c1\ud06c\uac00 \ubcf5\uc0ac\ub418\uc5c8\uc2b5\ub2c8\ub2e4",
+		"step2": "\ub9c1\ud06c\uac00 \ubcf5\uc0ac\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \uad6c\uae00\uce98\ub9b0\ub354 \uacf5\uac1c\uc5d0 \uad00\ud55c \ub0b4\uc6a9\uc785\ub2c8\ub2e4. \ub9c1\ud06c\ub97c \ud14d\uc2a4\ud2b8 \uc0c1\uc790\uc5d0 \ubd99\uc5ec\ub123\uace0 &#39;\uce98\ub9b0\ub354 \ucd94\uac00&#39;\ub97c \ud074\ub9ad\ud55c \ub2e4\uc74c \ud0ed\uc744 \ub2eb\uc544\uc57c \ud569\ub2c8\ub2e4(\uc544\ub798 \uc2a4\ud06c\ub9b0\uc0f7 \ucc38\uc870).",
+		"calendarAppPreferences": "Mac\uc758 \uce98\ub9b0\ub354 \uc571\uc5d0\uc11c \ud658\uacbd\uc124\uc815\uc744 \uc5f4\uace0 \uae30\ubcf8 \uce98\ub9b0\ub354 \uc571\uc744 \uc544\ub798\uc640 \uac19\uc774 \uc124\uc815\ud558\uc138\uc694.",
+		"thenCloseDialog": "\uadf8\ub7f0 \ub2e4\uc74c \uc774 \ub300\ud654 \uc0c1\uc790\ub97c \ub2eb\uace0 \uce98\ub9b0\ub354\ub97c \uad6c\ub3c5\ud558\uc138\uc694!",
+		"success": "\uce98\ub9b0\ub354\uac00 \uc131\uacf5\uc801\uc73c\ub85c \ub3d9\uae30\ud654\ub418\uc5c8\uc2b5\ub2c8\ub2e4."
+	},
+	"@override": {
+		"Assets/content": {
+			"payments": {
+				"reasons": {
+					"EventParticipation": "\uc774\ubca4\ud2b8 \ucc38\uc5ec"
+				}
+			}
+		}
+	}
 }

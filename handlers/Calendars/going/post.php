@@ -7,7 +7,6 @@
  * @param {string} [$params.publisherId] Required. The id of the event's publisher
  * @param {string} [$params.eventId] Required. The id of the event.
  * @param {string} [$params.going] Required. Can be one of "no", "maybe" or "yes"
- * @return void
  */
 function Calendars_going_post($params)
 {
@@ -61,16 +60,18 @@ function Calendars_going_post($params)
 			}
 			//----------------------------------
 
-			$participant = Calendars_Event::rsvp($stream, $user->id, 'no');
+			$participant = Calendars_Event::going($stream, $user->id, 'no');
 			break;
 		case 'maybe':
-			$participant = Calendars_Event::rsvp($stream, $user->id, $going);
+			$participant = Calendars_Event::going($stream, $user->id, $going);
 			break;
 		case 'yes':
-			$participant = Calendars_Event::rsvp($stream, $user->id, $going, array("forcePayment" => true));
+			$participant = Calendars_Event::going($stream, $user->id, $going, array("autoCharge" => true));
 			break;
 	}
 
-	Q_Response::setSlot('stream', $stream);
-	Q_Response::setSlot('participant', $participant);
+	Q_Response::setSlot('stream', $stream->exportArray());
+	Q_Response::setSlot('participant', $participant->exportArray());
+	Q_Response::setSlot('payment', $participant->get('paymentIntent', false));
+	Q_Response::setSlot('paid', $participant->get('paid', false));
 }

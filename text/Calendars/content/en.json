@@ -1,79 +1,79 @@
 {
-    "months": {
-        "Jan": "Jan",
-        "Feb": "Feb",
-        "Mar": "Mar",
-        "Apr": "Apr",
-        "May": "May",
-        "Jun": "Jun",
-        "Jul": "Jul",
-        "Aug": "Aug",
-        "Sep": "Sep",
-        "Oct": "Oct",
-        "Nov": "Nov",
-        "Dec": "Dec"
-    },
-    "monthsLong": {
-        "Jan": "January",
-        "Feb": "February",
-        "Mar": "March",
-        "Apr": "April",
-        "May": "May",
-        "Jun": "June",
-        "Jul": "July",
-        "Aug": "August",
-        "Sep": "September",
-        "Oct": "October",
-        "Nov": "November",
-        "Dec": "December"
-    },
-    "weekdays": {
-        "Sun": "Sun",
-        "Mon": "Mon",
-        "Tue": "Tue",
-        "Wed": "Wed",
-        "Thu": "Thu",
-        "Fri": "Fri",
-        "Sat": "Sat"
-    },
-    "weekdaysLong": {
-        "Sun": "Sunday",
-        "Mon": "Monday",
-        "Tue": "Tuesday",
-        "Wed": "Wednesday",
-        "Thu": "Thursday",
-        "Fri": "Friday",
-        "Sat": "Saturday"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "Plan New Event"
-        },
-        "tool": {
-            "HostedBy": "Hosted by {{name}}",
-            "Name": "Name",
-            "AreYouIn": "Are you in?",
-            "Yes": "Yes",
-            "No": "No",
-            "Ok": "Ok",
-            "Cancel": "Cancel",
-            "Maybe": "Maybe",
-            "Presentation": "Presentation",
-            "Conversation": "Conversation",
-            "Promote": "Promote this event",
-            "Reminders": "Reminders",
-            "RemindersLabel": "I want to be notified of an event in:",
-            "MoreInfo": "More info",
-            "Registration": "Registration",
-            "SetReminders": "Please set reminders",
-            "ReservationFee": "Reservation Fee",
-            "AddParticipants": "Add Participants",
-            "YouAreNotParticipated": "You are not a participant of the event",
-            "ManageReservation": "Manage Reservation",
-            "UpdateFutureReservations": "Do you also want to update all future reservations the same way?",
-            "RecurringAdmin": "Recurring Settings",
-            "MakeReservation": "Make Reservation",
-            "StartLiveStream": "Click to Live Stream",
+	"months": {
+		"Jan": "Jan",
+		"Feb": "Feb",
+		"Mar": "Mar",
+		"Apr": "Apr",
+		"May": "May",
+		"Jun": "Jun",
+		"Jul": "Jul",
+		"Aug": "Aug",
+		"Sep": "Sep",
+		"Oct": "Oct",
+		"Nov": "Nov",
+		"Dec": "Dec"
+	},
+	"monthsLong": {
+		"Jan": "January",
+		"Feb": "February",
+		"Mar": "March",
+		"Apr": "April",
+		"May": "May",
+		"Jun": "June",
+		"Jul": "July",
+		"Aug": "August",
+		"Sep": "September",
+		"Oct": "October",
+		"Nov": "November",
+		"Dec": "December"
+	},
+	"weekdays": {
+		"Sun": "Sun",
+		"Mon": "Mon",
+		"Tue": "Tue",
+		"Wed": "Wed",
+		"Thu": "Thu",
+		"Fri": "Fri",
+		"Sat": "Sat"
+	},
+	"weekdaysLong": {
+		"Sun": "Sunday",
+		"Mon": "Monday",
+		"Tue": "Tuesday",
+		"Wed": "Wednesday",
+		"Thu": "Thursday",
+		"Fri": "Friday",
+		"Sat": "Saturday"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Plan New Event"
+		},
+		"tool": {
+			"HostedBy": "Hosted by {{name}}",
+			"Name": "Name",
+			"AreYouIn": "Are you in?",
+			"Yes": "Yes",
+			"No": "No",
+			"Ok": "Ok",
+			"Cancel": "Cancel",
+			"Maybe": "Maybe",
+			"Presentation": "Presentation",
+			"Conversation": "Conversation",
+			"Promote": "Promote this event",
+			"Reminders": "Reminders",
+			"RemindersLabel": "I want to be notified of an event in:",
+			"MoreInfo": "More info",
+			"Registration": "Registration",
+			"SetReminders": "Please set reminders",
+			"ReservationFee": "Reservation Fee",
+			"AddParticipants": "Add Participants",
+			"YouAreNotParticipated": "You are not a participant of the event",
+			"ManageReservation": "Manage Reservation",
+			"UpdateFutureReservations": "Do you also want to update all future reservations the same way?",
+			"RecurringAdmin": "Recurring Settings",
+			"MakeReservation": "Make Reservation",
+			"StartLiveStream": "Click to Live Stream",
             "JoinTeleConference": "Join Teleconference",
             "TeleConferenceEnded": "Teleconference Ended",
             "OpenTeleconferenceScheduler": "Open Teleconference Scheduler",
@@ -81,194 +81,197 @@
             "LiveStreamNotificationOn": "Notification is On",
             "LiveStreamIsOffline": "Livestream is offline",
             "LiveStreamIsOnline": "Livestream is online",
-            "LiveStreamStarted": "Live stream has started",
-            "LiveStreamEnded": "Live stream has ended",
-            "WebRTCStarted": "Teleconference started",
-            "WebRTCEnded": "Teleconference ended",
+			"LiveStreamStarted": "Live stream has started",
+			"LiveStreamEnded": "Live stream has ended",
+			"WebRTCStarted": "Teleconference started",
+			"WebRTCEnded": "Teleconference ended",
             "updateTeleconference": "Update Teleconference",
-            "ClickToViewRecording": "click to view recording",
-            "Checkin": "Scan attendee codes",
-            "Myqr": "Check In",
-            "CloseEvent": {
-                "button": "Cancel Event",
-                "confirm": {
-                    "text": {
-                        "Cancel": "Are you sure you want to cancel this event?",
-                        "Participant": "There is 1 participant in this event",
-                        "Participants": "There are {{count}} participants in this event",
-                        "Recurring": "This event is recurring. Do you want to also cancel all its future instances as well?"
-                    },
-                    "trip": {
-                        "Cancel": "Do you want to also cancel your trip {{tripDirection}} this event?",
-                        "Passengers": "There are {{passengerCount}} passengers relying on you.",
-                        "Title": "Close Trip"
-                    },
-                    "directions": {
-                        "TO": "TO",
-                        "FROM": "FROM",
-                        "to": "to",
-                        "from": "from"
-                    }
-                }
-            },
-            "Calendar": "Calendar",
-            "Interests": "Interests",
-            "Directions": "Directions",
-            "TitleOfEvent": "Title of event:",
-            "OpenTo": "Open to ",
-            "GoingTo": "will be at",
-            "NotGoingTo": "won't be at",
-            "MaybeGoingTo": "will maybe be at",
-            "AdminDontPay": "Admin doesn't need to pay",
-            "PublisherDontPay": "Publisher doesn't need to pay",
-            "EmptyList": "Empty list",
-            "NeedToPayCredits": "Need to pay: <span>{{amount}} credits<\/span>",
-            "PleaseJoinParticipants": "Please join {{participant}}",
-            "YouReservingPlace": "You'll be reserving your place.",
-            "SelectIncludesToAdd": "Select one or more {{TypeDisplayPlural}} to add:",
-            "YouHaveNotRegisteredAnyIncluded": "You have not registered any {{TypeDisplayPlural}} yet",
-            "Proceed": "Proceed",
-            "MakeChanges": "Save My Changes",
-            "CancelReservation": "Cancel entire reservation",
-            "Total": "Total",
-            "RequiredRelatedParticipants": "This event requires participants: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Please edit availability \"{{title}}\" to update recurring settings",
+			"ClickToViewRecording": "click to view recording",
+			"Checkin": "Scan attendee codes",
+			"Myqr": "Check In",
+			"CloseEvent": {
+				"button": "Cancel Event",
+				"confirm": {
+					"text": {
+						"Cancel": "Are you sure you want to cancel this event?",
+						"Participant": "There is 1 participant in this event",
+						"Participants": "There are {{count}} participants in this event",
+						"Recurring": "This event is recurring. Do you want to also cancel all its future instances as well?"
+					},
+					"trip": {
+						"Cancel": "Do you want to also cancel your trip {{tripDirection}} this event?",
+						"Passengers": "There are {{passengerCount}} passengers relying on you.",
+						"Title": "Close Trip"
+					},
+					"directions": {
+						"TO": "TO",
+						"FROM": "FROM",
+						"to": "to",
+						"from": "from"
+					}
+				}
+			},
+			"Calendar": "Calendar",
+			"Interests": "Interests",
+			"Directions": "Directions",
+			"TitleOfEvent": "Title of event:",
+			"OpenTo": "Open to ",
+			"GoingTo": "will be at",
+			"NotGoingTo": "won't be at",
+			"MaybeGoingTo": "will maybe be at",
+			"AdminDontPay": "Admin doesn't need to pay",
+			"PublisherDontPay": "Publisher doesn't need to pay",
+			"EmptyList": "Empty list",
+			"NeedToPayCredits": "Need to pay: <span>{{amount}} credits</span>",
+			"PleaseJoinParticipants": "Please join {{participant}}",
+			"YouReservingPlace": "You'll be reserving your place.",
+			"SelectIncludesToAdd": "Select one or more {{TypeDisplayPlural}} to add:",
+			"YouHaveNotRegisteredAnyIncluded": "You have not registered any {{TypeDisplayPlural}} yet",
+			"Proceed": "Proceed",
+			"MakeChanges": "Save My Changes",
+			"CancelReservation": "Cancel entire reservation",
+			"Total": "Total",
+			"RequiredRelatedParticipants": "This event requires participants: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "Please edit availability \"{{title}}\" to update recurring settings",
+			"Prepayment": "Prepayment",
+			"PrepaymentConfirm": "We'll charge a nominal fee of $1. You'll receive the corresponding number of credits. These credits will be applied toward your full payment for the event.",
             "Join": "Join",
             "Close": "Close"
-        },
-        "composer": {
-            "SetLocation": "Set My Location",
-            "Locally": "locally",
-            "EventInfoLink": "Event Info Link",
-            "TicketPurchaseLink": "Ticket Purchase Link",
-            "ChooseAvailability": "Choose Available Service",
-            "ChooseActivity": "Choose an Activity",
-            "ChoosePublisher": "Choose Publisher",
-            "Day": "Day",
-            "Starting": "Starting",
-            "Duration": "Duration",
-            "Hour": "Hour",
-            "Hours": "Hours",
-            "Minutes": "Minutes",
-            "Ending": "Ending",
-            "People": "People",
-            "Share": "Share",
-            "Continue": "Continue",
-            "Recurring": "Recurring",
-            "RecurringTitle": "Recurring Days",
-            "Daily": "Daily",
-            "Weekly": "Weekly",
-            "Monthly": "Monthly",
-            "SelectLocation": "Please select a location first.",
-            "eventType": "Event Type",
-            "EditTitle": "Think of an interesting title...",
-            "SetTitle": "Please set event title",
-            "ScheduleOnlineConference": "Schedule Teleconference",
-            "SOCDescription": "Please define conference start and end time. Every person who visits the event during this time period will auto connect to online conference.",
-            "EndDate": "End",
-            "location": {
-                "Title": "Set Your Location"
-            },
-            "interest": {
-                "Title": "Choose an Activity",
-                "Filter": "Search interests ..."
-            },
-            "SetLivestream": "Paste link to livestream \/ videoconference",
+		},
+		"composer": {
+			"SetLocation": "Set My Location",
+			"Locally": "locally",
+			"EventInfoLink": "Event Info Link",
+			"TicketPurchaseLink": "Ticket Purchase Link",
+			"ChooseAvailability": "Choose Available Service",
+			"ChooseActivity": "Choose an Activity",
+			"ChoosePublisher": "Choose Publisher",
+			"Day": "Day",
+			"Starting": "Starting",
+			"Duration": "Duration",
+			"Hour": "Hour",
+			"Hours": "Hours",
+			"Minutes": "Minutes",
+			"Ending": "Ending",
+			"People": "People",
+			"Share": "Share",
+			"Continue": "Continue",
+			"Recurring": "Recurring",
+			"RecurringTitle": "Recurring Days",
+			"Daily": "Daily",
+			"Weekly": "Weekly",
+			"Monthly": "Monthly",
+			"SelectLocation": "Please select a location first.",
+			"eventType": "Event Type",
+			"EditTitle": "Think of an interesting title...",
+			"SetTitle": "Please set event title",
+			"ScheduleOnlineConference": "Schedule Teleconference",
+			"SOCDescription": "Please define conference start and end time. Every person who visits the event during this time period will auto connect to online conference.",
+			"EndDate": "End",
+			"location": {
+				"Title": "Set Your Location"
+			},
+			"interest": {
+				"Title": "Choose an Activity",
+				"Filter": "Search interests ..."
+			},
+			"SetLivestream": "Paste link to livestream / videoconference",
             "scheduleTeleconference": "Schedule Teleconference"
-        },
-        "EventAlreadyClosed": "This event already closed",
-        "ErrorLeaveEndedEvent": "Sorry, but you can't leave ended event",
-        "addToCalendar": {
-            "permissions": {
-                "title": "Add to Calendar?",
-                "prompt": "Would you like to add this event to your calendar?",
-                "yes": "Yes",
-                "no": "No"
-            },
-            "dialog": {
-                "Title": "Add Event to your Calendar"
-            }
-        }
-    },
-    "availabilities": {
-        "Title": "Availabilities",
-        "NewAvailability": {
-            "Title": "New Availability",
-            "SaveAvailability": "Save Availability",
-            "SelectTemplate": "Please select Service",
-            "SelectLocation": "Please select Location",
-            "SelectArea": "Please select Area",
-            "Type": "Type",
-            "Weekly": "Weekly",
-            "RecurringStartDate": "Recurring Start Date",
-            "RecurringEndDate": "Recurring End Date",
-            "EndDate": "End Date",
-            "ScheduleOnlineConference": "Schedule Teleconference",
-            "SetLivestream": "Paste link to livestream \/ videoconference",
-            "SelectTimeZone": "Select timeZone",
-            "SelectTime": "Manage Time Slots",
-            "SelectTimeSlot": "Select a time slot",
-            "SelectTimeSlots": "Select desired time slots",
-            "PeopleMin": "Minimum visitors",
-            "PeopleMax": "Maximum visitors",
-            "PeopleLabels": "Roles allowed",
-            "Next": "Next",
-            "Back": "Back"
-        },
-        "EditAvailability": "Edit Availability",
-        "SetVisitors": "Set Visitors",
-        "Price": "Price",
-        "SelectAction": "Please select action",
-        "OpenProfile": "Open profile",
-        "RemoveStaff": "Remove staff",
-        "InviteStaff": "Invite staff",
-        "PleaseSelectTimeSlots": "Please select time slots",
-        "ExceptionOccurred": "Exception occurred",
-        "LiveStream": "Live stream",
-        "NotEnoughCreditsToParticipateEvents": "Not enough credits to participate {{eventsAmount}} events. You need {{needCredits}} credits. Want to buy?"
-    },
-    "recurring": {
-        "dialog": {
-            "startDate": "Start date",
-            "endDate": "End date",
-            "justOnce": "Just once",
-            "justOnceWeekly": "This week only",
-            "justOnceMonthly": "This month only",
-            "recurring": "Recurring"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "Free event",
-            "optional": "Optional contribution",
-            "required": "Required payment"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "Optional contribution",
-            "required": "Required payment",
-            "paid": "paid"
-        },
-        "confirmationDialog": {
-            "title": "Payment confirmation",
-            "content": "This event has an optional contribution of {{amount}}.",
-            "button": "Contribute"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} isn't yet part of the event. Do you want to add them as a participant?",
-        "userNotFound": "User not found",
-        "confirmYes": "Yes",
-        "confirmNo": "No"
-    },
-    "notifications": {
-        "EventActivityIn": "Event activity in {{{stream.fields.title}}}",
-        "RecurringRulesChanged": "Recurring rules changed for event {{{call 'message.getInstruction' 'eventTitle'}}}",
-        "ManageEmailSubscriptions": "manage your email subscriptions",
-        "IfUnsubscribe": "If you want to unsubscribe",
-        "ClickHereToVisitEvent": "Please click here to visit event",
-        "Calendars\/reminder": "Event \"{{{call 'message.getInstruction' 'name'}}}\" will start in {{{call 'message.getInstruction' 'time'}}}",
-        "webrtc": {
+		},
+		"EventAlreadyClosed": "This event already closed",
+		"ErrorLeaveEndedEvent": "Sorry, but you can't leave ended event",
+		"addToCalendar": {
+			"permissions": {
+				"title": "Add to Calendar?",
+				"prompt": "Would you like to add this event to your calendar?",
+				"yes": "Yes",
+				"no": "No"
+			},
+			"dialog": {
+				"Title": "Add Event to your Calendar"
+			}
+		}
+	},
+	"availabilities": {
+		"Title": "Availabilities",
+		"NewAvailability": {
+			"Title": "New Availability",
+			"SaveAvailability": "Save Availability",
+			"SelectTemplate": "Please select Service",
+			"SelectLocation": "Please select Location",
+			"SelectArea": "Please select Area",
+			"Type": "Type",
+			"Weekly": "Weekly",
+			"RecurringStartDate": "Recurring Start Date",
+			"RecurringEndDate": "Recurring End Date",
+			"EndDate": "End Date",
+			"ScheduleOnlineConference": "Schedule Teleconference",
+			"SetLivestream": "Paste link to livestream / videoconference",
+			"SelectTimeZone": "Select timeZone",
+			"SelectTime": "Manage Time Slots",
+			"SelectTimeSlot": "Select a time slot",
+			"SelectTimeSlots": "Select desired time slots",
+			"PeopleMin": "Minimum visitors",
+			"PeopleMax": "Maximum visitors",
+			"PeopleLabels": "Roles allowed",
+			"Next": "Next",
+			"Back": "Back"
+		},
+		"EditAvailability": "Edit Availability",
+		"SetVisitors": "Set Visitors",
+		"Price": "Price",
+		"SelectAction": "Please select action",
+		"OpenProfile": "Open profile",
+		"RemoveStaff": "Remove staff",
+		"InviteStaff": "Invite staff",
+		"PleaseSelectTimeSlots": "Please select time slots",
+		"ExceptionOccurred": "Exception occurred",
+		"LiveStream": "Live stream",
+		"NotEnoughCreditsToParticipateEvents": "Not enough credits to participate {{eventsAmount}} events. You need {{needCredits}} credits. Want to buy?"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "Start date",
+			"endDate": "End date",
+			"justOnce": "Just once",
+			"justOnceWeekly": "This week only",
+			"justOnceMonthly": "This month only",
+			"recurring": "Recurring"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "Free event",
+			"optional": "Optional contribution",
+			"required": "Required payment"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "Optional contribution",
+			"required": "Price to Attend: {{amount}} {{currency}}",
+			"paid": "paid"
+		},
+		"confirmationDialog": {
+			"title": "Payment confirmation",
+			"content": "This event has an optional contribution of {{amount}}.",
+			"button": "Contribute"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} isn't yet part of the event. Do you want to add them as a participant?",
+		"userNotFound": "User not found",
+		"UserAlreadyCheckedIn": "{{1}} already was checked in by {{2}}!",
+		"confirmYes": "Yes",
+		"confirmNo": "No"
+	},
+	"notifications": {
+		"EventActivityIn": "Event activity in {{{stream.fields.title}}}",
+		"RecurringRulesChanged": "Recurring rules changed for event {{{call 'message.getInstruction' 'eventTitle'}}}",
+		"ManageEmailSubscriptions": "manage your email subscriptions",
+		"IfUnsubscribe": "If you want to unsubscribe",
+		"ClickHereToVisitEvent": "Please click here to visit event",
+		"Calendars/reminder": "Event \"{{{call 'message.getInstruction' 'name'}}}\" will start in {{{call 'message.getInstruction' 'time'}}}",
+		"webrtc": {
             "Started": "Teleconference started",
             "StartedInEvent": "Teleconference started in \"{{event}}\".",
             "OngloingInEvent": "The teleconference for the \"{{event}}\" is ongoing.",
@@ -282,67 +285,79 @@
             "JoinAudience": "Join audience",
             "Close": "Close"
         }
-    },
-    "import": {
-        "linkTitle": "Fill Out This Spreadsheet",
-        "fileLabel": "Upload Spreadsheet:",
-        "importOptions": "Options",
-        "importProgress": "Progress",
-        "sampleCSV": "Download Sample CSV",
-        "joinEventLabel": "Join users to random event",
-        "smsText": "Hey, I just sent you a link to {{communityName}}. Please check it out.",
-        "emailSubject": "Just sent you a link",
-        "emailBody": "Hey, I just sent you an invitation to {{communityName}}. Please check it out.",
-        "fileNotFound": "Sorry, CSV file not found.",
-        "fileEmpty": "Sorry, CSV file is empty.",
-        "fieldNotFound": "Required field \"{{1}}\" not found",
-        "userIdNotFound": "user exist but id empty",
-        "activateUsers": "send activation message to users?",
-        "taskStreamInvalid": "task stream invalid",
-        "instructionsEmpty": "task stream instructions empty",
-        "interestsEmpty": "can't get interests",
-        "interestAbsent": "interest {{1}} not found",
-        "complete": "Complete",
-        "errorLine": "line {{1}}",
-        "errorsTitle": "Errors occurred",
-        "communityUsers": "This is communities list",
-        "toMainCommunityToo": "relate to main community too",
-        "ChooseFile": "choose file"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "Represents an event that people can participate in",
-            "displayType": "Event"
-        },
-        "Calendars\/recurring": {
-            "description": "Used for relating streams that are meant to recur periodically",
-            "displayType": "Recurring Event"
-        }
-    },
-    "timeslots": {
-        "AddSlot": "Add Slot",
-        "StartTime": "Start Time",
-        "EndTime": "End Time",
-        "Save": "Save",
-        "AddTimeSlot": "Add Time Slot",
-        "CopyFromDay": "Copy from day",
-        "Nearest": "Nearest",
-        "Today": "Today",
-        "Tomorrow": "Tomorrow",
-        "AfterTomorrow": "After tomorrow"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "Subscribe to Calendar",
-        "copyLinkBelow": "Click the button below to copy the link to your clipboard",
-        "tapToCopy": "Tap the button below to copy the link to your clipboard",
-        "goTo": "Go to:",
-        "pasteCopiedTo": "Paste copied link to \"URL of calendar\" field",
-        "clickAddCalendar": "Click \"Add calendar\" button",
-        "copyLink": "Copy Link",
-        "linkCopied": "Link Copied",
-        "step2": "Link Copied. We are about open Google Calendar. You will need to paste the link into the textbox, click \"Add calendar\", and close the tab (see screenshot below)",
-        "calendarAppPreferences": "Open the Preferences in the Calendar App on your Mac, and set Default Calendar App to be as shown below.",
-        "thenCloseDialog": "Then close this dialog to subscribe to your calendar!",
-        "success": "Calendar was successfully synced"
-    }
+	},
+	"import": {
+		"linkTitle": "Fill Out This Spreadsheet",
+		"fileLabel": "Upload Spreadsheet:",
+		"importOptions": "Options",
+		"importProgress": "Progress",
+		"sampleCSV": "Download Sample CSV",
+		"joinEventLabel": "Join users to random event",
+		"smsText": "Hey, I just sent you a link to {{communityName}}. Please check it out.",
+		"emailSubject": "Just sent you a link",
+		"emailBody": "Hey, I just sent you an invitation to {{communityName}}. Please check it out.",
+		"fileNotFound": "Sorry, CSV file not found.",
+		"fileEmpty": "Sorry, CSV file is empty.",
+		"fieldNotFound": "Required field \"{{1}}\" not found",
+		"userIdNotFound": "user exist but id empty",
+		"activateUsers": "send activation message to users?",
+		"taskStreamInvalid": "task stream invalid",
+		"instructionsEmpty": "task stream instructions empty",
+		"interestsEmpty": "can't get interests",
+		"interestAbsent": "interest {{1}} not found",
+		"complete": "Complete",
+		"errorLine": "line {{1}}",
+		"errorsTitle": "Errors occurred",
+		"communityUsers": "This is communities list",
+		"toMainCommunityToo": "relate to main community too",
+		"ChooseFile": "choose file"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "Represents an event that people can participate in",
+			"displayType": "Event"
+		},
+		"Calendars/recurring": {
+			"description": "Used for relating streams that are meant to recur periodically",
+			"displayType": "Recurring Event"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "Add Slot",
+		"StartTime": "Start Time",
+		"EndTime": "End Time",
+		"Save": "Save",
+		"AddTimeSlot": "Add Time Slot",
+		"CopyFromDay": "Copy from day",
+		"Nearest": "Nearest",
+		"Today": "Today",
+		"Tomorrow": "Tomorrow",
+		"AfterTomorrow": "After tomorrow"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "Subscribe to Calendar",
+		"copyLinkBelow": "Click the button below to copy the link to your clipboard",
+		"tapToCopy": "Tap the button below to copy the link to your clipboard",
+		"goTo": "Go to:",
+		"pasteCopiedTo": "Paste copied link to \"URL of calendar\" field",
+		"clickAddCalendar": "Click \"Add calendar\" button",
+		"copyLink": "Copy Link",
+		"linkCopied": "Link Copied",
+		"step2": "Link Copied. We are about open Google Calendar. You will need to paste the link into the textbox, click \"Add calendar\", and close the tab (see screenshot below)",
+		"calendarAppPreferences": "Open the Preferences in the Calendar App on your Mac, and set Default Calendar App to be as shown below.",
+		"thenCloseDialog": "Then close this dialog to subscribe to your calendar!",
+		"success": "Calendar was successfully synced"
+	},
+	"@override": {
+		"Assets/content": {
+            "credits": {
+				"EventParticipation": "Event Participation"
+			},
+			"payments": {
+				"reasons": {
+					"EventParticipation": "Event Participation"
+				}
+			}
+		}
+	}
 }

@@ -52,7 +52,7 @@ class Calendars_Event extends Base_Calendars_Event
 		$address = Q::ifset($location, "address", null);
 		$startTime = (int)$stream->getAttribute('startTime', 0);
 		$endTime = $stream->getAttribute('endTime', $startTime + $duration);
-		$timezoneName = $timezoneName ? $timezoneName : $stream->getAttribute('timezoneName', 'UTC');
+		$timezoneName = $timezoneName ?: $stream->getAttribute('timezoneName', 'UTC');
 
 		$dt = new DateTime("now", new DateTimeZone($timezoneName));
 
@@ -64,7 +64,7 @@ class Calendars_Event extends Base_Calendars_Event
 		$content = $stream->content;
 		return @compact(
 			'publisherId', 'streamName',
-			'startTime', 'endTime', 'start', 'end', 'timezone', 'timezoneName',
+			'startTime', 'endTime', 'start', 'end', 'timezoneName', 'timezoneName',
 			'title', 'content', 'url', 'address', 'createdTime'
 		);
 	}
@@ -211,7 +211,7 @@ class Calendars_Event extends Base_Calendars_Event
 				}
 
 				try {
-					Calendars_Event::rsvp($event, $user->id);
+					Calendars_Event::going($event, $user->id, 'yes');
 				} catch (Exception $e) {}
 
 				$randomAmount--;
@@ -280,8 +280,9 @@ class Calendars_Event extends Base_Calendars_Event
 			'description' => ""
 		));
 
-		if (!$r['placeId'] && !$r['teleconference']) {
-			throw new Q_Exception_RequiredField(array('field' => 'location or live stream URL'));
+        $timezoneName = Q::ifset($r, 'timezoneName', Q_Config::get('Calendars', 'events', 'defaults', 'timezoneName', null));
+		if (!$r['placeId'] && !$r['teleconference'] && !$timezoneName) {
+			throw new Q_Exception_RequiredField(array('field' => 'location or teleconference URL or timezoneName'));
 		}
 
 		if (empty($r['localStartDateTime']) && empty($r['startTime'])) {
@@ -400,7 +401,6 @@ class Calendars_Event extends Base_Calendars_Event
 		$localStartDateTime = Q::ifset($r, 'localStartDateTime', null);
 		$localEndDateTime = Q::ifset($r, 'localEndDateTime', null);
 		$duration = Q::ifset($r, 'duration', null);
-		$timezone = Q::ifset($r, 'timezoneName', null);
 
 		// location
 		$venue = null;
@@ -420,14 +420,14 @@ class Calendars_Event extends Base_Calendars_Event
 			$venue = Q::ifset($r, 'venueName', $locationStream->title);
 			$lat = $locationStream->getAttribute('latitude');
 			$lng = $locationStream->getAttribute('longitude');
-			$timezone = $locationStream->getAttribute('timeZone');
+            $timezoneName = $locationStream->getAttribute('timeZone');
 		}
 
 		if (!$startTime) {
 			if ($locationStream) {
 				$startTime = (int)self::calculateStartTime($localStartDateTime, $locationStream);
 			} else {
-				$startTime = new DateTime($localStartDateTime, new DateTimeZone($timezone));
+				$startTime = new DateTime($localStartDateTime, new DateTimeZone($timezoneName));
 				$startTime = (int)$startTime->format('U');
 			}
 		}
@@ -438,7 +438,7 @@ class Calendars_Event extends Base_Calendars_Event
 				if ($locationStream) {
 					$endTime = self::calculateStartTime($localEndDateTime, $locationStream);
 				} else {
-					$endTime = new DateTime($localEndDateTime, new DateTimeZone($timezone));
+					$endTime = new DateTime($localEndDateTime, new DateTimeZone($timezoneName));
 					$endTime = $endTime->format('U');
 				}
 			} elseif ($duration) {
@@ -474,7 +474,7 @@ class Calendars_Event extends Base_Calendars_Event
 				'startTime' => $startTime,
 				'localStartDateTime' => $localStartDateTime,
 				'endTime' => $endTime,
-				'timezoneName' => $timezone,
+				'timezoneName' => $timezoneName,
 				'peopleMin' => $peopleMin,
 				'peopleMax' => $peopleMax,
 				'labels' => $labels,
@@ -489,8 +489,10 @@ class Calendars_Event extends Base_Calendars_Event
 			$fields['writeLevel'] = 0;
 			$fields['adminLevel'] = 0;
 		} elseif ($r['payment']) {
-			$fields['readLevel'] = 20;
-		}
+            // because of changes in global access model (relation access 20 while fields access 25) we can't read attributes with level 20
+            // so decided to leave readLevel 40
+            //$fields['readLevel'] = 20;
+        }
 
 		// save the event in the database
 		$event = Streams::create(null, $publisherId, 'Calendars/event', $fields);
@@ -511,7 +513,7 @@ class Calendars_Event extends Base_Calendars_Event
 		// so need join him to event, because publisher sure going
 		if(Q_Request::method() === 'POST' && !Users::isCommunityId($publisherId)) {
 			// join publisher to event
-			$participant = self::rsvp($event, $publisherId);
+			$participant = self::going($event, $publisherId);
 		}
 
 		// save any access labels
@@ -625,7 +627,7 @@ class Calendars_Event extends Base_Calendars_Event
 	 * @return array
 	 */
 	static function relateToCommunity($event, $communityId) {
-		$communityEventsCategory = Calendars::eventsCalendar($communityId);
+		$communityEventsCategory = Calendars::stream($communityId);
 		$startTime = $event->getAttribute('startTime');
 		$event->relateTo($communityEventsCategory, 'Calendars/events', null, array(
 			'skipAccess' => true,
@@ -797,27 +799,29 @@ class Calendars_Event extends Base_Calendars_Event
 		return $result;
 	}
 	/**
-	 * Make user participated to event
+	 * Join event and indicate whether you are going or not
 	 * @method join
 	 * @static
 	 * @param {Streams_Stream} $stream Event stream
 	 * @param {string} $userId Id of user need to participate
 	 * @param {string} $going Whether user going. Can ge one of "yes", "no", "maybe"
 	 * @param {array} [$options]
-	 * @param {bool} [$options.skipPayment=false] Sometime need to skip payment, for instance when participate staffer.
+	 * @param {bool} [$options.skipPayment=false] Sometime need to skip payment, for instance when participate staffer,
+	 * 	or to avoid infinite loop various callers of this function
+	 * @param {boolean} [$options.paid] Send along with skipPayment if we want to indicate the event was already paid for
 	 * @param {Boolean} [$options.skipRecurringParticipant=false] If true don't manage recurring participant
 	 * @param {Boolean} [$options.skipSubscription=false] If true skip subscription to stream
-	 * @param {bool} [$options.forcePayment=false] If true, do payment if required. If false, throw exception.
+	 * @param {bool} [$options.autoCharge=false] If true, do payment if required. If false, throw exception.
 	 * @param {array} [$options.relatedParticipants] If defined array of related participants, relate all of them to event.
 	 * Array format: array(array("publisherId" => ..., "streamName" => ...), ...)
 	 * @throws Streams_Exception_Full
 	 * @throws Q_Exception_MissingRow
 	 * @return {Streams_Participating} The row representing the participant
 	 */
-	static function rsvp ($stream, $userId, $going = 'yes', $options = array()) {
+	static function going($stream, $userId, $going = 'yes', $options = array()) {
 		// check if event already started
 		if ((int)$stream->getAttribute("startTime") < time()) {
-			return;
+			throw new Q_Exception("Event already started");
 		}
 
 		$user = Users_User::fetch($userId, true);
@@ -825,6 +829,8 @@ class Calendars_Event extends Base_Calendars_Event
 		$isAdmin = (bool)Users::roles(Users::currentCommunityId(true), Q_Config::expect('Calendars', 'events', 'admins'));
 		$skipPayment = Q::ifset($options, 'skipPayment', false);
 		$relatedParticipants = Q::ifset($options, "relatedParticipants", null);
+		$paymentIntent = false;
+		$paid = Q::ifset($options, 'paid', false);
 
 		$recurringCategory = Calendars_Recurring::fromStream($stream);
 
@@ -833,7 +839,7 @@ class Calendars_Event extends Base_Calendars_Event
 		if ($going == 'no') {
 			$stream->leave($options);
 
-			$stream->unsubscribe($options);
+			// $stream->unsubscribe($options);
 
 			// unrelate all relatedParticipants streams related by this user
 			$relations = Streams_RelatedTo::select()->where(array(
@@ -900,6 +906,8 @@ class Calendars_Event extends Base_Calendars_Event
 				$paymentRequired = false;
 				$payment = $stream->getAttribute("payment");
 				$amount = Q::ifset($payment, "amount", 0);
+				$discount = Q::ifset($payment, "discount", 0);
+				$bonus = Q::ifset($payment, "bonus", 0);
 				$resAmount = 0;
 				$paymentType = Q::ifset($payment, "type", null);
 				if ($paymentType == "required" && ($isPublisher || $isAdmin)) {
@@ -912,7 +920,7 @@ class Calendars_Event extends Base_Calendars_Event
 						)
 					), true);
 				} elseif (!$skipPayment && $paymentType == 'required') {
-					if (!Assets_Credits::checkJoinPaid($userId, $stream)) {
+					if (!Assets_Credits::getPaymentsInfo($userId, $stream)["conclusion"]["fullyPaid"]) {
 						$resAmount += $amount;
 						$paymentRequired = true;
 					}
@@ -927,10 +935,10 @@ class Calendars_Event extends Base_Calendars_Event
 							'type' => $relatedParticipant["relationType"]
 						))->fetchDbRows();
 						foreach ($relatedRows as $relatedRow) {
-							if (!Assets_Credits::checkJoinPaid($userId, $stream, array(
+							if (!Assets_Credits::getPaymentsInfo($userId, $stream, array(
 									'publisherId' => $relatedRow->fromPublisherId,
 									'streamName' => $relatedRow->fromStreamName)
-							)) {
+							)["conclusion"]["fullyPaid"]) {
 								$resAmount += $amount;
 								$paymentRequired = true;
 							}
@@ -938,42 +946,65 @@ class Calendars_Event extends Base_Calendars_Event
 					}
 
 					if ($paymentRequired) {
-						if (!Q::ifset($options, "forcePayment", false)) {
-							throw new Streams_Exception_Payment();
+						$token = Q::ifset($_SESSION, 'Streams', 'invite', 'token', null);
+						$result = Assets::pay(
+							Users::communityId(), 
+							$userId, 
+							$resAmount,
+							'EventParticipation',
+							array_merge($options, array(
+								'toPublisherId' => $stream->publisherId,
+								'toStreamName' => $stream->name,
+								'autoCharge' => $options['autoCharge']
+							))
+						);
+						if (!empty($result['success'])) {
+							// after a successful payment, set going and skip payment
+							$options['paid'] = 'autoCharge';
+							$options['skipPayment'] = true;
+							// the below call to self::going() is optional, because
+							// the webhook will call self::going() again after
+							// the charge is processed.
+							return self::going($stream, $userId, $going, $options);	
 						}
-						Q::event("Assets/credits/post", array(
-							"amount" => $resAmount,
-							"currency" => $payment["currency"],
-							"toStream" => $stream,
-							"forcePayment" => true
-						));
-
-						// after payment try again to unsure that payments success
-						$options["forcePayment"] = false;
-						return self::rsvp($stream, $userId, $going, $options);
+						// Payment is required,
+						// user doesn't have enough credits,
+						// and can't automatically buy them.
+						// So set their going = maybe, until they pay manually.
+						// Then the Calendars/after/Assets/credits/spend hook
+						// (called by our webhook) will set their going = yes.
+						if ($going === 'yes') {
+							$going = 'maybe';
+							$paymentIntent = $result;
+						}
 					}
 				}
 			}
 
-			// join user to event
-			$stream->join($options);
-
 			if (!Q::ifset($options, 'skipSubscription', false)) {
 				$stream->subscribe($options);
+			} else {
+				$stream->join($options); // simply join event
 			}
 
 			// collect stats by event
-			Users_Vote::saveActivity("Calendars/event", $stream->title);
+			$parts = explode('/', $stream->name);
+			$eventId = end($parts);
+			Users_Vote::saveActivity("Calendars/event", $eventId);
 
 			// collect stats by availability
 			$availability = self::getAvailability($stream);
 			if ($availability) {
-				Users_Vote::saveActivity("Calendars/availability", $availability->title);
+				$parts = explode('/', $availability->name);
+				$availabilityId = end($parts);
+				Users_Vote::saveActivity("Calendars/availability", $availabilityId);
 
 				// collect stats by service
 				$service = self::getService($stream);
 				if ($service) {
-					Users_Vote::saveActivity("Assets/service", $service->title);
+					$parts = explode('/', $service->name);
+					$serviceId = end($parts);
+					Users_Vote::saveActivity("Assets/service", $serviceId);
 				}
 			}
 
@@ -1022,13 +1053,24 @@ class Calendars_Event extends Base_Calendars_Event
 		$startTime = $stream->getAttribute('startTime');
 		$participant->setExtra(@compact('going', 'startTime'));
 		if ($going === 'no') {
-			$participant->revokeRoles("attendee");
-		} else {
-			$participant->grantRoles("attendee");
+			$participant->revokeRoles(["registered", "requested"]);
+            if ($payment) {
+                $participant->setExtra('paid', 'no');
+            }
+        } else if($going === 'maybe') {
+            self::grantRoles($participant, "requested");
+            if ($payment) {
+                $participant->setExtra('paid', 'reserved');
+            }
+		} else if ($going === 'yes') {
+            self::grantRoles($participant, "registered");
+            if ($payment) {
+                $participant->setExtra('paid', 'fully');
+            }
 		}
 		$participant->save();
 
-		// Let everyone in the stream know of a change in RSVP
+		// Let everyone in the stream know of a change in going
 		$stream->post($user->id, array(
 			'type' => 'Calendars/going',
 			'instructions' => array('going' => $going)
@@ -1039,8 +1081,69 @@ class Calendars_Event extends Base_Calendars_Event
 			'isAdmin', 'skipPayment', 'relatedParticipants'
 		), 'after');
 
+		if ($paymentIntent) {
+			$participant->set('paymentIntent', $paymentIntent);
+		} else if ($paid) {
+			$participant->set('paid', $paid);
+		}
+
 		return $participant;
 	}
+
+    /**
+     * Grant roles to Calendars/event participants. Some roles can be grouped. Grouped roles excludes siblings.
+     * @method grantRoles
+     * @static
+     * @param {Streams_Participant} $participant
+     * @param {string|array} $roles
+     * @paramt {bool} [$save] whether to make save after roles updated
+     * @throws Q_Exception_BadValue
+     * @throws Users_Exception_NotLoggedIn
+     */
+    static function grantRoles (&$participant, $roles, $save = false) {
+        $groups = array(
+            array('rejected', 'requested', 'registered')
+        );
+
+        if (is_array($roles)) {
+            foreach ($roles as $role) {
+                self::grantRoles($participant, $role);
+            }
+            return;
+        } elseif (is_string($roles)) {
+            $role = $roles;
+        } else {
+            throw new Q_Exception_BadValue(array(
+                'internal' => $roles,
+                'problem' => 'can be string or array of strings'
+            ));
+        }
+
+        // role already exists
+        if ($participant->testRoles($role)) {
+            return;
+        }
+
+        $revokeRoles = array();
+        foreach ($groups as $group) {
+            if (in_array($role, $group)) {
+                if ($participant->testRoles('rejected')) {
+                    $adminLabels = Q_Config::get("Calendars", "events", "admins", array());
+                    if(!($adminLabels && (bool)Users::roles(Users::communityId(), $adminLabels, array(), (Users::loggedInUser(true))->id))) {
+                        return;
+                    }
+                }
+
+                $revokeRoles = $group;
+            }
+        }
+
+        if (!empty($revokeRoles)) {
+            $participant->revokeRoles($revokeRoles);
+        }
+        $participant->grantRoles(array($role));
+        $save && $participant->save();
+    }
 
 	/**
 	 * Subscribe user on Calendars/event/livestream/started messages (when user clicks "Notify me when live" in event tool on front-end)
@@ -1123,15 +1226,15 @@ class Calendars_Event extends Base_Calendars_Event
 		}
 	}
 	/**
-	 * Get RSVP for userId in event
-	 * @method getRsvp
+	 * Get whether userId is going to an event
+	 * @method getGoing
 	 * @static
 	 * @param {Streams_Stream} $event Required.
 	 * @param {String} $userId If null loggedin user used.
 	 * @throws
 	 * @return String Yes, No, Maybe
 	 */
-	static function getRsvp($event, $userId = null) {
+	static function getGoing($event, $userId = null) {
 		if (!$userId) {
 			$loggedInUser = Users::loggedInUser();
 			$userId = Q::ifset($loggedInUser, "id", null);
@@ -1506,7 +1609,7 @@ class Calendars_Event extends Base_Calendars_Event
 			}
 
 			if ($userId) {
-				self::rsvp($event, $userId, 'yes', array(
+				self::going($event, $userId, 'yes', array(
 					'skipPayment' => true,
 					'skipSubscription' => true,
 					'skipRecurringParticipant' => true,
@@ -1773,5 +1876,198 @@ class Calendars_Event extends Base_Calendars_Event
 		} else {
 			return null;
 		}
+	}
+
+	/**
+	 * Reschedule an event by updating its startTime and adjusting related events
+	 * @method reschedule
+	 * @static
+	 * @param {string} $publisherId The publisher of the event
+	 * @param {string} $streamName The name of the event stream
+	 * @param {integer} $newStartTime The new start time timestamp
+	 * @param {array} [$options=array()] Additional options
+	 * @param {string} [$options.asUserId] The user performing the reschedule
+	 * @return {Streams_Stream} The updated event stream
+	 */
+	static function reschedule($publisherId, $streamName, $newStartTime, $options = array())
+	{
+		$asUserId = Q::ifset($options, 'asUserId', Users::loggedInUser(true)->id);
+		
+		// Fetch the event stream
+		$event = Streams::fetchOne($asUserId, $publisherId, $streamName, true);
+		
+		// Check if user has permission to edit this event
+		// if (!$event->testWriteLevel('edit')) {
+		// 	throw new Users_Exception_NotAuthorized();
+		// }
+		
+		// Get old startTime and endTime
+		$oldStartTime = (int)$event->getAttribute('startTime', 0);
+		if (!$oldStartTime) {
+			throw new Q_Exception("Event doesn't have a startTime");
+		}
+		$oldEndTime = (int)$event->getAttribute('endTime', 0);
+		if (!$oldEndTime) {
+			throw new Q_Exception("Event doesn't have an endTime");
+		}
+		
+		// Calculate the event's duration
+		$eventDuration = $oldEndTime - $oldStartTime;
+		
+		// Calculate the time shift for the event being rescheduled
+		$timeShift = $newStartTime - $oldStartTime;
+		
+		if ($timeShift === 0) {
+			return $event; // No change needed
+		}
+		
+		// Events in between move in the OPPOSITE direction by the event's DURATION
+		// If event moves forward (+timeShift), other events move backward (-eventDuration)
+		// If event moves backward (-timeShift), other events move forward (+eventDuration)
+		$otherEventsShift = $timeShift > 0 ? -$eventDuration : $eventDuration;
+		
+		// Find all calendars this event is related to
+		list($relations, $calendars) = Streams::related(
+			$asUserId,
+			$publisherId,
+			$streamName,
+			false,
+			array('type' => array('Calendars/event', 'Calendars/events'), 'skipAccess' => true)
+		);
+		
+		// Determine the range of events to check
+		// We need to select events that are IN BETWEEN the old and new positions
+		// If moving forward: events between oldStartTime (inclusive) and newStartTime (inclusive)
+		// If moving backward: events between newStartTime (inclusive) and oldStartTime (inclusive)
+		if ($timeShift > 0) {
+			// Moving forward - select events that will be pushed back
+			$minTime = $oldStartTime;
+			$maxTime = $newStartTime;
+		} else {
+			// Moving backward - select events that will be pushed forward
+			$minTime = $newStartTime;
+			$maxTime = $oldStartTime;
+		}
+		
+		// Collect all events to update and check permissions
+		$eventsToUpdate = array();
+		$calendarUpdates = array();
+		
+		foreach ($calendars as $calendar) {
+			// Check if user has permission to manage relations on this calendar
+			// if (!$calendar->testWriteLevel('relations')) {
+			// 	throw new Users_Exception_NotAuthorized();
+			// }
+			
+			$relationType = null;
+			foreach ($relations as $rel) {
+				if ($rel->toStreamName === $calendar->name 
+				&& $rel->toPublisherId === $calendar->publisherId) {
+					$relationType = $rel->type;
+					break;
+				}
+			}
+			
+			if (!$relationType) {
+				continue;
+			}
+			
+			// Get all events in this calendar within the affected time range
+			// These are events whose weight (startTime in relations) falls in the range
+			list($categoryRelations, $categoryEvents) = Streams::related(
+				$asUserId,
+				$calendar->publisherId,
+				$calendar->name,
+				true,
+				array(
+					'min' => $minTime,
+					'max' => $maxTime,
+					'type' => $relationType,
+					'skipAccess' => true
+				)
+			);
+			
+			$calendarKey = $calendar->publisherId . "\t" . $calendar->name . "\t" . $relationType;
+			$calendarUpdates[$calendarKey] = array(
+				'calendar' => $calendar,
+				'relationType' => $relationType,
+				'updates' => array()
+			);
+			
+			foreach ($categoryRelations as $relation) {
+				$name = $relation->fromStreamName;
+				$relatedEvent = Q::ifset($categoryEvents, $name, null);
+				if (!$relatedEvent) {
+					continue;
+				}
+				
+				// Check if user has permission to edit this event
+				// if (!$relatedEvent->testWriteLevel('edit')) {
+				// 	throw new Users_Exception_NotAuthorized();
+				// }
+				
+				$eventKey = $relatedEvent->publisherId . "\t" . $relatedEvent->name;
+				
+				if ($name === $streamName) {
+					// This is the event being rescheduled
+					$calendarUpdates[$calendarKey]['updates'][] = array(
+						'fromStreamName' => $name,
+						'newWeight' => $newStartTime
+					);
+				} else {
+					// Other events in the range move by the event's duration in opposite direction
+					$currentWeight = $relation->weight;
+					$newWeight = $currentWeight + $otherEventsShift;
+					
+					$calendarUpdates[$calendarKey]['updates'][] = array(
+						'fromStreamName' => $name,
+						'newWeight' => $newWeight
+					);
+					
+					// Store event for updating if not already stored
+					if (!isset($eventsToUpdate[$eventKey])) {
+						$eventsToUpdate[$eventKey] = $relatedEvent;
+					}
+				}
+			}
+		}
+		
+		// Update all affected events' startTime and endTime
+		foreach ($eventsToUpdate as $relatedEvent) {
+			$relatedStartTime = (int)$relatedEvent->getAttribute('startTime', 0);
+			$relatedEndTime = (int)$relatedEvent->getAttribute('endTime', 0);
+			
+			$relatedEvent->setAttribute('startTime', $relatedStartTime + $otherEventsShift);
+			if ($relatedEndTime) {
+				$relatedEvent->setAttribute('endTime', $relatedEndTime + $otherEventsShift);
+			}
+			$relatedEvent->changed();
+		}
+		
+		// Update the main event's startTime and endTime
+		$event->setAttribute('startTime', $newStartTime);
+		$newEndTime = $newStartTime + $eventDuration;
+		$event->setAttribute('endTime', $newEndTime);
+		$event->changed();
+		
+		// Update all relations in each calendar
+		foreach ($calendarUpdates as $calendarUpdate) {
+			$calendar = $calendarUpdate['calendar'];
+			$relationType = $calendarUpdate['relationType'];
+			
+			foreach ($calendarUpdate['updates'] as $update) {
+				Streams::updateRelations(
+					$asUserId,
+					$calendar->publisherId,
+					$calendar->name,
+					$publisherId,
+					$update['fromStreamName'],
+					array($relationType => $update['newWeight']),
+					array('skipAccess' => true)
+				);
+			}
+		}
+		
+		return $event;
 	}
 }

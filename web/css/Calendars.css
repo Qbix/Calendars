@@ -85,14 +85,7 @@
 .Calendars_recurring_setting:empty {
 	display: none;
 }
-.Streams_participants_tool .Users_avatar_tool[data-checkin=true]::after {
-	display: block;
-	position: absolute;
-	bottom: 16px;
-	right: 0;
-	content: "\00a0";
-	width: 15px;
-	height: 15px;
+.Streams_participants_tool .Q_badge.Calendars_event_checkin {
 	background-repeat: no-repeat;
 	background-image: url(../img/checkedin.png);
 }

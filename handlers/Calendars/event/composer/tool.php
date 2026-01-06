@@ -65,6 +65,8 @@ function Calendars_event_composer_tool($options)
 		'externalLinks' => Q_Config::get('Calendars', 'newEvent', 'externalLinks', true)
 	);
 
+    // default payment options
+    $payment = Q_Config::get('Calendars', 'events', 'defaults', 'payment', []);
 
 	// collect labels for publisher
 	$labelsUserId = $publisherId ? $publisherId : $user->id;
@@ -72,6 +74,6 @@ function Calendars_event_composer_tool($options)
 
 	return Q::view('Calendars/templates/event/composer.handlebars', @compact(
 		'locationDefined', 'datePicker', 'timeRange', 'peopleMin', 'peopleMax', 'communityId', 'showPublisher',
-		'labels', 'show'
+		'labels', 'show', 'payment'
 	));
 }

@@ -19,6 +19,6 @@ function Calendars_before_Streams_close_Calendars_event($params) {
 		"state" => "participating"
 	))->fetchDbRows();
 	foreach ($participants as $participant) {
-		Calendars_Event::rsvp($stream, $participant->userId, "no", array("skipAccess" => true));
+		Calendars_Event::going($stream, $participant->userId, "no", array("skipAccess" => true));
 	}
 }

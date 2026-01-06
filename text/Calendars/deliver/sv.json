@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Tack f\u00f6r ditt intresse f\u00f6r {{title}}"
+	},
+	"approved": {
+		"Subject": "N\u00e4rvaro godk\u00e4nd",
+		"AttendanceApproved": "Grattis! Din n\u00e4rvaro har godk\u00e4nts f\u00f6r {{title}}"
+	},
+	"requested": {
+		"Subject": "N\u00e4rvaro beg\u00e4rd",
+		"AttendanceRequested": "Vi bekr\u00e4ftar din beg\u00e4ran om att delta: {{title}}"
+	},
+	"rejected": {
+		"Subject": "N\u00e4rvaro ej godk\u00e4nd",
+		"AttendanceRejected": "Administrat\u00f6rerna godk\u00e4nde inte din beg\u00e4ran om att delta: {{title}}"
+	},
+	"paid": {
+		"Subject": "Bekr\u00e4ftelse av lyckad betalning",
+		"YouveBeenCharged": "Du har debiterats {{amount}} {{currency}} (och {{credits}} krediter). Nu \u00e4r det klart! Vi ses p\u00e5 {{title}}"
+	}
+}

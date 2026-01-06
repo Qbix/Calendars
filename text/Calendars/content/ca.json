@@ -1,359 +1,370 @@
 {
-    "months": {
-        "Jan": "Jan",
-        "Feb": "Febrer",
-        "Mar": "desfigurar",
-        "Apr": "abr",
-        "May": "maig",
-        "Jun": "juny",
-        "Jul": "Jul",
-        "Aug": "agost",
-        "Sep": "Set",
-        "Oct": "Oct",
-        "Nov": "nov",
-        "Dec": "desembre"
-    },
-    "monthsLong": {
-        "Jan": "gener",
-        "Feb": "febrer",
-        "Mar": "març",
-        "Apr": "Abril",
-        "May": "maig",
-        "Jun": "juny",
-        "Jul": "juliol",
-        "Aug": "Agost",
-        "Sep": "setembre",
-        "Oct": "Octubre",
-        "Nov": "de novembre",
-        "Dec": "desembre"
-    },
-    "weekdays": {
-        "Sun": "Sol",
-        "Mon": "dl",
-        "Tue": "Dt",
-        "Wed": "Dc",
-        "Thu": "Dj",
-        "Fri": "dv",
-        "Sat": "ds"
-    },
-    "weekdaysLong": {
-        "Sun": "diumenge",
-        "Mon": "dilluns",
-        "Tue": "dimarts",
-        "Wed": "dimecres",
-        "Thu": "dijous",
-        "Fri": "divendres",
-        "Sat": "dissabte"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "Planifica un nou esdeveniment"
-        },
-        "tool": {
-            "AreYouIn": "Està vostè en?",
-            "Yes": "Sí",
-            "No": "No",
-            "Maybe": "Pot ser",
-            "Conversation": "Conversa",
-            "Promote": "Promociona aquest esdeveniment",
-            "Checkin": "Escaneja els codis dels assistents",
-            "CloseEvent": {
-                "button": "Cancel·la l&#39;esdeveniment",
-                "confirm": {
-                    "text": {
-                        "Cancel": "Confirmes que vols cancel·lar aquest esdeveniment?",
-                        "Participant": "Hi ha 1 participant en aquest esdeveniment",
-                        "Participants": "Hi ha {{count}} participants en aquest esdeveniment",
-                        "Recurring": "Aquest esdeveniment és recurrent. També voleu cancel·lar totes les seves futures instàncies?"
-                    },
-                    "trip": {
-                        "Cancel": "També voleu cancel·lar el vostre viatge {{tripDirection}} aquest esdeveniment?",
-                        "Passengers": "Hi ha {{passengerCount}} passatgers que confien en tu.",
-                        "Title": "Tanca el viatge"
-                    },
-                    "directions": {
-                        "TO": "A",
-                        "FROM": "DE",
-                        "to": "a",
-                        "from": "des de"
-                    }
-                }
-            },
-            "Calendar": "Calendari",
-            "Interests": "Interessos",
-            "Directions": "Indicacions",
-            "TitleOfEvent": "Títol de l&#39;acte:",
-            "OpenTo": "Obert a",
-            "MoreInfo": "Més informació",
-            "Registration": "Inscripció",
-            "GoingTo": "serà a",
-            "NotGoingTo": "no estarà a",
-            "MaybeGoingTo": "potser serà a",
-            "HostedBy": "Allotjat per {{name}}",
-            "LiveStream": "Feu clic a secció en directe",
-            "Myqr": "Registrar",
-            "AdminDontPay": "L&#39;administrador no ha de pagar",
-            "Name": "Nom",
-            "ReservationFee": "Quota de reserva",
-            "AddParticipants": "Afegeix participants",
-            "ManageReservation": "Gestionar la reserva",
-            "MakeReservation": "Fes la reserva",
-            "StartLiveStream": "Fes clic per transmetre en directe",
-            "LiveStreamEnded": "La reproducció en directe ha finalitzat",
-            "ClickToViewRecording": "feu clic per veure l&#39;enregistrament",
-            "EmptyList": "Llista buida",
-            "NeedToPayCredits": "Cal pagar: <span>{{amount}} crèdits<\/span>",
-            "PleaseJoinParticipants": "Si us plau, uneix-te a {{participant}}",
-            "YouReservingPlace": "Reservaràs la teva plaça.",
-            "SelectIncludesToAdd": "Seleccioneu un o més {{TypeDisplayPlural}} per afegir:",
-            "YouHaveNotRegisteredAnyIncluded": "Encara no heu registrat cap {{TypeDisplayPlural}}",
-            "Proceed": "Continuar",
-            "MakeChanges": "Desa els meus canvis",
-            "CancelReservation": "Cancel·la tota la reserva",
-            "Total": "Total",
-            "Ok": "D&#39;acord",
-            "Cancel": "Cancel · lar",
-            "Reminders": "Recordatoris",
-            "RemindersLabel": "Vull rebre una notificació d&#39;un esdeveniment a:",
-            "SetReminders": "Estableix recordatoris",
-            "UpdateFutureReservations": "També voleu actualitzar totes les futures reserves de la mateixa manera?",
-            "RecurringAdmin": "Configuració recurrent",
-            "PublisherDontPay": "L&#39;editor no ha de pagar",
-            "RequiredRelatedParticipants": "Aquest esdeveniment requereix participants: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Editeu la disponibilitat &quot;{{title}}&quot; per actualitzar la configuració recurrent",
-            "Presentation": "Presentació",
-            "YouAreNotParticipated": "No sou participant de l&#39;esdeveniment",
-            "LiveStreamStarted": "La reproducció en directe ha començat",
-            "WebRTCStarted": "Va començar la teleconferència",
-            "WebRTCEnded": "S&#39;ha acabat la teleconferència"
-        },
-        "composer": {
-            "SetLocation": "Estableix la meva ubicació",
-            "ChooseActivity": "Trieu una activitat",
-            "ChoosePublisher": "Trieu Editor",
-            "Day": "Dia",
-            "Starting": "Començant",
-            "People": "Gent",
-            "Share": "Compartir",
-            "Recurring": "Recurrent",
-            "RecurringTitle": "Dies recurrents",
-            "Daily": "Diàriament",
-            "Weekly": "Setmanalment",
-            "Monthly": "Mensual",
-            "SelectLocation": "Seleccioneu primer una ubicació.",
-            "eventType": "Tipus d&#39;esdeveniment",
-            "EditTitle": "Pensa en un títol interessant...",
-            "SetTitle": "Definiu el títol de l&#39;esdeveniment",
-            "location": {
-                "Title": "Estableix la teva ubicació"
-            },
-            "interest": {
-                "Title": "Trieu una activitat",
-                "Filter": "Interessos de cerca..."
-            },
-            "Ending": "Finalització",
-            "ScheduleOnlineConference": "Programar conferències en línia",
-            "SOCDescription": "Definiu l&#39;hora d&#39;inici i de finalització de la conferència. Totes les persones que visiten l&#39;esdeveniment durant aquest període de temps es connectaran automàticament a la conferència en línia.",
-            "EndDate": "Final",
-            "SetLivestream": "Enganxeu l&#39;enllaç a la transmissió en directe\/videoconferència",
-            "SetInfoLink": "Estableix l&#39;enllaç a informació addicional",
-            "ChooseService": "Trieu el servei disponible",
-            "Continue": "Continua",
-            "ChooseAvailability": "Trieu Servei disponible",
-            "Duration": "Durada",
-            "Hour": "Hores",
-            "Hours": "Hores",
-            "Minutes": "Minuts",
-            "Locally": "localment",
-            "EventInfoLink": "Enllaç d&#39;informació de l&#39;esdeveniment",
-            "TicketPurchaseLink": "Enllaç de compra d&#39;entrades"
-        },
-        "EventAlreadyClosed": "Aquest esdeveniment ja està tancat",
-        "addToCalendar": {
-            "permissions": {
-                "title": "Vols afegir al calendari?",
-                "prompt": "Vols afegir aquest esdeveniment al teu calendari?",
-                "yes": "Sí",
-                "no": "No"
-            },
-            "dialog": {
-                "Title": "Afegeix l&#39;esdeveniment al teu calendari"
-            }
-        },
-        "ErrorLeaveEndedEvent": "Ho sentim, però no pots deixar l&#39;esdeveniment finalitzat"
-    },
-    "recurring": {
-        "dialog": {
-            "justonce": "Només una vegada",
-            "recurring": "Recurrent",
-            "startDate": "Data d&#39;inici",
-            "endDate": "Data de finalització",
-            "justOnce": "Només una vegada",
-            "justOnceWeekly": "Només aquesta setmana",
-            "justOnceMonthly": "Només aquest mes"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "Acte gratuït",
-            "optional": "Aportació opcional",
-            "required": "Pagament obligatori"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "Aportació opcional",
-            "required": "Pagament obligatori",
-            "paid": "pagat"
-        },
-        "confirmationDialog": {
-            "title": "Confirmació de pagament",
-            "content": "Aquest esdeveniment té una contribució opcional de {{amount}}.",
-            "button": "Contribuir"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} encara no forma part de l&#39;esdeveniment. Vols afegir-los com a participant?",
-        "userNotFound": "Usuari no trobat",
-        "confirmYes": "Sí",
-        "confirmNo": "No"
-    },
-    "notifications": {
-        "EventActivityIn": "Activitat de l&#39;esdeveniment a {{{stream.fields.title}}}",
-        "RecurringRulesChanged": "S&#39;han canviat les regles recurrents per a l&#39;esdeveniment {{{call 'message.getInstruction' 'eventTitle'}}}",
-        "ManageEmailSubscriptions": "gestionar les vostres subscripcions de correu electrònic",
-        "IfUnsubscribe": "Si vols donar-te de baixa",
-        "ClickHereToVisitEvent": "Feu clic aquí per visitar l&#39;esdeveniment",
-        "Calendars\/reminder": "L&#39;esdeveniment &quot;{{{call 'message.getInstruction' 'name'}}&quot; començarà a {{&call 'message.getInstruction' 'time'}}}",
-        "webrtc": {
-            "Started": "Va començar la teleconferència",
-            "Ended": "S&#39;ha acabat la teleconferència"
-        },
-        "livestream": {
-            "Started": "La reproducció en directe ha començat",
-            "Ended": "La transmissió en directe ha finalitzat",
-            "ClickToView": "Consulta-ho aquí."
-        }
-    },
-    "import": {
-        "linkTitle": "Ompliu aquest full de càlcul",
-        "fileLabel": "Carregueu el full de càlcul:",
-        "joinEventLabel": "Uniu els usuaris a un esdeveniment aleatori",
-        "smsText": "Hola, t&#39;acabo d&#39;enviar un enllaç a {{communityName}}. Si us plau, comproveu-ho.",
-        "emailSubject": "T&#39;acabo d&#39;enviar un enllaç",
-        "emailBody": "Hola, t&#39;acabo d&#39;enviar una invitació a {{communityName}}. Si us plau, comproveu-ho.",
-        "fileNotFound": "Ho sentim, no s&#39;ha trobat el fitxer CSV.",
-        "fileEmpty": "Ho sentim, el fitxer CSV està buit.",
-        "fieldNotFound": "No s&#39;ha trobat el camp obligatori &quot;{{1}}&quot;.",
-        "userIdNotFound": "l&#39;usuari existeix però l&#39;identificador està buit",
-        "activateUsers": "enviar missatges d&#39;activació als usuaris?",
-        "taskStreamInvalid": "El flux de tasques no és vàlid",
-        "instructionsEmpty": "instruccions del flux de tasques buides",
-        "interestsEmpty": "no pot obtenir interessos",
-        "interestAbsent": "no s&#39;ha trobat l&#39;interès {{1}}",
-        "complete": "Completa",
-        "errorLine": "línia {{1}}",
-        "errorsTitle": "S&#39;han produït errors",
-        "importOptions": "Opcions",
-        "importProgress": "Progrés, progressar",
-        "sampleCSV": "Baixeu CSV de mostra",
-        "communityUsers": "Aquesta és la llista de comunitats",
-        "toMainCommunityToo": "també es relacionen amb la comunitat principal",
-        "ChooseFile": "Trieu l&#39;arxiu"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "Representa un esdeveniment en què la gent pot participar",
-            "displayType": "Esdeveniment"
-        },
-        "Calendars\/recurring": {
-            "description": "S&#39;utilitza per relacionar fluxos que s&#39;han de repetir periòdicament",
-            "displayType": "Esdeveniment recurrent"
-        }
-    },
-    "services": {
-        "Title": "Serveis",
-        "NewService": {
-            "Title": "Nova disponibilitat",
-            "SaveService": "Desa la disponibilitat",
-            "SelectTemplate": "Seleccioneu Servei",
-            "SelectLocation": "Seleccioneu Ubicació",
-            "SelectArea": "Seleccioneu Àrea",
-            "SelectTime": "Gestionar franges horàries",
-            "SelectTimeSlot": "Seleccioneu una franja horària",
-            "PeopleMin": "Mínims visitants",
-            "PeopleMax": "Màxim de visitants",
-            "PeopleLabels": "Etiquetes permeses",
-            "Next": "Pròxim",
-            "Back": "esquena"
-        },
-        "EditService": "Edita la disponibilitat",
-        "SetVisitors": "Estableix els visitants",
-        "Price": "Preu",
-        "SelectAction": "Seleccioneu l&#39;acció",
-        "OpenProfile": "Perfil obert",
-        "RemoveStaff": "Treure personal"
-    },
-    "timeslots": {
-        "AddSlot": "Afegeix ranura",
-        "StartTime": "L&#39;hora d&#39;inici",
-        "EndTime": "Fi del temps",
-        "Save": "Desa",
-        "AddTimeSlot": "Afegeix una franja horària",
-        "CopyFromDay": "Còpia del dia",
-        "Nearest": "Més proper",
-        "Today": "Avui",
-        "Tomorrow": "Demà",
-        "AfterTomorrow": "Demà passat"
-    },
-    "availabilities": {
-        "Title": "Disponibilitats",
-        "NewAvailability": {
-            "Title": "Nova Disponibilitat",
-            "SaveAvailability": "Estalviar disponibilitat",
-            "SelectTemplate": "Seleccioneu Servei",
-            "SelectLocation": "Seleccioneu Ubicació",
-            "SelectArea": "Seleccioneu Àrea",
-            "SelectTime": "Gestionar els intervals de temps",
-            "SelectTimeSlot": "Seleccioneu una franja horària",
-            "PeopleMin": "Mínim de visitants",
-            "PeopleMax": "Màxim de visitants",
-            "PeopleLabels": "Rols permesos",
-            "Next": "Pròxim",
-            "Back": "esquena",
-            "Type": "Tipus",
-            "Weekly": "Setmanalment",
-            "RecurringStartDate": "Data d&#39;inici recurrent",
-            "EndDate": "Data de finalització",
-            "SelectTimeSlots": "Seleccioneu les franges horàries desitjades",
-            "RecurringEndDate": "Data de finalització recurrent",
-            "ScheduleOnlineConference": "Programa Teleconferència",
-            "SetLivestream": "Enganxeu l&#39;enllaç a la transmissió en directe\/videoconferència",
-            "SelectTimeZone": "Seleccioneu la zona horària"
-        },
-        "EditAvailability": "Edita la disponibilitat",
-        "SetVisitors": "Establir Visitants",
-        "Price": "Preu",
-        "SelectAction": "Seleccioneu l&#39;acció",
-        "OpenProfile": "Obre el perfil",
-        "RemoveStaff": "Eliminar personal",
-        "PleaseSelectTimeSlots": "Seleccioneu franges horàries",
-        "ExceptionOccurred": "S&#39;ha produït una excepció",
-        "NotEnoughCreditsToParticipateEvents": "No hi ha prou crèdits per participar a {{eventsAmount}} esdeveniments. Necessites {{needCredits}} crèdits. Vull comprar?",
-        "LiveStream": "Transmissió en directe",
-        "InviteStaff": "Convida personal"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "Subscriu-te al Calendari",
-        "copyLinkBelow": "Copia l&#39;enllaç a continuació",
-        "goTo": "Anar a:",
-        "pasteCopiedTo": "Enganxeu l&#39;enllaç copiat al camp &quot;URL del calendari&quot;.",
-        "clickAddCalendar": "Feu clic al botó &quot;Afegeix calendari&quot;.",
-        "copyLink": "Copia l&#39;enllaç",
-        "tapToCopy": "Toqueu el botó següent per copiar l&#39;enllaç al porta-retalls",
-        "linkCopied": "Enllaç copiat",
-        "step2": "Enllaç copiat. Estem a punt d&#39;obrir Google Calendar. Haureu d&#39;enganxar l&#39;enllaç al quadre de text, fer clic a &quot;Afegeix calendari&quot; i tancar la pestanya (vegeu la captura de pantalla a continuació)",
-        "calendarAppPreferences": "Obriu les Preferències a l&#39;aplicació Calendari del vostre Mac i configureu l&#39;aplicació Calendari predeterminada com es mostra a continuació.",
-        "thenCloseDialog": "Llavors tanca aquest diàleg per subscriure&#39;t al teu calendari!",
-        "success": "El calendari s&#39;ha sincronitzat correctament"
-    }
+	"months": {
+		"Jan": "Jan",
+		"Feb": "Febrer",
+		"Mar": "desfigurar",
+		"Apr": "abr",
+		"May": "maig",
+		"Jun": "juny",
+		"Jul": "Jul",
+		"Aug": "agost",
+		"Sep": "Set",
+		"Oct": "Oct",
+		"Nov": "nov",
+		"Dec": "desembre"
+	},
+	"monthsLong": {
+		"Jan": "gener",
+		"Feb": "febrer",
+		"Mar": "mar\u00e7",
+		"Apr": "Abril",
+		"May": "maig",
+		"Jun": "juny",
+		"Jul": "juliol",
+		"Aug": "Agost",
+		"Sep": "setembre",
+		"Oct": "Octubre",
+		"Nov": "de novembre",
+		"Dec": "desembre"
+	},
+	"weekdays": {
+		"Sun": "Sol",
+		"Mon": "dl",
+		"Tue": "Dt",
+		"Wed": "Dc",
+		"Thu": "Dj",
+		"Fri": "dv",
+		"Sat": "ds"
+	},
+	"weekdaysLong": {
+		"Sun": "diumenge",
+		"Mon": "dilluns",
+		"Tue": "dimarts",
+		"Wed": "dimecres",
+		"Thu": "dijous",
+		"Fri": "divendres",
+		"Sat": "dissabte"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Planifica un nou esdeveniment"
+		},
+		"tool": {
+			"AreYouIn": "Est\u00e0 vost\u00e8 en?",
+			"Yes": "S\u00ed",
+			"No": "No",
+			"Maybe": "Pot ser",
+			"Conversation": "Conversa",
+			"Promote": "Promociona aquest esdeveniment",
+			"Checkin": "Escaneja els codis dels assistents",
+			"CloseEvent": {
+				"button": "Cancel\u00b7la l&#39;esdeveniment",
+				"confirm": {
+					"text": {
+						"Cancel": "Confirmes que vols cancel\u00b7lar aquest esdeveniment?",
+						"Participant": "Hi ha 1 participant en aquest esdeveniment",
+						"Participants": "Hi ha {{count}} participants en aquest esdeveniment",
+						"Recurring": "Aquest esdeveniment \u00e9s recurrent. Tamb\u00e9 voleu cancel\u00b7lar totes les seves futures inst\u00e0ncies?"
+					},
+					"trip": {
+						"Cancel": "Tamb\u00e9 voleu cancel\u00b7lar el vostre viatge {{tripDirection}} aquest esdeveniment?",
+						"Passengers": "Hi ha {{passengerCount}} passatgers que confien en tu.",
+						"Title": "Tanca el viatge"
+					},
+					"directions": {
+						"TO": "A",
+						"FROM": "DE",
+						"to": "a",
+						"from": "des de"
+					}
+				}
+			},
+			"Calendar": "Calendari",
+			"Interests": "Interessos",
+			"Directions": "Indicacions",
+			"TitleOfEvent": "T\u00edtol de l&#39;acte:",
+			"OpenTo": "Obert a",
+			"MoreInfo": "M\u00e9s informaci\u00f3",
+			"Registration": "Inscripci\u00f3",
+			"GoingTo": "ser\u00e0 a",
+			"NotGoingTo": "no estar\u00e0 a",
+			"MaybeGoingTo": "potser ser\u00e0 a",
+			"HostedBy": "Allotjat per {{name}}",
+			"LiveStream": "Feu clic a secci\u00f3 en directe",
+			"Myqr": "Registrar",
+			"AdminDontPay": "L&#39;administrador no ha de pagar",
+			"Name": "Nom",
+			"ReservationFee": "Quota de reserva",
+			"AddParticipants": "Afegeix participants",
+			"ManageReservation": "Gestionar la reserva",
+			"MakeReservation": "Fes la reserva",
+			"StartLiveStream": "Fes clic per transmetre en directe",
+			"LiveStreamEnded": "La reproducci\u00f3 en directe ha finalitzat",
+			"ClickToViewRecording": "feu clic per veure l&#39;enregistrament",
+			"EmptyList": "Llista buida",
+			"NeedToPayCredits": "Cal pagar: <span>{{amount}} cr\u00e8dits</span>",
+			"PleaseJoinParticipants": "Si us plau, uneix-te a {{participant}}",
+			"YouReservingPlace": "Reservar\u00e0s la teva pla\u00e7a.",
+			"SelectIncludesToAdd": "Seleccioneu un o m\u00e9s {{TypeDisplayPlural}} per afegir:",
+			"YouHaveNotRegisteredAnyIncluded": "Encara no heu registrat cap {{TypeDisplayPlural}}",
+			"Proceed": "Continuar",
+			"MakeChanges": "Desa els meus canvis",
+			"CancelReservation": "Cancel\u00b7la tota la reserva",
+			"Total": "Total",
+			"Ok": "D&#39;acord",
+			"Cancel": "Cancel \u00b7 lar",
+			"Reminders": "Recordatoris",
+			"RemindersLabel": "Vull rebre una notificaci\u00f3 d&#39;un esdeveniment a:",
+			"SetReminders": "Estableix recordatoris",
+			"UpdateFutureReservations": "Tamb\u00e9 voleu actualitzar totes les futures reserves de la mateixa manera?",
+			"RecurringAdmin": "Configuraci\u00f3 recurrent",
+			"PublisherDontPay": "L&#39;editor no ha de pagar",
+			"RequiredRelatedParticipants": "Aquest esdeveniment requereix participants: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "Editeu la disponibilitat &quot;{{title}}&quot; per actualitzar la configuraci\u00f3 recurrent",
+			"Presentation": "Presentaci\u00f3",
+			"YouAreNotParticipated": "No sou participant de l&#39;esdeveniment",
+			"LiveStreamStarted": "La reproducci\u00f3 en directe ha comen\u00e7at",
+			"WebRTCStarted": "Va comen\u00e7ar la teleconfer\u00e8ncia",
+			"WebRTCEnded": "S&#39;ha acabat la teleconfer\u00e8ncia",
+			"Prepayment": "Prepagament",
+			"PrepaymentConfirm": "Cobrarem una tarifa nominal d&#39;1 $. Rebr\u00e0s el nombre corresponent de cr\u00e8dits. Aquests cr\u00e8dits s&#39;aplicaran al pagament complet de l&#39;esdeveniment."
+		},
+		"composer": {
+			"SetLocation": "Estableix la meva ubicaci\u00f3",
+			"ChooseActivity": "Trieu una activitat",
+			"ChoosePublisher": "Trieu Editor",
+			"Day": "Dia",
+			"Starting": "Comen\u00e7ant",
+			"People": "Gent",
+			"Share": "Compartir",
+			"Recurring": "Recurrent",
+			"RecurringTitle": "Dies recurrents",
+			"Daily": "Di\u00e0riament",
+			"Weekly": "Setmanalment",
+			"Monthly": "Mensual",
+			"SelectLocation": "Seleccioneu primer una ubicaci\u00f3.",
+			"eventType": "Tipus d&#39;esdeveniment",
+			"EditTitle": "Pensa en un t\u00edtol interessant...",
+			"SetTitle": "Definiu el t\u00edtol de l&#39;esdeveniment",
+			"location": {
+				"Title": "Estableix la teva ubicaci\u00f3"
+			},
+			"interest": {
+				"Title": "Trieu una activitat",
+				"Filter": "Interessos de cerca..."
+			},
+			"Ending": "Finalitzaci\u00f3",
+			"ScheduleOnlineConference": "Programar confer\u00e8ncies en l\u00ednia",
+			"SOCDescription": "Definiu l&#39;hora d&#39;inici i de finalitzaci\u00f3 de la confer\u00e8ncia. Totes les persones que visiten l&#39;esdeveniment durant aquest per\u00edode de temps es connectaran autom\u00e0ticament a la confer\u00e8ncia en l\u00ednia.",
+			"EndDate": "Final",
+			"SetLivestream": "Enganxeu l&#39;enlla\u00e7 a la transmissi\u00f3 en directe/videoconfer\u00e8ncia",
+			"SetInfoLink": "Estableix l&#39;enlla\u00e7 a informaci\u00f3 addicional",
+			"ChooseService": "Trieu el servei disponible",
+			"Continue": "Continua",
+			"ChooseAvailability": "Trieu Servei disponible",
+			"Duration": "Durada",
+			"Hour": "Hores",
+			"Hours": "Hores",
+			"Minutes": "Minuts",
+			"Locally": "localment",
+			"EventInfoLink": "Enlla\u00e7 d&#39;informaci\u00f3 de l&#39;esdeveniment",
+			"TicketPurchaseLink": "Enlla\u00e7 de compra d&#39;entrades"
+		},
+		"EventAlreadyClosed": "Aquest esdeveniment ja est\u00e0 tancat",
+		"addToCalendar": {
+			"permissions": {
+				"title": "Vols afegir al calendari?",
+				"prompt": "Vols afegir aquest esdeveniment al teu calendari?",
+				"yes": "S\u00ed",
+				"no": "No"
+			},
+			"dialog": {
+				"Title": "Afegeix l&#39;esdeveniment al teu calendari"
+			}
+		},
+		"ErrorLeaveEndedEvent": "Ho sentim, per\u00f2 no pots deixar l&#39;esdeveniment finalitzat"
+	},
+	"recurring": {
+		"dialog": {
+			"justonce": "Nom\u00e9s una vegada",
+			"recurring": "Recurrent",
+			"startDate": "Data d&#39;inici",
+			"endDate": "Data de finalitzaci\u00f3",
+			"justOnce": "Nom\u00e9s una vegada",
+			"justOnceWeekly": "Nom\u00e9s aquesta setmana",
+			"justOnceMonthly": "Nom\u00e9s aquest mes"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "Acte gratu\u00eft",
+			"optional": "Aportaci\u00f3 opcional",
+			"required": "Pagament obligatori"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "Aportaci\u00f3 opcional",
+			"required": "Preu per assistir-hi: {{amount}} {{currency}}",
+			"paid": "pagat"
+		},
+		"confirmationDialog": {
+			"title": "Confirmaci\u00f3 de pagament",
+			"content": "Aquest esdeveniment t\u00e9 una contribuci\u00f3 opcional de {{amount}}.",
+			"button": "Contribuir"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} encara no forma part de l&#39;esdeveniment. Vols afegir-los com a participant?",
+		"userNotFound": "Usuari no trobat",
+		"confirmYes": "S\u00ed",
+		"confirmNo": "No"
+	},
+	"notifications": {
+		"EventActivityIn": "Activitat de l&#39;esdeveniment a {{{stream.fields.title}}}",
+		"RecurringRulesChanged": "S&#39;han canviat les regles recurrents per a l&#39;esdeveniment {{{call 'message.getInstruction' 'eventTitle'}}}",
+		"ManageEmailSubscriptions": "gestionar les vostres subscripcions de correu electr\u00f2nic",
+		"IfUnsubscribe": "Si vols donar-te de baixa",
+		"ClickHereToVisitEvent": "Feu clic aqu\u00ed per visitar l&#39;esdeveniment",
+		"Calendars/reminder": "L&#39;esdeveniment &quot;{{{call 'message.getInstruction' 'name'}}&quot; comen\u00e7ar\u00e0 a {{&call 'message.getInstruction' 'time'}}}",
+		"webrtc": {
+			"Started": "Va comen\u00e7ar la teleconfer\u00e8ncia",
+			"Ended": "S&#39;ha acabat la teleconfer\u00e8ncia"
+		},
+		"livestream": {
+			"Started": "La reproducci\u00f3 en directe ha comen\u00e7at",
+			"Ended": "La transmissi\u00f3 en directe ha finalitzat",
+			"ClickToView": "Consulta-ho aqu\u00ed."
+		}
+	},
+	"import": {
+		"linkTitle": "Ompliu aquest full de c\u00e0lcul",
+		"fileLabel": "Carregueu el full de c\u00e0lcul:",
+		"joinEventLabel": "Uniu els usuaris a un esdeveniment aleatori",
+		"smsText": "Hola, t&#39;acabo d&#39;enviar un enlla\u00e7 a {{communityName}}. Si us plau, comproveu-ho.",
+		"emailSubject": "T&#39;acabo d&#39;enviar un enlla\u00e7",
+		"emailBody": "Hola, t&#39;acabo d&#39;enviar una invitaci\u00f3 a {{communityName}}. Si us plau, comproveu-ho.",
+		"fileNotFound": "Ho sentim, no s&#39;ha trobat el fitxer CSV.",
+		"fileEmpty": "Ho sentim, el fitxer CSV est\u00e0 buit.",
+		"fieldNotFound": "No s&#39;ha trobat el camp obligatori &quot;{{1}}&quot;.",
+		"userIdNotFound": "l&#39;usuari existeix per\u00f2 l&#39;identificador est\u00e0 buit",
+		"activateUsers": "enviar missatges d&#39;activaci\u00f3 als usuaris?",
+		"taskStreamInvalid": "El flux de tasques no \u00e9s v\u00e0lid",
+		"instructionsEmpty": "instruccions del flux de tasques buides",
+		"interestsEmpty": "no pot obtenir interessos",
+		"interestAbsent": "no s&#39;ha trobat l&#39;inter\u00e8s {{1}}",
+		"complete": "Completa",
+		"errorLine": "l\u00ednia {{1}}",
+		"errorsTitle": "S&#39;han produ\u00eft errors",
+		"importOptions": "Opcions",
+		"importProgress": "Progr\u00e9s, progressar",
+		"sampleCSV": "Baixeu CSV de mostra",
+		"communityUsers": "Aquesta \u00e9s la llista de comunitats",
+		"toMainCommunityToo": "tamb\u00e9 es relacionen amb la comunitat principal",
+		"ChooseFile": "Trieu l&#39;arxiu"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "Representa un esdeveniment en qu\u00e8 la gent pot participar",
+			"displayType": "Esdeveniment"
+		},
+		"Calendars/recurring": {
+			"description": "S&#39;utilitza per relacionar fluxos que s&#39;han de repetir peri\u00f2dicament",
+			"displayType": "Esdeveniment recurrent"
+		}
+	},
+	"services": {
+		"Title": "Serveis",
+		"NewService": {
+			"Title": "Nova disponibilitat",
+			"SaveService": "Desa la disponibilitat",
+			"SelectTemplate": "Seleccioneu Servei",
+			"SelectLocation": "Seleccioneu Ubicaci\u00f3",
+			"SelectArea": "Seleccioneu \u00c0rea",
+			"SelectTime": "Gestionar franges hor\u00e0ries",
+			"SelectTimeSlot": "Seleccioneu una franja hor\u00e0ria",
+			"PeopleMin": "M\u00ednims visitants",
+			"PeopleMax": "M\u00e0xim de visitants",
+			"PeopleLabels": "Etiquetes permeses",
+			"Next": "Pr\u00f2xim",
+			"Back": "esquena"
+		},
+		"EditService": "Edita la disponibilitat",
+		"SetVisitors": "Estableix els visitants",
+		"Price": "Preu",
+		"SelectAction": "Seleccioneu l&#39;acci\u00f3",
+		"OpenProfile": "Perfil obert",
+		"RemoveStaff": "Treure personal"
+	},
+	"timeslots": {
+		"AddSlot": "Afegeix ranura",
+		"StartTime": "L&#39;hora d&#39;inici",
+		"EndTime": "Fi del temps",
+		"Save": "Desa",
+		"AddTimeSlot": "Afegeix una franja hor\u00e0ria",
+		"CopyFromDay": "C\u00f2pia del dia",
+		"Nearest": "M\u00e9s proper",
+		"Today": "Avui",
+		"Tomorrow": "Dem\u00e0",
+		"AfterTomorrow": "Dem\u00e0 passat"
+	},
+	"availabilities": {
+		"Title": "Disponibilitats",
+		"NewAvailability": {
+			"Title": "Nova Disponibilitat",
+			"SaveAvailability": "Estalviar disponibilitat",
+			"SelectTemplate": "Seleccioneu Servei",
+			"SelectLocation": "Seleccioneu Ubicaci\u00f3",
+			"SelectArea": "Seleccioneu \u00c0rea",
+			"SelectTime": "Gestionar els intervals de temps",
+			"SelectTimeSlot": "Seleccioneu una franja hor\u00e0ria",
+			"PeopleMin": "M\u00ednim de visitants",
+			"PeopleMax": "M\u00e0xim de visitants",
+			"PeopleLabels": "Rols permesos",
+			"Next": "Pr\u00f2xim",
+			"Back": "esquena",
+			"Type": "Tipus",
+			"Weekly": "Setmanalment",
+			"RecurringStartDate": "Data d&#39;inici recurrent",
+			"EndDate": "Data de finalitzaci\u00f3",
+			"SelectTimeSlots": "Seleccioneu les franges hor\u00e0ries desitjades",
+			"RecurringEndDate": "Data de finalitzaci\u00f3 recurrent",
+			"ScheduleOnlineConference": "Programa Teleconfer\u00e8ncia",
+			"SetLivestream": "Enganxeu l&#39;enlla\u00e7 a la transmissi\u00f3 en directe/videoconfer\u00e8ncia",
+			"SelectTimeZone": "Seleccioneu la zona hor\u00e0ria"
+		},
+		"EditAvailability": "Edita la disponibilitat",
+		"SetVisitors": "Establir Visitants",
+		"Price": "Preu",
+		"SelectAction": "Seleccioneu l&#39;acci\u00f3",
+		"OpenProfile": "Obre el perfil",
+		"RemoveStaff": "Eliminar personal",
+		"PleaseSelectTimeSlots": "Seleccioneu franges hor\u00e0ries",
+		"ExceptionOccurred": "S&#39;ha produ\u00eft una excepci\u00f3",
+		"NotEnoughCreditsToParticipateEvents": "No hi ha prou cr\u00e8dits per participar a {{eventsAmount}} esdeveniments. Necessites {{needCredits}} cr\u00e8dits. Vull comprar?",
+		"LiveStream": "Transmissi\u00f3 en directe",
+		"InviteStaff": "Convida personal"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "Subscriu-te al Calendari",
+		"copyLinkBelow": "Copia l&#39;enlla\u00e7 a continuaci\u00f3",
+		"goTo": "Anar a:",
+		"pasteCopiedTo": "Enganxeu l&#39;enlla\u00e7 copiat al camp &quot;URL del calendari&quot;.",
+		"clickAddCalendar": "Feu clic al bot\u00f3 &quot;Afegeix calendari&quot;.",
+		"copyLink": "Copia l&#39;enlla\u00e7",
+		"tapToCopy": "Toqueu el bot\u00f3 seg\u00fcent per copiar l&#39;enlla\u00e7 al porta-retalls",
+		"linkCopied": "Enlla\u00e7 copiat",
+		"step2": "Enlla\u00e7 copiat. Estem a punt d&#39;obrir Google Calendar. Haureu d&#39;enganxar l&#39;enlla\u00e7 al quadre de text, fer clic a &quot;Afegeix calendari&quot; i tancar la pestanya (vegeu la captura de pantalla a continuaci\u00f3)",
+		"calendarAppPreferences": "Obriu les Prefer\u00e8ncies a l&#39;aplicaci\u00f3 Calendari del vostre Mac i configureu l&#39;aplicaci\u00f3 Calendari predeterminada com es mostra a continuaci\u00f3.",
+		"thenCloseDialog": "Llavors tanca aquest di\u00e0leg per subscriure&#39;t al teu calendari!",
+		"success": "El calendari s&#39;ha sincronitzat correctament"
+	},
+	"@override": {
+		"Assets/content": {
+			"payments": {
+				"reasons": {
+					"EventParticipation": "Participaci\u00f3 en esdeveniments"
+				}
+			}
+		}
+	}
 }

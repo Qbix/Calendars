@@ -1,359 +1,370 @@
 {
-    "months": {
-        "Jan": "urt",
-        "Feb": "ots",
-        "Mar": "Mar",
-        "Apr": "apr",
-        "May": "maiatza",
-        "Jun": "eka",
-        "Jul": "Uzt",
-        "Aug": "abuztua",
-        "Sep": "Ira",
-        "Oct": "Urr",
-        "Nov": "Azaroa",
-        "Dec": "abendua"
-    },
-    "monthsLong": {
-        "Jan": "Urtarrila",
-        "Feb": "Otsaila",
-        "Mar": "martxoa",
-        "Apr": "Apirila",
-        "May": "maiatza",
-        "Jun": "ekaina",
-        "Jul": "uztaila",
-        "Aug": "Abuztu",
-        "Sep": "Iraila",
-        "Oct": "urria",
-        "Nov": "Azaroa",
-        "Dec": "abendua"
-    },
-    "weekdays": {
-        "Sun": "Eguzkia",
-        "Mon": "al",
-        "Tue": "mar",
-        "Wed": "az",
-        "Thu": "og",
-        "Fri": "or",
-        "Sat": "Lar"
-    },
-    "weekdaysLong": {
-        "Sun": "Igandea",
-        "Mon": "astelehena",
-        "Tue": "asteartea",
-        "Wed": "asteazkena",
-        "Thu": "osteguna",
-        "Fri": "ostirala",
-        "Sat": "Larunbata"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "Ekitaldi berria antolatu"
-        },
-        "tool": {
-            "AreYouIn": "Sartu al zara?",
-            "Yes": "Bai",
-            "No": "Ez",
-            "Maybe": "Agian",
-            "Conversation": "Elkarrizketa",
-            "Promote": "Sustatu ekitaldi hau",
-            "Checkin": "Eskaneatu parte-hartzaileen kodeak",
-            "CloseEvent": {
-                "button": "Utzi ekitaldia",
-                "confirm": {
-                    "text": {
-                        "Cancel": "Ziur ekitaldi hau bertan behera utzi nahi duzula?",
-                        "Participant": "Ekitaldi honetan parte hartzaile bat dago",
-                        "Participants": "Gertaera honetan {{count}} parte-hartzaile daude",
-                        "Recurring": "Gertaera hau errepikatzen da. Etorkizuneko instantzia guztiak ere bertan behera utzi nahi dituzu?"
-                    },
-                    "trip": {
-                        "Cancel": "Zure bidaia ere bertan behera utzi nahi duzu {{tripDirection}} gertaera hau?",
-                        "Passengers": "{{passengerCount}} bidaiari daude zuregan konfiantza dutenak.",
-                        "Title": "Itxi Bidaia"
-                    },
-                    "directions": {
-                        "TO": "ERA",
-                        "FROM": "HANDIK",
-                        "to": "to",
-                        "from": "tik"
-                    }
-                }
-            },
-            "Calendar": "Egutegia",
-            "Interests": "Interesak",
-            "Directions": "Norabideak",
-            "TitleOfEvent": "Ekitaldiaren izenburua:",
-            "OpenTo": "Zabalik",
-            "MoreInfo": "Informazio gehiago",
-            "Registration": "Izen ematea",
-            "GoingTo": "etan izango da",
-            "NotGoingTo": "ez da egongo",
-            "MaybeGoingTo": "izango da agian",
-            "HostedBy": "Antolatzailea: {{name}}",
-            "LiveStream": "Egin klik Live Stream ikusteko",
-            "Myqr": "Check In",
-            "AdminDontPay": "Administratzaileak ez du ordaindu behar",
-            "Name": "Izena",
-            "ReservationFee": "Erreserba kuota",
-            "AddParticipants": "Gehitu Parte hartzaileak",
-            "ManageReservation": "Kudeatu erreserba",
-            "MakeReservation": "Egin erreserba",
-            "StartLiveStream": "Egin klik zuzeneko igorpenerako",
-            "LiveStreamEnded": "Zuzeneko igorpena amaitu da",
-            "ClickToViewRecording": "egin klik grabazioa ikusteko",
-            "EmptyList": "Zerrenda hutsa",
-            "NeedToPayCredits": "Ordaindu behar da: <span>{{amount}} kreditu<\/span>",
-            "PleaseJoinParticipants": "Mesedez, sartu {{participant}}",
-            "YouReservingPlace": "Zure lekua erreserbatuko duzu.",
-            "SelectIncludesToAdd": "Hautatu {{TypeDisplayPlural}} bat edo gehiago gehitzeko:",
-            "YouHaveNotRegisteredAnyIncluded": "Oraindik ez duzu {{TypeDisplayPlural}}rik erregistratu",
-            "Proceed": "Jarraitu",
-            "MakeChanges": "Gorde nire aldaketak",
-            "CancelReservation": "Erreserba osoa bertan behera utzi",
-            "Total": "Guztira",
-            "Ok": "Ados",
-            "Cancel": "Utzi",
-            "Reminders": "Oroigarriak",
-            "RemindersLabel": "Gertaera baten berri jaso nahi dut:",
-            "SetReminders": "Ezarri abisuak",
-            "UpdateFutureReservations": "Etorkizuneko erreserba guztiak modu berean eguneratu nahi dituzu?",
-            "RecurringAdmin": "Ezarpen errepikakorrak",
-            "PublisherDontPay": "Argitaletxeak ez du ordaindu behar",
-            "RequiredRelatedParticipants": "Gertaera honek parte-hartzaileak behar ditu: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Mesedez, editatu erabilgarritasuna &quot;{{title}}&quot; ezarpen errepikakorrak eguneratzeko",
-            "Presentation": "Aurkezpena",
-            "YouAreNotParticipated": "Ez zara ekitaldiko partaide",
-            "LiveStreamStarted": "Zuzeneko igorpena hasi da",
-            "WebRTCStarted": "Telekonferentzia hasi zen",
-            "WebRTCEnded": "Telekonferentzia amaitu zen"
-        },
-        "composer": {
-            "SetLocation": "Ezarri Nire kokapena",
-            "ChooseActivity": "Aukeratu jarduera bat",
-            "ChoosePublisher": "Aukeratu Argitaratzailea",
-            "Day": "Eguna",
-            "Starting": "Hasi",
-            "People": "Jendea",
-            "Share": "Partekatu",
-            "Recurring": "Errepikatzen",
-            "RecurringTitle": "Errepikatu Egunak",
-            "Daily": "Egunero",
-            "Weekly": "Asterokoa",
-            "Monthly": "Hilerokoa",
-            "SelectLocation": "Mesedez, hautatu kokapen bat lehenik.",
-            "eventType": "Gertaera mota",
-            "EditTitle": "Pentsa izenburu interesgarri bat...",
-            "SetTitle": "Ezarri gertaeraren izenburua",
-            "location": {
-                "Title": "Ezarri zure kokapena"
-            },
-            "interest": {
-                "Title": "Aukeratu jarduera bat",
-                "Filter": "Bilatu interesak..."
-            },
-            "Ending": "Amaiera",
-            "ScheduleOnlineConference": "Antolatu lineako hitzaldia",
-            "SOCDescription": "Mesedez, zehaztu konferentziaren hasiera eta amaiera ordua. Denbora tarte horretan gertaera bisitatzen duten pertsona guztiak lineako konferentziara automatikoki konektatuko dira.",
-            "EndDate": "Amaiera",
-            "SetLivestream": "Itsatsi esteka zuzeneko igorpenerako \/ bideokonferentziarako",
-            "SetInfoLink": "Ezarri Esteka informazio gehigarrirako",
-            "ChooseService": "Aukeratu Eskuragarri dagoen zerbitzua",
-            "Continue": "Jarraitu",
-            "ChooseAvailability": "Aukeratu Zerbitzu erabilgarri",
-            "Duration": "Iraupena",
-            "Hour": "Ordua",
-            "Hours": "Orduak",
-            "Minutes": "Minutu",
-            "Locally": "lokalean",
-            "EventInfoLink": "Ekitaldiaren informazioa esteka",
-            "TicketPurchaseLink": "Txartelak erosteko esteka"
-        },
-        "EventAlreadyClosed": "Ekitaldi hau itxita dago dagoeneko",
-        "addToCalendar": {
-            "permissions": {
-                "title": "Egutegian gehitu?",
-                "prompt": "Gertaera hau zure egutegian gehitu nahi al duzu?",
-                "yes": "Bai",
-                "no": "Ez"
-            },
-            "dialog": {
-                "Title": "Gehitu Gertaera zure egutegian"
-            }
-        },
-        "ErrorLeaveEndedEvent": "Barkatu, baina ezin duzu amaitu amaitutako gertaera utzi"
-    },
-    "recurring": {
-        "dialog": {
-            "justonce": "Hau behin bakarrik",
-            "recurring": "Errepikatzen",
-            "startDate": "Hasiera data",
-            "endDate": "Amaiera data",
-            "justOnce": "Behin bakarrik",
-            "justOnceWeekly": "Aste honetan bakarrik",
-            "justOnceMonthly": "Hilabete honetan bakarrik"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "Doako ekitaldia",
-            "optional": "Aukerako ekarpena",
-            "required": "Beharrezko ordainketa"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "Aukerako ekarpena",
-            "required": "Beharrezko ordainketa",
-            "paid": "ordaindu"
-        },
-        "confirmationDialog": {
-            "title": "Ordainketa berrespena",
-            "content": "Gertaera honek {{amount}} aukerako ekarpena du.",
-            "button": "Ekartzea"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} oraindik ez da ekitaldiaren parte. Parte-hartzaile gisa gehitu nahi dituzu?",
-        "userNotFound": "Ez da erabiltzailea aurkitu",
-        "confirmYes": "Bai",
-        "confirmNo": "Ez"
-    },
-    "notifications": {
-        "EventActivityIn": "Gertaeren jarduera {{{stream.fields.title}}}-n",
-        "RecurringRulesChanged": "Aldizkako arauak aldatu dira gertaerarako {{{call 'message.getInstruction' 'eventTitle'}}}",
-        "ManageEmailSubscriptions": "kudeatu zure posta elektronikoko harpidetzak",
-        "IfUnsubscribe": "Harpidetza kendu nahi baduzu",
-        "ClickHereToVisitEvent": "Mesedez, egin klik hemen ekitaldia bisitatzeko",
-        "Calendars\/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; gertaera {{&call 'message.getInstruction' 'time'}}} barru hasiko da",
-        "webrtc": {
-            "Started": "Telekonferentzia hasi zen",
-            "Ended": "Telekonferentzia amaitu zen"
-        },
-        "livestream": {
-            "Started": "Zuzeneko igorpena hasi da",
-            "Ended": "Zuzeneko igorpena amaitu da",
-            "ClickToView": "Ikus ezazu hemen."
-        }
-    },
-    "import": {
-        "linkTitle": "Bete kalkulu orri hau",
-        "fileLabel": "Kargatu kalkulu-orria:",
-        "joinEventLabel": "Batu erabiltzaileak ausazko gertaerara",
-        "smsText": "Kaixo, esteka bat bidali dizut {{communityName}}. Mesedez, begiratu.",
-        "emailSubject": "Esteka bat bidali berri dizu",
-        "emailBody": "Aizu, gonbidapena bidali dizut {{communityName}} helbidera. Mesedez, begiratu.",
-        "fileNotFound": "Barkatu, ez da CSV fitxategia aurkitu.",
-        "fileEmpty": "Barkatu, CSV fitxategia hutsik dago.",
-        "fieldNotFound": "&quot;{{1}}&quot; derrigorrezko eremua ez da aurkitu",
-        "userIdNotFound": "erabiltzailea existitzen da baina id hutsik",
-        "activateUsers": "erabiltzaileei aktibazio-mezua bidali?",
-        "taskStreamInvalid": "ataza korrontea baliogabea",
-        "instructionsEmpty": "ataza-korrontearen argibideak hutsik",
-        "interestsEmpty": "ezin dira interesik lortu",
-        "interestAbsent": "interes {{1}} ez da aurkitu",
-        "complete": "Osatu",
-        "errorLine": "lerroa {{1}}",
-        "errorsTitle": "Erroreak gertatu dira",
-        "importOptions": "Aukerak",
-        "importProgress": "Aurrerapena",
-        "sampleCSV": "Deskargatu Sample CSV",
-        "communityUsers": "Hau komunitateen zerrenda da",
-        "toMainCommunityToo": "komunitate nagusiarekin ere erlazionatu",
-        "ChooseFile": "aukeratu fitxategia"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "Jendeak parte hartu dezakeen ekitaldi bat adierazten du",
-            "displayType": "Gertaera"
-        },
-        "Calendars\/recurring": {
-            "description": "Aldian-aldian errepikatu behar diren korronteak erlazionatzeko erabiltzen da",
-            "displayType": "Gertaera errepikakorra"
-        }
-    },
-    "services": {
-        "Title": "Zerbitzuak",
-        "NewService": {
-            "Title": "Erabilgarritasun berria",
-            "SaveService": "Erabilgarritasuna gorde",
-            "SelectTemplate": "Mesedez, hautatu Zerbitzua",
-            "SelectLocation": "Mesedez, aukeratu Kokapena",
-            "SelectArea": "Mesedez hautatu Area",
-            "SelectTime": "Kudeatu denbora-zirrikituak",
-            "SelectTimeSlot": "Hautatu ordu-tarte bat",
-            "PeopleMin": "Bisitari minimoak",
-            "PeopleMax": "Gehienezko bisitari",
-            "PeopleLabels": "Etiketak onartzen dira",
-            "Next": "hurrengo",
-            "Back": "Back"
-        },
-        "EditService": "Editatu erabilgarritasuna",
-        "SetVisitors": "Ezarri Bisitariak",
-        "Price": "Prezioa",
-        "SelectAction": "Mesedez, aukeratu ekintza",
-        "OpenProfile": "Profila irekia",
-        "RemoveStaff": "Langileak kendu"
-    },
-    "timeslots": {
-        "AddSlot": "Gehitu Slot",
-        "StartTime": "Hasiera Ordua",
-        "EndTime": "Amaiera Ordua",
-        "Save": "Gorde",
-        "AddTimeSlot": "Gehitu denbora tartea",
-        "CopyFromDay": "Egunetik kopiatu",
-        "Nearest": "Hurbilena",
-        "Today": "Gaur",
-        "Tomorrow": "Bihar",
-        "AfterTomorrow": "Bihar eta gero"
-    },
-    "availabilities": {
-        "Title": "Eskuragarritasunak",
-        "NewAvailability": {
-            "Title": "Erabilgarritasun berria",
-            "SaveAvailability": "Gorde erabilgarritasuna",
-            "SelectTemplate": "Mesedez, hautatu Zerbitzua",
-            "SelectLocation": "Mesedez, hautatu Kokapena",
-            "SelectArea": "Mesedez, hautatu Eremua",
-            "SelectTime": "Kudeatu denbora tarteak",
-            "SelectTimeSlot": "Hautatu ordu-tarte bat",
-            "PeopleMin": "Gutxieneko bisitariak",
-            "PeopleMax": "Gehienezko bisitariak",
-            "PeopleLabels": "Rolak onartzen dira",
-            "Next": "Hurrengoa",
-            "Back": "Itzuli",
-            "Type": "Mota",
-            "Weekly": "Asterokoa",
-            "RecurringStartDate": "Hasiera-data errepikakorra",
-            "EndDate": "Amaiera-data",
-            "SelectTimeSlots": "Aukeratu nahi dituzun denbora tarteak",
-            "RecurringEndDate": "Amaiera-data errepikakorra",
-            "ScheduleOnlineConference": "Programatu Telekonferentzia",
-            "SetLivestream": "Itsatsi zuzeneko igorpenerako \/ bideokonferentziarako esteka",
-            "SelectTimeZone": "Hautatu ordu-eremua"
-        },
-        "EditAvailability": "Editatu erabilgarritasuna",
-        "SetVisitors": "Ezarri Bisitariak",
-        "Price": "Prezioa",
-        "SelectAction": "Hautatu ekintza",
-        "OpenProfile": "Ireki profila",
-        "RemoveStaff": "Langileak kendu",
-        "PleaseSelectTimeSlots": "Mesedez, hautatu ordu-tarteak",
-        "ExceptionOccurred": "Salbuespena gertatu da",
-        "NotEnoughCreditsToParticipateEvents": "Ez dago nahikoa kreditu {{eventsAmount}} ekitaldietan parte hartzeko. {{needCredits}} kreditu behar dituzu. Erosi nahi?",
-        "LiveStream": "Zuzeneko igorpena",
-        "InviteStaff": "Gonbidatu langileak"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "Harpidetu Egutegian",
-        "copyLinkBelow": "Kopiatu esteka behean",
-        "goTo": "Joan:",
-        "pasteCopiedTo": "Itsatsi kopiatutako esteka &quot;egutegiaren URLa&quot; eremuan",
-        "clickAddCalendar": "Egin klik &quot;Gehitu egutegia&quot; botoian",
-        "copyLink": "Kopiatu esteka",
-        "tapToCopy": "Sakatu beheko botoia esteka arbelean kopiatzeko",
-        "linkCopied": "Esteka kopiatu da",
-        "step2": "Esteka kopiatu da. Google Calendar irekiari buruz ari gara. Esteka testu-koadroan itsatsi beharko duzu, egin klik &quot;Gehitu egutegia&quot; eta itxi fitxa (ikus beheko pantaila-argazkia)",
-        "calendarAppPreferences": "Ireki Hobespenak zure Mac-eko Egutegia aplikazioan eta ezarri Egutegi-aplikazio lehenetsia behean agertzen den moduan.",
-        "thenCloseDialog": "Ondoren, itxi elkarrizketa hau zure egutegian harpidetzeko!",
-        "success": "Egutegia behar bezala sinkronizatu da"
-    }
+	"months": {
+		"Jan": "urt",
+		"Feb": "ots",
+		"Mar": "Mar",
+		"Apr": "apr",
+		"May": "maiatza",
+		"Jun": "eka",
+		"Jul": "Uzt",
+		"Aug": "abuztua",
+		"Sep": "Ira",
+		"Oct": "Urr",
+		"Nov": "Azaroa",
+		"Dec": "abendua"
+	},
+	"monthsLong": {
+		"Jan": "Urtarrila",
+		"Feb": "Otsaila",
+		"Mar": "martxoa",
+		"Apr": "Apirila",
+		"May": "maiatza",
+		"Jun": "ekaina",
+		"Jul": "uztaila",
+		"Aug": "Abuztu",
+		"Sep": "Iraila",
+		"Oct": "urria",
+		"Nov": "Azaroa",
+		"Dec": "abendua"
+	},
+	"weekdays": {
+		"Sun": "Eguzkia",
+		"Mon": "al",
+		"Tue": "mar",
+		"Wed": "az",
+		"Thu": "og",
+		"Fri": "or",
+		"Sat": "Lar"
+	},
+	"weekdaysLong": {
+		"Sun": "Igandea",
+		"Mon": "astelehena",
+		"Tue": "asteartea",
+		"Wed": "asteazkena",
+		"Thu": "osteguna",
+		"Fri": "ostirala",
+		"Sat": "Larunbata"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Ekitaldi berria antolatu"
+		},
+		"tool": {
+			"AreYouIn": "Sartu al zara?",
+			"Yes": "Bai",
+			"No": "Ez",
+			"Maybe": "Agian",
+			"Conversation": "Elkarrizketa",
+			"Promote": "Sustatu ekitaldi hau",
+			"Checkin": "Eskaneatu parte-hartzaileen kodeak",
+			"CloseEvent": {
+				"button": "Utzi ekitaldia",
+				"confirm": {
+					"text": {
+						"Cancel": "Ziur ekitaldi hau bertan behera utzi nahi duzula?",
+						"Participant": "Ekitaldi honetan parte hartzaile bat dago",
+						"Participants": "Gertaera honetan {{count}} parte-hartzaile daude",
+						"Recurring": "Gertaera hau errepikatzen da. Etorkizuneko instantzia guztiak ere bertan behera utzi nahi dituzu?"
+					},
+					"trip": {
+						"Cancel": "Zure bidaia ere bertan behera utzi nahi duzu {{tripDirection}} gertaera hau?",
+						"Passengers": "{{passengerCount}} bidaiari daude zuregan konfiantza dutenak.",
+						"Title": "Itxi Bidaia"
+					},
+					"directions": {
+						"TO": "ERA",
+						"FROM": "HANDIK",
+						"to": "to",
+						"from": "tik"
+					}
+				}
+			},
+			"Calendar": "Egutegia",
+			"Interests": "Interesak",
+			"Directions": "Norabideak",
+			"TitleOfEvent": "Ekitaldiaren izenburua:",
+			"OpenTo": "Zabalik",
+			"MoreInfo": "Informazio gehiago",
+			"Registration": "Izen ematea",
+			"GoingTo": "etan izango da",
+			"NotGoingTo": "ez da egongo",
+			"MaybeGoingTo": "izango da agian",
+			"HostedBy": "Antolatzailea: {{name}}",
+			"LiveStream": "Egin klik Live Stream ikusteko",
+			"Myqr": "Check In",
+			"AdminDontPay": "Administratzaileak ez du ordaindu behar",
+			"Name": "Izena",
+			"ReservationFee": "Erreserba kuota",
+			"AddParticipants": "Gehitu Parte hartzaileak",
+			"ManageReservation": "Kudeatu erreserba",
+			"MakeReservation": "Egin erreserba",
+			"StartLiveStream": "Egin klik zuzeneko igorpenerako",
+			"LiveStreamEnded": "Zuzeneko igorpena amaitu da",
+			"ClickToViewRecording": "egin klik grabazioa ikusteko",
+			"EmptyList": "Zerrenda hutsa",
+			"NeedToPayCredits": "Ordaindu behar da: <span>{{amount}} kreditu</span>",
+			"PleaseJoinParticipants": "Mesedez, sartu {{participant}}",
+			"YouReservingPlace": "Zure lekua erreserbatuko duzu.",
+			"SelectIncludesToAdd": "Hautatu {{TypeDisplayPlural}} bat edo gehiago gehitzeko:",
+			"YouHaveNotRegisteredAnyIncluded": "Oraindik ez duzu {{TypeDisplayPlural}}rik erregistratu",
+			"Proceed": "Jarraitu",
+			"MakeChanges": "Gorde nire aldaketak",
+			"CancelReservation": "Erreserba osoa bertan behera utzi",
+			"Total": "Guztira",
+			"Ok": "Ados",
+			"Cancel": "Utzi",
+			"Reminders": "Oroigarriak",
+			"RemindersLabel": "Gertaera baten berri jaso nahi dut:",
+			"SetReminders": "Ezarri abisuak",
+			"UpdateFutureReservations": "Etorkizuneko erreserba guztiak modu berean eguneratu nahi dituzu?",
+			"RecurringAdmin": "Ezarpen errepikakorrak",
+			"PublisherDontPay": "Argitaletxeak ez du ordaindu behar",
+			"RequiredRelatedParticipants": "Gertaera honek parte-hartzaileak behar ditu: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "Mesedez, editatu erabilgarritasuna &quot;{{title}}&quot; ezarpen errepikakorrak eguneratzeko",
+			"Presentation": "Aurkezpena",
+			"YouAreNotParticipated": "Ez zara ekitaldiko partaide",
+			"LiveStreamStarted": "Zuzeneko igorpena hasi da",
+			"WebRTCStarted": "Telekonferentzia hasi zen",
+			"WebRTCEnded": "Telekonferentzia amaitu zen",
+			"Prepayment": "Aurrez ordainduta",
+			"PrepaymentConfirm": "$ 1eko kuota nominala kobratuko dizugu. Dagokion kreditu kopurua jasoko duzu. Kreditu hauek ekitaldiaren ordainketa osoari aplikatuko zaizkio."
+		},
+		"composer": {
+			"SetLocation": "Ezarri Nire kokapena",
+			"ChooseActivity": "Aukeratu jarduera bat",
+			"ChoosePublisher": "Aukeratu Argitaratzailea",
+			"Day": "Eguna",
+			"Starting": "Hasi",
+			"People": "Jendea",
+			"Share": "Partekatu",
+			"Recurring": "Errepikatzen",
+			"RecurringTitle": "Errepikatu Egunak",
+			"Daily": "Egunero",
+			"Weekly": "Asterokoa",
+			"Monthly": "Hilerokoa",
+			"SelectLocation": "Mesedez, hautatu kokapen bat lehenik.",
+			"eventType": "Gertaera mota",
+			"EditTitle": "Pentsa izenburu interesgarri bat...",
+			"SetTitle": "Ezarri gertaeraren izenburua",
+			"location": {
+				"Title": "Ezarri zure kokapena"
+			},
+			"interest": {
+				"Title": "Aukeratu jarduera bat",
+				"Filter": "Bilatu interesak..."
+			},
+			"Ending": "Amaiera",
+			"ScheduleOnlineConference": "Antolatu lineako hitzaldia",
+			"SOCDescription": "Mesedez, zehaztu konferentziaren hasiera eta amaiera ordua. Denbora tarte horretan gertaera bisitatzen duten pertsona guztiak lineako konferentziara automatikoki konektatuko dira.",
+			"EndDate": "Amaiera",
+			"SetLivestream": "Itsatsi esteka zuzeneko igorpenerako / bideokonferentziarako",
+			"SetInfoLink": "Ezarri Esteka informazio gehigarrirako",
+			"ChooseService": "Aukeratu Eskuragarri dagoen zerbitzua",
+			"Continue": "Jarraitu",
+			"ChooseAvailability": "Aukeratu Zerbitzu erabilgarri",
+			"Duration": "Iraupena",
+			"Hour": "Ordua",
+			"Hours": "Orduak",
+			"Minutes": "Minutu",
+			"Locally": "lokalean",
+			"EventInfoLink": "Ekitaldiaren informazioa esteka",
+			"TicketPurchaseLink": "Txartelak erosteko esteka"
+		},
+		"EventAlreadyClosed": "Ekitaldi hau itxita dago dagoeneko",
+		"addToCalendar": {
+			"permissions": {
+				"title": "Egutegian gehitu?",
+				"prompt": "Gertaera hau zure egutegian gehitu nahi al duzu?",
+				"yes": "Bai",
+				"no": "Ez"
+			},
+			"dialog": {
+				"Title": "Gehitu Gertaera zure egutegian"
+			}
+		},
+		"ErrorLeaveEndedEvent": "Barkatu, baina ezin duzu amaitu amaitutako gertaera utzi"
+	},
+	"recurring": {
+		"dialog": {
+			"justonce": "Hau behin bakarrik",
+			"recurring": "Errepikatzen",
+			"startDate": "Hasiera data",
+			"endDate": "Amaiera data",
+			"justOnce": "Behin bakarrik",
+			"justOnceWeekly": "Aste honetan bakarrik",
+			"justOnceMonthly": "Hilabete honetan bakarrik"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "Doako ekitaldia",
+			"optional": "Aukerako ekarpena",
+			"required": "Beharrezko ordainketa"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "Aukerako ekarpena",
+			"required": "Bertaratzeko prezioa: {{amount}} {{currency}}",
+			"paid": "ordaindu"
+		},
+		"confirmationDialog": {
+			"title": "Ordainketa berrespena",
+			"content": "Gertaera honek {{amount}} aukerako ekarpena du.",
+			"button": "Ekartzea"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} oraindik ez da ekitaldiaren parte. Parte-hartzaile gisa gehitu nahi dituzu?",
+		"userNotFound": "Ez da erabiltzailea aurkitu",
+		"confirmYes": "Bai",
+		"confirmNo": "Ez"
+	},
+	"notifications": {
+		"EventActivityIn": "Gertaeren jarduera {{{stream.fields.title}}}-n",
+		"RecurringRulesChanged": "Aldizkako arauak aldatu dira gertaerarako {{{call 'message.getInstruction' 'eventTitle'}}}",
+		"ManageEmailSubscriptions": "kudeatu zure posta elektronikoko harpidetzak",
+		"IfUnsubscribe": "Harpidetza kendu nahi baduzu",
+		"ClickHereToVisitEvent": "Mesedez, egin klik hemen ekitaldia bisitatzeko",
+		"Calendars/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; gertaera {{&call 'message.getInstruction' 'time'}}} barru hasiko da",
+		"webrtc": {
+			"Started": "Telekonferentzia hasi zen",
+			"Ended": "Telekonferentzia amaitu zen"
+		},
+		"livestream": {
+			"Started": "Zuzeneko igorpena hasi da",
+			"Ended": "Zuzeneko igorpena amaitu da",
+			"ClickToView": "Ikus ezazu hemen."
+		}
+	},
+	"import": {
+		"linkTitle": "Bete kalkulu orri hau",
+		"fileLabel": "Kargatu kalkulu-orria:",
+		"joinEventLabel": "Batu erabiltzaileak ausazko gertaerara",
+		"smsText": "Kaixo, esteka bat bidali dizut {{communityName}}. Mesedez, begiratu.",
+		"emailSubject": "Esteka bat bidali berri dizu",
+		"emailBody": "Aizu, gonbidapena bidali dizut {{communityName}} helbidera. Mesedez, begiratu.",
+		"fileNotFound": "Barkatu, ez da CSV fitxategia aurkitu.",
+		"fileEmpty": "Barkatu, CSV fitxategia hutsik dago.",
+		"fieldNotFound": "&quot;{{1}}&quot; derrigorrezko eremua ez da aurkitu",
+		"userIdNotFound": "erabiltzailea existitzen da baina id hutsik",
+		"activateUsers": "erabiltzaileei aktibazio-mezua bidali?",
+		"taskStreamInvalid": "ataza korrontea baliogabea",
+		"instructionsEmpty": "ataza-korrontearen argibideak hutsik",
+		"interestsEmpty": "ezin dira interesik lortu",
+		"interestAbsent": "interes {{1}} ez da aurkitu",
+		"complete": "Osatu",
+		"errorLine": "lerroa {{1}}",
+		"errorsTitle": "Erroreak gertatu dira",
+		"importOptions": "Aukerak",
+		"importProgress": "Aurrerapena",
+		"sampleCSV": "Deskargatu Sample CSV",
+		"communityUsers": "Hau komunitateen zerrenda da",
+		"toMainCommunityToo": "komunitate nagusiarekin ere erlazionatu",
+		"ChooseFile": "aukeratu fitxategia"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "Jendeak parte hartu dezakeen ekitaldi bat adierazten du",
+			"displayType": "Gertaera"
+		},
+		"Calendars/recurring": {
+			"description": "Aldian-aldian errepikatu behar diren korronteak erlazionatzeko erabiltzen da",
+			"displayType": "Gertaera errepikakorra"
+		}
+	},
+	"services": {
+		"Title": "Zerbitzuak",
+		"NewService": {
+			"Title": "Erabilgarritasun berria",
+			"SaveService": "Erabilgarritasuna gorde",
+			"SelectTemplate": "Mesedez, hautatu Zerbitzua",
+			"SelectLocation": "Mesedez, aukeratu Kokapena",
+			"SelectArea": "Mesedez hautatu Area",
+			"SelectTime": "Kudeatu denbora-zirrikituak",
+			"SelectTimeSlot": "Hautatu ordu-tarte bat",
+			"PeopleMin": "Bisitari minimoak",
+			"PeopleMax": "Gehienezko bisitari",
+			"PeopleLabels": "Etiketak onartzen dira",
+			"Next": "hurrengo",
+			"Back": "Back"
+		},
+		"EditService": "Editatu erabilgarritasuna",
+		"SetVisitors": "Ezarri Bisitariak",
+		"Price": "Prezioa",
+		"SelectAction": "Mesedez, aukeratu ekintza",
+		"OpenProfile": "Profila irekia",
+		"RemoveStaff": "Langileak kendu"
+	},
+	"timeslots": {
+		"AddSlot": "Gehitu Slot",
+		"StartTime": "Hasiera Ordua",
+		"EndTime": "Amaiera Ordua",
+		"Save": "Gorde",
+		"AddTimeSlot": "Gehitu denbora tartea",
+		"CopyFromDay": "Egunetik kopiatu",
+		"Nearest": "Hurbilena",
+		"Today": "Gaur",
+		"Tomorrow": "Bihar",
+		"AfterTomorrow": "Bihar eta gero"
+	},
+	"availabilities": {
+		"Title": "Eskuragarritasunak",
+		"NewAvailability": {
+			"Title": "Erabilgarritasun berria",
+			"SaveAvailability": "Gorde erabilgarritasuna",
+			"SelectTemplate": "Mesedez, hautatu Zerbitzua",
+			"SelectLocation": "Mesedez, hautatu Kokapena",
+			"SelectArea": "Mesedez, hautatu Eremua",
+			"SelectTime": "Kudeatu denbora tarteak",
+			"SelectTimeSlot": "Hautatu ordu-tarte bat",
+			"PeopleMin": "Gutxieneko bisitariak",
+			"PeopleMax": "Gehienezko bisitariak",
+			"PeopleLabels": "Rolak onartzen dira",
+			"Next": "Hurrengoa",
+			"Back": "Itzuli",
+			"Type": "Mota",
+			"Weekly": "Asterokoa",
+			"RecurringStartDate": "Hasiera-data errepikakorra",
+			"EndDate": "Amaiera-data",
+			"SelectTimeSlots": "Aukeratu nahi dituzun denbora tarteak",
+			"RecurringEndDate": "Amaiera-data errepikakorra",
+			"ScheduleOnlineConference": "Programatu Telekonferentzia",
+			"SetLivestream": "Itsatsi zuzeneko igorpenerako / bideokonferentziarako esteka",
+			"SelectTimeZone": "Hautatu ordu-eremua"
+		},
+		"EditAvailability": "Editatu erabilgarritasuna",
+		"SetVisitors": "Ezarri Bisitariak",
+		"Price": "Prezioa",
+		"SelectAction": "Hautatu ekintza",
+		"OpenProfile": "Ireki profila",
+		"RemoveStaff": "Langileak kendu",
+		"PleaseSelectTimeSlots": "Mesedez, hautatu ordu-tarteak",
+		"ExceptionOccurred": "Salbuespena gertatu da",
+		"NotEnoughCreditsToParticipateEvents": "Ez dago nahikoa kreditu {{eventsAmount}} ekitaldietan parte hartzeko. {{needCredits}} kreditu behar dituzu. Erosi nahi?",
+		"LiveStream": "Zuzeneko igorpena",
+		"InviteStaff": "Gonbidatu langileak"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "Harpidetu Egutegian",
+		"copyLinkBelow": "Kopiatu esteka behean",
+		"goTo": "Joan:",
+		"pasteCopiedTo": "Itsatsi kopiatutako esteka &quot;egutegiaren URLa&quot; eremuan",
+		"clickAddCalendar": "Egin klik &quot;Gehitu egutegia&quot; botoian",
+		"copyLink": "Kopiatu esteka",
+		"tapToCopy": "Sakatu beheko botoia esteka arbelean kopiatzeko",
+		"linkCopied": "Esteka kopiatu da",
+		"step2": "Esteka kopiatu da. Google Calendar irekiari buruz ari gara. Esteka testu-koadroan itsatsi beharko duzu, egin klik &quot;Gehitu egutegia&quot; eta itxi fitxa (ikus beheko pantaila-argazkia)",
+		"calendarAppPreferences": "Ireki Hobespenak zure Mac-eko Egutegia aplikazioan eta ezarri Egutegi-aplikazio lehenetsia behean agertzen den moduan.",
+		"thenCloseDialog": "Ondoren, itxi elkarrizketa hau zure egutegian harpidetzeko!",
+		"success": "Egutegia behar bezala sinkronizatu da"
+	},
+	"@override": {
+		"Assets/content": {
+			"payments": {
+				"reasons": {
+					"EventParticipation": "Ekitaldiaren parte-hartzea"
+				}
+			}
+		}
+	}
 }

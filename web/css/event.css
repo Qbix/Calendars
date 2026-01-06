@@ -1,12 +1,18 @@
 .Calendars_event_curtain .Streams_image_preview_tool {
 	width: 100%;
+	max-height: 50%;
 	padding: 0;
 	margin: 0;
 }
 
-.Calendars_event_curtain img {
-	width: 100% !important;
+.Calendars_event_curtain img.Streams_image_preview_icon {
+	width: calc(min(100%, 60vh)) !important;
 	height: auto !important;
+}
+
+.Q_notMobile .Calendars_event_curtain img.Streams_image_preview_icon {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .Calendars_event_curtain .Streams_preview_loading {
@@ -36,6 +42,7 @@
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 10px;
+	text-align: center;
 }
 .Calendars_event_background {
 	width: 100%;
@@ -95,7 +102,7 @@
     position: absolute;
     top: -25px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -80%) scale(1.4);
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 	background: var(--html-bg-color);
 }
@@ -481,12 +488,8 @@
 }
 
 .Calendars_event_title_label {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(100, 100, 100, 0.75);
 	font-size: 14px;
-}
-.Calendars_event_tool .Streams_participants_tool .Users_avatar_tool .Users_avatar_icon {
-	width: 40px;
-	height: 40px;
 }
 .Calendars_event_tool .Users_avatar_tool {
 	position: relative;
@@ -555,4 +558,66 @@
 .Calendars_event_reminders .Q_dialog_content label input[type=checkbox] {
 	transform: scale(2);
 	margin-right: 20px;
+
+}
+.Calendars_event_roles,
+.Calendars_event_paid {
+	margin-bottom: 10px;
+}
+.Calendars_event_roles h2,
+.Calendars_event_paid h2 {
+	font-size: 1.3em;
+}
+.Calendars_event_roles [data-role],
+.Calendars_event_paid [data-paid] {
+	display: inline-block;
+	font-size: 1em;
+	text-transform: capitalize;
+	padding: 5px 10px;
+	border: 1px solid #888888;
+	background-color: rgba(255, 255, 255, .2);
+	border-radius: 5px;
+	cursor: pointer;
+}
+.Calendars_event_roles [data-role].Q_selected,
+.Calendars_event_paid [data-paid].Q_selected {
+	background-color: #fff;
+}
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool:before {
+	content: "\00a0";
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+	width: 15px;
+	height: 15px;
+}
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=rejected]:before {
+	background-color: red;
+}
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=requested]:before {
+	background-color: yellow;
+}
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-role=registered]:before {
+	background-color: green;
+}
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool:after {
+	content: "\00a0";
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+	bottom: 15px;
+	left: 0;
+	width: 15px;
+	height: 15px;
+}
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-paid=no]:after {
+	background-color: red;
+}
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-paid=reserved]:after {
+	background-color: yellow;
+}
+.Calendars_event_tool[data-admin=true] .Calendars_event_participants .Users_avatar_tool[data-paid=fully]:after {
+	background-color: green;
 }

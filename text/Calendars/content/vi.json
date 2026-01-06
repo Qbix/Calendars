@@ -1,333 +1,342 @@
 {
-    "months": {
-        "Jan": "tháng một",
-        "Feb": "tháng Hai",
-        "Mar": "Mar",
-        "Apr": "Tháng tư",
-        "May": "Có thể",
-        "Jun": "Tháng sáu",
-        "Jul": "Thg 7",
-        "Aug": "Tháng 8",
-        "Sep": "Tháng chín",
-        "Oct": "Tháng 10",
-        "Nov": "Tháng mười một",
-        "Dec": "Tháng mười hai"
-    },
-    "monthsLong": {
-        "Jan": "Tháng một",
-        "Feb": "tháng 2",
-        "Mar": "hành khúc",
-        "Apr": "tháng tư",
-        "May": "Có thể",
-        "Jun": "tháng Sáu",
-        "Jul": "tháng Bảy",
-        "Aug": "tháng Tám",
-        "Sep": "Tháng Chín",
-        "Oct": "Tháng Mười",
-        "Nov": "tháng Mười Một",
-        "Dec": "tháng 12"
-    },
-    "weekdays": {
-        "Sun": "mặt trời",
-        "Mon": "Thứ hai",
-        "Tue": "Thứ ba",
-        "Wed": "Thứ Tư",
-        "Thu": "Thu",
-        "Fri": "T6",
-        "Sat": "Đã ngồi"
-    },
-    "weekdaysLong": {
-        "Sun": "chủ nhật",
-        "Mon": "thứ hai",
-        "Tue": "thứ ba",
-        "Wed": "Thứ Tư",
-        "Thu": "Thứ năm",
-        "Fri": "Thứ sáu",
-        "Sat": "thứ bảy"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "Lên kế hoạch cho sự kiện mới"
-        },
-        "tool": {
-            "HostedBy": "Được tổ chức bởi {{name}}",
-            "Name": "Tên",
-            "AreYouIn": "Bạn có tham gia không?",
-            "Yes": "Đúng",
-            "No": "Không",
-            "Ok": "Được rồi",
-            "Cancel": "Hủy bỏ",
-            "Maybe": "Có lẽ",
-            "Conversation": "Cuộc hội thoại",
-            "Promote": "Quảng cáo sự kiện này",
-            "Reminders": "Nhắc nhở",
-            "RemindersLabel": "Tôi muốn được thông báo về một sự kiện trong:",
-            "MoreInfo": "Thêm thông tin",
-            "Registration": "Đăng ký",
-            "SetReminders": "Vui lòng đặt lời nhắc",
-            "ReservationFee": "Phí đặt phòng",
-            "AddParticipants": "Thêm người tham gia",
-            "ManageReservation": "Quản lý đặt chỗ",
-            "UpdateFutureReservations": "Bạn cũng muốn cập nhật tất cả các đặt chỗ trong tương lai theo cùng một cách?",
-            "RecurringAdmin": "Cài đặt định kỳ",
-            "MakeReservation": "Đặt phòng",
-            "StartLiveStream": "Nhấp để phát trực tiếp",
-            "LiveStreamEnded": "Luồng trực tiếp đã kết thúc",
-            "ClickToViewRecording": "bấm để xem ghi âm",
-            "Checkin": "Quét mã người tham dự",
-            "Myqr": "Đăng ký vào",
-            "CloseEvent": {
-                "button": "Hủy sự kiện",
-                "confirm": {
-                    "text": {
-                        "Cancel": "Bạn có chắc muốn hủy sự kiện này?",
-                        "Participant": "Có 1 người tham gia sự kiện này",
-                        "Participants": "Có {{count}} người tham gia sự kiện này",
-                        "Recurring": "Sự kiện này đang lặp lại. Bạn có muốn cũng hủy tất cả các phiên bản trong tương lai của nó không?"
-                    },
-                    "trip": {
-                        "Cancel": "Bạn có muốn hủy cả chuyến đi của mình {{tripDirection}} sự kiện này không?",
-                        "Passengers": "Có {{passengerCount}} hành khách dựa vào bạn.",
-                        "Title": "Đóng chuyến đi"
-                    },
-                    "directions": {
-                        "TO": "ĐẾN",
-                        "FROM": "TỪ",
-                        "to": "đến",
-                        "from": "từ"
-                    }
-                }
-            },
-            "Calendar": "Lịch",
-            "Interests": "Sở thích",
-            "Directions": "Hướng",
-            "TitleOfEvent": "Tiêu đề của sự kiện:",
-            "OpenTo": "Mở",
-            "GoingTo": "sẽ ở",
-            "NotGoingTo": "sẽ không ở",
-            "MaybeGoingTo": "có thể sẽ ở",
-            "AdminDontPay": "Admin không cần trả tiền",
-            "PublisherDontPay": "Nhà xuất bản không cần trả tiền",
-            "EmptyList": "Danh sách trống",
-            "NeedToPayCredits": "Cần thanh toán: <span>{{amount}} tín dụng<\/span>",
-            "PleaseJoinParticipants": "Hãy tham gia {{participant}}",
-            "YouReservingPlace": "Bạn sẽ giữ chỗ của mình.",
-            "SelectIncludesToAdd": "Chọn một hoặc nhiều {{TypeDisplayPlural}} để thêm:",
-            "YouHaveNotRegisteredAnyIncluded": "Bạn chưa đăng ký bất kỳ {{TypeDisplayPlural}} nào",
-            "Proceed": "Tiếp tục",
-            "MakeChanges": "Lưu các thay đổi của tôi",
-            "CancelReservation": "Hủy toàn bộ đặt chỗ",
-            "Total": "Tổng cộng",
-            "RequiredRelatedParticipants": "Sự kiện này yêu cầu người tham gia: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Vui lòng chỉnh sửa tính khả dụng &quot;{{title}}&quot; để cập nhật cài đặt định kỳ",
-            "Presentation": "Bài thuyết trình",
-            "YouAreNotParticipated": "Bạn không phải là người tham gia sự kiện",
-            "LiveStreamStarted": "Buổi phát trực tiếp đã bắt đầu",
-            "WebRTCStarted": "Hội nghị truyền hình đã bắt đầu",
-            "WebRTCEnded": "Hội nghị truyền hình đã kết thúc"
-        },
-        "composer": {
-            "SetLocation": "Đặt vị trí của tôi",
-            "SetInfoLink": "Đặt Liên kết đến thông tin bổ sung",
-            "ChooseAvailability": "Chọn dịch vụ có sẵn",
-            "ChooseActivity": "Chọn một hoạt động",
-            "ChoosePublisher": "Chọn nhà xuất bản",
-            "Day": "Ngày",
-            "Starting": "Bắt đầu",
-            "Duration": "Khoảng thời gian",
-            "Hour": "Giờ",
-            "Hours": "Giờ",
-            "Minutes": "Phút",
-            "Ending": "Kết thúc",
-            "People": "Mọi người",
-            "Share": "Chia sẻ",
-            "Continue": "Tiếp tục",
-            "Recurring": "Định kỳ",
-            "RecurringTitle": "Ngày định kỳ",
-            "Daily": "hằng ngày",
-            "Weekly": "Hàng tuần",
-            "Monthly": "Hàng tháng",
-            "SelectLocation": "Vui lòng chọn một địa điểm trước.",
-            "eventType": "Loại sự kiện",
-            "EditTitle": "Nghĩ về một tiêu đề thú vị ...",
-            "SetTitle": "Vui lòng đặt tiêu đề sự kiện",
-            "ScheduleOnlineConference": "Lên lịch hội thảo trực tuyến",
-            "SOCDescription": "Vui lòng xác định thời gian bắt đầu và kết thúc hội nghị. Mỗi người đến thăm sự kiện trong khoảng thời gian này sẽ tự động kết nối với hội nghị trực tuyến.",
-            "EndDate": "Chấm dứt",
-            "location": {
-                "Title": "Thiết lập vị trí của bạn"
-            },
-            "interest": {
-                "Title": "Chọn một hoạt động",
-                "Filter": "Tìm kiếm sở thích ..."
-            },
-            "SetLivestream": "Dán liên kết đến phát trực tiếp \/ hội nghị truyền hình",
-            "Locally": "tại địa phương",
-            "EventInfoLink": "Liên kết thông tin sự kiện",
-            "TicketPurchaseLink": "Liên kết mua vé"
-        },
-        "EventAlreadyClosed": "Sự kiện này đã kết thúc",
-        "addToCalendar": {
-            "permissions": {
-                "title": "Thêm vào Lịch?",
-                "prompt": "Bạn có muốn thêm sự kiện này vào lịch của mình không?",
-                "yes": "Đúng",
-                "no": "Không"
-            },
-            "dialog": {
-                "Title": "Thêm sự kiện vào lịch của bạn"
-            }
-        },
-        "ErrorLeaveEndedEvent": "Xin lỗi, nhưng bạn không thể rời khỏi sự kiện đã kết thúc"
-    },
-    "availabilities": {
-        "Title": "Tính khả dụng",
-        "NewAvailability": {
-            "Title": "Tính sẵn có mới",
-            "SaveAvailability": "Lưu tính khả dụng",
-            "SelectTemplate": "Vui lòng chọn Dịch vụ",
-            "SelectLocation": "Vui lòng chọn Vị trí",
-            "SelectArea": "Vui lòng chọn Khu vực",
-            "Type": "Loại",
-            "Weekly": "Hàng tuần",
-            "RecurringStartDate": "Ngày bắt đầu định kỳ",
-            "EndDate": "Ngày cuối",
-            "SelectTime": "Quản lý các khe thời gian",
-            "SelectTimeSlot": "Chọn một khoảng thời gian",
-            "SelectTimeSlots": "Chọn các khoảng thời gian mong muốn",
-            "PeopleMin": "Số lượng khách truy cập tối thiểu",
-            "PeopleMax": "Số lượng khách truy cập tối đa",
-            "PeopleLabels": "Vai trò được phép",
-            "Next": "Kế tiếp",
-            "Back": "Trở lại",
-            "RecurringEndDate": "Ngày kết thúc định kỳ",
-            "ScheduleOnlineConference": "Lên lịch hội nghị từ xa",
-            "SetLivestream": "Dán liên kết tới buổi phát trực tiếp \/ hội nghị truyền hình",
-            "SelectTimeZone": "Chọn múi giờ"
-        },
-        "EditAvailability": "Chỉnh sửa tính khả dụng",
-        "SetVisitors": "Đặt khách truy cập",
-        "Price": "Giá",
-        "SelectAction": "Vui lòng chọn hành động",
-        "OpenProfile": "Mở hồ sơ",
-        "RemoveStaff": "Xóa nhân viên",
-        "PleaseSelectTimeSlots": "Vui lòng chọn các khoảng thời gian",
-        "ExceptionOccurred": "Ngoại lệ xảy ra",
-        "NotEnoughCreditsToParticipateEvents": "Không đủ tín dụng để tham gia {{eventsAmount}} sự kiện. Bạn cần {{needCredits}} tín dụng. Muốn mua?",
-        "LiveStream": "Trực tiếp",
-        "InviteStaff": "Mời nhân viên"
-    },
-    "recurring": {
-        "dialog": {
-            "startDate": "Ngày bắt đầu",
-            "endDate": "Ngày cuối",
-            "justOnce": "Chỉ một lần",
-            "justOnceWeekly": "Chỉ tuần này thôi",
-            "justOnceMonthly": "Chỉ trong tháng này",
-            "recurring": "Định kỳ"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "Sự kiện miễn phí",
-            "optional": "Đóng góp tùy chọn",
-            "required": "Thanh toán bắt buộc"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "Đóng góp tùy chọn",
-            "required": "Thanh toán bắt buộc",
-            "paid": "đã thanh toán"
-        },
-        "confirmationDialog": {
-            "title": "Xác nhận thanh toán",
-            "content": "Sự kiện này có một đóng góp tùy chọn là {{amount}}.",
-            "button": "Đóng góp"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} chưa phải là một phần của sự kiện. Bạn có muốn thêm họ làm người tham gia không?",
-        "userNotFound": "Người dùng không được tìm thấy",
-        "confirmYes": "Đúng",
-        "confirmNo": "Không"
-    },
-    "notifications": {
-        "EventActivityIn": "Hoạt động sự kiện trong {{{stream.fields.title}}}",
-        "RecurringRulesChanged": "Các quy tắc lặp lại đã thay đổi cho sự kiện {{{call 'message.getInstruction' 'eventTitle'}}}",
-        "ManageEmailSubscriptions": "quản lý đăng ký email của bạn",
-        "IfUnsubscribe": "Nếu bạn muốn hủy đăng ký",
-        "ClickHereToVisitEvent": "Vui lòng bấm vào đây để tham quan sự kiện",
-        "Calendars\/reminder": "Sự kiện &quot;{{{call 'message.getInstruction' 'name'}}&quot; sẽ bắt đầu sau {{&call 'message.getInstruction' 'time'}}}",
-        "webrtc": {
-            "Started": "Hội nghị truyền hình đã bắt đầu",
-            "Ended": "Hội nghị truyền hình đã kết thúc"
-        },
-        "livestream": {
-            "Started": "Đã bắt đầu phát trực tiếp",
-            "Ended": "Luồng trực tiếp đã kết thúc",
-            "ClickToView": "Xem nó ở đây."
-        }
-    },
-    "import": {
-        "linkTitle": "Điền vào Bảng tính Này",
-        "fileLabel": "Tải lên bảng tính:",
-        "importOptions": "Tùy chọn",
-        "importProgress": "Phát triển",
-        "sampleCSV": "Tải xuống CSV mẫu",
-        "joinEventLabel": "Tham gia cùng người dùng vào sự kiện ngẫu nhiên",
-        "smsText": "Này, tôi vừa gửi cho bạn một liên kết tới {{communityName}}. Làm ơn hãy kiểm tra nó.",
-        "emailSubject": "Vừa gửi cho bạn một liên kết",
-        "emailBody": "Này, tôi vừa gửi cho bạn lời mời tham gia {{communityName}}. Làm ơn hãy kiểm tra nó.",
-        "fileNotFound": "Xin lỗi, không tìm thấy tệp CSV.",
-        "fileEmpty": "Xin lỗi, tệp CSV trống.",
-        "fieldNotFound": "Không tìm thấy trường bắt buộc &quot;{{1}}&quot;",
-        "userIdNotFound": "người dùng tồn tại nhưng id trống",
-        "activateUsers": "gửi tin nhắn kích hoạt cho người dùng?",
-        "taskStreamInvalid": "luồng nhiệm vụ không hợp lệ",
-        "instructionsEmpty": "hướng dẫn dòng nhiệm vụ trống",
-        "interestsEmpty": "không thể nhận được sở thích",
-        "interestAbsent": "quan tâm {{1}} không được tìm thấy",
-        "complete": "Hoàn chỉnh",
-        "errorLine": "dòng {{1}}",
-        "errorsTitle": "Đã xảy ra lỗi",
-        "communityUsers": "Đây là danh sách cộng đồng",
-        "toMainCommunityToo": "liên quan đến cộng đồng chính quá",
-        "ChooseFile": "chọn tập tin"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "Trình bày một sự kiện mà mọi người có thể tham gia",
-            "displayType": "Biến cố"
-        },
-        "Calendars\/recurring": {
-            "description": "Được sử dụng cho các luồng liên quan được định kỳ lặp lại",
-            "displayType": "Sự kiện định kỳ"
-        }
-    },
-    "timeslots": {
-        "AddSlot": "Thêm vị trí",
-        "StartTime": "Thời gian bắt đầu",
-        "EndTime": "Thời gian kết thúc",
-        "Save": "Cứu",
-        "AddTimeSlot": "Thêm thời gian",
-        "CopyFromDay": "Sao chép từ ngày",
-        "Nearest": "Gần nhất",
-        "Today": "Hôm nay",
-        "Tomorrow": "Ngày mai",
-        "AfterTomorrow": "Sau ngày mai"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "Đăng ký Lịch",
-        "copyLinkBelow": "Sao chép liên kết bên dưới",
-        "goTo": "Đi đến:",
-        "pasteCopiedTo": "Dán liên kết đã sao chép vào trường &quot;URL của lịch&quot;",
-        "clickAddCalendar": "Nhấp vào nút &quot;Thêm lịch&quot;",
-        "copyLink": "Sao chép đường dẫn",
-        "tapToCopy": "Nhấn vào nút bên dưới để sao chép liên kết vào khay nhớ tạm của bạn",
-        "linkCopied": "Đã sao chép liên kết",
-        "step2": "Đã sao chép liên kết. Chúng tôi sắp mở Lịch Google. Bạn sẽ cần dán liên kết vào hộp văn bản, nhấp vào &quot;Thêm lịch&quot; và đóng tab (xem ảnh chụp màn hình bên dưới)",
-        "calendarAppPreferences": "Mở Tùy chọn trong Ứng dụng Lịch trên máy Mac của bạn và đặt Ứng dụng Lịch mặc định như hiển thị bên dưới.",
-        "thenCloseDialog": "Sau đó đóng hộp thoại này để đăng ký lịch của bạn!",
-        "success": "Lịch đã được đồng bộ hóa thành công"
-    }
+	"months": {
+		"Jan": "th\u00e1ng m\u1ed9t",
+		"Feb": "th\u00e1ng Hai",
+		"Mar": "Mar",
+		"Apr": "Th\u00e1ng t\u01b0",
+		"May": "C\u00f3 th\u1ec3",
+		"Jun": "Th\u00e1ng s\u00e1u",
+		"Jul": "Thg 7",
+		"Aug": "Th\u00e1ng 8",
+		"Sep": "Th\u00e1ng ch\u00edn",
+		"Oct": "Th\u00e1ng 10",
+		"Nov": "Th\u00e1ng m\u01b0\u1eddi m\u1ed9t",
+		"Dec": "Th\u00e1ng m\u01b0\u1eddi hai"
+	},
+	"monthsLong": {
+		"Jan": "Th\u00e1ng m\u1ed9t",
+		"Feb": "th\u00e1ng 2",
+		"Mar": "h\u00e0nh kh\u00fac",
+		"Apr": "th\u00e1ng t\u01b0",
+		"May": "C\u00f3 th\u1ec3",
+		"Jun": "th\u00e1ng S\u00e1u",
+		"Jul": "th\u00e1ng B\u1ea3y",
+		"Aug": "th\u00e1ng T\u00e1m",
+		"Sep": "Th\u00e1ng Ch\u00edn",
+		"Oct": "Th\u00e1ng M\u01b0\u1eddi",
+		"Nov": "th\u00e1ng M\u01b0\u1eddi M\u1ed9t",
+		"Dec": "th\u00e1ng 12"
+	},
+	"weekdays": {
+		"Sun": "m\u1eb7t tr\u1eddi",
+		"Mon": "Th\u1ee9 hai",
+		"Tue": "Th\u1ee9 ba",
+		"Wed": "Th\u1ee9 T\u01b0",
+		"Thu": "Thu",
+		"Fri": "T6",
+		"Sat": "\u0110\u00e3 ng\u1ed3i"
+	},
+	"weekdaysLong": {
+		"Sun": "ch\u1ee7 nh\u1eadt",
+		"Mon": "th\u1ee9 hai",
+		"Tue": "th\u1ee9 ba",
+		"Wed": "Th\u1ee9 T\u01b0",
+		"Thu": "Th\u1ee9 n\u0103m",
+		"Fri": "Th\u1ee9 s\u00e1u",
+		"Sat": "th\u1ee9 b\u1ea3y"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "L\u00ean k\u1ebf ho\u1ea1ch cho s\u1ef1 ki\u1ec7n m\u1edbi"
+		},
+		"tool": {
+			"HostedBy": "\u0110\u01b0\u1ee3c t\u1ed5 ch\u1ee9c b\u1edfi {{name}}",
+			"Name": "T\u00ean",
+			"AreYouIn": "B\u1ea1n c\u00f3 tham gia kh\u00f4ng?",
+			"Yes": "\u0110\u00fang",
+			"No": "Kh\u00f4ng",
+			"Ok": "\u0110\u01b0\u1ee3c r\u1ed3i",
+			"Cancel": "H\u1ee7y b\u1ecf",
+			"Maybe": "C\u00f3 l\u1ebd",
+			"Conversation": "Cu\u1ed9c h\u1ed9i tho\u1ea1i",
+			"Promote": "Qu\u1ea3ng c\u00e1o s\u1ef1 ki\u1ec7n n\u00e0y",
+			"Reminders": "Nh\u1eafc nh\u1edf",
+			"RemindersLabel": "T\u00f4i mu\u1ed1n \u0111\u01b0\u1ee3c th\u00f4ng b\u00e1o v\u1ec1 m\u1ed9t s\u1ef1 ki\u1ec7n trong:",
+			"MoreInfo": "Th\u00eam th\u00f4ng tin",
+			"Registration": "\u0110\u0103ng k\u00fd",
+			"SetReminders": "Vui l\u00f2ng \u0111\u1eb7t l\u1eddi nh\u1eafc",
+			"ReservationFee": "Ph\u00ed \u0111\u1eb7t ph\u00f2ng",
+			"AddParticipants": "Th\u00eam ng\u01b0\u1eddi tham gia",
+			"ManageReservation": "Qu\u1ea3n l\u00fd \u0111\u1eb7t ch\u1ed7",
+			"UpdateFutureReservations": "B\u1ea1n c\u0169ng mu\u1ed1n c\u1eadp nh\u1eadt t\u1ea5t c\u1ea3 c\u00e1c \u0111\u1eb7t ch\u1ed7 trong t\u01b0\u01a1ng lai theo c\u00f9ng m\u1ed9t c\u00e1ch?",
+			"RecurringAdmin": "C\u00e0i \u0111\u1eb7t \u0111\u1ecbnh k\u1ef3",
+			"MakeReservation": "\u0110\u1eb7t ph\u00f2ng",
+			"StartLiveStream": "Nh\u1ea5p \u0111\u1ec3 ph\u00e1t tr\u1ef1c ti\u1ebfp",
+			"LiveStreamEnded": "Lu\u1ed3ng tr\u1ef1c ti\u1ebfp \u0111\u00e3 k\u1ebft th\u00fac",
+			"ClickToViewRecording": "b\u1ea5m \u0111\u1ec3 xem ghi \u00e2m",
+			"Checkin": "Qu\u00e9t m\u00e3 ng\u01b0\u1eddi tham d\u1ef1",
+			"Myqr": "\u0110\u0103ng k\u00fd v\u00e0o",
+			"CloseEvent": {
+				"button": "H\u1ee7y s\u1ef1 ki\u1ec7n",
+				"confirm": {
+					"text": {
+						"Cancel": "B\u1ea1n c\u00f3 ch\u1eafc mu\u1ed1n h\u1ee7y s\u1ef1 ki\u1ec7n n\u00e0y?",
+						"Participant": "C\u00f3 1 ng\u01b0\u1eddi tham gia s\u1ef1 ki\u1ec7n n\u00e0y",
+						"Participants": "C\u00f3 {{count}} ng\u01b0\u1eddi tham gia s\u1ef1 ki\u1ec7n n\u00e0y",
+						"Recurring": "S\u1ef1 ki\u1ec7n n\u00e0y \u0111ang l\u1eb7p l\u1ea1i. B\u1ea1n c\u00f3 mu\u1ed1n c\u0169ng h\u1ee7y t\u1ea5t c\u1ea3 c\u00e1c phi\u00ean b\u1ea3n trong t\u01b0\u01a1ng lai c\u1ee7a n\u00f3 kh\u00f4ng?"
+					},
+					"trip": {
+						"Cancel": "B\u1ea1n c\u00f3 mu\u1ed1n h\u1ee7y c\u1ea3 chuy\u1ebfn \u0111i c\u1ee7a m\u00ecnh {{tripDirection}} s\u1ef1 ki\u1ec7n n\u00e0y kh\u00f4ng?",
+						"Passengers": "C\u00f3 {{passengerCount}} h\u00e0nh kh\u00e1ch d\u1ef1a v\u00e0o b\u1ea1n.",
+						"Title": "\u0110\u00f3ng chuy\u1ebfn \u0111i"
+					},
+					"directions": {
+						"TO": "\u0110\u1ebeN",
+						"FROM": "T\u1eea",
+						"to": "\u0111\u1ebfn",
+						"from": "t\u1eeb"
+					}
+				}
+			},
+			"Calendar": "L\u1ecbch",
+			"Interests": "S\u1edf th\u00edch",
+			"Directions": "H\u01b0\u1edbng",
+			"TitleOfEvent": "Ti\u00eau \u0111\u1ec1 c\u1ee7a s\u1ef1 ki\u1ec7n:",
+			"OpenTo": "M\u1edf",
+			"GoingTo": "s\u1ebd \u1edf",
+			"NotGoingTo": "s\u1ebd kh\u00f4ng \u1edf",
+			"MaybeGoingTo": "c\u00f3 th\u1ec3 s\u1ebd \u1edf",
+			"AdminDontPay": "Admin kh\u00f4ng c\u1ea7n tr\u1ea3 ti\u1ec1n",
+			"PublisherDontPay": "Nh\u00e0 xu\u1ea5t b\u1ea3n kh\u00f4ng c\u1ea7n tr\u1ea3 ti\u1ec1n",
+			"EmptyList": "Danh s\u00e1ch tr\u1ed1ng",
+			"NeedToPayCredits": "C\u1ea7n thanh to\u00e1n: <span>{{amount}} t\u00edn d\u1ee5ng</span>",
+			"PleaseJoinParticipants": "H\u00e3y tham gia {{participant}}",
+			"YouReservingPlace": "B\u1ea1n s\u1ebd gi\u1eef ch\u1ed7 c\u1ee7a m\u00ecnh.",
+			"SelectIncludesToAdd": "Ch\u1ecdn m\u1ed9t ho\u1eb7c nhi\u1ec1u {{TypeDisplayPlural}} \u0111\u1ec3 th\u00eam:",
+			"YouHaveNotRegisteredAnyIncluded": "B\u1ea1n ch\u01b0a \u0111\u0103ng k\u00fd b\u1ea5t k\u1ef3 {{TypeDisplayPlural}} n\u00e0o",
+			"Proceed": "Ti\u1ebfp t\u1ee5c",
+			"MakeChanges": "L\u01b0u c\u00e1c thay \u0111\u1ed5i c\u1ee7a t\u00f4i",
+			"CancelReservation": "H\u1ee7y to\u00e0n b\u1ed9 \u0111\u1eb7t ch\u1ed7",
+			"Total": "T\u1ed5ng c\u1ed9ng",
+			"RequiredRelatedParticipants": "S\u1ef1 ki\u1ec7n n\u00e0y y\u00eau c\u1ea7u ng\u01b0\u1eddi tham gia: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "Vui l\u00f2ng ch\u1ec9nh s\u1eeda t\u00ednh kh\u1ea3 d\u1ee5ng &quot;{{title}}&quot; \u0111\u1ec3 c\u1eadp nh\u1eadt c\u00e0i \u0111\u1eb7t \u0111\u1ecbnh k\u1ef3",
+			"Presentation": "B\u00e0i thuy\u1ebft tr\u00ecnh",
+			"YouAreNotParticipated": "B\u1ea1n kh\u00f4ng ph\u1ea3i l\u00e0 ng\u01b0\u1eddi tham gia s\u1ef1 ki\u1ec7n",
+			"LiveStreamStarted": "Bu\u1ed5i ph\u00e1t tr\u1ef1c ti\u1ebfp \u0111\u00e3 b\u1eaft \u0111\u1ea7u",
+			"WebRTCStarted": "H\u1ed9i ngh\u1ecb truy\u1ec1n h\u00ecnh \u0111\u00e3 b\u1eaft \u0111\u1ea7u",
+			"WebRTCEnded": "H\u1ed9i ngh\u1ecb truy\u1ec1n h\u00ecnh \u0111\u00e3 k\u1ebft th\u00fac"
+		},
+		"composer": {
+			"SetLocation": "\u0110\u1eb7t v\u1ecb tr\u00ed c\u1ee7a t\u00f4i",
+			"SetInfoLink": "\u0110\u1eb7t Li\u00ean k\u1ebft \u0111\u1ebfn th\u00f4ng tin b\u1ed5 sung",
+			"ChooseAvailability": "Ch\u1ecdn d\u1ecbch v\u1ee5 c\u00f3 s\u1eb5n",
+			"ChooseActivity": "Ch\u1ecdn m\u1ed9t ho\u1ea1t \u0111\u1ed9ng",
+			"ChoosePublisher": "Ch\u1ecdn nh\u00e0 xu\u1ea5t b\u1ea3n",
+			"Day": "Ng\u00e0y",
+			"Starting": "B\u1eaft \u0111\u1ea7u",
+			"Duration": "Kho\u1ea3ng th\u1eddi gian",
+			"Hour": "Gi\u1edd",
+			"Hours": "Gi\u1edd",
+			"Minutes": "Ph\u00fat",
+			"Ending": "K\u1ebft th\u00fac",
+			"People": "M\u1ecdi ng\u01b0\u1eddi",
+			"Share": "Chia s\u1ebb",
+			"Continue": "Ti\u1ebfp t\u1ee5c",
+			"Recurring": "\u0110\u1ecbnh k\u1ef3",
+			"RecurringTitle": "Ng\u00e0y \u0111\u1ecbnh k\u1ef3",
+			"Daily": "h\u1eb1ng ng\u00e0y",
+			"Weekly": "H\u00e0ng tu\u1ea7n",
+			"Monthly": "H\u00e0ng th\u00e1ng",
+			"SelectLocation": "Vui l\u00f2ng ch\u1ecdn m\u1ed9t \u0111\u1ecba \u0111i\u1ec3m tr\u01b0\u1edbc.",
+			"eventType": "Lo\u1ea1i s\u1ef1 ki\u1ec7n",
+			"EditTitle": "Ngh\u0129 v\u1ec1 m\u1ed9t ti\u00eau \u0111\u1ec1 th\u00fa v\u1ecb ...",
+			"SetTitle": "Vui l\u00f2ng \u0111\u1eb7t ti\u00eau \u0111\u1ec1 s\u1ef1 ki\u1ec7n",
+			"ScheduleOnlineConference": "L\u00ean l\u1ecbch h\u1ed9i th\u1ea3o tr\u1ef1c tuy\u1ebfn",
+			"SOCDescription": "Vui l\u00f2ng x\u00e1c \u0111\u1ecbnh th\u1eddi gian b\u1eaft \u0111\u1ea7u v\u00e0 k\u1ebft th\u00fac h\u1ed9i ngh\u1ecb. M\u1ed7i ng\u01b0\u1eddi \u0111\u1ebfn th\u0103m s\u1ef1 ki\u1ec7n trong kho\u1ea3ng th\u1eddi gian n\u00e0y s\u1ebd t\u1ef1 \u0111\u1ed9ng k\u1ebft n\u1ed1i v\u1edbi h\u1ed9i ngh\u1ecb tr\u1ef1c tuy\u1ebfn.",
+			"EndDate": "Ch\u1ea5m d\u1ee9t",
+			"location": {
+				"Title": "Thi\u1ebft l\u1eadp v\u1ecb tr\u00ed c\u1ee7a b\u1ea1n"
+			},
+			"interest": {
+				"Title": "Ch\u1ecdn m\u1ed9t ho\u1ea1t \u0111\u1ed9ng",
+				"Filter": "T\u00ecm ki\u1ebfm s\u1edf th\u00edch ..."
+			},
+			"SetLivestream": "D\u00e1n li\u00ean k\u1ebft \u0111\u1ebfn ph\u00e1t tr\u1ef1c ti\u1ebfp / h\u1ed9i ngh\u1ecb truy\u1ec1n h\u00ecnh",
+			"Locally": "t\u1ea1i \u0111\u1ecba ph\u01b0\u01a1ng",
+			"EventInfoLink": "Li\u00ean k\u1ebft th\u00f4ng tin s\u1ef1 ki\u1ec7n",
+			"TicketPurchaseLink": "Li\u00ean k\u1ebft mua v\u00e9"
+		},
+		"EventAlreadyClosed": "S\u1ef1 ki\u1ec7n n\u00e0y \u0111\u00e3 k\u1ebft th\u00fac",
+		"addToCalendar": {
+			"permissions": {
+				"title": "Th\u00eam v\u00e0o L\u1ecbch?",
+				"prompt": "B\u1ea1n c\u00f3 mu\u1ed1n th\u00eam s\u1ef1 ki\u1ec7n n\u00e0y v\u00e0o l\u1ecbch c\u1ee7a m\u00ecnh kh\u00f4ng?",
+				"yes": "\u0110\u00fang",
+				"no": "Kh\u00f4ng"
+			},
+			"dialog": {
+				"Title": "Th\u00eam s\u1ef1 ki\u1ec7n v\u00e0o l\u1ecbch c\u1ee7a b\u1ea1n"
+			}
+		},
+		"ErrorLeaveEndedEvent": "Xin l\u1ed7i, nh\u01b0ng b\u1ea1n kh\u00f4ng th\u1ec3 r\u1eddi kh\u1ecfi s\u1ef1 ki\u1ec7n \u0111\u00e3 k\u1ebft th\u00fac"
+	},
+	"availabilities": {
+		"Title": "T\u00ednh kh\u1ea3 d\u1ee5ng",
+		"NewAvailability": {
+			"Title": "T\u00ednh s\u1eb5n c\u00f3 m\u1edbi",
+			"SaveAvailability": "L\u01b0u t\u00ednh kh\u1ea3 d\u1ee5ng",
+			"SelectTemplate": "Vui l\u00f2ng ch\u1ecdn D\u1ecbch v\u1ee5",
+			"SelectLocation": "Vui l\u00f2ng ch\u1ecdn V\u1ecb tr\u00ed",
+			"SelectArea": "Vui l\u00f2ng ch\u1ecdn Khu v\u1ef1c",
+			"Type": "Lo\u1ea1i",
+			"Weekly": "H\u00e0ng tu\u1ea7n",
+			"RecurringStartDate": "Ng\u00e0y b\u1eaft \u0111\u1ea7u \u0111\u1ecbnh k\u1ef3",
+			"EndDate": "Ng\u00e0y cu\u1ed1i",
+			"SelectTime": "Qu\u1ea3n l\u00fd c\u00e1c khe th\u1eddi gian",
+			"SelectTimeSlot": "Ch\u1ecdn m\u1ed9t kho\u1ea3ng th\u1eddi gian",
+			"SelectTimeSlots": "Ch\u1ecdn c\u00e1c kho\u1ea3ng th\u1eddi gian mong mu\u1ed1n",
+			"PeopleMin": "S\u1ed1 l\u01b0\u1ee3ng kh\u00e1ch truy c\u1eadp t\u1ed1i thi\u1ec3u",
+			"PeopleMax": "S\u1ed1 l\u01b0\u1ee3ng kh\u00e1ch truy c\u1eadp t\u1ed1i \u0111a",
+			"PeopleLabels": "Vai tr\u00f2 \u0111\u01b0\u1ee3c ph\u00e9p",
+			"Next": "K\u1ebf ti\u1ebfp",
+			"Back": "Tr\u1edf l\u1ea1i",
+			"RecurringEndDate": "Ng\u00e0y k\u1ebft th\u00fac \u0111\u1ecbnh k\u1ef3",
+			"ScheduleOnlineConference": "L\u00ean l\u1ecbch h\u1ed9i ngh\u1ecb t\u1eeb xa",
+			"SetLivestream": "D\u00e1n li\u00ean k\u1ebft t\u1edbi bu\u1ed5i ph\u00e1t tr\u1ef1c ti\u1ebfp / h\u1ed9i ngh\u1ecb truy\u1ec1n h\u00ecnh",
+			"SelectTimeZone": "Ch\u1ecdn m\u00fai gi\u1edd"
+		},
+		"EditAvailability": "Ch\u1ec9nh s\u1eeda t\u00ednh kh\u1ea3 d\u1ee5ng",
+		"SetVisitors": "\u0110\u1eb7t kh\u00e1ch truy c\u1eadp",
+		"Price": "Gi\u00e1",
+		"SelectAction": "Vui l\u00f2ng ch\u1ecdn h\u00e0nh \u0111\u1ed9ng",
+		"OpenProfile": "M\u1edf h\u1ed3 s\u01a1",
+		"RemoveStaff": "X\u00f3a nh\u00e2n vi\u00ean",
+		"PleaseSelectTimeSlots": "Vui l\u00f2ng ch\u1ecdn c\u00e1c kho\u1ea3ng th\u1eddi gian",
+		"ExceptionOccurred": "Ngo\u1ea1i l\u1ec7 x\u1ea3y ra",
+		"NotEnoughCreditsToParticipateEvents": "Kh\u00f4ng \u0111\u1ee7 t\u00edn d\u1ee5ng \u0111\u1ec3 tham gia {{eventsAmount}} s\u1ef1 ki\u1ec7n. B\u1ea1n c\u1ea7n {{needCredits}} t\u00edn d\u1ee5ng. Mu\u1ed1n mua?",
+		"LiveStream": "Tr\u1ef1c ti\u1ebfp",
+		"InviteStaff": "M\u1eddi nh\u00e2n vi\u00ean"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "Ng\u00e0y b\u1eaft \u0111\u1ea7u",
+			"endDate": "Ng\u00e0y cu\u1ed1i",
+			"justOnce": "Ch\u1ec9 m\u1ed9t l\u1ea7n",
+			"justOnceWeekly": "Ch\u1ec9 tu\u1ea7n n\u00e0y th\u00f4i",
+			"justOnceMonthly": "Ch\u1ec9 trong th\u00e1ng n\u00e0y",
+			"recurring": "\u0110\u1ecbnh k\u1ef3"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "S\u1ef1 ki\u1ec7n mi\u1ec5n ph\u00ed",
+			"optional": "\u0110\u00f3ng g\u00f3p t\u00f9y ch\u1ecdn",
+			"required": "Thanh to\u00e1n b\u1eaft bu\u1ed9c"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "\u0110\u00f3ng g\u00f3p t\u00f9y ch\u1ecdn",
+			"required": "Thanh to\u00e1n b\u1eaft bu\u1ed9c",
+			"paid": "\u0111\u00e3 thanh to\u00e1n"
+		},
+		"confirmationDialog": {
+			"title": "X\u00e1c nh\u1eadn thanh to\u00e1n",
+			"content": "S\u1ef1 ki\u1ec7n n\u00e0y c\u00f3 m\u1ed9t \u0111\u00f3ng g\u00f3p t\u00f9y ch\u1ecdn l\u00e0 {{amount}}.",
+			"button": "\u0110\u00f3ng g\u00f3p"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} ch\u01b0a ph\u1ea3i l\u00e0 m\u1ed9t ph\u1ea7n c\u1ee7a s\u1ef1 ki\u1ec7n. B\u1ea1n c\u00f3 mu\u1ed1n th\u00eam h\u1ecd l\u00e0m ng\u01b0\u1eddi tham gia kh\u00f4ng?",
+		"userNotFound": "Ng\u01b0\u1eddi d\u00f9ng kh\u00f4ng \u0111\u01b0\u1ee3c t\u00ecm th\u1ea5y",
+		"confirmYes": "\u0110\u00fang",
+		"confirmNo": "Kh\u00f4ng"
+	},
+	"notifications": {
+		"EventActivityIn": "Ho\u1ea1t \u0111\u1ed9ng s\u1ef1 ki\u1ec7n trong {{{stream.fields.title}}}",
+		"RecurringRulesChanged": "C\u00e1c quy t\u1eafc l\u1eb7p l\u1ea1i \u0111\u00e3 thay \u0111\u1ed5i cho s\u1ef1 ki\u1ec7n {{{call 'message.getInstruction' 'eventTitle'}}}",
+		"ManageEmailSubscriptions": "qu\u1ea3n l\u00fd \u0111\u0103ng k\u00fd email c\u1ee7a b\u1ea1n",
+		"IfUnsubscribe": "N\u1ebfu b\u1ea1n mu\u1ed1n h\u1ee7y \u0111\u0103ng k\u00fd",
+		"ClickHereToVisitEvent": "Vui l\u00f2ng b\u1ea5m v\u00e0o \u0111\u00e2y \u0111\u1ec3 tham quan s\u1ef1 ki\u1ec7n",
+		"Calendars/reminder": "S\u1ef1 ki\u1ec7n &quot;{{{call 'message.getInstruction' 'name'}}&quot; s\u1ebd b\u1eaft \u0111\u1ea7u sau {{&call 'message.getInstruction' 'time'}}}",
+		"webrtc": {
+			"Started": "H\u1ed9i ngh\u1ecb truy\u1ec1n h\u00ecnh \u0111\u00e3 b\u1eaft \u0111\u1ea7u",
+			"Ended": "H\u1ed9i ngh\u1ecb truy\u1ec1n h\u00ecnh \u0111\u00e3 k\u1ebft th\u00fac"
+		},
+		"livestream": {
+			"Started": "\u0110\u00e3 b\u1eaft \u0111\u1ea7u ph\u00e1t tr\u1ef1c ti\u1ebfp",
+			"Ended": "Lu\u1ed3ng tr\u1ef1c ti\u1ebfp \u0111\u00e3 k\u1ebft th\u00fac",
+			"ClickToView": "Xem n\u00f3 \u1edf \u0111\u00e2y."
+		}
+	},
+	"import": {
+		"linkTitle": "\u0110i\u1ec1n v\u00e0o B\u1ea3ng t\u00ednh N\u00e0y",
+		"fileLabel": "T\u1ea3i l\u00ean b\u1ea3ng t\u00ednh:",
+		"importOptions": "T\u00f9y ch\u1ecdn",
+		"importProgress": "Ph\u00e1t tri\u1ec3n",
+		"sampleCSV": "T\u1ea3i xu\u1ed1ng CSV m\u1eabu",
+		"joinEventLabel": "Tham gia c\u00f9ng ng\u01b0\u1eddi d\u00f9ng v\u00e0o s\u1ef1 ki\u1ec7n ng\u1eabu nhi\u00ean",
+		"smsText": "N\u00e0y, t\u00f4i v\u1eeba g\u1eedi cho b\u1ea1n m\u1ed9t li\u00ean k\u1ebft t\u1edbi {{communityName}}. L\u00e0m \u01a1n h\u00e3y ki\u1ec3m tra n\u00f3.",
+		"emailSubject": "V\u1eeba g\u1eedi cho b\u1ea1n m\u1ed9t li\u00ean k\u1ebft",
+		"emailBody": "N\u00e0y, t\u00f4i v\u1eeba g\u1eedi cho b\u1ea1n l\u1eddi m\u1eddi tham gia {{communityName}}. L\u00e0m \u01a1n h\u00e3y ki\u1ec3m tra n\u00f3.",
+		"fileNotFound": "Xin l\u1ed7i, kh\u00f4ng t\u00ecm th\u1ea5y t\u1ec7p CSV.",
+		"fileEmpty": "Xin l\u1ed7i, t\u1ec7p CSV tr\u1ed1ng.",
+		"fieldNotFound": "Kh\u00f4ng t\u00ecm th\u1ea5y tr\u01b0\u1eddng b\u1eaft bu\u1ed9c &quot;{{1}}&quot;",
+		"userIdNotFound": "ng\u01b0\u1eddi d\u00f9ng t\u1ed3n t\u1ea1i nh\u01b0ng id tr\u1ed1ng",
+		"activateUsers": "g\u1eedi tin nh\u1eafn k\u00edch ho\u1ea1t cho ng\u01b0\u1eddi d\u00f9ng?",
+		"taskStreamInvalid": "lu\u1ed3ng nhi\u1ec7m v\u1ee5 kh\u00f4ng h\u1ee3p l\u1ec7",
+		"instructionsEmpty": "h\u01b0\u1edbng d\u1eabn d\u00f2ng nhi\u1ec7m v\u1ee5 tr\u1ed1ng",
+		"interestsEmpty": "kh\u00f4ng th\u1ec3 nh\u1eadn \u0111\u01b0\u1ee3c s\u1edf th\u00edch",
+		"interestAbsent": "quan t\u00e2m {{1}} kh\u00f4ng \u0111\u01b0\u1ee3c t\u00ecm th\u1ea5y",
+		"complete": "Ho\u00e0n ch\u1ec9nh",
+		"errorLine": "d\u00f2ng {{1}}",
+		"errorsTitle": "\u0110\u00e3 x\u1ea3y ra l\u1ed7i",
+		"communityUsers": "\u0110\u00e2y l\u00e0 danh s\u00e1ch c\u1ed9ng \u0111\u1ed3ng",
+		"toMainCommunityToo": "li\u00ean quan \u0111\u1ebfn c\u1ed9ng \u0111\u1ed3ng ch\u00ednh qu\u00e1",
+		"ChooseFile": "ch\u1ecdn t\u1eadp tin"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "Tr\u00ecnh b\u00e0y m\u1ed9t s\u1ef1 ki\u1ec7n m\u00e0 m\u1ecdi ng\u01b0\u1eddi c\u00f3 th\u1ec3 tham gia",
+			"displayType": "Bi\u1ebfn c\u1ed1"
+		},
+		"Calendars/recurring": {
+			"description": "\u0110\u01b0\u1ee3c s\u1eed d\u1ee5ng cho c\u00e1c lu\u1ed3ng li\u00ean quan \u0111\u01b0\u1ee3c \u0111\u1ecbnh k\u1ef3 l\u1eb7p l\u1ea1i",
+			"displayType": "S\u1ef1 ki\u1ec7n \u0111\u1ecbnh k\u1ef3"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "Th\u00eam v\u1ecb tr\u00ed",
+		"StartTime": "Th\u1eddi gian b\u1eaft \u0111\u1ea7u",
+		"EndTime": "Th\u1eddi gian k\u1ebft th\u00fac",
+		"Save": "C\u1ee9u",
+		"AddTimeSlot": "Th\u00eam th\u1eddi gian",
+		"CopyFromDay": "Sao ch\u00e9p t\u1eeb ng\u00e0y",
+		"Nearest": "G\u1ea7n nh\u1ea5t",
+		"Today": "H\u00f4m nay",
+		"Tomorrow": "Ng\u00e0y mai",
+		"AfterTomorrow": "Sau ng\u00e0y mai"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "\u0110\u0103ng k\u00fd L\u1ecbch",
+		"copyLinkBelow": "Sao ch\u00e9p li\u00ean k\u1ebft b\u00ean d\u01b0\u1edbi",
+		"goTo": "\u0110i \u0111\u1ebfn:",
+		"pasteCopiedTo": "D\u00e1n li\u00ean k\u1ebft \u0111\u00e3 sao ch\u00e9p v\u00e0o tr\u01b0\u1eddng &quot;URL c\u1ee7a l\u1ecbch&quot;",
+		"clickAddCalendar": "Nh\u1ea5p v\u00e0o n\u00fat &quot;Th\u00eam l\u1ecbch&quot;",
+		"copyLink": "Sao ch\u00e9p \u0111\u01b0\u1eddng d\u1eabn",
+		"tapToCopy": "Nh\u1ea5n v\u00e0o n\u00fat b\u00ean d\u01b0\u1edbi \u0111\u1ec3 sao ch\u00e9p li\u00ean k\u1ebft v\u00e0o khay nh\u1edb t\u1ea1m c\u1ee7a b\u1ea1n",
+		"linkCopied": "\u0110\u00e3 sao ch\u00e9p li\u00ean k\u1ebft",
+		"step2": "\u0110\u00e3 sao ch\u00e9p li\u00ean k\u1ebft. Ch\u00fang t\u00f4i s\u1eafp m\u1edf L\u1ecbch Google. B\u1ea1n s\u1ebd c\u1ea7n d\u00e1n li\u00ean k\u1ebft v\u00e0o h\u1ed9p v\u0103n b\u1ea3n, nh\u1ea5p v\u00e0o &quot;Th\u00eam l\u1ecbch&quot; v\u00e0 \u0111\u00f3ng tab (xem \u1ea3nh ch\u1ee5p m\u00e0n h\u00ecnh b\u00ean d\u01b0\u1edbi)",
+		"calendarAppPreferences": "M\u1edf T\u00f9y ch\u1ecdn trong \u1ee8ng d\u1ee5ng L\u1ecbch tr\u00ean m\u00e1y Mac c\u1ee7a b\u1ea1n v\u00e0 \u0111\u1eb7t \u1ee8ng d\u1ee5ng L\u1ecbch m\u1eb7c \u0111\u1ecbnh nh\u01b0 hi\u1ec3n th\u1ecb b\u00ean d\u01b0\u1edbi.",
+		"thenCloseDialog": "Sau \u0111\u00f3 \u0111\u00f3ng h\u1ed9p tho\u1ea1i n\u00e0y \u0111\u1ec3 \u0111\u0103ng k\u00fd l\u1ecbch c\u1ee7a b\u1ea1n!",
+		"success": "L\u1ecbch \u0111\u00e3 \u0111\u01b0\u1ee3c \u0111\u1ed3ng b\u1ed9 h\u00f3a th\u00e0nh c\u00f4ng"
+	},
+	"@override": {
+		"Assets/content": {
+			"payments": {
+				"reasons": {
+					"EventParticipation": "Tham gia s\u1ef1 ki\u1ec7n"
+				}
+			}
+		}
+	}
 }

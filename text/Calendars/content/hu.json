@@ -1,333 +1,344 @@
 {
-    "months": {
-        "Jan": "jan",
-        "Feb": "Február",
-        "Mar": "márc",
-        "Apr": "Április",
-        "May": "Lehet",
-        "Jun": "Június",
-        "Jul": "Július",
-        "Aug": "Augusztus",
-        "Sep": "szept",
-        "Oct": "Október",
-        "Nov": "November",
-        "Dec": "December"
-    },
-    "monthsLong": {
-        "Jan": "január",
-        "Feb": "február",
-        "Mar": "március",
-        "Apr": "április",
-        "May": "Lehet",
-        "Jun": "június",
-        "Jul": "július",
-        "Aug": "augusztus",
-        "Sep": "szeptember",
-        "Oct": "október",
-        "Nov": "november",
-        "Dec": "december"
-    },
-    "weekdays": {
-        "Sun": "Nap",
-        "Mon": "Hétfő",
-        "Tue": "kedd",
-        "Wed": "Házasodik",
-        "Thu": "cs",
-        "Fri": "Péntek",
-        "Sat": "Ült"
-    },
-    "weekdaysLong": {
-        "Sun": "vasárnap",
-        "Mon": "hétfő",
-        "Tue": "kedd",
-        "Wed": "szerda",
-        "Thu": "csütörtök",
-        "Fri": "péntek",
-        "Sat": "szombat"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "Tervezz új eseményt"
-        },
-        "tool": {
-            "HostedBy": "Házigazda: {{name}}",
-            "Name": "Név",
-            "AreYouIn": "Benne vagy?",
-            "Yes": "Igen",
-            "No": "Nem",
-            "Ok": "Rendben",
-            "Cancel": "Megszünteti",
-            "Maybe": "Talán",
-            "Conversation": "Beszélgetés",
-            "Promote": "Reklámozza ezt az eseményt",
-            "Reminders": "Emlékeztetők",
-            "RemindersLabel": "Szeretnék értesítést kapni egy eseményről itt:",
-            "MoreInfo": "Több információ",
-            "Registration": "Bejegyzés",
-            "SetReminders": "Kérjük, állítson be emlékeztetőket",
-            "ReservationFee": "Foglalási díj",
-            "AddParticipants": "Résztvevők hozzáadása",
-            "ManageReservation": "Foglalás kezelése",
-            "UpdateFutureReservations": "Ugyanígy szeretné frissíteni az összes jövőbeli foglalást?",
-            "RecurringAdmin": "Ismétlődő beállítások",
-            "MakeReservation": "Foglaljon",
-            "StartLiveStream": "Kattintson az Élő közvetítéshez",
-            "LiveStreamEnded": "Az élő közvetítés véget ért",
-            "ClickToViewRecording": "kattintson a felvétel megtekintéséhez",
-            "Checkin": "Olvassa be a résztvevők kódjait",
-            "Myqr": "Bejelentkezik",
-            "CloseEvent": {
-                "button": "Törölje az eseményt",
-                "confirm": {
-                    "text": {
-                        "Cancel": "Biztosan törölni szeretné ezt az eseményt?",
-                        "Participant": "Ennek az eseménynek 1 résztvevője van",
-                        "Participants": "Ennek az eseménynek {{count}} résztvevője van",
-                        "Recurring": "Ez az esemény visszatérő. Szeretné törölni az összes jövőbeli példányát is?"
-                    },
-                    "trip": {
-                        "Cancel": "Szeretné lemondani az utazást {{tripDirection}} ez az esemény?",
-                        "Passengers": "{{passengerCount}} utas számít rád.",
-                        "Title": "Utazás bezárása"
-                    },
-                    "directions": {
-                        "TO": "NAK NEK",
-                        "FROM": "TÓL TŐL",
-                        "to": "nak nek",
-                        "from": "tól től"
-                    }
-                }
-            },
-            "Calendar": "Naptár",
-            "Interests": "Érdeklődések",
-            "Directions": "Útvonalak",
-            "TitleOfEvent": "Az esemény címe:",
-            "OpenTo": "Nyissa meg",
-            "GoingTo": "lesz majd",
-            "NotGoingTo": "nem lesz itt",
-            "MaybeGoingTo": "lesz talán",
-            "AdminDontPay": "Az adminisztrátornak nem kell fizetnie",
-            "PublisherDontPay": "A kiadónak nem kell fizetnie",
-            "EmptyList": "Üres lista",
-            "NeedToPayCredits": "Fizetni kell: <span>{{amount}} kredit<\/span>",
-            "PleaseJoinParticipants": "Kérjük, csatlakozzon a következőhöz: {{participant}}",
-            "YouReservingPlace": "Foglalja majd a helyét.",
-            "SelectIncludesToAdd": "Válasszon ki egy vagy több {{TypeDisplayPlural}} elemet a hozzáadáshoz:",
-            "YouHaveNotRegisteredAnyIncluded": "Még nem regisztrált {{TypeDisplayPlural}}-et",
-            "Proceed": "Folytassa",
-            "MakeChanges": "Változásaim mentése",
-            "CancelReservation": "Törölje a teljes foglalást",
-            "Total": "Teljes",
-            "RequiredRelatedParticipants": "Az eseményhez résztvevők szükségesek: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Kérjük, módosítsa a rendelkezésre állást &quot;{{title}}&quot; az ismétlődő beállítások frissítéséhez",
-            "Presentation": "Bemutatás",
-            "YouAreNotParticipated": "Ön nem résztvevője az eseménynek",
-            "LiveStreamStarted": "Elindult az élő közvetítés",
-            "WebRTCStarted": "Megkezdődött a telekonferencia",
-            "WebRTCEnded": "A telekonferencia véget ért"
-        },
-        "composer": {
-            "SetLocation": "Saját pozíció beállítása",
-            "SetInfoLink": "További információkhoz mutató hivatkozás beállítása",
-            "ChooseAvailability": "Válassza az Elérhető szolgáltatást",
-            "ChooseActivity": "Válasszon egy tevékenységet",
-            "ChoosePublisher": "Válassza a Kiadó lehetőséget",
-            "Day": "Nap",
-            "Starting": "Indulás",
-            "Duration": "Időtartam",
-            "Hour": "Óra",
-            "Hours": "Órák",
-            "Minutes": "Percek",
-            "Ending": "Befejező",
-            "People": "Emberek",
-            "Share": "Részvény",
-            "Continue": "Folytatni",
-            "Recurring": "Ismétlődő",
-            "RecurringTitle": "Ismétlődő napok",
-            "Daily": "Napi",
-            "Weekly": "Heti",
-            "Monthly": "Havi",
-            "SelectLocation": "Kérjük, először válasszon egy helyet.",
-            "eventType": "Esemény típus",
-            "EditTitle": "Gondolj egy érdekes címre...",
-            "SetTitle": "Adja meg az esemény címét",
-            "ScheduleOnlineConference": "Online konferencia ütemezése",
-            "SOCDescription": "Kérjük, határozza meg a konferencia kezdési és befejezési idejét. Minden személy, aki meglátogatja az eseményt ebben az időszakban, automatikusan csatlakozik az online konferenciához.",
-            "EndDate": "Vége",
-            "location": {
-                "Title": "Állítsa be a helyét"
-            },
-            "interest": {
-                "Title": "Válasszon egy tevékenységet",
-                "Filter": "Keresési érdeklődési körök..."
-            },
-            "SetLivestream": "Illessze be az élő közvetítés\/videokonferencia linkjét",
-            "Locally": "helyileg",
-            "EventInfoLink": "Esemény info link",
-            "TicketPurchaseLink": "Jegyvásárlási link"
-        },
-        "EventAlreadyClosed": "Ez az esemény már lezárult",
-        "addToCalendar": {
-            "permissions": {
-                "title": "Hozzáadod a naptárhoz?",
-                "prompt": "Hozzá szeretné adni ezt az eseményt a naptárához?",
-                "yes": "Igen",
-                "no": "Nem"
-            },
-            "dialog": {
-                "Title": "Esemény hozzáadása a naptárához"
-            }
-        },
-        "ErrorLeaveEndedEvent": "Sajnáljuk, de nem hagyhatod el a befejezett eseményt"
-    },
-    "availabilities": {
-        "Title": "Elérhetőségek",
-        "NewAvailability": {
-            "Title": "Új elérhetőség",
-            "SaveAvailability": "Elérhetőség mentése",
-            "SelectTemplate": "Kérjük, válassza a Szolgáltatást",
-            "SelectLocation": "Kérjük, válassza ki a Helyszínt",
-            "SelectArea": "Kérjük, válassza ki a Területet",
-            "Type": "típus",
-            "Weekly": "Heti",
-            "RecurringStartDate": "Ismétlődő kezdési dátum",
-            "EndDate": "Befejezés dátuma",
-            "SelectTime": "Időrések kezelése",
-            "SelectTimeSlot": "Válasszon egy idősávot",
-            "SelectTimeSlots": "Válassza ki a kívánt idősávokat",
-            "PeopleMin": "Minimális látogatószám",
-            "PeopleMax": "Maximális látogatószám",
-            "PeopleLabels": "A szerepek megengedettek",
-            "Next": "Következő",
-            "Back": "Vissza",
-            "RecurringEndDate": "Ismétlődő befejezési dátum",
-            "ScheduleOnlineConference": "Telekonferencia ütemezése",
-            "SetLivestream": "Illessze be az élő közvetítés\/videokonferencia linkjét",
-            "SelectTimeZone": "Válassza ki az időzónát"
-        },
-        "EditAvailability": "Elérhetőség szerkesztése",
-        "SetVisitors": "Látogatók beállítása",
-        "Price": "Ár",
-        "SelectAction": "Kérjük, válasszon műveletet",
-        "OpenProfile": "Profil megnyitása",
-        "RemoveStaff": "Távolítsa el a személyzetet",
-        "PleaseSelectTimeSlots": "Kérjük, válasszon időpontokat",
-        "ExceptionOccurred": "Kivétel történt",
-        "NotEnoughCreditsToParticipateEvents": "Nincs elég kredit {{eventsAmount}} eseményen való részvételhez. {{needCredits}} kreditre van szüksége. Meg akarom venni?",
-        "LiveStream": "Élő adás",
-        "InviteStaff": "Hívja meg a személyzetet"
-    },
-    "recurring": {
-        "dialog": {
-            "startDate": "Kezdő dátum",
-            "endDate": "Befejezés dátuma",
-            "justOnce": "Csak egyszer",
-            "justOnceWeekly": "Csak ezen a héten",
-            "justOnceMonthly": "Csak ebben a hónapban",
-            "recurring": "Ismétlődő"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "Ingyenes rendezvény",
-            "optional": "Választható hozzájárulás",
-            "required": "Kötelező fizetés"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "Választható hozzájárulás",
-            "required": "Kötelező fizetés",
-            "paid": "fizetett"
-        },
-        "confirmationDialog": {
-            "title": "Fizetési visszaigazolás",
-            "content": "Ehhez az eseményhez {{amount}} opcionális hozzájárulás tartozik.",
-            "button": "Hozzájárul"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} még nem része az eseménynek. Fel szeretné venni őket résztvevőként?",
-        "userNotFound": "Felhasználó nem található",
-        "confirmYes": "Igen",
-        "confirmNo": "Nem"
-    },
-    "notifications": {
-        "EventActivityIn": "Eseménytevékenység itt: {{{stream.fields.title}}}",
-        "RecurringRulesChanged": "Az ismétlődő szabályok megváltoztak a(z) {{{call 'message.getInstruction' 'eventTitle'}}} eseménynél",
-        "ManageEmailSubscriptions": "kezelheti e-mail-feliratkozásait",
-        "IfUnsubscribe": "Ha le szeretne iratkozni",
-        "ClickHereToVisitEvent": "Az esemény megtekintéséhez kattintson ide",
-        "Calendars\/reminder": "A „{{{call 'message.getInstruction' 'name'}}” esemény ekkor kezdődik: {{&call 'message.getInstruction' 'time'}}}",
-        "webrtc": {
-            "Started": "Megkezdődött a telekonferencia",
-            "Ended": "A telekonferencia véget ért"
-        },
-        "livestream": {
-            "Started": "Elindult az élő közvetítés",
-            "Ended": "Az élő közvetítés véget ért",
-            "ClickToView": "Tekintse meg itt."
-        }
-    },
-    "import": {
-        "linkTitle": "Töltse ki ezt a táblázatot",
-        "fileLabel": "Táblázat feltöltése:",
-        "importOptions": "Opciók",
-        "importProgress": "Előrehalad",
-        "sampleCSV": "Töltse le a CSV-mintát",
-        "joinEventLabel": "Csatlakoztassa a felhasználókat a véletlenszerű eseményhez",
-        "smsText": "Hé, most küldtem neked egy linket a(z) {{communityName}} címre. Kérjük, nézze meg.",
-        "emailSubject": "Most küldtem egy linket",
-        "emailBody": "Hé, most küldtem neked egy meghívót a(z) {{communityName}} címre. Kérjük, nézze meg.",
-        "fileNotFound": "Sajnáljuk, a CSV-fájl nem található.",
-        "fileEmpty": "Sajnáljuk, a CSV-fájl üres.",
-        "fieldNotFound": "A kötelező &quot;{{1}}&quot; mező nem található",
-        "userIdNotFound": "felhasználó létezik, de az azonosító üres",
-        "activateUsers": "aktiváló üzenetet küld a felhasználóknak?",
-        "taskStreamInvalid": "feladatfolyam érvénytelen",
-        "instructionsEmpty": "a feladatfolyam utasításai üresek",
-        "interestsEmpty": "nem szerezhet érdeklődést",
-        "interestAbsent": "kamat {{1}} nem található",
-        "complete": "teljes",
-        "errorLine": "sor {{1}}",
-        "errorsTitle": "Hibák történtek",
-        "communityUsers": "Ez a közösségek listája",
-        "toMainCommunityToo": "a fő közösséghez is kapcsolódnak",
-        "ChooseFile": "Válassz fájlt"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "Olyan eseményt jelöl, amelyen az emberek részt vehetnek",
-            "displayType": "Esemény"
-        },
-        "Calendars\/recurring": {
-            "description": "Az időszakonként ismétlődő adatfolyamok összekapcsolására szolgál",
-            "displayType": "Ismétlődő esemény"
-        }
-    },
-    "timeslots": {
-        "AddSlot": "Slot hozzáadása",
-        "StartTime": "Kezdési idő",
-        "EndTime": "Idő vége",
-        "Save": "Megment",
-        "AddTimeSlot": "Add Time Slot",
-        "CopyFromDay": "Másolás a napról",
-        "Nearest": "Legközelebb",
-        "Today": "Ma",
-        "Tomorrow": "Holnap",
-        "AfterTomorrow": "Holnap után"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "Feliratkozás a Naptárra",
-        "copyLinkBelow": "Link másolása lent",
-        "goTo": "Menj:",
-        "pasteCopiedTo": "Illessze be a kimásolt linket a „naptár URL-je” mezőbe",
-        "clickAddCalendar": "Kattintson a &quot;Naptár hozzáadása&quot; gombra",
-        "copyLink": "Link másolása",
-        "tapToCopy": "Érintse meg az alábbi gombot a hivatkozás vágólapra másolásához",
-        "linkCopied": "Link másolva",
-        "step2": "Link másolva. A Google Naptár megnyitásáról szólunk. Be kell illesztenie a hivatkozást a szövegmezőbe, kattintson a &quot;Naptár hozzáadása&quot; gombra, és zárja be a lapot (lásd az alábbi képernyőképet).",
-        "calendarAppPreferences": "Nyissa meg a Beállításokat a Mac gép Naptár alkalmazásában, és állítsa be az Alapértelmezett naptár alkalmazást az alábbiak szerint.",
-        "thenCloseDialog": "Ezután zárja be ezt a párbeszédpanelt a naptárra való feliratkozáshoz!",
-        "success": "A naptár sikeresen szinkronizálva"
-    }
+	"months": {
+		"Jan": "jan",
+		"Feb": "Febru\u00e1r",
+		"Mar": "m\u00e1rc",
+		"Apr": "\u00c1prilis",
+		"May": "Lehet",
+		"Jun": "J\u00fanius",
+		"Jul": "J\u00falius",
+		"Aug": "Augusztus",
+		"Sep": "szept",
+		"Oct": "Okt\u00f3ber",
+		"Nov": "November",
+		"Dec": "December"
+	},
+	"monthsLong": {
+		"Jan": "janu\u00e1r",
+		"Feb": "febru\u00e1r",
+		"Mar": "m\u00e1rcius",
+		"Apr": "\u00e1prilis",
+		"May": "Lehet",
+		"Jun": "j\u00fanius",
+		"Jul": "j\u00falius",
+		"Aug": "augusztus",
+		"Sep": "szeptember",
+		"Oct": "okt\u00f3ber",
+		"Nov": "november",
+		"Dec": "december"
+	},
+	"weekdays": {
+		"Sun": "Nap",
+		"Mon": "H\u00e9tf\u0151",
+		"Tue": "kedd",
+		"Wed": "H\u00e1zasodik",
+		"Thu": "cs",
+		"Fri": "P\u00e9ntek",
+		"Sat": "\u00dclt"
+	},
+	"weekdaysLong": {
+		"Sun": "vas\u00e1rnap",
+		"Mon": "h\u00e9tf\u0151",
+		"Tue": "kedd",
+		"Wed": "szerda",
+		"Thu": "cs\u00fct\u00f6rt\u00f6k",
+		"Fri": "p\u00e9ntek",
+		"Sat": "szombat"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Tervezz \u00faj esem\u00e9nyt"
+		},
+		"tool": {
+			"HostedBy": "H\u00e1zigazda: {{name}}",
+			"Name": "N\u00e9v",
+			"AreYouIn": "Benne vagy?",
+			"Yes": "Igen",
+			"No": "Nem",
+			"Ok": "Rendben",
+			"Cancel": "Megsz\u00fcnteti",
+			"Maybe": "Tal\u00e1n",
+			"Conversation": "Besz\u00e9lget\u00e9s",
+			"Promote": "Rekl\u00e1mozza ezt az esem\u00e9nyt",
+			"Reminders": "Eml\u00e9keztet\u0151k",
+			"RemindersLabel": "Szeretn\u00e9k \u00e9rtes\u00edt\u00e9st kapni egy esem\u00e9nyr\u0151l itt:",
+			"MoreInfo": "T\u00f6bb inform\u00e1ci\u00f3",
+			"Registration": "Bejegyz\u00e9s",
+			"SetReminders": "K\u00e9rj\u00fck, \u00e1ll\u00edtson be eml\u00e9keztet\u0151ket",
+			"ReservationFee": "Foglal\u00e1si d\u00edj",
+			"AddParticipants": "R\u00e9sztvev\u0151k hozz\u00e1ad\u00e1sa",
+			"ManageReservation": "Foglal\u00e1s kezel\u00e9se",
+			"UpdateFutureReservations": "Ugyan\u00edgy szeretn\u00e9 friss\u00edteni az \u00f6sszes j\u00f6v\u0151beli foglal\u00e1st?",
+			"RecurringAdmin": "Ism\u00e9tl\u0151d\u0151 be\u00e1ll\u00edt\u00e1sok",
+			"MakeReservation": "Foglaljon",
+			"StartLiveStream": "Kattintson az \u00c9l\u0151 k\u00f6zvet\u00edt\u00e9shez",
+			"LiveStreamEnded": "Az \u00e9l\u0151 k\u00f6zvet\u00edt\u00e9s v\u00e9get \u00e9rt",
+			"ClickToViewRecording": "kattintson a felv\u00e9tel megtekint\u00e9s\u00e9hez",
+			"Checkin": "Olvassa be a r\u00e9sztvev\u0151k k\u00f3djait",
+			"Myqr": "Bejelentkezik",
+			"CloseEvent": {
+				"button": "T\u00f6r\u00f6lje az esem\u00e9nyt",
+				"confirm": {
+					"text": {
+						"Cancel": "Biztosan t\u00f6r\u00f6lni szeretn\u00e9 ezt az esem\u00e9nyt?",
+						"Participant": "Ennek az esem\u00e9nynek 1 r\u00e9sztvev\u0151je van",
+						"Participants": "Ennek az esem\u00e9nynek {{count}} r\u00e9sztvev\u0151je van",
+						"Recurring": "Ez az esem\u00e9ny visszat\u00e9r\u0151. Szeretn\u00e9 t\u00f6r\u00f6lni az \u00f6sszes j\u00f6v\u0151beli p\u00e9ld\u00e1ny\u00e1t is?"
+					},
+					"trip": {
+						"Cancel": "Szeretn\u00e9 lemondani az utaz\u00e1st {{tripDirection}} ez az esem\u00e9ny?",
+						"Passengers": "{{passengerCount}} utas sz\u00e1m\u00edt r\u00e1d.",
+						"Title": "Utaz\u00e1s bez\u00e1r\u00e1sa"
+					},
+					"directions": {
+						"TO": "NAK NEK",
+						"FROM": "T\u00d3L T\u0150L",
+						"to": "nak nek",
+						"from": "t\u00f3l t\u0151l"
+					}
+				}
+			},
+			"Calendar": "Napt\u00e1r",
+			"Interests": "\u00c9rdekl\u0151d\u00e9sek",
+			"Directions": "\u00datvonalak",
+			"TitleOfEvent": "Az esem\u00e9ny c\u00edme:",
+			"OpenTo": "Nyissa meg",
+			"GoingTo": "lesz majd",
+			"NotGoingTo": "nem lesz itt",
+			"MaybeGoingTo": "lesz tal\u00e1n",
+			"AdminDontPay": "Az adminisztr\u00e1tornak nem kell fizetnie",
+			"PublisherDontPay": "A kiad\u00f3nak nem kell fizetnie",
+			"EmptyList": "\u00dcres lista",
+			"NeedToPayCredits": "Fizetni kell: <span>{{amount}} kredit</span>",
+			"PleaseJoinParticipants": "K\u00e9rj\u00fck, csatlakozzon a k\u00f6vetkez\u0151h\u00f6z: {{participant}}",
+			"YouReservingPlace": "Foglalja majd a hely\u00e9t.",
+			"SelectIncludesToAdd": "V\u00e1lasszon ki egy vagy t\u00f6bb {{TypeDisplayPlural}} elemet a hozz\u00e1ad\u00e1shoz:",
+			"YouHaveNotRegisteredAnyIncluded": "M\u00e9g nem regisztr\u00e1lt {{TypeDisplayPlural}}-et",
+			"Proceed": "Folytassa",
+			"MakeChanges": "V\u00e1ltoz\u00e1saim ment\u00e9se",
+			"CancelReservation": "T\u00f6r\u00f6lje a teljes foglal\u00e1st",
+			"Total": "Teljes",
+			"RequiredRelatedParticipants": "Az esem\u00e9nyhez r\u00e9sztvev\u0151k sz\u00fcks\u00e9gesek: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "K\u00e9rj\u00fck, m\u00f3dos\u00edtsa a rendelkez\u00e9sre \u00e1ll\u00e1st &quot;{{title}}&quot; az ism\u00e9tl\u0151d\u0151 be\u00e1ll\u00edt\u00e1sok friss\u00edt\u00e9s\u00e9hez",
+			"Presentation": "Bemutat\u00e1s",
+			"YouAreNotParticipated": "\u00d6n nem r\u00e9sztvev\u0151je az esem\u00e9nynek",
+			"LiveStreamStarted": "Elindult az \u00e9l\u0151 k\u00f6zvet\u00edt\u00e9s",
+			"WebRTCStarted": "Megkezd\u0151d\u00f6tt a telekonferencia",
+			"WebRTCEnded": "A telekonferencia v\u00e9get \u00e9rt",
+			"Prepayment": "El\u0151refizet\u00e9s",
+			"PrepaymentConfirm": "1 doll\u00e1ros n\u00e9vleges d\u00edjat sz\u00e1m\u00edtunk fel. A megfelel\u0151 sz\u00e1m\u00fa kreditet kapod meg. Ezeket a krediteket a rendezv\u00e9ny teljes befizet\u00e9s\u00e9be fogjuk besz\u00e1m\u00edtani."
+		},
+		"composer": {
+			"SetLocation": "Saj\u00e1t poz\u00edci\u00f3 be\u00e1ll\u00edt\u00e1sa",
+			"SetInfoLink": "Tov\u00e1bbi inform\u00e1ci\u00f3khoz mutat\u00f3 hivatkoz\u00e1s be\u00e1ll\u00edt\u00e1sa",
+			"ChooseAvailability": "V\u00e1lassza az El\u00e9rhet\u0151 szolg\u00e1ltat\u00e1st",
+			"ChooseActivity": "V\u00e1lasszon egy tev\u00e9kenys\u00e9get",
+			"ChoosePublisher": "V\u00e1lassza a Kiad\u00f3 lehet\u0151s\u00e9get",
+			"Day": "Nap",
+			"Starting": "Indul\u00e1s",
+			"Duration": "Id\u0151tartam",
+			"Hour": "\u00d3ra",
+			"Hours": "\u00d3r\u00e1k",
+			"Minutes": "Percek",
+			"Ending": "Befejez\u0151",
+			"People": "Emberek",
+			"Share": "R\u00e9szv\u00e9ny",
+			"Continue": "Folytatni",
+			"Recurring": "Ism\u00e9tl\u0151d\u0151",
+			"RecurringTitle": "Ism\u00e9tl\u0151d\u0151 napok",
+			"Daily": "Napi",
+			"Weekly": "Heti",
+			"Monthly": "Havi",
+			"SelectLocation": "K\u00e9rj\u00fck, el\u0151sz\u00f6r v\u00e1lasszon egy helyet.",
+			"eventType": "Esem\u00e9ny t\u00edpus",
+			"EditTitle": "Gondolj egy \u00e9rdekes c\u00edmre...",
+			"SetTitle": "Adja meg az esem\u00e9ny c\u00edm\u00e9t",
+			"ScheduleOnlineConference": "Online konferencia \u00fctemez\u00e9se",
+			"SOCDescription": "K\u00e9rj\u00fck, hat\u00e1rozza meg a konferencia kezd\u00e9si \u00e9s befejez\u00e9si idej\u00e9t. Minden szem\u00e9ly, aki megl\u00e1togatja az esem\u00e9nyt ebben az id\u0151szakban, automatikusan csatlakozik az online konferenci\u00e1hoz.",
+			"EndDate": "V\u00e9ge",
+			"location": {
+				"Title": "\u00c1ll\u00edtsa be a hely\u00e9t"
+			},
+			"interest": {
+				"Title": "V\u00e1lasszon egy tev\u00e9kenys\u00e9get",
+				"Filter": "Keres\u00e9si \u00e9rdekl\u0151d\u00e9si k\u00f6r\u00f6k..."
+			},
+			"SetLivestream": "Illessze be az \u00e9l\u0151 k\u00f6zvet\u00edt\u00e9s/videokonferencia linkj\u00e9t",
+			"Locally": "helyileg",
+			"EventInfoLink": "Esem\u00e9ny info link",
+			"TicketPurchaseLink": "Jegyv\u00e1s\u00e1rl\u00e1si link"
+		},
+		"EventAlreadyClosed": "Ez az esem\u00e9ny m\u00e1r lez\u00e1rult",
+		"addToCalendar": {
+			"permissions": {
+				"title": "Hozz\u00e1adod a napt\u00e1rhoz?",
+				"prompt": "Hozz\u00e1 szeretn\u00e9 adni ezt az esem\u00e9nyt a napt\u00e1r\u00e1hoz?",
+				"yes": "Igen",
+				"no": "Nem"
+			},
+			"dialog": {
+				"Title": "Esem\u00e9ny hozz\u00e1ad\u00e1sa a napt\u00e1r\u00e1hoz"
+			}
+		},
+		"ErrorLeaveEndedEvent": "Sajn\u00e1ljuk, de nem hagyhatod el a befejezett esem\u00e9nyt"
+	},
+	"availabilities": {
+		"Title": "El\u00e9rhet\u0151s\u00e9gek",
+		"NewAvailability": {
+			"Title": "\u00daj el\u00e9rhet\u0151s\u00e9g",
+			"SaveAvailability": "El\u00e9rhet\u0151s\u00e9g ment\u00e9se",
+			"SelectTemplate": "K\u00e9rj\u00fck, v\u00e1lassza a Szolg\u00e1ltat\u00e1st",
+			"SelectLocation": "K\u00e9rj\u00fck, v\u00e1lassza ki a Helysz\u00ednt",
+			"SelectArea": "K\u00e9rj\u00fck, v\u00e1lassza ki a Ter\u00fcletet",
+			"Type": "t\u00edpus",
+			"Weekly": "Heti",
+			"RecurringStartDate": "Ism\u00e9tl\u0151d\u0151 kezd\u00e9si d\u00e1tum",
+			"EndDate": "Befejez\u00e9s d\u00e1tuma",
+			"SelectTime": "Id\u0151r\u00e9sek kezel\u00e9se",
+			"SelectTimeSlot": "V\u00e1lasszon egy id\u0151s\u00e1vot",
+			"SelectTimeSlots": "V\u00e1lassza ki a k\u00edv\u00e1nt id\u0151s\u00e1vokat",
+			"PeopleMin": "Minim\u00e1lis l\u00e1togat\u00f3sz\u00e1m",
+			"PeopleMax": "Maxim\u00e1lis l\u00e1togat\u00f3sz\u00e1m",
+			"PeopleLabels": "A szerepek megengedettek",
+			"Next": "K\u00f6vetkez\u0151",
+			"Back": "Vissza",
+			"RecurringEndDate": "Ism\u00e9tl\u0151d\u0151 befejez\u00e9si d\u00e1tum",
+			"ScheduleOnlineConference": "Telekonferencia \u00fctemez\u00e9se",
+			"SetLivestream": "Illessze be az \u00e9l\u0151 k\u00f6zvet\u00edt\u00e9s/videokonferencia linkj\u00e9t",
+			"SelectTimeZone": "V\u00e1lassza ki az id\u0151z\u00f3n\u00e1t"
+		},
+		"EditAvailability": "El\u00e9rhet\u0151s\u00e9g szerkeszt\u00e9se",
+		"SetVisitors": "L\u00e1togat\u00f3k be\u00e1ll\u00edt\u00e1sa",
+		"Price": "\u00c1r",
+		"SelectAction": "K\u00e9rj\u00fck, v\u00e1lasszon m\u0171veletet",
+		"OpenProfile": "Profil megnyit\u00e1sa",
+		"RemoveStaff": "T\u00e1vol\u00edtsa el a szem\u00e9lyzetet",
+		"PleaseSelectTimeSlots": "K\u00e9rj\u00fck, v\u00e1lasszon id\u0151pontokat",
+		"ExceptionOccurred": "Kiv\u00e9tel t\u00f6rt\u00e9nt",
+		"NotEnoughCreditsToParticipateEvents": "Nincs el\u00e9g kredit {{eventsAmount}} esem\u00e9nyen val\u00f3 r\u00e9szv\u00e9telhez. {{needCredits}} kreditre van sz\u00fcks\u00e9ge. Meg akarom venni?",
+		"LiveStream": "\u00c9l\u0151 ad\u00e1s",
+		"InviteStaff": "H\u00edvja meg a szem\u00e9lyzetet"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "Kezd\u0151 d\u00e1tum",
+			"endDate": "Befejez\u00e9s d\u00e1tuma",
+			"justOnce": "Csak egyszer",
+			"justOnceWeekly": "Csak ezen a h\u00e9ten",
+			"justOnceMonthly": "Csak ebben a h\u00f3napban",
+			"recurring": "Ism\u00e9tl\u0151d\u0151"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "Ingyenes rendezv\u00e9ny",
+			"optional": "V\u00e1laszthat\u00f3 hozz\u00e1j\u00e1rul\u00e1s",
+			"required": "K\u00f6telez\u0151 fizet\u00e9s"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "V\u00e1laszthat\u00f3 hozz\u00e1j\u00e1rul\u00e1s",
+			"required": "R\u00e9szv\u00e9teli \u00e1r: {{amount}} {{currency}}",
+			"paid": "fizetett"
+		},
+		"confirmationDialog": {
+			"title": "Fizet\u00e9si visszaigazol\u00e1s",
+			"content": "Ehhez az esem\u00e9nyhez {{amount}} opcion\u00e1lis hozz\u00e1j\u00e1rul\u00e1s tartozik.",
+			"button": "Hozz\u00e1j\u00e1rul"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} m\u00e9g nem r\u00e9sze az esem\u00e9nynek. Fel szeretn\u00e9 venni \u0151ket r\u00e9sztvev\u0151k\u00e9nt?",
+		"userNotFound": "Felhaszn\u00e1l\u00f3 nem tal\u00e1lhat\u00f3",
+		"confirmYes": "Igen",
+		"confirmNo": "Nem"
+	},
+	"notifications": {
+		"EventActivityIn": "Esem\u00e9nytev\u00e9kenys\u00e9g itt: {{{stream.fields.title}}}",
+		"RecurringRulesChanged": "Az ism\u00e9tl\u0151d\u0151 szab\u00e1lyok megv\u00e1ltoztak a(z) {{{call 'message.getInstruction' 'eventTitle'}}} esem\u00e9nyn\u00e9l",
+		"ManageEmailSubscriptions": "kezelheti e-mail-feliratkoz\u00e1sait",
+		"IfUnsubscribe": "Ha le szeretne iratkozni",
+		"ClickHereToVisitEvent": "Az esem\u00e9ny megtekint\u00e9s\u00e9hez kattintson ide",
+		"Calendars/reminder": "A \u201e{{{call 'message.getInstruction' 'name'}}\u201d esem\u00e9ny ekkor kezd\u0151dik: {{&call 'message.getInstruction' 'time'}}}",
+		"webrtc": {
+			"Started": "Megkezd\u0151d\u00f6tt a telekonferencia",
+			"Ended": "A telekonferencia v\u00e9get \u00e9rt"
+		},
+		"livestream": {
+			"Started": "Elindult az \u00e9l\u0151 k\u00f6zvet\u00edt\u00e9s",
+			"Ended": "Az \u00e9l\u0151 k\u00f6zvet\u00edt\u00e9s v\u00e9get \u00e9rt",
+			"ClickToView": "Tekintse meg itt."
+		}
+	},
+	"import": {
+		"linkTitle": "T\u00f6ltse ki ezt a t\u00e1bl\u00e1zatot",
+		"fileLabel": "T\u00e1bl\u00e1zat felt\u00f6lt\u00e9se:",
+		"importOptions": "Opci\u00f3k",
+		"importProgress": "El\u0151rehalad",
+		"sampleCSV": "T\u00f6ltse le a CSV-mint\u00e1t",
+		"joinEventLabel": "Csatlakoztassa a felhaszn\u00e1l\u00f3kat a v\u00e9letlenszer\u0171 esem\u00e9nyhez",
+		"smsText": "H\u00e9, most k\u00fcldtem neked egy linket a(z) {{communityName}} c\u00edmre. K\u00e9rj\u00fck, n\u00e9zze meg.",
+		"emailSubject": "Most k\u00fcldtem egy linket",
+		"emailBody": "H\u00e9, most k\u00fcldtem neked egy megh\u00edv\u00f3t a(z) {{communityName}} c\u00edmre. K\u00e9rj\u00fck, n\u00e9zze meg.",
+		"fileNotFound": "Sajn\u00e1ljuk, a CSV-f\u00e1jl nem tal\u00e1lhat\u00f3.",
+		"fileEmpty": "Sajn\u00e1ljuk, a CSV-f\u00e1jl \u00fcres.",
+		"fieldNotFound": "A k\u00f6telez\u0151 &quot;{{1}}&quot; mez\u0151 nem tal\u00e1lhat\u00f3",
+		"userIdNotFound": "felhaszn\u00e1l\u00f3 l\u00e9tezik, de az azonos\u00edt\u00f3 \u00fcres",
+		"activateUsers": "aktiv\u00e1l\u00f3 \u00fczenetet k\u00fcld a felhaszn\u00e1l\u00f3knak?",
+		"taskStreamInvalid": "feladatfolyam \u00e9rv\u00e9nytelen",
+		"instructionsEmpty": "a feladatfolyam utas\u00edt\u00e1sai \u00fcresek",
+		"interestsEmpty": "nem szerezhet \u00e9rdekl\u0151d\u00e9st",
+		"interestAbsent": "kamat {{1}} nem tal\u00e1lhat\u00f3",
+		"complete": "teljes",
+		"errorLine": "sor {{1}}",
+		"errorsTitle": "Hib\u00e1k t\u00f6rt\u00e9ntek",
+		"communityUsers": "Ez a k\u00f6z\u00f6ss\u00e9gek list\u00e1ja",
+		"toMainCommunityToo": "a f\u0151 k\u00f6z\u00f6ss\u00e9ghez is kapcsol\u00f3dnak",
+		"ChooseFile": "V\u00e1lassz f\u00e1jlt"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "Olyan esem\u00e9nyt jel\u00f6l, amelyen az emberek r\u00e9szt vehetnek",
+			"displayType": "Esem\u00e9ny"
+		},
+		"Calendars/recurring": {
+			"description": "Az id\u0151szakonk\u00e9nt ism\u00e9tl\u0151d\u0151 adatfolyamok \u00f6sszekapcsol\u00e1s\u00e1ra szolg\u00e1l",
+			"displayType": "Ism\u00e9tl\u0151d\u0151 esem\u00e9ny"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "Slot hozz\u00e1ad\u00e1sa",
+		"StartTime": "Kezd\u00e9si id\u0151",
+		"EndTime": "Id\u0151 v\u00e9ge",
+		"Save": "Megment",
+		"AddTimeSlot": "Add Time Slot",
+		"CopyFromDay": "M\u00e1sol\u00e1s a napr\u00f3l",
+		"Nearest": "Legk\u00f6zelebb",
+		"Today": "Ma",
+		"Tomorrow": "Holnap",
+		"AfterTomorrow": "Holnap ut\u00e1n"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "Feliratkoz\u00e1s a Napt\u00e1rra",
+		"copyLinkBelow": "Link m\u00e1sol\u00e1sa lent",
+		"goTo": "Menj:",
+		"pasteCopiedTo": "Illessze be a kim\u00e1solt linket a \u201enapt\u00e1r URL-je\u201d mez\u0151be",
+		"clickAddCalendar": "Kattintson a &quot;Napt\u00e1r hozz\u00e1ad\u00e1sa&quot; gombra",
+		"copyLink": "Link m\u00e1sol\u00e1sa",
+		"tapToCopy": "\u00c9rintse meg az al\u00e1bbi gombot a hivatkoz\u00e1s v\u00e1g\u00f3lapra m\u00e1sol\u00e1s\u00e1hoz",
+		"linkCopied": "Link m\u00e1solva",
+		"step2": "Link m\u00e1solva. A Google Napt\u00e1r megnyit\u00e1s\u00e1r\u00f3l sz\u00f3lunk. Be kell illesztenie a hivatkoz\u00e1st a sz\u00f6vegmez\u0151be, kattintson a &quot;Napt\u00e1r hozz\u00e1ad\u00e1sa&quot; gombra, \u00e9s z\u00e1rja be a lapot (l\u00e1sd az al\u00e1bbi k\u00e9perny\u0151k\u00e9pet).",
+		"calendarAppPreferences": "Nyissa meg a Be\u00e1ll\u00edt\u00e1sokat a Mac g\u00e9p Napt\u00e1r alkalmaz\u00e1s\u00e1ban, \u00e9s \u00e1ll\u00edtsa be az Alap\u00e9rtelmezett napt\u00e1r alkalmaz\u00e1st az al\u00e1bbiak szerint.",
+		"thenCloseDialog": "Ezut\u00e1n z\u00e1rja be ezt a p\u00e1rbesz\u00e9dpanelt a napt\u00e1rra val\u00f3 feliratkoz\u00e1shoz!",
+		"success": "A napt\u00e1r sikeresen szinkroniz\u00e1lva"
+	},
+	"@override": {
+		"Assets/content": {
+			"payments": {
+				"reasons": {
+					"EventParticipation": "Esem\u00e9nyen val\u00f3 r\u00e9szv\u00e9tel"
+				}
+			}
+		}
+	}
 }
