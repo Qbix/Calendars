@@ -88,8 +88,8 @@ class Calendars_Availability {
 			'location' => null,
 			'template' => null,
 			'timeSlots' => null,
-			'livestream' => null,
-			'livestreamUrl' => null,
+			'teleconference' => null,
+			'teleconferenceUrl' => null,
 			'timezone' => null,
 			'recurringStartDate' => null,
 			'recurringEndDate' => null,
@@ -102,7 +102,7 @@ class Calendars_Availability {
 			throw new Q_Exception_RequiredField(array('field' => 'Service template'));
 		}
 
-		if (empty($data['location']) && empty($data['livestream'])) {
+		if (empty($data['location']) && empty($data['teleconference'])) {
 			throw new Q_Exception_RequiredField(array('field' => 'location'));
 		}
 
@@ -150,8 +150,8 @@ class Calendars_Availability {
 			'timeSlots' => $data['timeSlots'],
 			'recurringStartDate' => $data['recurringStartDate'],
 			'recurringEndDate' => $data['recurringEndDate'],
-			'livestream' => $data['livestream'],
-			'livestreamUrl' => $data['livestreamUrl'],
+			'teleconference' => $data['teleconference'],
+			'teleconferenceUrl' => $data['teleconferenceUrl'],
 			'timezone' => $data['timezone'],
 			'peopleMin' => $peopleMin,
 			'peopleMax' => $peopleMax

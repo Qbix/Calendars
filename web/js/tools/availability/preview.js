@@ -127,8 +127,8 @@ Q.Tool.define("Calendars/availability/preview", ["Streams/preview"], function(op
 						template: state.serviceTemplate,
 						location: state.location,
 						timeSlots: state.timeSlots,
-						livestream: $('.Calendars_availability_composer_livestream', dialog).attr("data-livestream") === "true",
-						livestreamUrl: $("input[name=livestream]", dialog).val(),
+						teleconference: $('.Calendars_availability_composer_teleconference', dialog).attr("data-teleconference") === "true",
+						teleconferenceUrl: $("input[name=teleconference]", dialog).val(),
 						timezone: $("select[name=timezoneName]", dialog).val(),
 						recurringStartDate: $('input[name=recurringStartDate]', dialog).val(),
 						recurringEndDate: $('input[name=recurringEndDate]', dialog).val(),
@@ -223,7 +223,7 @@ Q.Tool.define("Calendars/availability/preview", ["Streams/preview"], function(op
 				area = area && '<br>' + area;
 			}
 	
-			var livestream = stream.getAttribute('livestream') === "true";
+			var teleconference = stream.getAttribute('teleconference') === "true" || stream.getAttribute('livestream') === "true"; //livestream is for backward compatibility
 	
 			var serviceTemplate = stream.getAttribute('serviceTemplate');
 			var _renderTemplate = function () {
@@ -232,7 +232,7 @@ Q.Tool.define("Calendars/availability/preview", ["Streams/preview"], function(op
 					description: stream.fields.content,
 					price: serviceTemplate.price ? '(' + (serviceTemplate.currency ? '' : '$') + parseFloat(serviceTemplate.price).toFixed(2) + (serviceTemplate.currency ? ' ' + serviceTemplate.currency : '') +')' : '',
 					location: address + area,
-					livestream: livestream,
+					teleconference: teleconference,
 					text: tool.text.availabilities
 				}, function (err, html) {
 					if (err) return;
@@ -314,8 +314,8 @@ Q.Tool.define("Calendars/availability/preview", ["Streams/preview"], function(op
 											streamName: tool.stream.fields.name
 										},
 										location: state.location,
-										livestream: $('.Calendars_availability_composer_livestream', dialog).attr("data-livestream") === "true",
-										livestreamUrl: $("input[name=livestream]", dialog).val(),
+										teleconference: $('.Calendars_availability_composer_teleconference', dialog).attr("data-teleconference") === "true",
+										teleconferenceUrl: $("input[name=teleconference]", dialog).val(),
 										timezone: $("select[name=timezoneName]", dialog).val(),
 										template: state.serviceTemplate,
 										timeSlots: state.timeSlots,
@@ -565,7 +565,7 @@ Q.Tool.define("Calendars/availability/preview", ["Streams/preview"], function(op
 					$(this.element).on(Q.Pointer.fastclick, _selectTemplate.bind(this));
 				});
 
-				var $livestream = $('.Calendars_availability_composer_livestream', $parent);
+				var $teleconference = $('.Calendars_availability_composer_teleconference', $parent);
 				var selectedLocation = null;
 				var locationAttr = tool.stream ? tool.stream.getAttribute('location') : null;
 				if (locationAttr) {
@@ -592,29 +592,29 @@ Q.Tool.define("Calendars/availability/preview", ["Streams/preview"], function(op
 
 					this.state.onChoose.add(function (location) {
 						var locationDefined = !!location;
-						$livestream.attr("data-location", locationDefined);
+						$teleconference.attr("data-location", locationDefined);
 						_selectLocation(location);
 					}, tool);
 				});
-				var $timezoneName = $("select[name=timezoneName]", $livestream);
+				var $timezoneName = $("select[name=timezoneName]", $teleconference);
 				$timezoneName.val(function () {
 					var offset = new Date().getTimezoneOffset();
 					var sign = offset < 0 ? '+' : '-';
 					offset = Math.abs(offset);
 					return "GMT" + sign + Math.round(offset/60);
 				}());
-				var $livestreamUrl = $("input[name=livestream]", $livestream);
-				var $livestreamUrlPlaceHolder = $livestreamUrl.closest(".Q_placeholders_container");
-				var $scheduleOnlineConference = $("button[name=scheduleOnlineConference]", $livestream);
+				var $teleconferenceUrl = $("input[name=teleconference]", $teleconference);
+				var $teleconferenceUrlPlaceHolder = $teleconferenceUrl.closest(".Q_placeholders_container");
+				var $scheduleOnlineConference = $("button[name=scheduleOnlineConference]", $teleconference);
 				if (tool.stream) {
-					var isLiveStream = tool.stream.getAttribute("livestream") === "true";
-					var livestreamUrl = tool.stream.getAttribute("livestreamUrl");
+					var isTeleConference = tool.stream.getAttribute("teleconference") === "true" || tool.stream.getAttribute("livestream") === "true"; //"livestream" is for backward compatibility
+					var teleconferenceUrl = tool.stream.getAttribute("teleconferenceUrl") || tool.stream.getAttribute("livestreamUrl");
 					var timezoneName = tool.stream.getAttribute("timezone");
-					$livestream.attr("data-livestream", isLiveStream);
-					$livestreamUrl.val(livestreamUrl).trigger("change");
-					if (isLiveStream) {
-						if (livestreamUrl) {
-							$livestreamUrlPlaceHolder.addClass("Q_selected");
+					$teleconference.attr("data-teleconference", isTeleConference);
+					$teleconferenceUrl.val(teleconferenceUrl).trigger("change");
+					if (isTeleConference) {
+						if (teleconferenceUrl) {
+							$teleconferenceUrlPlaceHolder.addClass("Q_selected");
 						} else {
 							$scheduleOnlineConference.addClass("Q_selected");
 						}
@@ -623,28 +623,28 @@ Q.Tool.define("Calendars/availability/preview", ["Streams/preview"], function(op
 						$timezoneName.val(tool.stream.getAttribute("timezone"));
 					}
 				}
-				// on change $livestream, call prepareSteps
-				$livestreamUrl.on('change input', function () {
+				// on change $teleconference, call prepareSteps
+				$teleconferenceUrl.on('change input', function () {
 					var val = $(this).val();
 					if (val.matchTypes('url').length) {
 						$scheduleOnlineConference.removeClass("Q_selected");
-						$livestreamUrlPlaceHolder.addClass("Q_selected");
-						$livestream.attr("data-livestream", true);
+						$teleconferenceUrlPlaceHolder.addClass("Q_selected");
+						$teleconference.attr("data-teleconference", true);
 					} else {
-						$livestreamUrlPlaceHolder.removeClass("Q_selected");
-						$livestream.attr("data-livestream", false);
+						$teleconferenceUrlPlaceHolder.removeClass("Q_selected");
+						$teleconference.attr("data-teleconference", false);
 					}
 				});
 				// Set Schedule Conference
 				$scheduleOnlineConference.on(Q.Pointer.fastclick, function () {
 					if ($scheduleOnlineConference.hasClass("Q_selected")) {
 						$scheduleOnlineConference.removeClass("Q_selected");
-						$livestream.attr("data-livestream", false);
+						$teleconference.attr("data-teleconference", false);
 					} else {
 						$scheduleOnlineConference.addClass("Q_selected");
-						$livestream.attr("data-livestream", true);
-						$livestreamUrl.val('');
-						$livestreamUrl.closest(".Q_placeholders_container").removeClass("Q_selected");
+						$teleconference.attr("data-teleconference", true);
+						$teleconferenceUrl.val('');
+						$teleconferenceUrl.closest(".Q_placeholders_container").removeClass("Q_selected");
 					}
 				});
 
@@ -740,7 +740,7 @@ Q.Tool.define("Calendars/availability/preview", ["Streams/preview"], function(op
 							return false;
 						}
 
-						if (currentStep === 2 && !($livestream.attr("data-livestream") === "true" || $livestream.attr("data-location") === "true")) {
+						if (currentStep === 2 && !($teleconference.attr("data-teleconference") === "true" || $teleconference.attr("data-location") === "true")) {
 							Q.alert(tool.text.availabilities.NewAvailability.SelectLocation);
 							return false;
 						}
@@ -793,8 +793,8 @@ Q.Template.set('Calendars/availability/preview',
 		{{#if location}}
 			<div class="Calendars_availability_preview_location">{{{location}}}</div>
 		{{/if}}
-		{{#if livestream}}
-			<div class="Calendars_availability_preview_livestream">{{text.LiveStream}}</div>
+		{{#if teleconference}}
+			<div class="Calendars_availability_preview_teleconference">{{text.LiveStream}}</div>
 		{{/if}}
 		<div class="Calendars_availability_preview_description">{{description}}</div>
 		<div class="Streams_participants_tool"></div>
@@ -810,10 +810,10 @@ Q.Template.set("Calendars/availability/composer",
 	<div class="Calendars_availability_steps" data-step="2">
 		<h2>{{text.SelectLocation}}</h2>
 		<div class="Calendars_availability_composer_location"></div>
-		<div class="Calendars_availability_composer_livestream">
+		<div class="Calendars_availability_composer_teleconference">
 			<button class="Q_button" name="scheduleOnlineConference">{{text.ScheduleOnlineConference}}</button>
 			<div class="or">OR</div>
-			<input name="livestream" placeholder="{{text.SetLivestream}}" data-type="url">
+			<input name="teleconference" placeholder="{{text.SetLivestream}}" data-type="url">
 			<label for="timezoneName">{{text.SelectTimeZone}}: <select name="timezoneName">
                 <option>GMT-12</option>
                 <option>GMT-11</option>

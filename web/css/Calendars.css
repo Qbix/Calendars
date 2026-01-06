@@ -147,3 +147,51 @@
 	background-size: cover;
 	pointer-events: none;
 }
+
+
+/* <livestream/teleconference started notification template> */
+.Q_show_notice.Q_online-event_notice {
+	
+}
+.Calendars_teleconference_notice,
+.Calendars_livestream_notice {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.Calendars_teleconference_notice .Calendars_teleconference_notice_avatar,
+.Calendars_livestream_notice .Calendars_livestream_notice_avatar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Calendars_teleconference_notice .Calendars_teleconference_notice_desc,
+.Calendars_livestream_notice .Calendars_livestream_notice_desc {
+	display: flex;
+    flex: 1;
+    padding: 5px;
+    align-items: center;
+	flex: 1;
+    overflow: hidden;
+}
+.Calendars_teleconference_notice .Calendars_teleconference_notice_desc .Calendars_teleconference_notice_text,
+.Calendars_livestream_notice .Calendars_livestream_notice_desc .Calendars_livestream_notice_text{
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.Calendars_teleconference_notice .Calendars_teleconference_notice_buttons,
+.Calendars_livestream_notice .Calendars_livestream_notice_buttons {
+
+}
+.Calendars_teleconference_notice .Calendars_teleconference_notice_close,
+.Calendars_livestream_notice .Calendars_livestream_notice_close {
+	color: var(--button-text-color-secondary);
+	margin: 0 15px;
+}
+.Calendars_teleconference_notice .Calendars_teleconference_notice_close:hover,
+.Calendars_livestream_notice .Calendars_livestream_notice_close:hover {
+	opacity: 0.7;
+}
+/* </livestream started notification template> */

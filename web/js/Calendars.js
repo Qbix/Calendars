@@ -738,6 +738,145 @@ Q.Streams.onMessage('', 'Calendars/payment/skip')
 	});
 }, 'Calendars.notifications.notice');
 
+	
+// show Q.Notice when somebody opened webrtc in chat where current user participated
+Q.Streams.onMessage('', 'Calendars/event/livestream/started')
+.set(function (message) {
+	console.log('Calendars/event/livestream/started', message, arguments);
+	var instructions = JSON.parse(message.instructions);
+	var livestreamStreamName = instructions.streamName;
+	var livestreamStreamPublisherId = instructions.publisherId;
+	var eventStreamName = message.streamName;
+	var eventStreamPublisherId = message.publisherId;
+
+	if (message.byUserId === Q.Users.loggedInUserId()) {
+		return;
+	}
+
+	// skip messages older than 24 hours
+	var timeDiff = Math.abs((new Date(message.sentTime).getTime() - new Date().getTime())) / 1000;
+	if (timeDiff >= parseInt(Q.Streams.notifications.notices.expired)) {
+		return;
+	}
+
+	showLivestreamNotice(livestreamStreamPublisherId, livestreamStreamName, eventStreamPublisherId, eventStreamName);
+
+}, "Calendars.events.livestream");
+
+
+function showLivestreamNotice(livestreamPublisherId, livestreamStreamName, eventStreamPublisherId, eventStreamStreamName) {
+
+	Q.Text.get("Calendars/content", function (err, text) {
+
+		text = Q.getObject(["notifications", "livestream"], text);
+		//var text = Q.Text.collection[Q.Text.language]['Calendars/content'];
+
+		Q.Streams.get.force(eventStreamPublisherId, eventStreamStreamName, function () {
+			let eventStream = this;
+			console.log('notice eventStream', eventStream)
+
+			// return if user doesn't subscribed to stream
+			if (Q.getObject("participant.subscribed", this) !== 'yes') {
+				return;
+			}
+
+			Q.Streams.get.force(livestreamPublisherId, livestreamStreamName, function () {
+				let livestreamStream = this;
+				console.log('notice livestreamStream', livestreamStream)
+
+				Q.Streams.Avatar.get(livestreamPublisherId).then(function (avatar) {
+					let name = avatar.displayName();
+					let iconUrl = avatar.iconUrl();
+
+					let container = document.createElement('DIV');
+					container.className = 'Calendars_livestream_notice';
+
+					let avatarContainer = document.createElement('DIV');
+					avatarContainer.className = 'Calendars_livestream_notice_avatar';
+					container.appendChild(avatarContainer);
+					let avatarImg = document.createElement('IMG');
+					avatarImg.src = iconUrl;
+					avatarContainer.appendChild(avatarImg);
+
+
+					let descriptionContainer = document.createElement('DIV');
+					descriptionContainer.className = 'Calendars_livestream_notice_desc';
+					container.appendChild(descriptionContainer);
+
+					let descriptionText = document.createElement('SPAN');
+					descriptionText.className = 'Calendars_livestream_notice_text';
+					descriptionText.innerHTML = text.StartedByUser.interpolate({ user: name, event: eventStream.fields.title });
+					descriptionContainer.appendChild(descriptionText);
+
+
+					let buttonContainer = document.createElement('DIV');
+					buttonContainer.className = 'Calendars_livestream_notice_buttons';
+					container.appendChild(buttonContainer);
+					let watchButton = document.createElement('BUTTON');
+					watchButton.className = 'Q_button Calendars_livestream_notice_join';
+					watchButton.innerHTML = text.JoinAudience;
+					buttonContainer.appendChild(watchButton);
+
+					let closeButton = document.createElement('SPAN');
+					closeButton.className = 'Calendars_livestream_notice_close';
+					closeButton.innerHTML = text.Close;
+					buttonContainer.appendChild(closeButton);
+
+					let noticeKey = 'livestreamStarted_' + livestreamStream.fields.name + '_' + (new Date())
+					Q.Notices.add({
+						closeable: false,
+						key: noticeKey,
+						type: 'online-event',
+						timeout: 10,
+						content: container.outerHTML
+					});
+
+					let noticeEl = Q.Notices.get(noticeKey)
+					if (noticeEl) {
+						noticeEl.onclick = null;
+						let watchButton = noticeEl.querySelector('.Calendars_livestream_notice_join');
+						let closeButton = noticeEl.querySelector('.Calendars_livestream_notice_close');
+
+						['click', 'auxclick'].forEach(function (eventName) {
+							watchButton.addEventListener(eventName, function (e) {
+								openLivestreamTool(e, livestreamStream.fields.publisherId, livestreamStream.fields.name, livestreamStream.url());
+								Q.Notices.remove(noticeKey);
+							})
+						})
+
+						closeButton.addEventListener('click', function (e) {
+							Q.Notices.remove(noticeKey);
+						})
+					}
+				})
+			})
+
+
+
+		}, {
+			withParticipant: true,
+			withSubscriptionRules: true
+		});
+
+	});
+
+
+	function openLivestreamTool(e, publisherId, streamName, url) {
+		console.log('openLivestreamTool e.button', e.button)
+		if (e.ctrlKey || e.button === 1) {
+			window.open(url, "_blank");
+			return;
+		};
+
+		if (Q.Media) {
+			Q.Media.openLivestreamTool(publisherId, streamName)
+		}
+	}
+}
+
+	
+
+
 Q.Text.addFor(
 	['Q.Tool.define', 'Q.Template.set'],
 	'Calendars/', ["Calendars/content"]
@@ -782,6 +921,17 @@ Q.Template.set('Calendars/templates/event/tool', undefined, {
 
 // NOTE: We are inserting arbitrary HTML from user names,
 // but it's escaped by avatar.prototype.displayName()
+Q.Template.set('Calendars/event/hosts/avatar/contents', 
+	'<{{tag}} class="Users_avatar_name Calendars_event_hosted">'
+		+ '<span class="Calendars_event_hostedBy">'
+			+ '{{{interpolate event.tool.HostedBy name=name}}}'
+		+ '</span>'
+	+ '</{{tag}}>',
+	{
+		type: 'handlebars',
+		text: ['Calendars/content']
+	}
+);
 Q.Template.set('Calendars/event/hosts/avatar/contents', 
 	'<{{tag}} class="Users_avatar_name Calendars_event_hosted">'
 		+ '<span class="Calendars_event_hostedBy">'
