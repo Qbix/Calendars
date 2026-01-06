@@ -35,8 +35,8 @@
 			"Users/Label/can": ["Calendars/after/Users_Label_can"],
 			"Streams/message/Streams/join": ["Calendars/after/Streams_message_Streams_join"],
 			"Streams/message/Streams/leave": ["Calendars/after/Streams_message_Streams_leave"],
-			"Streams/relateTo/Media/webrtc": ["Calendars/after/Streams/relateTo/Media/webrtc"],
-			"Streams/unrelateTo/Media/webrtc": ["Calendars/after/Streams/unrelateTo/Media/webrtc"],
+			"Streams/relateTo/Media/webrtc": ["Calendars/after/Streams_relateTo_Media_webrtc"],
+			"Streams/unrelateTo/Media/webrtc": ["Calendars/after/Streams_unrelateTo_Media_webrtc"],
 			"Streams/message/Media/livestream/start": ["Calendars/after/Streams_message_Media_livestream_start"],
 			"Streams/message/Media/livestream/stop": ["Calendars/after/Streams_message_Media_livestream_stop"],
 			"Db/Row/Streams_Participant/saveExecute": ["Calendars/after/Streams_Participant_saveExecute"]
