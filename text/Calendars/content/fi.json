@@ -251,7 +251,8 @@
 		"confirmParticipate": "{{1}} ei ole viel\u00e4 osa tapahtumaa. Haluatko lis\u00e4t\u00e4 heid\u00e4t osallistujaksi?",
 		"userNotFound": "K\u00e4ytt\u00e4j\u00e4\u00e4 ei l\u00f6ydy",
 		"confirmYes": "Joo",
-		"confirmNo": "Ei"
+		"confirmNo": "Ei",
+		"UserAlreadyCheckedIn": "{{1}} on jo kirjautunut sis\u00e4\u00e4n {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Tapahtumatoiminta vuonna {{{stream.fields.title}}}",
@@ -338,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Tapahtumaan osallistuminen"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Tapahtumaan osallistuminen"
 			}
 		}
 	}

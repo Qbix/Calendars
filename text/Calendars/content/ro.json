@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "Nu sunte\u021bi participant la eveniment",
 			"LiveStreamStarted": "Fluxul live a \u00eenceput",
 			"WebRTCStarted": "A \u00eenceput teleconferin\u021ba",
-			"WebRTCEnded": "Teleconferin\u021ba s-a \u00eencheiat"
+			"WebRTCEnded": "Teleconferin\u021ba s-a \u00eencheiat",
+			"Prepayment": "Plat\u0103 \u00een avans",
+			"PrepaymentConfirm": "Vom percepe o tax\u0103 nominal\u0103 de 1 dolar. Ve\u021bi primi num\u0103rul corespunz\u0103tor de credite. Aceste credite vor fi aplicate la plata integral\u0103 a evenimentului."
 		},
 		"composer": {
 			"SetLocation": "Seta\u021bi loca\u021bia mea",
@@ -249,7 +251,8 @@
 		"confirmParticipate": "{{1}} nu face \u00eenc\u0103 parte din eveniment. Dori\u021bi s\u0103-i ad\u0103uga\u021bi ca participant?",
 		"userNotFound": "Utilizator nu a fost g\u0103sit",
 		"confirmYes": "da",
-		"confirmNo": "Nu"
+		"confirmNo": "Nu",
+		"UserAlreadyCheckedIn": "{{1}} a fost deja \u00eenregistrat de {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Activitatea evenimentului \u00een {{{stream.fields.title}}}",
@@ -336,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Participarea la eveniment"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Participarea la eveniment"
 			}
 		}
 	}

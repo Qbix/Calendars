@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "Nie ste \u00fa\u010dastn\u00edkom udalosti",
 			"LiveStreamStarted": "Priamy prenos sa za\u010dal",
 			"WebRTCStarted": "Telekonferencia za\u010dala",
-			"WebRTCEnded": "Telekonferencia sa skon\u010dila"
+			"WebRTCEnded": "Telekonferencia sa skon\u010dila",
+			"Prepayment": "Platba vopred",
+			"PrepaymentConfirm": "\u00da\u010dtujeme si nomin\u00e1lny poplatok 1 USD. Dostanete zodpovedaj\u00faci po\u010det kreditov. Tieto kredity bud\u00fa zapo\u010d\u00edtan\u00e9 do va\u0161ej plnej platby za podujatie."
 		},
 		"composer": {
 			"SetLocation": "Nastavi\u0165 moju polohu",
@@ -249,7 +251,8 @@
 		"confirmParticipate": "{{1}} e\u0161te nie je s\u00fa\u010das\u0165ou udalosti. Chcete ich prida\u0165 ako \u00fa\u010dastn\u00edkov?",
 		"userNotFound": "U\u017e\u00edvate\u013e Nen\u00e1jden\u00fd",
 		"confirmYes": "\u00c1no",
-		"confirmNo": "nie"
+		"confirmNo": "nie",
+		"UserAlreadyCheckedIn": "{{1}} u\u017e bolo zaregistrovan\u00fdch pou\u017e\u00edvate\u013eom {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Aktivita udalosti v {{{stream.fields.title}}}",
@@ -336,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "\u00da\u010das\u0165 na podujat\u00ed"
 				}
+			},
+			"credits": {
+				"EventParticipation": "\u00da\u010das\u0165 na podujat\u00ed"
 			}
 		}
 	}

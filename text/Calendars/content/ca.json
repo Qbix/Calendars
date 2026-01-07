@@ -217,7 +217,8 @@
 		"confirmParticipate": "{{1}} encara no forma part de l&#39;esdeveniment. Vols afegir-los com a participant?",
 		"userNotFound": "Usuari no trobat",
 		"confirmYes": "S\u00ed",
-		"confirmNo": "No"
+		"confirmNo": "No",
+		"UserAlreadyCheckedIn": "{{1}} ja ha estat registrat per {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Activitat de l&#39;esdeveniment a {{{stream.fields.title}}}",
@@ -364,6 +365,9 @@
 				"reasons": {
 					"EventParticipation": "Participaci\u00f3 en esdeveniments"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Participaci\u00f3 en esdeveniments"
 			}
 		}
 	}

@@ -251,7 +251,8 @@
 		"confirmParticipate": "Nid yw {{1}} yn rhan o&#39;r digwyddiad eto. Ydych chi am eu hychwanegu fel cyfranogwr?",
 		"userNotFound": "Defnyddiwr heb ei ganfod",
 		"confirmYes": "Oes",
-		"confirmNo": "Nac ydw"
+		"confirmNo": "Nac ydw",
+		"UserAlreadyCheckedIn": "{{1}} eisoes wedi cael ei gofrestru gan {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Gweithgarwch digwyddiad yn {{{stream.fields.title}}}",
@@ -338,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Cyfranogiad yn y Digwyddiad"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Cyfranogiad yn y Digwyddiad"
 			}
 		}
 	}

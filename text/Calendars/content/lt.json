@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "J\u016bs nesate renginio dalyvis",
 			"LiveStreamStarted": "Tiesiogin\u0117 transliacija prasid\u0117jo",
 			"WebRTCStarted": "Prasid\u0117jo telekonferencija",
-			"WebRTCEnded": "Telekonferencija baig\u0117si"
+			"WebRTCEnded": "Telekonferencija baig\u0117si",
+			"Prepayment": "I\u0161ankstinis apmok\u0117jimas",
+			"PrepaymentConfirm": "Taikysime simbolin\u012f 1 USD mokest\u012f. Gausite atitinkam\u0105 kredit\u0173 skai\u010di\u0173. \u0160ie kreditai bus \u012fskaityti \u012f vis\u0105 renginio kain\u0105."
 		},
 		"composer": {
 			"SetLocation": "Nustatyti Mano viet\u0105",
@@ -249,7 +251,8 @@
 		"confirmParticipate": "{{1}} dar n\u0117ra \u012fvykio dalis. Ar norite \u012ftraukti juos kaip dalyvius?",
 		"userNotFound": "Vartotojas nerastas",
 		"confirmYes": "Taip",
-		"confirmNo": "Nr"
+		"confirmNo": "Nr",
+		"UserAlreadyCheckedIn": "{{1}} jau u\u017eregistravo {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "\u012evyki\u0173 veikla {{{stream.fields.title}}}",
@@ -336,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Dalyvavimas renginiuose"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Dalyvavimas renginiuose"
 			}
 		}
 	}

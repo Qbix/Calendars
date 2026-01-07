@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "Du \u00e4r inte deltagare i evenemanget",
 			"LiveStreamStarted": "Livestream har startat",
 			"WebRTCStarted": "Telefonkonferensen startade",
-			"WebRTCEnded": "Telefonkonferensen avslutades"
+			"WebRTCEnded": "Telefonkonferensen avslutades",
+			"Prepayment": "F\u00f6rskottsbetalning",
+			"PrepaymentConfirm": "Vi tar ut en nominell avgift p\u00e5 1 dollar. Du f\u00e5r motsvarande antal krediter. Dessa krediter kommer att dras av mot din fulla betalning f\u00f6r evenemanget."
 		},
 		"composer": {
 			"SetLocation": "St\u00e4ll in min plats",
@@ -249,7 +251,8 @@
 		"confirmParticipate": "{{1}} \u00e4r \u00e4nnu inte en del av evenemanget. Vill du l\u00e4gga till dem som deltagare?",
 		"userNotFound": "Anv\u00e4ndaren hittades inte",
 		"confirmYes": "Ja",
-		"confirmNo": "Nej"
+		"confirmNo": "Nej",
+		"UserAlreadyCheckedIn": "{{1}} var redan incheckad av {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "H\u00e4ndelseaktivitet i {{{stream.fields.title}}}",
@@ -336,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Deltagande i evenemanget"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Deltagande i evenemanget"
 			}
 		}
 	}

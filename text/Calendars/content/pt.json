@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "Voc\u00ea n\u00e3o \u00e9 um participante do evento",
 			"LiveStreamStarted": "A transmiss\u00e3o ao vivo come\u00e7ou",
 			"WebRTCStarted": "Teleconfer\u00eancia iniciada",
-			"WebRTCEnded": "A teleconfer\u00eancia terminou"
+			"WebRTCEnded": "A teleconfer\u00eancia terminou",
+			"Prepayment": "Pagamento antecipado",
+			"PrepaymentConfirm": "Cobramos uma taxa simb\u00f3lica de US$ 1. Voc\u00ea receber\u00e1 o n\u00famero correspondente de cr\u00e9ditos. Esses cr\u00e9ditos ser\u00e3o aplicados ao pagamento integral do evento."
 		},
 		"composer": {
 			"SetLocation": "Definir meu local",
@@ -249,7 +251,8 @@
 		"confirmParticipate": "{{1}} ainda n\u00e3o faz parte do evento. Deseja adicion\u00e1-los como participantes?",
 		"userNotFound": "Usu\u00e1rio n\u00e3o encontrado",
 		"confirmYes": "sim",
-		"confirmNo": "N\u00e3o"
+		"confirmNo": "N\u00e3o",
+		"UserAlreadyCheckedIn": "{{1}} j\u00e1 havia sido registrado pelo {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Atividade do evento em {{{stream.fields.title}}}",
@@ -336,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Participa\u00e7\u00e3o no evento"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Participa\u00e7\u00e3o no evento"
 			}
 		}
 	}

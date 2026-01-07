@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "M&#39;intix parte\u010bipant tal-avveniment",
 			"LiveStreamStarted": "Live stream beda",
 			"WebRTCStarted": "Bdiet it-telekonferenza",
-			"WebRTCEnded": "Telekonferenza ntemmet"
+			"WebRTCEnded": "Telekonferenza ntemmet",
+			"Prepayment": "\u0126las minn qabel",
+			"PrepaymentConfirm": "Se ni\u010b\u010bar\u0121jaw tariffa nominali ta&#39; $1. Int se tir\u010bievi n-numru korrispondenti ta&#39; krediti. Dawn il-krediti se ji\u0121u applikati g\u0127all-\u0127las s\u0127i\u0127 tieg\u0127ek g\u0127all-avveniment."
 		},
 		"composer": {
 			"SetLocation": "Issettja l-Post Tieg\u0127i",
@@ -249,7 +251,8 @@
 		"confirmParticipate": "{{1}} g\u0127adu mhux parti mill-avveniment. Trid i\u017c\u017cidhom b\u0127ala parte\u010bipant?",
 		"userNotFound": "Utent ma nstabx",
 		"confirmYes": "Iva",
-		"confirmNo": "Nru"
+		"confirmNo": "Nru",
+		"UserAlreadyCheckedIn": "{{1}} di\u0121\u00e0 \u0121ie \u010b\u010bekkjat minn {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Attivit\u00e0 tal-avveniment fi {{{stream.fields.title}}}",
@@ -336,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Parte\u010bipazzjoni fl-Avveniment"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Parte\u010bipazzjoni fl-Avveniment"
 			}
 		}
 	}
