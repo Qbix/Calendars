@@ -1,0 +1,22 @@
+{
+  "2026-01-01":[{"National":["new_year_s_day"]}],
+  "2026-01-02":[{"National":["new_year_s_day"]}],
+  "2026-01-07":[{"National":["christmas_day_orthodox_"]}, {"Orthodox":["christmas"]}],
+  "2026-03-08":[{"National":["international_women_s_day"]}],
+  "2026-04-21":[{"National":["commemoration_day"]}],
+  "2026-05-01":[{"National":["labour_day"]}, {"Buddhist":["vesak_day"]}],
+  "2026-05-09":[{"National":["victory_day"]}],
+  "2026-07-03":[{"National":["independence_day"]}],
+  "2026-11-07":[{"National":["october_revolution_day"]}],
+  "2026-12-25":[{"National":["catholicchristmas_day"]}, {"Catholic":["christmas"]}],
+  "2027-01-01":[{"National":["new_year_s_day"]}],
+  "2027-01-02":[{"National":["new_year_s_day"]}],
+  "2027-01-07":[{"National":["christmas_day_orthodox_"]}, {"Orthodox":["christmas"]}],
+  "2027-03-08":[{"National":["international_women_s_day"]}],
+  "2027-05-01":[{"National":["labour_day"]}],
+  "2027-05-09":[{"National":["victory_day"]}],
+  "2027-05-11":[{"National":["commemoration_day"]}],
+  "2027-07-03":[{"National":["independence_day"]}],
+  "2027-11-07":[{"National":["october_revolution_day"]}],
+  "2027-12-25":[{"National":["catholicchristmas_day"]}, {"Catholic":["christmas"]}]
+}

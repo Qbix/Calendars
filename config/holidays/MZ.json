@@ -1,0 +1,20 @@
+{
+  "2026-01-01":[{"National":["new_year_s_day"]}],
+  "2026-02-03":[{"National":["heroes_s_day"]}],
+  "2026-04-07":[{"National":["women_s_day"]}],
+  "2026-05-01":[{"National":["worker_s_day"]}, {"Buddhist":["vesak_day"]}],
+  "2026-06-25":[{"National":["independence_day"]}],
+  "2026-09-07":[{"National":["victory_day"]}],
+  "2026-09-25":[{"National":["revolution_day"]}],
+  "2026-10-04":[{"National":["day_of_peace_and_reconciliation"]}],
+  "2026-12-25":[{"National":["christmas_day"]}, {"Catholic":["christmas"]}],
+  "2027-01-01":[{"National":["new_year_s_day"]}],
+  "2027-02-03":[{"National":["heroes_s_day"]}],
+  "2027-04-07":[{"National":["women_s_day"]}],
+  "2027-05-01":[{"National":["worker_s_day"]}],
+  "2027-06-25":[{"National":["independence_day"]}],
+  "2027-09-07":[{"National":["victory_day"]}],
+  "2027-09-25":[{"National":["revolution_day"]}],
+  "2027-10-04":[{"National":["day_of_peace_and_reconciliation"]}],
+  "2027-12-25":[{"National":["christmas_day"]}, {"Catholic":["christmas"]}]
+}

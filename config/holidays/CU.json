@@ -1,0 +1,20 @@
+{
+  "2026-01-01":[{"National":["triumph_of_the_revolution"]}],
+  "2026-01-02":[{"National":["victory_of_fidel_castro"]}],
+  "2026-04-03":[{"National":["good_friday"]}, {"Catholic":["good_friday"]}],
+  "2026-05-01":[{"National":["labour_day"]}, {"Buddhist":["vesak_day"]}],
+  "2026-07-25":[{"National":["day_before_the_commemoration_of_the_assault_of_the_moncada_garrison"]}],
+  "2026-07-26":[{"National":["commemoration_of_the_assault_of_the_moncada_garrison"]}],
+  "2026-07-27":[{"National":["day_after_the_commemoration_of_the_assault_of_the_moncada_garrison"]}],
+  "2026-10-10":[{"National":["independence_day"]}],
+  "2026-12-25":[{"National":["christmas_day"]}, {"Catholic":["christmas"]}],
+  "2027-01-01":[{"National":["triumph_of_the_revolution"]}],
+  "2027-01-02":[{"National":["victory_of_fidel_castro"]}],
+  "2027-03-26":[{"National":["good_friday"]}, {"Catholic":["good_friday"]}],
+  "2027-05-01":[{"National":["labour_day"]}],
+  "2027-07-25":[{"National":["day_before_the_commemoration_of_the_assault_of_the_moncada_garrison"]}],
+  "2027-07-26":[{"National":["commemoration_of_the_assault_of_the_moncada_garrison"]}],
+  "2027-07-27":[{"National":["day_after_the_commemoration_of_the_assault_of_the_moncada_garrison"]}],
+  "2027-10-10":[{"National":["independence_day"]}],
+  "2027-12-25":[{"National":["christmas_day"]}, {"Catholic":["christmas"]}]
+}

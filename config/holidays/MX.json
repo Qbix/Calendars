@@ -1,0 +1,20 @@
+{
+  "2026-01-01":[{"National":["new_year_s_day"]}],
+  "2026-02-02":[{"National":["constitution_day"]}],
+  "2026-03-16":[{"National":["benito_juárez_s_birthday"]}],
+  "2026-04-02":[{"National":["maundy_thursday"]}, {"Catholic":["holy_thursday"]}],
+  "2026-04-03":[{"National":["good_friday"]}, {"Catholic":["good_friday"]}],
+  "2026-05-01":[{"National":["labour_day"]}, {"Buddhist":["vesak_day"]}],
+  "2026-09-16":[{"National":["independence_day"]}],
+  "2026-11-16":[{"National":["revolution_day"]}],
+  "2026-12-25":[{"National":["christmas_day"]}, {"Catholic":["christmas"]}],
+  "2027-01-01":[{"National":["new_year_s_day"]}],
+  "2027-02-01":[{"National":["constitution_day"]}],
+  "2027-03-15":[{"National":["benito_juárez_s_birthday"]}],
+  "2027-03-25":[{"National":["maundy_thursday"]}],
+  "2027-03-26":[{"National":["good_friday"]}, {"Catholic":["good_friday"]}],
+  "2027-04-30":[{"National":["labour_day"]}],
+  "2027-09-16":[{"National":["independence_day"]}],
+  "2027-11-15":[{"National":["revolution_day"]}],
+  "2027-12-25":[{"National":["christmas_day"]}, {"Catholic":["christmas"]}]
+}
