@@ -10,14 +10,13 @@ set_time_limit(0);
 /**
  * CONFIG
  */
-$MAX_INDEX    = 1000;
-$EXT          = 'jpg';
-$FALLBACK_EXT = 'png';
+$MAX_INDEX = 1000;
+$EXT = 'jpg';
 
 /**
  * Batch config
  */
-$BATCH_SIZE = (int) Q_Config::get('AI', 'images', 'batch', 10);
+$BATCH_SIZE = (int) Q_Config::get('AI', 'images', 'batch', 1);
 if ($BATCH_SIZE <= 1) {
 	$BATCH_SIZE = 0;
 }
@@ -27,8 +26,25 @@ if ($BATCH_SIZE <= 1) {
  */
 $opts = getopt('', array(
 	'size:',
-	'orientation:'
+	'orientation:',
+	'ideogram',
+	'google',
+	'openai',
+	'text'
 ));
+
+$useIdeogram = isset($opts['ideogram']);
+$useGoogle   = isset($opts['google']);
+$useOpenAI   = isset($opts['openai']);
+$allowText   = isset($opts['text']);
+
+/**
+ * Default: Ideogram + text
+ */
+if (!$useIdeogram && !$useGoogle && !$useOpenAI) {
+	$useIdeogram = true;
+	$allowText = true;
+}
 
 /**
  * Resolve size / orientation
@@ -37,41 +53,45 @@ $orientation = isset($opts['orientation'])
 	? strtolower($opts['orientation'])
 	: 'square';
 
-$width  = 1024;
-$height = 1024;
-
 if (!empty($opts['size']) && preg_match('/^(\d+)x(\d+)$/', $opts['size'], $m)) {
 	$width  = (int) $m[1];
 	$height = (int) $m[2];
 } else {
 	switch ($orientation) {
 		case 'portrait':
-			$width = 1024; $height = 1536; break;
+			$width = 1024; $height = 1536;
+			break;
 		case 'landscape':
-			$width = 1536; $height = 1024; break;
+			$width = 1536; $height = 1024;
+			break;
 		default:
-			$width = 1024; $height = 1024; break;
+			$width = 1024; $height = 1024;
 	}
 }
-$size = "{$width}x{$height}";
+$size = $width . 'x' . $height;
 
 /**
  * Load configs
  */
-$globalHolidaysFile = CALENDARS_PLUGIN_CONFIG_DIR . DS . 'holidays.json';
-$languagesFile      = PLACES_PLUGIN_CONFIG_DIR . DS . 'languages.json';
-$festivenessFile    = CALENDARS_PLUGIN_CONFIG_DIR . DS . 'festiveness.json';
-
-$globalHolidays   = json_decode(@file_get_contents($globalHolidaysFile), true);
-$countryLanguages = json_decode(@file_get_contents($languagesFile), true);
-$festivenessMap   = json_decode(@file_get_contents($festivenessFile), true);
+$globalHolidays = json_decode(
+	@file_get_contents(CALENDARS_PLUGIN_CONFIG_DIR . DS . 'holidays.json'),
+	true
+);
+$countryLanguages = json_decode(
+	@file_get_contents(PLACES_PLUGIN_CONFIG_DIR . DS . 'languages.json'),
+	true
+);
+$festivenessMap = json_decode(
+	@file_get_contents(CALENDARS_PLUGIN_CONFIG_DIR . DS . 'festiveness.json'),
+	true
+);
 
 if (!$globalHolidays || !$countryLanguages) {
-	die("Failed to load holiday or language config\n");
+	die("Failed to load configs\n");
 }
 
 /**
- * Collect all unique languages
+ * Collect languages
  */
 $allLanguages = array();
 foreach ($countryLanguages as $langs) {
@@ -80,61 +100,53 @@ foreach ($countryLanguages as $langs) {
 		$allLanguages[$lang] = true;
 	}
 }
-$allLanguages = array_keys($allLanguages);
+$allLanguages = array('ru', 'uk', 'en');
 
 /**
- * Scene templates by festiveness tier
+ * Scene templates
  */
 $SCENES = array(
 	'somber' => array(
 		'a solemn ceremonial scene with restrained motion, symbolic objects, and reverent atmosphere',
-		'a quiet commemorative composition with low movement, controlled lighting, and dignified presence',
-		'a reflective painterly scene centered on remembrance, history, or collective memory'
+		'a quiet commemorative composition with low movement and dignified presence',
+		'a reflective painterly scene centered on remembrance and collective memory'
 	),
 	'universal' => array(
-		'an ornate cultural scene featuring traditional objects, textiles, and symbolic elements',
-		'a richly detailed cultural environment emphasizing craftsmanship, materials, and atmosphere',
-		'a layered painterly composition inspired by fine art and historical poster traditions'
+		'an ornate cultural scene featuring traditional objects and symbolism',
+		'a richly detailed cultural environment emphasizing craftsmanship',
+		'a layered painterly composition inspired by historical poster traditions'
 	),
 	'festive' => array(
-		'a vivid celebratory scene filled with light, motion, decorative elements, and visual energy',
-		'a joyful composition combining cultural motifs, patterns, and dramatic lighting',
-		'a richly ornamented festive environment with celebration, music, gathering, or ritual'
+		'a vivid celebratory scene filled with light, motion, and ornamentation',
+		'a joyful composition combining cultural motifs and dramatic lighting',
+		'a richly ornamented festive environment with gathering and ritual'
 	)
 );
 
 /**
- * Prompt templates by festiveness tier
+ * Prompt templates
  */
 $TEMPLATES = array(
 	'somber' => array(
-		'Respectful commemorative image for {{culture}} holiday: {{holiday}}. {{scene}}.
-		Serious, dignified tone. Emotionally restrained. Text in {{language}}.',
-		'Memorial-style photo for {{culture}} {{holiday}}. {{scene}}.
-		Subdued energy, controlled color, reverent mood. Text in {{language}}.'
+		'Respectful commemorative image for {{culture}} holiday of {{holiday}}. {{scene}}. Text in {{language}}.',
+		'Memorial-style image for {{culture}} holiday of {{holiday}}. {{scene}}. Text in {{language}}.'
 	),
 	'universal' => array(
-		'Highly detailed cultural image for {{culture}} holiday: {{holiday}}. {{scene}}.
-		Balanced emotional tone, rich visual detail. Text in {{language}}.',
-		'Artistic holiday illustration for {{culture}} {{holiday}}. {{scene}}.
-		Ornate, painterly, culturally expressive. Text in {{language}}.'
+		'Highly detailed cultural image for {{culture}} holiday of {{holiday}}. {{scene}}. Text in {{language}}.',
+		'Artistic holiday illustration for {{culture}} holiday of {{holiday}}. {{scene}}. Text in {{language}}.'
 	),
 	'festive' => array(
-		'Vibrant celebratory image for {{culture}} holiday: {{holiday}}. {{scene}}.
-		High energy, joyful atmosphere, luminous color. Text in {{language}}.',
-		'Festive holiday photo for {{culture}} holiday: {{holiday}}. {{scene}}.
-		Dynamic composition, exuberant decoration, celebratory mood. Text in {{language}}.'
+		'Vibrant celebratory image for {{culture}} holiday of {{holiday}}. {{scene}}. Text in {{language}}.',
+		'Festive holiday image for {{culture}} holiday of {{holiday}}. {{scene}}. Text in {{language}}.'
 	)
 );
 
 /**
- * Determine festiveness tier
+ * Festiveness tier
  */
 function festivenessTier($holidayKey, $festivenessMap)
 {
-	if (!isset($festivenessMap[$holidayKey])) {
-		return 'universal';
-	}
+	if (!isset($festivenessMap[$holidayKey])) return 'universal';
 	$v = (int) $festivenessMap[$holidayKey];
 	if ($v <= 3) return 'somber';
 	if ($v <= 6) return 'universal';
@@ -142,10 +154,18 @@ function festivenessTier($holidayKey, $festivenessMap)
 }
 
 /**
- * Generate prompt
+ * Prompt generator
  */
-function generatePrompt($culture, $holiday, $languageName, $scene, $template, $orientation)
-{
+function generatePrompt(
+	$culture,
+	$holiday,
+	$languageName,
+	$scene,
+	$template,
+	$orientation,
+	$allowText,
+	$modelBias // 'ideogram' | 'google' | 'openai'
+) {
 	$prompt = str_replace(
 		array('{{culture}}', '{{holiday}}', '{{scene}}', '{{language}}'),
 		array($culture, $holiday, $scene, $languageName),
@@ -155,53 +175,74 @@ function generatePrompt($culture, $holiday, $languageName, $scene, $template, $o
 	switch ($orientation) {
 		case 'portrait':  $prompt .= ' Vertical composition.'; break;
 		case 'landscape': $prompt .= ' Wide cinematic composition.'; break;
-		default:          $prompt .= ' Balanced square composition.'; break;
+		default:          $prompt .= ' Balanced square composition.';
 	}
 
-	$prompt .= <<<EOT
-It should feature a prominent, appropriate and personal greeting for the holiday, in the form of a title and a subtitle.
-This is intended to be sent by people to each other for this holiday.
-High detail. No flat illustration. No cartoon style. Ornate and beautiful.
-Dense decorative detail, layered textures, intricate patterns, and expressive lighting.
-Cinematic depth, visible brush texture, ornamental framing, and dramatic color harmony.
-No minimalism. No flat vector art.
-Very important: No Studio Ghibli style. No storybook illustration. No pastel children's art.
+	if ($allowText) {
+		$prompt .= "\nProminent holiday greeting with title and subtitle.";
+	} else {
+		$prompt .= "\nDo NOT render any text or writing.";
+	}
+
+	$prompt .= "\nHigh detail. Ornate. Painterly. Cinematic lighting.";
+
+	/* IMPORTANT: style constraints ONLY for OpenAI */
+	if ($modelBias === 'openai') {
+		$prompt .= <<<EOT
+
+No flat illustration.
+No cartoon style.
+No minimalism.
+No flat vector art.
+Very important:
+No Studio Ghibli style.
+No storybook illustration.
+No pastel children's art.
 EOT;
+	}
 
 	return $prompt;
 }
 
 /**
- * Image adapter
+ * Translation prompt (OpenAI edit)
  */
-$imageAdapter = AI_Image::create('openai');
-if (!$imageAdapter) {
-	die("OpenAI image adapter not available\n");
+function translationPrompt($language)
+{
+	return
+		"Replace the visible holiday greeting text with correct {$language}.\n" .
+		"Use standard, well-known holiday phrases.\n" .
+		"Preserve layout, colors, lighting, and composition.\n" .
+		"Do not alter the scene.";
+}
+
+/**
+ * Adapters
+ */
+$ideogram = AI_Image::create('ideogram');
+$google   = AI_Image::create('google');
+$openai   = AI_Image::create('openai');
+
+if (!$ideogram || !$google || !$openai) {
+	die("Missing adapters\n");
 }
 
 /**
  * Batch helpers
  */
 $batchCount = 0;
-
-function batchStartIfNeeded(&$batchCount, $BATCH_SIZE)
-{
-	if ($BATCH_SIZE && $batchCount === 0) {
-		Q_Utils::batchStart();
-	}
+function batchStart(&$c, $n) {
+	if ($n && $c === 0) Q_Utils::batchStart();
 }
-
-function batchFlushIfNeeded(&$batchCount, $BATCH_SIZE)
-{
-	if ($BATCH_SIZE && $batchCount >= $BATCH_SIZE) {
+function batchFlush(&$c, $n) {
+	if ($n && $c >= $n) {
 		Q_Utils::batchExecute();
-		$batchCount = 0;
+		$c = 0;
 	}
 }
 
 /**
  * MAIN LOOP
- * Index-first, deterministic, idempotent
  */
 for ($index = 1; $index <= $MAX_INDEX; $index++) {
 
@@ -211,10 +252,10 @@ for ($index = 1; $index <= $MAX_INDEX; $index++) {
 
 		foreach ($entries as $entry) {
 			foreach ($entry as $culture => $holidays) {
-				foreach ($holidays as $holidayName) {
+				foreach ($holidays as $holiday) {
 
-					$holidayKey = Q_Utils::normalize($holidayName);
-					$tier = festivenessTier($holidayKey, $festivenessMap);
+					$key = Q_Utils::normalize($holiday);
+					$tier = festivenessTier($key, $festivenessMap);
 
 					foreach ($allLanguages as $lang) {
 
@@ -222,63 +263,133 @@ for ($index = 1; $index <= $MAX_INDEX; $index++) {
 						if (empty($langInfo[$lang]['name'])) continue;
 
 						$outDir = APP_FILES_DIR . DS . 'Calendars' . DS . 'holidays'
-                            . DS . $culture
-							. DS . $holidayKey
-							. DS . "$year-$index";
+							. DS . $culture . DS . $key . DS . $year . '-' . $index;
 
-						$path = $outDir . DS . "$lang.$EXT";
+						if (!is_dir($outDir)) mkdir($outDir, 0755, true);
 
-						// Skip if already generated
-						if (file_exists($path)) {
-							continue;
-						}
-
-						if (!is_dir($outDir)) {
-							mkdir($outDir, 0755, true);
-						}
+						$path = $outDir . DS . $lang . '.' . $EXT;
+						if (file_exists($path)) continue;
 
 						$scene    = $SCENES[$tier][array_rand($SCENES[$tier])];
 						$template = $TEMPLATES[$tier][array_rand($TEMPLATES[$tier])];
 
+						$modelBias =
+							$useOpenAI ? 'openai' :
+							($useGoogle ? 'google' : 'ideogram');
+
 						$prompt = generatePrompt(
-                            $culture,
-							$holidayName,
+							$culture,
+							$holiday,
 							$langInfo[$lang]['name'],
 							$scene,
 							$template,
-							$orientation
+							$orientation,
+							$allowText,
+							$modelBias
 						);
 
-						batchStartIfNeeded($batchCount, $BATCH_SIZE);
+						batchStart($batchCount, $BATCH_SIZE);
 
-						$imageAdapter::generate($prompt, array(
-							'format'   => $EXT,
-							'width'    => $width,
-							'height'   => $height,
-							'size'     => $size,
-							'quality'  => 'hd',
-							'callback' => function ($result) use ($path, $holidayName, $lang) {
-								if (!empty($result['data'])) {
-									file_put_contents($path, $result['data']);
-									echo "Generated $path\n";
-								} else {
-									echo "Failed $holidayName ($lang)\n";
+						/* Ideogram only (default) */
+						if ($useIdeogram && !$useGoogle && !$useOpenAI) {
+							$ideogram->generate($prompt, array(
+								'format' => $EXT,
+								'width'  => $width,
+								'height' => $height,
+								'callback' => function ($r) use ($path) {
+									if (!empty($r['data'])) {
+										file_put_contents($path, $r['data']);
+									}
 								}
-							}
-						));
+							));
+							$batchCount++;
+							batchFlush($batchCount, $BATCH_SIZE);
+							continue;
+						}
 
-						$batchCount++;
-						batchFlushIfNeeded($batchCount, $BATCH_SIZE);
+						/* Google only */
+						if ($useGoogle && !$useOpenAI) {
+							$google->generate($prompt, array(
+								'format' => $EXT,
+								'width'  => $width,
+								'height' => $height,
+								'size'   => $size,
+								'callback' => function ($r) use ($path) {
+									if (!empty($r['data'])) {
+										file_put_contents($path, $r['data']);
+									}
+								}
+							));
+							$batchCount++;
+							batchFlush($batchCount, $BATCH_SIZE);
+							continue;
+						}
+
+						/* OpenAI only */
+						if ($useOpenAI && !$useGoogle) {
+							$openai->generate($prompt, array(
+								'format'  => $EXT,
+								'width'   => $width,
+								'height'  => $height,
+								'size'    => $size,
+								'quality' => 'hd',
+								'callback' => function ($r) use ($path) {
+									if (!empty($r['data'])) {
+										file_put_contents($path, $r['data']);
+									}
+								}
+							));
+							$batchCount++;
+							batchFlush($batchCount, $BATCH_SIZE);
+							continue;
+						}
+
+						/* Google → OpenAI (text correction) */
+						if ($useGoogle && $useOpenAI && $allowText) {
+							$google->generate($prompt, array(
+								'format' => 'png',
+								'width'  => $width,
+								'height' => $height,
+								'size'   => $size,
+								'callback' => function ($r) use (
+									$openai, $langInfo, $lang, $path,
+									$width, $height, $size, $EXT
+								) {
+									if (empty($r['data'])) return;
+
+									$tmp = tempnam(sys_get_temp_dir(), 'img_') . '.png';
+									file_put_contents($tmp, $r['data']);
+
+									$openai->generate(
+										translationPrompt($langInfo[$lang]['name']),
+										array(
+											'images'  => array(file_get_contents($tmp)),
+											'format'  => $EXT,
+											'width'   => $width,
+											'height'  => $height,
+											'size'    => $size,
+											'quality' => 'hd',
+											'callback' => function ($res) use ($path, $tmp) {
+												if (!empty($res['data'])) {
+													file_put_contents($path, $res['data']);
+												}
+												@unlink($tmp);
+											}
+										)
+									);
+								}
+							));
+							$batchCount += 2;
+							batchFlush($batchCount, $BATCH_SIZE);
+						}
 					}
 				}
 			}
 		}
+		break;
 	}
 }
 
-/**
- * Final batch flush
- */
 if ($BATCH_SIZE && $batchCount > 0) {
 	Q_Utils::batchExecute();
 }
