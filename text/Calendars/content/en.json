@@ -335,7 +335,7 @@
 	"@override": {
 		"Assets/content": {
 			"credits": {
-				"EventParticipation": "Event Participation"
+				"EventParticipation": "for reservation to \"<a data-publisherId='{{toPublisherId}}' data-streamName='{{toStreamName}}'>{{toStreamTitle}}</a>\""
 			},
 			"payments": {
 				"reasons": {

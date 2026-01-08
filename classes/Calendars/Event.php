@@ -9,6 +9,22 @@
  */
 class Calendars_Event extends Base_Calendars_Event
 {
+    /**
+    * Call-scope registry used as a re-entrancy / duplicate-call guard.
+    *
+    * This static store tracks which operations are currently executing (optionally
+    * keyed by a generated scope key), allowing callers to decide whether to invoke
+    * a method again or skip it to avoid duplicate or recursive processing.
+    *
+    * Typical lifecycle:
+    * - On method entry: set `$callScope[$op][$scopeKey] = <args or metadata>`
+    * - On method exit (always, via try/finally): unset that entry
+    *
+    * @property {Object} callScope
+    * @static
+    */
+    public static $callScope = array();
+
 	static function defaultDuration()
 	{
 		return Q_Config::expect('Calendars', 'events', 'defaults', 'duration');
@@ -786,6 +802,21 @@ class Calendars_Event extends Base_Calendars_Event
 		$result['venue'] = $event->getAttribute('venue');
 		return $result;
 	}
+
+    /**
+     * Creates a unique call-scope key by imploding all provided arguments.
+     *
+     * @method callScopeKey
+     * @static
+     * @param {...*} args
+     *   One or more values to be included in the scope key.
+     * @return {String}
+     *   A colon-delimited string composed of all arguments.
+     */
+    public static function callScopeKey() {
+        return implode(':', func_get_args());
+    }
+
 	/**
 	 * Join event and indicate whether you are going or not
 	 * @method join
@@ -812,7 +843,21 @@ class Calendars_Event extends Base_Calendars_Event
 			throw new Q_Exception("Event already started");
 		}
 
-		$user = Users_User::fetch($userId, true);
+        $callScopeKey = self::callScopeKey($stream->publisherId, $stream->name, $userId);
+        self::$callScope['going'][$callScopeKey] = func_get_args();
+
+        $_return = function ($value) use ($callScopeKey) {
+            unset(self::$callScope['going'][$callScopeKey]);
+            return $value;
+        };
+
+        // check if $userId already have extra going===$going do nothing
+        $getGoing = self::getGoing($stream, $userId, true);
+        if ($getGoing['going'] === $going) {
+            return $_return($getGoing['participant']);
+        }
+
+        $user = Users_User::fetch($userId, true);
 		$isPublisher = $userId == $stream->publisherId;
 		$isAdmin = (bool)Users::roles($publisherId, Q_Config::expect('Calendars', 'events', 'admins'));
 		$skipPayment = Q::ifset($options, 'skipPayment', false);
@@ -824,10 +869,19 @@ class Calendars_Event extends Base_Calendars_Event
 
 		$options['userId'] = $userId;
 
-		if ($going == 'no') {
-			$stream->leave($options);
+        $payment = $stream->getAttribute("payment");
+        $amount = Q::ifset($payment, "amount", 0);
+        $discount = Q::ifset($payment, "discount", 0);
+        $bonus = Q::ifset($payment, "bonus", 0);
+        $paymentType = Q::ifset($payment, "type", null);
 
-			// $stream->unsubscribe($options);
+        if ($going == 'no') {
+            // if user is not a participant, nothing to do
+            if (!$getGoing['participant']) {
+                $_return(null);
+            }
+
+            $stream->leave($options);
 
 			// unrelate all relatedParticipants streams related by this user
 			$relations = Streams_RelatedTo::select()->where(array(
@@ -875,7 +929,7 @@ class Calendars_Event extends Base_Calendars_Event
 							self::relateParticipants($userId, $stream, $relatedParticipants);
 
 							// and do nothing...
-							return $p;
+							return $_return($p);
 						}
 
 						++$yesCount;
@@ -887,12 +941,7 @@ class Calendars_Event extends Base_Calendars_Event
 
 				// check payment
 				$paymentRequired = false;
-				$payment = $stream->getAttribute("payment");
-				$amount = Q::ifset($payment, "amount", 0);
-				$discount = Q::ifset($payment, "discount", 0);
-				$bonus = Q::ifset($payment, "bonus", 0);
 				$resAmount = 0;
-				$paymentType = Q::ifset($payment, "type", null);
 				if ($paymentType == "required" && ($isPublisher || $isAdmin)) {
 					Streams_Message::post($userId, $userId, "Calendars/user/reminders", array(
 						"type" => "Calendars/payment/skip",
@@ -934,7 +983,7 @@ class Calendars_Event extends Base_Calendars_Event
 							Users::communityId(), 
 							$userId, 
 							$resAmount,
-							'EventParticipation',
+                            Assets::JOINED_PAID_STREAM,
 							array_merge($options, array(
 								'toPublisherId' => $stream->publisherId,
 								'toStreamName' => $stream->name,
@@ -1026,7 +1075,7 @@ class Calendars_Event extends Base_Calendars_Event
 		$participant->publisherId = $stream->publisherId;
 		$participant->streamName = $stream->name;
 		$participant->userId = $user->id;
-		if (!$participant->retrieve()) {
+		if (!$participant->retrieve(null, false, array("ignoreCache" => true))) {
 			// this shouldn't happen, but just in case
 			throw new Q_Exception_MissingRow(array(
 				'table' => 'participant',
@@ -1037,21 +1086,17 @@ class Calendars_Event extends Base_Calendars_Event
 		$participant->setExtra(@compact('going', 'startTime'));
 		if ($going === 'no') {
 			$participant->revokeRoles(["registered", "requested"]);
-            if ($payment) {
-                $participant->setExtra('paid', 'no');
-            }
         } else if($going === 'maybe') {
             self::grantRoles($participant, "requested");
-            if ($payment) {
-                $participant->setExtra('paid', 'reserved');
-            }
 		} else if ($going === 'yes') {
             self::grantRoles($participant, "registered");
-            if ($payment) {
-                $participant->setExtra('paid', 'fully');
-            }
 		}
-		$participant->save();
+        if ($paymentIntent) {
+            $participant->setExtra('paymentIntent', $paymentIntent);
+        } else if ($paid) {
+            $participant->setExtra('paymentMethod', $paid);
+        }
+        $participant->save();
 
 		// Let everyone in the stream know of a change in going
 		$stream->post($user->id, array(
@@ -1064,13 +1109,7 @@ class Calendars_Event extends Base_Calendars_Event
 			'isAdmin', 'skipPayment', 'relatedParticipants'
 		), 'after');
 
-		if ($paymentIntent) {
-			$participant->set('paymentIntent', $paymentIntent);
-		} else if ($paid) {
-			$participant->set('paid', $paid);
-		}
-
-		return $participant;
+		return $_return($participant);
 	}
 
     /**
@@ -1136,7 +1175,6 @@ class Calendars_Event extends Base_Calendars_Event
 	 * @param {Streams_Stream} $event
 	 * @param {Array} $relatedParticipants array in format [["publisherId" => ..., "streamName" => ...], ...]
 	 * @throws
-	 * @return String Yes, No, Maybe
 	 */
 	static function relateParticipants ($userId, $event, $relatedParticipants) {
 		if (!is_array($relatedParticipants)) {
@@ -1196,16 +1234,31 @@ class Calendars_Event extends Base_Calendars_Event
 			);
 		}
 	}
-	/**
-	 * Get whether userId is going to an event
-	 * @method getGoing
-	 * @static
-	 * @param {Streams_Stream} $event Required.
-	 * @param {String} $userId If null loggedin user used.
-	 * @throws
-	 * @return String Yes, No, Maybe
-	 */
-	static function getGoing($event, $userId = null) {
+
+    /**
+     * Determines whether a user is marked as "going" to a given event stream.
+     *
+     * If no user ID is provided, the currently logged-in user will be used.
+     * The method attempts to retrieve the corresponding Streams_Participant
+     * record and returns either the "going" status or extended information
+     * depending on the $withParticipant flag.
+     *
+     * @method getGoing
+     * @static
+     * @param {Object} event
+     *   The event stream object. Must contain `publisherId` and `name` properties.
+     * @param {Number|null} [userId=null]
+     *   Optional user ID. If omitted or falsy, the currently logged-in user is used.
+     * @param {Boolean} [withParticipant=false]
+     *   Whether to return the participant object together with the going status.
+     * @return {String|Object}
+     *   Returns one of the following:
+     *   - `"no"` if the user is not a participant and `$withParticipant` is false
+     *   - A string value of the participant's `going` extra field if found
+     *   - An object `{ participant: null, going: "no" }` if not found and `$withParticipant` is true
+     *   - An object `{ participant: Streams_Participant, going: String }` if found and `$withParticipant` is true
+     */
+	static function getGoing($event, $userId = null, $withParticipant = false) {
 		if (!$userId) {
 			$loggedInUser = Users::loggedInUser();
 			$userId = Q::ifset($loggedInUser, "id", null);
@@ -1216,8 +1269,22 @@ class Calendars_Event extends Base_Calendars_Event
 		$participant->streamName = $event->name;
 		$participant->userId = $userId;
 		if (!$participant->retrieve(null, false, array("ignoreCache" => true))) {
+            if ($withParticipant) {
+                return array(
+                    'participant' => null,
+                    'going' => 'no'
+                );
+            }
 			return 'no';
 		}
+
+        if ($withParticipant) {
+            return array(
+                'participant' => $participant,
+                'going' => $participant->getExtra('going')
+            );
+        }
+
 		return $participant->getExtra('going');
 	}
 	/**

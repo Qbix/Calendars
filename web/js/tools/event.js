@@ -1387,9 +1387,9 @@ Q.Tool.define("Calendars/event", function(options) {
 						if (!state.isAdmin && needCredits > currentCredits) {
 							Q.Dialogs.pop();
 							Q.Assets.Payments.stripe({
-								amount: 0, // needCredits - currentCredits,
+								amount: needCredits - currentCredits,
 								currency: options.currency || 'USD',
-								reason: 'EventParticipation',
+								reason: 'JoinedPaidStream',
 								metadata: {
 									publisherId: tool.state.publisherId,
 									streamName: tool.state.streamName
@@ -2190,12 +2190,10 @@ Q.Template.set('Calendars/event/tool',
 	'		<div class="Calendars_info_content">{{text.event.tool.Promote}}</div>' +
 	'	</div>' +
 	'{{/if}}' +
-	'{{#if show.myqr}}' +
 	'	<div class="Q_button Calendars_aspect_myqr" {{#ifEquals show.myqr false}}style="display:none"{{/ifEquals}} data-invoke="myqr">' +
 	'		<div class="Calendars_info_icon"><i class="qp-communities-qrcode"></i></div>' +
 	'		<div class="Calendars_info_content">{{text.event.tool.Myqr}}</div>' +
 	'	</div>' +
-	'{{/if}}' +
 	'{{#if show.trips}}' +
 	'	<div class="Q_button Travel_aspect_trips" {{#ifEquals show.trips false}}style="display:none"{{/ifEquals}}>' +
 	'		<div class="Calendars_info_buttons">{{{tool "Travel/trips" publisherId=stream.fields.publisherId streamName=stream.fields.name}}}</div>' +
