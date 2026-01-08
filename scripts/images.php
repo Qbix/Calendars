@@ -108,21 +108,21 @@ $SCENES = array(
  */
 $TEMPLATES = array(
 	'somber' => array(
-		'Respectful commemorative image for {{holiday}}. {{scene}}.
+		'Respectful commemorative image for {{culture}} holiday: {{holiday}}. {{scene}}.
 		Serious, dignified tone. Emotionally restrained. Text in {{language}}.',
-		'Memorial-style photo for {{holiday}}. {{scene}}.
+		'Memorial-style photo for {{culture}} {{holiday}}. {{scene}}.
 		Subdued energy, controlled color, reverent mood. Text in {{language}}.'
 	),
 	'universal' => array(
-		'Highly detailed cultural image for {{holiday}}. {{scene}}.
+		'Highly detailed cultural image for {{culture}} holiday: {{holiday}}. {{scene}}.
 		Balanced emotional tone, rich visual detail. Text in {{language}}.',
-		'Artistic holiday illustration for {{holiday}}. {{scene}}.
+		'Artistic holiday illustration for {{culture}} {{holiday}}. {{scene}}.
 		Ornate, painterly, culturally expressive. Text in {{language}}.'
 	),
 	'festive' => array(
-		'Vibrant celebratory image for {{holiday}}. {{scene}}.
+		'Vibrant celebratory image for {{culture}} holiday: {{holiday}}. {{scene}}.
 		High energy, joyful atmosphere, luminous color. Text in {{language}}.',
-		'Festive holiday photo for {{holiday}}. {{scene}}.
+		'Festive holiday photo for {{culture}} holiday: {{holiday}}. {{scene}}.
 		Dynamic composition, exuberant decoration, celebratory mood. Text in {{language}}.'
 	)
 );
@@ -144,11 +144,11 @@ function festivenessTier($holidayKey, $festivenessMap)
 /**
  * Generate prompt
  */
-function generatePrompt($holiday, $languageName, $scene, $template, $orientation)
+function generatePrompt($culture, $holiday, $languageName, $scene, $template, $orientation)
 {
 	$prompt = str_replace(
-		array('{{holiday}}', '{{scene}}', '{{language}}'),
-		array($holiday, $scene, $languageName),
+		array('{{culture}}', '{{holiday}}', '{{scene}}', '{{language}}'),
+		array($culture, $holiday, $scene, $languageName),
 		$template
 	);
 
@@ -222,6 +222,7 @@ for ($index = 1; $index <= $MAX_INDEX; $index++) {
 						if (empty($langInfo[$lang]['name'])) continue;
 
 						$outDir = APP_FILES_DIR . DS . 'Calendars' . DS . 'holidays'
+                            . DS . $culture
 							. DS . $holidayKey
 							. DS . "$year-$index";
 
@@ -240,6 +241,7 @@ for ($index = 1; $index <= $MAX_INDEX; $index++) {
 						$template = $TEMPLATES[$tier][array_rand($TEMPLATES[$tier])];
 
 						$prompt = generatePrompt(
+                            $culture,
 							$holidayName,
 							$langInfo[$lang]['name'],
 							$scene,
