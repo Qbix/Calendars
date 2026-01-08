@@ -1,333 +1,348 @@
 {
-    "months": {
-        "Jan": "Jan",
-        "Feb": "fevriye",
-        "Mar": "Mar",
-        "Apr": "Apr",
-        "May": "Me",
-        "Jun": "Jun",
-        "Jul": "Jul",
-        "Aug": "Aug",
-        "Sep": "Sep",
-        "Oct": "oktòb",
-        "Nov": "Nov",
-        "Dec": "Desanm"
-    },
-    "monthsLong": {
-        "Jan": "Janvye",
-        "Feb": "fevriye",
-        "Mar": "Mas",
-        "Apr": "Avril",
-        "May": "Me",
-        "Jun": "jen",
-        "Jul": "Jiyè",
-        "Aug": "Out",
-        "Sep": "Septanm",
-        "Oct": "Oktòb",
-        "Nov": "Novanm",
-        "Dec": "Desanm"
-    },
-    "weekdays": {
-        "Sun": "Solèy",
-        "Mon": "Mon",
-        "Tue": "Mar",
-        "Wed": "Mer",
-        "Thu": "Jeu",
-        "Fri": "Vendredi",
-        "Sat": "Sam"
-    },
-    "weekdaysLong": {
-        "Sun": "Dimanch",
-        "Mon": "Lendi",
-        "Tue": "Madi",
-        "Wed": "Mèkredi",
-        "Thu": "Jedi",
-        "Fri": "Vandredi",
-        "Sat": "Samdi"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "Planifye Nouvo Evènman"
-        },
-        "tool": {
-            "HostedBy": "Akomode pa {{name}}",
-            "Name": "Non",
-            "AreYouIn": "Ou nan?",
-            "Yes": "Wi",
-            "No": "Non",
-            "Ok": "Oke",
-            "Cancel": "Anile",
-            "Maybe": "Petèt",
-            "Conversation": "Konvèsasyon",
-            "Promote": "Ankouraje evènman sa a",
-            "Reminders": "Rapèl",
-            "RemindersLabel": "Mwen vle resevwa notifikasyon sou yon evènman nan:",
-            "MoreInfo": "Plis enfòmasyon",
-            "Registration": "Enskripsyon",
-            "SetReminders": "Tanpri mete rapèl yo",
-            "ReservationFee": "Frè rezèvasyon",
-            "AddParticipants": "Ajoute Patisipan yo",
-            "ManageReservation": "Jere rezèvasyon",
-            "UpdateFutureReservations": "Ou vle tou mete ajou tout rezèvasyon nan lavni menm jan an?",
-            "RecurringAdmin": "Anviwònman renouvlab",
-            "MakeReservation": "Fè rezèvasyon",
-            "StartLiveStream": "Klike sou Live Stream",
-            "LiveStreamEnded": "Live stream te fini",
-            "ClickToViewRecording": "klike pou wè anrejistreman an",
-            "Checkin": "Eskane kòd patisipan yo",
-            "Myqr": "Tcheke",
-            "CloseEvent": {
-                "button": "Anile Evènman",
-                "confirm": {
-                    "text": {
-                        "Cancel": "Èske w sèten ou vle anile evènman sa a?",
-                        "Participant": "Gen 1 patisipan nan evènman sa a",
-                        "Participants": "Gen {{count}} patisipan nan evènman sa a",
-                        "Recurring": "Evènman sa a ap repete. Èske ou vle tou anile tout tan kap vini li yo tou?"
-                    },
-                    "trip": {
-                        "Cancel": "Èske ou vle tou anile vwayaj ou a {{tripDirection}} evènman sa a?",
-                        "Passengers": "Gen {{passengerCount}} pasaje ki konte sou ou.",
-                        "Title": "Fèmen vwayaj"
-                    },
-                    "directions": {
-                        "TO": "POU",
-                        "FROM": "SOTI",
-                        "to": "pou",
-                        "from": "soti nan"
-                    }
-                }
-            },
-            "Calendar": "Kalandriye",
-            "Interests": "Enterè",
-            "Directions": "Direksyon",
-            "TitleOfEvent": "Tit evènman an:",
-            "OpenTo": "Louvri pou",
-            "GoingTo": "pral nan",
-            "NotGoingTo": "pa pral nan",
-            "MaybeGoingTo": "pral petèt nan",
-            "AdminDontPay": "Admin pa bezwen peye",
-            "PublisherDontPay": "Piblikatè pa bezwen peye",
-            "EmptyList": "Lis vid",
-            "NeedToPayCredits": "Bezwen peye: <span>{{amount}} kredi<\/span>",
-            "PleaseJoinParticipants": "Tanpri rantre nan {{participant}}",
-            "YouReservingPlace": "Ou pral rezève plas ou.",
-            "SelectIncludesToAdd": "Chwazi youn oswa plis {{TypeDisplayPlural}} pou ajoute:",
-            "YouHaveNotRegisteredAnyIncluded": "Ou poko anrejistre okenn {{TypeDisplayPlural}}",
-            "Proceed": "Kontinye",
-            "MakeChanges": "Sove Chanjman mwen yo",
-            "CancelReservation": "Anile tout rezèvasyon an",
-            "Total": "Total",
-            "RequiredRelatedParticipants": "Evènman sa a egzije patisipan yo: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Tanpri modifye disponiblite &quot;{{title}}&quot; pou mete ajou paramèt renouvlab yo",
-            "Presentation": "Prezantasyon",
-            "YouAreNotParticipated": "Ou pa yon patisipan nan evènman an",
-            "LiveStreamStarted": "Live stream te kòmanse",
-            "WebRTCStarted": "Telekonferans te kòmanse",
-            "WebRTCEnded": "Telekonferans te fini"
-        },
-        "composer": {
-            "SetLocation": "Mete kote mwen an",
-            "SetInfoLink": "Mete Link pou plis enfòmasyon",
-            "ChooseAvailability": "Chwazi Sèvis Disponib",
-            "ChooseActivity": "Chwazi yon Aktivite",
-            "ChoosePublisher": "Chwazi Piblikatè",
-            "Day": "Jounen",
-            "Starting": "Kòmanse",
-            "Duration": "Dire",
-            "Hour": "Lè",
-            "Hours": "Orè",
-            "Minutes": "Minit",
-            "Ending": "Fini",
-            "People": "Moun",
-            "Share": "Pataje",
-            "Continue": "Kontinye",
-            "Recurring": "Renouvlab",
-            "RecurringTitle": "Jou ki repete",
-            "Daily": "Chak jou",
-            "Weekly": "Chak semèn",
-            "Monthly": "Chak mwa",
-            "SelectLocation": "Tanpri chwazi yon kote an premye.",
-            "eventType": "Kalite Evènman",
-            "EditTitle": "Panse ak yon tit enteresan...",
-            "SetTitle": "Tanpri mete tit evènman an",
-            "ScheduleOnlineConference": "Orè Konferans sou Entènèt",
-            "SOCDescription": "Tanpri defini lè konferans lan kòmanse ak lè fini. Chak moun ki vizite evènman an pandan peryòd tan sa a pral konekte otomatikman ak konferans sou entènèt.",
-            "EndDate": "Fen",
-            "location": {
-                "Title": "Mete Kote w la"
-            },
-            "interest": {
-                "Title": "Chwazi yon Aktivite",
-                "Filter": "Rechèch enterè..."
-            },
-            "SetLivestream": "Kole lyen pou difizyon \/ videyokonferans",
-            "Locally": "lokalman",
-            "EventInfoLink": "Link Enfòmasyon sou evènman an",
-            "TicketPurchaseLink": "Lyen pou achte tikè"
-        },
-        "EventAlreadyClosed": "Evènman sa a deja fèmen",
-        "addToCalendar": {
-            "permissions": {
-                "title": "Ajoute nan Kalandriye?",
-                "prompt": "Èske ou ta renmen ajoute evènman sa a nan kalandriye ou a?",
-                "yes": "Wi",
-                "no": "Non"
-            },
-            "dialog": {
-                "Title": "Ajoute Evènman nan Kalandriye w la"
-            }
-        },
-        "ErrorLeaveEndedEvent": "Padon, men ou pa ka kite evènman ki te fini"
-    },
-    "availabilities": {
-        "Title": "Disponibilite",
-        "NewAvailability": {
-            "Title": "Nouvo Disponibilite",
-            "SaveAvailability": "Sove Disponibilite",
-            "SelectTemplate": "Tanpri chwazi Sèvis",
-            "SelectLocation": "Tanpri chwazi Kote",
-            "SelectArea": "Tanpri chwazi Zòn",
-            "Type": "Kalite",
-            "Weekly": "Chak semèn",
-            "RecurringStartDate": "Renouvlab Dat Kòmanse",
-            "EndDate": "Dat fen",
-            "SelectTime": "Jere Plas Tan",
-            "SelectTimeSlot": "Chwazi yon plas tan",
-            "SelectTimeSlots": "Chwazi fant tan ou vle yo",
-            "PeopleMin": "Minimòm vizitè yo",
-            "PeopleMax": "Vizitè maksimòm",
-            "PeopleLabels": "Etikèt yo pèmèt",
-            "Next": "Next",
-            "Back": "Retounen",
-            "RecurringEndDate": "Dat fen renouvlab",
-            "ScheduleOnlineConference": "Orè telekonferans",
-            "SetLivestream": "Kole lyen pou difizyon \/ videyokonferans",
-            "SelectTimeZone": "Chwazi TimeZone"
-        },
-        "EditAvailability": "Edit Disponibilite",
-        "SetVisitors": "Mete vizitè yo",
-        "Price": "Pri",
-        "SelectAction": "Tanpri chwazi aksyon",
-        "OpenProfile": "Louvri pwofil",
-        "RemoveStaff": "Retire anplwaye yo",
-        "PleaseSelectTimeSlots": "Tanpri chwazi plas tan yo",
-        "ExceptionOccurred": "Eksepsyon ki te fèt",
-        "NotEnoughCreditsToParticipateEvents": "Pa gen ase kredi pou patisipe nan {{eventsAmount}} evènman yo. Ou bezwen {{needCredits}} kredi. Vle achte?",
-        "InviteStaff": "Envite anplwaye yo",
-        "LiveStream": "Live kouran"
-    },
-    "recurring": {
-        "dialog": {
-            "startDate": "Dat kòmanse",
-            "endDate": "Dat fen",
-            "justOnce": "Jis yon fwa",
-            "justOnceWeekly": "Semèn sa a sèlman",
-            "justOnceMonthly": "Mwa sa a sèlman",
-            "recurring": "Renouvlab"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "Evènman gratis",
-            "optional": "Kontribisyon si ou vle",
-            "required": "Peman obligatwa"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "Kontribisyon si ou vle",
-            "required": "Peman obligatwa",
-            "paid": "peye"
-        },
-        "confirmationDialog": {
-            "title": "Konfimasyon peman",
-            "content": "Evènman sa a gen yon kontribisyon si ou vle {{amount}}.",
-            "button": "Kontribye"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} poko fè pati evènman an. Èske ou vle ajoute yo kòm yon patisipan?",
-        "userNotFound": "Itilizatè pa jwenn",
-        "confirmYes": "Wi",
-        "confirmNo": "Non"
-    },
-    "notifications": {
-        "EventActivityIn": "Aktivite evènman nan {{{stream.fields.title}}}",
-        "RecurringRulesChanged": "Règ renouvlab chanje pou evènman {{{call 'message.getInstruction' 'eventTitle'}}}",
-        "ManageEmailSubscriptions": "jere abònman imel ou yo",
-        "IfUnsubscribe": "Si ou vle dezabòne",
-        "ClickHereToVisitEvent": "Tanpri klike isit la pou vizite evènman an",
-        "Calendars\/reminder": "Evènman &quot;{{{call 'message.getInstruction' 'name'}}&quot; ap kòmanse nan {{&call 'message.getInstruction' 'time'}}}",
-        "webrtc": {
-            "Started": "Telekonferans te kòmanse",
-            "Ended": "Telekonferans te fini"
-        },
-        "livestream": {
-            "Started": "Live stream te kòmanse",
-            "Ended": "Live stream te fini",
-            "ClickToView": "Gade li isit la."
-        }
-    },
-    "import": {
-        "linkTitle": "Ranpli Fèy kalkil sa a",
-        "fileLabel": "Telechaje Fèy kalkil:",
-        "importOptions": "Opsyon",
-        "importProgress": "Pwogrè",
-        "sampleCSV": "Telechaje echantiyon CSV",
-        "joinEventLabel": "Antre nan itilizatè yo nan evènman o aza",
-        "smsText": "Hey, mwen jis voye yon lyen pou ou {{communityName}}. Tanpri tcheke li.",
-        "emailSubject": "Jis voye yon lyen pou ou",
-        "emailBody": "Hey, mwen jis voye yon envitasyon ba ou {{communityName}}. Tanpri tcheke li.",
-        "fileNotFound": "Padon, dosye CSV pa jwenn.",
-        "fileEmpty": "Padon, dosye CSV vid.",
-        "fieldNotFound": "Yo pa jwenn jaden obligatwa &quot;{{1}}&quot;.",
-        "userIdNotFound": "itilizatè egziste men id vid",
-        "activateUsers": "voye mesaj aktivasyon bay itilizatè yo?",
-        "taskStreamInvalid": "kouran travay pa valab",
-        "instructionsEmpty": "enstriksyon kouran travay yo vid",
-        "interestsEmpty": "pa ka jwenn enterè",
-        "interestAbsent": "enterè {{1}} pa jwenn",
-        "complete": "Ranpli",
-        "errorLine": "liy {{1}}",
-        "errorsTitle": "Erè ki te fèt",
-        "communityUsers": "Sa a se lis kominote yo",
-        "toMainCommunityToo": "gen rapò ak kominote prensipal la tou",
-        "ChooseFile": "chwazi dosye"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "Reprezante yon evènman ke moun ka patisipe nan",
-            "displayType": "Evènman"
-        },
-        "Calendars\/recurring": {
-            "description": "Itilize pou fè rapò ak kouran ki fèt pou repete detanzantan",
-            "displayType": "Evènman ki repete"
-        }
-    },
-    "timeslots": {
-        "AddSlot": "Ajoute plas",
-        "StartTime": "Kòmanse Tan",
-        "EndTime": "Tan Fen",
-        "Save": "Sove",
-        "AddTimeSlot": "Ajoute Plas tan",
-        "CopyFromDay": "Kopi de jou",
-        "Nearest": "Ki pi pre",
-        "Today": "Jodi a",
-        "Tomorrow": "Demen",
-        "AfterTomorrow": "Apre demen"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "Abònman ak Kalandriye",
-        "copyLinkBelow": "Klike sou bouton ki anba a pou kopye lyen an nan clipboard ou",
-        "tapToCopy": "Tape bouton ki anba a pou kopye lyen an nan clipboard ou",
-        "goTo": "Ale nan:",
-        "pasteCopiedTo": "Kole lyen kopye nan jaden &quot;URL nan kalandriye&quot;.",
-        "clickAddCalendar": "Klike sou bouton &quot;Ajoute kalandriye&quot;.",
-        "copyLink": "Kopi Link",
-        "linkCopied": "Lyen kopye",
-        "step2": "Lyen kopye. Nou se sou louvri Google Kalandriye. Ou pral bezwen kole lyen an nan bwat tèks la, klike sou &quot;Ajoute kalandriye&quot;, epi fèmen tab la (gade ekran anba a)",
-        "calendarAppPreferences": "Louvri Preferans yo nan Aplikasyon Kalandriye a sou Mac ou a, epi mete Aplikasyon Kalandriye Default yo jan yo montre anba a.",
-        "thenCloseDialog": "Lè sa a, fèmen dyalòg sa a pou abònman nan kalandriye ou!",
-        "success": "Kalandriye te senkronize avèk siksè"
-    }
+	"months": {
+		"Jan": "Jan",
+		"Feb": "fevriye",
+		"Mar": "Mar",
+		"Apr": "Apr",
+		"May": "Me",
+		"Jun": "Jun",
+		"Jul": "Jul",
+		"Aug": "Aug",
+		"Sep": "Sep",
+		"Oct": "okt\u00f2b",
+		"Nov": "Nov",
+		"Dec": "Desanm"
+	},
+	"monthsLong": {
+		"Jan": "Janvye",
+		"Feb": "fevriye",
+		"Mar": "Mas",
+		"Apr": "Avril",
+		"May": "Me",
+		"Jun": "jen",
+		"Jul": "Jiy\u00e8",
+		"Aug": "Out",
+		"Sep": "Septanm",
+		"Oct": "Okt\u00f2b",
+		"Nov": "Novanm",
+		"Dec": "Desanm"
+	},
+	"weekdays": {
+		"Sun": "Sol\u00e8y",
+		"Mon": "Mon",
+		"Tue": "Mar",
+		"Wed": "Mer",
+		"Thu": "Jeu",
+		"Fri": "Vendredi",
+		"Sat": "Sam"
+	},
+	"weekdaysLong": {
+		"Sun": "Dimanch",
+		"Mon": "Lendi",
+		"Tue": "Madi",
+		"Wed": "M\u00e8kredi",
+		"Thu": "Jedi",
+		"Fri": "Vandredi",
+		"Sat": "Samdi"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Planifye Nouvo Ev\u00e8nman"
+		},
+		"tool": {
+			"HostedBy": "Akomode pa {{name}}",
+			"Name": "Non",
+			"AreYouIn": "Ou nan?",
+			"Yes": "Wi",
+			"No": "Non",
+			"Ok": "Oke",
+			"Cancel": "Anile",
+			"Maybe": "Pet\u00e8t",
+			"Conversation": "Konv\u00e8sasyon",
+			"Promote": "Ankouraje ev\u00e8nman sa a",
+			"Reminders": "Rap\u00e8l",
+			"RemindersLabel": "Mwen vle resevwa notifikasyon sou yon ev\u00e8nman nan:",
+			"MoreInfo": "Plis enf\u00f2masyon",
+			"Registration": "Enskripsyon",
+			"SetReminders": "Tanpri mete rap\u00e8l yo",
+			"ReservationFee": "Fr\u00e8 rez\u00e8vasyon",
+			"AddParticipants": "Ajoute Patisipan yo",
+			"ManageReservation": "Jere rez\u00e8vasyon",
+			"UpdateFutureReservations": "Ou vle tou mete ajou tout rez\u00e8vasyon nan lavni menm jan an?",
+			"RecurringAdmin": "Anviw\u00f2nman renouvlab",
+			"MakeReservation": "F\u00e8 rez\u00e8vasyon",
+			"StartLiveStream": "Klike sou Live Stream",
+			"LiveStreamEnded": "Live stream te fini",
+			"ClickToViewRecording": "klike pou w\u00e8 anrejistreman an",
+			"Checkin": "Eskane k\u00f2d patisipan yo",
+			"Myqr": "Tcheke",
+			"CloseEvent": {
+				"button": "Anile Ev\u00e8nman",
+				"confirm": {
+					"text": {
+						"Cancel": "\u00c8ske w s\u00e8ten ou vle anile ev\u00e8nman sa a?",
+						"Participant": "Gen 1 patisipan nan ev\u00e8nman sa a",
+						"Participants": "Gen {{count}} patisipan nan ev\u00e8nman sa a",
+						"Recurring": "Ev\u00e8nman sa a ap repete. \u00c8ske ou vle tou anile tout tan kap vini li yo tou?"
+					},
+					"trip": {
+						"Cancel": "\u00c8ske ou vle tou anile vwayaj ou a {{tripDirection}} ev\u00e8nman sa a?",
+						"Passengers": "Gen {{passengerCount}} pasaje ki konte sou ou.",
+						"Title": "F\u00e8men vwayaj"
+					},
+					"directions": {
+						"TO": "POU",
+						"FROM": "SOTI",
+						"to": "pou",
+						"from": "soti nan"
+					}
+				}
+			},
+			"Calendar": "Kalandriye",
+			"Interests": "Enter\u00e8",
+			"Directions": "Direksyon",
+			"TitleOfEvent": "Tit ev\u00e8nman an:",
+			"OpenTo": "Louvri pou",
+			"GoingTo": "pral nan",
+			"NotGoingTo": "pa pral nan",
+			"MaybeGoingTo": "pral pet\u00e8t nan",
+			"AdminDontPay": "Admin pa bezwen peye",
+			"PublisherDontPay": "Piblikat\u00e8 pa bezwen peye",
+			"EmptyList": "Lis vid",
+			"NeedToPayCredits": "Bezwen peye: <span>{{amount}} kredi</span>",
+			"PleaseJoinParticipants": "Tanpri rantre nan {{participant}}",
+			"YouReservingPlace": "Ou pral rez\u00e8ve plas ou.",
+			"SelectIncludesToAdd": "Chwazi youn oswa plis {{TypeDisplayPlural}} pou ajoute:",
+			"YouHaveNotRegisteredAnyIncluded": "Ou poko anrejistre okenn {{TypeDisplayPlural}}",
+			"Proceed": "Kontinye",
+			"MakeChanges": "Sove Chanjman mwen yo",
+			"CancelReservation": "Anile tout rez\u00e8vasyon an",
+			"Total": "Total",
+			"RequiredRelatedParticipants": "Ev\u00e8nman sa a egzije patisipan yo: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "Tanpri modifye disponiblite &quot;{{title}}&quot; pou mete ajou param\u00e8t renouvlab yo",
+			"Presentation": "Prezantasyon",
+			"YouAreNotParticipated": "Ou pa yon patisipan nan ev\u00e8nman an",
+			"LiveStreamStarted": "Live stream te k\u00f2manse",
+			"WebRTCStarted": "Telekonferans te k\u00f2manse",
+			"WebRTCEnded": "Telekonferans te fini",
+			"Prepayment": "Prepeman",
+			"PrepaymentConfirm": "Nou pral chaje yon ti fr\u00e8 $1. Ou pral resevwa kantite kredi ki koresponn lan. Kredi sa yo pral aplike nan peman konpl\u00e8 ou pou ev\u00e8nman an."
+		},
+		"composer": {
+			"SetLocation": "Mete kote mwen an",
+			"SetInfoLink": "Mete Link pou plis enf\u00f2masyon",
+			"ChooseAvailability": "Chwazi S\u00e8vis Disponib",
+			"ChooseActivity": "Chwazi yon Aktivite",
+			"ChoosePublisher": "Chwazi Piblikat\u00e8",
+			"Day": "Jounen",
+			"Starting": "K\u00f2manse",
+			"Duration": "Dire",
+			"Hour": "L\u00e8",
+			"Hours": "Or\u00e8",
+			"Minutes": "Minit",
+			"Ending": "Fini",
+			"People": "Moun",
+			"Share": "Pataje",
+			"Continue": "Kontinye",
+			"Recurring": "Renouvlab",
+			"RecurringTitle": "Jou ki repete",
+			"Daily": "Chak jou",
+			"Weekly": "Chak sem\u00e8n",
+			"Monthly": "Chak mwa",
+			"SelectLocation": "Tanpri chwazi yon kote an premye.",
+			"eventType": "Kalite Ev\u00e8nman",
+			"EditTitle": "Panse ak yon tit enteresan...",
+			"SetTitle": "Tanpri mete tit ev\u00e8nman an",
+			"ScheduleOnlineConference": "Or\u00e8 Konferans sou Ent\u00e8n\u00e8t",
+			"SOCDescription": "Tanpri defini l\u00e8 konferans lan k\u00f2manse ak l\u00e8 fini. Chak moun ki vizite ev\u00e8nman an pandan pery\u00f2d tan sa a pral konekte otomatikman ak konferans sou ent\u00e8n\u00e8t.",
+			"EndDate": "Fen",
+			"location": {
+				"Title": "Mete Kote w la"
+			},
+			"interest": {
+				"Title": "Chwazi yon Aktivite",
+				"Filter": "Rech\u00e8ch enter\u00e8..."
+			},
+			"SetLivestream": "Kole lyen pou difizyon / videyokonferans",
+			"Locally": "lokalman",
+			"EventInfoLink": "Link Enf\u00f2masyon sou ev\u00e8nman an",
+			"TicketPurchaseLink": "Lyen pou achte tik\u00e8"
+		},
+		"EventAlreadyClosed": "Ev\u00e8nman sa a deja f\u00e8men",
+		"addToCalendar": {
+			"permissions": {
+				"title": "Ajoute nan Kalandriye?",
+				"prompt": "\u00c8ske ou ta renmen ajoute ev\u00e8nman sa a nan kalandriye ou a?",
+				"yes": "Wi",
+				"no": "Non"
+			},
+			"dialog": {
+				"Title": "Ajoute Ev\u00e8nman nan Kalandriye w la"
+			}
+		},
+		"ErrorLeaveEndedEvent": "Padon, men ou pa ka kite ev\u00e8nman ki te fini"
+	},
+	"availabilities": {
+		"Title": "Disponibilite",
+		"NewAvailability": {
+			"Title": "Nouvo Disponibilite",
+			"SaveAvailability": "Sove Disponibilite",
+			"SelectTemplate": "Tanpri chwazi S\u00e8vis",
+			"SelectLocation": "Tanpri chwazi Kote",
+			"SelectArea": "Tanpri chwazi Z\u00f2n",
+			"Type": "Kalite",
+			"Weekly": "Chak sem\u00e8n",
+			"RecurringStartDate": "Renouvlab Dat K\u00f2manse",
+			"EndDate": "Dat fen",
+			"SelectTime": "Jere Plas Tan",
+			"SelectTimeSlot": "Chwazi yon plas tan",
+			"SelectTimeSlots": "Chwazi fant tan ou vle yo",
+			"PeopleMin": "Minim\u00f2m vizit\u00e8 yo",
+			"PeopleMax": "Vizit\u00e8 maksim\u00f2m",
+			"PeopleLabels": "Etik\u00e8t yo p\u00e8m\u00e8t",
+			"Next": "Next",
+			"Back": "Retounen",
+			"RecurringEndDate": "Dat fen renouvlab",
+			"ScheduleOnlineConference": "Or\u00e8 telekonferans",
+			"SetLivestream": "Kole lyen pou difizyon / videyokonferans",
+			"SelectTimeZone": "Chwazi TimeZone"
+		},
+		"EditAvailability": "Edit Disponibilite",
+		"SetVisitors": "Mete vizit\u00e8 yo",
+		"Price": "Pri",
+		"SelectAction": "Tanpri chwazi aksyon",
+		"OpenProfile": "Louvri pwofil",
+		"RemoveStaff": "Retire anplwaye yo",
+		"PleaseSelectTimeSlots": "Tanpri chwazi plas tan yo",
+		"ExceptionOccurred": "Eksepsyon ki te f\u00e8t",
+		"NotEnoughCreditsToParticipateEvents": "Pa gen ase kredi pou patisipe nan {{eventsAmount}} ev\u00e8nman yo. Ou bezwen {{needCredits}} kredi. Vle achte?",
+		"InviteStaff": "Envite anplwaye yo",
+		"LiveStream": "Live kouran"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "Dat k\u00f2manse",
+			"endDate": "Dat fen",
+			"justOnce": "Jis yon fwa",
+			"justOnceWeekly": "Sem\u00e8n sa a s\u00e8lman",
+			"justOnceMonthly": "Mwa sa a s\u00e8lman",
+			"recurring": "Renouvlab"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "Ev\u00e8nman gratis",
+			"optional": "Kontribisyon si ou vle",
+			"required": "Peman obligatwa"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "Kontribisyon si ou vle",
+			"required": "Peman obligatwa",
+			"paid": "peye"
+		},
+		"confirmationDialog": {
+			"title": "Konfimasyon peman",
+			"content": "Ev\u00e8nman sa a gen yon kontribisyon si ou vle {{amount}}.",
+			"button": "Kontribye"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} poko f\u00e8 pati ev\u00e8nman an. \u00c8ske ou vle ajoute yo k\u00f2m yon patisipan?",
+		"userNotFound": "Itilizat\u00e8 pa jwenn",
+		"confirmYes": "Wi",
+		"confirmNo": "Non",
+		"UserAlreadyCheckedIn": "{{1}} te deja anrejistre pa {{2}} !"
+	},
+	"notifications": {
+		"EventActivityIn": "Aktivite ev\u00e8nman nan {{{stream.fields.title}}}",
+		"RecurringRulesChanged": "R\u00e8g renouvlab chanje pou ev\u00e8nman {{{call 'message.getInstruction' 'eventTitle'}}}",
+		"ManageEmailSubscriptions": "jere ab\u00f2nman imel ou yo",
+		"IfUnsubscribe": "Si ou vle dezab\u00f2ne",
+		"ClickHereToVisitEvent": "Tanpri klike isit la pou vizite ev\u00e8nman an",
+		"Calendars/reminder": "Ev\u00e8nman &quot;{{{call 'message.getInstruction' 'name'}}&quot; ap k\u00f2manse nan {{&call 'message.getInstruction' 'time'}}}",
+		"webrtc": {
+			"Started": "Telekonferans te k\u00f2manse",
+			"Ended": "Telekonferans te fini"
+		},
+		"livestream": {
+			"Started": "Live stream te k\u00f2manse",
+			"Ended": "Live stream te fini",
+			"ClickToView": "Gade li isit la."
+		}
+	},
+	"import": {
+		"linkTitle": "Ranpli F\u00e8y kalkil sa a",
+		"fileLabel": "Telechaje F\u00e8y kalkil:",
+		"importOptions": "Opsyon",
+		"importProgress": "Pwogr\u00e8",
+		"sampleCSV": "Telechaje echantiyon CSV",
+		"joinEventLabel": "Antre nan itilizat\u00e8 yo nan ev\u00e8nman o aza",
+		"smsText": "Hey, mwen jis voye yon lyen pou ou {{communityName}}. Tanpri tcheke li.",
+		"emailSubject": "Jis voye yon lyen pou ou",
+		"emailBody": "Hey, mwen jis voye yon envitasyon ba ou {{communityName}}. Tanpri tcheke li.",
+		"fileNotFound": "Padon, dosye CSV pa jwenn.",
+		"fileEmpty": "Padon, dosye CSV vid.",
+		"fieldNotFound": "Yo pa jwenn jaden obligatwa &quot;{{1}}&quot;.",
+		"userIdNotFound": "itilizat\u00e8 egziste men id vid",
+		"activateUsers": "voye mesaj aktivasyon bay itilizat\u00e8 yo?",
+		"taskStreamInvalid": "kouran travay pa valab",
+		"instructionsEmpty": "enstriksyon kouran travay yo vid",
+		"interestsEmpty": "pa ka jwenn enter\u00e8",
+		"interestAbsent": "enter\u00e8 {{1}} pa jwenn",
+		"complete": "Ranpli",
+		"errorLine": "liy {{1}}",
+		"errorsTitle": "Er\u00e8 ki te f\u00e8t",
+		"communityUsers": "Sa a se lis kominote yo",
+		"toMainCommunityToo": "gen rap\u00f2 ak kominote prensipal la tou",
+		"ChooseFile": "chwazi dosye"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "Reprezante yon ev\u00e8nman ke moun ka patisipe nan",
+			"displayType": "Ev\u00e8nman"
+		},
+		"Calendars/recurring": {
+			"description": "Itilize pou f\u00e8 rap\u00f2 ak kouran ki f\u00e8t pou repete detanzantan",
+			"displayType": "Ev\u00e8nman ki repete"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "Ajoute plas",
+		"StartTime": "K\u00f2manse Tan",
+		"EndTime": "Tan Fen",
+		"Save": "Sove",
+		"AddTimeSlot": "Ajoute Plas tan",
+		"CopyFromDay": "Kopi de jou",
+		"Nearest": "Ki pi pre",
+		"Today": "Jodi a",
+		"Tomorrow": "Demen",
+		"AfterTomorrow": "Apre demen"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "Ab\u00f2nman ak Kalandriye",
+		"copyLinkBelow": "Klike sou bouton ki anba a pou kopye lyen an nan clipboard ou",
+		"tapToCopy": "Tape bouton ki anba a pou kopye lyen an nan clipboard ou",
+		"goTo": "Ale nan:",
+		"pasteCopiedTo": "Kole lyen kopye nan jaden &quot;URL nan kalandriye&quot;.",
+		"clickAddCalendar": "Klike sou bouton &quot;Ajoute kalandriye&quot;.",
+		"copyLink": "Kopi Link",
+		"linkCopied": "Lyen kopye",
+		"step2": "Lyen kopye. Nou se sou louvri Google Kalandriye. Ou pral bezwen kole lyen an nan bwat t\u00e8ks la, klike sou &quot;Ajoute kalandriye&quot;, epi f\u00e8men tab la (gade ekran anba a)",
+		"calendarAppPreferences": "Louvri Preferans yo nan Aplikasyon Kalandriye a sou Mac ou a, epi mete Aplikasyon Kalandriye Default yo jan yo montre anba a.",
+		"thenCloseDialog": "L\u00e8 sa a, f\u00e8men dyal\u00f2g sa a pou ab\u00f2nman nan kalandriye ou!",
+		"success": "Kalandriye te senkronize av\u00e8k siks\u00e8"
+	},
+	"@override": {
+		"Assets/content": {
+			"credits": {
+				"EventParticipation": "Patisipasyon nan ev\u00e8nman an"
+			},
+			"payments": {
+				"reasons": {
+					"EventParticipation": "Patisipasyon nan ev\u00e8nman an"
+				}
+			}
+		}
+	}
 }

@@ -1,0 +1,347 @@
+{
+	"months": {
+		"Jan": "Mutarama",
+		"Feb": "Gashyantare",
+		"Mar": "Werurwe",
+		"Apr": "Mata",
+		"May": "Gicurasi",
+		"Jun": "Kamena",
+		"Jul": "Nyakanga",
+		"Aug": "Kanama",
+		"Sep": "Nzeri",
+		"Oct": "Ukwakira",
+		"Nov": "Ugushyingo",
+		"Dec": "Ukuboza"
+	},
+	"monthsLong": {
+		"Jan": "Mutarama",
+		"Feb": "Gashyantare",
+		"Mar": "Werurwe",
+		"Apr": "Mata",
+		"May": "Gicurasi",
+		"Jun": "Kamena",
+		"Jul": "Nyakanga",
+		"Aug": "Kanama",
+		"Sep": "Nzeri",
+		"Oct": "Ukwakira",
+		"Nov": "Ugushyingo",
+		"Dec": "Ukuboza"
+	},
+	"weekdays": {
+		"Sun": "Ku cyumweru",
+		"Mon": "Kuwa mbere",
+		"Tue": "Kuwa kabiri",
+		"Wed": "Kuwa gatatu",
+		"Thu": "Kuwa kane",
+		"Fri": "Kuwa gatanu",
+		"Sat": "Kuwa gatandatu"
+	},
+	"weekdaysLong": {
+		"Sun": "Ku cyumweru",
+		"Mon": "Kuwa mbere",
+		"Tue": "Kuwa kabiri",
+		"Wed": "Ku wa gatatu",
+		"Thu": "Ku wa kane",
+		"Fri": "Ku wa gatanu",
+		"Sat": "Ku wa gatandatu"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Tegura Igikorwa Gishya"
+		},
+		"tool": {
+			"HostedBy": "Yakiriwe na {{name}}",
+			"Name": "Izina",
+			"AreYouIn": "Uri mu kibuga?",
+			"Yes": "Yego",
+			"No": "Oya",
+			"Ok": "Yego",
+			"Cancel": "Hagarika",
+			"Maybe": "Wenda",
+			"Presentation": "Itangazo",
+			"Conversation": "Ikiganiro",
+			"Promote": "Kwamamaza iki gikorwa",
+			"Reminders": "Ibyibutswa",
+			"RemindersLabel": "Ndashaka kumenyeshwa igikorwa kizaba muri:",
+			"MoreInfo": "Amakuru arambuye",
+			"Registration": "Kwiyandikisha",
+			"SetReminders": "Nyamuneka shyiraho ibyibutswa",
+			"ReservationFee": "Amafaranga yo kubika",
+			"AddParticipants": "Ongeraho Abitabiriye",
+			"YouAreNotParticipated": "Ntabwo uri umwe mu bitabiriye iki gikorwa",
+			"ManageReservation": "Gucunga Reservation",
+			"UpdateFutureReservations": "Ese urashaka kandi kuvugurura uburyo bwose bwo kubika ibintu mu gihe kizaza mu buryo bumwe?",
+			"RecurringAdmin": "Igenamiterere Risubiramo",
+			"MakeReservation": "Fata Reservation",
+			"StartLiveStream": "Kanda kugira ngo ukurikirane amashusho (Live Stream)",
+			"LiveStreamStarted": "Uburyo bwo kureba bwatangiye",
+			"LiveStreamEnded": "Uburyo bwo kureba bwarangiye",
+			"WebRTCStarted": "Inama ngenderwaho yatangiye",
+			"WebRTCEnded": "Inama ya Telefoni yarangiye",
+			"ClickToViewRecording": "kanda kugira ngo urebe amajwi yafashwe",
+			"Checkin": "Gusoma kode z&#39;abitabiriye ibirori",
+			"Myqr": "Kwiyandikisha",
+			"CloseEvent": {
+				"button": "Hagarika igikorwa",
+				"confirm": {
+					"text": {
+						"Cancel": "Ese wizeye ko ushaka guhagarika iki gikorwa?",
+						"Participant": "Hari umuntu umwe witabiriye iki gikorwa",
+						"Participants": "Hari abantu {{count}} bitabiriye iki gikorwa",
+						"Recurring": "Iki gikorwa kiragaruka. Ese urashaka no guhagarika ibikorwa byacyo byose bizaza?"
+					},
+					"trip": {
+						"Cancel": "Urashaka kandi guhagarika urugendo rwawe {{tripDirection}} muri iki gikorwa?",
+						"Passengers": "Hari abagenzi {{passengerCount}} bakwishingikirijeho.",
+						"Title": "Urugendo rwa nyuma"
+					},
+					"directions": {
+						"TO": "KU",
+						"FROM": "KUVA",
+						"to": "kuri",
+						"from": "kuva"
+					}
+				}
+			},
+			"Calendar": "Kalendari",
+			"Interests": "Inyungu",
+			"Directions": "Amabwiriza",
+			"TitleOfEvent": "Umutwe w&#39;igikorwa:",
+			"OpenTo": "Bifunguye kuri ",
+			"GoingTo": "bizaba kuri",
+			"NotGoingTo": "ntabwo bizaba kuri",
+			"MaybeGoingTo": "wenda bizaba biri kuri",
+			"AdminDontPay": "Umuyobozi ntagomba kwishyura",
+			"PublisherDontPay": "Umwanditsi ntagomba kwishyura",
+			"EmptyList": "Urutonde rurimo ubusa",
+			"NeedToPayCredits": "Ugomba kwishyura: <span>inguzanyo {{amount}}</span>",
+			"PleaseJoinParticipants": "Nyamuneka jya muri {{participant}}",
+			"YouReservingPlace": "Uzaba urimo kwibikaho umwanya wawe.",
+			"SelectIncludesToAdd": "Hitamo imwe cyangwa nyinshi {{TypeDisplayPlural}} kugira ngo wongereho:",
+			"YouHaveNotRegisteredAnyIncluded": "Nta na kimwe {{TypeDisplayPlural}} urabona kitaraboneka",
+			"Proceed": "Komeza",
+			"MakeChanges": "Bika impinduka zanjye",
+			"CancelReservation": "Hagarika igihe cyose cyo kubika",
+			"Total": "Igiteranyo",
+			"RequiredRelatedParticipants": "Iki gikorwa gisaba abitabiriye: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "Hindura uburyo &quot; {{title}} &quot; iboneka kugira ngo uvugurure igenamiterere rihora rigaruka",
+			"Prepayment": "Kwishyura mbere y&#39;igihe",
+			"PrepaymentConfirm": "Tuzaguca amafaranga make angana na $1. Uzahabwa umubare ujyanye n&#39;inguzanyo. Izi nguzanyo zizakoreshwa mu kwishyura byose kuri iki gikorwa."
+		},
+		"composer": {
+			"SetLocation": "Shyiraho Aho Nherereye",
+			"Locally": "mu gace utuyemo",
+			"EventInfoLink": "Ihuza ry&#39;amakuru ku birori",
+			"TicketPurchaseLink": "Ihuza ryo kugura amatike",
+			"ChooseAvailability": "Hitamo serivisi iboneka",
+			"ChooseActivity": "Hitamo igikorwa",
+			"ChoosePublisher": "Hitamo umwanditsi",
+			"Day": "Umunsi",
+			"Starting": "Gutangira",
+			"Duration": "Igihe",
+			"Hour": "Isaha",
+			"Hours": "Amasaha",
+			"Minutes": "Iminota",
+			"Ending": "Irangira",
+			"People": "Abantu",
+			"Share": "Sangiza",
+			"Continue": "Komeza",
+			"Recurring": "Isubiramo",
+			"RecurringTitle": "Iminsi Isubiramo",
+			"Daily": "Buri munsi",
+			"Weekly": "Buri cyumweru",
+			"Monthly": "Buri kwezi",
+			"SelectLocation": "Banza uhitemo ahantu.",
+			"eventType": "Ubwoko bw&#39;igikorwa",
+			"EditTitle": "Tekereza ku mutwe ushimishije...",
+			"SetTitle": "Shyiraho umutwe w&#39;igikorwa",
+			"ScheduleOnlineConference": "Teganya inama kuri telefoni",
+			"SOCDescription": "Musobanure igihe inama itangiriye n&#39;igihe irangirira. Buri muntu wese usuye iki gikorwa muri iki gihe azihuza na gahunda yo kuri interineti.",
+			"EndDate": "Iherezo",
+			"location": {
+				"Title": "Shyiraho aho uherereye"
+			},
+			"interest": {
+				"Title": "Hitamo Igikorwa",
+				"Filter": "Ibishishikaza mu gushakisha ..."
+			},
+			"SetLivestream": "Komeka umurongo kuri videwo/inama y&#39;amashusho"
+		},
+		"EventAlreadyClosed": "Iki gikorwa cyamaze gufungwa",
+		"ErrorLeaveEndedEvent": "Mbabarira, ariko ntushobora kuva mu gikorwa cyarangiye",
+		"addToCalendar": {
+			"permissions": {
+				"title": "Ongera kuri Kalendari?",
+				"prompt": "Wifuza kongeramo iki gikorwa kuri kalendari yawe?",
+				"yes": "Yego",
+				"no": "Oya"
+			},
+			"dialog": {
+				"Title": "Ongeraho Igikorwa kuri Kalendari yawe"
+			}
+		}
+	},
+	"payment": {
+		"amountPlaceholder": "0",
+		"selectOptions": {
+			"free": "Igikorwa cy&#39;ubuntu",
+			"optional": "Umusanzu w&#39;ubushake",
+			"required": "Kwishyura bisabwa"
+		},
+		"info": {
+			"optional": "Umusanzu w&#39;ubushake",
+			"required": "Igiciro cyo kwitabira: {{amount}} {{currency}}",
+			"paid": "yishyuwe"
+		},
+		"confirmationDialog": {
+			"title": "Icyemezo cyo kwishyura",
+			"content": "Iki gikorwa gifite umusanzu w&#39;ubushake wa {{amount}} .",
+			"button": "Tanga umusanzu"
+		}
+	},
+	"availabilities": {
+		"Title": "Ibiboneka",
+		"NewAvailability": {
+			"Title": "Kuboneka Gushya",
+			"SaveAvailability": "Bika Iboneka",
+			"SelectTemplate": "Hitamo Serivisi",
+			"SelectLocation": "Hitamo Aho uherereye",
+			"SelectArea": "Hitamo Akarere",
+			"Type": "Ubwoko",
+			"Weekly": "Buri cyumweru",
+			"RecurringStartDate": "Itariki yo Gutangira Isubiramo",
+			"RecurringEndDate": "Itariki iheruka igaruka",
+			"EndDate": "Itariki yo kurangira",
+			"ScheduleOnlineConference": "Teganya inama kuri telefoni",
+			"SetLivestream": "Komeka umurongo wo kureba uko ibintu bimeze mu buryo bwa Livestream / videwo conference",
+			"SelectTimeZone": "Hitamo Akarere k&#39;igihe",
+			"SelectTime": "Gucunga Igihe cy&#39;Imikino",
+			"SelectTimeSlot": "Hitamo umwanya w&#39;igihe",
+			"SelectTimeSlots": "Hitamo igihe wifuza",
+			"PeopleMin": "Abashyitsi bake",
+			"PeopleMax": "Abashyitsi ntarengwa",
+			"PeopleLabels": "Inshingano zemerewe",
+			"Next": "Ibikurikira",
+			"Back": "Garuka"
+		},
+		"EditAvailability": "Hindura aho uboneka",
+		"SetVisitors": "Abashyitsi Bakomeye",
+		"Price": "Igiciro",
+		"SelectAction": "Hitamo igikorwa",
+		"OpenProfile": "Fungura umwirondoro",
+		"RemoveStaff": "Kuraho abakozi",
+		"InviteStaff": "Tumira abakozi",
+		"PleaseSelectTimeSlots": "Hitamo ibihe",
+		"ExceptionOccurred": "Habayeho ikosa ridasanzwe",
+		"LiveStream": "Ishusho imbonankubone",
+		"NotEnoughCreditsToParticipateEvents": "Ntabwo inguzanyo zihagije zo kwitabira ibirori {{eventsAmount}} Ukeneye inguzanyo {{needCredits}} Urashaka kugura?"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "Itariki yo gutangira",
+			"endDate": "Itariki irangiriraho",
+			"justOnce": "Rimwe gusa",
+			"justOnceWeekly": "Iki cyumweru gusa",
+			"justOnceMonthly": "Uku kwezi gusa",
+			"recurring": "Isubiramo"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} ntabwo iri mu gikorwa. Urashaka kongeramo abandi nk&#39;abitabiriye?",
+		"userNotFound": "Umukoresha ntiyabonetse",
+		"UserAlreadyCheckedIn": "{{1}} yari imaze kwiyandikisha ku {{2}} !",
+		"confirmYes": "Yego",
+		"confirmNo": "Oya"
+	},
+	"notifications": {
+		"EventActivityIn": "Ibikorwa by&#39;ibirori muri {{{stream.fields.title}}}",
+		"RecurringRulesChanged": "Amategeko ahora agaruka yahinduwe ku gikorwa {{{call 'message.getInstruction' 'eventTitle'}}}",
+		"ManageEmailSubscriptions": "genzura ifatabuguzi ryawe rya imeri",
+		"IfUnsubscribe": "Niba ushaka kwiyambura",
+		"ClickHereToVisitEvent": "Kanda hano kugira ngo usure ibirori",
+		"Calendars/reminder": "Igikorwa &quot; {{{call 'message.getInstruction' 'name'}}} &quot; kizatangira mu {{{call 'message.getInstruction' 'time'}}}",
+		"webrtc": {
+			"Started": "Inama ngenderwaho yatangiye",
+			"Ended": "Inama ya Telefoni yarangiye"
+		},
+		"livestream": {
+			"Started": "Urubuga rwatangiye gukora imbonankubone",
+			"Ended": "Ishusho ya Live stream yarangiye",
+			"ClickToView": "Birebe hano."
+		}
+	},
+	"import": {
+		"linkTitle": "Uzuza iyi Spreadsheet",
+		"fileLabel": "Shyiraho urupapuro rw&#39;ibanga:",
+		"importOptions": "Amahitamo",
+		"importProgress": "Iterambere",
+		"sampleCSV": "Kuramo Urugero rwa CSV",
+		"joinEventLabel": "Huza abakoresha mu birori bitunguranye",
+		"smsText": "Muraho, nohereje umurongo kuri {{communityName}} Nyamuneka reba.",
+		"emailSubject": "Nakoherereje link",
+		"emailBody": "Muraho, nohereje ubutumire kuri {{communityName}} Nyamuneka reba.",
+		"fileNotFound": "Mbabarira, dosiye ya CSV ntiyabonetse.",
+		"fileEmpty": "Mbabarira, dosiye ya CSV irimo ubusa.",
+		"fieldNotFound": "Ahantu hasabwa &quot; {{1}} &quot; ntihabonetse",
+		"userIdNotFound": "umukoresha arahari ariko nta kintu afite",
+		"activateUsers": "kohereza ubutumwa bwo gukoresha ku bakoresha?",
+		"taskStreamInvalid": "uruhererekane rw&#39;imirimo ntirukwiye",
+		"instructionsEmpty": "amabwiriza yo gukurikirana imirimo nta kintu kirimo",
+		"interestsEmpty": "ntashobora kubona inyungu",
+		"interestAbsent": "inyungu {{1}} ntizabonetse",
+		"complete": "Byuzuye",
+		"errorLine": "umurongo wa {{1}}",
+		"errorsTitle": "Habayeho amakosa",
+		"communityUsers": "Uru ni urutonde rw&#39;imiryango",
+		"toMainCommunityToo": "bifitanye isano n&#39;umuryango rusange",
+		"ChooseFile": "hitamo dosiye"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "Igaragaza igikorwa abantu bashobora kwitabira",
+			"displayType": "Igikorwa"
+		},
+		"Calendars/recurring": {
+			"description": "Ikoreshwa mu miyoboro ijyanye nayo igamije kugaruka rimwe na rimwe",
+			"displayType": "Igikorwa gisubiramo"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "Ongeraho umwanya",
+		"StartTime": "Igihe cyo Gutangira",
+		"EndTime": "Igihe cyo kurangira",
+		"Save": "Bika",
+		"AddTimeSlot": "Ongeraho Igihe",
+		"CopyFromDay": "Kopisha uhereye ku munsi",
+		"Nearest": "Hafi cyane",
+		"Today": "Uyu munsi",
+		"Tomorrow": "Ejo",
+		"AfterTomorrow": "Nyuma y&#39;ejo"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "Iyandikishe kuri Kalendari",
+		"copyLinkBelow": "Kanda kuri buto iri hepfo kugira ngo ukope iyi link kuri clipboard yawe",
+		"tapToCopy": "Kanda kuri buto iri hepfo kugira ngo ukope iyi link kuri clipboard yawe",
+		"goTo": "Jya kuri:",
+		"pasteCopiedTo": "Komeka umurongo wakoporowe kuri &quot;URL y&#39;akalindari&quot;",
+		"clickAddCalendar": "Kanda kuri buto &quot;Ongeramo kalendari&quot;",
+		"copyLink": "Kopisha Ihuriro",
+		"linkCopied": "Ihuza ryakopiwe",
+		"step2": "Link Yakopiwe. Turimo gufungura Google Calendar. Uzakenera gushyira iyi link mu gasanduku k&#39;inyandiko, ukande kuri &quot;Ongera kalendari&quot;, hanyuma ufunge tab (reba ishusho iri hepfo)",
+		"calendarAppPreferences": "Fungura Amahitamo muri Porogaramu ya Kalendari kuri Mac yawe, hanyuma ushyire Porogaramu ya Kalendari isanzwe nk&#39;uko bigaragara hepfo.",
+		"thenCloseDialog": "Hanyuma funga aka kadirishya kugira ngo wiyandikishe kuri kalendari yawe!",
+		"success": "Kalendari yahujwe neza"
+	},
+	"@override": {
+		"Assets/content": {
+			"credits": {
+				"EventParticipation": "Ubwitabire bw&#39;ibirori"
+			},
+			"payments": {
+				"reasons": {
+					"EventParticipation": "Kwitabira ibirori"
+				}
+			}
+		}
+	}
+}
