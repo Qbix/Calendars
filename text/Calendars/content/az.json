@@ -217,7 +217,8 @@
 		"confirmParticipate": "{{1}} h\u0259l\u0259 t\u0259dbirin bir hiss\u0259si deyil. Onlar\u0131 i\u015ftirak\u00e7\u0131 kimi \u0259lav\u0259 etm\u0259k ist\u0259yirsiniz?",
 		"userNotFound": "\u0130stifad\u0259\u00e7i tap\u0131lmad\u0131",
 		"confirmYes": "B\u0259li",
-		"confirmNo": "Yox"
+		"confirmNo": "Yox",
+		"UserAlreadyCheckedIn": "{{1}} art\u0131q {{2}} t\u0259r\u0259find\u0259n qeydiyyatdan ke\u00e7ib!"
 	},
 	"notifications": {
 		"EventActivityIn": "{{{stream.fields.title}}} daxilind\u0259 t\u0259dbir f\u0259aliyy\u0259ti",
@@ -364,6 +365,9 @@
 				"reasons": {
 					"EventParticipation": "T\u0259dbird\u0259 i\u015ftirak"
 				}
+			},
+			"credits": {
+				"EventParticipation": "T\u0259dbird\u0259 i\u015ftirak"
 			}
 		}
 	}

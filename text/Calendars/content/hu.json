@@ -251,7 +251,8 @@
 		"confirmParticipate": "{{1}} m\u00e9g nem r\u00e9sze az esem\u00e9nynek. Fel szeretn\u00e9 venni \u0151ket r\u00e9sztvev\u0151k\u00e9nt?",
 		"userNotFound": "Felhaszn\u00e1l\u00f3 nem tal\u00e1lhat\u00f3",
 		"confirmYes": "Igen",
-		"confirmNo": "Nem"
+		"confirmNo": "Nem",
+		"UserAlreadyCheckedIn": "{{1}} et m\u00e1r {{2}} en bejelentkeztek!"
 	},
 	"notifications": {
 		"EventActivityIn": "Esem\u00e9nytev\u00e9kenys\u00e9g itt: {{{stream.fields.title}}}",
@@ -338,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Esem\u00e9nyen val\u00f3 r\u00e9szv\u00e9tel"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Esem\u00e9nyen val\u00f3 r\u00e9szv\u00e9tel"
 			}
 		}
 	}

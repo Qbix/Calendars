@@ -217,7 +217,8 @@
 		"confirmParticipate": "{{1}} jo\u0161 nije dio doga\u0111aja. \u017delite li ih dodati kao sudionika?",
 		"userNotFound": "Korisnik nije prona\u0111en",
 		"confirmYes": "Da",
-		"confirmNo": "Ne"
+		"confirmNo": "Ne",
+		"UserAlreadyCheckedIn": "{{1}} je ve\u0107 prijavljen od strane {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Aktivnost doga\u0111aja u {{{stream.fields.title}}}",
@@ -364,6 +365,9 @@
 				"reasons": {
 					"EventParticipation": "Sudjelovanje na doga\u0111ajima"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Sudjelovanje na doga\u0111ajima"
 			}
 		}
 	}

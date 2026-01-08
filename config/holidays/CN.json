@@ -1,0 +1,14 @@
+{
+  "2026-01-01":[{"National":["new_year_s_day"]}],
+  "2026-02-17":[{"National":["chinese_new_year_spring_festival_"]}],
+  "2026-05-01":[{"National":["labour_day"]}, {"Buddhist":["vesak_day"]}],
+  "2026-06-19":[{"National":["dragon_boat_festival"]}],
+  "2026-09-25":[{"National":["mid_autumn_festival"]}],
+  "2026-10-01":[{"National":["national_day"]}],
+  "2027-01-01":[{"National":["new_year_s_day"]}],
+  "2027-02-06":[{"National":["chinese_new_year_spring_festival_"]}],
+  "2027-05-01":[{"National":["labour_day"]}],
+  "2027-06-09":[{"National":["dragon_boat_festival"]}],
+  "2027-09-15":[{"National":["mid_autumn_festival"]}],
+  "2027-10-01":[{"National":["national_day"]}]
+}

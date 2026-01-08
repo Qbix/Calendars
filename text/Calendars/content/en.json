@@ -334,7 +334,7 @@
 	},
 	"@override": {
 		"Assets/content": {
-            "credits": {
+			"credits": {
 				"EventParticipation": "Event Participation"
 			},
 			"payments": {

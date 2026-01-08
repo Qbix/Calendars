@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "Wewe si mshiriki wa tukio",
 			"LiveStreamStarted": "Utiririshaji wa moja kwa moja umeanza",
 			"WebRTCStarted": "Teleconference imeanza",
-			"WebRTCEnded": "Teleconference imekamilika"
+			"WebRTCEnded": "Teleconference imekamilika",
+			"Prepayment": "Malipo ya awali",
+			"PrepaymentConfirm": "Tutatoza ada ya kawaida ya $1. Utapokea idadi inayolingana ya salio. Salio hili litatumika kwa malipo yako kamili kwa ajili ya tukio hilo."
 		},
 		"composer": {
 			"SetLocation": "Weka Mahali Pangu",
@@ -249,7 +251,8 @@
 		"confirmParticipate": "{{1}} bado si sehemu ya tukio. Je, ungependa kuwaongeza kama mshiriki?",
 		"userNotFound": "Mtumiaji hajapatikana",
 		"confirmYes": "Ndiyo",
-		"confirmNo": "Hapana"
+		"confirmNo": "Hapana",
+		"UserAlreadyCheckedIn": "{{1}} tayari imesajiliwa na {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Shughuli ya tukio katika {{{stream.fields.title}}}",
@@ -336,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Ushiriki wa Tukio"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Ushiriki wa Tukio"
 			}
 		}
 	}

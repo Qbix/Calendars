@@ -125,7 +125,9 @@
 			"YouAreNotParticipated": "Hindi ka kalahok ng kaganapan",
 			"LiveStreamStarted": "Nagsimula na ang live stream",
 			"WebRTCStarted": "Nagsimula ang teleconference",
-			"WebRTCEnded": "Natapos ang teleconference"
+			"WebRTCEnded": "Natapos ang teleconference",
+			"Prepayment": "Paunang bayad",
+			"PrepaymentConfirm": "Maniningil kami ng maliit na bayad na $1. Matatanggap mo ang katumbas na bilang ng mga kredito. Ang mga kreditong ito ay gagamitin sa iyong buong bayad para sa kaganapan."
 		},
 		"composer": {
 			"SetLocation": "Itakda ang Aking Lokasyon",
@@ -215,7 +217,8 @@
 		"confirmParticipate": "Ang {{1}} ay hindi pa bahagi ng kaganapan. Gusto mo bang idagdag ang mga ito bilang isang kalahok?",
 		"userNotFound": "Hindi nakita ang user",
 		"confirmYes": "Oo",
-		"confirmNo": "Hindi"
+		"confirmNo": "Hindi",
+		"UserAlreadyCheckedIn": "Na-check in na {{1}} ng {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Aktibidad ng kaganapan sa {{{stream.fields.title}}}",
@@ -362,6 +365,9 @@
 				"reasons": {
 					"EventParticipation": "Pakikilahok sa Kaganapan"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Pakikilahok sa Kaganapan"
 			}
 		}
 	}

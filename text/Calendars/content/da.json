@@ -217,7 +217,8 @@
 		"confirmParticipate": "{{1}} er endnu ikke en del af begivenheden. Vil du tilf\u00f8je dem som deltager?",
 		"userNotFound": "Bruger ikke fundet",
 		"confirmYes": "Ja",
-		"confirmNo": "Ingen"
+		"confirmNo": "Ingen",
+		"UserAlreadyCheckedIn": "{{1}} var allerede tjekket ind af {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Begivenhedsaktivitet i {{{stream.fields.title}}}",
@@ -364,6 +365,9 @@
 				"reasons": {
 					"EventParticipation": "Deltagelse i begivenheder"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Deltagelse i begivenheder"
 			}
 		}
 	}

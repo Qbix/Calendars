@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "J\u016bs neesat pas\u0101kuma dal\u012bbnieks",
 			"LiveStreamStarted": "Tie\u0161raides straume ir s\u0101kusies",
 			"WebRTCStarted": "S\u0101k\u0101s telekonference",
-			"WebRTCEnded": "Telekonference beidz\u0101s"
+			"WebRTCEnded": "Telekonference beidz\u0101s",
+			"Prepayment": "Priek\u0161apmaksa",
+			"PrepaymentConfirm": "M\u0113s iekas\u0113sim nelielu maksu 1\u00a0ASV dol\u0101ra apm\u0113r\u0101. J\u016bs sa\u0146emsiet atbilsto\u0161u kred\u012btpunktu skaitu. \u0160ie kred\u012btpunkti tiks ieskait\u012bti j\u016bsu pilnaj\u0101 pas\u0101kuma apmaks\u0101."
 		},
 		"composer": {
 			"SetLocation": "Iestat\u012bt manu atra\u0161an\u0101s vietu",
@@ -249,7 +251,8 @@
 		"confirmParticipate": "{{1}} v\u0113l nav da\u013ca no notikuma. Vai v\u0113laties pievienot vi\u0146us k\u0101 dal\u012bbnieku?",
 		"userNotFound": "Lietot\u0101js nav atrasts",
 		"confirmYes": "J\u0101",
-		"confirmNo": "N\u0113"
+		"confirmNo": "N\u0113",
+		"UserAlreadyCheckedIn": "{{1}} jau ir re\u0123istr\u0113ju\u0161ies par {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Pas\u0101kuma aktivit\u0101tes \u0161aj\u0101 period\u0101: {{{stream.fields.title}}}",
@@ -336,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Dal\u012bba pas\u0101kumos"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Dal\u012bba pas\u0101kumos"
 			}
 		}
 	}

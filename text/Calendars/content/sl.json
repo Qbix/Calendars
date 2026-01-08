@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "Niste udele\u017eenec dogodka",
 			"LiveStreamStarted": "Prenos v \u017eivo se je za\u010del",
 			"WebRTCStarted": "Telekonferenca se je za\u010dela",
-			"WebRTCEnded": "Telekonferenca je kon\u010dana"
+			"WebRTCEnded": "Telekonferenca je kon\u010dana",
+			"Prepayment": "Predpla\u010dilo",
+			"PrepaymentConfirm": "Zara\u010dunali vam bomo nominalno pristojbino v vi\u0161ini 1 $. Prejeli boste ustrezno \u0161tevilo kreditnih to\u010dk. Te kreditne to\u010dke bodo uporabljene za va\u0161e celotno pla\u010dilo dogodka."
 		},
 		"composer": {
 			"SetLocation": "Nastavite mojo lokacijo",
@@ -249,7 +251,8 @@
 		"confirmParticipate": "{{1}} \u0161e ni del dogodka. Ali jih \u017eelite dodati kot udele\u017eenca?",
 		"userNotFound": "Uporabnik ni najden",
 		"confirmYes": "da",
-		"confirmNo": "\u0161t"
+		"confirmNo": "\u0161t",
+		"UserAlreadyCheckedIn": "{{1}} je \u017ee prijavil {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Dejavnost dogodka v {{{stream.fields.title}}}",
@@ -336,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Udele\u017eba na dogodku"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Udele\u017eba na dogodku"
 			}
 		}
 	}

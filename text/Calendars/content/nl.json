@@ -125,7 +125,9 @@
 			"YouAreNotParticipated": "U bent geen deelnemer aan het evenement",
 			"LiveStreamStarted": "Livestream is gestart",
 			"WebRTCStarted": "Teleconferentie begon",
-			"WebRTCEnded": "Teleconferentie be\u00ebindigd"
+			"WebRTCEnded": "Teleconferentie be\u00ebindigd",
+			"Prepayment": "Vooruitbetaling",
+			"PrepaymentConfirm": "We rekenen een symbolisch bedrag van $1 aan. U ontvangt het bijbehorende aantal credits. Deze credits worden verrekend met de totale betaling voor het evenement."
 		},
 		"composer": {
 			"SetLocation": "Mijn locatie instellen",
@@ -215,7 +217,8 @@
 		"confirmParticipate": "{{1}} maakt nog geen deel uit van het evenement. Wil je ze toevoegen als deelnemer?",
 		"userNotFound": "Gebruiker niet gevonden",
 		"confirmYes": "Ja",
-		"confirmNo": "Nee"
+		"confirmNo": "Nee",
+		"UserAlreadyCheckedIn": "{{1}} is al ingecheckt door {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Evenementactiviteit in {{{stream.fields.title}}}",
@@ -362,6 +365,9 @@
 				"reasons": {
 					"EventParticipation": "Deelname aan evenementen"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Deelname aan het evenement"
 			}
 		}
 	}

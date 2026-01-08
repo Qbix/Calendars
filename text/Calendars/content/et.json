@@ -251,7 +251,8 @@
 		"confirmParticipate": "{{1}} ei ole veel s\u00fcndmuse osa. Kas soovite nad osalejaks lisada?",
 		"userNotFound": "Kasutajat ei leitud",
 		"confirmYes": "Jah",
-		"confirmNo": "Ei"
+		"confirmNo": "Ei",
+		"UserAlreadyCheckedIn": "{{1}} on juba {{2}} poolt sisse registreerunud!"
 	},
 	"notifications": {
 		"EventActivityIn": "S\u00fcndmused: {{{stream.fields.title}}}",
@@ -338,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "\u00dcritusel osalemine"
 				}
+			},
+			"credits": {
+				"EventParticipation": "\u00dcritusel osalemine"
 			}
 		}
 	}

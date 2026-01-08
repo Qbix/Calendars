@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "Etkinli\u011fin bir kat\u0131l\u0131mc\u0131s\u0131 de\u011filsiniz",
 			"LiveStreamStarted": "Canl\u0131 yay\u0131n ba\u015flad\u0131",
 			"WebRTCStarted": "Telekonferans ba\u015flad\u0131",
-			"WebRTCEnded": "Telekonferans sona erdi"
+			"WebRTCEnded": "Telekonferans sona erdi",
+			"Prepayment": "\u00d6n \u00f6deme",
+			"PrepaymentConfirm": "Sadece 1 dolarl\u0131k sembolik bir \u00fccret alaca\u011f\u0131z. Kar\u015f\u0131l\u0131\u011f\u0131nda kredi kazanacaks\u0131n\u0131z. Bu krediler, etkinlik i\u00e7in yapaca\u011f\u0131n\u0131z toplam \u00f6demeye say\u0131lacakt\u0131r."
 		},
 		"composer": {
 			"SetLocation": "Konumumu Ayarla",
@@ -249,7 +251,8 @@
 		"confirmParticipate": "{{1}} hen\u00fcz etkinli\u011fin bir par\u00e7as\u0131 de\u011fil. Onlar\u0131 kat\u0131l\u0131mc\u0131 olarak eklemek istiyor musunuz?",
 		"userNotFound": "Kullan\u0131c\u0131 bulunamad\u0131",
 		"confirmYes": "Evet",
-		"confirmNo": "Numara"
+		"confirmNo": "Numara",
+		"UserAlreadyCheckedIn": "{{2}} taraf\u0131ndan {{1}} zaten giri\u015f yapm\u0131\u015ft\u0131!"
 	},
 	"notifications": {
 		"EventActivityIn": "{{{stream.fields.title}}} y\u0131l\u0131ndaki etkinlik etkinli\u011fi",
@@ -336,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Etkinlik Kat\u0131l\u0131m\u0131"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Etkinli\u011fe Kat\u0131l\u0131m"
 			}
 		}
 	}

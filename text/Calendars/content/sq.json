@@ -125,7 +125,9 @@
 			"YouAreNotParticipated": "Ju nuk jeni pjes\u00ebmarr\u00ebs n\u00eb ngjarje",
 			"LiveStreamStarted": "Transmetimi i drejtp\u00ebrdrejt\u00eb ka filluar",
 			"WebRTCStarted": "Filloi telekonferenca",
-			"WebRTCEnded": "P\u00ebrfundoi telekonferenca"
+			"WebRTCEnded": "P\u00ebrfundoi telekonferenca",
+			"Prepayment": "Parapagimi",
+			"PrepaymentConfirm": "Do t\u00eb aplikojm\u00eb nj\u00eb tarif\u00eb nominale prej 1 dollari. Do t\u00eb merrni numrin p\u00ebrkat\u00ebs t\u00eb krediteve. K\u00ebto kredite do t\u00eb aplikohen p\u00ebr pages\u00ebn tuaj t\u00eb plot\u00eb p\u00ebr eventin."
 		},
 		"composer": {
 			"SetLocation": "Cakto vendndodhjen time",
@@ -215,7 +217,8 @@
 		"confirmParticipate": "{{1}} nuk \u00ebsht\u00eb ende pjes\u00eb e ngjarjes. D\u00ebshiron t&#39;i shtosh si pjes\u00ebmarr\u00ebs?",
 		"userNotFound": "P\u00ebrdoruesi nuk u gjet",
 		"confirmYes": "po",
-		"confirmNo": "Nr"
+		"confirmNo": "Nr",
+		"UserAlreadyCheckedIn": "{{1}} tashm\u00eb \u00ebsht\u00eb regjistruar nga {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Aktiviteti i ngjarjeve n\u00eb {{{stream.fields.title}}}",
@@ -362,6 +365,9 @@
 				"reasons": {
 					"EventParticipation": "Pjes\u00ebmarrja n\u00eb Evente"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Pjes\u00ebmarrja n\u00eb Evente"
 			}
 		}
 	}
