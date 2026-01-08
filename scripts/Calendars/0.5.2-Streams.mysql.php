@@ -39,7 +39,7 @@ foreach (["speaker", "leader", "host", "staff"] as $label) {
 $access = new Streams_Access();
 $access->publisherId = "";
 $access->streamName = "Calendars/event*";
-$access->ofParticipantRole = "attendee";
+$access->ofParticipantRole = "registered";
 if ($access->retrieve()) {
 	$access->addPermission("Places/location");
 	$access->addPermission("Media/livestream");

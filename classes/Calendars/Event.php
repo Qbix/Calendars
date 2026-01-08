@@ -902,8 +902,8 @@ class Calendars_Event extends Base_Calendars_Event
 							"reason" => $isPublisher ? "publisher" : "admin"
 						)
 					), true);
-				} else if (!$skipPayment && $paymentType == 'required') {
-					if (!Assets_Credits::checkJoinPaid($userId, $stream)) {
+				} elseif (!$skipPayment && $paymentType == 'required') {
+					if (!Assets_Credits::getPaymentsInfo($userId, $stream)["conclusion"]["fullyPaid"]) {
 						$resAmount += $amount;
 						$paymentRequired = true;
 					}
@@ -918,10 +918,10 @@ class Calendars_Event extends Base_Calendars_Event
 							'type' => $relatedParticipant["relationType"]
 						))->fetchDbRows();
 						foreach ($relatedRows as $relatedRow) {
-							if (!Assets_Credits::checkJoinPaid($userId, $stream, array(
+							if (!Assets_Credits::getPaymentsInfo($userId, $stream, array(
 									'publisherId' => $relatedRow->fromPublisherId,
 									'streamName' => $relatedRow->fromStreamName)
-							)) {
+							)["conclusion"]["fullyPaid"]) {
 								$resAmount += $amount;
 								$paymentRequired = true;
 							}
@@ -1036,12 +1036,20 @@ class Calendars_Event extends Base_Calendars_Event
 		$startTime = $stream->getAttribute('startTime');
 		$participant->setExtra(@compact('going', 'startTime'));
 		if ($going === 'no') {
-			$participant->revokeRoles(["attendee", "requested"]);
+			$participant->revokeRoles(["registered", "requested"]);
+            if ($payment) {
+                $participant->setExtra('paid', 'no');
+            }
         } else if($going === 'maybe') {
-            $participant->grantRoles("requested");
+            self::grantRoles($participant, "requested");
+            if ($payment) {
+                $participant->setExtra('paid', 'reserved');
+            }
 		} else if ($going === 'yes') {
-            $participant->revokeRoles("requested");
-			$participant->grantRoles("attendee");
+            self::grantRoles($participant, "registered");
+            if ($payment) {
+                $participant->setExtra('paid', 'fully');
+            }
 		}
 		$participant->save();
 
@@ -1064,6 +1072,61 @@ class Calendars_Event extends Base_Calendars_Event
 
 		return $participant;
 	}
+
+    /**
+     * Grant roles to Calendars/event participants. Some roles can be grouped. Grouped roles excludes siblings.
+     * @method grantRoles
+     * @static
+     * @param {Streams_Participant} $participant
+     * @param {string|array} $roles
+     * @paramt {bool} [$save] whether to make save after roles updated
+     * @throws Q_Exception_BadValue
+     * @throws Users_Exception_NotLoggedIn
+     */
+    static function grantRoles (&$participant, $roles, $save = false) {
+        $groups = array(
+            array('rejected', 'requested', 'registered')
+        );
+
+        if (is_array($roles)) {
+            foreach ($roles as $role) {
+                self::grantRoles($participant, $role);
+            }
+            return;
+        } elseif (is_string($roles)) {
+            $role = $roles;
+        } else {
+            throw new Q_Exception_BadValue(array(
+                'internal' => $roles,
+                'problem' => 'can be string or array of strings'
+            ));
+        }
+
+        // role already exists
+        if ($participant->testRoles($role)) {
+            return;
+        }
+
+        $revokeRoles = array();
+        foreach ($groups as $group) {
+            if (in_array($role, $group)) {
+                if ($participant->testRoles('rejected')) {
+                    $adminLabels = Q_Config::get("Calendars", "events", "admins", array());
+                    if(!($adminLabels && (bool)Users::roles(Users::communityId(), $adminLabels, array(), (Users::loggedInUser(true))->id))) {
+                        return;
+                    }
+                }
+
+                $revokeRoles = $group;
+            }
+        }
+
+        if (!empty($revokeRoles)) {
+            $participant->revokeRoles($revokeRoles);
+        }
+        $participant->grantRoles(array($role));
+        $save && $participant->save();
+    }
 
 	/**
 	 * Relate additional streams (pets, ...) to event

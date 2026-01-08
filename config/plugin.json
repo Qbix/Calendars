@@ -313,7 +313,13 @@
 	"Assets": {
 		"payments": {
 			"reasons": {
-				"EventParticipation": true
+				"EventParticipation": {
+					"withoutIntentToken": {
+						"currency": "USD",
+						"min": 0,
+						"max": 1
+					}
+				}
 			}
 		},
 		"credits": {

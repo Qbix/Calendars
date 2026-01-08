@@ -19,5 +19,5 @@ function Calendars_payment_response_status($params)
 	// 	throw new Users_Exception_NotAuthorized();
 	// }
 
-	return Assets_Credits::checkJoinPaid($user->id, $stream);
+	return Assets_Credits::getPaymentsInfo($user->id, $stream)["conclusion"]["fullyPaid"];
 }

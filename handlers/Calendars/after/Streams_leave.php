@@ -33,29 +33,25 @@ function Calendars_after_Streams_leave($params)
 		}
 
 		// Look up historical payment that has not been refunded yet
-		$joinRow = Assets_Credits::checkJoinPaid(
+		$payments = Assets_Credits::getPaymentsInfo(
 			$asUserId,
 			array(
 				'publisherId' => $stream->publisherId,
 				'streamName'  => $stream->name
-			),
-			null,
-			array(
-				'reasons' => array(Assets::JOINED_PAID_STREAM, 'EventParticipation')
 			)
 		);
 
-		if (!$joinRow) {
+		if (!$payments['conclusion']['amount']) {
 			continue; // no payment OR already refunded
 		}
 
-		// Refund FROM event host to TO the attendee
+		// Refund FROM event host to TO the registered
 		Assets_Credits::refund(
 			null,                      // community
-			$joinRow->amount,          // exact amount paid
+			$payments['conclusion']['amount'],          // exact amount paid
 			Assets::LEFT_PAID_STREAM,  // refund reason
-			$joinRow->toUserId,        // event publisher (receiver of original payment)
-			$joinRow->fromUserId,      // attendee
+            $payments['conclusion']['toUserId'],        // event publisher (receiver of original payment)
+            $payments['conclusion']['fromUserId'],      // registered
 			array(
 				'toPublisherId' => $event->publisherId,
 				'toStreamName'  => $event->name,
