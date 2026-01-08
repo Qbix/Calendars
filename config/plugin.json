@@ -23,6 +23,7 @@
 		},
 		"handlersAfterEvent": {
 			"Assets/credits/spend": ["Calendars/after/Assets_credits_spend"],
+			"Assets/credits/refund": ["Calendars/after/Assets_credits_refund"],
 			"Streams/create/Calendars/event": ["Calendars/after/Streams_create_Calendars_event"],
 			"Streams/leave": ["Calendars/after/Streams_leave"],
 			"Streams/relateTo/Calendars/event": ["Calendars/after/Streams_relateTo_Calendars_event"],
@@ -282,7 +283,7 @@
 		},
 		"event": {
 			"hideIfNoParticipants": false,
-			"hideLocationIfNotPaid": false,
+			"hideLocationIfNotPaid": true,
 			"templateStyle": "classic", /* can be "classic", "tall", "square" */
 			"reminders": {
 				"86400": { /* 24 hours */
