@@ -251,7 +251,8 @@
 		"confirmParticipate": "{{1}} er ekki enn hluti af vi\u00f0bur\u00f0inum. Viltu b\u00e6ta \u00feeim vi\u00f0 sem \u00fe\u00e1tttakanda?",
 		"userNotFound": "Notandi finnst ekki",
 		"confirmYes": "J\u00e1",
-		"confirmNo": "Nei"
+		"confirmNo": "Nei",
+		"UserAlreadyCheckedIn": "{{1}} var \u00feegar skr\u00e1\u00f0ur inn af {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Vi\u00f0bur\u00f0arvirkni \u00ed {{{stream.fields.title}}}",
@@ -338,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "\u00de\u00e1tttaka \u00ed vi\u00f0bur\u00f0i"
 				}
+			},
+			"credits": {
+				"EventParticipation": "\u00de\u00e1tttaka \u00ed vi\u00f0bur\u00f0i"
 			}
 		}
 	}

@@ -251,7 +251,8 @@
 		"confirmParticipate": "{{1}} a\u00fan no forma parte del evento. \u00bfQuieres agregarlo como participante?",
 		"userNotFound": "Usuario no encontrado",
 		"confirmYes": "s\u00ed",
-		"confirmNo": "No"
+		"confirmNo": "No",
+		"UserAlreadyCheckedIn": "{{1}} ya fue registrado por {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Actividad de eventos en {{{stream.fields.title}}}",
@@ -338,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Participaci\u00f3n en eventos"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Participaci\u00f3n en eventos"
 			}
 		}
 	}

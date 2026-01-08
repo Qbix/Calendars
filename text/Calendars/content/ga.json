@@ -251,7 +251,8 @@
 		"confirmParticipate": "N\u00edl {{1}} mar chuid den imeacht go f\u00f3ill. Ar mhaith leat iad a chur leis mar rannph\u00e1irt\u00ed?",
 		"userNotFound": "\u00das\u00e1ideoir gan aimsi\u00fa",
 		"confirmYes": "T\u00e1",
-		"confirmNo": "N\u00edl"
+		"confirmNo": "N\u00edl",
+		"UserAlreadyCheckedIn": "Bh\u00ed {{1}} cl\u00e1raithe isteach cheana f\u00e9in ag {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Gn\u00edomha\u00edocht imeachta i {{{stream.fields.title}}}",
@@ -338,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Rannph\u00e1irt\u00edocht Imeachta\u00ed"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Rannph\u00e1irt\u00edocht Imeachta\u00ed"
 			}
 		}
 	}

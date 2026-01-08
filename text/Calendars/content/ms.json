@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "Anda bukan peserta acara itu",
 			"LiveStreamStarted": "Strim langsung telah bermula",
 			"WebRTCStarted": "Telesidang bermula",
-			"WebRTCEnded": "Telesidang tamat"
+			"WebRTCEnded": "Telesidang tamat",
+			"Prepayment": "Prabayar",
+			"PrepaymentConfirm": "Kami akan mengenakan bayaran nominal sebanyak $1. Anda akan menerima bilangan kredit yang sepadan. Kredit ini akan digunakan untuk pembayaran penuh anda untuk acara tersebut."
 		},
 		"composer": {
 			"SetLocation": "Tetapkan Lokasi Saya",
@@ -249,7 +251,8 @@
 		"confirmParticipate": "{{1}} belum lagi menjadi sebahagian daripada acara itu. Adakah anda mahu menambah mereka sebagai peserta?",
 		"userNotFound": "Pengguna tidak dijumpai",
 		"confirmYes": "ya",
-		"confirmNo": "Tidak"
+		"confirmNo": "Tidak",
+		"UserAlreadyCheckedIn": "{{1}} sudah didaftar masuk oleh {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Aktiviti acara dalam {{{stream.fields.title}}}",
@@ -336,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Penyertaan Acara"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Penyertaan Acara"
 			}
 		}
 	}

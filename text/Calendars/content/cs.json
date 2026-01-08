@@ -217,7 +217,8 @@
 		"confirmParticipate": "{{1}} je\u0161t\u011b nen\u00ed sou\u010d\u00e1st\u00ed ud\u00e1losti. Chcete je p\u0159idat jako \u00fa\u010dastn\u00edka?",
 		"userNotFound": "U\u017eivatel nenalezen",
 		"confirmYes": "Ano",
-		"confirmNo": "Ne"
+		"confirmNo": "Ne",
+		"UserAlreadyCheckedIn": "{{1}} u\u017e bylo zaregistrov\u00e1no u\u017eivatelem {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Aktivita ud\u00e1losti v {{{stream.fields.title}}}",
@@ -364,6 +365,9 @@
 				"reasons": {
 					"EventParticipation": "\u00da\u010dast na akci"
 				}
+			},
+			"credits": {
+				"EventParticipation": "\u00da\u010dast na akci"
 			}
 		}
 	}

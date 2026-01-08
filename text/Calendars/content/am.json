@@ -251,7 +251,8 @@
 		"confirmParticipate": "{{1}} \u1308\u1293 \u12e8\u12dd\u130d\u1305\u1271 \u12a0\u12ab\u120d \u12a0\u12ed\u12f0\u1208\u121d\u1362 \u12a5\u1295\u12f0 \u1270\u1233\u1273\u134a \u120d\u1273\u12ad\u120b\u1278\u12cd \u1275\u1348\u120d\u130b\u1208\u1205?",
 		"userNotFound": "\u1270\u1320\u1243\u121a \u12a0\u120d\u1270\u1308\u1298\u121d\u1362",
 		"confirmYes": "\u12a0\u12ce",
-		"confirmNo": "\u12a0\u12ed"
+		"confirmNo": "\u12a0\u12ed",
+		"UserAlreadyCheckedIn": "{{1}} \u12a0\u1235\u1240\u12f5\u121e \u1260 {{2}} \u1270\u1218\u12dd\u130d\u1267\u120d!"
 	},
 	"notifications": {
 		"EventActivityIn": "\u12e8\u12ad\u1235\u1270\u1275 \u12a5\u1295\u1245\u1235\u1243\u1234 \u1260{999}",
@@ -338,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "\u12e8\u12ad\u1235\u1270\u1275 \u1270\u1233\u1275\u134e"
 				}
+			},
+			"credits": {
+				"EventParticipation": "\u12e8\u12dd\u130d\u1305\u1275 \u1270\u1233\u1275\u134e"
 			}
 		}
 	}

@@ -124,7 +124,9 @@
 			"YouAreNotParticipated": "B\u1ea1n kh\u00f4ng ph\u1ea3i l\u00e0 ng\u01b0\u1eddi tham gia s\u1ef1 ki\u1ec7n",
 			"LiveStreamStarted": "Bu\u1ed5i ph\u00e1t tr\u1ef1c ti\u1ebfp \u0111\u00e3 b\u1eaft \u0111\u1ea7u",
 			"WebRTCStarted": "H\u1ed9i ngh\u1ecb truy\u1ec1n h\u00ecnh \u0111\u00e3 b\u1eaft \u0111\u1ea7u",
-			"WebRTCEnded": "H\u1ed9i ngh\u1ecb truy\u1ec1n h\u00ecnh \u0111\u00e3 k\u1ebft th\u00fac"
+			"WebRTCEnded": "H\u1ed9i ngh\u1ecb truy\u1ec1n h\u00ecnh \u0111\u00e3 k\u1ebft th\u00fac",
+			"Prepayment": "Tr\u1ea3 tr\u01b0\u1edbc",
+			"PrepaymentConfirm": "Ch\u00fang t\u00f4i s\u1ebd t\u00ednh m\u1ed9t kho\u1ea3n ph\u00ed t\u01b0\u1ee3ng tr\u01b0ng l\u00e0 1 \u0111\u00f4 la. B\u1ea1n s\u1ebd nh\u1eadn \u0111\u01b0\u1ee3c s\u1ed1 \u0111i\u1ec3m th\u01b0\u1edfng t\u01b0\u01a1ng \u1ee9ng. S\u1ed1 \u0111i\u1ec3m th\u01b0\u1edfng n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c tr\u1eeb v\u00e0o t\u1ed5ng s\u1ed1 ti\u1ec1n thanh to\u00e1n cho s\u1ef1 ki\u1ec7n."
 		},
 		"composer": {
 			"SetLocation": "\u0110\u1eb7t v\u1ecb tr\u00ed c\u1ee7a t\u00f4i",
@@ -249,7 +251,8 @@
 		"confirmParticipate": "{{1}} ch\u01b0a ph\u1ea3i l\u00e0 m\u1ed9t ph\u1ea7n c\u1ee7a s\u1ef1 ki\u1ec7n. B\u1ea1n c\u00f3 mu\u1ed1n th\u00eam h\u1ecd l\u00e0m ng\u01b0\u1eddi tham gia kh\u00f4ng?",
 		"userNotFound": "Ng\u01b0\u1eddi d\u00f9ng kh\u00f4ng \u0111\u01b0\u1ee3c t\u00ecm th\u1ea5y",
 		"confirmYes": "\u0110\u00fang",
-		"confirmNo": "Kh\u00f4ng"
+		"confirmNo": "Kh\u00f4ng",
+		"UserAlreadyCheckedIn": "\u0110\u00e3 {{1}} kh\u00e1ch \u0111\u01b0\u1ee3c {{2}} danh!"
 	},
 	"notifications": {
 		"EventActivityIn": "Ho\u1ea1t \u0111\u1ed9ng s\u1ef1 ki\u1ec7n trong {{{stream.fields.title}}}",
@@ -336,6 +339,9 @@
 				"reasons": {
 					"EventParticipation": "Tham gia s\u1ef1 ki\u1ec7n"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Tham gia s\u1ef1 ki\u1ec7n"
 			}
 		}
 	}
