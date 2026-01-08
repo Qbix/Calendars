@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Takk for din interesse i {{title}}"
+	},
+	"approved": {
+		"Subject": "Oppm\u00f8te godkjent",
+		"AttendanceApproved": "Gratulerer! Oppm\u00f8tet ditt er godkjent for {{title}}"
+	},
+	"requested": {
+		"Subject": "\u00d8nsket oppm\u00f8te",
+		"AttendanceRequested": "Vi bekrefter foresp\u00f8rselen din om \u00e5 delta: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Oppm\u00f8te ikke godkjent",
+		"AttendanceRejected": "Administratorene godkjente ikke foresp\u00f8rselen din om \u00e5 delta: {{title}}"
+	},
+	"paid": {
+		"Subject": "Bekreftelse av vellykket betaling",
+		"YouveBeenCharged": "Du har blitt belastet med {{amount}} {{currency}} (og {{credits}} kreditter). N\u00e5 er du klar! Vi sees p\u00e5 {{title}}"
+	}
+}

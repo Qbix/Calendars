@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Siyabonga ngentshisekelo yakho ku {{title}}"
+	},
+	"approved": {
+		"Subject": "Ukuvunyelwa Kwababekhona",
+		"AttendanceApproved": "Halala! Ukuba khona kwakho kuvunyelwe ku {{title}}"
+	},
+	"requested": {
+		"Subject": "Kucelwe Ukuba Khona",
+		"AttendanceRequested": "Siyaqinisekisa isicelo sakho sokuba khona: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Ukuba khona Akuvunyelwe",
+		"AttendanceRejected": "Abaphathi abavumanga isicelo sakho sokuba khona: {{title}}"
+	},
+	"paid": {
+		"Subject": "Ukuqinisekiswa Kwenkokhelo Okuphumelelayo",
+		"YouveBeenCharged": "Ukhokhiswe u- {{amount}} {{currency}} (kanye namakhredithi angu {{credits}} ). Usulungile! Sizobonana ku {{title}}"
+	}
+}

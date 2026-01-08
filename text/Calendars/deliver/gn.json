@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Aguyje pe\u1ebdme pe\u00f1einteres\u00e1gui {{title}} rehe"
+	},
+	"approved": {
+		"Subject": "Asistencia O\u00f1emon\u00e9\u00eeva",
+		"AttendanceApproved": "Vy&#39;apav\u00ea! O\u00f1emon\u00e9\u00eema nde asistencia {{title}} pe guar\u00e3"
+	},
+	"requested": {
+		"Subject": "Ojejerur\u00e9va Asistencia",
+		"AttendanceRequested": "Romoa\u00f1ete h\u00edna ne mba&#39;ejerure reime hagu\u00e3: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Asistencia No\u00f1emon\u00e9\u00eeri",
+		"AttendanceRejected": "Admins ndoguerohor\u00fdi nde pedido reime hagu\u00e3: {{title}}"
+	},
+	"paid": {
+		"Subject": "Confirmaci\u00f3n de Pago os\u1ebd por\u00e3va",
+		"YouveBeenCharged": "Ojecobra nd\u00e9ve {{amount}} {{currency}} (ha {{credits}} cr\u00e9dito). \u00a1Opa mba&#39;e pe\u1ebd pe\u00f1embosako&#39;i! Jajohech\u00e1ta {{title}}"
+	}
+}

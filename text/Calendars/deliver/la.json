@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Gratias tibi ago pro interesse tuo in {{title}}"
+	},
+	"approved": {
+		"Subject": "Praesentia Approbata",
+		"AttendanceApproved": "Gratulationes! Praesentia tua ad {{title}} probata est."
+	},
+	"requested": {
+		"Subject": "Praesentia Petita",
+		"AttendanceRequested": "Petitionem tuam adesse confirmamus: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Praesentia Non Approbata",
+		"AttendanceRejected": "Administratores petitionem tuam adesse non probarunt: {{title}}"
+	},
+	"paid": {
+		"Subject": "Confirmatio Solutionis Prosperae",
+		"YouveBeenCharged": "{{amount}} {{currency}} (et {{credits}} credita) tibi imputata sunt. Paratus es! Te videbo hora {{title}}"
+	}
+}

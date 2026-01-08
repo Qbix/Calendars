@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Murakoze ku bw&#39;inyungu zanyu muri {{title}}"
+	},
+	"approved": {
+		"Subject": "Abitabiriye bemewe",
+		"AttendanceApproved": "Urakoze cyane! Kwitabira kwawe kwemejwe kuri {{title}}"
+	},
+	"requested": {
+		"Subject": "Ubwitabire bwasabwe",
+		"AttendanceRequested": "Turi kwemeza icyifuzo cyawe cyo kwitabira: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Kwitabira ntabwo byemewe",
+		"AttendanceRejected": "Abayobozi ntibemeye ubusabe bwawe bwo kwitabira: {{title}}"
+	},
+	"paid": {
+		"Subject": "Kwemeza Kwishyura Byagenze neza",
+		"YouveBeenCharged": "Waguzwe amafaranga {{amount}} {{currency}} (n&#39;amakrediti {{credits}} ). Umaze kwitegura! Tuzabonana kuri {{title}}"
+	}
+}
