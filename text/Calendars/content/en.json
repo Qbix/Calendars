@@ -331,17 +331,5 @@
 		"calendarAppPreferences": "Open the Preferences in the Calendar App on your Mac, and set Default Calendar App to be as shown below.",
 		"thenCloseDialog": "Then close this dialog to subscribe to your calendar!",
 		"success": "Calendar was successfully synced"
-	},
-	"@override": {
-		"Assets/content": {
-            "credits": {
-				"EventParticipation": "Event Participation"
-			},
-			"payments": {
-				"reasons": {
-					"EventParticipation": "Event Participation"
-				}
-			}
-		}
 	}
 }
