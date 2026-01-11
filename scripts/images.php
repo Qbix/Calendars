@@ -16,7 +16,7 @@ $EXT = 'jpg';
 /**
  * Batch config
  */
-$BATCH_SIZE = (int) Q_Config::get('AI', 'images', 'batch', 1);
+$BATCH_SIZE = (int) Q_Config::get('AI', 'images', 'batch', 2);
 if ($BATCH_SIZE <= 1) {
 	$BATCH_SIZE = 0;
 }
@@ -298,8 +298,8 @@ for ($index = 1; $index <= $MAX_INDEX; $index++) {
 						$langInfo = Q_Text::languagesInfo();
 						if (empty($langInfo[$lang]['name'])) continue;
 
-						$outDir = APP_FILES_DIR . DS . 'Calendars' . DS . 'holidays'
-							. DS . $culture . DS . $key . DS . $year . '-' . $index;
+						$outDir = APP_WEB_DIR . DS . 'Q' . DS . 'plugins' . DS . 'Calendars' . DS . 'img'
+							. DS . 'holidays' . DS . $culture . DS . $key . DS . $year . '-' . $index;
 
 						if (!is_dir($outDir)) mkdir($outDir, 0755, true);
 
@@ -360,44 +360,27 @@ for ($index = 1; $index <= $MAX_INDEX; $index++) {
 
 						batchUse('image');
 
+						$streamType = 'Streams/image';
+						$observationsType = 'holiday';
 						$options = array(
 							'format' => $EXT,
 							'width'  => $width,
 							'height' => $height,
-							'callback' => function ($r) use ($path, $llm, $attributes) {
-								if (empty($r['data'])) return;
-
-								file_put_contents($path, $r['data']);
-
-								$streamType = 'Streams/image';
-								$observationsType = 'holiday';
-								if ($llm) { // execute LLM API to get observations
-									batchUse('llm');
-									$results = $llm->process(array(
-										'images' => array($r['data'])
-									), AI_LLM::observations($streamType, $observationsType));
-									batchCommit('llm');
-									$attributes = array_merge(
-										$attributes,
-										AI_LLM::attributesFromObservationResults($results, $streamType, $observationsType)
-									);
-								}
-								$ok = AI_LLM::createStream(
+							'callback' => function ($r) use (
+								$path,
+								$llm,
+								$streamType,
+								$observationsType,
+								$attributes,
+							) {
+								processGeneratedImage(
+									$r,
+									$path,
+									$llm,
 									$streamType,
 									$observationsType,
-									array(
-										'icon' => str_replace(APP_WEB_DIR, '{{baseUrl}}', $path)
-									),
-									$attributes,
-									array(
-										'accept' => true
-									)
+									$attributes
 								);
-
-								if ($ok) {
-									@unlink($path);
-								}
-
 							}
 						);
 
@@ -438,3 +421,79 @@ if ($BATCH_SIZE) {
 }
 
 echo "Holiday image generation complete.\n";
+
+
+function processGeneratedImage(
+	$r,
+	$path,
+	$llm,
+	$streamType,
+	$observationsType,
+	$attributes
+) {
+	if (empty($r['data'])) return;
+
+	$data = $r['data'];
+
+	file_put_contents($path, $data);
+
+	if (!$llm) {
+		finalizeStream($streamType, $observationsType, $path, $attributes, $data);
+		return;
+	}
+
+	batchUse('llm');
+
+	$llm->process(
+		array('images' => array($r['data'])),
+		AI_LLM::observations($streamType, $observationsType),
+		array(),
+		array(
+			'callback' => function ($results) use (
+				&$attributes,
+				$streamType,
+				$observationsType,
+				$path,
+				$data
+			) {
+				$attributes = array_merge(
+					$attributes,
+					AI_LLM::attributesFromObservationResults(
+						$results,
+						$streamType,
+						$observationsType
+					)
+				);
+				finalizeStream($streamType, $observationsType, $path, $attributes, $data);
+			}
+		)
+	);
+
+	batchCommit('llm');
+}
+
+function finalizeStream($streamType, $observationsType, $path, $attributes, $data) {
+	$ok = AI_LLM::createStream(
+		$streamType,
+		$observationsType,
+		array(
+			'icon' => str_replace(APP_WEB_DIR, '{{baseUrl}}', $path)
+		),
+		$attributes,
+		array(
+			'accept' => true
+		)
+	);
+
+	if ($ok) {
+		$tempKey = 'tmp_' . uniqid('', true);
+		$paths = Q_Image::save(array(
+			'data' => $data,
+			'path' => str_replace(array(DS, APP_WEB_DIR . '/'), array('/', ''), dirname($path)),
+			'subpath' => "",
+			'save' => 'Streams/image',
+			'skipAccess' => true
+		));
+		@unlink($path);
+	}
+}

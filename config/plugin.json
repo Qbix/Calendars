@@ -65,6 +65,7 @@
 			"Calendars/event": {
 				"sizes": ["40", "50", "80", "200x", "1000x"],
 				"defaultSize": "1000x",
+				"extension": "jpg",
 				"maxStretch": 2,
 				"defaultCacheBust": 1000
 			}
