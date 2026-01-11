@@ -1,188 +1,188 @@
 {
   "African": {
     "Kwanzaa-Umoja": {
-      "countries": ["US", "CA", "GB"]
+      "countries": ["US", "CA", "GB", null, "BR", "JM", "TT", "BB"]
     },
     "Kwanzaa-Imani": {
-      "countries": ["US", "CA", "GB"]
+      "countries": ["US", "CA", "GB", null, "BR", "JM", "TT", "BB"]
     }
   },
   "Orthodox": {
     "Christmas": {
-      "countries": ["RU", "UA", "RO", "GR", "RS", "BG", "BY", "MK", "GE", "MD", "ME", "CY", "BA", "ET", "ER", "EG", "LB", "SY", "JO", "IL", "KZ", "AL"]
+      "countries": ["RU", "UA", "RO", "GR", "RS", "BG", "BY", "MK", "GE", "MD", "ME", "CY", "BA", "ET", "ER", "EG", "LB", "SY", "JO", "IL", "KZ", "AL", null, "US", "CA", "AU", "DE", "IT", "FR", "GB", "AM", "PS", "TR", "SE", "FI"]
     },
     "Old New Year": {
-      "countries": ["RU", "UA", "BY", "KZ", "GE", "RS", "MK", "BA", "ME"]
+      "countries": ["RU", "UA", "BY", "KZ", "GE", "RS", "MK", "BA", "ME", null, "AM", "US", "CA", "DE", "IL"]
     },
     "Theophany": {
-      "countries": ["RU", "UA", "GR", "RO", "RS", "BG", "BY", "MK", "GE", "MD", "ME", "CY", "ET", "ER"]
+      "countries": ["RU", "UA", "GR", "RO", "RS", "BG", "BY", "MK", "GE", "MD", "ME", "CY", "ET", "ER", null, "US", "CA", "AU", "DE", "GB", "FR", "AM"]
     },
     "Maslenitsa": {
-      "countries": ["RU", "UA", "BY", "KZ"]
+      "countries": ["RU", "UA", "BY", "KZ", null, "US", "CA", "DE", "IL", "EE", "LV", "LT"]
     },
     "Clean Monday": {
-      "countries": ["GR", "CY"]
+      "countries": ["GR", "CY", null, "US", "AU", "CA", "GB", "DE"]
     },
     "Pascha": {
-      "countries": ["RU", "UA", "RO", "GR", "RS", "BG", "BY", "MK", "GE", "MD", "ME", "CY", "BA", "ET", "ER", "EG", "LB"]
+      "countries": ["RU", "UA", "RO", "GR", "RS", "BG", "BY", "MK", "GE", "MD", "ME", "CY", "BA", "ET", "ER", "EG", "LB", null, "US", "CA", "AU", "DE", "GB", "FR", "IT", "AM", "SY", "JO", "IL", "PS", "KZ", "SE", "FI"]
     },
     "Dormition": {
-      "countries": ["RU", "UA", "GR", "RO", "RS", "BG", "BY", "MK", "GE", "MD", "ME", "CY"]
+      "countries": ["RU", "UA", "GR", "RO", "RS", "BG", "BY", "MK", "GE", "MD", "ME", "CY", null, "US", "CA", "AU", "DE", "GB", "AM"]
     }
   },
   "Sikh": {
     "Maghi": {
-      "countries": ["IN", "PK", "GB", "CA"]
+      "countries": ["IN", "PK", "GB", "CA", null, "US", "AU", "MY", "SG", "IT", "NZ", "TH"]
     },
     "Vaisakhi": {
-      "countries": ["IN", "PK", "GB", "CA", "US", "AU", "NZ", "MY", "SG"]
+      "countries": ["IN", "PK", "GB", "CA", "US", "AU", "NZ", "MY", "SG", null, "AE", "IT", "TH", "KE", "UG", "TZ", "HK", "FJ"]
     },
     "Guru-Nanak-Gurpurab": {
-      "countries": ["IN", "PK", "GB", "CA", "US", "AU", "NZ", "MY", "SG"]
+      "countries": ["IN", "PK", "GB", "CA", "US", "AU", "NZ", "MY", "SG", null, "AE", "IT", "TH", "KE", "UG", "TZ", "HK", "FJ", "DE", "FR"]
     }
   },
   "Chinese": {
     "Lantern Festival": {
-      "countries": ["CN", "TW", "HK", "MO", "SG", "MY", "ID", "TH", "VN", "PH", "BN"]
+      "countries": ["CN", "TW", "HK", "MO", "SG", "MY", "ID", "TH", "VN", "PH", "BN", null, "MM", "KH", "LA", "US", "CA", "AU", "GB", "NZ", "JP", "KR", "PE", "PA", "SR", "CU", "JM", "ZA", "MU", "RE", "MG", "FR", "NL", "BE", "DE", "ES", "IT", "RU"]
     },
     "Qingming Festival": {
-      "countries": ["CN", "TW", "HK", "MO", "SG", "MY", "VN"]
+      "countries": ["CN", "TW", "HK", "MO", "SG", "MY", "VN", null, "TH", "ID", "PH", "BN", "MM", "US", "CA", "AU", "GB", "NZ"]
     }
   },
   "Islamic": {
     "Ramadan-Start": {
-      "countries": ["ID", "PK", "BD", "NG", "EG", "IR", "TR", "DZ", "SD", "IQ", "MA", "SA", "YE", "SY", "AF", "UZ", "MY", "NE", "GH", "MZ", "ML", "SN", "TN", "SO", "AZ", "TJ", "GN", "JO", "AE", "TM", "LY", "KG", "LB", "MR", "OM", "KW", "AL", "GM", "BH", "QA", "XK", "KZ", "BJ", "CM", "TD", "CI", "BF", "PS", "GB", "FR", "DE", "RU", "TH", "ET", "CN", "TZ", "KE", "UG"]
+      "countries": ["ID", "PK", "BD", "NG", "EG", "IR", "TR", "DZ", "SD", "IQ", "MA", "SA", "YE", "SY", "AF", "UZ", "MY", "NE", "GH", "MZ", "ML", "SN", "TN", "SO", "AZ", "TJ", "GN", "JO", "AE", "TM", "LY", "KG", "LB", "MR", "OM", "KW", "AL", "GM", "BH", "QA", "XK", "KZ", "BJ", "CM", "TD", "CI", "BF", "PS", "GB", "FR", "DE", "RU", "TH", "ET", "CN", "TZ", "KE", "UG", null, "SL", "ER", "DJ", "MV", "BN", "KM", "NL", "BE", "IT", "ES", "SE", "AT", "CH", "GR", "BG", "MK", "RS", "BA", "ME", "CG", "GA", "TG", "LR", "PH", "MM", "SG", "IN", "US", "CA", "AU", "ZA", "IL", "GE", "AM", "MW", "ZW", "ZM", "NA"]
     },
     "Eid-al-Fitr": {
-      "countries": ["ID", "PK", "BD", "NG", "EG", "IR", "TR", "DZ", "SD", "IQ", "MA", "SA", "YE", "SY", "AF", "UZ", "MY", "NE", "GH", "MZ", "ML", "SN", "TN", "SO", "AZ", "TJ", "GN", "JO", "AE", "TM", "LY", "KG", "LB", "MR", "OM", "KW", "AL", "GM", "BH", "QA", "XK", "KZ", "BJ", "CM", "TD", "CI", "BF", "PS", "GB", "FR", "DE", "RU", "TH", "ET", "CN", "TZ", "KE", "UG"]
+      "countries": ["ID", "PK", "BD", "NG", "EG", "IR", "TR", "DZ", "SD", "IQ", "MA", "SA", "YE", "SY", "AF", "UZ", "MY", "NE", "GH", "MZ", "ML", "SN", "TN", "SO", "AZ", "TJ", "GN", "JO", "AE", "TM", "LY", "KG", "LB", "MR", "OM", "KW", "AL", "GM", "BH", "QA", "XK", "KZ", "BJ", "CM", "TD", "CI", "BF", "PS", "GB", "FR", "DE", "RU", "TH", "ET", "CN", "TZ", "KE", "UG", null, "SL", "ER", "DJ", "MV", "BN", "KM", "NL", "BE", "IT", "ES", "SE", "AT", "CH", "GR", "BG", "MK", "RS", "BA", "ME", "CG", "GA", "TG", "LR", "PH", "MM", "SG", "IN", "US", "CA", "AU", "ZA", "IL", "GE", "AM", "MW", "ZW", "ZM", "NA"]
     },
     "Eid-al-Adha": {
-      "countries": ["ID", "PK", "BD", "NG", "EG", "IR", "TR", "DZ", "SD", "IQ", "MA", "SA", "YE", "SY", "AF", "UZ", "MY", "NE", "GH", "MZ", "ML", "SN", "TN", "SO", "AZ", "TJ", "GN", "JO", "AE", "TM", "LY", "KG", "LB", "MR", "OM", "KW", "AL", "GM", "BH", "QA", "XK", "KZ", "BJ", "CM", "TD", "CI", "BF", "PS", "GB", "FR", "DE", "RU", "TH", "ET", "CN", "TZ", "KE", "UG"]
+      "countries": ["ID", "PK", "BD", "NG", "EG", "IR", "TR", "DZ", "SD", "IQ", "MA", "SA", "YE", "SY", "AF", "UZ", "MY", "NE", "GH", "MZ", "ML", "SN", "TN", "SO", "AZ", "TJ", "GN", "JO", "AE", "TM", "LY", "KG", "LB", "MR", "OM", "KW", "AL", "GM", "BH", "QA", "XK", "KZ", "BJ", "CM", "TD", "CI", "BF", "PS", "GB", "FR", "DE", "RU", "TH", "ET", "CN", "TZ", "KE", "UG", null, "SL", "ER", "DJ", "MV", "BN", "KM", "NL", "BE", "IT", "ES", "SE", "AT", "CH", "GR", "BG", "MK", "RS", "BA", "ME", "CG", "GA", "TG", "LR", "PH", "MM", "SG", "IN", "US", "CA", "AU", "ZA", "IL", "GE", "AM", "MW", "ZW", "ZM", "NA"]
     },
     "Ashura": {
-      "countries": ["IR", "IQ", "LB", "BH", "AZ", "PK", "AF", "YE", "SA", "KW", "IN", "BD"]
+      "countries": ["IR", "IQ", "LB", "BH", "AZ", "PK", "AF", "YE", "SA", "KW", "IN", "BD", null, "OM", "SY", "TR", "QA", "AE", "GB", "US", "CA", "DE", "AU"]
     },
     "Mawlid": {
-      "countries": ["EG", "SA", "YE", "JO", "SY", "LB", "IQ", "LY", "MA", "DZ", "TN", "SD", "SO", "PK", "BD", "ID", "MY", "TR", "AF", "NG", "NE", "ML", "SN"]
+      "countries": ["EG", "SA", "YE", "JO", "SY", "LB", "IQ", "LY", "MA", "DZ", "TN", "SD", "SO", "PK", "BD", "ID", "MY", "TR", "AF", "NG", "NE", "ML", "SN", null, "MR", "GM", "GN", "BJ", "CI", "CM", "TD", "KW", "OM", "BH", "QA", "AE", "PS", "GB", "FR", "DE"]
     }
   },
   "Catholic": {
     "Ash-Wednesday": {
-      "countries": ["BR", "MX", "PH", "US", "IT", "FR", "ES", "CO", "AR", "PL", "PE", "VE", "CL", "EC", "GT", "CU", "BO", "HT", "DO", "HN", "PY", "SV", "NI", "CR", "PR", "PA", "UY", "IE", "PT", "LT", "SK", "HR", "SI", "BE", "HU", "AT", "CH", "CZ"]
+      "countries": ["BR", "MX", "PH", "US", "IT", "FR", "ES", "CO", "AR", "PL", "PE", "VE", "CL", "EC", "GT", "CU", "BO", "HT", "DO", "HN", "PY", "SV", "NI", "CR", "PR", "PA", "UY", "IE", "PT", "LT", "SK", "HR", "SI", "BE", "HU", "AT", "CH", "CZ", null, "CA", "AU", "DE", "NL", "GB", "ZA", "NG", "KE", "UG", "TZ", "ZM", "MW", "RW", "BI", "CD", "CG", "AO", "MZ", "TL", "VN"]
     },
     "Holy-Thursday": {
-      "countries": ["BR", "MX", "PH", "US", "IT", "FR", "ES", "CO", "AR", "PL", "PE", "VE", "CL", "EC", "GT", "CU", "BO", "HT", "DO", "HN", "PY", "SV", "NI", "CR", "PR", "PA", "UY", "IE", "PT", "LT", "SK", "HR", "SI", "BE", "HU", "AT", "CH", "CZ"]
+      "countries": ["BR", "MX", "PH", "US", "IT", "FR", "ES", "CO", "AR", "PL", "PE", "VE", "CL", "EC", "GT", "CU", "BO", "HT", "DO", "HN", "PY", "SV", "NI", "CR", "PR", "PA", "UY", "IE", "PT", "LT", "SK", "HR", "SI", "BE", "HU", "AT", "CH", "CZ", null, "CA", "AU", "DE", "NL", "GB", "ZA", "NG", "KE", "UG", "TZ", "RW", "BI", "CD", "AO"]
     },
     "Good-Friday": {
-      "countries": ["BR", "MX", "PH", "US", "IT", "FR", "ES", "CO", "AR", "PL", "PE", "VE", "CL", "EC", "GT", "CU", "BO", "HT", "DO", "HN", "PY", "SV", "NI", "CR", "PR", "PA", "UY", "IE", "PT", "LT", "SK", "HR", "SI", "BE", "HU", "AT", "CH", "CZ", "GB", "AU", "CA", "NZ", "DE", "ZA", "NG", "KE", "UG", "TZ", "ZM", "ZW"]
+      "countries": ["BR", "MX", "PH", "US", "IT", "FR", "ES", "CO", "AR", "PL", "PE", "VE", "CL", "EC", "GT", "CU", "BO", "HT", "DO", "HN", "PY", "SV", "NI", "CR", "PR", "PA", "UY", "IE", "PT", "LT", "SK", "HR", "SI", "BE", "HU", "AT", "CH", "CZ", "GB", "AU", "CA", "NZ", "DE", "ZA", "NG", "KE", "UG", "TZ", "ZM", "ZW", null, "MW", "RW", "BI", "CD", "CG", "AO", "MZ", "TL", "IN", "PK", "JP", "KR", "SG", "HK", "NO", "SE", "DK", "FI", "IS"]
     },
     "Easter": {
-      "countries": ["BR", "MX", "PH", "US", "IT", "FR", "ES", "CO", "AR", "PL", "PE", "VE", "CL", "EC", "GT", "CU", "BO", "HT", "DO", "HN", "PY", "SV", "NI", "CR", "PR", "PA", "UY", "IE", "PT", "LT", "SK", "HR", "SI", "BE", "HU", "AT", "CH", "CZ", "GB", "AU", "CA", "NZ", "DE", "ZA", "NG", "KE", "UG", "TZ", "ZM", "ZW", "NO", "SE", "DK", "FI", "NL"]
+      "countries": ["BR", "MX", "PH", "US", "IT", "FR", "ES", "CO", "AR", "PL", "PE", "VE", "CL", "EC", "GT", "CU", "BO", "HT", "DO", "HN", "PY", "SV", "NI", "CR", "PR", "PA", "UY", "IE", "PT", "LT", "SK", "HR", "SI", "BE", "HU", "AT", "CH", "CZ", "GB", "AU", "CA", "NZ", "DE", "ZA", "NG", "KE", "UG", "TZ", "ZM", "ZW", "NO", "SE", "DK", "FI", "NL", null, "MW", "RW", "BI", "CD", "CG", "AO", "MZ", "TL", "IN", "SG", "HK", "JP", "KR", "CN", "IS", "EE", "LV"]
     },
     "Pentecost": {
-      "countries": ["BR", "MX", "PH", "IT", "FR", "ES", "CO", "AR", "PL", "PE", "VE", "CL", "EC", "GT", "CU", "BO", "HT", "DO", "HN", "PY", "SV", "NI", "CR", "PR", "PA", "UY", "IE", "PT", "LT", "SK", "HR", "SI", "BE", "HU", "AT", "CH", "CZ", "DE", "NL", "NO"]
+      "countries": ["BR", "MX", "PH", "IT", "FR", "ES", "CO", "AR", "PL", "PE", "VE", "CL", "EC", "GT", "CU", "BO", "HT", "DO", "HN", "PY", "SV", "NI", "CR", "PR", "PA", "UY", "IE", "PT", "LT", "SK", "HR", "SI", "BE", "HU", "AT", "CH", "CZ", "DE", "NL", "NO", null, "US", "CA", "AU", "GB", "ZA", "NG", "KE", "UG", "SE", "DK", "FI"]
     },
     "Assumption": {
-      "countries": ["IT", "FR", "ES", "PL", "PT", "AT", "BE", "HR", "SI", "LT", "MT", "BR", "MX", "PH", "CO", "AR", "PE", "VE", "CL", "EC", "GT"]
+      "countries": ["IT", "FR", "ES", "PL", "PT", "AT", "BE", "HR", "SI", "LT", "MT", "BR", "MX", "PH", "CO", "AR", "PE", "VE", "CL", "EC", "GT", null, "US", "CA", "IE", "DE", "HU", "SK", "CZ", "BO", "PY", "UY"]
     },
     "Christmas": {
-      "countries": ["US", "BR", "MX", "PH", "IT", "FR", "ES", "CO", "AR", "PL", "PE", "VE", "CL", "EC", "GT", "CU", "BO", "HT", "DO", "HN", "PY", "SV", "NI", "CR", "PR", "PA", "UY", "GB", "DE", "CA", "AU", "NZ", "IE", "PT", "LT", "SK", "HR", "SI", "BE", "HU", "AT", "CH", "CZ", "ZA", "NG", "KE", "UG", "NO", "SE", "DK", "FI", "NL", "IS", "LU", "KR", "JP", "CN", "SG", "HK"]
+      "countries": ["US", "BR", "MX", "PH", "IT", "FR", "ES", "CO", "AR", "PL", "PE", "VE", "CL", "EC", "GT", "CU", "BO", "HT", "DO", "HN", "PY", "SV", "NI", "CR", "PR", "PA", "UY", "GB", "DE", "CA", "AU", "NZ", "IE", "PT", "LT", "SK", "HR", "SI", "BE", "HU", "AT", "CH", "CZ", "ZA", "NG", "KE", "UG", "NO", "SE", "DK", "FI", "NL", "IS", "LU", "KR", "JP", "CN", "SG", "HK", null, "IN", "PK", "BD", "MY", "TH", "ID", "VN", "RU", "UA", "EE", "LV", "GR", "RO", "IL", "JO", "LB", "EG", "ET", "AE", "QA", "KW"]
     }
   },
   "Hindu": {
     "Holi": {
-      "countries": ["IN", "NP", "BD", "PK", "FJ", "GY", "TT", "SR", "MU", "MY", "SG", "ZA", "GB", "US", "CA"]
+      "countries": ["IN", "NP", "BD", "PK", "FJ", "GY", "TT", "SR", "MU", "MY", "SG", "ZA", "GB", "US", "CA", null, "AE", "OM", "QA", "KW", "BH", "KE", "UG", "TZ", "AU", "NZ", "RE", "MV"]
     },
     "Rama-Navami": {
-      "countries": ["IN", "NP", "MU", "FJ", "GY", "TT", "SR", "MY", "SG"]
+      "countries": ["IN", "NP", "MU", "FJ", "GY", "TT", "SR", "MY", "SG", null, "ZA", "GB", "US", "CA", "AE", "AU", "NZ"]
     },
     "Diwali": {
-      "countries": ["IN", "NP", "BD", "PK", "LK", "FJ", "GY", "TT", "SR", "MU", "MY", "SG", "ZA", "GB", "US", "CA", "AU", "NZ", "AE", "OM"]
+      "countries": ["IN", "NP", "BD", "PK", "LK", "FJ", "GY", "TT", "SR", "MU", "MY", "SG", "ZA", "GB", "US", "CA", "AU", "NZ", "AE", "OM", null, "QA", "KW", "BH", "KE", "UG", "TZ", "RE", "MV", "TH", "ID", "MM", "PH", "NL", "DE", "FR"]
     }
   },
   "Jewish": {
     "Passover": {
-      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX"]
+      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX", null, "DE", "PL", "TR", "RO", "ES", "CH", "AT", "SE", "VE", "CO", "PA", "CR", "ET"]
     },
     "Passover-Day2": {
-      "countries": ["US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX"]
+      "countries": ["US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX", null, "DE", "PL", "TR", "RO", "ES", "CH", "AT", "SE", "VE", "CO"]
     },
     "Passover-Day7": {
-      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX"]
+      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX", null, "DE", "PL", "TR", "RO", "ES", "CH", "AT", "ET"]
     },
     "Passover-Day8": {
-      "countries": ["US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX"]
+      "countries": ["US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX", null, "DE", "PL", "TR", "RO", "ES", "CH", "AT"]
     },
     "Mimouna": {
-      "countries": ["IL", "MA", "FR", "CA"]
+      "countries": ["IL", "MA", "FR", "CA", null, "ES", "IT", "GB", "US"]
     },
     "Shavuot": {
-      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL"]
+      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", null, "IT", "DE", "PL", "MX", "CL", "UY"]
     },
     "Shavuot-Day2": {
-      "countries": ["US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL"]
+      "countries": ["US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", null, "DE", "PL", "MX", "IT"]
     },
     "Tisha bAv": {
-      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA"]
+      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", null, "HU", "BE", "NL", "DE", "IT", "MX"]
     },
     "Tu bAv": {
-      "countries": ["IL"]
+      "countries": ["IL", null, "US", "FR", "CA", "GB", "AU"]
     },
     "Rosh Hashanah": {
-      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX"]
+      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX", null, "DE", "PL", "TR", "RO", "ES", "CH", "AT", "SE", "VE", "ET"]
     },
     "Rosh-Hashanah-Day2": {
-      "countries": ["US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX"]
+      "countries": ["US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX", null, "DE", "PL", "TR", "RO", "ES", "CH", "AT"]
     },
     "Yom-Kippur": {
-      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX"]
+      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX", null, "DE", "PL", "TR", "RO", "ES", "CH", "AT", "SE", "VE", "ET"]
     },
     "Sukkot": {
-      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL"]
+      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", null, "IT", "DE", "MX", "CL", "UY"]
     },
     "Sukkot-Day2": {
-      "countries": ["US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL"]
+      "countries": ["US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", null, "DE", "MX", "IT"]
     },
     "Hoshanah-Rabbah": {
-      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA"]
+      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", null, "HU", "BE", "NL", "DE", "IT"]
     },
     "Shemini-Atzeret": {
-      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL"]
+      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", null, "DE", "IT", "MX"]
     },
     "Simchat-Torah": {
-      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL"]
+      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", null, "DE", "IT", "MX", "PL"]
     },
     "Hanukkah": {
-      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX", "DE"]
+      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX", "DE", null, "PL", "TR", "RO", "ES", "CH", "AT", "SE", "VE", "CO", "PA", "ET"]
     },
     "Hanukkah-Day8": {
-      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX", "DE"]
+      "countries": ["IL", "US", "FR", "CA", "GB", "RU", "AR", "AU", "BR", "UA", "ZA", "HU", "BE", "NL", "IT", "CL", "UY", "MX", "DE", null, "PL", "TR", "RO", "ES", "CH", "AT", "SE", "VE", "CO", "PA", "ET"]
     }
   },
   "Persian": {
     "Nowruz": {
-      "countries": ["IR", "AF", "TJ", "UZ", "TM", "KZ", "KG", "AZ", "IQ", "TR", "PK", "IN", "GE", "AL", "MK", "XK"]
+      "countries": ["IR", "AF", "TJ", "UZ", "TM", "KZ", "KG", "AZ", "IQ", "TR", "PK", "IN", "GE", "AL", "MK", "XK", null, "US", "CA", "GB", "DE", "AU", "SE", "TR", "AE"]
     }
   },
   "Thai": {
     "Songkran Day1": {
-      "countries": ["TH", "LA", "MM", "KH"]
+      "countries": ["TH", "LA", "MM", "KH", null, "US", "AU", "GB", "JP", "SG"]
     },
     "Songkran Day2": {
-      "countries": ["TH", "LA", "MM", "KH"]
+      "countries": ["TH", "LA", "MM", "KH", null, "US", "AU", "GB", "JP", "SG"]
     },
     "Songkran Day3": {
-      "countries": ["TH", "LA", "MM", "KH"]
+      "countries": ["TH", "LA", "MM", "KH", null, "US", "AU", "GB", "JP", "SG"]
     }
   },
   "Buddhist": {
     "Vesak-Day": {
-      "countries": ["LK", "TH", "MM", "BT", "LA", "KH", "NP", "BD", "IN", "SG", "MY", "ID", "VN", "MN"]
+      "countries": ["LK", "TH", "MM", "BT", "LA", "KH", "NP", "BD", "IN", "SG", "MY", "ID", "VN", "MN", null, "US", "CA", "AU", "GB", "JP", "KR", "TW", "HK", "CN", "NZ", "DE", "FR", "IT", "NL", "CH"]
     }
   },
   "Ethiopian": {
     "Meskel": {
-      "countries": ["ET", "ER"]
+      "countries": ["ET", "ER", null, "US", "CA", "GB", "SE", "AU", "IL"]
     }
   },
   "Secular": {
