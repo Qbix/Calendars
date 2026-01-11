@@ -4,4 +4,5 @@ package-lock.json
 node_modules
 vendor/
 web/img/icons
+web/img/holidays
 files/Calendars/icons/
