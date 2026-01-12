@@ -450,7 +450,7 @@ function processGeneratedImage(
 		array(),
 		array(
 			'callback' => function ($results) use (
-				&$attributes,
+				$attributes,
 				$streamType,
 				$observationsType,
 				$path,
@@ -473,11 +473,12 @@ function processGeneratedImage(
 }
 
 function finalizeStream($streamType, $observationsType, $path, $attributes, $data) {
+	$icon = str_replace(array(DS, APP_WEB_DIR . '/'), array('/', ''), dirname($path));
 	$ok = AI_LLM::createStream(
 		$streamType,
 		$observationsType,
 		array(
-			'icon' => str_replace(APP_WEB_DIR, '{{baseUrl}}', $path)
+			'icon' => $icon
 		),
 		$attributes,
 		array(
@@ -489,7 +490,7 @@ function finalizeStream($streamType, $observationsType, $path, $attributes, $dat
 		$tempKey = 'tmp_' . uniqid('', true);
 		$paths = Q_Image::save(array(
 			'data' => $data,
-			'path' => str_replace(array(DS, APP_WEB_DIR . '/'), array('/', ''), dirname($path)),
+			'path' => $icon,
 			'subpath' => "",
 			'save' => 'Streams/image',
 			'skipAccess' => true
