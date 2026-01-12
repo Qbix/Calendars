@@ -74,10 +74,18 @@
 			"RecurringAdmin": "Recurring Settings",
 			"MakeReservation": "Make Reservation",
 			"StartLiveStream": "Click to Live Stream",
+            "JoinTeleConference": "Join Teleconference",
+            "TeleConferenceEnded": "Teleconference Ended",
+            "OpenTeleconferenceScheduler": "Open Teleconference Scheduler",
+            "LiveStreamNotifyMe": "Notify Me When Live",
+            "LiveStreamNotificationOn": "Notification is On",
+            "LiveStreamIsOffline": "Livestream is offline",
+            "LiveStreamIsOnline": "Livestream is online",
 			"LiveStreamStarted": "Live stream has started",
 			"LiveStreamEnded": "Live stream has ended",
 			"WebRTCStarted": "Teleconference started",
 			"WebRTCEnded": "Teleconference ended",
+            "updateTeleconference": "Update Teleconference",
 			"ClickToViewRecording": "click to view recording",
 			"Checkin": "Scan attendee codes",
 			"Myqr": "Check In",
@@ -126,7 +134,9 @@
 			"RequiredRelatedParticipants": "This event requires participants: {{requiredParticipantsList}}",
 			"AvailabilityWarning": "Please edit availability \"{{title}}\" to update recurring settings",
 			"Prepayment": "Prepayment",
-			"PrepaymentConfirm": "We'll charge a nominal fee of $1. You'll receive the corresponding number of credits. These credits will be applied toward your full payment for the event."
+			"PrepaymentConfirm": "We'll charge a nominal fee of $1. You'll receive the corresponding number of credits. These credits will be applied toward your full payment for the event.",
+            "Join": "Join",
+            "Close": "Close"
 		},
 		"composer": {
 			"SetLocation": "Set My Location",
@@ -165,7 +175,8 @@
 				"Title": "Choose an Activity",
 				"Filter": "Search interests ..."
 			},
-			"SetLivestream": "Paste link to livestream / videoconference"
+			"SetLivestream": "Paste link to livestream / videoconference",
+            "scheduleTeleconference": "Schedule Teleconference"
 		},
 		"EventAlreadyClosed": "This event already closed",
 		"ErrorLeaveEndedEvent": "Sorry, but you can't leave ended event",
@@ -261,14 +272,19 @@
 		"ClickHereToVisitEvent": "Please click here to visit event",
 		"Calendars/reminder": "Event \"{{{call 'message.getInstruction' 'name'}}}\" will start in {{{call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
-			"Started": "Teleconference started",
-			"Ended": "Teleconference ended"
-		},
-		"livestream": {
-			"Started": "Live stream started",
-			"Ended": "Live stream ended",
-			"ClickToView": "View it here."
-		}
+            "Started": "Teleconference started",
+            "StartedInEvent": "Teleconference started in \"{{event}}\".",
+            "OngloingInEvent": "The teleconference for the \"{{event}}\" is ongoing.",
+            "Ended": "Teleconference ended"
+        }, 
+        "livestream": {
+            "StartedByUser": "{{user}} is live in \"{{event}}\".",
+            "Started": "Live stream started",
+            "Ended": "Live stream ended",
+            "ClickToView": "View it here.",
+            "JoinAudience": "Join audience",
+            "Close": "Close"
+        }
 	},
 	"import": {
 		"linkTitle": "Fill Out This Spreadsheet",

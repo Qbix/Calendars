@@ -61,7 +61,7 @@ function Calendars_event_composer_tool($options)
 	// show options
 	$show = array(
 		'location' => Q_Config::get('Calendars', 'newEvent', 'location', true),
-		'livestream' => Q_Config::get('Calendars', 'newEvent', 'livestream', true),
+		'teleconference' => Q_Config::get('Calendars', 'newEvent', 'teleconference', true),
 		'externalLinks' => Q_Config::get('Calendars', 'newEvent', 'externalLinks', true)
 	);
 
