@@ -247,7 +247,7 @@ function batchCommit($batchName) {
 /**
  * MAIN LOOP
  */
-for ($index = 1; $index <= $MAX_INDEX; $index++) {
+for ($index = 2; $index <= $MAX_INDEX; $index++) {
 
 	foreach ($globalHolidays as $date => $entries) {
 
