@@ -247,7 +247,7 @@ function batchCommit($batchName) {
 /**
  * MAIN LOOP
  */
-for ($index = 2; $index <= $MAX_INDEX; $index++) {
+for ($index = 1; $index <= $MAX_INDEX; $index++) {
 
 	foreach ($globalHolidays as $date => $entries) {
 
@@ -371,7 +371,7 @@ for ($index = 2; $index <= $MAX_INDEX; $index++) {
 								$llm,
 								$streamType,
 								$observationsType,
-								$attributes,
+								$attributes
 							) {
 								processGeneratedImage(
 									$r,
