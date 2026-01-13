@@ -192,20 +192,6 @@
 .Calendars_event_preview_tool .Calendars_event_hosted {
 	margin-left: 10px;
 }
-.Calendars_event_preview_tool .Streams_participants_avatars .Q_badge.Calendars_event_staff,
-.Calendars_event_preview_tool .Streams_participants_avatars .Q_badge.Calendars_event_speaker {
-	border: 1px solid green;
-	border-radius: 50%;
-	background: #fff;
-}
-.Calendars_event_preview_tool .Streams_participants_avatars .Q_badge i {
-	font-size: 10px;
-	color: green;
-	font-weight: bold;
-	vertical-align: middle;
-	line-height: 14px;
-	display: block;
-}
 .Calendars_event_preview_tool.Calendars_event_preview_noParticipants {
 	display: none;
 }

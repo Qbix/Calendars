@@ -202,106 +202,125 @@ Calendars.Event = {
 	 * @method updateParticipants
 	 * @static
 	 * @param {object} params
-	 * @param {object} params.tool Tool parent for participants tool
-	 * @param {String} params.userId
-	 * @param {String} params.type
+	 * @param {String} params.participant Streams_Participant object
+	 * @param {Q.Tool} params.avatar Users/avatar tool need to update
+	 * @param {String|Object} params.type string or array of strings
 	 */
 	updateParticipants: function(params){
 		params = params || {};
-		var userId = params.userId
-		if (!userId) {
-			return console.warn('Calendars.Event.updateParticipants: userId undefined');
+		if (Q.isEmpty(Q.getObject("type", params))) {
+			return;
 		}
 
-		var tool = params.tool;
-		if (!tool) {
-			return console.warn('Calendars.Event.updateParticipants: parent tool undefined');
+		var avatarTool = params.avatar;
+		if (!avatarTool) {
+			return console.warn('Calendars.Event.updateParticipants: avatar undefined');
 		}
 
-		var participantsTool = Q.Tool.from($(".Streams_participants_tool", tool.element));
-
-		if (!participantsTool) {
-			return console.warn('Calendars.Event.updateParticipants: participants tool not found');
+		var participant = params.participant;
+		if (!participant) {
+			return console.warn('Calendars.Event.updateParticipants: participant undefined');
 		}
 
-		var avatars = participantsTool.children("Users/avatar");
+		var $avatarToolElement = $(avatarTool.element);
+		var size = "16px";
+		var bottom = "15px";
+		if (Q.getObject("state.icon", avatarTool) >= 80) {
+			size = "32px";
+			bottom = "25px";
+		}
 
-		Q.each(avatars, function(index, avatarTool){
-			var avatarUserId = avatarTool.state.userId;
+		var qBadgeTool = Q.Tool.from(avatarTool.element, "Q/badge");
+		var qBadgeParams = {};
 
-			// if avatar tool is empty - exit
-			if(Q.isEmpty(avatarUserId) || avatarUserId !== userId){
-				return;
-			}
-
-			var $avatarToolElement = $(avatarTool.element);
-
-			switch (params.type) {
-				case 'checkin':
-					$avatarToolElement.attr({"data-checkin": true}).tool('Q/badge', {
-						tr: {
-							size: "16px",
-							bottom: "15px",
-							right: "0px",
-							className: "Calendars_event_checkin",
-							display: 'block'
-						}
-					}).activate();
+		var types = typeof params.type === 'string' ? [params.type] : params.type;
+		for (var type of types) {
+			switch (type) {
+				case 'attendee':
+					qBadgeParams.br = {
+						size,
+						bottom,
+						right: "0px",
+						display: "block",
+						className: "Calendars_event_attendee",
+						content: '<i class="qp-calendars-checkmark"></i>'
+					};
+					break;
+				case 'arrived':
+					qBadgeParams.br = {
+						size,
+						bottom,
+						right: "0px",
+						display: "block",
+						className: "Calendars_event_arrived",
+						content: '<i class="qp-calendars-checkmark"></i>'
+					};
 					break;
 				case 'rejected':
 				case 'requested':
 				case 'registered':
-					$avatarToolElement.attr({"data-role": params.type});
+					$avatarToolElement.attr({"data-role": type});
 					break;
 				case 'paid-no':
 				case 'paid-reserved':
 				case 'paid-fully':
-					$avatarToolElement.attr({"data-paid": params.type.split('-').pop()});
+					$avatarToolElement.attr({"data-paid": type.split('-').pop()});
 					break;
 				case 'staff':
-					$avatarToolElement.attr({"data-staff": true}).tool('Q/badge', {
-						tr: {
-							size: "16px",
-							top: "0px",
-							right: "0px",
-							className: "Calendars_event_staff",
-							display: 'block',
-							content: '<i class="qp-communities-owner"></i>'
-						}
-					}).activate();
+					qBadgeParams.tr = {
+						size,
+						top: "0px",
+						right: "0px",
+						display: "block",
+						className: "Calendars_event_staff",
+						content: '<i class="qp-communities-owner"></i>'
+					}
 					break;
 				case 'speaker':
-					$avatarToolElement.attr({"data-speaker": true}).tool('Q/badge', {
-						tr: {
-							size: "16px",
-							top: "0px",
-							right: "0px",
-							className: "Calendars_event_speaker",
-							display: 'block',
-							content: '<i class="qp-calendars-mic"></i>'
-						},
-						skipOverlapped: true
-					}).activate();
+					qBadgeParams.tr = {
+						size,
+						top: "0px",
+						right: "0px",
+						display: "block",
+						className: "Calendars_event_speaker",
+						content: '<i class="qp-calendars-mic"></i>'
+					};
 					break;
 				case 'leader':
 				case 'host':
-					$avatarToolElement.attr("data-" + params.type, true).tool('Q/badge', {
-						tr: {
-							size: "16px",
-							top: "0px",
-							right: "0px",
-							className: "Calendars_event_" + params.type,
-							display: 'block',
-							content: '<i class="qp-calendars-mic"></i>'
-						},
-						skipOverlapped: true
-					}).activate();
+					qBadgeParams.tr = {
+						size,
+						top: "0px",
+						right: "0px",
+						display: "block",
+						className: "Calendars_event_" + type,
+						content: '<i class="qp-calendars-mic"></i>'
+					};
 					break;
 				default:
 					// maybe someone else will handle it
 					break;
 			}
+		}
+
+		if (Q.isEmpty(qBadgeParams)) {
+			return;
+		}
+
+		if (!qBadgeTool) {
+			return $avatarToolElement.tool('Q/badge', qBadgeParams).activate();
+		}
+
+		// delete badges for defined corners of existent Q/badge tool
+		Q.each(['tl', 'tr', 'br', 'bl'], function(i, corner){
+			if (qBadgeParams[corner]) {
+				qBadgeTool.state[corner] = null;
+				qBadgeTool.refresh();
+			}
 		});
+		// update Q/badge tool state with new corners and refresh tool
+		Q.extend(qBadgeTool.state, 10, qBadgeParams);
+		qBadgeTool.refresh();
 	},
 	/**
 	 * Get interests from event (for back compatibility)
@@ -311,6 +330,108 @@ Calendars.Event = {
 	 */
 	getInterests: function(eventStream){
 		return JSON.parse(eventStream.fields.interests || null) || eventStream.getAttribute('interests');
+	},
+	/**
+	 * Begin scanning QR codes and checking people in
+	 * @method scanEventCheckinQRCodes
+	 * @static
+	 * @param {Streams_Stream} stream Event stream, for which participants will be
+	 * @param {function} [onAvatarScanned] callback called after scanned avatar activated. Pass avatar tool as context.
+	 *  marked "checked in" with participant.setExtra("checkin", true)
+	 */
+	scanEventCheckinQRCodes: function (stream, onAvatarScanned) {
+		var eventTool = this;
+
+		// need to add/remove Q_working
+		var $button = $(".Calendars_aspect_checkin", eventTool.element);
+
+		// make this button inactive
+		$button.addClass("Q_working");
+
+		// on scanner close - remove Q_working
+		Q.Camera.Scan.onClose.set(function(){
+			Q.Tool.remove($(".Calendars_event_scanning_avatar")[0], true, true);
+			$button.removeClass("Q_working");
+		});
+
+		var lastUserId = null;
+
+		// run QR scanner
+		Q.Camera.Scan.animatedQR(function _request(fields) {
+			// url must have the fields: "u", "e", "s"
+			// for "user", "expires", "signature"
+			// also has optional fields: "join"
+			// todo: check s and e and if they are invalid, ask user
+			// to regenerate QR code on their "me" page
+			Q.req('Calendars/checkin',
+				['participating', 'message'],
+				function (err, result) {
+					var fem = Q.firstErrorMessage(err, result);
+					if (fem) {
+						return Q.alert("Error: " + fem);
+					}
+
+					// if user is participating - that's all fine, just exit
+					if (Q.getObject(['slots', 'participated'], result) !== false) {
+						var message = Q.getObject(['slots', 'message'], result);
+						if (message) {
+							Q.alert(message);
+						}
+
+						// stop showing previous avatar
+						$(".Calendars_event_scanning_avatar").remove();
+
+						// show users avatar above video element
+						var avatar = $('<div />')
+							.addClass("Calendars_event_scanning_avatar")
+							.tool('Users/avatar', {userId: fields.u, icon: '80'});
+
+						// instascan
+						if (typeof QRScanner === "undefined") {
+							avatar.insertAfter(".Q_scanning video");
+						} else { // cordova QRScanner plugin
+							$("body").append(avatar);
+						}
+						avatar.activate(function () {
+							Q.handle(onAvatarScanned, this);
+						});
+						return;
+					}
+
+					// if user wasn't participating, ask whether to make them join the stream
+					Q.Text.get('Calendars/content', function (err, text) {
+						var question = Q.getObject(['slots', 'message'], result);
+						Q.confirm(question, function (res) {
+							if (!res){
+								return;
+							}
+							// set new param "join", now user will join and checkin
+							fields.join = true;
+
+							// and execute this request again with this param
+							_request(fields);
+						}, {
+							ok: text.QRScanner.confirmYes,
+							cancel: text.QRScanner.confirmNo
+						});
+					});
+				}, {
+					method: 'post',
+					fields: Q.extend({
+						userId: fields.u,
+						expires: fields.e,
+						sig: fields.s,
+						join: fields.join
+					}, {
+						publisherId: stream.fields.publisherId,
+						streamName: stream.fields.name
+					})
+				});
+		}, null, {
+			instascan: {
+				mode: "scanQR"
+			}
+		});
 	},
 	onStarted: new Q.Event.factory(null, ["", ""]),
 	onEnded: new Q.Event.factory(null, ["", ""])
