@@ -859,7 +859,7 @@ class Calendars_Event extends Base_Calendars_Event
 
         $user = Users_User::fetch($userId, true);
 		$isPublisher = $userId == $stream->publisherId;
-		$isAdmin = (bool)Users::roles($publisherId, Q_Config::expect('Calendars', 'events', 'admins'));
+		$isAdmin = (bool)Users::roles($stream->publisherId, Q_Config::expect('Calendars', 'events', 'admins'));
 		$skipPayment = Q::ifset($options, 'skipPayment', false);
 		$relatedParticipants = Q::ifset($options, "relatedParticipants", null);
 		$paymentIntent = false;
@@ -1091,12 +1091,13 @@ class Calendars_Event extends Base_Calendars_Event
 		} else if ($going === 'yes') {
             self::grantRoles($participant, "registered");
 		}
-        if ($paymentIntent) {
-            $participant->setExtra('paymentIntent', $paymentIntent);
-        } else if ($paid) {
-            $participant->setExtra('paymentMethod', $paid);
-        }
         $participant->save();
+
+        if ($paymentIntent) {
+            $participant->set('paymentIntent', $paymentIntent);
+        } else if ($paid) {
+            $participant->set('paymentMethod', $paid);
+        }
 
 		// Let everyone in the stream know of a change in going
 		$stream->post($user->id, array(
@@ -1124,12 +1125,13 @@ class Calendars_Event extends Base_Calendars_Event
      */
     static function grantRoles (&$participant, $roles, $save = false) {
         $groups = array(
-            array('rejected', 'requested', 'registered')
+            array('rejected', 'requested', 'registered'),
+            array('attendee', 'arrived')
         );
 
         if (is_array($roles)) {
             foreach ($roles as $role) {
-                self::grantRoles($participant, $role);
+                self::grantRoles($participant, $role, $save);
             }
             return;
         } elseif (is_string($roles)) {

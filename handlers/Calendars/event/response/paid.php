@@ -29,7 +29,8 @@ function Calendars_event_response_paid($options)
     $adminLabels = Q_Config::get("Calendars", "events", "admins", array());
     $isAdmin = $adminLabels ? (bool)Users::roles($communityId, $adminLabels, array(), $currentUser->id) : false;
     if(!$isAdmin) {
-        throw new Users_Exception_NotAuthorized();
+        // non admin user can only know self status
+        $userId = $currentUser->id;
     }
 
     $participant = new Streams_Participant();

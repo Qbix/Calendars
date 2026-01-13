@@ -69,6 +69,7 @@
 			"ReservationFee": "Reservation Fee",
 			"AddParticipants": "Add Participants",
 			"YouAreNotParticipated": "You are not a participant of the event",
+			"UserNotParticipated": "{{1}} is not a participant of the event",
 			"ManageReservation": "Manage Reservation",
 			"UpdateFutureReservations": "Do you also want to update all future reservations the same way?",
 			"RecurringAdmin": "Recurring Settings",
@@ -126,7 +127,8 @@
 			"RequiredRelatedParticipants": "This event requires participants: {{requiredParticipantsList}}",
 			"AvailabilityWarning": "Please edit availability \"{{title}}\" to update recurring settings",
 			"Prepayment": "Prepayment",
-			"PrepaymentConfirm": "We'll charge a nominal fee of $1. You'll receive the corresponding number of credits. These credits will be applied toward your full payment for the event."
+			"PrepaymentConfirm": "We'll charge a nominal fee of $1. You'll receive the corresponding number of credits. These credits will be applied toward your full payment for the event.",
+			"PayToAttend": "Pay to Attend"
 		},
 		"composer": {
 			"SetLocation": "Set My Location",

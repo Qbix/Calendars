@@ -85,10 +85,6 @@
 .Calendars_recurring_setting:empty {
 	display: none;
 }
-.Streams_participants_tool .Q_badge.Calendars_event_checkin {
-	background-repeat: no-repeat;
-	background-image: url(../img/checkedin.png);
-}
 .Calendars_event_close_warning {
 	color: #555;
 	font-size: 12px;
@@ -135,6 +131,30 @@
 
 .Calendars_subscribe_icon {
 	margin-right: 10px;
+}
+
+.Users_avatar_tool .Q_badge.Calendars_event_staff,
+.Users_avatar_tool .Q_badge.Calendars_event_speaker,
+.Users_avatar_tool .Q_badge.Calendars_event_leader,
+.Users_avatar_tool .Q_badge.Calendars_event_host,
+.Users_avatar_tool .Q_badge.Calendars_event_arrived,
+.Users_avatar_tool .Q_badge.Calendars_event_attendee {
+	border: 1px solid green;
+	border-radius: 50%;
+	background: #fff;
+}
+.Calendars_event_tool .Users_avatar_tool .Q_badge i,
+.Calendars_event_preview_tool .Users_avatar_tool .Q_badge i {
+	font-size: 12px;
+	color: green;
+	vertical-align: middle;
+	line-height: 14px;
+	display: block;
+}
+.Users_avatar_tool .Q_badge.Calendars_event_staff i,
+.Users_avatar_tool .Q_badge.Calendars_event_host i,
+.Users_avatar_tool .Q_badge.Calendars_event_arrived i {
+	color: red;
 }
 
 /************** Calendars Payment ********************************/

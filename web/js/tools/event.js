@@ -53,11 +53,17 @@ Q.Tool.define("Calendars/event", function(options) {
 
 	tool.modePrepayment && $toolElement.attr("data-modePrepayment", tool.modePrepayment);
 	$toolElement.attr("data-mode", this.state.mode);
-	$toolElement.attr("data-admin", Q.getObject("Event.isAdmin", Calendars));
 
-	var pipe = new Q.Pipe(['appTexts', 'calendarsTexts', 'style'], tool.refresh.bind(tool));
+	// array of Users/avatar tools observed to update badges
+	tool.avatarsToRefresh = [];
 
-	// get app texts
+	// just to minimize var name
+	tool.closeEventConfirm = tool.text.event.tool.CloseEvent.confirm;
+
+	var pipe = new Q.Pipe(['appTexts'], tool.refresh.bind(tool));
+
+	// get app texts for particular related participants
+	// because related participants diff for each application, plugin can't know each of them
 	Q.Text.get(Users.communityId + '/content', function (err, content) {
 		var msg = Q.firstErrorMessage(err, content);
 		if (msg) {
@@ -69,38 +75,6 @@ Q.Tool.define("Calendars/event", function(options) {
 		tool.appTextRelatedParticipants = Q.getObject("assets.service.relatedParticipants", tool.appText);
 		pipe.fill('appTexts')();
 	});
-
-	// get Calendars texts
-	Q.Text.get('Calendars/content', function (err, content) {
-		var msg = Q.firstErrorMessage(err, content);
-		if (msg) {
-			console.error(msg);
-			return;
-		}
-
-		tool.text = content;
-		tool.closeEventConfirm = content.event.tool.CloseEvent.confirm;
-		pipe.fill('calendarsTexts')();
-	});
-
-	Q.addStylesheet('{{Calendars}}/css/event.css', { slotName: 'Calendars' }, pipe.fill('style'));
-
-	// listen for Calendars/checkin message and change participants tool
-	Streams.Stream.onMessage(state.publisherId, state.streamName, 'Calendars/checkin')
-	.set(function(message) {
-		var instructions = JSON.parse(message.instructions);
-
-		if (!instructions.checkin) {
-			return;
-		}
-
-		// update Streams/participants tool
-		Calendars.Event.updateParticipants({
-			tool: tool,
-			userId: instructions.userId,
-			type: 'checkin'
-		});
-	}, tool);
 
 	// Listen for Streams/changed message, and if title modified, change event title.
 	Streams.Stream.onMessage(state.publisherId, state.streamName, 'Streams/changed')
@@ -117,6 +91,11 @@ Q.Tool.define("Calendars/event", function(options) {
 		Streams.Stream.onMessage(state.publisherId, state.streamName, 'Calendars/going/'+going)
 		.set(function(message) {
 			if (message.byUserId === userId) {
+				var instructions = JSON.parse(message.instructions);
+				tool.stream.participant = new Streams.Participant(instructions.participant);
+				tool.refreshParticipants({
+					participant: instructions.participant
+				});
 				tool.updateInterface(going);
 			}
 		}, tool);
@@ -135,19 +114,11 @@ Q.Tool.define("Calendars/event", function(options) {
 		tool.switchChatWebrtc(false);
 	}, tool);
 
-	Streams.Stream.onMessage(state.publisherId, state.streamName, 'Streams/participant/save')
+	Streams.Stream.onMessage(state.publisherId, state.streamName, 'Streams/participant/extraUpdated')
 	.set(function(message) {
-		Streams.get.force(state.publisherId, state.streamName, function (err, eventStream, extra) {
-			tool.participants = extra.participants || [];
-			var participantsTool = Q.Tool.from($(".Calendars_event_participants", tool.element)[0], "Streams/participants");
-			if (!participantsTool) {
-				return console.warn("Calendars/event: participants tool not found");
-			}
-
-			Q.handle(participantsTool.state.onRefresh, participantsTool);
-		}, {
-			withParticipant: true,
-			participants: 100
+		var instructions = JSON.parse(message.instructions);
+		tool.refreshParticipants({
+			participant: instructions.participant
 		});
 	}, tool);
 
@@ -215,6 +186,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		var $te = $(this.element);
 		var state = tool.state;
 		var isAdmin = false;
+        var isScreener = false;
 		var userId = Users.loggedInUserId();
 
 		Streams.retainWith(tool).get(state.publisherId, state.streamName, function (err, eventStream, extra) {
@@ -233,10 +205,11 @@ Q.Tool.define("Calendars/event", function(options) {
 				$te.addClass("Calendars_event_ended");
 			}, tool);
 
+			tool.participants = Q.getObject("participants", extra) || [];
 			// create ordering for participants tool
 			var participantsOrdering = [];
-			Q.each(Q.getObject("participants", extra), function (userId, streamsParticipant) {
-				if (streamsParticipant.testRoles(['leader', 'speaker', 'host', 'staff'])) {
+			Q.each(tool.participants, function (userId, participant) {
+				if (participant.testRoles(['leader', 'speaker', 'host', 'staff'])) {
 					participantsOrdering.push(userId);
 				}
 			});
@@ -252,6 +225,14 @@ Q.Tool.define("Calendars/event", function(options) {
 
 			// whether user have permissions to edit event
 			isAdmin = state.isAdmin = stream.testWriteLevel('close');
+			if (isAdmin) {
+				$te.attr("data-admin", true);
+				$te.attr("data-screener", true);
+			}
+            isScreener = state.isScreener = stream.participant && stream.participant.testRoles('screener');
+			if (isScreener) {
+				$te.attr("data-screener", true);
+			}
 
 			// on event state changed event
 			stream.onAttribute('state').set(function (attributes, k) {
@@ -282,7 +263,6 @@ Q.Tool.define("Calendars/event", function(options) {
 				state.venueRedundant = true;
 			}
 
-			tool.participants = extra.participants || [];
 			var interests = Calendars.Event.getInterests(stream);
 			var interestTitle = [];
 			for (var i in interests) {
@@ -315,6 +295,17 @@ Q.Tool.define("Calendars/event", function(options) {
 
 				var $participants = $(".Calendars_event_participants", tool.element);
 				if ($participants.length && tool.stream && tool.stream.fields.participatingCount >= fields.peopleMin) {
+					$participants[0].forEachTool("Users/avatar", function () {
+						var userId = this.state.userId;
+						if (!userId) {
+							return;
+						}
+
+						tool.refreshParticipants({
+							avatar: this
+						});
+					});
+
 					$participants.tool("Streams/participants", {
 						max: state.peopleMax,
 						maxShow: Q.getObject("Event.defaults.participants.maxShow", Calendars),
@@ -446,9 +437,44 @@ Q.Tool.define("Calendars/event", function(options) {
 				tool.$('.Calendars_info .Q_button').click(function () {
 					var $this = $(this);
 					var aspect = $this.attr('data-invoke');
+
+					if (aspect === 'checkin') {
+						return Calendars.Event.scanEventCheckinQRCodes(stream, function () {
+							tool.refreshParticipants({
+								avatar: this
+							});
+
+							if (!state.isAdmin) {
+								return;
+							}
+
+							// contextual manage roles
+							var userId = this.state.userId;
+							var className = "Calendars_event_avatar_contextual";
+							$(this.element).plugin('Q/contextual', {
+								className,
+								elements: $('<li>'),
+								onConstruct: function (contextual) {
+									contextual.setAttribute("data-userId", userId);
+									Q.Contextual.onShow.set(function ($contextual) {
+										if (!$contextual.hasClass(className) || $contextual.attr("data-userId") !== userId) {
+											return;
+										}
+
+										var $li = $("li", $contextual);
+										$li.html($('<div class="loading_handleRoles">'));
+										tool.handleRoles(userId, $li, true);
+									});
+								}
+							});
+							this.Q.beforeRemove.set(function () {
+								$(this.element).plugin('Q/contextual', 'remove');
+							}, 'Calendars_event_avatar_contextual');
+						});
+					}
+
 					Q.handle(state.onInvoke(aspect), tool, [tool.stream, $this]);
 				});
-
 
 				// if event type defined
 				if (state.show.eventType) {
@@ -541,11 +567,10 @@ Q.Tool.define("Calendars/event", function(options) {
 
 		function _proceed () {
 			var stream = this;
-			var participantsTool = tool.child('Streams_participants');
-			if (participantsTool) {
-				participantsTool.state.onRefresh.add(_onRefresh, tool);
-				participantsTool.Q.onStateChanged('count').add(function () {
-					var $participants = $(participantsTool.element);
+			tool.participantsTool = tool.child('Streams_participants');
+			if (tool.participantsTool) {
+				tool.participantsTool.Q.onStateChanged('count').add(function () {
+					var $participants = $(tool.participantsTool.element);
 					if (state.hideParticipants === false || this.state.count > (parseInt(state.hideParticipants) || 0) || stream.getAttribute("userId") === userId) {
 						$participants[0].style.display = 'flex';
 					} else {
@@ -736,87 +761,122 @@ Q.Tool.define("Calendars/event", function(options) {
 				tool.updateInterface(going);
 			}
 		}
+	},
 
-		function _onRefresh() {
-			Streams.get(state.publisherId, state.streamName, function (err, stream) {
-				var msg = Q.firstErrorMessage(err);
-				if (msg) {
-					console.warn(msg);
-					return;
-				}
-				Q.handle(state.onRefresh, tool);
-			});
+	/**
+	 * Add or update avatar badges on participant updated
+	 * @method refreshParticipants
+	 * @param {object} params
+	 * @param {Q.Tool} [params.avatar] Users/avatar tool need to update
+	 * @param {Object} [params.participant] participant need to update
+	 */
+	refreshParticipants: function (params) {
+		var tool = this;
+		var state = this.state;
 
-			// add to participants onRefresh event handler to update avatar data-checkin
-			// iterate event participants
-			Q.each(tool.participants, function (index, participant) {
-				if (participant.state !== 'participating') {
-					return;
-				}
-
-				var extra = participant.extra ? JSON.parse(participant.extra) : null;
-
-				Calendars.Event.updateParticipants({
-					tool: tool,
-					userId: participant.userId,
-					type: (function () {
-						if (participant.testRoles('leader')) {
-							return 'leader';
-						} else if (participant.testRoles('host')) {
-							return 'host';
-						} else if (participant.testRoles('speaker')) {
-							return 'speaker';
-						} else if (participant.testRoles('staff')) {
-							// logged user is a staff in this event
-							if (Q.Users.loggedInUserId() === participant.userId) {
-								$te.attr("data-staff", true);
-							}
-
-							return 'staff';
-						}
-					})()
-				});
-
-				if (Q.getObject(['checkin'], extra)) {
-					Calendars.Event.updateParticipants({
-						tool: tool,
-						userId: participant.userId,
-						type: 'checkin'
-					});
-				}
-
-				Calendars.Event.updateParticipants({
-					tool: tool,
-					userId: participant.userId,
-					type: (function () {
-						if (participant.testRoles('rejected')) {
-							return 'rejected';
-						} else if (participant.testRoles('requested')) {
-							return 'requested';
-						} else if (participant.testRoles('registered')) {
-							return 'registered';
-						}
-					})()
-				});
-
-				if (Q.getObject("type", tool.stream.getAttribute('payment')) === 'required') {
-					Calendars.Event.updateParticipants({
-						tool: tool,
-						userId: participant.userId,
-						type: (function () {
-							switch (Q.getObject(['paid'], extra)) {
-								case 'reserved':
-									return 'paid-reserved';
-								case 'fully':
-									return 'paid-fully';
-								case 'no':
-									return 'paid-no';
-							}
-						})()
-					});
-				}
-			});
+		var definedAvatar = Q.getObject("avatar", params);
+		if (Q.typeOf(definedAvatar) === 'Q.Tool' && definedAvatar.name === "users_avatar" && definedAvatar.state.userId) {
+			tool.avatarsToRefresh.push(definedAvatar);
+		} else {
+			definedAvatar = null;
 		}
+
+		var definedParticipant = Q.getObject("participant", params);
+		if (definedParticipant) {
+			definedParticipant = new Streams.Participant(definedParticipant);
+			Q.setObject("participants." + definedParticipant.userId, definedParticipant, tool);
+		} else {
+			definedParticipant = null;
+		}
+
+		Streams.get(state.publisherId, state.streamName, function (err, stream) {
+			var msg = Q.firstErrorMessage(err);
+			if (msg) {
+				console.warn(msg);
+				return;
+			}
+			Q.handle(state.onRefresh, tool);
+		});
+
+		// add to participants onRefresh event handler to update avatar data-roles, data-paid
+		// iterate event participants
+		Q.each(tool.participants, function (i, participant) {
+			// if participant left stream, do nothing
+			if (participant.state !== 'participating') {
+				return;
+			}
+
+			if (definedParticipant && definedParticipant.userId !== participant.userId) {
+				return;
+			}
+
+			Q.each(tool.avatarsToRefresh, function (j, avatar) {
+				if (definedAvatar && definedAvatar.id !== avatar.id) {
+					return;
+				}
+
+				if (avatar.state.userId !== participant.userId) {
+					return;
+				}
+
+				// if avatar tool removed or tool.element is out of DOM, remove from avatarsToRefresh and exit
+				if (avatar.removed || !avatar.element.isConnected) {
+					return tool.avatarsToRefresh.splice(j, 1);
+				}
+
+				Calendars.Event.updateParticipants({
+					participant,
+					avatar,
+					type: (function () {
+						var type = [];
+						var item;
+
+						for (item of ['leader', 'host', 'speaker', 'staff']) {
+							if (!participant.testRoles(item)) {
+								continue;
+							}
+
+							type.push(item);
+							$(tool.element).attr("data-" + item, true);
+							break;
+						}
+
+						for (item of ['attendee', 'arrived']) {
+							if (!participant.testRoles(item)) {
+								continue;
+							}
+
+							type.push(item);
+							break;
+						}
+
+						for (item of ['rejected', 'requested', 'registered']) {
+							if (!participant.testRoles(item)) {
+								continue;
+							}
+
+							type.push(item);
+							break;
+						}
+
+						if (Q.getObject("type", tool.stream.getAttribute('payment')) === 'required') {
+							switch (participant.getExtra('paid')) {
+								case 'reserved':
+									type.push('paid-reserved');
+									break;
+								case 'fully':
+									type.push('paid-fully');
+									break;
+								default:
+									type.push('paid-no');
+							}
+						}
+
+						return type;
+					})()
+				});
+			});
+		});
 	},
 	/**
 	 * @method startWebRTC
@@ -1389,7 +1449,7 @@ Q.Tool.define("Calendars/event", function(options) {
 							Q.Assets.Payments.stripe({
 								amount: needCredits - currentCredits,
 								currency: options.currency || 'USD',
-								reason: 'JoinedPaidStream',
+								reason: 'BoughtCredits',
 								metadata: {
 									publisherId: tool.state.publisherId,
 									streamName: tool.state.streamName
@@ -1577,9 +1637,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		//-------------------------------------------------------------
 		// 1. No-op if unchanged
 		//-------------------------------------------------------------
-		var previousGoing = $te.attr("data-going");
-
-		if (previousGoing === going) {
+		if ($te.attr("data-going") === going) {
 			Q.handle(callback, tool, [false]);
 			return false;
 		}
@@ -1588,14 +1646,12 @@ Q.Tool.define("Calendars/event", function(options) {
 		// 2. UI utility helpers
 		//-------------------------------------------------------------
 		var revertUI = function () {
-			$te.attr("data-going", previousGoing);
-			tool.updateInterface(previousGoing);
+			Q.handle(callback, tool, [false]);
 			tool.$goingElement.removeClass("Q_working");
 		};
 
 		var finalizeUI = function () {
 			tool.updateInterface(going);
-			Q.handle(state.onGoing, tool, [going, tool.stream, tool.participant]);
 			Q.handle(callback, tool, [true]);
 		};
 
@@ -1615,7 +1671,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		//-------------------------------------------------------------
 		// 4. Prepayment mode (ensure Stripe customer profile)
 		//-------------------------------------------------------------
-		if (going === "yes" && tool.modePrepayment) {
+		if (going === "yes" && tool.modePrepayment && !Q.getObject("payToAttend", options)) {
 
 			if (!tool.stream.getAttribute('payment') || Q.getObject("payment.isAssetsCustomer", state)) {
 				return tool.going("maybe", callback, options);
@@ -1624,12 +1680,11 @@ Q.Tool.define("Calendars/event", function(options) {
 			Q.Assets.Payments.stripe({
 				amount: 1,
 				currency: "USD",
-				reason: 'EventParticipation',
+				reason: 'BoughtCredits',
 				description: tool.text.event.tool.Prepayment
 			}, function (err) {
 				if (err) {
 					revertUI();
-					Q.handle(callback, tool, [false]);
 					return;
 				}
 				state.payment.isAssetsCustomer = true;
@@ -1680,8 +1735,7 @@ Q.Tool.define("Calendars/event", function(options) {
 			_donate()
 				.catch(function (err) { err && console.warn(err); })
 				.then(function () {
-					tool.getPaymentInfo();
-					tool.$goingElement.removeClass("Q_working");
+					state.payment.isAssetsCustomer = true;
 					Q.handle(state.onPaid, tool);
 				});
 			return;
@@ -1713,16 +1767,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		 * @return {Promise}
 		 */
 		function _saveGoing(targetGoing) {
-			var changed = ($te.attr("data-going") !== targetGoing);
-
-			if (changed) {
-				$te.attr("data-going", targetGoing);
-			}
-
 			return new Q.Promise(function (resolve, reject) {
-
-				if (!changed) return reject("no_change");
-
 				Q.req(
 					"Calendars/going",
 					["stream","participant","payment","paid"],
@@ -1761,7 +1806,7 @@ Q.Tool.define("Calendars/event", function(options) {
 										intentToken   : paymentDetails.intentToken,
 										amount        : intent.amount,
 										currency      : intent.currency,
-										reason        : intent.reason,
+										reason        : 'BoughtCredits',
 										// metadata      : intent.metadata || {},
 										toPublisherId : intent.toPublisherId,
 										toStreamName  : intent.toStreamName
@@ -1770,9 +1815,11 @@ Q.Tool.define("Calendars/event", function(options) {
 									Q.Assets.Payments.stripe(
 										stripeOptions,
 										function () {
-											tool.getPaymentInfo();
 											Q.handle(state.onPaid, tool);
-											resolve(response);
+											Q.Assets.onCreditsChanged.setOnce(function (credits) {
+												state.payment.isAssetsCustomer = true;
+												tool.going(targetGoing, callback, options);
+											}, tool);
 										},
 										function () {
 											revertUI();
@@ -1882,8 +1929,10 @@ Q.Tool.define("Calendars/event", function(options) {
 		state.show.going = parseInt(tool.stream.getAttribute('startTime')) * 1000 > Date.now();
 
 		// check if user is publisher or admin for current community
-		if (state.isAdmin) {
-			state.show.checkin = true;
+        if (state.isAdmin || state.isScreener) {
+            state.show.checkin = true;
+        }
+        if (state.isAdmin) {
 			state.show.closeEvent = true;
 
 			// if event is recurring and user have admin permissions, show adminRecurring button
@@ -1891,7 +1940,7 @@ Q.Tool.define("Calendars/event", function(options) {
 				state.show.adminRecurring = true;
 			}
 		} else {
-			state.show.myqr = !!(tool.stream.participant && tool.stream.participant.testRoles('registered'));
+			state.show.myqr = !!(tool.stream.participant && tool.stream.participant.getExtra('going') !== 'no');
 		}
 		tool.$(".Calendars_info .Calendars_aspect_myqr")[state.show.myqr ? "slideDown" : "slideUp"](300);
 
@@ -1961,14 +2010,23 @@ Q.Tool.define("Calendars/event", function(options) {
 	updateInterface: function (going, duringRefresh) {
 		going = going || "no";
 		var tool = this;
+		var $toolElement = $(this.element);
+
+		if ($toolElement.attr('data-going') === going) {
+			return;
+		}
 
 		tool.setShow();
 
-		$(tool.element).attr('data-going', going);
+		$toolElement.attr('data-going', going);
 
 		tool.$('.Calendars_going [data-going=' + going + ']')
 			.addClass('Q_selected')
 			.siblings().removeClass('Q_selected');
+
+		tool.$goingElement.removeClass("Q_working");
+
+		Q.handle(tool.state.onGoing, tool, [going, tool.stream, tool.participant]);
 
 		if (going === 'no' && !duringRefresh) {
 			_checkTrips();
@@ -2040,12 +2098,12 @@ Q.Tool.define("Calendars/event", function(options) {
 	 * @method handleRoles
 	 * @param {string} userId
 	 * @param {Element|jQuery} element
+	 * @param {Boolean} [replace] if true replace element content instead append
 	 */
-	handleRoles: function (userId, element) {
-		var tool = this;
+	handleRoles: function (userId, element, replace) {
 		var state = this.state;
 
-		if (!state.isAdmin || !tool.modePrepayment) {
+		if (!state.isAdmin) {
 			return;
 		}
 
@@ -2054,10 +2112,15 @@ Q.Tool.define("Calendars/event", function(options) {
 				return;
 			}
 
-			Q.Template.render('Calendars/event/roles', {
-				roles: ['rejected', 'requested', 'registered'],
-				paid: ['no', 'reserved', 'fully']
-			}, function (err, html) {
+			var options = {
+				roles: ['rejected', 'requested', 'registered']
+			};
+			if (Q.getObject("payment.type", state) === 'required') {
+				options.paymentRequired = true;
+				options.paid = ['no', 'refunded', 'reserved', 'fully'];
+			}
+
+			Q.Template.render('Calendars/event/roles', options, function (err, html) {
 				if (err) {
 					return;
 				}
@@ -2114,7 +2177,12 @@ Q.Tool.define("Calendars/event", function(options) {
 					});
 
 				});
-				$(element).append($html);
+
+				if (replace) {
+					$(element).html($html);
+				} else {
+					$(element).append($html);
+				}
 			});
 		}, {
 			fields: {
@@ -2123,11 +2191,6 @@ Q.Tool.define("Calendars/event", function(options) {
 				userId
 			}
 		});
-	},
-	Q: {
-		beforeRemove: function () {
-
-		}
 	}
 });
 
@@ -2330,12 +2393,14 @@ Q.Template.set('Calendars/event/roles',
 		<div data-role="{{this}}">{{this}}</div>		
 	{{/each}}
 </div>
+{{#if paymentRequired}}
 <div class="Calendars_event_paid">
 	<h2>Paid management</h2>
 	{{#each paid}}
 		<div data-paid="{{this}}">{{this}}</div>		
 	{{/each}}
-</div>`
+</div>
+{{/if}}`
 );
 
 })(Q, Q.jQuery, window);
