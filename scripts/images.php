@@ -16,7 +16,7 @@ $EXT = 'jpg';
 /**
  * Batch config
  */
-$BATCH_SIZE = (int) Q_Config::get('AI', 'images', 'batch', 1);
+$BATCH_SIZE = (int) Q_Config::get('AI', 'images', 'batch', 2);
 if ($BATCH_SIZE <= 1) {
 	$BATCH_SIZE = 0;
 }
@@ -27,22 +27,23 @@ if ($BATCH_SIZE <= 1) {
 $opts = getopt('', array(
 	'size:',
 	'orientation:',
-	'ideogram',
-	'google',
-	'openai',
-	'text'
+	'image:',
+	'llm:',
+	'text',
+	'importance:'
 ));
 
-$useIdeogram = isset($opts['ideogram']);
-$useGoogle   = isset($opts['google']);
-$useOpenAI   = isset($opts['openai']);
-$allowText   = isset($opts['text']);
+$imageAdapter = Q::ifset($opts, 'image', null);
+$llmAdapter   = Q::ifset($opts, 'llm', null);
+
+$allowText = isset($opts['text']);
+$minImportance = Q::ifset($opts, 'importance', 7);
 
 /**
- * Default: Ideogram + text
+ * Default: OpenAI + text
  */
-if (!$useIdeogram && !$useGoogle && !$useOpenAI) {
-	$useIdeogram = true;
+if (!$imageAdapter) {
+	$imageAdapter = 'openai';
 	$allowText = true;
 }
 
@@ -77,12 +78,20 @@ $globalHolidays = json_decode(
 	@file_get_contents(CALENDARS_PLUGIN_CONFIG_DIR . DS . 'holidays.json'),
 	true
 );
+$holidaysWithCountries = json_decode(
+	@file_get_contents(CALENDARS_PLUGIN_CONFIG_DIR . DS . 'holidaysWithCountries.json'),
+	true
+);
 $countryLanguages = json_decode(
 	@file_get_contents(PLACES_PLUGIN_CONFIG_DIR . DS . 'languages.json'),
 	true
 );
 $festivenessMap = json_decode(
 	@file_get_contents(CALENDARS_PLUGIN_CONFIG_DIR . DS . 'festiveness.json'),
+	true
+);
+$holidayImportance = json_decode(
+	@file_get_contents(CALENDARS_PLUGIN_CONFIG_DIR . DS . 'importance.json'),
 	true
 );
 
@@ -100,7 +109,6 @@ foreach ($countryLanguages as $langs) {
 		$allLanguages[$lang] = true;
 	}
 }
-$allLanguages = array('ru', 'uk', 'en');
 
 /**
  * Scene templates
@@ -164,7 +172,7 @@ function generatePrompt(
 	$template,
 	$orientation,
 	$allowText,
-	$modelBias // 'ideogram' | 'google' | 'openai'
+	$imageAdapter
 ) {
 	$prompt = str_replace(
 		array('{{culture}}', '{{holiday}}', '{{scene}}', '{{language}}'),
@@ -187,7 +195,7 @@ function generatePrompt(
 	$prompt .= "\nHigh detail. Ornate. Painterly. Cinematic lighting.";
 
 	/* IMPORTANT: style constraints ONLY for OpenAI */
-	if ($modelBias === 'openai') {
+	if ($imageAdapter === 'openai') {
 		$prompt .= <<<EOT
 
 No flat illustration.
@@ -205,39 +213,34 @@ EOT;
 }
 
 /**
- * Translation prompt (OpenAI edit)
- */
-function translationPrompt($language)
-{
-	return
-		"Replace the visible holiday greeting text with correct {$language}.\n" .
-		"Use standard, well-known holiday phrases.\n" .
-		"Preserve layout, colors, lighting, and composition.\n" .
-		"Do not alter the scene.";
-}
-
-/**
  * Adapters
  */
-$ideogram = AI_Image::create('ideogram');
-$google   = AI_Image::create('google');
-$openai   = AI_Image::create('openai');
+$image = AI_Image::create($imageAdapter);
+$llm   = $llmAdapter ? AI_LLM::create($llmAdapter) : null;
 
-if (!$ideogram || !$google || !$openai) {
-	die("Missing adapters\n");
+if (!$image) {
+	die("Missing image adapter: {$imageAdapter}\n");
 }
 
 /**
  * Batch helpers
  */
-$batchCount = 0;
-function batchStart(&$c, $n) {
-	if ($n && $c === 0) Q_Utils::batchStart();
+$batchCounts = array(
+	'image' => 0,
+	'llm' => 0
+);
+function batchUse($batchName) {
+	global $batchCounts, $BATCH_SIZE;
+	if ($BATCH_SIZE && $batchCounts[$batchName] === 0) {
+		Q_Utils::batchUse($batchName);
+	}
 }
-function batchFlush(&$c, $n) {
-	if ($n && $c >= $n) {
-		Q_Utils::batchExecute();
-		$c = 0;
+function batchCommit($batchName) {
+	global $batchCounts, $BATCH_SIZE;
+	$batchCounts[$batchName]++;
+	if ($BATCH_SIZE && $batchCounts[$batchName] >= $BATCH_SIZE) {
+		Q_Utils::batchExecute($batchName);
+		$batchCounts[$batchName] = 0;
 	}
 }
 
@@ -248,6 +251,10 @@ for ($index = 1; $index <= $MAX_INDEX; $index++) {
 
 	foreach ($globalHolidays as $date => $entries) {
 
+		if ($date < date("Y-m-d")) {
+			continue;
+		}
+
 		$year = substr($date, 0, 4);
 
 		foreach ($entries as $entry) {
@@ -256,26 +263,56 @@ for ($index = 1; $index <= $MAX_INDEX; $index++) {
 
 					$key = Q_Utils::normalize($holiday);
 					$tier = festivenessTier($key, $festivenessMap);
+					$importance = Q::ifset($holidayImportance, $key, 0);
+					if ($importance < $minImportance) {
+						continue;
+					}
 
-					foreach ($allLanguages as $lang) {
+					$countries = Q::ifset($holidaysWithCountries, $culture, $holiday, 'countries', array());
+					$maxLanguages = 10;
+					$languagesPerCountry = 4;
+					$languageCounts = array();
+
+					// Count how many countries each language appears in
+					foreach ($countries as $country) {
+						if ($country === null) break;  // Stop at diaspora separator
+						$countryLangs = array_slice(
+							Q::ifset($countryLanguages, $country, array()), 
+							0, 
+							$languagesPerCountry
+						);
+						
+						foreach ($countryLangs as $lang) {
+							$languageCounts[$lang] = isset($languageCounts[$lang]) 
+								? $languageCounts[$lang] + 1 
+								: 1;
+						}
+					}
+					// Sort by frequency (most countries first)
+					arsort($languageCounts);
+					// Take top N languages
+					$languages = array_slice(array_keys($languageCounts), 0, $maxLanguages);
+
+					foreach ($languages as $lang) {
 
 						$langInfo = Q_Text::languagesInfo();
 						if (empty($langInfo[$lang]['name'])) continue;
 
-						$outDir = APP_FILES_DIR . DS . 'Calendars' . DS . 'holidays'
-							. DS . $culture . DS . $key . DS . $year . '-' . $index;
+						$outDir = APP_WEB_DIR . DS . 'Q' . DS . 'plugins' . DS . 'Calendars' . DS . 'img'
+							. DS . 'holidays' . DS . $culture . DS . $key . DS . $year . '-' . $index;
 
 						if (!is_dir($outDir)) mkdir($outDir, 0755, true);
 
-						$path = $outDir . DS . $lang . '.' . $EXT;
-						if (file_exists($path)) continue;
+						$langDir = $outDir . DS . $lang;
+						if (is_dir($langDir) && glob($langDir . DS . '*.' . $EXT)) {
+							continue; // assume image already generated
+						}
+						mkdir($langDir, 0755, true);
+
+						$path = $langDir . DS . $size . '.' . $EXT;
 
 						$scene    = $SCENES[$tier][array_rand($SCENES[$tier])];
 						$template = $TEMPLATES[$tier][array_rand($TEMPLATES[$tier])];
-
-						$modelBias =
-							$useOpenAI ? 'openai' :
-							($useGoogle ? 'google' : 'ideogram');
 
 						$prompt = generatePrompt(
 							$culture,
@@ -285,113 +322,179 @@ for ($index = 1; $index <= $MAX_INDEX; $index++) {
 							$template,
 							$orientation,
 							$allowText,
-							$modelBias
+							$imageAdapter
 						);
 
-						batchStart($batchCount, $BATCH_SIZE);
+						$attributes = array(
+							// semanticExtraction
+							'title' => "Happy {$holiday}",
+							'holidayName' => $holiday,
+							'startDate' => $date,
+							'endDate' => $date,
 
-						/* Ideogram only (default) */
-						if ($useIdeogram && !$useGoogle && !$useOpenAI) {
-							$ideogram->generate($prompt, array(
-								'format' => $EXT,
-								'width'  => $width,
-								'height' => $height,
-								'callback' => function ($r) use ($path) {
-									if (!empty($r['data'])) {
-										file_put_contents($path, $r['data']);
-									}
-								}
-							));
-							$batchCount++;
-							batchFlush($batchCount, $BATCH_SIZE);
-							continue;
+							// holidayAnalysis
+							'holidayImportance' => Q::ifset($holidayImportance, $key, null),
+
+							// languageQuality
+							'language' => $lang,
+
+							// culturalRelevance
+							'countries' => $countries,
+							'culturalSpecificity' => count($countries) ? 7 : null,
+
+							// timing
+							'dates' => array(array($date, $date)),
+							'evergreen' => 0,
+
+							// contentClassification
+							'contentType' => 'greeting',
+							'occasion' => array($key),
+							'tone' => array($tier),
+							'sentiment' => 'positive',
+
+							// discoveryQuality
+							'keywords' => array_map('strtolower', preg_split('/\s+/', $holiday)),
+							'confidence' => 0.6
+						);
+
+
+						batchUse('image');
+
+						$streamType = 'Streams/image';
+						$observationsType = 'holiday';
+						$options = array(
+							'format' => $EXT,
+							'width'  => $width,
+							'height' => $height,
+							'callback' => function ($r) use (
+								$path,
+								$llm,
+								$streamType,
+								$observationsType,
+								$attributes,
+							) {
+								processGeneratedImage(
+									$r,
+									$path,
+									$llm,
+									$streamType,
+									$observationsType,
+									$attributes
+								);
+							}
+						);
+
+						/*
+						* Adapter-specific options
+						*/
+						switch ($imageAdapter) {
+							case 'google':
+								$options['size'] = $size;
+								break;
+
+							case 'openai':
+								$options['size'] = $size;
+								$options['quality'] = 'hd';
+								break;
+
+							case 'ideogram':
+							default:
+								// ideogram: no size, no quality
+								break;
 						}
 
-						/* Google only */
-						if ($useGoogle && !$useOpenAI) {
-							$google->generate($prompt, array(
-								'format' => $EXT,
-								'width'  => $width,
-								'height' => $height,
-								'size'   => $size,
-								'callback' => function ($r) use ($path) {
-									if (!empty($r['data'])) {
-										file_put_contents($path, $r['data']);
-									}
-								}
-							));
-							$batchCount++;
-							batchFlush($batchCount, $BATCH_SIZE);
-							continue;
-						}
+						$image->generate($prompt, $options);
 
-						/* OpenAI only */
-						if ($useOpenAI && !$useGoogle) {
-							$openai->generate($prompt, array(
-								'format'  => $EXT,
-								'width'   => $width,
-								'height'  => $height,
-								'size'    => $size,
-								'quality' => 'hd',
-								'callback' => function ($r) use ($path) {
-									if (!empty($r['data'])) {
-										file_put_contents($path, $r['data']);
-									}
-								}
-							));
-							$batchCount++;
-							batchFlush($batchCount, $BATCH_SIZE);
-							continue;
-						}
-
-						/* Google → OpenAI (text correction) */
-						if ($useGoogle && $useOpenAI && $allowText) {
-							$google->generate($prompt, array(
-								'format' => 'png',
-								'width'  => $width,
-								'height' => $height,
-								'size'   => $size,
-								'callback' => function ($r) use (
-									$openai, $langInfo, $lang, $path,
-									$width, $height, $size, $EXT
-								) {
-									if (empty($r['data'])) return;
-
-									$tmp = tempnam(sys_get_temp_dir(), 'img_') . '.png';
-									file_put_contents($tmp, $r['data']);
-
-									$openai->generate(
-										translationPrompt($langInfo[$lang]['name']),
-										array(
-											'images'  => array(file_get_contents($tmp)),
-											'format'  => $EXT,
-											'width'   => $width,
-											'height'  => $height,
-											'size'    => $size,
-											'quality' => 'hd',
-											'callback' => function ($res) use ($path, $tmp) {
-												if (!empty($res['data'])) {
-													file_put_contents($path, $res['data']);
-												}
-												@unlink($tmp);
-											}
-										)
-									);
-								}
-							));
-							$batchCount += 2;
-							batchFlush($batchCount, $BATCH_SIZE);
-						}
+						batchCommit('image');
+						continue;
 					}
 				}
 			}
 		}
-		break;
+		break 2;
 	}
 }
 
-if ($BATCH_SIZE && $batchCount > 0) {
-	Q_Utils::batchExecute();
+if ($BATCH_SIZE) {
+	Q_Utils::batchExecute('image');
+	Q_Utils::batchExecute('llm');
 }
 
 echo "Holiday image generation complete.\n";
+
+
+function processGeneratedImage(
+	$r,
+	$path,
+	$llm,
+	$streamType,
+	$observationsType,
+	$attributes
+) {
+	if (empty($r['data'])) return;
+
+	$data = $r['data'];
+
+	file_put_contents($path, $data);
+
+	if (!$llm) {
+		finalizeStream($streamType, $observationsType, $path, $attributes, $data);
+		return;
+	}
+
+	batchUse('llm');
+
+	$llm->process(
+		array('images' => array($r['data'])),
+		AI_LLM::observations($streamType, $observationsType),
+		array(),
+		array(
+			'callback' => function ($results) use (
+				$attributes,
+				$streamType,
+				$observationsType,
+				$path,
+				$data
+			) {
+				$attributes = array_merge(
+					$attributes,
+					AI_LLM::attributesFromObservationResults(
+						$results,
+						$streamType,
+						$observationsType
+					)
+				);
+				finalizeStream($streamType, $observationsType, $path, $attributes, $data);
+			}
+		)
+	);
+
+	batchCommit('llm');
+}
+
+function finalizeStream($streamType, $observationsType, $path, $attributes, $data) {
+	$icon = str_replace(array(DS, APP_WEB_DIR . '/'), array('/', ''), dirname($path));
+	$ok = AI_LLM::createStream(
+		$streamType,
+		$observationsType,
+		array(
+			'icon' => $icon
+		),
+		$attributes,
+		array(
+			'accept' => true
+		)
+	);
+
+	if ($ok) {
+		$tempKey = 'tmp_' . uniqid('', true);
+		$paths = Q_Image::save(array(
+			'data' => $data,
+			'path' => $icon,
+			'subpath' => "",
+			'save' => 'Streams/image',
+			'skipAccess' => true
+		));
+		@unlink($path);
+	}
+}
