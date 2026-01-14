@@ -31,8 +31,8 @@ function Calendars_0_4_Streams()
 					'streams_participant sp',
 					array(
 						'sp.userId' => new Db_Expression('u.id'),
-						'sp.publisherId' => $stream->publisherId,
-						'sp.streamName' => $stream->name
+						'sp.publisherId' => PDO::quote($stream->publisherId),
+						'sp.streamName' => PDO::quote($stream->name) 
 					),
 					'LEFT'
 				)
