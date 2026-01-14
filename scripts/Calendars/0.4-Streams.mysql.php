@@ -26,8 +26,7 @@ function Calendars_0_4_Streams()
 		$offset = 0;
 		$i = 0;
 		while (1) {
-			$users = Users_User::select('u.*')
-				->from('users_user u')
+			$users = Users_User::select('u.*', 'users_user u')
 				->join(
 					'streams_participant sp',
 					'LEFT',
