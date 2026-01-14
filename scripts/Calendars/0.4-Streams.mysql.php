@@ -29,12 +29,12 @@ function Calendars_0_4_Streams()
 			$users = Users_User::select('u.*', 'u')
 				->join(
 					'streams_participant sp',
-					'LEFT',
 					array(
 						'sp.userId' => new Db_Expression('u.id'),
 						'sp.publisherId' => $stream->publisherId,
 						'sp.streamName' => $stream->name
-					)
+					),
+					'LEFT'
 				)
 				->where(array(
 					'u.signedUpWith !=' => 'none',
