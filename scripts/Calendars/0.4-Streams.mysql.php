@@ -22,7 +22,7 @@ function Calendars_0_4_Streams()
 			die("[ERROR]: wrong events main category for $communityId".PHP_EOL);
 		}
 
-		echo "Joining registered users to $stream->publisherId-$stream->name".PHP_EOL;
+		echo "Joining registered users to {$stream->publisherId} {$stream->name}".PHP_EOL;
 		$offset = 0;
 		$i = 0;
 		while (1) {
@@ -31,8 +31,8 @@ function Calendars_0_4_Streams()
 					'streams_participant sp',
 					array(
 						'sp.userId' => new Db_Expression('u.id'),
-						'sp.publisherId' => PDO::quote($stream->publisherId),
-						'sp.streamName' => PDO::quote($stream->name) 
+						'sp.publisherId' => '?',
+						'sp.streamName' => '?' 
 					),
 					'LEFT'
 				)
@@ -41,6 +41,7 @@ function Calendars_0_4_Streams()
 					'sp.userId' => null // NOT participating
 				))
 				->limit(100, $offset)
+				->bind(array($stream->publisherId, $stream->name))
 				->fetchDbRows();
 			if (!$users) {
 				break;
