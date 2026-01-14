@@ -26,8 +26,21 @@ function Calendars_0_4_Streams()
 		$offset = 0;
 		$i = 0;
 		while (1) {
-			$users = Users_User::select()
-				->where(array('signedUpWith !=' => 'none'))
+			$users = Users_User::select('u.*')
+				->from('users_user u')
+				->join(
+					'streams_participant sp',
+					'LEFT',
+					array(
+						'sp.userId' => new Db_Expression('u.id'),
+						'sp.publisherId' => $stream->publisherId,
+						'sp.streamName' => $stream->name
+					)
+				)
+				->where(array(
+					'u.signedUpWith !=' => 'none',
+					'sp.userId' => null // NOT participating
+				))
 				->limit(100, $offset)
 				->fetchDbRows();
 			if (!$users) {
