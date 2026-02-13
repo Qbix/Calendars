@@ -310,6 +310,11 @@
 					"minutes": 5
 				}
 			}
+		},
+		"holidays": {
+			"images": {
+				"versionsMax": 3
+			}
 		}
 	},
 	"Assets": {

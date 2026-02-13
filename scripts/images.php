@@ -10,7 +10,7 @@ set_time_limit(0);
 /**
  * CONFIG
  */
-$MAX_INDEX = 1000;
+$VERSIONS_MAX = Q_Config::get('Calendars', 'holidays', 'images', 'versionsMax', 3);
 $EXT = 'jpg';
 
 /**
@@ -247,7 +247,7 @@ function batchCommit($batchName) {
 /**
  * MAIN LOOP
  */
-for ($index = 1; $index <= $MAX_INDEX; $index++) {
+for ($version = 1; $version <= $VERSIONS_MAX; $version++) {
 
 	foreach ($globalHolidays as $date => $entries) {
 
@@ -299,7 +299,7 @@ for ($index = 1; $index <= $MAX_INDEX; $index++) {
 						if (empty($langInfo[$lang]['name'])) continue;
 
 						$outDir = APP_WEB_DIR . DS . 'Q' . DS . 'plugins' . DS . 'Calendars' . DS . 'img'
-							. DS . 'holidays' . DS . $culture . DS . $key . DS . $year . '-' . $index;
+							. DS . 'holidays' . DS . $culture . DS . $key . DS . $year . '-' . $version;
 
 						if (!is_dir($outDir)) mkdir($outDir, 0755, true);
 
@@ -331,6 +331,9 @@ for ($index = 1; $index <= $MAX_INDEX; $index++) {
 							'holidayName' => $holiday,
 							'startDate' => $date,
 							'endDate' => $date,
+
+							// Jewish, Hindu, etc.
+							'culture' => $culture,
 
 							// holidayAnalysis
 							'holidayImportance' => Q::ifset($holidayImportance, $key, null),
@@ -420,6 +423,15 @@ if ($BATCH_SIZE) {
 	Q_Utils::batchExecute('llm');
 }
 
+if ($BATCH_SIZE) {
+	if ($batchCounts['image']) {
+		Q_Utils::batchExecute('image');
+	}
+	if ($batchCounts['llm']) {
+		Q_Utils::batchExecute('llm');
+	}
+}
+
 echo "Holiday image generation complete.\n";
 
 
@@ -482,7 +494,7 @@ function finalizeStream($streamType, $observationsType, $path, $attributes, $dat
 		),
 		$attributes,
 		array(
-			'accept' => true
+			'accept' => true // NOTE: we are assuming the LLM generates acceptable images here
 		)
 	);
 
