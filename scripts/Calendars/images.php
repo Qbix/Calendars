@@ -304,6 +304,8 @@ $stats = array(
 	'images_skipped_exists' => 0
 );
 
+$baseOut = APP_WEB_DIR . DS . 'Q' . DS . 'plugins' . DS . 'Calendars' . DS . 'img' . DS . 'holidays';
+
 for ($version = 1; $version <= $VERSIONS_MAX; $version++) {
 
 	echo "[loop] ========== VERSION {$version}/{$VERSIONS_MAX} ==========\n";
@@ -385,6 +387,14 @@ for ($version = 1; $version <= $VERSIONS_MAX; $version++) {
 
 					echo "[holiday] Selected " . count($languages) . " languages: " . implode(', ', $languages) . "\n";
 
+					$realVersion = nextHolidayVersion($baseOut, $culture, $key, $year);
+					$outDir = $baseOut . DS . $culture . DS . $key . DS . $year . '-' . $realVersion;
+
+					if (!is_dir($outDir)) {
+						mkdir($outDir, 0755, true);
+						echo "[mkdir] Created {$outDir}\n";
+					}
+
 					foreach ($languages as $lang) {
 
 						$langInfo = Q_Text::languagesInfo();
@@ -394,14 +404,6 @@ for ($version = 1; $version <= $VERSIONS_MAX; $version++) {
 						}
 
 						echo "[lang] Processing {$lang} (" . $langInfo[$lang]['name'] . ")\n";
-
-						$outDir = APP_WEB_DIR . DS . 'Q' . DS . 'plugins' . DS . 'Calendars' . DS . 'img'
-							. DS . 'holidays' . DS . $culture . DS . $key . DS . $year . '-' . $version;
-
-						if (!is_dir($outDir)) {
-							mkdir($outDir, 0755, true);
-							echo "[mkdir] Created {$outDir}\n";
-						}
 
 						$langDir = $outDir . DS . $lang;
 						if (is_dir($langDir) && glob($langDir . DS . '*.' . $EXT)) {
@@ -646,4 +648,18 @@ function finalizeStream($streamType, $observationsType, $path, $attributes, $dat
 	} else {
 		echo "[finalize] ERROR: Stream creation failed for {$path}\n";
 	}
+}
+
+function nextHolidayVersion($baseDir, $culture, $key, $year)
+{
+	$dir = $baseDir . DS . $culture . DS . $key;
+	if (!is_dir($dir)) return 1;
+
+	$max = 0;
+	foreach (glob($dir . DS . $year . '-*', GLOB_ONLYDIR) as $d) {
+		if (preg_match('/-(\d+)$/', $d, $m)) {
+			$max = max($max, (int) $m[1]);
+		}
+	}
+	return $max + 1;
 }
