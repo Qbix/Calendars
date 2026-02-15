@@ -616,7 +616,7 @@ function finalizeStream($streamType, $observationsType, $path, $attributes, $dat
 	echo "[finalize] Starting finalization for {$path}\n";
 	
 	$icon = str_replace(array(DS, APP_WEB_DIR . '/'), array('/', ''), dirname($path));
-	$icon = str_replace('Q/plugins/Calendars/', '{{Calendars}}', $icon);
+	$icon = str_replace('Q/plugins/Calendars/', '{{Calendars}}/', $icon);
 	echo "[finalize] Icon path: {$icon}\n";
 	
 	$ok = AI_LLM::createStream(
