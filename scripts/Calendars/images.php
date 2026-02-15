@@ -12,9 +12,14 @@ echo "[init] Starting holiday image generation\n";
 echo "[heal] Scanning existing folders for broken images...\n";
 
 $baseOut = APP_WEB_DIR . DS . 'Q' . DS . 'plugins' . DS . 'Calendars' . DS . 'img' . DS . 'holidays';
-$leafDirs = glob($baseOut . '/*/*/*/*', GLOB_ONLYDIR);
+$leafDirs = glob($baseOut . '/*/*/*/*', GLOB_ONLYDIR) ?: array();
 foreach ($leafDirs as $dir) {
-	healHolidayImageDir($dir);
+	healHolidayImageDir($dir); // finalized dir
+
+	// heal per-language subfolders too
+	foreach (glob($dir . DS . '*', GLOB_ONLYDIR) ?: array() as $langDir) {
+		healHolidayImageDir($langDir);
+	}
 }
 
 echo "[heal] Scan complete\n";
@@ -429,14 +434,21 @@ foreach ($globalHolidays as $date => $entries) {
 					echo "[lang] Processing {$lang} (" . $langInfo[$lang]['name'] . ")\n";
 
 					$langDir = $outDir . DS . $lang;
-					if (is_dir($langDir) && glob($langDir . DS . '*.' . $EXT)) {
+					if (is_dir($langDir) && !isBrokenHolidayDir($langDir)) {
 						echo "[skip] {$langDir} already exists with images\n";
 						$stats['images_skipped_exists']++;
-						continue; // assume image already generated
+						continue; // fully healthy, skip
+					}
+
+					if (is_dir($langDir) && isBrokenHolidayDir($langDir)) {
+						echo "[heal] Incomplete language dir detected: {$langDir}\n";
 					}
 					
-					mkdir($langDir, 0755, true);
-					echo "[mkdir] Created {$langDir}\n";
+					if (!is_dir($langDir)) {
+						mkdir($langDir, 0755, true);
+						echo "[mkdir] Created {$langDir}\n";
+					}
+
 
 					$path = $langDir . DS . $size . '.' . $EXT;
 
@@ -585,6 +597,8 @@ function processGeneratedImage(
 ) {
 	if (empty($r['data'])) {
 		echo "[callback] ERROR: empty image result for {$path}\n";
+		@unlink($path);          // ensure healer can retry
+		@rmdir(dirname($path)); // remove poisoned empty lang dir
 		return;
 	}
 
@@ -704,7 +718,11 @@ function healHolidayImageDir($dir)
 
 	// Detect raw image variants
 	$candidates = glob($dir . '/*x*.jpg');
-	if (!$candidates) return;
+	if (!$candidates) {
+		echo "[heal] Empty broken dir {$dir}, leaving for regeneration\n";
+		return;
+	}
+
 
 	// Pick the largest available raw image
 	usort($candidates, function ($a, $b) {
@@ -741,17 +759,16 @@ function healHolidayImageDir($dir)
 	}
 }
 
-
 function isBrokenHolidayDir($dir)
 {
 	if (!is_dir($dir)) return false;
 
-	// Good if fully finalized
 	$required = array('1000x.jpg', '200x.jpg', '80.jpg', '50.jpg', '40.jpg', 'x200.jpg');
 	foreach ($required as $f) {
-		if (!is_file($dir . DS . $f)) {
-			return true; // broken
+		$p = $dir . DS . $f;
+		if (!is_file($p) || filesize($p) === 0) {
+			return true;
 		}
 	}
-	return false; // healthy
+	return false;
 }
