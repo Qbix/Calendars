@@ -313,7 +313,8 @@
 		},
 		"holidays": {
 			"images": {
-				"versionsMax": 3
+				"versionsMax": 3,
+				"weeks": 12
 			}
 		}
 	},
