@@ -327,8 +327,9 @@ for ($version = 1; $version <= $VERSIONS_MAX; $version++) {
 						$langInfo = Q_Text::languagesInfo();
 						if (empty($langInfo[$lang]['name'])) continue;
 
-						$outDir = APP_WEB_DIR . DS . 'Q' . DS . 'plugins' . DS . 'Calendars' . DS . 'img'
-							. DS . 'holidays' . DS . $culture . DS . $key . DS . $year . '-' . $version;
+						$baseDir = APP_WEB_DIR . DS . 'Q' . DS . 'plugins' . DS . 'Calendars' . DS . 'img' . DS . 'holidays';
+						$realVersion = nextHolidayVersion($baseDir, $culture, $key, $year);
+						$outDir = $baseDir . DS . $culture . DS . $key . DS . $year . '-' . $realVersion;
 
 						if (!is_dir($outDir)) mkdir($outDir, 0755, true);
 
@@ -509,6 +510,7 @@ function processGeneratedImage(
 
 function finalizeStream($streamType, $observationsType, $path, $attributes, $data) {
 	$icon = str_replace(array(DS, APP_WEB_DIR . '/'), array('/', ''), dirname($path));
+	$icon = str_replace('Q/plugins/Calendars/', '{{Calendars}}/', $icon);
 	$ok = AI_LLM::createStream(
 		$streamType,
 		$observationsType,
@@ -532,4 +534,18 @@ function finalizeStream($streamType, $observationsType, $path, $attributes, $dat
 		));
 		@unlink($path);
 	}
+}
+
+function nextHolidayVersion($baseDir, $culture, $key, $year)
+{
+	$dir = $baseDir . DS . $culture . DS . $key;
+	if (!is_dir($dir)) return 1;
+
+	$max = 0;
+	foreach (glob($dir . DS . $year . '-*', GLOB_ONLYDIR) as $d) {
+		if (preg_match('/-(\d+)$/', $d, $m)) {
+			$max = max($max, (int) $m[1]);
+		}
+	}
+	return $max + 1;
 }
