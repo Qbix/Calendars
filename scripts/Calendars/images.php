@@ -565,6 +565,13 @@ foreach ($globalHolidays as $date => $entries) {
 								@rmdir(dirname($path));
 
 								// enqueue retry once
+								static $retried = array();
+								if (isset($retried[$path])) {
+									echo "[retry] Already retried {$path}, skipping requeue\n";
+									return;
+								}
+								$retried[$path] = true;
+
 								$RETRY_QUEUE[] = array($prompt, $options, $path, array(
 									'llm' => $llm,
 									'streamType' => $streamType,
