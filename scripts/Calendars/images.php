@@ -11,6 +11,7 @@ echo "[init] Starting holiday image generation\n";
 
 echo "[heal] Scanning existing folders for broken images...\n";
 
+$baseOut = APP_WEB_DIR . DS . 'Q' . DS . 'plugins' . DS . 'Calendars' . DS . 'img' . DS . 'holidays';
 $leafDirs = glob($baseOut . '/*/*/*/*', GLOB_ONLYDIR);
 foreach ($leafDirs as $dir) {
 	healHolidayImageDir($dir);
@@ -313,243 +314,238 @@ $stats = array(
 	'images_skipped_exists' => 0
 );
 
-$baseOut = APP_WEB_DIR . DS . 'Q' . DS . 'plugins' . DS . 'Calendars' . DS . 'img' . DS . 'holidays';
+echo "[loop] ========== GENERATION RUN ==========\n";
 
-for ($version = 1; $version <= $VERSIONS_MAX; $version++) {
+foreach ($globalHolidays as $date => $entries) {
 
-	echo "[loop] ========== VERSION {$version}/{$VERSIONS_MAX} ==========\n";
+	if ($date < $today) {
+		$stats['dates_skipped_past']++;
+		continue;
+	}
 
-	foreach ($globalHolidays as $date => $entries) {
+	if ($date > $maxDate) {
+		echo "[stop] Date {$date} exceeds maxDate {$maxDate}, stopping\n";
+		$stats['dates_skipped_future']++;
+		break;
+	}
 
-		if ($date < $today) {
-			$stats['dates_skipped_past']++;
-			continue;
+	$stats['dates_processed']++;
+	echo "[date] Processing {$date}\n";
+	$year = substr($date, 0, 4);
+
+	$holidayCount = 0;
+	foreach ($entries as $entry) {
+		foreach ($entry as $culture => $holidays) {
+			$holidayCount += count($holidays);
 		}
+	}
+	echo "[date] {$date} has {$holidayCount} holiday(s)\n";
 
-		if ($date > $maxDate) {
-			echo "[stop] Date {$date} exceeds maxDate {$maxDate}, stopping\n";
-			$stats['dates_skipped_future']++;
-			break 2;
-		}
+	foreach ($entries as $entry) {
+		foreach ($entry as $culture => $holidays) {
+			foreach ($holidays as $holiday) {
 
-		$stats['dates_processed']++;
-		echo "[date] Processing {$date}\n";
-		$year = substr($date, 0, 4);
+				$key = Q_Utils::normalize($holiday);
+				$tier = festivenessTier($key, $festivenessMap);
+				$importance = Q::ifset($holidayImportance, $key, 0);
+				
+				if ($importance < $minImportance) {
+					echo "[skip] '{$holiday}' importance={$importance} < {$minImportance}\n";
+					$stats['holidays_skipped_importance']++;
+					continue;
+				}
 
-		$holidayCount = 0;
-		foreach ($entries as $entry) {
-			foreach ($entry as $culture => $holidays) {
-				$holidayCount += count($holidays);
-			}
-		}
-		echo "[date] {$date} has {$holidayCount} holiday(s)\n";
+				$stats['holidays_processed']++;
+				echo "[holiday] '{$holiday}' ({$culture}) tier={$tier} importance={$importance}\n";
 
-		foreach ($entries as $entry) {
-			foreach ($entry as $culture => $holidays) {
-				foreach ($holidays as $holiday) {
+				$countries = Q::ifset($holidaysWithCountries, $culture, $holiday, 'countries', array());
+				$maxLanguages = 10;
+				$languagesPerCountry = 4;
+				$languageCounts = array();
 
-					$key = Q_Utils::normalize($holiday);
-					$tier = festivenessTier($key, $festivenessMap);
-					$importance = Q::ifset($holidayImportance, $key, 0);
+				echo "[holiday] Found " . count($countries) . " countries\n";
+
+				// Count how many countries each language appears in
+				foreach ($countries as $country) {
+					if ($country === null) {
+						echo "[holiday] Reached diaspora separator\n";
+						break;  // Stop at diaspora separator
+					}
+					$countryLangs = array_slice(
+						Q::ifset($countryLanguages, $country, array()), 
+						0, 
+						$languagesPerCountry
+					);
 					
-					if ($importance < $minImportance) {
-						echo "[skip] '{$holiday}' importance={$importance} < {$minImportance}\n";
-						$stats['holidays_skipped_importance']++;
+					echo "[country] {$country}: " . count($countryLangs) . " languages\n";
+					
+					foreach ($countryLangs as $lang) {
+						$languageCounts[$lang] = isset($languageCounts[$lang]) 
+							? $languageCounts[$lang] + 1 
+							: 1;
+					}
+				}
+				
+				// Sort by frequency (most countries first)
+				arsort($languageCounts);
+				// Take top N languages
+				$languages = array_slice(array_keys($languageCounts), 0, $maxLanguages);
+
+				echo "[holiday] Selected " . count($languages) . " languages: " . implode(', ', $languages) . "\n";
+
+				$base = $baseOut . DS . $culture . DS . $key;
+
+				// Try to reuse latest broken version
+				$reuseDir = null;
+				$dirs = glob($base . DS . $year . '-*', GLOB_ONLYDIR) ?: array();
+				@rsort($dirs, SORT_NATURAL);
+
+				foreach ($dirs as $d) {
+					if (isBrokenHolidayDir($d)) {
+						$reuseDir = $d;
+						echo "[heal] Reusing broken dir {$d}\n";
+						break;
+					}
+				}
+
+				if ($reuseDir) {
+					$outDir = $reuseDir;
+				} else {
+					$realVersion = nextHolidayVersion($baseOut, $culture, $key, $year);
+					$outDir = $baseOut . DS . $culture . DS . $key . DS . $year . '-' . $realVersion;
+					mkdir($outDir, 0755, true);
+					echo "[mkdir] Created {$outDir}\n";
+				}
+
+
+				foreach ($languages as $lang) {
+
+					$langInfo = Q_Text::languagesInfo();
+					if (empty($langInfo[$lang]['name'])) {
+						echo "[skip] Language '{$lang}' has no name info\n";
 						continue;
 					}
 
-					$stats['holidays_processed']++;
-					echo "[holiday] '{$holiday}' ({$culture}) tier={$tier} importance={$importance}\n";
+					echo "[lang] Processing {$lang} (" . $langInfo[$lang]['name'] . ")\n";
 
-					$countries = Q::ifset($holidaysWithCountries, $culture, $holiday, 'countries', array());
-					$maxLanguages = 10;
-					$languagesPerCountry = 4;
-					$languageCounts = array();
-
-					echo "[holiday] Found " . count($countries) . " countries\n";
-
-					// Count how many countries each language appears in
-					foreach ($countries as $country) {
-						if ($country === null) {
-							echo "[holiday] Reached diaspora separator\n";
-							break;  // Stop at diaspora separator
-						}
-						$countryLangs = array_slice(
-							Q::ifset($countryLanguages, $country, array()), 
-							0, 
-							$languagesPerCountry
-						);
-						
-						echo "[country] {$country}: " . count($countryLangs) . " languages\n";
-						
-						foreach ($countryLangs as $lang) {
-							$languageCounts[$lang] = isset($languageCounts[$lang]) 
-								? $languageCounts[$lang] + 1 
-								: 1;
-						}
+					$langDir = $outDir . DS . $lang;
+					if (is_dir($langDir) && glob($langDir . DS . '*.' . $EXT)) {
+						echo "[skip] {$langDir} already exists with images\n";
+						$stats['images_skipped_exists']++;
+						continue; // assume image already generated
 					}
 					
-					// Sort by frequency (most countries first)
-					arsort($languageCounts);
-					// Take top N languages
-					$languages = array_slice(array_keys($languageCounts), 0, $maxLanguages);
+					mkdir($langDir, 0755, true);
+					echo "[mkdir] Created {$langDir}\n";
 
-					echo "[holiday] Selected " . count($languages) . " languages: " . implode(', ', $languages) . "\n";
+					$path = $langDir . DS . $size . '.' . $EXT;
 
-					$base = $baseOut . DS . $culture . DS . $key;
+					$scene    = $SCENES[$tier][array_rand($SCENES[$tier])];
+					$template = $TEMPLATES[$tier][array_rand($TEMPLATES[$tier])];
 
-					// Try to reuse latest broken version
-					$reuseDir = null;
-					$dirs = glob($base . DS . $year . '-*', GLOB_ONLYDIR);
-					rsort($dirs, SORT_NATURAL);
+					$prompt = generatePrompt(
+						$culture,
+						$holiday,
+						$langInfo[$lang]['name'],
+						$scene,
+						$template,
+						$orientation,
+						$allowText,
+						$imageAdapter
+					);
 
-					foreach ($dirs as $d) {
-						if (isBrokenHolidayDir($d)) {
-							$reuseDir = $d;
-							echo "[heal] Reusing broken dir {$d}\n";
-							break;
-						}
-					}
+					echo "[gen] Target: {$path}\n";
+					echo "[prompt] " . substr(str_replace("\n", " ", $prompt), 0, 120) . "...\n";
 
-					if ($reuseDir) {
-						$outDir = $reuseDir;
-					} else {
-						$realVersion = nextHolidayVersion($baseOut, $culture, $key, $year);
-						$outDir = $baseOut . DS . $culture . DS . $key . DS . $year . '-' . $realVersion;
-						mkdir($outDir, 0755, true);
-						echo "[mkdir] Created {$outDir}\n";
-					}
+					$attributes = array(
+						// semanticExtraction
+						'title' => "Happy {$holiday}",
+						'holidayName' => $holiday,
+						'startDate' => $date,
+						'endDate' => $date,
 
+						// Jewish,
+						'culture' => $culture,
 
-					foreach ($languages as $lang) {
+						// holidayAnalysis
+						'holidayImportance' => Q::ifset($holidayImportance, $key, null),
 
-						$langInfo = Q_Text::languagesInfo();
-						if (empty($langInfo[$lang]['name'])) {
-							echo "[skip] Language '{$lang}' has no name info\n";
-							continue;
-						}
+						// languageQuality
+						'language' => $lang,
 
-						echo "[lang] Processing {$lang} (" . $langInfo[$lang]['name'] . ")\n";
+						// culturalRelevance
+						'countries' => $countries,
+						'culturalSpecificity' => count($countries) ? 7 : null,
 
-						$langDir = $outDir . DS . $lang;
-						if (is_dir($langDir) && glob($langDir . DS . '*.' . $EXT)) {
-							echo "[skip] {$langDir} already exists with images\n";
-							$stats['images_skipped_exists']++;
-							continue; // assume image already generated
-						}
-						
-						mkdir($langDir, 0755, true);
-						echo "[mkdir] Created {$langDir}\n";
+						// timing
+						'dates' => array(array($date, $date)),
+						'evergreen' => 0,
 
-						$path = $langDir . DS . $size . '.' . $EXT;
+						// contentClassification
+						'contentType' => 'greeting',
+						'occasion' => array($key),
+						'tone' => array($tier),
+						'sentiment' => 'positive',
 
-						$scene    = $SCENES[$tier][array_rand($SCENES[$tier])];
-						$template = $TEMPLATES[$tier][array_rand($TEMPLATES[$tier])];
-
-						$prompt = generatePrompt(
-							$culture,
-							$holiday,
-							$langInfo[$lang]['name'],
-							$scene,
-							$template,
-							$orientation,
-							$allowText,
-							$imageAdapter
-						);
-
-						echo "[gen] Target: {$path}\n";
-						echo "[prompt] " . substr(str_replace("\n", " ", $prompt), 0, 120) . "...\n";
-
-						$attributes = array(
-							// semanticExtraction
-							'title' => "Happy {$holiday}",
-							'holidayName' => $holiday,
-							'startDate' => $date,
-							'endDate' => $date,
-
-							// Jewish,
-							'culture' => $culture,
-
-							// holidayAnalysis
-							'holidayImportance' => Q::ifset($holidayImportance, $key, null),
-
-							// languageQuality
-							'language' => $lang,
-
-							// culturalRelevance
-							'countries' => $countries,
-							'culturalSpecificity' => count($countries) ? 7 : null,
-
-							// timing
-							'dates' => array(array($date, $date)),
-							'evergreen' => 0,
-
-							// contentClassification
-							'contentType' => 'greeting',
-							'occasion' => array($key),
-							'tone' => array($tier),
-							'sentiment' => 'positive',
-
-							// discoveryQuality
-							'keywords' => array_map('strtolower', preg_split('/\s+/', $holiday)),
-							'confidence' => 0.6
-						);
+						// discoveryQuality
+						'keywords' => array_map('strtolower', preg_split('/\s+/', $holiday)),
+						'confidence' => 0.6
+					);
 
 
-						batchUse('image');
+					batchUse('image');
 
-						$streamType = 'Streams/image';
-						$observationsType = 'holiday';
-						$options = array(
-							'format' => $EXT,
-							'width'  => $width,
-							'height' => $height,
-							'callback' => function ($r) use (
+					$streamType = 'Streams/image';
+					$observationsType = 'holiday';
+					$options = array(
+						'format' => $EXT,
+						'width'  => $width,
+						'height' => $height,
+						'callback' => function ($r) use (
+							$path,
+							$llm,
+							$streamType,
+							$observationsType,
+							$attributes
+						) {
+							processGeneratedImage(
+								$r,
 								$path,
 								$llm,
 								$streamType,
 								$observationsType,
 								$attributes
-							) {
-								processGeneratedImage(
-									$r,
-									$path,
-									$llm,
-									$streamType,
-									$observationsType,
-									$attributes
-								);
-							}
-						);
-
-						/*
-						* Adapter-specific options
-						*/
-						switch ($imageAdapter) {
-							case 'google':
-								$options['size'] = $size;
-								echo "[adapter] Google: size={$size}\n";
-								break;
-
-							case 'openai':
-								$options['size'] = $size;
-								$options['quality'] = 'hd';
-								echo "[adapter] OpenAI: size={$size}, quality=hd\n";
-								break;
-
-							case 'ideogram':
-							default:
-								echo "[adapter] Ideogram: using defaults\n";
-								// ideogram: no size, no quality
-								break;
+							);
 						}
+					);
 
-						echo "[api] Requesting image generation...\n";
-						$image->generate($prompt, $options);
-						$stats['images_requested']++;
+					/*
+					* Adapter-specific options
+					*/
+					switch ($imageAdapter) {
+						case 'google':
+							$options['size'] = $size;
+							echo "[adapter] Google: size={$size}\n";
+							break;
 
-						batchCommit('image');
+						case 'openai':
+							$options['size'] = $size;
+							$options['quality'] = 'hd';
+							echo "[adapter] OpenAI: size={$size}, quality=hd\n";
+							break;
+
+						case 'ideogram':
+						default:
+							echo "[adapter] Ideogram: using defaults\n";
+							// ideogram: no size, no quality
+							break;
 					}
+
+					echo "[api] Requesting image generation...\n";
+					$image->generate($prompt, $options);
+					$stats['images_requested']++;
+
+					batchCommit('image');
 				}
 			}
 		}
@@ -693,9 +689,18 @@ function nextHolidayVersion($baseDir, $culture, $key, $year)
 function healHolidayImageDir($dir)
 {
 	// If already finalized, do nothing
-	if (is_file($dir . '/1000x.jpg')) {
-		return;
+	$required = array('1000x.jpg', '200x.jpg', '80.jpg', '50.jpg', '40.jpg', 'x200.jpg');
+	$missing = false;
+	foreach ($required as $f) {
+		if (!is_file($dir . DS . $f)) {
+			$missing = true;
+			break;
+		}
 	}
+	if (!$missing) {
+		return; // fully healthy
+	}
+
 
 	// Detect raw image variants
 	$candidates = glob($dir . '/*x*.jpg');
@@ -715,8 +720,8 @@ function healHolidayImageDir($dir)
 		return;
 	}
 
-	$icon = str_replace(APP_WEB_DIR . DS, '{{Calendars}}/', $dir);
-	$icon = str_replace(DS, '/', $icon);
+	$icon = str_replace(array(DS, APP_WEB_DIR . '/'), array('/', ''), $dir);
+	$icon = str_replace('Q/plugins/Calendars/', '{{Calendars}}/', $icon);
 
 	$paths = Q_Image::save(array(
 		'data' => $data,
@@ -742,19 +747,11 @@ function isBrokenHolidayDir($dir)
 	if (!is_dir($dir)) return false;
 
 	// Good if fully finalized
-	if (is_file($dir . '/1000x.jpg')) {
-		return false;
-	}
-
-	// Broken if empty or only raw files exist
-	$files = glob($dir . '/*');
-	if (!$files) return true;
-
-	foreach ($files as $f) {
-		if (preg_match('/\d+x\d+\.jpg$/', $f)) {
-			return true; // raw-only
+	$required = array('1000x.jpg', '200x.jpg', '80.jpg', '50.jpg', '40.jpg', 'x200.jpg');
+	foreach ($required as $f) {
+		if (!is_file($dir . DS . $f)) {
+			return true; // broken
 		}
 	}
-
-	return true;
+	return false; // healthy
 }
