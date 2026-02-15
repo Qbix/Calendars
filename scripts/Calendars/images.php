@@ -7,11 +7,14 @@ if (!defined('RUNNING_FROM_APP')) {
 
 set_time_limit(0);
 
+echo "[init] Starting holiday image generation\n";
+
 /**
  * CONFIG
  */
 $VERSIONS_MAX = Q_Config::get('Calendars', 'holidays', 'images', 'versionsMax', 3);
 $EXT = 'jpg';
+echo "[config] versionsMax={$VERSIONS_MAX}, ext={$EXT}\n";
 
 /**
  * Batch config
@@ -20,6 +23,7 @@ $BATCH_SIZE = (int) Q_Config::get('AI', 'images', 'batch', 2);
 if ($BATCH_SIZE <= 1) {
 	$BATCH_SIZE = 0;
 }
+echo "[config] batchSize={$BATCH_SIZE}\n";
 
 /**
  * CLI options
@@ -44,6 +48,7 @@ if (isset($opts['weeks'])) {
 	$cliWeeks = (int) $opts['weeks'];
 	if ($cliWeeks > 0) {
 		$WEEKS = $cliWeeks;
+		echo "[config] weeks overridden from CLI: {$WEEKS}\n";
 	}
 }
 
@@ -51,7 +56,8 @@ $maxDate = (new DateTime('now', new DateTimeZone('UTC')))
 	->modify('+' . $WEEKS . ' weeks')
 	->format('Y-m-d');
 
-echo "[config] futureWeeks={$WEEKS}, maxDate={$maxDate}\n";
+$today = gmdate("Y-m-d");
+echo "[config] today={$today}, futureWeeks={$WEEKS}, maxDate={$maxDate}\n";
 
 // adapters
 
@@ -61,12 +67,15 @@ $llmAdapter   = Q::ifset($opts, 'llm', null);
 $allowText = isset($opts['text']);
 $minImportance = Q::ifset($opts, 'importance', 7);
 
+echo "[opts] imageAdapter={$imageAdapter}, llmAdapter={$llmAdapter}, allowText=" . ($allowText ? '1' : '0') . ", minImportance={$minImportance}\n";
+
 /**
  * Default: OpenAI + text
  */
 if (!$imageAdapter) {
 	$imageAdapter = 'openai';
 	$allowText = true;
+	echo "[opts] defaulting to imageAdapter=openai, allowText=1\n";
 }
 
 /**
@@ -92,10 +101,13 @@ if (!empty($opts['size']) && preg_match('/^(\d+)x(\d+)$/', $opts['size'], $m)) {
 	}
 }
 $size = $width . 'x' . $height;
+echo "[config] orientation={$orientation}, size={$size}\n";
 
 /**
  * Load configs
  */
+echo "[load] Loading holiday configs...\n";
+
 $globalHolidays = json_decode(
 	@file_get_contents(CALENDARS_PLUGIN_CONFIG_DIR . DS . 'holidays.json'),
 	true
@@ -118,8 +130,11 @@ $holidayImportance = json_decode(
 );
 
 if (!$globalHolidays || !$countryLanguages) {
-	die("Failed to load configs\n");
+	die("[error] Failed to load configs\n");
 }
+
+echo "[load] Loaded " . count($globalHolidays) . " dates from holidays.json\n";
+echo "[load] Loaded configs OK\n";
 
 /**
  * Collect languages
@@ -131,6 +146,7 @@ foreach ($countryLanguages as $langs) {
 		$allLanguages[$lang] = true;
 	}
 }
+echo "[load] Collected " . count($allLanguages) . " unique languages\n";
 
 /**
  * Scene templates
@@ -170,6 +186,8 @@ $TEMPLATES = array(
 		'Festive holiday image for {{culture}} holiday of {{holiday}}. {{scene}}. Text in {{language}}.'
 	)
 );
+
+echo "[templates] Loaded scene and prompt templates\n";
 
 /**
  * Festiveness tier
@@ -241,8 +259,10 @@ $image = AI_Image::create($imageAdapter);
 $llm   = $llmAdapter ? AI_LLM::create($llmAdapter) : null;
 
 if (!$image) {
-	die("Missing image adapter: {$imageAdapter}\n");
+	die("[error] Missing image adapter: {$imageAdapter}\n");
 }
+
+echo "[adapters] image={$imageAdapter}, llm=" . ($llm ? $llmAdapter : 'none') . "\n";
 
 /**
  * Batch helpers
@@ -254,13 +274,16 @@ $batchCounts = array(
 function batchUse($batchName) {
 	global $batchCounts, $BATCH_SIZE;
 	if ($BATCH_SIZE && $batchCounts[$batchName] === 0) {
+		echo "[batch] begin {$batchName}\n";
 		Q_Utils::batchUse($batchName);
 	}
 }
 function batchCommit($batchName) {
 	global $batchCounts, $BATCH_SIZE;
 	$batchCounts[$batchName]++;
+	echo "[batch] commit {$batchName} ({$batchCounts[$batchName]})\n";
 	if ($BATCH_SIZE && $batchCounts[$batchName] >= $BATCH_SIZE) {
+		echo "[batch] execute {$batchName}\n";
 		Q_Utils::batchExecute($batchName);
 		$batchCounts[$batchName] = 0;
 	}
@@ -269,22 +292,46 @@ function batchCommit($batchName) {
 /**
  * MAIN LOOP
  */
+echo "[main] Beginning main generation loop\n";
+
+$stats = array(
+	'dates_processed' => 0,
+	'dates_skipped_past' => 0,
+	'dates_skipped_future' => 0,
+	'holidays_processed' => 0,
+	'holidays_skipped_importance' => 0,
+	'images_requested' => 0,
+	'images_skipped_exists' => 0
+);
+
 for ($version = 1; $version <= $VERSIONS_MAX; $version++) {
+
+	echo "[loop] ========== VERSION {$version}/{$VERSIONS_MAX} ==========\n";
 
 	foreach ($globalHolidays as $date => $entries) {
 
-		$today = gmdate("Y-m-d");
-
 		if ($date < $today) {
+			$stats['dates_skipped_past']++;
 			continue;
 		}
 
 		if ($date > $maxDate) {
-			echo "[stop] date window exhausted at {$date}\n";
+			echo "[stop] Date {$date} exceeds maxDate {$maxDate}, stopping\n";
+			$stats['dates_skipped_future']++;
 			break 2;
 		}
 
+		$stats['dates_processed']++;
+		echo "[date] Processing {$date}\n";
 		$year = substr($date, 0, 4);
+
+		$holidayCount = 0;
+		foreach ($entries as $entry) {
+			foreach ($entry as $culture => $holidays) {
+				$holidayCount += count($holidays);
+			}
+		}
+		echo "[date] {$date} has {$holidayCount} holiday(s)\n";
 
 		foreach ($entries as $entry) {
 			foreach ($entry as $culture => $holidays) {
@@ -293,23 +340,36 @@ for ($version = 1; $version <= $VERSIONS_MAX; $version++) {
 					$key = Q_Utils::normalize($holiday);
 					$tier = festivenessTier($key, $festivenessMap);
 					$importance = Q::ifset($holidayImportance, $key, 0);
+					
 					if ($importance < $minImportance) {
+						echo "[skip] '{$holiday}' importance={$importance} < {$minImportance}\n";
+						$stats['holidays_skipped_importance']++;
 						continue;
 					}
+
+					$stats['holidays_processed']++;
+					echo "[holiday] '{$holiday}' ({$culture}) tier={$tier} importance={$importance}\n";
 
 					$countries = Q::ifset($holidaysWithCountries, $culture, $holiday, 'countries', array());
 					$maxLanguages = 10;
 					$languagesPerCountry = 4;
 					$languageCounts = array();
 
+					echo "[holiday] Found " . count($countries) . " countries\n";
+
 					// Count how many countries each language appears in
 					foreach ($countries as $country) {
-						if ($country === null) break;  // Stop at diaspora separator
+						if ($country === null) {
+							echo "[holiday] Reached diaspora separator\n";
+							break;  // Stop at diaspora separator
+						}
 						$countryLangs = array_slice(
 							Q::ifset($countryLanguages, $country, array()), 
 							0, 
 							$languagesPerCountry
 						);
+						
+						echo "[country] {$country}: " . count($countryLangs) . " languages\n";
 						
 						foreach ($countryLangs as $lang) {
 							$languageCounts[$lang] = isset($languageCounts[$lang]) 
@@ -317,27 +377,41 @@ for ($version = 1; $version <= $VERSIONS_MAX; $version++) {
 								: 1;
 						}
 					}
+					
 					// Sort by frequency (most countries first)
 					arsort($languageCounts);
 					// Take top N languages
 					$languages = array_slice(array_keys($languageCounts), 0, $maxLanguages);
 
+					echo "[holiday] Selected " . count($languages) . " languages: " . implode(', ', $languages) . "\n";
+
 					foreach ($languages as $lang) {
 
 						$langInfo = Q_Text::languagesInfo();
-						if (empty($langInfo[$lang]['name'])) continue;
+						if (empty($langInfo[$lang]['name'])) {
+							echo "[skip] Language '{$lang}' has no name info\n";
+							continue;
+						}
 
-						$baseDir = APP_WEB_DIR . DS . 'Q' . DS . 'plugins' . DS . 'Calendars' . DS . 'img' . DS . 'holidays';
-						$realVersion = nextHolidayVersion($baseDir, $culture, $key, $year);
-						$outDir = $baseDir . DS . $culture . DS . $key . DS . $year . '-' . $realVersion;
+						echo "[lang] Processing {$lang} (" . $langInfo[$lang]['name'] . ")\n";
 
-						if (!is_dir($outDir)) mkdir($outDir, 0755, true);
+						$outDir = APP_WEB_DIR . DS . 'Q' . DS . 'plugins' . DS . 'Calendars' . DS . 'img'
+							. DS . 'holidays' . DS . $culture . DS . $key . DS . $year . '-' . $version;
+
+						if (!is_dir($outDir)) {
+							mkdir($outDir, 0755, true);
+							echo "[mkdir] Created {$outDir}\n";
+						}
 
 						$langDir = $outDir . DS . $lang;
 						if (is_dir($langDir) && glob($langDir . DS . '*.' . $EXT)) {
+							echo "[skip] {$langDir} already exists with images\n";
+							$stats['images_skipped_exists']++;
 							continue; // assume image already generated
 						}
+						
 						mkdir($langDir, 0755, true);
+						echo "[mkdir] Created {$langDir}\n";
 
 						$path = $langDir . DS . $size . '.' . $EXT;
 
@@ -354,6 +428,9 @@ for ($version = 1; $version <= $VERSIONS_MAX; $version++) {
 							$allowText,
 							$imageAdapter
 						);
+
+						echo "[gen] Target: {$path}\n";
+						echo "[prompt] " . substr(str_replace("\n", " ", $prompt), 0, 120) . "...\n";
 
 						$attributes = array(
 							// semanticExtraction
@@ -423,23 +500,27 @@ for ($version = 1; $version <= $VERSIONS_MAX; $version++) {
 						switch ($imageAdapter) {
 							case 'google':
 								$options['size'] = $size;
+								echo "[adapter] Google: size={$size}\n";
 								break;
 
 							case 'openai':
 								$options['size'] = $size;
 								$options['quality'] = 'hd';
+								echo "[adapter] OpenAI: size={$size}, quality=hd\n";
 								break;
 
 							case 'ideogram':
 							default:
+								echo "[adapter] Ideogram: using defaults\n";
 								// ideogram: no size, no quality
 								break;
 						}
 
+						echo "[api] Requesting image generation...\n";
 						$image->generate($prompt, $options);
+						$stats['images_requested']++;
 
 						batchCommit('image');
-						continue;
 					}
 				}
 			}
@@ -448,15 +529,26 @@ for ($version = 1; $version <= $VERSIONS_MAX; $version++) {
 }
 
 if ($BATCH_SIZE) {
+	echo "[batch] Final flush starting\n";
 	if ($batchCounts['image']) {
+		echo "[batch] Flushing {$batchCounts['image']} pending image requests\n";
 		Q_Utils::batchExecute('image');
 	}
 	if ($batchCounts['llm']) {
+		echo "[batch] Flushing {$batchCounts['llm']} pending LLM requests\n";
 		Q_Utils::batchExecute('llm');
 	}
 }
 
-echo "Holiday image generation complete.\n";
+echo "\n[stats] ========== GENERATION COMPLETE ==========\n";
+echo "[stats] Dates processed: {$stats['dates_processed']}\n";
+echo "[stats] Dates skipped (past): {$stats['dates_skipped_past']}\n";
+echo "[stats] Dates skipped (future): {$stats['dates_skipped_future']}\n";
+echo "[stats] Holidays processed: {$stats['holidays_processed']}\n";
+echo "[stats] Holidays skipped (importance): {$stats['holidays_skipped_importance']}\n";
+echo "[stats] Images requested: {$stats['images_requested']}\n";
+echo "[stats] Images skipped (exists): {$stats['images_skipped_exists']}\n";
+echo "[done] Holiday image generation complete\n";
 
 
 function processGeneratedImage(
@@ -467,18 +559,27 @@ function processGeneratedImage(
 	$observationsType,
 	$attributes
 ) {
-	if (empty($r['data'])) return;
+	if (empty($r['data'])) {
+		echo "[callback] ERROR: empty image result for {$path}\n";
+		return;
+	}
 
 	$data = $r['data'];
 
+	echo "[callback] Image generated successfully\n";
+	echo "[callback] Writing to: {$path}\n";
 	file_put_contents($path, $data);
+	echo "[callback] File size: " . strlen($data) . " bytes\n";
 
 	if (!$llm) {
+		echo "[callback] No LLM configured, finalizing stream directly\n";
 		finalizeStream($streamType, $observationsType, $path, $attributes, $data);
 		return;
 	}
 
 	batchUse('llm');
+
+	echo "[llm] Processing observations for generated image\n";
 
 	$llm->process(
 		array('images' => array($r['data'])),
@@ -492,6 +593,7 @@ function processGeneratedImage(
 				$path,
 				$data
 			) {
+				echo "[llm] Observations processing complete\n";
 				$attributes = array_merge(
 					$attributes,
 					AI_LLM::attributesFromObservationResults(
@@ -509,8 +611,12 @@ function processGeneratedImage(
 }
 
 function finalizeStream($streamType, $observationsType, $path, $attributes, $data) {
+	echo "[finalize] Starting finalization for {$path}\n";
+	
 	$icon = str_replace(array(DS, APP_WEB_DIR . '/'), array('/', ''), dirname($path));
-	$icon = str_replace('Q/plugins/Calendars/', '{{Calendars}}/', $icon);
+	$icon = str_replace('Q/plugins/Calendars/', '{{Calendars}}', $icon);
+	echo "[finalize] Icon path: {$icon}\n";
+	
 	$ok = AI_LLM::createStream(
 		$streamType,
 		$observationsType,
@@ -524,7 +630,9 @@ function finalizeStream($streamType, $observationsType, $path, $attributes, $dat
 	);
 
 	if ($ok) {
+		echo "[finalize] Stream created successfully\n";
 		$tempKey = 'tmp_' . uniqid('', true);
+		echo "[finalize] Saving image with tempKey: {$tempKey}\n";
 		$paths = Q_Image::save(array(
 			'data' => $data,
 			'path' => $icon,
@@ -532,20 +640,10 @@ function finalizeStream($streamType, $observationsType, $path, $attributes, $dat
 			'save' => 'Streams/image',
 			'skipAccess' => true
 		));
+		echo "[finalize] Image saved, unlinking temp file: {$path}\n";
 		@unlink($path);
+		echo "[finalize] Finalization complete\n";
+	} else {
+		echo "[finalize] ERROR: Stream creation failed for {$path}\n";
 	}
-}
-
-function nextHolidayVersion($baseDir, $culture, $key, $year)
-{
-	$dir = $baseDir . DS . $culture . DS . $key;
-	if (!is_dir($dir)) return 1;
-
-	$max = 0;
-	foreach (glob($dir . DS . $year . '-*', GLOB_ONLYDIR) as $d) {
-		if (preg_match('/-(\d+)$/', $d, $m)) {
-			$max = max($max, (int) $m[1]);
-		}
-	}
-	return $max + 1;
 }
