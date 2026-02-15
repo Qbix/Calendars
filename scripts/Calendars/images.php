@@ -12,13 +12,21 @@ echo "[init] Starting holiday image generation\n";
 echo "[heal] Scanning existing folders for broken images...\n";
 
 $baseOut = APP_WEB_DIR . DS . 'Q' . DS . 'plugins' . DS . 'Calendars' . DS . 'img' . DS . 'holidays';
+$HEAL_EMPTY = array();  // [culture][key][year][lang] => true
 $leafDirs = glob($baseOut . '/*/*/*/*', GLOB_ONLYDIR) ?: array();
 foreach ($leafDirs as $dir) {
-	healHolidayImageDir($dir); // finalized dir
 
-	// heal per-language subfolders too
 	foreach (glob($dir . DS . '*', GLOB_ONLYDIR) ?: array() as $langDir) {
-		healHolidayImageDir($langDir);
+		if (healHolidayImageDir($langDir) === 'EMPTY') {
+			// parse path: .../{culture}/{key}/{year-n}/{lang}
+			$rel = str_replace($baseOut . DS, '', $langDir);
+			@list($culture, $key, $ver, $lang) = explode(DS, $rel, 4);
+			if (preg_match('/^(\d{4})-/', $ver, $m)) {
+				$year = $m[1];
+				$HEAL_EMPTY[$culture][$key][$year][$lang] = true;
+				echo "[heal] Queued empty dir for regen: {$culture}/{$key}/{$year}/{$lang}\n";
+			}
+		}
 	}
 }
 
@@ -434,10 +442,17 @@ foreach ($globalHolidays as $date => $entries) {
 					echo "[lang] Processing {$lang} (" . $langInfo[$lang]['name'] . ")\n";
 
 					$langDir = $outDir . DS . $lang;
-					if (is_dir($langDir) && !isBrokenHolidayDir($langDir)) {
+
+					$forceHeal = isset($HEAL_EMPTY[$culture][$key][$year][$lang]);
+
+					if (is_dir($langDir) && !isBrokenHolidayDir($langDir) && !$forceHeal) {
 						echo "[skip] {$langDir} already exists with images\n";
 						$stats['images_skipped_exists']++;
-						continue; // fully healthy, skip
+						continue;
+					}
+
+					if ($forceHeal) {
+						echo "[heal] Forcing regeneration into empty dir: {$langDir}\n";
 					}
 
 					if (is_dir($langDir) && isBrokenHolidayDir($langDir)) {
@@ -712,17 +727,16 @@ function healHolidayImageDir($dir)
 		}
 	}
 	if (!$missing) {
-		return; // fully healthy
+		return false; // fully healthy
 	}
 
 
 	// Detect raw image variants
 	$candidates = glob($dir . '/*x*.jpg');
 	if (!$candidates) {
-		echo "[heal] Empty broken dir {$dir}, leaving for regeneration\n";
-		return;
+		echo "[heal] Empty broken dir {$dir}, queuing regen\n";
+		return 'EMPTY';
 	}
-
 
 	// Pick the largest available raw image
 	usort($candidates, function ($a, $b) {
@@ -752,11 +766,13 @@ function healHolidayImageDir($dir)
 	if ($paths) {
 		echo "[heal] Repaired {$dir}\n";
 		foreach ($candidates as $f) {
-			@unlink($f); // remove raw leftovers
+			@unlink($f);
 		}
-	} else {
-		echo "[heal] ERROR: Q_Image::save failed for {$dir}\n";
+		return true;
 	}
+	echo "[heal] ERROR: Q_Image::save failed for {$dir}\n";
+	return false;
+
 }
 
 function isBrokenHolidayDir($dir)
