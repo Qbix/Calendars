@@ -9,6 +9,15 @@ set_time_limit(0);
 
 echo "[init] Starting holiday image generation\n";
 
+echo "[heal] Scanning existing folders for broken images...\n";
+
+$leafDirs = glob($baseOut . '/*/*/*/*', GLOB_ONLYDIR);
+foreach ($leafDirs as $dir) {
+	healHolidayImageDir($dir);
+}
+
+echo "[heal] Scan complete\n";
+
 /**
  * CONFIG
  */
@@ -662,4 +671,50 @@ function nextHolidayVersion($baseDir, $culture, $key, $year)
 		}
 	}
 	return $max + 1;
+}
+
+function healHolidayImageDir($dir)
+{
+	// If already finalized, do nothing
+	if (is_file($dir . '/1000x.jpg')) {
+		return;
+	}
+
+	// Detect raw image variants
+	$candidates = glob($dir . '/*x*.jpg');
+	if (!$candidates) return;
+
+	// Pick the largest available raw image
+	usort($candidates, function ($a, $b) {
+		return filesize($b) - filesize($a);
+	});
+	$raw = $candidates[0];
+
+	echo "[heal] Repairing {$dir} from " . basename($raw) . "\n";
+
+	$data = file_get_contents($raw);
+	if (!$data) {
+		echo "[heal] ERROR: Could not read {$raw}\n";
+		return;
+	}
+
+	$icon = str_replace(APP_WEB_DIR . DS, '{{Calendars}}/', $dir);
+	$icon = str_replace(DS, '/', $icon);
+
+	$paths = Q_Image::save(array(
+		'data' => $data,
+		'path' => $icon,
+		'subpath' => "",
+		'save' => 'Streams/image',
+		'skipAccess' => true
+	));
+
+	if ($paths) {
+		echo "[heal] Repaired {$dir}\n";
+		foreach ($candidates as $f) {
+			@unlink($f); // remove raw leftovers
+		}
+	} else {
+		echo "[heal] ERROR: Q_Image::save failed for {$dir}\n";
+	}
 }
