@@ -11,6 +11,10 @@ echo "[init] Starting holiday image generation\n";
 
 echo "[heal] Scanning existing folders for broken images...\n";
 
+$IMAGE_FAILS = 0;
+$IMAGE_FAILS_MAX = 3;
+$RETRY_QUEUE = array(); // [$prompt, $options, $path, $meta]
+
 $baseOut = APP_WEB_DIR . DS . 'Q' . DS . 'plugins' . DS . 'Calendars' . DS . 'img' . DS . 'holidays';
 $HEAL_EMPTY = array();  // [culture][key][year][lang] => true
 $leafDirs = glob($baseOut . '/*/*/*/*', GLOB_ONLYDIR) ?: array();
@@ -422,8 +426,13 @@ foreach ($globalHolidays as $date => $entries) {
 						}
 					}
 					if (!$hasHealthy) {
-						$reuseDir = $d;
-						echo "[heal] Reusing fully broken dir {$d}\n";
+						// only reuse if adapter not failing
+						if (empty($GLOBALS['IMAGE_FAILS'])) {
+							$reuseDir = $d;
+							echo "[heal] Reusing fully broken dir {$d}\n";
+						} else {
+							echo "[heal] Adapter unhealthy, not reusing {$d}\n";
+						}
 						break;
 					}
 				}
@@ -542,16 +551,35 @@ foreach ($globalHolidays as $date => $entries) {
 							$llm,
 							$streamType,
 							$observationsType,
-							$attributes
+							$attributes,
+							$prompt,
+							$options
 						) {
-							processGeneratedImage(
-								$r,
-								$path,
-								$llm,
-								$streamType,
-								$observationsType,
-								$attributes
-							);
+							global $IMAGE_FAILS, $IMAGE_FAILS_MAX, $RETRY_QUEUE;
+
+							if (empty($r['data'])) {
+								$IMAGE_FAILS++;
+								echo "[callback] ERROR: empty image result for {$path} (fails={$IMAGE_FAILS})\n";
+
+								@unlink($path);
+								@rmdir(dirname($path));
+
+								// enqueue retry once
+								$RETRY_QUEUE[] = array($prompt, $options, $path, array(
+									'llm' => $llm,
+									'streamType' => $streamType,
+									'observationsType' => $observationsType,
+									'attributes' => $attributes
+								));
+
+								// hard-stop this adapter if consistently failing
+								if ($IMAGE_FAILS >= $IMAGE_FAILS_MAX) {
+									die("[fatal] Image adapter is returning empty results. Aborting run.\n");
+								}
+								return;
+							}
+
+							processGeneratedImage($r, $path, $llm, $streamType, $observationsType, $attributes);
 						}
 					);
 
@@ -600,6 +628,20 @@ if ($BATCH_SIZE) {
 	}
 }
 
+if ($RETRY_QUEUE) {
+	echo "[retry] Retrying " . count($RETRY_QUEUE) . " failed image(s)\n";
+	foreach ($RETRY_QUEUE as $job) {
+		list($prompt, $options, $path, $meta) = $job;
+
+		// ensure dir exists again
+		if (!is_dir(dirname($path))) {
+			mkdir(dirname($path), 0755, true);
+		}
+
+		$image->generate($prompt, $options);
+	}
+}
+
 echo "\n[stats] ========== GENERATION COMPLETE ==========\n";
 echo "[stats] Dates processed: {$stats['dates_processed']}\n";
 echo "[stats] Dates skipped (past): {$stats['dates_skipped_past']}\n";
@@ -624,6 +666,11 @@ function processGeneratedImage(
 		@unlink($path);          // ensure healer can retry
 		@rmdir(dirname($path)); // remove poisoned empty lang dir
 		return;
+	}
+
+	// normalize OpenAI-style payloads
+	if (is_array($r['data']) && isset($r['data'][0]['b64_json'])) {
+		$r['data'] = base64_decode($r['data'][0]['b64_json']);
 	}
 
 	$data = $r['data'];
@@ -739,11 +786,10 @@ function healHolidayImageDir($dir)
 		return false; // fully healthy
 	}
 
-
 	// Detect raw image variants
 	$candidates = glob($dir . '/*x*.jpg');
 	if (!$candidates) {
-		echo "[heal] Empty broken dir {$dir}, queuing regen\n";
+		echo "[heal] No raw source in {$dir}, queuing regen\n";
 		return 'EMPTY';
 	}
 
