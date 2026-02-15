@@ -414,9 +414,16 @@ foreach ($globalHolidays as $date => $entries) {
 				@rsort($dirs, SORT_NATURAL);
 
 				foreach ($dirs as $d) {
-					if (isBrokenHolidayDir($d)) {
+					$hasHealthy = false;
+					foreach (glob($d . DS . '*', GLOB_ONLYDIR) ?: array() as $langDir) {
+						if (!isBrokenHolidayDir($langDir)) {
+							$hasHealthy = true;
+							break;
+						}
+					}
+					if (!$hasHealthy) {
 						$reuseDir = $d;
-						echo "[heal] Reusing broken dir {$d}\n";
+						echo "[heal] Reusing fully broken dir {$d}\n";
 						break;
 					}
 				}
@@ -445,10 +452,12 @@ foreach ($globalHolidays as $date => $entries) {
 
 					$forceHeal = isset($HEAL_EMPTY[$culture][$key][$year][$lang]);
 
-					if (is_dir($langDir) && !isBrokenHolidayDir($langDir) && !$forceHeal) {
-						echo "[skip] {$langDir} already exists with images\n";
-						$stats['images_skipped_exists']++;
-						continue;
+					if (is_dir($langDir) && !$forceHeal) {
+						if (!isBrokenHolidayDir($langDir)) {
+							echo "[skip] {$langDir} already exists with images\n";
+							continue;
+						}
+						echo "[heal] Regenerating broken/empty dir {$langDir}\n";
 					}
 
 					if ($forceHeal) {
@@ -778,6 +787,11 @@ function healHolidayImageDir($dir)
 function isBrokenHolidayDir($dir)
 {
 	if (!is_dir($dir)) return false;
+
+	$files = glob($dir . DS . '*');
+	if (!$files) {
+		return true; // EMPTY DIR IS BROKEN
+	}
 
 	$required = array('1000x.jpg', '200x.jpg', '80.jpg', '50.jpg', '40.jpg', 'x200.jpg');
 	foreach ($required as $f) {
