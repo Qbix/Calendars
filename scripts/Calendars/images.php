@@ -396,13 +396,30 @@ for ($version = 1; $version <= $VERSIONS_MAX; $version++) {
 
 					echo "[holiday] Selected " . count($languages) . " languages: " . implode(', ', $languages) . "\n";
 
-					$realVersion = nextHolidayVersion($baseOut, $culture, $key, $year);
-					$outDir = $baseOut . DS . $culture . DS . $key . DS . $year . '-' . $realVersion;
+					$base = $baseOut . DS . $culture . DS . $key;
 
-					if (!is_dir($outDir)) {
+					// Try to reuse latest broken version
+					$reuseDir = null;
+					$dirs = glob($base . DS . $year . '-*', GLOB_ONLYDIR);
+					rsort($dirs, SORT_NATURAL);
+
+					foreach ($dirs as $d) {
+						if (isBrokenHolidayDir($d)) {
+							$reuseDir = $d;
+							echo "[heal] Reusing broken dir {$d}\n";
+							break;
+						}
+					}
+
+					if ($reuseDir) {
+						$outDir = $reuseDir;
+					} else {
+						$realVersion = nextHolidayVersion($baseOut, $culture, $key, $year);
+						$outDir = $baseOut . DS . $culture . DS . $key . DS . $year . '-' . $realVersion;
 						mkdir($outDir, 0755, true);
 						echo "[mkdir] Created {$outDir}\n";
 					}
+
 
 					foreach ($languages as $lang) {
 
@@ -717,4 +734,27 @@ function healHolidayImageDir($dir)
 	} else {
 		echo "[heal] ERROR: Q_Image::save failed for {$dir}\n";
 	}
+}
+
+
+function isBrokenHolidayDir($dir)
+{
+	if (!is_dir($dir)) return false;
+
+	// Good if fully finalized
+	if (is_file($dir . '/1000x.jpg')) {
+		return false;
+	}
+
+	// Broken if empty or only raw files exist
+	$files = glob($dir . '/*');
+	if (!$files) return true;
+
+	foreach ($files as $f) {
+		if (preg_match('/\d+x\d+\.jpg$/', $f)) {
+			return true; // raw-only
+		}
+	}
+
+	return true;
 }
