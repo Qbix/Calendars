@@ -710,14 +710,18 @@ function processGeneratedImage(
 				$data
 			) {
 				echo "[llm] Observations processing complete\n";
-				$attributes = array_merge(
-					$attributes,
-					AI_LLM::attributesFromObservationResults(
-						$results,
-						$streamType,
-						$observationsType
-					)
+				$llmAttrs = AI_LLM::attributesFromObservationResults(
+					$results,
+					$streamType,
+					$observationsType
 				);
+				// Never allow LLM to override canonical calendar truth
+				unset(
+					$llmAttrs['startDate'],
+					$llmAttrs['endDate'],
+					$llmAttrs['dates']
+				);
+				$attributes = array_merge($attributes, $llmAttrs);
 				finalizeStream($streamType, $observationsType, $path, $attributes, $data);
 			}
 		)
