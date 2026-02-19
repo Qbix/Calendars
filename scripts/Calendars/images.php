@@ -480,6 +480,14 @@ foreach ($globalHolidays as $date => $entries) {
 				$key = Q_Utils::normalize($holiday);
 				$tier = festivenessTier($key, $festivenessMap);
 				$importance = Q::ifset($holidayImportance, $key, 0);
+
+				// If expanding to many languages, only do so for high-importance holidays
+				$MORE_LANGUAGES_MIN_IMPORTANCE = 9;
+
+				if ($moreLanguages && $importance < $MORE_LANGUAGES_MIN_IMPORTANCE) {
+					echo "[skip] '{$holiday}' importance={$importance} < {$MORE_LANGUAGES_MIN_IMPORTANCE} for --more-languages\n";
+					continue;
+				}
 				
 				if ($importance < $minImportance) {
 					echo "[skip] '{$holiday}' importance={$importance} < {$minImportance}\n";
