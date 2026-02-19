@@ -51,6 +51,71 @@ foreach ($versionDirs as $verDir) {
 
 echo "[heal] Scan complete\n";
 
+if ($createMissingStreams) {
+	echo "[heal] Scanning for missing Streams/image entries...\n";
+
+	$langDirs = glob($baseOut . '/*/*/*/*', GLOB_ONLYDIR) ?: array();
+
+	foreach ($langDirs as $langDir) {
+
+		if (isBrokenHolidayDir($langDir)) {
+			continue;
+		}
+
+		$icon = str_replace(array(DS, APP_WEB_DIR . '/'), array('/', ''), $langDir);
+		$icon = str_replace('Q/plugins/Calendars/', '{{Calendars}}/', $icon);
+
+		$exists = Streams_Stream::select()
+			->where(array(
+				'publisherId' => Q::app(),
+				'icon LIKE '  => $icon . '%'
+			))
+			->limit(1)
+			->fetch();
+
+		if ($exists) {
+			continue;
+		}
+
+		echo "[heal] Missing stream for {$icon}, creating...\n";
+
+		$candidates = glob($langDir . '/*x*.jpg');
+		if (!$candidates) {
+			echo "[heal] No raw image in {$langDir}, skipping stream\n";
+			continue;
+		}
+
+		usort($candidates, function ($a, $b) {
+			return filesize($b) - filesize($a);
+		});
+		$raw  = $candidates[0];
+		$data = file_get_contents($raw);
+
+		AI_LLM::createStream(
+			'Streams/image',
+			'holiday',
+			array('icon' => $icon),
+			array(
+				'icon' => $icon,
+				'contentType' => 'greeting'
+			),
+			array('accept' => true)
+		);
+
+		Q_Image::save(array(
+			'data' => $data,
+			'path' => $icon,
+			'subpath' => "",
+			'save' => 'Streams/image',
+			'skipAccess' => true
+		));
+
+		echo "[heal] Stream repaired for {$icon}\n";
+	}
+
+	echo "[heal] Stream scan complete\n";
+}
+
 /**
  * CONFIG
  */
@@ -78,7 +143,8 @@ $opts = getopt('', array(
     'text',
     'importance:',
     'weeks:',
-    'only-fill-missing'
+    'only-fill-missing',
+	'create-missing-streams'
 ));
 
 // How far into the future to generate (weeks)
@@ -97,6 +163,9 @@ if (isset($opts['weeks'])) {
 
 $onlyFillMissing = isset($opts['only-fill-missing']);
 echo "[opts] onlyFillMissing=" . ($onlyFillMissing ? '1' : '0') . "\n";
+
+$createMissingStreams = isset($opts['create-missing-streams']);
+echo "[opts] createMissingStreams=" . ($createMissingStreams ? '1' : '0') . "\n";
 
 $maxDate = (new DateTime('now', new DateTimeZone('UTC')))
 	->modify('+' . $WEEKS . ' weeks')
@@ -430,7 +499,8 @@ foreach ($globalHolidays as $date => $entries) {
 				$base = $baseOut . DS . $culture . DS . $key;
 
 				$dirs = glob($base . DS . $year . '-*', GLOB_ONLYDIR) ?: array();
-				@rsort($dirs, SORT_NATURAL);
+				@sort($dirs, SORT_NATURAL);
+
 
 				$hasHealthyVersion = false;
 				$healthyDir = null;
@@ -445,7 +515,7 @@ foreach ($globalHolidays as $date => $entries) {
 					}
 				}
 
-				if ($onlyFillMissing && $hasHealthyVersion) {
+				if ($onlyFillMissing && $hasHealthyVersion && empty($HEAL_EMPTY[$culture][$key][$year])) {
 					echo "[skip] Healthy version exists for {$culture}/{$key}/{$year}, only-fill-missing enabled\n";
 					continue;
 				}
@@ -602,7 +672,6 @@ foreach ($globalHolidays as $date => $entries) {
 							$observationsType,
 							$attributes,
 							$prompt,
-							$options
 						) {
 							global $IMAGE_FAILS, $IMAGE_FAILS_MAX, $RETRY_QUEUE;
 
