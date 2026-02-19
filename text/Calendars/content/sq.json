@@ -127,7 +127,9 @@
 			"WebRTCStarted": "Filloi telekonferenca",
 			"WebRTCEnded": "P\u00ebrfundoi telekonferenca",
 			"Prepayment": "Parapagimi",
-			"PrepaymentConfirm": "Do t\u00eb aplikojm\u00eb nj\u00eb tarif\u00eb nominale prej 1 dollari. Do t\u00eb merrni numrin p\u00ebrkat\u00ebs t\u00eb krediteve. K\u00ebto kredite do t\u00eb aplikohen p\u00ebr pages\u00ebn tuaj t\u00eb plot\u00eb p\u00ebr eventin."
+			"PrepaymentConfirm": "Do t\u00eb aplikojm\u00eb nj\u00eb tarif\u00eb nominale prej 1 dollari. Do t\u00eb merrni numrin p\u00ebrkat\u00ebs t\u00eb krediteve. K\u00ebto kredite do t\u00eb aplikohen p\u00ebr pages\u00ebn tuaj t\u00eb plot\u00eb p\u00ebr eventin.",
+			"UserNotParticipated": "{{1}} nuk \u00ebsht\u00eb pjes\u00ebmarr\u00ebs n\u00eb ngjarje",
+			"PayToAttend": "Paguaj p\u00ebr t\u00eb marr\u00eb pjes\u00eb"
 		},
 		"composer": {
 			"SetLocation": "Cakto vendndodhjen time",

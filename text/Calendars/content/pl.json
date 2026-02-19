@@ -126,7 +126,9 @@
 			"WebRTCStarted": "Rozpocz\u0119\u0142a si\u0119 telekonferencja",
 			"WebRTCEnded": "Telekonferencja zako\u0144czy\u0142a si\u0119",
 			"Prepayment": "Przedp\u0142ata",
-			"PrepaymentConfirm": "Pobierzemy symboliczn\u0105 op\u0142at\u0119 w wysoko\u015bci 1 USD. Otrzymasz odpowiedni\u0105 liczb\u0119 punkt\u00f3w. Punkty te zostan\u0105 zaliczone na poczet pe\u0142nej p\u0142atno\u015bci za wydarzenie."
+			"PrepaymentConfirm": "Pobierzemy symboliczn\u0105 op\u0142at\u0119 w wysoko\u015bci 1 USD. Otrzymasz odpowiedni\u0105 liczb\u0119 punkt\u00f3w. Punkty te zostan\u0105 zaliczone na poczet pe\u0142nej p\u0142atno\u015bci za wydarzenie.",
+			"UserNotParticipated": "{{1}} nie jest uczestnikiem wydarzenia",
+			"PayToAttend": "Zap\u0142a\u0107, aby uczestniczy\u0107"
 		},
 		"composer": {
 			"SetLocation": "Ustaw moj\u0105 lokalizacj\u0119",

@@ -127,7 +127,9 @@
 			"WebRTCStarted": "Telekonference zah\u00e1jena",
 			"WebRTCEnded": "Telekonference skon\u010dila",
 			"Prepayment": "Platba p\u0159edem",
-			"PrepaymentConfirm": "\u00da\u010dtujeme si nomin\u00e1ln\u00ed poplatek 1 dolar. Obdr\u017e\u00edte odpov\u00eddaj\u00edc\u00ed po\u010det kredit\u016f. Tyto kredity budou zapo\u010d\u00edt\u00e1ny do va\u0161\u00ed celkov\u00e9 platby za akci."
+			"PrepaymentConfirm": "\u00da\u010dtujeme si nomin\u00e1ln\u00ed poplatek 1 dolar. Obdr\u017e\u00edte odpov\u00eddaj\u00edc\u00ed po\u010det kredit\u016f. Tyto kredity budou zapo\u010d\u00edt\u00e1ny do va\u0161\u00ed celkov\u00e9 platby za akci.",
+			"UserNotParticipated": "{{1}} se akce ne\u00fa\u010dastn\u00ed",
+			"PayToAttend": "Zaplatit za \u00fa\u010dast"
 		},
 		"composer": {
 			"SetLocation": "Nastavte moji polohu",

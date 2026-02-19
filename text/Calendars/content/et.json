@@ -126,7 +126,9 @@
 			"WebRTCStarted": "Telekonverents algas",
 			"WebRTCEnded": "Telekonverents l\u00f5ppes",
 			"Prepayment": "Ettemaks",
-			"PrepaymentConfirm": "V\u00f5tame nominaalse tasu 1 dollar. Saate vastava arvu krediite. Neid krediite arvestatakse teie \u00fcrituse t\u00e4ismaksumuse hulka."
+			"PrepaymentConfirm": "V\u00f5tame nominaalse tasu 1 dollar. Saate vastava arvu krediite. Neid krediite arvestatakse teie \u00fcrituse t\u00e4ismaksumuse hulka.",
+			"UserNotParticipated": "{{1}} ei ole \u00fcritusel osaleja",
+			"PayToAttend": "Maksa osalemise eest"
 		},
 		"composer": {
 			"SetLocation": "M\u00e4\u00e4ra Minu asukoht",

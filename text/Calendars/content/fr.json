@@ -126,7 +126,9 @@
 			"WebRTCStarted": "La t\u00e9l\u00e9conf\u00e9rence a commenc\u00e9",
 			"WebRTCEnded": "T\u00e9l\u00e9conf\u00e9rence termin\u00e9e",
 			"Prepayment": "Paiement anticip\u00e9",
-			"PrepaymentConfirm": "Nous vous facturerons des frais minimes de 1 $. Vous recevrez le nombre de cr\u00e9dits correspondant. Ces cr\u00e9dits seront d\u00e9duits du montant total de votre inscription \u00e0 l&#39;\u00e9v\u00e9nement."
+			"PrepaymentConfirm": "Nous vous facturerons des frais minimes de 1 $. Vous recevrez le nombre de cr\u00e9dits correspondant. Ces cr\u00e9dits seront d\u00e9duits du montant total de votre inscription \u00e0 l&#39;\u00e9v\u00e9nement.",
+			"UserNotParticipated": "{{1}} ne participe pas \u00e0 l&#39;\u00e9v\u00e9nement",
+			"PayToAttend": "Payer pour assister"
 		},
 		"composer": {
 			"SetLocation": "D\u00e9finir ma position",

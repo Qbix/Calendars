@@ -126,7 +126,9 @@
 			"WebRTCStarted": "Prasid\u0117jo telekonferencija",
 			"WebRTCEnded": "Telekonferencija baig\u0117si",
 			"Prepayment": "I\u0161ankstinis apmok\u0117jimas",
-			"PrepaymentConfirm": "Taikysime simbolin\u012f 1 USD mokest\u012f. Gausite atitinkam\u0105 kredit\u0173 skai\u010di\u0173. \u0160ie kreditai bus \u012fskaityti \u012f vis\u0105 renginio kain\u0105."
+			"PrepaymentConfirm": "Taikysime simbolin\u012f 1 USD mokest\u012f. Gausite atitinkam\u0105 kredit\u0173 skai\u010di\u0173. \u0160ie kreditai bus \u012fskaityti \u012f vis\u0105 renginio kain\u0105.",
+			"UserNotParticipated": "{{1}} n\u0117ra renginio dalyvis",
+			"PayToAttend": "Mok\u0117ti u\u017e dalyvavim\u0105"
 		},
 		"composer": {
 			"SetLocation": "Nustatyti Mano viet\u0105",

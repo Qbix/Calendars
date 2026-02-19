@@ -126,7 +126,9 @@
 			"WebRTCStarted": "Puhelinkonferenssi alkoi",
 			"WebRTCEnded": "Puhelinkonferenssi p\u00e4\u00e4ttyi",
 			"Prepayment": "Ennakkomaksu",
-			"PrepaymentConfirm": "Veloitamme nimellisen 1 dollarin maksun. Saat vastaavan m\u00e4\u00e4r\u00e4n krediittej\u00e4. N\u00e4m\u00e4 krediitit k\u00e4ytet\u00e4\u00e4n tapahtuman koko maksuun."
+			"PrepaymentConfirm": "Veloitamme nimellisen 1 dollarin maksun. Saat vastaavan m\u00e4\u00e4r\u00e4n krediittej\u00e4. N\u00e4m\u00e4 krediitit k\u00e4ytet\u00e4\u00e4n tapahtuman koko maksuun.",
+			"UserNotParticipated": "{{1}} ei ole tapahtuman osallistuja",
+			"PayToAttend": "Maksa osallistuaksesi"
 		},
 		"composer": {
 			"SetLocation": "Aseta Oma sijainti",

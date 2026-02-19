@@ -126,7 +126,9 @@
 			"WebRTCStarted": "A \u00eenceput teleconferin\u021ba",
 			"WebRTCEnded": "Teleconferin\u021ba s-a \u00eencheiat",
 			"Prepayment": "Plat\u0103 \u00een avans",
-			"PrepaymentConfirm": "Vom percepe o tax\u0103 nominal\u0103 de 1 dolar. Ve\u021bi primi num\u0103rul corespunz\u0103tor de credite. Aceste credite vor fi aplicate la plata integral\u0103 a evenimentului."
+			"PrepaymentConfirm": "Vom percepe o tax\u0103 nominal\u0103 de 1 dolar. Ve\u021bi primi num\u0103rul corespunz\u0103tor de credite. Aceste credite vor fi aplicate la plata integral\u0103 a evenimentului.",
+			"UserNotParticipated": "{{1}} nu particip\u0103 la eveniment",
+			"PayToAttend": "Pl\u0103te\u0219te pentru participare"
 		},
 		"composer": {
 			"SetLocation": "Seta\u021bi loca\u021bia mea",

@@ -126,7 +126,9 @@
 			"WebRTCStarted": "S\u00edmafundur h\u00f3fst",
 			"WebRTCEnded": "S\u00edmafundi loki\u00f0",
 			"Prepayment": "Fyrirframgrei\u00f0sla",
-			"PrepaymentConfirm": "Vi\u00f0 innheimtum v\u00e6ga \u00fe\u00f3knun upp \u00e1 $1. \u00de\u00fa f\u00e6r\u00f0 samsvarandi fj\u00f6lda eininga. \u00deessar einingar ver\u00f0a nota\u00f0ar til a\u00f0 grei\u00f0a fyrir vi\u00f0bur\u00f0inn a\u00f0 fullu."
+			"PrepaymentConfirm": "Vi\u00f0 innheimtum v\u00e6ga \u00fe\u00f3knun upp \u00e1 $1. \u00de\u00fa f\u00e6r\u00f0 samsvarandi fj\u00f6lda eininga. \u00deessar einingar ver\u00f0a nota\u00f0ar til a\u00f0 grei\u00f0a fyrir vi\u00f0bur\u00f0inn a\u00f0 fullu.",
+			"UserNotParticipated": "{{1}} tekur ekki \u00fe\u00e1tt \u00ed vi\u00f0bur\u00f0inum",
+			"PayToAttend": "Borga fyrir a\u00f0 m\u00e6ta"
 		},
 		"composer": {
 			"SetLocation": "Stilltu sta\u00f0setningu m\u00edna",

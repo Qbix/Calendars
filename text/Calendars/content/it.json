@@ -126,7 +126,9 @@
 			"WebRTCStarted": "Avviata la teleconferenza",
 			"WebRTCEnded": "Terminata la teleconferenza",
 			"Prepayment": "Pagamento anticipato",
-			"PrepaymentConfirm": "Addebiteremo una quota simbolica di 1 $. Riceverai il numero corrispondente di crediti. Questi crediti saranno utilizzati per saldare l&#39;intero importo dell&#39;evento."
+			"PrepaymentConfirm": "Addebiteremo una quota simbolica di 1 $. Riceverai il numero corrispondente di crediti. Questi crediti saranno utilizzati per saldare l&#39;intero importo dell&#39;evento.",
+			"UserNotParticipated": "{{1}} non \u00e8 un partecipante all&#39;evento",
+			"PayToAttend": "Paga per partecipare"
 		},
 		"composer": {
 			"SetLocation": "Imposta la mia posizione",

@@ -126,7 +126,9 @@
 			"WebRTCStarted": "S\u0101k\u0101s telekonference",
 			"WebRTCEnded": "Telekonference beidz\u0101s",
 			"Prepayment": "Priek\u0161apmaksa",
-			"PrepaymentConfirm": "M\u0113s iekas\u0113sim nelielu maksu 1\u00a0ASV dol\u0101ra apm\u0113r\u0101. J\u016bs sa\u0146emsiet atbilsto\u0161u kred\u012btpunktu skaitu. \u0160ie kred\u012btpunkti tiks ieskait\u012bti j\u016bsu pilnaj\u0101 pas\u0101kuma apmaks\u0101."
+			"PrepaymentConfirm": "M\u0113s iekas\u0113sim nelielu maksu 1\u00a0ASV dol\u0101ra apm\u0113r\u0101. J\u016bs sa\u0146emsiet atbilsto\u0161u kred\u012btpunktu skaitu. \u0160ie kred\u012btpunkti tiks ieskait\u012bti j\u016bsu pilnaj\u0101 pas\u0101kuma apmaks\u0101.",
+			"UserNotParticipated": "{{1}} nepiedal\u0101s pas\u0101kum\u0101",
+			"PayToAttend": "Maks\u0101t par dal\u012bbu"
 		},
 		"composer": {
 			"SetLocation": "Iestat\u012bt manu atra\u0161an\u0101s vietu",

@@ -127,7 +127,9 @@
 			"WebRTCStarted": "Telekonference startet",
 			"WebRTCEnded": "Telekonference afsluttet",
 			"Prepayment": "Forudbetaling",
-			"PrepaymentConfirm": "Vi opkr\u00e6ver et nominelt gebyr p\u00e5 $1. Du modtager det tilsvarende antal kreditter. Disse kreditter vil blive anvendt til din fulde betaling for arrangementet."
+			"PrepaymentConfirm": "Vi opkr\u00e6ver et nominelt gebyr p\u00e5 $1. Du modtager det tilsvarende antal kreditter. Disse kreditter vil blive anvendt til din fulde betaling for arrangementet.",
+			"UserNotParticipated": "{{1}} deltager ikke i begivenheden",
+			"PayToAttend": "Betal for at deltage"
 		},
 		"composer": {
 			"SetLocation": "Indstil min placering",

@@ -126,7 +126,9 @@
 			"WebRTCStarted": "Telefonkonferensen startade",
 			"WebRTCEnded": "Telefonkonferensen avslutades",
 			"Prepayment": "F\u00f6rskottsbetalning",
-			"PrepaymentConfirm": "Vi tar ut en nominell avgift p\u00e5 1 dollar. Du f\u00e5r motsvarande antal krediter. Dessa krediter kommer att dras av mot din fulla betalning f\u00f6r evenemanget."
+			"PrepaymentConfirm": "Vi tar ut en nominell avgift p\u00e5 1 dollar. Du f\u00e5r motsvarande antal krediter. Dessa krediter kommer att dras av mot din fulla betalning f\u00f6r evenemanget.",
+			"UserNotParticipated": "{{1}} deltar inte i evenemanget",
+			"PayToAttend": "Betala f\u00f6r att delta"
 		},
 		"composer": {
 			"SetLocation": "St\u00e4ll in min plats",

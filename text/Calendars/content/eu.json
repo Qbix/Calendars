@@ -127,7 +127,9 @@
 			"WebRTCStarted": "Telekonferentzia hasi zen",
 			"WebRTCEnded": "Telekonferentzia amaitu zen",
 			"Prepayment": "Aurrez ordainduta",
-			"PrepaymentConfirm": "$ 1eko kuota nominala kobratuko dizugu. Dagokion kreditu kopurua jasoko duzu. Kreditu hauek ekitaldiaren ordainketa osoari aplikatuko zaizkio."
+			"PrepaymentConfirm": "$ 1eko kuota nominala kobratuko dizugu. Dagokion kreditu kopurua jasoko duzu. Kreditu hauek ekitaldiaren ordainketa osoari aplikatuko zaizkio.",
+			"UserNotParticipated": "{{1}} ez da ekitaldiko parte-hartzailea",
+			"PayToAttend": "Ordaindu bertaratzeko"
 		},
 		"composer": {
 			"SetLocation": "Ezarri Nire kokapena",

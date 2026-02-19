@@ -126,7 +126,9 @@
 			"WebRTCStarted": "Telekonferenca se je za\u010dela",
 			"WebRTCEnded": "Telekonferenca je kon\u010dana",
 			"Prepayment": "Predpla\u010dilo",
-			"PrepaymentConfirm": "Zara\u010dunali vam bomo nominalno pristojbino v vi\u0161ini 1 $. Prejeli boste ustrezno \u0161tevilo kreditnih to\u010dk. Te kreditne to\u010dke bodo uporabljene za va\u0161e celotno pla\u010dilo dogodka."
+			"PrepaymentConfirm": "Zara\u010dunali vam bomo nominalno pristojbino v vi\u0161ini 1 $. Prejeli boste ustrezno \u0161tevilo kreditnih to\u010dk. Te kreditne to\u010dke bodo uporabljene za va\u0161e celotno pla\u010dilo dogodka.",
+			"UserNotParticipated": "{{1}} ni udele\u017eenec dogodka",
+			"PayToAttend": "Pla\u010daj za udele\u017ebo"
 		},
 		"composer": {
 			"SetLocation": "Nastavite mojo lokacijo",

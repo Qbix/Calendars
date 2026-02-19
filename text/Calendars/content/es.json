@@ -126,7 +126,9 @@
 			"WebRTCStarted": "Teleconferencia iniciada",
 			"WebRTCEnded": "Teleconferencia finalizada",
 			"Prepayment": "Pago por adelantado",
-			"PrepaymentConfirm": "Se cobrar\u00e1 una tarifa nominal de $1. Recibir\u00e1 la cantidad correspondiente de cr\u00e9ditos. Estos cr\u00e9ditos se aplicar\u00e1n al pago total del evento."
+			"PrepaymentConfirm": "Se cobrar\u00e1 una tarifa nominal de $1. Recibir\u00e1 la cantidad correspondiente de cr\u00e9ditos. Estos cr\u00e9ditos se aplicar\u00e1n al pago total del evento.",
+			"UserNotParticipated": "{{1}} no es participante del evento",
+			"PayToAttend": "Pagar para asistir"
 		},
 		"composer": {
 			"SetLocation": "Establecer mi ubicaci\u00f3n",

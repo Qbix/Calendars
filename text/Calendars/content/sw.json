@@ -126,7 +126,9 @@
 			"WebRTCStarted": "Teleconference imeanza",
 			"WebRTCEnded": "Teleconference imekamilika",
 			"Prepayment": "Malipo ya awali",
-			"PrepaymentConfirm": "Tutatoza ada ya kawaida ya $1. Utapokea idadi inayolingana ya salio. Salio hili litatumika kwa malipo yako kamili kwa ajili ya tukio hilo."
+			"PrepaymentConfirm": "Tutatoza ada ya kawaida ya $1. Utapokea idadi inayolingana ya salio. Salio hili litatumika kwa malipo yako kamili kwa ajili ya tukio hilo.",
+			"UserNotParticipated": "{{1}} si mshiriki wa tukio hilo",
+			"PayToAttend": "Lipa ili Kuhudhuria"
 		},
 		"composer": {
 			"SetLocation": "Weka Mahali Pangu",

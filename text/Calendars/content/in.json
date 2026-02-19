@@ -127,7 +127,9 @@
 			"WebRTCStarted": "Telekonferensi dimulai",
 			"WebRTCEnded": "Telekonferensi berakhir",
 			"Prepayment": "Pembayaran di muka",
-			"PrepaymentConfirm": "Kami akan mengenakan biaya nominal sebesar $1. Anda akan menerima jumlah kredit yang sesuai. Kredit ini akan digunakan untuk pembayaran penuh acara Anda."
+			"PrepaymentConfirm": "Kami akan mengenakan biaya nominal sebesar $1. Anda akan menerima jumlah kredit yang sesuai. Kredit ini akan digunakan untuk pembayaran penuh acara Anda.",
+			"UserNotParticipated": "{{1}} bukan peserta acara tersebut",
+			"PayToAttend": "Bayar untuk Hadir"
 		},
 		"composer": {
 			"SetLocation": "Tetapkan Lokasi Saya",

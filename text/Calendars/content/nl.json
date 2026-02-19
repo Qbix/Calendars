@@ -127,7 +127,9 @@
 			"WebRTCStarted": "Teleconferentie begon",
 			"WebRTCEnded": "Teleconferentie be\u00ebindigd",
 			"Prepayment": "Vooruitbetaling",
-			"PrepaymentConfirm": "We rekenen een symbolisch bedrag van $1 aan. U ontvangt het bijbehorende aantal credits. Deze credits worden verrekend met de totale betaling voor het evenement."
+			"PrepaymentConfirm": "We rekenen een symbolisch bedrag van $1 aan. U ontvangt het bijbehorende aantal credits. Deze credits worden verrekend met de totale betaling voor het evenement.",
+			"UserNotParticipated": "{{1}} neemt niet deel aan het evenement.",
+			"PayToAttend": "Betaal om deel te nemen"
 		},
 		"composer": {
 			"SetLocation": "Mijn locatie instellen",

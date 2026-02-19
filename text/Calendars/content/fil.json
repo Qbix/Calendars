@@ -127,7 +127,9 @@
 			"WebRTCStarted": "Nagsimula ang teleconference",
 			"WebRTCEnded": "Natapos ang teleconference",
 			"Prepayment": "Paunang bayad",
-			"PrepaymentConfirm": "Maniningil kami ng maliit na bayad na $1. Matatanggap mo ang katumbas na bilang ng mga kredito. Ang mga kreditong ito ay gagamitin sa iyong buong bayad para sa kaganapan."
+			"PrepaymentConfirm": "Maniningil kami ng maliit na bayad na $1. Matatanggap mo ang katumbas na bilang ng mga kredito. Ang mga kreditong ito ay gagamitin sa iyong buong bayad para sa kaganapan.",
+			"UserNotParticipated": "{{1}} ay hindi kalahok sa kaganapan",
+			"PayToAttend": "Magbayad para Dumalo"
 		},
 		"composer": {
 			"SetLocation": "Itakda ang Aking Lokasyon",

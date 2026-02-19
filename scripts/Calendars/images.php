@@ -621,12 +621,30 @@ foreach ($globalHolidays as $date => $entries) {
 					echo "[gen] Target: {$path}\n";
 					echo "[prompt] " . substr(str_replace("\n", " ", $prompt), 0, 120) . "...\n";
 
+					// Resolve canonical multi-day ranges (do not simply use $date for multi-day holidays)
+					$canonicalRanges = Q::ifset($holidaysWithDates, $culture, $holiday, array());
+
+					$startDate = $date;
+					$endDate   = $date;
+
+					// Pick the canonical range that intersects [today, maxDate]
+					if (!empty($canonicalRanges)) {
+						foreach ($canonicalRanges as $range) {
+							list($s, $e) = $range;
+							if ($e >= $today && $s <= $maxDate) {
+								$startDate = $s;
+								$endDate   = $e;
+								break;
+							}
+						}
+					}
+
 					$attributes = array(
 						// semanticExtraction
 						'title' => "Happy {$holiday}",
 						'holidayName' => $holiday,
-						'startDate' => $date,
-						'endDate' => $date,
+						'startDate' => $startDate,
+						'endDate'   => $endDate,
 
 						// Jewish,
 						'culture' => $culture,
@@ -642,7 +660,7 @@ foreach ($globalHolidays as $date => $entries) {
 						'culturalSpecificity' => count($countries) ? 7 : null,
 
 						// timing
-						'dates' => array(array($date, $date)),
+						'dates' => array(array($startDate, $endDate)),
 						'evergreen' => 0,
 
 						// contentClassification

@@ -126,7 +126,9 @@
 			"WebRTCStarted": "Telefonkonferenz gestartet",
 			"WebRTCEnded": "Telefonkonferenz beendet",
 			"Prepayment": "Vorauszahlung",
-			"PrepaymentConfirm": "Wir erheben eine geringe Geb\u00fchr von 1 US-Dollar. Sie erhalten die entsprechende Anzahl an Gutschriften. Diese Gutschriften werden mit Ihrer Gesamtzahlung f\u00fcr die Veranstaltung verrechnet."
+			"PrepaymentConfirm": "Wir erheben eine geringe Geb\u00fchr von 1 US-Dollar. Sie erhalten die entsprechende Anzahl an Gutschriften. Diese Gutschriften werden mit Ihrer Gesamtzahlung f\u00fcr die Veranstaltung verrechnet.",
+			"UserNotParticipated": "{{1}} ist kein Teilnehmer der Veranstaltung.",
+			"PayToAttend": "Teilnahmegeb\u00fchr"
 		},
 		"composer": {
 			"SetLocation": "Meinen Standort festlegen",
