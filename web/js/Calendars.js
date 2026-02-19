@@ -133,7 +133,35 @@ Calendars.Event = {
 		// wait for device ready
 		Q.onReady.addOnce(function () {
 			// try to get calendar plugin
-			var calendar = Q.getObject(['plugins', 'calendar'], window);
+			var calendar =Q.getObject(['plugins', 'calendar'], window)
+				|| Q.getObject(['Calendars', 'Cordova'], Q);
+
+			if (calendar && !calendar.createEvent && calendar.addEvent) {
+				// Adapter: map new API to legacy API shape
+				calendar.createEvent = function (title, location, notes, startDate, endDate, ok, err) {
+					calendar.addEvent({
+						title: title,
+						location: location,
+						notes: notes,
+						startDate: startDate,
+						endDate: endDate
+					}, ok, err);
+				};
+
+				calendar.deleteEvent = function (title, location, notes, startDate, endDate, ok, err) {
+					calendar.eventsInRange({
+						startDate: startDate,
+						endDate: endDate
+					}, function (events) {
+						var ev = events && events.find(function (e) {
+							return e.title === title;
+						});
+						if (!ev) return ok && ok();
+						calendar.deleteEvent(ev.id, ok, err);
+					}, err);
+				};
+			}
+
 
 			if (!calendar) {
 				return console.warn("Calendar plugin not found!");
