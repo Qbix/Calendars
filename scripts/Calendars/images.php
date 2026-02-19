@@ -505,32 +505,22 @@ foreach ($globalHolidays as $date => $entries) {
 
 				echo "[holiday] Found " . count($countries) . " countries\n";
 
-				// Count how many countries each language appears in
+				// Collect languages from actual holiday countries only
+				$langs = array();
 				foreach ($countries as $country) {
 					if ($country === null) {
 						echo "[holiday] Reached diaspora separator\n";
-						break;  // Stop at diaspora separator
+						break;
 					}
-					$countryLangs = array_slice(
-						Q::ifset($countryLanguages, $country, array()), 
-						0, 
-						$languagesPerCountry
-					);
-					
+					$countryLangs = Q::ifset($countryLanguages, $country, array());
 					echo "[country] {$country}: " . count($countryLangs) . " languages\n";
-					
 					foreach ($countryLangs as $lang) {
-						$languageCounts[$lang] = isset($languageCounts[$lang]) 
-							? $languageCounts[$lang] + 1 
-							: 1;
+						$langs[$lang] = true;
 					}
 				}
-				
-				// Sort by frequency (most countries first)
-				arsort($languageCounts);
-				// Take top N languages
-				$baseLanguages = array_slice(array_keys($languageCounts), 0, $MAX_LANGUAGES_DEFAULT);
+				$baseLanguages = array_keys($langs);
 
+				// If --more-languages is provided, INTERSECT with Apple-supported languages
 				if ($moreLanguages) {
 					// Case 1: Explicit override list: --more-languages=ru,ko,ar
 					if (is_string($moreLanguagesOpt) && strlen($moreLanguagesOpt)) {
@@ -540,27 +530,25 @@ foreach ($globalHolidays as $date => $entries) {
 							$forced
 						)));
 						echo "[holiday] Forcing languages via CLI: " . implode(', ', $forced) . "\n";
-					// Case 2: No value: use Apple App Store language list
 					} else {
-
-						$languages = array_values(array_unique(array_merge(
-							$baseLanguages,
-							$APPLE_LANGUAGES
-						)));
-
-						echo "[holiday] Expanding languages using Apple App Store list (" . count($APPLE_LANGUAGES) . ")\n";
+						$appleSet = array_fill_keys($APPLE_LANGUAGES, true);
+						$languages = array_values(array_filter($baseLanguages, function ($l) use ($appleSet) {
+							return isset($appleSet[$l]);
+						}));
+						echo "[holiday] Intersecting languages with Apple App Store list (" . count($APPLE_LANGUAGES) . ")\n";
 					}
 				} else {
 					$languages = $baseLanguages;
 				}
+
+				// Filter invalid / unknown language codes
 				$languages = array_values(array_filter($languages, function ($lang) use ($langInfo) {
 					return !empty($langInfo[$lang]['name']);
 				}));
 
-				if ($moreLanguages) {
-					echo "[holiday] Base languages: " . implode(', ', $baseLanguages) . "\n";
-					echo "[holiday] Extended languages: " . implode(', ', $languages) . "\n";
-				}
+				sort($languages);
+
+				echo "[holiday] Selected " . count($languages) . " languages: " . implode(', ', $languages) . "\n";
 
 
 				echo "[holiday] Selected " . count($languages) . " languages: " . implode(', ', $languages) . "\n";
@@ -1089,4 +1077,13 @@ function isHolidayActiveOrUpcoming($culture, $holiday, $year, $today, $maxDate, 
 	}
 
 	return false;
+}
+
+function getAppleLanguages()
+{
+	return array(
+		"ar","ca","cs","da","de","el","en","es","fi","fr","he","hi","hr","hu","id",
+		"it","ja","ko","ms","nl","no","pl","pt","ro","ru","sk","sv","th","tr","uk",
+		"vi","zh"
+	);
 }
