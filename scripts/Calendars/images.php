@@ -9,6 +9,91 @@ set_time_limit(0);
 
 echo "[init] Starting holiday image generation\n";
 
+/**
+ * CONFIG
+ */
+$VERSIONS_MAX = Q_Config::get('Calendars', 'holidays', 'images', 'versionsMax', 3);
+$EXT = 'jpg';
+echo "[config] versionsMax={$VERSIONS_MAX}, ext={$EXT}\n";
+
+/**
+ * Batch config
+ */
+$BATCH_SIZE = (int) Q_Config::get('AI', 'images', 'batch', 2);
+if ($BATCH_SIZE <= 1) {
+	$BATCH_SIZE = 0;
+}
+echo "[config] batchSize={$BATCH_SIZE}\n";
+
+/**
+ * CLI options
+ */
+$opts = getopt('', array(
+    'size:',
+    'orientation:',
+    'image:',
+    'llm:',
+    'text',
+    'importance:',
+    'weeks:',
+    'only-fill-missing',
+	'create-missing-streams',
+	'more-languages::'
+));
+
+$APPLE_LANGUAGES = array(
+	'en', 
+	'ar', 'ca', 'cs', 'da', 'de', 'el',
+	'es',
+	'fi', 'fr', 'fr-CA',
+	'he', 'hi', 'hr', 'hu',
+	'id', 'it',
+	'ja',
+	'ko',
+	'ms',
+	'nl', 'no',
+	'pl', 'pt',
+	'ro', 'ru',
+	'sk', 'sv',
+	'th',
+	'tr',
+	'uk',
+	'vi',
+	'zh'
+);
+
+// How far into the future to generate (weeks)
+$WEEKS = (int) Q_Config::get('Calendars', 'holidays', 'images', 'weeks', 12);
+if ($WEEKS <= 0) {
+	$WEEKS = 12;
+}
+
+if (isset($opts['weeks'])) {
+	$cliWeeks = (int) $opts['weeks'];
+	if ($cliWeeks > 0) {
+		$WEEKS = $cliWeeks;
+		echo "[config] weeks overridden from CLI: {$WEEKS}\n";
+	}
+}
+
+$onlyFillMissing = isset($opts['only-fill-missing']);
+echo "[opts] onlyFillMissing=" . ($onlyFillMissing ? '1' : '0') . "\n";
+
+$createMissingStreams = isset($opts['create-missing-streams']);
+echo "[opts] createMissingStreams=" . ($createMissingStreams ? '1' : '0') . "\n";
+
+$moreLanguagesOpt = Q::ifset($opts, 'more-languages', null);
+$moreLanguages = ($moreLanguagesOpt !== null);
+echo "[opts] moreLanguages=" . ($moreLanguages ? '1' : '0') . "\n";
+
+$maxDate = (new DateTime('now', new DateTimeZone('UTC')))
+	->modify('+' . $WEEKS . ' weeks')
+	->format('Y-m-d');
+
+$today = gmdate("Y-m-d");
+echo "[config] today={$today}, futureWeeks={$WEEKS}, maxDate={$maxDate}\n";
+
+
 echo "[heal] Scanning existing folders for broken images...\n";
 
 $IMAGE_FAILS = 0;
@@ -115,64 +200,6 @@ if ($createMissingStreams) {
 
 	echo "[heal] Stream scan complete\n";
 }
-
-/**
- * CONFIG
- */
-$VERSIONS_MAX = Q_Config::get('Calendars', 'holidays', 'images', 'versionsMax', 3);
-$EXT = 'jpg';
-echo "[config] versionsMax={$VERSIONS_MAX}, ext={$EXT}\n";
-
-/**
- * Batch config
- */
-$BATCH_SIZE = (int) Q_Config::get('AI', 'images', 'batch', 2);
-if ($BATCH_SIZE <= 1) {
-	$BATCH_SIZE = 0;
-}
-echo "[config] batchSize={$BATCH_SIZE}\n";
-
-/**
- * CLI options
- */
-$opts = getopt('', array(
-    'size:',
-    'orientation:',
-    'image:',
-    'llm:',
-    'text',
-    'importance:',
-    'weeks:',
-    'only-fill-missing',
-	'create-missing-streams'
-));
-
-// How far into the future to generate (weeks)
-$WEEKS = (int) Q_Config::get('Calendars', 'holidays', 'images', 'weeks', 12);
-if ($WEEKS <= 0) {
-	$WEEKS = 12;
-}
-
-if (isset($opts['weeks'])) {
-	$cliWeeks = (int) $opts['weeks'];
-	if ($cliWeeks > 0) {
-		$WEEKS = $cliWeeks;
-		echo "[config] weeks overridden from CLI: {$WEEKS}\n";
-	}
-}
-
-$onlyFillMissing = isset($opts['only-fill-missing']);
-echo "[opts] onlyFillMissing=" . ($onlyFillMissing ? '1' : '0') . "\n";
-
-$createMissingStreams = isset($opts['create-missing-streams']);
-echo "[opts] createMissingStreams=" . ($createMissingStreams ? '1' : '0') . "\n";
-
-$maxDate = (new DateTime('now', new DateTimeZone('UTC')))
-	->modify('+' . $WEEKS . ' weeks')
-	->format('Y-m-d');
-
-$today = gmdate("Y-m-d");
-echo "[config] today={$today}, futureWeeks={$WEEKS}, maxDate={$maxDate}\n";
 
 // adapters
 
@@ -423,6 +450,8 @@ $stats = array(
 	'images_skipped_exists' => 0
 );
 
+$langInfo = Q_Text::languagesInfo();
+
 echo "[loop] ========== GENERATION RUN ==========\n";
 foreach ($globalHolidays as $date => $entries) {
 
@@ -462,7 +491,7 @@ foreach ($globalHolidays as $date => $entries) {
 				echo "[holiday] '{$holiday}' ({$culture}) tier={$tier} importance={$importance}\n";
 
 				$countries = Q::ifset($holidaysWithCountries, $culture, $holiday, 'countries', array());
-				$maxLanguages = 10;
+				$MAX_LANGUAGES_DEFAULT = 10;
 				$languagesPerCountry = 4;
 				$languageCounts = array();
 
@@ -492,7 +521,39 @@ foreach ($globalHolidays as $date => $entries) {
 				// Sort by frequency (most countries first)
 				arsort($languageCounts);
 				// Take top N languages
-				$languages = array_slice(array_keys($languageCounts), 0, $maxLanguages);
+				$baseLanguages = array_slice(array_keys($languageCounts), 0, $MAX_LANGUAGES_DEFAULT);
+
+				if ($moreLanguages) {
+					// Case 1: Explicit override list: --more-languages=ru,ko,ar
+					if (is_string($moreLanguagesOpt) && strlen($moreLanguagesOpt)) {
+						$forced = array_map('trim', explode(',', strtolower($moreLanguagesOpt)));
+						$languages = array_values(array_unique(array_merge(
+							$baseLanguages,
+							$forced
+						)));
+						echo "[holiday] Forcing languages via CLI: " . implode(', ', $forced) . "\n";
+					// Case 2: No value: use Apple App Store language list
+					} else {
+
+						$languages = array_values(array_unique(array_merge(
+							$baseLanguages,
+							$APPLE_LANGUAGES
+						)));
+
+						echo "[holiday] Expanding languages using Apple App Store list (" . count($APPLE_LANGUAGES) . ")\n";
+					}
+				} else {
+					$languages = $baseLanguages;
+				}
+				$languages = array_values(array_filter($languages, function ($lang) use ($langInfo) {
+					return !empty($langInfo[$lang]['name']);
+				}));
+
+				if ($moreLanguages) {
+					echo "[holiday] Base languages: " . implode(', ', $baseLanguages) . "\n";
+					echo "[holiday] Extended languages: " . implode(', ', $languages) . "\n";
+				}
+
 
 				echo "[holiday] Selected " . count($languages) . " languages: " . implode(', ', $languages) . "\n";
 
@@ -535,7 +596,8 @@ foreach ($globalHolidays as $date => $entries) {
 					}
 					if (!$hasHealthy) {
 						// only reuse if adapter not failing
-						if (empty($GLOBALS['IMAGE_FAILS'])) {
+						global $IMAGE_FAILS;
+						if (empty($IMAGE_FAILS)) {
 							$reuseDir = $d;
 							echo "[heal] Reusing fully broken dir {$d}\n";
 						} else {
@@ -566,7 +628,14 @@ foreach ($globalHolidays as $date => $entries) {
 
 				foreach ($languages as $lang) {
 
-					$langInfo = Q_Text::languagesInfo();
+					if ($moreLanguages) {
+						$langDir = $outDir . DS . $lang;
+						if (is_dir($langDir) && !isBrokenHolidayDir($langDir)) {
+							echo "[skip] {$lang} already exists, --more-languages only fills missing\n";
+							continue;
+						}
+					}
+
 					if (empty($langInfo[$lang]['name'])) {
 						echo "[skip] Language '{$lang}' has no name info\n";
 						continue;
@@ -920,21 +989,14 @@ function nextHolidayVersion($baseDir, $culture, $key, $year)
 
 function healHolidayImageDir($dir)
 {
-	// If already finalized, do nothing
-	$required = array('1000x.jpg', '200x.jpg', '80.jpg', '50.jpg', '40.jpg', 'x200.jpg');
-	$missing = false;
-	foreach ($required as $f) {
-		if (!is_file($dir . DS . $f)) {
-			$missing = true;
-			break;
-		}
-	}
-	if (!$missing) {
+	// If already finalized (any *x*.jpg exists), do nothing
+	$finals = glob($dir . DS . '*x*.jpg');
+	if ($finals) {
 		return false; // fully healthy
 	}
 
 	// Detect raw image variants
-	$candidates = glob($dir . '/*x*.jpg');
+	$candidates = glob($dir . DS . '*x*.jpg');
 	if (!$candidates) {
 		echo "[heal] No raw source in {$dir}, queuing regen\n";
 		return 'EMPTY';
@@ -972,24 +1034,22 @@ function healHolidayImageDir($dir)
 		}
 		return true;
 	}
+
 	echo "[heal] ERROR: Q_Image::save failed for {$dir}\n";
 	return false;
-
 }
 
 function isBrokenHolidayDir($dir)
 {
 	if (!is_dir($dir)) return false;
 
-	$files = glob($dir . DS . '*');
+	$files = glob($dir . DS . '*x*.jpg');
 	if (!$files) {
 		return true; // EMPTY DIR IS BROKEN
 	}
 
-	$required = array('1000x.jpg', '200x.jpg', '80.jpg', '50.jpg', '40.jpg', 'x200.jpg');
-	foreach ($required as $f) {
-		$p = $dir . DS . $f;
-		if (!is_file($p) || filesize($p) === 0) {
+	foreach ($files as $f) {
+		if (!is_file($f) || filesize($f) === 0) {
 			return true;
 		}
 	}
