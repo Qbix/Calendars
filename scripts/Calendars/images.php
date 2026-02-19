@@ -369,29 +369,11 @@ foreach ($globalHolidays as $date => $entries) {
 		foreach ($entry as $culture => $holidays) {
 			foreach ($holidays as $holiday) {
 
-				// NEW: allow if active OR upcoming in window
-				$hasValidDate = false;
-				$ranges = Q::ifset($holidaysWithDates, $culture, $holiday, array());
-				foreach ($ranges as $range) {
-					list($start, $end) = $range;
-
-					// active now
-					if ($today >= $start && $today <= $end) {
-						$hasValidDate = true;
-						break;
-					}
-
-					// upcoming in window
-					if ($start > $today && $start <= $maxDate) {
-						$hasValidDate = true;
-						break;
-					}
-				}
-
-				if (!$hasValidDate) {
+				if (!isHolidayActiveOrUpcoming($culture, $holiday, $year, $today, $maxDate, $holidaysWithDates)) {
 					echo "[skip] '{$holiday}' ({$culture}) not active or upcoming\n";
 					continue;
 				}
+
 
 				$key = Q_Utils::normalize($holiday);
 				$tier = festivenessTier($key, $festivenessMap);
@@ -925,25 +907,26 @@ function isBrokenHolidayDir($dir)
 
 function isHolidayActiveOrUpcoming($culture, $holiday, $year, $today, $maxDate, $holidaysWithDates)
 {
-    if (!isset($holidaysWithDates[$culture])) {
-        return false;
-    }
+	if (empty($holidaysWithDates[$culture])) {
+		return false;
+	}
 
-    $name = str_replace('_', ' ', Q_Utils::normalize($holiday));
-    $name = str_replace(' ', '-', ucwords($name)); // match JSON keys like Old-New-Year
+	// Convert "Old New Year" → "Old-New-Year"
+	$key = preg_replace('/\s+/', '-', trim($holiday));
 
-    if (!isset($holidaysWithDates[$culture][$name])) {
-        return false;
-    }
+	if (empty($holidaysWithDates[$culture][$key])) {
+		echo "[debug] No date ranges for {$culture}/{$key}\n";
+		return false;
+	}
 
-    foreach ($holidaysWithDates[$culture][$name] as $range) {
-        list($start, $end) = $range;
+	foreach ($holidaysWithDates[$culture][$key] as $range) {
+		list($start, $end) = $range;
 
-        // holiday window intersects [today, maxDate]
-        if ($end >= $today && $start <= $maxDate) {
-            return true;
-        }
-    }
+		// intersects [today, maxDate]
+		if ($end >= $today && $start <= $maxDate) {
+			return true;
+		}
+	}
 
-    return false;
+	return false;
 }
