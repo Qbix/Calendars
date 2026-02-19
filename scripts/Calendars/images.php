@@ -671,7 +671,7 @@ foreach ($globalHolidays as $date => $entries) {
 							$streamType,
 							$observationsType,
 							$attributes,
-							$prompt,
+							$prompt
 						) {
 							global $IMAGE_FAILS, $IMAGE_FAILS_MAX, $RETRY_QUEUE;
 
