@@ -923,22 +923,24 @@ function isBrokenHolidayDir($dir)
 	return false;
 }
 
-function isHolidayActiveOrUpcoming($culture, $holiday, $today, $maxDate, $holidaysWithDates)
+function isHolidayActiveOrUpcoming($culture, $holiday, $year, $today, $maxDate, $holidaysWithDates)
 {
-    if (empty($holidaysWithDates[$culture][$holiday])) {
+    if (!isset($holidaysWithDates[$culture])) {
         return false;
     }
 
-    foreach ($holidaysWithDates[$culture][$holiday] as $range) {
+    $name = str_replace('_', ' ', Q_Utils::normalize($holiday));
+    $name = str_replace(' ', '-', ucwords($name)); // match JSON keys like Old-New-Year
+
+    if (!isset($holidaysWithDates[$culture][$name])) {
+        return false;
+    }
+
+    foreach ($holidaysWithDates[$culture][$name] as $range) {
         list($start, $end) = $range;
 
-        // Active now
-        if ($today >= $start && $today <= $end) {
-            return true;
-        }
-
-        // Upcoming in window
-        if ($start > $today && $start <= $maxDate) {
+        // holiday window intersects [today, maxDate]
+        if ($end >= $today && $start <= $maxDate) {
             return true;
         }
     }
