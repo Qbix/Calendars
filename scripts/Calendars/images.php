@@ -911,8 +911,8 @@ function isHolidayActiveOrUpcoming($culture, $holiday, $year, $today, $maxDate, 
 		return false;
 	}
 
-	// Convert "Old New Year" → "Old-New-Year"
-	$key = preg_replace('/\s+/', '-', trim($holiday));
+	// JSON keys use exact holiday name with spaces -> hyphens
+	$key = str_replace(' ', '-', trim($holiday));
 
 	if (empty($holidaysWithDates[$culture][$key])) {
 		echo "[debug] No date ranges for {$culture}/{$key}\n";
@@ -922,7 +922,7 @@ function isHolidayActiveOrUpcoming($culture, $holiday, $year, $today, $maxDate, 
 	foreach ($holidaysWithDates[$culture][$key] as $range) {
 		list($start, $end) = $range;
 
-		// intersects [today, maxDate]
+		// holiday overlaps window OR is currently active
 		if ($end >= $today && $start <= $maxDate) {
 			return true;
 		}
