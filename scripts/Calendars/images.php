@@ -33,6 +33,21 @@ foreach ($leafDirs as $dir) {
 		}
 	}
 }
+// Also queue empty version dirs (no languages at all)
+$versionDirs = glob($baseOut . '/*/*/*', GLOB_ONLYDIR) ?: array();
+foreach ($versionDirs as $verDir) {
+    $langs = glob($verDir . DS . '*', GLOB_ONLYDIR);
+    if (!$langs) {
+        $rel = str_replace($baseOut . DS, '', $verDir);
+        @list($culture, $key, $ver) = explode(DS, $rel, 3);
+        if (preg_match('/^(\d{4})-/', $ver, $m)) {
+            $year = $m[1];
+            echo "[heal] Found empty version dir: {$culture}/{$key}/{$year}, forcing regen\n";
+            $HEAL_EMPTY[$culture][$key][$year]['*'] = true;
+        }
+    }
+}
+
 
 echo "[heal] Scan complete\n";
 
@@ -56,13 +71,14 @@ echo "[config] batchSize={$BATCH_SIZE}\n";
  * CLI options
  */
 $opts = getopt('', array(
-	'size:',
-	'orientation:',
-	'image:',
-	'llm:',
-	'text',
-	'importance:',
-	'weeks:'
+    'size:',
+    'orientation:',
+    'image:',
+    'llm:',
+    'text',
+    'importance:',
+    'weeks:',
+    'only-fill-missing'
 ));
 
 // How far into the future to generate (weeks)
@@ -78,6 +94,9 @@ if (isset($opts['weeks'])) {
 		echo "[config] weeks overridden from CLI: {$WEEKS}\n";
 	}
 }
+
+$onlyFillMissing = isset($opts['only-fill-missing']);
+echo "[opts] onlyFillMissing=" . ($onlyFillMissing ? '1' : '0') . "\n";
 
 $maxDate = (new DateTime('now', new DateTimeZone('UTC')))
 	->modify('+' . $WEEKS . ' weeks')
@@ -332,22 +351,10 @@ $stats = array(
 );
 
 echo "[loop] ========== GENERATION RUN ==========\n";
-
 foreach ($globalHolidays as $date => $entries) {
 
-	if ($date < $today) {
-		$stats['dates_skipped_past']++;
-		continue;
-	}
-
-	if ($date > $maxDate) {
-		echo "[stop] Date {$date} exceeds maxDate {$maxDate}, stopping\n";
-		$stats['dates_skipped_future']++;
-		break;
-	}
-
 	$stats['dates_processed']++;
-	echo "[date] Processing {$date}\n";
+	echo "[date] Considering {$date}\n";
 	$year = substr($date, 0, 4);
 
 	$holidayCount = 0;
@@ -361,6 +368,30 @@ foreach ($globalHolidays as $date => $entries) {
 	foreach ($entries as $entry) {
 		foreach ($entry as $culture => $holidays) {
 			foreach ($holidays as $holiday) {
+
+				// NEW: allow if active OR upcoming in window
+				$hasValidDate = false;
+				$ranges = Q::ifset($holidaysWithDates, $culture, $holiday, array());
+				foreach ($ranges as $range) {
+					list($start, $end) = $range;
+
+					// active now
+					if ($today >= $start && $today <= $end) {
+						$hasValidDate = true;
+						break;
+					}
+
+					// upcoming in window
+					if ($start > $today && $start <= $maxDate) {
+						$hasValidDate = true;
+						break;
+					}
+				}
+
+				if (!$hasValidDate) {
+					echo "[skip] '{$holiday}' ({$culture}) not active or upcoming\n";
+					continue;
+				}
 
 				$key = Q_Utils::normalize($holiday);
 				$tier = festivenessTier($key, $festivenessMap);
@@ -412,6 +443,27 @@ foreach ($globalHolidays as $date => $entries) {
 
 				$base = $baseOut . DS . $culture . DS . $key;
 
+				$dirs = glob($base . DS . $year . '-*', GLOB_ONLYDIR) ?: array();
+				@rsort($dirs, SORT_NATURAL);
+
+				$hasHealthyVersion = false;
+				$healthyDir = null;
+
+				foreach ($dirs as $d) {
+					foreach (glob($d . DS . '*', GLOB_ONLYDIR) ?: array() as $langDir) {
+						if (!isBrokenHolidayDir($langDir)) {
+							$hasHealthyVersion = true;
+							$healthyDir = $d;
+							break 2;
+						}
+					}
+				}
+
+				if ($onlyFillMissing && $hasHealthyVersion) {
+					echo "[skip] Healthy version exists for {$culture}/{$key}/{$year}, only-fill-missing enabled\n";
+					continue;
+				}
+
 				// Try to reuse latest broken version
 				$reuseDir = null;
 				$dirs = glob($base . DS . $year . '-*', GLOB_ONLYDIR) ?: array();
@@ -437,6 +489,15 @@ foreach ($globalHolidays as $date => $entries) {
 					}
 				}
 
+				if (!$reuseDir && !$onlyFillMissing) {
+					$x = glob($base . DS . $year . '-*', GLOB_ONLYDIR);
+					$existing = $x ? $x : array();
+					if (count($existing) >= $VERSIONS_MAX) {
+						echo "[skip] Version cap reached for {$culture}/{$key}/{$year}\n";
+						continue;
+					}
+				}
+
 				if ($reuseDir) {
 					$outDir = $reuseDir;
 				} else {
@@ -459,7 +520,9 @@ foreach ($globalHolidays as $date => $entries) {
 
 					$langDir = $outDir . DS . $lang;
 
-					$forceHeal = isset($HEAL_EMPTY[$culture][$key][$year][$lang]);
+					$forceHeal = isset($HEAL_EMPTY[$culture][$key][$year]['*'])
+          			          || isset($HEAL_EMPTY[$culture][$key][$year][$lang]);
+
 
 					if (is_dir($langDir) && !$forceHeal) {
 						if (!isBrokenHolidayDir($langDir)) {
@@ -858,4 +921,27 @@ function isBrokenHolidayDir($dir)
 		}
 	}
 	return false;
+}
+
+function isHolidayActiveOrUpcoming($culture, $holiday, $today, $maxDate, $holidaysWithDates)
+{
+    if (empty($holidaysWithDates[$culture][$holiday])) {
+        return false;
+    }
+
+    foreach ($holidaysWithDates[$culture][$holiday] as $range) {
+        list($start, $end) = $range;
+
+        // Active now
+        if ($today >= $start && $today <= $end) {
+            return true;
+        }
+
+        // Upcoming in window
+        if ($start > $today && $start <= $maxDate) {
+            return true;
+        }
+    }
+
+    return false;
 }
