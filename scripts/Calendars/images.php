@@ -912,13 +912,14 @@ function isBrokenHolidayDir($dir)
 function isHolidayActiveOrUpcoming($culture, $holiday, $year, $today, $maxDate, $holidaysWithDates)
 {
 	if (empty($holidaysWithDates[$culture])) {
+		echo "[debug] No culture '{$culture}' in holidaysWithDates\n";
 		return false;
 	}
 
-	// JSON keys use exact holiday name with spaces -> hyphens
-	$key = str_replace(' ', '-', trim($holiday));
+	// Use the holiday name EXACTLY as provided (no normalization)
+	$key = trim($holiday);
 
-	if (empty($holidaysWithDates[$culture][$key])) {
+	if (!array_key_exists($key, $holidaysWithDates[$culture])) {
 		echo "[debug] No date ranges for {$culture}/{$key}\n";
 		return false;
 	}
@@ -926,7 +927,7 @@ function isHolidayActiveOrUpcoming($culture, $holiday, $year, $today, $maxDate, 
 	foreach ($holidaysWithDates[$culture][$key] as $range) {
 		list($start, $end) = $range;
 
-		// holiday overlaps window OR is currently active
+		// intersects [today, maxDate] OR currently active
 		if ($end >= $today && $start <= $maxDate) {
 			return true;
 		}
