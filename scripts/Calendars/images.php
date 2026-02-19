@@ -162,6 +162,10 @@ $holidaysWithCountries = json_decode(
 	@file_get_contents(CALENDARS_PLUGIN_CONFIG_DIR . DS . 'holidaysWithCountries.json'),
 	true
 );
+$holidaysWithDates = json_decode(
+	@file_get_contents(CALENDARS_PLUGIN_CONFIG_DIR . DS . 'holidaysWithDates.json'),
+	true
+);
 $countryLanguages = json_decode(
 	@file_get_contents(PLACES_PLUGIN_CONFIG_DIR . DS . 'languages.json'),
 	true
