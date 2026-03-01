@@ -1796,20 +1796,20 @@ Q.Tool.define("Calendars/event", function(options) {
 								//-------------------------------------------------
 								// Server instructs client to open Stripe
 								//-------------------------------------------------
-								if (paymentDetails && paymentDetails.intent) {
+								if (paymentDetails && paymentDetails.intent && paymentDetails.intent.instructions) {
 
 									// Note that mere presence of .intentToken without
 									// a corresponding .intent object means that the server
 									// has 
-									var intent = paymentDetails.intent;
+									var instructions = paymentDetails.intent.instructions;
 									var stripeOptions = {
 										intentToken   : paymentDetails.intentToken,
-										amount        : intent.amount,
-										currency      : intent.currency,
+										amount        : instructions.amount,
+										currency      : instructions.currency,
 										reason        : 'BoughtCredits',
-										// metadata      : intent.metadata || {},
-										toPublisherId : intent.toPublisherId,
-										toStreamName  : intent.toStreamName
+										// metadata      : instructions.metadata || {},
+										toPublisherId : instructions.toPublisherId,
+										toStreamName  : instructions.toStreamName
 									};
 
 									Q.Assets.Payments.stripe(
