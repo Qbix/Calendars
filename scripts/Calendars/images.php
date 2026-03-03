@@ -38,7 +38,9 @@ $opts = getopt('', array(
     'weeks:',
     'only-fill-missing',
 	'create-missing-streams',
-	'more-languages::'
+	'more-languages::',
+	'exclude::',
+	'only::'
 ));
 
 $APPLE_LANGUAGES = array(
@@ -208,6 +210,30 @@ $llmAdapter   = Q::ifset($opts, 'llm', null);
 
 $allowText = isset($opts['text']);
 $minImportance = Q::ifset($opts, 'importance', 7);
+
+// ---------------------------------------------
+// Holiday filtering
+// ---------------------------------------------
+
+$excludeOpt = Q::ifset($opts, 'exclude', null);
+$onlyOpt    = Q::ifset($opts, 'only', null);
+
+$excluded = array();
+$onlyList = array();
+
+if ($excludeOpt) {
+	$excluded = array_map(function ($h) {
+		return Q_Utils::normalize(trim($h));
+	}, explode(',', strtolower($excludeOpt)));
+	echo "[opts] exclude=" . implode(',', $excluded) . "\n";
+}
+
+if ($onlyOpt) {
+	$onlyList = array_map(function ($h) {
+		return Q_Utils::normalize(trim($h));
+	}, explode(',', strtolower($onlyOpt)));
+	echo "[opts] only=" . implode(',', $onlyList) . "\n";
+}
 
 echo "[opts] imageAdapter={$imageAdapter}, llmAdapter={$llmAdapter}, allowText=" . ($allowText ? '1' : '0') . ", minImportance={$minImportance}\n";
 
@@ -480,6 +506,18 @@ foreach ($globalHolidays as $date => $entries) {
 				$key = Q_Utils::normalize($holiday);
 				$tier = festivenessTier($key, $festivenessMap);
 				$importance = Q::ifset($holidayImportance, $key, 0);
+
+				// Apply CLI holiday filters
+
+				if ($onlyList && !in_array($key, $onlyList, true)) {
+					echo "[skip] '{$holiday}' not in --only list\n";
+					continue;
+				}
+
+				if ($excluded && in_array($key, $excluded, true)) {
+					echo "[skip] '{$holiday}' excluded via CLI\n";
+					continue;
+				}
 
 				// If expanding to many languages, only do so for high-importance holidays
 				$MORE_LANGUAGES_MIN_IMPORTANCE = 9;
