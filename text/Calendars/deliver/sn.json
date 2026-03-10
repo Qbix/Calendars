@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Tinokutendai nekufarira kwenyu {{title}}"
+	},
+	"approved": {
+		"Subject": "Kupinda Kwakatenderwa",
+		"AttendanceApproved": "Makorokoto! Kupinda kwenyu kwabvumidzwa kuti muwane {{title}}"
+	},
+	"requested": {
+		"Subject": "Kupinda Kwakakumbirwa",
+		"AttendanceRequested": "Tiri kusimbisa chikumbiro chenyu chekuti mupinde: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Kupinda Hakuna Kutenderwa",
+		"AttendanceRejected": "Vatungamiri havana kubvuma chikumbiro chenyu chekuti mupinde: {{title}}"
+	},
+	"paid": {
+		"Subject": "Kusimbiswa Kwekubhadhara Kwakabudirira",
+		"YouveBeenCharged": "Wabhadhariswa {{amount}} {{currency}} (uye {{credits}} credits). Wagadzirira! Tosangana {{title}}"
+	}
+}

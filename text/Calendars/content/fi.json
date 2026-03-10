@@ -126,7 +126,9 @@
 			"WebRTCStarted": "Puhelinkonferenssi alkoi",
 			"WebRTCEnded": "Puhelinkonferenssi p\u00e4\u00e4ttyi",
 			"Prepayment": "Ennakkomaksu",
-			"PrepaymentConfirm": "Veloitamme nimellisen 1 dollarin maksun. Saat vastaavan m\u00e4\u00e4r\u00e4n krediittej\u00e4. N\u00e4m\u00e4 krediitit k\u00e4ytet\u00e4\u00e4n tapahtuman koko maksuun."
+			"PrepaymentConfirm": "Veloitamme nimellisen 1 dollarin maksun. Saat vastaavan m\u00e4\u00e4r\u00e4n krediittej\u00e4. N\u00e4m\u00e4 krediitit k\u00e4ytet\u00e4\u00e4n tapahtuman koko maksuun.",
+			"UserNotParticipated": "{{1}} ei ole tapahtuman osallistuja",
+			"PayToAttend": "Maksa osallistuaksesi"
 		},
 		"composer": {
 			"SetLocation": "Aseta Oma sijainti",
@@ -251,7 +253,8 @@
 		"confirmParticipate": "{{1}} ei ole viel\u00e4 osa tapahtumaa. Haluatko lis\u00e4t\u00e4 heid\u00e4t osallistujaksi?",
 		"userNotFound": "K\u00e4ytt\u00e4j\u00e4\u00e4 ei l\u00f6ydy",
 		"confirmYes": "Joo",
-		"confirmNo": "Ei"
+		"confirmNo": "Ei",
+		"UserAlreadyCheckedIn": "{{1}} on jo kirjautunut sis\u00e4\u00e4n {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Tapahtumatoiminta vuonna {{{stream.fields.title}}}",
@@ -338,6 +341,9 @@
 				"reasons": {
 					"EventParticipation": "Tapahtumaan osallistuminen"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Tapahtumaan osallistuminen"
 			}
 		}
 	}

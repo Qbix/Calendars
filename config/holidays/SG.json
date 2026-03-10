@@ -1,0 +1,22 @@
+{
+  "2026-01-01":[{"National":["new_year_s_day"]}],
+  "2026-02-17":[{"National":["chinese_new_year"]}],
+  "2026-02-18":[{"National":["chinese_new_year"]}],
+  "2026-03-20":[{"National":["hari_raya_puasa"]}],
+  "2026-04-03":[{"National":["good_friday"]}, {"Catholic":["good_friday"]}],
+  "2026-05-01":[{"National":["labour_day"]}, {"Buddhist":["vesak_day"]}],
+  "2026-05-27":[{"National":["hari_raya_haji_tentative_date_"]}],
+  "2026-08-10":[{"National":["national_day"]}],
+  "2026-11-09":[{"National":["deepavali"]}],
+  "2026-12-25":[{"National":["christmas_day"]}, {"Catholic":["christmas"]}],
+  "2027-01-01":[{"National":["new_year_s_day"]}],
+  "2027-02-06":[{"National":["chinese_new_year"]}],
+  "2027-02-08":[{"National":["chinese_new_year"]}],
+  "2027-03-10":[{"National":["hari_raya_puasa"]}],
+  "2027-03-26":[{"National":["good_friday"]}, {"Catholic":["good_friday"]}],
+  "2027-05-01":[{"National":["labour_day"]}],
+  "2027-05-17":[{"National":["hari_raya_haji_tentative_date_"]}],
+  "2027-08-09":[{"National":["national_day"]}],
+  "2027-10-29":[{"National":["deepavali"]}, {"Hindu":["diwali"]}],
+  "2027-12-25":[{"National":["christmas_day"]}, {"Catholic":["christmas"]}]
+}

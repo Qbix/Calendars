@@ -127,7 +127,9 @@
 			"WebRTCStarted": "Telekonferentzia hasi zen",
 			"WebRTCEnded": "Telekonferentzia amaitu zen",
 			"Prepayment": "Aurrez ordainduta",
-			"PrepaymentConfirm": "$ 1eko kuota nominala kobratuko dizugu. Dagokion kreditu kopurua jasoko duzu. Kreditu hauek ekitaldiaren ordainketa osoari aplikatuko zaizkio."
+			"PrepaymentConfirm": "$ 1eko kuota nominala kobratuko dizugu. Dagokion kreditu kopurua jasoko duzu. Kreditu hauek ekitaldiaren ordainketa osoari aplikatuko zaizkio.",
+			"UserNotParticipated": "{{1}} ez da ekitaldiko parte-hartzailea",
+			"PayToAttend": "Ordaindu bertaratzeko"
 		},
 		"composer": {
 			"SetLocation": "Ezarri Nire kokapena",
@@ -217,7 +219,8 @@
 		"confirmParticipate": "{{1}} oraindik ez da ekitaldiaren parte. Parte-hartzaile gisa gehitu nahi dituzu?",
 		"userNotFound": "Ez da erabiltzailea aurkitu",
 		"confirmYes": "Bai",
-		"confirmNo": "Ez"
+		"confirmNo": "Ez",
+		"UserAlreadyCheckedIn": "{{1}} {{2}} erregistratu du jada!"
 	},
 	"notifications": {
 		"EventActivityIn": "Gertaeren jarduera {{{stream.fields.title}}}-n",
@@ -364,6 +367,9 @@
 				"reasons": {
 					"EventParticipation": "Ekitaldiaren parte-hartzea"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Ekitaldiaren parte-hartzea"
 			}
 		}
 	}

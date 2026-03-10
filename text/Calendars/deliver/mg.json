@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Misaotra anao noho ny fahaliananao amin&#39;ny {{title}}"
+	},
+	"approved": {
+		"Subject": "Ankatoavina ny fanatrehana",
+		"AttendanceApproved": "Arahabaina! Nekena ny fanatrehanao ny {{title}}"
+	},
+	"requested": {
+		"Subject": "Fangatahana fanatrehana",
+		"AttendanceRequested": "Manamarina ny fangatahanao hanatrika izahay: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Tsy nekena ny fanatrehana",
+		"AttendanceRejected": "Tsy neken&#39;ny mpitantana ny fangatahanao hanatrika: {{title}}"
+	},
+	"paid": {
+		"Subject": "Fanamarinana ny fandoavam-bola nahomby",
+		"YouveBeenCharged": "Naloa {{amount}} {{currency}} (sy cr\u00e9dit {{credits}} ) ianao. Vonona daholo! Ho hita eo amin&#39;ny {{title}}"
+	}
+}

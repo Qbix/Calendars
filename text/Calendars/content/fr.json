@@ -126,7 +126,9 @@
 			"WebRTCStarted": "La t\u00e9l\u00e9conf\u00e9rence a commenc\u00e9",
 			"WebRTCEnded": "T\u00e9l\u00e9conf\u00e9rence termin\u00e9e",
 			"Prepayment": "Paiement anticip\u00e9",
-			"PrepaymentConfirm": "Nous vous facturerons des frais minimes de 1 $. Vous recevrez le nombre de cr\u00e9dits correspondant. Ces cr\u00e9dits seront d\u00e9duits du montant total de votre inscription \u00e0 l&#39;\u00e9v\u00e9nement."
+			"PrepaymentConfirm": "Nous vous facturerons des frais minimes de 1 $. Vous recevrez le nombre de cr\u00e9dits correspondant. Ces cr\u00e9dits seront d\u00e9duits du montant total de votre inscription \u00e0 l&#39;\u00e9v\u00e9nement.",
+			"UserNotParticipated": "{{1}} ne participe pas \u00e0 l&#39;\u00e9v\u00e9nement",
+			"PayToAttend": "Payer pour assister"
 		},
 		"composer": {
 			"SetLocation": "D\u00e9finir ma position",
@@ -251,7 +253,8 @@
 		"confirmParticipate": "{{1}} ne fait pas encore partie de l&#39;\u00e9v\u00e9nement. Voulez-vous les ajouter en tant que participant\u00a0?",
 		"userNotFound": "Utilisateur non trouv\u00e9",
 		"confirmYes": "Oui",
-		"confirmNo": "Non"
+		"confirmNo": "Non",
+		"UserAlreadyCheckedIn": "{{1}} avaient d\u00e9j\u00e0 \u00e9t\u00e9 enregistr\u00e9es avant {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Activit\u00e9 \u00e9v\u00e9nementielle dans {{{stream.fields.title}}}",
@@ -338,6 +341,9 @@
 				"reasons": {
 					"EventParticipation": "Participation \u00e0 l&#39;\u00e9v\u00e9nement"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Participation \u00e0 l&#39;\u00e9v\u00e9nement"
 			}
 		}
 	}

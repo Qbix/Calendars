@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "M\u00e8si pou enter\u00e8 ou nan {{title}}"
+	},
+	"approved": {
+		"Subject": "Prezans Apwouve",
+		"AttendanceApproved": "Felisitasyon! Prezans ou te apwouve pou {{title}}"
+	},
+	"requested": {
+		"Subject": "Prezans Demann",
+		"AttendanceRequested": "N ap konfime demann ou pou patisipe a: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Prezans Pa Apwouve",
+		"AttendanceRejected": "Administrat\u00e8 yo pa apwouve demann ou pou patisipe: {{title}}"
+	},
+	"paid": {
+		"Subject": "Konfimasyon Peman Reyisi",
+		"YouveBeenCharged": "Yo f\u00e8 w peye {{amount}} {{currency}} (epi {{credits}} kredi). Ou pare! N ap w\u00e8 w a {{title}}"
+	}
+}

@@ -1,0 +1,18 @@
+{
+  "2026-01-01":[{"National":["new_year_s_day"]}],
+  "2026-03-20":[{"National":["independence_day"]}],
+  "2026-04-09":[{"National":["martyrs_day"]}, {"Jewish":["passover_day8"]}],
+  "2026-05-01":[{"National":["labour_day"]}, {"Buddhist":["vesak_day"]}],
+  "2026-07-25":[{"National":["republic_day"]}],
+  "2026-08-13":[{"National":["women_s_day"]}],
+  "2026-10-15":[{"National":["evacuation_day"]}],
+  "2026-12-17":[{"National":["revolution_day"]}],
+  "2027-01-01":[{"National":["new_year_s_day"]}],
+  "2027-03-20":[{"National":["independence_day"]}],
+  "2027-04-09":[{"National":["martyrs_day"]}],
+  "2027-05-01":[{"National":["labour_day"]}],
+  "2027-07-25":[{"National":["republic_day"]}],
+  "2027-08-13":[{"National":["women_s_day"]}],
+  "2027-10-15":[{"National":["evacuation_day"]}],
+  "2027-12-17":[{"National":["revolution_day"]}]
+}

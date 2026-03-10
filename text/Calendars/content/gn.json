@@ -1,0 +1,347 @@
+{
+	"months": {
+		"Jan": "Jasypoapy 100-pe",
+		"Feb": "Feb",
+		"Mar": "Mar",
+		"Apr": "Abr",
+		"May": "Mayo",
+		"Jun": "Jun",
+		"Jul": "Jul",
+		"Aug": "Agosto 1999-pe",
+		"Sep": "Sep",
+		"Oct": "Oct.-pe",
+		"Nov": "Nov",
+		"Dec": "Dic"
+	},
+	"monthsLong": {
+		"Jan": "jasyte\u0129",
+		"Feb": "Jasyk\u00f5i",
+		"Mar": "Jasyapy",
+		"Apr": "Jasyrundy",
+		"May": "Mayo",
+		"Jun": "Jasypote\u0129",
+		"Jul": "Jasypok\u00f5i",
+		"Aug": "Jasypoapy",
+		"Sep": "Jasyporundy",
+		"Oct": "Jasypa",
+		"Nov": "Jasypate\u0129",
+		"Dec": "Jasypak\u00f5i"
+	},
+	"weekdays": {
+		"Sun": "Kuarahy",
+		"Mon": "Lun",
+		"Tue": "Mar",
+		"Wed": "Mi\u00e9rcoles",
+		"Thu": "Jue",
+		"Fri": "Vie",
+		"Sat": "Arapok\u00f5i"
+	},
+	"weekdaysLong": {
+		"Sun": "Arate\u0129",
+		"Mon": "Arak\u00f5i",
+		"Tue": "araapy",
+		"Wed": "ararundy",
+		"Thu": "arapo",
+		"Fri": "Arapote\u0129",
+		"Sat": "arapok\u00f5i"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Eplanea Evento Pyahu"
+		},
+		"tool": {
+			"HostedBy": "Omotenond\u00e9va {{name}}",
+			"Name": "T\u00e9ra",
+			"AreYouIn": "\u00bfReime piko ipype?",
+			"Yes": "he\u1ebd",
+			"No": "nah\u00e1niri",
+			"Ok": "O\u0129ma",
+			"Cancel": "Heja",
+			"Maybe": "Ikatu mba&#39;e",
+			"Presentation": "Hechauka",
+			"Conversation": "\u00d1omongeta",
+			"Promote": "Emoheraku\u00e3 ko aty guasu",
+			"Reminders": "Mandu\u2019ar\u00e3",
+			"RemindersLabel": "Aipota o\u00f1emombe\u2019u ch\u00e9ve pete\u0129 mba\u2019e ojeh\u00fava:",
+			"MoreInfo": "Hetave marandu",
+			"Registration": "Inscripci\u00f3n rehegua",
+			"SetReminders": "Por favor, emo\u0129 mandu\u2019ar\u00e3",
+			"ReservationFee": "Reserva rehegua Cuota",
+			"AddParticipants": "O\u00f1emo\u0129ve umi Participante-ku\u00e9ra",
+			"YouAreNotParticipated": "Nde ndaha\u2019\u00e9i pete\u0129 participante pe evento-pe",
+			"ManageReservation": "Ojesareko Reserva rehe",
+			"UpdateFutureReservations": "\u00bfRembopyahuse avei pete\u0129chaite ent\u00e9ro umi rreservasi\u00f3n o\u00fatava?",
+			"RecurringAdmin": "\u00d1emboheko ojejap\u00f3va jey jey",
+			"MakeReservation": "Ejapo Reserva",
+			"StartLiveStream": "Emboguejy en vivo Stream-pe",
+			"LiveStreamStarted": "O\u00f1epyr\u0169ma transmisi\u00f3n en vivo",
+			"LiveStreamEnded": "O\u00f1emohu&#39;\u00e3ma transmisi\u00f3n en vivo",
+			"WebRTCStarted": "O\u00f1epyr\u00fb teleconferencia",
+			"WebRTCEnded": "O\u00f1emohu&#39;\u00e3 teleconferencia",
+			"ClickToViewRecording": "e\u00f1emboja rehecha hag\u0303ua grabaci\u00f3n",
+			"Checkin": "Escanea umi c\u00f3digo asistente rehegua",
+			"Myqr": "Check In rehegua",
+			"CloseEvent": {
+				"button": "Ombogue Evento",
+				"confirm": {
+					"text": {
+						"Cancel": "\u00bfReime seguro rembogueseha ko evento?",
+						"Participant": "O\u0129 1 tapicha oikeva\u2019ekue ko aty guas\u00fape",
+						"Participants": "Ko aty guas\u00fape oime {{count}} tapicha",
+						"Recurring": "Ko mba\u2019e ojeh\u00fava ojejapo jey jey. \u00bfRekanselase avei opaite instancia o\u00fatava avei?"
+					},
+					"trip": {
+						"Cancel": "\u00bfRekanselase avei nde viaje {{tripDirection}} ko evento-pe?",
+						"Passengers": "O\u0129 {{passengerCount}} pasajero ojeroviava nderehe.",
+						"Title": "O\u00f1emboty Viaje"
+					},
+					"directions": {
+						"TO": "G\u0303UAR\u00c3-HAG\u0303UA",
+						"FROM": "GUA",
+						"to": "g\u0303uar\u00e3-hag\u0303ua",
+						"from": "gua"
+					}
+				}
+			},
+			"Calendar": "Calendario rehegua",
+			"Interests": "Intereses rehegua",
+			"Directions": "Direcciones rehegua",
+			"TitleOfEvent": "T\u00edtulo de evento: 1.1.",
+			"OpenTo": "Ojepe&#39;a hagu\u00e3 ",
+			"GoingTo": "o\u00eeta at",
+			"NotGoingTo": "ndoikomo&#39;\u00e3i at",
+			"MaybeGoingTo": "ikatu o\u0129ta at",
+			"AdminDontPay": "Admin natekotev\u1ebdi opaga",
+			"PublisherDontPay": "Editor natekotev\u1ebdi opaga",
+			"EmptyList": "Lista vac\u00eda",
+			"NeedToPayCredits": "Tekotev\u00ea ojepaga: <span>{{amount}} cr\u00e9dito</span>",
+			"PleaseJoinParticipants": "Por favor, eike {{participant}}",
+			"YouReservingPlace": "Rerreserv\u00e1ta h\u00edna nde lug\u00e1r.",
+			"SelectIncludesToAdd": "Eiporavo pete\u0129 t\u00e9r\u00e3 hetave {{TypeDisplayPlural}} emo\u0129 hag\u0303ua:",
+			"YouHaveNotRegisteredAnyIncluded": "Nde nereregistr\u00e1i gueteri mba&#39;eveichagua {{TypeDisplayPlural}}",
+			"Proceed": "Jehove",
+			"MakeChanges": "E\u00f1ongatu Che \u00d1emoambue",
+			"CancelReservation": "Ombogue reserva pukukue",
+			"Total": "Opaite",
+			"RequiredRelatedParticipants": "Ko evento oikotev\u00ea participante: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "Emohenda disponibilidad &quot; {{title}} &quot; embopyahu hag\u0303ua \u00f1emboheko ojejap\u00f3va jey jey",
+			"Prepayment": "Pago previo rehegua",
+			"PrepaymentConfirm": "Rokobr\u00e1ta pete\u0129 cuota nominal 1 d\u00f3lar. Rehupyt\u00fdta pe n\u00famero correspondiente de cr\u00e9ditos. Ko\u2019\u00e3 cr\u00e9dito ojeaplikava\u2019er\u00e3 nde pago completo gotyo pe evento rehe."
+		},
+		"composer": {
+			"SetLocation": "Emohenda Che Mo\u00f5pa",
+			"Locally": "localmente-pe",
+			"EventInfoLink": "Enlace Info Evento rehegua",
+			"TicketPurchaseLink": "Enlace de Jogua Boleto rehegua",
+			"ChooseAvailability": "Eiporavo Servicio Disponible",
+			"ChooseActivity": "Eiporavo pete\u0129 Tembiapor\u00e3",
+			"ChoosePublisher": "Eiporavo Editor",
+			"Day": "\u00c1ra",
+			"Starting": "O\u00f1epyr\u0169vo",
+			"Duration": "Hi&#39;arekue",
+			"Hour": "Aravo",
+			"Hours": "Aravoku\u00e9ra",
+			"Minutes": "Aravo&#39;i",
+			"Ending": "O\u00f1emohu\u2019\u00e3vo",
+			"People": "Yvyp\u00f3ra",
+			"Share": "Mboja&#39;o",
+			"Continue": "Mbojoapy",
+			"Recurring": "Ojejap\u00f3va jey jey",
+			"RecurringTitle": "\u00c1ra Ojejap\u00f3va jey jey",
+			"Daily": "\u00c1ra ha \u00e1ra",
+			"Weekly": "Arapok\u00f5indy pukukue",
+			"Monthly": "Jasy jave",
+			"SelectLocation": "Eiporavo ra\u1ebd pete\u0129 lug\u00e1r.",
+			"eventType": "Evento Tipo rehegua",
+			"EditTitle": "Epensam\u00edna pete\u0129 t\u00edtulo i\u00f1interes\u00e1ntevare...",
+			"SetTitle": "Emohenda evento r\u00e9ra",
+			"ScheduleOnlineConference": "Programa Teleconferencia rehegua",
+			"SOCDescription": "Por favor, edefini conferencia o\u00f1epyr\u0169 ha opa aravo. Mayma tapicha oikundah\u00e1va evento ko periodo de tiempo-pe o\u00f1econect\u00e1ta auto conferencia en l\u00ednea-pe.",
+			"EndDate": "Paha",
+			"location": {
+				"Title": "Emohenda Nde Mo\u00f5pa o\u0129"
+			},
+			"interest": {
+				"Title": "Eiporavo pete\u0129 Tembiapor\u00e3",
+				"Filter": "Ojeheka intereses ..."
+			},
+			"SetLivestream": "Emboja enlace livestream / videoconferencia-pe"
+		},
+		"EventAlreadyClosed": "Ko evento o\u00f1embot\u00fdma",
+		"ErrorLeaveEndedEvent": "Perd\u00f3n, pero ndaikat\u00fai reheja evento o\u00f1emohu&#39;\u00e3va",
+		"addToCalendar": {
+			"permissions": {
+				"title": "\u00bfO\u00f1embojoapy Calendario-pe?",
+				"prompt": "\u00bfRemo\u0129s\u00e9pa ko evento nde calendario-pe?",
+				"yes": "he\u1ebd",
+				"no": "nah\u00e1niri"
+			},
+			"dialog": {
+				"Title": "Emo\u0129 Evento nde Calendario-pe"
+			}
+		}
+	},
+	"payment": {
+		"amountPlaceholder": "0",
+		"selectOptions": {
+			"free": "Evento gratuito rehegua",
+			"optional": "Aporte opcional rehegua",
+			"required": "O\u00f1eikotev\u1ebdva ojepaga hagu\u00e3"
+		},
+		"info": {
+			"optional": "Aporte opcional rehegua",
+			"required": "Ojehepyme\u2019\u1ebd hagu\u00e3: {{amount}} {{currency}}",
+			"paid": "hepyme&#39;\u1ebdmbyre"
+		},
+		"confirmationDialog": {
+			"title": "Pago confirmaci\u00f3n rehegua",
+			"content": "Ko evento oreko aporte opcional {{amount}} .",
+			"button": "Pytyv\u00f5kuaa"
+		}
+	},
+	"availabilities": {
+		"Title": "Umi mba\u2019e ojeguerek\u00f3va",
+		"NewAvailability": {
+			"Title": "Disponibilidad Pyahu",
+			"SaveAvailability": "O\u00f1ongatu Disponibilidad rehegua",
+			"SelectTemplate": "Eiporavomi Servicio",
+			"SelectLocation": "Eiporavo Mo\u00f5pa o\u0129",
+			"SelectArea": "Eiporavom\u00edna \u00c1rea",
+			"Type": "Hesegua",
+			"Weekly": "Arapok\u00f5indy pukukue",
+			"RecurringStartDate": "\u00c1ra \u00d1epyr\u0169r\u00e3 ojejap\u00f3va jey jey",
+			"RecurringEndDate": "\u00c1ra paha ojejap\u00f3va jey jey",
+			"EndDate": "\u00c1ra opaha",
+			"ScheduleOnlineConference": "Programa Teleconferencia rehegua",
+			"SetLivestream": "Emboja enlace livestream / videoconferencia-pe",
+			"SelectTimeZone": "Eiporavo Zona de tiempo",
+			"SelectTime": "Ojesareko umi Aravo Ranuras rehe",
+			"SelectTimeSlot": "Eiporavo pete\u0129 aravo\u2019i",
+			"SelectTimeSlots": "Eiporavo umi aravo reipot\u00e1va",
+			"PeopleMin": "Umi visitante m\u00ednimo",
+			"PeopleMax": "M\u00e1ximo visitante-ku\u00e9ra",
+			"PeopleLabels": "Umi rol ojehej\u00e1va",
+			"Next": "Ag\u0303ui",
+			"Back": "Kupe"
+		},
+		"EditAvailability": "Emohenda Disponibilidad rehegua",
+		"SetVisitors": "O\u00f1emohenda Visitantes-ku\u00e9ra",
+		"Price": "Hepykue",
+		"SelectAction": "Eiporavomi tembiapor\u00e3",
+		"OpenProfile": "Perfil ojepe\u2019a",
+		"RemoveStaff": "Oipe\u2019a personal",
+		"InviteStaff": "Oinvita personal-pe",
+		"PleaseSelectTimeSlots": "Eiporavo umi aravo\u2019i",
+		"ExceptionOccurred": "Oiko excepci\u00f3n",
+		"LiveStream": "Transmisi\u00f3n en vivo rehegua",
+		"NotEnoughCreditsToParticipateEvents": "Ndaip\u00f3ri cr\u00e9dito suficiente oparticipa hagu\u00e3 {{eventsAmount}} evento. Tekotev\u1ebd {{needCredits}} cr\u00e9dito. \u00bfRejoguase piko?"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "\u00c1ra o\u00f1epyr\u0169 hagu\u00e3",
+			"endDate": "\u00c1ra opa hagu\u00e3",
+			"justOnce": "Pete\u0129 je\u00fdnte",
+			"justOnceWeekly": "Ko arapok\u00f5ind\u00fdpe a\u00f1oite",
+			"justOnceMonthly": "Ko jas\u00fdpe a\u00f1oite",
+			"recurring": "Ojejap\u00f3va jey jey"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} ndoik\u00e9i gueteri ko evento-pe. \u00bfRemo\u0129se piko um\u00edva pete\u0129 participante ramo?",
+		"userNotFound": "Usuario ndojejuh\u00fai",
+		"UserAlreadyCheckedIn": "{{1}} ojeregistr\u00e1ma {{2}} rupive !",
+		"confirmYes": "he\u1ebd",
+		"confirmNo": "nah\u00e1niri"
+	},
+	"notifications": {
+		"EventActivityIn": "Actividad evento rehegua ary {{{stream.fields.title}}}",
+		"RecurringRulesChanged": "Umi norma ojejap\u00f3va jey jey o\u00f1emoambue evento {{{call 'message.getInstruction' 'eventTitle'}}} pe guar\u00e3",
+		"ManageEmailSubscriptions": "emohenda nde suscripci\u00f3n correo electr\u00f3nico rehegua",
+		"IfUnsubscribe": "Oim\u00e9ramo redesabon\u00e1se",
+		"ClickHereToVisitEvent": "Por favor, eity ko&#39;\u00e1pe revisita hagu\u00e3 evento",
+		"Calendars/reminder": "Evento &quot; {{{call 'message.getInstruction' 'name'}}} &quot; o\u00f1epyr\u0169ta {{{call 'message.getInstruction' 'time'}}} pe",
+		"webrtc": {
+			"Started": "O\u00f1epyr\u00fb teleconferencia",
+			"Ended": "O\u00f1emohu&#39;\u00e3 teleconferencia"
+		},
+		"livestream": {
+			"Started": "O\u00f1epyr\u0169 transmisi\u00f3n en vivo",
+			"Ended": "O\u00f1emohu&#39;\u00e3 transmisi\u00f3n en vivo",
+			"ClickToView": "Ehecha ko\u2019\u00e1pe."
+		}
+	},
+	"import": {
+		"linkTitle": "Emyenyh\u1ebd Ko Hoja de C\u00e1lculo",
+		"fileLabel": "Ojeguerahauka Hoja de c\u00e1lculo:",
+		"importOptions": "Opciones rehegua",
+		"importProgress": "Ak\u00e3rapu&#39;\u00e3",
+		"sampleCSV": "Emboguejy CSV Tembiechar\u00e3",
+		"joinEventLabel": "Embojoaju puruh\u00e1ra ndive evento aleatorio-pe",
+		"smsText": "Hey, amondo ramoite nd\u00e9ve pete\u0129 enlace {{communityName}} -pe. Por favor, ehechami.",
+		"emailSubject": "Omondo ramoite nd\u00e9ve pete\u0129 enlace",
+		"emailBody": "Hey, amondo ramoite nd\u00e9ve pete\u0129 invitaci\u00f3n {{communityName}} -pe. Por favor, ehechami.",
+		"fileNotFound": "\u00d1embyasy, CSV rembiapokue ndojejuh\u00fai.",
+		"fileEmpty": "\u00d1embyasy, CSV rembiapokue o\u0129 nandi.",
+		"fieldNotFound": "Ndojejuh\u00fai tenda o\u00f1eikotev\u1ebdva &quot; {{1}} &quot;",
+		"userIdNotFound": "puruh\u00e1ra o\u0129 ha katu id vac\u00edo",
+		"activateUsers": "omondo marandu activaci\u00f3n rehegua umi puruh\u00e1rape?",
+		"taskStreamInvalid": "tembiapo rape ndojepor\u00fai",
+		"instructionsEmpty": "tembiapor\u00e3 ysyry \u00f1e\u2019\u1ebdmondo nandi",
+		"interestsEmpty": "ndaikat\u00fai ohupyty intereses",
+		"interestAbsent": "inter\u00e9s {{1}} ndojejuh\u00fai",
+		"complete": "Orekop\u00e1va",
+		"errorLine": "l\u00ednea {{1}}",
+		"errorsTitle": "Oiko jejavy",
+		"communityUsers": "K\u00f3va ha\u2019e lista de comunidades",
+		"toMainCommunityToo": "ojoaju comunidad principal ndive avei",
+		"ChooseFile": "eiporavo archivo"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "Ohechauka pete\u0129 mba\u2019e ojeh\u00fava tapichaku\u00e9ra ikatuh\u00e1pe oparticipa",
+			"displayType": "Jeguerohyha"
+		},
+		"Calendars/recurring": {
+			"description": "Ojepuru o\u00f1embojoaju hag\u0303ua umi arroyo oje\u2019\u00e9va ojejapo jey jey hag\u0303ua peri\u00f3dicamente",
+			"displayType": "Acontecimiento ojejap\u00f3va jey jey"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "O\u00f1emo\u0129ve Slot",
+		"StartTime": "Aravo \u00d1epyr\u0169r\u00e3",
+		"EndTime": "Opa Aravo",
+		"Save": "Pysyr\u00f5",
+		"AddTimeSlot": "Ombojoapy Aravo Renda",
+		"CopyFromDay": "Ekopia \u00e1ra guive",
+		"Nearest": "Hi\u2019agu\u0129v\u00e9va",
+		"Today": "Ko \u00e1rape",
+		"Tomorrow": "Ko&#39;\u1ebdr\u00f5",
+		"AfterTomorrow": "Ko\u2019\u1ebdr\u00f5 rire"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "Ojehai Calendario-pe",
+		"copyLinkBelow": "Emboguejy pe bot\u00f3n o\u0129va igu\u00fdpe ekopia hag\u0303ua pe enlace nde portapapeles-pe",
+		"tapToCopy": "Epoko pe bot\u00f3n o\u0129va igu\u00fdpe ekopia hag\u0303ua pe enlace nde portapapeles-pe",
+		"goTo": "Eike ko\u2019\u00e1pe:",
+		"pasteCopiedTo": "Emboja enlace ojekop\u00edva &quot;URL de calendario&quot; rendagu\u00e9pe",
+		"clickAddCalendar": "Emboguejy &quot;Emo\u0129ve calendario&quot; vore",
+		"copyLink": "Enlace de copia",
+		"linkCopied": "Enlace Ojekopia",
+		"step2": "Enlace Ojekopia. \u00d1ande \u00f1aime Google Calendario abierto rehegua. Tekotev\u1ebdta emo\u0129 pe joajuha jehaipyre ryr\u00fape, e\u00f1emboguejy &quot;Emo\u0129ve arapapaha&quot;, ha emboty pe ficha (ehecha ta\ua78c\u00e3ngam\u00fdi igu\u00fdpe)",
+		"calendarAppPreferences": "Eipe\u2019a umi Preferencia o\u0129va Calendario App-pe nde Mac-pe, ha emohenda Default Calendar App ojehechaukah\u00e1icha ko\u2019\u00e1pe.",
+		"thenCloseDialog": "Up\u00e9i emboty ko \u00f1e\u2019\u1ebd\u00f1emi re\u00f1embohas\u00e1vo nde calendario-pe!",
+		"success": "Calendario o\u00f1embojoaju por\u00e3"
+	},
+	"@override": {
+		"Assets/content": {
+			"credits": {
+				"EventParticipation": "Evento Participaci\u00f3n rehegua"
+			},
+			"payments": {
+				"reasons": {
+					"EventParticipation": "Evento Participaci\u00f3n rehegua"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+  "2026-01-01":[{"National":["new_year_s_day"]}],
+  "2026-02-18":[{"National":["ash_wednesday"]}, {"Catholic":["ash_wednesday"]}],
+  "2026-04-03":[{"National":["good_friday"]}, {"Catholic":["good_friday"]}],
+  "2026-04-06":[{"National":["easter_monday"]}],
+  "2026-05-23":[{"National":["labour_day"]}, {"Jewish":["shavuot_day2"]}],
+  "2026-08-01":[{"National":["emancipation_day"]}],
+  "2026-08-06":[{"National":["independence_day"]}],
+  "2026-10-16":[{"National":["national_heroes_day"]}],
+  "2026-12-25":[{"National":["christmas_day"]}, {"Catholic":["christmas"]}],
+  "2026-12-26":[{"National":["st_stephen_s_day"]}],
+  "2027-01-01":[{"National":["new_year_s_day"]}],
+  "2027-02-10":[{"National":["ash_wednesday"]}, {"Catholic":["ash_wednesday"]}],
+  "2027-03-26":[{"National":["good_friday"]}, {"Catholic":["good_friday"]}],
+  "2027-03-29":[{"National":["easter_monday"]}],
+  "2027-05-23":[{"National":["labour_day"]}],
+  "2027-08-01":[{"National":["emancipation_day"]}],
+  "2027-08-06":[{"National":["independence_day"]}],
+  "2027-10-16":[{"National":["national_heroes_day"]}],
+  "2027-12-25":[{"National":["christmas_day"]}, {"Catholic":["christmas"]}],
+  "2027-12-26":[{"National":["st_stephen_s_day"]}]
+}

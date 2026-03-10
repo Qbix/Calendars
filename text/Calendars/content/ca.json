@@ -127,7 +127,9 @@
 			"WebRTCStarted": "Va comen\u00e7ar la teleconfer\u00e8ncia",
 			"WebRTCEnded": "S&#39;ha acabat la teleconfer\u00e8ncia",
 			"Prepayment": "Prepagament",
-			"PrepaymentConfirm": "Cobrarem una tarifa nominal d&#39;1 $. Rebr\u00e0s el nombre corresponent de cr\u00e8dits. Aquests cr\u00e8dits s&#39;aplicaran al pagament complet de l&#39;esdeveniment."
+			"PrepaymentConfirm": "Cobrarem una tarifa nominal d&#39;1 $. Rebr\u00e0s el nombre corresponent de cr\u00e8dits. Aquests cr\u00e8dits s&#39;aplicaran al pagament complet de l&#39;esdeveniment.",
+			"UserNotParticipated": "{{1}} no participa a l&#39;esdeveniment",
+			"PayToAttend": "Paga per assistir"
 		},
 		"composer": {
 			"SetLocation": "Estableix la meva ubicaci\u00f3",
@@ -217,7 +219,8 @@
 		"confirmParticipate": "{{1}} encara no forma part de l&#39;esdeveniment. Vols afegir-los com a participant?",
 		"userNotFound": "Usuari no trobat",
 		"confirmYes": "S\u00ed",
-		"confirmNo": "No"
+		"confirmNo": "No",
+		"UserAlreadyCheckedIn": "{{1}} ja ha estat registrat per {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Activitat de l&#39;esdeveniment a {{{stream.fields.title}}}",
@@ -364,6 +367,9 @@
 				"reasons": {
 					"EventParticipation": "Participaci\u00f3 en esdeveniments"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Participaci\u00f3 en esdeveniments"
 			}
 		}
 	}

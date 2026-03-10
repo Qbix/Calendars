@@ -53,11 +53,17 @@ Q.Tool.define("Calendars/event", function(options) {
 
 	tool.modePrepayment && $toolElement.attr("data-modePrepayment", tool.modePrepayment);
 	$toolElement.attr("data-mode", this.state.mode);
-	$toolElement.attr("data-admin", Q.getObject("Event.isAdmin", Calendars));
 
-	var pipe = new Q.Pipe(['appTexts', 'calendarsTexts', 'style'], tool.refresh.bind(tool));
+	// array of Users/avatar tools observed to update badges
+	tool.avatarsToRefresh = [];
 
-	// get app texts
+	// just to minimize var name
+	tool.closeEventConfirm = tool.text.event.tool.CloseEvent.confirm;
+
+	var pipe = new Q.Pipe(['appTexts'], tool.refresh.bind(tool));
+
+	// get app texts for particular related participants
+	// because related participants diff for each application, plugin can't know each of them
 	Q.Text.get(Users.communityId + '/content', function (err, content) {
 		var msg = Q.firstErrorMessage(err, content);
 		if (msg) {
@@ -69,38 +75,6 @@ Q.Tool.define("Calendars/event", function(options) {
 		tool.appTextRelatedParticipants = Q.getObject("assets.service.relatedParticipants", tool.appText);
 		pipe.fill('appTexts')();
 	});
-
-	// get Calendars texts
-	Q.Text.get('Calendars/content', function (err, content) {
-		var msg = Q.firstErrorMessage(err, content);
-		if (msg) {
-			console.error(msg);
-			return;
-		}
-
-		tool.text = content;
-		tool.closeEventConfirm = content.event.tool.CloseEvent.confirm;
-		pipe.fill('calendarsTexts')();
-	});
-
-	Q.addStylesheet('{{Calendars}}/css/event.css', { slotName: 'Calendars' }, pipe.fill('style'));
-
-	// listen for Calendars/checkin message and change participants tool
-	Streams.Stream.onMessage(state.publisherId, state.streamName, 'Calendars/checkin')
-	.set(function(message) {
-		var instructions = JSON.parse(message.instructions);
-
-		if (!instructions.checkin) {
-			return;
-		}
-
-		// update Streams/participants tool
-		Calendars.Event.updateParticipants({
-			tool: tool,
-			userId: instructions.userId,
-			type: 'checkin'
-		});
-	}, tool);
 
 	// Listen for Streams/changed message, and if title modified, change event title.
 	Streams.Stream.onMessage(state.publisherId, state.streamName, 'Streams/changed')
@@ -117,6 +91,11 @@ Q.Tool.define("Calendars/event", function(options) {
 		Streams.Stream.onMessage(state.publisherId, state.streamName, 'Calendars/going/'+going)
 		.set(function(message) {
 			if (message.byUserId === userId) {
+				var instructions = JSON.parse(message.instructions);
+				tool.stream.participant = new Streams.Participant(instructions.participant);
+				tool.refreshParticipants({
+					participant: instructions.participant
+				});
 				tool.updateInterface(going);
 			}
 		}, tool);
@@ -135,19 +114,11 @@ Q.Tool.define("Calendars/event", function(options) {
 		tool.switchChatWebrtc(false);
 	}, tool);
 
-	Streams.Stream.onMessage(state.publisherId, state.streamName, 'Streams/participant/save')
+	Streams.Stream.onMessage(state.publisherId, state.streamName, 'Streams/participant/extraUpdated')
 	.set(function(message) {
-		Streams.get.force(state.publisherId, state.streamName, function (err, eventStream, extra) {
-			tool.participants = extra.participants || [];
-			var participantsTool = Q.Tool.from($(".Calendars_event_participants", tool.element)[0], "Streams/participants");
-			if (!participantsTool) {
-				return console.warn("Calendars/event: participants tool not found");
-			}
-
-			Q.handle(participantsTool.state.onRefresh, participantsTool);
-		}, {
-			withParticipant: true,
-			participants: 100
+		var instructions = JSON.parse(message.instructions);
+		tool.refreshParticipants({
+			participant: instructions.participant
 		});
 	}, tool);
 },
@@ -205,6 +176,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		var $te = $(this.element);
 		var state = tool.state;
 		var isAdmin = false;
+        var isScreener = false;
 		var userId = Users.loggedInUserId();
 
 		Streams.retainWith(tool).get(state.publisherId, state.streamName, function (err, eventStream, extra) {
@@ -224,10 +196,11 @@ Q.Tool.define("Calendars/event", function(options) {
 				$te.addClass("Calendars_event_ended");
 			}, tool);
 
+			tool.participants = Q.getObject("participants", extra) || [];
 			// create ordering for participants tool
 			var participantsOrdering = [];
-			Q.each(Q.getObject("participants", extra), function (userId, streamsParticipant) {
-				if (streamsParticipant.testRoles(['leader', 'speaker', 'host', 'staff'])) {
+			Q.each(tool.participants, function (userId, participant) {
+				if (participant.testRoles(['leader', 'speaker', 'host', 'staff'])) {
 					participantsOrdering.push(userId);
 				}
 			});
@@ -243,6 +216,14 @@ Q.Tool.define("Calendars/event", function(options) {
 
 			// whether user have permissions to edit event
 			isAdmin = state.isAdmin = stream.testWriteLevel('close');
+			if (isAdmin) {
+				$te.attr("data-admin", true);
+				$te.attr("data-screener", true);
+			}
+            isScreener = state.isScreener = stream.participant && stream.participant.testRoles('screener');
+			if (isScreener) {
+				$te.attr("data-screener", true);
+			}
 
 			// on event state changed event
 			stream.onAttribute('state').set(function (attributes, k) {
@@ -273,7 +254,6 @@ Q.Tool.define("Calendars/event", function(options) {
 				state.venueRedundant = true;
 			}
 
-			tool.participants = extra.participants || [];
 			var interests = Calendars.Event.getInterests(stream);
 			var interestTitle = [];
 			for (var i in interests) {
@@ -307,6 +287,17 @@ Q.Tool.define("Calendars/event", function(options) {
 
 				var $participants = $(".Calendars_event_participants", tool.element);
 				if ($participants.length && tool.stream && tool.stream.fields.participatingCount >= fields.peopleMin) {
+					$participants[0].forEachTool("Users/avatar", function () {
+						var userId = this.state.userId;
+						if (!userId) {
+							return;
+						}
+
+						tool.refreshParticipants({
+							avatar: this
+						});
+					});
+
 					$participants.tool("Streams/participants", {
 						max: state.peopleMax,
 						maxShow: Q.getObject("Event.defaults.participants.maxShow", Calendars),
@@ -443,9 +434,44 @@ Q.Tool.define("Calendars/event", function(options) {
 				tool.$('.Calendars_info .Q_button').click(function () {
 					var $this = $(this);
 					var aspect = $this.attr('data-invoke');
+
+					if (aspect === 'checkin') {
+						return Calendars.Event.scanEventCheckinQRCodes(stream, function () {
+							tool.refreshParticipants({
+								avatar: this
+							});
+
+							if (!state.isAdmin) {
+								return;
+							}
+
+							// contextual manage roles
+							var userId = this.state.userId;
+							var className = "Calendars_event_avatar_contextual";
+							$(this.element).plugin('Q/contextual', {
+								className,
+								elements: $('<li>'),
+								onConstruct: function (contextual) {
+									contextual.setAttribute("data-userId", userId);
+									Q.Contextual.onShow.set(function ($contextual) {
+										if (!$contextual.hasClass(className) || $contextual.attr("data-userId") !== userId) {
+											return;
+										}
+
+										var $li = $("li", $contextual);
+										$li.html($('<div class="loading_handleRoles">'));
+										tool.handleRoles(userId, $li, true);
+									});
+								}
+							});
+							this.Q.beforeRemove.set(function () {
+								$(this.element).plugin('Q/contextual', 'remove');
+							}, 'Calendars_event_avatar_contextual');
+						});
+					}
+
 					Q.handle(state.onInvoke(aspect), tool, [tool.stream, $this]);
 				});
-
 
 				// if event type defined
 				if (state.show.eventType) {
@@ -539,11 +565,10 @@ Q.Tool.define("Calendars/event", function(options) {
 
 		function _proceed () {
 			var stream = this;
-			var participantsTool = tool.child('Streams_participants');
-			if (participantsTool) {
-				participantsTool.state.onRefresh.add(_onRefresh, tool);
-				participantsTool.Q.onStateChanged('count').add(function () {
-					var $participants = $(participantsTool.element);
+			tool.participantsTool = tool.child('Streams_participants');
+			if (tool.participantsTool) {
+				tool.participantsTool.Q.onStateChanged('count').add(function () {
+					var $participants = $(tool.participantsTool.element);
 					if (state.hideParticipants === false || this.state.count > (parseInt(state.hideParticipants) || 0) || stream.getAttribute("userId") === userId) {
 						$participants[0].style.display = 'flex';
 					} else {
@@ -727,87 +752,122 @@ Q.Tool.define("Calendars/event", function(options) {
 				tool.updateInterface(going);
 			}
 		}
+	},
 
-		function _onRefresh() {
-			Streams.get(state.publisherId, state.streamName, function (err, stream) {
-				var msg = Q.firstErrorMessage(err);
-				if (msg) {
-					console.warn(msg);
-					return;
-				}
-				Q.handle(state.onRefresh, tool);
-			});
+	/**
+	 * Add or update avatar badges on participant updated
+	 * @method refreshParticipants
+	 * @param {object} params
+	 * @param {Q.Tool} [params.avatar] Users/avatar tool need to update
+	 * @param {Object} [params.participant] participant need to update
+	 */
+	refreshParticipants: function (params) {
+		var tool = this;
+		var state = this.state;
 
-			// add to participants onRefresh event handler to update avatar data-checkin
-			// iterate event participants
-			Q.each(tool.participants, function (index, participant) {
-				if (participant.state !== 'participating') {
-					return;
-				}
-
-				var extra = participant.extra ? JSON.parse(participant.extra) : null;
-
-				Calendars.Event.updateParticipants({
-					tool: tool,
-					userId: participant.userId,
-					type: (function () {
-						if (participant.testRoles('leader')) {
-							return 'leader';
-						} else if (participant.testRoles('host')) {
-							return 'host';
-						} else if (participant.testRoles('speaker')) {
-							return 'speaker';
-						} else if (participant.testRoles('staff')) {
-							// logged user is a staff in this event
-							if (Q.Users.loggedInUserId() === participant.userId) {
-								$te.attr("data-staff", true);
-							}
-
-							return 'staff';
-						}
-					})()
-				});
-
-				if (Q.getObject(['checkin'], extra)) {
-					Calendars.Event.updateParticipants({
-						tool: tool,
-						userId: participant.userId,
-						type: 'checkin'
-					});
-				}
-
-				Calendars.Event.updateParticipants({
-					tool: tool,
-					userId: participant.userId,
-					type: (function () {
-						if (participant.testRoles('rejected')) {
-							return 'rejected';
-						} else if (participant.testRoles('requested')) {
-							return 'requested';
-						} else if (participant.testRoles('registered')) {
-							return 'registered';
-						}
-					})()
-				});
-
-				if (Q.getObject("type", tool.stream.getAttribute('payment')) === 'required') {
-					Calendars.Event.updateParticipants({
-						tool: tool,
-						userId: participant.userId,
-						type: (function () {
-							switch (Q.getObject(['paid'], extra)) {
-								case 'reserved':
-									return 'paid-reserved';
-								case 'fully':
-									return 'paid-fully';
-								case 'no':
-									return 'paid-no';
-							}
-						})()
-					});
-				}
-			});
+		var definedAvatar = Q.getObject("avatar", params);
+		if (Q.typeOf(definedAvatar) === 'Q.Tool' && definedAvatar.name === "users_avatar" && definedAvatar.state.userId) {
+			tool.avatarsToRefresh.push(definedAvatar);
+		} else {
+			definedAvatar = null;
 		}
+
+		var definedParticipant = Q.getObject("participant", params);
+		if (definedParticipant) {
+			definedParticipant = new Streams.Participant(definedParticipant);
+			Q.setObject("participants." + definedParticipant.userId, definedParticipant, tool);
+		} else {
+			definedParticipant = null;
+		}
+
+		Streams.get(state.publisherId, state.streamName, function (err, stream) {
+			var msg = Q.firstErrorMessage(err);
+			if (msg) {
+				console.warn(msg);
+				return;
+			}
+			Q.handle(state.onRefresh, tool);
+		});
+
+		// add to participants onRefresh event handler to update avatar data-roles, data-paid
+		// iterate event participants
+		Q.each(tool.participants, function (i, participant) {
+			// if participant left stream, do nothing
+			if (participant.state !== 'participating') {
+				return;
+			}
+
+			if (definedParticipant && definedParticipant.userId !== participant.userId) {
+				return;
+			}
+
+			Q.each(tool.avatarsToRefresh, function (j, avatar) {
+				if (definedAvatar && definedAvatar.id !== avatar.id) {
+					return;
+				}
+
+				if (avatar.state.userId !== participant.userId) {
+					return;
+				}
+
+				// if avatar tool removed or tool.element is out of DOM, remove from avatarsToRefresh and exit
+				if (avatar.removed || !avatar.element.isConnected) {
+					return tool.avatarsToRefresh.splice(j, 1);
+				}
+
+				Calendars.Event.updateParticipants({
+					participant,
+					avatar,
+					type: (function () {
+						var type = [];
+						var item;
+
+						for (item of ['leader', 'host', 'speaker', 'staff']) {
+							if (!participant.testRoles(item)) {
+								continue;
+							}
+
+							type.push(item);
+							$(tool.element).attr("data-" + item, true);
+							break;
+						}
+
+						for (item of ['attendee', 'arrived']) {
+							if (!participant.testRoles(item)) {
+								continue;
+							}
+
+							type.push(item);
+							break;
+						}
+
+						for (item of ['rejected', 'requested', 'registered']) {
+							if (!participant.testRoles(item)) {
+								continue;
+							}
+
+							type.push(item);
+							break;
+						}
+
+						if (Q.getObject("type", tool.stream.getAttribute('payment')) === 'required') {
+							switch (participant.getExtra('paid')) {
+								case 'reserved':
+									type.push('paid-reserved');
+									break;
+								case 'fully':
+									type.push('paid-fully');
+									break;
+								default:
+									type.push('paid-no');
+							}
+						}
+
+						return type;
+					})()
+				});
+			});
+		});
 	},
 	/**
 	 * Switch chat and webrtc buttons depends on webrtc currently happening
@@ -2017,9 +2077,9 @@ Q.Tool.define("Calendars/event", function(options) {
 						if (!state.isAdmin && needCredits > currentCredits) {
 							Q.Dialogs.pop();
 							Q.Assets.Payments.stripe({
-								amount: 0, // needCredits - currentCredits,
+								amount: needCredits - currentCredits,
 								currency: options.currency || 'USD',
-								reason: 'EventParticipation',
+								reason: 'BoughtCredits',
 								metadata: {
 									publisherId: tool.state.publisherId,
 									streamName: tool.state.streamName
@@ -2207,9 +2267,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		//-------------------------------------------------------------
 		// 1. No-op if unchanged
 		//-------------------------------------------------------------
-		var previousGoing = $te.attr("data-going");
-
-		if (previousGoing === going) {
+		if ($te.attr("data-going") === going) {
 			Q.handle(callback, tool, [false]);
 			return false;
 		}
@@ -2218,14 +2276,12 @@ Q.Tool.define("Calendars/event", function(options) {
 		// 2. UI utility helpers
 		//-------------------------------------------------------------
 		var revertUI = function () {
-			$te.attr("data-going", previousGoing);
-			tool.updateInterface(previousGoing);
+			Q.handle(callback, tool, [false]);
 			tool.$goingElement.removeClass("Q_working");
 		};
 
 		var finalizeUI = function () {
 			tool.updateInterface(going);
-			Q.handle(state.onGoing, tool, [going, tool.stream, tool.participant]);
 			Q.handle(callback, tool, [true]);
 		};
 
@@ -2245,7 +2301,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		//-------------------------------------------------------------
 		// 4. Prepayment mode (ensure Stripe customer profile)
 		//-------------------------------------------------------------
-		if (going === "yes" && tool.modePrepayment) {
+		if (going === "yes" && tool.modePrepayment && !Q.getObject("payToAttend", options)) {
 
 			if (!tool.stream.getAttribute('payment') || Q.getObject("payment.isAssetsCustomer", state)) {
 				return tool.going("maybe", callback, options);
@@ -2254,12 +2310,11 @@ Q.Tool.define("Calendars/event", function(options) {
 			Q.Assets.Payments.stripe({
 				amount: 1,
 				currency: "USD",
-				reason: 'EventParticipation',
+				reason: 'BoughtCredits',
 				description: tool.text.event.tool.Prepayment
 			}, function (err) {
 				if (err) {
 					revertUI();
-					Q.handle(callback, tool, [false]);
 					return;
 				}
 				state.payment.isAssetsCustomer = true;
@@ -2310,8 +2365,7 @@ Q.Tool.define("Calendars/event", function(options) {
 			_donate()
 				.catch(function (err) { err && console.warn(err); })
 				.then(function () {
-					tool.getPaymentInfo();
-					tool.$goingElement.removeClass("Q_working");
+					state.payment.isAssetsCustomer = true;
 					Q.handle(state.onPaid, tool);
 				});
 			return;
@@ -2343,16 +2397,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		 * @return {Promise}
 		 */
 		function _saveGoing(targetGoing) {
-			var changed = ($te.attr("data-going") !== targetGoing);
-
-			if (changed) {
-				$te.attr("data-going", targetGoing);
-			}
-
 			return new Q.Promise(function (resolve, reject) {
-
-				if (!changed) return reject("no_change");
-
 				Q.req(
 					"Calendars/going",
 					["stream","participant","payment","paid"],
@@ -2381,28 +2426,30 @@ Q.Tool.define("Calendars/event", function(options) {
 								//-------------------------------------------------
 								// Server instructs client to open Stripe
 								//-------------------------------------------------
-								if (paymentDetails && paymentDetails.intent) {
+								if (paymentDetails && paymentDetails.intent && paymentDetails.intent.instructions) {
 
 									// Note that mere presence of .intentToken without
 									// a corresponding .intent object means that the server
 									// has 
-									var intent = paymentDetails.intent;
+									var instructions = paymentDetails.intent.instructions;
 									var stripeOptions = {
 										intentToken   : paymentDetails.intentToken,
-										amount        : intent.amount,
-										currency      : intent.currency,
-										reason        : intent.reason,
-										// metadata      : intent.metadata || {},
-										toPublisherId : intent.toPublisherId,
-										toStreamName  : intent.toStreamName
+										amount        : instructions.amount,
+										currency      : instructions.currency,
+										reason        : 'BoughtCredits',
+										// metadata      : instructions.metadata || {},
+										toPublisherId : instructions.toPublisherId,
+										toStreamName  : instructions.toStreamName
 									};
 
 									Q.Assets.Payments.stripe(
 										stripeOptions,
 										function () {
-											tool.getPaymentInfo();
 											Q.handle(state.onPaid, tool);
-											resolve(response);
+											Q.Assets.onCreditsChanged.setOnce(function (credits) {
+												state.payment.isAssetsCustomer = true;
+												tool.going(targetGoing, callback, options);
+											}, tool);
 										},
 										function () {
 											revertUI();
@@ -2512,9 +2559,11 @@ Q.Tool.define("Calendars/event", function(options) {
 		state.show.going = parseInt(tool.stream.getAttribute('startTime')) * 1000 > Date.now();
 
 		// check if user is publisher or admin for current community
-		if (state.isAdmin) {
+        if (state.isAdmin || state.isScreener) {
+            state.show.checkin = true;
+        }
+        if (state.isAdmin) {
 			state.show.editWebrtc = true;
-			state.show.checkin = true;
 			state.show.closeEvent = true;
 
 			// if event is recurring and user have admin permissions, show adminRecurring button
@@ -2522,7 +2571,7 @@ Q.Tool.define("Calendars/event", function(options) {
 				state.show.adminRecurring = true;
 			}
 		} else {
-			state.show.myqr = !!(tool.stream.participant && tool.stream.participant.testRoles('registered'));
+			state.show.myqr = !!(tool.stream.participant && tool.stream.participant.getExtra('going') !== 'no');
 		}
 		tool.$(".Calendars_info .Calendars_aspect_myqr")[state.show.myqr ? "slideDown" : "slideUp"](300);
 
@@ -2593,14 +2642,23 @@ Q.Tool.define("Calendars/event", function(options) {
 	updateInterface: function (going, duringRefresh) {
 		going = going || "no";
 		var tool = this;
+		var $toolElement = $(this.element);
+
+		if ($toolElement.attr('data-going') === going) {
+			return;
+		}
 
 		tool.setShow();
 
-		$(tool.element).attr('data-going', going);
+		$toolElement.attr('data-going', going);
 
 		tool.$('.Calendars_going [data-going=' + going + ']')
 			.addClass('Q_selected')
 			.siblings().removeClass('Q_selected');
+
+		tool.$goingElement.removeClass("Q_working");
+
+		Q.handle(tool.state.onGoing, tool, [going, tool.stream, tool.participant]);
 
 		if (going === 'no' && !duringRefresh) {
 			_checkTrips();
@@ -2672,12 +2730,12 @@ Q.Tool.define("Calendars/event", function(options) {
 	 * @method handleRoles
 	 * @param {string} userId
 	 * @param {Element|jQuery} element
+	 * @param {Boolean} [replace] if true replace element content instead append
 	 */
-	handleRoles: function (userId, element) {
-		var tool = this;
+	handleRoles: function (userId, element, replace) {
 		var state = this.state;
 
-		if (!state.isAdmin || !tool.modePrepayment) {
+		if (!state.isAdmin) {
 			return;
 		}
 
@@ -2686,10 +2744,15 @@ Q.Tool.define("Calendars/event", function(options) {
 				return;
 			}
 
-			Q.Template.render('Calendars/event/roles', {
-				roles: ['rejected', 'requested', 'registered'],
-				paid: ['no', 'reserved', 'fully']
-			}, function (err, html) {
+			var options = {
+				roles: ['rejected', 'requested', 'registered']
+			};
+			if (Q.getObject("payment.type", state) === 'required') {
+				options.paymentRequired = true;
+				options.paid = ['no', 'refunded', 'reserved', 'fully'];
+			}
+
+			Q.Template.render('Calendars/event/roles', options, function (err, html) {
 				if (err) {
 					return;
 				}
@@ -2746,7 +2809,12 @@ Q.Tool.define("Calendars/event", function(options) {
 					});
 
 				});
-				$(element).append($html);
+
+				if (replace) {
+					$(element).html($html);
+				} else {
+					$(element).append($html);
+				}
 			});
 		}, {
 			fields: {
@@ -2755,6 +2823,7 @@ Q.Tool.define("Calendars/event", function(options) {
 				userId
 			}
 		});
+<<<<<<< HEAD
 	},
 	Q: {
 		beforeRemove: function () {
@@ -2767,6 +2836,8 @@ Q.Tool.define("Calendars/event", function(options) {
 		notificationsOn: '<svg fill="#000000" version="1.1" id="Layer_1" width="690.47144" height="836.92456" viewBox="796 796 172.61786 209.23114" enable-background="new 796 796 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs2" /> <g id="path6" transform="matrix(0.95802941,0.01486985,-0.01486985,0.95802941,33.486595,24.332537)" style="display:inline"><path style="color:#000000;display:inline;fill:#000000;stroke-width:1.04368;-inkscape-stroke:none" d="m 898.29625,791.53096 c -8.82323,0.13694 -16.09154,6.72534 -17.45431,15.16559 -27.44077,8.17901 -47.32801,33.6369 -46.86265,63.61891 l 0.37427,24.11393 c 0.46761,30.1266 -7.631,38.8958 -14.70167,46.19046 l -2.93561,3.02817 0.20138,0.23336 c -2.53092,3.6444 -4.00068,8.09394 -3.9268,12.85373 0.18765,12.09034 10.24298,21.83644 22.33144,21.64881 l 131.71453,-2.04438 c 12.08855,-0.18763 21.83332,-10.24029 21.64682,-22.32937 -0.074,-4.83069 -1.74072,-9.28297 -4.45457,-12.8745 l 0.17365,-0.23918 -2.87503,-2.78917 c -7.29367,-7.07169 -15.65846,-15.58418 -16.12609,-45.71196 -0.003,-0.22532 -0.009,-0.2799 -0.007,-0.16096 l -0.37178,-23.95291 c -0.46535,-29.98169 -21.13153,-54.80928 -48.81245,-62.13391 -1.624,-8.39388 -9.09194,-14.75355 -17.91455,-14.61662 z" id="path1-8" /><path d="m 914.72,975.961 h -37.436 c -1.786,0 -3.466,0.844 -4.532,2.279 -1.066,1.433 -1.391,3.284 -0.875,4.995 3.121,10.366 12.742,17.918 24.126,17.918 11.384,0 21.003,-7.552 24.125,-17.918 0.516,-1.711 0.188,-3.563 -0.876,-4.995 -1.066,-1.435 -2.746,-2.279 -4.532,-2.279 z" id="path2-1" style="display:inline" transform="matrix(1.0435579,-0.01619736,0.01619736,1.0435579,-49.562981,-20.372467)" /><g id="g8" transform="translate(1.8446061,-0.02863066)"><path style="fill:none;stroke:#000000;stroke-width:15.6553;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="m 946.06972,798.92676 c 0,0 12.40296,8.13599 20.7094,18.89457 8.30644,10.75857 12.72203,24.64054 12.72203,24.64054" id="path8" /><path style="display:inline;fill:none;stroke:#000000;stroke-width:15.6553;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="m 847.08205,800.4633 c 0,0 -12.14448,8.517 -20.11303,19.52819 -7.96855,11.01118 -11.95118,25.0235 -11.95118,25.0235" id="path8-8" /></g></g></svg>',
 		notificationsOff: '<svg fill="#000000" version="1.1" id="Layer_1" width="695.95178" height="836.92468" viewBox="796 796 173.98795 209.23117" enable-background="new 796 796 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs2" /> <g id="g2" style="display:inline" transform="translate(-14.363441,4.07817)"> <path d="m 914.72,975.961 h -37.436 c -1.786,0 -3.466,0.844 -4.532,2.279 -1.066,1.433 -1.391,3.284 -0.875,4.995 3.121,10.366 12.742,17.918 24.126,17.918 11.384,0 21.003,-7.552 24.125,-17.918 0.516,-1.711 0.188,-3.563 -0.876,-4.995 -1.066,-1.435 -2.746,-2.279 -4.532,-2.279 z" id="path2" style="display:inline" /><path id="path1" style="color:#000000;display:inline;fill:#000000;-inkscape-stroke:none" d="m 896.00195,791.92188 c -8.45494,0 -15.51618,6.20379 -16.94726,14.26953 -11.81294,3.32224 -22.20962,9.99594 -30.11573,18.91015 l 6.1753,6.22217 c 7.43452,-8.6387 17.53108,-14.9181 29.0459,-17.49756 9.1231,-1.78672 14.4894,-1.94417 23.68164,-0.002 24.08281,5.39577 42.0957,26.85344 42.0957,52.61914 v 22.95312 c 0,0.21999 0.004,0.26021 0.004,0.1543 0,27.26502 7.92072,39.75134 14.80468,47.36719 l -0.26171,0.34961 c 2.29538,2.12863 6.35808,7.49364 6.76708,11.07763 l 7.65088,7.70948 c 0.81112,-2.23237 1.27711,-4.62614 1.27735,-7.12891 9.6e-4,-4.62903 -1.52963,-8.91924 -4.07617,-12.40039 l 0.16992,-0.22656 -2.71289,-2.71485 c -6.88239,-6.88334 -14.76953,-15.16298 -14.76953,-44.0332 0,-0.21591 -0.004,-0.26828 -0.004,-0.1543 v -22.95312 c 0,-28.73023 -19.42965,-52.82314 -45.83984,-60.25195 -1.43103,-8.06573 -8.49097,-14.26953 -16.94532,-14.26953 z m -52.47558,40.2041 c -6.51082,9.84529 -10.31348,21.62513 -10.31348,34.31738 v 23.10742 c 0,28.86909 -7.88911,37.14986 -14.77148,44.0332 l -2.85743,2.85743 0.18946,0.22656 c -2.47889,3.45381 -3.95313,7.69474 -3.95313,12.25586 0,11.58568 9.48839,21.07226 21.07227,21.07226 h 126.2168 c 5.84795,0 11.15636,-2.42204 14.98437,-6.30664 l -6.20313,-6.25 c -2.21433,2.28505 -5.31159,3.70703 -8.78124,3.70703 h -126.2168 c -6.80009,0 -12.2207,-5.42037 -12.2207,-12.22265 0,-3.56116 1.50388,-6.70429 3.92382,-8.94922 l 3.07618,-2.85352 -0.29102,-0.34765 c 6.85505,-7.63271 14.68164,-20.12503 14.68164,-47.22266 v -23.10742 c 0,-10.23848 2.88024,-19.77234 7.81982,-27.9126 z" /> <path style="color:#000000;display:inline;fill:#000000;stroke-width:0.958145;stroke-linecap:round;-inkscape-stroke:none" d="m 813.74181,806.5382 a 4.5871181,4.5871181 0 0 0 -3.22749,1.38168 4.5871181,4.5871181 0 0 0 0.0752,6.48627 l 175.08952,171.03264 a 4.5871181,4.5871181 0 0 0 6.48627,-0.0752 4.5871181,4.5871181 0 0 0 -0.0752,-6.48814 L 817.00059,807.84463 a 4.5871181,4.5871181 0 0 0 -3.25878,-1.30643 z" id="path8-5" transform="matrix(0.9580294,0.01486985,-0.01486985,0.9580294,47.17985,20.254425)" /> </g> </svg>',
 		enterRoom: '<svg width="43.044926mm" height="49.441414mm" viewBox="0 0 43.044926 49.441414" version="1.1" id="svg1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs1" /><path style="color:#000000;fill:#000000;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none" d="M 13.117194,3.1534699e-7 A 2.6255,2.6255 0 0 0 10.49024,2.6250003 a 2.6255,2.6255 0 0 0 2.626954,2.625 H 37.792973 V 44.18946 H 13.117194 a 2.6255,2.6255 0 0 0 -2.626954,2.625 2.6255,2.6255 0 0 0 2.626954,2.62695 h 24.919919 c 2.73405,0 5.00782,-2.27377 5.00782,-5.00781 V 5.0058603 c 0,-2.73405 -2.27377,-5.00585998465302 -5.00782,-5.00585998465302 z" id="path14" /><path style="color:#000000;fill:#000000;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none" d="m 20.990499,14.26367 a 2.0999999,2.0999999 0 0 0 -1.47461,0.63868 2.0999999,2.0999999 0 0 0 0.0469,2.9707 l 6.99023,6.77539 -6.99023,6.77539 a 2.0999999,2.0999999 0 0 0 -0.0469,2.96875 2.0999999,2.0999999 0 0 0 2.96875,0.0469 l 8.54688,-8.28321 a 2.1002099,2.1002099 0 0 0 0,-3.01758 l -8.54688,-8.2832 a 2.0999999,2.0999999 0 0 0 -1.49414,-0.5918 z" id="path5" /><path style="color:#000000;fill:#000000;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none" d="M 2.0996146,22.54688 A 2.0999999,2.0999999 0 0 0 5.5794793e-6,24.64844 2.0999999,2.0999999 0 0 0 2.0996146,26.74805 H 27.214853 a 2.0999999,2.0999999 0 0 0 2.09961,-2.09961 2.0999999,2.0999999 0 0 0 -2.09961,-2.10156 z" id="path6" /></svg>',
+=======
+>>>>>>> 9a25995f15fc2294d4e0d042d15ae21f0a3348ac
 	}
 });
 
@@ -2829,12 +2900,10 @@ Q.Template.set('Calendars/event/tool',
 	'		<div class="Calendars_info_content">{{text.event.tool.Promote}}</div>' +
 	'	</div>' +
 	'{{/if}}' +
-	'{{#if show.myqr}}' +
 	'	<div class="Q_button Calendars_aspect_myqr" {{#ifEquals show.myqr false}}style="display:none"{{/ifEquals}} data-invoke="myqr">' +
 	'		<div class="Calendars_info_icon"><i class="qp-communities-qrcode"></i></div>' +
 	'		<div class="Calendars_info_content">{{text.event.tool.Myqr}}</div>' +
 	'	</div>' +
-	'{{/if}}' +
 	'{{#if show.trips}}' +
 	'	<div class="Q_button Travel_aspect_trips" {{#ifEquals show.trips false}}style="display:none"{{/ifEquals}}>' +
 	'		<div class="Calendars_info_buttons">{{{tool "Travel/trips" publisherId=stream.fields.publisherId streamName=stream.fields.name}}}</div>' +
@@ -2995,12 +3064,14 @@ Q.Template.set('Calendars/event/roles',
 		<div data-role="{{this}}">{{this}}</div>		
 	{{/each}}
 </div>
+{{#if paymentRequired}}
 <div class="Calendars_event_paid">
 	<h2>Paid management</h2>
 	{{#each paid}}
 		<div data-paid="{{this}}">{{this}}</div>		
 	{{/each}}
-</div>`
+</div>
+{{/if}}`
 );
 
 })(Q, Q.jQuery, window);

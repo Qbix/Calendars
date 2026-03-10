@@ -4,7 +4,8 @@ function Calendars_after_Streams_invite ($params)
 {
 	$publisherId = Q::ifset($params, 'publisherId', null);
 	$streamName = Q::ifset($params, 'streamName', null);
-	$userId = reset(Q::ifset($params, 'userIds', array()));
+    $userId = Q::ifset($params, 'userIds', array());
+	$userId = reset($userId);
 
 	// set extra for Calendars/availability participants
 	if (strpos($streamName, 'Calendars/availability/') === 0) {

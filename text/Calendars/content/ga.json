@@ -126,7 +126,9 @@
 			"WebRTCStarted": "Cuireadh t\u00fas le teileachomhdh\u00e1il",
 			"WebRTCEnded": "Th\u00e1inig deireadh le teileachomhdh\u00e1il",
 			"Prepayment": "R\u00e9amh\u00edoca\u00edocht",
-			"PrepaymentConfirm": "Gearrfaimid t\u00e1ille ainmni\u00fail de $1. Gheobhaidh t\u00fa an l\u00edon creidmheasanna comhfhreagrach. Cuirfear na creidmheasanna seo i bhfeidhm i dtreo d\u2019\u00edoca\u00edocht ioml\u00e1n don \u00f3c\u00e1id."
+			"PrepaymentConfirm": "Gearrfaimid t\u00e1ille ainmni\u00fail de $1. Gheobhaidh t\u00fa an l\u00edon creidmheasanna comhfhreagrach. Cuirfear na creidmheasanna seo i bhfeidhm i dtreo d\u2019\u00edoca\u00edocht ioml\u00e1n don \u00f3c\u00e1id.",
+			"UserNotParticipated": "N\u00ed rannph\u00e1irt\u00ed san imeacht {{1}}",
+			"PayToAttend": "\u00cdoc le Freastal"
 		},
 		"composer": {
 			"SetLocation": "Socraigh Mo Shu\u00edomh",
@@ -251,7 +253,8 @@
 		"confirmParticipate": "N\u00edl {{1}} mar chuid den imeacht go f\u00f3ill. Ar mhaith leat iad a chur leis mar rannph\u00e1irt\u00ed?",
 		"userNotFound": "\u00das\u00e1ideoir gan aimsi\u00fa",
 		"confirmYes": "T\u00e1",
-		"confirmNo": "N\u00edl"
+		"confirmNo": "N\u00edl",
+		"UserAlreadyCheckedIn": "Bh\u00ed {{1}} cl\u00e1raithe isteach cheana f\u00e9in ag {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Gn\u00edomha\u00edocht imeachta i {{{stream.fields.title}}}",
@@ -338,6 +341,9 @@
 				"reasons": {
 					"EventParticipation": "Rannph\u00e1irt\u00edocht Imeachta\u00ed"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Rannph\u00e1irt\u00edocht Imeachta\u00ed"
 			}
 		}
 	}

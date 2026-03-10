@@ -127,7 +127,9 @@
 			"WebRTCStarted": "Telekonferensi dimulai",
 			"WebRTCEnded": "Telekonferensi berakhir",
 			"Prepayment": "Pembayaran di muka",
-			"PrepaymentConfirm": "Kami akan mengenakan biaya nominal sebesar $1. Anda akan menerima jumlah kredit yang sesuai. Kredit ini akan digunakan untuk pembayaran penuh acara Anda."
+			"PrepaymentConfirm": "Kami akan mengenakan biaya nominal sebesar $1. Anda akan menerima jumlah kredit yang sesuai. Kredit ini akan digunakan untuk pembayaran penuh acara Anda.",
+			"UserNotParticipated": "{{1}} bukan peserta acara tersebut",
+			"PayToAttend": "Bayar untuk Hadir"
 		},
 		"composer": {
 			"SetLocation": "Tetapkan Lokasi Saya",
@@ -217,7 +219,8 @@
 		"confirmParticipate": "{{1}} belum menjadi bagian dari acara ini. Apakah Anda ingin menambahkan mereka sebagai peserta?",
 		"userNotFound": "Pengguna tidak ditemukan",
 		"confirmYes": "iya nih",
-		"confirmNo": "Tidak"
+		"confirmNo": "Tidak",
+		"UserAlreadyCheckedIn": "{{1}} sudah melakukan check-in sebelum {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Aktivitas acara di {{{stream.fields.title}}}",
@@ -364,6 +367,9 @@
 				"reasons": {
 					"EventParticipation": "Partisipasi Acara"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Partisipasi Acara"
 			}
 		}
 	}

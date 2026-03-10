@@ -127,7 +127,9 @@
 			"WebRTCStarted": "Telekonfrans ba\u015flad\u0131",
 			"WebRTCEnded": "Telekonfrans ba\u015fa \u00e7at\u0131b",
 			"Prepayment": "\u0130lkin \u00f6d\u0259ni\u015f",
-			"PrepaymentConfirm": "Biz $1 nominal r\u00fcsum alaca\u011f\u0131q. Siz m\u00fcvafiq sayda kredit alacaqs\u0131n\u0131z. Bu kreditl\u0259r t\u0259dbir \u00fc\u00e7\u00fcn tam \u00f6d\u0259ni\u015finiz\u0259 t\u0259tbiq olunacaq."
+			"PrepaymentConfirm": "Biz $1 nominal r\u00fcsum alaca\u011f\u0131q. Siz m\u00fcvafiq sayda kredit alacaqs\u0131n\u0131z. Bu kreditl\u0259r t\u0259dbir \u00fc\u00e7\u00fcn tam \u00f6d\u0259ni\u015finiz\u0259 t\u0259tbiq olunacaq.",
+			"UserNotParticipated": "{{1}} t\u0259dbirin i\u015ftirak\u00e7\u0131s\u0131 deyil",
+			"PayToAttend": "\u0130\u015ftirak etm\u0259k \u00fc\u00e7\u00fcn \u00f6d\u0259ni\u015f edin"
 		},
 		"composer": {
 			"SetLocation": "Yerimi t\u0259yin edin",
@@ -217,7 +219,8 @@
 		"confirmParticipate": "{{1}} h\u0259l\u0259 t\u0259dbirin bir hiss\u0259si deyil. Onlar\u0131 i\u015ftirak\u00e7\u0131 kimi \u0259lav\u0259 etm\u0259k ist\u0259yirsiniz?",
 		"userNotFound": "\u0130stifad\u0259\u00e7i tap\u0131lmad\u0131",
 		"confirmYes": "B\u0259li",
-		"confirmNo": "Yox"
+		"confirmNo": "Yox",
+		"UserAlreadyCheckedIn": "{{1}} art\u0131q {{2}} t\u0259r\u0259find\u0259n qeydiyyatdan ke\u00e7ib!"
 	},
 	"notifications": {
 		"EventActivityIn": "{{{stream.fields.title}}} daxilind\u0259 t\u0259dbir f\u0259aliyy\u0259ti",
@@ -364,6 +367,9 @@
 				"reasons": {
 					"EventParticipation": "T\u0259dbird\u0259 i\u015ftirak"
 				}
+			},
+			"credits": {
+				"EventParticipation": "T\u0259dbird\u0259 i\u015ftirak"
 			}
 		}
 	}

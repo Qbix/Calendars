@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Ng\u0101 mihi nui ki a koe m\u014d t\u014d hiahia ki {{title}}"
+	},
+	"approved": {
+		"Subject": "Kua Whakaaetia te Haerenga Mai",
+		"AttendanceApproved": "Ng\u0101 mihi nui! Kua whakaaetia t\u014d haerenga mai m\u014d {{title}}"
+	},
+	"requested": {
+		"Subject": "Te Haerenga Mai i Tonohia",
+		"AttendanceRequested": "Kei te whaka\u016b m\u0101tou i t\u014d tono kia haere mai koe: {{title}}"
+	},
+	"rejected": {
+		"Subject": "K\u0101ore i Whakaaetia te Haerenga Mai",
+		"AttendanceRejected": "K\u0101ore i whakaaetia e ng\u0101 kaiwhakahaere t\u014d tono kia haere mai: {{title}}"
+	},
+	"paid": {
+		"Subject": "Whaka\u016b Utu Angitu",
+		"YouveBeenCharged": "Kua utua koe ki {{amount}} {{currency}} (me {{credits}} whiwhinga). Kua rite katoa! Ka kite t\u0101tou i {{title}}"
+	}
+}

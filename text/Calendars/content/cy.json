@@ -126,7 +126,9 @@
 			"WebRTCStarted": "Dechreuodd telegynhadledd",
 			"WebRTCEnded": "Daeth telegynhadledd i ben",
 			"Prepayment": "Rhagdaliad",
-			"PrepaymentConfirm": "Byddwn yn codi ffi enwol o $1. Byddwch yn derbyn y nifer cyfatebol o gredydau. Bydd y credydau hyn yn cael eu defnyddio tuag at eich taliad llawn am y digwyddiad."
+			"PrepaymentConfirm": "Byddwn yn codi ffi enwol o $1. Byddwch yn derbyn y nifer cyfatebol o gredydau. Bydd y credydau hyn yn cael eu defnyddio tuag at eich taliad llawn am y digwyddiad.",
+			"UserNotParticipated": "Nid yw {{1}} yn gyfranogwr yn y digwyddiad",
+			"PayToAttend": "Talu i Fynychu"
 		},
 		"composer": {
 			"SetLocation": "Gosod Fy Lleoliad",
@@ -251,7 +253,8 @@
 		"confirmParticipate": "Nid yw {{1}} yn rhan o&#39;r digwyddiad eto. Ydych chi am eu hychwanegu fel cyfranogwr?",
 		"userNotFound": "Defnyddiwr heb ei ganfod",
 		"confirmYes": "Oes",
-		"confirmNo": "Nac ydw"
+		"confirmNo": "Nac ydw",
+		"UserAlreadyCheckedIn": "{{1}} eisoes wedi cael ei gofrestru gan {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Gweithgarwch digwyddiad yn {{{stream.fields.title}}}",
@@ -338,6 +341,9 @@
 				"reasons": {
 					"EventParticipation": "Cyfranogiad yn y Digwyddiad"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Cyfranogiad yn y Digwyddiad"
 			}
 		}
 	}

@@ -1,333 +1,348 @@
 {
-    "months": {
-        "Jan": "Jan",
-        "Feb": "Feb",
-        "Mar": "Mar",
-        "Apr": "Apr",
-        "May": "Meyi",
-        "Jun": "Jun",
-        "Jul": "Jul",
-        "Aug": "Aug",
-        "Sep": "Sep",
-        "Oct": "Oct",
-        "Nov": "Nov",
-        "Dec": "Dec"
-    },
-    "monthsLong": {
-        "Jan": "January",
-        "Feb": "February",
-        "Mar": "Mashi",
-        "Apr": "April",
-        "May": "Meyi",
-        "Jun": "Juni",
-        "Jul": "July",
-        "Aug": "Agasti",
-        "Sep": "September",
-        "Oct": "Okthoba",
-        "Nov": "Novemba",
-        "Dec": "Disemba"
-    },
-    "weekdays": {
-        "Sun": "Ilanga",
-        "Mon": "Msombuluko",
-        "Tue": "ULwesibili",
-        "Wed": "NgoLwesithathu",
-        "Thu": "ULwesine",
-        "Fri": "NgoLwesihlanu",
-        "Sat": "NgoMgqibelo"
-    },
-    "weekdaysLong": {
-        "Sun": "NgeSonto",
-        "Mon": "UMsombuluko",
-        "Tue": "ULwesibili",
-        "Wed": "ULwesithathu",
-        "Thu": "ULwesine",
-        "Fri": "NgoLwesihlanu",
-        "Sat": "NgoMgqibelo"
-    },
-    "event": {
-        "preview": {
-            "EventComposerDialogTitle": "Hlela Umcimbi Omusha"
-        },
-        "tool": {
-            "HostedBy": "Umbuki zindwendwe ngu- {{name}}",
-            "Name": "Igama",
-            "AreYouIn": "Ungenile?",
-            "Yes": "Yebo",
-            "No": "Cha",
-            "Ok": "Kulungile",
-            "Cancel": "Khansela",
-            "Maybe": "Kungenzeka",
-            "Conversation": "Ingxoxo",
-            "Promote": "Phromotha lo mcimbi",
-            "Reminders": "Izikhumbuzi",
-            "RemindersLabel": "Ngifuna ukwaziswa ngomcimbi othi:",
-            "MoreInfo": "Ulwazi olwengeziwe",
-            "Registration": "Ukubhalisa",
-            "SetReminders": "Sicela usethe izikhumbuzi",
-            "ReservationFee": "Imali Yokubhuka",
-            "AddParticipants": "Engeza Abahlanganyeli",
-            "ManageReservation": "Phatha Ukubhukha",
-            "UpdateFutureReservations": "Ingabe uyafuna futhi ukubuyekeza konke ukubhukha okuzayo ngendlela efanayo?",
-            "RecurringAdmin": "Izilungiselelo Eziqhubekayo",
-            "MakeReservation": "Yenza Ukubhuka",
-            "StartLiveStream": "Chofoza ukuze Usakaze Bukhoma",
-            "LiveStreamEnded": "Ukusakaza bukhoma kuphelile",
-            "ClickToViewRecording": "chofoza ukuze ubuke ukurekhoda",
-            "Checkin": "Skena amakhodi abahambele umcimbi",
-            "Myqr": "Ngena",
-            "CloseEvent": {
-                "button": "Khansela Umcimbi",
-                "confirm": {
-                    "text": {
-                        "Cancel": "Uqinisekile ukuthi ufuna ukukhansela lo mcimbi?",
-                        "Participant": "Kukhona umhlanganyeli ongu-1 kulo mcimbi",
-                        "Participants": "Kukhona {{count}} abahlanganyeli kulo mcimbi",
-                        "Recurring": "Lo mcimbi uyenzeka futhi. Uyafuna futhi ukukhansela zonke izimo zayo zesikhathi esizayo?"
-                    },
-                    "trip": {
-                        "Cancel": "Ingabe uyafuna ukukhansela uhambo lwakho {{tripDirection}} kulo mcimbi?",
-                        "Passengers": "Kukhona {{passengerCount}} abagibeli abathembele kuwe.",
-                        "Title": "Vala Uhambo"
-                    },
-                    "directions": {
-                        "TO": "KUYA",
-                        "FROM": "KUSUKA",
-                        "to": "ku",
-                        "from": "kusuka"
-                    }
-                }
-            },
-            "Calendar": "Ikhalenda",
-            "Interests": "Izithakazelo",
-            "Directions": "Izikhombisi-ndlela",
-            "TitleOfEvent": "Isihloko somcimbi:",
-            "OpenTo": "Vula ku",
-            "GoingTo": "izoba ngo",
-            "NotGoingTo": "ngeke ibe khona",
-            "MaybeGoingTo": "mhlawumbe kuzoba",
-            "AdminDontPay": "Admin akadingi ukukhokha",
-            "PublisherDontPay": "Umshicileli akadingi ukukhokha",
-            "EmptyList": "Uhlu olungenalutho",
-            "NeedToPayCredits": "Udinga ukukhokha: <span>{{amount}} amakhredithi<\/span>",
-            "PleaseJoinParticipants": "Sicela ujoyine {{participant}}",
-            "YouReservingPlace": "Uzobhukha indawo yakho.",
-            "SelectIncludesToAdd": "Khetha eyodwa noma ngaphezulu {{TypeDisplayPlural}} ukuze wengeze:",
-            "YouHaveNotRegisteredAnyIncluded": "Awubhalisanga {{TypeDisplayPlural}} okwamanje",
-            "Proceed": "Qhubeka",
-            "MakeChanges": "Londoloza Izinguquko Zami",
-            "CancelReservation": "Khansela konke ukubhukha",
-            "Total": "Isamba",
-            "RequiredRelatedParticipants": "Lo mcimbi udinga ababambiqhaza: {{requiredParticipantsList}}",
-            "AvailabilityWarning": "Sicela uhlele ukutholakala kokuthi &quot;{{title}}&quot; ukuze ubuyekeze izilungiselelo eziphindelelayo",
-            "Presentation": "Isethulo",
-            "YouAreNotParticipated": "Awuyena umhlanganyeli womcimbi",
-            "LiveStreamStarted": "Ukusakaza bukhoma sekuqalile",
-            "WebRTCStarted": "I-Teleconference iqalile",
-            "WebRTCEnded": "I-Teleconference iphelile"
-        },
-        "composer": {
-            "SetLocation": "Setha Indawo Yami",
-            "SetInfoLink": "Setha isixhumanisi olwazini olwengeziwe",
-            "ChooseAvailability": "Khetha Isevisi Etholakalayo",
-            "ChooseActivity": "Khetha Umsebenzi",
-            "ChoosePublisher": "Khetha Umshicileli",
-            "Day": "Usuku",
-            "Starting": "Iyaqala",
-            "Duration": "Ubude besikhathi",
-            "Hour": "Ihora",
-            "Hours": "Amahora",
-            "Minutes": "Amaminithi",
-            "Ending": "Iyaphela",
-            "People": "Abantu",
-            "Share": "Yabelana",
-            "Continue": "Qhubeka",
-            "Recurring": "Okuphindaphindayo",
-            "RecurringTitle": "Izinsuku Eziphindaphindiwe",
-            "Daily": "Nsuku zonke",
-            "Weekly": "Maviki onke",
-            "Monthly": "Nyanga zonke",
-            "SelectLocation": "Sicela ukhethe indawo kuqala.",
-            "eventType": "Uhlobo Lomcimbi",
-            "EditTitle": "Cabanga ngesihloko esithokozisayo...",
-            "SetTitle": "Sicela usethe isihloko somcimbi",
-            "ScheduleOnlineConference": "Hlela Inkomfa Ye-inthanethi",
-            "SOCDescription": "Sicela uchaze isikhathi sokuqala nesokuphela kwengqungquthela. Wonke umuntu ovakashela umcimbi ngalesi sikhathi uzoxhuma ngokuzenzakalela kunkomfa ye-inthanethi.",
-            "EndDate": "Qeda",
-            "location": {
-                "Title": "Setha Indawo Yakho"
-            },
-            "interest": {
-                "Title": "Khetha Umsebenzi",
-                "Filter": "Sesha izithakazelo..."
-            },
-            "SetLivestream": "Namathisela isixhumanisi ukuze usakaze bukhoma \/ inkomfa yevidiyo",
-            "Locally": "endaweni",
-            "EventInfoLink": "Isixhumanisi Solwazi Lomcimbi",
-            "TicketPurchaseLink": "Isixhumanisi Sokuthenga Amathikithi"
-        },
-        "EventAlreadyClosed": "Lo mcimbi usuvele uvaliwe",
-        "addToCalendar": {
-            "permissions": {
-                "title": "Engeza kukhalenda?",
-                "prompt": "Ungathanda ukwengeza lo mcimbi ekhalendeni lakho?",
-                "yes": "Yebo",
-                "no": "Cha"
-            },
-            "dialog": {
-                "Title": "Engeza Umcimbi Ekhalendeni lakho"
-            }
-        },
-        "ErrorLeaveEndedEvent": "Uxolo, kodwa awukwazi ukushiya umcimbi ophelile"
-    },
-    "availabilities": {
-        "Title": "Ukutholakala",
-        "NewAvailability": {
-            "Title": "Ukutholakala Okusha",
-            "SaveAvailability": "Londoloza Ukutholakala",
-            "SelectTemplate": "Sicela ukhethe Isevisi",
-            "SelectLocation": "Sicela ukhethe Indawo",
-            "SelectArea": "Sicela ukhethe Indawo",
-            "Type": "Uhlobo",
-            "Weekly": "Maviki onke",
-            "RecurringStartDate": "Usuku Lokuqala Oluqhubekayo",
-            "EndDate": "Idethi Yokuphela",
-            "SelectTime": "Phatha Isikhathi Slots",
-            "SelectTimeSlot": "Khetha indawo yesikhathi",
-            "SelectTimeSlots": "Khetha izikhala zesikhathi ozifunayo",
-            "PeopleMin": "Izivakashi ezincane",
-            "PeopleMax": "Izivakashi eziphezulu",
-            "PeopleLabels": "Amalebula avunyelwe",
-            "Next": "Olandelayo",
-            "Back": "Emuva",
-            "RecurringEndDate": "Idethi Yokuphela Eqhubekayo",
-            "ScheduleOnlineConference": "Hlela i-Teleconference",
-            "SetLivestream": "Namathisela isixhumanisi ukuze usakaze bukhoma \/ inkomfa yevidiyo",
-            "SelectTimeZone": "KhethaIzoni yesikhathi"
-        },
-        "EditAvailability": "Hlela Ukutholakala",
-        "SetVisitors": "Setha Izivakashi",
-        "Price": "Inani",
-        "SelectAction": "Sicela ukhethe isenzo",
-        "OpenProfile": "Vula iphrofayela",
-        "RemoveStaff": "Susa abasebenzi",
-        "PleaseSelectTimeSlots": "Sicela ukhethe izikhala zesikhathi",
-        "ExceptionOccurred": "Kwenzeke okuhlukile",
-        "NotEnoughCreditsToParticipateEvents": "Awekho amakhredithi anele okubamba iqhaza {{eventsAmount}} emicimbini. Udinga {{100}} amakhredithi. Ufuna ukuthenga?",
-        "InviteStaff": "Mema abasebenzi",
-        "LiveStream": "Ukusakaza bukhoma"
-    },
-    "recurring": {
-        "dialog": {
-            "startDate": "Usuku okuqalwa ngalo",
-            "endDate": "Idethi yokuphela",
-            "justOnce": "Kanye nje",
-            "justOnceWeekly": "Kuleli sonto kuphela",
-            "justOnceMonthly": "Kule nyanga kuphela",
-            "recurring": "Okuphindaphindayo"
-        }
-    },
-    "payment": {
-        "selectOptions": {
-            "free": "Umcimbi wamahhala",
-            "optional": "Umnikelo ozikhethela wona",
-            "required": "Inkokhelo edingekayo"
-        },
-        "amountPlaceholder": "0",
-        "info": {
-            "optional": "Umnikelo ozikhethela wona",
-            "required": "Inkokhelo edingekayo",
-            "paid": "ikhokhiwe"
-        },
-        "confirmationDialog": {
-            "title": "Ukuqinisekiswa kwenkokhelo",
-            "content": "Lo mcimbi unomnikelo ozikhethela wona we-{{amount}}.",
-            "button": "Faka isandla"
-        }
-    },
-    "QRScanner": {
-        "confirmParticipate": "{{1}} akakabi yingxenye yomcimbi. Ingabe ufuna ukumengeza njengomhlanganyeli?",
-        "userNotFound": "Umsebenzisi akatholakali",
-        "confirmYes": "Yebo",
-        "confirmNo": "Cha"
-    },
-    "notifications": {
-        "EventActivityIn": "Umsebenzi womcimbi kokuthi {{{stream.fields.title}}}",
-        "RecurringRulesChanged": "Imithetho eqhubekayo ishintshile yomcimbi {{{call 'message.getInstruction' 'eventTitle'}}}",
-        "ManageEmailSubscriptions": "phatha ukubhalisa kwakho kwe-imeyili",
-        "IfUnsubscribe": "Uma ufuna ukuzikhipha ohlwini",
-        "ClickHereToVisitEvent": "Sicela uchofoze lapha ukuze uvakashele umcimbi",
-        "Calendars\/reminder": "Umcimbi &quot;{{{call 'message.getInstruction' 'name'}}&quot; uzoqala ngo-{{&call 'message.getInstruction' 'time'}}}",
-        "webrtc": {
-            "Started": "I-Teleconference iqalile",
-            "Ended": "I-Teleconference iphelile"
-        },
-        "livestream": {
-            "Started": "Ukusakaza bukhoma kuqalile",
-            "Ended": "Ukusakaza bukhoma kuphelile",
-            "ClickToView": "Ibuke lapha."
-        }
-    },
-    "import": {
-        "linkTitle": "Gcwalisa Lesi Sipredishithi",
-        "fileLabel": "Layisha Ispredishithi:",
-        "importOptions": "Izinketho",
-        "importProgress": "Inqubekelaphambili",
-        "sampleCSV": "Landa isampuli ye-CSV",
-        "joinEventLabel": "Joyina abasebenzisi emcimbini ongahleliwe",
-        "smsText": "Sawubona, ngikuthumelele isixhumanisi ku-{{communityName}}. Sicela uyihlole.",
-        "emailSubject": "Ngisanda kukuthumelela isixhumanisi",
-        "emailBody": "Sawubona, ngisanda kukuthumelela isimemo ku-{{communityName}}. Sicela uyihlole.",
-        "fileNotFound": "Uxolo, ifayela le-CSV alitholakali.",
-        "fileEmpty": "Uxolo, ifayela le-CSV alinalutho.",
-        "fieldNotFound": "Inkambu edingekayo &quot;{{1}}&quot; ayitholakali",
-        "userIdNotFound": "umsebenzisi ukhona kodwa i-id ayinalutho",
-        "activateUsers": "thumela umlayezo wokwenza kusebenze kubasebenzisi?",
-        "taskStreamInvalid": "ukusakaza komsebenzi akuvumelekile",
-        "instructionsEmpty": "imiyalelo yokusakaza komsebenzi ayinalutho",
-        "interestsEmpty": "angikwazi ukuthola izithakazelo",
-        "interestAbsent": "intshisekelo {{1}} ayitholakali",
-        "complete": "Qedela",
-        "errorLine": "umugqa {{1}}",
-        "errorsTitle": "Kuvele amaphutha",
-        "communityUsers": "Lolu uhlu lwemiphakathi",
-        "toMainCommunityToo": "zihlobene nomphakathi omkhulu futhi",
-        "ChooseFile": "khetha ifayela"
-    },
-    "types": {
-        "Calendars\/event": {
-            "description": "Imele umcimbi abantu abangabamba iqhaza kuwo",
-            "displayType": "Umcimbi"
-        },
-        "Calendars\/recurring": {
-            "description": "Isetshenziselwa ukusakaza okuhlobene okuhloselwe ukuvela ngezikhathi ezithile",
-            "displayType": "Umcimbi Oqhubekayo"
-        }
-    },
-    "timeslots": {
-        "AddSlot": "Engeza Slot",
-        "StartTime": "Isikhathi sokuqala",
-        "EndTime": "Isikhathi Sokuphela",
-        "Save": "Londoloza",
-        "AddTimeSlot": "Engeza Isikhathi Slot",
-        "CopyFromDay": "Kopisha kusukela ngosuku",
-        "Nearest": "Eduze",
-        "Today": "Namuhla",
-        "Tomorrow": "Kusasa",
-        "AfterTomorrow": "Ngemva kwakusasa"
-    },
-    "subscribe": {
-        "subscribeToCalendar": "Bhalisela Ikhalenda",
-        "copyLinkBelow": "Chofoza inkinobho engezansi ukuze ukopishe isixhumanisi ebhodini lakho lokunamathisela",
-        "tapToCopy": "Thepha inkinobho engezansi ukuze ukopishe isixhumanisi ebhodini lakho lokunamathisela",
-        "goTo": "Iya ku:",
-        "pasteCopiedTo": "Namathisela isixhumanisi esikopishiwe kunkambu ethi &quot;URL yekhalenda&quot;.",
-        "clickAddCalendar": "Chofoza inkinobho ethi &quot;Engeza ikhalenda&quot;.",
-        "copyLink": "Kopisha Isixhumanisi",
-        "linkCopied": "Isixhumanisi Sikopishiwe",
-        "step2": "Isixhumanisi Sikopishiwe. Simayelana nokuvula i-Google Khalenda. Uzodinga ukunamathisela isixhumanisi ebhokisini lombhalo, chofoza okuthi &quot;Engeza ikhalenda&quot;, bese uvala ithebhu (bona isithombe-skrini ngezansi)",
-        "calendarAppPreferences": "Vula Okuncamelayo Kuhlelo Lokusebenza Lwekhalenda ku-Mac yakho, bese usetha Uhlelo Lokusebenza Lwekhalenda Oluzenzakalelayo ukuthi lube njengoba kuboniswe ngezansi.",
-        "thenCloseDialog": "Bese uvala le ngxoxo ukuze ubhalisele ikhalenda lakho!",
-        "success": "Ikhalenda livunyelaniswe ngempumelelo"
-    }
+	"months": {
+		"Jan": "Jan",
+		"Feb": "Feb",
+		"Mar": "Mar",
+		"Apr": "Apr",
+		"May": "Meyi",
+		"Jun": "Jun",
+		"Jul": "Jul",
+		"Aug": "Aug",
+		"Sep": "Sep",
+		"Oct": "Oct",
+		"Nov": "Nov",
+		"Dec": "Dec"
+	},
+	"monthsLong": {
+		"Jan": "January",
+		"Feb": "February",
+		"Mar": "Mashi",
+		"Apr": "April",
+		"May": "Meyi",
+		"Jun": "Juni",
+		"Jul": "July",
+		"Aug": "Agasti",
+		"Sep": "September",
+		"Oct": "Okthoba",
+		"Nov": "Novemba",
+		"Dec": "Disemba"
+	},
+	"weekdays": {
+		"Sun": "Ilanga",
+		"Mon": "Msombuluko",
+		"Tue": "ULwesibili",
+		"Wed": "NgoLwesithathu",
+		"Thu": "ULwesine",
+		"Fri": "NgoLwesihlanu",
+		"Sat": "NgoMgqibelo"
+	},
+	"weekdaysLong": {
+		"Sun": "NgeSonto",
+		"Mon": "UMsombuluko",
+		"Tue": "ULwesibili",
+		"Wed": "ULwesithathu",
+		"Thu": "ULwesine",
+		"Fri": "NgoLwesihlanu",
+		"Sat": "NgoMgqibelo"
+	},
+	"event": {
+		"preview": {
+			"EventComposerDialogTitle": "Hlela Umcimbi Omusha"
+		},
+		"tool": {
+			"HostedBy": "Umbuki zindwendwe ngu- {{name}}",
+			"Name": "Igama",
+			"AreYouIn": "Ungenile?",
+			"Yes": "Yebo",
+			"No": "Cha",
+			"Ok": "Kulungile",
+			"Cancel": "Khansela",
+			"Maybe": "Kungenzeka",
+			"Conversation": "Ingxoxo",
+			"Promote": "Phromotha lo mcimbi",
+			"Reminders": "Izikhumbuzi",
+			"RemindersLabel": "Ngifuna ukwaziswa ngomcimbi othi:",
+			"MoreInfo": "Ulwazi olwengeziwe",
+			"Registration": "Ukubhalisa",
+			"SetReminders": "Sicela usethe izikhumbuzi",
+			"ReservationFee": "Imali Yokubhuka",
+			"AddParticipants": "Engeza Abahlanganyeli",
+			"ManageReservation": "Phatha Ukubhukha",
+			"UpdateFutureReservations": "Ingabe uyafuna futhi ukubuyekeza konke ukubhukha okuzayo ngendlela efanayo?",
+			"RecurringAdmin": "Izilungiselelo Eziqhubekayo",
+			"MakeReservation": "Yenza Ukubhuka",
+			"StartLiveStream": "Chofoza ukuze Usakaze Bukhoma",
+			"LiveStreamEnded": "Ukusakaza bukhoma kuphelile",
+			"ClickToViewRecording": "chofoza ukuze ubuke ukurekhoda",
+			"Checkin": "Skena amakhodi abahambele umcimbi",
+			"Myqr": "Ngena",
+			"CloseEvent": {
+				"button": "Khansela Umcimbi",
+				"confirm": {
+					"text": {
+						"Cancel": "Uqinisekile ukuthi ufuna ukukhansela lo mcimbi?",
+						"Participant": "Kukhona umhlanganyeli ongu-1 kulo mcimbi",
+						"Participants": "Kukhona {{count}} abahlanganyeli kulo mcimbi",
+						"Recurring": "Lo mcimbi uyenzeka futhi. Uyafuna futhi ukukhansela zonke izimo zayo zesikhathi esizayo?"
+					},
+					"trip": {
+						"Cancel": "Ingabe uyafuna ukukhansela uhambo lwakho {{tripDirection}} kulo mcimbi?",
+						"Passengers": "Kukhona {{passengerCount}} abagibeli abathembele kuwe.",
+						"Title": "Vala Uhambo"
+					},
+					"directions": {
+						"TO": "KUYA",
+						"FROM": "KUSUKA",
+						"to": "ku",
+						"from": "kusuka"
+					}
+				}
+			},
+			"Calendar": "Ikhalenda",
+			"Interests": "Izithakazelo",
+			"Directions": "Izikhombisi-ndlela",
+			"TitleOfEvent": "Isihloko somcimbi:",
+			"OpenTo": "Vula ku",
+			"GoingTo": "izoba ngo",
+			"NotGoingTo": "ngeke ibe khona",
+			"MaybeGoingTo": "mhlawumbe kuzoba",
+			"AdminDontPay": "Admin akadingi ukukhokha",
+			"PublisherDontPay": "Umshicileli akadingi ukukhokha",
+			"EmptyList": "Uhlu olungenalutho",
+			"NeedToPayCredits": "Udinga ukukhokha: <span>{{amount}} amakhredithi</span>",
+			"PleaseJoinParticipants": "Sicela ujoyine {{participant}}",
+			"YouReservingPlace": "Uzobhukha indawo yakho.",
+			"SelectIncludesToAdd": "Khetha eyodwa noma ngaphezulu {{TypeDisplayPlural}} ukuze wengeze:",
+			"YouHaveNotRegisteredAnyIncluded": "Awubhalisanga {{TypeDisplayPlural}} okwamanje",
+			"Proceed": "Qhubeka",
+			"MakeChanges": "Londoloza Izinguquko Zami",
+			"CancelReservation": "Khansela konke ukubhukha",
+			"Total": "Isamba",
+			"RequiredRelatedParticipants": "Lo mcimbi udinga ababambiqhaza: {{requiredParticipantsList}}",
+			"AvailabilityWarning": "Sicela uhlele ukutholakala kokuthi &quot;{{title}}&quot; ukuze ubuyekeze izilungiselelo eziphindelelayo",
+			"Presentation": "Isethulo",
+			"YouAreNotParticipated": "Awuyena umhlanganyeli womcimbi",
+			"LiveStreamStarted": "Ukusakaza bukhoma sekuqalile",
+			"WebRTCStarted": "I-Teleconference iqalile",
+			"WebRTCEnded": "I-Teleconference iphelile",
+			"Prepayment": "Inkokhelo kusengaphambili",
+			"PrepaymentConfirm": "Sizokhokhisa imali encane engu-$1. Uzothola inani elifanele lamakhredithi. Lawa makhredithi azosetshenziswa ekukhokhweni kwakho okugcwele komcimbi."
+		},
+		"composer": {
+			"SetLocation": "Setha Indawo Yami",
+			"SetInfoLink": "Setha isixhumanisi olwazini olwengeziwe",
+			"ChooseAvailability": "Khetha Isevisi Etholakalayo",
+			"ChooseActivity": "Khetha Umsebenzi",
+			"ChoosePublisher": "Khetha Umshicileli",
+			"Day": "Usuku",
+			"Starting": "Iyaqala",
+			"Duration": "Ubude besikhathi",
+			"Hour": "Ihora",
+			"Hours": "Amahora",
+			"Minutes": "Amaminithi",
+			"Ending": "Iyaphela",
+			"People": "Abantu",
+			"Share": "Yabelana",
+			"Continue": "Qhubeka",
+			"Recurring": "Okuphindaphindayo",
+			"RecurringTitle": "Izinsuku Eziphindaphindiwe",
+			"Daily": "Nsuku zonke",
+			"Weekly": "Maviki onke",
+			"Monthly": "Nyanga zonke",
+			"SelectLocation": "Sicela ukhethe indawo kuqala.",
+			"eventType": "Uhlobo Lomcimbi",
+			"EditTitle": "Cabanga ngesihloko esithokozisayo...",
+			"SetTitle": "Sicela usethe isihloko somcimbi",
+			"ScheduleOnlineConference": "Hlela Inkomfa Ye-inthanethi",
+			"SOCDescription": "Sicela uchaze isikhathi sokuqala nesokuphela kwengqungquthela. Wonke umuntu ovakashela umcimbi ngalesi sikhathi uzoxhuma ngokuzenzakalela kunkomfa ye-inthanethi.",
+			"EndDate": "Qeda",
+			"location": {
+				"Title": "Setha Indawo Yakho"
+			},
+			"interest": {
+				"Title": "Khetha Umsebenzi",
+				"Filter": "Sesha izithakazelo..."
+			},
+			"SetLivestream": "Namathisela isixhumanisi ukuze usakaze bukhoma / inkomfa yevidiyo",
+			"Locally": "endaweni",
+			"EventInfoLink": "Isixhumanisi Solwazi Lomcimbi",
+			"TicketPurchaseLink": "Isixhumanisi Sokuthenga Amathikithi"
+		},
+		"EventAlreadyClosed": "Lo mcimbi usuvele uvaliwe",
+		"addToCalendar": {
+			"permissions": {
+				"title": "Engeza kukhalenda?",
+				"prompt": "Ungathanda ukwengeza lo mcimbi ekhalendeni lakho?",
+				"yes": "Yebo",
+				"no": "Cha"
+			},
+			"dialog": {
+				"Title": "Engeza Umcimbi Ekhalendeni lakho"
+			}
+		},
+		"ErrorLeaveEndedEvent": "Uxolo, kodwa awukwazi ukushiya umcimbi ophelile"
+	},
+	"availabilities": {
+		"Title": "Ukutholakala",
+		"NewAvailability": {
+			"Title": "Ukutholakala Okusha",
+			"SaveAvailability": "Londoloza Ukutholakala",
+			"SelectTemplate": "Sicela ukhethe Isevisi",
+			"SelectLocation": "Sicela ukhethe Indawo",
+			"SelectArea": "Sicela ukhethe Indawo",
+			"Type": "Uhlobo",
+			"Weekly": "Maviki onke",
+			"RecurringStartDate": "Usuku Lokuqala Oluqhubekayo",
+			"EndDate": "Idethi Yokuphela",
+			"SelectTime": "Phatha Isikhathi Slots",
+			"SelectTimeSlot": "Khetha indawo yesikhathi",
+			"SelectTimeSlots": "Khetha izikhala zesikhathi ozifunayo",
+			"PeopleMin": "Izivakashi ezincane",
+			"PeopleMax": "Izivakashi eziphezulu",
+			"PeopleLabels": "Amalebula avunyelwe",
+			"Next": "Olandelayo",
+			"Back": "Emuva",
+			"RecurringEndDate": "Idethi Yokuphela Eqhubekayo",
+			"ScheduleOnlineConference": "Hlela i-Teleconference",
+			"SetLivestream": "Namathisela isixhumanisi ukuze usakaze bukhoma / inkomfa yevidiyo",
+			"SelectTimeZone": "KhethaIzoni yesikhathi"
+		},
+		"EditAvailability": "Hlela Ukutholakala",
+		"SetVisitors": "Setha Izivakashi",
+		"Price": "Inani",
+		"SelectAction": "Sicela ukhethe isenzo",
+		"OpenProfile": "Vula iphrofayela",
+		"RemoveStaff": "Susa abasebenzi",
+		"PleaseSelectTimeSlots": "Sicela ukhethe izikhala zesikhathi",
+		"ExceptionOccurred": "Kwenzeke okuhlukile",
+		"NotEnoughCreditsToParticipateEvents": "Awekho amakhredithi anele okubamba iqhaza {{eventsAmount}} emicimbini. Udinga {{100}} amakhredithi. Ufuna ukuthenga?",
+		"InviteStaff": "Mema abasebenzi",
+		"LiveStream": "Ukusakaza bukhoma"
+	},
+	"recurring": {
+		"dialog": {
+			"startDate": "Usuku okuqalwa ngalo",
+			"endDate": "Idethi yokuphela",
+			"justOnce": "Kanye nje",
+			"justOnceWeekly": "Kuleli sonto kuphela",
+			"justOnceMonthly": "Kule nyanga kuphela",
+			"recurring": "Okuphindaphindayo"
+		}
+	},
+	"payment": {
+		"selectOptions": {
+			"free": "Umcimbi wamahhala",
+			"optional": "Umnikelo ozikhethela wona",
+			"required": "Inkokhelo edingekayo"
+		},
+		"amountPlaceholder": "0",
+		"info": {
+			"optional": "Umnikelo ozikhethela wona",
+			"required": "Inkokhelo edingekayo",
+			"paid": "ikhokhiwe"
+		},
+		"confirmationDialog": {
+			"title": "Ukuqinisekiswa kwenkokhelo",
+			"content": "Lo mcimbi unomnikelo ozikhethela wona we-{{amount}}.",
+			"button": "Faka isandla"
+		}
+	},
+	"QRScanner": {
+		"confirmParticipate": "{{1}} akakabi yingxenye yomcimbi. Ingabe ufuna ukumengeza njengomhlanganyeli?",
+		"userNotFound": "Umsebenzisi akatholakali",
+		"confirmYes": "Yebo",
+		"confirmNo": "Cha",
+		"UserAlreadyCheckedIn": "{{1}} isivele ingenile nge- {{2}} !"
+	},
+	"notifications": {
+		"EventActivityIn": "Umsebenzi womcimbi kokuthi {{{stream.fields.title}}}",
+		"RecurringRulesChanged": "Imithetho eqhubekayo ishintshile yomcimbi {{{call 'message.getInstruction' 'eventTitle'}}}",
+		"ManageEmailSubscriptions": "phatha ukubhalisa kwakho kwe-imeyili",
+		"IfUnsubscribe": "Uma ufuna ukuzikhipha ohlwini",
+		"ClickHereToVisitEvent": "Sicela uchofoze lapha ukuze uvakashele umcimbi",
+		"Calendars/reminder": "Umcimbi &quot;{{{call 'message.getInstruction' 'name'}}&quot; uzoqala ngo-{{&call 'message.getInstruction' 'time'}}}",
+		"webrtc": {
+			"Started": "I-Teleconference iqalile",
+			"Ended": "I-Teleconference iphelile"
+		},
+		"livestream": {
+			"Started": "Ukusakaza bukhoma kuqalile",
+			"Ended": "Ukusakaza bukhoma kuphelile",
+			"ClickToView": "Ibuke lapha."
+		}
+	},
+	"import": {
+		"linkTitle": "Gcwalisa Lesi Sipredishithi",
+		"fileLabel": "Layisha Ispredishithi:",
+		"importOptions": "Izinketho",
+		"importProgress": "Inqubekelaphambili",
+		"sampleCSV": "Landa isampuli ye-CSV",
+		"joinEventLabel": "Joyina abasebenzisi emcimbini ongahleliwe",
+		"smsText": "Sawubona, ngikuthumelele isixhumanisi ku-{{communityName}}. Sicela uyihlole.",
+		"emailSubject": "Ngisanda kukuthumelela isixhumanisi",
+		"emailBody": "Sawubona, ngisanda kukuthumelela isimemo ku-{{communityName}}. Sicela uyihlole.",
+		"fileNotFound": "Uxolo, ifayela le-CSV alitholakali.",
+		"fileEmpty": "Uxolo, ifayela le-CSV alinalutho.",
+		"fieldNotFound": "Inkambu edingekayo &quot;{{1}}&quot; ayitholakali",
+		"userIdNotFound": "umsebenzisi ukhona kodwa i-id ayinalutho",
+		"activateUsers": "thumela umlayezo wokwenza kusebenze kubasebenzisi?",
+		"taskStreamInvalid": "ukusakaza komsebenzi akuvumelekile",
+		"instructionsEmpty": "imiyalelo yokusakaza komsebenzi ayinalutho",
+		"interestsEmpty": "angikwazi ukuthola izithakazelo",
+		"interestAbsent": "intshisekelo {{1}} ayitholakali",
+		"complete": "Qedela",
+		"errorLine": "umugqa {{1}}",
+		"errorsTitle": "Kuvele amaphutha",
+		"communityUsers": "Lolu uhlu lwemiphakathi",
+		"toMainCommunityToo": "zihlobene nomphakathi omkhulu futhi",
+		"ChooseFile": "khetha ifayela"
+	},
+	"types": {
+		"Calendars/event": {
+			"description": "Imele umcimbi abantu abangabamba iqhaza kuwo",
+			"displayType": "Umcimbi"
+		},
+		"Calendars/recurring": {
+			"description": "Isetshenziselwa ukusakaza okuhlobene okuhloselwe ukuvela ngezikhathi ezithile",
+			"displayType": "Umcimbi Oqhubekayo"
+		}
+	},
+	"timeslots": {
+		"AddSlot": "Engeza Slot",
+		"StartTime": "Isikhathi sokuqala",
+		"EndTime": "Isikhathi Sokuphela",
+		"Save": "Londoloza",
+		"AddTimeSlot": "Engeza Isikhathi Slot",
+		"CopyFromDay": "Kopisha kusukela ngosuku",
+		"Nearest": "Eduze",
+		"Today": "Namuhla",
+		"Tomorrow": "Kusasa",
+		"AfterTomorrow": "Ngemva kwakusasa"
+	},
+	"subscribe": {
+		"subscribeToCalendar": "Bhalisela Ikhalenda",
+		"copyLinkBelow": "Chofoza inkinobho engezansi ukuze ukopishe isixhumanisi ebhodini lakho lokunamathisela",
+		"tapToCopy": "Thepha inkinobho engezansi ukuze ukopishe isixhumanisi ebhodini lakho lokunamathisela",
+		"goTo": "Iya ku:",
+		"pasteCopiedTo": "Namathisela isixhumanisi esikopishiwe kunkambu ethi &quot;URL yekhalenda&quot;.",
+		"clickAddCalendar": "Chofoza inkinobho ethi &quot;Engeza ikhalenda&quot;.",
+		"copyLink": "Kopisha Isixhumanisi",
+		"linkCopied": "Isixhumanisi Sikopishiwe",
+		"step2": "Isixhumanisi Sikopishiwe. Simayelana nokuvula i-Google Khalenda. Uzodinga ukunamathisela isixhumanisi ebhokisini lombhalo, chofoza okuthi &quot;Engeza ikhalenda&quot;, bese uvala ithebhu (bona isithombe-skrini ngezansi)",
+		"calendarAppPreferences": "Vula Okuncamelayo Kuhlelo Lokusebenza Lwekhalenda ku-Mac yakho, bese usetha Uhlelo Lokusebenza Lwekhalenda Oluzenzakalelayo ukuthi lube njengoba kuboniswe ngezansi.",
+		"thenCloseDialog": "Bese uvala le ngxoxo ukuze ubhalisele ikhalenda lakho!",
+		"success": "Ikhalenda livunyelaniswe ngempumelelo"
+	},
+	"@override": {
+		"Assets/content": {
+			"credits": {
+				"EventParticipation": "Ukuhlanganyela Kwemicimbi"
+			},
+			"payments": {
+				"reasons": {
+					"EventParticipation": "Ukuhlanganyela Kwemicimbi"
+				}
+			}
+		}
+	}
 }

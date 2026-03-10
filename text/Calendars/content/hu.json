@@ -126,7 +126,9 @@
 			"WebRTCStarted": "Megkezd\u0151d\u00f6tt a telekonferencia",
 			"WebRTCEnded": "A telekonferencia v\u00e9get \u00e9rt",
 			"Prepayment": "El\u0151refizet\u00e9s",
-			"PrepaymentConfirm": "1 doll\u00e1ros n\u00e9vleges d\u00edjat sz\u00e1m\u00edtunk fel. A megfelel\u0151 sz\u00e1m\u00fa kreditet kapod meg. Ezeket a krediteket a rendezv\u00e9ny teljes befizet\u00e9s\u00e9be fogjuk besz\u00e1m\u00edtani."
+			"PrepaymentConfirm": "1 doll\u00e1ros n\u00e9vleges d\u00edjat sz\u00e1m\u00edtunk fel. A megfelel\u0151 sz\u00e1m\u00fa kreditet kapod meg. Ezeket a krediteket a rendezv\u00e9ny teljes befizet\u00e9s\u00e9be fogjuk besz\u00e1m\u00edtani.",
+			"UserNotParticipated": "{{1}} nem vesz r\u00e9szt az esem\u00e9nyen",
+			"PayToAttend": "Fizet\u00e9s a r\u00e9szv\u00e9tel\u00e9rt"
 		},
 		"composer": {
 			"SetLocation": "Saj\u00e1t poz\u00edci\u00f3 be\u00e1ll\u00edt\u00e1sa",
@@ -251,7 +253,8 @@
 		"confirmParticipate": "{{1}} m\u00e9g nem r\u00e9sze az esem\u00e9nynek. Fel szeretn\u00e9 venni \u0151ket r\u00e9sztvev\u0151k\u00e9nt?",
 		"userNotFound": "Felhaszn\u00e1l\u00f3 nem tal\u00e1lhat\u00f3",
 		"confirmYes": "Igen",
-		"confirmNo": "Nem"
+		"confirmNo": "Nem",
+		"UserAlreadyCheckedIn": "{{1}} et m\u00e1r {{2}} en bejelentkeztek!"
 	},
 	"notifications": {
 		"EventActivityIn": "Esem\u00e9nytev\u00e9kenys\u00e9g itt: {{{stream.fields.title}}}",
@@ -338,6 +341,9 @@
 				"reasons": {
 					"EventParticipation": "Esem\u00e9nyen val\u00f3 r\u00e9szv\u00e9tel"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Esem\u00e9nyen val\u00f3 r\u00e9szv\u00e9tel"
 			}
 		}
 	}

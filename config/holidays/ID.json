@@ -1,0 +1,18 @@
+{
+  "2026-01-01":[{"National":["new_year_s_day"]}],
+  "2026-04-03":[{"National":["good_friday"]}, {"Catholic":["good_friday"]}],
+  "2026-04-05":[{"National":["easter_sunday"]}, {"Catholic":["easter"]}],
+  "2026-05-01":[{"National":["labour_day"]}, {"Buddhist":["vesak_day"]}],
+  "2026-05-14":[{"National":["ascension_day"]}],
+  "2026-06-01":[{"National":["pancasila_day"]}],
+  "2026-08-17":[{"National":["independence_day"]}],
+  "2026-12-25":[{"National":["christmas_day"]}, {"Catholic":["christmas"]}],
+  "2027-01-01":[{"National":["new_year_s_day"]}],
+  "2027-03-26":[{"National":["good_friday"]}, {"Catholic":["good_friday"]}],
+  "2027-03-28":[{"National":["easter_sunday"]}, {"Catholic":["easter"]}],
+  "2027-05-01":[{"National":["labour_day"]}],
+  "2027-05-06":[{"National":["ascension_day"]}],
+  "2027-06-01":[{"National":["pancasila_day"]}],
+  "2027-08-17":[{"National":["independence_day"]}],
+  "2027-12-25":[{"National":["christmas_day"]}, {"Catholic":["christmas"]}]
+}

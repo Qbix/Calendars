@@ -127,7 +127,9 @@
 			"WebRTCStarted": "Telekonferensie het begin",
 			"WebRTCEnded": "Telekonferensie ge\u00ebindig",
 			"Prepayment": "Vooruitbetaling",
-			"PrepaymentConfirm": "Ons hef &#39;n nominale fooi van $1. Jy sal die ooreenstemmende aantal krediete ontvang. Hierdie krediete sal toegepas word op jou volle betaling vir die geleentheid."
+			"PrepaymentConfirm": "Ons hef &#39;n nominale fooi van $1. Jy sal die ooreenstemmende aantal krediete ontvang. Hierdie krediete sal toegepas word op jou volle betaling vir die geleentheid.",
+			"UserNotParticipated": "{{1}} is nie &#39;n deelnemer aan die geleentheid nie",
+			"PayToAttend": "Betaal om by te woon"
 		},
 		"composer": {
 			"SetLocation": "Stel My ligging",
@@ -217,7 +219,8 @@
 		"confirmParticipate": "{{1}} is nog nie deel van die geleentheid nie. Wil jy hulle as &#39;n deelnemer byvoeg?",
 		"userNotFound": "Gebruiker nie gevind nie",
 		"confirmYes": "Ja",
-		"confirmNo": "Geen"
+		"confirmNo": "Geen",
+		"UserAlreadyCheckedIn": "{{1}} is reeds deur {{2}} aangemeld!"
 	},
 	"notifications": {
 		"EventActivityIn": "Gebeurtenisaktiwiteit in {{{stream.fields.title}}}",
@@ -364,6 +367,9 @@
 				"reasons": {
 					"EventParticipation": "Geleentheidsdeelname"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Geleentheidsdeelname"
 			}
 		}
 	}

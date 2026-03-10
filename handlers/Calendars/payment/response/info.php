@@ -15,7 +15,7 @@ function Calendars_payment_response_info($params)
     $stream = Streams_Stream::fetch($r['publisherId'], $r['publisherId'], 'Calendars/event/'.$r['eventId'], true);
     $payment = $stream->getAttribute("payment");
 
-    $isAssetsCustomer = null;
+    $isAssetsCustomer = false;
     $user = Users::loggedInUser();
     if ($user) { // check if user assets customer
         $assetsCharge = new Assets_Charge();

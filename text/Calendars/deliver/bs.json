@@ -1,0 +1,21 @@
+{
+	"basic": {
+		"ThankYouForYourInterest": "Hvala vam na interesovanju za {{title}}"
+	},
+	"approved": {
+		"Subject": "Prisustvo odobreno",
+		"AttendanceApproved": "\u010cestitamo! Va\u0161e prisustvo je odobreno za {{title}}"
+	},
+	"requested": {
+		"Subject": "Zatra\u017eeno prisustvo",
+		"AttendanceRequested": "Potvr\u0111ujemo va\u0161 zahtjev za prisustvo: {{title}}"
+	},
+	"rejected": {
+		"Subject": "Prisustvo nije odobreno",
+		"AttendanceRejected": "Administratori nisu odobrili va\u0161 zahtjev za prisustvo: {{title}}"
+	},
+	"paid": {
+		"Subject": "Potvrda uspje\u0161ne uplate",
+		"YouveBeenCharged": "Napla\u0107eno vam je {{amount}} {{currency}} (i {{credits}} kredit). Spremni ste! Vidimo se u {{title}}"
+	}
+}

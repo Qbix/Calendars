@@ -31,6 +31,11 @@ Q.Tool.define("Calendars/event/preview", ["Streams/preview"], function(options, 
 	// apply template class
 	$toolElement.addClass("Calendars_event_preview_template_" + tool.state.templateStyle);
 
+	// array of Users/avatar tools observed to update badges
+	tool.avatarsToRefresh = [];
+
+	tool.loggedInUserId = Q.Users.loggedInUserId();
+
 	preview.preprocess = function (callback) {
 		tool.composer(function (err, data) {
 			var fem = Q.firstErrorMessage(err, data);
@@ -72,23 +77,21 @@ Q.Tool.define("Calendars/event/preview", ["Streams/preview"], function(options, 
 		var instructions = message.getAllInstructions();
 		var messageType = Q.getObject("type", message) || "";
 
-		if (messageType === 'Calendars/checkin' && instructions.checkin) {
+		if (messageType === 'Streams/participant/extraUpdated') {
 			// update Streams/participants tool
-			Calendars.Event.updateParticipants({
-				tool: tool,
-				userId: instructions.userId,
-				type: 'checkin'
+			tool.refreshParticipants({
+				participant: instructions.participant
 			});
 		}
 
 		if (messageType === 'Streams/join') {
-			if (Q.getObject("byUserId", message) === Q.Users.loggedInUserId()) {
+			if (Q.getObject("byUserId", message) === tool.loggedInUserId) {
 				$(tool.element).attr('data-going', 'yes');
 			}
 		}
 
 		if (messageType === 'Streams/leave') {
-			if (Q.getObject("byUserId", message) === Q.Users.loggedInUserId()) {
+			if (Q.getObject("byUserId", message) === tool.loggedInUserId) {
 				$(tool.element).attr('data-going', 'no');
 			}
 		}
@@ -148,18 +151,6 @@ Q.Tool.define("Calendars/event/preview", ["Streams/preview"], function(options, 
 		}, 'Q_timestamp_end', tool.prefix);
 		var time = "<div class='Calendars_event_preview_time'>" + timestamp + "</div>";
 		var info = time + venue;
-		var participantsTool = Q.Tool.setUpElementHTML('div', 'Streams/participants', {
-			publisherId: stream.fields.publisherId,
-			streamName: stream.fields.name,
-			max: stream.getAttribute('peopleMax'),
-			invite: false,
-			avatar: {
-				icon: '40',
-			},
-			maxShow: 6
-		}, 'Streams_participants', tool.prefix, {
-			'data-q-retain': "retain"
-		});
 		var avatarTool = Q.Tool.setUpElementHTML('div',
 			'Users/avatar',
 			{
@@ -178,7 +169,6 @@ Q.Tool.define("Calendars/event/preview", ["Streams/preview"], function(options, 
 			src: stream.iconUrl(state.icon.size),
 			title: stream.fields.title,
 			info: info,
-			participantsTool: participantsTool,
 			avatarTool: avatarTool,
 			show: state.show,
 			hideUnpaid: Q.getObject("Calendars.Event.unpaid.hide.location", Q)
@@ -186,6 +176,31 @@ Q.Tool.define("Calendars/event/preview", ["Streams/preview"], function(options, 
 		Q.Template.render('Calendars/event/preview', fields, function (err, html) {
 			if (err) return;
 			Q.replace(tool.element, html);
+
+			var $participants = $(".Calendars_event_preview_participants", tool.element);
+			if ($participants.length && tool.stream) {
+				$participants[0].forEachTool("Users/avatar", function () {
+					if (!this.state.userId) {
+						return;
+					}
+
+					tool.refreshParticipants({
+						avatar: this
+					});
+				});
+
+				$participants.tool("Streams/participants", {
+					publisherId: stream.fields.publisherId,
+					streamName: stream.fields.name,
+					max: stream.getAttribute('peopleMax'),
+					invite: false,
+					avatar: {
+						icon: '40',
+					},
+					maxShow: 6
+				});
+			}
+
 			Q.activate(tool, {
 				'.Streams_participants_tool': {
 					filter: function (userId, element) {
@@ -215,70 +230,26 @@ Q.Tool.define("Calendars/event/preview", ["Streams/preview"], function(options, 
 				}
 
 				// get stream with all participants
-				Streams.get(ps.publisherId, ps.streamName, function (err, eventStream, extra) {
-					var participants = Q.getObject(['participants'], extra);
-					if (participants && participantsTool) {
+				Streams.retainWith(tool).get(ps.publisherId, ps.streamName, function (err, eventStream, extra) {
+					tool.participants = Q.getObject("participants", extra) || [];
+					tool.refreshParticipants();
+					if (tool.participants && participantsTool) {
 						var participantsOrdering = [];
-						Q.each(participants, function (userId, streamsParticipant) {
-							if (!streamsParticipant) {
+						Q.each(tool.participants, function (userId, participant) {
+							if (!participant) {
 								return;
 							}
 							
-							if (streamsParticipant.userId === Q.Users.loggedInUserId() && streamsParticipant.state === 'participating') {
-								$te.attr('data-going', streamsParticipant.getExtra("going"));
+							if (participant.userId === tool.loggedInUserId && participant.state === 'participating') {
+								$te.attr('data-going', participant.getExtra("going"));
 							}
 
-							if (streamsParticipant.testRoles('staff') || streamsParticipant.testRoles('speaker')) {
+							if (participant.testRoles('staff') || participant.testRoles('speaker')) {
 								participantsOrdering.push(userId);
 							}
 						});
 						participantsTool.state.ordering = participantsOrdering;
 						Q.handle(participantsTool.Q.onStateChanged("ordering"));
-
-						participantsTool.state.onRefresh.add(function () {
-							// add to participants onRefresh event handler to update avatar data-checkin
-							// iterate event participants
-							Q.each(participants, function (index, participant) {
-								if (participant.state !== 'participating') {
-									return;
-								}
-
-								var extra = participant.extra ? JSON.parse(participant.extra) : null;
-
-								if (participant.testRoles('staff')) {
-									// logged user is a staff in this event
-									if (Q.Users.loggedInUserId() === participant.userId) {
-										$te.attr("data-staff", true);
-									}
-
-									Calendars.Event.updateParticipants({
-										tool: tool,
-										userId: participant.userId,
-										type: 'staff'
-									});
-								} else if (participant.testRoles('speaker')) {
-									Calendars.Event.updateParticipants({
-										tool: tool,
-										userId: participant.userId,
-										type: 'speaker'
-									});
-								} else if (participant.testRoles('leader')) {
-									Calendars.Event.updateParticipants({
-										tool: tool,
-										userId: participant.userId,
-										type: 'speaker'
-									});
-								}
-
-								if (Q.getObject(['checkin'], extra)) {
-									Calendars.Event.updateParticipants({
-										tool: tool,
-										userId: participant.userId,
-										type: 'checkin'
-									});
-								}
-							});
-						}, tool);
 					}
 
 					if (parseInt(Q.getObject(["relatedFromTotals", 'Calendars/recurring', 'Calendars/recurring'], eventStream)) > 0) {
@@ -321,6 +292,68 @@ Q.Tool.define("Calendars/event/preview", ["Streams/preview"], function(options, 
 				debugger;
 			}
 		});
+	},
+	/**
+	 * Add or update avatar badges on participant updated
+	 * @method refreshParticipants
+	 * @param {object} params
+	 * @param {Q.Tool} [params.avatar] Users/avatar tool need to update
+	 * @param {Object} [params.participant] participant need to update
+	 */
+	refreshParticipants: function (params) {
+		var tool = this;
+		var $te = $(tool.element);
+
+		var avatar = Q.getObject("avatar", params);
+		if (Q.typeOf(avatar) === 'Q.Tool' && avatar.name === "users_avatar" && avatar.state.userId) {
+			tool.avatarsToRefresh.push(avatar);
+		}
+
+		var participant = Q.getObject("participant", params);
+		if (participant) {
+			Q.setObject("participants." + participant.userId, new Streams.Participant(participant), tool);
+		}
+
+		// add to participants onRefresh event handler to update avatar data-roles, data-paid
+		// iterate event participants
+		Q.each(tool.participants, function (i, participant) {
+			// if participant left stream, do nothing
+			if (participant.state !== 'participating') {
+				return;
+			}
+
+			Q.each(tool.avatarsToRefresh, function (j, avatar) {
+				if (avatar.state.userId !== participant.userId) {
+					return;
+				}
+
+				// if avatar tool removed or tool.element is out of DOM, remove from avatarsToRefresh and exit
+				if (avatar.removed || !avatar.element.isConnected) {
+					return tool.avatarsToRefresh.splice(j, 1);
+				}
+
+				Calendars.Event.updateParticipants({
+					participant,
+					avatar,
+					type: (function () {
+						var type = [];
+						var item;
+
+						for (item of ['leader', 'host', 'speaker', 'staff']) {
+							if (!participant.testRoles(item)) {
+								continue;
+							}
+
+							type.push(item);
+							$te.attr("data-" + item, true);
+							break;
+						}
+
+						return type;
+					})()
+				});
+			});
+		});
 	}
 }
 
@@ -339,7 +372,7 @@ Q.Template.set('Calendars/event/preview',
 		</div>
 	</div>
 	{{#if show.participants}}
-		{{{participantsTool}}}
+		<div class="Calendars_event_preview_participants"></div>
 	{{/if}}
 	{{#if show.hosts}}
 		{{{avatarTool}}}

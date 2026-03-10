@@ -53,9 +53,9 @@ function Calendars_after_Streams_leave($params)
             $payments['conclusion']['toUserId'],        // event publisher (receiver of original payment)
             $payments['conclusion']['fromUserId'],      // registered
 			array(
-				'toPublisherId' => $event->publisherId,
-				'toStreamName'  => $event->name,
-				'toStreamTitle' => $event->title
+				'fromPublisherId' => $event->publisherId,
+				'fromStreamName'  => $event->name,
+				'fromStreamTitle' => $event->title
 			)
 		);
 	}

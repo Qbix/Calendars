@@ -126,7 +126,9 @@
 			"WebRTCStarted": "Teleconferencia iniciada",
 			"WebRTCEnded": "Teleconferencia finalizada",
 			"Prepayment": "Pago por adelantado",
-			"PrepaymentConfirm": "Se cobrar\u00e1 una tarifa nominal de $1. Recibir\u00e1 la cantidad correspondiente de cr\u00e9ditos. Estos cr\u00e9ditos se aplicar\u00e1n al pago total del evento."
+			"PrepaymentConfirm": "Se cobrar\u00e1 una tarifa nominal de $1. Recibir\u00e1 la cantidad correspondiente de cr\u00e9ditos. Estos cr\u00e9ditos se aplicar\u00e1n al pago total del evento.",
+			"UserNotParticipated": "{{1}} no es participante del evento",
+			"PayToAttend": "Pagar para asistir"
 		},
 		"composer": {
 			"SetLocation": "Establecer mi ubicaci\u00f3n",
@@ -251,7 +253,8 @@
 		"confirmParticipate": "{{1}} a\u00fan no forma parte del evento. \u00bfQuieres agregarlo como participante?",
 		"userNotFound": "Usuario no encontrado",
 		"confirmYes": "s\u00ed",
-		"confirmNo": "No"
+		"confirmNo": "No",
+		"UserAlreadyCheckedIn": "{{1}} ya fue registrado por {{2}} !"
 	},
 	"notifications": {
 		"EventActivityIn": "Actividad de eventos en {{{stream.fields.title}}}",
@@ -338,6 +341,9 @@
 				"reasons": {
 					"EventParticipation": "Participaci\u00f3n en eventos"
 				}
+			},
+			"credits": {
+				"EventParticipation": "Participaci\u00f3n en eventos"
 			}
 		}
 	}

@@ -1,0 +1,16 @@
+{
+  "2026-01-01":[{"National":["new_year_s_day"]}],
+  "2026-04-06":[{"National":["easter_monday"]}],
+  "2026-04-24":[{"National":["concord_day"]}],
+  "2026-05-01":[{"National":["labour_day"]}, {"Buddhist":["vesak_day"]}],
+  "2026-08-03":[{"National":["nigerien_independence_day"]}],
+  "2026-12-18":[{"National":["nigerien_republic_day"]}],
+  "2026-12-25":[{"National":["christmas_day"]}, {"Catholic":["christmas"]}],
+  "2027-01-01":[{"National":["new_year_s_day"]}],
+  "2027-03-29":[{"National":["easter_monday"]}],
+  "2027-04-24":[{"National":["concord_day"]}],
+  "2027-05-01":[{"National":["labour_day"]}],
+  "2027-08-03":[{"National":["nigerien_independence_day"]}],
+  "2027-12-18":[{"National":["nigerien_republic_day"]}],
+  "2027-12-25":[{"National":["christmas_day"]}, {"Catholic":["christmas"]}]
+}
