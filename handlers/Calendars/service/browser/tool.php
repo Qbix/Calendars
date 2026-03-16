@@ -19,7 +19,7 @@ function Calendars_service_browser_tool($options)
 	// show options
 	$show = array(
 		'location' => Q_Config::get('Calendars', 'service', 'browser', 'location', true),
-		'livestream' => Q_Config::get('Calendars', 'service', 'browser', 'livestream', false),
+		'teleconference' => Q_Config::get('Calendars', 'service', 'browser', 'teleconference', false),
 		'eventUrl' => Q_Config::get('Calendars', 'service', 'browser', 'eventUrl', true)
 	);
 
