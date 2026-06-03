@@ -821,6 +821,7 @@ Q.Tool.define("Calendars/event", function(options) {
 					type: (function () {
 						var type = [];
 						var item;
+						const userId = Q.Users.loggedInUserId();
 
 						for (item of ['leader', 'host', 'speaker', 'staff']) {
 							if (!participant.testRoles(item)) {
@@ -828,7 +829,9 @@ Q.Tool.define("Calendars/event", function(options) {
 							}
 
 							type.push(item);
-							$(tool.element).attr("data-" + item, true);
+							if (userId && participant.userId === userId) {
+								$(tool.element).attr("data-" + item, true);
+							}							
 							break;
 						}
 

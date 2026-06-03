@@ -15,7 +15,7 @@ function Calendars_after_Streams_invite ($params)
 			$participant->streamName = $streamName;
 			$participant->userId = $userId;
 			if ($participant->retrieve()) {
-				$participant->setExtra('roles', array('staff'));
+				$participant->grantRoles('staff');
 				$participant->save();
 
 				$stream = Streams_Stream::fetch(null, $publisherId, $streamName);

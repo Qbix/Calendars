@@ -81,7 +81,7 @@
 }
 .Calendars_event_preview_tool .Calendars_event_preview_paid {
 	position: absolute;
-	top: 15px;
+	bottom: 15px;
 	right: 15px;
 	overflow: hidden;
 }

@@ -225,6 +225,7 @@ Calendars.Event = {
 	removeFromCalendar: function (publisherId, eventId) {
 		this.handleCalendar(publisherId, eventId, "delete");
 	},
+	onUpdateParticipants: new Q.Event(),
 	/**
 	 * Find Streams/participants tool inside tool and update avatars with badges
 	 * @method updateParticipants
@@ -236,6 +237,11 @@ Calendars.Event = {
 	 */
 	updateParticipants: function(params){
 		params = params || {};
+
+		if (Q.handle(this.onUpdateParticipants, null, [params]) === false) {
+			return;
+		}
+
 		if (Q.isEmpty(Q.getObject("type", params))) {
 			return;
 		}
