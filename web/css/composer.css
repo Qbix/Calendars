@@ -16,7 +16,8 @@
 	margin-bottom: 10px;
 }
 .Calendars_event_composer_tool .Calendars_event_composer_title,
-.Calendars_event_composer_livestream input {
+.Calendars_event_composer_livestream input,
+.Calendars_event_composer_link input {
 	width: 100%;
 	color: black;
 }
