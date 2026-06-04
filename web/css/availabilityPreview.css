@@ -147,7 +147,7 @@
 	font-weight: bold;
 	font-size: 1.2em;
 }
-.Calendars_availability_preview_tool .Calendars_availability_preview_livestream,
+.Calendars_availability_preview_tool .Calendars_availability_preview_teleconference,
 .Calendars_availability_preview_tool .Calendars_availability_preview_location,
 .Calendars_availability_preview_tool .Calendars_availability_preview_description {
 	font-size: 1em;
@@ -164,7 +164,7 @@
 	padding-left: 1.7em;
 	transition: max-height .5s ease-in-out;
 }
-.Calendars_availability_preview_tool .Calendars_availability_preview_livestream:before,
+.Calendars_availability_preview_tool .Calendars_availability_preview_teleconference:before,
 .Calendars_availability_preview_tool .Calendars_availability_preview_location:before,
 .Calendars_availability_preview_tool .Calendars_availability_preview_description:before {
 	font-family: 'qplatform-calendars' !important;
@@ -172,7 +172,7 @@
 	position: absolute;
 	left: 0;
 }
-.Calendars_availability_preview_tool .Calendars_availability_preview_livestream:before {
+.Calendars_availability_preview_tool .Calendars_availability_preview_teleconference:before {
 	content: "\e90b";
 }
 .Calendars_availability_preview_tool .Calendars_availability_preview_location:before {
@@ -257,7 +257,7 @@
 	height: 100%;
 	overflow: auto;
 }
-.Calendars_availability_composer .Calendars_availability_composer_livestream input {
+.Calendars_availability_composer .Calendars_availability_composer_teleconference input {
 	width: 100%;
 	color: black;
 }
@@ -268,7 +268,7 @@
 	position: relative;
 	text-align: left;
 }
-.Calendars_availability_composer_livestream .Q_placeholders_container:after,
+.Calendars_availability_composer_teleconference .Q_placeholders_container:after,
 .Calendars_availability_composer button[name=scheduleOnlineConference]:after {
 	font-family: qplatform-calendars;
 	font-size: 21px;
@@ -288,14 +288,14 @@
 	top: 50%;
 	transform: translateY(-50%);
 }
-.Calendars_availability_composer_livestream .Q_placeholders_container.Q_selected:after,
+.Calendars_availability_composer_teleconference .Q_placeholders_container.Q_selected:after,
 .Calendars_availability_composer button[name=scheduleOnlineConference].Q_selected:after {
 	content: "\ea10";
 }
-.Calendars_availability_composer_livestream label[for=timezoneName] {
+.Calendars_availability_composer_teleconference label[for=timezoneName] {
 	display: none;
 	margin-top: 10px;
 }
-.Calendars_availability_composer_livestream[data-location=false][data-livestream=true] label[for=timezoneName] {
+.Calendars_availability_composer_teleconference[data-location=false][data-teleconference=true] label[for=timezoneName] {
 	display: inline-block;
 }
