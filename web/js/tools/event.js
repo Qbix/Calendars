@@ -1398,9 +1398,11 @@ Q.Tool.define("Calendars/event", function(options) {
 		handleUIEvents();
 		trackLivestreams();
 
-		getMyLivestreamSubscribtion().then(function (subscriptionData) {
+		getMyLivestreamSubscription().then(function (subscriptionData) {
 			updateLivestreamSubscriptionState(subscriptionData)
 			updateUI();
+		}, function () {
+			// do nothing
 		});
 
 		function trackLivestreams() {
@@ -1636,7 +1638,7 @@ Q.Tool.define("Calendars/event", function(options) {
 
 		}
 		
-		function getMyLivestreamSubscribtion() {
+		function getMyLivestreamSubscription() {
 			return new Promise(function (resolve, reject) {
 				var fields = {
 					publisherId: tool.state.publisherId,
