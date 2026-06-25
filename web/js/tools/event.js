@@ -171,7 +171,6 @@ Q.Tool.define("Calendars/event", function(options) {
 	 * @method refresh
 	 */
 	refresh: function () {
-		console.trace();
 		var tool = this;
 		var $te = $(this.element);
 		var state = tool.state;
