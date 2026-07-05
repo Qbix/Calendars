@@ -644,10 +644,16 @@ class Calendars_Event extends Base_Calendars_Event
 	 */
 	static function relateToCommunity($event, $communityId) {
 		$communityEventsCategory = Calendars::stream($communityId);
+		$cn = $communityEventsCategory->name;
 		$startTime = $event->getAttribute('startTime');
+		$endTime = $event->getAttribute('endTime');
 		$event->relateTo($communityEventsCategory, 'Calendars/events', null, array(
 			'skipAccess' => true,
-			'weight' => $startTime
+			'weight' => $startTime,
+			'extra' => array($cn => array(
+				'startTime' => $startTime,
+				'endTime' => $endTime
+			))
 		));
 	}
 	/**

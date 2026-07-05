@@ -279,7 +279,7 @@
 				}
 			},
 			"listing": {
-				"duration": 267840000 /* 100 monthes in seconds */
+				"duration": 31536000 /* 1 year in seconds */
 			},
 			"admins": ["Calendars/admins", "Users/owners", "Users/admins"]
 		},
