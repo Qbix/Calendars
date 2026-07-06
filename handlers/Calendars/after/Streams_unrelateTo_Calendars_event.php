@@ -14,7 +14,7 @@ function Calendars_after_Streams_unrelateTo_Calendars_event($params)
 	// Fetch event
 	$event = Streams_Stream::fetch(
 		$rel->toPublisherId,
-		$rel->fromPublisherId,
+		$rel->toPublisherId,
 		$rel->toStreamName
 	);
 
