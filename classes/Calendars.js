@@ -16,24 +16,13 @@ var Q = require('Q');
 function Calendars() { }
 module.exports = Calendars;
 
-var Streams = Q.plugins.Streams;
-Streams.Message.define('Calendars/going/yes', function () {}, {
-	goingText: function (language) {
-		var text = Q.Text.get("Calendars/content", { language });
-		return Q.getObject(["event", "tool", "GoingTo"], text);
-	}
-});
+var Streams_Message = Q.require('Streams/Message');
 
-Streams.Message.define('Calendars/going/no', function () {}, {
+Streams_Message.define('Calendars/going', function () {}, {
 	goingText: function (language) {
-		var text = Q.Text.get("Calendars/content", { language });
-		return Q.getObject(["event", "tool", "NotGoingTo"], text);
-	}
-});
-
-Streams.Message.define('Calendars/going/maybe', function () {}, {
-	goingText: function (language) {
-		var text = Q.Text.get("Calendars/content", { language });
-		return Q.getObject(["event", "tool", "MaybeGoingTo"], text);
+		var going = this.getInstruction('going') || 'yes';
+		var key = going === 'no' ? 'NotGoingTo'
+			: (going === 'maybe' ? 'MaybeGoingTo' : 'GoingTo');
+		return Q.getObject(["event", "tool", key], Q.Text.get("Calendars/content", { language }));
 	}
 });

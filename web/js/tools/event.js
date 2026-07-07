@@ -87,19 +87,12 @@ Q.Tool.define("Calendars/event", function(options) {
 		}
 	}, tool);
 
-	Q.each(['yes', 'no', 'maybe'], function (i, going) {
-		Streams.Stream.onMessage(state.publisherId, state.streamName, 'Calendars/going/'+going)
-		.set(function(message) {
-			if (message.byUserId === userId) {
-				var instructions = JSON.parse(message.instructions);
-				tool.stream.participant = new Streams.Participant(instructions.participant);
-				tool.refreshParticipants({
-					participant: instructions.participant
-				});
-				tool.updateInterface(going);
-			}
-		}, tool);
-	});
+	Streams.Stream.onMessage(state.publisherId, state.streamName, 'Calendars/going')
+	.set(function(message) {
+		if (message.byUserId === userId) {
+			tool.updateInterface(message.getInstruction('going'));
+		}
+	}, tool);
 
 	Streams.Stream.onMessage(state.publisherId, state.streamName, 'Calendars/event/webrtc/started')
 	.set(function(message) {

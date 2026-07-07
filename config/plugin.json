@@ -127,7 +127,7 @@
 					"readLevel": 23,
 					"writeLevel": 23,
 					"adminLevel": 20
-				},
+				}
 			},
 			"Calendars/event": {
 				"emoji": "🕒",
@@ -145,13 +145,7 @@
 					"Streams/chat/message": {
 						"post": true
 					},
-					"Calendars/going/yes": {
-						"subject": ["Calendars/content", ["notifications", "EventActivityIn"]]
-					},
-					"Calendars/going/no": {
-						"subject": ["Calendars/content", ["notifications", "EventActivityIn"]]
-					},
-					"Calendars/going/maybe": {
+					"Calendars/going": {
 						"subject": ["Calendars/content", ["notifications", "EventActivityIn"]]
 					},
 					"Calendars/checkin": {
