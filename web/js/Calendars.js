@@ -50,12 +50,12 @@ Calendars.Event = {
 		});
 
 		// for web
-		if (Q.info.isMobile && !Q.info.isCordova) {
+		if (!Q.info.isCordova) {
 			var src = publisherId + '/' + eventId;
 			if (action === 'add') {
 				if (Q.info.platform === 'ios') {
 					src = src + '/add.ics';
-				} else if (Q.info.platform === 'android') {
+				} else { // if (Q.info.platform === 'android') {
 					src = src + '/add.gcal';
 				}
 			} else if (action === "delete") {
@@ -71,18 +71,20 @@ Calendars.Event = {
 
 			src = Q.url(src);
 
-			if (Q.info.platform === 'ios') {
-				var iframe = document.createElement('iframe');
-				iframe.setAttribute('src', src);
-				iframe.setAttribute("style", "display: none;");
-				Q.addEventListener(iframe, 'load', function _Q_formPost_loaded() {
-					Q.removeElement(iframe);
-				});
-				document.body.appendChild(iframe);
-				Q.handle(onComplete);
-			} else if (Q.info.platform === 'android') {
-				Q.handle(onComplete);
-				window.location.href = src;
+			var iframe = document.createElement('iframe');
+			iframe.setAttribute('src', src);
+			iframe.setAttribute("style", "display: none;");
+			Q.addEventListener(iframe, 'load', function _Q_formPost_loaded() {
+				Q.removeElement(iframe);
+			});
+			document.body.appendChild(iframe);
+			Q.handle(onComplete);
+
+			if (Q.info.platform !== 'ios') {
+				// try opening a google calendar link in a new tab,
+				// especially works on android where people are likely
+				// to have a calendar app that can handle it
+				window.open(src, '_blank');	
 			}
 
 			return;
@@ -180,8 +182,10 @@ Calendars.Event = {
 					}
 
 					Q.confirm(text.prompt, function (res) {
-						// nevermind what user reply,
-						// need to call this event to avoid multiple questions.
+						// regardless of the user's reply, we need to call
+						// onComplete to avoid multiple questions. 
+						// If user agreed, we will call onSuccess inside onComplete, 
+						// and if not - just call onComplete without parameters.
 						Q.handle(onComplete);
 
 						if (!res){
