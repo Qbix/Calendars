@@ -60,6 +60,7 @@
 		"routes@start": {
 			"calendarsIcons": { "module": "Calendars", "action": "icons" },
 			":publisherId/:eventId/:method.gcal": {"module": "Calendars", "action": "gcal"},
+			":publisherId/:eventId/:method.outlook": {"module": "Calendars", "action": "outlook"},
 			":publisherId/:eventId/:method.ics": {"module": "Calendars", "action": "ics"},
 			"Calendars/personal/:userId.ics": {"module": "Calendars", "action": "calendarIcs"}
 		},

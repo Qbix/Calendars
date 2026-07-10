@@ -157,6 +157,10 @@
 	color: red;
 }
 
+.Calendars_addToCalendar_buttons {
+	text-align: center;
+}
+
 /************** Calendars Payment ********************************/
 /* horizontal preloader */
 #page button[data-loading=true],

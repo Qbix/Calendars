@@ -229,6 +229,85 @@ Calendars.Event = {
 	removeFromCalendar: function (publisherId, eventId) {
 		this.handleCalendar(publisherId, eventId, "delete");
 	},
+	/**
+	 * Show a dialog letting the user choose how to add an event to their calendar.
+	 * Presents buttons for Google Calendar, Outlook, and iCalendar (.ics download).
+	 * @method addToCalendarDialog
+	 * @static
+	 * @param {String} publisherId Event stream publisher id
+	 * @param {String} eventId Last part of event stream name (Calendars/event/[eventId])
+	 * @param {Object} [options]
+	 * @param {String} [options.title] Custom dialog title
+	 * @param {String} [options.className] Extra CSS class(es) for the dialog
+	 */
+	addToCalendarDialog: function (publisherId, eventId, options) {
+		options = options || {};
+		var timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+		var baseSrc = Q.url(publisherId + '/' + eventId);
+		var qs = '?timeZone=' + encodeURIComponent(timeZone);
+
+		Q.Text.get('Calendars/content', function (err, content) {
+			var text = Q.getObject(['event', 'addToCalendar', 'dialog'], content) || {};
+			var title = options.title || text.Title || "Add Event to Calendar";
+
+			var formats = [
+				{ key: 'gcal',    label: text.gcal    || 'Google',    redirect: true },
+				{ key: 'outlook', label: text.outlook || 'Outlook',   redirect: true },
+				{ key: 'ical',    label: text.ical    || 'iCalendar', redirect: false }
+			];
+
+			var $buttons = $('<div class="Calendars_addToCalendar_buttons" />');
+
+			Q.each(formats, function (i, format) {
+				var src = baseSrc + '/add.' + format.key + qs;
+				$('<a />')
+					.attr({
+						'href': '#addToCalendar_' + format.key,
+						'id': 'Calendars_addToCalendar_' + format.key
+					})
+					.addClass('Calendars_addToCalendar_button')
+					.css({'display': 'inline-block', 'vertical-align': 'middle'})
+					.append(
+						$('<img />').attr({
+							alt: format.label,
+							src: Q.url('{{Calendars}}/img/formats/' + format.key + '.png')
+						}),
+						$('<div />').text(format.label)
+					)
+					.on(Q.Pointer.fastclick, function () {
+						Q.Dialogs.pop();
+						if (format.redirect) {
+							window.open(src, '_blank');
+						} else {
+							// download .ics via hidden iframe
+							var iframe = document.createElement('iframe');
+							iframe.setAttribute('src', src);
+							iframe.setAttribute('style', 'display: none;');
+							Q.addEventListener(iframe, 'load', function () {
+								Q.removeElement(iframe);
+							});
+							document.body.appendChild(iframe);
+						}
+						var path = ['addToCalendar', 'added', publisherId, eventId];
+						Q.Cache.local('Calendars').set(path, true);
+						return false;
+					})
+					.appendTo($buttons);
+			});
+
+			Q.Dialogs.push({
+				title: title,
+				content: $('<div class="Calendars_addToCalendar_content" />')
+					.append($buttons),
+				elementId: 'Calendars_addToCalendar_dialog',
+				className: 'Calendars_addToCalendar_dialog '
+					+ (options.className || ''),
+				onClose: function () {
+					$(this).remove();
+				}
+			});
+		});
+	},
 	onUpdateParticipants: new Q.Event(),
 	/**
 	 * Find Streams/participants tool inside tool and update avatars with badges
