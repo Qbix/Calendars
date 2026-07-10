@@ -160,6 +160,12 @@
 .Calendars_addToCalendar_buttons {
 	text-align: center;
 }
+.Calendars_addToCalendar_button {
+	margin: 10px;
+}
+.Calendars_addToCalendar_button img {
+	width: 80px;
+}
 
 /************** Calendars Payment ********************************/
 /* horizontal preloader */

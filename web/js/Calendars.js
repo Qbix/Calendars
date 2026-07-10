@@ -247,13 +247,15 @@ Calendars.Event = {
 		var qs = '?timeZone=' + encodeURIComponent(timeZone);
 
 		Q.Text.get('Calendars/content', function (err, content) {
-			var text = Q.getObject(['event', 'addToCalendar', 'dialog'], content) || {};
-			var title = options.title || text.Title || "Add Event to Calendar";
+			var text = Q.getObject(['event', 'addToCalendar'], content) || {};
+			var title = options.title
+				|| Q.getObject(['dialog', 'title'], text)
+				|| "Add Event to Calendar";
 
 			var formats = [
-				{ key: 'gcal',    label: text.gcal    || 'Google',    redirect: true },
-				{ key: 'outlook', label: text.outlook || 'Outlook',   redirect: true },
-				{ key: 'ical',    label: text.ical    || 'iCalendar', redirect: false }
+				{ key: 'ics',     label: text.ics     || 'iCalendar' },
+				{ key: 'gcal',    label: text.gcal    || 'Google' },
+				{ key: 'outlook', label: text.outlook || 'Outlook' }
 			];
 
 			var $buttons = $('<div class="Calendars_addToCalendar_buttons" />');
@@ -275,10 +277,7 @@ Calendars.Event = {
 						$('<div />').text(format.label)
 					)
 					.on(Q.Pointer.fastclick, function () {
-						Q.Dialogs.pop();
-						if (format.redirect) {
-							window.open(src, '_blank');
-						} else {
+						if (format.key === 'ics') {
 							// download .ics via hidden iframe
 							var iframe = document.createElement('iframe');
 							iframe.setAttribute('src', src);
@@ -287,7 +286,14 @@ Calendars.Event = {
 								Q.removeElement(iframe);
 							});
 							document.body.appendChild(iframe);
+							if (Q.info.platform !== 'ios') {
+								window.open(src, '_blank');
+							}
+						} else {
+							// gcal and outlook open directly
+							window.open(src, '_blank');
 						}
+						Q.Dialogs.pop();
 						var path = ['addToCalendar', 'added', publisherId, eventId];
 						Q.Cache.local('Calendars').set(path, true);
 						return false;
