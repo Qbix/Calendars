@@ -15,7 +15,6 @@ function Calendars_outlook_response ()
 	$startDt = _Calendars_outlook_toISO($info['start']);
 	$endDt = _Calendars_outlook_toISO($info['end']);
 	if (!$endDt) {
-		// fallback: 2 hours after start
 		$startTs = _Calendars_outlook_toTimestamp($info['start']);
 		$endDt = gmdate('Y-m-d\TH:i:s\Z', $startTs + 7200);
 	}
@@ -30,7 +29,7 @@ function Calendars_outlook_response ()
 		$body = "$info[url]\n\n$info[videoconferenceUrl]\n\n$info[content]";
 	}
 
-	$params = array(
+	$webParams = array(
 		'path' => '/calendar/action/compose',
 		'rru' => 'addevent',
 		'subject' => $info['title'],
@@ -39,10 +38,51 @@ function Calendars_outlook_response ()
 		'startdt' => $startDt,
 		'enddt' => $endDt
 	);
+	$webUrl = 'https://outlook.office.com/calendar/deeplink/compose?'
+		. http_build_query($webParams, '', '&');
 
-	$redirect = 'https://outlook.live.com/calendar/0/deeplink/compose?'
-		. http_build_query($params, '', '&');
-	Q_Response::redirect($redirect);
+	// On iOS and Android, try the native Outlook app via custom URI scheme
+	// and fall back to the web URL if the app isn't installed.
+	// iOS: ms-outlook://events/new  Android: msoutlook://events/new
+	$platform = Q_Request::platform();
+	if ($platform === 'ios' || $platform === 'android') {
+		$scheme = ($platform === 'ios') ? 'ms-outlook' : 'msoutlook';
+		$appParams = array(
+			'title' => $info['title'],
+			'start' => $startDt,
+			'end' => $endDt,
+			'location' => $info['address']
+		);
+		$appUrl = "$scheme://events/new?"
+			. http_build_query($appParams, '', '&');
+
+		$appUrlJs = Q::json_encode($appUrl);
+		$webUrlJs = Q::json_encode($webUrl);
+		echo <<<HTML
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"></head>
+<body><script>
+(function () {
+	var appUrl = $appUrlJs;
+	var webUrl = $webUrlJs;
+	var start = Date.now();
+	var timer = setTimeout(function () {
+		if (Date.now() - start < 2000) {
+			window.location.href = webUrl;
+		}
+	}, 800);
+	window.addEventListener('pagehide', function () {
+		clearTimeout(timer);
+	});
+	window.location.href = appUrl;
+})();
+</script></body></html>
+HTML;
+		return true;
+	}
+
+	// Desktop: redirect to Outlook web compose
+	Q_Response::redirect($webUrl);
 	return true;
 }
 
