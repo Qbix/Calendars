@@ -52,6 +52,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
+	width: 100%;
 	background-size: 100% 140px;
 	color: white;
 	text-shadow: black 1px 1px;
