@@ -300,7 +300,8 @@ Q.Tool.define("Calendars/event", function(options) {
 						streamName: state.streamName,
 						ordering: participantsOrdering,
 						invite: {
-							readLevel: 25
+							readLevel: 25,
+							dontAutoAccept: true
 						},
 						avatar: {
 							icon: '40',
