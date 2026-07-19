@@ -21,6 +21,7 @@ var Places = Q.Places;
  *   @param {Boolean} [options.show.trips=false]
  *   @param {Boolean} [options.show.chat=false]
  *   @param {Boolean} [options.show.time=true]
+ *   @param {Boolean} [options.show.livestream=false]
  *   @param {Boolean} [options.show.location=false]
  *   @param {Boolean} [options.show.interests=true]
  *   @param {Boolean} [options.show.openTo=true]
@@ -135,6 +136,7 @@ Q.Tool.define("Calendars/event", function(options) {
 		chat: false,
 		time: true,
 		reminders: false,
+		livestream: true,
 		location: true,
 		interests: true,
 		eventType: false,
@@ -258,6 +260,7 @@ Q.Tool.define("Calendars/event", function(options) {
 			var fields = Q.extend({}, state, {
 				interestTitles: interestTitle,
 				location: location,
+				livestream: livestream,
 				stream: stream,
 				startTime: startTime,
 				endTime: endTime,
@@ -2917,6 +2920,7 @@ Q.Template.set('Calendars/event/tool',
 	'		<div class="Calendars_info_icon"><i class="qp-calendars-alarm"></i></div>' +
 	'		<div class="Calendars_info_content">{{text.event.tool.Reminders}}</div>' +
 	'	</div>' +
+	'{{#if location}}' +
 	'	<div class="Q_button Q_aspect_where" {{#ifEquals show.location false}}style="display:none"{{/ifEquals}} data-invoke="local">' +
 	'		<div class="Calendars_info_icon"><i class="qp-calendars-locations"></i></div>' +
 	'		<div class="Calendars_info_content">' +
@@ -2925,6 +2929,8 @@ Q.Template.set('Calendars/event/tool',
 	'			<div class="Calendars_location_area">{{location.area.title}}</div>' +
 	'		</div>' +
 	'	</div>' +
+	'{{/if}}' +
+	'{{#if livestream}}' +
 	'	<div class="Q_aspect_livestream" {{#ifEquals show.livestream false}}style="display:none"{{/ifEquals}}>' +
 	'		<div class="Q_button Q_aspect_livestream_button" data-invoke="livestream">' +
 	'			<div class="Calendars_info_icon">' +
@@ -2936,6 +2942,7 @@ Q.Template.set('Calendars/event/tool',
 	'		</div>' +
 	'		<div class="Q_aspect_livestream_list"></div>' +
 	'	</div>' +
+	'{{/if}}' +
 	'	<div class="Q_aspect_conference" {{#ifEquals show.teleconference false}}style="display:none"{{/ifEquals}}>' +
 	'		<div class="Q_button Q_aspect_conference_button" data-invoke="teleconference">' +
 	'			<div class="Calendars_info_icon"><i class="qp-calendars-teleconference"></i></div>' +
