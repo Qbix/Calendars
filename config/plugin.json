@@ -45,6 +45,11 @@
 		"web": {
 			"requireValidNonce": ["Calendars"]
 		},
+		"webserver": {
+			"preload": [
+				"Calendars", "Calendars_Event"
+			]
+		},
 		"environments": {
 			"live": {
 				"prepare": {
