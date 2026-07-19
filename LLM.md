@@ -277,10 +277,10 @@ $event = Calendars_Event::reschedule($publisherId, $streamName, $newStartTime, a
 // Related via 'Calendars/event/webrtc'
 
 // Post notification to event about teleconference state
-Calendars_Event::postMessage($webrtcStream, 'join');   // first join → started
-Calendars_Event::postMessage($webrtcStream, 'leave');  // last leave → ended
+Media_WebRTC::postEventMessage($webrtcStream, 'join');   // first join → started
+Media_WebRTC::postEventMessage($webrtcStream, 'leave');  // last leave → ended
 // Message types: Calendars/event/webrtc/started, Calendars/event/webrtc/ended
-//                Calendars/event/livestream/started, Calendars/event/livestream/ended
+//                Media/livestream/started, Media/livestream/ended
 ```
 
 ---

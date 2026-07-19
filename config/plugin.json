@@ -34,12 +34,6 @@
 			"Streams/invite/accept": ["Calendars/after/Streams_invite_accept"],
 			"Streams/invite": ["Calendars/after/Streams_invite"],
 			"Users/Label/can": ["Calendars/after/Users_Label_can"],
-			"Streams/message/Streams/join": ["Calendars/after/Streams_message_Streams_join"],
-			"Streams/message/Streams/leave": ["Calendars/after/Streams_message_Streams_leave"],
-			"Streams/relateTo/Media/webrtc": ["Calendars/after/Streams_relateTo_Media_webrtc"],
-			"Streams/unrelateTo/Media/webrtc": ["Calendars/after/Streams_unrelateTo_Media_webrtc"],
-			"Streams/message/Media/livestream/start": ["Calendars/after/Streams_message_Media_livestream_start"],
-			"Streams/message/Media/livestream/stop": ["Calendars/after/Streams_message_Media_livestream_stop"],
 			"Db/Row/Streams_Participant/saveExecute": ["Calendars/after/Streams_Participant_saveExecute"]
 		},
 		"web": {
@@ -163,10 +157,10 @@
 					"Calendars/event/webrtc/ended": {
 						"post": false
 					},
-					"Calendars/event/livestream/started": {
+					"Media/livestream/started": {
 						"post": false
 					},
-					"Calendars/event/livestream/ended": {
+					"Media/livestream/ended": {
 						"post": false
 					}
 				},
@@ -257,7 +251,7 @@
 				"Calendars/reminder": {
 					"timeout": 10
 				},
-				"Calendars/event/livestream/started": {
+				"Media/livestream/started": {
 					"timeout": 10
 				}
 			}

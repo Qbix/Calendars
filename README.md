@@ -56,7 +56,7 @@ The availability→service→event chain: `Assets/service` (template) → `Calen
 
 ### Teleconferencing & Livestreaming
 
-Events can include a WebRTC room (via `Media_WebRTC::scheduleOrUpdateRoomStream()`) related via `Calendars/event/webrtc`, or a livestream related via `Calendars/event/livestream`. When a teleconference starts or stops, `Calendars_Event::postMessage()` posts notification messages (`Calendars/event/webrtc/started`, `Calendars/event/livestream/started`, etc.) to the event stream.
+Events can include a WebRTC room (via `Media_WebRTC::scheduleOrUpdateRoomStream()`) related via `Calendars/event/webrtc`, or a livestream related via `Media/livestream`. When a teleconference starts or stops, `Media_WebRTC::postEventMessage()` posts notification messages (`Calendars/event/webrtc/started`, `Media/livestream/started`, etc.) to the event stream.
 
 ### CSV Import
 

@@ -984,9 +984,9 @@ Q.Streams.onMessage('', 'Calendars/payment/skip')
 
 	
 // show Q.Notice when somebody opened webrtc in chat where current user participated
-Q.Streams.onMessage('', 'Calendars/event/livestream/started')
+Q.Streams.onMessage('', 'Media/livestream/started')
 .set(function (message) {
-	console.log('Calendars/event/livestream/started', message, arguments);
+	console.log('Media/livestream/started', message, arguments);
 	var instructions = JSON.parse(message.instructions);
 	var livestreamStreamName = instructions.streamName;
 	var livestreamStreamPublisherId = instructions.publisherId;
