@@ -1791,6 +1791,110 @@ class Calendars_Event extends Base_Calendars_Event
 	}
 
 	/**
+	 * Post a message to Calendars/event about webrtc teleconference
+	 * @method postMessage
+	 * @param {Streams_Stream} $streamWebrtc
+	 * @param {string} $action can be "join", "leave", "relate" and "unrelate"
+	 * @param {Streams_Stream} [$relatedStream=null] pass it if action = "relate" or "unrelate"
+	 */
+	static function postMessage ($streamWebrtc, $action, $relatedStream = null) {
+		list($relations, $streams) = $streamWebrtc->related(null, false, array(
+			'type' => 'Calendars/event/webrtc',
+			'where' => array(
+				'toStreamName' => new Db_Range('Calendars/event/', false, false, true)
+			),
+			'skipAccess' => true
+		));
+		$streamEvent = reset($streams);
+		if (empty($streamEvent)) {
+			return;
+		}
+		$streamEvent = Streams::fetchOne(null, $streamEvent->publisherId, $streamEvent->name);
+		$instructions = array(
+			'publisherId' => $streamWebrtc->publisherId,
+			'streamName' => $streamWebrtc->name,
+			'url' => $streamWebrtc->url()
+		);
+		switch ($action) {
+			case 'join':
+				if ($streamWebrtc->participatingCount == 1) {
+					$type = 'webrtc';
+					$what = 'started';
+				}
+				break;
+			case 'leave':
+				if ($streamWebrtc->participatingCount == 0) {
+					$type = 'webrtc';
+					$what = 'ended';
+				}
+				break;
+			case 'livestreamStart':
+				$type = 'livestream';
+				$what = 'started';
+				/* $livestreamStream = Streams::fetchOne(null, $relatedStream['publisherId'], $relatedStream['streamName']);
+		
+
+				$addedUsers = Streams_Avatar::select()->where(array(
+						'toUserId' => $relatedStream['publisherId']
+					))->limit(1)->fetchDbRow();
+
+				$addedUsers = Streams_Avatar::fetch('', $relatedStream['publisherId'])
+
+				$user = Users::fetch($user, true);
+
+				
+				$instructions['url'] = $livestreamStream->url(); */
+				$instructions['publisherId'] = $relatedStream['publisherId'];
+				$instructions['streamName'] = $relatedStream['streamName'];
+				Streams::relate(
+					null,
+					$streamEvent->publisherId,
+					$streamEvent->name,
+					'Media/livestream',
+					$relatedStream['publisherId'],
+					$relatedStream['streamName'],
+					array('skipAccess' => true)
+
+				);
+				break;
+			case 'livestreamStop':
+				$type = 'livestream';
+				$what = 'stopped';
+			case 'relate': //probably we should remove relate and unrelate parts
+				if ($relatedStream->type === 'Media/webrtc/livestream') {
+					$type = 'livestream';
+					$what = 'started';
+					$instructions['related']['publisherId'] = $relatedStream->publisherId;
+					$instructions['related']['streamName'] = $relatedStream->name;
+					$instructions['related']['url'] = $relatedStream->url();
+				}
+				break;
+			case 'unrelate':
+				if ($relatedStream->type === 'Media/webrtc/livestream') {
+					$type = 'livestream';
+					$what = 'ended';
+					$instructions['related']['publisherId'] = $relatedStream->publisherId;
+					$instructions['related']['streamName'] = $relatedStream->name;
+					$instructions['related']['url'] = $relatedStream->url();
+				}
+				break;
+			default:
+				return false;
+		}
+		if (!$type or !$what) {
+			return false;
+		}
+		$messageType = ($type === 'livestream') 
+			? "Media/livestream/$what" 
+			: "Calendars/event/$type/$what";
+		$streamEvent->post($streamEvent->publisherId, array(
+			'type' => $messageType,
+			'instructions' => $instructions
+		), true);
+		return true;
+	}
+	
+	/**
 	 * Generates ics rule for recurring event
 	 * @method recurrenceRule
 	 * @param {string} $publisherId

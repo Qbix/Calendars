@@ -123,7 +123,8 @@ Q.Tool.define("Calendars/event", function (options) {
 		eventType: false,
 		openTo: true,
 		teleconference: false,
-		webrtc: false
+		webrtc: false,
+		livestream: false
 	},
 	mode: Q.getObject("Communities.event.mode", Q) || "classic",
 	autoStartWebrtc: true,
@@ -250,7 +251,7 @@ Q.Tool.define("Calendars/event", function (options) {
 					text: tool.text,
 					icons: tool.icons,
 					hasTeleconference: !!state.teleconference,
-					hasLivestream: true
+					hasLivestream: !!stream.getAttribute('livestream')
 				});
 
 				Q.Template.render('Calendars/event/tool', fields, function (err, html) {
@@ -906,6 +907,12 @@ Q.Tool.define("Calendars/event", function (options) {
 		} else {
 			state.show.teleconference = false;
 		}
+
+		// webrtc join button — visible to all when event has a teleconference
+		state.show.webrtc = !!stream.getAttribute('teleconference');
+
+		// livestream toggle — visible to all when event has a livestream
+		state.show.livestream = !!stream.getAttribute('livestream');
 
 		if (stream.participant && stream.participant.testRoles('registered')) {
 			state.show.reminders = !Q.isEmpty(Q.getObject("Event.reminders", Calendars));
@@ -1574,10 +1581,7 @@ Q.Template.set('Calendars/event/tool',
 	'    <div class="Calendars_info_unseen" data-state="waiting"></div>' +
 	'  </div>' +
 	'{{/if}}' +
-	'  <div class="Q_button Media_aspect_webrtc" data-invoke="webrtc">' +
-	'    <div class="Calendars_info_icon"><i class="qp-calendars-teleconference"></i></div>' +
-	'    <div class="Calendars_info_content"></div>' +
-	'  </div>' +
+	'{{> Media/event/webrtc}}' +
 	'{{#if show.chat}}' +
 	'  <div class="Q_button Streams_aspect_chats" data-invoke="chat">' +
 	'    <div class="Calendars_info_icon"><i class="qp-calendars-conversations"></i></div>' +
@@ -1640,15 +1644,7 @@ Q.Template.set('Calendars/event/tool',
 	'    </div>' +
 	'  </div>' +
 	'{{/if}}' +
-	'  <div class="Q_aspect_livestream">' +
-	'    {{{tool "Media/livestream/event" publisherId=stream.fields.publisherId streamName=stream.fields.name}}}' +
-	'  </div>' +
-	'{{#if show.teleconference}}' +
-	'  <div class="Q_aspect_conference">' +
-	'    {{{tool "Media/webrtc/event" publisherId=stream.fields.publisherId streamName=stream.fields.name' +
-	'      teleconference=hasTeleconference startTime=startTime}}}' +
-	'  </div>' +
-	'{{/if}}' +
+	'{{> Media/event/livestream}}' +
 	'{{#if show.interests}}' +
 	'  <div class="Q_button Streams_aspect_interests" data-invoke="interests">' +
 	'    <div class="Calendars_info_icon"><i class="qp-calendars-interests"></i></div>' +
@@ -1702,7 +1698,8 @@ Q.Template.set('Calendars/event/tool',
 	'  <div class="Calendars_variable_height Calendars_event_description">' +
 	'    {{{tool "Streams/inplace" "content" inplaceType="textarea" inplace-placeholder="Enter a description of this event or activity" inplace-selectOnEdit=false publisherId=stream.fields.publisherId streamName=stream.fields.name}}}' +
 	'  </div>' +
-	'</div>'
+	'</div>',
+	{ partials: ['Media/event/webrtc', 'Media/event/livestream'] }
 );
 
 Q.Template.set('Calendars/event/AddParticipants',
@@ -1748,5 +1745,18 @@ Q.Template.set('Calendars/event/roles',
 	'</div>' +
 	'{{/if}}'
 );
+
+// Empty fallbacks for Media partials used by Calendars/event/tool.
+// If Media plugin is loaded, its Q.Template.set calls will have
+// already placed the real content and these are no-ops.
+// If Media isn't loaded, empty strings prevent Q.Template.load
+// from trying to fetch from the server, and the {{#if show.*}}
+// guards inside the partials would render nothing anyway.
+Q.each(['Media/event/webrtc', 'Media/event/livestream'], function (i, name) {
+	var n = Q.normalize.memoized(name);
+	if (!(n in Q.Template.collection)) {
+		Q.Template.collection[n] = '';
+	}
+});
 
 })(Q, Q.jQuery, window);
