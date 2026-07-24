@@ -684,7 +684,7 @@ Q.Tool.define("Calendars/event", function (options) {
 			Q.Assets.Payments.stripe({
 				amount: 1,
 				currency: "USD",
-				reason: 'BoughtCredits',
+				reason: 'EventParticipation',
 				description: tool.text.event.tool.Prepayment
 			}, function (err) {
 				if (err) {
@@ -763,7 +763,9 @@ Q.Tool.define("Calendars/event", function (options) {
 							resolve(response);
 						},
 						{
-							withParticipant: true,
+							getOptions: {
+								withParticipant: true
+							},
 							messages: true,
 							unlessSocket: true
 						}
@@ -791,10 +793,13 @@ Q.Tool.define("Calendars/event", function (options) {
 			intentToken: details.intentToken,
 			amount: instructions.amount,
 			currency: instructions.currency,
-			reason: 'BoughtCredits',
+			reason: 'EventParticipation',
 			toPublisherId: instructions.toPublisherId,
 			toStreamName: instructions.toStreamName
-		}, function () {
+		}, function (err) {
+			if (err) {
+				return reject(err);
+			}
 			Q.handle(state.onPaid, tool);
 			Q.Assets.onCreditsChanged.setOnce(function () {
 				state.payment.isAssetsCustomer = true;

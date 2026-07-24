@@ -35,7 +35,7 @@
 }
 .Calendars_participants_info.Calendars_payment {
 	font-size: 1em;
-	color: red;
+	color: rgba(0, 150, 0, 0.8);
 	font-weight: bold;
 }
 .Calendars_event_curtain {
