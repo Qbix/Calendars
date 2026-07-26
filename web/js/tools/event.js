@@ -636,12 +636,27 @@ Q.Tool.define("Calendars/event", function (options) {
 		var paymentAmount = Q.getObject("payment.amount", state);
 		var paymentCurrency = Q.getObject("payment.currency", state);
 
+
+		function revertUI () {
+			Q.handle(callback, tool, [false]);
+			if (tool.$goingElement) {
+				tool.$goingElement.removeClass("Q_working");
+			}
+		}
+		function finalizeUI () {
+			tool.updateInterface(going);
+			Q.handle(callback, tool, [true]);
+		};
+
 		if (!userId) {
 			Users.login({
 				onSuccess: {
 					"Users": function () {
 						tool.going(going, callback, options);
 					}
+				},
+				onCancel: function () {
+					revertUI();
 				}
 			});
 			return false;
@@ -651,17 +666,6 @@ Q.Tool.define("Calendars/event", function (options) {
 			Q.handle(callback, tool, [false]);
 			return false;
 		}
-
-		var revertUI = function () {
-			Q.handle(callback, tool, [false]);
-			if (tool.$goingElement) {
-				tool.$goingElement.removeClass("Q_working");
-			}
-		};
-		var finalizeUI = function () {
-			tool.updateInterface(going);
-			Q.handle(callback, tool, [true]);
-		};
 
 		if (tool.$goingElement) {
 			tool.$goingElement.addClass("Q_working");
