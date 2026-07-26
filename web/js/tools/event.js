@@ -746,9 +746,13 @@ Q.Tool.define("Calendars/event", function (options) {
 						return reject(msg);
 					}
 
-					Streams.Stream.refresh(
+					Streams.Stream.retainWith(tool).refresh(
 						state.publisherId, state.streamName,
-						function () {
+						function (err) {
+							if (err !== undefined) {
+								return;
+							}
+
 							var slots = response.slots || {};
 							tool.stream = this;
 
