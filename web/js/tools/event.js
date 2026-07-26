@@ -685,17 +685,19 @@ Q.Tool.define("Calendars/event", function (options) {
 			|| Q.getObject("payment.isAssetsCustomer", state)) {
 				return tool.going("maybe", callback, options);
 			}
-			Q.Assets.Payments.stripe({
+			Q.Assets.Credits.buy({
 				amount: 1,
 				currency: "USD",
+				skipDialog: true,
 				reason: 'EventParticipation',
-				description: tool.text.event.tool.Prepayment
-			}, function (err) {
-				if (err) {
-					return revertUI();
+				explanation: "Payment to attend {{title}}".interpolate(tool.stream.fields),
+				onSuccess: function () {
+					state.payment.isAssetsCustomer = true;
+					tool.going("maybe", callback, options);
+				},
+				onFailure: function () {
+					revertUI();
 				}
-				state.payment.isAssetsCustomer = true;
-				tool.going("maybe", callback, options);
 			});
 			return;
 		}
@@ -793,27 +795,28 @@ Q.Tool.define("Calendars/event", function (options) {
 		var state = tool.state;
 		var instructions = details.intent.instructions;
 
-		Q.Assets.Payments.stripe({
+		Q.Assets.Credits.buy({
 			intentToken: details.intentToken,
 			amount: instructions.amount,
 			currency: instructions.currency,
+			skipDialog: true,
 			reason: 'EventParticipation',
-			toPublisherId: instructions.toPublisherId,
-			toStreamName: instructions.toStreamName
-		}, function (err) {
-			if (err) {
-				return reject(err);
-			}
-			Q.handle(state.onPaid, tool);
-			Q.Assets.onCreditsChanged.setOnce(function () {
+			metadata: {
+				toPublisherId: instructions.toPublisherId || '',
+				toStreamName: instructions.toStreamName || ''
+			},
+			onSuccess: function () {
+				Q.handle(state.onPaid, tool);
 				state.payment.isAssetsCustomer = true;
-				tool.going(targetGoing);
-			}, tool);
-		}, function () {
-			if (tool.$goingElement) {
-				tool.$goingElement.removeClass("Q_working");
+				// tool.going(targetGoing);
+				resolve(targetGoing);
+			},
+			onFailure: function (err) {
+				if (tool.$goingElement) {
+					tool.$goingElement.removeClass("Q_working");
+				}
+				reject(err || "payment_failed");
 			}
-			reject("stripe_cancel");
 		});
 	},
 

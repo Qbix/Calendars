@@ -355,7 +355,7 @@
 	"@override": {
 		"Assets/content": {
 			"credits": {
-				"EventParticipation": "for reservation to \"<a data-publisherId='{{toPublisherId}}' data-streamName='{{toStreamName}}'>{{toStreamTitle}}</a>\""
+				"EventParticipation": "reservation for \"<a data-publisherId='{{toPublisherId}}' data-streamName='{{toStreamName}}'>{{toStreamTitle}}</a>\""
 			},
 			"payments": {
 				"reasons": {

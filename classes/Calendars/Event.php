@@ -848,7 +848,8 @@ class Calendars_Event extends Base_Calendars_Event
 	 * @param {boolean} [$options.paid] Send along with skipPayment if we want to indicate the event was already paid for
 	 * @param {Boolean} [$options.skipRecurringParticipant=false] If true don't manage recurring participant
 	 * @param {Boolean} [$options.skipSubscription=false] If true skip subscription to stream
-	 * @param {bool} [$options.autoCharge=false] If true, do payment if required. If false, throw exception.
+	 * @param {bool} [$options.autoCharge=false] If true, automatically charge the payment method if possible. If false, throw exception.
+	 *   This may surprise and upset some users, so the option only works if you also set "Calendars"/"events"/"allowAutoCharge" config
 	 * @param {array} [$options.relatedParticipants] If defined array of related participants, relate all of them to event.
 	 * Array format: array(array("publisherId" => ..., "streamName" => ...), ...)
 	 * @throws Streams_Exception_Full
@@ -1006,11 +1007,12 @@ class Calendars_Event extends Base_Calendars_Event
 							Users::communityId(), 
 							$userId, 
 							$resAmount,
-                            Assets::JOINED_PAID_STREAM,
+                            Calendars::EVENT_PARTICIPATION,
 							array_merge($options, array(
 								'toPublisherId' => $stream->publisherId,
 								'toStreamName' => $stream->name,
 								'autoCharge' => $options['autoCharge']
+									&& Q_Config::get('Calendars', 'events', 'allowAutoCharge', false)
 							))
 						);
 						if (!empty($result['success'])) {

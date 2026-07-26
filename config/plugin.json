@@ -276,6 +276,7 @@
 			"listing": {
 				"duration": 31536000 /* 1 year in seconds */
 			},
+			"allowAutoCharge": false,
 			"admins": ["Calendars/admins", "Users/owners", "Users/admins"]
 		},
 		"newEvent": {
