@@ -746,16 +746,10 @@ Q.Tool.define("Calendars/event", function (options) {
 						return reject(msg);
 					}
 
-					Streams.Stream.retainWith(tool).refresh(
-						state.publisherId, state.streamName,
-						function (err) {
-							if (err !== undefined) {
-								return;
-							}
-
+					Streams.retainWith(tool).get(state.publisherId, state.streamName, function () {
+						tool.stream = this;
+						this.refresh(function () {
 							var slots = response.slots || {};
-							tool.stream = this;
-
 							if (slots.participant) {
 								tool.participant = new Streams.Participant(slots.participant);
 							}
@@ -771,15 +765,14 @@ Q.Tool.define("Calendars/event", function (options) {
 							}
 
 							resolve(response);
-						},
-						{
+						}, {
 							getOptions: {
 								withParticipant: true
 							},
 							messages: true,
 							unlessSocket: true
-						}
-					);
+						})
+					});
 				},
 				{
 					method: "post",
