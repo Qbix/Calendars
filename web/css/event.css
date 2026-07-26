@@ -37,6 +37,11 @@
 	font-size: 1em;
 	color: rgba(0, 150, 0, 0.8);
 	font-weight: bold;
+	width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
 }
 .Calendars_event_curtain {
 	position: relative;
