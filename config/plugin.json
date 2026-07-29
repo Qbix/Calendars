@@ -89,21 +89,30 @@
 	"Users": {
 		"roles": {
 			"Users/owners": {
-				"canGrant": ["Calendars/admins", "Calendars/staff"],
-				"canRevoke": ["Calendars/admins", "Calendars/staff"],
-				"canSee": ["Calendars/admins", "Calendars/staff"]
+				"canGrant": ["Calendars/admins", "Calendars/staff", "Calendars/matchmakers", "Calendars/promoters"],
+				"canRevoke": ["Calendars/admins", "Calendars/staff", "Calendars/matchmakers", "Calendars/promoters"],
+				"canSee": [
+					"Users/owners", "Users/admins", "Users/members", "Users/guests",
+					"Calendars/admins", "Calendars/staff", "Calendars/matchmakers", "Calendars/promoters"
+				]
 			},
 			"Users/admins": {
-				"canGrant": ["Calendars/admins", "Calendars/staff"],
-				"canRevoke": ["Calendars/admins", "Calendars/staff"],
-				"canSee": ["Calendars/admins", "Calendars/staff"]
+				"canGrant": ["Calendars/staff", "Calendars/matchmakers", "Calendars/promoters"],
+				"canRevoke": ["Calendars/staff", "Calendars/matchmakers", "Calendars/promoters"],
+				"canSee": [
+					"Users/owners", "Users/admins", "Users/members", "Users/guests",
+					"Calendars/admins", "Calendars/staff", "Calendars/matchmakers", "Calendars/promoters"
+				]
 			},
 			"Calendars/admins": {
 				"title": "Calendars Admins",
 				"icon": "{{baseUrl}}/Q/plugins/Calendars/img/icons/labels/Calendars/admins",
-				"canGrant": ["Calendars/admins", "Calendars/staff"],
-				"canRevoke": ["Calendars/admins", "Calendars/staff"],
-				"canSee": ["Users/owners", "Users/admins", "Users/members", "Users/guests", "Calendars/admins", "Calendars/staff"]
+				"canGrant": ["Calendars/staff"],
+				"canRevoke": ["Calendars/staff", "Calendars/matchmakers", "Calendars/promoters"],
+				"canSee": [
+					"Users/owners", "Users/admins", "Users/members", "Users/guests",
+					"Calendars/admins", "Calendars/staff", "Calendars/matchmakers", "Calendars/promoters"
+				]
 			},
 			"Calendars/staff": {
 				"title": "Calendars Staff",
@@ -111,6 +120,20 @@
 				"canGrant": ["Users/guests"],
 				"canRevoke": [],
 				"canSee": ["Users/members", "Users/guests"]
+			},
+			"Calendars/promoters": {
+				"title": "Event Promoters",
+				"icon": "{{baseUrl}}/Q/plugins/Calendars/img/icons/labels/Calendars/promoters",
+				"canGrant": ["Users/guests"],
+				"canRevoke": [],
+				"canSee": ["Users/members", "Users/guests", "Calendars/matchmakers"]
+			},
+			"Calendars/matchmakers": {
+				"title": "Matchmakers",
+				"icon": "{{baseUrl}}/Q/plugins/Calendars/img/icons/labels/Calendars/matchmakers",
+				"canGrant": ["Users/guests"],
+				"canRevoke": [],
+				"canSee": ["Users/members", "Users/guests", "Calendars/promoters"]
 			}
 		}
 	},
