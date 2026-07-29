@@ -165,6 +165,17 @@
 					}
 				},
 				"participating": ["Calendars/participating/events"],
+				"subscriptions": {
+					"filter": {
+						"messages": {
+							"Calendars/going": {
+								"instructions": {"going": "yes"},
+								"participant": {"going": "maybe"}
+							}
+						},
+						"notifications": 0
+					}
+				},
 				"relatedFrom": {
 					"Calendars/calendar": {
 						"url": "{{fromUrl}}"
@@ -228,7 +239,7 @@
 					"writeLevel": 0,
 					"adminLevel": 0
 				},
-				"subscribe": {
+				"subscriptions": {
 					"filter": {
 						"types": ["Calendars/reminder"],
 						"notifications": 0
