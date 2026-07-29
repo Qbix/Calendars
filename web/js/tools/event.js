@@ -65,19 +65,18 @@ Q.Tool.define("Calendars/event", function (options) {
 		}
 	}, tool);
 
-	Q.each(['yes', 'no', 'maybe'], function (i, going) {
-		Streams.Stream.onMessage(
-			state.publisherId, state.streamName, 'Calendars/going/' + going
-		).set(function (message) {
-			if (message.byUserId !== userId) {
-				return;
-			}
-			var instructions = JSON.parse(message.instructions);
-			tool.stream.participant = new Streams.Participant(instructions.participant);
-			tool.refreshParticipants({ participant: instructions.participant });
-			tool.updateInterface(going);
-		}, tool);
-	});
+	Streams.Stream.onMessage(
+		state.publisherId, state.streamName, 'Calendars/going'
+	).set(function (message) {
+		if (message.byUserId !== userId) {
+			return;
+		}
+		var instructions = JSON.parse(message.instructions);
+		var going = instructions.going;
+		tool.stream.participant = new Streams.Participant(instructions.participant);
+		tool.refreshParticipants({ participant: instructions.participant });
+		tool.updateInterface(going);
+	}, tool);
 
 	Streams.Stream.onMessage(
 		state.publisherId, state.streamName, 'Calendars/event/webrtc/started'
@@ -690,7 +689,6 @@ Q.Tool.define("Calendars/event", function (options) {
 				currency: "USD",
 				skipDialog: true,
 				reason: 'EventParticipation',
-				explanation: "Payment to attend {{title}}".interpolate(tool.stream.fields),
 				onSuccess: function () {
 					state.payment.isAssetsCustomer = true;
 					tool.going("maybe", callback, options);
@@ -746,10 +744,11 @@ Q.Tool.define("Calendars/event", function (options) {
 						return reject(msg);
 					}
 
-					Streams.retainWith(tool).get(state.publisherId, state.streamName, function () {
+					Streams.Stream.get(state.publisherId, state.streamName, function () {
+						var slots = response.slots || {};
 						tool.stream = this;
+
 						this.refresh(function () {
-							var slots = response.slots || {};
 							if (slots.participant) {
 								tool.participant = new Streams.Participant(slots.participant);
 							}
@@ -771,7 +770,7 @@ Q.Tool.define("Calendars/event", function (options) {
 							},
 							messages: true,
 							unlessSocket: true
-						})
+						});
 					});
 				},
 				{
@@ -805,8 +804,74 @@ Q.Tool.define("Calendars/event", function (options) {
 			onSuccess: function () {
 				Q.handle(state.onPaid, tool);
 				state.payment.isAssetsCustomer = true;
-				// tool.going(targetGoing);
-				resolve(targetGoing);
+
+				var $throbber = tool._showPaymentThrobber();
+				var resolved = false;
+
+				function _done(going) {
+					if (resolved) return;
+					resolved = true;
+					Q.Socket.onEvent('Users/intentComplete', '/Q')
+						.remove(tool);
+					Streams.Stream.onMessage(
+						state.publisherId, state.streamName,
+						'Calendars/going'
+					).remove('Calendars_event_payment');
+					tool._removePaymentThrobber($throbber);
+					// Q.handle(state.onGoing, tool, [going, tool.stream]);
+					tool.refresh();
+					resolve(going);
+				}
+
+				// Fast path: intent complete via socket
+				Q.Socket.onEvent('Users/intentComplete', '/Q')
+				.set(function (data) {
+					if (data && data.token === details.intentToken) {
+						_done(targetGoing);
+					}
+				}, tool);
+
+				// Also listen for going message (if user has access)
+				Streams.Stream.onMessage(
+					state.publisherId, state.streamName,
+					'Calendars/going'
+				).set(function (message) {
+					if (message.byUserId !== Q.Users.loggedInUserId()) {
+						return;
+					}
+					var instructions = JSON.parse(message.instructions);
+					if (instructions.going === targetGoing) {
+						_done(targetGoing);
+					}
+				}, 'Calendars_event_payment');
+
+				// Fallback: poll participant state with backoff
+				var attempts = 0;
+				var maxAttempts = 10;
+				var delay = 1000;
+
+				function _poll() {
+					if (resolved) return;
+					Streams.Participant.get.force(
+						state.publisherId, state.streamName,
+						Q.Users.loggedInUserId(),
+						function (err, participant) {
+							if (resolved) return;
+							if (!err && participant
+							&& participant.getExtra('going') === targetGoing) {
+								_done(targetGoing);
+								return;
+							}
+							if (++attempts >= maxAttempts) {
+								_done(targetGoing);
+								return;
+							}
+							delay = Math.min(delay * 1.5, 5000);
+							setTimeout(_poll, delay);
+						}
+					);
+				}
+				_poll();
 			},
 			onFailure: function (err) {
 				if (tool.$goingElement) {
@@ -815,6 +880,58 @@ Q.Tool.define("Calendars/event", function (options) {
 				reject(err || "payment_failed");
 			}
 		});
+	},
+
+	/**
+	 * Show a centered throbber overlay while payment processes.
+	 * @method _showPaymentThrobber
+	 * @private
+	 * @return {jQuery} The throbber element for later removal
+	 */
+	_showPaymentThrobber: function () {
+		var zIndex = Q.zIndexTopmost() + 1;
+		var $throbber = $('<div class="Calendars_event_payment_throbber">')
+			.css({
+				position: 'fixed',
+				top: 0,
+				left: 0,
+				right: 0,
+				bottom: 0,
+				display: 'flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+				zIndex: zIndex,
+				backdropFilter: 'blur(4px)',
+				webkitBackdropFilter: 'blur(4px)'
+			})
+			.append(
+				$('<div class="Calendars_event_payment_throbber_box">')
+					.css({
+						background: 'rgba(100,100,100,0.5)',
+						borderRadius: '10%',
+						padding: '30px',
+						boxShadow: '0 2px 20px rgba(0,0,0,0.15)'
+					})
+					.append(
+						$('<img>').attr('src',
+							Q.url('{{Q}}/img/throbbers/loading-2x.gif')
+						).css({ width: '48px', height: '48px' })
+					)
+			)
+			.appendTo('body');
+		return $throbber;
+	},
+
+	/**
+	 * Remove the payment throbber overlay.
+	 * @method _removePaymentThrobber
+	 * @private
+	 * @param {jQuery} $throbber The element returned by _showPaymentThrobber
+	 */
+	_removePaymentThrobber: function ($throbber) {
+		if ($throbber && $throbber.length) {
+			$throbber.remove();
+		}
 	},
 
 	_showDonationDialog: function (amount, currency) {
