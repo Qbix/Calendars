@@ -128,7 +128,20 @@
 			"Prepayment": "Fyrirframgrei\u00f0sla",
 			"PrepaymentConfirm": "Vi\u00f0 innheimtum v\u00e6ga \u00fe\u00f3knun upp \u00e1 $1. \u00de\u00fa f\u00e6r\u00f0 samsvarandi fj\u00f6lda eininga. \u00deessar einingar ver\u00f0a nota\u00f0ar til a\u00f0 grei\u00f0a fyrir vi\u00f0bur\u00f0inn a\u00f0 fullu.",
 			"UserNotParticipated": "{{1}} tekur ekki \u00fe\u00e1tt \u00ed vi\u00f0bur\u00f0inum",
-			"PayToAttend": "Borga fyrir a\u00f0 m\u00e6ta"
+			"PayToAttend": "Borga fyrir a\u00f0 m\u00e6ta",
+			"PayToReserve": "Grei\u00f0a til a\u00f0 panta",
+			"JoinTeleConference": "Taka \u00fe\u00e1tt \u00ed s\u00edmafundi",
+			"TeleConferenceEnded": "S\u00edmafundi loki\u00f0",
+			"OpenTeleconferenceScheduler": "Opna s\u00edmafundar\u00e1\u00e6tlun",
+			"LiveStreamNotifyMe": "L\u00e1ta mig vita \u00feegar \u00fea\u00f0 er \u00ed beinni",
+			"LiveStreamNotificationOn": "Tilkynning er virk",
+			"LiveStreamIsOffline": "Bein \u00fatsending er \u00f3tengd",
+			"LiveStreamIsOnline": "Bein \u00fatsending er \u00e1 netinu",
+			"updateTeleconference": "Uppf\u00e6ra s\u00edmafund",
+			"CancelRequest": "H\u00e6tta vi\u00f0 bei\u00f0ni",
+			"Join": "Vertu me\u00f0",
+			"Close": "Loka",
+			"NotGoing": "Ekki a\u00f0 fara"
 		},
 		"composer": {
 			"SetLocation": "Stilltu sta\u00f0setningu m\u00edna",
@@ -168,7 +181,8 @@
 			"SetLivestream": "L\u00edmdu hlekk \u00ed beina \u00fatsendingu / myndr\u00e1\u00f0stefnu",
 			"Locally": "\u00e1 sta\u00f0num",
 			"EventInfoLink": "Hlekkur fyrir uppl\u00fdsingar um vi\u00f0bur\u00f0",
-			"TicketPurchaseLink": "Hlekkur til mi\u00f0akaupa"
+			"TicketPurchaseLink": "Hlekkur til mi\u00f0akaupa",
+			"scheduleTeleconference": "Skipuleggja s\u00edmafund"
 		},
 		"EventAlreadyClosed": "\u00deessum vi\u00f0bur\u00f0i er \u00feegar loka\u00f0",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "Vi\u00f0bur\u00f0urinn \u201e{{{call 'message.getInstruction' 'name'}}\u201c mun hefjast eftir {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "S\u00edmafundur h\u00f3fst",
-			"Ended": "S\u00edmafundi loki\u00f0"
+			"Ended": "S\u00edmafundi loki\u00f0",
+			"StartedInEvent": "S\u00edmafundur h\u00f3fst \u00ed &quot; {{event}} &quot;.",
+			"OngloingInEvent": "S\u00edmafundurinn fyrir \u201e {{event}} \u201c er \u00ed gangi."
 		},
 		"livestream": {
 			"Started": "Bein \u00fatsending h\u00f3fst",
 			"Ended": "Beinni \u00fatsendingu lauk",
-			"ClickToView": "Sko\u00f0a\u00f0u \u00fea\u00f0 h\u00e9r."
+			"ClickToView": "Sko\u00f0a\u00f0u \u00fea\u00f0 h\u00e9r.",
+			"StartedByUser": "{{user}} er \u00ed beinni \u00fatsendingu \u00ed &quot; {{event}} &quot;.",
+			"JoinAudience": "Vertu me\u00f0 \u00ed \u00e1horfendah\u00f3pnum",
+			"Close": "Loka"
 		}
 	},
 	"import": {

@@ -128,7 +128,20 @@
 			"Prepayment": "Tr\u1ea3 tr\u01b0\u1edbc",
 			"PrepaymentConfirm": "Ch\u00fang t\u00f4i s\u1ebd t\u00ednh m\u1ed9t kho\u1ea3n ph\u00ed t\u01b0\u1ee3ng tr\u01b0ng l\u00e0 1 \u0111\u00f4 la. B\u1ea1n s\u1ebd nh\u1eadn \u0111\u01b0\u1ee3c s\u1ed1 \u0111i\u1ec3m th\u01b0\u1edfng t\u01b0\u01a1ng \u1ee9ng. S\u1ed1 \u0111i\u1ec3m th\u01b0\u1edfng n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c tr\u1eeb v\u00e0o t\u1ed5ng s\u1ed1 ti\u1ec1n thanh to\u00e1n cho s\u1ef1 ki\u1ec7n.",
 			"UserNotParticipated": "{{1}} kh\u00f4ng ph\u1ea3i l\u00e0 ng\u01b0\u1eddi tham gia s\u1ef1 ki\u1ec7n.",
-			"PayToAttend": "Tr\u1ea3 ph\u00ed \u0111\u1ec3 tham d\u1ef1"
+			"PayToAttend": "Tr\u1ea3 ph\u00ed \u0111\u1ec3 tham d\u1ef1",
+			"PayToReserve": "Thanh to\u00e1n \u0111\u1ec3 \u0111\u1eb7t ch\u1ed7",
+			"JoinTeleConference": "Tham gia cu\u1ed9c h\u1ecdp tr\u1ef1c tuy\u1ebfn",
+			"TeleConferenceEnded": "Cu\u1ed9c h\u1ecdp tr\u1ef1c tuy\u1ebfn \u0111\u00e3 k\u1ebft th\u00fac.",
+			"OpenTeleconferenceScheduler": "C\u00f4ng c\u1ee5 l\u1eadp l\u1ecbch h\u1ed9i ngh\u1ecb tr\u1ef1c tuy\u1ebfn",
+			"LiveStreamNotifyMe": "Th\u00f4ng b\u00e1o cho t\u00f4i khi c\u00f3 video tr\u1ef1c ti\u1ebfp",
+			"LiveStreamNotificationOn": "Th\u00f4ng b\u00e1o \u0111ang b\u1eadt",
+			"LiveStreamIsOffline": "Lu\u1ed3ng ph\u00e1t tr\u1ef1c ti\u1ebfp \u0111ang ngo\u1ea1i tuy\u1ebfn",
+			"LiveStreamIsOnline": "Bu\u1ed5i ph\u00e1t tr\u1ef1c ti\u1ebfp \u0111ang di\u1ec5n ra",
+			"updateTeleconference": "C\u1eadp nh\u1eadt cu\u1ed9c h\u1ecdp tr\u1ef1c tuy\u1ebfn",
+			"CancelRequest": "Y\u00eau c\u1ea7u h\u1ee7y b\u1ecf",
+			"Join": "Tham gia",
+			"Close": "\u0110\u00f3ng",
+			"NotGoing": "Kh\u00f4ng \u0111i"
 		},
 		"composer": {
 			"SetLocation": "\u0110\u1eb7t v\u1ecb tr\u00ed c\u1ee7a t\u00f4i",
@@ -168,7 +181,8 @@
 			"SetLivestream": "D\u00e1n li\u00ean k\u1ebft \u0111\u1ebfn ph\u00e1t tr\u1ef1c ti\u1ebfp / h\u1ed9i ngh\u1ecb truy\u1ec1n h\u00ecnh",
 			"Locally": "t\u1ea1i \u0111\u1ecba ph\u01b0\u01a1ng",
 			"EventInfoLink": "Li\u00ean k\u1ebft th\u00f4ng tin s\u1ef1 ki\u1ec7n",
-			"TicketPurchaseLink": "Li\u00ean k\u1ebft mua v\u00e9"
+			"TicketPurchaseLink": "Li\u00ean k\u1ebft mua v\u00e9",
+			"scheduleTeleconference": "L\u00ean l\u1ecbch h\u1ecdp tr\u1ef1c tuy\u1ebfn"
 		},
 		"EventAlreadyClosed": "S\u1ef1 ki\u1ec7n n\u00e0y \u0111\u00e3 k\u1ebft th\u00fac",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "S\u1ef1 ki\u1ec7n &quot;{{{call 'message.getInstruction' 'name'}}&quot; s\u1ebd b\u1eaft \u0111\u1ea7u sau {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "H\u1ed9i ngh\u1ecb truy\u1ec1n h\u00ecnh \u0111\u00e3 b\u1eaft \u0111\u1ea7u",
-			"Ended": "H\u1ed9i ngh\u1ecb truy\u1ec1n h\u00ecnh \u0111\u00e3 k\u1ebft th\u00fac"
+			"Ended": "H\u1ed9i ngh\u1ecb truy\u1ec1n h\u00ecnh \u0111\u00e3 k\u1ebft th\u00fac",
+			"StartedInEvent": "H\u1ed9i ngh\u1ecb tr\u1ef1c tuy\u1ebfn b\u1eaft \u0111\u1ea7u v\u00e0o n\u0103m &quot; {{event}} &quot;.",
+			"OngloingInEvent": "Cu\u1ed9c h\u1ecdp tr\u1ef1c tuy\u1ebfn d\u00e0nh cho d\u1ecbch v\u1ee5 &quot; {{event}} &quot; \u0111ang di\u1ec5n ra."
 		},
 		"livestream": {
 			"Started": "\u0110\u00e3 b\u1eaft \u0111\u1ea7u ph\u00e1t tr\u1ef1c ti\u1ebfp",
 			"Ended": "Lu\u1ed3ng tr\u1ef1c ti\u1ebfp \u0111\u00e3 k\u1ebft th\u00fac",
-			"ClickToView": "Xem n\u00f3 \u1edf \u0111\u00e2y."
+			"ClickToView": "Xem n\u00f3 \u1edf \u0111\u00e2y.",
+			"StartedByUser": "{{user}} \u0111ang ph\u00e1t tr\u1ef1c ti\u1ebfp trong &quot; {{event}} &quot;.",
+			"JoinAudience": "Tham gia c\u00f9ng kh\u00e1n gi\u1ea3",
+			"Close": "\u0110\u00f3ng"
 		}
 	},
 	"import": {

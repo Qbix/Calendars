@@ -128,7 +128,20 @@
 			"Prepayment": "Plat\u0103 \u00een avans",
 			"PrepaymentConfirm": "Vom percepe o tax\u0103 nominal\u0103 de 1 dolar. Ve\u021bi primi num\u0103rul corespunz\u0103tor de credite. Aceste credite vor fi aplicate la plata integral\u0103 a evenimentului.",
 			"UserNotParticipated": "{{1}} nu particip\u0103 la eveniment",
-			"PayToAttend": "Pl\u0103te\u0219te pentru participare"
+			"PayToAttend": "Pl\u0103te\u0219te pentru participare",
+			"PayToReserve": "Plat\u0103 pentru rezervare",
+			"JoinTeleConference": "Al\u0103tura\u021bi-v\u0103 teleconferin\u021bei",
+			"TeleConferenceEnded": "Teleconferin\u021ba s-a \u00eencheiat",
+			"OpenTeleconferenceScheduler": "Deschide\u021bi planificatorul de teleconferin\u021be",
+			"LiveStreamNotifyMe": "Anun\u021b\u0103-m\u0103 c\u00e2nd este live",
+			"LiveStreamNotificationOn": "Notificarea este activat\u0103",
+			"LiveStreamIsOffline": "Transmisiunea \u00een direct este offline",
+			"LiveStreamIsOnline": "Transmisiunea \u00een direct este online",
+			"updateTeleconference": "Actualizare teleconferin\u021b\u0103",
+			"CancelRequest": "Anulare solicitare",
+			"Join": "Al\u0103tur\u0103-te",
+			"Close": "Aproape",
+			"NotGoing": "Nu merg"
 		},
 		"composer": {
 			"SetLocation": "Seta\u021bi loca\u021bia mea",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Lipi\u021bi linkul c\u0103tre fluxul live/videoconferin\u021b\u0103",
 			"Locally": "la nivel local",
 			"EventInfoLink": "Link pentru informa\u021bii despre eveniment",
-			"TicketPurchaseLink": "Link de cump\u0103rare a biletelor"
+			"TicketPurchaseLink": "Link de cump\u0103rare a biletelor",
+			"scheduleTeleconference": "Programa\u021bi o teleconferin\u021b\u0103"
 		},
 		"EventAlreadyClosed": "Acest eveniment a fost deja \u00eenchis",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "Evenimentul \u201e{{{call 'message.getInstruction' 'name'}}\u201d va \u00eencepe \u00een {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "A \u00eenceput teleconferin\u021ba",
-			"Ended": "Teleconferin\u021ba s-a \u00eencheiat"
+			"Ended": "Teleconferin\u021ba s-a \u00eencheiat",
+			"StartedInEvent": "Teleconferin\u021ba a \u00eenceput \u00een \u201e {{event}} \u201d.",
+			"OngloingInEvent": "Teleconferin\u021ba pentru \u201e {{event}} \u201d este \u00een desf\u0103\u0219urare."
 		},
 		"livestream": {
 			"Started": "Fluxul live a \u00eenceput",
 			"Ended": "Fluxul live s-a \u00eencheiat",
-			"ClickToView": "Vizualiza\u021bi-l aici."
+			"ClickToView": "Vizualiza\u021bi-l aici.",
+			"StartedByUser": "{{user}} este live \u00een \u201e {{event}} \u201d.",
+			"JoinAudience": "Al\u0103tur\u0103-te publicului",
+			"Close": "Aproape"
 		}
 	},
 	"import": {

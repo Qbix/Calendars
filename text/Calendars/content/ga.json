@@ -128,7 +128,20 @@
 			"Prepayment": "R\u00e9amh\u00edoca\u00edocht",
 			"PrepaymentConfirm": "Gearrfaimid t\u00e1ille ainmni\u00fail de $1. Gheobhaidh t\u00fa an l\u00edon creidmheasanna comhfhreagrach. Cuirfear na creidmheasanna seo i bhfeidhm i dtreo d\u2019\u00edoca\u00edocht ioml\u00e1n don \u00f3c\u00e1id.",
 			"UserNotParticipated": "N\u00ed rannph\u00e1irt\u00ed san imeacht {{1}}",
-			"PayToAttend": "\u00cdoc le Freastal"
+			"PayToAttend": "\u00cdoc le Freastal",
+			"PayToReserve": "\u00cdoc le h\u00c1irithint",
+			"JoinTeleConference": "Glac p\u00e1irt i dTeilechomhdh\u00e1il",
+			"TeleConferenceEnded": "Teileachomhdh\u00e1il Deiridh",
+			"OpenTeleconferenceScheduler": "Sceideal\u00f3ir Teileachomhdh\u00e1la Oscailte",
+			"LiveStreamNotifyMe": "Cuir in i\u00fal dom nuair a bheidh s\u00e9 beo",
+			"LiveStreamNotificationOn": "T\u00e1 an f\u00f3gra ar si\u00fal",
+			"LiveStreamIsOffline": "T\u00e1 an sruth beo as l\u00edne",
+			"LiveStreamIsOnline": "T\u00e1 an sruth beo ar l\u00edne",
+			"updateTeleconference": "Nuashonr\u00fa ar Theilechomhdh\u00e1il",
+			"CancelRequest": "Cealaigh an tIarratas",
+			"Join": "B\u00edg\u00ed Linn",
+			"Close": "D\u00fan",
+			"NotGoing": "N\u00ed ag Dul"
 		},
 		"composer": {
 			"SetLocation": "Socraigh Mo Shu\u00edomh",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Greamaigh nasc chuig sruth beo / f\u00edschomhdh\u00e1il",
 			"Locally": "go h\u00e1iti\u00fail",
 			"EventInfoLink": "Nasc Faisn\u00e9ise Imeachta",
-			"TicketPurchaseLink": "Nasc Ceannaigh Tic\u00e9ad"
+			"TicketPurchaseLink": "Nasc Ceannaigh Tic\u00e9ad",
+			"scheduleTeleconference": "Sceideal Teileachomhdh\u00e1il"
 		},
 		"EventAlreadyClosed": "D\u00fanadh an imeacht seo cheana f\u00e9in",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "Cuirfear t\u00fas le himeacht &quot;{{{call 'message.getInstruction' 'name'}}&quot; i {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Cuireadh t\u00fas le teileachomhdh\u00e1il",
-			"Ended": "Th\u00e1inig deireadh le teileachomhdh\u00e1il"
+			"Ended": "Th\u00e1inig deireadh le teileachomhdh\u00e1il",
+			"StartedInEvent": "Thosaigh an teilechomhdh\u00e1il i &quot; {{event}} &quot;.",
+			"OngloingInEvent": "T\u00e1 an teilechomhdh\u00e1il don &quot; {{event}} &quot; ar si\u00fal."
 		},
 		"livestream": {
 			"Started": "Thosaigh sruth beo",
 			"Ended": "Th\u00e1inig deireadh le sruth beo",
-			"ClickToView": "F\u00e9ach air anseo."
+			"ClickToView": "F\u00e9ach air anseo.",
+			"StartedByUser": "T\u00e1 {{user}} beo i &quot; {{event}} &quot;.",
+			"JoinAudience": "B\u00ed p\u00e1irteach sa lucht f\u00e9achana",
+			"Close": "D\u00fan"
 		}
 	},
 	"import": {

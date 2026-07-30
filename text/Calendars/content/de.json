@@ -128,7 +128,20 @@
 			"Prepayment": "Vorauszahlung",
 			"PrepaymentConfirm": "Wir erheben eine geringe Geb\u00fchr von 1 US-Dollar. Sie erhalten die entsprechende Anzahl an Gutschriften. Diese Gutschriften werden mit Ihrer Gesamtzahlung f\u00fcr die Veranstaltung verrechnet.",
 			"UserNotParticipated": "{{1}} ist kein Teilnehmer der Veranstaltung.",
-			"PayToAttend": "Teilnahmegeb\u00fchr"
+			"PayToAttend": "Teilnahmegeb\u00fchr",
+			"PayToReserve": "F\u00fcr Reservierung bezahlen",
+			"JoinTeleConference": "Nehmen Sie an der Telefonkonferenz teil",
+			"TeleConferenceEnded": "Telefonkonferenz beendet",
+			"OpenTeleconferenceScheduler": "Telefonkonferenzplaner \u00f6ffnen",
+			"LiveStreamNotifyMe": "Benachrichtige mich, wenn live",
+			"LiveStreamNotificationOn": "Benachrichtigung ist aktiviert",
+			"LiveStreamIsOffline": "Livestream ist offline",
+			"LiveStreamIsOnline": "Der Livestream ist online.",
+			"updateTeleconference": "Aktualisierung der Telefonkonferenz",
+			"CancelRequest": "Stornierungsanfrage",
+			"Join": "Verbinden",
+			"Close": "Schlie\u00dfen",
+			"NotGoing": "Ich gehe nicht"
 		},
 		"composer": {
 			"SetLocation": "Meinen Standort festlegen",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Link zu Livestream / Videokonferenz einf\u00fcgen",
 			"Locally": "\u00f6rtlich",
 			"EventInfoLink": "Link zur Veranstaltungsinformation",
-			"TicketPurchaseLink": "Link zum Ticketkauf"
+			"TicketPurchaseLink": "Link zum Ticketkauf",
+			"scheduleTeleconference": "Telefonkonferenz planen"
 		},
 		"EventAlreadyClosed": "Diese Veranstaltung ist bereits geschlossen",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "Veranstaltung &quot;{{{call 'message.getInstruction' 'name'}}&quot; beginnt in {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Telefonkonferenz gestartet",
-			"Ended": "Telefonkonferenz beendet"
+			"Ended": "Telefonkonferenz beendet",
+			"StartedInEvent": "Die Telefonkonferenz begann um {{event}} .",
+			"OngloingInEvent": "Die Telefonkonferenz f\u00fcr den Notruf \u201e {{event}} \u201c ist im Gange."
 		},
 		"livestream": {
 			"Started": "Livestream gestartet",
 			"Ended": "Livestream beendet",
-			"ClickToView": "Sehen Sie es sich hier an."
+			"ClickToView": "Sehen Sie es sich hier an.",
+			"StartedByUser": "{{user}} ist live in &quot; {{event}} &quot;.",
+			"JoinAudience": "Werden Sie Teil des Publikums",
+			"Close": "Schlie\u00dfen"
 		}
 	},
 	"import": {

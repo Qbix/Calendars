@@ -129,7 +129,20 @@
 			"Prepayment": "Platba p\u0159edem",
 			"PrepaymentConfirm": "\u00da\u010dtujeme si nomin\u00e1ln\u00ed poplatek 1 dolar. Obdr\u017e\u00edte odpov\u00eddaj\u00edc\u00ed po\u010det kredit\u016f. Tyto kredity budou zapo\u010d\u00edt\u00e1ny do va\u0161\u00ed celkov\u00e9 platby za akci.",
 			"UserNotParticipated": "{{1}} se akce ne\u00fa\u010dastn\u00ed",
-			"PayToAttend": "Zaplatit za \u00fa\u010dast"
+			"PayToAttend": "Zaplatit za \u00fa\u010dast",
+			"PayToReserve": "Platba za rezervaci",
+			"JoinTeleConference": "P\u0159ipojte se k telekonferenci",
+			"TeleConferenceEnded": "Telekonference ukon\u010dena",
+			"OpenTeleconferenceScheduler": "Otev\u0159\u00edt pl\u00e1nova\u010d telekonferenc\u00ed",
+			"LiveStreamNotifyMe": "Upozornit m\u011b, a\u017e bude online",
+			"LiveStreamNotificationOn": "Ozn\u00e1men\u00ed je zapnuto",
+			"LiveStreamIsOffline": "\u017div\u00fd p\u0159enos je offline",
+			"LiveStreamIsOnline": "\u017div\u00fd p\u0159enos je online",
+			"updateTeleconference": "Aktualizace telekonference",
+			"CancelRequest": "Zru\u0161it po\u017eadavek",
+			"Join": "P\u0159ipojit se",
+			"Close": "Bl\u00edzko",
+			"NotGoing": "Nep\u016fjdu"
 		},
 		"composer": {
 			"SetLocation": "Nastavte moji polohu",
@@ -170,7 +183,8 @@
 			"Minutes": "Minut",
 			"Locally": "lok\u00e1ln\u011b",
 			"EventInfoLink": "Odkaz na informace o ud\u00e1losti",
-			"TicketPurchaseLink": "Odkaz na n\u00e1kup vstupenek"
+			"TicketPurchaseLink": "Odkaz na n\u00e1kup vstupenek",
+			"scheduleTeleconference": "Napl\u00e1novat telekonferenci"
 		},
 		"EventAlreadyClosed": "Tato akce je ji\u017e uzav\u0159ena",
 		"addToCalendar": {
@@ -231,12 +245,17 @@
 		"Calendars/reminder": "Ud\u00e1lost \u201e{{{call 'message.getInstruction' 'name'}}\u201c za\u010dne za {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Telekonference zah\u00e1jena",
-			"Ended": "Telekonference skon\u010dila"
+			"Ended": "Telekonference skon\u010dila",
+			"StartedInEvent": "Telekonference za\u010dala v \u201e {{event}} \u201c.",
+			"OngloingInEvent": "Telekonference pro \u201e {{event}} \u201c st\u00e1le prob\u00edh\u00e1."
 		},
 		"livestream": {
 			"Started": "\u017div\u00fd p\u0159enos byl zah\u00e1jen",
 			"Ended": "P\u0159\u00edm\u00fd p\u0159enos skon\u010dil",
-			"ClickToView": "Prohl\u00e9dn\u011bte si to zde."
+			"ClickToView": "Prohl\u00e9dn\u011bte si to zde.",
+			"StartedByUser": "{{user}} je \u017eiv\u011b v &quot; {{event}} &quot;.",
+			"JoinAudience": "P\u0159ipojte se k publiku",
+			"Close": "Bl\u00edzko"
 		}
 	},
 	"import": {

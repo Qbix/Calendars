@@ -128,7 +128,20 @@
 			"Prepayment": "Priek\u0161apmaksa",
 			"PrepaymentConfirm": "M\u0113s iekas\u0113sim nelielu maksu 1\u00a0ASV dol\u0101ra apm\u0113r\u0101. J\u016bs sa\u0146emsiet atbilsto\u0161u kred\u012btpunktu skaitu. \u0160ie kred\u012btpunkti tiks ieskait\u012bti j\u016bsu pilnaj\u0101 pas\u0101kuma apmaks\u0101.",
 			"UserNotParticipated": "{{1}} nepiedal\u0101s pas\u0101kum\u0101",
-			"PayToAttend": "Maks\u0101t par dal\u012bbu"
+			"PayToAttend": "Maks\u0101t par dal\u012bbu",
+			"PayToReserve": "Maks\u0101t, lai rezerv\u0113tu",
+			"JoinTeleConference": "Pievienojieties telekonferencei",
+			"TeleConferenceEnded": "Telekonference beigusies",
+			"OpenTeleconferenceScheduler": "Atv\u0113rt telekonferen\u010du pl\u0101not\u0101ju",
+			"LiveStreamNotifyMe": "Pazi\u0146ot man, kad tie\u0161raide",
+			"LiveStreamNotificationOn": "Pazi\u0146ojums ir iesl\u0113gts",
+			"LiveStreamIsOffline": "Tie\u0161raide ir bezsaist\u0113",
+			"LiveStreamIsOnline": "Tie\u0161raide ir tie\u0161saist\u0113",
+			"updateTeleconference": "Atjaunin\u0101t telekonferenci",
+			"CancelRequest": "Atcelt piepras\u012bjumu",
+			"Join": "Pievienoties",
+			"Close": "Aizv\u0113rt",
+			"NotGoing": "Neie\u0161u"
 		},
 		"composer": {
 			"SetLocation": "Iestat\u012bt manu atra\u0161an\u0101s vietu",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Iel\u012bm\u0113jiet saiti uz tie\u0161raides straumi/videokonferenci",
 			"Locally": "lok\u0101li",
 			"EventInfoLink": "Pas\u0101kuma inform\u0101cijas saite",
-			"TicketPurchaseLink": "Bi\u013ce\u0161u ieg\u0101des saite"
+			"TicketPurchaseLink": "Bi\u013ce\u0161u ieg\u0101des saite",
+			"scheduleTeleconference": "Telekonferences pl\u0101no\u0161ana"
 		},
 		"EventAlreadyClosed": "\u0160is pas\u0101kums jau ir sl\u0113gts",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "Pas\u0101kums &quot;{{{call 'message.getInstruction' 'name'}}&quot; s\u0101ksies {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "S\u0101k\u0101s telekonference",
-			"Ended": "Telekonference beidz\u0101s"
+			"Ended": "Telekonference beidz\u0101s",
+			"StartedInEvent": "Telekonference s\u0101k\u0101s &quot; {{event}} &quot;.",
+			"OngloingInEvent": "&quot; {{event}} &quot; telekonference turpin\u0101s."
 		},
 		"livestream": {
 			"Started": "S\u0101kta tie\u0161raide",
 			"Ended": "Tie\u0161raide ir beigusies",
-			"ClickToView": "Skatiet to \u0161eit."
+			"ClickToView": "Skatiet to \u0161eit.",
+			"StartedByUser": "{{user}} ir tie\u0161raid\u0113 sada\u013c\u0101 &quot; {{event}} &quot;.",
+			"JoinAudience": "Pievienojieties auditorijai",
+			"Close": "Aizv\u0113rt"
 		}
 	},
 	"import": {

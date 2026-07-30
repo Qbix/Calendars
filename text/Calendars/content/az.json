@@ -129,7 +129,20 @@
 			"Prepayment": "\u0130lkin \u00f6d\u0259ni\u015f",
 			"PrepaymentConfirm": "Biz $1 nominal r\u00fcsum alaca\u011f\u0131q. Siz m\u00fcvafiq sayda kredit alacaqs\u0131n\u0131z. Bu kreditl\u0259r t\u0259dbir \u00fc\u00e7\u00fcn tam \u00f6d\u0259ni\u015finiz\u0259 t\u0259tbiq olunacaq.",
 			"UserNotParticipated": "{{1}} t\u0259dbirin i\u015ftirak\u00e7\u0131s\u0131 deyil",
-			"PayToAttend": "\u0130\u015ftirak etm\u0259k \u00fc\u00e7\u00fcn \u00f6d\u0259ni\u015f edin"
+			"PayToAttend": "\u0130\u015ftirak etm\u0259k \u00fc\u00e7\u00fcn \u00f6d\u0259ni\u015f edin",
+			"PayToReserve": "Rezervasiya \u00fc\u00e7\u00fcn \u00f6d\u0259ni\u015f",
+			"JoinTeleConference": "Telekonfransa qo\u015fulun",
+			"TeleConferenceEnded": "Telekonfrans ba\u015fa \u00e7atd\u0131",
+			"OpenTeleconferenceScheduler": "A\u00e7\u0131q Telekonfrans Planlay\u0131c\u0131s\u0131",
+			"LiveStreamNotifyMe": "Canl\u0131 yay\u0131mda m\u0259n\u0259 bildir",
+			"LiveStreamNotificationOn": "Bildiri\u015f Aktivdir",
+			"LiveStreamIsOffline": "Canl\u0131 yay\u0131m oflaynd\u0131r",
+			"LiveStreamIsOnline": "Canl\u0131 yay\u0131m onlaynd\u0131r",
+			"updateTeleconference": "Telekonfrans\u0131 yenil\u0259yin",
+			"CancelRequest": "Sor\u011funu l\u0259\u011fv edin",
+			"Join": "Qo\u015fulun",
+			"Close": "Ba\u011fla",
+			"NotGoing": "Getmir\u0259m"
 		},
 		"composer": {
 			"SetLocation": "Yerimi t\u0259yin edin",
@@ -170,7 +183,8 @@
 			"Minutes": "D\u0259qiq\u0259l\u0259r",
 			"Locally": "yerli",
 			"EventInfoLink": "Hadis\u0259 haqq\u0131nda m\u0259lumat ba\u011flant\u0131s\u0131",
-			"TicketPurchaseLink": "Bilet Alma Linki"
+			"TicketPurchaseLink": "Bilet Alma Linki",
+			"scheduleTeleconference": "Telekonfrans planla\u015fd\u0131r\u0131n"
 		},
 		"EventAlreadyClosed": "Bu t\u0259dbir art\u0131q ba\u011flan\u0131b",
 		"addToCalendar": {
@@ -231,12 +245,17 @@
 		"Calendars/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; t\u0259dbiri {{&call 'message.getInstruction' 'time'}}} tarixind\u0259 ba\u015flayacaq",
 		"webrtc": {
 			"Started": "Telekonfrans ba\u015flad\u0131",
-			"Ended": "Telekonfrans ba\u015fa \u00e7at\u0131b"
+			"Ended": "Telekonfrans ba\u015fa \u00e7at\u0131b",
+			"StartedInEvent": "Telekonfrans &quot; {{event}} &quot;-da ba\u015flad\u0131.",
+			"OngloingInEvent": "&quot; {{event}} &quot; \u00fc\u00e7\u00fcn telekonfrans davam edir."
 		},
 		"livestream": {
 			"Started": "Canl\u0131 yay\u0131m ba\u015flad\u0131",
 			"Ended": "Canl\u0131 yay\u0131m bitdi",
-			"ClickToView": "Burada bax\u0131n."
+			"ClickToView": "Burada bax\u0131n.",
+			"StartedByUser": "{{user}} &quot; {{event}} &quot;-d\u0259 canl\u0131 yay\u0131mdad\u0131r.",
+			"JoinAudience": "Tama\u015fa\u00e7\u0131lara qo\u015fulun",
+			"Close": "Ba\u011fla"
 		}
 	},
 	"import": {

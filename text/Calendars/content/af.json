@@ -129,7 +129,20 @@
 			"Prepayment": "Vooruitbetaling",
 			"PrepaymentConfirm": "Ons hef &#39;n nominale fooi van $1. Jy sal die ooreenstemmende aantal krediete ontvang. Hierdie krediete sal toegepas word op jou volle betaling vir die geleentheid.",
 			"UserNotParticipated": "{{1}} is nie &#39;n deelnemer aan die geleentheid nie",
-			"PayToAttend": "Betaal om by te woon"
+			"PayToAttend": "Betaal om by te woon",
+			"PayToReserve": "Betaal om te reserveer",
+			"JoinTeleConference": "Sluit aan by telekonferensie",
+			"TeleConferenceEnded": "Telekonferensie ge\u00ebindig",
+			"OpenTeleconferenceScheduler": "Oop Telekonferensieskeduleerder",
+			"LiveStreamNotifyMe": "Stel my in kennis wanneer dit regstreeks is",
+			"LiveStreamNotificationOn": "Kennisgewing is Aan",
+			"LiveStreamIsOffline": "Regstreekse stroom is vanlyn",
+			"LiveStreamIsOnline": "Regstreekse stroom is aanlyn",
+			"updateTeleconference": "Opdatering van telekonferensie",
+			"CancelRequest": "Kanselleer Versoek",
+			"Join": "Sluit aan",
+			"Close": "Maak toe",
+			"NotGoing": "Nie Gaan"
 		},
 		"composer": {
 			"SetLocation": "Stel My ligging",
@@ -170,7 +183,8 @@
 			"Minutes": "Minute",
 			"Locally": "plaaslik",
 			"EventInfoLink": "Geleentheidinligtingskakel",
-			"TicketPurchaseLink": "Kaartjie aankoop skakel"
+			"TicketPurchaseLink": "Kaartjie aankoop skakel",
+			"scheduleTeleconference": "Beplan Telekonferensie"
 		},
 		"EventAlreadyClosed": "Hierdie geleentheid is reeds gesluit",
 		"addToCalendar": {
@@ -231,12 +245,17 @@
 		"Calendars/reminder": "Geleentheid &quot;{{{call 'message.getInstruction' 'name'}}&quot; sal oor {{&call 'message.getInstruction' 'time'}}} begin",
 		"webrtc": {
 			"Started": "Telekonferensie het begin",
-			"Ended": "Telekonferensie ge\u00ebindig"
+			"Ended": "Telekonferensie ge\u00ebindig",
+			"StartedInEvent": "Telekonferensie het in &quot; {{event}} &quot; begin.",
+			"OngloingInEvent": "Die telekonferensie vir die &quot; {{event}} &quot; duur voort."
 		},
 		"livestream": {
 			"Started": "Regstreekse stroom het begin",
 			"Ended": "Regstreekse stroom het ge\u00ebindig",
-			"ClickToView": "Kyk dit hier."
+			"ClickToView": "Kyk dit hier.",
+			"StartedByUser": "{{user}} is regstreeks in &quot; {{event}} &quot;.",
+			"JoinAudience": "Sluit aan by die gehoor",
+			"Close": "Maak toe"
 		}
 	},
 	"import": {

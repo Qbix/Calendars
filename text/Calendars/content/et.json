@@ -128,7 +128,20 @@
 			"Prepayment": "Ettemaks",
 			"PrepaymentConfirm": "V\u00f5tame nominaalse tasu 1 dollar. Saate vastava arvu krediite. Neid krediite arvestatakse teie \u00fcrituse t\u00e4ismaksumuse hulka.",
 			"UserNotParticipated": "{{1}} ei ole \u00fcritusel osaleja",
-			"PayToAttend": "Maksa osalemise eest"
+			"PayToAttend": "Maksa osalemise eest",
+			"PayToReserve": "Maksa broneerimiseks",
+			"JoinTeleConference": "Liitu telekonverentsiga",
+			"TeleConferenceEnded": "Telekonverents l\u00f5ppes",
+			"OpenTeleconferenceScheduler": "Avatud telekonverentsi ajakava",
+			"LiveStreamNotifyMe": "Teavita mind otse\u00fclekande ajal",
+			"LiveStreamNotificationOn": "Teavitamine on sisse l\u00fclitatud",
+			"LiveStreamIsOffline": "Otse\u00fclekanne on v\u00f5rgu\u00fchenduseta",
+			"LiveStreamIsOnline": "Otse\u00fclekanne on v\u00f5rgus",
+			"updateTeleconference": "Telekonverentsi v\u00e4rskendus",
+			"CancelRequest": "T\u00fchista taotlus",
+			"Join": "Liitu",
+			"Close": "Sule",
+			"NotGoing": "Ei l\u00e4he"
 		},
 		"composer": {
 			"SetLocation": "M\u00e4\u00e4ra Minu asukoht",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Kleepige otse\u00fclekande/videokonverentsi link",
 			"Locally": "kohapeal",
 			"EventInfoLink": "S\u00fcndmuse info link",
-			"TicketPurchaseLink": "Pileti ostmise link"
+			"TicketPurchaseLink": "Pileti ostmise link",
+			"scheduleTeleconference": "Telekonverentsi ajakava"
 		},
 		"EventAlreadyClosed": "See \u00fcritus on juba suletud",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "S\u00fcndmus &quot;{{{call 'message.getInstruction' 'name'}}&quot; algab {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Telekonverents algas",
-			"Ended": "Telekonverents l\u00f5ppes"
+			"Ended": "Telekonverents l\u00f5ppes",
+			"StartedInEvent": "Telekonverents algas aastal &quot; {{event}} &quot;.",
+			"OngloingInEvent": "&quot; {{event}} &quot; telekonverents on k\u00e4imas."
 		},
 		"livestream": {
 			"Started": "Otse\u00fclekanne algas",
 			"Ended": "Otse\u00fclekanne l\u00f5ppes",
-			"ClickToView": "Vaata seda siit."
+			"ClickToView": "Vaata seda siit.",
+			"StartedByUser": "{{user}} on otse\u00fclekandega sarjas &quot; {{event}} &quot;.",
+			"JoinAudience": "Liitu publikuga",
+			"Close": "Sule"
 		}
 	},
 	"import": {

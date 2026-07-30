@@ -128,7 +128,20 @@
 			"Prepayment": "Rhagdaliad",
 			"PrepaymentConfirm": "Byddwn yn codi ffi enwol o $1. Byddwch yn derbyn y nifer cyfatebol o gredydau. Bydd y credydau hyn yn cael eu defnyddio tuag at eich taliad llawn am y digwyddiad.",
 			"UserNotParticipated": "Nid yw {{1}} yn gyfranogwr yn y digwyddiad",
-			"PayToAttend": "Talu i Fynychu"
+			"PayToAttend": "Talu i Fynychu",
+			"PayToReserve": "Talu i Wrth Gefn",
+			"JoinTeleConference": "Ymunwch \u00e2 Thelegynadledda",
+			"TeleConferenceEnded": "Telegynadledda wedi dod i ben",
+			"OpenTeleconferenceScheduler": "Amserlennydd Telegynadledda Agored",
+			"LiveStreamNotifyMe": "Hysbysu Fi Pan Fyw",
+			"LiveStreamNotificationOn": "Mae&#39;r Hysbysiad Ymlaen",
+			"LiveStreamIsOffline": "Mae&#39;r ffrydio byw all-lein",
+			"LiveStreamIsOnline": "Mae&#39;r ffrydio byw ar-lein",
+			"updateTeleconference": "Diweddaru Telegynhadledd",
+			"CancelRequest": "Canslo Cais",
+			"Join": "Ymunwch",
+			"Close": "Cau",
+			"NotGoing": "Ddim yn Mynd"
 		},
 		"composer": {
 			"SetLocation": "Gosod Fy Lleoliad",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Gludo dolen i lif byw / cynhadledd fideo",
 			"Locally": "yn lleol",
 			"EventInfoLink": "Dolen Gwybodaeth Digwyddiad",
-			"TicketPurchaseLink": "Dolen Prynu Tocyn"
+			"TicketPurchaseLink": "Dolen Prynu Tocyn",
+			"scheduleTeleconference": "Trefnu Telegynhadledd"
 		},
 		"EventAlreadyClosed": "Mae&#39;r digwyddiad hwn eisoes wedi cau",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "Bydd digwyddiad &quot;{{{call 'message.getInstruction' 'name'}}&quot; yn cychwyn yn {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Dechreuodd telegynhadledd",
-			"Ended": "Daeth telegynhadledd i ben"
+			"Ended": "Daeth telegynhadledd i ben",
+			"StartedInEvent": "Dechreuodd y telegynadledda yn &quot; {{event}} &quot;.",
+			"OngloingInEvent": "Mae&#39;r telegynadledda ar gyfer y &quot; {{event}} &quot; yn parhau."
 		},
 		"livestream": {
 			"Started": "Dechreuodd llif byw",
 			"Ended": "Daeth llif byw i ben",
-			"ClickToView": "Edrychwch arno yma."
+			"ClickToView": "Edrychwch arno yma.",
+			"StartedByUser": "Mae {{user}} yn fyw yn &quot; {{event}} &quot;.",
+			"JoinAudience": "Ymunwch \u00e2&#39;r gynulleidfa",
+			"Close": "Cau"
 		}
 	},
 	"import": {

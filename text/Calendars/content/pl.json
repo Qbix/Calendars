@@ -128,7 +128,20 @@
 			"Prepayment": "Przedp\u0142ata",
 			"PrepaymentConfirm": "Pobierzemy symboliczn\u0105 op\u0142at\u0119 w wysoko\u015bci 1 USD. Otrzymasz odpowiedni\u0105 liczb\u0119 punkt\u00f3w. Punkty te zostan\u0105 zaliczone na poczet pe\u0142nej p\u0142atno\u015bci za wydarzenie.",
 			"UserNotParticipated": "{{1}} nie jest uczestnikiem wydarzenia",
-			"PayToAttend": "Zap\u0142a\u0107, aby uczestniczy\u0107"
+			"PayToAttend": "Zap\u0142a\u0107, aby uczestniczy\u0107",
+			"PayToReserve": "Zap\u0142a\u0107, aby zarezerwowa\u0107",
+			"JoinTeleConference": "Do\u0142\u0105cz do telekonferencji",
+			"TeleConferenceEnded": "Telekonferencja zako\u0144czona",
+			"OpenTeleconferenceScheduler": "Otw\u00f3rz harmonogram telekonferencji",
+			"LiveStreamNotifyMe": "Powiadom mnie, gdy b\u0119dzie na \u017cywo",
+			"LiveStreamNotificationOn": "Powiadomienie jest w\u0142\u0105czone",
+			"LiveStreamIsOffline": "Transmisja na \u017cywo jest offline",
+			"LiveStreamIsOnline": "Transmisja na \u017cywo jest online",
+			"updateTeleconference": "Aktualizacja telekonferencji",
+			"CancelRequest": "Anuluj \u017c\u0105danie",
+			"Join": "Do\u0142\u0105czy\u0107",
+			"Close": "Zamkn\u0105\u0107",
+			"NotGoing": "Nie id\u0119"
 		},
 		"composer": {
 			"SetLocation": "Ustaw moj\u0105 lokalizacj\u0119",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Wklej link do transmisji na \u017cywo/wideokonferencji",
 			"Locally": "lokalnie",
 			"EventInfoLink": "Link do informacji o wydarzeniu",
-			"TicketPurchaseLink": "Link do zakupu biletu"
+			"TicketPurchaseLink": "Link do zakupu biletu",
+			"scheduleTeleconference": "Zaplanuj telekonferencj\u0119"
 		},
 		"EventAlreadyClosed": "To wydarzenie jest ju\u017c zamkni\u0119te",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "Wydarzenie \u201e{{{call 'message.getInstruction' 'name'}}\u201d rozpocznie si\u0119 za {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Rozpocz\u0119\u0142a si\u0119 telekonferencja",
-			"Ended": "Telekonferencja zako\u0144czy\u0142a si\u0119"
+			"Ended": "Telekonferencja zako\u0144czy\u0142a si\u0119",
+			"StartedInEvent": "Telekonferencja rozpocz\u0119\u0142a si\u0119 w \u201e {{event}} \u201d.",
+			"OngloingInEvent": "Trwa telekonferencja po\u015bwi\u0119cona \u201e {{event}} \u201d."
 		},
 		"livestream": {
 			"Started": "Rozpocz\u0119to transmisj\u0119 na \u017cywo",
 			"Ended": "Transmisja na \u017cywo zosta\u0142a zako\u0144czona",
-			"ClickToView": "Zobacz tutaj."
+			"ClickToView": "Zobacz tutaj.",
+			"StartedByUser": "{{user}} jest na \u017cywo w &quot; {{event}} &quot;.",
+			"JoinAudience": "Do\u0142\u0105cz do publiczno\u015bci",
+			"Close": "Zamkn\u0105\u0107"
 		}
 	},
 	"import": {

@@ -129,7 +129,20 @@
 			"Prepayment": "Pretplata",
 			"PrepaymentConfirm": "Naplatit \u0107emo nominalnu naknadu od 1 USD. Primit \u0107ete odgovaraju\u0107i broj kredita. Ti \u0107e se krediti primijeniti na va\u0161u punu uplatu za doga\u0111aj.",
 			"UserNotParticipated": "{{1}} nije sudionik doga\u0111aja",
-			"PayToAttend": "Plati za prisustvovanje"
+			"PayToAttend": "Plati za prisustvovanje",
+			"PayToReserve": "Plati za rezervaciju",
+			"JoinTeleConference": "Pridru\u017eite se telekonferenciji",
+			"TeleConferenceEnded": "Telekonferencija je zavr\u0161ena",
+			"OpenTeleconferenceScheduler": "Otvori planer telekonferencija",
+			"LiveStreamNotifyMe": "Obavijesti me kada bude u\u017eivo",
+			"LiveStreamNotificationOn": "Obavijest je uklju\u010dena",
+			"LiveStreamIsOffline": "Prijenos u\u017eivo je izvan mre\u017ee",
+			"LiveStreamIsOnline": "Prijenos u\u017eivo je online",
+			"updateTeleconference": "A\u017euriranje telekonferencije",
+			"CancelRequest": "Otka\u017ei zahtjev",
+			"Join": "Pridru\u017ei se",
+			"Close": "Zatvoriti",
+			"NotGoing": "Ne idem"
 		},
 		"composer": {
 			"SetLocation": "Postavite moju lokaciju",
@@ -170,7 +183,8 @@
 			"Minutes": "Zapisnici",
 			"Locally": "lokalno",
 			"EventInfoLink": "Link za informacije o doga\u0111aju",
-			"TicketPurchaseLink": "Link za kupnju ulaznica"
+			"TicketPurchaseLink": "Link za kupnju ulaznica",
+			"scheduleTeleconference": "Zaka\u017eite telekonferenciju"
 		},
 		"EventAlreadyClosed": "Ovaj doga\u0111aj je ve\u0107 zatvoren",
 		"addToCalendar": {
@@ -231,12 +245,17 @@
 		"Calendars/reminder": "Doga\u0111aj &quot;{{{call 'message.getInstruction' 'name'}}&quot; po\u010det \u0107e za {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Telekonferencija je zapo\u010dela",
-			"Ended": "Telekonferencija je zavr\u0161ila"
+			"Ended": "Telekonferencija je zavr\u0161ila",
+			"StartedInEvent": "Telekonferencija je zapo\u010dela u &quot; {{event}} &quot;.",
+			"OngloingInEvent": "Telekonferencija za &quot; {{event}} &quot; je u tijeku."
 		},
 		"livestream": {
 			"Started": "Zapo\u010deo je prijenos u\u017eivo",
 			"Ended": "Prijenos u\u017eivo je zavr\u0161io",
-			"ClickToView": "Pogledajte ga ovdje."
+			"ClickToView": "Pogledajte ga ovdje.",
+			"StartedByUser": "{{user}} je u\u017eivo u &quot; {{event}} &quot;.",
+			"JoinAudience": "Pridru\u017eite se publici",
+			"Close": "Zatvoriti"
 		}
 	},
 	"import": {

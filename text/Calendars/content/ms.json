@@ -128,7 +128,20 @@
 			"Prepayment": "Prabayar",
 			"PrepaymentConfirm": "Kami akan mengenakan bayaran nominal sebanyak $1. Anda akan menerima bilangan kredit yang sepadan. Kredit ini akan digunakan untuk pembayaran penuh anda untuk acara tersebut.",
 			"UserNotParticipated": "{{1}} bukan peserta acara tersebut",
-			"PayToAttend": "Bayar untuk Hadir"
+			"PayToAttend": "Bayar untuk Hadir",
+			"PayToReserve": "Bayar Untuk Tempah",
+			"JoinTeleConference": "Sertai Telepersidangan",
+			"TeleConferenceEnded": "Telepersidangan Berakhir",
+			"OpenTeleconferenceScheduler": "Penjadual Telepersidangan Terbuka",
+			"LiveStreamNotifyMe": "Beritahu Saya Apabila Siaran Langsung",
+			"LiveStreamNotificationOn": "Pemberitahuan Dihidupkan",
+			"LiveStreamIsOffline": "Strim langsung di luar talian",
+			"LiveStreamIsOnline": "Siaran langsung sedang dalam talian",
+			"updateTeleconference": "Kemas Kini Telepersidangan",
+			"CancelRequest": "Batalkan Permintaan",
+			"Join": "Sertai",
+			"Close": "Tutup",
+			"NotGoing": "Tidak Akan Pergi"
 		},
 		"composer": {
 			"SetLocation": "Tetapkan Lokasi Saya",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Tampal pautan ke strim langsung / persidangan video",
 			"Locally": "tempatan",
 			"EventInfoLink": "Pautan Maklumat Acara",
-			"TicketPurchaseLink": "Pautan Pembelian Tiket"
+			"TicketPurchaseLink": "Pautan Pembelian Tiket",
+			"scheduleTeleconference": "Jadualkan Telepersidangan"
 		},
 		"EventAlreadyClosed": "Acara ini telah pun ditutup",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "Acara &quot;{{{call 'message.getInstruction' 'name'}}&quot; akan bermula dalam {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Telesidang bermula",
-			"Ended": "Telesidang tamat"
+			"Ended": "Telesidang tamat",
+			"StartedInEvent": "Telepersidangan bermula pada tahun &quot; {{event}} &quot;.",
+			"OngloingInEvent": "Telepersidangan untuk &quot; {{event}} &quot; sedang berlangsung."
 		},
 		"livestream": {
 			"Started": "Strim langsung bermula",
 			"Ended": "Strim langsung tamat",
-			"ClickToView": "Lihat di sini."
+			"ClickToView": "Lihat di sini.",
+			"StartedByUser": "{{user}} bersiaran langsung dalam &quot; {{event}} &quot;.",
+			"JoinAudience": "Sertai khalayak",
+			"Close": "Tutup"
 		}
 	},
 	"import": {

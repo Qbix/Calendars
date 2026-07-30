@@ -128,7 +128,20 @@
 			"Prepayment": "Malipo ya awali",
 			"PrepaymentConfirm": "Tutatoza ada ya kawaida ya $1. Utapokea idadi inayolingana ya salio. Salio hili litatumika kwa malipo yako kamili kwa ajili ya tukio hilo.",
 			"UserNotParticipated": "{{1}} si mshiriki wa tukio hilo",
-			"PayToAttend": "Lipa ili Kuhudhuria"
+			"PayToAttend": "Lipa ili Kuhudhuria",
+			"PayToReserve": "Lipa Ili Kuweka Nafasi",
+			"JoinTeleConference": "Jiunge na Mkutano wa Televisheni",
+			"TeleConferenceEnded": "Mkutano wa Televisheni Umekwisha",
+			"OpenTeleconferenceScheduler": "Mratibu wa Mikutano ya Televisheni Wazi",
+			"LiveStreamNotifyMe": "Nijulishe Wakati Unapokuwa Moja kwa Moja",
+			"LiveStreamNotificationOn": "Arifa Imewashwa",
+			"LiveStreamIsOffline": "Mtiririko wa moja kwa moja haupo mtandaoni",
+			"LiveStreamIsOnline": "Mtiririko wa moja kwa moja uko mtandaoni",
+			"updateTeleconference": "Sasisha Mkutano wa Televisheni",
+			"CancelRequest": "Ghairi Ombi",
+			"Join": "Jiunge",
+			"Close": "Funga",
+			"NotGoing": "Hawaendi"
 		},
 		"composer": {
 			"SetLocation": "Weka Mahali Pangu",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Bandika kiungo ili utiririshe moja kwa moja/mkutano wa video",
 			"Locally": "ndani ya nchi",
 			"EventInfoLink": "Kiungo cha Taarifa ya Tukio",
-			"TicketPurchaseLink": "Kiungo cha Kununua Tiketi"
+			"TicketPurchaseLink": "Kiungo cha Kununua Tiketi",
+			"scheduleTeleconference": "Ratiba Mkutano wa Televisheni"
 		},
 		"EventAlreadyClosed": "Tukio hili tayari limefungwa",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "Tukio &quot;{999}}&quot; litaanza baada ya {{{call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Teleconference imeanza",
-			"Ended": "Teleconference imekamilika"
+			"Ended": "Teleconference imekamilika",
+			"StartedInEvent": "Mkutano wa simu ulianza mwaka wa &quot; {{event}} &quot;.",
+			"OngloingInEvent": "Mkutano wa simu kwa ajili ya &quot; {{event}} &quot; unaendelea."
 		},
 		"livestream": {
 			"Started": "Utiririshaji wa moja kwa moja umeanza",
 			"Ended": "Mtiririko wa moja kwa moja umeisha",
-			"ClickToView": "Itazame hapa."
+			"ClickToView": "Itazame hapa.",
+			"StartedByUser": "{{user}} iko moja kwa moja katika &quot; {{event}} &quot;.",
+			"JoinAudience": "Jiunge na hadhira",
+			"Close": "Funga"
 		}
 	},
 	"import": {

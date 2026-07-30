@@ -128,7 +128,20 @@
 			"Prepayment": "Predpla\u010dilo",
 			"PrepaymentConfirm": "Zara\u010dunali vam bomo nominalno pristojbino v vi\u0161ini 1 $. Prejeli boste ustrezno \u0161tevilo kreditnih to\u010dk. Te kreditne to\u010dke bodo uporabljene za va\u0161e celotno pla\u010dilo dogodka.",
 			"UserNotParticipated": "{{1}} ni udele\u017eenec dogodka",
-			"PayToAttend": "Pla\u010daj za udele\u017ebo"
+			"PayToAttend": "Pla\u010daj za udele\u017ebo",
+			"PayToReserve": "Pla\u010dilo za rezervacijo",
+			"JoinTeleConference": "Pridru\u017eite se telekonferenci",
+			"TeleConferenceEnded": "Telekonferenca kon\u010dana",
+			"OpenTeleconferenceScheduler": "Odpri razporejevalnik telekonferenc",
+			"LiveStreamNotifyMe": "Obvesti me, ko bo objavljeno",
+			"LiveStreamNotificationOn": "Obvestilo je vklopljeno",
+			"LiveStreamIsOffline": "Prenos v \u017eivo je brez povezave",
+			"LiveStreamIsOnline": "Prenos v \u017eivo je na spletu",
+			"updateTeleconference": "Posodobitev telekonference",
+			"CancelRequest": "Prekli\u010di zahtevo",
+			"Join": "Pridru\u017ei se",
+			"Close": "Zapri",
+			"NotGoing": "Ne grem"
 		},
 		"composer": {
 			"SetLocation": "Nastavite mojo lokacijo",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Prilepite povezavo do pretoka v \u017eivo/videokonference",
 			"Locally": "lokalno",
 			"EventInfoLink": "Povezava z informacijami o dogodku",
-			"TicketPurchaseLink": "Povezava za nakup vstopnic"
+			"TicketPurchaseLink": "Povezava za nakup vstopnic",
+			"scheduleTeleconference": "Na\u010drtujte telekonferenco"
 		},
 		"EventAlreadyClosed": "Ta dogodek je \u017ee zaprt",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "Dogodek \u00bb{{{call 'message.getInstruction' 'name'}}\u00ab se bo za\u010del \u010dez {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Telekonferenca se je za\u010dela",
-			"Ended": "Telekonferenca je kon\u010dana"
+			"Ended": "Telekonferenca je kon\u010dana",
+			"StartedInEvent": "Telekonferenca se je za\u010dela ob &quot; {{event}} &quot;.",
+			"OngloingInEvent": "Telekonferenca za &quot; {{event}} &quot; \u0161e poteka."
 		},
 		"livestream": {
 			"Started": "Prenos v \u017eivo se je za\u010del",
 			"Ended": "Prenos v \u017eivo se je kon\u010dal",
-			"ClickToView": "Oglejte si ga tukaj."
+			"ClickToView": "Oglejte si ga tukaj.",
+			"StartedByUser": "{{user}} je v \u017eivo v &quot; {{event}} &quot;.",
+			"JoinAudience": "Pridru\u017eite se ob\u010dinstvu",
+			"Close": "Zapri"
 		}
 	},
 	"import": {

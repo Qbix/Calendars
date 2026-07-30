@@ -128,7 +128,20 @@
 			"Prepayment": "I\u0161ankstinis apmok\u0117jimas",
 			"PrepaymentConfirm": "Taikysime simbolin\u012f 1 USD mokest\u012f. Gausite atitinkam\u0105 kredit\u0173 skai\u010di\u0173. \u0160ie kreditai bus \u012fskaityti \u012f vis\u0105 renginio kain\u0105.",
 			"UserNotParticipated": "{{1}} n\u0117ra renginio dalyvis",
-			"PayToAttend": "Mok\u0117ti u\u017e dalyvavim\u0105"
+			"PayToAttend": "Mok\u0117ti u\u017e dalyvavim\u0105",
+			"PayToReserve": "Mok\u0117ti rezervuojant",
+			"JoinTeleConference": "Prisijunkite prie telekonferencijos",
+			"TeleConferenceEnded": "Telekonferencija baig\u0117si",
+			"OpenTeleconferenceScheduler": "Atidaryti telekonferencij\u0173 planuokl\u012f",
+			"LiveStreamNotifyMe": "Prane\u0161ti man, kai bus tiesiogiai",
+			"LiveStreamNotificationOn": "Prane\u0161imas \u012fjungtas",
+			"LiveStreamIsOffline": "Tiesiogin\u0117 transliacija neprisijungus",
+			"LiveStreamIsOnline": "Tiesiogin\u0117 transliacija vyksta internetu",
+			"updateTeleconference": "Atnaujinta telekonferencija",
+			"CancelRequest": "At\u0161aukti u\u017eklaus\u0105",
+			"Join": "Prisijungti",
+			"Close": "U\u017edaryti",
+			"NotGoing": "Nei\u0161eisiu"
 		},
 		"composer": {
 			"SetLocation": "Nustatyti Mano viet\u0105",
@@ -168,7 +181,8 @@
 			"SetLivestream": "\u012eklijuokite nuorod\u0105 \u012f tiesiogin\u0119 transliacij\u0105 / vaizdo konferencij\u0105",
 			"Locally": "lokaliai",
 			"EventInfoLink": "Renginio informacijos nuoroda",
-			"TicketPurchaseLink": "Biliet\u0173 pirkimo nuoroda"
+			"TicketPurchaseLink": "Biliet\u0173 pirkimo nuoroda",
+			"scheduleTeleconference": "Suplanuoti telekonferencij\u0105"
 		},
 		"EventAlreadyClosed": "\u0160is renginys jau u\u017edarytas",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "\u012evykis \u201e{{{call 'message.getInstruction' 'name'}}\u201c prasid\u0117s {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Prasid\u0117jo telekonferencija",
-			"Ended": "Telekonferencija baig\u0117si"
+			"Ended": "Telekonferencija baig\u0117si",
+			"StartedInEvent": "Telekonferencija prasid\u0117jo \u201e {{event}} \u201c.",
+			"OngloingInEvent": "\u201e {{event}} \u201c telekonferencija t\u0119siasi."
 		},
 		"livestream": {
 			"Started": "Prad\u0117ta tiesiogin\u0117 transliacija",
 			"Ended": "Tiesiogin\u0117 transliacija baig\u0117si",
-			"ClickToView": "Per\u017ei\u016br\u0117kite \u010dia."
+			"ClickToView": "Per\u017ei\u016br\u0117kite \u010dia.",
+			"StartedByUser": "{{user}} tiesiogiai transliuoja \u201e {{event}} \u201c.",
+			"JoinAudience": "Prisijunkite prie auditorijos",
+			"Close": "U\u017edaryti"
 		}
 	},
 	"import": {

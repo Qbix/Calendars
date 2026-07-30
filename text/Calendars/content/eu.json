@@ -129,7 +129,20 @@
 			"Prepayment": "Aurrez ordainduta",
 			"PrepaymentConfirm": "$ 1eko kuota nominala kobratuko dizugu. Dagokion kreditu kopurua jasoko duzu. Kreditu hauek ekitaldiaren ordainketa osoari aplikatuko zaizkio.",
 			"UserNotParticipated": "{{1}} ez da ekitaldiko parte-hartzailea",
-			"PayToAttend": "Ordaindu bertaratzeko"
+			"PayToAttend": "Ordaindu bertaratzeko",
+			"PayToReserve": "Ordaindu erreserba egiteko",
+			"JoinTeleConference": "Sartu telekonferentzian",
+			"TeleConferenceEnded": "Telekonferentzia amaitu da",
+			"OpenTeleconferenceScheduler": "Ireki telekonferentzia programatzailea",
+			"LiveStreamNotifyMe": "Jakinarazi iezadazu zuzenean",
+			"LiveStreamNotificationOn": "Jakinarazpena piztuta dago",
+			"LiveStreamIsOffline": "Zuzeneko emankizuna lineaz kanpo dago",
+			"LiveStreamIsOnline": "Zuzeneko emankizuna sarean dago",
+			"updateTeleconference": "Telekonferentzia eguneratu",
+			"CancelRequest": "Eskaera bertan behera uztea",
+			"Join": "Batu",
+			"Close": "Itxi",
+			"NotGoing": "Ez joango"
 		},
 		"composer": {
 			"SetLocation": "Ezarri Nire kokapena",
@@ -170,7 +183,8 @@
 			"Minutes": "Minutu",
 			"Locally": "lokalean",
 			"EventInfoLink": "Ekitaldiaren informazioa esteka",
-			"TicketPurchaseLink": "Txartelak erosteko esteka"
+			"TicketPurchaseLink": "Txartelak erosteko esteka",
+			"scheduleTeleconference": "Telekonferentzia programatu"
 		},
 		"EventAlreadyClosed": "Ekitaldi hau itxita dago dagoeneko",
 		"addToCalendar": {
@@ -231,12 +245,17 @@
 		"Calendars/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; gertaera {{&call 'message.getInstruction' 'time'}}} barru hasiko da",
 		"webrtc": {
 			"Started": "Telekonferentzia hasi zen",
-			"Ended": "Telekonferentzia amaitu zen"
+			"Ended": "Telekonferentzia amaitu zen",
+			"StartedInEvent": "Telekonferentzia &quot; {{event}} &quot;-an hasi da.",
+			"OngloingInEvent": "&quot; {{event}} &quot;-ren telekonferentzia martxan dago."
 		},
 		"livestream": {
 			"Started": "Zuzeneko igorpena hasi da",
 			"Ended": "Zuzeneko igorpena amaitu da",
-			"ClickToView": "Ikus ezazu hemen."
+			"ClickToView": "Ikus ezazu hemen.",
+			"StartedByUser": "{{user}} zuzenean dago &quot; {{event}} &quot; saioan.",
+			"JoinAudience": "Batu zaitez publikoari",
+			"Close": "Itxi"
 		}
 	},
 	"import": {

@@ -129,7 +129,20 @@
 			"Prepayment": "Paunang bayad",
 			"PrepaymentConfirm": "Maniningil kami ng maliit na bayad na $1. Matatanggap mo ang katumbas na bilang ng mga kredito. Ang mga kreditong ito ay gagamitin sa iyong buong bayad para sa kaganapan.",
 			"UserNotParticipated": "{{1}} ay hindi kalahok sa kaganapan",
-			"PayToAttend": "Magbayad para Dumalo"
+			"PayToAttend": "Magbayad para Dumalo",
+			"PayToReserve": "Magbayad Para Magpareserba",
+			"JoinTeleConference": "Sumali sa Teleconference",
+			"TeleConferenceEnded": "Tapos na ang Teleconference",
+			"OpenTeleconferenceScheduler": "Bukas na Iskedyul ng Telekumperensya",
+			"LiveStreamNotifyMe": "Abisuhan Ako Kapag Live",
+			"LiveStreamNotificationOn": "Naka-on ang Notification",
+			"LiveStreamIsOffline": "Naka-offline ang livestream",
+			"LiveStreamIsOnline": "Online ang livestream",
+			"updateTeleconference": "I-update ang Telekumperensya",
+			"CancelRequest": "Kanselahin ang Kahilingan",
+			"Join": "Sumali",
+			"Close": "Isara",
+			"NotGoing": "Hindi Pupunta"
 		},
 		"composer": {
 			"SetLocation": "Itakda ang Aking Lokasyon",
@@ -170,7 +183,8 @@
 			"Minutes": "Minuto",
 			"Locally": "lokal",
 			"EventInfoLink": "Link ng Impormasyon ng Kaganapan",
-			"TicketPurchaseLink": "Link sa Pagbili ng Ticket"
+			"TicketPurchaseLink": "Link sa Pagbili ng Ticket",
+			"scheduleTeleconference": "Mag-iskedyul ng Teleconference"
 		},
 		"EventAlreadyClosed": "Isinara na ang okasyong ito",
 		"addToCalendar": {
@@ -231,12 +245,17 @@
 		"Calendars/reminder": "Ang kaganapan na &quot;{{{call 'message.getInstruction' 'name'}}&quot; ay magsisimula sa {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Nagsimula ang teleconference",
-			"Ended": "Natapos ang teleconference"
+			"Ended": "Natapos ang teleconference",
+			"StartedInEvent": "Nagsimula ang teleconference noong &quot; {{event}} &quot;.",
+			"OngloingInEvent": "Nagpapatuloy ang teleconference para sa &quot; {{event}} &quot;."
 		},
 		"livestream": {
 			"Started": "Nagsimula ang live stream",
 			"Ended": "Natapos ang live stream",
-			"ClickToView": "Tingnan mo dito."
+			"ClickToView": "Tingnan mo dito.",
+			"StartedByUser": "Live ang {{user}} sa &quot; {{event}} &quot;.",
+			"JoinAudience": "Sumali sa madla",
+			"Close": "Isara"
 		}
 	},
 	"import": {

@@ -129,7 +129,20 @@
 			"Prepayment": "Vooruitbetaling",
 			"PrepaymentConfirm": "We rekenen een symbolisch bedrag van $1 aan. U ontvangt het bijbehorende aantal credits. Deze credits worden verrekend met de totale betaling voor het evenement.",
 			"UserNotParticipated": "{{1}} neemt niet deel aan het evenement.",
-			"PayToAttend": "Betaal om deel te nemen"
+			"PayToAttend": "Betaal om deel te nemen",
+			"PayToReserve": "Betalen om te reserveren",
+			"JoinTeleConference": "Deelnemen aan de teleconferentie",
+			"TeleConferenceEnded": "Teleconferentie be\u00ebindigd",
+			"OpenTeleconferenceScheduler": "Open teleconferentieplanner",
+			"LiveStreamNotifyMe": "Breng me op de hoogte wanneer live",
+			"LiveStreamNotificationOn": "Melding is ingeschakeld",
+			"LiveStreamIsOffline": "De livestream is offline.",
+			"LiveStreamIsOnline": "De livestream is online",
+			"updateTeleconference": "Update Teleconferentie",
+			"CancelRequest": "Verzoek annuleren",
+			"Join": "Meedoen",
+			"Close": "Dichtbij",
+			"NotGoing": "Ik ga niet"
 		},
 		"composer": {
 			"SetLocation": "Mijn locatie instellen",
@@ -170,7 +183,8 @@
 			"Minutes": "Minuten",
 			"Locally": "plaatselijk",
 			"EventInfoLink": "Evenement Info Link",
-			"TicketPurchaseLink": "Ticket Aankoop Link"
+			"TicketPurchaseLink": "Ticket Aankoop Link",
+			"scheduleTeleconference": "Plan een teleconferentie"
 		},
 		"EventAlreadyClosed": "Dit evenement is al gesloten",
 		"addToCalendar": {
@@ -231,12 +245,17 @@
 		"Calendars/reminder": "Evenement &quot;{{{call 'message.getInstruction' 'name'}}&quot; begint over {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Teleconferentie begon",
-			"Ended": "Teleconferentie be\u00ebindigd"
+			"Ended": "Teleconferentie be\u00ebindigd",
+			"StartedInEvent": "De teleconferentie is gestart in &quot; {{event}} &quot;.",
+			"OngloingInEvent": "De teleconferentie voor de &quot; {{event}} &quot; is nog steeds gaande."
 		},
 		"livestream": {
 			"Started": "Livestream gestart",
 			"Ended": "Livestream be\u00ebindigd",
-			"ClickToView": "Bekijk het hier."
+			"ClickToView": "Bekijk het hier.",
+			"StartedByUser": "{{user}} is live in &quot; {{event}} &quot;.",
+			"JoinAudience": "Sluit je aan bij het publiek",
+			"Close": "Dichtbij"
 		}
 	},
 	"import": {

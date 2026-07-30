@@ -129,7 +129,20 @@
 			"Prepayment": "Forudbetaling",
 			"PrepaymentConfirm": "Vi opkr\u00e6ver et nominelt gebyr p\u00e5 $1. Du modtager det tilsvarende antal kreditter. Disse kreditter vil blive anvendt til din fulde betaling for arrangementet.",
 			"UserNotParticipated": "{{1}} deltager ikke i begivenheden",
-			"PayToAttend": "Betal for at deltage"
+			"PayToAttend": "Betal for at deltage",
+			"PayToReserve": "Betal for at reservere",
+			"JoinTeleConference": "Deltag i telekonference",
+			"TeleConferenceEnded": "Telekonference afsluttet",
+			"OpenTeleconferenceScheduler": "\u00c5bn telekonferenceplanl\u00e6gger",
+			"LiveStreamNotifyMe": "Giv mig besked, n\u00e5r den er live",
+			"LiveStreamNotificationOn": "Notifikation er sl\u00e5et til",
+			"LiveStreamIsOffline": "Livestreamen er offline",
+			"LiveStreamIsOnline": "Livestreamen er online",
+			"updateTeleconference": "Opdater telekonference",
+			"CancelRequest": "Annuller anmodning",
+			"Join": "Deltag",
+			"Close": "T\u00e6t",
+			"NotGoing": "G\u00e5r ikke"
 		},
 		"composer": {
 			"SetLocation": "Indstil min placering",
@@ -170,7 +183,8 @@
 			"Minutes": "Referat",
 			"Locally": "lokalt",
 			"EventInfoLink": "Link til begivenhedsinfo",
-			"TicketPurchaseLink": "Link til billetk\u00f8b"
+			"TicketPurchaseLink": "Link til billetk\u00f8b",
+			"scheduleTeleconference": "Planl\u00e6g telekonference"
 		},
 		"EventAlreadyClosed": "Denne begivenhed er allerede lukket",
 		"addToCalendar": {
@@ -231,12 +245,17 @@
 		"Calendars/reminder": "Begivenheden &quot;{{{call 'message.getInstruction' 'name'}}&quot; starter om {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Telekonference startet",
-			"Ended": "Telekonference afsluttet"
+			"Ended": "Telekonference afsluttet",
+			"StartedInEvent": "Telekonferencen startede i &quot; {{event}} &quot;.",
+			"OngloingInEvent": "Telekonferencen for &quot; {{event}} &quot; er i gang."
 		},
 		"livestream": {
 			"Started": "Livestream startede",
 			"Ended": "Livestream sluttede",
-			"ClickToView": "Se den her."
+			"ClickToView": "Se den her.",
+			"StartedByUser": "{{user}} er live i &quot; {{event}} &quot;.",
+			"JoinAudience": "Deltag i publikum",
+			"Close": "T\u00e6t"
 		}
 	},
 	"import": {

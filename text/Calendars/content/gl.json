@@ -128,7 +128,20 @@
 			"Prepayment": "Prepago",
 			"PrepaymentConfirm": "Cobraremos unha tarifa nominal de 1 $. Recibir\u00e1s o n\u00famero correspondente de cr\u00e9ditos. Estes cr\u00e9ditos aplicaranse ao teu pago completo do evento.",
 			"UserNotParticipated": "{{1}} non participa no evento",
-			"PayToAttend": "Pagar para asistir"
+			"PayToAttend": "Pagar para asistir",
+			"PayToReserve": "Pagar para reservar",
+			"JoinTeleConference": "Unirse \u00e1 teleconferencia",
+			"TeleConferenceEnded": "Teleconferencia finalizada",
+			"OpenTeleconferenceScheduler": "Abrir o programador de teleconferencias",
+			"LiveStreamNotifyMe": "Notificarme cando estea en directo",
+			"LiveStreamNotificationOn": "A notificaci\u00f3n est\u00e1 activada",
+			"LiveStreamIsOffline": "A transmisi\u00f3n en directo est\u00e1 sen conexi\u00f3n",
+			"LiveStreamIsOnline": "A transmisi\u00f3n en directo est\u00e1 en li\u00f1a",
+			"updateTeleconference": "Actualizar a teleconferencia",
+			"CancelRequest": "Cancelar solicitude",
+			"Join": "Unirse",
+			"Close": "Pechar",
+			"NotGoing": "Non vou"
 		},
 		"composer": {
 			"SetLocation": "Establecer a mi\u00f1a localizaci\u00f3n",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Pega a ligaz\u00f3n \u00e1 transmisi\u00f3n en directo/videoconferencia",
 			"Locally": "localmente",
 			"EventInfoLink": "Ligaz\u00f3n de informaci\u00f3n do evento",
-			"TicketPurchaseLink": "Ligaz\u00f3n de compra de entradas"
+			"TicketPurchaseLink": "Ligaz\u00f3n de compra de entradas",
+			"scheduleTeleconference": "Programar teleconferencia"
 		},
 		"EventAlreadyClosed": "Este evento xa est\u00e1 pechado",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "O evento &quot;{{{call 'message.getInstruction' 'name'}}&quot; comezar\u00e1 en {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Comezou a teleconferencia",
-			"Ended": "Rematou a teleconferencia"
+			"Ended": "Rematou a teleconferencia",
+			"StartedInEvent": "A teleconferencia comezou en &quot; {{event}} &quot;.",
+			"OngloingInEvent": "A teleconferencia para o &quot; {{event}} &quot; est\u00e1 en curso."
 		},
 		"livestream": {
 			"Started": "Comezou a emisi\u00f3n en directo",
 			"Ended": "Rematou a emisi\u00f3n en directo",
-			"ClickToView": "M\u00edrao aqu\u00ed."
+			"ClickToView": "M\u00edrao aqu\u00ed.",
+			"StartedByUser": "{{user}} est\u00e1 en directo en &quot; {{event}} &quot;.",
+			"JoinAudience": "\u00danete \u00e1 audiencia",
+			"Close": "Pechar"
 		}
 	},
 	"import": {

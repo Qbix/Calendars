@@ -128,7 +128,20 @@
 			"Prepayment": "Pagamento anticipato",
 			"PrepaymentConfirm": "Addebiteremo una quota simbolica di 1 $. Riceverai il numero corrispondente di crediti. Questi crediti saranno utilizzati per saldare l&#39;intero importo dell&#39;evento.",
 			"UserNotParticipated": "{{1}} non \u00e8 un partecipante all&#39;evento",
-			"PayToAttend": "Paga per partecipare"
+			"PayToAttend": "Paga per partecipare",
+			"PayToReserve": "Paga per prenotare",
+			"JoinTeleConference": "Partecipa alla teleconferenza",
+			"TeleConferenceEnded": "Teleconferenza conclusa",
+			"OpenTeleconferenceScheduler": "Open Teleconference Scheduler",
+			"LiveStreamNotifyMe": "Avvisami quando \u00e8 in diretta",
+			"LiveStreamNotificationOn": "Le notifiche sono attive",
+			"LiveStreamIsOffline": "La diretta streaming \u00e8 offline.",
+			"LiveStreamIsOnline": "La diretta streaming \u00e8 online.",
+			"updateTeleconference": "Teleconferenza di aggiornamento",
+			"CancelRequest": "Richiesta di annullamento",
+			"Join": "Giuntura",
+			"Close": "Vicino",
+			"NotGoing": "Non andr\u00f2"
 		},
 		"composer": {
 			"SetLocation": "Imposta la mia posizione",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Incolla il link al livestream/videoconferenza",
 			"Locally": "localmente",
 			"EventInfoLink": "Link informazioni evento",
-			"TicketPurchaseLink": "Link per l&#39;acquisto del biglietto"
+			"TicketPurchaseLink": "Link per l&#39;acquisto del biglietto",
+			"scheduleTeleconference": "Programmare la teleconferenza"
 		},
 		"EventAlreadyClosed": "Questo evento \u00e8 gi\u00e0 chiuso",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "L&#39;evento &quot;{999}}&quot; inizier\u00e0 tra {{{call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Avviata la teleconferenza",
-			"Ended": "Terminata la teleconferenza"
+			"Ended": "Terminata la teleconferenza",
+			"StartedInEvent": "La teleconferenza \u00e8 iniziata nel &quot; {{event}} &quot;.",
+			"OngloingInEvent": "La teleconferenza per il &quot; {{event}} &quot; \u00e8 in corso."
 		},
 		"livestream": {
 			"Started": "\u00c8 iniziato il live streaming",
 			"Ended": "La diretta streaming \u00e8 terminata",
-			"ClickToView": "Visualizzalo qui."
+			"ClickToView": "Visualizzalo qui.",
+			"StartedByUser": "{{user}} \u00e8 in diretta in &quot; {{event}} &quot;.",
+			"JoinAudience": "Partecipare al pubblico",
+			"Close": "Vicino"
 		}
 	},
 	"import": {

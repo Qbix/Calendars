@@ -128,7 +128,20 @@
 			"Prepayment": "\u00d6n \u00f6deme",
 			"PrepaymentConfirm": "Sadece 1 dolarl\u0131k sembolik bir \u00fccret alaca\u011f\u0131z. Kar\u015f\u0131l\u0131\u011f\u0131nda kredi kazanacaks\u0131n\u0131z. Bu krediler, etkinlik i\u00e7in yapaca\u011f\u0131n\u0131z toplam \u00f6demeye say\u0131lacakt\u0131r.",
 			"UserNotParticipated": "{{1}} etkinli\u011fin kat\u0131l\u0131mc\u0131s\u0131 de\u011fildir.",
-			"PayToAttend": "Kat\u0131l\u0131m \u00dccreti"
+			"PayToAttend": "Kat\u0131l\u0131m \u00dccreti",
+			"PayToReserve": "Rezervasyon \u0130\u00e7in \u00d6deme Yap\u0131n",
+			"JoinTeleConference": "Telekonferansa Kat\u0131l\u0131n",
+			"TeleConferenceEnded": "Telekonferans Sona Erdi",
+			"OpenTeleconferenceScheduler": "Telekonferans Planlay\u0131c\u0131s\u0131n\u0131 A\u00e7",
+			"LiveStreamNotifyMe": "Canl\u0131 yay\u0131n ba\u015flad\u0131\u011f\u0131nda beni bilgilendir",
+			"LiveStreamNotificationOn": "Bildirim A\u00e7\u0131k",
+			"LiveStreamIsOffline": "Canl\u0131 yay\u0131n \u00e7evrimd\u0131\u015f\u0131",
+			"LiveStreamIsOnline": "Canl\u0131 yay\u0131n \u00e7evrimi\u00e7i.",
+			"updateTeleconference": "Telekonferans G\u00fcncellemesi",
+			"CancelRequest": "\u0130ptal Talebi",
+			"Join": "Kat\u0131lmak",
+			"Close": "Kapal\u0131",
+			"NotGoing": "Gitmiyorum"
 		},
 		"composer": {
 			"SetLocation": "Konumumu Ayarla",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Ba\u011flant\u0131y\u0131 canl\u0131 yay\u0131na / video konferansa yap\u0131\u015ft\u0131r\u0131n",
 			"Locally": "yerel olarak",
 			"EventInfoLink": "Etkinlik Bilgi Ba\u011flant\u0131s\u0131",
-			"TicketPurchaseLink": "Bilet Sat\u0131n Alma Linki"
+			"TicketPurchaseLink": "Bilet Sat\u0131n Alma Linki",
+			"scheduleTeleconference": "Telekonferans Planla"
 		},
 		"EventAlreadyClosed": "Bu etkinlik zaten kapal\u0131",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "&quot;{{{call 'message.getInstruction' 'name'}}&quot; etkinli\u011fi {{&call 'message.getInstruction' 'time'}}} y\u0131l\u0131nda ba\u015flayacak",
 		"webrtc": {
 			"Started": "Telekonferans ba\u015flad\u0131",
-			"Ended": "Telekonferans sona erdi"
+			"Ended": "Telekonferans sona erdi",
+			"StartedInEvent": "Telekonferans &quot; {{event}} &quot; y\u0131l\u0131nda ba\u015flad\u0131.",
+			"OngloingInEvent": "&quot; {{event}} &quot; acil hatt\u0131 i\u00e7in telekonferans devam ediyor."
 		},
 		"livestream": {
 			"Started": "Canl\u0131 yay\u0131n ba\u015flat\u0131ld\u0131",
 			"Ended": "Canl\u0131 yay\u0131n sona erdi",
-			"ClickToView": "Burada g\u00f6r\u00fcnt\u00fcleyin."
+			"ClickToView": "Burada g\u00f6r\u00fcnt\u00fcleyin.",
+			"StartedByUser": "{{user}} &quot; {{event}} &quot;de ya\u015f\u0131yor.",
+			"JoinAudience": "\u0130zleyicilere kat\u0131l\u0131n",
+			"Close": "Kapal\u0131"
 		}
 	},
 	"import": {

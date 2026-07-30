@@ -128,7 +128,20 @@
 			"Prepayment": "F\u00f6rskottsbetalning",
 			"PrepaymentConfirm": "Vi tar ut en nominell avgift p\u00e5 1 dollar. Du f\u00e5r motsvarande antal krediter. Dessa krediter kommer att dras av mot din fulla betalning f\u00f6r evenemanget.",
 			"UserNotParticipated": "{{1}} deltar inte i evenemanget",
-			"PayToAttend": "Betala f\u00f6r att delta"
+			"PayToAttend": "Betala f\u00f6r att delta",
+			"PayToReserve": "Betala f\u00f6r att reservera",
+			"JoinTeleConference": "Delta i telefonkonferens",
+			"TeleConferenceEnded": "Telefonkonferens avslutad",
+			"OpenTeleconferenceScheduler": "\u00d6ppna schemal\u00e4ggaren f\u00f6r telefonkonferenser",
+			"LiveStreamNotifyMe": "Meddela mig n\u00e4r det \u00e4r live",
+			"LiveStreamNotificationOn": "Aviseringen \u00e4r p\u00e5",
+			"LiveStreamIsOffline": "Lives\u00e4ndningen \u00e4r offline",
+			"LiveStreamIsOnline": "Lives\u00e4ndningen \u00e4r online",
+			"updateTeleconference": "Uppdatera telefonkonferens",
+			"CancelRequest": "Avbryt beg\u00e4ran",
+			"Join": "Ansluta sig till",
+			"Close": "N\u00e4ra",
+			"NotGoing": "G\u00e5r inte"
 		},
 		"composer": {
 			"SetLocation": "St\u00e4ll in min plats",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Klistra in l\u00e4nk till livestream/videokonferens",
 			"Locally": "lokalt",
 			"EventInfoLink": "Evenemangsinformationsl\u00e4nk",
-			"TicketPurchaseLink": "L\u00e4nk till biljettk\u00f6p"
+			"TicketPurchaseLink": "L\u00e4nk till biljettk\u00f6p",
+			"scheduleTeleconference": "Schemal\u00e4gg telefonkonferens"
 		},
 		"EventAlreadyClosed": "Det h\u00e4r evenemanget har redan st\u00e4ngts",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "H\u00e4ndelsen &quot;{{{call 'message.getInstruction' 'name'}}&quot; startar om {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Telefonkonferensen startade",
-			"Ended": "Telefonkonferensen avslutades"
+			"Ended": "Telefonkonferensen avslutades",
+			"StartedInEvent": "Telefonkonferensen startade i &quot; {{event}} &quot;.",
+			"OngloingInEvent": "Telefonkonferensen f\u00f6r &quot; {{event}} &quot; p\u00e5g\u00e5r."
 		},
 		"livestream": {
 			"Started": "Livestream startade",
 			"Ended": "Livestreamen avslutades",
-			"ClickToView": "Se den h\u00e4r."
+			"ClickToView": "Se den h\u00e4r.",
+			"StartedByUser": "{{user}} finns live i &quot; {{event}} &quot;.",
+			"JoinAudience": "G\u00e5 med i publiken",
+			"Close": "N\u00e4ra"
 		}
 	},
 	"import": {

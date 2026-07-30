@@ -128,7 +128,20 @@
 			"Prepayment": "\u0126las minn qabel",
 			"PrepaymentConfirm": "Se ni\u010b\u010bar\u0121jaw tariffa nominali ta&#39; $1. Int se tir\u010bievi n-numru korrispondenti ta&#39; krediti. Dawn il-krediti se ji\u0121u applikati g\u0127all-\u0127las s\u0127i\u0127 tieg\u0127ek g\u0127all-avveniment.",
 			"UserNotParticipated": "{{1}} mhuwiex parte\u010bipant tal-avveniment",
-			"PayToAttend": "\u0126allas biex Tattendi"
+			"PayToAttend": "\u0126allas biex Tattendi",
+			"PayToReserve": "\u0126allas biex Tirri\u017cerva",
+			"JoinTeleConference": "Ing\u0127aqad mat-Telekonferenza",
+			"TeleConferenceEnded": "Telekonferenza ntemmet",
+			"OpenTeleconferenceScheduler": "Ifta\u0127 l-Iskedatur tat-Telekonferenza",
+			"LiveStreamNotifyMe": "Av\u017cani Meta Jkun Live",
+			"LiveStreamNotificationOn": "In-notifika hija mixg\u0127ula",
+			"LiveStreamIsOffline": "Ix-xandira diretta hija offline",
+			"LiveStreamIsOnline": "Ix-xandira diretta hija online",
+			"updateTeleconference": "A\u0121\u0121ornament tat-Telekonferenza",
+			"CancelRequest": "Talba g\u0127all-Ikkan\u010bellazzjoni",
+			"Join": "Ing\u0127aqad",
+			"Close": "Ag\u0127laq",
+			"NotGoing": "Mhux sejjer"
 		},
 		"composer": {
 			"SetLocation": "Issettja l-Post Tieg\u0127i",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Paste link g\u0127al livestream / vidjokonferenza",
 			"Locally": "lokalment",
 			"EventInfoLink": "Link tal-Informazzjoni tal-Avveniment",
-			"TicketPurchaseLink": "Link tax-Xiri tal-Biljett"
+			"TicketPurchaseLink": "Link tax-Xiri tal-Biljett",
+			"scheduleTeleconference": "Skeda Telekonferenza"
 		},
 		"EventAlreadyClosed": "Dan l-avveniment di\u0121\u00e0 g\u0127alaq",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "L-avveniment &quot;{{{call 'message.getInstruction' 'name'}}&quot; se jibda fi {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Bdiet it-telekonferenza",
-			"Ended": "Telekonferenza ntemmet"
+			"Ended": "Telekonferenza ntemmet",
+			"StartedInEvent": "It-telekonferenza bdiet fid-&quot; {{event}} &quot;.",
+			"OngloingInEvent": "It-telekonferenza g\u0127ad-&quot; {{event}} &quot; g\u0127adha g\u0127addejja."
 		},
 		"livestream": {
 			"Started": "Live stream beda",
 			"Ended": "Live stream intemmet",
-			"ClickToView": "Araha hawn."
+			"ClickToView": "Araha hawn.",
+			"StartedByUser": "{{user}} jinsab live f&#39;&quot; {{event}} &quot;.",
+			"JoinAudience": "Ing\u0127aqad mal-udjenza",
+			"Close": "Ag\u0127laq"
 		}
 	},
 	"import": {

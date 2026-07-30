@@ -128,7 +128,20 @@
 			"Prepayment": "Ennakkomaksu",
 			"PrepaymentConfirm": "Veloitamme nimellisen 1 dollarin maksun. Saat vastaavan m\u00e4\u00e4r\u00e4n krediittej\u00e4. N\u00e4m\u00e4 krediitit k\u00e4ytet\u00e4\u00e4n tapahtuman koko maksuun.",
 			"UserNotParticipated": "{{1}} ei ole tapahtuman osallistuja",
-			"PayToAttend": "Maksa osallistuaksesi"
+			"PayToAttend": "Maksa osallistuaksesi",
+			"PayToReserve": "Maksa varataksesi",
+			"JoinTeleConference": "Liity puhelinkonferenssiin",
+			"TeleConferenceEnded": "Puhelinkonferenssi p\u00e4\u00e4ttyi",
+			"OpenTeleconferenceScheduler": "Avoin puhelinneuvottelun aikataulutus",
+			"LiveStreamNotifyMe": "Ilmoita minulle, kun l\u00e4hetys alkaa",
+			"LiveStreamNotificationOn": "Ilmoitus on p\u00e4\u00e4ll\u00e4",
+			"LiveStreamIsOffline": "Livestream on offline-tilassa",
+			"LiveStreamIsOnline": "Livestream on verkossa",
+			"updateTeleconference": "P\u00e4ivit\u00e4 puhelinkonferenssi",
+			"CancelRequest": "Peruuta pyynt\u00f6",
+			"Join": "Liity",
+			"Close": "L\u00e4hell\u00e4",
+			"NotGoing": "Ei mene"
 		},
 		"composer": {
 			"SetLocation": "Aseta Oma sijainti",
@@ -168,7 +181,8 @@
 			"SetLivestream": "Liit\u00e4 linkki suoratoistoon/videokonferenssiin",
 			"Locally": "paikallisesti",
 			"EventInfoLink": "Tapahtuman info linkki",
-			"TicketPurchaseLink": "Linkki lipun ostoon"
+			"TicketPurchaseLink": "Linkki lipun ostoon",
+			"scheduleTeleconference": "Aikatauluta puhelinkonferenssi"
 		},
 		"EventAlreadyClosed": "T\u00e4m\u00e4 tapahtuma on jo suljettu",
 		"addToCalendar": {
@@ -265,12 +279,17 @@
 		"Calendars/reminder": "Tapahtuma &quot;{{{call 'message.getInstruction' 'name'}}&quot; alkaa {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Puhelinkonferenssi alkoi",
-			"Ended": "Puhelinkonferenssi p\u00e4\u00e4ttyi"
+			"Ended": "Puhelinkonferenssi p\u00e4\u00e4ttyi",
+			"StartedInEvent": "Puhelinkonferenssi alkoi vuonna &quot; {{event}} &quot;.",
+			"OngloingInEvent": "&quot; {{event}} &quot;-puhelun puhelinkonferenssi on k\u00e4ynniss\u00e4."
 		},
 		"livestream": {
 			"Started": "Suora l\u00e4hetys alkanut",
 			"Ended": "Suora l\u00e4hetys p\u00e4\u00e4ttyi",
-			"ClickToView": "Katso se t\u00e4\u00e4lt\u00e4."
+			"ClickToView": "Katso se t\u00e4\u00e4lt\u00e4.",
+			"StartedByUser": "{{user}} on suorana l\u00e4hetyksen\u00e4 &quot; {{event}} &quot;-sarjassa.",
+			"JoinAudience": "Liity yleis\u00f6\u00f6n",
+			"Close": "L\u00e4hell\u00e4"
 		}
 	},
 	"import": {

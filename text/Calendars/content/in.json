@@ -129,7 +129,20 @@
 			"Prepayment": "Pembayaran di muka",
 			"PrepaymentConfirm": "Kami akan mengenakan biaya nominal sebesar $1. Anda akan menerima jumlah kredit yang sesuai. Kredit ini akan digunakan untuk pembayaran penuh acara Anda.",
 			"UserNotParticipated": "{{1}} bukan peserta acara tersebut",
-			"PayToAttend": "Bayar untuk Hadir"
+			"PayToAttend": "Bayar untuk Hadir",
+			"PayToReserve": "Bayar untuk Reservasi",
+			"JoinTeleConference": "Gabung ke Telekonferensi",
+			"TeleConferenceEnded": "Telekonferensi Berakhir",
+			"OpenTeleconferenceScheduler": "Buka Penjadwal Telekonferensi",
+			"LiveStreamNotifyMe": "Beri tahu saya saat siaran langsung.",
+			"LiveStreamNotificationOn": "Notifikasi aktif",
+			"LiveStreamIsOffline": "Siaran langsung sedang offline",
+			"LiveStreamIsOnline": "Siaran langsung tersedia secara online.",
+			"updateTeleconference": "Pembaruan Telekonferensi",
+			"CancelRequest": "Pembatalan Permintaan",
+			"Join": "Bergabung",
+			"Close": "Menutup",
+			"NotGoing": "Tidak Pergi"
 		},
 		"composer": {
 			"SetLocation": "Tetapkan Lokasi Saya",
@@ -170,7 +183,8 @@
 			"Minutes": "Menit",
 			"Locally": "lokal",
 			"EventInfoLink": "Tautan Info Acara",
-			"TicketPurchaseLink": "Link Pembelian Tiket"
+			"TicketPurchaseLink": "Link Pembelian Tiket",
+			"scheduleTeleconference": "Jadwalkan Telekonferensi"
 		},
 		"EventAlreadyClosed": "Acara ini sudah ditutup",
 		"addToCalendar": {
@@ -231,12 +245,17 @@
 		"Calendars/reminder": "Acara &quot;{{{call 'message.getInstruction' 'name'}}&quot; akan dimulai pada {{&call 'message.getInstruction' 'time'}}}",
 		"webrtc": {
 			"Started": "Telekonferensi dimulai",
-			"Ended": "Telekonferensi berakhir"
+			"Ended": "Telekonferensi berakhir",
+			"StartedInEvent": "Telekonferensi dimulai pada tahun &quot; {{event}} &quot;.",
+			"OngloingInEvent": "Telekonferensi untuk &quot; {{event}} &quot; sedang berlangsung."
 		},
 		"livestream": {
 			"Started": "Streaming langsung dimulai",
 			"Ended": "Streaming langsung berakhir",
-			"ClickToView": "Lihat di sini."
+			"ClickToView": "Lihat di sini.",
+			"StartedByUser": "{{user}} sedang aktif di &quot; {{event}} &quot;.",
+			"JoinAudience": "Bergabunglah dengan penonton",
+			"Close": "Menutup"
 		}
 	},
 	"import": {
