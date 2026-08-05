@@ -138,7 +138,7 @@
 			"Calendars/organizers": {
 				"title": "Organizers",
 				"icon": "{{baseUrl}}/Q/plugins/Calendars/img/icons/labels/Calendars/organizers",
-				"canGrant": ["Users/guests"],
+				"canGrant": ["Users/guests", "Calendars/promoters"],
 				"canRevoke": [],
 				"canSee": ["Users/members", "Users/guests", "Calendars/promoters", "Calendars/matchmakers"]
 			}
