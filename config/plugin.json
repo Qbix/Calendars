@@ -139,7 +139,7 @@
 				"title": "Organizers",
 				"icon": "{{baseUrl}}/Q/plugins/Calendars/img/icons/labels/Calendars/organizers",
 				"canGrant": ["Users/guests", "Calendars/promoters", "Calendars/matchmakers"],
-				"canRevoke": [],
+				"canRevoke": ["Users/guests", "Calendars/promoters", "Calendars/matchmakers"],
 				"canSee": ["Users/members", "Users/guests", "Calendars/promoters", "Calendars/matchmakers"]
 			}
 		}
