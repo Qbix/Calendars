@@ -214,8 +214,7 @@
 				"invite": {
 					"extra": {
 						"going": "maybe"
-					},
-					"dontAutoAccept": false
+					}
 				},
 				"onInviteAccepted": {
 					"join": true
