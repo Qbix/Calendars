@@ -61,7 +61,7 @@ class Calendars_Attendance
 			$asUserId = $user ? $user->id : null;
 		}
 		$streamName = "Calendars/event/$eventId";
-		$stream = Streams::fetchOne($asUserId, $publisherId, $streamName, true);
+		$stream = Streams_Stream::fetch($asUserId, $publisherId, $streamName, true);
 		if (!self::authorized($stream, $asUserId)) {
 			if ($throwIfNotAuthorized) {
 				throw new Users_Exception_NotAuthorized();
