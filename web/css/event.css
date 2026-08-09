@@ -568,6 +568,7 @@ body .Q_contextual.Calendars_event_avatar_contextual .Q_listing li * {
 .Q_dialog_content[data-paymenttype=required] .Calendars_event_redCircle {
 	display: block;
 }
-.Q_dialog_content[data-paymenttype=required][data-going=yes] .Calendars_event_redCircle {
+.Q_dialog_content[data-paymenttype=required][data-going=yes] .Calendars_event_redCircle,
+.Q_dialog_content[data-paymenttype=required][data-going=yes] button[name=payToAttend] {
 	display: none;
 }
