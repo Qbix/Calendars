@@ -33,6 +33,7 @@
 			"Streams/Stream/save/Assets/service": ["Calendars/after/Streams_Stream_save_Assets_service"],
 			"Streams/invite/accept": ["Calendars/after/Streams_invite_accept"],
 			"Streams/invite": ["Calendars/after/Streams_invite"],
+			"Streams/invite/response/suggestion": ["Calendars/after/Streams_invite_response_suggestion"],
 			"Users/Label/can": ["Calendars/after/Users_Label_can"],
 			"Db/Row/Streams_Participant/saveExecute": ["Calendars/after/Streams_Participant_saveExecute"]
 		},

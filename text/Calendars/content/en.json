@@ -90,7 +90,7 @@
 			"updateTeleconference": "Update Teleconference",
 			"ClickToViewRecording": "click to view recording",
 			"Checkin": "Scan attendee codes",
-			"Myqr": "Check In",
+			"Myqr": "Check In + Connect",
 			"CloseEvent": {
 				"button": "Cancel Event",
 				"confirm": {

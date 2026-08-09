@@ -122,6 +122,9 @@ class Calendars_Event extends Base_Calendars_Event
 	 * @param {integer} $fromTime The earliest endTime of the stream
 	 * @param {integer} $untilTime The earliest startTime of the stream
 	 * @param {string|array} [$going] Filter by either "yes" or "no" or "maybe"
+	 * @param {array} [$options] Options to pass to Streams::participating()
+	 *  and Streams::related(). For example you can pass "dontFilterUsers",
+	 *  but don't pass "limit" because we apply a customer filter.
 	 * @return {array} The streams, filtered by the above parameters
 	 */
 	static function participating(

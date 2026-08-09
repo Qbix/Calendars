@@ -75,7 +75,7 @@
 			"LiveStreamEnded": "Der Livestream ist beendet",
 			"ClickToViewRecording": "Klicken Sie hier, um die Aufzeichnung anzuzeigen",
 			"Checkin": "Teilnehmercodes scannen",
-			"Myqr": "Einchecken",
+			"Myqr": "Einchecken + Verbinden",
 			"CloseEvent": {
 				"button": "Ereignis abbrechen",
 				"confirm": {
