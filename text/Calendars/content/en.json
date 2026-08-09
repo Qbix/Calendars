@@ -197,6 +197,16 @@
 			}
 		}
 	},
+	"attendance": {
+		"Title": "Attendance",
+		"SearchPlaceholder": "Search by name",
+		"NoOne": "Nobody yet",
+		"going": {
+			"yes": "Going",
+			"maybe": "Maybe",
+			"no": "Not going"
+		}
+	},
 	"availabilities": {
 		"Title": "Availabilities",
 		"NewAvailability": {

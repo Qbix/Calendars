@@ -1,0 +1,172 @@
+/* one color per "going" state, shared by the heading and the row highlight */
+
+.Calendars_attendance_group[data-going="yes"] {
+	--Calendars_attendance_color: #2eab4f;
+}
+
+.Calendars_attendance_group[data-going="maybe"] {
+	--Calendars_attendance_color: #d99a0b;
+}
+
+.Calendars_attendance_group[data-going="no"] {
+	--Calendars_attendance_color: #d0453f;
+}
+
+.Calendars_attendance_page {
+	max-width: 44em;
+	margin: 0 auto;
+	padding: 0 1em 3em;
+}
+
+.Calendars_attendance_eventTitle {
+	font-size: 1.4em;
+	margin: 0.6em 0;
+}
+
+.Calendars_attendance_tool.Q_working {
+	opacity: 0.6;
+}
+
+/* search */
+
+.Calendars_attendance_search {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	padding: 0.5em 0;
+	background: #fff;
+}
+
+.Calendars_attendance_search_input {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.7em 0.9em;
+	font-size: 1.1em;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	-webkit-appearance: none;
+}
+
+/* groups */
+
+.Calendars_attendance_group {
+	margin: 1em 0;
+}
+
+.Calendars_attendance_group_hidden {
+	display: none;
+}
+
+.Calendars_attendance_group_title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.4em 0.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	font-size: 0.8em;
+	color: var(--Calendars_attendance_color);
+	border-bottom: 1px solid var(--Calendars_attendance_color);
+}
+
+.Calendars_attendance_group_count {
+	font-variant-numeric: tabular-nums;
+	color: var(--Calendars_attendance_color);
+}
+
+.Calendars_attendance_none {
+	padding: 0.8em 0.2em;
+	color: #999;
+	font-style: italic;
+}
+
+/* people */
+
+.Calendars_attendance_person {
+	display: flex;
+	align-items: center;
+	padding: 0.45em 0.5em;
+	border-bottom: 1px solid #f0f0f0;
+	border-left: 4px solid var(--Calendars_attendance_color);
+	cursor: pointer;
+}
+
+.Calendars_attendance_person:hover {
+	background: #f7f9fa;
+}
+
+.Calendars_attendance_person .Users_avatar_tool {
+	display: flex;
+	align-items: center;
+	/* was width:100%, which pushed anything after it off the right edge */
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.Calendars_attendance_person .Users_avatar_icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 0.7em;
+	flex: 0 0 auto;
+}
+
+.Calendars_attendance_person .Users_avatar_name {
+	font-size: 1.05em;
+	line-height: 1.2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* in a dialog */
+
+.Calendars_attendance_dialog .Q_dialog_content {
+	max-height: 70vh;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	padding: 0 0.8em 0.8em;
+}
+
+.Calendars_attendance_dialog .Calendars_attendance_search {
+	background: inherit;
+}
+
+/* checked in */
+
+.Calendars_attendance_tool[data-canCheckIn="false"] .Calendars_attendance_person {
+	cursor: default;
+}
+
+.Calendars_attendance_person[data-attending="true"] {
+	background: #f2fbf4;
+}
+
+.Calendars_attendance_person[data-attending="true"] .Users_avatar_name {
+	color: #2eab4f;
+}
+
+/* turned up, but the event needs payment they haven't made */
+.Calendars_attendance_person[data-attending="arrived"] {
+	background: #fdf7e8;
+}
+
+.Calendars_attendance_person[data-attending="arrived"] .Users_avatar_name {
+	color: #d99a0b;
+}
+
+.Calendars_attendance_person.Q_working {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+/* the check mark — plain text, so it needs no icon font */
+.Calendars_attendance_mark {
+	flex: 0 0 auto;
+	margin-left: 0.6em;
+	width: 1.5em;
+	text-align: center;
+	font-size: 1.3em;
+	line-height: 1;
+}

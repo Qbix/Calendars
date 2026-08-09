@@ -109,6 +109,7 @@ Q.Tool.define("Calendars/event", function (options) {
 		moreInfo: false,
 		registration: false,
 		checkin: false,
+		attendance: false,
 		myqr: false,
 		closeEvent: false,
 		adminRecurring: false,
@@ -343,6 +344,10 @@ Q.Tool.define("Calendars/event", function (options) {
 				return tool._handleCheckin();
 			}
 
+			if (aspect === 'attendance') {
+				return tool._openAttendance();
+			}
+
 			Q.handle(state.onInvoke(aspect), tool, [stream, $this]);
 		});
 
@@ -460,42 +465,19 @@ Q.Tool.define("Calendars/event", function (options) {
 
 	_getParticipantType: function (participant) {
 		var tool = this;
-		var type = [];
 		var userId = Users.loggedInUserId();
 
-		var leaderRoles = ['leader', 'host', 'speaker', 'staff'];
-		for (var k = 0; k < leaderRoles.length; k++) {
-			if (participant.testRoles(leaderRoles[k])) {
-				type.push(leaderRoles[k]);
-				if (userId && participant.userId === userId) {
-					$(tool.element).attr("data-" + leaderRoles[k], true);
+		var type = Calendars.Event.participantTypes(participant, {
+			paymentRequired: Q.getObject("type", tool.stream.getAttribute('payment')) === 'required'
+		});
+
+		// keep the side effect: flag the current user's role on the tool element
+		if (userId && participant.userId === userId) {
+			Q.each(['leader', 'host', 'speaker', 'staff'], function (i, role) {
+				if (type.indexOf(role) >= 0) {
+					$(tool.element).attr("data-" + role, true);
 				}
-				break;
-			}
-		}
-
-		var attendeeRoles = ['attendee', 'arrived'];
-		for (k = 0; k < attendeeRoles.length; k++) {
-			if (participant.testRoles(attendeeRoles[k])) {
-				type.push(attendeeRoles[k]);
-				break;
-			}
-		}
-
-		var statusRoles = ['rejected', 'requested', 'registered'];
-		for (k = 0; k < statusRoles.length; k++) {
-			if (participant.testRoles(statusRoles[k])) {
-				type.push(statusRoles[k]);
-				break;
-			}
-		}
-
-		if (Q.getObject("type", tool.stream.getAttribute('payment')) === 'required') {
-			switch (participant.getExtra('paid')) {
-				case 'reserved': type.push('paid-reserved'); break;
-				case 'fully':    type.push('paid-fully');    break;
-				default:         type.push('paid-no');
-			}
+			});
 		}
 
 		return type;
@@ -990,6 +972,7 @@ Q.Tool.define("Calendars/event", function (options) {
 		if (state.isAdmin) {
 			state.show.editWebrtc = true;
 			state.show.closeEvent = true;
+			state.show.attendance = true;
 			if (Q.getObject(["relatedFromTotals", 'Calendars/recurring'], stream)) {
 				state.show.adminRecurring = true;
 			}
@@ -1120,7 +1103,27 @@ Q.Tool.define("Calendars/event", function (options) {
 			this.Q.beforeRemove.set(function () {
 				$(this.element).plugin('Q/contextual', 'remove');
 			}, 'Calendars_event_avatar_contextual');
-		});
+		}, tool); // pass the tool — it scopes the Q_working button
+	},
+
+	/**
+	 * Open the attendance sheet in a dialog, so staff can find someone
+	 * by name instead of scanning. Admins only.
+	 * @method _openAttendance
+	 * @private
+	 */
+	_openAttendance: function () {
+		var tool = this;
+		var state = tool.state;
+
+		if (!state.isAdmin) {
+			return;
+		}
+
+		Calendars.Event.attendanceDialog(
+			state.publisherId,
+			state.streamName.split('/').pop()
+		);
 	},
 
 	_setupReminders: function () {
@@ -1803,6 +1806,12 @@ Q.Template.set('Calendars/event/tool',
 	'  <div class="Q_button Calendars_aspect_checkin Calendars_aspect_admin" data-invoke="checkin">' +
 	'    <div class="Calendars_info_icon"><i class="qp-communities-qrcode"></i></div>' +
 	'    <div class="Calendars_info_content">{{text.event.tool.Checkin}}</div>' +
+	'  </div>' +
+	'{{/if}}' +
+	'{{#if show.attendance}}' +
+	'  <div class="Q_button Calendars_aspect_attendance Calendars_aspect_admin" data-invoke="attendance">' +
+	'    <div class="Calendars_info_icon"><i class="qp-calendars-events"></i></div>' +
+	'    <div class="Calendars_info_content">{{text.attendance.Title}}</div>' +
 	'  </div>' +
 	'{{/if}}' +
 	'{{#if show.closeEvent}}' +
