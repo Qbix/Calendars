@@ -8,7 +8,7 @@
  *  - Calendars/promoters: all attendees, who invited them, payment for OWN invitees only.
  *  - Calendars/admins or publisher or adminLevel>=manage: everything including all payment.
  *
- * Route: Calendars/attendees?publisherId=X&eventId=Y
+ * Route: Calendars/attendees/:publisherId/:eventId
  */
 function Calendars_attendees_response_content($params)
 {
@@ -45,15 +45,15 @@ function Calendars_attendees_response_content($params)
 	$isAdmin = ($user->id === $publisherId)
 		|| $stream->testAdminLevel('manage');
 
-	$isPromoter = false;
 	if (!$isAdmin) {
-		// check for Calendars/admins community label
 		$communityId = $stream->getAttribute('communityId', $publisherId);
 		$labels = Users::roles($communityId, array('Calendars/admins'), array(), $user->id);
 		if (!empty($labels)) {
 			$isAdmin = true;
 		}
 	}
+
+	$isPromoter = false;
 	if (!$isAdmin) {
 		$communityId = Q::ifset($communityId, $stream->getAttribute('communityId', $publisherId));
 		$labels = Users::roles($communityId, array('Calendars/promoters'), array(), $user->id);
@@ -83,6 +83,9 @@ function Calendars_attendees_response_content($params)
 	//---- avatars ----
 
 	$avatars = Streams_Avatar::fetch($user->id, $userIds, 'publisherId');
+	// For admins: also fetch as the community so firstName/lastName are
+	// readable (the migration script grants readLevel=40 to Users/admins
+	// on Streams/user/firstName and Streams/user/lastName).
 
 	//---- who invited whom ----
 
@@ -125,10 +128,20 @@ function Calendars_attendees_response_content($params)
 		}
 	}
 
-	//---- payment data ----
+	//---- payment data (credits → currency) ----
 
-	$charges = array();
+	$charges = array(); // userId => amount in display currency
+	$currency = 'USD';
+	$exchangeRate = 100; // default: 100 credits = $1
 	if (class_exists('Assets_Credits')) {
+		$exchangeRate = Q_Config::get('Assets', 'credits', 'exchange', 'USD', 100);
+		$currency = Q_Config::get('Assets', 'credits', 'exchange', '_default', 'USD');
+		if ($currency === 'USD') {
+			$exchangeRate = Q_Config::get('Assets', 'credits', 'exchange', 'USD', 100);
+		} else {
+			$exchangeRate = Q_Config::get('Assets', 'credits', 'exchange', $currency, 100);
+		}
+
 		$creditRows = Assets_Credits::select()
 			->where(array(
 				'toPublisherId' => $publisherId,
@@ -164,13 +177,13 @@ function Calendars_attendees_response_content($params)
 
 		$invitedBy = Q::ifset($invitesByUser, $uid, null);
 		$isMine = ($invitedBy === $user->id);
-		$paid = Q::ifset($charges, $uid, 0);
+		$credits = Q::ifset($charges, $uid, 0);
+		$displayAmount = $exchangeRate > 0 ? ($credits / $exchangeRate) : $credits;
 
 		if (!$isAdmin && !$isPromoter && !$isMine && $uid !== $user->id) {
 			continue;
 		}
 
-		// payment visibility: admins see all, promoters see own, regular sees own
 		$canSeePayment = $isAdmin || $isMine;
 
 		$avatar = Q::ifset($avatars, $uid, null);
@@ -180,20 +193,21 @@ function Calendars_attendees_response_content($params)
 		$row = array(
 			'userId' => $uid,
 			'displayName' => $avatar
-				? $avatar->displayName(array('short' => true)) : $uid,
+				? $avatar->displayName($isAdmin ? array() : array('short' => true)) : $uid,
 			'icon' => $avatar ? $avatar->iconUrl(40) : null,
 			'going' => $going,
 			'invitedBy' => $invitedBy,
 			'inviterName' => $inviterAvatar
-				? $inviterAvatar->displayName(array('short' => true)) : null,
+				? $inviterAvatar->displayName($isAdmin ? array() : array('short' => true)) : null,
 			'isMine' => $isMine,
-			'paid' => $canSeePayment ? $paid : null,
+			'paid' => $canSeePayment ? $displayAmount : null,
+			'paidCredits' => $canSeePayment ? $credits : null,
 			'canSeePayment' => $canSeePayment
 		);
 
-		if ($canSeePayment && $paid > 0) {
+		if ($canSeePayment && $credits > 0) {
 			++$summaryPaid;
-			$summaryCharged += $paid;
+			$summaryCharged += $displayAmount;
 		}
 
 		$rows[] = $row;
@@ -210,7 +224,8 @@ function Calendars_attendees_response_content($params)
 		'total' => count($rows),
 		'going' => $summaryGoing,
 		'paid' => $summaryPaid,
-		'totalCharged' => $summaryCharged
+		'totalCharged' => $summaryCharged,
+		'currency' => $currency
 	);
 
 	return _Calendars_attendees_render(
@@ -222,6 +237,8 @@ function _Calendars_attendees_render($rows, $summary, $stream, $isAdmin, $isProm
 {
 	Q_Response::addStylesheet('{{Calendars}}/css/attendees.css', 'Calendars');
 	Q_Response::setSlot('title', $stream->title . ' — Attendees');
+
+	Q_Response::addScript('{{Calendars}}/js/attendees-sort.js', 'Calendars');
 
 	return Q::view('Calendars/content/attendees.php', @compact(
 		'rows', 'summary', 'stream', 'isAdmin', 'isPromoter', 'user'
