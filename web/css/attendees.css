@@ -1,0 +1,54 @@
+.Calendars_attendees_summary {
+	display: flex; gap: 20px; padding: 8px 0 14px; flex-wrap: wrap;
+}
+.Calendars_attendees_stat { text-align: center; }
+.Calendars_attendees_number { display: block; font-size: 28px; font-weight: 700; }
+.Calendars_attendees_label { font-size: 12px; opacity: 0.7; }
+
+.Calendars_attendees_table {
+	width: 100%; border-collapse: collapse; font-size: 14px;
+}
+.Calendars_attendees_table th {
+	text-align: left; font-weight: 600; font-size: 12px; text-transform: uppercase;
+	letter-spacing: 0.04em; opacity: 0.6; padding: 6px 8px;
+	border-bottom: 2px solid rgba(128,128,128,0.2);
+}
+.Calendars_attendees_table td {
+	padding: 8px; vertical-align: middle;
+	border-bottom: 1px solid rgba(128,128,128,0.1);
+}
+.Calendars_attendees_th_paid,
+.Calendars_attendees_td_paid { text-align: right; }
+.Calendars_attendees_th_going,
+.Calendars_attendees_td_going { text-align: center; white-space: nowrap; }
+
+.Calendars_attendees_mine { background: rgba(46,158,79,0.06); }
+
+.Calendars_attendees_badge {
+	display: inline-block; padding: 2px 10px; border-radius: 10px;
+	font-size: 11px; font-weight: 600; color: white;
+}
+.Calendars_attendees_going_yes { background: #2e9e4f; }
+.Calendars_attendees_going_maybe { background: #d4a017; }
+.Calendars_attendees_going_no { background: rgba(128,128,128,0.5); }
+
+.Calendars_attendees_paid { color: #2e9e4f; font-weight: 600; }
+.Calendars_attendees_unpaid { opacity: 0.35; }
+.Calendars_attendees_you { font-weight: 600; opacity: 0.7; }
+.Calendars_attendees_dash { opacity: 0.3; }
+
+.Calendars_attendees_separator td {
+	padding: 12px 8px 6px; border-bottom: none;
+}
+.Calendars_attendees_separator span {
+	font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;
+	font-weight: 600; opacity: 0.45;
+}
+.Calendars_attendees_empty { opacity: 0.5; font-size: 13px; padding: 12px 0; }
+
+@media (prefers-color-scheme: dark) {
+	.Calendars_attendees_mine { background: rgba(46,158,79,0.1); }
+	.Calendars_attendees_paid { color: #35b25b; }
+	.Calendars_attendees_going_yes { background: #35b25b; }
+	.Calendars_attendees_going_maybe { background: #e0b020; }
+}
