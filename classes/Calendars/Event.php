@@ -1014,6 +1014,9 @@ class Calendars_Event extends Base_Calendars_Event
 							array_merge($options, array(
 								'toPublisherId' => $stream->publisherId,
 								'toStreamName' => $stream->name,
+								// charge in the currency the event was priced in,
+								// matching what Assets_Credits::getPaymentsInfo() reads
+								'currency' => Q::ifset($payment, 'currency', 'credits'),
 								'autoCharge' => $options['autoCharge']
 									&& Q_Config::get('Calendars', 'events', 'allowAutoCharge', false)
 							))
