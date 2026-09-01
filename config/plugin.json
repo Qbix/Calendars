@@ -2,7 +2,7 @@
 	"Q": {
 		"pluginInfo": {
 			"Calendars": {
-				"version": "0.5.3",
+				"version": "0.5.6",
 				"compatible": "0.1",
 				"requires": {
 					"Users": "1.0",
@@ -33,6 +33,7 @@
 			"Streams/Stream/save/Assets/service": ["Calendars/after/Streams_Stream_save_Assets_service"],
 			"Streams/invite/accept": ["Calendars/after/Streams_invite_accept"],
 			"Streams/invite": ["Calendars/after/Streams_invite"],
+			"Streams/invite/response/suggestion": ["Calendars/after/Streams_invite_response_suggestion"],
 			"Users/Label/can": ["Calendars/after/Users_Label_can"],
 			"Db/Row/Streams_Participant/saveExecute": ["Calendars/after/Streams_Participant_saveExecute"]
 		},
@@ -61,6 +62,8 @@
 			":publisherId/:eventId/:method.gcal": {"module": "Calendars", "action": "gcal"},
 			":publisherId/:eventId/:method.outlook": {"module": "Calendars", "action": "outlook"},
 			":publisherId/:eventId/:method.ics": {"module": "Calendars", "action": "ics"},
+			"Calendars/attendance/:publisherId/:eventId": {"module": "Calendars", "action": "attendance"},
+			"Calendars/attendees/:publisherId/:eventId": {"module": "Calendars", "action": "attendees"},
 			"Calendars/personal/:userId.ics": {"module": "Calendars", "action": "calendarIcs"}
 		},
 		"images": {
@@ -89,21 +92,30 @@
 	"Users": {
 		"roles": {
 			"Users/owners": {
-				"canGrant": ["Calendars/admins", "Calendars/staff"],
-				"canRevoke": ["Calendars/admins", "Calendars/staff"],
-				"canSee": ["Calendars/admins", "Calendars/staff"]
+				"canGrant": ["Calendars/admins", "Calendars/staff", "Calendars/matchmakers", "Calendars/organizers", "Calendars/promoters"],
+				"canRevoke": ["Calendars/admins", "Calendars/staff", "Calendars/matchmakers", "Calendars/organizers", "Calendars/promoters"],
+				"canSee": [
+					"Users/owners", "Users/admins", "Users/members", "Users/guests",
+					"Calendars/admins", "Calendars/staff", "Calendars/matchmakers", "Calendars/organizers", "Calendars/promoters"
+				]
 			},
 			"Users/admins": {
-				"canGrant": ["Calendars/admins", "Calendars/staff"],
-				"canRevoke": ["Calendars/admins", "Calendars/staff"],
-				"canSee": ["Calendars/admins", "Calendars/staff"]
+				"canGrant": ["Calendars/staff", "Calendars/matchmakers", "Calendars/organizers", "Calendars/promoters"],
+				"canRevoke": ["Calendars/staff", "Calendars/matchmakers", "Calendars/organizers", "Calendars/promoters"],
+				"canSee": [
+					"Users/owners", "Users/admins", "Users/members", "Users/guests",
+					"Calendars/admins", "Calendars/staff", "Calendars/matchmakers", "Calendars/organizers", "Calendars/promoters"
+				]
 			},
 			"Calendars/admins": {
 				"title": "Calendars Admins",
 				"icon": "{{baseUrl}}/Q/plugins/Calendars/img/icons/labels/Calendars/admins",
-				"canGrant": ["Calendars/admins", "Calendars/staff"],
-				"canRevoke": ["Calendars/admins", "Calendars/staff"],
-				"canSee": ["Users/owners", "Users/admins", "Users/members", "Users/guests", "Calendars/admins", "Calendars/staff"]
+				"canGrant": ["Calendars/staff", "Calendars/matchmakers", "Calendars/organizers", "Calendars/promoters"],
+				"canRevoke": ["Calendars/staff", "Calendars/matchmakers", "Calendars/organizers", "Calendars/promoters"],
+				"canSee": [
+					"Users/owners", "Users/admins", "Users/members", "Users/guests",
+					"Calendars/admins", "Calendars/staff", "Calendars/matchmakers", "Calendars/organizers", "Calendars/promoters"
+				]
 			},
 			"Calendars/staff": {
 				"title": "Calendars Staff",
@@ -111,6 +123,27 @@
 				"canGrant": ["Users/guests"],
 				"canRevoke": [],
 				"canSee": ["Users/members", "Users/guests"]
+			},
+			"Calendars/promoters": {
+				"title": "Event Promoters",
+				"icon": "{{baseUrl}}/Q/plugins/Calendars/img/icons/labels/Calendars/promoters",
+				"canGrant": ["Users/guests"],
+				"canRevoke": [],
+				"canSee": ["Users/members", "Users/guests", "Calendars/matchmakers", "Calendars/organizers"]
+			},
+			"Calendars/matchmakers": {
+				"title": "Matchmakers",
+				"icon": "{{baseUrl}}/Q/plugins/Calendars/img/icons/labels/Calendars/matchmakers",
+				"canGrant": ["Users/guests"],
+				"canRevoke": [],
+				"canSee": ["Users/members", "Users/guests", "Calendars/promoters", "Calendars/organizers"]
+			},
+			"Calendars/organizers": {
+				"title": "Organizers",
+				"icon": "{{baseUrl}}/Q/plugins/Calendars/img/icons/labels/Calendars/organizers",
+				"canGrant": ["Users/guests", "Calendars/promoters", "Calendars/matchmakers"],
+				"canRevoke": ["Users/guests", "Calendars/promoters", "Calendars/matchmakers"],
+				"canSee": ["Users/members", "Users/guests", "Calendars/promoters", "Calendars/matchmakers"]
 			}
 		}
 	},
@@ -165,6 +198,17 @@
 					}
 				},
 				"participating": ["Calendars/participating/events"],
+				"subscriptions": {
+					"filter": {
+						"messages": {
+							"Calendars/going": {
+								"instructions": {"going": "yes"},
+								"participant": {"going": "maybe"}
+							}
+						},
+						"notifications": 0
+					}
+				},
 				"relatedFrom": {
 					"Calendars/calendar": {
 						"url": "{{fromUrl}}"
@@ -173,8 +217,7 @@
 				"invite": {
 					"extra": {
 						"going": "maybe"
-					},
-					"dontAutoAccept": true
+					}
 				},
 				"onInviteAccepted": {
 					"join": true
@@ -228,7 +271,7 @@
 					"writeLevel": 0,
 					"adminLevel": 0
 				},
-				"subscribe": {
+				"subscriptions": {
 					"filter": {
 						"types": ["Calendars/reminder"],
 						"notifications": 0
@@ -276,6 +319,7 @@
 			"listing": {
 				"duration": 31536000 /* 1 year in seconds */
 			},
+			"allowAutoCharge": false,
 			"admins": ["Calendars/admins", "Users/owners", "Users/admins"]
 		},
 		"newEvent": {
@@ -325,7 +369,7 @@
 					"withoutIntentToken": {
 						"currency": "USD",
 						"min": 0,
-						"max": 1
+						"max": 1000
 					}
 				}
 			}

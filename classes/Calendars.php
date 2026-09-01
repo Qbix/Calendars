@@ -125,4 +125,7 @@ class Calendars
 		$streamName = "Calendars/calendar/$experienceId";
 		return Streams_Stream::fetchOrCreate($communityId, $communityId, $streamName, compact('fields'));
 	}
+
+	// Payment Reasons
+	const EVENT_PARTICIPATION = 'EventParticipation';
 }

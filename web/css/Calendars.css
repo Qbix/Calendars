@@ -178,6 +178,11 @@
 	pointer-events: none;
 }
 
+.Calendars_event_qrcode {
+	background: white;
+	padding: 20px;
+}
+
 
 /* <livestream/teleconference started notification template> */
 .Q_show_notice.Q_online-event_notice {
@@ -225,3 +230,4 @@
 	opacity: 0.7;
 }
 /* </livestream started notification template> */
+

@@ -35,8 +35,13 @@
 }
 .Calendars_participants_info.Calendars_payment {
 	font-size: 1em;
-	color: red;
+	color: rgba(0, 150, 0, 0.8);
 	font-weight: bold;
+	width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
 }
 .Calendars_event_curtain {
 	position: relative;
@@ -563,6 +568,7 @@ body .Q_contextual.Calendars_event_avatar_contextual .Q_listing li * {
 .Q_dialog_content[data-paymenttype=required] .Calendars_event_redCircle {
 	display: block;
 }
-.Q_dialog_content[data-paymenttype=required][data-going=yes] .Calendars_event_redCircle {
+.Q_dialog_content[data-paymenttype=required][data-going=yes] .Calendars_event_redCircle,
+.Q_dialog_content[data-paymenttype=required][data-going=yes] button[name=payToAttend] {
 	display: none;
 }

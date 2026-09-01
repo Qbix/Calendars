@@ -65,19 +65,18 @@ Q.Tool.define("Calendars/event", function (options) {
 		}
 	}, tool);
 
-	Q.each(['yes', 'no', 'maybe'], function (i, going) {
-		Streams.Stream.onMessage(
-			state.publisherId, state.streamName, 'Calendars/going/' + going
-		).set(function (message) {
-			if (message.byUserId !== userId) {
-				return;
-			}
-			var instructions = JSON.parse(message.instructions);
-			tool.stream.participant = new Streams.Participant(instructions.participant);
-			tool.refreshParticipants({ participant: instructions.participant });
-			tool.updateInterface(going);
-		}, tool);
-	});
+	Streams.Stream.onMessage(
+		state.publisherId, state.streamName, 'Calendars/going'
+	).set(function (message) {
+		if (message.byUserId !== userId) {
+			return;
+		}
+		var instructions = JSON.parse(message.instructions);
+		var going = instructions.going;
+		tool.stream.participant = new Streams.Participant(instructions.participant);
+		tool.refreshParticipants({ participant: instructions.participant });
+		tool.updateInterface(going);
+	}, tool);
 
 	Streams.Stream.onMessage(
 		state.publisherId, state.streamName, 'Calendars/event/webrtc/started'
@@ -110,6 +109,7 @@ Q.Tool.define("Calendars/event", function (options) {
 		moreInfo: false,
 		registration: false,
 		checkin: false,
+		attendance: false,
 		myqr: false,
 		closeEvent: false,
 		adminRecurring: false,
@@ -344,6 +344,10 @@ Q.Tool.define("Calendars/event", function (options) {
 				return tool._handleCheckin();
 			}
 
+			if (aspect === 'attendance') {
+				return tool._openAttendance();
+			}
+
 			Q.handle(state.onInvoke(aspect), tool, [stream, $this]);
 		});
 
@@ -461,42 +465,19 @@ Q.Tool.define("Calendars/event", function (options) {
 
 	_getParticipantType: function (participant) {
 		var tool = this;
-		var type = [];
 		var userId = Users.loggedInUserId();
 
-		var leaderRoles = ['leader', 'host', 'speaker', 'staff'];
-		for (var k = 0; k < leaderRoles.length; k++) {
-			if (participant.testRoles(leaderRoles[k])) {
-				type.push(leaderRoles[k]);
-				if (userId && participant.userId === userId) {
-					$(tool.element).attr("data-" + leaderRoles[k], true);
+		var type = Calendars.Event.participantTypes(participant, {
+			paymentRequired: Q.getObject("type", tool.stream.getAttribute('payment')) === 'required'
+		});
+
+		// keep the side effect: flag the current user's role on the tool element
+		if (userId && participant.userId === userId) {
+			Q.each(['leader', 'host', 'speaker', 'staff'], function (i, role) {
+				if (type.indexOf(role) >= 0) {
+					$(tool.element).attr("data-" + role, true);
 				}
-				break;
-			}
-		}
-
-		var attendeeRoles = ['attendee', 'arrived'];
-		for (k = 0; k < attendeeRoles.length; k++) {
-			if (participant.testRoles(attendeeRoles[k])) {
-				type.push(attendeeRoles[k]);
-				break;
-			}
-		}
-
-		var statusRoles = ['rejected', 'requested', 'registered'];
-		for (k = 0; k < statusRoles.length; k++) {
-			if (participant.testRoles(statusRoles[k])) {
-				type.push(statusRoles[k]);
-				break;
-			}
-		}
-
-		if (Q.getObject("type", tool.stream.getAttribute('payment')) === 'required') {
-			switch (participant.getExtra('paid')) {
-				case 'reserved': type.push('paid-reserved'); break;
-				case 'fully':    type.push('paid-fully');    break;
-				default:         type.push('paid-no');
-			}
+			});
 		}
 
 		return type;
@@ -636,12 +617,27 @@ Q.Tool.define("Calendars/event", function (options) {
 		var paymentAmount = Q.getObject("payment.amount", state);
 		var paymentCurrency = Q.getObject("payment.currency", state);
 
+
+		function revertUI () {
+			Q.handle(callback, tool, [false]);
+			if (tool.$goingElement) {
+				tool.$goingElement.removeClass("Q_working");
+			}
+		}
+		function finalizeUI () {
+			tool.updateInterface(going);
+			Q.handle(callback, tool, [true]);
+		};
+
 		if (!userId) {
 			Users.login({
 				onSuccess: {
 					"Users": function () {
 						tool.going(going, callback, options);
 					}
+				},
+				onCancel: function () {
+					revertUI();
 				}
 			});
 			return false;
@@ -651,17 +647,6 @@ Q.Tool.define("Calendars/event", function (options) {
 			Q.handle(callback, tool, [false]);
 			return false;
 		}
-
-		var revertUI = function () {
-			Q.handle(callback, tool, [false]);
-			if (tool.$goingElement) {
-				tool.$goingElement.removeClass("Q_working");
-			}
-		};
-		var finalizeUI = function () {
-			tool.updateInterface(going);
-			Q.handle(callback, tool, [true]);
-		};
 
 		if (tool.$goingElement) {
 			tool.$goingElement.addClass("Q_working");
@@ -681,17 +666,18 @@ Q.Tool.define("Calendars/event", function (options) {
 			|| Q.getObject("payment.isAssetsCustomer", state)) {
 				return tool.going("maybe", callback, options);
 			}
-			Q.Assets.Payments.stripe({
+			Q.Assets.Credits.buy({
 				amount: 1,
 				currency: "USD",
-				reason: 'BoughtCredits',
-				description: tool.text.event.tool.Prepayment
-			}, function (err) {
-				if (err) {
-					return revertUI();
+				skipDialog: true,
+				reason: 'EventParticipation',
+				onSuccess: function () {
+					state.payment.isAssetsCustomer = true;
+					tool.going("maybe", callback, options);
+				},
+				onFailure: function () {
+					revertUI();
 				}
-				state.payment.isAssetsCustomer = true;
-				tool.going("maybe", callback, options);
 			});
 			return;
 		}
@@ -740,12 +726,11 @@ Q.Tool.define("Calendars/event", function (options) {
 						return reject(msg);
 					}
 
-					Streams.Stream.refresh(
-						state.publisherId, state.streamName,
-						function () {
-							var slots = response.slots || {};
-							tool.stream = this;
+					Streams.Stream.get(state.publisherId, state.streamName, function () {
+						var slots = response.slots || {};
+						tool.stream = this;
 
+						this.refresh(function () {
 							if (slots.participant) {
 								tool.participant = new Streams.Participant(slots.participant);
 							}
@@ -761,13 +746,14 @@ Q.Tool.define("Calendars/event", function (options) {
 							}
 
 							resolve(response);
-						},
-						{
-							withParticipant: true,
+						}, {
+							getOptions: {
+								withParticipant: true
+							},
 							messages: true,
 							unlessSocket: true
-						}
-					);
+						});
+					});
 				},
 				{
 					method: "post",
@@ -787,25 +773,147 @@ Q.Tool.define("Calendars/event", function (options) {
 		var state = tool.state;
 		var instructions = details.intent.instructions;
 
-		Q.Assets.Payments.stripe({
+		Q.Assets.Credits.buy({
 			intentToken: details.intentToken,
 			amount: instructions.amount,
 			currency: instructions.currency,
-			reason: 'BoughtCredits',
-			toPublisherId: instructions.toPublisherId,
-			toStreamName: instructions.toStreamName
-		}, function () {
-			Q.handle(state.onPaid, tool);
-			Q.Assets.onCreditsChanged.setOnce(function () {
+			skipDialog: true,
+			reason: 'EventParticipation',
+			metadata: {
+				toPublisherId: instructions.toPublisherId || '',
+				toStreamName: instructions.toStreamName || ''
+			},
+			onSuccess: function () {
+				Q.handle(state.onPaid, tool);
 				state.payment.isAssetsCustomer = true;
-				tool.going(targetGoing);
-			}, tool);
-		}, function () {
-			if (tool.$goingElement) {
-				tool.$goingElement.removeClass("Q_working");
+
+				var $throbber = tool._showPaymentThrobber();
+				var resolved = false;
+
+				function _done(going) {
+					if (resolved) return;
+					resolved = true;
+					Q.Socket.onEvent('Users/intentComplete', '/Q')
+						.remove(tool);
+					Streams.Stream.onMessage(
+						state.publisherId, state.streamName,
+						'Calendars/going'
+					).remove('Calendars_event_payment');
+					tool._removePaymentThrobber($throbber);
+					// Q.handle(state.onGoing, tool, [going, tool.stream]);
+					tool.refresh();
+					resolve(going);
+				}
+
+				// Fast path: intent complete via socket
+				Q.Socket.onEvent('Users/intentComplete', '/Q')
+				.set(function (data) {
+					if (data && data.token === details.intentToken) {
+						_done(targetGoing);
+					}
+				}, tool);
+
+				// Also listen for going message (if user has access)
+				Streams.Stream.onMessage(
+					state.publisherId, state.streamName,
+					'Calendars/going'
+				).set(function (message) {
+					if (message.byUserId !== Q.Users.loggedInUserId()) {
+						return;
+					}
+					var instructions = JSON.parse(message.instructions);
+					if (instructions.going === targetGoing) {
+						_done(targetGoing);
+					}
+				}, 'Calendars_event_payment');
+
+				// Fallback: poll participant state with backoff
+				var attempts = 0;
+				var maxAttempts = 10;
+				var delay = 1000;
+
+				function _poll() {
+					if (resolved) return;
+					Streams.Participant.get.force(
+						state.publisherId, state.streamName,
+						Q.Users.loggedInUserId(),
+						function (err, participant) {
+							if (resolved) return;
+							if (!err && participant
+							&& participant.getExtra('going') === targetGoing) {
+								_done(targetGoing);
+								return;
+							}
+							if (++attempts >= maxAttempts) {
+								_done(targetGoing);
+								return;
+							}
+							delay = Math.min(delay * 1.5, 5000);
+							setTimeout(_poll, delay);
+						}
+					);
+				}
+				_poll();
+			},
+			onFailure: function (err) {
+				if (tool.$goingElement) {
+					tool.$goingElement.removeClass("Q_working");
+				}
+				reject(err || "payment_failed");
 			}
-			reject("stripe_cancel");
 		});
+	},
+
+	/**
+	 * Show a centered throbber overlay while payment processes.
+	 * @method _showPaymentThrobber
+	 * @private
+	 * @return {jQuery} The throbber element for later removal
+	 */
+	_showPaymentThrobber: function () {
+		var zIndex = Q.zIndexTopmost() + 1;
+		var $throbber = $('<div class="Calendars_event_payment_throbber">')
+			.css({
+				position: 'fixed',
+				top: 0,
+				left: 0,
+				right: 0,
+				bottom: 0,
+				display: 'flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+				zIndex: zIndex,
+				backdropFilter: 'blur(4px)',
+				webkitBackdropFilter: 'blur(4px)'
+			})
+			.append(
+				$('<div class="Calendars_event_payment_throbber_box">')
+					.css({
+						background: 'rgba(100,100,100,0.5)',
+						borderRadius: '10%',
+						padding: '30px',
+						boxShadow: '0 2px 20px rgba(0,0,0,0.15)'
+					})
+					.append(
+						$('<img>').attr('src',
+							Q.url('{{Q}}/img/throbbers/loading-2x.gif')
+						).css({ width: '48px', height: '48px' })
+					)
+			)
+			.appendTo('body');
+		return $throbber;
+	},
+
+	/**
+	 * Remove the payment throbber overlay.
+	 * @method _removePaymentThrobber
+	 * @private
+	 * @param {jQuery} $throbber The element returned by _showPaymentThrobber
+	 */
+	_removePaymentThrobber: function ($throbber) {
+		if ($throbber && $throbber.length) {
+			$throbber.remove();
+		}
 	},
 
 	_showDonationDialog: function (amount, currency) {
@@ -864,6 +972,7 @@ Q.Tool.define("Calendars/event", function (options) {
 		if (state.isAdmin) {
 			state.show.editWebrtc = true;
 			state.show.closeEvent = true;
+			state.show.attendance = true;
 			if (Q.getObject(["relatedFromTotals", 'Calendars/recurring'], stream)) {
 				state.show.adminRecurring = true;
 			}
@@ -994,7 +1103,27 @@ Q.Tool.define("Calendars/event", function (options) {
 			this.Q.beforeRemove.set(function () {
 				$(this.element).plugin('Q/contextual', 'remove');
 			}, 'Calendars_event_avatar_contextual');
-		});
+		}, tool); // pass the tool — it scopes the Q_working button
+	},
+
+	/**
+	 * Open the attendance sheet in a dialog, so staff can find someone
+	 * by name instead of scanning. Admins only.
+	 * @method _openAttendance
+	 * @private
+	 */
+	_openAttendance: function () {
+		var tool = this;
+		var state = tool.state;
+
+		if (!state.isAdmin) {
+			return;
+		}
+
+		Calendars.Event.attendanceDialog(
+			state.publisherId,
+			state.streamName.split('/').pop()
+		);
 	},
 
 	_setupReminders: function () {
@@ -1677,6 +1806,12 @@ Q.Template.set('Calendars/event/tool',
 	'  <div class="Q_button Calendars_aspect_checkin Calendars_aspect_admin" data-invoke="checkin">' +
 	'    <div class="Calendars_info_icon"><i class="qp-communities-qrcode"></i></div>' +
 	'    <div class="Calendars_info_content">{{text.event.tool.Checkin}}</div>' +
+	'  </div>' +
+	'{{/if}}' +
+	'{{#if show.attendance}}' +
+	'  <div class="Q_button Calendars_aspect_attendance Calendars_aspect_admin" data-invoke="attendance">' +
+	'    <div class="Calendars_info_icon"><i class="qp-calendars-events"></i></div>' +
+	'    <div class="Calendars_info_content">{{text.attendance.Title}}</div>' +
 	'  </div>' +
 	'{{/if}}' +
 	'{{#if show.closeEvent}}' +
